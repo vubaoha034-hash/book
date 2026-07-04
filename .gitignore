@@ -1,0 +1,12 @@
+# Keep private source books local. Do not publish copyrighted books by accident.
+sources/books/*
+!sources/books/.gitkeep
+
+# Extracted text may contain source material. Keep private.
+library/_extracted/*
+!library/_extracted/.gitkeep
+
+# Local caches
+__pycache__/
+*.pyc
+.DS_Store
