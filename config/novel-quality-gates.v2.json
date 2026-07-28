@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0.0",
+  "skill": "novel-writing-master",
+  "pipeline": "staged-independent-review",
+  "principles": {
+    "logic_before_language": true,
+    "diagnosis_before_rewrite": true,
+    "writer_cannot_self_approve": true,
+    "reader_reaction_separate_from_editorial_diagnosis": true,
+    "load_only_current_phase_rules": true,
+    "evidence_required_for_findings": true,
+    "scores_do_not_override_blockers": true
+  },
+  "severity": {
+    "BLOCKER": "Mainline, motivation, causality, continuity, or rule failure that prevents the story from working.",
+    "MAJOR": "Substantial damage to pacing, emotion, credibility, or payoff.",
+    "MINOR": "Local weakness that does not break the story.",
+    "STYLE": "Line-level expression issue to handle after structural stability."
+  },
+  "gates": [
+    {
+      "id": "G0",
+      "name": "story_contract",
+      "required": true,
+      "checks": [
+        "mainline_one_sentence",
+        "protagonist_active_want",
+        "persistent_concrete_opposition",
+        "specific_failure_cost",
+        "why_now",
+        "opening_ending_same_core_question"
+      ],
+      "on_fail": "return_to_story_contract"
+    },
+    {
+      "id": "G1",
+      "name": "structure_and_causality",
+      "required": true,
+      "checks": [
+        "scene_goal",
+        "escalating_opposition",
+        "scene_state_change",
+        "therefore_or_but_connection",
+        "midpoint_not_repetitive_pressure",
+        "climax_caused_by_prior_choices",
+        "ending_pays_reader_promise"
+      ],
+      "on_fail": "return_to_structure"
+    },
+    {
+      "id": "G2",
+      "name": "character_pressure",
+      "required": true,
+      "checks": [
+        "decision_matches_want_fear_knowledge",
+        "simpler_option_explained",
+        "relationship_change_has_cost",
+        "no_unearned_ability",
+        "no_plot_convenience_stupidity"
+      ],
+      "on_fail": "return_to_character_or_structure"
+    },
+    {
+      "id": "G3",
+      "name": "opening_retention",
+      "required_for": [
+        "short_fiction",
+        "web_fiction",
+        "public_account_fiction",
+        "short_drama_fiction"
+      ],
+      "checks": [
+        "specific_pressure_in_first_30_60_chars",
+        "predicament_by_150_300_chars",
+        "first_scene_changes_state",
+        "fatal_stop_point_resolved_or_intentional"
+      ],
+      "on_fail": "rewrite_opening_scope_only"
+    },
+    {
+      "id": "G4",
+      "name": "independent_reader_panel",
+      "required": true,
+      "reader_lenses": [
+        "mobile_immersion",
+        "genre_promise",
+        "character_emotion",
+        "skeptic_logic"
+      ],
+      "aggregation": "convergence_weighted_by_impact_not_average_score",
+      "on_fail": "send_consensus_problem_to_revision_ledger"
+    },
+    {
+      "id": "G5",
+      "name": "continuity",
+      "required": true,
+      "checks": [
+        "character_facts",
+        "timeline",
+        "object_state",
+        "knowledge_state",
+        "spatial_logic",
+        "world_rule_conditions_limits_costs",
+        "causal_logic"
+      ],
+      "confirmed_contradictions_allowed": false,
+      "on_fail": "resolve_canon_or_explanation_gap"
+    },
+    {
+      "id": "G6",
+      "name": "developmental_recheck",
+      "required": true,
+      "max_root_diagnoses": 5,
+      "checks": [
+        "spine",
+        "structure",
+        "pacing",
+        "character_arc",
+        "stakes",
+        "causality"
+      ],
+      "on_fail": "resolve_blocker_and_major_before_line_edit"
+    },
+    {
+      "id": "G7",
+      "name": "line_edit_and_de_ai",
+      "required": true,
+      "preconditions": [
+        "no_open_blocker",
+        "scene_order_stable",
+        "ending_direction_stable"
+      ],
+      "checks": [
+        "pattern_first_edit",
+        "no_plot_fact_change",
+        "voice_preserved",
+        "no_over_compression",
+        "no_explanatory_tail",
+        "sentence_rhythm_matches_scene"
+      ],
+      "on_fail": "revise_language_or_return_to_prior_gate"
+    }
+  ],
+  "revision_order": [
+    "mainline_and_ending",
+    "causality_and_character_choice",
+    "continuity_and_world_rules",
+    "scene_function_and_pacing",
+    "information_control_and_emotional_payoff",
+    "line_quality_and_ai_smell",
+    "punctuation_and_typos"
+  ],
+  "delivery": {
+    "allow_when": [
+      "no_open_blocker",
+      "all_required_gates_pass_or_intentional_risk_documented",
+      "final_cold_read_completed",
+      "changed_locations_continuity_rechecked"
+    ],
+    "required_summary": [
+      "final_text",
+      "one_sentence_mainline",
+      "target_emotion_result",
+      "resolved_blockers",
+      "intentional_controversies",
+      "accepted_risks",
+      "evidence_based_self_score"
+    ]
+  }
+}
