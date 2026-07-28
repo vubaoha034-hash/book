@@ -1,324 +1,617 @@
 ---
 name: novel-writing-master
-description: "Learns reusable fiction-writing craft from the user's private book library and applies it to diagnose, deeply dissect, outline, rewrite, and de-AI Chinese fiction drafts. Use when the user wants to study novel-writing techniques from stored books, analyze suspense placement, clue/payoff logic, reversals, reader reward rhythm,爽点 density, plot causality, chapter retention, short-drama adaptation, or rewrite fiction in a more human commercially readable style."
+description: "Chinese fiction master orchestrator for private craft-library learning, story planning, drafting, opening-retention testing, independent reader simulation, developmental editing, character pressure tests, continuity and logic audits, targeted revision, and de-AI line editing. Use for commercial Chinese fiction, public-account short stories, web fiction, short-drama fiction, suspense, emotional fiction, family realism, supernatural romance, revenge, and other narrative projects."
+metadata:
+  version: "2.0.0"
+  pipeline: "staged-independent-review"
 ---
 
-# Novel Writing Master
+# Novel Writing Master V2
 
-把用户私有书籍、写作资料、爆款小说拆成可反复调用的写作技术库。目标不是总结内容，而是提炼“怎么写”：人物发动机、冲突结构、悬疑锁钥、伏笔回收、反转设计、爽点节拍、章节留存、情绪递进、场景压迫、语言去 AI 味。
+把用户合法拥有或有权使用的写作资料、小说案例和个人笔记沉淀成技巧库，并把创作拆成相互独立的阶段：故事契约、结构、人物、正文、开篇冷读、读者面板、连续性审查、发展性编辑、修改总账、行文精修。
 
-## Core Rule
+本 Skill 的目标不是一次性生成“看起来完整”的小说，而是让作品经过可追踪、可复核、可迭代的创作流程。
 
-**只学习技法，不复制文本。**
+## 最高原则
 
-- 不复述大段原文。
+### 1. 只学习技法，不复制文本
+
+- 不复述大段受版权保护原文。
 - 不把第三方作品改头换面当原创。
-- 不模仿某位作者的可识别个人风格；只抽象其叙事技巧、结构方法、节奏模型和逻辑规则。
-- 如果资料受版权保护，生成的 skill 和分析文件只供用户个人私下使用，不建议公开发布。
+- 不模仿在世作者可识别的个人风格。
+- 只抽象结构、节奏、因果、信息控制、人物选择、悬疑、反转和情绪机制。
+- 用户私有原书、提取文本和分析库默认不公开提交。
 
-## Default Target
+### 2. 逻辑先于语言
 
-默认服务于中文商业小说、公众号短小说、短剧化小说、抖音漫画脚本、家庭现实题材、灵异爱情、悬疑反转、复仇爽文、强情绪短篇。
+主线、人物动机、因果、规则和连续性未稳定前，不做全文逐句润色。
 
-默认创作目标：
+### 3. 写作者不能自我验收
 
-1. **前三秒有钩子**：第一句必须出现异常、危险、误会、羞辱、选择、倒计时、反常行为之一。
-2. **前十秒留人**：不能铺设定，不能慢慢讲背景，必须让读者知道“谁被逼到什么位置”。
-3. **主线清晰**：主角要什么、谁阻止、代价是什么，必须一眼看懂。
-4. **悬疑有锁有钥匙**：每个疑问都要有锁、真钥匙、假钥匙、开锁代价和回收位置。
-5. **反转公平**：反转前必须给真实线索，但可以让读者误解线索含义。
-6. **爽点有节拍**：检查读者多久获得一次奖励，奖励是爽点、悬念、情绪补偿、认知爽、羞辱点、甜点、危机点还是争议点。
-7. **冲突落地**：用饭桌、电梯、医院、公司群、门口、账单、钥匙、手机、电动车、孩子一句话等具体物件承载冲突。
-8. **逻辑自洽**：每个反转必须有前置铺垫；每个选择必须有现实代价；不能靠作者解释硬转。
-9. **情绪从动作里长出来**：少写“他很痛苦/她很崩溃”，多写“他把便宜药藏进抽屉”“她把筷子放下但没走”。
-10. **去 AI 味**：拒绝空泛、均匀、正确、体面、模板化表达；保留人的别扭、算计、沉默、误解和小动作。
-11. **每章有奖励**：爽点、甜点、笑点、悬念、羞辱、反转、信息揭露，至少出现一种。
-12. **结尾留争议**：最后一句尽量引发评论区争吵、选择题或道德困境。
+正文完成后必须进入新的独立审查阶段。不得第一稿写完后直接宣布完成。
 
-## Directory Layout
+### 4. 分阶段加载规则
+
+任何一次任务都先读取：
+
+```text
+rules/pass-isolation.md
+```
+
+然后只加载当前阶段需要的模块。不得把全部审稿规则、读者面板和去 AI 词库同时压进正文生成上下文。
+
+### 5. 诊断必须有证据
+
+审查意见必须对应具体章节、场景、事件、段落或句子。总分不能覆盖阻断级问题。
+
+### 6. 信任读者
+
+读取：
+
+```text
+rules/reader-trust-and-economy.md
+```
+
+不要把人物情绪、潜台词、反转意义和结尾主题全部翻译给读者。给足方向，保留推断、预测和情绪重建空间。
+
+## 默认服务范围
+
+默认服务于：
+
+- 中文商业小说
+- 公众号短小说
+- 番茄、知乎故事等通俗短篇
+- 连载网文
+- 短剧化小说
+- 抖音漫画叙事脚本
+- 家庭现实题材
+- 灵异爱情与中式怪谈
+- 悬疑反转
+- 复仇爽文
+- 强情绪爱情故事
+
+题材和平台只用于校准，不得把某个平台的套路当作所有小说的普遍规律。
+
+## 目录与核心文件
 
 ```text
 book/
 ├── SKILL.md
+├── AGENTS.md
+├── config/
+│   └── novel-quality-gates.v2.json
+├── modules/
+│   ├── developmental-editor.md
+│   ├── opening-retention-reader.md
+│   ├── beta-reader-panel.md
+│   ├── continuity-editor.md
+│   ├── character-pressure-test.md
+│   └── line-editor-deslop.md
+├── rules/
+│   ├── pass-isolation.md
+│   ├── reader-trust-and-economy.md
+│   ├── no-ai-smell.md
+│   ├── novel-logic-checklist.md
+│   ├── suspense-reversal-payoff.md
+│   └── reader-reward-rhythm.md
+├── workflows/
+│   ├── 05-deep-story-dissection.md
+│   └── 06-novel-master-pipeline.md
+├── templates/
+│   ├── novel-quality-gate-template.md
+│   └── ...
 ├── sources/
-│   ├── books/          # 用户放原始书籍：pdf/epub/docx/md/txt/html/rtf
-│   └── notes/          # 用户放自己的写作笔记、爆款分析、规则
-├── library/            # 生成后的技巧库、书籍卡、风格卡、索引
-├── rules/              # 固定写作规则：去AI味、小说逻辑、悬疑反转、爽点节拍
-├── templates/          # 分析和诊断模板
-├── workflows/          # 工作流说明
+├── library/
 └── scripts/
-    └── ingest.py       # 本地提取文本脚本
 ```
 
-## Mandatory Rule Files
+## 路由规则
 
-When analyzing books, stories, chapters, or user drafts, always consider whether these files are relevant and load them when the task matches:
+根据用户任务选择模式。用户明确指定某一阶段时，只执行该阶段；用户要求“完整写完、全面修改、推倒重写、自己检查并迭代”时，默认执行 **Mode 0 总控生产流程**。
+
+---
+
+# Mode 0 — 小说总控生产流程
+
+触发示例：
+
+- “把这个小说完整写好”
+- “全部推倒重写”
+- “按观众视角改稿并自我迭代”
+- “检查逻辑、节奏、人物和 AI 味后完成”
+- “按我们的小说规则从头做”
+
+必须读取：
 
 ```text
-rules/no-ai-smell.md
+workflows/06-novel-master-pipeline.md
+rules/pass-isolation.md
+config/novel-quality-gates.v2.json
+```
+
+标准阶段：
+
+```text
+Phase 0  故事契约
+Phase 1  结构与因果
+Phase 2  人物压力测试
+Phase 3  正文写作
+Phase 4  开篇留存冷读
+Phase 5  独立读者面板
+Phase 6  连续性与逻辑审查
+Phase 7  发展性编辑复审
+Phase 8  修改总账与优先级
+Phase 9  行文精修与去 AI 味
+Phase 10 最终冷读与连锁复核
+```
+
+## Phase 0：故事契约
+
+确定：
+
+```text
+题材与平台：
+目标篇幅：
+目标读者：
+目标情绪：
+一句话读者承诺：
+一句话主线：
+主角想要：
+持续阻力：
+失败代价：
+为什么必须现在解决：
+核心关系：
+不可逆事件：
+结局兑现：
+禁止改变的设定：
+```
+
+主线无法一句话说清，不进入正文。
+
+## Phase 1：结构与因果
+
+读取：
+
+```text
+modules/developmental-editor.md
 rules/novel-logic-checklist.md
+```
+
+悬疑或反转题材再读取：
+
+```text
 rules/suspense-reversal-payoff.md
+```
+
+商业节奏或留存任务再读取：
+
+```text
 rules/reader-reward-rhythm.md
 ```
 
-For deep story dissection, also use:
+每场必须记录：
 
 ```text
-templates/suspense-reversal-map-template.md
-templates/reader-reward-map-template.md
-workflows/05-deep-story-dissection.md
+场景目标
+阻力
+行动
+失败 / 成功但代价更大
+新信息
+关系或权力变化
+如何逼出下一场
 ```
 
-## Mode 1 — Add Books / Ingest Sources
+场景之间主要由“因此”或“但是”连接，不是“然后又发生”。
 
-Trigger examples:
+## Phase 2：人物压力测试
+
+读取：
+
+```text
+modules/character-pressure-test.md
+```
+
+每个关键选择都要回答：
+
+- 人物当前想要什么。
+- 人物害怕什么。
+- 人物知道和不知道什么。
+- 还有哪些现实方案。
+- 最简单的合理方案是什么。
+- 为什么没有采用更简单方案。
+- 当前选择付出什么代价。
+
+无法解释“为什么不用更简单办法”，不得靠人物降智继续剧情。
+
+## Phase 3：正文写作
+
+正文阶段只加载：
+
+1. 故事契约。
+2. 当前场景计划。
+3. 当前人物状态。
+4. 必要世界规则。
+5. 项目文风基线。
+6. 前一场结尾和后一场目标。
+
+写作时保护以下阅读奖励：
+
+- 沉浸
+- 人物推断
+- 好奇与预测
+- 情绪兑现
+- 语言和节奏
+
+快节奏不等于通篇短句，也不等于删除所有心理和情绪余波。
+
+## Phase 4：开篇留存冷读
+
+读取：
+
+```text
+modules/opening-retention-reader.md
+```
+
+冷读前 30—60 字、前 150—300 字和第一场戏。必须报告：
+
+- 读者立刻持有的问题。
+- 困境是否形成。
+- 注意力轨迹。
+- 轻微滑读、明显走神和停止阅读的位置。
+- 精确停止句。
+- 唯一最高优先级修改方向。
+
+此阶段不直接提供替换开头。
+
+## Phase 5：独立读者面板
+
+读取：
+
+```text
+modules/beta-reader-panel.md
+```
+
+默认四个视角：
+
+1. 手机沉浸读者。
+2. 类型承诺读者。
+3. 人物情感读者。
+4. 怀疑与逻辑读者。
+
+每个读者先独立锁定报告，再汇总。多名读者在同一位置滑读或离开，属于高优先级信号；单一口味偏好不强制修改。
+
+## Phase 6：连续性与逻辑审查
+
+读取：
+
+```text
+modules/continuity-editor.md
+rules/novel-logic-checklist.md
+```
+
+检查：
+
+- 人物事实
+- 时间线
+- 物件来源和状态
+- 人物知识状态
+- 空间和交通
+- 世界规则的条件、限制和成本
+- 因果和更简单方案
+
+报告必须区分：
+
+- 确定性冲突
+- 可能是有意设计的高风险疑点
+- 解释缺口
+
+不得擅自决定哪一个版本才是正确设定。
+
+## Phase 7：发展性编辑复审
+
+重新读取：
+
+```text
+modules/developmental-editor.md
+```
+
+基于完整正文，只给 2—5 个根部问题：
+
+- 故事脊柱
+- 结构
+- 节奏
+- 人物弧光
+- 风险与代价
+- 因果链
+
+阻断级和重大级问题未解决，不进入行文精修。
+
+## Phase 8：修改总账
+
+使用：
+
+```text
+templates/novel-quality-gate-template.md
+```
+
+修改顺序：
+
+1. 主线与结局。
+2. 因果与人物选择。
+3. 连续性与世界规则。
+4. 场景功能与节奏。
+5. 信息控制与情绪兑现。
+6. 行文与 AI 味。
+7. 标点与错字。
+
+每个问题必须记录来源、严重等级、位置、根因、修改动作、影响范围、保护项和验证证据。
+
+## Phase 9：行文精修与去 AI 味
+
+读取：
+
+```text
+modules/line-editor-deslop.md
+rules/no-ai-smell.md
+rules/reader-trust-and-economy.md
+```
+
+执行原则：
+
+- Pattern-first：先识别 2—4 个反复习惯，再处理典型位置。
+- 最小修改：能删一句，不重写一段。
+- 保留人物声音、有效停顿和有意义的不规整。
+- 不改变情节事实、道具状态、关系和时间线。
+- 不把所有心理机械改成动作。
+- 不把所有句子压短。
+- 不承诺 AI 检测百分比。
+
+## Phase 10：最终冷读
+
+至少完成：
+
+1. 开篇留存复测。
+2. 手机沉浸读者单独通读。
+3. 修改位置及连锁影响的连续性复核。
+4. 开头与结局兑现复核。
+
+自评分只能在全部阶段结束后给出，必须附评分依据，不得只给数字。
+
+---
+
+# Mode 1 — 导入书籍与建立技巧库
+
+触发示例：
 
 - “把这本书加入技巧库”
 - “分析 sources/books 里的书”
-- “导入我的写作书籍”
 - “更新小说技巧库”
 
-Action:
-
-1. Locate source files from the user-provided path or from `sources/books/` and `sources/notes/`.
-2. Run:
-
-```bash
-python3 scripts/ingest.py sources/books sources/notes
-```
-
-3. Read `library/source-register.md` and files in `library/_extracted/`.
-4. For each source, create or update:
-   - `library/<source-slug>/book-card.md`
-   - `library/<source-slug>/technique-bank.md`
-   - `library/<source-slug>/logic-model.md`
-   - `library/<source-slug>/style-card.md`
-   - `library/<source-slug>/chapter-retention.md`
-   - `library/<source-slug>/suspense-reversal-map.md`
-   - `library/<source-slug>/reader-reward-map.md`
-5. Merge cross-source rules into:
-   - `library/global-technique-bank.md`
-   - `library/global-anti-ai-rules.md`
-   - `library/global-plot-logic.md`
-   - `library/global-suspense-reversal-bank.md`
-   - `library/global-reader-reward-rhythm.md`
-
-If no books exist, say the skill is installed but the library is empty. Ask the user to put files into `sources/books/` or provide a path.
-
-## Mode 2 — Analyze a Book for Writing Technique
-
-Do not summarize plot first. Extract writing machinery first.
-
-Required analysis order:
-
-1. Reader promise: why a reader keeps reading.
-2. Opening hook: what appears in the first page/scene that creates pressure.
-3. Suspense inventory: every major reader question, where it is planted, and when it is opened.
-4. Lock-and-key design: each suspense point's lock, true key, false key, cost, and payoff.
-5. Clue ledger: surface meaning, real meaning, and whether the payoff is fair.
-6. Reversal map: identity, motive, causal, moral, power, information, and emotional reversals.
-7. Reader reward rhythm: how often the reader receives a reward; what type; what cost makes it work.
-8. 爽点 analysis: where the strongest release happens, how long it was pressed, what evidence/ability was prepared, what changes after release.
-9. Character engine: what each major character wants, fears, hides, misunderstands, and pays.
-10. Conflict engine: what concrete situation keeps producing new conflict.
-11. Causality chain: how choices create consequences.
-12. Chapter retention: what question/reward appears at each chapter end.
-13. Information control: what is hidden, delayed, reversed, or paid off.
-14. Emotional mechanism: how the text makes readers feel without direct explanation.
-15. Language texture: what makes it human, specific, non-AI.
-16. Reusable rules: turn observations into direct writing actions.
-
-Use:
-
-```text
-templates/book-analysis-template.md
-templates/suspense-reversal-map-template.md
-templates/reader-reward-map-template.md
-```
-
-## Mode 3 — Deep Story Dissection
-
-Trigger examples:
-
-- “认真分析这本书为什么好看”
-- “悬疑在哪里，如何布置，最后如何打开”
-- “反转如何设计”
-- “爽点在哪里，多久一次”
-- “按爆款小说拆解方式分析”
-- “这本书的逻辑是怎么推进的”
-
-This mode is mandatory when the user complains that previous analysis was shallow.
-
-Output structure:
-
-1. **一句话读者承诺**：这部作品卖给读者的核心体验。
-2. **悬疑地图**：第一个问题、问题升级、假答案、真答案、开锁位置。
-3. **伏笔账本**：伏笔、表层意义、真实意义、回收位置、公平度。
-4. **反转账本**：反转前相信什么，反转后发现什么，改变了什么。
-5. **爽点/奖励节拍**：每个奖励点的位置、类型、前置压迫、释放方式、后续新问题。
-6. **逻辑推进链**：事件 → 选择 → 代价 → 新信息 → 新限制 → 反转/奖励 → 新问题。
-7. **人物发动机**：欲望、恐惧、隐瞒、误解、代价。
-8. **去 AI 味来源**：具体物件、不完美反应、现实摩擦、关系别扭。
-9. **可复用规则**：10–30 条可以直接用于用户写作的动作规则。
-
-Never stop at “节奏快、反转多、人物立体”. Those are conclusions, not analysis.
-
-## Mode 4 — Diagnose User Draft
-
-Trigger examples:
-
-- “帮我看这章为什么不好看”
-- “检查哪里 AI 味重”
-- “按技巧库给我打分”
-- “节奏太慢，帮我找问题”
-
-Scoring dimensions, 100 points:
-
-| Dimension | Weight |
-|---|---:|
-| Opening hook | 10 |
-| Mainline clarity | 10 |
-| Concrete conflict | 10 |
-| Suspense lock/key | 10 |
-| Reversal setup/payoff | 10 |
-| Reader reward rhythm / 爽点密度 | 15 |
-| Causality / logic | 15 |
-| Character engine | 10 |
-| Human texture / de-AI | 10 |
-
-Output format:
-
-1. Overall score.
-2. Fatal problems, no more than 7.
-3. Exact slow/empty/AI-smelling lines or paragraphs.
-4. Missing suspense, weak payoff, fake reversal, or reward gap.
-5. Why a reader would swipe away.
-6. Repair strategy.
-7. Revised reward beat design.
-8. Revised outline or scene sequence.
-9. Optional rewrite sample.
-
-Do not flatter. Do not say “整体不错” unless the text truly works.
-
-## Mode 5 — Rewrite / De-AI
-
-Trigger examples:
-
-- “按技巧库重写”
-- “去掉 AI 味”
-- “节奏加快”
-- “像真人写的”
-- “让人想看下去”
-
-Rewrite protocol:
-
-1. Preserve the user's core premise unless asked to overturn it.
-2. Remove generic narration, empty emotion, smooth transitions, lecture tone.
-3. Replace explanation with visible pressure: object, action, mistake, debt, time limit, public embarrassment, bodily discomfort, a child's reaction, a bill, a message, a door, a seat, a phone, a bowl of food.
-4. Shorten setup. Start as close to the problem as possible.
-5. Add a suspense lock early: one concrete question the reader wants opened.
-6. Plant at least one fair clue before any reversal.
-7. Make every scene answer: who wants what, who blocks it, what changes after the scene?
-8. Every 300–500 Chinese characters should contain one shift: new information, stronger pressure, reversal, decision, emotional reward, or visible consequence.
-9. Big payoff must be earned: pressure → cost → clue → release → new problem.
-10. End with a hook, dilemma, argument, or irreversible choice.
-
-Before rewriting long text, give a compact surgical plan. Then rewrite.
-
-## Mode 6 — Build New Story From Learned Techniques
-
-Trigger examples:
-
-- “按我的书库逻辑写一个新故事”
-- “给我十个爆款短小说设定”
-- “用技巧库做一个三秒钩子的小说框架”
-
-Required output:
-
-1. Core hook.
-2. Main contradiction.
-3. First suspense lock.
-4. False answer.
-5. True key.
-6. Protagonist wound/desire.
-7. Antagonistic pressure.
-8. Escalation ladder.
-9. Reward beat timeline.
-10. Reversal design.
-11. Chapter-by-chapter retention point.
-12. Final comment-bait question or moral dilemma.
-
-## Anti-AI Smell Hard Rules
-
-Always load and apply:
-
-- `rules/no-ai-smell.md`
-- `rules/novel-logic-checklist.md`
-- `rules/suspense-reversal-payoff.md` when suspense or reversal matters.
-- `rules/reader-reward-rhythm.md` when pace,爽点,留存,短剧化, or爆款拆解 matters.
-
-Main prohibitions:
-
-- No “命运的齿轮开始转动” style filler.
-- No abstract emotional explanation when an action can show it.
-- No perfectly balanced moral commentary.
-- No “双方都有道理” authorial washing.
-- No fake literary fog: “仿佛、似乎、某种、说不清、像是” repeated to create false depth.
-- No scene that only exists for backstory.
-- No dialogue where characters explain the plot to each other.
-- No chapter ending that merely summarizes emotion.
-- No fake suspense that only hides information without clue, cost, or payoff.
-- No reversal that relies on facts never shown.
-- No爽点 without earlier pressure or cost.
-
-## Technique Card Standard
-
-A good technique card must contain:
-
-```text
-Technique name:
-What it solves:
-When to use:
-How it works:
-Visible signs in text:
-Failure mode:
-Reusable writing rule:
-Chinese commercial fiction version:
-Suspense lock/key, if relevant:
-Reward beat, if relevant:
-Original example made from scratch, not copied:
-```
-
-## Response Style
-
-Be direct, diagnostic, and commercially practical. The user wants sharper writing, not encouragement.
-
-When the draft is weak, say exactly where it fails:
-
-- “这里没有主线，只是在介绍设定。”
-- “这个悬疑没有钥匙，只是在拖。”
-- “这个反转作弊，因为关键事实前面没出现。”
-- “这个爽点不爽，因为前面没有压迫，也没有成本。”
-- “这个冲突悬浮，因为没有现实代价。”
-- “这句 AI 味重，因为它用抽象情绪替代具体动作。”
-- “读者会在这里划走，因为已经 800 字没有新信息、新压力、新奖励。”
-
-Then provide a fix.
-
-## First Run Checklist
-
-1. Confirm the skill folder is installed in one of:
-   - `~/.claude/skills/novel-writing-master/`
-   - `~/.agents/skills/novel-writing-master/`
-   - `~/.copilot/skills/novel-writing-master/`
-2. Ask the user to put books into `sources/books/`.
-3. Run:
+执行：
 
 ```bash
 python3 scripts/ingest.py --check
 python3 scripts/ingest.py sources/books sources/notes
 ```
 
-4. Build initial library cards.
-5. Tell the user which books were indexed, which failed, and what the library can now do.
+读取 `library/source-register.md` 和 `library/_extracted/`，为每个来源建立：
+
+```text
+book-card.md
+technique-bank.md
+logic-model.md
+style-card.md
+chapter-retention.md
+suspense-reversal-map.md
+reader-reward-map.md
+```
+
+再更新全局技巧库。
+
+没有资料时，明确说明技巧库为空，不假装已经学习。
+
+---
+
+# Mode 2 — 深度拆解小说
+
+触发示例：
+
+- “认真分析为什么好看”
+- “拆悬疑、伏笔、反转和爽点”
+- “分析这篇短篇的故事核和情绪曲线”
+- “不要表面总结，要拆出真正方法”
+
+读取：
+
+```text
+workflows/05-deep-story-dissection.md
+templates/book-analysis-template.md
+templates/suspense-reversal-map-template.md
+templates/reader-reward-map-template.md
+```
+
+必拆维度：
+
+1. 一句话读者承诺。
+2. 故事核与主线。
+3. 开头留人机制。
+4. 悬疑问题和开锁顺序。
+5. 伏笔账本与公平度。
+6. 反转前后认知变化。
+7. 读者奖励和情绪节拍。
+8. 人物发动机。
+9. 冲突发动机。
+10. 事件、选择、代价和新限制形成的因果链。
+11. 信息控制。
+12. 人物与关系变化。
+13. 去 AI 味来源。
+14. 可复用动作规则。
+
+禁止只写“节奏快、反转多、人物立体”。这些是结论，不是拆解。
+
+---
+
+# Mode 3 — 构建新故事
+
+触发示例：
+
+- “按技巧库写一个新故事”
+- “把这个设定扩成小说”
+- “重新设计完整剧情”
+
+先执行 Mode 0 的 Phase 0—2。至少输出：
+
+- 读者承诺
+- 一句话主线
+- 核心关系
+- 不可逆事件
+- 第一悬疑问题
+- 真实线索与误导
+- 人物欲望与恐惧
+- 场景升级链
+- 关键代价
+- 高潮选择
+- 结局兑现
+
+用户要求完整正文时，再进入 Phase 3—10。
+
+---
+
+# Mode 4 — 诊断已有稿件
+
+触发示例：
+
+- “这章为什么不好看”
+- “节奏慢在哪里”
+- “帮我找逻辑错误”
+- “站在观众角度检查”
+
+先判断问题属于哪一层：
+
+```text
+故事契约
+结构与因果
+人物选择
+开篇留存
+读者体验
+连续性
+行文
+```
+
+只加载对应模块。默认输出：
+
+1. 当前最严重问题。
+2. 精确位置与证据。
+3. 为什么伤害读者。
+4. 根因而非表面症状。
+5. 修改优先级。
+6. 必须保护的有效部分。
+7. 验收条件。
+
+不得用总分掩盖阻断级漏洞。
+
+---
+
+# Mode 5 — 定向重写
+
+触发示例：
+
+- “按现在规则重写这一章”
+- “推倒这几场重新写”
+- “去掉 AI 味但不要改剧情”
+
+执行顺序：
+
+1. 明确保留项和允许改变项。
+2. 确定当前问题所在层级。
+3. 结构问题先改场景计划。
+4. 人物问题先补选择依据或重做行为链。
+5. 逻辑问题先修规则、知识、物件和时间。
+6. 最后才重写正文。
+7. 重写后重新执行对应冷读和连续性检查。
+
+用户明确要求“全部推倒重写”时，旧稿只作为失败案例；保留用户指定主线、人物关系和结局约束，重新执行 Phase 0—2，不继续在旧稿上打补丁。
+
+---
+
+# Mode 6 — 单项专业审查
+
+可直接调用：
+
+```text
+开篇留存 → modules/opening-retention-reader.md
+读者面板 → modules/beta-reader-panel.md
+发展性编辑 → modules/developmental-editor.md
+人物压力测试 → modules/character-pressure-test.md
+连续性审查 → modules/continuity-editor.md
+行文精修 / 去 AI 味 → modules/line-editor-deslop.md
+```
+
+单项审查完成后，不自动扩展成全部流程，除非用户要求完整处理。
+
+## 质量等级
+
+- **BLOCKER / 阻断级**：主线、动机、因果、规则或连续性不成立。
+- **MAJOR / 重大级**：明显损害节奏、情绪、可信度或兑现。
+- **MINOR / 一般级**：局部问题，不破坏整体。
+- **STYLE / 风格级**：语言问题，最后处理。
+
+机器可读标准：
+
+```text
+config/novel-quality-gates.v2.json
+```
+
+## 商业短篇默认要求
+
+适用于公众号短小说、手机短篇和短剧化小说时：
+
+- 开头尽快出现具体压力或异常。
+- 前 150—300 字形成基本困境和阅读问题。
+- 主线清楚，但不把全部背景讲完。
+- 冲突落在现实动作、物件、关系和代价上。
+- 反转必须有真实线索。
+- 情绪兑现必须有积累和后果。
+- 结尾优先留下选择、余波、争议或不可逆结果，不用作者总结主题。
+
+这些是默认校准，不是对所有文学类型的硬性规定。
+
+## Response Style
+
+直接、准确、可执行。用户要的是更好的小说，不是安慰。
+
+可使用：
+
+- “这里没有主线，只是在介绍设定。”
+- “这两个场景只能用‘然后’连接，因果没有成立。”
+- “这个人物明明有更简单办法，正文没有解释他为何不用。”
+- “这个悬疑没有可回收的钥匙，只是在扣住信息。”
+- “这个反转依赖前文从未出现的事实，因此不公平。”
+- “读者会在这句后停止，因为当前问题已经消失，新问题尚未建立。”
+- “这句不是文笔问题，而是在替读者翻译已经看懂的情绪。”
+
+指出问题后必须给修改方向和验收条件。
+
+## First Run
+
+安装目录可为：
+
+```text
+~/.claude/skills/novel-writing-master/
+~/.agents/skills/novel-writing-master/
+~/.copilot/skills/novel-writing-master/
+```
+
+第一次建立书库：
+
+```bash
+python3 scripts/ingest.py --check
+python3 scripts/ingest.py sources/books sources/notes
+```
+
+告诉用户：
+
+- 成功索引哪些资料。
+- 哪些资料失败。
+- 当前技巧库能执行哪些分析。
+- 原始受版权保护文本不会被公开提交。
