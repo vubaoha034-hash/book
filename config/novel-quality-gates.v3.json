@@ -1,0 +1,217 @@
+{
+  "schema_version": "3.0.0",
+  "skill": "novel-writing-master",
+  "pipeline": "evidence-driven-staged-writing",
+  "principles": {
+    "logic_before_language": true,
+    "causal_proof_before_draft": true,
+    "emotion_debt_before_payoff": true,
+    "located_evidence_required": true,
+    "self_score_is_not_evidence": true,
+    "file_presence_is_not_quality_evidence": true,
+    "simulated_readers_are_not_independent": true,
+    "de_ai_default_off_until_structure_stable": true,
+    "max_high_impact_changes_per_pass": 5
+  },
+  "severity": {
+    "BLOCKER": "The core promise, causality, motivation, rule, continuity, or primary payoff cannot work.",
+    "MAJOR": "The problem substantially damages retention, emotion, credibility, character alignment, or payoff.",
+    "MINOR": "The problem is local and does not break the story.",
+    "STYLE": "A line-level expression issue handled only after structural stability."
+  },
+  "gates": [
+    {
+      "id": "V3-G0",
+      "name": "story_contract",
+      "required_evidence": [
+        "reader_promise",
+        "one_sentence_mainline",
+        "protagonist_want",
+        "persistent_opposition",
+        "specific_failure_cost",
+        "why_now",
+        "irreversible_event",
+        "climax_choice",
+        "ending_payoff"
+      ],
+      "blockers": [
+        "mainline_not_testable",
+        "protagonist_has_no_active_choice",
+        "ending_does_not_answer_opening_question"
+      ],
+      "on_fail": "return_to_story_contract"
+    },
+    {
+      "id": "V3-G1",
+      "name": "causal_proof",
+      "artifact": "scene_causal_ledger",
+      "required_evidence_per_key_scene": [
+        "prior_fact",
+        "character_choice",
+        "simpler_option",
+        "credible_reason_not_chosen",
+        "immediate_consequence",
+        "new_constraint",
+        "next_scene_pressure"
+      ],
+      "blockers": [
+        "core_conflict_dissolves_with_unblocked_simple_action",
+        "turning_point_requires_character_stupidity",
+        "turning_point_requires_unseeded_rule_or_resource",
+        "scene_connects_only_by_authorial_then"
+      ],
+      "on_fail": "redesign_scene_chain"
+    },
+    {
+      "id": "V3-G2",
+      "name": "emotion_debt_and_payoff",
+      "artifact": "emotion_payoff_ledger",
+      "required_evidence": [
+        "primary_emotion_debt",
+        "debt_creator",
+        "reader_expected_return",
+        "escalation",
+        "partial_return_or_intentional_delay",
+        "final_return",
+        "material_state_change"
+      ],
+      "blockers": [
+        "primary_debt_has_no_payoff",
+        "payoff_is_only_reaction_or_narration",
+        "payoff_requires_no_prior_pressure_or_cost"
+      ],
+      "on_fail": "redesign_pressure_and_payoff"
+    },
+    {
+      "id": "V3-G3",
+      "name": "hate_and_empathy",
+      "artifact": "hate_empathy_evidence",
+      "required_evidence": {
+        "protagonist": [
+          "ordinary_want",
+          "human_flaw_or_error",
+          "costly_choice",
+          "specific_loss_or_risk"
+        ],
+        "harm_doer": [
+          "non_harmful_option_existed",
+          "active_harm",
+          "benefit_or_control_gained",
+          "warning_ignored_or_blame_shifted",
+          "consequence_corresponds_to_harm"
+        ]
+      },
+      "on_fail": "redesign_character_choice_not_backstory"
+    },
+    {
+      "id": "V3-G4",
+      "name": "draft_and_opening_retention",
+      "required_for": [
+        "short_fiction",
+        "web_fiction",
+        "public_account_fiction",
+        "short_drama_fiction"
+      ],
+      "required_evidence": [
+        "specific_first_screen_pressure",
+        "clear_reader_question",
+        "predicament_by_first_300_chars",
+        "first_scene_state_change",
+        "exact_stop_point_or_no_fatal_stop"
+      ],
+      "on_fail": "rewrite_only_the_failed_opening_scope"
+    },
+    {
+      "id": "V3-G5",
+      "name": "reader_evidence",
+      "review_labels": [
+        "independent_review",
+        "simulated_reader_lens"
+      ],
+      "required_evidence": [
+        "exact_skimming_point",
+        "exact_confusion_or_distrust_point",
+        "unmet_expectation",
+        "remembered_elements",
+        "protected_strength"
+      ],
+      "prohibited_claims": [
+        "same_context_roleplay_claimed_as_independent",
+        "average_score_used_as_quality_proof"
+      ],
+      "on_fail": "send_high_impact_evidence_to_revision_ledger"
+    },
+    {
+      "id": "V3-G6",
+      "name": "continuity_and_rule_integrity",
+      "required_evidence": [
+        "character_facts",
+        "timeline",
+        "object_state",
+        "knowledge_state",
+        "spatial_logic",
+        "rule_condition_limit_cost",
+        "changed_location_chain_check"
+      ],
+      "blockers": [
+        "confirmed_contradiction",
+        "character_uses_unknown_information",
+        "critical_object_has_no_source",
+        "rule_added_after_crisis_to_solve_crisis"
+      ],
+      "on_fail": "resolve_canon_and_recheck_downstream"
+    },
+    {
+      "id": "V3-G7",
+      "name": "targeted_revision",
+      "max_high_impact_issues_per_pass": 5,
+      "required_evidence": [
+        "located_problem",
+        "root_cause",
+        "bounded_change",
+        "protected_strength",
+        "downstream_recheck"
+      ],
+      "on_fail": "reopen_originating_gate"
+    },
+    {
+      "id": "V3-G8",
+      "name": "aesthetic_fingerprint_and_de_ai",
+      "preconditions": [
+        "no_open_blocker",
+        "scene_order_stable",
+        "ending_direction_stable"
+      ],
+      "sample_states": [
+        "verified_personal_samples",
+        "baseline_only_samples_missing"
+      ],
+      "required_evidence": [
+        "dominant_repeated_patterns",
+        "minimal_edits",
+        "voice_preserved",
+        "plot_facts_unchanged",
+        "no_mechanical_action_or_object_substitution",
+        "no_explanatory_tail"
+      ],
+      "on_fail": "revert_over_edit_or_return_to_originating_gate"
+    }
+  ],
+  "delivery": {
+    "allow_when": [
+      "no_open_blocker",
+      "primary_scene_chain_proven",
+      "primary_emotion_debt_paid_or_intentional_risk_recorded",
+      "protagonist_costly_choice_present",
+      "opening_cold_read_completed",
+      "changed_locations_rechecked",
+      "de_ai_did_not_change_story_facts"
+    ],
+    "never_accept_as_sufficient": [
+      "numeric_self_score",
+      "all_files_exist",
+      "all_boxes_checked",
+      "multiple_same_context_personas_agree"
+    ]
+  }
+}
