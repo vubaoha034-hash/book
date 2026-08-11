@@ -16,6 +16,30 @@ Always read:
 
 Load only the current phase files.
 
+## Benchmark-first development
+
+Before changing the distillation/analysis core, read:
+
+- `benchmark/README.md`
+- `benchmark/TEST_PLAN_V1.md`
+- `benchmark/config/scoring.v1.json`
+- `benchmark/config/upstreams.v1.json`
+
+Rules:
+
+1. P0/P1 baseline work must not rewrite upstream distillation cores.
+2. Measure an unmodified upstream before proposing a patch.
+3. One experiment may change only one major variable unless an explicit ablation plan exists.
+4. Never expose Style Holdout or Future Holdout to the distiller, RAG, writer, summaries, notes, or caches used by the compared system.
+5. Generated prose must never re-enter the source corpus.
+6. Sampling must never be reported as full-book coverage.
+7. Upstream code must not be copied until its license has been reviewed for the intended reuse.
+8. New features have zero value unless they improve a benchmark target without unacceptable regression.
+9. Sunk development cost is not evidence for keeping a patch.
+10. Final writing comparisons must use blinded variant identities.
+
+Run `python scripts/validate_benchmark.py` after benchmark contract changes. A structural pass is not literary-quality evidence.
+
 ## Phase routing
 
 ### Source ingestion and story dissection
@@ -106,4 +130,5 @@ A gate requires located textual evidence. A checked box, self-score, role-played
 3. Add specialized methods as modules, workflows, templates, or config.
 4. Update `README.md` for user-facing changes.
 5. Run `python scripts/validate_skill.py`.
-6. Never commit private source books, complete copyrighted text, or personal style samples to this public repository.
+6. Run `python scripts/validate_benchmark.py` when benchmark contracts change.
+7. Never commit private source books, complete copyrighted text, personal style samples, benchmark holdouts, local caches, or generated benchmark runs to this public repository.
