@@ -11,119 +11,160 @@ Benchmark 比较的是“系统在同一任务上的实际结果”，不是 REA
 3. `Persona-Story-Gen` 方法链
 4. `InkOS`
 
-其中不同项目的产品定位不同，因此允许出现“某项目只能参加部分维度”的结果；禁止为了让它参加所有项目而重写其核心逻辑。
+不同项目产品定位不同，允许某项目只参加其原生支持的维度；禁止为了让它参加所有项目而重写其核心逻辑。
 
 ## 1. Corpus 规则
 
 ### 1.1 Smoke Corpus
 
-第一轮只验证 Benchmark 能否工作：
+第一轮只验证 Benchmark 能否稳定运行：
 
-- 1 部用户合法持有/可测试的中文小说；
+- 1 部合法持有/可测试的中文小说；
 - 30–50 个连续章节或等量场景；
-- 只放本地 `benchmark/_private/`；
-- 建立源文件 SHA-256 清单；
+- 只放本地私有目录；
+- 建立源文件和章节 SHA-256 清单；
 - 不提交原文到公开仓库。
 
-Smoke 结果只用于发现流程 Bug，不用于宣布“最佳系统”。
+Smoke 结果用于发现流程 Bug，不用于宣布“最佳系统”。
+
+标准准备命令：
+
+```bash
+python scripts/prepare_benchmark_corpus.py SOURCE.txt \
+  --corpus-id SMOKE-CN-001 \
+  --output benchmark/_private/corpus \
+  --smoke-chapters 50 \
+  --future-holdout 8 \
+  --style-holdout-count 6
+```
 
 ### 1.2 Promotion Corpus
 
 进入“母体选择”至少需要：
 
 - 2 部不同作者或不同类型的中文长篇；
-- 每部都具有 development / style holdout / future holdout；
-- 至少一部不是系统开发过程中反复调参的主样本。
+- 每部都生成独立的 Style Protocol State 与 Narrative Protocol State；
+- 至少一部不是开发过程中反复调参的主样本。
 
 ### 1.3 Final Blind Corpus
 
-在版本接近满分时启用新的隐藏作品或此前从未用于调参的隐藏段落。开发者在冻结版本前不能读取其评价答案。
+版本接近满分时启用新的隐藏作品或此前从未参与调参的隐藏段落。冻结候选版本之前，不得读取其评价答案来继续调参。
 
-## 2. 数据切分
+## 2. 数据切分：必须使用两套隔离状态
 
-### 2.1 Development
+**Style Holdout 和 Future Holdout 不能共享同一个已蒸馏状态、RAG、缓存或派生资产。**
 
-允许蒸馏、调试、建立 DNA、RAG、状态和统计。
+原因：如果为了 Style Holdout 从故事中段删除章节，Narrative 测试会被人为制造剧情缺口；如果 Narrative 状态读取这些章节，再把同一派生资产用于 Style 测试，则 Style Holdout 已泄漏。
 
-### 2.2 Style Holdout
+因此同一个源文件必须构建两个独立协议状态。
 
-从开篇、中段、后段分层留出，用于测试：
+### 2.1 Style Protocol State
 
-- 句长与段落节奏；
-- 对白特征；
-- 叙述距离与 POV；
-- 信息密度；
-- 情绪推进；
-- 可迁移文风规则。
+用途：T3 Style Generalization，以及只依赖风格机制的测试。
 
-不得把 Style Holdout 的正文、摘要、人工笔记或派生特征输入蒸馏系统。
+做法：
 
-### 2.3 Future Holdout
+- 先确定 Future Holdout 起点；
+- 只在 Future Holdout 之前的章节中分层抽取 Style Holdout；
+- Style 状态只能看到其余 Development 章节；
+- Style Holdout 正文、摘要、embedding、统计特征、人工笔记、模型记忆均不得进入该状态。
 
-保留连续的未来章节，用于测试：
+建议目录：
 
-- 人物下一步选择；
-- 关系变化方向；
-- 伏笔是否被正确识别；
-- 情节因果预测；
-- 信息释放方式。
+```text
+<corpus>/style/train/
+<corpus>/style/holdout/
+```
 
-Future Holdout 之后的章节也不得进入训练侧，否则会通过后文反向泄露隐藏事件。
+### 2.2 Narrative Protocol State
+
+用途：T1 Source Notes、T2 Character Counterfactual、T4 Future Narrative Prediction、T5 New Scene Writing、T6 Long-memory Retrieval。
+
+做法：
+
+- Context 必须是从开篇到 cutoff 的完整连续章节；
+- Future Holdout 必须是 cutoff 后连续的一段未来章节；
+- Future Holdout 之后的任何章节也不能进入 Context，否则会通过后文反向泄露隐藏事件。
+
+建议目录：
+
+```text
+<corpus>/narrative/context/
+<corpus>/narrative/future_holdout/
+```
+
+### 2.3 Cross-state Isolation Gate
+
+Style 与 Narrative 两套状态必须分别拥有：
+
+- `state_namespace`；
+- RAG/embedding 索引；
+- LLM/Agent 会话状态；
+- 摘要和派生卡片；
+- cache namespace；
+- run manifest。
+
+禁止跨协议复用任何由源文本派生、且可能含隐藏信息的资产。
+
+允许跨协议共享的只有：
+
+- 原始源文件的不可变 SHA-256；
+- 章节边界/编号映射本身；
+- 与正文内容无关的程序代码和 Schema；
+- Benchmark 配置。
 
 ## 3. Baseline 公平性
 
 直接比较必须保持：
 
-- 同一源文本；
-- 同一可用上下文范围；
-- 同一基础模型/模型版本，若上游强制模型不同则标记为“ecosystem comparison”，不得伪装成纯方法比较；
-- 同一最大上下文预算；
+- 同一协议状态；
+- 同一可见源文本；
+- 同一基础模型/模型版本；若上游强制模型不同，标记为 `ecosystem comparison`，不得伪装成纯方法比较；
+- 同一最大上下文/输出预算；
 - 同一输出任务；
-- 同一人工信息；
-- 同一是否允许联网/工具；
-- 记录上游 commit SHA。
+- 同一人工补充信息；
+- 同一联网/工具权限；
+- 记录精确上游 commit SHA。
 
-允许使用“中性 Adapter”完成格式转换，但 Adapter 只能：
+允许“中性 Adapter”做：
 
 - 文件格式转换；
 - 章节编号映射；
 - 字段名称映射；
-- 运行日志采集。
+- 运行日志与 token/时间采集。
 
-Adapter 不得：
+Adapter 禁止：
 
 - 增加新的文学分析；
-- 替某一个上游补 Prompt；
-- 替某一个上游额外摘要；
-- 偷看 Holdout。
+- 给某个上游额外补 Prompt；
+- 额外摘要、额外 RAG 或额外记忆；
+- 偷看对应协议的 Holdout。
 
 ## 4. P1 Baseline Tasks
 
-每个可参赛系统执行相同任务集。
-
 ### T1 Source Notes
 
-输出关键事件、人物、关系、世界规则、时间、伏笔、读者预期、风格技巧，并要求定位证据。
+使用 Narrative State，输出关键事件、人物、关系、世界规则、时间、伏笔、读者预期、风格技巧，并要求定位证据。
 
 ### T2 Character Counterfactual
 
-给出未出现过的新情境，让系统预测主要人物会怎么选、为什么、什么选择最不可能。
+使用 Narrative State。给出原文未出现过的新情境，让系统预测主要人物会怎么选、为什么、什么选择最不可能。
 
-目标：区分“人物标签总结”和“行为模型”。
+目标：区分“人物标签总结”和“人物行为模型”。
 
 ### T3 Style Generalization
 
-只使用 Development 建立风格资产，再对 Style Holdout 做特征预测/匹配。
+使用独立 Style State。只能用 Style Train 建风格资产，然后在 Style Holdout 上验证特征预测与匹配。
 
-目标：检测是否只是复述见过的句子。
+目标：检测系统是否学到可泛化规律，而不是复述见过的文本。
 
 ### T4 Future Narrative Prediction
 
-只使用 Future Holdout 之前的信息，预测下一阶段的冲突、人物选择、关系变化、伏笔回收方向。
+使用 Narrative State。只看 Context，预测 Future Holdout 阶段的冲突、人物选择、关系变化、伏笔回收和信息释放方向。
 
 ### T5 New Scene Writing
 
-统一给定：
+使用 Narrative State。统一给定：
 
 - 相同人物状态；
 - 相同场景目标；
@@ -131,15 +172,15 @@ Adapter 不得：
 - 相同字数；
 - 相同禁止复制要求。
 
-每个系统生成匿名版本 `X/Y/Z/...`。
+每个系统只输出匿名版本 `X/Y/Z/...`。
 
 ### T6 Long-memory Retrieval
 
-故意询问相距较远的事实、物件、关系、秘密和伏笔，检查召回与错误自信。
+使用 Narrative State。故意询问相距较远的事实、物件、关系、秘密和伏笔，检查召回率、矛盾率和错误自信。
 
 ### T7 Cost and Failure
 
-记录：
+每个协议状态分别记录：
 
 - 输入/输出 token；
 - 运行时间；
@@ -147,7 +188,8 @@ Adapter 不得：
 - 失败单元；
 - 需要人工修复的步骤；
 - 上下文大小；
-- 缓存命中情况。
+- 缓存命中；
+- state/cache namespace。
 
 ## 5. 评价层
 
@@ -160,14 +202,14 @@ Adapter 不得：
 - 实体/时间线一致性；
 - 句长、段落、对白比例；
 - 重复率；
-- n-gram/长片段重合，用于抄袭风险而非简单“越像越好”；
+- n-gram/长片段重合，用于抄袭风险，不把“越像”简单视为“越好”；
 - token、时间、失败率。
 
 禁止让 LLM 猜这些数值。
 
 ### 5.2 Independent Judge
 
-Judge 不得看到系统真实名称；只看到匿名结果和固定 rubric。
+Judge 不得看到系统真实名称，只能看到匿名结果和冻结 rubric。
 
 Judge 负责：
 
@@ -179,11 +221,11 @@ Judge 负责：
 - 文风机制；
 - 阅读欲望。
 
-同一写作模型给自己的输出打分不能单独作为独立证据。
+同一个写作模型给自己的输出打分不能单独作为独立证据。
 
 ### 5.3 Human Blind Review
 
-进入 preferred/production 前必须进行人工匿名比较。
+进入 `preferred` / `production` 前必须人工匿名比较。
 
 至少回答：
 
@@ -210,31 +252,27 @@ Judge 负责：
 
 默认接受规则见 `config/scoring.v1.json`。
 
-如果结果：
+结果处理：
 
 - 小于阈值：`INCONCLUSIVE`，重复；
 - 提升且无受保护指标明显回退：`ACCEPT`；
 - 总分下降、目标维度不升、Gate 失败：`REJECT/REVERT`。
 
-写了多少代码、花了多少时间、架构是否漂亮，不进入接受条件。
+代码量、开发时间、架构漂亮程度都不进入接受条件。
 
 ## 7. Long-book Stress
 
-只有 preferred 候选进入整本压力测试。
+只有 `preferred` 候选进入整本压力测试。
 
-生产态“理解整本”必须满足：
+生产态声称“理解整本”必须满足：
 
 ```text
 successful_source_units == total_source_units
 ```
 
-任何失败章节必须：
+任何失败章节必须显式记录并重试/人工判定，未恢复前禁止声称完整覆盖。
 
-- 显式记录；
-- 重试或人工判定；
-- 未恢复前禁止声称完整覆盖。
-
-长书测试额外检查：
+额外检查：
 
 - 人物状态漂移；
 - 关系漂移；
@@ -243,11 +281,11 @@ successful_source_units == total_source_units
 - 已知/未知信息；
 - 世界规则；
 - 伏笔与 reader expectation；
-- 早期知识是否能在远距离写作时正确检索。
+- 早期知识能否在远距离写作时正确检索。
 
 ## 8. ChatGPT Compiler 验收
 
-重计算完成后，最终资产必须能编译为轻量 Novel Brain，而不是要求普通 ChatGPT 每次加载全部数据库。
+重计算结束后，最终资产必须编译成轻量 Novel Brain，而不是要求普通 ChatGPT 每次加载全部数据库。
 
 按任务动态加载：
 
@@ -261,10 +299,10 @@ successful_source_units == total_source_units
 
 验收条件：
 
-- 不加载无关模块时，质量不得显著下降；
+- 不加载无关模块时质量不得显著下降；
 - 上下文成本明显低于全量加载；
 - 关键事实召回不下降；
-- 普通 ChatGPT 能在不依赖 Codex 全量运行的情况下完成写作阶段。
+- 普通 ChatGPT 在不依赖 Codex 全量运行的情况下能完成写作阶段。
 
 ## 9. “100 分”规则
 
@@ -272,6 +310,6 @@ successful_source_units == total_source_units
 
 如果开发集达到 100，而 Final Blind Corpus 明显下降：
 
-- 公开分数回退到隐藏集表现；
-- 记录为 benchmark overfitting；
-- 禁止把开发集 100 分作为生产质量宣传。
+- 公开结果回退到隐藏集表现；
+- 记录为 `benchmark overfitting`；
+- 禁止把开发集 100 分作为生产质量结论。
