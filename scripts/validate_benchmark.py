@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Validate Novel Distillation Benchmark V1 contracts.
 
-This script validates benchmark structure, score arithmetic, hard-gate presence,
-upstream registry consistency, experiment template fields, and local/private
-isolation patterns. It does NOT validate literary quality.
+Validates benchmark structure, score arithmetic, hard gates, upstream locks,
+experiment protocol isolation, and private-data ignore rules. It does NOT
+validate literary quality.
 """
 
 from __future__ import annotations
@@ -19,7 +19,9 @@ REQUIRED_FILES = [
     "benchmark/TEST_PLAN_V1.md",
     "benchmark/config/scoring.v1.json",
     "benchmark/config/upstreams.v1.json",
+    "benchmark/config/upstream-lock.v1.json",
     "benchmark/templates/experiment-manifest.template.json",
+    "scripts/prepare_benchmark_corpus.py",
 ]
 
 REQUIRED_GATE_IDS = {f"B-G{i}" for i in range(8)}
@@ -43,6 +45,7 @@ REQUIRED_TEMPLATE_TOP_KEYS = {
     "experiment_id",
     "status",
     "question",
+    "protocol",
     "baseline",
     "variant",
     "input_contract",
@@ -84,8 +87,8 @@ def validate_scoring(errors: list[str]) -> None:
     if config is None:
         return
 
-    if config.get("schema_version") != "1.0.0":
-        errors.append("scoring.v1.json schema_version must be 1.0.0")
+    if config.get("schema_version") != "1.0.1":
+        errors.append("scoring.v1.json schema_version must be 1.0.1")
     if config.get("score_total") != 100:
         errors.append("score_total must equal 100")
 
@@ -140,18 +143,32 @@ def validate_scoring(errors: list[str]) -> None:
                 errors.append(f"hard gate {gate.get('id')} must define fail_if")
 
     rules = config.get("experiment_rules", {})
+    required_true = {
+        "baseline_must_be_unmodified_upstream",
+        "same_model_required_for_direct_comparison",
+        "same_input_required_for_direct_comparison",
+        "same_budget_required_for_direct_comparison",
+        "blind_labels_required_for_final_writing_comparison",
+        "self_score_cannot_be_primary_evidence",
+        "feature_count_has_zero_score",
+        "holdout_protocol_states_must_be_separate",
+    }
+    for key in sorted(required_true):
+        if rules.get(key) is not True:
+            errors.append(f"experiment rule {key} must be true")
     if rules.get("max_major_variables_per_experiment") != 1:
         errors.append("benchmark must enforce one major variable per experiment")
-    if rules.get("feature_count_has_zero_score") is not True:
-        errors.append("feature count must have zero benchmark score")
+    if rules.get("cross_protocol_derived_artifact_reuse_allowed") is not False:
+        errors.append("cross-protocol derived artifact reuse must be false")
 
 
 def validate_upstreams(errors: list[str]) -> None:
-    config = load_json("benchmark/config/upstreams.v1.json", errors)
-    if config is None:
+    registry = load_json("benchmark/config/upstreams.v1.json", errors)
+    lock = load_json("benchmark/config/upstream-lock.v1.json", errors)
+    if registry is None or lock is None:
         return
 
-    upstreams = config.get("upstreams")
+    upstreams = registry.get("upstreams")
     if not isinstance(upstreams, list) or not upstreams:
         errors.append("upstreams must be a non-empty list")
         return
@@ -171,15 +188,41 @@ def validate_upstreams(errors: list[str]) -> None:
         if not item.get("repo") or not item.get("url") or not item.get("role"):
             errors.append(f"upstream {upstream_id} missing repo/url/role")
 
-    wave = config.get("baseline_wave_1")
+    wave = registry.get("baseline_wave_1")
     if not isinstance(wave, list) or not wave:
         errors.append("baseline_wave_1 must be a non-empty list")
-    else:
-        unknown = sorted(set(wave) - ids)
-        if unknown:
-            errors.append("baseline_wave_1 references unknown upstreams: " + ", ".join(unknown))
+        return
+    wave_ids = set(wave)
+    unknown = sorted(wave_ids - ids)
+    if unknown:
+        errors.append("baseline_wave_1 references unknown upstreams: " + ", ".join(unknown))
 
-    policy = config.get("policy", {})
+    locked = lock.get("wave_1")
+    if not isinstance(locked, list) or not locked:
+        errors.append("upstream-lock wave_1 must be a non-empty list")
+        return
+    lock_ids = set()
+    for item in locked:
+        if not isinstance(item, dict):
+            errors.append("every upstream lock item must be an object")
+            continue
+        lock_id = item.get("id")
+        if lock_id:
+            lock_ids.add(lock_id)
+        commit = item.get("commit", "")
+        if not isinstance(commit, str) or len(commit) != 40:
+            errors.append(f"upstream lock {lock_id!r} must contain a 40-char commit SHA")
+        if not item.get("license_status") or not item.get("reuse_policy"):
+            errors.append(f"upstream lock {lock_id!r} missing license/reuse boundary")
+    if lock_ids != wave_ids:
+        missing = sorted(wave_ids - lock_ids)
+        extra = sorted(lock_ids - wave_ids)
+        if missing:
+            errors.append("wave-1 upstreams missing from lock: " + ", ".join(missing))
+        if extra:
+            errors.append("lock contains non-wave-1 upstreams: " + ", ".join(extra))
+
+    policy = registry.get("policy", {})
     if policy.get("license_review_before_code_reuse") is not True:
         errors.append("license review must be required before upstream code reuse")
     if policy.get("benchmark_unmodified_before_patch") is not True:
@@ -194,11 +237,19 @@ def validate_template(errors: list[str]) -> None:
     if missing:
         errors.append("experiment template missing keys: " + ", ".join(missing))
 
+    protocol = template.get("protocol", {})
+    for key in ("type", "state_namespace", "cross_protocol_artifact_reuse"):
+        if key not in protocol:
+            errors.append(f"experiment protocol missing {key}")
+    if protocol.get("cross_protocol_artifact_reuse") is not False:
+        errors.append("experiment protocol must default cross_protocol_artifact_reuse=false")
+
     input_contract = template.get("input_contract", {})
     for key in (
         "source_hash_manifest",
-        "style_holdout_partition_id",
-        "future_holdout_partition_id",
+        "visible_partition_id",
+        "hidden_partition_id",
+        "hidden_partition_type",
     ):
         if key not in input_contract:
             errors.append(f"experiment input_contract missing {key}")
@@ -207,6 +258,13 @@ def validate_template(errors: list[str]) -> None:
     for key in ("model", "model_version_or_snapshot", "prompt_or_skill_version"):
         if key not in runtime:
             errors.append(f"experiment runtime_contract missing {key}")
+
+    cache = template.get("cache_contract", {})
+    if cache.get("cross_protocol_cache_reuse") is not False:
+        errors.append("experiment cache contract must default cross_protocol_cache_reuse=false")
+    cache_keys = set(cache.get("cache_keys_include", []))
+    if "protocol_state_namespace" not in cache_keys:
+        errors.append("cache key must include protocol_state_namespace")
 
 
 def validate_gitignore(errors: list[str]) -> None:
