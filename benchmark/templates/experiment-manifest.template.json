@@ -2,6 +2,11 @@
   "experiment_id": "EXP-YYYYMMDD-001",
   "status": "planned",
   "question": "What single change is being tested?",
+  "protocol": {
+    "type": "style_or_narrative",
+    "state_namespace": "",
+    "cross_protocol_artifact_reuse": false
+  },
   "baseline": {
     "system_id": "",
     "upstream_repo": "",
@@ -16,9 +21,9 @@
   "input_contract": {
     "corpus_id": "",
     "source_hash_manifest": "",
-    "train_partition_id": "",
-    "style_holdout_partition_id": "",
-    "future_holdout_partition_id": "",
+    "visible_partition_id": "",
+    "hidden_partition_id": "",
+    "hidden_partition_type": "style_holdout_or_future_holdout",
     "same_input_for_all_variants": true
   },
   "runtime_contract": {
@@ -32,8 +37,10 @@
   },
   "cache_contract": {
     "cache_version": "",
-    "cache_keys_include": ["source_hash", "upstream_version", "prompt_version", "schema_version", "model_version"],
-    "holdout_cache_isolated": true
+    "cache_namespace": "",
+    "cache_keys_include": ["source_hash", "upstream_version", "prompt_version", "schema_version", "model_version", "protocol_state_namespace"],
+    "holdout_cache_isolated": true,
+    "cross_protocol_cache_reuse": false
   },
   "evaluation": {
     "scoring_config": "benchmark/config/scoring.v1.json",
