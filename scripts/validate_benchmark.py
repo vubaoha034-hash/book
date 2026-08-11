@@ -2,8 +2,8 @@
 """Validate Novel Distillation Benchmark V1 contracts.
 
 Validates benchmark structure, score arithmetic, hard gates, upstream locks,
-experiment protocol isolation, and private-data ignore rules. It does NOT
-validate literary quality.
+experiment protocol isolation, score aggregation boundaries, and private-data
+ignore rules. It does NOT validate literary quality.
 """
 
 from __future__ import annotations
@@ -55,6 +55,10 @@ REQUIRED_TEMPLATE_TOP_KEYS = {
     "results",
     "artifacts",
 }
+EXPECTED_FULL_STACK_ROLES = {
+    "mother_candidate_engineering",
+    "mother_candidate_chinese_webfiction",
+}
 
 
 def load_json(relative: str, errors: list[str]) -> dict | None:
@@ -87,8 +91,8 @@ def validate_scoring(errors: list[str]) -> None:
     if config is None:
         return
 
-    if config.get("schema_version") != "1.0.1":
-        errors.append("scoring.v1.json schema_version must be 1.0.1")
+    if config.get("schema_version") != "1.0.2":
+        errors.append("scoring.v1.json schema_version must be 1.0.2")
     if config.get("score_total") != 100:
         errors.append("score_total must equal 100")
 
@@ -119,6 +123,22 @@ def validate_scoring(errors: list[str]) -> None:
                 errors.append("unexpected scoring dimensions: " + ", ".join(extra))
         if weight_total != 100:
             errors.append(f"scoring dimension weights must sum to 100, got {weight_total}")
+
+    aggregation = config.get("aggregation_policy")
+    if not isinstance(aggregation, dict):
+        errors.append("scoring config must define aggregation_policy")
+    else:
+        roles = set(aggregation.get("full_stack_roles_allowed_overall_score", []))
+        if roles != EXPECTED_FULL_STACK_ROLES:
+            errors.append("overall-score roles must match the two mother-candidate roles")
+        if aggregation.get("component_challengers_receive_overall_100_score") is not False:
+            errors.append("component challengers must not receive an overall 100-point score")
+        if aggregation.get("unsupported_dimensions_are_not_scored_as_zero") is not True:
+            errors.append("unsupported component dimensions must be N/A rather than zero")
+        if aggregation.get("mother_selection_uses_overall_score_only_for_full_stack_candidates") is not True:
+            errors.append("mother selection overall score must be limited to full-stack candidates")
+        if aggregation.get("component_challengers_can_replace_a_module_only_after_single_variable_ab_test") is not True:
+            errors.append("component replacement must require a single-variable A/B test")
 
     gates = config.get("hard_gates")
     if not isinstance(gates, list):
@@ -174,6 +194,7 @@ def validate_upstreams(errors: list[str]) -> None:
         return
 
     ids = set()
+    roles_by_id: dict[str, str] = {}
     for item in upstreams:
         if not isinstance(item, dict):
             errors.append("every upstream must be an object")
@@ -185,8 +206,13 @@ def validate_upstreams(errors: list[str]) -> None:
         if upstream_id in ids:
             errors.append(f"duplicate upstream id: {upstream_id}")
         ids.add(upstream_id)
+        roles_by_id[upstream_id] = item.get("role", "")
         if not item.get("repo") or not item.get("url") or not item.get("role"):
             errors.append(f"upstream {upstream_id} missing repo/url/role")
+
+    mother_ids = {key for key, role in roles_by_id.items() if role in EXPECTED_FULL_STACK_ROLES}
+    if mother_ids != {"ai-novel-writing-assistant", "oh-story-claudecode"}:
+        errors.append("full-stack mother candidates must be AI-Novel and oh-story in V1")
 
     wave = registry.get("baseline_wave_1")
     if not isinstance(wave, list) or not wave:
