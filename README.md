@@ -95,6 +95,37 @@ templates/v3-evidence-packet-template.md
 
 去 AI 默认最后执行，每轮最多处理五个高影响模式。具体物件和动作不是越多越真实；没有人物专属性、场景压力或后果的动作，同样是模板。
 
+## Novel Distillation Benchmark V1
+
+新增的 `benchmark/` 是独立验收层，不替换 V3，也不允许在 Baseline 阶段重写蒸馏核心。
+
+它用于把现成小说分析/蒸馏方案放进同一考场，固定：
+
+- 100 分评分维度；
+- Source / Coverage / Evidence / Holdout / Reproducibility / Experiment / Review / License 硬门禁；
+- Development、Style Holdout、Future Holdout 三类数据隔离；
+- 同输入、同模型、同预算的直接比较；
+- 一次只改一个主要变量；
+- 匿名新章盲测；
+- 不提升就回滚的 Regression Gate。
+
+入口：
+
+```text
+benchmark/README.md
+benchmark/TEST_PLAN_V1.md
+benchmark/config/scoring.v1.json
+benchmark/config/upstreams.v1.json
+```
+
+结构验证：
+
+```bash
+python scripts/validate_benchmark.py
+```
+
+Benchmark 的 100 分只代表冻结测试体系内的满分；隐藏集明显下降时，必须按隐藏集结果回退，不能拿开发集满分冒充真实能力。
+
 ## 安装
 
 ```bash

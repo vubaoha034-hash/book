@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "frozen_at": "2026-08-11T13:31:00+08:00",
+  "purpose": "Freeze exact upstream revisions before P1 baseline execution. Do not silently advance these revisions during one benchmark wave.",
+  "wave_1": [
+    {
+      "id": "ai-novel-writing-assistant",
+      "repo": "ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+      "commit": "154cdfda58b865c3af7b11a6f222226ced922e30",
+      "commit_date": "2026-08-11T02:38:54Z",
+      "license_status": "AGPL-3.0-only with project-specific commercial authorization note",
+      "reuse_policy": "benchmark unmodified; do not copy or merge code into this repository without a separate compatibility decision",
+      "method_reference_allowed": true
+    },
+    {
+      "id": "oh-story-claudecode",
+      "repo": "worldwonderer/oh-story-claudecode",
+      "commit": "70a834e88d1103f494f45667bab4b31472a83b58",
+      "commit_date": "2026-08-08T02:20:00Z",
+      "license_status": "MIT",
+      "reuse_policy": "benchmark unmodified first; later code reuse is allowed only with copyright/license notice preservation and a passing single-variable experiment",
+      "method_reference_allowed": true
+    },
+    {
+      "id": "persona-story-gen",
+      "repo": "Nish-19/Persona-Story-Gen",
+      "commit": "4a1d0c5fb0087471946666dfc2dad99bac7bdb46",
+      "commit_date": "2025-05-16T19:04:30Z",
+      "license_status": "NO_LICENSE_FILE_FOUND_AT_REVIEW_TIME",
+      "reuse_policy": "benchmark execution and paper/method comparison only; do not copy repository code until an explicit license is located or permission is obtained",
+      "method_reference_allowed": true
+    },
+    {
+      "id": "inkos",
+      "repo": "Narcooo/inkos",
+      "commit": "a6e05d4d4567df0efd5825e9b0037146a16e4f3e",
+      "commit_date": "2026-08-03T08:46:49Z",
+      "license_status": "AGPL-3.0",
+      "reuse_policy": "benchmark unmodified; treat memory/hook-ledger concepts as reference unless a separate AGPL-compatible integration decision is made",
+      "method_reference_allowed": true
+    }
+  ],
+  "rules": [
+    "If an upstream changes after frozen_at, record the new revision as a new benchmark wave rather than silently replacing this lock.",
+    "A documentation-only upstream HEAD is still a valid reproducibility lock; the exact tested tree must be recorded.",
+    "License status is an engineering boundary, not legal advice; uncertain status blocks code copying by default.",
+    "Method ideas may be independently reimplemented only after the experiment identifies a measured gap and the implementation avoids copying protected code or text."
+  ]
+}
