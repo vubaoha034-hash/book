@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "benchmark": "novel-distillation-benchmark",
   "score_total": 100,
   "dimensions": [
@@ -40,12 +40,13 @@
     },
     {
       "id": "B-G3",
-      "name": "holdout_isolation",
+      "name": "holdout_and_state_isolation",
       "fail_if": [
-        "holdout_seen_by_distiller",
-        "holdout_seen_by_rag",
-        "holdout_summary_or_notes_seen_by_writer",
-        "future_holdout_leaked_by_later_chapters"
+        "style_holdout_seen_inside_style_protocol_state",
+        "future_holdout_seen_inside_narrative_protocol_state",
+        "future_holdout_leaked_by_later_chapters",
+        "derived_artifact_or_cache_reused_across_holdout_protocol_states",
+        "holdout_summary_or_manual_note_injected_into_compared_state"
       ]
     },
     {
@@ -55,7 +56,8 @@
         "missing_source_hash",
         "missing_upstream_version",
         "missing_model_or_prompt_version",
-        "missing_run_manifest"
+        "missing_run_manifest",
+        "missing_protocol_state_namespace"
       ]
     },
     {
@@ -91,7 +93,9 @@
     "same_budget_required_for_direct_comparison": true,
     "blind_labels_required_for_final_writing_comparison": true,
     "self_score_cannot_be_primary_evidence": true,
-    "feature_count_has_zero_score": true
+    "feature_count_has_zero_score": true,
+    "holdout_protocol_states_must_be_separate": true,
+    "cross_protocol_derived_artifact_reuse_allowed": false
   },
   "patch_acceptance": {
     "all_hard_gates_must_pass": true,
