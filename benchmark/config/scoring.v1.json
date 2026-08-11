@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.1",
+  "schema_version": "1.0.2",
   "benchmark": "novel-distillation-benchmark",
   "score_total": 100,
   "dimensions": [
@@ -12,6 +12,14 @@
     {"id": "new_chapter_quality", "name": "实际新章质量", "weight": 15},
     {"id": "engineering_efficiency", "name": "工程效率", "weight": 5}
   ],
+  "aggregation_policy": {
+    "full_stack_roles_allowed_overall_score": ["mother_candidate_engineering", "mother_candidate_chinese_webfiction"],
+    "component_challengers_receive_overall_100_score": false,
+    "unsupported_dimensions_are_not_scored_as_zero": true,
+    "component_results_must_report": ["tested_dimensions", "coverage_scope", "dimension_scores", "cost", "failures"],
+    "mother_selection_uses_overall_score_only_for_full_stack_candidates": true,
+    "component_challengers_can_replace_a_module_only_after_single_variable_ab_test": true
+  },
   "hard_gates": [
     {
       "id": "B-G0",
