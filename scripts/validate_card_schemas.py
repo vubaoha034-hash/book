@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMAS = (
     ROOT / "schemas" / "scene_card.schema.json",
     ROOT / "schemas" / "story_card.schema.json",
+    ROOT / "schemas" / "evidence_ref.schema.json",
+    ROOT / "schemas" / "library_manifest.schema.json",
 )
 VALID_TYPES = {"null", "boolean", "object", "array", "number", "string", "integer"}
 
@@ -63,6 +65,66 @@ def validate_schema(schema: dict[str, Any]) -> None:
             walk(value, f"{location}/{key}")
 
     walk(schema, "#")
+
+
+def validate_instance(schema: dict[str, Any], instance: Any) -> None:
+    """Validate the JSON-Schema subset used by the frozen V1 contracts."""
+
+    def matches_type(value: Any, expected: str) -> bool:
+        return {
+            "null": value is None,
+            "boolean": isinstance(value, bool),
+            "object": isinstance(value, dict),
+            "array": isinstance(value, list),
+            "number": isinstance(value, (int, float)) and not isinstance(value, bool),
+            "integer": isinstance(value, int) and not isinstance(value, bool),
+            "string": isinstance(value, str),
+        }[expected]
+
+    def walk(node: dict[str, Any], value: Any, location: str) -> None:
+        if "$ref" in node:
+            walk(_resolve_local_ref(schema, node["$ref"]), value, location)
+            return
+        declared = node.get("type")
+        if declared is not None:
+            choices = [declared] if isinstance(declared, str) else declared
+            if not any(matches_type(value, choice) for choice in choices):
+                raise ValueError(f"{location}: type 不匹配，期望 {choices}")
+        if "enum" in node and value not in node["enum"]:
+            raise ValueError(f"{location}: 值不在 enum 中")
+        if "const" in node and value != node["const"]:
+            raise ValueError(f"{location}: 值不等于 const")
+        if isinstance(value, str):
+            if len(value) < node.get("minLength", 0):
+                raise ValueError(f"{location}: 字符串过短")
+            if "pattern" in node and not re.search(node["pattern"], value):
+                raise ValueError(f"{location}: pattern 不匹配")
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            if "minimum" in node and value < node["minimum"]:
+                raise ValueError(f"{location}: 小于 minimum")
+            if "maximum" in node and value > node["maximum"]:
+                raise ValueError(f"{location}: 大于 maximum")
+        if isinstance(value, dict):
+            properties = node.get("properties", {})
+            missing = set(node.get("required", [])) - set(value)
+            if missing:
+                raise ValueError(f"{location}: 缺少字段 {sorted(missing)}")
+            if node.get("additionalProperties") is False:
+                extras = set(value) - set(properties)
+                if extras:
+                    raise ValueError(f"{location}: 未允许字段 {sorted(extras)}")
+            for key, item in value.items():
+                if key in properties:
+                    walk(properties[key], item, f"{location}/{key}")
+        if isinstance(value, list) and "items" in node:
+            for index, item in enumerate(value):
+                walk(node["items"], item, f"{location}/{index}")
+            if node.get("uniqueItems"):
+                serialized = [json.dumps(item, ensure_ascii=False, sort_keys=True) for item in value]
+                if len(serialized) != len(set(serialized)):
+                    raise ValueError(f"{location}: 数组元素不唯一")
+
+    walk(schema, instance, "#")
 
 
 def main() -> int:

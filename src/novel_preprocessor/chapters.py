@@ -46,6 +46,8 @@ class HeadingCandidate:
     line_index: int
     title: str
     kind: str
+    ordinal: int | None
+    markdown_level: int | None
 
 
 @dataclass
@@ -67,21 +69,56 @@ class SegmentationResult:
     warnings: list[str] = field(default_factory=list)
 
 
-def _heading_view(line: str) -> str:
+def _heading_view(line: str) -> tuple[str, int | None]:
     value = line.strip()
     markdown = re.match(r"^#{1,6}\s+(.+?)\s*#*\s*$", value)
     if markdown:
+        level = len(value) - len(value.lstrip("#"))
         value = markdown.group(1).strip()
-    return value
+        return value, level
+    return value, None
 
 
-def _classify_heading(line: str) -> tuple[str, str] | None:
-    title = _heading_view(line)
+def _number_value(raw: str) -> int | None:
+    raw = raw.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+    if raw.isdigit():
+        return int(raw)
+    digits = {"〇": 0, "零": 0, "一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
+    units = {"十": 10, "百": 100, "千": 1000, "万": 10000}
+    if not raw or any(char not in digits and char not in units for char in raw):
+        return None
+    total = section = number = 0
+    for char in raw:
+        if char in digits:
+            number = digits[char]
+        else:
+            unit = units[char]
+            if unit == 10000:
+                total += (section + number) * unit
+                section = number = 0
+            else:
+                section += (number or 1) * unit
+                number = 0
+    return total + section + number
+
+
+def _heading_ordinal(title: str, kind: str) -> int | None:
+    if kind != "chapter":
+        return None
+    match = re.match(rf"^第({_CN_NUMBER})[章回节篇部]", title, re.IGNORECASE)
+    if match:
+        return _number_value(match.group(1))
+    match = re.match(r"^(?:chapter|chap\.?|part)\s+([0-9０-９]+)", title, re.IGNORECASE)
+    return _number_value(match.group(1)) if match else None
+
+
+def _classify_heading(line: str) -> tuple[str, str, int | None, int | None] | None:
+    title, markdown_level = _heading_view(line)
     if not title or len(title) > 64 or "\t" in title:
         return None
     for kind, pattern in _PATTERNS:
         if pattern.fullmatch(title):
-            return title, kind
+            return title, kind, _heading_ordinal(title, kind), markdown_level
     return None
 
 
@@ -92,7 +129,7 @@ def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
         line = line_with_ending.rstrip("\r\n")
         classified = _classify_heading(line)
         if classified is not None:
-            title, kind = classified
+            title, kind, ordinal, markdown_level = classified
             left_trim = len(line) - len(line.lstrip())
             candidates.append(
                 HeadingCandidate(
@@ -101,6 +138,8 @@ def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
                     line_index=line_index,
                     title=title,
                     kind=kind,
+                    ordinal=ordinal,
+                    markdown_level=markdown_level,
                 )
             )
         offset += len(line_with_ending)
@@ -108,8 +147,8 @@ def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
     if text and not text.endswith(("\n", "\r")) and not text.splitlines(keepends=True):
         classified = _classify_heading(text)
         if classified:
-            title, kind = classified
-            candidates.append(HeadingCandidate(0, len(text), 0, title, kind))
+            title, kind, ordinal, markdown_level = classified
+            candidates.append(HeadingCandidate(0, len(text), 0, title, kind, ordinal, markdown_level))
     return candidates
 
 
@@ -158,14 +197,13 @@ def segment_chapters(text: str) -> SegmentationResult:
             return _fallback(text, "single_heading_ambiguous_in_body")
 
     chapters: list[ChapterSegment] = []
-    short_segments = 0
+    content_lengths: list[int] = []
     for index, heading in enumerate(candidates, start=1):
         start = 0 if index == 1 else heading.start
         end = candidates[index].start if index < len(candidates) else len(text)
         segment = text[start:end].strip("\n")
         content_after_heading = text[heading.end:end].strip()
-        if len(content_after_heading) < 8:
-            short_segments += 1
+        content_lengths.append(len(content_after_heading))
         chapters.append(
             ChapterSegment(
                 index=index,
@@ -178,20 +216,33 @@ def segment_chapters(text: str) -> SegmentationResult:
         )
 
     warnings: list[str] = []
-    if len(candidates) >= 2 and short_segments <= max(1, len(chapters) // 4):
+    numbered = [candidate.ordinal for candidate in candidates if candidate.ordinal is not None]
+    if len(numbered) >= 2 and any(current != previous + 1 for previous, current in zip(numbered, numbered[1:])):
+        warnings.append("chapter_number_sequence_needs_review")
+    markdown_levels = {candidate.markdown_level for candidate in candidates if candidate.markdown_level is not None}
+    if len(markdown_levels) > 1:
+        warnings.append("mixed_markdown_heading_levels")
+    if any(candidate.kind == "volume" for candidate in candidates):
+        warnings.append("volume_boundary_needs_review")
+    if any(length < 80 for length in content_lengths):
+        warnings.append("short_chapter_or_heading_quote_needs_review")
+    if any(length > 200_000 for length in content_lengths):
+        warnings.append("chapter_text_unusually_long")
+
+    if len(candidates) >= 2 and not warnings:
         confidence = "high"
         needs_review = False
-    elif len(candidates) == 1 and len(chapters[0].text) >= 16:
+    elif len(candidates) == 1:
         confidence = "medium"
-        needs_review = False
+        needs_review = True
+        warnings.append("single_heading_needs_review")
     else:
         confidence = "medium"
         needs_review = True
-        warnings.append("chapter_segments_unusually_short")
 
     for chapter in chapters:
         chapter.detection_confidence = confidence
-        if len(chapter.text) < 8:
+        if len(chapter.text) < 80:
             chapter.warnings.append("chapter_text_unusually_short")
 
     return SegmentationResult(

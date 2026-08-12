@@ -30,6 +30,18 @@ def make_deferred_work_id(source_sha256: str) -> str:
     return f"deferred_{source_sha256[:24]}"
 
 
-def make_chapter_id(normalized_text_sha256: str, chapter_index: int) -> str:
-    seed = f"{normalized_text_sha256}:{chapter_index}".encode("ascii")
+def make_chapter_id(
+    normalized_text_sha256: str,
+    chapter_index: int,
+    chapter_text_sha256: str,
+    processing_fingerprint: str,
+    work_start_char: int,
+    work_end_char: int,
+) -> str:
+    """Bind identity to actual chapter text, boundary, order, and contract."""
+
+    seed = (
+        f"{normalized_text_sha256}:{chapter_index}:{chapter_text_sha256}:"
+        f"{processing_fingerprint}:{work_start_char}:{work_end_char}"
+    ).encode("ascii")
     return f"ch_{hashlib.sha256(seed).hexdigest()[:24]}"

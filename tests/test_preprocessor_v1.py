@@ -18,6 +18,7 @@ from novel_preprocessor.chapters import segment_chapters
 from novel_preprocessor.cleaning import normalize_text
 from novel_preprocessor.extractors import extract_text
 from novel_preprocessor.hashing import make_chapter_id, make_work_id, sha256_file, sha256_text
+from novel_preprocessor.contract import DEFAULT_PROCESSING_CONTRACT
 from novel_preprocessor.pipeline import PreprocessorConfig, run_preprocessor
 from validate_card_schemas import validate_schema
 from validate_private_boundaries import validate_repo
@@ -299,7 +300,10 @@ class PipelineTests(unittest.TestCase):
         work_dir = self.layout.config.output_dir / str(record["work_id"])
         chapters = [json.loads(line) for line in (work_dir / "chapters.jsonl").read_text(encoding="utf-8").splitlines()]
         self.assertEqual(chapters[0]["relative_path"], "text/0001.txt")
-        self.assertIn("source_span", chapters[0])
+        self.assertEqual(chapters[0]["span_scope"], "chapter_text")
+        self.assertEqual(chapters[0]["source_span"]["start_char"], 0)
+        self.assertEqual(chapters[0]["source_span"]["end_char"], chapters[0]["character_count"])
+        self.assertIn("work_text_span", chapters[0])
         self.assertEqual(len(chapters[0]["chapter_text_sha256"]), 64)
 
     def test_mobi_is_deferred_not_failed(self) -> None:
@@ -349,9 +353,17 @@ class SafetyAndSchemaTests(unittest.TestCase):
 
     def test_id_helpers_are_deterministic(self) -> None:
         digest = sha256_text("自行生成的确定性文本")
+        chapter_digest = sha256_text("章节正文")
+        fingerprint = DEFAULT_PROCESSING_CONTRACT.fingerprint
         self.assertEqual(make_work_id(digest), make_work_id(digest))
-        self.assertEqual(make_chapter_id(digest, 1), make_chapter_id(digest, 1))
-        self.assertNotEqual(make_chapter_id(digest, 1), make_chapter_id(digest, 2))
+        self.assertEqual(
+            make_chapter_id(digest, 1, chapter_digest, fingerprint, 0, 4),
+            make_chapter_id(digest, 1, chapter_digest, fingerprint, 0, 4),
+        )
+        self.assertNotEqual(
+            make_chapter_id(digest, 1, chapter_digest, fingerprint, 0, 4),
+            make_chapter_id(digest, 2, chapter_digest, fingerprint, 0, 4),
+        )
 
 
 if __name__ == "__main__":

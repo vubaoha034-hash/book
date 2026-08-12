@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/novel-distillation/library_manifest.schema.json",
+  "title": "Private Library Manifest Record V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifest_version", "work_id", "title", "author", "source_format", "chapter_count",
+    "character_count", "hash", "original_file_sha256", "normalized_text_sha256",
+    "processing_status", "processing_contract_version", "processing_fingerprint",
+    "private_location_id", "source_private_refs", "source_count", "possible_duplicate",
+    "duplicate_kinds", "needs_review", "warnings"
+  ],
+  "properties": {
+    "manifest_version": {"type": "string"},
+    "work_id": {"type": "string"},
+    "title": {"type": ["string", "null"]},
+    "author": {"type": ["string", "null"]},
+    "source_format": {"type": ["string", "null"]},
+    "chapter_count": {"type": "integer", "minimum": 0},
+    "character_count": {"type": "integer", "minimum": 0},
+    "hash": {"type": ["string", "null"]},
+    "original_file_sha256": {"type": ["string", "null"]},
+    "normalized_text_sha256": {"type": ["string", "null"]},
+    "processing_status": {"type": "string", "enum": ["processed", "deferred", "failed"]},
+    "processing_contract_version": {"type": ["string", "null"]},
+    "processing_fingerprint": {"type": ["string", "null"]},
+    "private_location_id": {"type": ["string", "null"]},
+    "source_private_refs": {"type": "array", "items": {"type": "string"}},
+    "source_count": {"type": "integer", "minimum": 1},
+    "possible_duplicate": {"type": "boolean"},
+    "duplicate_kinds": {"type": "array", "items": {"type": "string"}},
+    "needs_review": {"type": "boolean"},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  }
+}

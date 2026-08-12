@@ -14,6 +14,7 @@ from typing import Any, Iterator
 from . import __version__
 from .chapters import SegmentationResult, segment_chapters
 from .cleaning import normalize_text
+from .contract import DEFAULT_PROCESSING_CONTRACT, ProcessingContract
 from .extractors import DEFERRED_EXTENSIONS, ExtractionError, extract_text, iter_source_files
 from .hashing import (
     make_chapter_id,
@@ -34,9 +35,15 @@ class PreprocessorConfig:
     temp_dir: Path
     logs_dir: Path
     manifest_path: Path
+    processing_contract: ProcessingContract = DEFAULT_PROCESSING_CONTRACT
 
     @classmethod
-    def from_roots(cls, repo_root: Path, private_root: Path) -> "PreprocessorConfig":
+    def from_roots(
+        cls,
+        repo_root: Path,
+        private_root: Path,
+        processing_contract: ProcessingContract = DEFAULT_PROCESSING_CONTRACT,
+    ) -> "PreprocessorConfig":
         return cls(
             repo_root=repo_root,
             private_root=private_root,
@@ -45,7 +52,8 @@ class PreprocessorConfig:
             cache_dir=private_root / "cache",
             temp_dir=private_root / "temp",
             logs_dir=private_root / "logs",
-            manifest_path=repo_root / "manifests" / "library_manifest.jsonl",
+            manifest_path=private_root / "manifests" / "library_manifest.jsonl",
+            processing_contract=processing_contract,
         )
 
     @property
@@ -126,8 +134,21 @@ def _single_run_lock(path: Path) -> Iterator[None]:
             path.unlink(missing_ok=True)
 
 
-def _chapter_record(work_id: str, normalized_sha: str, chapter: Any) -> dict[str, Any]:
-    chapter_id = make_chapter_id(normalized_sha, chapter.index)
+def _chapter_record(
+    work_id: str,
+    normalized_sha: str,
+    chapter: Any,
+    contract: ProcessingContract,
+) -> dict[str, Any]:
+    chapter_sha = sha256_text(chapter.text)
+    chapter_id = make_chapter_id(
+        normalized_sha,
+        chapter.index,
+        chapter_sha,
+        contract.fingerprint,
+        chapter.start_char,
+        chapter.end_char,
+    )
     return {
         "work_id": work_id,
         "chapter_id": chapter_id,
@@ -135,15 +156,90 @@ def _chapter_record(work_id: str, normalized_sha: str, chapter: Any) -> dict[str
         "chapter_title": chapter.title,
         "relative_path": f"text/{chapter.index:04d}.txt",
         "character_count": len(chapter.text),
-        "sha256": sha256_text(chapter.text),
-        "chapter_text_sha256": sha256_text(chapter.text),
+        "sha256": chapter_sha,
+        "chapter_text_sha256": chapter_sha,
+        "processing_contract_version": contract.version,
+        "processing_fingerprint": contract.fingerprint,
         "detection_confidence": chapter.detection_confidence,
+        "span_scope": "chapter_text",
         "source_span": {
+            "start_char": 0,
+            "end_char": len(chapter.text),
+        },
+        "work_text_span": {
             "start_char": chapter.start_char,
             "end_char": chapter.end_char,
         },
         "warnings": list(chapter.warnings),
     }
+
+
+def _structured_output_complete(
+    destination: Path,
+    normalized_sha: str,
+    contract: ProcessingContract,
+) -> bool:
+    """Verify all files needed for a safe incremental skip."""
+
+    try:
+        work = _read_json(destination / "work.json", {})
+        if (
+            work.get("normalized_text_sha256") != normalized_sha
+            or work.get("processing_contract_version") != contract.version
+            or work.get("processing_fingerprint") != contract.fingerprint
+        ):
+            return False
+        lines = (destination / "chapters.jsonl").read_text(encoding="utf-8").splitlines()
+        chapters = [json.loads(line) for line in lines if line.strip()]
+        if len(chapters) != work.get("chapter_count") or not chapters:
+            return False
+        seen_ids: set[str] = set()
+        for expected_index, chapter in enumerate(chapters, start=1):
+            relative = Path(chapter["relative_path"])
+            chapter_path = (destination / relative).resolve()
+            chapter_path.relative_to(destination.resolve())
+            if not chapter_path.is_file():
+                return False
+            text = chapter_path.read_text(encoding="utf-8")
+            work_span = chapter.get("work_text_span")
+            if not isinstance(work_span, dict):
+                return False
+            start = work_span.get("start_char")
+            end = work_span.get("end_char")
+            if (
+                isinstance(start, bool)
+                or isinstance(end, bool)
+                or not isinstance(start, int)
+                or not isinstance(end, int)
+                or start < 0
+                or end < start
+                or chapter.get("chapter_index") != expected_index
+                or chapter.get("work_id") != work.get("work_id")
+            ):
+                return False
+            chapter_sha = sha256_text(text)
+            expected_id = make_chapter_id(
+                normalized_sha,
+                expected_index,
+                chapter_sha,
+                contract.fingerprint,
+                start,
+                end,
+            )
+            if (
+                chapter_sha != chapter.get("chapter_text_sha256")
+                or chapter.get("chapter_id") != expected_id
+                or expected_id in seen_ids
+                or chapter.get("processing_fingerprint") != contract.fingerprint
+                or chapter.get("processing_contract_version") != contract.version
+                or chapter.get("span_scope") != "chapter_text"
+                or chapter.get("source_span") != {"start_char": 0, "end_char": len(text)}
+            ):
+                return False
+            seen_ids.add(expected_id)
+        return True
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError):
+        return False
 
 
 def _write_structured_work(
@@ -159,10 +255,8 @@ def _write_structured_work(
     processed_at: str,
 ) -> list[dict[str, Any]]:
     destination = config.output_dir / work_id
-    if destination.exists():
-        existing = _read_json(destination / "work.json", {})
-        if existing.get("normalized_text_sha256") != normalized_sha:
-            raise RuntimeError(f"work_id 冲突: {work_id}")
+    contract = config.processing_contract
+    if _structured_output_complete(destination, normalized_sha, contract):
         chapters_path = destination / "chapters.jsonl"
         return [json.loads(line) for line in chapters_path.read_text(encoding="utf-8").splitlines() if line.strip()]
 
@@ -172,7 +266,7 @@ def _write_structured_work(
     (staging / "text").mkdir(parents=True, exist_ok=False)
     chapter_records: list[dict[str, Any]] = []
     for chapter in segmentation.chapters:
-        record = _chapter_record(work_id, normalized_sha, chapter)
+        record = _chapter_record(work_id, normalized_sha, chapter, contract)
         chapter_records.append(record)
         _write_text(staging / record["relative_path"], chapter.text)
 
@@ -191,6 +285,9 @@ def _write_structured_work(
         "chapter_count": len(chapter_records),
         "character_count": len(normalized_text),
         "processing_version": __version__,
+        "processing_contract_version": contract.version,
+        "processing_fingerprint": contract.fingerprint,
+        "processing_components": contract.as_dict(),
         "processed_at": processed_at,
         "chapter_detection_confidence": segmentation.detection_confidence,
         "needs_review": segmentation.needs_review,
@@ -201,7 +298,20 @@ def _write_structured_work(
         staging / "chapters.jsonl",
         "".join(json.dumps(item, ensure_ascii=False, separators=(",", ":")) + "\n" for item in chapter_records),
     )
-    staging.replace(destination)
+    backup = config.temp_dir / f"{work_id}.{os.getpid()}.backup"
+    if backup.exists():
+        shutil.rmtree(backup)
+    if destination.exists():
+        destination.replace(backup)
+    try:
+        staging.replace(destination)
+    except Exception:
+        if backup.exists() and not destination.exists():
+            backup.replace(destination)
+        raise
+    else:
+        if backup.exists():
+            shutil.rmtree(backup)
     return chapter_records
 
 
@@ -246,6 +356,8 @@ def _manifest_records(states: dict[str, dict[str, Any]]) -> list[dict[str, Any]]
             "original_file_sha256": primary.get("source_sha256"),
             "normalized_text_sha256": primary.get("normalized_text_sha256"),
             "processing_status": status,
+            "processing_contract_version": primary.get("processing_contract_version"),
+            "processing_fingerprint": primary.get("processing_fingerprint"),
             "private_location_id": f"structured/{work_id}" if status == "processed" else None,
             "source_private_refs": [f"raw/{path}" for path, _ in sources],
             "source_count": len(sources),
@@ -279,8 +391,18 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
             relative_source = source_path.relative_to(config.input_dir).as_posix()
             source_sha = sha256_file(source_path)
             prior = states.get(relative_source)
-            if prior and prior.get("source_sha256") == source_sha and prior.get("status") in {"processed", "deferred"}:
-                output_ok = prior.get("status") == "deferred" or (config.output_dir / str(prior.get("work_id")) / "work.json").exists()
+            contract = config.processing_contract
+            if (
+                prior
+                and prior.get("source_sha256") == source_sha
+                and prior.get("processing_fingerprint") == contract.fingerprint
+                and prior.get("status") in {"processed", "deferred"}
+            ):
+                output_ok = prior.get("status") == "deferred" or _structured_output_complete(
+                    config.output_dir / str(prior.get("work_id")),
+                    str(prior.get("normalized_text_sha256")),
+                    contract,
+                )
                 if output_ok:
                     prior["present"] = True
                     summary.skipped += 1
@@ -302,6 +424,8 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "character_count": 0,
                     "needs_review": False,
                     "warnings": ["unsupported/deferred_in_v1"],
+                    "processing_contract_version": contract.version,
+                    "processing_fingerprint": contract.fingerprint,
                     "processed_at": processed_at,
                 }
                 summary.deferred += 1
@@ -346,6 +470,8 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "duplicate_kind": duplicate_kind,
                     "duplicate_of_work_id": duplicate_of,
                     "warnings": warnings,
+                    "processing_contract_version": contract.version,
+                    "processing_fingerprint": contract.fingerprint,
                     "processed_at": processed_at,
                 }
                 summary.processed += 1
@@ -379,11 +505,15 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "character_count": 0,
                     "needs_review": False,
                     "warnings": [str(exc)],
+                    "processing_contract_version": contract.version,
+                    "processing_fingerprint": contract.fingerprint,
                     "processed_at": processed_at,
                 }
                 log_records.append({"source_ref": f"raw/{relative_source}", "status": "failed", "source_sha256": source_sha, "error": str(exc)})
 
-        state_payload["version"] = "1.0.0"
+        state_payload["version"] = "1.1.0"
+        state_payload["processing_contract_version"] = config.processing_contract.version
+        state_payload["processing_fingerprint"] = config.processing_contract.fingerprint
         state_payload["updated_at"] = processed_at
         _write_json(config.state_path, state_payload)
         _write_manifest(config.manifest_path, _manifest_records(states))

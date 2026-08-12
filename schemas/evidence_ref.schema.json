@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/novel-distillation/evidence_ref.schema.json",
+  "title": "EvidenceRef V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["work_id", "chapter_id", "chapter_text_sha256", "span_scope", "source_span", "quote_sha256"],
+  "properties": {
+    "work_id": {"type": "string", "minLength": 1},
+    "chapter_id": {"type": "string", "minLength": 1},
+    "chapter_text_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "span_scope": {"type": "string", "enum": ["chapter_text"]},
+    "source_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_char", "end_char"],
+      "properties": {
+        "start_char": {"type": "integer", "minimum": 0},
+        "end_char": {"type": "integer", "minimum": 0}
+      }
+    },
+    "quote_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

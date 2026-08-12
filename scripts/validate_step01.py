@@ -20,7 +20,7 @@ def run(label: str, *arguments: str) -> None:
 
 def main() -> int:
     run("Python compile", "-m", "compileall", "-q", "src", "scripts", "tests")
-    run("30 synthetic unit/integration tests", "-m", "unittest", "discover", "-s", "tests", "-v")
+    run("Synthetic unit/integration tests", "-m", "unittest", "discover", "-s", "tests", "-v")
     run("Scene/Story Card schemas", "scripts/validate_card_schemas.py")
     run("Private/source leakage", "scripts/validate_private_boundaries.py")
     run("Skill structure", "scripts/validate_skill.py")

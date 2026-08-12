@@ -132,8 +132,8 @@ STEP-01 新增了一个与文学分析严格分离的本地预处理层。它只
 
 - TXT、EPUB、DOCX、Markdown 与可提取文本 PDF 的本地解析；
 - 保守的机械清洗、章节候选检测、低置信 fallback 和人工复核标记；
-- 作品/章节确定性 ID、SHA-256、完全重复与标准化正文重复检测；
-- 私有结构化章节输出、增量状态和不含正文的公开 Manifest；
+- 绑定 processing fingerprint 的作品/章节确定性 ID、SHA-256 与基础去重；
+- 私有结构化章节输出、版本失效增量状态和 private-first Manifest；
 - Scene Card / Story Card 空 Schema 与 Git 私有资料防泄漏检查。
 
 新的固定工作目录是 `E:\蒸馏小说`。Git 仓库位于 `E:\蒸馏小说\repo`，原书、结构化全文、缓存和日志位于仓库外的 `E:\蒸馏小说\_private`。把有权使用的文件放入 `E:\蒸馏小说\_private\01_原始小说`，然后双击根目录的 `01_导入并预处理小说.bat`。
@@ -152,7 +152,13 @@ python scripts/validate_private_boundaries.py
 python scripts/validate_step01.py
 ```
 
-详细说明见 `docs/PREPROCESSOR_V1.md`。预处理器不会调用在线 AI/API，也不会生成摘要、评分、人物分析、情绪曲线或 Novel DNA。
+Evidence Contract V1 固定为章节相对、0-based、end-exclusive 坐标，并要求章节/引用 Hash；重要解释性 claim 区分 `observed`、`inferred` 与 `hypothesis`。本地导出桥可按显式 work ID 生成私有、可分块重组的手工上传包：
+
+```powershell
+python scripts/export_chatgpt_packets.py --private-root E:\蒸馏小说\_private --work-id wrk_xxx
+```
+
+详细说明见 `docs/PREPROCESSOR_V1.md`、`docs/EVIDENCE_CONTRACT_V1.md` 和 `docs/CHATGPT_PACKET_EXPORT.md`。所有程序均不调用在线 AI/API，也不会生成摘要、评分、人物分析、情绪曲线或 Novel DNA。
 
 ## 安装
 

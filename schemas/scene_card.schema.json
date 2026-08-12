@@ -1,52 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/novel-distillation/scene_card.schema.json",
-  "title": "Scene Card V1",
-  "description": "Future analysis container only. STEP-01 does not populate literary judgments.",
+  "title": "Scene Card Evidence Contract V1",
+  "description": "Future analysis container. STEP-01B freezes coordinates and epistemic claims but does not populate literary judgments.",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "scene_id",
-    "work_id",
-    "chapter_id",
-    "source_span",
-    "characters",
-    "character_goals",
-    "constraints",
-    "trigger",
-    "conflict",
-    "action",
-    "outcome",
-    "state_change",
-    "reader_information_gain",
-    "character_information_gain",
-    "emotion_before",
-    "emotion_after",
-    "setup",
-    "payoff",
-    "evidence_refs",
-    "confidence",
-    "analyst_notes"
+    "scene_id", "work_id", "chapter_id", "chapter_text_sha256", "span_scope",
+    "source_span", "characters", "character_goals", "constraints", "trigger",
+    "conflict", "action", "outcome", "state_change", "reader_information_gain",
+    "character_information_gain", "emotion_before", "emotion_after", "setup",
+    "payoff", "evidence_refs", "confidence", "analyst_notes"
   ],
   "properties": {
     "scene_id": {"type": "string", "minLength": 1},
     "work_id": {"type": "string", "minLength": 1},
     "chapter_id": {"type": "string", "minLength": 1},
+    "chapter_text_sha256": {"$ref": "#/$defs/sha256"},
+    "span_scope": {"const": "chapter_text", "type": "string"},
     "source_span": {"$ref": "#/$defs/sourceSpan"},
     "characters": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-    "character_goals": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["character", "goal", "evidence_refs"],
-        "properties": {
-          "character": {"type": "string"},
-          "goal": {"type": "string"},
-          "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
-        }
-      }
-    },
+    "character_goals": {"type": "array", "items": {"$ref": "#/$defs/goalClaim"}},
     "constraints": {"type": "array", "items": {"type": "string"}},
     "trigger": {"type": ["string", "null"]},
     "conflict": {"type": ["string", "null"]},
@@ -67,8 +41,8 @@
         }
       }
     },
-    "emotion_before": {"type": ["string", "null"]},
-    "emotion_after": {"type": ["string", "null"]},
+    "emotion_before": {"$ref": "#/$defs/claims"},
+    "emotion_after": {"$ref": "#/$defs/claims"},
     "setup": {"$ref": "#/$defs/claims"},
     "payoff": {"$ref": "#/$defs/claims"},
     "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
@@ -76,40 +50,52 @@
     "analyst_notes": {"type": ["string", "null"]}
   },
   "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
     "sourceSpan": {
-      "type": "object",
-      "additionalProperties": false,
+      "type": "object", "additionalProperties": false,
       "required": ["start_char", "end_char"],
       "properties": {
         "start_char": {"type": "integer", "minimum": 0},
-        "end_char": {"type": "integer", "minimum": 0},
-        "start_line": {"type": ["integer", "null"], "minimum": 1},
-        "end_line": {"type": ["integer", "null"], "minimum": 1}
+        "end_char": {"type": "integer", "minimum": 0}
       }
     },
     "evidenceRef": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["work_id", "chapter_id", "source_span", "quote_sha256"],
+      "type": "object", "additionalProperties": false,
+      "required": ["work_id", "chapter_id", "chapter_text_sha256", "span_scope", "source_span", "quote_sha256"],
       "properties": {
-        "work_id": {"type": "string"},
-        "chapter_id": {"type": "string"},
+        "work_id": {"type": "string", "minLength": 1},
+        "chapter_id": {"type": "string", "minLength": 1},
+        "chapter_text_sha256": {"$ref": "#/$defs/sha256"},
+        "span_scope": {"const": "chapter_text", "type": "string"},
         "source_span": {"$ref": "#/$defs/sourceSpan"},
-        "quote_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        "quote_sha256": {"$ref": "#/$defs/sha256"}
       }
     },
     "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
-    "claims": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["description", "evidence_refs"],
-        "properties": {
-          "description": {"type": "string"},
-          "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
-        }
+    "epistemicStatus": {"type": "string", "enum": ["observed", "inferred", "hypothesis"]},
+    "claim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_type", "description", "epistemic_status", "confidence", "evidence_refs"],
+      "properties": {
+        "claim_type": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1},
+        "epistemic_status": {"$ref": "#/$defs/epistemicStatus"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
       }
-    }
+    },
+    "goalClaim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["character", "goal", "claim_type", "epistemic_status", "confidence", "evidence_refs"],
+      "properties": {
+        "character": {"type": "string", "minLength": 1},
+        "goal": {"type": "string", "minLength": 1},
+        "claim_type": {"type": "string", "enum": ["character_goal", "character_motivation"]},
+        "epistemic_status": {"$ref": "#/$defs/epistemicStatus"},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "claims": {"type": "array", "items": {"$ref": "#/$defs/claim"}}
   }
 }
