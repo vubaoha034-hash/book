@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/novel-distillation/story_card.schema.json",
+  "title": "Story Card V1",
+  "description": "Future analysis container only. STEP-01 does not populate literary judgments.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "work_id",
+    "premise",
+    "core_character_goals",
+    "character_relations",
+    "power_relations",
+    "causal_chain",
+    "conflict_chain",
+    "emotion_curve",
+    "information_release",
+    "setup_payoff",
+    "chapter_hooks",
+    "reusable_mechanisms",
+    "genre_specific_mechanisms",
+    "failure_patterns",
+    "counterexamples",
+    "evidence_refs"
+  ],
+  "properties": {
+    "work_id": {"type": "string", "minLength": 1},
+    "premise": {"type": ["string", "null"]},
+    "core_character_goals": {"$ref": "#/$defs/claims"},
+    "character_relations": {"$ref": "#/$defs/claims"},
+    "power_relations": {"$ref": "#/$defs/claims"},
+    "causal_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from_scene_id", "to_scene_id", "cause", "consequence", "evidence_refs"],
+        "properties": {
+          "from_scene_id": {"type": "string"},
+          "to_scene_id": {"type": "string"},
+          "cause": {"type": "string"},
+          "character_choice": {"type": ["string", "null"]},
+          "consequence": {"type": "string"},
+          "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+        }
+      }
+    },
+    "conflict_chain": {"$ref": "#/$defs/claims"},
+    "emotion_curve": {"$ref": "#/$defs/claims"},
+    "information_release": {"$ref": "#/$defs/claims"},
+    "setup_payoff": {"$ref": "#/$defs/claims"},
+    "chapter_hooks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["chapter_id", "description", "evidence_refs"],
+        "properties": {
+          "chapter_id": {"type": "string"},
+          "description": {"type": "string"},
+          "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+        }
+      }
+    },
+    "reusable_mechanisms": {"$ref": "#/$defs/claims"},
+    "genre_specific_mechanisms": {"$ref": "#/$defs/claims"},
+    "failure_patterns": {"$ref": "#/$defs/claims"},
+    "counterexamples": {"$ref": "#/$defs/claims"},
+    "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+  },
+  "$defs": {
+    "sourceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start_char", "end_char"],
+      "properties": {
+        "start_char": {"type": "integer", "minimum": 0},
+        "end_char": {"type": "integer", "minimum": 0},
+        "start_line": {"type": ["integer", "null"], "minimum": 1},
+        "end_line": {"type": ["integer", "null"], "minimum": 1}
+      }
+    },
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["work_id", "chapter_id", "source_span", "quote_sha256"],
+      "properties": {
+        "work_id": {"type": "string"},
+        "chapter_id": {"type": "string"},
+        "source_span": {"$ref": "#/$defs/sourceSpan"},
+        "quote_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "evidenceRefs": {"type": "array", "items": {"$ref": "#/$defs/evidenceRef"}},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["description", "evidence_refs"],
+        "properties": {
+          "description": {"type": "string"},
+          "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    }
+  }
+}

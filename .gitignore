@@ -1,6 +1,14 @@
 # Keep private source books local. Do not publish copyrighted books by accident.
+_private/
+**/_private/
 sources/books/*
 !sources/books/.gitkeep
+
+# Book archive formats are never valid public-repository artifacts here.
+*.epub
+*.mobi
+*.azw
+*.azw3
 
 # Extracted text may contain source material. Keep private.
 library/_extracted/*
