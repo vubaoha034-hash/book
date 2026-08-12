@@ -158,6 +158,8 @@ Evidence Contract V1 固定为章节相对、0-based、end-exclusive 坐标，�
 python scripts/export_chatgpt_packets.py --private-root E:\蒸馏小说\_private --work-id wrk_xxx
 ```
 
+导出前执行 Source Integrity Gate V1：只有 `source_integrity_status=PASS` 且 `distillation_allowed=true` 的结构化作品允许生成 Packet；非 PASS 作品默认阻断，本版本没有强制绕过。
+
 详细说明见 `docs/PREPROCESSOR_V1.md`、`docs/EVIDENCE_CONTRACT_V1.md` 和 `docs/CHATGPT_PACKET_EXPORT.md`。所有程序均不调用在线 AI/API，也不会生成摘要、评分、人物分析、情绪曲线或 Novel DNA。
 
 ## 安装

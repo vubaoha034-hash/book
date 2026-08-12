@@ -97,6 +97,20 @@ def _candidate_hashes(repo: Path, path: str) -> set[str]:
     return hashes
 
 
+def _approved_synthetic_fixture(repo: Path, path: str, digest: str) -> bool:
+    """Allow an explicitly declared synthetic Golden, never an arbitrary repo path."""
+
+    pure = PurePosixPath(path.replace("\\", "/"))
+    if len(pure.parts) != 4 or pure.parts[:3] != ("tests", "fixtures", "golden") or pure.suffix != ".txt":
+        return False
+    expected = repo / Path(*pure.with_suffix(".expected.json").parts)
+    try:
+        payload = json.loads(expected.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return payload.get("synthetic_public_fixture") is True and payload.get("source_sha256") == digest
+
+
 def validate_repo(repo: Path, private_root: Path | None = None) -> dict[str, object]:
     tracked = set(_git_paths(repo, ["ls-files", "-z"]))
     staged = set(_git_paths(repo, ["diff", "--cached", "--name-only", "--diff-filter=ACMR", "-z"]))
@@ -119,6 +133,7 @@ def validate_repo(repo: Path, private_root: Path | None = None) -> dict[str, obj
                 counts[reason] += 1
 
     exact_findings: list[dict[str, object]] = []
+    approved_synthetic_matches = 0
     effective_private = private_root or (repo.parent / "_private")
     raw_hashes: dict[str, list[str]] = {}
     chapter_hashes: dict[str, list[str]] = {}
@@ -126,7 +141,14 @@ def validate_repo(repo: Path, private_root: Path | None = None) -> dict[str, obj
         raw_hashes, chapter_hashes = _private_hashes(effective_private)
         for path in inspected:
             candidate_hashes = _candidate_hashes(repo, path)
-            raw_matches = sorted({ref for digest in candidate_hashes for ref in raw_hashes.get(digest, [])})
+            raw_matches: list[str] = []
+            for digest in candidate_hashes:
+                matches = raw_hashes.get(digest, [])
+                if matches and _approved_synthetic_fixture(repo, path, digest):
+                    approved_synthetic_matches += 1
+                else:
+                    raw_matches.extend(matches)
+            raw_matches = sorted(set(raw_matches))
             chapter_matches = sorted({ref for digest in candidate_hashes for ref in chapter_hashes.get(digest, [])})
             reasons: list[str] = []
             matches: dict[str, list[str]] = {}
@@ -153,6 +175,7 @@ def validate_repo(repo: Path, private_root: Path | None = None) -> dict[str, obj
             "raw_source_hashes": len(raw_hashes),
             "structured_chapter_hashes": len(chapter_hashes),
             "matches": len(exact_findings),
+            "approved_synthetic_fixture_matches": approved_synthetic_matches,
             "limitation": "Exact byte-for-byte SHA-256 matches only; modified or lightly rewritten leakage is not detected.",
         },
     }

@@ -23,6 +23,7 @@ from .hashing import (
     sha256_file,
     sha256_text,
 )
+from .integrity import SourceIntegrityResult, analyze_source_integrity, unknown_integrity
 
 
 @dataclass(frozen=True)
@@ -94,6 +95,27 @@ class RunSummary:
     needs_review: int = 0
     deferred: int = 0
     errors: list[str] = field(default_factory=list)
+    source_integrity_counts: dict[str, int] = field(
+        default_factory=lambda: {"PASS": 0, "WARNING": 0, "FAIL": 0, "UNKNOWN": 0}
+    )
+    distillation_blocked: list[dict[str, Any]] = field(default_factory=list)
+
+
+def _record_integrity_summary(
+    summary: RunSummary,
+    work_id: str | None,
+    status: str | None,
+    allowed: bool,
+    reason_codes: list[str] | None,
+) -> None:
+    normalized_status = status if status in summary.source_integrity_counts else "UNKNOWN"
+    summary.source_integrity_counts[normalized_status] += 1
+    if not allowed:
+        summary.distillation_blocked.append({
+            "work_id": work_id or "unknown",
+            "status": normalized_status,
+            "reason_codes": list(reason_codes or ["integrity_status_not_pass"]),
+        })
 
 
 def _utc_now() -> str:
@@ -189,6 +211,29 @@ def _structured_output_complete(
             or work.get("processing_fingerprint") != contract.fingerprint
         ):
             return False
+        integrity = work.get("source_integrity")
+        integrity_status = work.get("source_integrity_status")
+        if (
+            not isinstance(integrity, dict)
+            or integrity_status not in {"PASS", "WARNING", "FAIL", "UNKNOWN"}
+            or integrity.get("source_integrity_status") != integrity_status
+            or work.get("distillation_allowed") is not (integrity_status == "PASS")
+        ):
+            return False
+        front_present = work.get("front_matter_present")
+        front_relative = work.get("front_matter_relative_path")
+        front_count = work.get("front_matter_character_count")
+        front_hash = work.get("front_matter_sha256")
+        if not isinstance(front_present, bool) or not isinstance(front_count, int) or front_count < 0:
+            return False
+        if front_present:
+            if front_relative != "front_matter.txt":
+                return False
+            front_text = (destination / front_relative).read_text(encoding="utf-8")
+            if len(front_text) != front_count or sha256_text(front_text) != front_hash:
+                return False
+        elif front_relative is not None or front_hash is not None or front_count != 0:
+            return False
         lines = (destination / "chapters.jsonl").read_text(encoding="utf-8").splitlines()
         chapters = [json.loads(line) for line in lines if line.strip()]
         if len(chapters) != work.get("chapter_count") or not chapters:
@@ -252,6 +297,7 @@ def _write_structured_work(
     normalized_text: str,
     extraction: Any,
     segmentation: SegmentationResult,
+    integrity: SourceIntegrityResult,
     processed_at: str,
 ) -> list[dict[str, Any]]:
     destination = config.output_dir / work_id
@@ -270,6 +316,12 @@ def _write_structured_work(
         chapter_records.append(record)
         _write_text(staging / record["relative_path"], chapter.text)
 
+    front_matter_present = bool(segmentation.front_matter)
+    front_matter_relative_path = "front_matter.txt" if front_matter_present else None
+    front_matter_sha256 = sha256_text(segmentation.front_matter) if front_matter_present else None
+    if front_matter_present:
+        _write_text(staging / "front_matter.txt", segmentation.front_matter)
+
     warnings = list(dict.fromkeys([*extraction.warnings, *segmentation.warnings]))
     work_record = {
         "work_id": work_id,
@@ -284,6 +336,10 @@ def _write_structured_work(
         "author": extraction.author,
         "chapter_count": len(chapter_records),
         "character_count": len(normalized_text),
+        "front_matter_present": front_matter_present,
+        "front_matter_relative_path": front_matter_relative_path,
+        "front_matter_sha256": front_matter_sha256,
+        "front_matter_character_count": len(segmentation.front_matter),
         "processing_version": __version__,
         "processing_contract_version": contract.version,
         "processing_fingerprint": contract.fingerprint,
@@ -292,6 +348,9 @@ def _write_structured_work(
         "chapter_detection_confidence": segmentation.detection_confidence,
         "needs_review": segmentation.needs_review,
         "warnings": warnings,
+        "source_integrity_status": integrity.source_integrity_status,
+        "distillation_allowed": integrity.distillation_allowed,
+        "source_integrity": integrity.as_dict(),
     }
     _write_json(staging / "work.json", work_record)
     _write_text(
@@ -345,7 +404,7 @@ def _manifest_records(states: dict[str, dict[str, Any]]) -> list[dict[str, Any]]
         status = "processed" if "processed" in statuses else ("deferred" if "deferred" in statuses else "failed")
         duplicate_kinds = sorted({item[1].get("duplicate_kind") for item in sources if item[1].get("duplicate_kind")})
         manifest.append({
-            "manifest_version": "1.0.0",
+            "manifest_version": "1.1.0",
             "work_id": work_id,
             "title": primary.get("title"),
             "author": primary.get("author"),
@@ -365,6 +424,9 @@ def _manifest_records(states: dict[str, dict[str, Any]]) -> list[dict[str, Any]]
             "duplicate_kinds": duplicate_kinds,
             "needs_review": any(bool(item[1].get("needs_review")) for item in sources),
             "warnings": sorted({warning for _, item in sources for warning in item.get("warnings", [])}),
+            "source_integrity_status": primary.get("source_integrity_status", "UNKNOWN"),
+            "distillation_allowed": bool(primary.get("distillation_allowed", False)),
+            "source_integrity": primary.get("source_integrity", unknown_integrity().as_dict()),
         })
     return manifest
 
@@ -406,11 +468,20 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                 if output_ok:
                     prior["present"] = True
                     summary.skipped += 1
+                    prior_integrity = prior.get("source_integrity", {})
+                    _record_integrity_summary(
+                        summary,
+                        prior.get("work_id"),
+                        prior.get("source_integrity_status"),
+                        bool(prior.get("distillation_allowed", False)),
+                        prior_integrity.get("reason_codes") if isinstance(prior_integrity, dict) else None,
+                    )
                     log_records.append({"source_ref": f"raw/{relative_source}", "status": "skipped", "source_sha256": source_sha})
                     continue
 
             if source_path.suffix.lower() in DEFERRED_EXTENSIONS:
                 work_id = make_deferred_work_id(source_sha)
+                integrity = unknown_integrity("unsupported_source_format")
                 states[relative_source] = {
                     "present": True,
                     "status": "deferred",
@@ -426,9 +497,13 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "warnings": ["unsupported/deferred_in_v1"],
                     "processing_contract_version": contract.version,
                     "processing_fingerprint": contract.fingerprint,
+                    "source_integrity_status": integrity.source_integrity_status,
+                    "distillation_allowed": integrity.distillation_allowed,
+                    "source_integrity": integrity.as_dict(),
                     "processed_at": processed_at,
                 }
                 summary.deferred += 1
+                _record_integrity_summary(summary, work_id, integrity.source_integrity_status, False, integrity.reason_codes)
                 log_records.append({"source_ref": f"raw/{relative_source}", "status": "deferred", "source_sha256": source_sha})
                 continue
 
@@ -441,6 +516,7 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                 work_id = make_work_id(normalized_sha)
                 duplicate_kind, duplicate_of = _duplicate_kind(states, relative_source, source_sha, normalized_sha)
                 segmentation = segment_chapters(normalized)
+                integrity = analyze_source_integrity(chapter.title for chapter in segmentation.chapters)
                 chapter_records = _write_structured_work(
                     config=config,
                     work_id=work_id,
@@ -451,6 +527,7 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     normalized_text=normalized,
                     extraction=extraction,
                     segmentation=segmentation,
+                    integrity=integrity,
                     processed_at=processed_at,
                 )
                 warnings = list(dict.fromkeys([*extraction.warnings, *segmentation.warnings]))
@@ -472,9 +549,19 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "warnings": warnings,
                     "processing_contract_version": contract.version,
                     "processing_fingerprint": contract.fingerprint,
+                    "source_integrity_status": integrity.source_integrity_status,
+                    "distillation_allowed": integrity.distillation_allowed,
+                    "source_integrity": integrity.as_dict(),
                     "processed_at": processed_at,
                 }
                 summary.processed += 1
+                _record_integrity_summary(
+                    summary,
+                    work_id,
+                    integrity.source_integrity_status,
+                    integrity.distillation_allowed,
+                    integrity.reason_codes,
+                )
                 if duplicate_kind:
                     summary.duplicates += 1
                 if segmentation.needs_review:
@@ -487,11 +574,15 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "normalized_text_sha256": normalized_sha,
                     "duplicate_kind": duplicate_kind,
                     "needs_review": segmentation.needs_review,
+                    "source_integrity_status": integrity.source_integrity_status,
+                    "distillation_allowed": integrity.distillation_allowed,
+                    "integrity_reason_codes": integrity.reason_codes,
                 })
             except Exception as exc:
                 message = f"{source_path.name}: {exc}"
                 summary.failed += 1
                 summary.errors.append(message)
+                integrity = unknown_integrity("preprocessing_failed")
                 states[relative_source] = {
                     "present": True,
                     "status": "failed",
@@ -507,11 +598,15 @@ def run_preprocessor(config: PreprocessorConfig) -> RunSummary:
                     "warnings": [str(exc)],
                     "processing_contract_version": contract.version,
                     "processing_fingerprint": contract.fingerprint,
+                    "source_integrity_status": integrity.source_integrity_status,
+                    "distillation_allowed": integrity.distillation_allowed,
+                    "source_integrity": integrity.as_dict(),
                     "processed_at": processed_at,
                 }
+                _record_integrity_summary(summary, None, integrity.source_integrity_status, False, integrity.reason_codes)
                 log_records.append({"source_ref": f"raw/{relative_source}", "status": "failed", "source_sha256": source_sha, "error": str(exc)})
 
-        state_payload["version"] = "1.1.0"
+        state_payload["version"] = "1.2.0"
         state_payload["processing_contract_version"] = config.processing_contract.version
         state_payload["processing_fingerprint"] = config.processing_contract.fingerprint
         state_payload["updated_at"] = processed_at

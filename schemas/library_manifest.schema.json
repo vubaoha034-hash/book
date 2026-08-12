@@ -9,7 +9,8 @@
     "character_count", "hash", "original_file_sha256", "normalized_text_sha256",
     "processing_status", "processing_contract_version", "processing_fingerprint",
     "private_location_id", "source_private_refs", "source_count", "possible_duplicate",
-    "duplicate_kinds", "needs_review", "warnings"
+    "duplicate_kinds", "needs_review", "warnings", "source_integrity_status",
+    "distillation_allowed", "source_integrity"
   ],
   "properties": {
     "manifest_version": {"type": "string"},
@@ -31,6 +32,30 @@
     "possible_duplicate": {"type": "boolean"},
     "duplicate_kinds": {"type": "array", "items": {"type": "string"}},
     "needs_review": {"type": "boolean"},
-    "warnings": {"type": "array", "items": {"type": "string"}}
+    "warnings": {"type": "array", "items": {"type": "string"}},
+    "source_integrity_status": {"type": "string", "enum": ["PASS", "WARNING", "FAIL", "UNKNOWN"]},
+    "distillation_allowed": {"type": "boolean"},
+    "source_integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method_version", "confidence", "numbered_chapter_count", "estimated_missing_chapters",
+        "gap_event_count", "duplicate_number_count", "backward_number_count",
+        "systematic_gap_detected", "reason_codes", "source_integrity_status", "distillation_allowed"
+      ],
+      "properties": {
+        "method_version": {"type": "string"},
+        "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+        "numbered_chapter_count": {"type": "integer", "minimum": 0},
+        "estimated_missing_chapters": {"type": "integer", "minimum": 0},
+        "gap_event_count": {"type": "integer", "minimum": 0},
+        "duplicate_number_count": {"type": "integer", "minimum": 0},
+        "backward_number_count": {"type": "integer", "minimum": 0},
+        "systematic_gap_detected": {"type": "boolean"},
+        "reason_codes": {"type": "array", "items": {"type": "string"}},
+        "source_integrity_status": {"type": "string", "enum": ["PASS", "WARNING", "FAIL", "UNKNOWN"]},
+        "distillation_allowed": {"type": "boolean"}
+      }
+    }
   }
 }

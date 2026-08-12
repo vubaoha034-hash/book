@@ -42,6 +42,7 @@ E:\蒸馏小说
 
 ```text
 work.json
+front_matter.txt                 可选；仅在首章前存在材料时生成
 chapters.jsonl
 text\0001.txt
 text\0002.txt
@@ -55,6 +56,23 @@ text\0002.txt
 ## Processing Contract
 
 `processing_contract_version` 与 `processing_fingerprint` 覆盖 extraction、normalization、chapter segmentation、ID contract 和 structured output schema。只有源文件 SHA-256 相同、处理指纹相同，而且 `work.json`、`chapters.jsonl`、所有章节文件及 Hash 全部完整时才允许增量跳过。处理指纹变化或 artifact 缺失会原子重建结构化目录。
+
+处理指纹不是源代码自动探测器。以后只要修改 `extractors.py`、`cleaning.py`、`chapters.py`、ID 生成契约或结构化输出字段，就必须同步提升 `ProcessingContract` 中相应 component；忘记提升 component 时，fingerprint 不会自动发现代码变化。
+
+## 章节标题与 front matter
+
+章节检测区分强标题和弱标题：
+
+- 强标题：整行的 `第N章`、`第N回`、`Chapter N` 及其紧凑标题形式。
+- 弱标题：`第N节`、`第N部`、卷标、番外、后记、附录、外传等。弱标题只有在短标题、合法分隔符且不呈现完整自然语言句子时才可成为候选。
+- 当作品中存在强章标题时，卷标题作为结构 marker 保留在文本中，不单独切成 chapter。
+- 只有弱标题体系时可以保守 fallback，但必须 `needs_review=true`。
+
+第一个已接受章节标题之前的标准化文本不再拼入第一章，也不会删除；它完整保存为私有 `front_matter.txt`。`work.json` 记录其相对路径、字符数和 SHA-256。
+
+## Source Integrity Gate V1
+
+结构化成功不等于书源完整。每个 processed work 都会获得 `source_integrity_status`、`distillation_allowed` 和可审计的 `source_integrity` 摘要。完整判定方法、阈值与限制见 `docs/SOURCE_INTEGRITY_V1.md`。只有 `PASS` 允许进入 ChatGPT Packet；`WARNING`、`FAIL`、`UNKNOWN` 默认全部禁止蒸馏。
 
 ## 章节策略
 

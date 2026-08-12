@@ -35,6 +35,15 @@ def main(argv: Sequence[str] | None = None) -> int:
     print(f"可能重复：{summary.duplicates}")
     print(f"需要人工检查章节：{summary.needs_review}")
     print(f"延后格式（MOBI/AZW）：{summary.deferred}")
+    print("书源完整性：")
+    for status in ("PASS", "WARNING", "FAIL", "UNKNOWN"):
+        print(f"{status}: {summary.source_integrity_counts[status]}")
+    print(f"禁止蒸馏: {len(summary.distillation_blocked)}")
+    if summary.distillation_blocked:
+        print("非 PASS 作品：")
+        for item in summary.distillation_blocked:
+            reasons = ",".join(item["reason_codes"])
+            print(f"- {item['work_id']} | {item['status']} | {reasons}")
     print(f"输出位置：{config.output_dir}")
     print(f"Manifest：{config.manifest_path}")
     if summary.errors:

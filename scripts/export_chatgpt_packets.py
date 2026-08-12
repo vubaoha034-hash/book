@@ -47,7 +47,10 @@ def main() -> int:
         work_ids = args.work_ids or []
     try:
         outputs = export_packets(private_root, work_ids, args.max_chars_per_part)
-    except (OSError, PacketExportError) as exc:
+    except PacketExportError as exc:
+        print(f"导出已阻止（BLOCKED）：{exc}")
+        return 1
+    except OSError as exc:
         print(f"生成失败：{exc}")
         return 1
     print("ChatGPT 私有蒸馏包生成完成（仅本地，未上传）")

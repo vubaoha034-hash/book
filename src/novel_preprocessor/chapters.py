@@ -1,4 +1,4 @@
-"""Conservative chapter-heading detection with explicit fallback."""
+"""Conservative strong/weak chapter-heading detection with explicit fallback."""
 
 from __future__ import annotations
 
@@ -7,36 +7,22 @@ from dataclasses import dataclass, field
 
 
 _CN_NUMBER = r"[〇零一二三四五六七八九十百千万两0-9０-９]{1,16}"
-_PATTERNS: tuple[tuple[str, re.Pattern[str]], ...] = (
-    (
-        "chapter",
-        re.compile(
-            rf"^第{_CN_NUMBER}[章回节篇部](?:\s*[：:、.．\-—]?\s*.{{0,48}})?$",
-            re.IGNORECASE,
-        ),
-    ),
-    (
-        "volume",
-        re.compile(
-            rf"^(?:第{_CN_NUMBER}卷|卷{_CN_NUMBER})(?:\s*[：:、.．\-—]?\s*.{{0,48}})?$",
-            re.IGNORECASE,
-        ),
-    ),
-    (
-        "chapter",
-        re.compile(
-            r"^(?:chapter|chap\.?|part)\s+(?:[0-9０-９]+|[ivxlcdm]+)(?:\s*[：:、.．\-—]?\s*.{0,48})?$",
-            re.IGNORECASE,
-        ),
-    ),
-    (
-        "special",
-        re.compile(
-            r"^(?:序章|序言|前言|楔子|引子|终章|尾声|后记|番外(?:篇)?|外传|附录)(?:\s*[：:、.．\-—]?\s*.{0,48})?$",
-            re.IGNORECASE,
-        ),
-    ),
+_STRONG_CHINESE = re.compile(rf"^第({_CN_NUMBER})(章|回)(.*)$", re.IGNORECASE)
+_STRONG_ENGLISH = re.compile(
+    r"^(chapter|chap\.?)\s+([0-9０-９]+|[ivxlcdm]+)(.*)$",
+    re.IGNORECASE,
 )
+_WEAK_NUMBERED = re.compile(rf"^第({_CN_NUMBER})(节|部)(.*)$", re.IGNORECASE)
+_WEAK_VOLUME = re.compile(rf"^(?:第({_CN_NUMBER})卷|卷({_CN_NUMBER}))(.*)$", re.IGNORECASE)
+_WEAK_ENGLISH_PART = re.compile(
+    r"^(part)\s+([0-9０-９]+|[ivxlcdm]+)(.*)$",
+    re.IGNORECASE,
+)
+_WEAK_SPECIAL = re.compile(r"^(序章|序言|前言|楔子|引子|终章|尾声|后记|番外(?:篇)?|外传|附录)(.*)$", re.IGNORECASE)
+_TITLE_SEPARATOR = re.compile(r"^(?:\s+|\s*[：:、.．\-–—]{1,2}\s*)(\S.*)$")
+_SENTENCE_PUNCTUATION = re.compile(r"[，,。！？!?；;…]")
+_MAX_STRONG_SUFFIX = 48
+_MAX_WEAK_SUFFIX = 24
 
 
 @dataclass(frozen=True)
@@ -46,6 +32,7 @@ class HeadingCandidate:
     line_index: int
     title: str
     kind: str
+    strength: str
     ordinal: int | None
     markdown_level: int | None
 
@@ -67,6 +54,7 @@ class SegmentationResult:
     detection_confidence: str
     needs_review: bool
     warnings: list[str] = field(default_factory=list)
+    front_matter: str = ""
 
 
 def _heading_view(line: str) -> tuple[str, int | None]:
@@ -102,23 +90,53 @@ def _number_value(raw: str) -> int | None:
     return total + section + number
 
 
-def _heading_ordinal(title: str, kind: str) -> int | None:
-    if kind != "chapter":
-        return None
-    match = re.match(rf"^第({_CN_NUMBER})[章回节篇部]", title, re.IGNORECASE)
-    if match:
-        return _number_value(match.group(1))
-    match = re.match(r"^(?:chapter|chap\.?|part)\s+([0-9０-９]+)", title, re.IGNORECASE)
-    return _number_value(match.group(1)) if match else None
+def _strong_suffix_valid(suffix: str) -> bool:
+    if not suffix:
+        return True
+    match = _TITLE_SEPARATOR.fullmatch(suffix)
+    return bool(match and 0 < len(match.group(1).strip()) <= _MAX_STRONG_SUFFIX)
 
 
-def _classify_heading(line: str) -> tuple[str, str, int | None, int | None] | None:
+def _weak_suffix_valid(suffix: str) -> bool:
+    if not suffix:
+        return True
+    match = _TITLE_SEPARATOR.fullmatch(suffix)
+    if not match:
+        return False
+    title = match.group(1).strip()
+    return bool(title and len(title) <= _MAX_WEAK_SUFFIX and not _SENTENCE_PUNCTUATION.search(title))
+
+
+def _classify_heading(line: str) -> tuple[str, str, str, int | None, int | None] | None:
     title, markdown_level = _heading_view(line)
-    if not title or len(title) > 64 or "\t" in title:
+    if not title or len(title) > 80 or "\t" in title:
         return None
-    for kind, pattern in _PATTERNS:
-        if pattern.fullmatch(title):
-            return title, kind, _heading_ordinal(title, kind), markdown_level
+
+    match = _STRONG_CHINESE.fullmatch(title)
+    if match and _strong_suffix_valid(match.group(3)):
+        return title, "chapter", "strong", _number_value(match.group(1)), markdown_level
+
+    match = _STRONG_ENGLISH.fullmatch(title)
+    if match and _strong_suffix_valid(match.group(3)):
+        raw_number = match.group(2)
+        ordinal = _number_value(raw_number) if not re.fullmatch(r"[ivxlcdm]+", raw_number, re.IGNORECASE) else None
+        return title, "chapter", "strong", ordinal, markdown_level
+
+    match = _WEAK_NUMBERED.fullmatch(title)
+    if match and _weak_suffix_valid(match.group(3)):
+        return title, "section", "weak", None, markdown_level
+
+    match = _WEAK_VOLUME.fullmatch(title)
+    if match and _weak_suffix_valid(match.group(3)):
+        return title, "volume", "weak", None, markdown_level
+
+    match = _WEAK_ENGLISH_PART.fullmatch(title)
+    if match and _weak_suffix_valid(match.group(3)):
+        return title, "part", "weak", None, markdown_level
+
+    match = _WEAK_SPECIAL.fullmatch(title)
+    if match and _weak_suffix_valid(match.group(2)):
+        return title, "special", "weak", None, markdown_level
     return None
 
 
@@ -129,7 +147,7 @@ def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
         line = line_with_ending.rstrip("\r\n")
         classified = _classify_heading(line)
         if classified is not None:
-            title, kind, ordinal, markdown_level = classified
+            title, kind, strength, ordinal, markdown_level = classified
             left_trim = len(line) - len(line.lstrip())
             candidates.append(
                 HeadingCandidate(
@@ -138,32 +156,21 @@ def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
                     line_index=line_index,
                     title=title,
                     kind=kind,
+                    strength=strength,
                     ordinal=ordinal,
                     markdown_level=markdown_level,
                 )
             )
         offset += len(line_with_ending)
-
-    if text and not text.endswith(("\n", "\r")) and not text.splitlines(keepends=True):
-        classified = _classify_heading(text)
-        if classified:
-            title, kind, ordinal, markdown_level = classified
-            candidates.append(HeadingCandidate(0, len(text), 0, title, kind, ordinal, markdown_level))
     return candidates
 
 
-def _drop_volume_markers(candidates: list[HeadingCandidate], text: str) -> list[HeadingCandidate]:
-    if not any(item.kind != "volume" for item in candidates):
-        return candidates
-    kept: list[HeadingCandidate] = []
-    for index, item in enumerate(candidates):
-        next_item = candidates[index + 1] if index + 1 < len(candidates) else None
-        if item.kind == "volume" and next_item and next_item.kind == "chapter":
-            between = text[item.end:next_item.start].strip()
-            if len(between) <= 80:
-                continue
-        kept.append(item)
-    return kept
+def _select_candidates(candidates: list[HeadingCandidate]) -> list[HeadingCandidate]:
+    """Treat volumes as structure markers when real chapter headings exist."""
+
+    if any(item.strength == "strong" for item in candidates):
+        return [item for item in candidates if item.kind != "volume"]
+    return candidates
 
 
 def _fallback(text: str, warning: str) -> SegmentationResult:
@@ -181,11 +188,12 @@ def _fallback(text: str, warning: str) -> SegmentationResult:
         detection_confidence="low",
         needs_review=True,
         warnings=[warning],
+        front_matter="",
     )
 
 
 def segment_chapters(text: str) -> SegmentationResult:
-    candidates = _drop_volume_markers(detect_heading_candidates(text), text)
+    candidates = _select_candidates(detect_heading_candidates(text))
     if not candidates:
         return _fallback(text, "chapter_heading_not_detected")
 
@@ -196,10 +204,11 @@ def segment_chapters(text: str) -> SegmentationResult:
         if meaningful_prefix and only.start > prefix_limit:
             return _fallback(text, "single_heading_ambiguous_in_body")
 
+    front_matter = text[:candidates[0].start]
     chapters: list[ChapterSegment] = []
     content_lengths: list[int] = []
     for index, heading in enumerate(candidates, start=1):
-        start = 0 if index == 1 else heading.start
+        start = heading.start
         end = candidates[index].start if index < len(candidates) else len(text)
         segment = text[start:end].strip("\n")
         content_after_heading = text[heading.end:end].strip()
@@ -222,8 +231,8 @@ def segment_chapters(text: str) -> SegmentationResult:
     markdown_levels = {candidate.markdown_level for candidate in candidates if candidate.markdown_level is not None}
     if len(markdown_levels) > 1:
         warnings.append("mixed_markdown_heading_levels")
-    if any(candidate.kind == "volume" for candidate in candidates):
-        warnings.append("volume_boundary_needs_review")
+    if any(candidate.strength == "weak" for candidate in candidates):
+        warnings.append("weak_heading_boundary_needs_review")
     if any(length < 80 for length in content_lengths):
         warnings.append("short_chapter_or_heading_quote_needs_review")
     if any(length > 200_000 for length in content_lengths):
@@ -250,4 +259,5 @@ def segment_chapters(text: str) -> SegmentationResult:
         detection_confidence=confidence,
         needs_review=needs_review,
         warnings=warnings,
+        front_matter=front_matter,
     )

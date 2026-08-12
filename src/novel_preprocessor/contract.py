@@ -7,7 +7,7 @@ import json
 from dataclasses import asdict, dataclass
 
 
-PROCESSING_CONTRACT_VERSION = "1.0.0"
+PROCESSING_CONTRACT_VERSION = "1.1.0"
 
 
 @dataclass(frozen=True)
@@ -17,9 +17,9 @@ class ProcessingContract:
     version: str = PROCESSING_CONTRACT_VERSION
     extraction: str = "extract-v1"
     normalization: str = "normalize-v1"
-    chapter_segmentation: str = "chapter-v2-conservative"
+    chapter_segmentation: str = "chapter-v3-strong-weak-front-matter"
     id_contract: str = "artifact-id-v2"
-    structured_output_schema: str = "structured-v2"
+    structured_output_schema: str = "structured-v3-source-integrity"
 
     def as_dict(self) -> dict[str, str]:
         return asdict(self)

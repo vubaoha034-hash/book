@@ -73,6 +73,14 @@ def load_structured_work(private_root: Path, work_id: str) -> tuple[dict[str, An
         raise PacketExportError(f"结构化作品契约不完整: {work_id}")
     if not work.get("processing_contract_version") or not work.get("processing_fingerprint"):
         raise PacketExportError(f"结构化作品缺少处理契约: {work_id}")
+    if work.get("distillation_allowed") is not True:
+        status = work.get("source_integrity_status", "UNKNOWN")
+        integrity = work.get("source_integrity")
+        reasons = integrity.get("reason_codes", []) if isinstance(integrity, dict) else []
+        reason_text = ",".join(str(reason) for reason in reasons) or "integrity_status_not_pass"
+        raise PacketExportError(
+            f"书源完整性门禁拒绝导出: work_id={work_id}; status={status}; reason_codes={reason_text}"
+        )
 
     chapters: list[ChapterArtifact] = []
     for record in records:
@@ -272,4 +280,8 @@ def export_packets(
     selected = list(dict.fromkeys(work_ids))
     if not selected:
         raise PacketExportError("没有选择任何 work_id。")
+    # Preflight the entire selection so a later blocked work cannot leave a
+    # partially exported batch from earlier items.
+    for work_id in selected:
+        load_structured_work(private_root, work_id)
     return [export_work_packet(private_root, work_id, max_chars_per_part) for work_id in selected]

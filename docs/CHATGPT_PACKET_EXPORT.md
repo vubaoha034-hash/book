@@ -2,6 +2,8 @@
 
 该桥只把本地结构化章节打包成用户可以手工上传的私有 Markdown 文件。它不联网、不调用 API、不自动上传，也不执行总结、评价、改写、爽点提取或 Novel DNA。
 
+导出前强制读取结构化作品的 Source Integrity Gate。只有 `source_integrity_status=PASS` 且 `distillation_allowed=true` 才能导出。`WARNING`、`FAIL`、`UNKNOWN` 会返回 work_id、status 和 reason_codes 并拒绝生成；本版本没有 `--force` 或其他绕过参数。
+
 ## Explicit selection
 
 不得默认导出整个书库。命令行必须显式选择一种方式：
