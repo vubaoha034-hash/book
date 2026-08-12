@@ -17,7 +17,7 @@ class ProcessingContract:
     version: str = PROCESSING_CONTRACT_VERSION
     extraction: str = "extract-v1"
     normalization: str = "normalize-v1"
-    chapter_segmentation: str = "chapter-v3-strong-weak-front-matter"
+    chapter_segmentation: str = "chapter-v4-sequenced-compact-inline-hui"
     id_contract: str = "artifact-id-v2"
     structured_output_schema: str = "structured-v3-source-integrity"
 

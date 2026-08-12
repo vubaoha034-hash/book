@@ -222,7 +222,7 @@ class SourceIntegrityGateTests(unittest.TestCase):
 class ProcessingContractStep01CTests(unittest.TestCase):
     def test_processing_fingerprint_changed(self) -> None:
         self.assertNotEqual(DEFAULT_PROCESSING_CONTRACT.fingerprint, OLD_PROCESSING_FINGERPRINT)
-        self.assertEqual(DEFAULT_PROCESSING_CONTRACT.chapter_segmentation, "chapter-v3-strong-weak-front-matter")
+        self.assertEqual(DEFAULT_PROCESSING_CONTRACT.chapter_segmentation, "chapter-v4-sequenced-compact-inline-hui")
         self.assertEqual(DEFAULT_PROCESSING_CONTRACT.structured_output_schema, "structured-v3-source-integrity")
 
     def test_old_default_contract_reprocesses_under_step01c_contract(self) -> None:

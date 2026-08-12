@@ -23,6 +23,11 @@ _TITLE_SEPARATOR = re.compile(r"^(?:\s+|\s*[：:、.．\-–—]{1,2}\s*)(\S.*)$
 _SENTENCE_PUNCTUATION = re.compile(r"[，,。！？!?；;…]")
 _MAX_STRONG_SUFFIX = 48
 _MAX_WEAK_SUFFIX = 24
+_COMPACT_HUI_MIN_TITLE = 2
+_COMPACT_HUI_MAX_TITLE = 12
+_COMPACT_HUI_MIN_SEQUENCE = 3
+_COMPACT_HUI_PREFIX = re.compile(rf"第({_CN_NUMBER})回", re.IGNORECASE)
+_COMPACT_HUI_SEPARATOR_PREFIX = frozenset(" \t\u3000：:、.．-–—")
 
 
 @dataclass(frozen=True)
@@ -35,6 +40,7 @@ class HeadingCandidate:
     strength: str
     ordinal: int | None
     markdown_level: int | None
+    candidate_type: str = "line_heading"
 
 
 @dataclass
@@ -140,7 +146,7 @@ def _classify_heading(line: str) -> tuple[str, str, str, int | None, int | None]
     return None
 
 
-def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
+def _detect_line_heading_candidates(text: str) -> list[HeadingCandidate]:
     candidates: list[HeadingCandidate] = []
     offset = 0
     for line_index, line_with_ending in enumerate(text.splitlines(keepends=True)):
@@ -163,6 +169,76 @@ def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
             )
         offset += len(line_with_ending)
     return candidates
+
+
+def _compact_hui_title_valid(title: str) -> bool:
+    """Accept only an unseparated, short, non-sentence title at physical line end."""
+
+    if not (_COMPACT_HUI_MIN_TITLE <= len(title) <= _COMPACT_HUI_MAX_TITLE):
+        return False
+    if title != title.strip() or any(char.isspace() for char in title):
+        return False
+    if title[0] in _COMPACT_HUI_SEPARATOR_PREFIX:
+        return False
+    return not _SENTENCE_PUNCTUATION.search(title)
+
+
+def _detect_compact_inline_hui_candidates(text: str) -> list[HeadingCandidate]:
+    """Scan line-ending ``第N回短标题`` forms without accepting them yet."""
+
+    candidates: list[HeadingCandidate] = []
+    offset = 0
+    for line_index, line_with_ending in enumerate(text.splitlines(keepends=True)):
+        line = line_with_ending.rstrip("\r\n")
+        for match in _COMPACT_HUI_PREFIX.finditer(line):
+            short_title = line[match.end():]
+            if not _compact_hui_title_valid(short_title):
+                continue
+            candidates.append(
+                HeadingCandidate(
+                    start=offset + match.start(),
+                    end=offset + len(line),
+                    line_index=line_index,
+                    title=line[match.start():],
+                    kind="chapter",
+                    strength="strong",
+                    ordinal=_number_value(match.group(1)),
+                    markdown_level=None,
+                    candidate_type="compact_inline_hui",
+                )
+            )
+        offset += len(line_with_ending)
+    return candidates
+
+
+def _sequenced_compact_hui_candidates(candidates: list[HeadingCandidate]) -> list[HeadingCandidate]:
+    """Enable only monotonically consecutive compact-hui runs of three or more."""
+
+    accepted: list[HeadingCandidate] = []
+    run: list[HeadingCandidate] = []
+    for candidate in candidates:
+        previous_ordinal = run[-1].ordinal if run else None
+        if (
+            previous_ordinal is not None
+            and candidate.ordinal is not None
+            and candidate.ordinal == previous_ordinal + 1
+        ):
+            run.append(candidate)
+            continue
+        if len(run) >= _COMPACT_HUI_MIN_SEQUENCE:
+            accepted.extend(run)
+        run = [candidate]
+    if len(run) >= _COMPACT_HUI_MIN_SEQUENCE:
+        accepted.extend(run)
+    return accepted
+
+
+def detect_heading_candidates(text: str) -> list[HeadingCandidate]:
+    line_candidates = _detect_line_heading_candidates(text)
+    compact_candidates = _sequenced_compact_hui_candidates(
+        _detect_compact_inline_hui_candidates(text)
+    )
+    return sorted([*line_candidates, *compact_candidates], key=lambda item: (item.start, item.end))
 
 
 def _select_candidates(candidates: list[HeadingCandidate]) -> list[HeadingCandidate]:

@@ -18,7 +18,10 @@ SYSTEMATIC_MISSING_RATIO_MIN = 0.10
 
 _CN_NUMBER = r"[〇零一二三四五六七八九十百千万两0-9０-９]{1,16}"
 _CHINESE_STRONG = re.compile(rf"^第({_CN_NUMBER})(?:章|回)(?:$|\s|[：:、.．\-–—])", re.IGNORECASE)
+_CHINESE_COMPACT_HUI = re.compile(rf"^第({_CN_NUMBER})回([^\r\n]{{2,12}})$", re.IGNORECASE)
 _ENGLISH_STRONG = re.compile(r"^(?:chapter|chap\.?)\s+([0-9０-９]+)(?:$|\s|[：:、.．\-–—])", re.IGNORECASE)
+_COMPACT_HUI_SENTENCE_PUNCTUATION = re.compile(r"[，,。！？!?；;…]")
+_COMPACT_HUI_SEPARATOR_PREFIX = frozenset(" \t\u3000：:、.．-–—")
 
 
 @dataclass(frozen=True)
@@ -68,6 +71,16 @@ def strong_chapter_number(title: str | None) -> int | None:
     match = _CHINESE_STRONG.match(title.strip())
     if match:
         return _number_value(match.group(1))
+    match = _CHINESE_COMPACT_HUI.fullmatch(title.strip())
+    if match:
+        compact_title = match.group(2)
+        if (
+            compact_title == compact_title.strip()
+            and not any(char.isspace() for char in compact_title)
+            and compact_title[0] not in _COMPACT_HUI_SEPARATOR_PREFIX
+            and not _COMPACT_HUI_SENTENCE_PUNCTUATION.search(compact_title)
+        ):
+            return _number_value(match.group(1))
     match = _ENGLISH_STRONG.match(title.strip())
     return _number_value(match.group(1)) if match else None
 

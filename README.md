@@ -132,6 +132,7 @@ STEP-01 新增了一个与文学分析严格分离的本地预处理层。它只
 
 - TXT、EPUB、DOCX、Markdown 与可提取文本 PDF 的本地解析；
 - 保守的机械清洗、章节候选检测、低置信 fallback 和人工复核标记；
+- 通过连续编号 Hard Gate 识别行尾 `第N回短标题`，同时拒绝孤立正文命中；
 - 绑定 processing fingerprint 的作品/章节确定性 ID、SHA-256 与基础去重；
 - 私有结构化章节输出、版本失效增量状态和 private-first Manifest；
 - Scene Card / Story Card 空 Schema 与 Git 私有资料防泄漏检查。
