@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
+  "project_id": "novel-distillation",
+  "updated_at": "2026-08-15T21:30:00+08:00",
+  "branch": "novel-distill-v1",
+  "accepted_checkpoint": {
+    "book_id": "BOOK-02",
+    "work_title": "诛仙",
+    "phase": "NUMBERED_EVIDENCE_EXTRACTION",
+    "phase_ordinal": 40,
+    "progress_unit": "numbered_chapter",
+    "progress_ordinal": 210,
+    "target_progress": 256,
+    "coverage_fraction": 0.8203125,
+    "formal_zx_candidates": 10,
+    "supporting_patterns": 16,
+    "novel_dna": 0,
+    "status": "ACCEPTED",
+    "next_batch": "211-220"
+  },
+  "rollback": {
+    "authorized": false,
+    "receipt": null
+  },
+  "superseded_states": [
+    "BOOK-02_SOURCE_GATE_PENDING",
+    "BOOK-02_SOURCE_GATE_RETRY",
+    "BOOK-02_PACKET_PENDING",
+    "BOOK-02_EVIDENCE_001_210_PENDING"
+  ],
+  "invariants": {
+    "missing_result_means": "UNKNOWN",
+    "unknown_may_lower_checkpoint": false,
+    "accepted_task_may_repeat": false,
+    "backward_transition_requires_rollback_receipt": true
+  }
+}
