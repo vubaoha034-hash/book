@@ -10,14 +10,16 @@
     "phase": "NUMBERED_EVIDENCE_EXTRACTION",
     "phase_ordinal": 40,
     "progress_unit": "numbered_chapter",
-    "progress_ordinal": 210,
+    "progress_ordinal": 220,
     "target_progress": 256,
-    "coverage_fraction": 0.8203125,
+    "coverage_fraction": 0.859375,
     "formal_zx_candidates": 10,
     "supporting_patterns": 16,
     "novel_dna": 0,
+    "candidate_registry_promotion_status": "PRESERVE_LAST_ACCEPTED_COUNTS_PENDING_REGISTRY_RECONCILIATION",
     "status": "ACCEPTED",
-    "next_batch": "211-220"
+    "latest_review_receipt": "state/review_receipts/BOOK-02_211-220.json",
+    "next_batch": "221-230"
   },
   "rollback": {
     "authorized": false,
@@ -27,7 +29,8 @@
     "BOOK-02_SOURCE_GATE_PENDING",
     "BOOK-02_SOURCE_GATE_RETRY",
     "BOOK-02_PACKET_PENDING",
-    "BOOK-02_EVIDENCE_001_210_PENDING"
+    "BOOK-02_EVIDENCE_001_210_PENDING",
+    "BOOK-02_EVIDENCE_211_220_PENDING"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
