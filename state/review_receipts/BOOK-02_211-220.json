@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-211-220-20260815",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "NUMBERED_EVIDENCE_EXTRACTION",
+  "phase_ordinal": 40,
+  "batch": {
+    "start_chapter": 211,
+    "end_chapter": 220,
+    "count": 10
+  },
+  "review_status": "ACCEPTED",
+  "accepted_progress_ordinal": 220,
+  "target_progress": 256,
+  "coverage_fraction": 0.859375,
+  "candidate_registry": {
+    "last_accepted_formal_zx_candidates": 10,
+    "last_accepted_supporting_patterns": 16,
+    "novel_dna": 0,
+    "promotion_status": "PRESERVE_LAST_ACCEPTED_COUNTS_PENDING_REGISTRY_RECONCILIATION",
+    "reason": "The exact prior candidate registry/promotion rubric was not durably recoverable in the current environment. Anti-rollback/anti-fabrication rules require preserving accepted counts rather than inventing additions or duplicates."
+  },
+  "next_batch": "221-230",
+  "rollback_authorized": false,
+  "created_at": "2026-08-15T21:30:00+08:00",
+  "privacy": {
+    "raw_novel_text_stored_in_git": false,
+    "literary_distillation_body_stored_in_git": false,
+    "receipt_contains_progress_metadata_only": true
+  }
+}
