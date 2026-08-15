@@ -1,0 +1,35 @@
+name: validate-project-state
+
+on:
+  push:
+    branches:
+      - novel-distill-v1
+    paths:
+      - "state/**"
+      - "scripts/validate_project_state_transition.py"
+      - "tests/test_project_state_anti_rollback.py"
+      - "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md"
+      - ".github/workflows/validate-project-state.yml"
+  pull_request:
+    paths:
+      - "state/**"
+      - "scripts/validate_project_state_transition.py"
+      - "tests/test_project_state_anti_rollback.py"
+      - "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md"
+      - ".github/workflows/validate-project-state.yml"
+
+jobs:
+  anti-rollback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run anti-rollback unit tests
+        run: python -m unittest tests.test_project_state_anti_rollback -v
+      - name: Prove current checkpoint rejects regression
+        run: |
+          python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal 40 --progress-ordinal 210 && exit 1 || test $? -eq 2
+      - name: Prove next forward batch passes
+        run: python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal 40 --progress-ordinal 230
