@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-PARITY-RECOVERY-SCAN-V1-BLOCKED-REPORTED-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "task_id": "BOOK-01_PARITY_RECOVERY_SCAN_V1",
+  "reported_status": "BLOCKED",
+  "verification_status": "SUMMARY_ONLY_REPORT_BODY_NOT_READ",
+  "reported_report_path": "E:\\蒸馏小说_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V1.json",
+  "canonical_expected_report_path": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V1.json",
+  "reported_report_sha256": "6ebe825fc8b380c38e559d9b77b974f1176d2a237b191ce6029cb97c30f8f010",
+  "reported_repaired_work_id": "UNKNOWN",
+  "reported_packet": "UNKNOWN",
+  "reported_parity": {
+    "phase50": "UNKNOWN",
+    "phase60": "UNKNOWN",
+    "phase70": "UNKNOWN",
+    "phase80": "UNKNOWN"
+  },
+  "reported_minimal_gaps": 1,
+  "reported_safety": {
+    "regression_performed": false,
+    "literary_analysis_performed": false,
+    "source_modified": false,
+    "network_used": false,
+    "llm_used": false,
+    "stopped_after_recovery": true
+  },
+  "interpretation": {
+    "accepted_fact": "The external Codex run reported BLOCKED and did not perform regression or literary analysis.",
+    "not_yet_verified": "The exact blocking reason and the local JSON report body are not available in the connected cloud sources.",
+    "path_anomaly": "Reported path differs from canonical expected path by a missing separator before _private; this is an anomaly to diagnose, not proof of root cause.",
+    "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED"
+  },
+  "next_task": "BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T16:10:00+08:00"
+}
