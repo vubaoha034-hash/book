@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-16T16:10:00+08:00",
+  "updated_at": "2026-08-16T16:35:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -40,45 +40,47 @@
     "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION"
   },
   "active_task": {
-    "task_id": "BOOK-01_PARITY_RECOVERY_SCAN_V1",
+    "task_id": "BOOK-01_PARITY_RECOVERY_SCAN_V2",
     "phase": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION",
     "phase_ordinal": 100,
-    "status": "BLOCKED_REPORTED_AWAITING_REASON_VERIFICATION",
-    "task_contract": "state/tasks/BOOK-01_PARITY_RECOVERY_SCAN_V1.md",
-    "execution_scope": "READ_ONLY_LOCAL_FORENSIC_RECOVERY",
+    "status": "READY_FOR_EXTERNAL_LOCAL_EXECUTION",
+    "task_contract": "state/tasks/BOOK-01_PARITY_RECOVERY_SCAN_V2_SELF_CONTAINED.md",
+    "execution_scope": "READ_ONLY_LOCAL_FORENSIC_RECOVERY_SELF_CONTAINED",
     "book_id": "BOOK-01",
     "work_title": "射雕英雄传",
-    "reported_result": {
+    "prior_v1_result": {
       "status": "BLOCKED",
       "report_sha256": "6ebe825fc8b380c38e559d9b77b974f1176d2a237b191ce6029cb97c30f8f010",
-      "reported_report_path": "E:\\蒸馏小说_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V1.json",
-      "canonical_expected_report_path": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V1.json",
-      "repaired_work_id": "UNKNOWN",
-      "packet": "UNKNOWN",
-      "phase50": "UNKNOWN",
-      "phase60": "UNKNOWN",
-      "phase70": "UNKNOWN",
-      "phase80": "UNKNOWN",
-      "minimal_gaps": 1,
-      "regression_performed": false,
-      "literary_analysis_performed": false,
-      "source_modified": false,
-      "network_used": false,
-      "llm_used": false,
-      "stopped_after_recovery": true,
-      "verification_status": "SUMMARY_ONLY_REPORT_BODY_NOT_READ"
+      "canonical_report_verified": true,
+      "block_reason": "TASK_CONTRACT_UNAVAILABLE"
     },
-    "latest_external_result_receipt": "state/review_receipts/BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED_REPORTED.json",
-    "next_task": "BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1",
+    "access_diagnostic": {
+      "status": "PASS",
+      "diagnosis": "OTHER_MECHANICAL_BLOCKER",
+      "environment_os": "Microsoft Windows 10.0.26200",
+      "execution_plane": "LOCAL_WINDOWS",
+      "e_drive_visible": true,
+      "project_root_visible": true,
+      "private_root_visible": true,
+      "canonical_report_exists": true,
+      "malformed_report_exists": false,
+      "prior_report_sha256_match": true,
+      "retry_performed": false,
+      "root_cause": "TASK_CONTRACT_UNAVAILABLE"
+    },
+    "contract_delivery": "FULLY_EMBEDDED_IN_PROMPT_RUNTIME_FILE_NOT_REQUIRED",
+    "recovery_report_expected": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V2.json",
     "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
     "forbidden_actions": [
       "SOURCE_GATE_RERUN",
-      "PACKET_REGENERATION_WITHOUT_NEW_AUTHORIZATION",
+      "PACKET_REGENERATION",
       "FULL_EVIDENCE_RERUN",
       "LITERARY_ANALYSIS",
       "NOVEL_DNA_GENERATION",
-      "SOURCE_MODIFICATION"
-    ]
+      "SOURCE_MODIFICATION",
+      "PROJECT_STATE_MUTATION_BY_CODEX"
+    ],
+    "latest_external_result_receipt": "state/review_receipts/BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1.json"
   },
   "rollback": {
     "authorized": false,
@@ -98,7 +100,9 @@
     "BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING",
     "BOOK-02_NOVEL_DNA_VALIDATION_PENDING",
     "BOOK-02_NOVEL_DNA_FREEZE_PENDING",
-    "BOOK-02_CLOSEOUT_PENDING"
+    "BOOK-02_CLOSEOUT_PENDING",
+    "BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED",
+    "BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
