@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-PARITY-RECOVERY-SCAN-V2-REPORTED-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "task_id": "BOOK-01_PARITY_RECOVERY_SCAN_V2",
+  "reported_status": "PASS",
+  "reported_report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652",
+  "reported_repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+  "reported_repair_provenance": "E:\\蒸馏小说_private\\repair_provenance\\射雕英雄传_ch30_repair.json",
+  "reported_packet": "E:\\蒸馏小说_private\\04_待上传ChatGPT\\STEP-02A_射雕英雄传_内部修复源_ChatGPT蒸馏包.zip",
+  "reported_packet_binding": "VERIFIED",
+  "reported_literary_artifacts_recovered": 0,
+  "reported_parity": {
+    "phase50": "UNKNOWN",
+    "phase60": "UNKNOWN",
+    "phase70": "UNKNOWN",
+    "phase80": "UNKNOWN"
+  },
+  "reported_minimal_gaps_count": 2,
+  "safety": {
+    "regression_performed": false,
+    "literary_analysis_performed": false,
+    "source_modified": false,
+    "packet_regenerated": false,
+    "project_state_modified": false,
+    "network_used": false,
+    "llm_used": false,
+    "stopped_after_recovery": true
+  },
+  "verification_status": "SUMMARY_ONLY_V2_REPORT_BODY_NOT_YET_BRIDGED",
+  "interpretation": {
+    "source_repair_chain_recovered": true,
+    "packet_chain_recovered": true,
+    "packet_binding_verified": true,
+    "literary_parity_remains_unresolved": true,
+    "missing_literary_artifacts_means": "UNKNOWN_NOT_NOT_STARTED"
+  },
+  "created_at": "2026-08-16T17:09:00+08:00"
+}
