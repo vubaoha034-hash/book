@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-EVIDENCE-SETTLEMENT-V1-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "EVIDENCE_SETTLEMENT_AND_CANDIDATE_REGISTRY_RECONCILIATION",
+  "phase_ordinal": 50,
+  "review_status": "ACCEPTED",
+  "source_evidence": {
+    "numbered_chapters_reviewed": 256,
+    "target_numbered_chapters": 256,
+    "coverage_fraction": 1.0,
+    "epilogue_reviewed": true,
+    "repaired_source_sha256": "9897950a0e606f12516544ee4c9405c40af7cb3964508280b752dffcb6bb6fd3"
+  },
+  "legacy_registry_recovery": {
+    "count_level_status": "RECOVERED",
+    "legacy_formal_count": 10,
+    "legacy_supporting_count": 16,
+    "legacy_novel_dna_count": 0,
+    "item_level_identity_status": "UNKNOWN",
+    "item_level_promotion_provenance": "UNRESOLVED_LEGACY_IDENTITY",
+    "missing_item_identity_does_not_mean": "NONEXISTENT"
+  },
+  "whole_book_reconstruction": {
+    "raw_hypotheses": 31,
+    "semantic_merges": 5,
+    "unique_patterns": 26,
+    "formal_zx_candidates": 15,
+    "supporting_patterns": 11,
+    "novel_dna": 0,
+    "aggregate_delta_vs_legacy": {
+      "formal": 5,
+      "supporting": -5,
+      "unique_total": 0
+    },
+    "claim_boundary": "Aggregate count delta only. No claim is made that five specifically identified legacy Supporting items were promoted, because legacy item identities were not durably recovered."
+  },
+  "private_registry": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK02_SETTLEMENT_V1",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK_LEVEL_NOVEL_DNA_SYNTHESIS",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T11:09:00+08:00"
+}
