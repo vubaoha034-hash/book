@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-16T12:55:00+08:00",
+  "updated_at": "2026-08-16T14:26:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -38,6 +38,34 @@
     "private_novel_dna_freeze_contract_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
     "private_book02_closeout_ref": "PRIVATE_DRIVE_BOOK02_CLOSEOUT_CROSS_BOOK_READINESS_V1",
     "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION"
+  },
+  "active_task": {
+    "task_id": "BOOK-01_PARITY_RECOVERY_SCAN_V1",
+    "phase": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION",
+    "phase_ordinal": 100,
+    "status": "WAITING_EXTERNAL_LOCAL_RECOVERY",
+    "task_contract": "state/tasks/BOOK-01_PARITY_RECOVERY_SCAN_V1.md",
+    "execution_scope": "READ_ONLY_LOCAL_FORENSIC_RECOVERY",
+    "book_id": "BOOK-01",
+    "work_title": "射雕英雄传",
+    "known_historical_anchor": {
+      "base_work_id": "wrk_526edfd2ac1057236a866131",
+      "base_normalized_sha256": "526edfd2ac1057236a866131a745e4248fb68de606ddc01e6bf31f3fbd790efe",
+      "donor_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "donor_normalized_sha256": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "chapter_count": 40,
+      "known_repair_target": "chapter_30"
+    },
+    "recovery_report_expected": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V1.json",
+    "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
+    "forbidden_actions": [
+      "SOURCE_GATE_RERUN",
+      "PACKET_REGENERATION_WITHOUT_NEW_AUTHORIZATION",
+      "FULL_EVIDENCE_RERUN",
+      "LITERARY_ANALYSIS",
+      "NOVEL_DNA_GENERATION",
+      "SOURCE_MODIFICATION"
+    ]
   },
   "rollback": {
     "authorized": false,
