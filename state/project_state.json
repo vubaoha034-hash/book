@@ -2,13 +2,13 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-16T12:51:00+08:00",
+  "updated_at": "2026-08-16T12:55:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
     "work_title": "诛仙",
-    "phase": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
-    "phase_ordinal": 80,
+    "phase": "BOOK-02_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+    "phase_ordinal": 90,
     "progress_unit": "numbered_chapter",
     "progress_ordinal": 256,
     "target_progress": 256,
@@ -16,13 +16,8 @@
     "epilogue_reviewed": true,
     "formal_zx_candidates": 15,
     "supporting_patterns": 11,
-    "synthesized_novel_dna": 5,
     "validated_novel_dna": 4,
     "frozen_novel_dna": 4,
-    "novel_dna_formal_coverage": "15/15",
-    "formal_orphans": 0,
-    "supporting_direct_promotions": 0,
-    "dna_validation_status": "ACCEPTED_WITH_MERGE",
     "freeze_status": "FROZEN",
     "application_contract_status": "ACTIVE",
     "frozen_dna_ids": [
@@ -31,14 +26,18 @@
       "ZX-VDNA-03",
       "ZX-VDNA-04"
     ],
-    "freeze_contract_revision": "2",
-    "freeze_contract_sha256": "d612c2ca892f44a133f51ef2830244750064aad49492da2eddadb0ee454d8e29",
-    "freeze_contract_manifest": "state/frozen_dna/BOOK-02_NOVEL_DNA_FREEZE_V1.json",
+    "book_closeout_status": "PASS",
+    "book_status": "CLOSED_READY_FOR_COMPARISON",
+    "cross_book_readiness": "HOLD_METHOD_PARITY_UNVERIFIED",
+    "cross_book_ready": false,
+    "book01_parity_status": "UNKNOWN",
+    "book01_completed_work_must_be_preserved": true,
+    "book01_regression_forbidden": true,
     "status": "ACCEPTED",
-    "latest_review_receipt": "state/review_receipts/BOOK-02_NOVEL_DNA_FREEZE_APPLICATION_V1.json",
-    "private_novel_dna_validation_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_VALIDATION_V1",
+    "latest_review_receipt": "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
     "private_novel_dna_freeze_contract_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
-    "next_stage": "BOOK-02_CLOSEOUT_AND_CROSS_BOOK_READINESS"
+    "private_book02_closeout_ref": "PRIVATE_DRIVE_BOOK02_CLOSEOUT_CROSS_BOOK_READINESS_V1",
+    "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION"
   },
   "rollback": {
     "authorized": false,
@@ -57,7 +56,8 @@
     "BOOK-02_EVIDENCE_SETTLEMENT_PENDING",
     "BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING",
     "BOOK-02_NOVEL_DNA_VALIDATION_PENDING",
-    "BOOK-02_NOVEL_DNA_FREEZE_PENDING"
+    "BOOK-02_NOVEL_DNA_FREEZE_PENDING",
+    "BOOK-02_CLOSEOUT_PENDING"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
