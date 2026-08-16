@@ -2,13 +2,13 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-16T11:09:00+08:00",
+  "updated_at": "2026-08-16T11:58:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
     "work_title": "诛仙",
-    "phase": "EVIDENCE_SETTLEMENT_AND_CANDIDATE_REGISTRY_RECONCILIATION",
-    "phase_ordinal": 50,
+    "phase": "BOOK_LEVEL_NOVEL_DNA_SYNTHESIS",
+    "phase_ordinal": 60,
     "progress_unit": "numbered_chapter",
     "progress_ordinal": 256,
     "target_progress": 256,
@@ -22,12 +22,15 @@
     "unique_reconstructed_patterns": 26,
     "formal_zx_candidates": 15,
     "supporting_patterns": 11,
-    "novel_dna": 0,
-    "candidate_registry_promotion_status": "RECONSTRUCTED_WHOLE_BOOK_15_FORMAL_11_SUPPORTING_LEGACY_ITEM_IDENTITY_UNKNOWN",
+    "novel_dna": 5,
+    "novel_dna_formal_coverage": "15/15",
+    "supporting_direct_promotions": 0,
+    "dna_validation_status": "PENDING",
     "status": "ACCEPTED",
-    "latest_review_receipt": "state/review_receipts/BOOK-02_EVIDENCE_SETTLEMENT_V1.json",
+    "latest_review_receipt": "state/review_receipts/BOOK-02_NOVEL_DNA_V1.json",
     "private_registry_ref": "PRIVATE_DRIVE_BOOK02_SETTLEMENT_V1",
-    "next_stage": "BOOK_LEVEL_NOVEL_DNA_SYNTHESIS"
+    "private_novel_dna_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_V1",
+    "next_stage": "BOOK_LEVEL_NOVEL_DNA_VALIDATION"
   },
   "rollback": {
     "authorized": false,
@@ -43,7 +46,8 @@
     "BOOK-02_EVIDENCE_231_240_PENDING",
     "BOOK-02_EVIDENCE_241_250_PENDING",
     "BOOK-02_EVIDENCE_251_256_EPILOGUE_PENDING",
-    "BOOK-02_EVIDENCE_SETTLEMENT_PENDING"
+    "BOOK-02_EVIDENCE_SETTLEMENT_PENDING",
+    "BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
