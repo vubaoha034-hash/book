@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-CLOSEOUT-CROSS-BOOK-READINESS-V1-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "BOOK-02_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+  "phase_ordinal": 90,
+  "review_status": "ACCEPTED",
+  "book_closeout": {
+    "status": "PASS",
+    "evidence_coverage": "256/256",
+    "epilogue_reviewed": true,
+    "formal": 15,
+    "supporting": 11,
+    "validated_dna": 4,
+    "frozen_dna": 4,
+    "freeze_contract_status": "FROZEN",
+    "application_contract_status": "ACTIVE",
+    "private_artifacts_verified": true
+  },
+  "cross_book_readiness": {
+    "status": "HOLD_METHOD_PARITY_UNVERIFIED",
+    "ready": false,
+    "book01_known_completed_work_preserved": true,
+    "book01_parity_status": "UNKNOWN",
+    "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
+    "forbidden_regression": [
+      "BOOK-01_SOURCE_GATE",
+      "BOOK-01_PACKET_GATE",
+      "BOOK-01_FULL_EVIDENCE_RERUN"
+    ],
+    "required_next_action": "Recover and normalize existing BOOK-01 outputs into the Phase 50/60/70/80 schema; perform only minimal gap review when durable evidence is genuinely missing."
+  },
+  "private_closeout_ref": "PRIVATE_DRIVE_BOOK02_CLOSEOUT_CROSS_BOOK_READINESS_V1",
+  "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T12:55:00+08:00"
+}
