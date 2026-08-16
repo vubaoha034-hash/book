@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-PARITY-RECOVERY-ACCESS-DIAGNOSTIC-V1-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "task_id": "BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1",
+  "review_status": "ACCEPTED",
+  "reported_result": {
+    "status": "PASS",
+    "diagnosis": "OTHER_MECHANICAL_BLOCKER",
+    "environment_os": "Microsoft Windows 10.0.26200",
+    "execution_plane": "LOCAL_WINDOWS",
+    "e_drive_visible": true,
+    "project_root_visible": true,
+    "private_root_visible": true,
+    "canonical_report_exists": true,
+    "malformed_report_exists": false,
+    "prior_report_sha256_match": true,
+    "prior_block_reason": "TASK_CONTRACT_UNAVAILABLE",
+    "retry_performed": false,
+    "retry_result": "NOT_APPLICABLE",
+    "literary_analysis_performed": false,
+    "source_modified": false,
+    "network_used": false,
+    "llm_used": false,
+    "stopped": true
+  },
+  "conclusion": {
+    "local_execution_plane_available": true,
+    "path_normalization_error": false,
+    "canonical_prior_report_verified": true,
+    "root_cause": "TASK_CONTRACT_UNAVAILABLE",
+    "safe_next_action": "Run a new self-contained read-only parity recovery retry that embeds the full contract and does not depend on fetching task-contract files at runtime.",
+    "full_book_rerun_authorized": false,
+    "literary_rerun_authorized": false
+  },
+  "created_at": "2026-08-16T16:35:00+08:00"
+}
