@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-15T21:30:00+08:00",
+  "updated_at": "2026-08-16T08:40:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -10,16 +10,16 @@
     "phase": "NUMBERED_EVIDENCE_EXTRACTION",
     "phase_ordinal": 40,
     "progress_unit": "numbered_chapter",
-    "progress_ordinal": 220,
+    "progress_ordinal": 230,
     "target_progress": 256,
-    "coverage_fraction": 0.859375,
+    "coverage_fraction": 0.8984375,
     "formal_zx_candidates": 10,
     "supporting_patterns": 16,
     "novel_dna": 0,
     "candidate_registry_promotion_status": "PRESERVE_LAST_ACCEPTED_COUNTS_PENDING_REGISTRY_RECONCILIATION",
     "status": "ACCEPTED",
-    "latest_review_receipt": "state/review_receipts/BOOK-02_211-220.json",
-    "next_batch": "221-230"
+    "latest_review_receipt": "state/review_receipts/BOOK-02_221-230.json",
+    "next_batch": "231-240"
   },
   "rollback": {
     "authorized": false,
@@ -30,7 +30,8 @@
     "BOOK-02_SOURCE_GATE_RETRY",
     "BOOK-02_PACKET_PENDING",
     "BOOK-02_EVIDENCE_001_210_PENDING",
-    "BOOK-02_EVIDENCE_211_220_PENDING"
+    "BOOK-02_EVIDENCE_211_220_PENDING",
+    "BOOK-02_EVIDENCE_221_230_PENDING"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
