@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-NOVEL-DNA-FREEZE-APPLICATION-V1-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "phase_ordinal": 80,
+  "review_status": "ACCEPTED",
+  "freeze": {
+    "validated_dna": 4,
+    "frozen_ids": ["ZX-VDNA-01", "ZX-VDNA-02", "ZX-VDNA-03", "ZX-VDNA-04"],
+    "formal_source_coverage": "15/15",
+    "formal_orphans": 0,
+    "supporting_direct_promotions": 0,
+    "contract_revision_id": "2",
+    "contract_text_sha256": "d612c2ca892f44a133f51ef2830244750064aad49492da2eddadb0ee454d8e29",
+    "semantic_mutation_requires_v2": true
+  },
+  "application_contract": {
+    "status": "ACTIVE",
+    "problem_evidence_required": true,
+    "simpler_fix_gate": true,
+    "formula_risk_required": true,
+    "exit_criteria_required": true,
+    "default_all_dna_enabled": false,
+    "scene_primary_max": 1,
+    "chapter_arc_primary_max": 2,
+    "book_max": 4,
+    "style_imitation_allowed": false,
+    "plot_copying_allowed": false,
+    "cross_book_auto_promotion": false
+  },
+  "private_contract_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
+  "next_stage": "BOOK-02_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T12:51:00+08:00"
+}
