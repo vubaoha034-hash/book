@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-PARITY-RECOVERY-SCAN-V2-PATH-SEMANTICS-CORRECTION-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "correction_type": "PATH_AND_UNKNOWN_SEMANTICS",
+  "canonical_report_path": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V2.json",
+  "invalid_path_example": "E:\\蒸馏小说_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V2.json",
+  "report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652",
+  "scan_status": "PASS",
+  "phase50": "UNKNOWN",
+  "phase60": "UNKNOWN",
+  "phase70": "UNKNOWN",
+  "phase80": "UNKNOWN",
+  "unknown_semantics": "PERSISTED_LITERARY_OUTPUT_NOT_RECOVERED_OR_NOT_PROVEN; DOES_NOT_MEAN_NOT_STARTED",
+  "downstream_stage_execution": false,
+  "regression_performed": false,
+  "created_at": "2026-08-16T17:58:00+08:00"
+}
