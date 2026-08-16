@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-NOVEL-DNA-VALIDATION-V1-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "BOOK_LEVEL_NOVEL_DNA_VALIDATION",
+  "phase_ordinal": 70,
+  "review_status": "ACCEPTED_WITH_MERGE",
+  "input": {
+    "formal_zx_candidates": 15,
+    "supporting_patterns": 11,
+    "synthesized_novel_dna": 5,
+    "formal_coverage_before_validation": "15/15",
+    "supporting_direct_promotions": 0
+  },
+  "validation_method": [
+    "cross_arc_recurrence",
+    "counterfactual_ablation",
+    "book_specificity",
+    "dna_distinctness",
+    "actionability_and_boundary"
+  ],
+  "verdicts": {
+    "DNA-01": "VALIDATED",
+    "DNA-02": "VALIDATED_WITH_MERGE",
+    "DNA-03": "VALIDATED",
+    "DNA-04": "VALIDATED_WITH_NARROWING",
+    "DNA-05": "MERGED_NOT_INDEPENDENT"
+  },
+  "merge": {
+    "source": "DNA-05",
+    "target": "DNA-02",
+    "formal_source_preserved": "F07",
+    "reason": "DNA-05 is evidence-supported as a Formal mechanism but is not independent enough at book-DNA level; its higher-order causal function overlaps with DNA-02: deepest value/desired future generates irreversible tragedy under pressure."
+  },
+  "final_validated_registry": {
+    "validated_novel_dna": 4,
+    "formal_coverage": "15/15",
+    "formal_orphans": 0,
+    "supporting_direct_promotions": 0,
+    "mapping": {
+      "VDNA-01": ["F01", "F02", "F04", "F12", "F14"],
+      "VDNA-02": ["F05", "F06", "F07", "F10"],
+      "VDNA-03": ["F03", "F08", "F11", "F13"],
+      "VDNA-04": ["F09", "F15"]
+    }
+  },
+  "private_validation": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_VALIDATION_V1",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_validation_stored_in_git": false
+  },
+  "next_stage": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T12:42:00+08:00"
+}
