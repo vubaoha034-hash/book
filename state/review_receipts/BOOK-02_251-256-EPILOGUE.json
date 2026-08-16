@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-251-256-EPILOGUE-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "NUMBERED_EVIDENCE_EXTRACTION",
+  "phase_ordinal": 40,
+  "batch": {
+    "start_chapter": 251,
+    "end_chapter": 256,
+    "numbered_count": 6,
+    "epilogue": true
+  },
+  "review_status": "ACCEPTED",
+  "accepted_progress_ordinal": 256,
+  "target_progress": 256,
+  "coverage_fraction": 1.0,
+  "epilogue_reviewed": true,
+  "candidate_registry": {
+    "last_accepted_formal_zx_candidates": 10,
+    "last_accepted_supporting_patterns": 16,
+    "novel_dna": 0,
+    "promotion_status": "PRESERVE_LAST_ACCEPTED_COUNTS_PENDING_REGISTRY_RECONCILIATION",
+    "reason": "The exact prior candidate registry and promotion/dedup rubric remain unreconciled. Preserve accepted counts rather than invent additions or duplicates before full-book settlement."
+  },
+  "next_stage": "EVIDENCE_SETTLEMENT_AND_CANDIDATE_REGISTRY_RECONCILIATION",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T10:58:00+08:00",
+  "privacy": {
+    "raw_novel_text_stored_in_git": false,
+    "literary_distillation_body_stored_in_git": false,
+    "receipt_contains_progress_metadata_only": true
+  }
+}
