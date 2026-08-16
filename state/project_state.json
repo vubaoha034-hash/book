@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-16T17:09:00+08:00",
+  "updated_at": "2026-08-16T17:58:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -49,6 +49,7 @@
     "work_title": "射雕英雄传",
     "v2_recovery_result": {
       "status": "PASS",
+      "canonical_report_path": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V2.json",
       "report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652",
       "repaired_work_id": "wrk_5724415a203a194f1c9a481c",
       "packet_binding": "VERIFIED",
@@ -57,10 +58,13 @@
       "phase60": "UNKNOWN",
       "phase70": "UNKNOWN",
       "phase80": "UNKNOWN",
+      "phase_unknown_semantics": "PERSISTED_LITERARY_OUTPUT_NOT_RECOVERED_OR_NOT_PROVEN; DOES_NOT_MEAN_NOT_STARTED",
       "minimal_gaps": 2,
+      "downstream_stage_execution": false,
       "verification_status": "SUMMARY_ONLY_REPORT_BODY_NOT_YET_BRIDGED"
     },
     "latest_external_result_receipt": "state/review_receipts/BOOK-01_PARITY_RECOVERY_SCAN_V2_REPORTED.json",
+    "latest_correction_receipt": "state/review_receipts/BOOK-01_PARITY_RECOVERY_SCAN_V2_PATH_SEMANTICS_CORRECTION.json",
     "bridge_target": "state/recovery_reports/BOOK-01_PARITY_RECOVERY_SCAN_V2_SANITIZED.json",
     "bridge_policy": "METADATA_ONLY_NO_NOVEL_TEXT_NO_DETAILED_DISTILLATION_BODY",
     "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
