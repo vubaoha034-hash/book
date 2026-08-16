@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-02-221-230-20260816",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-02",
+  "work_title": "诛仙",
+  "phase": "NUMBERED_EVIDENCE_EXTRACTION",
+  "phase_ordinal": 40,
+  "batch": {
+    "start_chapter": 221,
+    "end_chapter": 230,
+    "count": 10
+  },
+  "review_status": "ACCEPTED",
+  "accepted_progress_ordinal": 230,
+  "target_progress": 256,
+  "coverage_fraction": 0.8984375,
+  "distillation_evidence": {
+    "source": "private_file_library",
+    "source_title": "诛仙.txt",
+    "batch_read_and_analyzed": true,
+    "chapter_boundary_231_observed_only_for_end_validation": true,
+    "raw_text_stored_in_git": false,
+    "analysis_body_stored_in_git": false
+  },
+  "candidate_registry": {
+    "last_accepted_formal_zx_candidates": 10,
+    "last_accepted_supporting_patterns": 16,
+    "novel_dna": 0,
+    "promotion_status": "PRESERVE_LAST_ACCEPTED_COUNTS_PENDING_REGISTRY_RECONCILIATION",
+    "reason": "The exact prior formal candidate registry and promotion/de-duplication rubric remain unavailable as a durable authoritative artifact. New high-value patterns were identified in this batch, but counts are preserved to prevent duplicate or fabricated promotion."
+  },
+  "next_batch": "231-240",
+  "rollback_authorized": false,
+  "created_at": "2026-08-16T08:40:00+08:00",
+  "privacy": {
+    "raw_novel_text_stored_in_git": false,
+    "literary_distillation_body_stored_in_git": false,
+    "receipt_contains_progress_metadata_only": true
+  }
+}
