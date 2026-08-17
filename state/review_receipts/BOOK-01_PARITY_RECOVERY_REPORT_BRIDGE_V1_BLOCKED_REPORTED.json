@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-PARITY-RECOVERY-REPORT-BRIDGE-V1-BLOCKED-REPORTED-20260817",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "task": "BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_V1",
+  "reported_status": "BLOCKED",
+  "source_report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652",
+  "target": "state/recovery_reports/BOOK-01_PARITY_RECOVERY_SCAN_V2_SANITIZED.json",
+  "commit": "UNKNOWN",
+  "pushed": false,
+  "minimal_gaps": 2,
+  "target_exists_on_github_after_report": false,
+  "reported_safety": {
+    "novel_text_in_bridge": false,
+    "chapter_text_in_bridge": false,
+    "detailed_distillation_body_in_bridge": false,
+    "project_state_modified": false,
+    "literary_analysis_performed": false,
+    "source_modified": false,
+    "packet_regenerated": false,
+    "llm_used": false,
+    "stopped": true
+  },
+  "block_reason": "UNKNOWN_SUMMARY_OMITTED_REASON",
+  "interpretation": "Bridge was blocked before the sanitized GitHub target became available. Do not retry or infer cause until a bounded bridge diagnostic identifies the mechanical blocker.",
+  "rollback_authorized": false,
+  "created_at": "2026-08-17T08:39:00+08:00"
+}
