@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-17T08:39:00+08:00",
+  "updated_at": "2026-08-17T09:20:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -35,11 +35,11 @@
     "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION"
   },
   "active_task": {
-    "task_id": "BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_DIAGNOSTIC_V1",
+    "task_id": "BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1",
     "phase": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION",
     "phase_ordinal": 100,
     "status": "READY_FOR_EXTERNAL_LOCAL_EXECUTION",
-    "execution_scope": "MECHANICAL_BRIDGE_BLOCKER_DIAGNOSTIC_ONLY",
+    "execution_scope": "ISOLATED_REMOTE_BASED_WORKTREE_BRIDGE_ONE_SHOT",
     "book_id": "BOOK-01",
     "work_title": "射雕英雄传",
     "v2_recovery_result": {
@@ -53,27 +53,37 @@
       "phase60": "UNKNOWN",
       "phase70": "UNKNOWN",
       "phase80": "UNKNOWN",
-      "phase_unknown_semantics": "PERSISTED_LITERARY_OUTPUT_NOT_RECOVERED_OR_NOT_PROVEN; DOES_NOT_MEAN_NOT_STARTED",
       "minimal_gaps": 2,
       "downstream_stage_execution": false
     },
-    "bridge_v1_reported_result": {
-      "status": "BLOCKED",
-      "source_report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652",
-      "target": "state/recovery_reports/BOOK-01_PARITY_RECOVERY_SCAN_V2_SANITIZED.json",
-      "commit": "UNKNOWN",
-      "pushed": false,
-      "target_exists_on_github_after_report": false,
-      "minimal_gaps": 2,
-      "block_reason": "UNKNOWN_SUMMARY_OMITTED_REASON",
-      "safety_flags_clean": true
+    "bridge_diagnostic": {
+      "status": "PASS",
+      "diagnosis": "NON_FAST_FORWARD_OR_REMOTE_CONFLICT",
+      "repo_root": "E:\\蒸馏小说\\repo",
+      "current_branch": "novel-distill-v1",
+      "upstream": "origin/novel-distill-v1",
+      "remote_divergence": "DIVERGED",
+      "working_tree_clean": true,
+      "git_identity_available": true,
+      "remote_available": true,
+      "auth_mechanically_available": true,
+      "retry_safe_under_prior_task": false
     },
-    "latest_external_result_receipt": "state/review_receipts/BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_V1_BLOCKED_REPORTED.json",
-    "task_contract": "state/tasks/BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_DIAGNOSTIC_V1.md",
+    "resolution_strategy": "DO_NOT_RECONCILE_DIVERGED_LOCAL_BRANCH; CREATE_TEMP_ISOLATED_WORKTREE_FROM_LATEST_ORIGIN_NOVEL_DISTILL_V1; GENERATE_ONLY_SANITIZED_BRIDGE; FAST_FORWARD_PUSH_HEAD_TO_REMOTE; RETRY_ON_REMOTE_ADVANCE_WITHOUT_FORCE",
     "bridge_target": "state/recovery_reports/BOOK-01_PARITY_RECOVERY_SCAN_V2_SANITIZED.json",
+    "max_remote_race_retries": 3,
+    "preserve_existing_local_diverged_branch": true,
+    "force_push_allowed": false,
+    "merge_existing_local_branch_allowed": false,
+    "rebase_existing_local_branch_allowed": false,
+    "reset_existing_local_branch_allowed": false,
     "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
+    "latest_diagnostic_receipt": "state/review_receipts/BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_DIAGNOSTIC_V1.json",
     "forbidden_actions": [
-      "BRIDGE_RETRY_WITHOUT_DIAGNOSIS",
+      "FORCE_PUSH",
+      "REBASE_EXISTING_LOCAL_NOVEL_DISTILL_V1",
+      "MERGE_INTO_EXISTING_LOCAL_NOVEL_DISTILL_V1",
+      "RESET_EXISTING_LOCAL_NOVEL_DISTILL_V1",
       "SOURCE_GATE_RERUN",
       "PACKET_REGENERATION",
       "FULL_EVIDENCE_RERUN",
@@ -85,7 +95,7 @@
   },
   "rollback": {"authorized": false,"receipt": null},
   "superseded_states": [
-    "BOOK-02_SOURCE_GATE_PENDING","BOOK-02_SOURCE_GATE_RETRY","BOOK-02_PACKET_PENDING","BOOK-02_EVIDENCE_001_210_PENDING","BOOK-02_EVIDENCE_211_220_PENDING","BOOK-02_EVIDENCE_221_230_PENDING","BOOK-02_EVIDENCE_231_240_PENDING","BOOK-02_EVIDENCE_241_250_PENDING","BOOK-02_EVIDENCE_251_256_EPILOGUE_PENDING","BOOK-02_EVIDENCE_SETTLEMENT_PENDING","BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING","BOOK-02_NOVEL_DNA_VALIDATION_PENDING","BOOK-02_NOVEL_DNA_FREEZE_PENDING","BOOK-02_CLOSEOUT_PENDING","BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED","BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1","BOOK-01_PARITY_RECOVERY_SCAN_V2","BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_V1_BLOCKED"
+    "BOOK-02_SOURCE_GATE_PENDING","BOOK-02_SOURCE_GATE_RETRY","BOOK-02_PACKET_PENDING","BOOK-02_EVIDENCE_001_210_PENDING","BOOK-02_EVIDENCE_211_220_PENDING","BOOK-02_EVIDENCE_221_230_PENDING","BOOK-02_EVIDENCE_231_240_PENDING","BOOK-02_EVIDENCE_241_250_PENDING","BOOK-02_EVIDENCE_251_256_EPILOGUE_PENDING","BOOK-02_EVIDENCE_SETTLEMENT_PENDING","BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING","BOOK-02_NOVEL_DNA_VALIDATION_PENDING","BOOK-02_NOVEL_DNA_FREEZE_PENDING","BOOK-02_CLOSEOUT_PENDING","BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED","BOOK-01_PARITY_RECOVERY_ACCESS_DIAGNOSTIC_V1","BOOK-01_PARITY_RECOVERY_SCAN_V2","BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_V1_BLOCKED","BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_DIAGNOSTIC_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
