@@ -1,5 +1,19 @@
 # AGENTS.md
 
+## Cross-chat continuity preflight — mandatory for project-state work
+
+Before resuming `novel-distill-v1`, answering “继续/下一步”, mutating project state, or dispatching a recovery task:
+
+1. Read `PROJECT_CONTROL_ADAPTER.json`.
+2. Read `state/project_state.json` before inferring current progress.
+3. Read `state/continuity/LATEST_CHECKPOINT.json` and the adapter-declared ledger tail.
+4. Apply both `docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md` and the central UPCP anti-rollback/write-through policy.
+5. Missing evidence is `UNKNOWN`, never automatic `NOT_STARTED`.
+6. Persist material state transitions when they happen; do not wait for a chat-end summary.
+7. UPCP is continuity governance only. It must not authorize source reruns, literary analysis, Novel DNA regeneration, branch reconciliation, or any action forbidden by the active project-state task.
+
+If a stricter task/benchmark read-isolation rule conflicts with generic continuity reads, the stricter task rule wins.
+
 ## Repository purpose
 
 This repository contains `novel-writing-master`, an evidence-driven Chinese-fiction Skill.
