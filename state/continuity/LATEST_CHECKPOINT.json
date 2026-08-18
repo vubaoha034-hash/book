@@ -1,0 +1,44 @@
+{
+  "schema_version": "upcp-latest-checkpoint/v1",
+  "project_id": "novel-distillation",
+  "sequence": 1,
+  "recorded_at": "2026-08-19T07:09:10+08:00",
+  "task_model": "SINGLE_TASK",
+  "highest_accepted_checkpoint": "BOOK-02_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+  "active_task_ids": ["BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1"],
+  "current_focus": "BOOK-01 parity reconciliation via isolated remote-based one-shot bridge",
+  "completed": [
+    "BOOK-02 reviewed through chapter 256 plus epilogue and formally closed",
+    "BOOK-02 Novel DNA validation/freeze completed with 4 frozen DNA items",
+    "BOOK-02 closeout status PASS and completed work preserved"
+  ],
+  "incomplete": [
+    "BOOK-01 method parity reconciliation",
+    "cross-book comparison readiness"
+  ],
+  "blocked": [
+    "cross_book_readiness=HOLD_METHOD_PARITY_UNVERIFIED until BOOK-01 parity evidence is reconciled"
+  ],
+  "unknowns": [
+    "BOOK-01 phase50/phase60/phase70/phase80 remain UNKNOWN in the canonical project state",
+    "Current user-computer execution state of the authorized local one-shot is not inferable from GitHub alone"
+  ],
+  "do_not_reopen": [
+    "BOOK-02 completed evidence/review/DNA/closeout stages listed as superseded in state/project_state.json",
+    "BOOK-01 completed work must be preserved; regression/source-gate rerun/packet regeneration/full evidence rerun are forbidden by current state",
+    "No backward transition without an authorized rollback receipt"
+  ],
+  "active_change_ids": [],
+  "next_required_action": "Continue only BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1 under its isolated remote-based worktree strategy; preserve the diverged existing local branch and never force-push/rebase/reset it.",
+  "ledger_tails": {
+    "global": {
+      "event_id": "EVT-NOVEL-DISTILL-CONTINUITY-BOOTSTRAP-20260819-001",
+      "event_hash": "1d1c7777c74b863c717f6ddcbea1833d82c8bf82ca1f16b566c4dc02b7f1b74c"
+    }
+  },
+  "source_state_refs": [
+    {"path": "state/project_state.json", "role": "accepted checkpoint and active-task authority", "git_blob": "ded1c477cddddf33a2885fad42234423deba1818"},
+    {"path": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md", "role": "project anti-rollback policy", "git_blob": "2f8afb82fe1f16c0915c75a4418b416937c66ec5"}
+  ],
+  "status": "ACTIVE"
+}
