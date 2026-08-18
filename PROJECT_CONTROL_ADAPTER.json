@@ -1,0 +1,47 @@
+{
+  "schema_version": "upcp-project-adapter/v1",
+  "project_id": "novel-distillation",
+  "repository": "vubaoha034-hash/book",
+  "canonical_branch": "novel-distill-v1",
+  "governance_source": {
+    "repository": "vubaoha034-hash/skills",
+    "skill_path": "universal-project-control-plane/SKILL.md",
+    "compatibility_contract": "upcp-governance/v1",
+    "last_verified_commit": "72ad9d53d27ba7260a7a5694079b4acdf8154c6f"
+  },
+  "business_entrypoints": [
+    "AGENTS.md",
+    "SKILL.md",
+    "state/project_state.json"
+  ],
+  "state_authorities": [
+    {"path": "state/project_state.json", "priority": 1, "purpose": "novel-distillation accepted checkpoint, active task, rollback and superseded-state authority"},
+    {"path": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md", "priority": 2, "purpose": "project-specific anti-rollback semantics"}
+  ],
+  "task_model": "SINGLE_TASK",
+  "task_authorities": [
+    {"path": "state/project_state.json", "priority": 1, "purpose": "active_task authority"},
+    {"path": "state/tasks", "priority": 2, "purpose": "task contracts and recovery instructions"}
+  ],
+  "acceptance_authorities": [
+    {"path": "scripts/validate_project_state_transition.py", "priority": 1, "purpose": "project-state transition validator"},
+    {"path": "config/novel-quality-gates.v3.json", "priority": 2, "purpose": "V3 literary quality evidence gates when applicable"}
+  ],
+  "change_authorities": [],
+  "continuity": {
+    "checkpoint_path": "state/continuity/LATEST_CHECKPOINT.json",
+    "ledger_mode": "SINGLE_FILE",
+    "ledger_path": "state/continuity/STATE_LEDGER.jsonl",
+    "ledger_root": null,
+    "hash_chain_required": true,
+    "write_through_required": true
+  },
+  "rules": {
+    "no_silent_mutation": true,
+    "anti_rollback": true,
+    "missing_state_is_unknown": true,
+    "continue_means_next_incomplete_gate": true,
+    "governance_never_overrides_business_rules": true,
+    "state_conflict_fails_closed": true
+  }
+}
