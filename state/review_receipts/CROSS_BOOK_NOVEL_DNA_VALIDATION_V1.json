@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "CROSS-BOOK-NOVEL-DNA-VALIDATION-V1-20260820",
+  "project_id": "novel-distillation",
+  "phase": "CROSS_BOOK_NOVEL_DNA_VALIDATION",
+  "phase_ordinal": 170,
+  "review_status": "ACCEPTED_WITH_NARROWING",
+  "inputs": {
+    "BOOK-01": {
+      "work_title": "射雕英雄传",
+      "frozen_ids": ["SD-VDNA-01", "SD-VDNA-02", "SD-VDNA-03"],
+      "freeze_manifest": "state/frozen_dna/BOOK-01_NOVEL_DNA_FREEZE_V1.json",
+      "closeout_receipt": "state/review_receipts/BOOK-01_CLOSEOUT_CROSS_BOOK_READINESS_V1.json"
+    },
+    "BOOK-02": {
+      "work_title": "诛仙",
+      "frozen_ids": ["ZX-VDNA-01", "ZX-VDNA-02", "ZX-VDNA-03", "ZX-VDNA-04"],
+      "freeze_manifest": "state/frozen_dna/BOOK-02_NOVEL_DNA_FREEZE_V1.json",
+      "closeout_receipt": "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json"
+    }
+  },
+  "method_parity": "VERIFIED",
+  "pairwise_summary": {
+    "pair_comparisons": 12,
+    "same_core": 2,
+    "partial_overlap": 2,
+    "no_match": 8,
+    "one_to_one_match_required": false
+  },
+  "cross_book_candidates": [
+    {
+      "candidate_id": "CBDNA-C01",
+      "machine_name": "PERSISTENT_OBLIGATION_AND_CHOICE_IDENTITY",
+      "confidence": "HIGH",
+      "support": ["SD-VDNA-01", "ZX-VDNA-01"],
+      "status": "CROSS_BOOK_CANDIDATE_ONLY"
+    },
+    {
+      "candidate_id": "CBDNA-C02",
+      "machine_name": "NARRATIVE_ASSET_ACCRETION_ACROSS_ARCS",
+      "confidence": "HIGH",
+      "support": ["SD-VDNA-03", "ZX-VDNA-03"],
+      "status": "CROSS_BOOK_CANDIDATE_ONLY"
+    },
+    {
+      "candidate_id": "CBDNA-C03",
+      "machine_name": "AUTONOMOUS_CAUSAL_LINES_CONVERGE_BY_INDEPENDENT_MOTIVE",
+      "confidence": "MEDIUM_HIGH",
+      "support": ["SD-VDNA-03", "ZX-VDNA-04"],
+      "status": "CROSS_BOOK_CANDIDATE_WITH_NARROWING"
+    }
+  ],
+  "book_specific_residuals": {
+    "BOOK-01": [
+      {
+        "dna_id": "SD-VDNA-02",
+        "disposition": "BOOK01_SPECIFIC",
+        "reason": "No frozen BOOK-02 DNA provides causal-function equivalence for a socialized capability/provenance network."
+      }
+    ],
+    "BOOK-02": [
+      {
+        "dna_id": "ZX-VDNA-02",
+        "disposition": "BOOK02_SPECIFIC",
+        "reason": "No frozen BOOK-01 DNA independently supports cherished-future-to-irreversible-tragedy as a book-level mother mechanism."
+      },
+      {
+        "dna_id": "ZX-VDNA-04",
+        "subcomponent": "SYSTEM_DEPENDENCY_DEGRADATION",
+        "disposition": "BOOK02_SPECIFIC_SUBCOMPONENT",
+        "reason": "Only the independent-motive convergence subcore is cross-book; progressive resource/lock/permission dependency failure is not independently frozen in BOOK-01."
+      }
+    ]
+  },
+  "governance": {
+    "cross_author_specificity_removal": "PASS",
+    "counterexample_testing": "PASS",
+    "actionability": "PASS",
+    "style_independence": "PASS",
+    "plot_independence": "PASS",
+    "book_level_semantic_edits": 0,
+    "supporting_direct_promotions": 0,
+    "global_dna_promotion_authorized": false,
+    "global_dna_count": 0
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
+    "file_id": "1zPyKbdgNSEENq--QqZeB_2GswMPWDb1evFo1JAVy-aA",
+    "folder_id": "1euIo6QVRDwxlnFf1oZ2NGm1R_3srISlR",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1",
+  "rollback_authorized": false,
+  "created_at": "2026-08-20T19:31:00+08:00"
+}
