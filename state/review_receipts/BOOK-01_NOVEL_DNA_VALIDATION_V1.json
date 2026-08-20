@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-NOVEL-DNA-VALIDATION-V1-20260820",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "phase": "BOOK_LEVEL_NOVEL_DNA_VALIDATION",
+  "method_phase_ordinal": 70,
+  "review_status": "ACCEPTED_WITH_MERGE",
+  "source": {
+    "repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+    "repaired_source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "chapter_coverage": "40/40",
+    "chapter40_scope": "NARRATIVE_ONLY_PER_PACKET_ANALYSIS_SCOPE",
+    "synthesis_receipt": "state/review_receipts/BOOK-01_NOVEL_DNA_V1.json"
+  },
+  "validation_method": {
+    "cross_arc_recurrence_minimum": 3,
+    "counterfactual_ablation": true,
+    "specificity": true,
+    "de_duplication": true,
+    "boundary_and_failure_signal": true,
+    "supporting_direct_promotion_allowed": false,
+    "style_imitation_forbidden": true
+  },
+  "input": {
+    "synthesized_dna_candidates": 4,
+    "formal_total": 11,
+    "supporting_total": 12
+  },
+  "verdicts": {
+    "DNA-01": "VALIDATED_WITH_NARROWING",
+    "DNA-02": "VALIDATED_WITH_NARROWING",
+    "DNA-03": "VALIDATED_WITH_NARROWING",
+    "DNA-04": "MERGED_NOT_INDEPENDENT"
+  },
+  "validated_registry": {
+    "validated_independent_dna": 3,
+    "merged_not_independent": 1,
+    "formal_total": 11,
+    "formal_coverage": "11/11",
+    "formal_orphan": 0,
+    "supporting_total": 12,
+    "supporting_direct_promotions": 0,
+    "mapping": {
+      "VDNA-01": ["F01", "F02", "F04", "F09", "F10", "F11"],
+      "VDNA-02": ["F03", "F05", "F06"],
+      "VDNA-03": ["F07", "F08"]
+    },
+    "dna04_disposition": "F10_RETAINS_FORMAL_STATUS_AND_IS_ABSORBED_AS_ANTAGONIST_NEGATIVE_CHOICE_CREDIT_SUBTYPE_OF_VDNA-01"
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_VALIDATION_V1",
+    "file_id": "1DFqMw8_BCKSG_S--spoMGAc11gSbVvmJTmqXPgNL2rs",
+    "title": "BOOK-01_射雕英雄传_NOVEL_DNA_VALIDATION_V1",
+    "folder_id": "1WQOYTuuJRV3DQ-06xwMPZ21pVrWdWRl9",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "rollback_authorized": false,
+  "created_at": "2026-08-20T18:54:00+08:00"
+}
