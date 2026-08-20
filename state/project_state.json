@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-20T18:55:00+08:00",
+  "updated_at": "2026-08-20T19:00:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -25,7 +25,7 @@
     "book_status": "CLOSED_READY_FOR_COMPARISON",
     "cross_book_readiness": "HOLD_METHOD_PARITY_UNVERIFIED",
     "cross_book_ready": false,
-    "book01_parity_status": "IN_PROGRESS_PHASE70_ACCEPTED",
+    "book01_parity_status": "IN_PROGRESS_PHASE80_ACCEPTED",
     "book01_completed_work_must_be_preserved": true,
     "book01_regression_forbidden": true,
     "status": "ACCEPTED",
@@ -35,11 +35,11 @@
     "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION"
   },
   "active_task": {
-    "task_id": "BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1",
+    "task_id": "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1",
     "phase": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION",
-    "phase_ordinal": 150,
+    "phase_ordinal": 160,
     "status": "READY_FOR_CHATGPT_EXECUTION",
-    "execution_scope": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT_FROM_VALIDATED_DNA_ONLY",
+    "execution_scope": "BOOK01_CLOSEOUT_AND_METHOD_PARITY_READINESS_AFTER_PHASE80_FREEZE",
     "book_id": "BOOK-01",
     "work_title": "射雕英雄传",
     "repaired_formal_source": {
@@ -50,43 +50,34 @@
       "packet_transfer_receipt": "state/review_receipts/BOOK-01_REPAIRED_PACKET_CHATGPT_TRANSFER_V1.json"
     },
     "book01_parity_checkpoint": {
-      "phase": "BOOK_LEVEL_NOVEL_DNA_VALIDATION",
-      "method_phase_ordinal": 70,
-      "status": "ACCEPTED_WITH_MERGE",
-      "synthesized_dna_candidates": 4,
-      "validated_independent_dna": 3,
-      "merged_not_independent": 1,
+      "phase": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+      "method_phase_ordinal": 80,
+      "status": "ACCEPTED",
       "formal_total": 11,
+      "supporting_total": 12,
+      "validated_dna": 3,
+      "frozen_dna": 3,
+      "frozen_ids": ["SD-VDNA-01", "SD-VDNA-02", "SD-VDNA-03"],
       "formal_coverage": "11/11",
       "formal_orphan": 0,
-      "supporting_total": 12,
       "supporting_direct_promotions": 0,
-      "review_receipt": "state/review_receipts/BOOK-01_NOVEL_DNA_VALIDATION_V1.json",
-      "private_validation_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_VALIDATION_V1",
-      "private_validation_file_id": "1DFqMw8_BCKSG_S--spoMGAc11gSbVvmJTmqXPgNL2rs",
-      "validated_mapping": {
-        "VDNA-01": ["F01", "F02", "F04", "F09", "F10", "F11"],
-        "VDNA-02": ["F03", "F05", "F06"],
-        "VDNA-03": ["F07", "F08"]
-      },
-      "dna04_disposition": "MERGED_NOT_INDEPENDENT_INTO_VDNA-01_AS_ANTAGONIST_NEGATIVE_CHOICE_CREDIT_SUBTYPE"
+      "freeze_status": "FROZEN",
+      "application_contract_status": "ACTIVE",
+      "manifest": "state/frozen_dna/BOOK-01_NOVEL_DNA_FREEZE_V1.json",
+      "review_receipt": "state/review_receipts/BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1.json",
+      "private_freeze_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
+      "private_freeze_file_id": "1pj0FSe4fKBYE48cKr4Deag2r7x5vEwqQbcHLWWADDVU"
     },
-    "freeze_contract": {
-      "validated_input_only": true,
-      "validated_dna_count": 3,
-      "stable_ids_required": true,
-      "semantic_edit_requires_new_version": true,
-      "book_specific_not_global": true,
-      "cross_book_promotion_forbidden_before_comparison": true,
-      "invocation_gate_required": true,
-      "default_disabled": true,
-      "style_imitation_forbidden": true,
-      "plot_copying_forbidden": true,
-      "application_limits_required": true,
-      "composition_rules_required": true,
-      "counterexample_boundaries_required": true
+    "closeout_contract": {
+      "verify_phase50_60_70_80_chain": true,
+      "verify_private_artifacts_present": true,
+      "verify_source_binding_consistency": true,
+      "verify_no_supporting_direct_promotion": true,
+      "verify_no_merged_dna_reintroduced": true,
+      "cross_book_comparison_not_yet_executed": true,
+      "method_parity_decision_required": true
     },
-    "next_stage": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+    "next_stage": "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS",
     "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
     "forbidden_actions": [
       "SOURCE_GATE_RERUN",
@@ -94,6 +85,7 @@
       "DONOR_SOURCE_USE_AS_FORMAL_PARITY_SOURCE",
       "SUPPORTING_DIRECT_PROMOTION_TO_DNA",
       "REINTRODUCE_MERGED_DNA04_AS_INDEPENDENT_WITHOUT_NEW_VALIDATION",
+      "SEMANTIC_EDIT_OF_SD_VDNA_V1_IN_PLACE",
       "CODEX_LITERARY_ANALYSIS",
       "SOURCE_MODIFICATION",
       "STYLE_IMITATION",
@@ -130,7 +122,8 @@
     "BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1",
     "BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1",
     "BOOK-01_NOVEL_DNA_SYNTHESIS_V1",
-    "BOOK-01_NOVEL_DNA_VALIDATION_V1"
+    "BOOK-01_NOVEL_DNA_VALIDATION_V1",
+    "BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
