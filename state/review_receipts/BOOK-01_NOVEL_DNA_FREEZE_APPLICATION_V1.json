@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-01-NOVEL-DNA-FREEZE-APPLICATION-V1-20260820",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "phase": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "method_phase_ordinal": 80,
+  "review_status": "ACCEPTED",
+  "source": {
+    "repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+    "repaired_source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "chapter_coverage": "40/40",
+    "validation_receipt": "state/review_receipts/BOOK-01_NOVEL_DNA_VALIDATION_V1.json"
+  },
+  "freeze": {
+    "validated_input": 3,
+    "frozen_dna": 3,
+    "frozen_ids": ["SD-VDNA-01", "SD-VDNA-02", "SD-VDNA-03"],
+    "formal_total": 11,
+    "formal_coverage": "11/11",
+    "formal_orphan": 0,
+    "supporting_total": 12,
+    "supporting_direct_promotions": 0,
+    "manifest": "state/frozen_dna/BOOK-01_NOVEL_DNA_FREEZE_V1.json",
+    "freeze_status": "FROZEN",
+    "application_contract_status": "ACTIVE"
+  },
+  "governance": {
+    "book_specific_not_global": true,
+    "semantic_edit_requires_v2": true,
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "application_limits_defined": true,
+    "composition_rules_defined": true,
+    "counterexample_boundaries_defined": true,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "cross_book_promotion_forbidden_before_validation": true
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
+    "file_id": "1pj0FSe4fKBYE48cKr4Deag2r7x5vEwqQbcHLWWADDVU",
+    "folder_id": "1WQOYTuuJRV3DQ-06xwMPZ21pVrWdWRl9",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+  "rollback_authorized": false,
+  "created_at": "2026-08-20T18:59:00+08:00"
+}
