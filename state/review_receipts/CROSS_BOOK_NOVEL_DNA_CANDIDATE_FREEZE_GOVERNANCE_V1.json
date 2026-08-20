@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_GOVERNANCE_V1",
+  "phase": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_GOVERNANCE",
+  "status": "ACCEPTED",
+  "candidate_ids": ["CBDNA-C01", "CBDNA-C02", "CBDNA-C03"],
+  "global_dna_count": 0,
+  "global_promotion_authorized": false,
+  "governance": {
+    "stable_ids_frozen": true,
+    "support_provenance_required": true,
+    "counterexample_boundaries_required": true,
+    "third_independent_book_required_before_global_proposal": true,
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "c03_narrowing_locked": true
+  },
+  "forbidden": [
+    "PROMOTE_TO_GLOBAL_DNA",
+    "BROADEN_CBDNA_C03_WITHOUT_NEW_VALIDATION",
+    "STYLE_IMITATION",
+    "PLOT_COPYING"
+  ]
+}
