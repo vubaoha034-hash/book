@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "stage": "BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1",
+  "status": "ACCEPTED",
+  "private_report_sha256": "25fc6ff813aaf1408098173d91e03fdc3061d59240e214774a4fd4eabd1e566b",
+  "sanitized_report": "state/recovery_reports/BOOK-01_TARGETED_LITERARY_RECOVERY_BINDING_V1_SANITIZED.json",
+  "sanitized_remote_commit_reported": "8417acc12e754541266a7e73a159895d763a40a9",
+  "sanitized_remote_verified": true,
+  "repaired_formal_source": {
+    "work_id": "wrk_5724415a203a194f1c9a481c",
+    "normalized_source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "chapter_count": 40,
+    "packet_binding": "VERIFIED"
+  },
+  "search_result": {
+    "search_completed": true,
+    "file_count_scanned": 4286,
+    "literary_artifacts_recovered": 0,
+    "historical_work_recovered": false,
+    "historical_completion_status": "UNKNOWN_PRESERVED",
+    "literary_recovery_outcome": "NO_DURABLE_LITERARY_ARTIFACT_RECOVERED_AFTER_TARGETED_SEARCH"
+  },
+  "parity": {
+    "phase50": "UNKNOWN",
+    "phase60": "UNKNOWN",
+    "phase70": "UNKNOWN",
+    "phase80": "UNKNOWN",
+    "unknown_semantics": "PERSISTED_LITERARY_OUTPUT_NOT_RECOVERED_OR_NOT_PROVEN; DOES_NOT_MEAN_NOT_STARTED"
+  },
+  "source_binding_reconciliation": {
+    "old_upload_selection_binding": "DONOR_INELIGIBLE",
+    "old_upload_selection_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+    "old_upload_selection_formal_parity_eligible": false,
+    "repaired_formal_source_work_id": "wrk_5724415a203a194f1c9a481c"
+  },
+  "minimal_semantic_gap": "Existing durable literary outputs could not be recovered. A new repaired-source semantic reconstruction is required before BOOK-01 can reach Phase 50-80 method parity.",
+  "semantic_reconstruction_authorized": true,
+  "semantic_reconstruction_executor": "CHATGPT",
+  "codex_literary_analysis_forbidden": true,
+  "next_stage": "BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1",
+  "regression_performed": false,
+  "source_modified": false,
+  "packet_modified": false
+}
