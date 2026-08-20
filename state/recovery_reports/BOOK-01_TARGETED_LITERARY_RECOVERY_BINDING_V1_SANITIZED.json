@@ -1,0 +1,288 @@
+{
+  "bridge_task": "BOOK-01_TARGETED_LITERARY_RECOVERY_BINDING_REMOTE_BRIDGE_V1",
+  "private_report_sha256": "25fc6ff813aaf1408098173d91e03fdc3061d59240e214774a4fd4eabd1e566b",
+  "sanitization": {
+    "metadata_only": true,
+    "novel_text_included": false,
+    "chapter_text_included": false,
+    "detailed_distillation_body_included": false,
+    "new_literary_analysis_generated": false
+  },
+  "task": "BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1",
+  "status": "PASS",
+  "book": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "generated_at": "2026-08-20T15:46:28.0290151+08:00",
+  "task_mode": "TARGETED_LITERARY_ARTIFACT_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION",
+  "repaired_source_anchor": {
+    "work_id": "wrk_5724415a203a194f1c9a481c",
+    "normalized_source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "chapter_count": 40,
+    "packet_binding": "VERIFIED",
+    "formal_parity_source": true,
+    "anchor_source": "BOOK-01_PARITY_RECOVERY_SCAN_V2",
+    "anchor_report_path": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V2.json",
+    "anchor_report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652"
+  },
+  "historical_source_anchors": {
+    "base": {
+      "work_id": "wrk_526edfd2ac1057236a866131",
+      "normalized_sha256": "526edfd2ac1057236a866131a745e4248fb68de606ddc01e6bf31f3fbd790efe",
+      "chapter_count": 40,
+      "binding_class": "BASE_PRE_REPAIR",
+      "known_defect": "CHAPTER_30_INTERNAL_DEFECT",
+      "default_impact_gate": "CH30_IMPACT_REVIEW_REQUIRED"
+    },
+    "donor": {
+      "work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "normalized_sha256": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "chapter_count": 40,
+      "binding_class": "DONOR_INELIGIBLE",
+      "known_defect": "SYSTEMATIC_CHAPTER_TAIL_TRUNCATION",
+      "formal_distillation_source_eligible": false
+    }
+  },
+  "search_coverage": {
+    "search_completed": true,
+    "directories_checked": [
+      {
+        "path": "E:\\蒸馏小说\\_private",
+        "recursive": true,
+        "exists": true,
+        "file_count_scanned": 4160
+      },
+      {
+        "path": "E:\\蒸馏小说\\repo",
+        "recursive": true,
+        "exists": true,
+        "file_count_scanned": 126,
+        "note": "Working-tree files only; .git objects were examined separately through Git commands."
+      }
+    ],
+    "priority_directory_presence": [
+      {"path": "E:\\蒸馏小说\\_private\\03_ChatGPT蒸馏包", "exists": true},
+      {"path": "E:\\蒸馏小说\\_private\\04_待上传ChatGPT", "exists": true},
+      {"path": "E:\\蒸馏小说\\_private\\repair_provenance", "exists": true},
+      {"path": "E:\\蒸馏小说\\_private\\logs", "exists": true},
+      {"path": "E:\\蒸馏小说\\_private\\manifests", "exists": true},
+      {"path": "E:\\蒸馏小说\\_private\\recovery", "exists": true},
+      {"path": "E:\\蒸馏小说\\_private\\archive", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\archives", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\backup", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\backups", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\export", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\exports", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\result", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\results", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\receipt", "exists": false},
+      {"path": "E:\\蒸馏小说\\_private\\receipts", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\03_StoryCards", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\04_单篇蒸馏", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\05_跨作品蒸馏", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\06_NovelDNA", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\08_质量复盘", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\09_Benchmark", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\docs", "exists": true},
+      {"path": "E:\\蒸馏小说\\repo\\state", "exists": false, "note": "Absent in the intentionally unsynchronized local diverged working tree; remote Git history was examined separately."},
+      {"path": "E:\\蒸馏小说\\repo\\logs", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\archive", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\archives", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\backup", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\backups", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\results", "exists": false},
+      {"path": "E:\\蒸馏小说\\repo\\receipts", "exists": false}
+    ],
+    "file_count_scanned": 4286,
+    "candidate_file_count": 30,
+    "candidate_definition": "Unique non-body local files containing at least one BOOK-01 identity anchor after excluding raw novel text, chapter text, Packet parts, benchmark copies, and temporary worktrees.",
+    "identity_content_hit_count": 86,
+    "identity_and_phase_hit_count": 4,
+    "identity_and_phase_disposition": {
+      "upload_instruction_candidates": 1,
+      "prior_recovery_or_diagnostic_reports": 3,
+      "completed_literary_result_candidates": 0
+    },
+    "git_branches_checked": 8,
+    "git_tags_checked": 0,
+    "git_commits_or_objects_examined": {
+      "reachable_commits": 131,
+      "reflog_unique_commits": 16,
+      "union_commits": 132,
+      "reachable_objects": 651,
+      "unique_identity_paths": 19,
+      "unique_identity_blobs": 28,
+      "reflog_only_commits": 1,
+      "reflog_only_identity_hits": 0,
+      "deleted_candidate_paths": 0,
+      "project_state_versions_examined": 19
+    },
+    "git_refs_checked": [
+      "refs/heads/benchmark-v1",
+      "refs/heads/novel-distill-v1",
+      "refs/remotes/origin/HEAD",
+      "refs/remotes/origin/agent/novel-writing-master-v3",
+      "refs/remotes/origin/benchmark-v1",
+      "refs/remotes/origin/chatgpt/upcp-continuity-adapter-20260819",
+      "refs/remotes/origin/main",
+      "refs/remotes/origin/novel-distill-v1"
+    ],
+    "git_search_methods": [
+      "git fetch origin --prune --tags",
+      "git branch -a",
+      "git tag",
+      "git log --all --name-only",
+      "git rev-list --all --objects",
+      "git reflog --all",
+      "git grep across every reachable or reflog commit",
+      "git log -S",
+      "git log -G",
+      "git show commit:path or blob metadata"
+    ],
+    "search_terms_used": [
+      "BOOK-01",
+      "射雕英雄传",
+      "射雕",
+      "STEP-02",
+      "STEP-02A",
+      "wrk_5724415a203a194f1c9a481c",
+      "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "wrk_526edfd2ac1057236a866131",
+      "526edfd2ac1057236a866131a745e4248fb68de606ddc01e6bf31f3fbd790efe",
+      "wrk_ecadf1440d73d61ef31ec5ed",
+      "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "Evidence",
+      "Evidence Extraction",
+      "evidence ledger",
+      "chapter evidence",
+      "batch evidence",
+      "StoryCard",
+      "Story Card",
+      "单篇蒸馏",
+      "单书蒸馏",
+      "book distillation",
+      "candidate registry",
+      "Formal",
+      "Supporting",
+      "Novel DNA",
+      "NovelDNA",
+      "DNA",
+      "validation",
+      "validated",
+      "review",
+      "accepted",
+      "acceptance",
+      "freeze",
+      "frozen",
+      "application contract",
+      "receipt",
+      "review receipt",
+      "result",
+      "scorecard",
+      "upload selection",
+      "selected packet",
+      "ready-to-upload",
+      "待上传"
+    ],
+    "historical_artifacts_found": 0,
+    "deduplicated_artifacts_found": 0,
+    "search_errors": [],
+    "search_limitations": [
+      "No files outside E:\\蒸馏小说 were searched.",
+      "Novel bodies and Packet part bodies were excluded from literary classification; only identity and metadata were used.",
+      "Absence of a recovered durable artifact preserves UNKNOWN and does not prove NOT_STARTED."
+    ]
+  },
+  "upload_selection_artifacts": [
+    {
+      "artifact_id": "BOOK01-UPLOAD-SELECTION-001",
+      "location_type": "LOCAL_FILE",
+      "path": "E:\\蒸馏小说\\_private\\chatgpt_selection.txt",
+      "filename": "chatgpt_selection.txt",
+      "sha256": "cb78b367dcaa560b819ee47eca2a69ebf83f6644400fddc73a87415c286f11f2",
+      "size": 29,
+      "modified_time": "2026-08-12T19:01:39.4795651+08:00",
+      "selected_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "selected_source_hash": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "selected_packet": "STEP-02A_射雕英雄传_ChatGPT蒸馏包.zip",
+      "selected_packet_sha256": "f2b0ad015b90e47424cdcfb06a01ef220c546fbbf7fc5f5a17e92cf36b511fc9",
+      "source_binding_class": "DONOR_INELIGIBLE",
+      "binding_evidence": [
+        "File value is wrk_ecadf1440d73d61ef31ec5ed.",
+        "Companion upload instruction declares the same work_id and selected Packet.",
+        "V2 recovered Packet manifest binds that Packet to the DONOR normalized source hash."
+      ],
+      "formal_parity_eligible": false,
+      "reason": "SYSTEMATIC_CHAPTER_TAIL_TRUNCATION",
+      "artifact_role": "UPLOAD_SELECTION_POINTER_NOT_LITERARY_OUTPUT",
+      "duplicate_locations": [
+        "E:\\蒸馏小说\\_private\\04_待上传ChatGPT\\STEP-02A_上传说明.txt"
+      ]
+    },
+    {
+      "artifact_id": "BOOK01-UPLOAD-SELECTION-002",
+      "location_type": "LOCAL_FILE",
+      "path": "E:\\蒸馏小说\\_private\\04_待上传ChatGPT\\STEP-02A_上传说明.txt",
+      "filename": "STEP-02A_上传说明.txt",
+      "sha256": "d72b0374d086d8dfcb44597563b85c6a15a8e8901bf3919f04fe1b1b1e660479",
+      "size": 536,
+      "modified_time": "2026-08-12T19:03:05.9044928+08:00",
+      "selected_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "selected_source_hash": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "selected_packet": "STEP-02A_射雕英雄传_ChatGPT蒸馏包.zip",
+      "selected_packet_path": "E:\\蒸馏小说\\_private\\04_待上传ChatGPT\\STEP-02A_射雕英雄传_ChatGPT蒸馏包.zip",
+      "selected_packet_sha256": "f2b0ad015b90e47424cdcfb06a01ef220c546fbbf7fc5f5a17e92cf36b511fc9",
+      "declared_purpose": "FUTURE_EVIDENCE_EXTRACTION_STORY_MODEL_AND_SINGLE_BOOK_DISTILLATION",
+      "declared_completion_status": "NOT_DECLARED",
+      "source_binding_class": "DONOR_INELIGIBLE",
+      "binding_evidence": [
+        "Instruction explicitly declares work_id wrk_ecadf1440d73d61ef31ec5ed.",
+        "Instruction explicitly names STEP-02A_射雕英雄传_ChatGPT蒸馏包.zip.",
+        "V2 recovered Packet manifest binds that Packet to the DONOR normalized source hash."
+      ],
+      "formal_parity_eligible": false,
+      "reason": "SYSTEMATIC_CHAPTER_TAIL_TRUNCATION",
+      "artifact_role": "READY_TO_UPLOAD_INSTRUCTION_NOT_COMPLETED_LITERARY_OUTPUT",
+      "duplicate_locations": [
+        "E:\\蒸馏小说\\_private\\chatgpt_selection.txt"
+      ]
+    }
+  ],
+  "literary_artifacts": [],
+  "binding_summary": {
+    "REPAIRED_VERIFIED": 0,
+    "BASE_PRE_REPAIR": 0,
+    "DONOR_INELIGIBLE": 0,
+    "UNKNOWN_BINDING": 0,
+    "CONFLICTING_BINDING": 0
+  },
+  "source_binding_reconciliation": {
+    "status": "RESOLVED_FOR_RECOVERED_UPLOAD_SELECTION_METADATA",
+    "old_upload_selection_binding": "DONOR_INELIGIBLE",
+    "old_upload_selection_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+    "old_upload_selection_formal_parity_eligible": false,
+    "current_formal_source_binding": "REPAIRED_VERIFIED",
+    "current_formal_source_work_id": "wrk_5724415a203a194f1c9a481c",
+    "literary_artifact_binding_reconciled_count": 0,
+    "notes": "The old selection metadata is internally consistent and binds DONOR, but no durable literary output tied to that selection was recovered. It is not conflicting binding and is not current parity evidence."
+  },
+  "parity": {
+    "phase50": "UNKNOWN",
+    "phase60": "UNKNOWN",
+    "phase70": "UNKNOWN",
+    "phase80": "UNKNOWN"
+  },
+  "parity_semantics": "PERSISTED_LITERARY_OUTPUT_NOT_RECOVERED_OR_NOT_PROVEN",
+  "historical_work_recovered": false,
+  "historical_completion_status": "UNKNOWN_PRESERVED",
+  "literary_recovery_outcome": "NO_DURABLE_LITERARY_ARTIFACT_RECOVERED_AFTER_TARGETED_SEARCH",
+  "minimal_semantic_gaps": [
+    "Existing durable literary outputs could not be recovered. ChatGPT must decide whether a new repaired-source semantic reconstruction is authorized."
+  ],
+  "regression_performed": false,
+  "new_literary_analysis_performed": false,
+  "source_modified": false,
+  "packet_modified": false,
+  "project_state_modified": false,
+  "existing_literary_artifact_modified": false,
+  "llm_used": false
+}
