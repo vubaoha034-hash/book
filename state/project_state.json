@@ -2,101 +2,95 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-20T19:22:00+08:00",
+  "updated_at": "2026-08-20T19:33:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
-    "book_id": "BOOK-01",
-    "work_title": "射雕英雄传",
-    "phase": "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS",
-    "phase_ordinal": 160,
-    "progress_unit": "numbered_chapter",
-    "progress_ordinal": 40,
-    "target_progress": 40,
-    "coverage_fraction": 1.0,
-    "formal_candidates": 11,
-    "supporting_patterns": 12,
-    "validated_novel_dna": 3,
-    "frozen_novel_dna": 3,
-    "frozen_dna_ids": ["SD-VDNA-01", "SD-VDNA-02", "SD-VDNA-03"],
-    "freeze_status": "FROZEN",
-    "application_contract_status": "ACTIVE",
-    "book_closeout_status": "PASS",
-    "book_status": "CLOSED_READY_FOR_COMPARISON",
-    "method_parity_status": "VERIFIED",
-    "cross_book_readiness": "READY_FOR_CROSS_BOOK_VALIDATION",
-    "cross_book_ready": true,
-    "book02_reference": {
-      "book_id": "BOOK-02",
-      "work_title": "诛仙",
-      "book_status": "CLOSED_READY_FOR_COMPARISON",
-      "validated_novel_dna": 4,
-      "frozen_novel_dna": 4,
-      "frozen_dna_ids": ["ZX-VDNA-01", "ZX-VDNA-02", "ZX-VDNA-03", "ZX-VDNA-04"],
-      "closeout_receipt": "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json"
-    },
-    "book01_completed_work_must_be_preserved": true,
-    "book01_regression_forbidden": true,
-    "status": "ACCEPTED",
-    "latest_review_receipt": "state/review_receipts/BOOK-01_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
-    "private_novel_dna_freeze_contract_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
-    "private_book01_closeout_ref": "PRIVATE_DRIVE_BOOK01_CLOSEOUT_CROSS_BOOK_READINESS_V1",
-    "next_stage": "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1"
-  },
-  "active_task": {
-    "task_id": "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
+    "book_id": "CROSS-BOOK",
+    "work_title": "射雕英雄传 × 诛仙",
     "phase": "CROSS_BOOK_NOVEL_DNA_VALIDATION",
     "phase_ordinal": 170,
+    "status": "ACCEPTED_WITH_NARROWING",
+    "method_parity_status": "VERIFIED",
+    "book_level_inputs_frozen": true,
+    "book01_closeout_status": "PASS",
+    "book02_closeout_status": "PASS",
+    "pair_comparisons": 12,
+    "same_core_pairs": 2,
+    "partial_overlap_pairs": 2,
+    "no_match_pairs": 8,
+    "cross_book_candidates": 3,
+    "cross_book_candidate_ids": ["CBDNA-C01", "CBDNA-C02", "CBDNA-C03"],
+    "global_dna": 0,
+    "global_promotion_authorized": false,
+    "book_specific_residuals": {
+      "BOOK-01": ["SD-VDNA-02"],
+      "BOOK-02": ["ZX-VDNA-02", "ZX-VDNA-04:SYSTEM_DEPENDENCY_DEGRADATION"]
+    },
+    "latest_review_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_VALIDATION_V1.json",
+    "private_cross_book_validation_ref": "PRIVATE_DRIVE_CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
+    "private_cross_book_validation_file_id": "1zPyKbdgNSEENq--QqZeB_2GswMPWDb1evFo1JAVy-aA",
+    "next_stage": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1"
+  },
+  "active_task": {
+    "task_id": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1",
+    "phase": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_GOVERNANCE",
+    "phase_ordinal": 180,
     "status": "READY_FOR_CHATGPT_EXECUTION",
-    "execution_scope": "FROZEN_BOOK_LEVEL_DNA_CROSS_BOOK_COMPARISON_ONLY",
-    "books": {
-      "BOOK-01": {
-        "work_title": "射雕英雄传",
-        "source_work_id": "wrk_5724415a203a194f1c9a481c",
-        "source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
-        "closeout_status": "PASS",
-        "method_parity_status": "VERIFIED",
-        "frozen_ids": ["SD-VDNA-01", "SD-VDNA-02", "SD-VDNA-03"],
-        "freeze_manifest": "state/frozen_dna/BOOK-01_NOVEL_DNA_FREEZE_V1.json",
-        "closeout_receipt": "state/review_receipts/BOOK-01_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
-        "private_freeze_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1"
+    "execution_scope": "FREEZE_VALIDATED_CROSS_BOOK_CANDIDATES_AS_NON_GLOBAL_ONLY",
+    "source_validation": {
+      "status": "ACCEPTED_WITH_NARROWING",
+      "receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_VALIDATION_V1.json",
+      "private_ref": "PRIVATE_DRIVE_CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
+      "pair_comparisons": 12,
+      "same_core": 2,
+      "partial_overlap": 2,
+      "no_match": 8
+    },
+    "candidate_registry": {
+      "CBDNA-C01": {
+        "machine_name": "PERSISTENT_OBLIGATION_AND_CHOICE_IDENTITY",
+        "confidence": "HIGH",
+        "support": ["SD-VDNA-01", "ZX-VDNA-01"],
+        "status": "CROSS_BOOK_CANDIDATE_ONLY"
       },
-      "BOOK-02": {
-        "work_title": "诛仙",
-        "closeout_status": "PASS",
-        "frozen_ids": ["ZX-VDNA-01", "ZX-VDNA-02", "ZX-VDNA-03", "ZX-VDNA-04"],
-        "freeze_manifest": "state/frozen_dna/BOOK-02_NOVEL_DNA_FREEZE_V1.json",
-        "closeout_receipt": "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
-        "private_freeze_ref": "PRIVATE_DRIVE_BOOK02_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1"
+      "CBDNA-C02": {
+        "machine_name": "NARRATIVE_ASSET_ACCRETION_ACROSS_ARCS",
+        "confidence": "HIGH",
+        "support": ["SD-VDNA-03", "ZX-VDNA-03"],
+        "status": "CROSS_BOOK_CANDIDATE_ONLY"
+      },
+      "CBDNA-C03": {
+        "machine_name": "AUTONOMOUS_CAUSAL_LINES_CONVERGE_BY_INDEPENDENT_MOTIVE",
+        "confidence": "MEDIUM_HIGH",
+        "support": ["SD-VDNA-03", "ZX-VDNA-04"],
+        "status": "CROSS_BOOK_CANDIDATE_WITH_NARROWING"
       }
     },
-    "method_parity": {
-      "status": "VERIFIED",
-      "book01_closeout_receipt": "state/review_receipts/BOOK-01_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
-      "book02_closeout_receipt": "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json"
+    "book_specific_residuals": {
+      "BOOK-01": {
+        "SD-VDNA-02": "BOOK01_SPECIFIC"
+      },
+      "BOOK-02": {
+        "ZX-VDNA-02": "BOOK02_SPECIFIC",
+        "ZX-VDNA-04:SYSTEM_DEPENDENCY_DEGRADATION": "BOOK02_SPECIFIC_SUBCOMPONENT"
+      }
     },
-    "validation_contract": {
-      "frozen_validated_dna_only": true,
-      "book_level_semantic_edits_forbidden": true,
-      "name_similarity_is_not_match_evidence": true,
-      "one_to_one_match_not_required": true,
-      "one_to_many_overlap_allowed_for_testing": true,
-      "cross_author_specificity_removal_required": true,
-      "counterexample_testing_required": true,
-      "causal_function_equivalence_required_for_same_core": true,
-      "actionability_required": true,
-      "style_independence_required": true,
-      "plot_independence_required": true,
-      "global_promotion_authorized": false,
-      "allowed_pair_verdicts": [
-        "SAME_CORE",
-        "PARTIAL_OVERLAP",
-        "BOOK01_SPECIFIC",
-        "BOOK02_SPECIFIC",
-        "NO_MATCH"
-      ],
-      "cross_book_candidate_requires_both_books_independent_support": true
+    "freeze_governance_contract": {
+      "stable_cross_book_candidate_ids_required": true,
+      "book_level_frozen_semantics_immutable": true,
+      "cross_book_candidate_semantic_edit_requires_new_version": true,
+      "global_promotion_forbidden": true,
+      "third_independent_book_revalidation_required_before_any_global_proposal": true,
+      "candidate_support_provenance_required": true,
+      "counterexample_boundaries_required": true,
+      "default_disabled": true,
+      "invocation_gate_required": true,
+      "application_limits_required": true,
+      "style_imitation_forbidden": true,
+      "plot_copying_forbidden": true,
+      "c03_narrowing_may_not_be_broadened_without_new_validation": true
     },
-    "next_stage": "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
+    "next_stage": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1",
     "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
     "forbidden_actions": [
       "BOOK01_PHASE50_RERUN",
@@ -110,7 +104,8 @@
       "SEMANTIC_EDIT_OF_SD_VDNA_V1_IN_PLACE",
       "SEMANTIC_EDIT_OF_ZX_VDNA_V1_IN_PLACE",
       "SUPPORTING_DIRECT_PROMOTION_TO_CROSS_BOOK_DNA",
-      "GLOBAL_DNA_PROMOTION_FROM_TWO_BOOKS_WITHOUT_SEPARATE_GOVERNANCE",
+      "PROMOTE_CBDNA_CANDIDATE_TO_GLOBAL_DNA",
+      "BROADEN_CBDNA_C03_BEYOND_VALIDATED_INTERSECTION_WITHOUT_NEW_VALIDATION",
       "STYLE_IMITATION",
       "PLOT_COPYING",
       "SOURCE_MODIFICATION",
@@ -148,7 +143,8 @@
     "BOOK-01_NOVEL_DNA_SYNTHESIS_V1",
     "BOOK-01_NOVEL_DNA_VALIDATION_V1",
     "BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1",
-    "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1"
+    "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1",
+    "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
