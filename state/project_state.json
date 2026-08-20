@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-20T17:24:26+08:00",
+  "updated_at": "2026-08-20T18:14:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "BOOK-02",
@@ -25,7 +25,7 @@
     "book_status": "CLOSED_READY_FOR_COMPARISON",
     "cross_book_readiness": "HOLD_METHOD_PARITY_UNVERIFIED",
     "cross_book_ready": false,
-    "book01_parity_status": "IN_PROGRESS_PHASE50_ACCEPTED",
+    "book01_parity_status": "IN_PROGRESS_PHASE60_ACCEPTED",
     "book01_completed_work_must_be_preserved": true,
     "book01_regression_forbidden": true,
     "status": "ACCEPTED",
@@ -35,11 +35,11 @@
     "next_stage": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION"
   },
   "active_task": {
-    "task_id": "BOOK-01_NOVEL_DNA_SYNTHESIS_V1",
+    "task_id": "BOOK-01_NOVEL_DNA_VALIDATION_V1",
     "phase": "BOOK-01_PARITY_RECONCILIATION_FOR_CROSS_BOOK_VALIDATION",
-    "phase_ordinal": 130,
+    "phase_ordinal": 140,
     "status": "READY_FOR_CHATGPT_EXECUTION",
-    "execution_scope": "BOOK_LEVEL_NOVEL_DNA_SYNTHESIS_FROM_REPAIRED_SOURCE_FORMAL_REGISTRY_ONLY",
+    "execution_scope": "BOOK_LEVEL_NOVEL_DNA_VALIDATION_FROM_REPAIRED_SOURCE_AND_SYNTHESIZED_DNA_ONLY",
     "book_id": "BOOK-01",
     "work_title": "射雕英雄传",
     "repaired_formal_source": {
@@ -57,30 +57,38 @@
       "missing_artifact_does_not_mean": "NOT_STARTED"
     },
     "book01_parity_checkpoint": {
-      "phase": "EVIDENCE_SETTLEMENT_AND_CANDIDATE_REGISTRY_RECONCILIATION",
-      "method_phase_ordinal": 50,
+      "phase": "BOOK_LEVEL_NOVEL_DNA_SYNTHESIS",
+      "method_phase_ordinal": 60,
       "status": "ACCEPTED",
-      "coverage": "40/40",
-      "formal_candidates": 11,
-      "supporting_patterns": 12,
-      "novel_dna": 0,
-      "raw_hypotheses": 32,
-      "semantic_merge_reductions": 9,
-      "unique_patterns": 23,
-      "review_receipt": "state/review_receipts/BOOK-01_EVIDENCE_SETTLEMENT_V1.json",
-      "private_registry_ref": "PRIVATE_DRIVE_BOOK01_SETTLEMENT_V1"
+      "formal_input": 11,
+      "supporting_patterns_preserved": 12,
+      "supporting_direct_promotions": 0,
+      "novel_dna_candidates": 4,
+      "formal_coverage": "11/11",
+      "formal_orphan": 0,
+      "formal_double_count": 0,
+      "review_receipt": "state/review_receipts/BOOK-01_NOVEL_DNA_V1.json",
+      "private_dna_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_V1",
+      "private_dna_file_id": "1DM14-l-HUj89YQN7r35dscoaeh7LsMh2SW7IwBCfMls"
     },
-    "synthesis_contract": {
-      "input_formal_only": true,
-      "formal_count": 11,
-      "supporting_direct_promotion_allowed": false,
-      "dna_must_cover_at_least_three_nonadjacent_arcs": true,
+    "validation_contract": {
+      "cross_arc_recurrence_minimum": 3,
       "counterfactual_ablation_required": true,
+      "specificity_required": true,
+      "de_duplication_required": true,
       "boundary_and_failure_signal_required": true,
+      "supporting_direct_promotion_allowed": false,
       "style_imitation_forbidden": true,
-      "target_dna_count_must_be_significantly_less_than_formal_count": true
+      "allowed_verdicts": [
+        "VALIDATED",
+        "VALIDATED_WITH_NARROWING",
+        "MERGED_NOT_INDEPENDENT",
+        "DOWNGRADED_TO_FORMAL",
+        "REJECTED"
+      ],
+      "dna04_independence_merge_test_required": true
     },
-    "next_stage": "BOOK_LEVEL_NOVEL_DNA_SYNTHESIS",
+    "next_stage": "BOOK_LEVEL_NOVEL_DNA_VALIDATION",
     "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
     "forbidden_actions": [
       "SOURCE_GATE_RERUN",
@@ -119,7 +127,8 @@
     "BOOK-01_PARITY_RECOVERY_REPORT_BRIDGE_DIAGNOSTIC_V1",
     "BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1",
     "BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1",
-    "BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1"
+    "BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1",
+    "BOOK-01_NOVEL_DNA_SYNTHESIS_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
