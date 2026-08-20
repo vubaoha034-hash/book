@@ -1,0 +1,313 @@
+{
+  "bridge_task": "BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1",
+  "source_report_sha256": "88f94e664adc65482a5e944983c09f7960d9ad445756a7e1d3024e62c9db6652",
+  "bridge_strategy": "ISOLATED_WORKTREE_FROM_REMOTE_HEAD",
+  "sanitization": {
+    "novel_text_included": false,
+    "chapter_text_included": false,
+    "detailed_distillation_body_included": false,
+    "literary_analysis_generated": false,
+    "metadata_only": true
+  },
+  "task": "BOOK-01_PARITY_RECOVERY_SCAN_V2",
+  "status": "PASS",
+  "scan_mode": "READ_ONLY",
+  "book": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "execution_environment": {
+    "execution_plane": "LOCAL_WINDOWS",
+    "environment_os": "Microsoft Windows 10.0.26200",
+    "e_drive_visible": true,
+    "project_root_visible": true,
+    "private_root_visible": true
+  },
+  "v1_context": {
+    "v1_report_path": "E:\\蒸馏小说\\_private\\recovery\\BOOK-01_PARITY_RECOVERY_SCAN_V1.json",
+    "v1_report_sha256": "6ebe825fc8b380c38e559d9b77b974f1176d2a237b191ce6029cb97c30f8f010",
+    "v1_block_reason": "TASK_CONTRACT_UNAVAILABLE",
+    "v1_parity_is_not_a_book_completion_conclusion": true,
+    "v2_contract_delivery": "SELF_CONTAINED"
+  },
+  "known_anchors_verified": {
+    "base_work": {
+      "verification_status": "VERIFIED",
+      "historical_role": "BASE_WITH_CHAPTER_30_INTERNAL_DEFECT",
+      "work_id": "wrk_526edfd2ac1057236a866131",
+      "normalized_text_sha256": "526edfd2ac1057236a866131a745e4248fb68de606ddc01e6bf31f3fbd790efe",
+      "chapter_count": 40,
+      "source_path": "E:\\蒸馏小说\\_private\\01_原始小说\\射雕英雄传完整版.TXT",
+      "source_file_sha256": "4d41701d0e44c6fb7b87cac4d24fc08c0030921f482c705a6ebfdacdffd9877c",
+      "work_manifest_path": "E:\\蒸馏小说\\_private\\02_结构化文本\\wrk_526edfd2ac1057236a866131\\work.json",
+      "work_manifest_sha256": "926323e8af083fe41de47ee24f55b92a78bf0b96768b0eaadb8aeedf7218c59e",
+      "source_integrity_status_declared": "PASS",
+      "distillation_allowed_declared": true,
+      "processing_fingerprint": "5826edbbfdfa4a3ef51759a4a82c74d58cb14b269dee6fcad2eec83d63d083ea",
+      "notes": "Automated source-integrity metadata is preserved as declared; it does not override the supplied historical chapter-30 defect anchor."
+    },
+    "donor_work": {
+      "verification_status": "VERIFIED",
+      "historical_role": "DONOR_ONLY_WITH_SYSTEMATIC_CHAPTER_TAIL_TRUNCATION",
+      "work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "normalized_text_sha256": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "chapter_count": 40,
+      "source_path": "E:\\蒸馏小说\\_private\\01_原始小说\\射雕英雄传.txt",
+      "source_file_sha256": "8082a7c759463c946171b184e6629686134918963e2cdc0a7a2bf7aeaf248f75",
+      "work_manifest_path": "E:\\蒸馏小说\\_private\\02_结构化文本\\wrk_ecadf1440d73d61ef31ec5ed\\work.json",
+      "work_manifest_sha256": "a8e04c800c3e418adb309b6feb6c7ff4ff83a86619817e68e9360fc0a5ea082d",
+      "source_integrity_status_declared": "PASS",
+      "distillation_allowed_declared": true,
+      "processing_fingerprint": "5826edbbfdfa4a3ef51759a4a82c74d58cb14b269dee6fcad2eec83d63d083ea",
+      "eligibility_conflict": "LOCAL_AUTOMATED_METADATA_AND_OLD_UPLOAD_SELECTION_DECLARE_ELIGIBLE_BUT_V2_CONTRACT_CLASSIFIES_DONOR_ONLY",
+      "formal_distillation_source_eligible": false
+    },
+    "repaired_work": {
+      "verification_status": "VERIFIED",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "normalized_text_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "chapter_count": 40,
+      "source_path": "E:\\蒸馏小说\\_private\\01_原始小说\\射雕英雄传_融合修复候选.TXT",
+      "source_file_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "structured_work_directory": "E:\\蒸馏小说\\_private\\02_结构化文本\\wrk_5724415a203a194f1c9a481c",
+      "source_integrity_status_declared": "PASS",
+      "distillation_allowed_declared": true,
+      "alignment_unique": true,
+      "generated_text_used": false,
+      "network_source_used": false,
+      "repair_chapter_index_declared": 30,
+      "changed_chapters_declared": "UNKNOWN",
+      "mechanical_changed_chapters": [
+        30
+      ],
+      "mechanical_comparison": {
+        "base_text_file_count": 40,
+        "repaired_text_file_count": 40,
+        "filenames_identical": true,
+        "changed_file_count": 1,
+        "changed_file": "0030.txt",
+        "base_chapter_30_sha256": "feaa4a2fafea508001782e1c556a3f4a93af76c6ef2b57d01461e326c4612b47",
+        "repaired_chapter_30_sha256": "173c504d51455999d662832551cd46e0d107ffdbf007b58c8371f0e16763364d"
+      },
+      "repair_processing_fingerprint": "95e7c81a4e81e7c11721054590138461fd4e768ee071c10064b961ccba407a83",
+      "structured_processing_fingerprint": "5826edbbfdfa4a3ef51759a4a82c74d58cb14b269dee6fcad2eec83d63d083ea",
+      "fingerprint_note": "Distinct persisted contexts; no equality requirement was inferred."
+    }
+  },
+  "repair_artifacts": [
+    {
+      "artifact_type": "REPAIRED_CANDIDATE_TEXT",
+      "path": "E:\\蒸馏小说\\_private\\01_原始小说\\射雕英雄传_融合修复候选.TXT",
+      "filename": "射雕英雄传_融合修复候选.TXT",
+      "size": 2817298,
+      "modified_time": "2026-08-13T21:08:52.8183082+08:00",
+      "sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "identity_binding": "VERIFIED_BY_PROVENANCE_HASH_AND_STRUCTURED_WORK",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14"
+    },
+    {
+      "artifact_type": "REPAIR_PROVENANCE",
+      "path": "E:\\蒸馏小说\\_private\\repair_provenance\\射雕英雄传_ch30_repair.json",
+      "filename": "射雕英雄传_ch30_repair.json",
+      "size": 3071,
+      "modified_time": "2026-08-13T21:11:53.9820963+08:00",
+      "sha256": "9ea3d7212e26e26bdb7090680b7bae18ec76ccb7c39c947910ef2bec15926b20",
+      "identity_binding": "VERIFIED_BASE_DONOR_REPAIRED_CHAIN",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+      "base_work_id": "wrk_526edfd2ac1057236a866131",
+      "donor_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "source_hashes": {
+        "base_normalized_sha256": "526edfd2ac1057236a866131a745e4248fb68de606ddc01e6bf31f3fbd790efe",
+        "donor_normalized_sha256": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+        "repaired_normalized_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+        "donor_span_sha256": "e123f0069a8579cfc402f8f7c11e9b03efb37418cbe65970ba90fb9470fd59a0",
+        "pre_anchor_sha256": "2f23c73fdc7fb121c199d002940724e5b9ee0c46d707fb6e5352f212dd25de58",
+        "post_anchor_sha256": "451592c2ffbdb428eff8f487be4583d06efbd39aded333d10308b3a8fe373ceb"
+      },
+      "source_integrity_status": "PASS",
+      "distillation_allowed": true,
+      "processing_fingerprint": "95e7c81a4e81e7c11721054590138461fd4e768ee071c10064b961ccba407a83",
+      "changed_chapters": "UNKNOWN",
+      "alignment_unique": true,
+      "generated_text_used": false,
+      "network_source_used": false
+    },
+    {
+      "artifact_type": "REPAIRED_WORK_MANIFEST_WITH_EMBEDDED_SOURCE_INTEGRITY_REPORT",
+      "path": "E:\\蒸馏小说\\_private\\02_结构化文本\\wrk_5724415a203a194f1c9a481c\\work.json",
+      "filename": "work.json",
+      "size": 1948,
+      "modified_time": "2026-08-14T10:46:15.1194854+08:00",
+      "sha256": "e5ddcefa57188677bd339e77142427910e4e19e5f612655d15f85728d2eac7a7",
+      "identity_binding": "VERIFIED_WORK_ID_AND_SOURCE_HASH",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "source_integrity_status": "PASS",
+      "distillation_allowed": true,
+      "processing_fingerprint": "5826edbbfdfa4a3ef51759a4a82c74d58cb14b269dee6fcad2eec83d63d083ea",
+      "chapter_count": 40
+    },
+    {
+      "artifact_type": "REPAIRED_CHAPTER_LEDGER",
+      "path": "E:\\蒸馏小说\\_private\\02_结构化文本\\wrk_5724415a203a194f1c9a481c\\chapters.jsonl",
+      "filename": "chapters.jsonl",
+      "size": 27165,
+      "modified_time": "2026-08-14T10:46:15.1227863+08:00",
+      "sha256": "09efca455a7e89cee7ba6c9c0c4d4f85e5b307777fd0f6550a1cb13dffbce45d",
+      "identity_binding": "VERIFIED_BY_WORK_ID_ROWS_AND_PARENT_WORK_MANIFEST",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "UNKNOWN",
+      "mechanical_changed_chapters": [
+        30
+      ],
+      "chapter_count": 40
+    },
+    {
+      "artifact_type": "PACKET_SIDE_REPAIR_PROVENANCE",
+      "path": "E:\\蒸馏小说\\_private\\03_ChatGPT蒸馏包\\wrk_5724415a203a194f1c9a481c\\repair_provenance.json",
+      "filename": "repair_provenance.json",
+      "size": 3071,
+      "modified_time": "2026-08-13T21:11:53.9820963+08:00",
+      "sha256": "9ea3d7212e26e26bdb7090680b7bae18ec76ccb7c39c947910ef2bec15926b20",
+      "identity_binding": "VERIFIED_IDENTICAL_TO_CANONICAL_PROVENANCE",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14"
+    },
+    {
+      "artifact_type": "LIBRARY_MANIFEST_WITH_REPAIRED_WORK_RECORD",
+      "path": "E:\\蒸馏小说\\_private\\manifests\\library_manifest.jsonl",
+      "filename": "library_manifest.jsonl",
+      "size": 8496,
+      "modified_time": "2026-08-14T10:46:15.6427335+08:00",
+      "sha256": "7e0908efe5c4da11fa6008479e73692962b03369471008acb9345dc58a7719b8",
+      "identity_binding": "VERIFIED_MATCHING_RECORD",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "source_integrity_status": "PASS",
+      "distillation_allowed": true,
+      "processing_status": "processed"
+    },
+    {
+      "artifact_type": "PREPROCESSOR_RESULT_LOG",
+      "path": "E:\\蒸馏小说\\_private\\logs\\preprocessor-20260813T130950Z.jsonl",
+      "filename": "preprocessor-20260813T130950Z.jsonl",
+      "size": 1077,
+      "modified_time": "2026-08-13T21:09:55.7800656+08:00",
+      "sha256": "3b24e11a3180c747c34c9fd1b023d1bcd9b063a82b5fe210493e729bfe359e76",
+      "identity_binding": "VERIFIED_MATCHING_LOG_RECORD",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "source_integrity_status": "PASS",
+      "distillation_allowed": true,
+      "status_declared": "processed"
+    },
+    {
+      "artifact_type": "PREPROCESSOR_RESULT_LOG",
+      "path": "E:\\蒸馏小说\\_private\\logs\\preprocessor-20260814T024609Z.jsonl",
+      "filename": "preprocessor-20260814T024609Z.jsonl",
+      "size": 3037,
+      "modified_time": "2026-08-14T10:46:15.6440811+08:00",
+      "sha256": "9c0d3455b086f2676f6cc42f6743f8b22a1976597c3908649d00eda810c073af",
+      "identity_binding": "VERIFIED_MATCHING_LOG_RECORD",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "source_integrity_status": "PASS",
+      "distillation_allowed": true,
+      "status_declared": "processed"
+    }
+  ],
+  "packet_artifacts": [
+    {
+      "path": "E:\\蒸馏小说\\_private\\04_待上传ChatGPT\\STEP-02A_射雕英雄传_内部修复源_ChatGPT蒸馏包.zip",
+      "filename": "STEP-02A_射雕英雄传_内部修复源_ChatGPT蒸馏包.zip",
+      "size": 1269036,
+      "modified_time": "2026-08-13T21:13:19.9560020+08:00",
+      "sha256": "d38238cdb5af0c7a1fb9ed8ea10079f8ef6362658bb4361048d8f0d70cbb43d0",
+      "identity_status": "STRONG_REPAIRED_WORK_MANIFEST_BINDING",
+      "packet_role": "REPAIRED_SOURCE_PACKET",
+      "manifest_filename": "packet_manifest.json",
+      "manifest_sha256": "38b4113a5d86c8b1e0d9fbe60c199f4e6a65c80737b29c2acb7c2d8be2d1e56d",
+      "manifest_work_id": "wrk_5724415a203a194f1c9a481c",
+      "manifest_source_hash": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "chapter_count": 40,
+      "binding_status": "VERIFIED",
+      "hash_verification": {
+        "zip_readable": true,
+        "manifest_json_valid": true,
+        "manifest_matches_disk_copy": true,
+        "parts_verified": 14,
+        "parts_nonverified": 0,
+        "analysis_scope_matches_disk_copy": true,
+        "repair_provenance_matches_disk_copy": true,
+        "result": "VERIFIED"
+      }
+    },
+    {
+      "path": "E:\\蒸馏小说\\_private\\04_待上传ChatGPT\\STEP-02A_射雕英雄传_完整源_ChatGPT蒸馏包.zip",
+      "filename": "STEP-02A_射雕英雄传_完整源_ChatGPT蒸馏包.zip",
+      "size": 1266851,
+      "modified_time": "2026-08-13T17:04:03.6480231+08:00",
+      "sha256": "1335f34a56eec4bd2601a349c186227f1448772cdca4405d00afff1b24d0b2f8",
+      "identity_status": "STRONG_BASE_WORK_MANIFEST_BINDING",
+      "packet_role": "BASE_SOURCE_PACKET_NOT_REPAIRED",
+      "manifest_filename": "packet_manifest.json",
+      "manifest_sha256": "35a9eb88123c2797ddac636f31ba1ce767d8ecedba9d330102a5ddb850044535",
+      "manifest_work_id": "wrk_526edfd2ac1057236a866131",
+      "manifest_source_hash": "526edfd2ac1057236a866131a745e4248fb68de606ddc01e6bf31f3fbd790efe",
+      "chapter_count": 40,
+      "binding_status": "CONFLICT",
+      "hash_verification": {
+        "zip_readable": true,
+        "manifest_json_valid": true,
+        "manifest_matches_disk_copy": true,
+        "parts_verified": 14,
+        "parts_nonverified": 0,
+        "analysis_scope_matches_disk_copy": true,
+        "result": "VERIFIED"
+      }
+    },
+    {
+      "path": "E:\\蒸馏小说\\_private\\04_待上传ChatGPT\\STEP-02A_射雕英雄传_ChatGPT蒸馏包.zip",
+      "filename": "STEP-02A_射雕英雄传_ChatGPT蒸馏包.zip",
+      "size": 1256098,
+      "modified_time": "2026-08-12T19:03:15.1030398+08:00",
+      "sha256": "f2b0ad015b90e47424cdcfb06a01ef220c546fbbf7fc5f5a17e92cf36b511fc9",
+      "identity_status": "STRONG_DONOR_WORK_MANIFEST_BINDING",
+      "packet_role": "DONOR_SOURCE_PACKET_INELIGIBLE_AS_FORMAL_SOURCE",
+      "manifest_filename": "wrk_ecadf1440d73d61ef31ec5ed\\packet_manifest.json",
+      "manifest_sha256": "18b58550aa79640afc7653a128869e2685c0c020545093da76ba8864781926e0",
+      "manifest_work_id": "wrk_ecadf1440d73d61ef31ec5ed",
+      "manifest_source_hash": "ecadf1440d73d61ef31ec5ed38fcad76e77fb16792e4da46221951faa0bd51d7",
+      "chapter_count": 40,
+      "binding_status": "CONFLICT",
+      "hash_verification": {
+        "zip_readable": true,
+        "manifest_json_valid": true,
+        "manifest_matches_disk_copy": true,
+        "parts_verified": 14,
+        "parts_nonverified": 0,
+        "result": "VERIFIED"
+      }
+    }
+  ],
+  "literary_artifacts": [],
+  "parity": {
+    "phase50": "UNKNOWN",
+    "phase60": "UNKNOWN",
+    "phase70": "UNKNOWN",
+    "phase80": "UNKNOWN"
+  },
+  "minimal_gaps": [
+    "Targeted recovery of any existing BOOK-01 literary result artifacts or receipts for Phase 50-80 is required; do not rerun book-wide extraction, synthesis, validation, or freeze.",
+    "Source binding needs reconciliation for any later-recovered literary artifact because the old upload selection binds DONOR work while the verified repaired packet binds wrk_5724415a203a194f1c9a481c."
+  ],
+  "cross_book_ready_after_recovery": false,
+  "regression_performed": false,
+  "literary_analysis_performed": false,
+  "source_modified": false,
+  "packet_regenerated": false,
+  "project_state_modified": false,
+  "network_used": false,
+  "llm_used": false
+}
