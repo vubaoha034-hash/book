@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-01",
+  "work_title": "射雕英雄传",
+  "phase": "BOOK_LEVEL_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "method_phase_ordinal": 80,
+  "freeze_version": "V1",
+  "freeze_status": "FROZEN",
+  "application_contract_status": "ACTIVE",
+  "source": {
+    "repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+    "repaired_source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "chapter_coverage": "40/40",
+    "validation_receipt": "state/review_receipts/BOOK-01_NOVEL_DNA_VALIDATION_V1.json"
+  },
+  "validated_input": {
+    "validated_independent_dna": 3,
+    "formal_total": 11,
+    "formal_coverage": "11/11",
+    "formal_orphan": 0,
+    "supporting_total": 12,
+    "supporting_direct_promotions": 0
+  },
+  "frozen_registry": [
+    {
+      "id": "SD-VDNA-01",
+      "machine_name": "CHOICE_CREDIT_UNDER_DUTY_CONFLICT",
+      "mapping": ["F01", "F02", "F04", "F09", "F10", "F11"],
+      "note": "F10 remains Formal and is absorbed as the antagonist negative-choice-credit subtype; it is not an independent DNA."
+    },
+    {
+      "id": "SD-VDNA-02",
+      "machine_name": "SOCIALIZED_CAPABILITY_NETWORK",
+      "mapping": ["F03", "F05", "F06"]
+    },
+    {
+      "id": "SD-VDNA-03",
+      "machine_name": "PERSISTENT_WORLD_STATE_AND_CAUSAL_CONVERGENCE",
+      "mapping": ["F07", "F08"]
+    }
+  ],
+  "freeze_rules": {
+    "book_specific_not_global": true,
+    "semantic_edit_requires_new_version": true,
+    "cross_book_promotion_requires_separate_validation": true,
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "dna_is_not_quality_proof": true
+  },
+  "application_limits": {
+    "scene_primary_max": 1,
+    "scene_secondary_check_max": 1,
+    "chapter_or_arc_primary_max": 2,
+    "book_max": 3,
+    "short_story_default_max": 1,
+    "sd_vdna_03_short_story_default": "OFF"
+  },
+  "private_contract": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK01_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
+    "file_id": "1pj0FSe4fKBYE48cKr4Deag2r7x5vEwqQbcHLWWADDVU",
+    "title": "BOOK-01_射雕英雄传_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
+    "folder_id": "1WQOYTuuJRV3DQ-06xwMPZ21pVrWdWRl9",
+    "drive_revision_id": "AIroW36wGE3sr9VBcRHaESGjj8rkT7ffOGODRZau_CkHgugX1ToMZ92D2jAuPniwQ_6CWLqHnyYwJEW0D-RW3FM_bSTvD4PrpdF3OUt12a4",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+  "rollback_authorized": false,
+  "created_at": "2026-08-20T18:58:00+08:00"
+}
