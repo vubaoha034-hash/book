@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "GLOBAL-NOVEL-DNA-PROPOSAL-GATE-C02-V2-V1-20260821",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_PROPOSAL_GATE",
+  "phase_ordinal": 270,
+  "review_status": "ACCEPTED_ELIGIBLE_FOR_GLOBAL_FREEZE_GATE",
+  "executor": "CHATGPT",
+  "candidate": {
+    "id": "CBDNA-C02-V2",
+    "machine_name": "RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
+    "candidate_manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json",
+    "proposal_manifest": "state/global_dna_proposals/C02_V2_GLOBAL_PROPOSAL_GATE_V1.json",
+    "support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
+    "candidate_semantics_changed_during_gate": false,
+    "narrowing_required": false
+  },
+  "gate": {
+    "overgeneralization_test": "PASS",
+    "counterexample_stress_test": "PASS",
+    "cross_genre_actionability_test": "PASS",
+    "specificity_vs_generic_foreshadowing_required": "PASS",
+    "simpler_fix_control": "PASS",
+    "synthetic_benchmark": "PASS_WITH_LIMITATION"
+  },
+  "synthetic_benchmark": {
+    "total_cases": 18,
+    "apply_cases": "8/8 correct",
+    "reject_cases": "8/8 correct",
+    "hold_cases": "2/2 correct",
+    "false_positive": 0,
+    "false_negative": 0,
+    "boundary_overclaim": 0,
+    "genres_or_domains": ["workplace_compliance", "medical", "science_fiction", "family", "legal", "disaster_survival", "sports", "historical_business"],
+    "source_book_plot_reuse": 0,
+    "source_book_style_imitation": 0,
+    "benchmark_independence": "SYNTHETIC_NOT_EXTERNAL_BLIND_DATASET"
+  },
+  "specificity_findings": {
+    "generic_foreshadowing_equivalent": false,
+    "setup_payoff_equivalent": false,
+    "repeated_motif_equivalent": false,
+    "recurrence_alone_sufficient": false,
+    "same_function_reuse_sufficient": false,
+    "new_causal_meaning_required": true,
+    "story_variable_change_required": true,
+    "prior_memory_value_retention_required": true
+  },
+  "simpler_fix_control": {
+    "callback_or_continuity_fix_preferred_when_sufficient": true,
+    "ordinary_setup_payoff_preferred_when_sufficient": true,
+    "candidate_should_not_be_called_for_simple_recall_problem": true
+  },
+  "limitations": {
+    "three_source_books_prove_universal_law": false,
+    "synthetic_benchmark_proves_statistical_universality": false,
+    "global_definition_if_later_frozen": "highest-level reusable mechanism inside the novel-distillation system, not a mandatory law for all good fiction"
+  },
+  "verdict": {
+    "proposal_gate": "PASS",
+    "eligible_for_global_freeze_and_governance": true,
+    "global_dna_created_in_phase270": false,
+    "global_dna_count": 0,
+    "global_promotion_executed": false
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1",
+    "file_id": "1ot1PnfAUF_78XUAu0bSTVr_02xifVFwfp_cpi0Fvn-o",
+    "folder_id": "1euIo6QVRDwxlnFf1oZ2NGm1R_3srISlR",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_source_book_distillation_stored_in_git": false
+  },
+  "next_stage": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1",
+  "rollback_authorized": false
+}
