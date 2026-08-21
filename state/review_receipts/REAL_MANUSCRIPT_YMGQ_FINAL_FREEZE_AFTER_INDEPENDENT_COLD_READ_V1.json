@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_FINAL_FREEZE_AFTER_INDEPENDENT_REVIEW",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "ACCEPTED_FINAL_FROZEN_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "source_revision": "YMGQ-P6-FINAL-RHYTHM-DEAI-REVIEW-V1",
+  "independent_reader_evidence": {
+    "mode": "FRESH_INDEPENDENT_COLD_READ",
+    "source": "USER_SUPPLIED_REPORT_FROM_SEPARATE_FRESH_CHAT",
+    "reader_type": "INDEPENDENT_FRESH_CONTEXT_AI_READER",
+    "historical_context_excluded_by_review_protocol": true,
+    "reader_verdict": "B_READY_WITH_MINOR_EDITS",
+    "would_finish_reading": true,
+    "would_recommend_to_target_readers": true,
+    "major_rework_recommended": false,
+    "broad_p7_recommended": false
+  },
+  "accepted_minor_edits": [
+    {
+      "id": "FCR-01",
+      "action": "DELETE_COMPRESS",
+      "issue": "Near-duplicate second 聚福楼 / 飞翎社 / 楚十三射瓦 / 商九翎叫阵 battle beat.",
+      "resolution": "Removed the replayed action sequence and retained only new battlefield state, 柳三娘 rescue function, arrow depletion, and 陆孤鸿 counting arrows."
+    },
+    {
+      "id": "FCR-02",
+      "action": "COMPRESS",
+      "issue": "Too many one-off named reputation witnesses after 刘还山's speech.",
+      "resolution": "Preserved two concrete withdrawal facts while removing unnecessary one-off name-registration load; 柳三娘 and 雷破山 remain fully named and functional."
+    },
+    {
+      "id": "FCR-03",
+      "action": "DELETE",
+      "issue": "Narrator sentence prematurely signaled 石重山's death reversal.",
+      "resolution": "Deleted the explicit belief-that-he-will-survive sentence and left the child's false hope to behavior/dialogue."
+    },
+    {
+      "id": "FCR-04",
+      "action": "DELETE_COMPRESS",
+      "issue": "Explanatory tails after 楚十三's arrow demonstrations and repeated black-arrow pattern summary.",
+      "resolution": "Removed only duplicated interpretation; preserved clues, dialogue, and causal evidence."
+    },
+    {
+      "id": "FCR-05",
+      "action": "MINIMAL_CAUSAL_SEED",
+      "issue": "陆孤鸿's private revenge and official 内缉司 role lacked one connecting fact.",
+      "resolution": "Added one sentence establishing that he works for 内缉司 and separately carries his eye-debt against 楚十三."
+    }
+  ],
+  "final_manuscript": {
+    "status": "FROZEN_FINAL_MANUSCRIPT_V1",
+    "chars": 22693,
+    "sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "private_drive_file_id": "1JiuWMV9GGgUDWIIcxVrU8h38ArktTS6Q7GPuPd_UMv0",
+    "private_drive_folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "shared_publicly": false,
+    "manuscript_text_stored_in_git": false
+  },
+  "freeze_report": {
+    "private_drive_file_id": "1aA0uvBo9EHXJ26cXJbP1rJ4vnnHHg6gH8rY5t1jbPsU",
+    "shared_publicly": false
+  },
+  "regression": {
+    "P5_G1_causal_proof": "PASS_PRESERVED",
+    "P5_G6_continuity_integrity": "PASS_PRESERVED",
+    "new_blocker": false,
+    "new_major": false,
+    "protected_story_elements_preserved": true
+  },
+  "dna_router": {
+    "result": "REJECTED",
+    "dna_applied": false,
+    "rejection_validated_by_independent_reader_evidence": true,
+    "reason": "The manuscript reached a fresh-reader READY_WITH_MINOR_EDITS verdict through ordinary V3 repairs; the remaining reader-supported issues were minor and did not require GN-VDNA-01."
+  },
+  "production_evidence_limits": {
+    "real_manuscript_applied_dna_outcome_count_after": 0,
+    "this_event_is_not_an_applied_dna_success": true,
+    "universal_production_improvement_claim_authorized": false,
+    "external_human_blind_validation_claimed": false
+  },
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "manuscript_next_action": "STOP_EDITING_BY_DEFAULT. Reopen only for a concrete new independent-reader failure, factual error, or explicit author-directed creative change.",
+  "rollback_authorized": false
+}
