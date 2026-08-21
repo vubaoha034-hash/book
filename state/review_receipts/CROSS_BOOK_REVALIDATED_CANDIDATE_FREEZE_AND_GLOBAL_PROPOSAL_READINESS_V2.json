@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "CROSS-BOOK-REVALIDATED-CANDIDATE-FREEZE-GLOBAL-PROPOSAL-READINESS-V2-20260821",
+  "project_id": "novel-distillation",
+  "phase": "CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS",
+  "phase_ordinal": 260,
+  "review_status": "ACCEPTED_READY_FOR_GLOBAL_PROPOSAL_GATE",
+  "executor": "CHATGPT",
+  "input": {
+    "phase250_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1.json",
+    "phase180_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_GOVERNANCE_V1.json",
+    "phase250_pair_results_rerun": false,
+    "book_level_frozen_semantics_modified": false
+  },
+  "freeze": {
+    "manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json",
+    "current_candidates": ["CBDNA-C01", "CBDNA-C02-V2", "CBDNA-C03", "CBDNA-C04"],
+    "historical_preserved": ["CBDNA-C02"],
+    "c01_v1_retained_unchanged": true,
+    "c02_v1_preserved_unchanged": true,
+    "c02_v2_frozen": true,
+    "c03_v1_retained_unchanged": true,
+    "c04_v1_frozen": true,
+    "default_disabled": true,
+    "scene_primary_max": 1,
+    "scene_secondary_max": 1,
+    "chapter_or_arc_primary_max": 2,
+    "book_primary_max": 3,
+    "short_story_primary_default_max": 1
+  },
+  "candidate_status": {
+    "CBDNA-C01": {
+      "status": "FROZEN_RETAINED_TWO_BOOK_CANDIDATE",
+      "support": ["SD-VDNA-01", "ZX-VDNA-01"],
+      "global_proposal_eligible": false
+    },
+    "CBDNA-C02-V2": {
+      "status": "FROZEN_THREE_BOOK_CROSS_BOOK_CANDIDATE",
+      "machine_name": "RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
+      "support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
+      "global_proposal_eligible": true,
+      "global_promotion_authorized": false
+    },
+    "CBDNA-C03": {
+      "status": "FROZEN_RETAINED_TWO_BOOK_NARROWED_CANDIDATE",
+      "support": ["SD-VDNA-03", "ZX-VDNA-04"],
+      "global_proposal_eligible": false
+    },
+    "CBDNA-C04": {
+      "status": "FROZEN_TWO_BOOK_CROSS_BOOK_CANDIDATE",
+      "machine_name": "DIFFERENTIATED_CAPABILITY_CHANGES_DECISION_AUTHORITY",
+      "support": ["SD-VDNA-02", "DM-VDNA-03"],
+      "confidence": "MEDIUM",
+      "global_proposal_eligible": false
+    }
+  },
+  "global_proposal_readiness": {
+    "candidate": "CBDNA-C02-V2",
+    "three_book_frozen_support": "PASS",
+    "method_parity": "PASS",
+    "causal_function_equivalence": "PASS_AFTER_NARROWING",
+    "counterexample_boundary": "PASS",
+    "author_and_genre_specificity_removal": "PASS",
+    "sample_diversity": "PASS_FOR_PROPOSAL_NOT_SUFFICIENT_BY_ITSELF_FOR_GLOBAL_PROMOTION",
+    "verdict": "READY_FOR_SEPARATE_GLOBAL_PROPOSAL_GATE",
+    "global_dna_count": 0,
+    "global_promotion_authorized": false
+  },
+  "next_stage_contract": {
+    "task_id": "GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1",
+    "overgeneralization_test_required": true,
+    "counterexample_stress_test_required": true,
+    "cross_genre_actionability_test_required": true,
+    "specificity_vs_generic_foreshadowing_required": true,
+    "simpler_fix_control_required": true,
+    "external_or_synthetic_benchmark_required": true,
+    "source_book_plot_reuse_forbidden": true,
+    "global_promotion_forbidden_until_gate_passes": true
+  },
+  "governance": {
+    "supporting_direct_promotions": 0,
+    "existing_candidate_v1_semantics_modified_in_place": false,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "global_promotion_executed": false
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_GLOBAL_READINESS_V2",
+    "file_id": "1uGYt0HEifRLq_O5LGg90678cwWux1-EitZmmAHMUx-Q",
+    "folder_id": "1euIo6QVRDwxlnFf1oZ2NGm1R_3srISlR",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1",
+  "rollback_authorized": false
+}
