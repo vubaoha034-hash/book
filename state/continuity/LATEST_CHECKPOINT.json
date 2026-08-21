@@ -1,78 +1,80 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 5,
-  "recorded_at": "2026-08-21T16:28:30+08:00",
+  "sequence": 6,
+  "recorded_at": "2026-08-21T20:54:30+08:00",
   "task_model": "SINGLE_TASK",
-  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK",
-  "highest_accepted_phase_ordinal": 310,
+  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
+  "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
-    "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1"
+    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1"
   ],
-  "current_focus": "Promote the Novel DNA Router only to optional bounded production use under default-off governance, mandatory APPLIED call records, post-use validation, and real-manuscript rollback triggers.",
+  "current_focus": "Accumulate privacy-safe real-manuscript outcomes only when an actual eligible Novel DNA production call occurs; do not invent manuscripts or force calls merely to advance project state.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains accepted",
     "Three-book cross-book revalidation completed with 33 total pair comparisons",
     "GN-VDNA-01 frozen as the first system-level Global Novel DNA",
-    "Phase 300 integrated a dedicated default-off DNA Router into the canonical V3 Skill/workflow",
-    "Phase 310 ran a new 12-case router-enabled versus router-disabled synthetic structure benchmark without reusing Phase 270 cases",
-    "Phase 310 routing classification was 4/4 APPLY, 4/4 REJECT, 4/4 HOLD with zero false-positive overapplication, zero false negatives, and zero forced APPLY on HOLD",
-    "Phase 310 anonymized pairwise comparison produced Router ON wins=4, ties=8, Router OFF wins=0; all wins were APPLY cases",
-    "Phase 310 measured non-trivial routing/audit overhead, so the Router remains default-off and only bounded optional production use is eligible"
+    "Phase 300 integrated the dedicated default-off Novel DNA Router into V3",
+    "Phase 310 passed a new 12-case synthetic integration regression benchmark with scope limitation",
+    "Phase 320 promoted the Router only to OPTIONAL_BOUNDED_PRODUCTION while preserving DEFAULT OFF and all frozen GN-VDNA-01 semantics",
+    "Phase 320 established mandatory production call records, post-use validation, privacy-safe metadata, local rollback, system-pause triggers, and a metadata-only real-use ledger"
   ],
   "incomplete": [
-    "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1",
-    "Real-manuscript outcome evidence has not yet been accumulated",
-    "External independent blind validation has not been performed"
+    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 is event-driven and has no real-manuscript outcome yet",
+    "External independent blind validation has not been performed",
+    "Stable statistical production improvement across real user manuscripts remains unproven"
   ],
   "blocked": [],
   "unknowns": [
     "No external blind dataset has yet validated GN-VDNA-01 beyond the three frozen source books and synthetic benchmarks",
-    "Phase 310 used single-context anonymized adjudication, not an independent evaluator",
-    "Stable real-user manuscript improvement remains unproven",
+    "No real user manuscript production outcome has yet been recorded in the production ledger",
     "Local Windows runtime/integration state is not inferred from GitHub"
   ],
   "do_not_reopen": [
     "Accepted BOOK-01, BOOK-02, and BOOK-03 phases",
     "Phase 170 pair comparisons",
     "Phase 250 pair comparisons",
-    "Phase 270 synthetic proposal benchmark as a substitute for Phase 310",
-    "Phase 310 synthetic benchmark as if it were external independent validation",
+    "Phase 270 and Phase 310 synthetic benchmarks as substitutes for real-manuscript outcomes",
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
     "CBDNA-C01/C03/C04 global promotion without separate evidence and gates",
-    "Legacy Workflow 03/global-technique-bank as the primary DNA integration path",
     "Default-enable or automatic application of the Novel DNA Router",
-    "Universal production-improvement claims from the Phase 310 result",
+    "Universal production-improvement claims from synthetic evidence",
+    "Public storage of real manuscript text",
     "No backward transition without an authorized rollback receipt"
   ],
   "active_change_ids": [],
-  "next_required_action": "Execute GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1: promote the Router only to OPTIONAL_BOUNDED_PRODUCTION while preserving default-off routing, problem-evidence and simpler-fix gates, mandatory APPLIED call records and post-use validation, and explicit rollback on real-use regression. Do not claim external blind validation or universal production improvement.",
+  "next_required_action": "Wait for an actual real-manuscript V3 task to reach the optional Router. If and only if a DNA call becomes APPLIED, bind an opaque production_use_id, preserve private pre/post manuscript references, complete post-use validation, and append privacy-safe metadata to state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl. Do not fabricate a manuscript or force a DNA call for progress.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-PHASE310-ACCEPT-20260821-005",
-      "event_hash": "7c432936af0149fd322696805d98515e4f35776b293c1e4041e771368a499063"
+      "event_id": "EVT-NOVEL-DISTILL-PHASE320-ACCEPT-20260821-006",
+      "event_hash": "f832d42b2ace3119c0625ac5dbc2c67d85cb1b25dce6f3ec79c650c0b241c4e9"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "accepted checkpoint and active-task authority",
-      "git_blob": "02d293f51001c16acb55c66197d6a5afb009d870"
+      "role": "accepted checkpoint and event-driven active-task authority",
+      "git_blob": "aee0418304659829ac57f8912b7c86a3bdaa8598"
     },
     {
-      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1.json",
-      "role": "Phase 310 accepted benchmark receipt",
-      "git_blob": "5a6a630cb8d8fa2cb74e6a572bf5a21076dce4ae"
+      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1.json",
+      "role": "Phase 320 accepted bounded-production promotion receipt",
+      "git_blob": "bf45ea6303b0bd571f5b3a48ce250469e93975d9"
     },
     {
-      "path": "state/benchmarks/GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1.json",
-      "role": "Phase 310 benchmark design/results manifest",
-      "git_blob": "90d99874b32f3c8a09492709f0d607a54311076a"
+      "path": "state/production/NOVEL_DNA_ROUTER_PRODUCTION_GOVERNANCE_V1.json",
+      "role": "optional bounded production status and gate manifest",
+      "git_blob": "c174556e4d3f18226819163596bc30dc9a47c5b6"
     },
     {
-      "path": "rules/novel-dna-routing.md",
-      "role": "dedicated optional DNA routing contract",
-      "git_blob": "d48bbd4d2a87f17d6f78897bca3076eeeeed99da"
+      "path": "docs/NOVEL_DNA_BOUNDED_PRODUCTION_GOVERNANCE_V1.md",
+      "role": "bounded production governance contract",
+      "git_blob": "1e8c21ceb82349248341ace6f1d43d6cb7c55cc4"
+    },
+    {
+      "path": "state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl",
+      "role": "metadata-only real-manuscript outcome ledger",
+      "git_blob": "adbdff94648fd659b5bcc8c89487319b4b86f7ef"
     },
     {
       "path": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
@@ -80,5 +82,5 @@
       "git_blob": "dde98aeb5566f734f373fffa5a1e0248a89be931"
     }
   ],
-  "status": "ACTIVE"
+  "status": "ACTIVE_EVENT_DRIVEN"
 }
