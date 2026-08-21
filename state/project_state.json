@@ -2,23 +2,19 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-21T15:05:00+08:00",
+  "updated_at": "2026-08-21T15:25:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
     "work_title": "GN-VDNA-01 | RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
-    "phase": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE",
-    "phase_ordinal": 280,
-    "status": "ACCEPTED_GLOBAL_DNA_CREATED",
+    "phase": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
+    "phase_ordinal": 290,
+    "status": "ACCEPTED_READY_FOR_BOUNDED_INTEGRATION",
     "source_candidate": "CBDNA-C02-V2",
     "source_candidate_semantics_changed": false,
     "broadening": false,
     "frozen_support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
-    "proposal_gate_status": "PASS",
     "global_freeze_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
-    "latest_review_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1.json",
-    "private_governance_ref": "PRIVATE_DRIVE_GLOBAL_NOVEL_DNA_FREEZE_GOVERNANCE_GN_VDNA_01_V1",
-    "private_governance_file_id": "1d3Lz4WT6Y73zHb5AmVTjcF0zSTx3CJ_qnSlrBItUx4Y",
     "global_registry": {
       "global_dna_count": 1,
       "stable_ids": ["GN-VDNA-01"],
@@ -30,9 +26,23 @@
         "scope": "SYSTEM_LEVEL_REUSABLE_NOT_UNIVERSAL_LAW"
       }
     },
+    "routing_readiness": {
+      "contract": "docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md",
+      "problem_evidence_before_dna": true,
+      "simpler_fix_precedence": true,
+      "same_lineage_supersession": true,
+      "global_auto_priority": false,
+      "cross_layer_shared_budget": true,
+      "auto_application": false,
+      "canonical_v3_entrypoints": ["SKILL.md", "workflows/07-novel-master-pipeline-v3.md"],
+      "legacy_primary_integration_forbidden": ["workflows/03-apply-to-draft.md", "library/global-technique-bank.md"]
+    },
     "other_candidates_promoted": 0,
     "cross_book_candidates_remaining_non_global": ["CBDNA-C01", "CBDNA-C03", "CBDNA-C04"],
-    "next_stage": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS"
+    "latest_review_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS_V1.json",
+    "private_closeout_ref": "PRIVATE_DRIVE_GLOBAL_NOVEL_DNA_V1_CLOSEOUT_SYSTEM_INTEGRATION_READINESS",
+    "private_closeout_file_id": "1lpcnSzB2C8GwuzAZh41uCv9yu6otaLXSrWK21HSrZiI",
+    "next_stage": "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1"
   },
   "cross_book_baseline": {
     "phase170_validation_status": "ACCEPTED_WITH_NARROWING",
@@ -47,6 +57,8 @@
     "phase270_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1.json",
     "phase280_global_freeze_status": "ACCEPTED_GLOBAL_DNA_CREATED",
     "phase280_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1.json",
+    "phase290_closeout_status": "ACCEPTED_READY_FOR_BOUNDED_INTEGRATION",
+    "phase290_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS_V1.json",
     "candidate_manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json",
     "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
     "book_level_frozen_semantics_unchanged": true,
@@ -56,31 +68,36 @@
     "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
-    "phase": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
-    "phase_ordinal": 290,
+    "task_id": "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1",
+    "phase": "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION",
+    "phase_ordinal": 300,
     "status": "READY_FOR_CHATGPT_EXECUTION",
-    "execution_scope": "VERIFY_GLOBAL_FREEZE_CHAIN_AND_PREPARE_SAFE_SYSTEM_INTEGRATION_WITHOUT_SEMANTIC_EDIT_OR_AUTO_APPLICATION",
-    "global_input": {
-      "manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
-      "receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1.json",
-      "stable_id": "GN-VDNA-01",
-      "private_governance_file_id": "1d3Lz4WT6Y73zHb5AmVTjcF0zSTx3CJ_qnSlrBItUx4Y"
+    "execution_scope": "IMPLEMENT_MINIMAL_V3_DNA_ROUTER_WITHOUT_SEMANTIC_EDIT_OR_AUTO_APPLICATION",
+    "inputs": {
+      "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+      "phase290_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS_V1.json",
+      "routing_readiness_contract": "docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md",
+      "stable_global_id": "GN-VDNA-01"
     },
-    "closeout_contract": {
-      "verify_phase250_260_270_280_chain": true,
-      "verify_provenance": true,
-      "verify_default_off": true,
-      "verify_simpler_fix_precedence": true,
-      "verify_counterexample_boundaries": true,
-      "verify_global_scope_guardrail": true,
-      "verify_copyright_and_style_boundary": true,
-      "define_precedence_vs_book_and_cross_book_dna": true,
-      "auto_application_forbidden": true,
-      "semantic_edit_forbidden": true,
-      "new_global_promotion_forbidden": true
+    "integration_contract": {
+      "add_dedicated_router": "rules/novel-dna-routing.md",
+      "add_call_record_template": "templates/dna-call-record-template.md",
+      "update_skill_minimally": true,
+      "update_v3_workflow_optional_gate": true,
+      "update_readme": true,
+      "renumber_v3_phases": false,
+      "modify_legacy_workflow03": false,
+      "modify_global_technique_bank_as_integration": false,
+      "global_dna_default_off": true,
+      "auto_application_allowed": false,
+      "full_registry_in_prose_context_allowed": false,
+      "gn_vdna_01_semantic_edit_allowed": false,
+      "new_global_promotion_allowed": false,
+      "validate_skill_required": true,
+      "project_state_transition_validation_required": true,
+      "integration_regression_or_benchmark_required_before_final_promotion": true
     },
-    "next_stage": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
+    "if_implementation_passes_next_stage": "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1",
     "forbidden_actions": [
       "RERUN_ACCEPTED_BOOK_PHASES",
       "RERUN_PHASE170_PAIR_COMPARISONS",
@@ -89,6 +106,9 @@
       "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE",
       "BROADEN_GN_VDNA_01",
       "AUTO_APPLY_GLOBAL_DNA_TO_ALL_WRITING",
+      "LOAD_ALL_DNA_INTO_PROSE_CONTEXT",
+      "USE_LEGACY_WORKFLOW03_AS_PRIMARY_DNA_ROUTER",
+      "USE_GLOBAL_TECHNIQUE_BANK_AS_DNA_REGISTRY",
       "PROMOTE_CBDNA_C01_TO_GLOBAL",
       "PROMOTE_CBDNA_C03_TO_GLOBAL",
       "PROMOTE_CBDNA_C04_TO_GLOBAL",
@@ -130,7 +150,8 @@
     "CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1",
     "CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS_V2",
     "GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1",
-    "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1"
+    "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1",
+    "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
