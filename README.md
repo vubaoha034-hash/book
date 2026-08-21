@@ -59,6 +59,32 @@ config/novel-quality-gates.v3.json
 templates/v3-evidence-packet-template.md
 ```
 
+## Optional Novel DNA Router
+
+V3 现在支持一个**默认关闭**的结构级 Novel DNA Router。它不是新的写作模板，也不会因为某条规则是 Global 就自动套到所有故事。
+
+入口：
+
+```text
+rules/novel-dna-routing.md
+templates/dna-call-record-template.md
+```
+
+Router 只在已经有具体 `problem_evidence`、而普通因果/连续性/callback/setup-payoff/场景功能/情绪兑现/人物选择等更简单修复仍不足时才允许运行。Global / Cross-Book / Book-level 是证据层级，不是自动优先级；同一因果谱系只调用当前最高批准 successor，所有层级共享同一调用配额。
+
+当前首个系统级 Global Novel DNA 为：
+
+```text
+GN-VDNA-01
+RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING
+```
+
+它仍然默认 OFF，而且 `Global` 只表示当前小说蒸馏系统内最高层级的可复用机制，不表示“所有好小说都必须遵守”的普遍定律。
+
+在 V3 中，DNA Router 只可能在三本账完成后以 optional gate 进入；Phase 0/1 不用 DNA 生成题材和人物，正文只携带 active call 的最小信息，Phase 10 去 AI 时 DNA 关闭。旧的 `workflows/03-apply-to-draft.md` 与 `library/global-technique-bank.md` 继续保留兼容用途，不作为 DNA Router 的主接入路径。
+
+本次集成只是结构接入。是否真的改善生产写作，必须经过单独的 Integration Regression / Benchmark Gate，不能用“文件已经接上”代替质量证据。
+
 ## 四个新增核心模块
 
 ### 因果证明器
