@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_V3_TARGETED_REVISION",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "ACCEPTED_LOCAL_REPAIR_G1_G6_PASS_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "revision_id": "YMGQ-P5-LOCAL-CAUSAL-CONTINUITY-REPAIR-V1",
+  "source": {
+    "base_revision": "YMGQ-P3-PRISON_TOKEN_SETUP_PAYOFF_SEEDING-V1",
+    "p4_review": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P4_V3_FULL_REGRESSION_REVIEW_V1.json",
+    "manuscript_text_stored_in_git": false
+  },
+  "repair_groups": {
+    "P5-01": {
+      "issue": "Decoy wooden box had no prior source.",
+      "repair": "Seeded an oilcloth-wrapped sealed wooden box under two officers' guard when the prisoner convoy first enters Qingshi Station.",
+      "result": "PASS"
+    },
+    "P5-02": {
+      "issue": "Shang Jiuling and Huo Jiuweng used unseeded knowledge.",
+      "repair": "Shang now identifies Lu Guhong from a previously seen arrow treatment pattern immediately before naming him; Huo now states before the fight that Huo Yun's last letter implicated the Northern Camp winter-grain transfer line and that he heard the Xuan register touches that old account.",
+      "result": "PASS"
+    },
+    "P5-03": {
+      "issue": "Prison-token discovery mechanism conflicted between setup and payoff.",
+      "repair": "Unified both ends around the old-possessions box: Gu Qinghe believes she rediscovered the token there; Gu Chengyue later reveals he secretly mixed it back into that same box.",
+      "result": "PASS"
+    },
+    "P5-04": {
+      "issue": "Chicken transfer, broken bow string, and Lei Poshan return-state continuity gaps.",
+      "repair": "Added the chicken dropping from Shi Chongshan during the boat transfer and the girl pocketing it; showed Chu Shisan's bowstring breaking in melee; removed premature Lei Poshan presence so only the later explained return remains.",
+      "result": "PASS"
+    },
+    "P5-05": {
+      "issue": "Internal Investigation Office operation motive was under-explained.",
+      "repair": "Closed the causal plan in one confrontation: attract bounty/revenge factions, let them mutually bleed, obtain the desired evidence, seal exits and ignite the town so Gu Chengyue's death reads as jianghu blood-feud chaos.",
+      "result": "PASS"
+    }
+  },
+  "targeted_regression": {
+    "G1_causal_proof": "PASS",
+    "G6_continuity_and_rule_integrity": "PASS",
+    "critical_object_has_source": true,
+    "character_knowledge_sources_present": true,
+    "prison_token_object_chain_consistent": true,
+    "chicken_object_chain_consistent": true,
+    "broken_bow_epilogue_state_seeded": true,
+    "lei_poshan_return_state_consistent": true,
+    "antagonist_operation_motive_closed": true,
+    "new_blocker_detected": false
+  },
+  "protected_story_elements": {
+    "shi_chongshan_death_changed": false,
+    "chu_shisan_death_core_changed": false,
+    "gu_chengyue_crosses_bridge": true,
+    "gu_chengyue_not_pardoned": true,
+    "gu_qinghe_pardon_chain_preserved": true,
+    "one_year_later_tavern_ending_preserved": true
+  },
+  "dna_router": {
+    "result": "REJECTED",
+    "dna_applied": false,
+    "reason": "All P5 failures were resolved by ordinary V3 causal, knowledge-state, object-continuity and setup-payoff repairs; GN-VDNA-01 remains unnecessary."
+  },
+  "manuscript_metrics": {
+    "chars_before_p5": 22871,
+    "chars_after_p5": 23225,
+    "net_chars": 354,
+    "sha256": "89921441b8a0572f49b29a35ee190600a7574e46008ecb7f8cd250de15fe1cb0"
+  },
+  "private_revision_artifact": {
+    "backend": "google_drive_private",
+    "file_id": "1quClVAbHny3B1zgKIcrMbcOFXo7uyDKrHREZqlUBFuQ",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "shared_publicly": false
+  },
+  "delivery_status": "STRUCTURE_READY_FOR_FINAL_RHYTHM_AND_DEAI_REVIEW",
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_manuscript_revision": "YMGQ-P6-FINAL-RHYTHM-DEAI-REVIEW-V1",
+  "next_revision_scope": "Run final high-impact pacing, explanatory-tail, dialogue repetition, de-AI and reader-trust review only after G1/G6 closure. Preserve story facts and do not reopen structural edits unless a new blocker is located.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
