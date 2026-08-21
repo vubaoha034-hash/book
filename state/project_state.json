@@ -7,33 +7,30 @@
   "accepted_checkpoint": {
     "book_id": "BOOK-03",
     "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
-    "phase": "BOOK-03_NOVEL_DNA_VALIDATION",
-    "phase_ordinal": 220,
-    "status": "ACCEPTED_WITH_NARROWING",
+    "phase": "BOOK-03_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+    "phase_ordinal": 230,
+    "status": "ACCEPTED",
     "source_status": "PASS",
     "source_drive_file_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
     "source_docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
     "source_extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
     "volume_coverage": "2/2",
     "chapter_coverage": "75/75",
-    "validated_dna_total": 3,
-    "validated_dna_ids": ["VDNA-01", "VDNA-02", "VDNA-03"],
-    "validated_dna_registry": {
-      "VDNA-01": {
+    "frozen_dna_total": 3,
+    "frozen_dna_ids": ["DM-VDNA-01", "DM-VDNA-02", "DM-VDNA-03"],
+    "frozen_dna_registry": {
+      "DM-VDNA-01": {
         "machine_name": "EVIDENCE_REWIRES_WORLD_MODEL_AND_EPISTEMIC_AUTHORITY",
-        "verdict": "VALIDATED_WITH_NARROWING",
         "core_formals": ["F01", "F03", "F07"],
         "derived_formals": []
       },
-      "VDNA-02": {
+      "DM-VDNA-02": {
         "machine_name": "MATERIALIZED_PAST_AS_PRESENT_CAUSAL_STATE",
-        "verdict": "VALIDATED_WITH_NARROWING",
         "core_formals": ["F02", "F08"],
         "derived_formals": ["F10"]
       },
-      "VDNA-03": {
+      "DM-VDNA-03": {
         "machine_name": "ACTIVE_SPACE_REALLOCATES_OPERATIONAL_AUTHORITY",
-        "verdict": "VALIDATED_WITH_NARROWING",
         "core_formals": ["F05", "F06", "F09"],
         "derived_formals": ["F04"]
       }
@@ -41,14 +38,17 @@
     "formal_provenance_coverage": "10/10",
     "core_formal_total": 8,
     "derived_formal_total": 2,
-    "formal_orphan": 0,
-    "formal_double_count": 0,
     "supporting_direct_promotions": 0,
-    "blind_to_cross_book_candidates": true,
-    "latest_review_receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_VALIDATION_V1.json",
-    "private_validation_ref": "PRIVATE_DRIVE_BOOK03_NOVEL_DNA_VALIDATION_V1",
-    "private_validation_file_id": "137LWHBqpFled5-fybrKZCtWkwnr7oPmIFpvjYLaErTM",
-    "next_stage": "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1"
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "book_specific_only": true,
+    "global_dna": 0,
+    "global_promotion_authorized": false,
+    "latest_review_receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1.json",
+    "freeze_manifest": "state/frozen_dna/BOOK-03_NOVEL_DNA_FREEZE_V1.json",
+    "private_freeze_contract_ref": "PRIVATE_DRIVE_BOOK03_NOVEL_DNA_FREEZE_APPLICATION_V1",
+    "private_freeze_contract_file_id": "1ig1YnUFvceptWhKgO8GgeUBcnXqufdyUT9UWDjdLc14",
+    "next_stage": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1"
   },
   "cross_book_baseline": {
     "phase170_validation_status": "ACCEPTED_WITH_NARROWING",
@@ -57,68 +57,51 @@
     "phase180_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_GOVERNANCE_V1.json",
     "candidate_ids": ["CBDNA-C01", "CBDNA-C02", "CBDNA-C03"],
     "candidates_locked_during_book03_independent_pipeline": true,
-    "candidate_visibility_during_book03_freeze": false,
+    "candidate_visibility_during_book03_closeout": false,
     "global_dna": 0,
     "global_promotion_authorized": false,
     "third_independent_book_required_before_global_proposal": true,
     "c03_narrowing_locked": true
   },
   "active_task": {
-    "task_id": "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1",
-    "phase": "BOOK-03_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
-    "phase_ordinal": 230,
+    "task_id": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1",
+    "phase": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+    "phase_ordinal": 240,
     "status": "READY_FOR_CHATGPT_EXECUTION",
-    "execution_scope": "FREEZE_BOOK03_VALIDATED_DNA_AS_BOOK_SPECIFIC_ONLY",
+    "execution_scope": "VERIFY_BOOK03_PHASE_CHAIN_AND_READINESS_FOR_THIRD_BOOK_CROSS_BOOK_REVALIDATION",
     "book_id": "BOOK-03",
     "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
-    "validation_input": {
-      "receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_VALIDATION_V1.json",
-      "private_validation_file_id": "137LWHBqpFled5-fybrKZCtWkwnr7oPmIFpvjYLaErTM",
-      "validated_total": 3,
-      "validated_ids": ["VDNA-01", "VDNA-02", "VDNA-03"],
-      "validated_registry": {
-        "VDNA-01": {
-          "machine_name": "EVIDENCE_REWIRES_WORLD_MODEL_AND_EPISTEMIC_AUTHORITY",
-          "core_formals": ["F01", "F03", "F07"],
-          "derived_formals": []
-        },
-        "VDNA-02": {
-          "machine_name": "MATERIALIZED_PAST_AS_PRESENT_CAUSAL_STATE",
-          "core_formals": ["F02", "F08"],
-          "derived_formals": ["F10"]
-        },
-        "VDNA-03": {
-          "machine_name": "ACTIVE_SPACE_REALLOCATES_OPERATIONAL_AUTHORITY",
-          "core_formals": ["F05", "F06", "F09"],
-          "derived_formals": ["F04"]
-        }
-      }
+    "required_chain": [
+      "BOOK-03_SOURCE_INTAKE_V1",
+      "BOOK-03_EVIDENCE_SETTLEMENT_V1",
+      "BOOK-03_NOVEL_DNA_V1",
+      "BOOK-03_NOVEL_DNA_VALIDATION_V1",
+      "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1"
+    ],
+    "frozen_input": {
+      "manifest": "state/frozen_dna/BOOK-03_NOVEL_DNA_FREEZE_V1.json",
+      "frozen_total": 3,
+      "stable_ids": ["DM-VDNA-01", "DM-VDNA-02", "DM-VDNA-03"],
+      "private_contract_file_id": "1ig1YnUFvceptWhKgO8GgeUBcnXqufdyUT9UWDjdLc14"
     },
-    "freeze_contract": {
-      "stable_ids_required": true,
-      "book_specific_only": true,
-      "validated_semantics_may_not_be_broadened": true,
-      "semantic_change_requires_new_version_and_revalidation": true,
-      "default_disabled": true,
-      "invocation_gate_required": true,
-      "application_limits_required": true,
-      "scene_primary_max": 1,
-      "scene_secondary_max": 1,
-      "chapter_or_arc_primary_max": 2,
-      "book_primary_max": 3,
-      "supporting_direct_promotion_allowed": false,
+    "closeout_contract": {
+      "verify_phase_chain_only": true,
+      "verify_method_parity": true,
+      "verify_source_and_provenance_bindings": true,
+      "semantic_edit_forbidden": true,
       "cross_book_candidate_visibility": false,
-      "global_promotion_authorized": false,
+      "cross_book_matching_forbidden_in_closeout": true,
+      "global_promotion_forbidden": true,
       "style_imitation_forbidden": true,
       "plot_copying_forbidden": true
     },
-    "next_stage": "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1",
+    "next_stage": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1",
     "forbidden_actions": [
       "RERUN_BOOK01_OR_BOOK02_PHASES",
+      "RERUN_BOOK03_ACCEPTED_PHASES",
+      "SEMANTIC_EDIT_OF_DM_VDNA_V1_IN_PLACE",
       "CHANGE_FROZEN_CBDNA_CANDIDATE_SEMANTICS",
-      "READ_CBDNA_AS_BOOK03_FREEZE_TEMPLATE",
-      "BROADEN_BOOK03_VALIDATED_DNA_SEMANTICS",
-      "SUPPORTING_DIRECT_PROMOTION_TO_BOOK03_DNA",
+      "CROSS_BOOK_MATCHING_BEFORE_BOOK03_CLOSEOUT",
       "PROMOTE_ANYTHING_TO_GLOBAL_DNA",
       "STYLE_IMITATION",
       "PLOT_COPYING",
@@ -163,7 +146,8 @@
     "BOOK-03_SOURCE_INTAKE_V1",
     "BOOK-03_EVIDENCE_SETTLEMENT_V1",
     "BOOK-03_NOVEL_DNA_V1",
-    "BOOK-03_NOVEL_DNA_VALIDATION_V1"
+    "BOOK-03_NOVEL_DNA_VALIDATION_V1",
+    "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
