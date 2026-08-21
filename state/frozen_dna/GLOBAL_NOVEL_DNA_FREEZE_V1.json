@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE",
+  "phase_ordinal": 280,
+  "freeze_version": "V1",
+  "status": "FROZEN_SYSTEM_LEVEL_GLOBAL",
+  "source_candidate": "CBDNA-C02-V2",
+  "source_proposal_gate": "state/review_receipts/GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1.json",
+  "private_contract_file_id": "1d3Lz4WT6Y73zHb5AmVTjcF0zSTx3CJ_qnSlrBItUx4Y",
+  "global_definition": "Highest-level reusable mechanism inside the novel-distillation system; not a mandatory universal law for all good fiction and not a claim of statistical universality.",
+  "global_dna_count": 1,
+  "stable_ids": ["GN-VDNA-01"],
+  "registry": {
+    "GN-VDNA-01": {
+      "machine_name": "RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
+      "source_candidate": "CBDNA-C02-V2",
+      "support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
+      "core": "A high-weight narrative asset that recurs across stages must gain new causal meaning and change at least one of understanding, choice, risk, relationship, or goal while retaining prior memory value.",
+      "default_enabled": false,
+      "invocation_gate": {
+        "previously_established": true,
+        "high_weight_asset_required": true,
+        "cross_stage_recurrence_required": true,
+        "new_causal_meaning_required": true,
+        "story_variable_change_required": true,
+        "prior_memory_value_retention_required": true,
+        "simpler_fix_must_be_insufficient": true
+      },
+      "simpler_fix_precedence": ["CALLBACK", "CONTINUITY_FIX", "ORDINARY_SETUP_PAYOFF"],
+      "excluded_scope": [
+        "repeated motif without causal change",
+        "same-function reuse",
+        "one-shot setup/payoff",
+        "background-only exposition",
+        "retcon that erases prior meaning",
+        "late万能 asset insertion",
+        "all-details-are-foreshadowing overdesign"
+      ]
+    }
+  },
+  "application_limits": {
+    "default_enabled": false,
+    "scene_primary_default": "OFF",
+    "scene_secondary_diagnosis_max": 1,
+    "chapter_primary_max": 1,
+    "arc_primary_max": 1,
+    "book_global_primary_max": 1,
+    "short_story_default": "OFF_UNLESS_CLEAR_STAGE_RECURRENCE"
+  },
+  "governance": {
+    "semantics_immutable_in_v1": true,
+    "broadening_requires_v2_and_revalidation": true,
+    "new_support_may_add_provenance_without_semantic_edit": true,
+    "strong_counterexample_requires_global_revalidation": true,
+    "support_provenance_required": true,
+    "counterexample_boundaries_required": true,
+    "simpler_fix_control_required": true,
+    "copyright_boundary_required": true,
+    "source_book_plot_reuse_forbidden": true,
+    "source_book_style_imitation_forbidden": true,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true
+  },
+  "evidence_limits": {
+    "independent_frozen_books": 3,
+    "synthetic_benchmark_cases": 18,
+    "synthetic_benchmark_result": "8_APPLY_8_REJECT_2_HOLD_ALL_CORRECT",
+    "external_blind_dataset": false,
+    "statistical_universality_claimed": false
+  },
+  "other_candidates_promoted": [],
+  "other_candidates_remain_cross_book": ["CBDNA-C01", "CBDNA-C03", "CBDNA-C04"],
+  "next_stage": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS"
+}
