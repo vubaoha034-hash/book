@@ -29,9 +29,8 @@ def validate_transition(
         return UNKNOWN, "accepted_checkpoint missing"
 
     current_phase = checkpoint.get("phase_ordinal")
-    current_progress = checkpoint.get("progress_ordinal")
-    if not isinstance(current_phase, int) or not isinstance(current_progress, int):
-        return UNKNOWN, "accepted checkpoint ordinals missing or invalid"
+    if not isinstance(current_phase, int):
+        return UNKNOWN, "accepted checkpoint phase ordinal missing or invalid"
 
     rollback = state.get("rollback") or {}
     durable_rollback = rollback.get("authorized") is True and rollback.get("receipt")
@@ -47,6 +46,9 @@ def validate_transition(
         )
 
     if phase_ordinal == current_phase:
+        current_progress = checkpoint.get("progress_ordinal")
+        if not isinstance(current_progress, int):
+            return UNKNOWN, "accepted checkpoint progress ordinal missing or invalid for same-phase comparison"
         if progress_ordinal is None:
             return UNKNOWN, "candidate progress unknown; preserve accepted checkpoint"
         if progress_ordinal < current_progress and not rollback_ok:
