@@ -2,110 +2,90 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-20T19:33:00+08:00",
+  "updated_at": "2026-08-21",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
-    "book_id": "CROSS-BOOK",
-    "work_title": "射雕英雄传 × 诛仙",
-    "phase": "CROSS_BOOK_NOVEL_DNA_VALIDATION",
-    "phase_ordinal": 170,
-    "status": "ACCEPTED_WITH_NARROWING",
-    "method_parity_status": "VERIFIED",
-    "book_level_inputs_frozen": true,
-    "book01_closeout_status": "PASS",
-    "book02_closeout_status": "PASS",
-    "pair_comparisons": 12,
-    "same_core_pairs": 2,
-    "partial_overlap_pairs": 2,
-    "no_match_pairs": 8,
-    "cross_book_candidates": 3,
-    "cross_book_candidate_ids": ["CBDNA-C01", "CBDNA-C02", "CBDNA-C03"],
+    "book_id": "BOOK-03",
+    "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+    "phase": "BOOK-03_EVIDENCE_SETTLEMENT",
+    "phase_ordinal": 200,
+    "status": "ACCEPTED",
+    "source_status": "PASS",
+    "source_drive_file_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
+    "source_docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
+    "source_extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
+    "volume_coverage": "2/2",
+    "chapter_coverage": "75/75",
+    "volume_breakdown": {"七星鲁王": 29, "怒海潜沙": 46},
+    "raw_hypotheses": 28,
+    "semantic_merge_reductions": 5,
+    "formal_candidates": 10,
+    "supporting_patterns": 13,
+    "novel_dna": 0,
+    "blind_to_cross_book_candidates": true,
+    "latest_review_receipt": "state/review_receipts/BOOK-03_EVIDENCE_SETTLEMENT_V1.json",
+    "private_registry_ref": "PRIVATE_DRIVE_BOOK03_EVIDENCE_SETTLEMENT_V1",
+    "private_registry_file_id": "146jk5sYo7-V7byk6PU-O_6iEi-Y9JX-UZ51N_eoZlck",
+    "next_stage": "BOOK-03_NOVEL_DNA_SYNTHESIS_V1"
+  },
+  "cross_book_baseline": {
+    "phase170_validation_status": "ACCEPTED_WITH_NARROWING",
+    "phase170_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_VALIDATION_V1.json",
+    "phase180_candidate_freeze_status": "ACCEPTED",
+    "phase180_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_GOVERNANCE_V1.json",
+    "candidate_ids": ["CBDNA-C01", "CBDNA-C02", "CBDNA-C03"],
+    "candidates_locked_during_book03_independent_pipeline": true,
+    "candidate_visibility_during_book03_synthesis": false,
     "global_dna": 0,
     "global_promotion_authorized": false,
-    "book_specific_residuals": {
-      "BOOK-01": ["SD-VDNA-02"],
-      "BOOK-02": ["ZX-VDNA-02", "ZX-VDNA-04:SYSTEM_DEPENDENCY_DEGRADATION"]
-    },
-    "latest_review_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_VALIDATION_V1.json",
-    "private_cross_book_validation_ref": "PRIVATE_DRIVE_CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
-    "private_cross_book_validation_file_id": "1zPyKbdgNSEENq--QqZeB_2GswMPWDb1evFo1JAVy-aA",
-    "next_stage": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1"
+    "third_independent_book_required_before_global_proposal": true,
+    "c03_narrowing_locked": true
   },
   "active_task": {
-    "task_id": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1",
-    "phase": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_GOVERNANCE",
-    "phase_ordinal": 180,
+    "task_id": "BOOK-03_NOVEL_DNA_SYNTHESIS_V1",
+    "phase": "BOOK-03_NOVEL_DNA_SYNTHESIS",
+    "phase_ordinal": 210,
     "status": "READY_FOR_CHATGPT_EXECUTION",
-    "execution_scope": "FREEZE_VALIDATED_CROSS_BOOK_CANDIDATES_AS_NON_GLOBAL_ONLY",
-    "source_validation": {
-      "status": "ACCEPTED_WITH_NARROWING",
-      "receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_VALIDATION_V1.json",
-      "private_ref": "PRIVATE_DRIVE_CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
-      "pair_comparisons": 12,
-      "same_core": 2,
-      "partial_overlap": 2,
-      "no_match": 8
+    "execution_scope": "BOOK03_FORMAL_ONLY_INDEPENDENT_DNA_SYNTHESIS",
+    "book_id": "BOOK-03",
+    "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+    "source": {
+      "drive_file_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
+      "docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
+      "extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
+      "volume_coverage": "2/2",
+      "chapter_coverage": "75/75"
     },
-    "candidate_registry": {
-      "CBDNA-C01": {
-        "machine_name": "PERSISTENT_OBLIGATION_AND_CHOICE_IDENTITY",
-        "confidence": "HIGH",
-        "support": ["SD-VDNA-01", "ZX-VDNA-01"],
-        "status": "CROSS_BOOK_CANDIDATE_ONLY"
-      },
-      "CBDNA-C02": {
-        "machine_name": "NARRATIVE_ASSET_ACCRETION_ACROSS_ARCS",
-        "confidence": "HIGH",
-        "support": ["SD-VDNA-03", "ZX-VDNA-03"],
-        "status": "CROSS_BOOK_CANDIDATE_ONLY"
-      },
-      "CBDNA-C03": {
-        "machine_name": "AUTONOMOUS_CAUSAL_LINES_CONVERGE_BY_INDEPENDENT_MOTIVE",
-        "confidence": "MEDIUM_HIGH",
-        "support": ["SD-VDNA-03", "ZX-VDNA-04"],
-        "status": "CROSS_BOOK_CANDIDATE_WITH_NARROWING"
-      }
+    "evidence_input": {
+      "receipt": "state/review_receipts/BOOK-03_EVIDENCE_SETTLEMENT_V1.json",
+      "formal_total": 10,
+      "formal_ids": ["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10"],
+      "supporting_total": 13,
+      "supporting_direct_promotion_allowed": false,
+      "private_registry_file_id": "146jk5sYo7-V7byk6PU-O_6iEi-Y9JX-UZ51N_eoZlck"
     },
-    "book_specific_residuals": {
-      "BOOK-01": {
-        "SD-VDNA-02": "BOOK01_SPECIFIC"
-      },
-      "BOOK-02": {
-        "ZX-VDNA-02": "BOOK02_SPECIFIC",
-        "ZX-VDNA-04:SYSTEM_DEPENDENCY_DEGRADATION": "BOOK02_SPECIFIC_SUBCOMPONENT"
-      }
-    },
-    "freeze_governance_contract": {
-      "stable_cross_book_candidate_ids_required": true,
-      "book_level_frozen_semantics_immutable": true,
-      "cross_book_candidate_semantic_edit_requires_new_version": true,
-      "global_promotion_forbidden": true,
-      "third_independent_book_revalidation_required_before_any_global_proposal": true,
-      "candidate_support_provenance_required": true,
-      "counterexample_boundaries_required": true,
-      "default_disabled": true,
-      "invocation_gate_required": true,
-      "application_limits_required": true,
+    "synthesis_contract": {
+      "formal_only_synthesis": true,
+      "blind_to_cross_book_candidates": true,
+      "do_not_read_cbdna_definitions": true,
+      "do_not_use_book01_or_book02_dna_as_templates": true,
+      "cross_arc_support_required": true,
+      "merge_related_formals_allowed": true,
+      "counterexample_boundary_required": true,
+      "actionable_rule_required": true,
       "style_imitation_forbidden": true,
       "plot_copying_forbidden": true,
-      "c03_narrowing_may_not_be_broadened_without_new_validation": true
+      "global_promotion_forbidden": true
     },
-    "next_stage": "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1",
-    "missing_evidence_semantics": "UNKNOWN_NOT_NOT_STARTED",
+    "next_stage": "BOOK-03_NOVEL_DNA_SYNTHESIS_V1",
     "forbidden_actions": [
-      "BOOK01_PHASE50_RERUN",
-      "BOOK01_PHASE60_RERUN",
-      "BOOK01_PHASE70_RERUN",
-      "BOOK01_PHASE80_RERUN",
-      "BOOK02_PHASE50_RERUN",
-      "BOOK02_PHASE60_RERUN",
-      "BOOK02_PHASE70_RERUN",
-      "BOOK02_PHASE80_RERUN",
+      "RERUN_BOOK01_OR_BOOK02_PHASES",
       "SEMANTIC_EDIT_OF_SD_VDNA_V1_IN_PLACE",
       "SEMANTIC_EDIT_OF_ZX_VDNA_V1_IN_PLACE",
-      "SUPPORTING_DIRECT_PROMOTION_TO_CROSS_BOOK_DNA",
-      "PROMOTE_CBDNA_CANDIDATE_TO_GLOBAL_DNA",
-      "BROADEN_CBDNA_C03_BEYOND_VALIDATED_INTERSECTION_WITHOUT_NEW_VALIDATION",
+      "CHANGE_FROZEN_CBDNA_CANDIDATE_SEMANTICS",
+      "READ_CBDNA_AS_BOOK03_SYNTHESIS_TEMPLATE",
+      "SUPPORTING_DIRECT_PROMOTION_TO_BOOK03_DNA",
+      "PROMOTE_ANYTHING_TO_GLOBAL_DNA",
       "STYLE_IMITATION",
       "PLOT_COPYING",
       "SOURCE_MODIFICATION",
@@ -144,7 +124,10 @@
     "BOOK-01_NOVEL_DNA_VALIDATION_V1",
     "BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1",
     "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1",
-    "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1"
+    "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1",
+    "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1",
+    "BOOK-03_SOURCE_INTAKE_V1",
+    "BOOK-03_EVIDENCE_SETTLEMENT_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
