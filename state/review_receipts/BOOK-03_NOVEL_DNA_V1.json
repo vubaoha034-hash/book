@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-03-NOVEL-DNA-V1-20260821",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-03",
+  "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+  "phase": "BOOK-03_NOVEL_DNA_SYNTHESIS",
+  "phase_ordinal": 210,
+  "review_status": "ACCEPTED_FOR_VALIDATION",
+  "executor": "CHATGPT",
+  "input": {
+    "evidence_receipt": "state/review_receipts/BOOK-03_EVIDENCE_SETTLEMENT_V1.json",
+    "formal_total": 10,
+    "formal_ids": ["F01","F02","F03","F04","F05","F06","F07","F08","F09","F10"],
+    "supporting_total": 13,
+    "supporting_direct_promotion_allowed": false
+  },
+  "independence": {
+    "blind_to_cross_book_candidates": true,
+    "book01_or_book02_dna_used_as_templates": false,
+    "cross_book_candidate_matching_performed": false,
+    "global_promotion_authorized": false
+  },
+  "synthesis": {
+    "candidate_total": 3,
+    "formal_coverage": "10/10",
+    "formal_orphan": 0,
+    "formal_double_count": 0,
+    "supporting_direct_promotions": 0,
+    "candidates": [
+      {
+        "id": "DNA-01",
+        "machine_name": "EPISTEMIC_PRESSURE_REWIRES_ACTION_AND_TRUST",
+        "formal_support": ["F01","F03","F07"],
+        "status": "BOOK03_CANDIDATE_PENDING_VALIDATION"
+      },
+      {
+        "id": "DNA-02",
+        "machine_name": "MATERIALIZED_PAST_BECOMES_PRESENT_CAUSAL_STATE",
+        "formal_support": ["F02","F08","F10"],
+        "status": "BOOK03_CANDIDATE_PENDING_VALIDATION"
+      },
+      {
+        "id": "DNA-03",
+        "machine_name": "DISTRIBUTED_OPERATIONAL_INTELLIGENCE_INSIDE_ACTIVE_SPACE",
+        "formal_support": ["F04","F05","F06","F09"],
+        "status": "BOOK03_CANDIDATE_PENDING_VALIDATION"
+      }
+    ]
+  },
+  "validation_risks": {
+    "DNA-01": "Test whether F03 materially changes the causal machine rather than merely adding relationship flavor.",
+    "DNA-02": "Test whether F10 is an independent causal contribution or only a structural consequence of F02/F08.",
+    "DNA-03": "Test whether F04/F05/F06/F09 form a necessary closed loop rather than an over-broad bundle of techniques."
+  },
+  "private_dna": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK03_NOVEL_DNA_V1",
+    "file_id": "19V2IsSsaTdrLJWf6NzQiQuFGS6nn0O91fp2LPJcDHd8",
+    "folder_id": "1B5AcFp_xxpu-3rrWLGUD4K1wJNFKNTWy",
+    "title": "BOOK-03_盗墓笔记壹_NOVEL_DNA_V1",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK-03_NOVEL_DNA_VALIDATION_V1",
+  "next_stage_contract": {
+    "cross_volume_support_required": true,
+    "counterfactual_ablation_required": true,
+    "specificity_required": true,
+    "dedup_required": true,
+    "boundary_testing_required": true,
+    "actionability_required": true,
+    "supporting_direct_promotion_allowed": false,
+    "cross_book_candidate_visibility": false,
+    "global_promotion_authorized": false
+  },
+  "rollback_authorized": false
+}
