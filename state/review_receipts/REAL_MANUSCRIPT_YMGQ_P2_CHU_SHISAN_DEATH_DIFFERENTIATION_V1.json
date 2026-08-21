@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_V3_TARGETED_REVISION",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "ACCEPTED_TARGETED_REVISION_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "revision_id": "YMGQ-P2-CHU_SHISAN_DEATH_DIFFERENTIATION-V1",
+  "revision_scope": "STONE_AND_CHU_DEATH_SCENE_FUNCTION_ISOMORPHISM",
+  "dna_router_result": "REJECTED",
+  "dna_applied": false,
+  "source": {
+    "base_revision": "YMGQ-P1-MIDSECTION-COMPRESSION-V1",
+    "user_uploaded_manuscript": true,
+    "manuscript_text_stored_in_git": false
+  },
+  "edit_metrics": {
+    "manuscript_chars_before": 23062,
+    "manuscript_chars_after": 22729,
+    "target_block_chars_before": 1641,
+    "target_block_chars_after": 1308,
+    "target_block_net_reduction": 333
+  },
+  "functional_differentiation": {
+    "shi_chongshan": "Dies after physically holding the battlefield/convoy line for Liu Huanshan; primary function is friendship cost and substitutionary burden.",
+    "chu_shisan": "Dies after detecting the gray-clothed signaling chain behind the black-arrow operation; primary function is incomplete evidence that redirects conflict toward the hidden organizer.",
+    "leave_return_death_structure_removed": true,
+    "long_red_boat_false_hope_removed": true,
+    "death_occurs_in_liu_huanshan_presence": true,
+    "partial_clue_delivered_before_death": true
+  },
+  "continuity_check": {
+    "old_chu_long_survival_block_removed": true,
+    "later_black_arrow_evidence_chain_preserved": true,
+    "shang_jiuling_identifies_lu_guhong_preserved": true,
+    "lei_poshan_red_boat_reference_still_valid": true,
+    "broken_bow_epilogue_setup_preserved": true,
+    "result": "PASS"
+  },
+  "private_revision_artifact": {
+    "backend": "google_drive_private",
+    "file_id": "1o-FCntpBJt-XWZtj6802ylObaJvE6aQ0bA5XUkJ8NyE",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "shared_publicly": false
+  },
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_manuscript_revision": "YMGQ-P3-PRISON_TOKEN_SETUP_PAYOFF_SEEDING-V1",
+  "next_revision_scope": "Seed the old prison token before the final execution-scene reveal so Gu Chengyue's manipulation of Gu Qinghe is earned rather than introduced late.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
