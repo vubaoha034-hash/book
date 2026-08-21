@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_V3_FULL_REGRESSION_REVIEW",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "REVIEW_COMPLETE_LOCAL_FIX_REQUIRED_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "review_id": "YMGQ-P4-V3-FULL-REGRESSION-REVIEW-V1",
+  "source": {
+    "base_revision": "YMGQ-P3-PRISON_TOKEN_SETUP_PAYOFF_SEEDING-V1",
+    "base_revision_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P3_PRISON_TOKEN_SETUP_PAYOFF_SEEDING_V1.json",
+    "manuscript_text_stored_in_git": false
+  },
+  "v3_gate_results": {
+    "G0_story_contract": "PASS",
+    "G1_causal_proof": "HOLD_LOCAL_FIX_REQUIRED",
+    "G2_emotion_debt_and_payoff": "PASS_WITH_MINOR_RISK",
+    "G3_hate_and_empathy": "PASS",
+    "G4_opening_retention": "PASS",
+    "G5_reader_evidence": "SINGLE_CONTEXT_REVIEW_ONLY_NOT_INDEPENDENT",
+    "G6_continuity_and_rule_integrity": "FAIL_LOCAL",
+    "G7_targeted_revision": "PASS_WITH_REOPEN",
+    "G8_de_ai_aesthetic": "HOLD_UNTIL_G6_CLOSES"
+  },
+  "story_core": {
+    "mainline_causality": "PASS",
+    "shi_chongshan_vs_chu_shisan_death_function_differentiation": "PASS",
+    "black_arrow_to_internal_investigation_chain": "PASS_WITH_KNOWLEDGE_SOURCE_FIX",
+    "gu_qinghe_gu_chengyue_manipulation_chain": "PASS_WITH_TOKEN_MECHANISM_FIX",
+    "severe_ai_smell_regression": false
+  },
+  "local_fix_groups": [
+    {
+      "id": "P5-01",
+      "severity": "BLOCKER",
+      "issue": "Critical decoy wooden box first appears at climax with no earlier source.",
+      "gate": "G6_CRITICAL_OBJECT_HAS_NO_SOURCE"
+    },
+    {
+      "id": "P5-02",
+      "severity": "MAJOR",
+      "issue": "Character knowledge sources are missing: Shang Jiuling names Lu Guhong without shown recognition basis; Huo Jiuweng knows the ledger includes Northern Camp without prior transmission.",
+      "gate": "G6_KNOWLEDGE_STATE"
+    },
+    {
+      "id": "P5-03",
+      "severity": "MAJOR",
+      "issue": "Prison-token setup says Gu Qinghe found it among old possessions while final reveal says it was directly placed on her desk; discovery mechanism must be unified.",
+      "gate": "G6_OBJECT_CAUSAL_CONTINUITY"
+    },
+    {
+      "id": "P5-04",
+      "severity": "MINOR_BUNDLE",
+      "issue": "Object/location continuity cleanup required: chicken transfers from Shi Chongshan to the girl without a shown handoff; epilogue calls the bow broken-string without a break event; Lei Poshan is described as returning twice.",
+      "gate": "G6_OBJECT_AND_LOCATION_STATE"
+    },
+    {
+      "id": "P5-05",
+      "severity": "MAJOR",
+      "issue": "Internal Investigation Office operation needs one concise causal closure explaining why it creates a large jianghu melee before ledger seizure and mass silencing instead of simply killing Gu Chengyue.",
+      "gate": "G1_ANTAGONIST_CAUSAL_PLAN"
+    }
+  ],
+  "dna_router": {
+    "result": "REJECTED",
+    "dna_applied": false,
+    "reason": "All remaining issues are solvable by ordinary V3 causal, knowledge-state, object-continuity, and setup-payoff repairs; forcing GN-VDNA-01 would add formula risk without addressing the actual failures."
+  },
+  "private_review_artifact": {
+    "backend": "google_drive_private",
+    "file_id": "1j_ieis54YeMlFoh-GBigE9k2BBtjw0N-FgLTei1d42I",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "shared_publicly": false
+  },
+  "delivery_status": "NOT_READY_FOR_FINAL_DELIVERY_LOCAL_FIX_REQUIRED",
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_manuscript_revision": "YMGQ-P5-LOCAL-CAUSAL-CONTINUITY-REPAIR-V1",
+  "next_revision_scope": "Fix exactly five local groups: seed decoy box, repair Shang/Huo knowledge sources, unify prison-token discovery mechanism, repair chicken/bow/Lei continuity, and close the Internal Investigation Office operation motive. Preserve P1-P3 core changes and keep GN-VDNA-01 OFF.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
