@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
+  "phase_ordinal": 320,
+  "status": "OPTIONAL_BOUNDED_PRODUCTION",
+  "default_enabled": false,
+  "source_benchmark_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1.json",
+  "source_benchmark_manifest": "state/benchmarks/GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1.json",
+  "governance_contract": "docs/NOVEL_DNA_BOUNDED_PRODUCTION_GOVERNANCE_V1.md",
+  "router": {
+    "path": "rules/novel-dna-routing.md",
+    "blob": "d48bbd4d2a87f17d6f78897bca3076eeeeed99da",
+    "semantic_broadening": false,
+    "auto_application": false
+  },
+  "call_record": {
+    "path": "templates/dna-call-record-template.md",
+    "blob": "eaa9476a9282289c66d3c129c4e8b8538482eacd",
+    "required_for_applied_production_calls": true,
+    "post_use_validation_required": true
+  },
+  "global_dna": {
+    "stable_id": "GN-VDNA-01",
+    "manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+    "semantics_immutable": true,
+    "default_enabled": false,
+    "new_global_promotion_authorized": false
+  },
+  "production_gate": {
+    "problem_evidence_required": true,
+    "upstream_v3_failure_classification_required": true,
+    "simpler_fix_precedence_required": true,
+    "frozen_invocation_gate_required": true,
+    "same_lineage_dedup_required": true,
+    "shared_and_dna_specific_limits_required": true,
+    "effective_limit_rule": "MIN_OF_SHARED_CEILING_AND_DNA_SPECIFIC_FROZEN_LIMIT",
+    "expected_change_required": true,
+    "protected_story_elements_required": true,
+    "complexity_cost_required": true,
+    "formula_risk_required": true,
+    "exit_criteria_required": true
+  },
+  "real_manuscript_audit": {
+    "production_use_id_required": true,
+    "private_manuscript_ref_required": true,
+    "pre_change_snapshot_ref_required": true,
+    "post_change_snapshot_ref_required_for_applied": true,
+    "user_or_reader_outcome_recorded_when_available": true,
+    "privacy_safe_summary_only_in_public_ledger": true,
+    "manuscript_text_in_public_ledger_forbidden": true,
+    "ledger": "state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl"
+  },
+  "local_call_rollback": {
+    "expected_change_absent_with_added_complexity": true,
+    "continuity_or_knowledge_regression": true,
+    "material_formula_risk_regression": true,
+    "protected_story_element_damage": true,
+    "simpler_fix_proves_sufficient": true,
+    "target_problem_worsens": true
+  },
+  "system_pause": {
+    "pause_status": "PAUSED_PENDING_REVIEW",
+    "source_plot_or_style_leakage": true,
+    "privacy_leakage": true,
+    "frozen_semantic_broadening": true,
+    "default_on_or_auto_application_outside_gate": true,
+    "strong_global_boundary_counterexample": true,
+    "repeated_real_use_regression_pattern": true
+  },
+  "evidence_maturity": {
+    "phase310_synthetic_regression": "PASS_WITH_SCOPE_LIMITATION",
+    "real_user_manuscript_outcomes_accumulated": 0,
+    "external_independent_blind_validation": false,
+    "statistical_production_improvement_proven": false,
+    "allowed_claim": "Router is eligible for optional bounded real-manuscript use under audit and rollback.",
+    "forbidden_claim": "Router is proven to improve all production writing."
+  },
+  "next_evidence_stage": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1"
+}
