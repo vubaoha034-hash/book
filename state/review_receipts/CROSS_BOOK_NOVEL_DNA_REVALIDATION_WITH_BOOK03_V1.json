@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "CROSS-BOOK-NOVEL-DNA-REVALIDATION-WITH-BOOK03-V1-20260821",
+  "project_id": "novel-distillation",
+  "phase": "CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03",
+  "phase_ordinal": 250,
+  "review_status": "ACCEPTED_WITH_NARROWING_AND_NEW_CANDIDATE",
+  "executor": "CHATGPT",
+  "inputs": {
+    "phase170_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_VALIDATION_V1.json",
+    "phase180_receipt": "state/review_receipts/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_GOVERNANCE_V1.json",
+    "book01_closeout": "state/review_receipts/BOOK-01_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
+    "book02_closeout": "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
+    "book03_closeout": "state/review_receipts/BOOK-03_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
+    "book03_freeze_manifest": "state/frozen_dna/BOOK-03_NOVEL_DNA_FREEZE_V1.json"
+  },
+  "immutable_prior_results": {
+    "phase170_pair_results_reused_without_rerun": true,
+    "pair_comparisons": 12,
+    "same_core": 2,
+    "partial_overlap": 2,
+    "no_match": 8
+  },
+  "book03_pairwise": {
+    "pair_comparisons": 21,
+    "same_core": 1,
+    "partial_overlap": 4,
+    "no_match": 16,
+    "same_core_pairs": [
+      ["DM-VDNA-02", "ZX-VDNA-03"]
+    ],
+    "partial_overlap_pairs": [
+      ["DM-VDNA-01", "SD-VDNA-02"],
+      ["DM-VDNA-02", "SD-VDNA-03"],
+      ["DM-VDNA-03", "SD-VDNA-02"],
+      ["DM-VDNA-03", "ZX-VDNA-04"]
+    ]
+  },
+  "existing_candidate_revalidation": {
+    "CBDNA-C01": {
+      "machine_name": "PERSISTENT_OBLIGATION_AND_CHOICE_IDENTITY",
+      "verdict": "KEEP_V1_TWO_BOOK_CANDIDATE",
+      "book03_support": "NO_INDEPENDENT_SUPPORT_NO_COUNTEREXAMPLE",
+      "confidence": "HIGH",
+      "global_proposal_eligible": false
+    },
+    "CBDNA-C02": {
+      "machine_name_v1": "NARRATIVE_ASSET_ACCRETION_ACROSS_ARCS",
+      "verdict": "REVALIDATED_WITH_NARROWING",
+      "book03_support": ["DM-VDNA-02"],
+      "three_book_support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
+      "v1_frozen_semantics_modified_in_place": false,
+      "v2_proposal_id": "CBDNA-C02-V2-PROPOSAL",
+      "v2_machine_name": "RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
+      "v2_core": "A high-weight narrative asset that recurs across stages must gain new causal meaning and change at least one of understanding, choice, risk, relationship, or goal while retaining prior memory value.",
+      "global_proposal_eligible_after_refreeze": true,
+      "global_promotion_executed": false
+    },
+    "CBDNA-C03": {
+      "machine_name": "AUTONOMOUS_CAUSAL_LINES_CONVERGE_BY_INDEPENDENT_MOTIVE",
+      "verdict": "KEEP_V1_TWO_BOOK_NARROWED_CANDIDATE",
+      "book03_support": "NO_INDEPENDENT_SUPPORT_NO_COUNTEREXAMPLE",
+      "confidence": "MEDIUM_HIGH",
+      "global_proposal_eligible": false
+    }
+  },
+  "new_cross_book_candidates": [
+    {
+      "candidate_id": "CBDNA-C04",
+      "machine_name": "DIFFERENTIATED_CAPABILITY_CHANGES_DECISION_AUTHORITY",
+      "support": ["SD-VDNA-02", "DM-VDNA-03"],
+      "confidence": "MEDIUM",
+      "status": "NEW_CROSS_BOOK_CANDIDATE_ONLY",
+      "core": "Differentiated capability must change decision authority, permission, leadership, or an irreplaceable functional position for the relevant problem, not merely execution success.",
+      "global_proposal_eligible": false
+    }
+  ],
+  "residuals": {
+    "BOOK-01": [
+      "SD-VDNA-02:SOCIAL_PROVENANCE_AND_LONG_TERM_RELATIONSHIP_DEBT_NETWORK remains BOOK01_SPECIFIC_RESIDUAL"
+    ],
+    "BOOK-02": [
+      "ZX-VDNA-02 remains BOOK02_SPECIFIC",
+      "ZX-VDNA-04:SYSTEM_DEPENDENCY_DEGRADATION remains BOOK02_SPECIFIC_SUBCOMPONENT"
+    ],
+    "BOOK-03": [
+      "DM-VDNA-01 remains BOOK03_SPECIFIC",
+      "DM-VDNA-02:PAST_ACTOR_TRACE_AS_PRESENT_CAUSAL_STATE remains BOOK03_SPECIFIC_RESIDUAL beyond C02 intersection",
+      "DM-VDNA-03:ACTIVE_SPACE_FEEDBACK_LOOP remains BOOK03_SPECIFIC_RESIDUAL beyond C04 intersection"
+    ]
+  },
+  "global_proposal_assessment": {
+    "global_dna_count": 0,
+    "global_promotion_authorized": false,
+    "eligible_after_candidate_refreeze": ["CBDNA-C02-V2-PROPOSAL"],
+    "not_eligible": ["CBDNA-C01", "CBDNA-C03", "CBDNA-C04"],
+    "reason": "Only the narrowed C02 proposal has independent frozen support from all three books. Promotion remains forbidden until the narrowed cross-book candidate is re-frozen and a separate global proposal gate is passed."
+  },
+  "governance": {
+    "book_level_frozen_semantic_edits": 0,
+    "supporting_direct_promotions": 0,
+    "existing_candidate_v1_semantics_modified_in_place": false,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "global_promotion_executed": false
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_CROSS_BOOK_REVALIDATION_WITH_BOOK03_V1",
+    "file_id": "1MFEeU5J3WM0gKgFw_XwPJaO9WiqnVFQtJKLj2b18oA8",
+    "folder_id": "1euIo6QVRDwxlnFf1oZ2NGm1R_3srISlR",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS_V2",
+  "rollback_authorized": false
+}
