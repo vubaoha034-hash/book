@@ -83,7 +83,19 @@ RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING
 
 在 V3 中，DNA Router 只可能在三本账完成后以 optional gate 进入；Phase 0/1 不用 DNA 生成题材和人物，正文只携带 active call 的最小信息，Phase 10 去 AI 时 DNA 关闭。旧的 `workflows/03-apply-to-draft.md` 与 `library/global-technique-bank.md` 继续保留兼容用途，不作为 DNA Router 的主接入路径。
 
-本次集成只是结构接入。是否真的改善生产写作，必须经过单独的 Integration Regression / Benchmark Gate，不能用“文件已经接上”代替质量证据。
+Phase 310 的 12-case 合成结构回归测试结果为 `PASS_WITH_SCOPE_LIMITATION`：Router 在 4 个 APPLY、4 个 REJECT、4 个 HOLD 案例中没有观察到误套、漏套或 REJECT/HOLD 回归，但测试仍是单上下文匿名比较，不是外部独立盲测，也不等于真实稿件已经证明稳定提升。
+
+因此当前生产状态只提升到 **`OPTIONAL_BOUNDED_PRODUCTION`**，继续 DEFAULT OFF。真实稿件只有在门槛通过后才能 `APPLIED`；每个生产调用都必须保存 call record、脱敏 `production_use_id`、前后版本引用和 post-use validation。若预期结构收益没有出现、复杂度/公式化风险上升、连续性受损或目标问题变差，必须回滚该调用；严重治理失败会暂停 Router 的新生产应用。公开 GitHub 只记录脱敏元数据，不记录真实稿件正文。
+
+生产治理与真实使用账本：
+
+```text
+docs/NOVEL_DNA_BOUNDED_PRODUCTION_GOVERNANCE_V1.md
+state/production/NOVEL_DNA_ROUTER_PRODUCTION_GOVERNANCE_V1.json
+state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl
+```
+
+当前仍禁止把这一状态表述成“Router 已被证明能改善所有生产小说”。更强结论必须等待真实稿件结果积累或外部独立验证。
 
 ## 四个新增核心模块
 
