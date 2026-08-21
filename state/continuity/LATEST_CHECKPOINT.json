@@ -1,66 +1,74 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 3,
-  "recorded_at": "2026-08-21T15:25:30+08:00",
+  "sequence": 4,
+  "recorded_at": "2026-08-21T15:58:30+08:00",
   "task_model": "SINGLE_TASK",
-  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
-  "highest_accepted_phase_ordinal": 290,
+  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION",
+  "highest_accepted_phase_ordinal": 300,
   "active_task_ids": [
-    "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1"
+    "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1"
   ],
-  "current_focus": "Implement the bounded optional DNA router into the canonical V3 Skill/pipeline without semantic edit, auto-application, or legacy-router substitution.",
+  "current_focus": "Run a controlled regression benchmark comparing V3 with the optional Novel DNA Router enabled versus disabled before any production promotion claim.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains accepted",
     "Three-book cross-book revalidation completed with 33 total pair comparisons",
     "CBDNA-C02-V2 passed the Global Novel DNA proposal gate",
     "GN-VDNA-01 frozen as the first system-level Global Novel DNA",
-    "Phase 290 closeout verified Phase 250/260/270/280 provenance and defined safe cross-layer routing",
-    "Stale continuity metadata was reconciled forward to the authoritative project state without rollback",
-    "Project-state transition validator implementation bug was repaired; 10/10 regression tests passed"
+    "Phase 290 closeout defined evidence-first, simpler-fix-first, same-lineage and cross-layer routing governance",
+    "Phase 300 added a dedicated default-off DNA Router and call-record template to the canonical V3 Skill/workflow without using legacy Workflow 03 or the global technique bank as the router",
+    "Phase 300 reconciled shared cross-layer ceilings with stricter GN-VDNA-01 frozen per-DNA limits; the stricter limit wins",
+    "Phase 300 project-state transition validation passed and validate_skill logic returned MIRROR_PASS; this was not GitHub Actions or a full-checkout CI run"
   ],
   "incomplete": [
-    "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1",
-    "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1 after bounded integration implementation"
+    "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1",
+    "Production promotion of the Novel DNA Router remains forbidden until the Phase 310 regression benchmark passes"
   ],
   "blocked": [],
   "unknowns": [
-    "No external blind dataset has yet validated GN-VDNA-01 beyond the three frozen source books and the synthetic benchmark",
+    "No external blind dataset has yet validated GN-VDNA-01 beyond the three frozen source books and the synthetic proposal benchmark",
+    "Phase 300 validate_skill result is a connector-verified validator mirror, not a GitHub Actions/full-checkout CI result",
     "Local Windows runtime/integration state is not inferred from GitHub"
   ],
   "do_not_reopen": [
     "Accepted BOOK-01, BOOK-02, and BOOK-03 phases",
     "Phase 170 pair comparisons",
     "Phase 250 pair comparisons",
-    "Phase 270 synthetic benchmark",
+    "Phase 270 synthetic proposal benchmark as a substitute for Phase 310",
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
     "CBDNA-C01/C03/C04 global promotion without separate evidence and gates",
     "Legacy Workflow 03/global-technique-bank as the primary DNA integration path",
+    "Phase 300 structural integration as proof of writing-quality improvement",
     "No backward transition without an authorized rollback receipt"
   ],
   "active_change_ids": [],
-  "next_required_action": "Execute GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1 exactly as bounded by docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md: add a dedicated router and call-record template, minimally update SKILL.md/workflow 07/README, keep DNA default OFF, preserve GN-VDNA-01 semantics, run validate_skill.py, and do not claim production improvement until a separate integration regression/benchmark gate passes.",
+  "next_required_action": "Execute GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1 with router-enabled versus router-disabled variants on the same story inputs, same model and budget, including positive/negative/HOLD cases and blind or anonymized comparison; measure overapplication, missed applications, formula risk, complexity cost, and upstream V3 regression. Do not promote production use on failure or before this gate passes.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-PHASE290-ACCEPT-20260821-003",
-      "event_hash": "d5d7095b67eef74b5909724dbed7515f2a212a691ed48746ec8d2a7bdc091ef2"
+      "event_id": "EVT-NOVEL-DISTILL-PHASE300-ACCEPT-20260821-004",
+      "event_hash": "8af193b637561adeb63d0b8d5cee6afcfee113c55a65e1ccb2aaa8d6801f1296"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
       "role": "accepted checkpoint and active-task authority",
-      "git_blob": "39502738df6ae61a14ff12102a8f24590fac801e"
+      "git_blob": "4d032c3b184053f8014ac02614783da65473be0c"
     },
     {
-      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS_V1.json",
-      "role": "Phase 290 accepted closeout/readiness receipt",
-      "git_blob": "8e823b4857fccc9f08c6dbd02b0c313f2ac80433"
+      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1.json",
+      "role": "Phase 300 accepted bounded integration receipt",
+      "git_blob": "5df49ab319d3a79a1953cd9aeb45de7e1e772bfb"
     },
     {
-      "path": "docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md",
-      "role": "cross-layer routing and bounded integration contract",
-      "git_blob": "950f411a96bd10a053e6bc9aff160e5441965495"
+      "path": "rules/novel-dna-routing.md",
+      "role": "dedicated optional DNA routing contract",
+      "git_blob": "d48bbd4d2a87f17d6f78897bca3076eeeeed99da"
+    },
+    {
+      "path": "templates/dna-call-record-template.md",
+      "role": "Novel DNA call and post-use audit record",
+      "git_blob": "eaa9476a9282289c66d3c129c4e8b8538482eacd"
     },
     {
       "path": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
