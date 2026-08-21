@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-03-NOVEL-DNA-VALIDATION-V1-20260821",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-03",
+  "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+  "phase": "BOOK-03_NOVEL_DNA_VALIDATION",
+  "phase_ordinal": 220,
+  "review_status": "ACCEPTED_WITH_NARROWING",
+  "executor": "CHATGPT",
+  "input": {
+    "dna_receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_V1.json",
+    "candidate_total": 3,
+    "candidate_ids": ["DNA-01", "DNA-02", "DNA-03"],
+    "formal_total": 10,
+    "supporting_total": 13
+  },
+  "independence": {
+    "blind_to_cross_book_candidates": true,
+    "book01_or_book02_dna_used_as_templates": false,
+    "cross_book_candidate_matching_performed": false,
+    "global_promotion_authorized": false
+  },
+  "validation": {
+    "validated_independent_total": 3,
+    "rejected_total": 0,
+    "merged_total": 0,
+    "validated_with_narrowing_total": 3,
+    "formal_provenance_coverage": "10/10",
+    "core_formal_total": 8,
+    "derived_formal_total": 2,
+    "formal_orphan": 0,
+    "formal_double_count": 0,
+    "supporting_direct_promotions": 0,
+    "results": [
+      {
+        "source_candidate": "DNA-01",
+        "validated_id": "VDNA-01",
+        "machine_name": "EVIDENCE_REWIRES_WORLD_MODEL_AND_EPISTEMIC_AUTHORITY",
+        "verdict": "VALIDATED_WITH_NARROWING",
+        "core_formals": ["F01", "F03", "F07"],
+        "derived_formals": [],
+        "narrowing": "TRUST narrowed to epistemic/operational authority; broad emotional trust excluded"
+      },
+      {
+        "source_candidate": "DNA-02",
+        "validated_id": "VDNA-02",
+        "machine_name": "MATERIALIZED_PAST_AS_PRESENT_CAUSAL_STATE",
+        "verdict": "VALIDATED_WITH_NARROWING",
+        "core_formals": ["F02", "F08"],
+        "derived_formals": ["F10"],
+        "narrowing": "F10 retained only as ARC_HANDOFF_DERIVED_MANIFESTATION; cross-volume continuation is not a core requirement"
+      },
+      {
+        "source_candidate": "DNA-03",
+        "validated_id": "VDNA-03",
+        "machine_name": "ACTIVE_SPACE_REALLOCATES_OPERATIONAL_AUTHORITY",
+        "verdict": "VALIDATED_WITH_NARROWING",
+        "core_formals": ["F05", "F06", "F09"],
+        "derived_formals": ["F04"],
+        "narrowing": "F04 retained only as PROTAGONIST_GROWTH_MANIFESTATION; core is dynamic-space/problem-type/authority/action loop"
+      }
+    ]
+  },
+  "private_validation": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK03_NOVEL_DNA_VALIDATION_V1",
+    "file_id": "137LWHBqpFled5-fybrKZCtWkwnr7oPmIFpvjYLaErTM",
+    "folder_id": "1B5AcFp_xxpu-3rrWLGUD4K1wJNFKNTWy",
+    "title": "BOOK-03_盗墓笔记壹_NOVEL_DNA_VALIDATION_V1",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1",
+  "next_stage_contract": {
+    "stable_ids_required": true,
+    "validated_semantics_may_not_be_broadened": true,
+    "semantic_change_requires_new_version_and_revalidation": true,
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "application_limits_required": true,
+    "supporting_direct_promotion_allowed": false,
+    "cross_book_candidate_visibility": false,
+    "global_promotion_authorized": false,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true
+  },
+  "rollback_authorized": false
+}
