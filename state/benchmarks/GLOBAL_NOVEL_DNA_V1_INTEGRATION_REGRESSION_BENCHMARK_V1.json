@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK",
+  "phase_ordinal": 310,
+  "status": "PASS_WITH_SCOPE_LIMITATION",
+  "integration_under_test": "V3_OPTIONAL_NOVEL_DNA_ROUTER",
+  "global_dna": "GN-VDNA-01",
+  "source_phase300_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1.json",
+  "private_benchmark_file_id": "1CHCPnXXf52gCL7I8Vu7LUDqlmQUjlzcziK5E0o_1S6E",
+  "design": {
+    "new_synthetic_cases": 12,
+    "apply_cases": 4,
+    "reject_cases": 4,
+    "hold_cases": 4,
+    "reuses_phase270_cases": false,
+    "source_book_plot_reuse": 0,
+    "source_book_style_imitation": 0,
+    "same_story_input_per_pair": true,
+    "same_model": "GPT-5.6 Sol",
+    "same_output_budget": true,
+    "max_chinese_chars_per_variant": 220,
+    "major_structural_interventions_per_variant": 1,
+    "anonymization_seed": "31020260821",
+    "comparison_mode": "SINGLE_CONTEXT_ANONYMIZED_NOT_INDEPENDENT"
+  },
+  "precommitted_pass_criteria": {
+    "apply_false_negative_max": 0,
+    "reject_false_positive_max": 0,
+    "hold_forced_apply_max": 0,
+    "router_positive_wins_min": "3/4",
+    "reject_hold_v3_regression_max": 0,
+    "severe_formula_regression_max": 0,
+    "source_surface_reuse_max": 0
+  },
+  "results": {
+    "apply_correct": "4/4",
+    "false_negative": 0,
+    "reject_correct": "4/4",
+    "false_positive_overapplication": 0,
+    "hold_correct": "4/4",
+    "forced_apply_on_hold": 0,
+    "anonymized_pairwise": {
+      "router_on_wins": 4,
+      "ties": 8,
+      "router_off_wins": 0
+    },
+    "apply_mean_score": {
+      "router_off": 7.0,
+      "router_on": 10.0,
+      "delta": 3.0
+    },
+    "reject_mean_score": {
+      "router_off": 10.0,
+      "router_on": 10.0,
+      "delta": 0.0
+    },
+    "hold_mean_score": {
+      "router_off": 9.0,
+      "router_on": 9.0,
+      "delta": 0.0
+    },
+    "reject_hold_v3_regression_count": 0,
+    "severe_formula_regression_count": 0,
+    "same_lineage_double_count": 0,
+    "frozen_semantic_broadening": 0
+  },
+  "complexity_cost": {
+    "router_off_mean_chars": 45.0,
+    "router_on_mean_chars": 98.75,
+    "mean_extra_chars": 53.75,
+    "mean_relative_increase_approx": "119%",
+    "apply_extra_chars_mean": 84.5,
+    "reject_extra_chars_mean": 33.75,
+    "hold_extra_chars_mean": 43.0,
+    "interpretation": "The extra cost is primarily routing/audit reasoning and must remain out of prose context; it is acceptable only while the Router remains optional and default-off."
+  },
+  "limitations": {
+    "external_blind_judge": false,
+    "independent_model_context": false,
+    "real_user_manuscript_pilot": false,
+    "final_prose_quality_statistically_proven": false,
+    "claim_allowed": "Synthetic structure-level integration regression PASS only",
+    "claim_forbidden": "Novel DNA Router is proven to improve all production writing"
+  },
+  "verdict": {
+    "benchmark": "PASS_WITH_SCOPE_LIMITATION",
+    "production_default_on_authorized": false,
+    "bounded_optional_production_pilot_eligible": true,
+    "global_dna_semantics_changed": false,
+    "router_semantics_broadened": false
+  },
+  "next_stage": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1"
+}
