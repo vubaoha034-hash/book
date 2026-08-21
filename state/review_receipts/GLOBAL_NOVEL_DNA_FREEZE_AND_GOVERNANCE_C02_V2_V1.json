@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "GLOBAL-NOVEL-DNA-FREEZE-AND-GOVERNANCE-C02-V2-V1-20260821",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE",
+  "phase_ordinal": 280,
+  "review_status": "ACCEPTED_GLOBAL_DNA_CREATED",
+  "executor": "CHATGPT",
+  "input": {
+    "candidate": "CBDNA-C02-V2",
+    "candidate_manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json",
+    "proposal_gate_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1.json",
+    "proposal_gate_status": "ACCEPTED_ELIGIBLE_FOR_GLOBAL_FREEZE_GATE",
+    "candidate_semantics_changed_in_phase280": false,
+    "broadening": false
+  },
+  "governance_checks": {
+    "stable_global_id": "PASS",
+    "support_provenance": "PASS",
+    "counterexample_boundaries": "PASS",
+    "system_level_not_universal_law_guardrail": "PASS",
+    "default_disabled": "PASS",
+    "invocation_gate": "PASS",
+    "simpler_fix_control": "PASS",
+    "application_limits": "PASS",
+    "copyright_boundary": "PASS",
+    "source_book_plot_reuse_forbidden": "PASS",
+    "source_book_style_imitation_forbidden": "PASS",
+    "governance_conflict_found": false
+  },
+  "freeze": {
+    "manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+    "stable_global_id": "GN-VDNA-01",
+    "machine_name": "RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
+    "source_candidate": "CBDNA-C02-V2",
+    "support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
+    "default_enabled": false,
+    "global_dna_count_after_freeze": 1,
+    "other_candidates_promoted": 0
+  },
+  "scope_guardrail": {
+    "global_meaning": "SYSTEM_LEVEL_REUSABLE_MECHANISM_NOT_UNIVERSAL_LAW",
+    "three_books_prove_statistical_universality": false,
+    "synthetic_benchmark_proves_statistical_universality": false,
+    "external_blind_dataset_available": false
+  },
+  "private_contract": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_GLOBAL_NOVEL_DNA_FREEZE_GOVERNANCE_GN_VDNA_01_V1",
+    "file_id": "1d3Lz4WT6Y73zHb5AmVTjcF0zSTx3CJ_qnSlrBItUx4Y",
+    "folder_id": "1euIo6QVRDwxlnFf1oZ2NGm1R_3srISlR",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_source_book_distillation_stored_in_git": false
+  },
+  "cross_book_candidates_remaining_non_global": ["CBDNA-C01", "CBDNA-C03", "CBDNA-C04"],
+  "global_dna_created": true,
+  "global_dna_count": 1,
+  "next_stage": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
+  "rollback_authorized": false
+}
