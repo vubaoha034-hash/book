@@ -1,44 +1,64 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 1,
-  "recorded_at": "2026-08-19T07:09:10+08:00",
+  "sequence": 2,
+  "recorded_at": "2026-08-21T15:25:00+08:00",
   "task_model": "SINGLE_TASK",
-  "highest_accepted_checkpoint": "BOOK-02_CLOSEOUT_AND_CROSS_BOOK_READINESS",
-  "active_task_ids": ["BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1"],
-  "current_focus": "BOOK-01 parity reconciliation via isolated remote-based one-shot bridge",
+  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE",
+  "highest_accepted_phase_ordinal": 280,
+  "active_task_ids": [
+    "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS"
+  ],
+  "current_focus": "Close out GN-VDNA-01 V1 and define safe system-integration readiness without semantic edit or automatic application.",
   "completed": [
-    "BOOK-02 reviewed through chapter 256 plus epilogue and formally closed",
-    "BOOK-02 Novel DNA validation/freeze completed with 4 frozen DNA items",
-    "BOOK-02 closeout status PASS and completed work preserved"
+    "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains accepted",
+    "Three-book cross-book revalidation completed with 33 total pair comparisons",
+    "CBDNA-C02-V2 passed the Global Novel DNA proposal gate",
+    "GN-VDNA-01 frozen as the first system-level Global Novel DNA",
+    "Global DNA count is 1; CBDNA-C01, CBDNA-C03, and CBDNA-C04 remain non-global"
   ],
   "incomplete": [
-    "BOOK-01 method parity reconciliation",
-    "cross-book comparison readiness"
+    "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
+    "Safe integration routing into the V3 writing pipeline has not yet been implemented"
   ],
-  "blocked": [
-    "cross_book_readiness=HOLD_METHOD_PARITY_UNVERIFIED until BOOK-01 parity evidence is reconciled"
-  ],
+  "blocked": [],
   "unknowns": [
-    "BOOK-01 phase50/phase60/phase70/phase80 remain UNKNOWN in the canonical project state",
-    "Current user-computer execution state of the authorized local one-shot is not inferable from GitHub alone"
+    "No external blind dataset has yet validated GN-VDNA-01 beyond the three frozen source books and the synthetic benchmark",
+    "Local Windows runtime/integration state is not inferred from GitHub"
   ],
   "do_not_reopen": [
-    "BOOK-02 completed evidence/review/DNA/closeout stages listed as superseded in state/project_state.json",
-    "BOOK-01 completed work must be preserved; regression/source-gate rerun/packet regeneration/full evidence rerun are forbidden by current state",
+    "Accepted BOOK-01, BOOK-02, and BOOK-03 phases",
+    "Phase 170 pair comparisons",
+    "Phase 250 pair comparisons",
+    "Phase 270 synthetic benchmark",
+    "GN-VDNA-01 V1 semantics without a new version and revalidation",
+    "CBDNA-C01/C03/C04 global promotion without separate evidence and gates",
     "No backward transition without an authorized rollback receipt"
   ],
   "active_change_ids": [],
-  "next_required_action": "Continue only BOOK-01_PARITY_BRIDGE_REMOTE_BASED_ONE_SHOT_V1 under its isolated remote-based worktree strategy; preserve the diverged existing local branch and never force-push/rebase/reset it.",
+  "next_required_action": "Execute GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS: verify the Phase 250/260/270/280 provenance chain, define precedence and non-auto-application rules against Global/Cross-Book/Book-level DNA, and prepare a bounded integration task without changing GN-VDNA-01 semantics.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-CONTINUITY-BOOTSTRAP-20260819-001",
-      "event_hash": "1d1c7777c74b863c717f6ddcbea1833d82c8bf82ca1f16b566c4dc02b7f1b74c"
+      "event_id": "EVT-NOVEL-DISTILL-CONTINUITY-RECONCILE-20260821-002",
+      "event_hash": "8001980bf69e2be48b2678b018cf56876c98ba30a04e3aa4e237eb73074f6542"
     }
   },
   "source_state_refs": [
-    {"path": "state/project_state.json", "role": "accepted checkpoint and active-task authority", "git_blob": "ded1c477cddddf33a2885fad42234423deba1818"},
-    {"path": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md", "role": "project anti-rollback policy", "git_blob": "2f8afb82fe1f16c0915c75a4418b416937c66ec5"}
+    {
+      "path": "state/project_state.json",
+      "role": "accepted checkpoint and active-task authority",
+      "git_blob": "6120960e15ca810a66b0f069108ced6bfcc086fb"
+    },
+    {
+      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1.json",
+      "role": "Phase 280 accepted Global DNA freeze receipt",
+      "git_blob": "b1dd9bd7ae22c40087048145f1b2c3f5892c014a"
+    },
+    {
+      "path": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+      "role": "GN-VDNA-01 frozen Global DNA manifest",
+      "git_blob": "dde98aeb5566f734f373fffa5a1e0248a89be931"
+    }
   ],
   "status": "ACTIVE"
 }
