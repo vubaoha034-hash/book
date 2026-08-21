@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_ROUTER_DECISION",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "ROUTER_REJECTED_NO_APPLIED_OUTCOME",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "real_manuscript": true,
+  "router": "rules/novel-dna-routing.md",
+  "dna_id": "GN-VDNA-01",
+  "router_result": "REJECTED",
+  "reason": "The manuscript already contains effective recurring causal assets; the current high-impact problems are sufficiently addressable by ordinary V3 scene-function compression, emotional-scene differentiation, and setup-payoff seeding. Forcing GN-VDNA-01 would increase formula risk.",
+  "v3_diagnosis": {
+    "story_contract": "PASS",
+    "high_impact_problems": [
+      "MIDSECTION_FACTION_WITHDRAWAL_BEAT_REPETITION",
+      "STONE_AND_CHU_DEATH_SCENE_FUNCTION_ISOMORPHISM",
+      "FINAL_PRISON_TOKEN_REVEAL_SEEDED_TOO_LATE"
+    ],
+    "simpler_fix_precedence": "SUFFICIENT"
+  },
+  "existing_asset_lifecycles": [
+    "CHICKEN_FOOD_MEMORY_DEBT",
+    "BLACK_ARROW_MYSTERY_TO_ALLIANCE_CAUSAL_SHIFT",
+    "BRIDGE_BOUNDARY_TO_COST_TO_ORDINARY_LIFE"
+  ],
+  "private_artifact": {
+    "backend": "google_drive_private",
+    "file_id": "1MekLGZ96raE2xweZvoenB-MQf9FcSDHf2L7ft5l8iXk",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "manuscript_text_stored_in_git": false
+  },
+  "production_ledger_event": "NDR-REAL-MANUSCRIPT-ROUTER-DECISION-20260821-002",
+  "real_manuscript_router_decision_count_after": 1,
+  "real_manuscript_applied_outcome_count_after": 0,
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_action": "Execute ordinary V3 targeted revisions P1->P2->P3 on the real manuscript. Reopen the Router only if a concrete remaining structural problem cannot be solved by simpler V3 repair.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
