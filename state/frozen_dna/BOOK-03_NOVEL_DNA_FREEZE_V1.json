@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "book_id": "BOOK-03",
+  "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+  "freeze_version": "V1",
+  "phase": "BOOK-03_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "phase_ordinal": 230,
+  "status": "FROZEN_BOOK_SPECIFIC",
+  "validation_receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_VALIDATION_V1.json",
+  "private_contract_file_id": "1ig1YnUFvceptWhKgO8GgeUBcnXqufdyUT9UWDjdLc14",
+  "stable_ids": ["DM-VDNA-01", "DM-VDNA-02", "DM-VDNA-03"],
+  "registry": {
+    "DM-VDNA-01": {
+      "machine_name": "EVIDENCE_REWIRES_WORLD_MODEL_AND_EPISTEMIC_AUTHORITY",
+      "source_validated_id": "VDNA-01",
+      "core_formals": ["F01", "F03", "F07"],
+      "derived_formals": [],
+      "default_enabled": false,
+      "invocation_gate": "competing verifiable explanations + differentiated information-source reliability + evidence can change next action or operational authority",
+      "excluded_scope": ["pure emotional trust", "one-shot reveal", "unverifiable unknowable horror"]
+    },
+    "DM-VDNA-02": {
+      "machine_name": "MATERIALIZED_PAST_AS_PRESENT_CAUSAL_STATE",
+      "source_validated_id": "VDNA-02",
+      "core_formals": ["F02", "F08"],
+      "derived_formals": ["F10"],
+      "default_enabled": false,
+      "invocation_gate": "past material/record trace recurs with changed meaning and changes current action options",
+      "excluded_scope": ["ordinary backstory", "one-shot old object", "all-objects-are-foreshadowing", "forced sequel hook"]
+    },
+    "DM-VDNA-03": {
+      "machine_name": "ACTIVE_SPACE_REALLOCATES_OPERATIONAL_AUTHORITY",
+      "source_validated_id": "VDNA-03",
+      "core_formals": ["F05", "F06", "F09"],
+      "derived_formals": ["F04"],
+      "default_enabled": false,
+      "invocation_gate": "dynamic environment changes problem type/choice set + differentiated team capability + authority rotation + decision converts to observable action",
+      "excluded_scope": ["solo room", "lone hero", "static division of labor", "atmosphere-only space", "single omnipotent solver"]
+    }
+  },
+  "application_limits": {
+    "scene_primary_max": 1,
+    "scene_secondary_max": 1,
+    "chapter_or_arc_primary_max": 2,
+    "book_primary_max": 3,
+    "short_story_primary_default_max": 1
+  },
+  "governance": {
+    "book_specific_only": true,
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "validated_semantics_may_not_be_broadened": true,
+    "semantic_change_requires_new_version_and_revalidation": true,
+    "supporting_direct_promotion_allowed": false,
+    "cross_book_candidate_visibility_during_freeze": false,
+    "global_promotion_authorized": false,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "f10_may_not_return_to_core_without_revalidation": true,
+    "f04_may_not_return_to_core_without_revalidation": true
+  },
+  "formal_provenance": {
+    "coverage": "10/10",
+    "core_formal_total": 8,
+    "derived_formal_total": 2,
+    "formal_orphan": 0,
+    "formal_double_count": 0,
+    "supporting_direct_promotions": 0
+  },
+  "global_dna_count": 0,
+  "next_stage": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1"
+}
