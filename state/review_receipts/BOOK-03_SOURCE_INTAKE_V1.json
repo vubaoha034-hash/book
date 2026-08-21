@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-03-SOURCE-INTAKE-V1-20260821",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-03",
+  "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+  "phase": "BOOK-03_SOURCE_INTAKE",
+  "phase_ordinal": 190,
+  "review_status": "ACCEPTED",
+  "source": {
+    "drive_file_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
+    "drive_file_name": "【壹】七星鲁王.docx",
+    "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "file_size_bytes": 412315,
+    "docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
+    "extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
+    "paragraph_count": 4891,
+    "extracted_text_chars": 211155,
+    "source_readable": true,
+    "encoding_issue_resolved": true
+  },
+  "scope": {
+    "volumes": 2,
+    "numbered_chapters": 75,
+    "volume_breakdown": [
+      {"volume": 1, "title": "七星鲁王", "numbered_chapters": 29},
+      {"volume": 2, "title": "怒海潜沙", "numbered_chapters": 46}
+    ],
+    "scope_status": "VERIFIED"
+  },
+  "independence_contract": {
+    "blind_to_cross_book_candidates_during_book03_extraction": true,
+    "book01_dna_used_as_template": false,
+    "book02_dna_used_as_template": false,
+    "global_dna_promotion_authorized": false
+  },
+  "privacy": {
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "next_stage": "BOOK-03_EVIDENCE_SETTLEMENT",
+  "rollback_authorized": false
+}
