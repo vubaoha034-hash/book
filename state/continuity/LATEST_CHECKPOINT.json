@@ -1,25 +1,27 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 2,
-  "recorded_at": "2026-08-21T15:25:00+08:00",
+  "sequence": 3,
+  "recorded_at": "2026-08-21T15:25:30+08:00",
   "task_model": "SINGLE_TASK",
-  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE",
-  "highest_accepted_phase_ordinal": 280,
+  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
+  "highest_accepted_phase_ordinal": 290,
   "active_task_ids": [
-    "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS"
+    "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1"
   ],
-  "current_focus": "Close out GN-VDNA-01 V1 and define safe system-integration readiness without semantic edit or automatic application.",
+  "current_focus": "Implement the bounded optional DNA router into the canonical V3 Skill/pipeline without semantic edit, auto-application, or legacy-router substitution.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains accepted",
     "Three-book cross-book revalidation completed with 33 total pair comparisons",
     "CBDNA-C02-V2 passed the Global Novel DNA proposal gate",
     "GN-VDNA-01 frozen as the first system-level Global Novel DNA",
-    "Global DNA count is 1; CBDNA-C01, CBDNA-C03, and CBDNA-C04 remain non-global"
+    "Phase 290 closeout verified Phase 250/260/270/280 provenance and defined safe cross-layer routing",
+    "Stale continuity metadata was reconciled forward to the authoritative project state without rollback",
+    "Project-state transition validator implementation bug was repaired; 10/10 regression tests passed"
   ],
   "incomplete": [
-    "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
-    "Safe integration routing into the V3 writing pipeline has not yet been implemented"
+    "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1",
+    "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1 after bounded integration implementation"
   ],
   "blocked": [],
   "unknowns": [
@@ -33,26 +35,32 @@
     "Phase 270 synthetic benchmark",
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
     "CBDNA-C01/C03/C04 global promotion without separate evidence and gates",
+    "Legacy Workflow 03/global-technique-bank as the primary DNA integration path",
     "No backward transition without an authorized rollback receipt"
   ],
   "active_change_ids": [],
-  "next_required_action": "Execute GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS: verify the Phase 250/260/270/280 provenance chain, define precedence and non-auto-application rules against Global/Cross-Book/Book-level DNA, and prepare a bounded integration task without changing GN-VDNA-01 semantics.",
+  "next_required_action": "Execute GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1 exactly as bounded by docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md: add a dedicated router and call-record template, minimally update SKILL.md/workflow 07/README, keep DNA default OFF, preserve GN-VDNA-01 semantics, run validate_skill.py, and do not claim production improvement until a separate integration regression/benchmark gate passes.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-CONTINUITY-RECONCILE-20260821-002",
-      "event_hash": "8001980bf69e2be48b2678b018cf56876c98ba30a04e3aa4e237eb73074f6542"
+      "event_id": "EVT-NOVEL-DISTILL-PHASE290-ACCEPT-20260821-003",
+      "event_hash": "d5d7095b67eef74b5909724dbed7515f2a212a691ed48746ec8d2a7bdc091ef2"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
       "role": "accepted checkpoint and active-task authority",
-      "git_blob": "6120960e15ca810a66b0f069108ced6bfcc086fb"
+      "git_blob": "39502738df6ae61a14ff12102a8f24590fac801e"
     },
     {
-      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1.json",
-      "role": "Phase 280 accepted Global DNA freeze receipt",
-      "git_blob": "b1dd9bd7ae22c40087048145f1b2c3f5892c014a"
+      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS_V1.json",
+      "role": "Phase 290 accepted closeout/readiness receipt",
+      "git_blob": "8e823b4857fccc9f08c6dbd02b0c313f2ac80433"
+    },
+    {
+      "path": "docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md",
+      "role": "cross-layer routing and bounded integration contract",
+      "git_blob": "950f411a96bd10a053e6bc9aff160e5441965495"
     },
     {
       "path": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
