@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-03-NOVEL-DNA-FREEZE-APPLICATION-V1-20260821",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-03",
+  "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+  "phase": "BOOK-03_NOVEL_DNA_FREEZE_AND_APPLICATION_CONTRACT",
+  "phase_ordinal": 230,
+  "review_status": "ACCEPTED",
+  "executor": "CHATGPT",
+  "validation_input": {
+    "receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_VALIDATION_V1.json",
+    "validated_total": 3,
+    "status": "ACCEPTED_WITH_NARROWING"
+  },
+  "freeze": {
+    "frozen_total": 3,
+    "stable_ids": ["DM-VDNA-01", "DM-VDNA-02", "DM-VDNA-03"],
+    "registry": {
+      "DM-VDNA-01": {
+        "machine_name": "EVIDENCE_REWIRES_WORLD_MODEL_AND_EPISTEMIC_AUTHORITY",
+        "core_formals": ["F01", "F03", "F07"],
+        "derived_formals": []
+      },
+      "DM-VDNA-02": {
+        "machine_name": "MATERIALIZED_PAST_AS_PRESENT_CAUSAL_STATE",
+        "core_formals": ["F02", "F08"],
+        "derived_formals": ["F10"]
+      },
+      "DM-VDNA-03": {
+        "machine_name": "ACTIVE_SPACE_REALLOCATES_OPERATIONAL_AUTHORITY",
+        "core_formals": ["F05", "F06", "F09"],
+        "derived_formals": ["F04"]
+      }
+    },
+    "formal_provenance_coverage": "10/10",
+    "core_formal_total": 8,
+    "derived_formal_total": 2,
+    "formal_orphan": 0,
+    "formal_double_count": 0,
+    "supporting_direct_promotions": 0
+  },
+  "governance": {
+    "book_specific_only": true,
+    "default_disabled": true,
+    "invocation_gate_required": true,
+    "scene_primary_max": 1,
+    "scene_secondary_max": 1,
+    "chapter_or_arc_primary_max": 2,
+    "book_primary_max": 3,
+    "short_story_primary_default_max": 1,
+    "validated_semantics_may_not_be_broadened": true,
+    "semantic_change_requires_new_version_and_revalidation": true,
+    "f10_may_not_return_to_dm_vdna_02_core_without_revalidation": true,
+    "f04_may_not_return_to_dm_vdna_03_core_without_revalidation": true,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "global_promotion_authorized": false
+  },
+  "private_contract": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK03_NOVEL_DNA_FREEZE_APPLICATION_V1",
+    "file_id": "1ig1YnUFvceptWhKgO8GgeUBcnXqufdyUT9UWDjdLc14",
+    "folder_id": "1B5AcFp_xxpu-3rrWLGUD4K1wJNFKNTWy",
+    "title": "BOOK-03_盗墓笔记壹_NOVEL_DNA_FREEZE_APPLICATION_CONTRACT_V1",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "freeze_manifest": "state/frozen_dna/BOOK-03_NOVEL_DNA_FREEZE_V1.json",
+  "cross_book_candidate_visibility_during_freeze": false,
+  "global_dna_count": 0,
+  "next_stage": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1",
+  "rollback_authorized": false
+}
