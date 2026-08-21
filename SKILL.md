@@ -23,6 +23,7 @@ V2 文件继续保留用于兼容；新任务默认执行 V3。
 - 同一轮最多处理五个高影响问题；修改后定向复核连锁影响。
 - 去 AI 味默认关闭，只在结构、因果和情绪通过后做最小修改。
 - 不复制受版权保护文本，不模仿在世作者的可识别风格。
+- Novel DNA 默认关闭；先定位具体问题并优先尝试更简单的 V3 修复，只有简单修复不足时才允许进入 DNA Router。
 
 每次总控任务先读：
 
@@ -30,6 +31,13 @@ V2 文件继续保留用于兼容；新任务默认执行 V3。
 rules/pass-isolation.md
 workflows/07-novel-master-pipeline-v3.md
 config/novel-quality-gates.v3.json
+```
+
+只有在已完成基础证据、仍存在明确结构问题时，再读取：
+
+```text
+rules/novel-dna-routing.md
+templates/dna-call-record-template.md
 ```
 
 ## 路由
@@ -97,6 +105,20 @@ rules/reader-reward-rhythm.md
 
 只报告二至五个根因，逐项给位置、证据、伤害和验收条件。上游阻断未解决，不润色下游句子。
 
+### Novel DNA 可选结构路由
+
+Novel DNA 不是默认写作模板，也不按 Global / Cross-Book / Book-level 的名字自动决定优先级。
+
+只有满足以下前提时才读取 `rules/novel-dna-routing.md`：
+
+1. 已经找到当前文本的具体 `problem_evidence`；
+2. 因果、连续性、普通 callback / setup-payoff、场景功能、情绪兑现或人物选择等更简单修复不足以解决问题；
+3. 当前问题确实属于可由某条冻结 DNA 处理的结构机制。
+
+每次调用使用 `templates/dna-call-record-template.md` 记录门槛、谱系去重、复杂度成本、公式化风险和退出条件。没有问题证据、没有“为什么简单修复不够”或没有退出条件，不得标记 `APPLIED`。
+
+同一因果谱系只允许当前最高批准 successor 用于实际调用；当前 `GN-VDNA-01` 是 `CBDNA-C02-V2` 的系统级应用 successor，二者不得双开。跨层级配额共享，不为每个层级单独加额度。
+
 ### 深度拆解或技巧提炼
 
 读取：
@@ -125,6 +147,8 @@ rules/reader-trust-and-economy.md
 ```
 
 先比较认可样本、拒绝样本和当前稿。样本为空时明确说明“尚未学到个人文风”，只按审美基线做终审。每轮最多处理五个高影响习惯。
+
+Novel DNA 在去 AI / 行文润色阶段默认关闭，不负责句式、措辞或人物声音。
 
 ## V3 最小证据包
 
@@ -174,8 +198,9 @@ rules/reader-trust-and-economy.md
 5. 必要世界规则。
 6. 个人审美基线或已验证的文风指纹。
 7. 前一场结尾与后一场目标。
+8. 仅当某条 DNA 已明确 `APPLIED` 时，携带该 active call 的最小信息：DNA ID、问题证据、选定动作、必须保护项、预期变化和退出条件。
 
-不同时加载全部审稿模块、禁词表、读者角色和质量闸门。
+不同时加载全部审稿模块、禁词表、读者角色、质量闸门或完整 DNA 注册表。
 
 ## 读者复核真实性
 
@@ -223,5 +248,6 @@ rules/reader-trust-and-economy.md
 - 开篇没有未接受的致命停止点。
 - 修改处完成连续性复核。
 - 去 AI 只做了最小必要修改，未统一人物声音。
+- 若实际调用 Novel DNA，只验证已声明调用的结构变化是否发生，不要求作品使用任何或全部 DNA。
 
 不要用“综合评分 9.2”替代以上证据。
