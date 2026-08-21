@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "GLOBAL-NOVEL-DNA-V1-INTEGRATION-REGRESSION-BENCHMARK-V1-20260821",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK",
+  "phase_ordinal": 310,
+  "review_status": "ACCEPTED_PASS_WITH_SCOPE_LIMITATION",
+  "executor": "CHATGPT",
+  "input": {
+    "phase300_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1.json",
+    "router": "rules/novel-dna-routing.md",
+    "call_record_template": "templates/dna-call-record-template.md",
+    "v3_workflow": "workflows/07-novel-master-pipeline-v3.md",
+    "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+    "stable_global_id": "GN-VDNA-01"
+  },
+  "benchmark_manifest": "state/benchmarks/GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1.json",
+  "benchmark_design": {
+    "new_synthetic_cases": 12,
+    "apply": 4,
+    "reject": 4,
+    "hold": 4,
+    "router_enabled_vs_disabled": true,
+    "same_story_inputs": true,
+    "same_model_and_budget": true,
+    "comparison_mode": "SINGLE_CONTEXT_ANONYMIZED_NOT_INDEPENDENT",
+    "anonymization_seed": "31020260821",
+    "phase270_cases_reused": false
+  },
+  "routing_results": {
+    "apply_correct": "4/4",
+    "false_negative": 0,
+    "reject_correct": "4/4",
+    "false_positive_overapplication": 0,
+    "hold_correct": "4/4",
+    "forced_apply_on_hold": 0,
+    "router_on_pairwise_wins": 4,
+    "ties": 8,
+    "router_off_pairwise_wins": 0,
+    "reject_hold_v3_regression": 0,
+    "severe_formula_regression": 0
+  },
+  "quality_scores": {
+    "apply_router_off_mean": 7.0,
+    "apply_router_on_mean": 10.0,
+    "apply_delta": 3.0,
+    "reject_router_off_mean": 10.0,
+    "reject_router_on_mean": 10.0,
+    "hold_router_off_mean": 9.0,
+    "hold_router_on_mean": 9.0
+  },
+  "complexity_cost": {
+    "router_off_mean_chars": 45.0,
+    "router_on_mean_chars": 98.75,
+    "mean_extra_chars": 53.75,
+    "mean_relative_increase_approx": "119%",
+    "verdict": "ACCEPTABLE_ONLY_WITH_DEFAULT_OFF_OPTIONAL_ROUTING",
+    "prose_context_overhead_allowed": false
+  },
+  "governance": {
+    "gn_vdna_01_semantic_edit": false,
+    "router_semantic_broadening": false,
+    "same_lineage_double_count": 0,
+    "source_book_plot_reuse": 0,
+    "source_book_style_imitation": 0,
+    "production_default_on_authorized": false,
+    "bounded_optional_production_pilot_eligible": true
+  },
+  "limitations": {
+    "same_context_judge": true,
+    "external_independent_blind_judge": false,
+    "real_user_manuscript_pilot": false,
+    "statistical_production_improvement_proven": false,
+    "allowed_claim": "Synthetic structure-level integration regression benchmark passed with no observed overapplication/regression in this benchmark.",
+    "forbidden_claim": "The Router is proven to improve all production writing."
+  },
+  "private_artifact": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1",
+    "file_id": "1CHCPnXXf52gCL7I8Vu7LUDqlmQUjlzcziK5E0o_1S6E",
+    "folder_id": "1euIo6QVRDwxlnFf1oZ2NGm1R_3srISlR",
+    "shared_publicly": false
+  },
+  "verdict": "PASS_WITH_SCOPE_LIMITATION",
+  "next_stage": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1",
+  "rollback_authorized": false
+}
