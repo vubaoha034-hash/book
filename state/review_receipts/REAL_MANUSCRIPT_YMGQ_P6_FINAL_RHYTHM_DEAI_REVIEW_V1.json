@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_V3_FINAL_RHYTHM_DEAI_REVIEW",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "FINAL_MANUSCRIPT_CANDIDATE_READY_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "revision_id": "YMGQ-P6-FINAL-RHYTHM-DEAI-REVIEW-V1",
+  "source": {
+    "base_revision": "YMGQ-P5-LOCAL-CAUSAL-CONTINUITY-REPAIR-V1",
+    "base_revision_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P5_LOCAL_CAUSAL_CONTINUITY_REPAIR_V1.json",
+    "manuscript_text_stored_in_git": false
+  },
+  "preconditions": {
+    "P5_G1_causal_proof": "PASS",
+    "P5_G6_continuity_and_rule_integrity": "PASS",
+    "scene_order_stable": true,
+    "ending_direction_stable": true
+  },
+  "high_impact_patterns_only": [
+    {
+      "id": "P6-01",
+      "pattern": "DUPLICATE_EXPLANATION",
+      "change": "Removed the second explanation that bounty-seekers withdrew while true blood-debt factions remained; prior scene evidence already proved it."
+    },
+    {
+      "id": "P6-02",
+      "pattern": "ABSTRACT_EMOTION_SUMMARY",
+      "change": "Removed the narrator verdict that Liu Huanshan's sword had become unfamiliar after Shi Chongshan's death; subsequent target selection now proves the change."
+    },
+    {
+      "id": "P6-03",
+      "pattern": "INSTRUCTION_MANUAL_DIALOGUE",
+      "change": "Compressed the Internal Investigation Office plan explanation while preserving attract-conflict -> obtain evidence -> seal/ignite -> jianghu-feud-cover causality."
+    },
+    {
+      "id": "P6-04",
+      "pattern": "EXPLANATORY_TAIL_AFTER_REVEAL",
+      "change": "Moved Xuan-register decoding dependence into Gu Chengyue's conflict dialogue and removed the narrator explanation after the real-register reveal."
+    },
+    {
+      "id": "P6-05",
+      "pattern": "THEME_TRANSLATION_AFTER_PAYOFF",
+      "change": "Removed the three-sentence explanation after Gu Qinghe's pardon decree; decree and father-daughter exchange now carry the meaning."
+    }
+  ],
+  "manuscript_metrics": {
+    "chars_before_p6": 23225,
+    "chars_after_p6": 23043,
+    "net_chars": -182,
+    "sha256": "f79983c81f46212697434557c165f736fde01e290d0686e3c804fac2b4f064c2"
+  },
+  "regression": {
+    "P5_G1_preserved": true,
+    "P5_G6_preserved": true,
+    "decoy_box_source_preserved": true,
+    "character_knowledge_sources_preserved": true,
+    "prison_token_chain_preserved": true,
+    "chicken_chain_preserved": true,
+    "broken_bow_chain_preserved": true,
+    "Lei_Poshan_return_state_preserved": true,
+    "antagonist_operation_motive_preserved": true,
+    "Xuan_decode_logic_preserved": true,
+    "Gu_Qinghe_pardon_preserved": true,
+    "Gu_Chengyue_not_pardoned_and_executed": true,
+    "Shi_Chongshan_death_preserved": true,
+    "Chu_Shisan_death_preserved": true,
+    "one_year_later_ending_preserved": true,
+    "new_blocker_detected": false,
+    "result": "PASS"
+  },
+  "reader_review_status": {
+    "same_context_review_only": true,
+    "independent_reader_review": false,
+    "external_blind_validation": false,
+    "user_outcome": "NOT_AVAILABLE"
+  },
+  "dna_router": {
+    "result": "REJECTED",
+    "dna_applied": false,
+    "decision_validated_by_simpler_v3_repairs": true,
+    "reason": "The real manuscript reached final internal V3 candidate status through ordinary causal, continuity, rhythm and de-AI repairs; forcing GN-VDNA-01 remained unnecessary."
+  },
+  "private_artifacts": {
+    "final_manuscript_file_id": "1ZRSdfgUGoHNpCE8yJg7JBGZHUhAc0Tl43b9mFw_ITvQ",
+    "final_review_report_file_id": "1qMQeJ-29Cff0oXGvFkQEZz2Zrn3AH36NjNCGDgfmRo4",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "shared_publicly": false
+  },
+  "delivery_status": "FINAL_MANUSCRIPT_CANDIDATE_READY_PENDING_USER_OR_INDEPENDENT_READER_FEEDBACK",
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_manuscript_action": "USER_REVIEW_OR_FRESH_INDEPENDENT_READER_REVIEW; reopen targeted revision only on located evidence.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
