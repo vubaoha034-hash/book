@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "GLOBAL-NOVEL-DNA-V1-SYSTEM-INTEGRATION-V1-20260821",
+  "project_id": "novel-distillation",
+  "phase": "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION",
+  "phase_ordinal": 300,
+  "review_status": "ACCEPTED_STRUCTURE_INTEGRATED_PENDING_REGRESSION_BENCHMARK",
+  "executor": "CHATGPT",
+  "input": {
+    "phase290_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS_V1.json",
+    "routing_readiness_contract": "docs/NOVEL_DNA_ROUTING_INTEGRATION_READINESS_V1.md",
+    "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+    "stable_global_id": "GN-VDNA-01",
+    "global_dna_count": 1
+  },
+  "implementation": {
+    "dedicated_router": {
+      "path": "rules/novel-dna-routing.md",
+      "create_commit": "347d748d30cdb9ab6d841e7dd5ec9f17ce2243c5",
+      "frozen_limit_fix_commit": "533f77605fca7f4d306aa0f01cd6fac9976496b8",
+      "current_blob": "d48bbd4d2a87f17d6f78897bca3076eeeeed99da"
+    },
+    "call_record_template": {
+      "path": "templates/dna-call-record-template.md",
+      "create_commit": "e20599c9c6a2097cbf05d009fdce0aee6743a859",
+      "frozen_limit_fix_commit": "c35f23c22798769f2b5e5e57684938cfe059069b",
+      "current_blob": "eaa9476a9282289c66d3c129c4e8b8538482eacd"
+    },
+    "skill_update": {
+      "path": "SKILL.md",
+      "commit": "55feab6f6d205ee7965e0db0ba30648c5af6831b",
+      "current_blob": "438b7ffaf5849bc5de41a56e859156a3478b600d"
+    },
+    "v3_workflow_update": {
+      "path": "workflows/07-novel-master-pipeline-v3.md",
+      "commit": "367354dcb5be30161dc2cb767ec6939210bc983e",
+      "current_blob": "299cadd3fa5e84d1c4b2f8c9faead94a1fa4c00d",
+      "v3_phase_renumbered": false
+    },
+    "readme_update": {
+      "path": "README.md",
+      "commit": "9cfd56e849712a6dd10f92f61f4700ab0e4c7a72",
+      "current_blob": "5457bd45078286f0cbcbc508d8016af365aa432c"
+    },
+    "legacy_workflow03_modified": false,
+    "global_technique_bank_used_as_router": false
+  },
+  "routing_invariants": {
+    "problem_evidence_before_dna": true,
+    "simpler_fix_precedence": true,
+    "same_lineage_supersession": true,
+    "global_auto_priority": false,
+    "cross_layer_shared_budget": true,
+    "dna_specific_frozen_limits_still_apply": true,
+    "effective_budget_rule": "MIN_OF_SHARED_CEILING_AND_DNA_SPECIFIC_FROZEN_LIMIT",
+    "global_dna_default_off": true,
+    "auto_application": false,
+    "full_registry_in_prose_context": false,
+    "line_edit_dna_enabled": false,
+    "gn_vdna_01_semantic_edit": false,
+    "new_global_promotion": false
+  },
+  "gn_vdna_01_limit_reconciliation": {
+    "bug_found_during_integration": true,
+    "classification": "INTEGRATION_GOVERNANCE_BUG_NO_FROZEN_SEMANTIC_CHANGE",
+    "issue": "Shared cross-layer ceilings could be misread as loosening GN-VDNA-01's stricter frozen per-DNA limits.",
+    "fix": "Shared ceilings and DNA-specific frozen limits both apply; the stricter limit wins.",
+    "scene_primary": "DEFAULT_OFF",
+    "scene_secondary_diagnosis_max": 1,
+    "chapter_primary_max": 1,
+    "arc_primary_max": 1,
+    "book_global_primary_max": 1,
+    "short_story": "OFF_UNLESS_CLEAR_STAGE_RECURRENCE",
+    "manifest_consistency": "PASS"
+  },
+  "validation": {
+    "project_state_transition_290_to_300": "PASS",
+    "validate_skill": {
+      "result": "MIRROR_PASS",
+      "output": "Novel Writing Master V3 structure PASSED (28 files checked)",
+      "mode": "CONNECTOR_VERIFIED_VALIDATOR_MIRROR",
+      "full_repository_clone": false,
+      "github_actions_ci": false,
+      "reason": "Current container cannot resolve github.com and validate-skill workflow only auto-runs on main push or pull_request. No CI configuration or extra validation PR was created.",
+      "content_dependent_inputs_verified_from_github": [
+        "SKILL.md",
+        "README.md",
+        "AGENTS.md",
+        "config/novel-quality-gates.v3.json"
+      ],
+      "required_file_presence_verified_by_github_directory_metadata": true,
+      "limitation": "This is structural validator logic executed in an isolated mirror, not a GitHub Actions or full-checkout CI result."
+    },
+    "router_file_fresh_fetch": "PASS",
+    "call_template_fresh_fetch": "PASS",
+    "v3_workflow_fresh_fetch": "PASS",
+    "global_manifest_consistency": "PASS_AFTER_FROZEN_LIMIT_FIX"
+  },
+  "quality_claim": {
+    "production_writing_improvement_proven": false,
+    "integration_is_quality_evidence": false,
+    "regression_benchmark_required": true
+  },
+  "next_stage": "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1",
+  "next_stage_contract": {
+    "phase_ordinal": 310,
+    "compare_router_enabled_vs_router_disabled": true,
+    "same_story_inputs_required": true,
+    "same_model_and_budget_required": true,
+    "include_positive_negative_and_hold_cases": true,
+    "measure_false_positive_overapplication": true,
+    "measure_formula_risk_and_complexity_cost": true,
+    "measure_upstream_v3_regression": true,
+    "blind_or_anonymized_comparison_required": true,
+    "global_dna_semantic_edit_forbidden": true,
+    "production_promotion_forbidden_until_benchmark_passes": true
+  },
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
