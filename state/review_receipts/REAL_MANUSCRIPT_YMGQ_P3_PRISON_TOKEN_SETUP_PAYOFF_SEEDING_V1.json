@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_V3_TARGETED_REVISION",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "ACCEPTED_TARGETED_REVISION_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "revision_id": "YMGQ-P3-PRISON_TOKEN_SETUP_PAYOFF_SEEDING-V1",
+  "revision_scope": "FINAL_PRISON_TOKEN_REVEAL_SEEDED_TOO_LATE",
+  "dna_router_result": "REJECTED",
+  "dna_applied": false,
+  "source": {
+    "base_revision": "YMGQ-P2-CHU_SHISAN_DEATH_DIFFERENTIATION-V1",
+    "base_revision_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P2_CHU_SHISAN_DEATH_DIFFERENTIATION_V1.json",
+    "manuscript_text_stored_in_git": false
+  },
+  "edit": {
+    "setup_added_chars": 142,
+    "manuscript_chars_before": 22729,
+    "manuscript_chars_after": 22871,
+    "setup_location": "FIRST_GU_CHENGYUE_LIU_HUANSHAN_PRISON_CART_CONVERSATION",
+    "payoff_location": "GU_CHENGYUE_PRE_EXECUTION_CONFESSION_TO_SHEN_YANCHEN",
+    "final_payoff_text_changed": false
+  },
+  "setup_payoff_contract": {
+    "setup": "Gu Qinghe showed Liu Huanshan the six-years-ago prison token; Gu Chengyue pauses briefly and asks whether she still kept it, while Liu believes it was recently found among old possessions.",
+    "payoff": "Gu Chengyue later reveals he deliberately had the same prison token placed on Gu Qinghe's desk so she would think of Liu Huanshan.",
+    "effect": "Transforms the prison-token reveal from late-added explanation into fair reinterpretation of an already-established object."
+  },
+  "continuity_check": {
+    "six_year_rescue_backstory_preexists": true,
+    "early_setup_does_not_reveal_gu_chengyue_plan": true,
+    "final_reveal_information_gain_preserved": true,
+    "xuan_ce_northern_rations_case_unchanged": true,
+    "gu_qinghe_pardon_chain_unchanged": true,
+    "gu_chengyue_execution_unchanged": true,
+    "result": "PASS"
+  },
+  "private_revision_artifact": {
+    "backend": "google_drive_private",
+    "file_id": "1ynujPsgQ5G8Gf54AgMVEJKueqnMThOSR9euoi2HsqFo",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh",
+    "shared_publicly": false
+  },
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_manuscript_revision": "YMGQ-P4-V3-FULL-REGRESSION-REVIEW-V1",
+  "next_revision_scope": "Run full V3 regression review across mainline causality, differentiated death functions, black-arrow-to-Internal-Investigation evidence chain, Gu Qinghe/Gu Chengyue manipulation chain, object/person/time continuity, and de-AI/explanatory-tail regressions after P1-P3.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
