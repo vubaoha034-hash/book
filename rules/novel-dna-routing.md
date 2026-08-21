@@ -16,7 +16,7 @@ Use this order every time:
 3. Only if the simpler repair is insufficient, test a relevant DNA invocation gate.
 4. Remove same-lineage ancestors/successors so one causal mechanism is not counted twice.
 5. Select the minimum necessary DNA scope for the proven problem.
-6. Check the shared cross-layer application budget.
+6. Check both the shared cross-layer budget and the selected DNA's own frozen limits; the stricter limit wins.
 7. Record expected change, complexity cost, formula risk, protected elements, and exit criteria.
 8. Return `REJECT` or `HOLD` when evidence is incomplete.
 
@@ -67,11 +67,24 @@ A residual mechanism may still be used if it solves a distinct causal problem no
 
 Budgets are shared across all DNA layers; each layer does not receive a separate quota.
 
+System-wide ceilings:
+
 - Scene: max 1 Primary DNA total.
 - Scene: optional max 1 Secondary diagnostic check.
 - Chapter / arc: max 2 Primary DNA total.
 - Book: max 3 Primary DNA total.
 - Short story: default max 1 Primary; Global DNA stays OFF unless there is clear cross-stage recurrence.
+
+These are ceilings, not permissions. Every selected DNA's own frozen application limits still apply, and the stricter limit always wins.
+
+Current `GN-VDNA-01` V1 limits from `GLOBAL_NOVEL_DNA_FREEZE_V1.json` are stricter:
+
+- Scene Primary: default `OFF`.
+- Scene Secondary diagnosis: max 1.
+- Chapter Primary: max 1.
+- Arc Primary: max 1.
+- Book Global Primary: max 1.
+- Short story: `OFF` unless clear cross-stage recurrence exists.
 
 Do not fill unused quota for completeness.
 
@@ -183,8 +196,8 @@ Forbidden:
 
 ## 11. Result semantics
 
-- `APPLIED`: gate passed, simpler fix insufficient, budget available, and exit criteria defined.
-- `REJECTED`: evidence or gate does not justify the DNA, or a simpler fix is sufficient.
+- `APPLIED`: gate passed, simpler fix insufficient, budget available under both shared and DNA-specific limits, and exit criteria defined.
+- `REJECTED`: evidence or gate does not justify the DNA, a simpler fix is sufficient, or a frozen application limit forbids the call.
 - `HOLD`: evidence is incomplete or the mechanism boundary is ambiguous.
 - `ROLLED_BACK`: an applied DNA did not produce the expected change or introduced unacceptable complexity/formula risk.
 
