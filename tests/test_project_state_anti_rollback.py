@@ -68,6 +68,36 @@ class ProjectStateAntiRollbackTests(unittest.TestCase):
         )
         self.assertEqual(verdict, state_guard.PASS)
 
+    def test_forward_phase_passes_without_progress_ordinals(self) -> None:
+        state = {
+            "accepted_checkpoint": {"phase_ordinal": 40},
+            "rollback": {"authorized": False, "receipt": None},
+        }
+        verdict, _ = state_guard.validate_transition(
+            state,
+            phase_ordinal=50,
+            progress_ordinal=None,
+            task_id=None,
+            task_status=None,
+            rollback_authorized=False,
+        )
+        self.assertEqual(verdict, state_guard.PASS)
+
+    def test_same_phase_missing_current_progress_is_unknown(self) -> None:
+        state = {
+            "accepted_checkpoint": {"phase_ordinal": 40},
+            "rollback": {"authorized": False, "receipt": None},
+        }
+        verdict, _ = state_guard.validate_transition(
+            state,
+            phase_ordinal=40,
+            progress_ordinal=230,
+            task_id=None,
+            task_status=None,
+            rollback_authorized=False,
+        )
+        self.assertEqual(verdict, state_guard.UNKNOWN)
+
     def test_cli_rollback_flag_without_durable_receipt_cannot_bypass(self) -> None:
         verdict, _ = state_guard.validate_transition(
             self._state(),
