@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "proposal_id": "GLOBAL-PROPOSAL-C02-V2-V1",
+  "source_candidate": "CBDNA-C02-V2",
+  "machine_name": "RECURRING_NARRATIVE_ASSET_GAINS_CAUSAL_MEANING",
+  "phase": "GLOBAL_NOVEL_DNA_PROPOSAL_GATE",
+  "phase_ordinal": 270,
+  "status": "PROPOSAL_GATE_PASSED_NOT_GLOBAL_DNA",
+  "candidate_core": "A high-weight narrative asset that recurs across stages must gain new causal meaning and change at least one of understanding, choice, risk, relationship, or goal while retaining prior memory value.",
+  "frozen_support": ["SD-VDNA-03", "ZX-VDNA-03", "DM-VDNA-02"],
+  "gate_results": {
+    "overgeneralization_test": "PASS",
+    "counterexample_stress_test": "PASS",
+    "cross_genre_actionability_test": "PASS",
+    "specificity_vs_generic_foreshadowing": "PASS",
+    "simpler_fix_control": "PASS",
+    "synthetic_benchmark": "PASS_WITH_LIMITATION",
+    "candidate_semantics_changed": false,
+    "narrowing_required": false
+  },
+  "synthetic_benchmark": {
+    "total_cases": 18,
+    "expected_apply": 8,
+    "correct_apply": 8,
+    "expected_reject": 8,
+    "correct_reject": 8,
+    "expected_hold": 2,
+    "correct_hold": 2,
+    "forced_false_positive": 0,
+    "forced_false_negative": 0,
+    "boundary_overclaim": 0,
+    "source_book_plot_reuse": 0,
+    "source_book_style_imitation": 0
+  },
+  "specificity_controls": {
+    "recurrence_alone_is_sufficient": false,
+    "generic_setup_payoff_is_sufficient": false,
+    "repeated_motif_is_sufficient": false,
+    "same_function_reuse_is_sufficient": false,
+    "new_trivia_without_story_variable_change_is_sufficient": false,
+    "retcon_that_erases_prior_memory_is_sufficient": false
+  },
+  "simpler_fix_preference": {
+    "callback": "PREFER_WHEN_SUFFICIENT",
+    "continuity_fix": "PREFER_WHEN_SUFFICIENT",
+    "ordinary_setup_payoff": "PREFER_WHEN_SUFFICIENT",
+    "candidate_call_requires_simpler_fix_insufficient": true
+  },
+  "limitations": [
+    "The three frozen support books are all Chinese long-form popular fiction and do not by themselves establish universal cross-cultural or cross-media validity.",
+    "The Phase 270 benchmark is synthetic rather than an independent external blind dataset.",
+    "Passing this gate validates proposal eligibility and operational specificity, not an empirical law of all fiction."
+  ],
+  "global_scope_guardrail": "If later frozen as Global DNA, global means highest-level reusable mechanism inside the novel-distillation system, not a mandatory natural law for all good fiction.",
+  "private_gate_artifact_file_id": "1ot1PnfAUF_78XUAu0bSTVr_02xifVFwfp_cpi0Fvn-o",
+  "global_dna_count": 0,
+  "global_dna_created": false,
+  "global_promotion_executed": false,
+  "eligible_for_next_stage": true,
+  "next_stage": "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1"
+}
