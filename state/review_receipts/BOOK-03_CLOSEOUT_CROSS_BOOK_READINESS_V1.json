@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_id": "BOOK-03-CLOSEOUT-CROSS-BOOK-READINESS-V1-20260821",
+  "project_id": "novel-distillation",
+  "book_id": "BOOK-03",
+  "work_title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+  "phase": "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS",
+  "phase_ordinal": 240,
+  "review_status": "ACCEPTED",
+  "executor": "CHATGPT",
+  "source": {
+    "drive_file_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
+    "docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
+    "extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
+    "volume_coverage": "2/2",
+    "chapter_coverage": "75/75",
+    "volume_breakdown": {"七星鲁王": 29, "怒海潜沙": 46},
+    "source_binding": "VERIFIED"
+  },
+  "phase_chain": {
+    "phase190": {
+      "status": "ACCEPTED",
+      "receipt": "state/review_receipts/BOOK-03_SOURCE_INTAKE_V1.json"
+    },
+    "phase200": {
+      "status": "ACCEPTED",
+      "receipt": "state/review_receipts/BOOK-03_EVIDENCE_SETTLEMENT_V1.json",
+      "formal": 10,
+      "supporting": 13,
+      "novel_dna": 0
+    },
+    "phase210": {
+      "status": "ACCEPTED_FOR_VALIDATION",
+      "receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_V1.json",
+      "formal_input": 10,
+      "synthesized_dna_candidates": 3,
+      "formal_coverage": "10/10",
+      "supporting_direct_promotions": 0
+    },
+    "phase220": {
+      "status": "ACCEPTED_WITH_NARROWING",
+      "receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_VALIDATION_V1.json",
+      "validated_independent_dna": 3,
+      "core_formal_total": 8,
+      "derived_formal_total": 2,
+      "formal_provenance_coverage": "10/10",
+      "supporting_direct_promotions": 0
+    },
+    "phase230": {
+      "status": "ACCEPTED",
+      "receipt": "state/review_receipts/BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1.json",
+      "manifest": "state/frozen_dna/BOOK-03_NOVEL_DNA_FREEZE_V1.json",
+      "frozen_dna": 3,
+      "frozen_ids": ["DM-VDNA-01", "DM-VDNA-02", "DM-VDNA-03"],
+      "freeze_status": "FROZEN_BOOK_SPECIFIC",
+      "application_contract_status": "ACTIVE"
+    }
+  },
+  "book_closeout": {
+    "status": "PASS",
+    "book_status": "CLOSED_READY_FOR_COMPARISON",
+    "formal": 10,
+    "supporting": 13,
+    "validated_dna": 3,
+    "frozen_dna": 3,
+    "formal_orphan": 0,
+    "formal_double_count": 0,
+    "supporting_direct_promotions": 0,
+    "private_artifacts_verified": true,
+    "frozen_semantics_unchanged_during_closeout": true
+  },
+  "method_parity": {
+    "status": "VERIFIED",
+    "comparison_books": ["BOOK-01", "BOOK-02"],
+    "comparison_receipts": [
+      "state/review_receipts/BOOK-01_CLOSEOUT_CROSS_BOOK_READINESS_V1.json",
+      "state/review_receipts/BOOK-02_CLOSEOUT_CROSS_BOOK_READINESS_V1.json"
+    ],
+    "criteria": {
+      "complete_formal_source_coverage_before_settlement": true,
+      "settlement_formal_supporting_only": true,
+      "formal_only_dna_synthesis": true,
+      "supporting_direct_promotion_forbidden": true,
+      "formal_coverage_orphan_and_provenance_audit": true,
+      "cross_arc_or_cross_volume_counterfactual_specificity_dedup_boundary_validation": true,
+      "narrowing_merge_or_rejection_allowed_during_validation": true,
+      "stable_ids_version_freeze_invocation_gate_application_limits": true,
+      "book_specific_not_global_before_cross_book_validation": true,
+      "style_imitation_and_plot_copying_forbidden": true
+    },
+    "book03_additional_controls": ["EXPLICIT_SOURCE_INTAKE", "BLIND_CROSS_BOOK_ISOLATION"],
+    "output_count_equality_required": false
+  },
+  "private_closeout": {
+    "persisted": true,
+    "backend": "google_drive_private",
+    "logical_ref": "PRIVATE_DRIVE_BOOK03_CLOSEOUT_CROSS_BOOK_READINESS_V1",
+    "file_id": "1H0qIKXs6Trzri0BuJbxgQP17mW3qv6uELuc4iUcHkmM",
+    "folder_id": "1B5AcFp_xxpu-3rrWLGUD4K1wJNFKNTWy",
+    "title": "BOOK-03_盗墓笔记壹_CLOSEOUT_CROSS_BOOK_READINESS_V1",
+    "raw_novel_text_stored_in_git": false,
+    "detailed_distillation_stored_in_git": false
+  },
+  "cross_book_readiness": {
+    "status": "READY_FOR_THIRD_BOOK_CROSS_BOOK_REVALIDATION",
+    "ready": true,
+    "cross_book_matching_executed_in_closeout": false,
+    "existing_cross_book_candidate_semantics_changed": false,
+    "global_dna_count": 0,
+    "global_promotion_authorized": false,
+    "book03_frozen_ids": ["DM-VDNA-01", "DM-VDNA-02", "DM-VDNA-03"],
+    "existing_phase170_pair_results_must_be_reused_not_rerun": true,
+    "new_book03_pair_comparisons_expected": 21,
+    "existing_cross_book_candidates_to_revalidate": ["CBDNA-C01", "CBDNA-C02", "CBDNA-C03"]
+  },
+  "next_stage": "CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1",
+  "rollback_authorized": false
+}
