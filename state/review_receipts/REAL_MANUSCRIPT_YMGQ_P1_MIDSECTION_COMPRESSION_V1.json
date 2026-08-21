@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_V3_TARGETED_REVISION",
+  "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+  "phase_ordinal": 330,
+  "event_status": "ACCEPTED_TARGETED_REVISION_NO_DNA_APPLIED",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "manuscript_title": "一命过桥",
+  "revision_id": "YMGQ-P1-MIDSECTION-COMPRESSION-V1",
+  "revision_scope": "MIDSECTION_FACTION_WITHDRAWAL_BEAT_REPETITION",
+  "dna_router_result": "REJECTED",
+  "dna_applied": false,
+  "source": {
+    "user_uploaded_manuscript": true,
+    "manuscript_text_stored_in_git": false
+  },
+  "edit_metrics": {
+    "target_block_chars_before": 1223,
+    "target_block_chars_after": 806,
+    "net_char_reduction": 417,
+    "target_block_reduction_ratio_approx": "34%"
+  },
+  "preserved_functions": [
+    "LIU_HUANSHAN_JIANGHU_CREDIT_CHANGES_BATTLEFIELD",
+    "SONG_LAOYEZI_RULE_FACE_EXIT",
+    "ZHAO_ER_OLD_DEBT_EXIT",
+    "LIU_LIUSANNIANG_RELATIONSHIP_AND_RED_BOAT_SETUP",
+    "TRUE_BLOOD_DEBT_FACTIONS_REMAIN"
+  ],
+  "continuity_improvements": [
+    "SEED_QIPANZHAI_LEADER_AS_LEI_POSHAN_BEFORE_LATER_RETURN",
+    "LIUSANNIANG_RED_BOAT_DOWNSTREAM_FUNCTION_PRESERVED"
+  ],
+  "continuity_check": "PASS",
+  "private_revision_artifact": {
+    "backend": "google_drive_private",
+    "file_id": "1i-Z-6KvyAf9jaPU0wxCPIOn23gKaP-_th80kBioKCEs",
+    "folder_id": "1JwOsK3TPvW_YqHA2fwgkuHfCJJm60PEh"
+  },
+  "accepted_checkpoint_advance": false,
+  "phase330_status_after": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
+  "next_manuscript_revision": "YMGQ-P2-CHU_SHISAN_DEATH_DIFFERENTIATION_V1",
+  "next_revision_scope": "Differentiate Chu Shisan death scene from Shi Chongshan death in scene function, terminal rhythm, and Liu Huanshan leave-return structure.",
+  "unauthorized_changes": [],
+  "rollback_authorized": false
+}
