@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1",
+  "phase": "MICROCRAFT_CALIBRATED_FRESH_VALIDATION",
+  "phase_ordinal": 346,
+  "status": "READY_NOT_STARTED",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "manuscript_binding": {
+    "title": "一命过桥",
+    "historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "must_remain_unchanged": true
+  },
+  "allowed_rule_files": [
+    "config/novel-quality-gates.v3.json",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/dialogue-epistemic-scope.md",
+    "modules/local-logic-ledger.md",
+    "templates/microcraft-dialogue-audit-template.md",
+    "rules/pass-isolation.md",
+    "rules/no-ai-smell.md",
+    "modules/dialogue-pattern-family-density.md",
+    "templates/dialogue-pattern-family-audit-template.md"
+  ],
+  "strict_isolation": {
+    "prior_attempt_reports_forbidden": true,
+    "historical_problem_locations_forbidden": true,
+    "benchmark_case_files_forbidden": true,
+    "phase344_label_calibration_answers_forbidden": true,
+    "other_manuscript_versions_forbidden": true,
+    "network_search_forbidden": true
+  },
+  "validation_targets": [
+    "Full-manuscript G6D candidate harvest and located semantic/dialogue evidence.",
+    "Epistemic-scope records distinguish object facts from public/reported knowledge before mouthpiece verdict.",
+    "Unsupported public-knowledge claims are not rescued by invented evidence.",
+    "Pure shared-background reader-only exposition remains fail-capable.",
+    "Preserved deterministic temporal semantic regression in the unchanged manuscript is independently rediscovered without location hint.",
+    "Locally plausible/removable banter is not auto-failed solely for removability.",
+    "Full-manuscript G8 pattern-family ledger groups repeated cadence across separated scenes/characters and records specificity/portability evidence.",
+    "No universal numeric template-density threshold is invented.",
+    "Protected relationship-specific banter/social anecdote is identified to control false positives."
+  ],
+  "acceptance": {
+    "valid_exact_machinery_binding_required": true,
+    "unchanged_manuscript_hash_required": true,
+    "full_scan_required": true,
+    "preserved_hard_temporal_regression_must_be_independently_rediscovered": true,
+    "old_MC_R002_fixed_single_instance_label_required": false,
+    "old_MC_R003_fixed_single_instance_label_required": false,
+    "epistemic_scope_evidence_required": true,
+    "G8_pattern_family_ledger_required": true,
+    "protected_dialogue_required": true,
+    "universal_numeric_density_threshold_forbidden": true,
+    "fresh_report_must_be_preserved_before_any_manuscript_repair": true
+  },
+  "forbidden_actions": [
+    "READ_BENCHMARK_MICROCRAFT_CASES_IN_FRESH_AUDIT",
+    "READ_PRIOR_YMGQ_REVIEWS_OR_FAILURE_LOCATIONS",
+    "FORCE_OLD_3_OF_3_LABELS",
+    "REPAIR_YMGQ_BEFORE_FRESH_REPORT_IS_PRESERVED_AND_ADJUDICATED",
+    "CLAIM_LITERARY_QUALITY_FROM_SCHEMA_ONLY",
+    "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD"
+  ],
+  "next_action": "Run one genuinely fresh calibrated G6D + G8 audit against the unchanged manuscript using only the allowed files at the immutable Phase345 machinery commit, then return the untouched report for coordinator adjudication."
+}
