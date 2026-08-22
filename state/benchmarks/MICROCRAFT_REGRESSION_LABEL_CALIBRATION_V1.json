@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1",
+  "phase": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION",
+  "phase_ordinal": 344,
+  "status": "CALIBRATION_ACCEPTED_SUCCESSOR_IMPLEMENTATION_REQUIRED",
+  "origin": {
+    "phase343_attempt5_valid": true,
+    "phase343_old_gate_result": "2_OF_3",
+    "phase343_promotion": "REJECTED",
+    "attempt5_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_3_FRESH_ATTEMPT5_ADJUDICATION_V1.json",
+    "phase343_rejection_receipt": "state/review_receipts/MICROCRAFT_ANTI_TEMPLATE_PHASE343_PROMOTION_REJECTION_V1.json"
+  },
+  "calibration_contract": {
+    "path": "benchmark/microcraft/label-calibration.v1.json",
+    "hard_seed_preserved": ["MC-R001"],
+    "mandatory_hard_labels_retired": ["MC-R002", "MC-R003"],
+    "historical_attempt_results_rewritten": false,
+    "reason": "Repeated valid fresh disagreement plus three-book contrastive evidence shows MC-R002 and MC-R003 are context-dependent as single-instance hard labels. Continuing to optimize toward old 3/3 would be benchmark overfitting."
+  },
+  "three_book_evidence": {
+    "private_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+    "raw_derived_abstract_samples_total": 90,
+    "per_book_samples": 30,
+    "supports_scene_to_speech_grounding": true,
+    "supports_non_speech_and_partial_answer": true,
+    "supports_social_banter_and_shared_history": true,
+    "supports_every_removable_joke_as_hard_failure": false,
+    "supports_listener_already_knows_implies_mouthpiece": false,
+    "scope": "PURPOSIVE_CONTRASTIVE_EVIDENCE_NOT_RANDOM_STATISTICS_OR_EXTERNAL_BLIND_PROOF"
+  },
+  "calibrated_layers": {
+    "hard_G6D": [
+      "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "IMPOSSIBLE_KNOWLEDGE_OR_SOURCE_FAIL",
+      "CRITICAL_UNGROUNDED_INFORMATION_WITH_NO_IN_SCENE_CARRIER"
+    ],
+    "context_dependent_G6D": [
+      "REPORTED_PUBLIC_KNOWLEDGE_OF_ALREADY_KNOWN_OBJECT_FACT",
+      "SINGLE_DEFLECTIVE_OR_TEASING_BANTER"
+    ],
+    "G8_style_density": [
+      "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+      "CROSS_CHARACTER_CADENCE_HOMOGENIZATION",
+      "REPEATED_PORTABLE_Q_RETORT_Q_PUNCHLINE"
+    ]
+  },
+  "epistemic_scope_required_for_successor": [
+    "OBJECT_FACT",
+    "LISTENER_KNOWS_OBJECT_FACT",
+    "PUBLIC_KNOWLEDGE_OF_OBJECT_FACT",
+    "REPORTED_RUMOR_CONTENT",
+    "EVIDENCE_OF_EXPOSURE_OR_SPREAD",
+    "ACTIONABLE_RISK_FROM_PUBLIC_KNOWLEDGE"
+  ],
+  "style_density_policy": {
+    "single_instance_is_not_automatic_hard_fail": true,
+    "cross_scene_family_analysis_required": true,
+    "character_relationship_specificity_must_be_considered": true,
+    "universal_numeric_threshold_frozen": false,
+    "reason_threshold_not_frozen": "Current evidence is purposive and too small to justify a universal density cutoff."
+  },
+  "acceptance": {
+    "label_calibration_complete": true,
+    "old_3_of_3_contract_superseded_for_future_promotion": true,
+    "old_attempt_history_preserved": true,
+    "manuscript_repair_allowed": false,
+    "architecture_implementation_complete": false,
+    "fresh_validation_of_successor_complete": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "next_required_task": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1"
+}
