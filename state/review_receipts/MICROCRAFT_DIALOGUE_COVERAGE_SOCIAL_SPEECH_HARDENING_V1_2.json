@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_SETTLEMENT",
+  "phase": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING",
+  "phase_ordinal": 342,
+  "event_status": "RULES_HARDENED_CANDIDATE_HARVEST_AND_SOCIAL_ANECDOTE_DISCRIMINATOR_READY_FRESH_REGRESSION_PENDING",
+  "source_attempt3_adjudication": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_1_FRESH_ATTEMPT3_ADJUDICATION_V1.json",
+  "phase341_promotion_rejection": "state/review_receipts/MICROCRAFT_DIALOGUE_GROUNDING_PHASE341_PROMOTION_REJECTION_V1.json",
+  "v1_2_machinery_commit": "4da850b210e37d11e6da3cf81fce34620789894e",
+  "integrated_changes": [
+    "EXHAUSTIVE_DIALOGUE_CANDIDATE_HARVEST",
+    "PUBLIC_BACKGROUND_BUNDLE_HIGH_RISK_PATTERN",
+    "SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY_CARVEOUT",
+    "MIXED_BUNDLE_SEPARATION",
+    "COVERAGE_COUNTS_AND_OMISSION_REASONS",
+    "V3_G6D_SCHEMA_3_0_2",
+    "DIALOGUE_REGRESSION_V3_16_CASES"
+  ],
+  "phase341_fresh_result": {
+    "valid": true,
+    "mandatory_exact_rediscovery": "2/3",
+    "rediscovered": ["MC-R001", "MC-R003"],
+    "missed": ["MC-R002"],
+    "alternate_mouthpiece_may_substitute": false,
+    "social_anecdote_false_positive_risk": true
+  },
+  "fresh_v1_2_acceptance": {
+    "exact_rediscovery_required": "3/3",
+    "candidate_inventory_complete_required": true,
+    "social_anecdote_false_positive_control_required": true,
+    "benchmark_hidden": true,
+    "prior_reviews_hidden": true,
+    "unchanged_manuscript_required": true
+  },
+  "manuscript_modified": false,
+  "manuscript_repair_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_applied": false,
+  "copyrighted_source_text_in_git": false,
+  "real_manuscript_text_in_git": false
+}
