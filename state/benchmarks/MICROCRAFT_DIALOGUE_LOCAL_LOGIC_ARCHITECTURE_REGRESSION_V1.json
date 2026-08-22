@@ -4,16 +4,19 @@
   "benchmark_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1",
   "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
   "phase_ordinal": 340,
-  "status": "ACCEPTED_DEVELOPMENTAL_ARCHITECTURE_TWO_BOOK_EVIDENCE_BOOK01_AND_FRESH_BLIND_PENDING",
+  "status": "ACCEPTED_DEVELOPMENTAL_ARCHITECTURE_THREE_BOOK_RAW_EVIDENCE_FRESH_BLIND_PENDING",
   "purpose": "Validate that the new G6D architecture, permanent regression contract, and V3 integration are structurally coherent and can express known manuscript failures without claiming general literary-quality automation.",
   "source_evidence": {
     "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+    "BOOK_01_SHEDIAO_abstract_raw_derived_samples": 30,
     "BOOK_02_ZHUXIAN_abstract_raw_derived_samples": 30,
     "BOOK_03_DAOMU_BIJI_YI_abstract_raw_derived_samples": 30,
-    "BOOK_01_SHEDIAO_raw_sampling_status": "SOURCE_BLOCKED_FOR_RAW_MICROCRAFT_SAMPLING",
+    "BOOK_01_raw_sampling_status": "RAW_READABLE_EXACT_CANONICAL_MATCH_30_SAMPLES_COMPLETE",
     "BOOK_01_canonical_work_id": "wrk_5724415a203a194f1c9a481c",
     "BOOK_01_canonical_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
-    "three_book_raw_microcraft_claim_allowed": false
+    "BOOK_01_source_access_receipt": "state/review_receipts/BOOK01_CANONICAL_RAW_MICROCRAFT_SOURCE_ACCESS_V1.json",
+    "three_book_raw_microcraft_claim_allowed": true,
+    "three_book_claim_scope": "RAW_DERIVED_ABSTRACT_SCENE_TO_SPEECH_EVIDENCE_SUPPORTS_ARCHITECTURE_NOT_BLIND_QUALITY_PROOF"
   },
   "integrated_components": [
     "docs/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_UPGRADE_V1.md",
@@ -67,6 +70,15 @@
       "private_ignore_boundaries_preserved": true,
       "ci": false
     },
+    "BOOK01_source_integrity_and_sampling": {
+      "result": "PASS",
+      "byte_exact_canonical_match": true,
+      "sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "size_bytes": 2817298,
+      "chapter_count": 40,
+      "sample_count": 30,
+      "candidate_effect": "SUPPORTS_WITH_NO_SEMANTIC_BROADENING"
+    },
     "project_state_transition_preflight": {
       "candidate_phase_ordinal": 340,
       "accepted_phase_ordinal": 320,
@@ -93,13 +105,12 @@
   "acceptance_limits": {
     "architecture_is_developmentally_integrated": true,
     "blind_semantic_regression_proven": false,
-    "three_book_raw_microcraft_revalidation_complete": false,
+    "three_book_raw_microcraft_revalidation_complete": true,
     "automatic_semantic_quality_validation_proven": false,
     "production_manuscript_ready": false,
     "external_human_validation": false
   },
   "remaining_hard_requirements": [
-    "Expose the canonical repaired BOOK-01 source in the current private read plane and extract at least 30 Scene-to-Speech samples with the same schema.",
     "Run a genuinely fresh-context G6D audit of the unchanged historical manuscript without supplying known failure locations, diagnoses, or corrected wording; it must independently rediscover MC-R001, MC-R002, and MC-R003 before architecture promotion."
   ],
   "accepted_checkpoint_advance": false,
