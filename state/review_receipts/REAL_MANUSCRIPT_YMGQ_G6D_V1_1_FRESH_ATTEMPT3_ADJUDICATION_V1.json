@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_G6D_V1_1_FRESH_ADJUDICATION",
+  "phase": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING",
+  "phase_ordinal": 341,
+  "attempt": 3,
+  "event_status": "VALID_FRESH_ATTEMPT_PROMOTION_GATE_FAIL_2_OF_3_MANDATORY_REDISCOVERED",
+  "manuscript_title": "一命过桥",
+  "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "audit_report_sha256": "54d819cf9d9759fa9587f30193278761cecc34a88191e2f6b60e9ca9e4c3f43f",
+  "audit_report_size_bytes": 17308,
+  "fresh_context_claim": true,
+  "machinery_binding": {
+    "valid": true,
+    "repository": "vubaoha034-hash/book",
+    "exact_commit": "80c7635c590821ec41c30b588c7484881b9d5a08",
+    "required_file_count": 6,
+    "all_expected_blob_sha_matched": true,
+    "manuscript_hash_matched": true,
+    "binding_result": "PASS"
+  },
+  "reported_G6D_verdict": "FAIL",
+  "pre_registered_mandatory_rediscovery": {
+    "required_count": 3,
+    "rediscovered_count": 2,
+    "rediscovered": [
+      {
+        "id": "MC-R001",
+        "status": "EXACT_SEMANTIC_MATCH",
+        "evaluator_label": "TEMPORAL_SEMANTIC_CHAIN_FAIL"
+      },
+      {
+        "id": "MC-R003",
+        "status": "EXACT_SEMANTIC_MATCH",
+        "evaluator_label": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE"
+      }
+    ],
+    "missed": [
+      {
+        "id": "MC-R002",
+        "status": "MISSED",
+        "reason": "The evaluator did not flag the pre-registered public-background information bundle about the target event, listener role, reward, rumor spread, and outsider arrivals."
+      }
+    ],
+    "gate_requirement": "3_OF_3_REQUIRED",
+    "gate_result": "FAIL",
+    "post_hoc_substitution_forbidden": true
+  },
+  "alternate_dialogue_finding": {
+    "type": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL_OTHER_INSTANCE",
+    "location_class": "first-hand anecdote about Chu Shisan after a direct question",
+    "may_substitute_for_MC_R002": false,
+    "adjudication": "FALSE_POSITIVE_RISK_REQUIRES_RULE_REFINEMENT",
+    "reason": "The line is a directly responsive first-hand social anecdote with plausible relationship/storytelling value. V1.1 over-weighted immediate listener need and did not distinguish social anecdote from reader-orientation exposition."
+  },
+  "additional_findings": [
+    {
+      "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "description": "Execution-time contradiction: three days before execution versus tomorrow/next-day execution.",
+      "novelty_relative_to_seed_cases": "NEW_NON_SEED"
+    },
+    {
+      "code": "LOCATION_CONTINUATION_AMBIGUOUS",
+      "description": "Baisha relay / toward Luoshui / from Luoshui chain held as ambiguous.",
+      "verdict": "HOLD"
+    }
+  ],
+  "capability_adjudication": {
+    "local_semantic_logic": "SUPPORTED_BY_REPEATED_VALID_FRESH_EVIDENCE",
+    "dialogue_anti_template": "IMPROVED_EXACT_SEED_REDISCOVERY_OBSERVED",
+    "dialogue_information_carrier": "STILL_NOT_RELIABLE_ENOUGH_FOR_PROMOTION",
+    "false_positive_control": "INSUFFICIENT_SOCIAL_ANECDOTE_DISTINCTION",
+    "architecture_promotion_eligible": false
+  },
+  "next_required_action": "Harden candidate coverage for multi-fact public-background dialogue and add a positive social-anecdote discriminator before the next fresh regression. Do not repair the manuscript yet.",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_applied": false,
+  "real_manuscript_text_stored": false
+}
