@@ -16,6 +16,7 @@
 6. **证据优先。** 所有审查意见必须落到具体场景、段落、事件或句子。
 7. **根因优先。** 先处理会引发多个症状的根部问题，不平铺几十条修改意见。
 8. **Fresh context 不是万能审稿器。** 历史隔离不等于能自动发现跨句时间作用域、作者嘴替或模板对白。
+9. **不可替人物补动机。** 审稿人能想象出“也许是在开玩笑 / bluff / 缓和气氛”不等于正文提供了证据。
 
 ## 标准阶段
 
@@ -102,20 +103,33 @@ templates/microcraft-dialogue-audit-template.md
 只检查：
 
 - 为什么偏偏现在开口；
-- speaker 的场内目标；
+- speaker 的场内目标，以及正文里哪一处真正证明这个目标；
 - listener 已知什么；
-- 没有读者时是否仍会说；
+- 多事实对白必须拆成 atomic claims，逐项检查 listener 是否现在需要；
+- 没有读者时，人物是否会说“这一整包信息”，而不是只问“会不会说点什么”；
 - 信息通过什么场内 carrier 进入；
 - 不说、迟说、只答一半、打断或行动是否更可信；
 - 对话后信息/选择/关系/风险/任务有没有变化；
+- 工整问答必须逐 turn 记录 state delta，不能只看整段最后有没有作用；
+- “幽默 / 人设 / 节拍好”本身不算 state delta；
+- 若声称是 bluff / deflection / 嘴硬，必须有正文证据支持，不能由审稿人替人物发明；
 - 相对时间和状态是否跨列表、解释、代词、花销链正确传播；
 - 是否用通用动作 beat 假装 grounding。
+
+覆盖要求：
+
+- 不能只审高潮和明显重要对白；
+- 必须覆盖前段、中段的普通聊天、信息交代、打趣和转场对白；
+- 作者嘴替和模板问答往往藏在“看起来很顺”的普通对白里。
 
 此阶段禁止：
 
 - 顺手润色整篇；
 - 为每句对白加动作；
 - 把“读起来顺”当 PASS；
+- 把“我能想象一个说话动机”当 PASS；
+- 用一个真实目标替整包不必要信息洗白；
+- 用整段最终有 aftereffect 替中间空转 turn 洗白；
 - 因为 Fresh Reader 没发现就自动 PASS。
 
 ### I. 发展性编辑
@@ -146,6 +160,7 @@ templates/microcraft-dialogue-audit-template.md
 - 不同读者使用独立上下文。
 - 连续性审查不读取读者评价，只读正文和设定。
 - G6D 审查不以读者“喜欢/不喜欢”作为判断依据，只检查文本里的 trigger、goal、knowledge、semantic scope 和 aftereffect。
+- G6D PASS 的 speaker goal 必须来自正文证据，而不是 reviewer invention。
 - 发展性编辑不读取作者自评分数。
 - 最终汇总者只能汇总已锁定的独立报告，不得反向修改报告使其趋同。
 
@@ -164,6 +179,7 @@ templates/microcraft-dialogue-audit-template.md
 - 禁止把平台套路当作普遍文学规律。
 - 禁止为了追求快节奏，把人物反应、信息差和情绪余波全部删除。
 - 禁止把“对白前加一个动作”当作 Scene-to-Speech 机制。
+- 禁止把“可能是在 bluff / 开玩笑 / 缓和气氛”当成无证据 PASS 理由。
 
 ## 通过标准
 
@@ -175,7 +191,8 @@ templates/microcraft-dialogue-audit-template.md
 - 没有未解释的确定性连续性冲突。
 - 没有已知的 `TEMPORAL_SEMANTIC_CHAIN_FAIL`。
 - 关键说明对白没有 `AUTHOR_INFORMATION_MOUTHPIECE_FAIL`。
-- 不存在无人物动机、无状态变化的关键 `DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE`。
+- 多事实说明对白已经逐 claim 证明 listener 的当前需要与 speaker 的文本内动机。
+- 不存在无人物动机、无逐轮状态变化的关键 `DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE`。
 - 冷读没有致命停止点，或停止点已被有意识接受。
 - 至少完成一次独立读者反应与一次结构审查。
 - V3-G6D 已用定位证据通过。
