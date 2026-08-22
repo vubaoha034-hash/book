@@ -1,0 +1,201 @@
+{
+  "schema_version": "2.0.0",
+  "suite_id": "microcraft-dialogue-regression-v2",
+  "purpose": "Adversarial privacy-safe regression cases for exact-bundle dialogue grounding, textual speaker-goal evidence, per-turn state delta, and local semantic logic. These cases validate expected classifications, not general literary quality.",
+  "copyrighted_source_text_included": false,
+  "manuscript_text_included": false,
+  "supersedes_for_new_architecture_tests": "benchmark/microcraft/dialogue-regression.v1.json",
+  "legacy_required_semantics_preserved": ["MC-R001", "MC-R002", "MC-R003"],
+  "classes": ["PASS", "FAIL", "HOLD"],
+  "cases": [
+    {
+      "id": "DG2-R001",
+      "name": "TEMPORAL_SPENDING_LIST_SCOPE_CONFLICT",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "scene": "Money is explicitly obtained last night. The owner asks where that money went. The answer is a continuing spending list and adds another person's consumption without a topic break. The next line states that consumption occurred two days ago.",
+      "focus": "semantic time inheritance across a spending list"
+    },
+    {
+      "id": "DG2-R002",
+      "name": "MULTI_FACT_PUBLIC_BACKGROUND_BUNDLE_TO_EXPERIENCED_LISTENER",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A local child speaks to an experienced participant who already knows the target event and the participant's own role. The child bundles the target event, the role, the reward amount, the speed of rumor spread, and how many outsiders arrived. No warning, request, test, accusation, or immediate decision is established.",
+      "focus": "exact information bundle versus reader-only orientation"
+    },
+    {
+      "id": "DG2-R003",
+      "name": "ALONE_RETORT_FOLLOWUP_UNKNOWN_PUNCHLINE",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "scene": "A asks whether B is alone. B gives a confident clever denial. A asks who else is coming. B immediately admits not knowing. There is no threat to bluff, no concealment goal, no relationship test, and no decision or task change.",
+      "focus": "per-turn state delta and unsupported swagger"
+    },
+    {
+      "id": "DG2-R004",
+      "name": "URGENT_WARNING_BUNDLE",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A lookout runs in after seeing armed riders approaching and tells the group their number, direction, visible insignia, and estimated arrival time because the group must choose whether to flee or barricade immediately.",
+      "focus": "multi-fact bundle with listener need and immediate task effect"
+    },
+    {
+      "id": "DG2-R005",
+      "name": "ONLY_NEW_FACT_WARNING",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Both characters already know the public conflict and reward. A child only reports the genuinely new fact that armed strangers entered the west lane moments ago, causing the listener to send the child away and change route.",
+      "focus": "minimal listener-needed information"
+    },
+    {
+      "id": "DG2-R006",
+      "name": "ONE_USEFUL_CLAIM_DOES_NOT_RESCUE_READER_BUNDLE",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A speaker has a legitimate reason to warn that riders arrived outside town, but in the same line also restates three facts the listener already knows about the mission, reward, and public rumor. Only the arrival changes the listener's decision.",
+      "focus": "atomic claim audit"
+    },
+    {
+      "id": "DG2-R007",
+      "name": "SUPPORTED_BLUFF_RETORT",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "An armed enemy asks whether B is alone while closing in. B falsely says 'Who says I'm alone?' while deliberately glancing toward a dark doorway where no ally exists. The enemy slows and looks away; B uses the hesitation to reach the exit.",
+      "focus": "text-supported deterrence bluff with state change"
+    },
+    {
+      "id": "DG2-R008",
+      "name": "UNSUPPORTED_BLUFF_RESCUE_FORBIDDEN",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "scene": "A friendly child asks whether B is alone. B says 'Who says I'm alone?' The child asks who else is coming. B says 'I don't know.' No enemy, concealment pressure, embarrassment, deterrence, or later behavior supports bluffing.",
+      "focus": "reviewer must not invent bluff motive"
+    },
+    {
+      "id": "DG2-R009",
+      "name": "BANTER_CHANGES_RELATIONSHIP_PERMISSION",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A teasing exchange begins after one character notices a specific habit. The guarded character initially refuses help but, after the joke exposes shared history, hands over the injured arm for treatment.",
+      "focus": "banter with relationship state delta"
+    },
+    {
+      "id": "DG2-R010",
+      "name": "BANTER_ONLY_FOR_CADENCE",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "scene": "Four short lines form a witty Q-retort-Q-punchline ladder. Nobody learns anything, changes decision, hides anything, gains permission, changes risk, or alters the task. The next paragraph resumes exactly the same action state.",
+      "focus": "humor is not state delta"
+    },
+    {
+      "id": "DG2-R011",
+      "name": "LONG_INTERROGATION_EXPOSITION",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A prisoner answers a sequence of specific questions about aliases, routes, and dates because the interrogator must verify a ledger before deciding whom to arrest. Each answer is new to the listener and changes the investigation state.",
+      "focus": "long exposition with legitimate in-scene carrier"
+    },
+    {
+      "id": "DG2-R012",
+      "name": "PLAN_EXPLANATION_AS_NEGOTIATION_LEVERAGE",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "An antagonist reveals part of the plan only after demanding surrender, explicitly using the revealed encirclement and timed reinforcements to convince the defenders resistance is futile. The defenders change deployment in response.",
+      "focus": "plan information used as leverage"
+    },
+    {
+      "id": "DG2-R013",
+      "name": "PLAN_EXPLANATION_WITHOUT_TACTICAL_REASON",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A covert operation leader is about to continue killing armed witnesses. Without negotiating, stalling, intimidating for surrender, or testing anyone, the leader confirms who works for the operation and explains why the whole scene was staged to resemble a private feud.",
+      "focus": "reader-facing antagonist confession"
+    },
+    {
+      "id": "DG2-R014",
+      "name": "SHARED_FACT_RESTATED_AS_ACCUSATION",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Two partners both know a promise was broken. During confrontation one repeats the exact promise while placing the signed note on the table and demands a choice. The listener changes position.",
+      "focus": "listener-known fact used as leverage"
+    },
+    {
+      "id": "DG2-R015",
+      "name": "SHARED_FACT_RESTATED_ONLY_FOR_READER",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "Two partners calmly restate to one another the mission, reward, old relationship, and destination they have discussed many times. No accusation, reminder-as-leverage, decision, warning, or misunderstanding exists.",
+      "focus": "shared-background exposition"
+    },
+    {
+      "id": "DG2-R016",
+      "name": "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING",
+      "scene": "An ungrounded four-line exchange is revised by adding a glance, sigh, cup touch, and frown before the same lines. None of the gestures changes information, goal, risk, or relationship.",
+      "focus": "decorative action beats"
+    },
+    {
+      "id": "DG2-R017",
+      "name": "DELAYED_PARTIAL_ANSWER_UNDER_RELATIONSHIP_COST",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Two people with unresolved history meet after years apart. One asks a painful question. The other stays silent, answers a safer practical part later, and only admits the emotional part after a new piece of evidence appears.",
+      "focus": "non-speech and partial answer"
+    },
+    {
+      "id": "DG2-R018",
+      "name": "PLAUSIBLE_GOAL_WITHOUT_TEXTUAL_EVIDENCE",
+      "type": "boundary",
+      "expected": "HOLD",
+      "expected_code": "CRITICAL_DIALOGUE_HAS_NO_TRIGGER_OR_GOAL",
+      "scene": "A high-information line could theoretically be read as reassurance or joking, but the surrounding beat contains no fear, tension, audience reaction, task need, or later behavior supporting either motive.",
+      "focus": "reviewer invention versus textual evidence"
+    },
+    {
+      "id": "DG2-R019",
+      "name": "EXACT_BUNDLE_COUNTERFACTUAL_FAIL",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A character genuinely needs to say one new logistical fact, so speech itself is grounded. The line additionally packages four background facts that only help a first-time reader and are unnecessary to the listener. A reviewer saying 'the character had a reason to speak' is insufficient.",
+      "focus": "would say something versus would say this bundle"
+    },
+    {
+      "id": "DG2-R020",
+      "name": "TASK_LIST_EXPOSITION",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Before a dangerous crossing, the leader lists rope length, remaining lamps, water, and who carries the map because each item determines assignments the listeners immediately perform.",
+      "focus": "list exposition required by current task"
+    }
+  ],
+  "acceptance": {
+    "all_20_cases_present": true,
+    "negative_cases_require_expected_code": true,
+    "speaker_goal_may_not_be_invented_to_rescue_negative": true,
+    "one_grounded_claim_may_not_rescue_reader_only_bundle": true,
+    "block_level_aftereffect_may_not_rescue_empty_turns": true,
+    "exact_bundle_counterfactual_required": true,
+    "schema_validation_is_not_semantic_quality_validation": true
+  }
+}
