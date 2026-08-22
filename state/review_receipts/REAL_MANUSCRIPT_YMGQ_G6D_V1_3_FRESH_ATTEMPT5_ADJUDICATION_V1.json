@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_G6D_V1_3_FRESH_NO_HINT_ADJUDICATION",
+  "phase": "MICROCRAFT_ANTI_TEMPLATE_HARDENING",
+  "phase_ordinal": 343,
+  "attempt": 5,
+  "event_status": "VALID_FRESH_ATTEMPT_OLD_PROMOTION_GATE_FAIL_2_OF_3_LABEL_VALIDITY_REVIEW_REQUIRED",
+  "manuscript_title": "一命过桥",
+  "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "audit_report_sha256": "cd798f019b43b206c814bee0157808cadb350cc7e069a8d58e16815799e057ed",
+  "audit_report_size_bytes": 60850,
+  "fresh_context_claim": true,
+  "machinery_binding": {
+    "valid": true,
+    "repository": "vubaoha034-hash/book",
+    "exact_commit": "ad20a24f1b12e1545ea82e5ecd785f07d748ed79",
+    "required_file_count": 6,
+    "all_expected_blob_sha_matched": true,
+    "manuscript_hash_matched": true,
+    "binding_result": "PASS"
+  },
+  "reported_G6D_verdict": "FAIL",
+  "coverage": {
+    "coverage_complete": true,
+    "candidate_inventory_count": 52,
+    "candidate_audited_count": 52,
+    "rhetorical_ladder_candidate_count": 25,
+    "anti_template_record_count": 25,
+    "rhetorical_ladder_record_parity": "PASS"
+  },
+  "old_pre_registered_gate": {
+    "required_count": 3,
+    "rediscovered_count": 2,
+    "rediscovered": ["MC-R001", "MC-R003"],
+    "missed": ["MC-R002"],
+    "old_gate_result": "FAIL",
+    "post_hoc_count_as_3_of_3_forbidden": true
+  },
+  "fresh_capability_evidence": {
+    "local_semantic_logic": "SUPPORTED",
+    "rhetorical_ladder_judgment_coverage": "SUPPORTED_25_OF_25",
+    "anti_template_detection": "SUPPORTED_WITH_FALSE_POSITIVE_RISK_TO_CALIBRATE",
+    "social_anecdote_protection": "SUPPORTED",
+    "public_background_bundle": "DISAGREES_WITH_ATTEMPT4_AND_REQUIRES_EPISTEMIC_SCOPE_REVIEW"
+  },
+  "label_validity_signal": {
+    "review_required": true,
+    "reason": "Repeated valid fresh runs disagree on MC-R002 while the disputed line is explicitly scoped as public rumor about the listener's own role and is followed by a safety decision. Treating the embedded object-level facts as merely already-known may collapse a distinct meta-level public-knowledge proposition. Attempt5 also shows that per-turn hard-fail rules can over-flag ordinary banter, so AI-cadence risk should be evaluated at pattern-family density rather than by mandatory functionalization of every joke.",
+    "do_not_force_old_label_by_further_same-target_hardening": true
+  },
+  "additional_findings": {
+    "semantic_chain_failures": 2,
+    "template_failures_reported": 3,
+    "self_cancelling_assertion_failures": 1,
+    "public_background_bundle_failures_reported": 0,
+    "hold_count": 1
+  },
+  "manuscript_repair_authorized_after_attempt5": false,
+  "next_required_action": "Calibrate regression labels and architecture: preserve MC-R001 as a hard semantic regression, add epistemic-level/public-knowledge scope to dialogue analysis, move generic AI-cadence from single-turn hard blocking toward cross-scene pattern-family density, and reclassify MC-R002/MC-R003 only after contrastive evidence review. Do not repair the manuscript yet.",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_applied": false,
+  "real_manuscript_text_stored": false
+}
