@@ -1,0 +1,147 @@
+{
+  "schema_version": "3.0.0",
+  "suite_id": "microcraft-dialogue-regression-v3",
+  "purpose": "Privacy-safe adversarial cases for exhaustive dialogue candidate harvest, public-background bundle detection, social-anecdote protection, per-turn state delta, and local semantic logic. Not a general literary-quality benchmark.",
+  "copyrighted_source_text_included": false,
+  "manuscript_text_included": false,
+  "legacy_required_semantics_preserved": ["MC-R001", "MC-R002", "MC-R003"],
+  "classes": ["PASS", "FAIL", "HOLD"],
+  "cases": [
+    {
+      "id": "DG3-R001",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "scene": "Money is obtained last night; a spending list continues with another person's consumption; the next line places that consumption two days earlier with no scope break.",
+      "focus": "semantic-time inheritance"
+    },
+    {
+      "id": "DG3-R002",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A child tells an experienced participant in one compact line that the target event is today, the participant is escorting the target, the reward is large, rumors have spread everywhere, and many armed outsiders arrived last night. The listener already knows the event and own role; only the outsider arrival is newly actionable.",
+      "focus": "public-background orientation bundle"
+    },
+    {
+      "id": "DG3-R003",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "scene": "A friendly child asks whether B is alone. B says 'Who says I'm alone?' The child asks who else is coming. B says 'I don't know.' No deterrence, concealment, embarrassment, test, risk change or decision supports the retort.",
+      "focus": "per-turn empty scaffold"
+    },
+    {
+      "id": "DG3-R004",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Asked whether he saw an absent friend, a child says yes and recounts a funny first-hand tavern incident showing the friend's familiar temperament. The adult knows the friend but did not witness the incident; the scene is relaxed enough for gossip.",
+      "focus": "social anecdote not task-essential"
+    },
+    {
+      "id": "DG3-R005",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "Asked whether he saw an absent friend, a child answers with the friend plus the current mission, public reward, political rule, destination, and number of pursuers—facts mostly known to the adult and not part of the witnessed anecdote.",
+      "focus": "anecdote used as cover for reader orientation"
+    },
+    {
+      "id": "DG3-R006",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A lookout reports five riders from the north, their insignia, and arrival time because the group must choose a route immediately.",
+      "focus": "multi-fact warning"
+    },
+    {
+      "id": "DG3-R007",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A lookout has one useful new fact—five riders arrived—but wraps it with the listener's known mission, known reward, known destination and known public rule. Only the riders change action.",
+      "focus": "one grounded claim cannot rescue bundle"
+    },
+    {
+      "id": "DG3-R008",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Two old friends argue about the year of a past gathering; each correction changes shared memory, reveals that one friend had been excluded, and leads to a concrete promise to make it up.",
+      "focus": "banter with relationship delta"
+    },
+    {
+      "id": "DG3-R009",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "scene": "Four witty lines form Q-retort-Q-punchline; no knowledge, decision, relationship pressure, concealment or task state changes.",
+      "focus": "cadence-only banter"
+    },
+    {
+      "id": "DG3-R010",
+      "type": "boundary",
+      "expected": "HOLD",
+      "expected_code": "CRITICAL_DIALOGUE_HAS_NO_TRIGGER_OR_GOAL",
+      "scene": "A line could be reassurance or bluff, but no scene pressure, later behavior, reaction, or relationship fact supports either reading.",
+      "focus": "reviewer may not invent motive"
+    },
+    {
+      "id": "DG3-R011",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A prisoner gives a long answer about aliases and dates because the interrogator asks each item to verify a ledger before making arrests.",
+      "focus": "legitimate long exposition"
+    },
+    {
+      "id": "DG3-R012",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "A covert leader about to kill the witnesses voluntarily confirms operation members and explains the whole staging logic, with no negotiation, surrender demand, stalling need or intimidation goal.",
+      "focus": "antagonist confession without scene purpose"
+    },
+    {
+      "id": "DG3-R013",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A character retells a first-hand embarrassing incident about a mutual friend after being asked how the friend looked; the listener laughs and revises the friend's current emotional state.",
+      "focus": "social anecdote with relationship value"
+    },
+    {
+      "id": "DG3-R014",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_CANDIDATE_HARVEST_INCOMPLETE",
+      "scene": "A regression audit judges only climax speeches and records no candidate inventory, omitting several early multi-fact setup lines and rhetorical ladders.",
+      "focus": "coverage failure"
+    },
+    {
+      "id": "DG3-R015",
+      "type": "positive",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "The audit inventories all multi-fact public-background turns, all rhetorical ladders, and all possible social anecdotes before judgment, with zero unexplained omissions.",
+      "focus": "coverage contract"
+    },
+    {
+      "id": "DG3-R016",
+      "type": "negative",
+      "expected": "FAIL",
+      "expected_code": "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING",
+      "scene": "An ungrounded exposition exchange is unchanged except for added glances, sighs and cup touches; the actions do not affect information, goal, risk or relationship.",
+      "focus": "fake grounding"
+    }
+  ],
+  "acceptance": {
+    "all_16_cases_present": true,
+    "public_background_bundle_detection_required": true,
+    "social_anecdote_false_positive_protection_required": true,
+    "candidate_harvest_coverage_required": true,
+    "legacy_three_seed_semantics_preserved": true,
+    "schema_validation_is_not_semantic_quality_validation": true
+  }
+}
