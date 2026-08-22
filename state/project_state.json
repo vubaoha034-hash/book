@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-22T14:18:00+08:00",
+  "updated_at": "2026-08-22T15:32:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -92,75 +92,59 @@
     "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3",
-    "phase": "MICROCRAFT_ANTI_TEMPLATE_HARDENING",
-    "phase_ordinal": 343,
-    "status": "RULES_HARDENED_ADVERSARIAL_BENCHMARK_READY_FRESH_V1_3_REGRESSION_PENDING",
-    "execution_scope": "Harden rhetorical-ladder judgment coverage after valid V1.2 fresh regression rediscovered MC-R001 and MC-R002 but missed MC-R003 despite harvesting that block as a rhetorical-ladder candidate.",
+    "task_id": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1",
+    "phase": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION",
+    "phase_ordinal": 345,
+    "status": "READY_NOT_STARTED_FROM_ACCEPTED_PHASE344_CALIBRATION",
+    "execution_scope": "Implement the accepted Phase344 label calibration: add epistemic-scope analysis to dialogue grounding and move cross-scene portable dialogue cadence families into style/de-AI density evidence, without repairing the private manuscript yet.",
     "inputs": {
-      "phase342_task": "state/tasks/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2.json",
-      "phase342_promotion_rejection": "state/review_receipts/MICROCRAFT_DIALOGUE_COVERAGE_PHASE342_PROMOTION_REJECTION_V1.json",
-      "attempt4_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_2_FRESH_ATTEMPT4_ADJUDICATION_V1.json",
-      "phase343_task": "state/tasks/MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3.json",
-      "phase343_benchmark": "state/benchmarks/MICROCRAFT_ANTI_TEMPLATE_HARDENING_REGRESSION_V4.json",
-      "design_doc": "docs/MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3.md",
-      "adversarial_suite": "benchmark/microcraft/dialogue-regression.v4.json",
+      "phase343_attempt5_adjudication": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_3_FRESH_ATTEMPT5_ADJUDICATION_V1.json",
+      "phase343_promotion_rejection": "state/review_receipts/MICROCRAFT_ANTI_TEMPLATE_PHASE343_PROMOTION_REJECTION_V1.json",
+      "phase344_task": "state/tasks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+      "phase344_receipt": "state/review_receipts/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+      "phase344_design": "docs/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.md",
+      "phase344_contract": "benchmark/microcraft/label-calibration.v1.json",
+      "phase344_benchmark": "state/benchmarks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+      "phase345_task": "state/tasks/MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1.json",
       "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0"
     },
-    "phase342_settlement": {
-      "attempt4_machinery_binding_valid": true,
-      "attempt4_manuscript_hash_valid": true,
-      "attempt4_G6D": "FAIL",
-      "mandatory_exact_rediscovery": "2/3",
-      "rediscovered": ["MC-R001", "MC-R002"],
-      "missed": ["MC-R003"],
-      "public_background_bundle_discriminator": "VALID_FRESH_SUCCESS",
-      "social_anecdote_false_positive_control": "VALID_FRESH_SUCCESS",
-      "candidate_harvest": "VALID_FRESH_SUCCESS",
-      "dialogue_anti_template": "MISS_AFTER_SUCCESSFUL_HARVEST",
-      "promotion": "REJECTED",
-      "repeat_attempts_without_architecture_change_forbidden": true
+    "phase344_settlement": {
+      "status": "ACCEPTED_CALIBRATION_COMPLETE",
+      "historical_attempts_rewritten": false,
+      "attempt5_old_gate_result": "2_OF_3_FAIL",
+      "MC_R001": "PRESERVED_HARD_G6D_FAIL",
+      "MC_R002": "SUPERSEDED_AS_MANDATORY_HARD_FAIL_EPISTEMIC_SCOPE_CONTEXT_DEPENDENT",
+      "MC_R003": "SUPERSEDED_AS_MANDATORY_SINGLE_INSTANCE_HARD_FAIL_PATTERN_FAMILY_DENSITY_RISK",
+      "old_3_of_3_contract_future_status": "SUPERSEDED",
+      "phase343_retroactive_promotion": false,
+      "benchmark_overfitting_guard_triggered": true
     },
     "source_coverage": {
       "BOOK_01_samples": 30,
       "BOOK_02_samples": 30,
       "BOOK_03_samples": 30,
-      "three_book_raw_microcraft_revalidation_complete": true
+      "three_book_raw_microcraft_evidence_complete": true
     },
-    "hardening": {
-      "machinery_commit": "ad20a24f1b12e1545ea82e5ecd785f07d748ed79",
-      "quality_gate_schema": "3.0.3",
-      "adversarial_case_count": 16,
-      "required_discriminators": [
-        "RHETORICAL_LADDER_RECORD_PARITY",
-        "SELF_CANCELLING_ASSERTION",
-        "INDUCED_FOLLOWUP_DEPENDENCY",
-        "COUNTERFACTUAL_TURN_DELETION",
-        "PORTABLE_GENERIC_JOKE_RISK",
-        "VALID_BANTER_FALSE_POSITIVE_CONTROL"
-      ],
-      "preserved_v1_2_capabilities": [
-        "PUBLIC_BACKGROUND_BUNDLE_DETECTION",
-        "SOCIAL_ANECDOTE_PROTECTION",
-        "EXHAUSTIVE_CANDIDATE_HARVEST",
-        "LOCAL_SEMANTIC_TIME_CHAIN"
-      ]
-    },
-    "validation": {
-      "phase342_valid_fresh_regression": "PROMOTION_FAIL_2_OF_3_ANTI_TEMPLATE_MISS",
-      "V1_3_rule_integration": "COMPLETE_PENDING_FRESH_SEMANTIC_VALIDATION",
-      "adversarial_regression_contract": "16_CASE_CONTRACT_CREATED_NOT_GENERAL_QUALITY_PROOF"
-    },
-    "remaining_blockers": ["FRESH_CONTEXT_G6D_V1_3_REGRESSION_3_OF_3_WITH_FALSE_POSITIVE_CONTROL"],
-    "next_action": "Run one genuinely fresh/no-hint G6D regression against immutable V1.3 machinery commit ad20a24f1b12e1545ea82e5ecd785f07d748ed79. Keep benchmark cases, prior diagnoses, failure locations and corrected wording hidden. Require exact 3/3 rediscovery, rhetorical-ladder record parity, preservation of the V1.2 public-background success and no unsupported social-anecdote false positive.",
+    "calibrated_requirements": [
+      "OBJECT_FACT_VS_PUBLIC_KNOWLEDGE_SCOPE",
+      "REPORTED_RUMOR_CONTENT_AND_EXPOSURE_RISK",
+      "PURE_SHARED_BACKGROUND_MOUTHPIECE_STILL_FAILS",
+      "LOCAL_CONTEXT_SUPPORTED_BANTER_NOT_AUTOMATIC_HARD_FAIL",
+      "CROSS_SCENE_TEMPLATE_FAMILY_DENSITY_IN_G8",
+      "NO_UNIVERSAL_DENSITY_THRESHOLD_WITHOUT_MORE_EVIDENCE",
+      "LOCAL_SEMANTIC_TIME_CHAIN_REMAINS_HARD"
+    ],
+    "remaining_blockers": [
+      "PHASE345_IMPLEMENTATION_NOT_STARTED",
+      "CALIBRATED_ARCHITECTURE_NOT_FRESH_VALIDATED"
+    ],
+    "next_action": "Execute the bounded Phase345 implementation from its task manifest. Do not repair YMGQ and do not run another fresh manuscript audit until the calibrated architecture is implemented and frozen.",
     "forbidden_actions": [
-      "REPAIR_YMGQ_BEFORE_V1_3_FRESH_REGRESSION_IS_PRESERVED",
-      "RUN_REPEATED_FRESH_ATTEMPTS_ON_SAME_MACHINERY_UNTIL_LUCKY_PASS",
-      "READ_DIALOGUE_REGRESSION_V4_IN_FRESH_MANUSCRIPT_AUDIT",
-      "RELAX_PRE_REGISTERED_3_OF_3_GATE",
-      "COUNT_TEMPORARY_FALSE_STATE_AS_DELTA_WITHOUT_SUPPORTED_GOAL",
-      "COUNT_ALTERNATE_TEMPLATE_INSTANCE_AS_MC_R003",
-      "CLAIM_SCHEMA_OR_SYNTHETIC_CASES_PROVE_LITERARY_QUALITY",
+      "RETROACTIVELY_MARK_ATTEMPT5_AS_PASS_OR_3_OF_3",
+      "REACTIVATE_OLD_MC_R002_MC_R003_MANDATORY_HARD_LABELS_WITHOUT_NEW_CALIBRATION_EVIDENCE",
+      "REPAIR_YMGQ_BEFORE_PHASE345_IMPLEMENTATION_AND_VALIDATION",
+      "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD_FROM_CURRENT_PURPOSIVE_SAMPLE",
+      "CLAIM_SYNTHETIC_OR_SCHEMA_VALIDATION_PROVES_LITERARY_QUALITY",
       "STORE_COPYRIGHTED_SOURCE_TEXT_IN_PUBLIC_GIT",
       "STORE_REAL_MANUSCRIPT_TEXT_IN_PUBLIC_GIT",
       "DEFAULT_ENABLE_NOVEL_DNA_ROUTER",
@@ -173,8 +157,8 @@
       "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
       "phase_ordinal": 330,
       "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
-      "reason": "A real-manuscript final-quality freeze produced validation false negatives. System-level local semantic/dialogue validation must be repaired before further production-outcome accumulation is treated as trustworthy.",
-      "resume_condition": "Phase343 fresh regression gate closed or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
+      "reason": "A real-manuscript final-quality freeze produced validation false negatives. Calibrated microcraft/dialogue validation must be implemented and validated before production-outcome accumulation resumes.",
+      "resume_condition": "Phase345 calibrated architecture implemented and validated or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
     }
   ],
   "manuscript_quality_state": {
@@ -183,12 +167,14 @@
       "status": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED",
       "reason": "VALIDATION_FALSE_NEGATIVE_MICROCRAFT_DIALOGUE_LOCAL_SEMANTIC_LOGIC",
       "repair_started_after_invalidation": false,
-      "V3_G6D": "FAIL",
+      "V3_G6D": "FAIL_UNDER_HISTORICAL_MACHINERY",
       "fresh_attempt1_promotion_status": "INVALID",
-      "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3",
-      "fresh_attempt3_promotion_status": "VALID_TEST_FAILED_2_OF_3_WITH_FALSE_POSITIVE_RISK",
-      "fresh_attempt4_promotion_status": "VALID_TEST_FAILED_2_OF_3_ANTI_TEMPLATE_MISS",
-      "repair_blocked_by_phase343": true
+      "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3_OLD_GATE",
+      "fresh_attempt3_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_WITH_FALSE_POSITIVE_RISK",
+      "fresh_attempt4_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_ANTI_TEMPLATE_MISS",
+      "fresh_attempt5_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_LABEL_VALIDITY_REVIEW_TRIGGERED",
+      "phase344_label_calibration": "ACCEPTED",
+      "repair_blocked_by_phase345": true
     }
   },
   "rollback": {
@@ -229,7 +215,8 @@
     "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1",
     "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
     "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1",
-    "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2"
+    "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2",
+    "MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
