@@ -4,8 +4,8 @@
   "benchmark_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1",
   "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
   "phase_ordinal": 340,
-  "status": "ACCEPTED_DEVELOPMENTAL_ARCHITECTURE_THREE_BOOK_RAW_EVIDENCE_FRESH_BLIND_PENDING",
-  "purpose": "Validate that the new G6D architecture, permanent regression contract, and V3 integration are structurally coherent and can express known manuscript failures without claiming general literary-quality automation.",
+  "status": "THREE_BOOK_RAW_EVIDENCE_COMPLETE_FRESH_ATTEMPT2_REQUIRED",
+  "purpose": "Validate that the new G6D architecture, permanent regression contract, and V3 integration are structurally coherent and can independently rediscover pre-registered local-semantic/dialogue failures without claiming general literary-quality automation.",
   "source_evidence": {
     "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
     "BOOK_01_SHEDIAO_abstract_raw_derived_samples": 30,
@@ -36,7 +36,8 @@
     "mandatory_negative_ids": ["MC-R001", "MC-R002", "MC-R003"],
     "privacy_safe": true,
     "copyrighted_source_text_included": false,
-    "real_manuscript_text_included": false
+    "real_manuscript_text_included": false,
+    "promotion_contract": "ALL_THREE_PRE_REGISTERED_MANDATORY_FAILURES_MUST_BE_INDEPENDENTLY_REDISCOVERED_IN_A_VALID_FRESH_NO_HINT_RUN"
   },
   "validation_results": {
     "microcraft_regression_contract": {
@@ -78,13 +79,6 @@
       "chapter_count": 40,
       "sample_count": 30,
       "candidate_effect": "SUPPORTS_WITH_NO_SEMANTIC_BROADENING"
-    },
-    "project_state_transition_preflight": {
-      "candidate_phase_ordinal": 340,
-      "accepted_phase_ordinal": 320,
-      "result": "PASS",
-      "reason": "forward or idempotent transition",
-      "accepted_checkpoint_advance": false
     }
   },
   "known_failure_manuscript_reaudit": {
@@ -102,6 +96,42 @@
     "fresh_blind_rediscovery_claim_allowed": false,
     "private_audit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg"
   },
+  "fresh_no_hint_attempts": [
+    {
+      "attempt": 1,
+      "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+      "submitted_verdict": "V3_G6D_FAIL",
+      "machinery_binding": {
+        "valid": false,
+        "required_rule_count": 6,
+        "loaded_rule_count": 2,
+        "missing_rule_count": 4,
+        "cause": "DEFAULT_MAIN_USED_INSTEAD_OF_PHASE340_REF"
+      },
+      "mandatory_exact_rediscovery": {
+        "MC-R001": "PASS_REDISCOVERED",
+        "MC-R002": "MISS_REQUIRED_INSTANCE_OTHER_MOUTHPIECE_INSTANCE_FOUND",
+        "MC-R003": "MISS_EXPLICIT_ZERO_TEMPLATE_FAILS",
+        "count": 1,
+        "required": 3
+      },
+      "additional_findings": [
+        "YMGQ-G6D-004_TEMPORAL_LOCATION_CHAIN_FAIL",
+        "RELATIVE_EXECUTION_TIME_CONTRADICTION",
+        "AUTHOR_INFORMATION_MOUTHPIECE_FAIL_OTHER_INSTANCE"
+      ],
+      "adjudication": "INVALID_FOR_PROMOTION_OBSERVED_REDISCOVERY_1_OF_3",
+      "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT1_ADJUDICATION_V1.json"
+    }
+  ],
+  "attempt2_contract": {
+    "exact_machinery_commit": "9a9c2f712362f37cd2cb94764ad93ebc731bec18",
+    "required_rule_count": 6,
+    "abort_on_any_missing_rule_or_blob_mismatch": true,
+    "prompt_must_not_disclose_regression_cases_or_known_failure_locations": true,
+    "manuscript_must_remain_unchanged": true,
+    "private_handoff_file_id": "13FGNCwPCelKZToTRB-OTZh2vRcJa_RaGxoM-58YX5SI"
+  },
   "acceptance_limits": {
     "architecture_is_developmentally_integrated": true,
     "blind_semantic_regression_proven": false,
@@ -111,7 +141,7 @@
     "external_human_validation": false
   },
   "remaining_hard_requirements": [
-    "Run a genuinely fresh-context G6D audit of the unchanged historical manuscript without supplying known failure locations, diagnoses, or corrected wording; it must independently rediscover MC-R001, MC-R002, and MC-R003 before architecture promotion."
+    "Run Fresh Context / No-Hint G6D Attempt 2 against the unchanged manuscript after exact binding of all six allowed rule files from commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18. A valid promotion run must independently rediscover MC-R001, MC-R002, and MC-R003 without being shown their examples, locations, or diagnoses."
   ],
   "accepted_checkpoint_advance": false,
   "highest_accepted_phase_ordinal": 320
