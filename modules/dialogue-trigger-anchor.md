@@ -1,4 +1,4 @@
-# Dialogue Trigger Anchor Module V1.2
+# Dialogue Trigger Anchor Module V1.3
 
 ## Purpose
 
@@ -32,31 +32,28 @@ omitted_candidates_and_reason:
 public_background_bundle_candidates:
 social_anecdote_candidates:
 rhetorical_ladder_candidates:
+rhetorical_ladder_candidate_count:
 ```
 
-For these candidate classes, a regression/pre-delivery audit is not allowed to sample selectively. If candidate harvesting is incomplete, final G6D cannot be PASS.
+For PRE_DELIVERY / REGRESSION, selective sampling is not allowed for these candidate classes.
 
 ### Pass 2 — candidate judgment
 
 Only after Pass 1 is complete, run the tests below.
 
+Every harvested rhetorical ladder must receive an explicit anti-template record. Final G6D cannot PASS unless:
+
+`rhetorical_ladder_candidate_count == anti_template_record_count`
+
+If not, use `RHETORICAL_LADDER_AUDIT_INCOMPLETE`.
+
 ## Unit of analysis
 
-Audit dialogue starts, high-information turns, suspicious rhetorical ladders, and harvested ordinary exposition candidates. Do not only inspect climax speeches.
+Audit dialogue starts, high-information turns, suspicious rhetorical ladders, harvested ordinary exposition candidates, and possible social anecdotes. Do not only inspect climax speeches.
 
-A dialogue audit target includes:
+## Required DTA record
 
-- first utterance after a scene/beat transition;
-- a new topic introduced inside an existing exchange;
-- a line that transfers critical backstory/rule/plan information;
-- an emotionally decisive admission, refusal, accusation, promise or request;
-- an ordinary-looking line that bundles several facts for the listener;
-- a neat multi-turn exchange whose middle turns may exist only to set up a joke or reveal;
-- a first-hand anecdote whose purpose may be social/relationship rather than task information.
-
-## Required record
-
-For each audited candidate:
+For each audited information/dialogue candidate:
 
 ```text
 location:
@@ -88,151 +85,112 @@ verdict:
 failure_code:
 ```
 
+## Required anti-template record — one per harvested rhetorical ladder
+
+```text
+candidate_id:
+sequence_location:
+sequence_shape:
+turn_1_claim_or_function:
+turn_1_state_delta:
+turn_1_goal_textual_evidence:
+turn_2_claim_or_function:
+turn_2_state_delta:
+turn_2_goal_textual_evidence:
+turn_3_claim_or_function:
+turn_3_state_delta:
+turn_3_goal_textual_evidence:
+turn_4_claim_or_function:
+turn_4_state_delta:
+turn_4_goal_textual_evidence:
+self_cancelling_assertion_present: true | false
+assertion_created:
+next_turn_retracts_or_nullifies: true | false
+induced_followup_dependency: true | false
+counterfactual_turn_deletion_result:
+portable_generic_joke_risk: true | false
+relationship_or_task_specificity_evidence_or_NONE:
+bluff_or_deflection_evidence_or_NONE:
+empty_scaffold_turn_count:
+verdict: PASS | FAIL | HOLD
+failure_code:
+```
+
 ## Test A — Why now, with textual evidence?
 
-The line must have a credible current trigger.
-
-A reviewer must cite evidence for the trigger and speaker goal. A plausible but unsupported motive invented by the reviewer is not evidence.
-
-If the only reason is “the author needs this information now”, fail or hold.
+The line must have a credible current trigger. A reviewer must cite evidence for trigger and speaker goal. A plausible but unsupported motive is not evidence.
 
 ## Test B — Exact-bundle no-reader counterfactual
 
-Do not ask whether the speaker would say *something*.
-
-Ask whether the speaker would say approximately **this complete bundle** to this listener at this moment if no reader existed.
-
-Record one of:
-
-- `WOULD_SAY_THIS_BUNDLE`
-- `WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE`
-- `WOULD_NOT_SAY`
-- `UNCERTAIN`
+Ask whether the speaker would say approximately this complete bundle to this listener at this moment if no reader existed.
 
 For `PUBLIC_BACKGROUND_ORIENTATION`, `WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE` is strong failure evidence.
 
-For `SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY`, practical listener need is not required claim-by-claim; use the social-anecdote test below.
+For `SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY`, practical listener need is not required claim-by-claim; use the social-anecdote test.
 
 ## Test C — Atomic information bundle
 
-Split multi-fact exposition into atomic claims.
-
-For every claim, identify:
-
-- listener already knows / does not know;
-- listener currently needs / does not need;
-- speaker has a text-supported reason / no supported reason to transmit it now;
-- actual aftereffect.
+Split multi-fact exposition into atomic claims. For every claim, identify listener knowledge, listener need, text-supported transmission goal, and actual aftereffect.
 
 For public-background/current-mission bundles, one legitimate trailing fact does not rescue several reader-orientation facts.
 
-Mandatory high-risk pattern:
-
-- central event or timing;
-- listener's own role;
-- reward/stakes already known to listener;
-- rumor spread;
-- number/location of outsiders;
-
-When several appear in one turn, audit the entire turn even if it looks like casual warning or gossip.
-
 ## Test D — Social anecdote / relationship story
 
-Do not classify ordinary human storytelling as mouthpiece merely because the listener could function with a shorter answer.
-
-A social anecdote may PASS when there is located evidence that:
-
-- it directly answers or naturally expands a question about a person/event;
-- the speaker personally witnessed or plausibly owns the story;
-- the relationship supports gossip, teasing, recollection or amusement;
-- the scene has room for that social behavior;
-- the anecdote does not mainly restate the listener's own mission/setup;
-- the details produce voice, relationship texture or a shared reaction rather than covert reader orientation.
-
-A social anecdote does **not** need each factual atom to change task state.
-
-If the candidate is partly anecdote and partly plot orientation, classify `MIXED` and audit the plot-orientation claims separately.
+A social anecdote may PASS when there is located evidence that it naturally answers/expands a person-event question, is owned by the speaker, fits the relationship and scene pressure, does not mainly restate the listener's own mission/setup, and creates voice/relationship texture rather than reader orientation.
 
 ## Test E — Per-turn state delta
 
-For a neat exchange, evaluate every turn instead of only the conversation's final effect.
+For every harvested rhetorical ladder, evaluate every turn and emit the dedicated anti-template record.
 
-A turn passes when it changes or deliberately manipulates:
+A valid state delta changes or deliberately manipulates knowledge, choice, task/action state, risk, relationship permission/pressure, concealment/misdirection, or negotiation position.
 
-- knowledge;
-- choice;
-- action/task state;
-- risk;
-- relationship permission or pressure;
-- concealment/misdirection;
-- negotiation position.
+“Sounds like the character”, “is funny”, “keeps rhythm”, “made the listener briefly wonder”, or “sets up the next question” are not sufficient by themselves.
 
-“Sounds like the character”, “is funny”, “keeps rhythm”, or “sets up the next question” are not state deltas by themselves.
+### E1 — Self-cancelling assertion
 
-If a retort mainly manufactures the next follow-up or punchline, flag `DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE` unless a supported bluff/deflection/relationship goal is present.
+If a retort introduces or strongly implies proposition P and later turns immediately reveal the speaker has no basis for P, do not count the temporary belief in P as a meaningful delta unless a text-supported bluff, concealment, deterrence, face-saving, provocation, protection, relationship or task goal exists.
 
-A later useful line does not retroactively justify empty scaffold turns.
+### E2 — Induced-follow-up dependency
+
+Flag when the next question exists mainly because the retort manufactured an uncertainty/false premise that the punchline immediately retracts or nullifies, with no independent scene goal.
+
+### E3 — Counterfactual turn deletion
+
+Mentally remove the suspicious retort and its induced follow-up.
+
+If the scene can move directly to the truthful/useful line with no loss of task information, necessary knowledge, relationship pressure, concealment, negotiation or character-specific history—and only generic joke cadence is lost—the removed turns are template-risk.
+
+### E4 — Portability
+
+If a retort/punchline could be moved to unrelated characters and situations nearly unchanged, mark portable-joke risk. Portability alone is not automatic FAIL, but it cannot substitute for character motive.
+
+Relationship-specific banter may PASS when shared history, current object/task, prior grievance, status asymmetry or later relationship action is located.
 
 ## Test F — Aftereffect
 
-What changes because this listener heard this specific line or claim?
-
-Block-level aftereffect cannot retroactively justify empty scaffold turns.
-
-For a social anecdote, valid aftereffect may be a relationship reaction, shared amusement, revised impression, embarrassment, memory pressure or permission—not only task change.
+Block-level aftereffect cannot retroactively justify empty scaffold turns. A later useful line does not rescue an earlier turn that existed only to manufacture the next question.
 
 ## Listener-knowledge test
 
-Do not let characters explain shared plot background to one another solely for the reader.
-
-When the listener already knows most of a **public-background/current-mission** fact bundle, PASS requires a text-supported scene purpose such as:
-
-- accusation;
-- leverage;
-- warning;
-- testing loyalty or memory;
-- reframing;
-- humiliation;
-- command;
-- testimony;
-- teaching required for immediate action.
-
-Do not apply this rule mechanically to a first-hand anecdote whose purpose is social rather than briefing.
+Do not let characters explain shared plot background to one another solely for the reader. Do not apply this mechanically to first-hand social anecdotes.
 
 ## Bluff / deflection test
 
-Do not automatically excuse a contradictory or evasive line as bluffing.
-
-Bluff/deflection is valid only when scene pressure or later behavior supports a goal such as deterrence, concealment, face-saving, provocation, or protection.
-
-Unsupported “maybe bluffing” is a reviewer rescue, not manuscript evidence.
+Bluff/deflection is valid only when scene pressure or later behavior supports deterrence, concealment, face-saving, provocation or protection. Unsupported “maybe bluffing” is reviewer rescue.
 
 ## Non-speech alternatives
 
-Before accepting a reply, explicitly consider:
-
-- silence;
-- delayed answer;
-- incomplete answer;
-- interruption;
-- deflection;
-- visible action;
-- change of subject;
-- lie;
-- refusal to explain.
-
-Do not force non-speech behavior. Record `NONE` when direct speech is genuinely best.
+Before accepting a reply, explicitly consider silence, delayed answer, incomplete answer, interruption, deflection, visible action, change of subject, lie or refusal to explain.
 
 ## Repair order
 
-1. Confirm the candidate was harvested correctly.
-2. For public-background bundles, delete or separate unnecessary claims.
-3. Move plot information to an actual trigger/evidence moment.
-4. Let the listener discover/ask from evidence.
-5. Give the speaker a scene goal only if the story already supports it.
-6. Preserve legitimate social anecdote/relationship texture unless it also carries reader-only setup.
-7. Use silence/partial answer/deflection where pressure supports it.
-8. Only then consider wording.
+1. Confirm candidate harvest and rhetorical-ladder record parity.
+2. Delete empty scaffold turns before rewriting wording.
+3. Separate reader-only public-background claims from legitimate lines.
+4. Preserve legitimate social anecdote/relationship texture.
+5. Move information to a real trigger/evidence moment.
+6. Use silence/partial answer/deflection where pressure supports it.
+7. Only then consider wording.
 
 ## Anti-fix
 
