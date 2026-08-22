@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_G6D_DEVELOPMENTAL_REAUDIT",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "event_status": "DEVELOPMENTAL_REAUDIT_FAIL_LOCAL_LOGIC_DIALOGUE",
+  "manuscript_title": "一命过桥",
+  "source_manuscript_status": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED",
+  "source_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "audit_context": "SAME_CONTEXT_NON_BLIND_DEVELOPMENTAL",
+  "blind_claim_allowed": false,
+  "manuscript_modified": false,
+  "V3_G6D": "FAIL",
+  "located_failures": [
+    {
+      "id": "MC-R001",
+      "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "severity": "BLOCKER",
+      "known_before_this_audit": true
+    },
+    {
+      "id": "MC-R002",
+      "code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "severity": "MAJOR",
+      "known_before_this_audit": true
+    },
+    {
+      "id": "MC-R003",
+      "code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "severity": "MAJOR",
+      "known_before_this_audit": true
+    },
+    {
+      "id": "YMGQ-G6D-004",
+      "code": "TEMPORAL_LOCATION_CHAIN_FAIL",
+      "severity": "BLOCKER",
+      "known_before_this_audit": false,
+      "privacy_safe_description": "The same character is explicitly placed at an inn and traveling toward a named destination on the same relative day that a later line says the character was already at that destination."
+    }
+  ],
+  "calibration": {
+    "dense_short_dialogue_is_not_automatic_failure": true,
+    "positive_triggered_banter_preserved": true,
+    "action_beat_insertion_is_not_a_valid_default_fix": true
+  },
+  "private_audit": {
+    "backend": "google_drive_private",
+    "file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg",
+    "folder_id": "181j4kdlMEoccdZlIoY5ASQB2KzujJ0xS",
+    "manuscript_text_in_git": false
+  },
+  "acceptance_effect": {
+    "architecture_can_express_known_failures": true,
+    "architecture_found_additional_non_seed_failure": true,
+    "fresh_blind_regression_pass": false,
+    "final_manuscript_ready": false
+  },
+  "next_required_evidence": "FRESH_CONTEXT_G6D_REAUDIT_WITHOUT_FAILURE_LOCATIONS_OR_CORRECTED_TEXT",
+  "accepted_checkpoint_advance": false
+}
