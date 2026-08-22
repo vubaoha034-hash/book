@@ -4,17 +4,23 @@
   "event_type": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_SETTLEMENT",
   "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
   "phase_ordinal": 340,
-  "event_status": "STRUCTURE_INTEGRATED_DEVELOPMENTAL_REGRESSION_PASS_BOOK01_AND_FRESH_BLIND_PENDING",
+  "event_status": "THREE_BOOK_RAW_EVIDENCE_COMPLETE_FRESH_BLIND_PENDING",
   "authorized_by_user": true,
   "final_freeze_invalidation_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
   "architecture_benchmark": "state/benchmarks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1.json",
   "developmental_reaudit_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_DEVELOPMENTAL_REAUDIT_V1.json",
+  "BOOK01_source_access_receipt": "state/review_receipts/BOOK01_CANONICAL_RAW_MICROCRAFT_SOURCE_ACCESS_V1.json",
   "public_architecture_integrated": true,
   "permanent_regressions_locked": ["MC-R001", "MC-R002", "MC-R003"],
   "source_evidence": {
+    "BOOK_01_samples": 30,
     "BOOK_02_samples": 30,
     "BOOK_03_samples": 30,
-    "BOOK_01_status": "SOURCE_BLOCKED_FOR_RAW_MICROCRAFT_SAMPLING",
+    "BOOK_01_status": "RAW_READABLE_EXACT_CANONICAL_MATCH_30_SAMPLES_COMPLETE",
+    "BOOK_01_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "BOOK_01_chapter_count": 40,
+    "three_book_raw_microcraft_revalidation_complete": true,
+    "candidate_effect": "SUPPORTS_MC_C01_THROUGH_MC_C07_WITH_NO_SEMANTIC_BROADENING",
     "private_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0"
   },
   "validation": {
@@ -22,6 +28,8 @@
     "G6D_config_contract": "PASS_NON_CI",
     "V3_structure_isolated_mirror": "PASS_32_FILES_NON_CI",
     "root_benchmark_contract_equivalent": "PASS_NON_CI",
+    "BOOK01_source_integrity": "PASS_SHA256_EXACT_CANONICAL_MATCH_40_CHAPTERS",
+    "BOOK01_scene_to_speech_sampling": "PASS_30_RAW_DERIVED_ABSTRACT_SAMPLES",
     "transition_preflight": "PASS",
     "semantic_developmental_reaudit": "FAIL_AS_EXPECTED_ON_UNCHANGED_KNOWN_FAILURE_MANUSCRIPT"
   },
@@ -36,11 +44,10 @@
   },
   "limitations": [
     "Current semantic re-audit is same-context/non-blind because the three seed failures were already known to the executor.",
-    "Canonical repaired BOOK-01 raw text is not readable in the current private plane, so full three-book raw Scene-to-Speech revalidation is incomplete.",
+    "Three-book raw-derived microcraft evidence supports the architecture but is purposive evidence, not an external blind or statistical universality claim.",
     "Schema and structure validators do not prove literary quality or arbitrary semantic understanding."
   ],
   "next_required_actions": [
-    "BOOK01_CANONICAL_RAW_MICROCRAFT_SAMPLING_AT_LEAST_30",
     "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS"
   ],
   "phase330_disposition": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
