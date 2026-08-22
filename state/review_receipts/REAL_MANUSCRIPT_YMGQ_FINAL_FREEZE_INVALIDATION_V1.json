@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_FINAL_FREEZE_INVALIDATION",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "event_status": "FINAL_FREEZE_QUALITY_INVALIDATED_VALIDATION_FALSE_NEGATIVE",
+  "manuscript_title": "一命过桥",
+  "production_use_id": "NDR-YMGQ-20260821-001",
+  "supersedes_quality_claim_only": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_AFTER_INDEPENDENT_COLD_READ_V1.json",
+  "historical_manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "manuscript_status_after": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED",
+  "historical_artifact_deleted": false,
+  "rollback": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_checkpoint_remains_phase": 320,
+  "validation_false_negatives": [
+    {
+      "id": "MC-R001",
+      "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "severity": "BLOCKER",
+      "privacy_safe_description": "A relative-time fact established a previous-night money event, a spending-list continuation semantically inherited that time scope, then one listed item was explicitly placed two days earlier. Prior continuity reviews failed to propagate the time scope across the semantic list."
+    },
+    {
+      "id": "MC-R002",
+      "code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "severity": "MAJOR",
+      "privacy_safe_description": "A character bundled several background facts mainly to brief the reader even though the addressed character had no clear in-scene need to receive that complete package. Prior de-AI review did not test speaker goal versus reader-only information benefit."
+    },
+    {
+      "id": "MC-R003",
+      "code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "severity": "MAJOR",
+      "privacy_safe_description": "A neat question-retort-follow-up-punchline exchange had no meaningful state, goal, relationship, or information change and existed mainly as dialogue rhythm. Prior review treated local fluency as sufficient."
+    }
+  ],
+  "root_cause": {
+    "macro_structure_checks_insufficient": true,
+    "declarative_rules_without_line_level_evidence_insufficient": true,
+    "fresh_context_alone_does_not_guarantee_independent_error_detection": true,
+    "missing_capabilities": [
+      "semantic_time_scope_propagation",
+      "dialogue_trigger_anchor",
+      "speaker_in_scene_goal_check",
+      "listener_knowledge_check",
+      "reader_only_information_benefit_check",
+      "non_speech_option_check",
+      "dialogue_template_sequence_check"
+    ]
+  },
+  "required_recovery_path": [
+    "LOCK_PERMANENT_REGRESSION_CASES",
+    "DISTILL_SCENE_TO_SPEECH_MICROCRAFT_FROM_SOURCE_BOOKS",
+    "INTEGRATE_MICROCRAFT_DIALOGUE_LOCAL_LOGIC_GATES",
+    "VALIDATE_ARCHITECTURE_AND_REGRESSION_CONTRACTS",
+    "RE_AUDIT_UNMODIFIED_YMGQ_CANDIDATE_WITH_NEW_GATES_BEFORE_ANY_TEXT_FIX"
+  ],
+  "dna_router": {
+    "GN_VDNA_01_status": "UNCHANGED_DEFAULT_OFF",
+    "dna_applied": false,
+    "this_invalidation_is_not_a_dna_failure_or_success": true
+  }
+}
