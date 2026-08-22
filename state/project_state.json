@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-22T09:12:00+08:00",
+  "updated_at": "2026-08-22T10:49:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -95,7 +95,7 @@
     "task_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
     "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
     "phase_ordinal": 340,
-    "status": "THREE_BOOK_RAW_EVIDENCE_COMPLETE_FRESH_BLIND_PENDING",
+    "status": "FRESH_BLIND_ATTEMPT1_INVALID_RETRY_ATTEMPT2_REQUIRED",
     "execution_scope": "Complete evidence-backed Scene-to-Speech, dialogue-grounding, and local-semantic-logic architecture validation before any repair of the invalidated historical manuscript candidate.",
     "inputs": {
       "task_manifest": "state/tasks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
@@ -104,9 +104,10 @@
       "BOOK01_source_access_receipt": "state/review_receipts/BOOK01_CANONICAL_RAW_MICROCRAFT_SOURCE_ACCESS_V1.json",
       "final_freeze_invalidation_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
       "developmental_reaudit_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_DEVELOPMENTAL_REAUDIT_V1.json",
+      "attempt1_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT1_ADJUDICATION_V1.json",
       "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
       "private_developmental_reaudit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg",
-      "fresh_no_hint_handoff_file_id": "1shUBH4uOv_0Q7U5eMiG7w05N5uTHba_VNa6T6ZhB51M"
+      "attempt2_pinned_handoff_file_id": "13FGNCwPCelKZToTRB-OTZh2vRcJa_RaGxoM-58YX5SI"
     },
     "source_coverage": {
       "BOOK_01_samples": 30,
@@ -125,17 +126,33 @@
       "root_benchmark_contract_equivalent": "PASS_NON_CI",
       "BOOK01_source_integrity": "PASS_SHA256_EXACT_CANONICAL_MATCH_40_CHAPTERS",
       "BOOK01_scene_to_speech_sampling": "PASS_30_RAW_DERIVED_ABSTRACT_SAMPLES",
-      "developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE"
+      "developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE",
+      "fresh_G6D_attempt1": "INVALID_FOR_PROMOTION_OBSERVED_REDISCOVERY_1_OF_3"
     },
     "known_required_regressions": ["MC-R001", "MC-R002", "MC-R003"],
     "additional_developmental_failure": "YMGQ-G6D-004_TEMPORAL_LOCATION_CHAIN_FAIL",
-    "remaining_blockers": [
-      "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS"
-    ],
-    "next_action": "Run a genuinely fresh-context no-hint G6D audit of the preserved unchanged historical YMGQ candidate using the prepared handoff; do not disclose known failure locations, diagnoses, regression IDs, or corrected wording to the evaluator.",
+    "fresh_attempt1": {
+      "machinery_binding_valid": false,
+      "cause": "DEFAULT_MAIN_USED_FOUR_REQUIRED_FILES_404",
+      "mandatory_exact_rediscovery_count": 1,
+      "mandatory_required_count": 3,
+      "rediscovered": ["MC-R001"],
+      "missed": ["MC-R002", "MC-R003"],
+      "additional_findings": ["TEMPORAL_LOCATION_CHAIN_FAIL", "RELATIVE_EXECUTION_TIME_CONTRADICTION", "AUTHOR_INFORMATION_MOUTHPIECE_FAIL_OTHER_INSTANCE"],
+      "promotion_eligible": false
+    },
+    "attempt2": {
+      "exact_machinery_commit": "9a9c2f712362f37cd2cb94764ad93ebc731bec18",
+      "required_rule_count": 6,
+      "abort_on_binding_failure": true,
+      "known_failure_examples_disclosed": false,
+      "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72"
+    },
+    "remaining_blockers": ["FRESH_CONTEXT_G6D_REAUDIT_ATTEMPT2_PINNED"],
+    "next_action": "Run Attempt 2 in a genuinely fresh chat. First bind all six allowed rule files at exact commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18 and abort on any mismatch; then audit the unchanged historical manuscript without reading regression cases or prior reviews. Do not repair the manuscript before Attempt 2 is preserved.",
     "forbidden_actions": [
-      "REPAIR_YMGQ_BEFORE_FRESH_G6D_REGRESSION_INPUT_IS_PRESERVED",
-      "CLAIM_FRESH_BLIND_G6D_PASS_FROM_SAME_CONTEXT_REAUDIT",
+      "REPAIR_YMGQ_BEFORE_FRESH_G6D_ATTEMPT2_IS_PRESERVED",
+      "CLAIM_FRESH_BLIND_G6D_PASS_FROM_ATTEMPT1",
       "CLAIM_SCHEMA_VALIDATION_PROVES_LITERARY_QUALITY",
       "STORE_COPYRIGHTED_SOURCE_TEXT_IN_PUBLIC_GIT",
       "STORE_REAL_MANUSCRIPT_TEXT_IN_PUBLIC_GIT",
@@ -159,7 +176,8 @@
       "status": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED",
       "reason": "VALIDATION_FALSE_NEGATIVE_MICROCRAFT_DIALOGUE_LOCAL_SEMANTIC_LOGIC",
       "repair_started_after_invalidation": false,
-      "V3_G6D": "FAIL"
+      "V3_G6D": "FAIL",
+      "fresh_attempt1_promotion_status": "INVALID"
     }
   },
   "rollback": {
