@@ -1,4 +1,4 @@
-# Dialogue Trigger Anchor Module V1
+# Dialogue Trigger Anchor Module V1.1
 
 ## Purpose
 
@@ -8,18 +8,20 @@ This module does **not** require an action beat before every utterance.
 
 ## Unit of analysis
 
-Audit dialogue starts and high-information turns, not every quotation mark mechanically.
+Audit dialogue starts, high-information turns, and suspicious rhetorical ladders. Do not only inspect climax speeches.
 
-A dialogue start includes:
+A dialogue audit target includes:
 
 - first utterance after a scene/beat transition;
 - a new topic introduced inside an existing exchange;
 - a line that transfers critical backstory/rule/plan information;
-- an emotionally decisive admission, refusal, accusation, promise or request.
+- an emotionally decisive admission, refusal, accusation, promise or request;
+- an ordinary-looking line that bundles several facts for the listener;
+- a neat multi-turn exchange whose middle turns may exist only to set up a joke or reveal.
 
 ## Required record
 
-For each audited turn:
+For each audited high-impact or high-information turn:
 
 ```text
 location:
@@ -27,58 +29,118 @@ speaker:
 listener:
 scene_state:
 immediate_trigger:
+trigger_textual_evidence:
 speaker_perception:
 non_speech_reaction_or_NONE:
 why_speak_now:
 speaker_in_scene_goal:
+speaker_goal_textual_evidence:
 listener_already_knows:
-information_carrier:
+atomic_information_claims:
+listener_need_per_claim:
+information_carrier_per_claim:
+reader_only_claim_count:
 withheld_or_unsaid:
-aftereffect:
+aftereffect_per_claim_or_turn:
+exact_bundle_no_reader_counterfactual:
+bluff_or_deflection_claimed: true | false
+bluff_or_deflection_evidence_or_NONE:
+non_speech_option_checked:
 verdict:
 failure_code:
 ```
 
-## Three mandatory tests
+## Mandatory tests
 
-### Test A — Why now?
+### Test A — Why now, with textual evidence?
 
-The line must have a credible current trigger. A generic desire to “explain context” is not a trigger.
+The line must have a credible current trigger.
 
-### Test B — No-reader counterfactual
+A reviewer must cite evidence for the trigger and the speaker goal. A plausible but unsupported motive invented by the reviewer is not evidence.
 
-Imagine no reader exists. Would the speaker still choose to say approximately this information, at this time, to this listener?
+If the only reason is “the author needs this information now”, fail or hold.
 
-- YES: continue.
-- NO: `AUTHOR_INFORMATION_MOUTHPIECE_FAIL` unless a strong in-scene carrier exists.
-- UNCERTAIN: HOLD and inspect speaker goal/listener knowledge.
+### Test B — Exact-bundle no-reader counterfactual
 
-### Test C — Aftereffect
+Do not ask whether the speaker would say *something*.
 
-What changes because the listener heard it?
+Ask whether the speaker would say approximately **this complete bundle** to this listener at this moment if no reader existed.
 
-Valid effects include knowledge, action, choice, relationship pressure, permission, risk, negotiation position, misdirection, refusal, or deliberate non-change that itself has dramatic meaning.
+Record one of:
 
-If nothing changes and the main payoff is reader orientation or a tidy joke, flag it.
+- `WOULD_SAY_THIS_BUNDLE`
+- `WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE`
+- `WOULD_NOT_SAY`
+- `UNCERTAIN`
+
+If the result is `WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE`, inspect for `AUTHOR_INFORMATION_MOUTHPIECE_FAIL`.
+
+### Test C — Atomic information bundle
+
+Split multi-fact exposition into atomic claims.
+
+For every claim, identify:
+
+- listener already knows / does not know;
+- listener currently needs / does not need;
+- speaker has a text-supported reason / no supported reason to transmit it now;
+- actual aftereffect.
+
+If several claims mainly orient the reader and are not needed by the listener, the existence of one legitimate claim does not rescue the full bundle.
+
+### Test D — Per-turn state delta
+
+For a neat exchange, evaluate every turn instead of only the conversation's final effect.
+
+A turn passes when it changes or deliberately manipulates:
+
+- knowledge;
+- choice;
+- action/task state;
+- risk;
+- relationship permission or pressure;
+- concealment/misdirection;
+- negotiation position.
+
+“Sounds like the character”, “is funny”, “keeps rhythm”, or “sets up the next question” are not state deltas.
+
+If a retort mainly manufactures the next follow-up or punchline, flag `DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE` unless a supported bluff/deflection/relationship goal is present.
+
+### Test E — Aftereffect
+
+What changes because this listener heard this specific line or claim?
+
+Block-level aftereffect cannot retroactively justify empty scaffold turns.
 
 ## Listener-knowledge test
 
 Do not let characters explain shared background to one another solely for the reader.
 
-When listener already knows most of a fact bundle, ask whether the speaker is:
+When listener already knows most of a fact bundle, PASS requires a text-supported scene purpose such as:
 
-- accusing;
-- reminding as leverage;
-- testing loyalty/memory;
-- reframing shared facts;
-- deliberately humiliating;
-- issuing a warning whose force depends on restating the fact.
+- accusation;
+- leverage;
+- warning;
+- testing loyalty or memory;
+- reframing;
+- humiliation;
+- command;
+- testimony;
+- teaching required for immediate action.
 
-If none apply, compress, relocate, or delete.
+If the listener knows the fact and no such purpose is evidenced, compress, relocate, or delete.
+
+## Bluff / deflection test
+
+Do not automatically excuse a contradictory or evasive line as bluffing.
+
+Bluff/deflection is valid only when scene pressure or later behavior supports a goal such as deterrence, concealment, face-saving, provocation, or protection.
+
+Unsupported “maybe bluffing” is a reviewer rescue, not manuscript evidence.
 
 ## Non-speech alternatives
 
-Before writing or accepting a reply, explicitly consider:
+Before accepting a reply, explicitly consider:
 
 - silence;
 - delayed answer;
@@ -90,24 +152,17 @@ Before writing or accepting a reply, explicitly consider:
 - lie;
 - refusal to explain.
 
-Do not force non-speech behavior. Record `NONE` when direct speech is genuinely the best choice.
-
-## Anti-template check
-
-Flag a multi-line exchange if it follows a neat conversational scaffold while producing no state change. Common warning form:
-
-`Q -> clever retort -> Q -> punchline`
-
-Do not ban banter. Ban **banter that exists only because the writer wants a polished exchange**.
+Do not force non-speech behavior. Record `NONE` when direct speech is genuinely best.
 
 ## Repair order
 
-1. Delete the unnecessary line.
-2. Move information to an actual trigger/evidence moment.
-3. Change the speaker's in-scene goal so the information has a reason to be said.
+1. Delete the unnecessary turn or claim.
+2. Separate unrelated information from a legitimate line.
+3. Move information to an actual trigger/evidence moment.
 4. Let the listener discover/ask from evidence.
-5. Use silence/partial answer/deflection if character pressure supports it.
-6. Only then consider wording.
+5. Give the speaker a real scene goal only if the story already supports it.
+6. Use silence/partial answer/deflection where pressure supports it.
+7. Only then consider wording.
 
 ## Anti-fix
 
