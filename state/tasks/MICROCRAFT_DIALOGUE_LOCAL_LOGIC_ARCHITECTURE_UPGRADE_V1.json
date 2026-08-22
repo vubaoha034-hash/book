@@ -4,7 +4,7 @@
   "task_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
   "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
   "phase_ordinal": 340,
-  "status": "THREE_BOOK_RAW_EVIDENCE_COMPLETE_FRESH_BLIND_PENDING",
+  "status": "FRESH_BLIND_ATTEMPT1_INVALID_RETRY_ATTEMPT2_REQUIRED",
   "authorized_by_user": true,
   "authorized_scope": "Invalidate the false final-quality freeze, lock permanent regressions, distill Scene-to-Speech microcraft, implement MICROCRAFT + DIALOGUE + LOCAL LOGIC gates, validate them, then re-audit the unchanged manuscript before editing it.",
   "highest_accepted_checkpoint": {
@@ -17,6 +17,8 @@
     "folder_id": "181j4kdlMEoccdZlIoY5ASQB2KzujJ0xS",
     "scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
     "developmental_reaudit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg",
+    "attempt1_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT1_ADJUDICATION_V1.json",
+    "attempt2_pinned_handoff_file_id": "13FGNCwPCelKZToTRB-OTZh2vRcJa_RaGxoM-58YX5SI",
     "copyrighted_source_text_in_git": false,
     "real_manuscript_text_in_git": false
   },
@@ -62,7 +64,8 @@
     "BOOK01_source_integrity": "PASS_SHA256_EXACT_CANONICAL_MATCH_40_CHAPTERS",
     "BOOK01_scene_to_speech_sampling": "PASS_30_RAW_DERIVED_ABSTRACT_SAMPLES",
     "project_state_transition_preflight": "PASS",
-    "same_context_developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE"
+    "same_context_developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE",
+    "fresh_no_hint_attempt1": "INVALID_FOR_PROMOTION_OBSERVED_REDISCOVERY_1_OF_3"
   },
   "developmental_reaudit": {
     "known_regressions_represented": ["MC-R001", "MC-R002", "MC-R003"],
@@ -70,10 +73,36 @@
     "blind_claim_allowed": false,
     "manuscript_modified": false
   },
+  "fresh_attempts": [
+    {
+      "attempt": 1,
+      "context": "FRESH_CONTEXT_NO_HINT_CLAIMED",
+      "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+      "machinery_binding": "INVALID_DEFAULT_MAIN_FOUR_OF_SIX_REQUIRED_FILES_404",
+      "submitted_gate_verdict": "FAIL",
+      "mandatory_exact_rediscovery": "1/3",
+      "rediscovered": ["MC-R001"],
+      "missed": ["MC-R002", "MC-R003"],
+      "additional_findings": [
+        "TEMPORAL_LOCATION_CHAIN_FAIL",
+        "RELATIVE_EXECUTION_TIME_CONTRADICTION",
+        "AUTHOR_INFORMATION_MOUTHPIECE_FAIL_OTHER_INSTANCE"
+      ],
+      "adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT1_ADJUDICATION_V1.json",
+      "promotion_eligible": false
+    }
+  ],
+  "attempt2_machinery": {
+    "exact_commit": "9a9c2f712362f37cd2cb94764ad93ebc731bec18",
+    "required_rule_count": 6,
+    "must_abort_on_missing_or_sha_mismatch": true,
+    "handoff_file_id": "13FGNCwPCelKZToTRB-OTZh2vRcJa_RaGxoM-58YX5SI",
+    "known_failure_locations_or_regression_cases_disclosed": false
+  },
   "remaining_blockers": [
     {
-      "id": "FRESH_CONTEXT_G6D_REGRESSION",
-      "requirement": "Run a genuinely fresh-context G6D audit of the unchanged historical manuscript without revealing known failure locations, diagnoses, or corrected wording; it must independently rediscover MC-R001, MC-R002, and MC-R003."
+      "id": "FRESH_CONTEXT_G6D_REGRESSION_ATTEMPT2_PINNED",
+      "requirement": "Run a genuinely fresh-context no-hint G6D audit of the unchanged historical manuscript after exact binding of all six frozen rule files at commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18. Architecture promotion still requires independent rediscovery of all three pre-registered mandatory regressions."
     }
   ],
   "completion_gate": {
@@ -83,14 +112,15 @@
     "microcraft_regression_schema_validator_pass": true,
     "three_book_raw_microcraft_evidence_complete": true,
     "unmodified_YMGQ_developmental_reaudit_represents_three_failures": true,
-    "fresh_context_no_hint_regression_required_for_blind_semantic_promotion": true
+    "fresh_context_no_hint_regression_required_for_blind_semantic_promotion": true,
+    "attempt1_satisfies_fresh_promotion_gate": false
   },
   "forbidden_claims": [
     "AUTOMATIC_SEMANTIC_QUALITY_VALIDATION_BY_SCHEMA_SCRIPT",
-    "FRESH_BLIND_REGRESSION_PASSED_BEFORE_NEW_CONTEXT_TEST",
+    "FRESH_BLIND_REGRESSION_PASSED_FROM_ATTEMPT1",
     "EXTERNAL_HUMAN_BLIND_VALIDATION",
     "FINAL_MANUSCRIPT_READY_BEFORE_G6D_REPAIR_AND_REVALIDATION",
     "COPYRIGHTED_SOURCE_TEXT_STORED_IN_PUBLIC_GIT"
   ],
-  "next_action": "Run the fresh-context no-hint G6D regression using the preserved unchanged historical manuscript and the prepared private handoff. Do not repair the manuscript before that fresh regression is preserved."
+  "next_action": "Run Fresh Context / No-Hint G6D Attempt 2 using the pinned machinery commit and unchanged historical manuscript. Abort on any machinery binding failure. Do not repair YMGQ before Attempt 2 is preserved and adjudicated."
 }
