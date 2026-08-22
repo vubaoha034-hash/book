@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1",
+  "phase": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING",
+  "phase_ordinal": 341,
+  "status": "RULES_HARDENED_ADVERSARIAL_BENCHMARK_ADDED_FRESH_REGRESSION_PENDING",
+  "trigger": "Valid fresh/no-hint Phase340 Attempt 2 rediscovered only 1 of 3 pre-registered mandatory failures despite correct machinery binding.",
+  "highest_accepted_checkpoint": {
+    "phase_ordinal": 320,
+    "advance": false
+  },
+  "source_attempt": {
+    "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "attempt2_report_sha256": "18a09eb61adc87f68d80a54a799d03bbe4bfd94815591aae5e2da6faf4dfb842",
+    "machinery_binding_valid": true,
+    "mandatory_rediscovery": "1/3",
+    "phase340_promotion": "REJECTED"
+  },
+  "hardening_machinery_commit": "80c7635c590821ec41c30b588c7484881b9d5a08",
+  "hardening_components": {
+    "scene_to_speech_rule": {
+      "path": "rules/scene-to-speech-microcraft.md",
+      "blob_sha": "521f063988a3b161d5855c0f11bc2c25d0933ff7",
+      "version": "V1.1"
+    },
+    "dialogue_trigger_module": {
+      "path": "modules/dialogue-trigger-anchor.md",
+      "blob_sha": "9a700b3036baae1507d06fa76a71e692de991628",
+      "version": "V1.1"
+    },
+    "local_logic_module": {
+      "path": "modules/local-logic-ledger.md",
+      "blob_sha": "9da7dd51139a5606e74053a124ae8fb22fdba1eb",
+      "version": "V1"
+    },
+    "audit_template": {
+      "path": "templates/microcraft-dialogue-audit-template.md",
+      "blob_sha": "d2bccc5e1f849bca0341a53c4b5ad1d5c354e7ed",
+      "version": "V1.1"
+    },
+    "quality_gate": {
+      "path": "config/novel-quality-gates.v3.json",
+      "blob_sha": "9bddca41853bfeb582a0b4ae83682854d8e8a393",
+      "schema_version": "3.0.1"
+    },
+    "pass_isolation": {
+      "path": "rules/pass-isolation.md",
+      "blob_sha": "551f5b7200d336efaa02bf80136d3aa27686c698"
+    },
+    "adversarial_regression": {
+      "path": "benchmark/microcraft/dialogue-regression.v2.json",
+      "blob_sha": "9a2db2a9da5208b11bc80ef26525e1b639407aa1",
+      "case_count": 20
+    },
+    "design_doc": "docs/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1.md"
+  },
+  "new_required_discriminators": [
+    "TEXTUAL_SPEAKER_GOAL_EVIDENCE",
+    "EXACT_BUNDLE_NO_READER_COUNTERFACTUAL",
+    "ATOMIC_INFORMATION_CLAIMS_WITH_LISTENER_NEED",
+    "PER_TURN_STATE_DELTA",
+    "NO_UNSUPPORTED_BLUFF_RESCUE",
+    "ORDINARY_EARLY_MID_DIALOGUE_COVERAGE"
+  ],
+  "fresh_regression_contract": {
+    "must_use_new_context": true,
+    "must_bind_exact_commit": "80c7635c590821ec41c30b588c7484881b9d5a08",
+    "must_not_read_benchmark_cases": true,
+    "must_use_unchanged_historical_manuscript": true,
+    "pre_registered_mandatory_failures_remain": ["MC-R001", "MC-R002", "MC-R003"],
+    "required_exact_rediscovery": "3/3",
+    "attempts_may_not_repeat_without_architecture_change_after_valid_failure": true
+  },
+  "remaining_blockers": ["FRESH_CONTEXT_G6D_V1_1_REGRESSION_3_OF_3"],
+  "forbidden_actions": [
+    "REPAIR_YMGQ_BEFORE_V1_1_FRESH_REGRESSION_IS_PRESERVED",
+    "RUN_REPEATED_FRESH_ATTEMPTS_ON_SAME_MACHINERY_UNTIL_LUCKY_PASS",
+    "READ_DIALOGUE_REGRESSION_V2_IN_FRESH_MANUSCRIPT_AUDIT",
+    "RELAX_PRE_REGISTERED_3_OF_3_GATE",
+    "CLAIM_LITERARY_QUALITY_FROM_SCHEMA_OR_SYNTHETIC_BENCHMARK",
+    "DEFAULT_ENABLE_NOVEL_DNA_ROUTER"
+  ],
+  "next_action": "Run one genuinely fresh/no-hint manuscript regression against immutable hardening commit 80c7635c590821ec41c30b588c7484881b9d5a08, with the three mandatory failure instances undisclosed."
+}
