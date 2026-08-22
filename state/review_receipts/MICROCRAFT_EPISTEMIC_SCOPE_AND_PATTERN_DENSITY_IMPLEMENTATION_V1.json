@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "MICROCRAFT_CALIBRATED_ARCHITECTURE_IMPLEMENTATION",
+  "phase": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION",
+  "phase_ordinal": 345,
+  "event_status": "IMPLEMENTED_FROZEN_VALIDATED_WITH_SCOPE_LIMITATION_FRESH_SEMANTIC_VALIDATION_PENDING",
+  "source_calibration": "state/review_receipts/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "implementation": {
+    "G6D_version": "1.4",
+    "quality_gate_schema": "3.0.4",
+    "epistemic_scope_module": {
+      "path": "modules/dialogue-epistemic-scope.md",
+      "blob_sha": "63b3deee052c71887db8b552f73744abe7631ab3"
+    },
+    "scene_to_speech_rule": {
+      "path": "rules/scene-to-speech-microcraft.md",
+      "blob_sha": "105e0facbad7bf489484f03a45c33f40cf83afdb"
+    },
+    "dialogue_trigger_module": {
+      "path": "modules/dialogue-trigger-anchor.md",
+      "blob_sha": "f0de6f9df32486c344f4a2e4b9675c0a1580d60b"
+    },
+    "microcraft_template": {
+      "path": "templates/microcraft-dialogue-audit-template.md",
+      "blob_sha": "b42ecc8c7248a9cf30a2ad12bf1d6d9f7b3cb2a2"
+    },
+    "quality_gate": {
+      "path": "config/novel-quality-gates.v3.json",
+      "blob_sha": "67846c3fbc0b16df70570d6998bb485d29bdd25d"
+    },
+    "G8_pattern_family_module": {
+      "path": "modules/dialogue-pattern-family-density.md",
+      "blob_sha": "0462967e9e0ae51b146c32af1eae8ae44005b497"
+    },
+    "G8_pattern_family_template": {
+      "path": "templates/dialogue-pattern-family-audit-template.md",
+      "blob_sha": "bd4c1e63906df3d40054abc2072372932b25671d"
+    },
+    "active_regression": {
+      "path": "benchmark/microcraft/epistemic-pattern-regression.v1.json",
+      "blob_sha": "c647ac83b42b4e1d1f0ed64f10dc1786b9b205e5"
+    },
+    "validator": {
+      "path": "scripts/validate_microcraft_regression.py",
+      "blob_sha": "2571bf84b999cbfbcb77a8db0a102e95e31f6ea8"
+    }
+  },
+  "calibrated_semantics": {
+    "MC_R001_equivalent": "HARD_G6D_FAIL_PRESERVED",
+    "object_fact_vs_public_knowledge": "SEPARATED",
+    "unsupported_public_knowledge": "HOLD_NOT_REVIEWER_INVENTION",
+    "pure_shared_background_mouthpiece": "HARD_G6D_FAIL_PRESERVED",
+    "single_supported_removable_banter": "NOT_AUTO_HARD_FAIL",
+    "portable_locally_plausible_cadence": "ROUTE_TO_G8_PATTERN_FAMILY",
+    "repeated_cross_character_portable_family": "G8_DENSITY_RISK",
+    "universal_numeric_density_threshold": null
+  },
+  "validation": {
+    "structure_contract": "PASS",
+    "changed_path_privacy": "PASS",
+    "full_private_exact_hash_privacy": "NOT_RUN_PRIVATE_ROOT_UNAVAILABLE",
+    "CI": "NOT_RUN_DIRECT_NOVEL_DISTILL_V1_WRITES_DO_NOT_PROVE_CI",
+    "fresh_semantic_manuscript_validation": "PENDING"
+  },
+  "historical_attempts_rewritten": false,
+  "private_manuscript_modified": false,
+  "dna_semantics_modified": false,
+  "default_dna_router_enabled": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "verdict": "PHASE345_IMPLEMENTATION_COMPLETE_READY_FOR_CALIBRATED_FRESH_VALIDATION"
+}
