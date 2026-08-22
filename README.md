@@ -66,7 +66,7 @@ templates/v3-evidence-packet-template.md
 templates/microcraft-dialogue-audit-template.md
 ```
 
-## MICROCRAFT + DIALOGUE + LOCAL LOGIC V1
+## MICROCRAFT + DIALOGUE + LOCAL LOGIC V1.1
 
 一次真实稿件在经过 V3、去 AI 与 fresh-context cold read 后仍被误判为“最终冻结”，随后人工发现三类确定问题：跨句时间语义冲突、作者嘴替式说明对白、以及无人物动机的整齐对白 ping-pong。这说明“Fresh context + 声明性检查清单”不足以做最终验收。
 
@@ -105,18 +105,31 @@ CRITICAL_DIALOGUE_HAS_NO_TRIGGER_OR_GOAL
 ACTION_BEAT_SPAM_AS_FAKE_GROUNDING
 ```
 
+### V1.1 为什么继续加固
+
+一个正确绑定冻结规则的 fresh/no-hint 实稿回归，能够独立发现跨句时间语义问题，却仍漏掉预注册的作者嘴替与空转问答。这证明局部语义链已经获得真实 fresh 证据，但对白 grounding 的判别仍过于宽松：reviewer 容易替人物想象“也许在开玩笑 / bluff / 缓和气氛”，或者用整段最终有作用来替中间空转 turn 洗白。
+
+V1.1 因此新增四个硬约束：
+
+1. **speaker goal 必须有正文定位证据**，不能由审稿人替人物发明。
+2. **exact-bundle no-reader counterfactual**：不是问“会不会说点什么”，而是问“没有读者时，会不会把这一整包信息如此完整地说给这个听者”。
+3. **atomic information claims**：多事实对白逐项检查 listener 当前是否需要；一条合理信息不能救活周围几条纯读者科普。
+4. **per-turn state delta**：工整问答逐轮检查知识、选择、任务、风险、关系、隐瞒或谈判是否变化；整段最后有用，不能倒推中间每一轮都合理。
+
+如果声称某句是在 bluff、嘴硬、转移或挑衅，也必须有场景压力或后续行为佐证。
+
 永久回归套件：
 
 ```text
-benchmark/microcraft/README.md
-benchmark/microcraft/TEST_PLAN_V1.md
 benchmark/microcraft/dialogue-regression.v1.json
-python scripts/validate_microcraft_regression.py
+benchmark/microcraft/dialogue-regression.v2.json
 ```
 
-该脚本只验证回归合同结构，不会声称机器已经自动理解任意小说的语义。真实正文仍需定位证据审计。
+V2 是 20-case 对抗性套件，专门区分：合理警告 vs 读者信息包、有证据 bluff vs reviewer 自行脑补 bluff、真正关系 banter vs 纯节拍 banter、长审讯说明 vs 无战术目的的反派口供。
 
-当前 source-book microcraft 证据为：BOOK-02 与 BOOK-03 各 30 个 raw-derived abstract Scene-to-Speech 样本；BOOK-01 canonical repaired source 的 work ID/hash 可验证，但当前私有读取平面暂时无法直接读取其 repaired 原文，因此**完整三书 raw microcraft revalidation 仍为 HOLD**。不得用旧摘要冒充第三本 raw 样本。
+这些 JSON 只固定期望分类，不代表脚本已经自动理解任意小说语义。真实正文仍需定位证据审计。
+
+当前 source-book microcraft 证据已经完成三书同 schema 覆盖：BOOK-01《射雕英雄传》、BOOK-02《诛仙》、BOOK-03《盗墓笔记【壹】》各 30 个 raw-derived abstract Scene-to-Speech 样本。BOOK-01 上传源已与冻结 canonical repaired source 做 byte-exact SHA-256 校验，并覆盖 40 回。三书证据支持现有 Scene-to-Speech 候选，但不能替代 fresh 实稿回归或外部真人盲测。
 
 ## Optional Novel DNA Router
 
@@ -182,7 +195,7 @@ state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl
 
 ### Dialogue Trigger Anchor
 
-重要对白检查 `why now / speaker goal / listener knowledge / no-reader counterfactual / aftereffect`。如果主要受益者只是读者，则优先判作者嘴替风险。
+重要对白不再只检查 `why now / speaker goal / listener knowledge / aftereffect`。V1.1 还要求：speaker goal 的正文证据、multi-fact atomic claims、listener need per claim、exact-bundle no-reader counterfactual，以及工整对白的 per-turn state delta。若主要受益者只是读者，或 PASS 依赖审稿人自行脑补人物动机，则优先判 FAIL / HOLD。
 
 ### Local Logic Ledger
 
@@ -217,82 +230,3 @@ G6D 失败时不得进入去 AI：作者嘴替不能靠润色变成 PASS，无�
 - 一次只改一个主要变量；
 - 匿名新章盲测；
 - 不提升就回滚的 Regression Gate。
-
-入口：
-
-```text
-benchmark/README.md
-benchmark/TEST_PLAN_V1.md
-benchmark/config/scoring.v1.json
-benchmark/config/upstreams.v1.json
-```
-
-结构验证：
-
-```bash
-python scripts/validate_benchmark.py
-```
-
-Benchmark 的 100 分只代表冻结测试体系内的满分；隐藏集明显下降时，必须按隐藏集结果回退，不能拿开发集满分冒充真实能力。
-
-Microcraft regression 是该体系之外的局部永久回归子套件，不与 100 分评分相加。
-
-## Novel Preprocessor V1（本地预处理）
-
-STEP-01 新增了一个与文学分析严格分离的本地预处理层。它只负责：
-
-- TXT、EPUB、DOCX、Markdown 与可提取文本 PDF 的本地解析；
-- 保守的机械清洗、章节候选检测、低置信 fallback 和人工复核标记；
-- 通过连续编号 Hard Gate 识别行尾 `第N回短标题`，同时拒绝孤立正文命中；
-- 绑定 processing fingerprint 的作品/章节确定性 ID、SHA-256 与基础去重；
-- 私有结构化章节输出、版本失效增量状态和 private-first Manifest；
-- Scene Card / Story Card 空 Schema 与 Git 私有资料防泄漏检查。
-
-新的固定工作目录是 `E:\蒸馏小说`。Git 仓库位于 `E:\蒸馏小说\repo`，原书、结构化全文、缓存和日志位于仓库外的 `E:\蒸馏小说\_private`。把有权使用的文件放入 `E:\蒸馏小说\_private\01_原始小说`，然后双击根目录的 `01_导入并预处理小说.bat`。
-
-命令行入口：
-
-```powershell
-python scripts/preprocess_novels.py --repo-root E:\蒸馏小说\repo --private-root E:\蒸馏小说\_private
-```
-
-工程与隐私验证：
-
-```powershell
-python -m unittest discover -s tests -v
-python scripts/validate_private_boundaries.py
-python scripts/validate_step01.py
-```
-
-Evidence Contract V1 固定为章节相对、0-based、end-exclusive 坐标，并要求章节/引用 Hash；重要解释性 claim 区分 `observed`、`inferred` 与 `hypothesis`。本地导出桥可按显式 work ID 生成私有、可分块重组的手工上传包：
-
-```powershell
-python scripts/export_chatgpt_packets.py --private-root E:\蒸馏小说\_private --work-id wrk_xxx
-```
-
-导出前执行 Source Integrity Gate V1：只有 `source_integrity_status=PASS` 且 `distillation_allowed=true` 的结构化作品允许生成 Packet；非 PASS 作品默认阻断，本版本没有强制绕过。
-
-详细说明见 `docs/PREPROCESSOR_V1.md`、`docs/EVIDENCE_CONTRACT_V1.md` 和 `docs/CHATGPT_PACKET_EXPORT.md`。所有程序均不调用在线 AI/API，也不会生成摘要、评分、人物分析、情绪曲线或 Novel DNA。
-
-## 安装
-
-```bash
-git clone https://github.com/vubaoha034-hash/book.git ~/.agents/skills/novel-writing-master
-```
-
-Claude Code 可安装到 `~/.claude/skills/novel-writing-master`，GitHub Copilot CLI 可安装到 `~/.copilot/skills/novel-writing-master`。
-
-## 验证
-
-```bash
-python scripts/validate_skill.py
-python scripts/validate_microcraft_regression.py
-```
-
-这些脚本只验证技能/回归合同结构。它们会明确说明：**结构验证通过不等于小说质量通过**。小说质量和 G6D 语义判断仍必须由具体文本证据证明。
-
-## 版权与隐私
-
-- 只学习抽象技法，不复制第三方作品。
-- 不模仿在世作者可识别的个人风格。
-- 不把私有原书、完整提取文本、真实稿件正文或个人审美样本提交到公开仓库。
