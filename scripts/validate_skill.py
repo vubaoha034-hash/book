@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Validate the Novel Writing Master repository structure and V3 contracts.
 
-This script validates packaging, configuration, and cross-references. It cannot
-validate whether a novel is logical, moving, satisfying, or free of AI-sounding
-prose; those claims require located evidence from the actual manuscript.
+This script validates packaging, configuration, cross-references, and the
+presence of the V3-G6D microcraft/local-logic contract. It cannot validate
+whether arbitrary prose is logical, moving, natural, or free of AI-sounding
+patterns; those claims require located manuscript evidence.
 """
 
 from __future__ import annotations
@@ -46,6 +47,7 @@ V3_REQUIRED_FILES = [
     "rules/no-ai-smell.md",
     "rules/novel-logic-checklist.md",
     "rules/reader-reward-rhythm.md",
+    "rules/scene-to-speech-microcraft.md",
     "modules/causal-proof-engine.md",
     "modules/emotion-payoff-ledger.md",
     "modules/hate-empathy-test.md",
@@ -56,11 +58,14 @@ V3_REQUIRED_FILES = [
     "modules/continuity-editor.md",
     "modules/character-pressure-test.md",
     "modules/line-editor-deslop.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/local-logic-ledger.md",
     "workflows/07-novel-master-pipeline-v3.md",
     "templates/v3-evidence-packet-template.md",
+    "templates/microcraft-dialogue-audit-template.md",
 ]
 
-REQUIRED_GATE_IDS = {f"V3-G{i}" for i in range(9)}
+REQUIRED_GATE_IDS = {f"V3-G{i}" for i in range(9)} | {"V3-G6D"}
 FORBIDDEN_SUFFICIENCY = {
     "numeric_self_score",
     "all_files_exist",
@@ -142,6 +147,9 @@ def validate_v3_config(errors: list[str]) -> None:
             "located_evidence_required",
             "self_score_is_not_evidence",
             "simulated_readers_are_not_independent",
+            "dialogue_requires_scene_grounding_evidence",
+            "semantic_time_scope_must_be_propagated",
+            "action_beat_spam_is_not_dialogue_grounding",
         ):
             if principles.get(key) is not True:
                 add_error(errors, f"V3 principle {key} must be true.")
@@ -164,13 +172,25 @@ def validate_v3_config(errors: list[str]) -> None:
         gate_id = gate.get("id", "<unknown>")
         if not gate.get("name"):
             add_error(errors, f"Gate {gate_id} has no name.")
-        evidence = gate.get("required_evidence") or gate.get(
-            "required_evidence_per_key_scene"
-        )
+        evidence = gate.get("required_evidence") or gate.get("required_evidence_per_key_scene")
         if not evidence:
             add_error(errors, f"Gate {gate_id} has no required_evidence.")
         if not gate.get("on_fail") and gate_id != "V3-G8":
             add_error(errors, f"Gate {gate_id} has no on_fail action.")
+
+    g6d = next((g for g in gates if isinstance(g, dict) and g.get("id") == "V3-G6D"), None)
+    if g6d:
+        required_codes = {
+            "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+            "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+            "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+            "CRITICAL_DIALOGUE_HAS_NO_TRIGGER_OR_GOAL",
+            "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING",
+        }
+        codes = set(g6d.get("failure_codes", []))
+        missing_codes = sorted(required_codes - codes)
+        if missing_codes:
+            add_error(errors, "V3-G6D missing failure codes: " + ", ".join(missing_codes))
 
     delivery = config.get("delivery")
     if not isinstance(delivery, dict):
@@ -179,11 +199,9 @@ def validate_v3_config(errors: list[str]) -> None:
         forbidden = set(delivery.get("never_accept_as_sufficient", []))
         missing_forbidden = sorted(FORBIDDEN_SUFFICIENCY - forbidden)
         if missing_forbidden:
-            add_error(
-                errors,
-                "Delivery rules must reject false evidence: "
-                + ", ".join(missing_forbidden),
-            )
+            add_error(errors, "Delivery rules must reject false evidence: " + ", ".join(missing_forbidden))
+        if "dialogue_grounding_and_local_semantic_logic_passed" not in set(delivery.get("allow_when", [])):
+            add_error(errors, "Delivery must require dialogue/local-semantic gate passage.")
 
 
 def validate_cross_references(errors: list[str]) -> None:
