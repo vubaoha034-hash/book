@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "ARCHITECTURE_PROMOTION_REJECTION",
+  "phase": "MICROCRAFT_ANTI_TEMPLATE_HARDENING",
+  "phase_ordinal": 343,
+  "event_status": "REJECTED_FOR_PROMOTION_UNDER_OLD_3_OF_3_GATE_WITH_REGRESSION_LABEL_VALIDITY_REVIEW_REQUIRED",
+  "attempt5_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_3_FRESH_ATTEMPT5_ADJUDICATION_V1.json",
+  "old_pre_registered_required_rediscovery": 3,
+  "observed_exact_rediscovery_under_old_labels": 2,
+  "old_promotion_result": "FAIL",
+  "reason": "Attempt5 is valid and cannot be counted as 3/3 under the old contract. However, repeated fresh disagreement around MC-R002 plus contrastive source evidence raises a benchmark-label validity issue. Further hardening solely to force the old label would risk benchmark overfitting. Phase343 therefore does not promote; the required successor is label calibration rather than another same-target hardening attempt.",
+  "capability_split": {
+    "local_semantic_logic": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "candidate_harvest": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "rhetorical_ladder_record_parity": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "social_anecdote_protection": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "public_background_hard_label": "CALIBRATION_REQUIRED",
+    "single_turn_template_hard_label": "CALIBRATION_REQUIRED_FOR_STYLE_VS_LOGIC_BOUNDARY"
+  },
+  "required_successor": {
+    "task_id": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1",
+    "phase_ordinal": 344,
+    "focus": [
+      "OBJECT_LEVEL_VS_PUBLIC_KNOWLEDGE_META_SCOPE",
+      "REPORTED_RUMOR_CONTENT_AS_INFORMATION",
+      "SINGLE_TURN_BANTER_VS_PATTERN_DENSITY",
+      "HARD_LOGIC_VS_STYLE_RISK_BOUNDARY",
+      "THREE_BOOK_CONTRASTIVE_SOURCE_EVIDENCE"
+    ]
+  },
+  "manuscript_repair_allowed": false,
+  "highest_accepted_checkpoint_unchanged": 320,
+  "accepted_checkpoint_advance": false
+}
