@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "ARCHITECTURE_PROMOTION_REJECTION",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "event_status": "REJECTED_FOR_PROMOTION_VALID_FRESH_REGRESSION_1_OF_3",
+  "attempt2_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT2_ADJUDICATION_V1.json",
+  "pre_registered_required_rediscovery": 3,
+  "observed_exact_rediscovery": 1,
+  "promotion_result": "FAIL",
+  "reason": "The first correctly bound fresh/no-hint audit independently rediscovered the temporal semantic-chain seed but missed both pre-registered dialogue failures. Continuing to repeat fresh attempts before changing the discriminator would convert the benchmark into luck-seeking and is prohibited.",
+  "capability_split": {
+    "local_semantic_logic": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "dialogue_information_carrier": "NOT_RELIABLE_ENOUGH_FOR_PROMOTION",
+    "dialogue_anti_template": "NOT_RELIABLE_ENOUGH_FOR_PROMOTION"
+  },
+  "required_successor": {
+    "task_id": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1",
+    "phase_ordinal": 341,
+    "focus": [
+      "TEXTUAL_SPEAKER_GOAL_EVIDENCE",
+      "EXACT_BUNDLE_NO_READER_COUNTERFACTUAL",
+      "ATOMIC_INFORMATION_CLAIMS",
+      "PER_TURN_STATE_DELTA",
+      "SUPPORTED_BLUFF_OR_DEFLECTION_ONLY",
+      "ORDINARY_DIALOGUE_COVERAGE"
+    ]
+  },
+  "manuscript_repair_allowed": false,
+  "highest_accepted_checkpoint_unchanged": 320,
+  "accepted_checkpoint_advance": false
+}
