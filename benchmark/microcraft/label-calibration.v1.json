@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "microcraft-regression-label-calibration-v1",
+  "purpose": "Calibrate which microcraft findings are hard G6D semantic/dialogue failures versus context-dependent HOLDs or manuscript-level style-density risks. This contract supersedes contaminated hard-label assumptions without retroactively changing historical fresh-attempt results.",
+  "copyrighted_source_text_included": false,
+  "real_manuscript_text_included": false,
+  "evidence_basis": {
+    "three_book_raw_derived_scene_to_speech_samples": 90,
+    "books": ["BOOK-01", "BOOK-02", "BOOK-03"],
+    "valid_fresh_manuscript_attempts_reviewed": [2, 3, 4, 5],
+    "historical_attempt_results_are_immutable": true,
+    "external_human_blind_validation": false
+  },
+  "legacy_seed_reclassification": [
+    {
+      "legacy_id": "MC-R001",
+      "old_label": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "calibrated_class": "HARD_G6D_FAIL",
+      "status": "PRESERVED",
+      "reason": "Explicit time/state scope is inherited through a spending/list relation and later contradicted by an incompatible explicit time. This is deterministic local semantics, not taste."
+    },
+    {
+      "legacy_id": "MC-R002",
+      "old_label": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "calibrated_class": "EPISTEMIC_SCOPE_CONTEXT_DEPENDENT",
+      "status": "SUPERSEDED_AS_MANDATORY_HARD_FAIL",
+      "reason": "The listener may know the object-level event and own role while not knowing that outsiders/public rumor also know those facts. Reported public knowledge is a distinct proposition. A warning may legitimately repeat the embedded object facts while conveying exposure, spread, arrival or risk. Redundant wording can remain a G8 economy/naturalness risk without being a hard G6D mouthpiece failure."
+    },
+    {
+      "legacy_id": "MC-R003",
+      "old_label": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "calibrated_class": "LOCAL_BANTER_CONTEXT_DEPENDENT_PLUS_PATTERN_FAMILY_DENSITY_RISK",
+      "status": "SUPERSEDED_AS_MANDATORY_SINGLE_INSTANCE_HARD_FAIL",
+      "reason": "A single rhetorical ladder can be locally credible when fear, embarrassment, relationship permission, shared history, status pressure or deflection is textually supported. AI-smell is better diagnosed when the same portable cadence family recurs across separated scenes/characters with low specificity. Hard G6D failure remains possible for truly ungrounded critical dialogue, but not merely because one joke is deletable."
+    }
+  ],
+  "epistemic_scope_model": [
+    "OBJECT_FACT",
+    "LISTENER_KNOWS_OBJECT_FACT",
+    "PUBLIC_KNOWLEDGE_OF_OBJECT_FACT",
+    "REPORTED_RUMOR_CONTENT",
+    "EVIDENCE_OF_EXPOSURE_OR_SPREAD",
+    "ACTIONABLE_RISK_FROM_PUBLIC_KNOWLEDGE"
+  ],
+  "calibrated_cases": [
+    {
+      "id": "LC-R001",
+      "name": "DETERMINISTIC_INHERITED_TIME_SCOPE_CONTRADICTION",
+      "expected_layer": "G6D",
+      "expected": "FAIL",
+      "expected_code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "scene": "Money is explicitly obtained last night. A continuing answer lists uses of that money. With no scope break, one list member is then explicitly dated two days earlier.",
+      "rationale": "Inherited semantic scope and later explicit fact cannot both be true."
+    },
+    {
+      "id": "LC-R002",
+      "name": "PUBLIC_KNOWLEDGE_IS_NEW_META_INFORMATION",
+      "expected_layer": "G6D",
+      "expected": "PASS_OR_HOLD",
+      "expected_code": null,
+      "scene": "The listener already knows event X and their own role in X. A speaker warns that the rumor circulating outside explicitly names X and the listener's role, and adds evidence that outsiders are gathering because of it.",
+      "rationale": "Knowing X is not the same as knowing that outsiders know X. Reported public knowledge and exposure risk can be new actionable information."
+    },
+    {
+      "id": "LC-R003",
+      "name": "PURE_SHARED_BACKGROUND_RESTATEMENT",
+      "expected_layer": "G6D",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "Two characters who both know the mission, role, reward and route calmly restate those facts to each other. No accusation, warning, public-exposure update, reframing, negotiation, teaching, misunderstanding or relationship purpose is present.",
+      "rationale": "There is no distinct in-scene or epistemic payload; the reader is the main beneficiary."
+    },
+    {
+      "id": "LC-R004",
+      "name": "SINGLE_DEFLECTIVE_BANTER_WITH_CONTEXT",
+      "expected_layer": "G6D",
+      "expected": "PASS_OR_HOLD",
+      "expected_code": null,
+      "scene": "A character under visible fear or relationship pressure answers a worried question with one teasing or evasive exchange. Nearby behavior supports nervous deflection, and the exchange is not carrying critical exposition.",
+      "rationale": "A single locally grounded joke is not a hard semantic failure merely because it can be shortened."
+    },
+    {
+      "id": "LC-R005",
+      "name": "REPEATED_PORTABLE_Q_RETORT_Q_PUNCHLINE_FAMILY",
+      "expected_layer": "G8_STYLE_DENSITY",
+      "expected": "RISK",
+      "expected_code": "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+      "scene": "Across separated scenes and different relationships, the manuscript repeatedly uses nearly interchangeable question-retort-followup-punchline scaffolds with similar timing, low character specificity and little dependence on current objects/history/tasks.",
+      "rationale": "The literary problem is cross-scene cadence homogenization/AI smell, not necessarily a hard local logic failure in each individual instance."
+    },
+    {
+      "id": "LC-R006",
+      "name": "VARIED_RELATIONSHIP_SPECIFIC_BANTER",
+      "expected_layer": "G8_STYLE_DENSITY",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Several humorous exchanges occur across a manuscript, but each is generated by different shared history, current object, task conflict, status asymmetry or relationship grievance, with materially different cadence and consequences.",
+      "rationale": "Humor frequency alone is not AI-template evidence when the mechanisms and voices are scene-specific."
+    }
+  ],
+  "acceptance": {
+    "historical_3_of_3_attempt_results_must_not_be_rewritten": true,
+    "MC_R001_remains_hard_regression": true,
+    "MC_R002_and_MC_R003_no_longer_valid_as_mandatory_single_instance_hard_labels": true,
+    "epistemic_level_must_be_recorded_before_mouthpiece_verdict": true,
+    "pattern_family_density_belongs_to_style_or_de_ai_evidence_unless_local_dialogue_is_independently_ungrounded": true,
+    "schema_validation_is_not_literary_quality_validation": true
+  }
+}
