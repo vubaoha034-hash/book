@@ -1,5 +1,5 @@
 {
-  "schema_version": "3.0.2",
+  "schema_version": "3.0.3",
   "skill": "novel-writing-master",
   "pipeline": "evidence-driven-staged-writing",
   "principles": {
@@ -16,6 +16,9 @@
     "action_beat_spam_is_not_dialogue_grounding": true,
     "dialogue_candidate_harvest_required": true,
     "social_anecdote_is_not_automatically_exposition": true,
+    "rhetorical_ladder_record_parity_required": true,
+    "temporary_false_state_is_not_meaningful_delta_without_goal": true,
+    "portable_wit_is_not_character_motive_by_itself": true,
     "max_high_impact_changes_per_pass": 5
   },
   "severity": {
@@ -83,8 +86,8 @@
     {
       "id": "V3-G6D",
       "name": "dialogue_grounding_and_local_semantic_logic",
-      "version": "1.2",
-      "artifacts": ["microcraft_dialogue_audit", "local_semantic_logic_ledger", "dialogue_candidate_inventory"],
+      "version": "1.3",
+      "artifacts": ["microcraft_dialogue_audit", "local_semantic_logic_ledger", "dialogue_candidate_inventory", "rhetorical_ladder_audit_records"],
       "required_evidence": [
         "candidate_inventory_complete",
         "multi_fact_bundle_coverage",
@@ -101,12 +104,18 @@
         "non_speech_option_checked",
         "dialogue_aftereffect",
         "per_turn_state_delta",
+        "rhetorical_ladder_record_parity",
+        "self_cancelling_assertion_check",
+        "induced_followup_dependency_check",
+        "counterfactual_turn_deletion_check",
+        "portable_joke_risk_check",
         "semantic_time_scope",
         "semantic_relation_chain",
         "action_beat_spam_check"
       ],
       "blockers": [
         "candidate_harvest_incomplete",
+        "rhetorical_ladder_audit_incomplete",
         "temporal_semantic_chain_conflict",
         "author_information_mouthpiece_on_critical_exposition",
         "dialogue_pingpong_without_character_motive",
@@ -115,6 +124,7 @@
       ],
       "failure_codes": [
         "DIALOGUE_CANDIDATE_HARVEST_INCOMPLETE",
+        "RHETORICAL_LADDER_AUDIT_INCOMPLETE",
         "TEMPORAL_SEMANTIC_CHAIN_FAIL",
         "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
         "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
@@ -148,6 +158,7 @@
       "opening_cold_read_completed",
       "changed_locations_rechecked",
       "dialogue_candidate_inventory_complete",
+      "rhetorical_ladder_audit_complete",
       "dialogue_grounding_and_local_semantic_logic_passed",
       "de_ai_did_not_change_story_facts"
     ],
