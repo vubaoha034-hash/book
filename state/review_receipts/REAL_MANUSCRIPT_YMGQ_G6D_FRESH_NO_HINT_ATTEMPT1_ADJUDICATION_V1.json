@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "FRESH_G6D_NO_HINT_ATTEMPT_ADJUDICATION",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "attempt": 1,
+  "status": "INVALID_FOR_PROMOTION_OBSERVED_REDISCOVERY_1_OF_3",
+  "manuscript_title": "一命过桥",
+  "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "fresh_context_claim": true,
+  "no_hint_claim": true,
+  "manuscript_modified": false,
+  "submitted_audit_verdict": "V3_G6D_FAIL",
+  "machinery_binding": {
+    "required_rule_count": 6,
+    "loaded_rule_count": 2,
+    "missing_rule_count": 4,
+    "failure_mode": "EVALUATOR_READ_DEFAULT_MAIN_AND_FOUR_REQUIRED_PHASE340_FILES_RETURNED_404",
+    "intended_ref": "novel-distill-v1",
+    "adjudication": "INVALID_FOR_ARCHITECTURE_PROMOTION",
+    "handoff_bug_owned_by_coordinator": true
+  },
+  "mandatory_rediscovery": {
+    "required_ids": ["MC-R001", "MC-R002", "MC-R003"],
+    "MC-R001": {
+      "result": "REDISCOVERED_EXACT",
+      "observed_issue": "last-night money spending-list scope conflicts with a listed person's explicitly earlier consumption"
+    },
+    "MC-R002": {
+      "result": "MISSED_REQUIRED_INSTANCE",
+      "note": "Evaluator found a different AUTHOR_INFORMATION_MOUTHPIECE-style issue at the antagonist exposition, but did not identify the locked child-to-experienced-listener background bundle instance."
+    },
+    "MC-R003": {
+      "result": "MISSED",
+      "note": "Evaluator explicitly reported zero confirmed DIALOGUE_TEMPLATE failures."
+    },
+    "exact_required_rediscovery_count": 1,
+    "required_total": 3,
+    "promotion_threshold_met": false
+  },
+  "additional_independent_findings": [
+    {
+      "code": "TEMPORAL_LOCATION_CHAIN_FAIL",
+      "description": "Stone Chongshan route/location chain conflicts between Baisha Inn / toward Luoshui and downstream claims that he came from or was already in Luoshui."
+    },
+    {
+      "code": "RELATIVE_EXECUTION_TIME_CONTRADICTION",
+      "description": "The execution epilogue states both three days before execution and tomorrow/next-day execution without a schedule change."
+    },
+    {
+      "code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL_OTHER_INSTANCE",
+      "description": "Cao Wusheng directly confirms covert-operation logic without a sufficiently established in-scene reason."
+    }
+  ],
+  "holds": [
+    "breakfast knowledge/source ambiguity",
+    "unseeded leg-wound continuity risk"
+  ],
+  "positive_evidence": {
+    "fresh_auditor_found_nonseed_logic_failures": true,
+    "fresh_auditor_preserved_scene_grounded_dialogue_strengths": true,
+    "fresh_auditor_did_not_overflag_all_short_banter": true
+  },
+  "decision": "RERUN_REQUIRED_WITH_PINNED_MACHINERY",
+  "attempt2_machinery_commit": "9a9c2f712362f37cd2cb94764ad93ebc731bec18",
+  "attempt2_requirements": [
+    "Fetch all six allowed rule files from the exact pinned commit before reading the manuscript.",
+    "Abort instead of substituting prompt summaries if any required rule file is unavailable.",
+    "Do not reveal regression IDs, known issue locations, diagnoses, or corrections to the evaluator.",
+    "Use the same unchanged manuscript SHA-256.",
+    "Do not repair the manuscript before Attempt 2 is preserved."
+  ],
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_applied": false,
+  "copyrighted_source_text_in_git": false,
+  "real_manuscript_text_in_git": false
+}
