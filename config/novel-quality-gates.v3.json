@@ -1,5 +1,5 @@
 {
-  "schema_version": "3.0.0",
+  "schema_version": "3.0.1",
   "skill": "novel-writing-master",
   "pipeline": "evidence-driven-staged-writing",
   "principles": {
@@ -14,6 +14,10 @@
     "dialogue_requires_scene_grounding_evidence": true,
     "semantic_time_scope_must_be_propagated": true,
     "action_beat_spam_is_not_dialogue_grounding": true,
+    "speaker_goal_requires_textual_evidence": true,
+    "multi_fact_dialogue_requires_atomic_listener_need_check": true,
+    "no_reader_counterfactual_tests_exact_information_bundle": true,
+    "dialogue_template_requires_per_turn_state_delta": true,
     "max_high_impact_changes_per_pass": 5
   },
   "severity": {
@@ -84,21 +88,31 @@
       "artifacts": ["microcraft_dialogue_audit", "local_semantic_logic_ledger"],
       "required_evidence": [
         "dialogue_trigger_anchor",
+        "trigger_textual_evidence",
         "speaker_in_scene_goal",
+        "speaker_goal_textual_evidence",
         "listener_knowledge_state",
-        "no_reader_counterfactual",
-        "information_carrier",
+        "atomic_information_claims",
+        "listener_need_per_claim",
+        "information_carrier_per_claim",
+        "exact_bundle_no_reader_counterfactual",
         "non_speech_option_checked",
-        "dialogue_aftereffect",
+        "dialogue_aftereffect_per_claim_or_turn",
+        "per_turn_state_delta",
+        "bluff_or_deflection_evidence_when_claimed",
         "semantic_time_scope",
         "semantic_relation_chain",
+        "ordinary_dialogue_coverage",
         "action_beat_spam_check"
       ],
       "blockers": [
         "temporal_semantic_chain_conflict",
         "author_information_mouthpiece_on_critical_exposition",
+        "multi_fact_bundle_mainly_serves_reader_without_listener_need",
         "dialogue_pingpong_without_character_motive",
+        "rhetorical_scaffold_contains_empty_middle_turns",
         "critical_dialogue_has_no_trigger_or_goal",
+        "pass_depends_on_invented_speaker_goal",
         "repair_by_action_beat_spam"
       ],
       "failure_codes": [
@@ -108,6 +122,14 @@
         "CRITICAL_DIALOGUE_HAS_NO_TRIGGER_OR_GOAL",
         "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING"
       ],
+      "adjudication_rules": {
+        "plausible_unwritten_speaker_goal_is_not_pass_evidence": true,
+        "one_grounded_claim_does_not_rescue_unneeded_fact_bundle": true,
+        "block_level_aftereffect_does_not_rescue_empty_scaffold_turns": true,
+        "would_say_something_is_not_equal_to_would_say_this_bundle": true,
+        "unsupported_bluff_or_deflection_is_not_pass_evidence": true,
+        "casual_early_mid_scene_dialogue_must_be_sampled": true
+      },
       "on_fail": "repair_local_logic_or_dialogue_grounding_then_rerun_G6D"
     },
     {
@@ -137,6 +159,6 @@
       "dialogue_grounding_and_local_semantic_logic_passed",
       "de_ai_did_not_change_story_facts"
     ],
-    "never_accept_as_sufficient": ["numeric_self_score", "all_files_exist", "all_boxes_checked", "multiple_same_context_personas_agree"]
+    "never_accept_as_sufficient": ["numeric_self_score", "all_files_exist", "all_boxes_checked", "multiple_same_context_personas_agree", "plausible_unwritten_dialogue_motive"]
   }
 }
