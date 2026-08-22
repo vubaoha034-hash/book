@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "MICROCRAFT_ANTI_TEMPLATE_HARDENING_REGRESSION_V4",
+  "phase": "MICROCRAFT_ANTI_TEMPLATE_HARDENING",
+  "phase_ordinal": 343,
+  "status": "ADVERSARIAL_CONTRACT_READY_FRESH_MANUSCRIPT_REGRESSION_PENDING",
+  "origin": {
+    "phase342_attempt4_valid": true,
+    "phase342_mandatory_rediscovery": "2/3",
+    "rediscovered": ["MC-R001", "MC-R002"],
+    "missed": ["MC-R003"],
+    "promotion": "REJECTED",
+    "attempt4_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_2_FRESH_ATTEMPT4_ADJUDICATION_V1.json"
+  },
+  "machinery_commit": "ad20a24f1b12e1545ea82e5ecd785f07d748ed79",
+  "regression_suite": {
+    "path": "benchmark/microcraft/dialogue-regression.v4.json",
+    "blob_sha": "5d457f5b41741762c83fbb695e73ae974592ec30",
+    "case_count": 16,
+    "scope": "PRIVACY_SAFE_EXPECTED_CLASSIFICATION_CONTRACT_NOT_GENERAL_LITERARY_QUALITY"
+  },
+  "targeted_failure_modes": [
+    "HARVESTED_RHETORICAL_LADDER_NOT_EXPLICITLY_JUDGED",
+    "SELF_CANCELLING_ASSERTION_COUNTED_AS_KNOWLEDGE_DELTA",
+    "INDUCED_FOLLOWUP_TREATED_AS_NATURAL_PROGRESS",
+    "GENERIC_PUNCHLINE_CADENCE_SURVIVES_TURN_DELETION",
+    "PORTABLE_WIT_MISTAKEN_FOR_CHARACTER_MOTIVE"
+  ],
+  "preserve_capabilities": [
+    "PUBLIC_BACKGROUND_MOUTHPIECE_DETECTION",
+    "SOCIAL_ANECDOTE_FALSE_POSITIVE_CONTROL",
+    "TEMPORAL_SEMANTIC_CHAIN_DETECTION",
+    "VALID_SHARED_HISTORY_BANTER",
+    "VALID_TASK_CONFLICT_HUMOR",
+    "VALID_STRATEGIC_BLUFF"
+  ],
+  "legacy_pre_registered_manuscript_failures": ["MC-R001", "MC-R002", "MC-R003"],
+  "fresh_manuscript_acceptance": {
+    "valid_machinery_binding_required": true,
+    "unchanged_manuscript_required": true,
+    "benchmark_cases_hidden_from_evaluator": true,
+    "prior_reviews_hidden_from_evaluator": true,
+    "required_exact_rediscovery": "3/3",
+    "rhetorical_ladder_record_parity_required": true,
+    "public_background_success_must_not_regress": true,
+    "social_anecdote_false_positive_control_required": true,
+    "protected_dialogue_strengths_must_be_reported": true
+  },
+  "automatic_semantic_quality_validation_proven": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
