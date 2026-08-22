@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1",
+  "phase": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION",
+  "phase_ordinal": 344,
+  "status": "ACCEPTED_CALIBRATION_COMPLETE_SUCCESSOR_IMPLEMENTATION_PENDING",
+  "trigger": "Valid Fresh Attempt5 produced another 2/3 old-label result while V1.3 successfully completed rhetorical-ladder judgment coverage; repeated disagreement and source contrast showed the benchmark labels themselves required calibration.",
+  "highest_accepted_checkpoint": {
+    "phase_ordinal": 320,
+    "advance": false
+  },
+  "inputs": {
+    "attempt5_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_3_FRESH_ATTEMPT5_ADJUDICATION_V1.json",
+    "phase343_promotion_rejection": "state/review_receipts/MICROCRAFT_ANTI_TEMPLATE_PHASE343_PROMOTION_REJECTION_V1.json",
+    "calibration_design": "docs/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.md",
+    "calibration_contract": "benchmark/microcraft/label-calibration.v1.json",
+    "calibration_benchmark": "state/benchmarks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+    "private_three_book_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0"
+  },
+  "settlement": {
+    "MC_R001": "PRESERVED_HARD_G6D_FAIL",
+    "MC_R002": "SUPERSEDED_AS_MANDATORY_HARD_FAIL_RECLASSIFIED_EPISTEMIC_SCOPE_CONTEXT_DEPENDENT",
+    "MC_R003": "SUPERSEDED_AS_MANDATORY_SINGLE_INSTANCE_HARD_FAIL_RECLASSIFIED_LOCAL_CONTEXT_PLUS_PATTERN_FAMILY_DENSITY_RISK",
+    "historical_attempt_results_preserved": true,
+    "phase343_retroactive_pass": false,
+    "old_3_of_3_contract_for_future_promotion": "SUPERSEDED_BY_CALIBRATED_CONTRACT",
+    "benchmark_overfitting_risk_if_old_labels_forced": "HIGH"
+  },
+  "evidence_conclusion": {
+    "three_book_scene_to_speech_core_supported": true,
+    "every_turn_must_change_task_state_supported": false,
+    "listener_knows_object_fact_implies_restatement_is_mouthpiece_supported": false,
+    "epistemic_scope_distinction_required": true,
+    "cross_scene_pattern_density_required_for_AI_cadence": true,
+    "universal_density_threshold_supported": false
+  },
+  "manuscript": {
+    "title": "一命过桥",
+    "historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "modified_during_phase344": false,
+    "repair_authorized": false
+  },
+  "forbidden_actions": [
+    "RETROACTIVELY_MARK_ATTEMPT5_AS_3_OF_3",
+    "CONTINUE_TUNING_V1_3_UNTIL_OLD_LABELS_MATCH",
+    "REPAIR_YMGQ_BEFORE_SUCCESSOR_ARCHITECTURE_IMPLEMENTATION_AND_VALIDATION",
+    "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD_FROM_CURRENT_PURPOSIVE_SAMPLE",
+    "STORE_PRIVATE_SOURCE_OR_MANUSCRIPT_TEXT_IN_PUBLIC_GIT",
+    "DEFAULT_ENABLE_NOVEL_DNA_ROUTER"
+  ],
+  "next_task": {
+    "task_id": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1",
+    "phase_ordinal": 345,
+    "status": "READY_NOT_STARTED",
+    "scope": "Implement the calibrated epistemic-scope model in dialogue auditing and move cross-scene portable cadence family analysis into style/de-AI evidence while preserving hard local semantic gates and legitimate social/relationship speech."
+  }
+}
