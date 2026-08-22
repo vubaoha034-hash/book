@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION",
+  "phase": "MICROCRAFT_REGRESSION_LABEL_CALIBRATION",
+  "phase_ordinal": 344,
+  "event_status": "ACCEPTED_LABEL_CALIBRATION_WITHOUT_ARCHITECTURE_PROMOTION",
+  "source_attempt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_3_FRESH_ATTEMPT5_ADJUDICATION_V1.json",
+  "source_phase_rejection": "state/review_receipts/MICROCRAFT_ANTI_TEMPLATE_PHASE343_PROMOTION_REJECTION_V1.json",
+  "calibration_artifacts": [
+    "docs/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.md",
+    "benchmark/microcraft/label-calibration.v1.json",
+    "state/benchmarks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+    "state/tasks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json"
+  ],
+  "decision": {
+    "MC_R001": {
+      "status": "PRESERVED",
+      "new_class": "HARD_G6D_FAIL"
+    },
+    "MC_R002": {
+      "status": "SUPERSEDED_AS_MANDATORY_HARD_LABEL",
+      "new_class": "EPISTEMIC_SCOPE_CONTEXT_DEPENDENT",
+      "future_rule": "Distinguish object-level knowledge from public knowledge/reported rumor/exposure before mouthpiece verdict."
+    },
+    "MC_R003": {
+      "status": "SUPERSEDED_AS_MANDATORY_SINGLE_INSTANCE_HARD_LABEL",
+      "new_class": "LOCAL_CONTEXT_DEPENDENT_PLUS_G8_PATTERN_FAMILY_DENSITY_RISK",
+      "future_rule": "A single locally grounded joke is not automatically a hard blocker; repeated portable cadence across separated scenes/characters is the stronger AI-smell signal."
+    }
+  },
+  "historical_integrity": {
+    "attempt1_through_attempt5_results_preserved": true,
+    "attempt5_reclassified_as_3_of_3": false,
+    "phase343_promotion_retroactively_allowed": false,
+    "reason": "Calibration supersedes the future promotion contract; it does not rewrite frozen historical outcomes."
+  },
+  "three_book_private_evidence_reviewed": {
+    "file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+    "sample_count": 90,
+    "supports_scene_grounding": true,
+    "supports_social_banter_and_shared_history": true,
+    "supports_every_removable_turn_as_hard_fail": false,
+    "supports_object_fact_equals_public_knowledge": false
+  },
+  "benchmark_governance": {
+    "old_3_of_3_contract_superseded_for_future_work": true,
+    "reason": "Further same-target hardening would optimize toward unstable/context-dependent labels and violate regression-gate/benchmark-overfitting principles.",
+    "new_contract": "benchmark/microcraft/label-calibration.v1.json"
+  },
+  "manuscript_modified": false,
+  "manuscript_repair_authorized": false,
+  "architecture_implementation_complete": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "verdict": "ACCEPTED_CALIBRATION_READY_FOR_PHASE345_IMPLEMENTATION"
+}
