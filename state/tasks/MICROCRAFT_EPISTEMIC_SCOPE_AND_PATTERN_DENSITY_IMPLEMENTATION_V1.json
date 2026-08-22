@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1",
+  "phase": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION",
+  "phase_ordinal": 345,
+  "status": "READY_NOT_STARTED_FROM_ACCEPTED_PHASE344_CALIBRATION",
+  "authority": {
+    "source_task": "state/tasks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+    "source_receipt": "state/review_receipts/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+    "calibrated_contract": "benchmark/microcraft/label-calibration.v1.json"
+  },
+  "scope": [
+    "Add explicit epistemic-scope fields to dialogue audit records: object fact, listener knowledge, public knowledge, reported rumor content, exposure evidence and actionable risk.",
+    "Preserve AUTHOR_INFORMATION_MOUTHPIECE_FAIL for genuinely reader-only shared setup with no distinct epistemic or scene payload.",
+    "Stop treating a single locally plausible/removable joke as an automatic G6D template blocker solely because it can be shortened.",
+    "Add cross-scene dialogue-template family clustering/density evidence to the G8/de-AI layer, including cross-character cadence homogenization and portability risk.",
+    "Preserve hard local semantic/time/knowledge gates and the social-anecdote carveout.",
+    "Add privacy-safe regression cases for epistemic-scope distinctions and pattern-family density without selecting a universal numeric density threshold."
+  ],
+  "non_goals": [
+    "Do not repair the private YMGQ manuscript in this task.",
+    "Do not rewrite historical Attempt1-5 adjudications.",
+    "Do not re-enable the old mandatory MC-R002/MC-R003 single-instance hard labels.",
+    "Do not claim general literary quality from synthetic/schema cases.",
+    "Do not modify GN-VDNA-01 semantics or default-off status."
+  ],
+  "acceptance_requirements": [
+    "G6D records epistemic level before mouthpiece verdict.",
+    "G8 records cross-scene dialogue pattern-family evidence separately from local G6D truthfulness.",
+    "MC-R001-equivalent deterministic time-scope case remains hard FAIL.",
+    "Public-knowledge meta-information case is not collapsed into known object fact.",
+    "Pure reader-only shared-background case still fails.",
+    "Single context-supported banter is not hard-failed solely for removability.",
+    "Repeated portable cadence family is surfaced as style/de-AI risk.",
+    "No universal density threshold is frozen without additional evidence.",
+    "Structure and privacy validators pass within their actual scope."
+  ],
+  "next_action": "Implement exactly this calibrated architecture as one bounded Phase345 change, then freeze a new machinery commit before any new manuscript validation.",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
