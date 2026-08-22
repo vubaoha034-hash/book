@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "status": "IN_PROGRESS_TWO_BOOK_RAW_EVIDENCE_BOOK01_SOURCE_BLOCKED",
+  "authorized_by_user": true,
+  "authorized_scope": "Invalidate the false final-quality freeze, lock permanent regressions, distill Scene-to-Speech microcraft, implement MICROCRAFT + DIALOGUE + LOCAL LOGIC gates, validate them, then re-audit the unchanged manuscript before editing it.",
+  "highest_accepted_checkpoint": {
+    "phase_ordinal": 320,
+    "status": "ACCEPTED_OPTIONAL_BOUNDED_PRODUCTION",
+    "advance": false
+  },
+  "phase330_disposition": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
+  "private_evidence": {
+    "folder_id": "181j4kdlMEoccdZlIoY5ASQB2KzujJ0xS",
+    "scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+    "copyrighted_source_text_in_git": false
+  },
+  "source_coverage": {
+    "BOOK_02_ZHUXIAN": {
+      "raw_source_readable": true,
+      "abstract_scene_to_speech_samples": 30
+    },
+    "BOOK_03_DAOMU_BIJI_YI": {
+      "raw_source_readable": true,
+      "abstract_scene_to_speech_samples": 30
+    },
+    "BOOK_01_SHEDIAO": {
+      "canonical_repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+      "canonical_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "raw_source_readable_in_current_plane": false,
+      "status": "SOURCE_BLOCKED_FOR_RAW_MICROCRAFT_SAMPLING",
+      "summary_substitution_for_raw_sampling_forbidden": true
+    }
+  },
+  "mandatory_regression_ids": [
+    "MC-R001",
+    "MC-R002",
+    "MC-R003"
+  ],
+  "planned_components": [
+    "DIALOGUE_TRIGGER_ANCHOR",
+    "SCENE_TO_SPEECH_CHAIN",
+    "NON_SPEECH_DECISION",
+    "IN_SCENE_INFORMATION_CARRIER",
+    "DIALOGUE_ANTI_TEMPLATE",
+    "LOCAL_SEMANTIC_TIME_CHAIN",
+    "NO_ACTION_BEAT_SPAM",
+    "PERMANENT_MICROCRAFT_REGRESSION_SUITE"
+  ],
+  "completion_gate": {
+    "public_architecture_integrated": true,
+    "three_mandatory_regressions_locked": true,
+    "skill_structure_validator_pass": true,
+    "benchmark_structure_validator_pass_if_contract_changed": true,
+    "microcraft_regression_schema_validator_pass": true,
+    "unmodified_YMGQ_reaudit_catches_all_three_mandatory_failures": true,
+    "BOOK01_three_book_microcraft_promotion_required_for_full_three_book_claim": true
+  },
+  "forbidden_claims": [
+    "THREE_BOOK_RAW_MICROCRAFT_VALIDATED_BEFORE_BOOK01_SOURCE_ACCESS",
+    "AUTOMATIC_SEMANTIC_QUALITY_VALIDATION_BY_SCHEMA_SCRIPT",
+    "EXTERNAL_HUMAN_BLIND_VALIDATION",
+    "FINAL_MANUSCRIPT_READY_BEFORE_REAUDIT",
+    "COPYRIGHTED_SOURCE_TEXT_STORED_IN_PUBLIC_GIT"
+  ]
+}
