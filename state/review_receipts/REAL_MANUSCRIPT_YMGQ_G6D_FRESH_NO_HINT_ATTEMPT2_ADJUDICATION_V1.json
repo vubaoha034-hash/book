@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_G6D_FRESH_NO_HINT_ADJUDICATION",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "attempt": 2,
+  "event_status": "VALID_FRESH_ATTEMPT_PROMOTION_GATE_FAIL_1_OF_3_MANDATORY_REDISCOVERED",
+  "manuscript_title": "一命过桥",
+  "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "audit_report_sha256": "18a09eb61adc87f68d80a54a799d03bbe4bfd94815591aae5e2da6faf4dfb842",
+  "audit_report_size_bytes": 28744,
+  "fresh_context_claim": true,
+  "machinery_binding": {
+    "valid": true,
+    "repository": "vubaoha034-hash/book",
+    "exact_commit": "9a9c2f712362f37cd2cb94764ad93ebc731bec18",
+    "required_file_count": 6,
+    "all_expected_blob_sha_matched": true,
+    "default_main_used": false,
+    "binding_result": "PASS"
+  },
+  "reported_G6D_verdict": "FAIL",
+  "pre_registered_mandatory_rediscovery": {
+    "required_count": 3,
+    "rediscovered_count": 1,
+    "rediscovered": [
+      {
+        "id": "MC-R001",
+        "status": "EXACT_SEMANTIC_MATCH",
+        "evaluator_label": "TEMPORAL_SEMANTIC_CHAIN_FAIL"
+      }
+    ],
+    "missed": [
+      {
+        "id": "MC-R002",
+        "status": "MISSED",
+        "reason": "The fresh evaluator did not flag the pre-registered local-child background-information bundle as AUTHOR_INFORMATION_MOUTHPIECE_FAIL."
+      },
+      {
+        "id": "MC-R003",
+        "status": "MISSED",
+        "reason": "The fresh evaluator reported no MAJOR DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE and did not flag the pre-registered alone/retort/follow-up exchange."
+      }
+    ],
+    "gate_requirement": "3_OF_3_REQUIRED",
+    "gate_result": "FAIL",
+    "post_hoc_relaxation_forbidden": true
+  },
+  "additional_findings": [
+    {
+      "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "description": "Execution timing chain: three days before execution versus tomorrow/next-day execution.",
+      "novelty_relative_to_seed_cases": "NEW_NON_SEED"
+    },
+    {
+      "code": "LOCATION_CONTINUATION_AMBIGUOUS",
+      "description": "Baisha relay / toward Luoshui / from Luoshui chain was held rather than failed because geographic containment was not established in-text.",
+      "verdict": "HOLD"
+    }
+  ],
+  "capability_adjudication": {
+    "local_semantic_logic": "PARTIAL_PASS_WITH_REAL_FRESH_EVIDENCE",
+    "dialogue_grounding_information_carrier": "FAIL_TO_RELIABLY_REDISCOVER_PRE_REGISTERED_CASE",
+    "dialogue_anti_template": "FAIL_TO_RELIABLY_REDISCOVER_PRE_REGISTERED_CASE",
+    "architecture_promotion_eligible": false,
+    "reason": "A correctly bound fresh audit rediscovered only 1 of 3 mandatory negative cases. Repeating fresh attempts until a lucky 3/3 result would be invalid benchmark practice; architecture must be hardened first."
+  },
+  "manuscript_repair_authorized_after_attempt2": false,
+  "next_required_action": "Harden dialogue-grounding discrimination using atomic information-bundle evidence, exact-bundle no-reader counterfactual, textual speaker-goal evidence, and per-turn state-delta checks before any new fresh regression or manuscript repair.",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_applied": false,
+  "real_manuscript_text_stored": false
+}
