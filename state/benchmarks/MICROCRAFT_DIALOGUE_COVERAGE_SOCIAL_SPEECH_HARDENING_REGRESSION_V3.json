@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_REGRESSION_V3",
+  "phase": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING",
+  "phase_ordinal": 342,
+  "status": "ADVERSARIAL_CONTRACT_READY_FRESH_MANUSCRIPT_REGRESSION_PENDING",
+  "origin": {
+    "phase341_attempt3_valid": true,
+    "phase341_mandatory_rediscovery": "2/3",
+    "rediscovered": ["MC-R001", "MC-R003"],
+    "missed": ["MC-R002"],
+    "false_positive_risk": "SOCIAL_ANECDOTE_MISCLASSIFIED_AS_MOUTHPIECE",
+    "promotion": "REJECTED",
+    "attempt3_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_1_FRESH_ATTEMPT3_ADJUDICATION_V1.json"
+  },
+  "machinery_commit": "4da850b210e37d11e6da3cf81fce34620789894e",
+  "regression_suite": {
+    "path": "benchmark/microcraft/dialogue-regression.v3.json",
+    "case_count": 16,
+    "scope": "PRIVACY_SAFE_EXPECTED_CLASSIFICATION_CONTRACT_NOT_GENERAL_LITERARY_QUALITY"
+  },
+  "targeted_failure_modes": [
+    "HIGH_RISK_PUBLIC_BACKGROUND_BUNDLE_NOT_HARVESTED",
+    "ONE_NEW_ACTIONABLE_FACT_RESCUES_KNOWN_SETUP_BUNDLE",
+    "SOCIAL_ANECDOTE_FALSE_POSITIVE_FROM_LISTENER_NEED_OVERREACH",
+    "MIXED_ANECDOTE_AND_PLOT_ORIENTATION_NOT_SEPARATED",
+    "RHETORICAL_LADDER_MIDDLE_TURN_EMPTY",
+    "REGRESSION_AUDIT_SAMPLES_ONLY_CLIMAX_DIALOGUE"
+  ],
+  "legacy_pre_registered_manuscript_failures": ["MC-R001", "MC-R002", "MC-R003"],
+  "fresh_manuscript_acceptance": {
+    "valid_machinery_binding_required": true,
+    "unchanged_manuscript_required": true,
+    "benchmark_cases_hidden_from_evaluator": true,
+    "prior_reviews_hidden_from_evaluator": true,
+    "required_exact_rediscovery": "3/3",
+    "candidate_inventory_complete_required": true,
+    "social_anecdote_false_positive_control_required": true,
+    "new_non_seed_findings_allowed": true,
+    "protected_dialogue_strengths_must_be_reported": true
+  },
+  "automatic_semantic_quality_validation_proven": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
