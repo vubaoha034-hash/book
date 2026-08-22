@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2",
+  "phase": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING",
+  "phase_ordinal": 342,
+  "status": "RULES_HARDENED_CANDIDATE_HARVEST_AND_SOCIAL_ANECDOTE_DISCRIMINATOR_READY_FRESH_REGRESSION_PENDING",
+  "trigger": "Valid Fresh Context G6D V1.1 Attempt 3 rediscovered 2/3 pre-registered failures, missing the public-background mouthpiece bundle and producing a false-positive risk on a first-hand social anecdote.",
+  "highest_accepted_checkpoint": {
+    "phase_ordinal": 320,
+    "advance": false
+  },
+  "source_attempt": {
+    "attempt3_report_sha256": "54d819cf9d9759fa9587f30193278761cecc34a88191e2f6b60e9ca9e4c3f43f",
+    "machinery_binding_valid": true,
+    "mandatory_rediscovery": "2/3",
+    "rediscovered": ["MC-R001", "MC-R003"],
+    "missed": ["MC-R002"],
+    "false_positive_risk": "FIRST_HAND_SOCIAL_ANECDOTE_MISCLASSIFIED_AS_MOUTHPIECE",
+    "phase341_promotion": "REJECTED"
+  },
+  "v1_2_machinery_commit": "4da850b210e37d11e6da3cf81fce34620789894e",
+  "hardening_components": {
+    "scene_to_speech_rule": {
+      "path": "rules/scene-to-speech-microcraft.md",
+      "blob_sha": "674d25d9c4d154469a6d72ce422a54ff96371ca6",
+      "version": "V1.2"
+    },
+    "dialogue_trigger_module": {
+      "path": "modules/dialogue-trigger-anchor.md",
+      "blob_sha": "4dee4cdfb5f7ced5ace00851cb8820a70c3c1c1e",
+      "version": "V1.2"
+    },
+    "local_logic_module": {
+      "path": "modules/local-logic-ledger.md",
+      "blob_sha": "9da7dd51139a5606e74053a124ae8fb22fdba1eb",
+      "version": "V1"
+    },
+    "audit_template": {
+      "path": "templates/microcraft-dialogue-audit-template.md",
+      "blob_sha": "f5b079c979314c105e5ca28df37052e4c1b3a9b9",
+      "version": "V1.2"
+    },
+    "quality_gate": {
+      "path": "config/novel-quality-gates.v3.json",
+      "blob_sha": "fdaf52773db1e951b161fd02909bc2f64f4510aa",
+      "schema_version": "3.0.2"
+    },
+    "pass_isolation": {
+      "path": "rules/pass-isolation.md",
+      "blob_sha": "c221b1517c290fbf4b711da41e7ec9010cc47185"
+    },
+    "adversarial_regression": {
+      "path": "benchmark/microcraft/dialogue-regression.v3.json",
+      "case_count": 16
+    },
+    "design_doc": "docs/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2.md"
+  },
+  "new_required_discriminators": [
+    "EXHAUSTIVE_CANDIDATE_HARVEST_BEFORE_JUDGMENT",
+    "PUBLIC_BACKGROUND_BUNDLE_HIGH_RISK_PATTERN",
+    "SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY_CARVEOUT",
+    "MIXED_BUNDLE_SEPARATION",
+    "COVERAGE_COUNTS_AND_OMISSION_REASONS"
+  ],
+  "fresh_regression_contract": {
+    "must_use_new_context": true,
+    "must_bind_exact_commit": "4da850b210e37d11e6da3cf81fce34620789894e",
+    "must_not_read_benchmark_cases": true,
+    "must_use_unchanged_historical_manuscript": true,
+    "pre_registered_mandatory_failures_remain": ["MC-R001", "MC-R002", "MC-R003"],
+    "required_exact_rediscovery": "3/3",
+    "social_anecdote_false_positive_protection_required": true,
+    "protected_natural_dialogue_must_be_reported": true,
+    "attempts_may_not_repeat_without_architecture_change_after_valid_failure": true
+  },
+  "remaining_blockers": ["FRESH_CONTEXT_G6D_V1_2_REGRESSION_3_OF_3_WITH_FALSE_POSITIVE_CONTROL"],
+  "forbidden_actions": [
+    "REPAIR_YMGQ_BEFORE_V1_2_FRESH_REGRESSION_IS_PRESERVED",
+    "RUN_REPEATED_FRESH_ATTEMPTS_ON_SAME_MACHINERY_UNTIL_LUCKY_PASS",
+    "READ_DIALOGUE_REGRESSION_V3_IN_FRESH_MANUSCRIPT_AUDIT",
+    "RELAX_PRE_REGISTERED_3_OF_3_GATE",
+    "COUNT_ALTERNATE_MOUTHPIECE_INSTANCE_AS_MC_R002",
+    "CLAIM_LITERARY_QUALITY_FROM_SCHEMA_OR_SYNTHETIC_BENCHMARK",
+    "DEFAULT_ENABLE_NOVEL_DNA_ROUTER"
+  ],
+  "next_action": "Run one genuinely fresh/no-hint manuscript regression against immutable V1.2 machinery commit 4da850b210e37d11e6da3cf81fce34620789894e, with benchmark cases and all known failure locations hidden."
+}
