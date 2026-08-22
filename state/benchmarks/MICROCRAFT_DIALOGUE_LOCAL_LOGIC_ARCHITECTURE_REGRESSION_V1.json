@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "status": "ACCEPTED_DEVELOPMENTAL_ARCHITECTURE_TWO_BOOK_EVIDENCE_BOOK01_AND_FRESH_BLIND_PENDING",
+  "purpose": "Validate that the new G6D architecture, permanent regression contract, and V3 integration are structurally coherent and can express known manuscript failures without claiming general literary-quality automation.",
+  "source_evidence": {
+    "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+    "BOOK_02_ZHUXIAN_abstract_raw_derived_samples": 30,
+    "BOOK_03_DAOMU_BIJI_YI_abstract_raw_derived_samples": 30,
+    "BOOK_01_SHEDIAO_raw_sampling_status": "SOURCE_BLOCKED_FOR_RAW_MICROCRAFT_SAMPLING",
+    "BOOK_01_canonical_work_id": "wrk_5724415a203a194f1c9a481c",
+    "BOOK_01_canonical_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+    "three_book_raw_microcraft_claim_allowed": false
+  },
+  "integrated_components": [
+    "docs/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_UPGRADE_V1.md",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/local-logic-ledger.md",
+    "templates/microcraft-dialogue-audit-template.md",
+    "config/novel-quality-gates.v3.json#V3-G6D",
+    "workflows/07-novel-master-pipeline-v3.md",
+    "rules/pass-isolation.md",
+    "SKILL.md",
+    "README.md"
+  ],
+  "permanent_regression_suite": {
+    "path": "benchmark/microcraft/dialogue-regression.v1.json",
+    "case_count": 12,
+    "mandatory_negative_ids": ["MC-R001", "MC-R002", "MC-R003"],
+    "privacy_safe": true,
+    "copyrighted_source_text_included": false,
+    "real_manuscript_text_included": false
+  },
+  "validation_results": {
+    "microcraft_regression_contract": {
+      "result": "PASS",
+      "case_count": 12,
+      "scope": "SCHEMA_IDS_LABELS_PRIVACY_CONTRACT_ONLY",
+      "ci": false
+    },
+    "G6D_config_contract": {
+      "result": "PASS",
+      "required_gate_present": true,
+      "required_principles_present": true,
+      "required_failure_codes_present": true,
+      "delivery_depends_on_G6D": true,
+      "ci": false
+    },
+    "V3_structure_validator_isolated_mirror": {
+      "result": "PASS",
+      "checked_files": 32,
+      "scope": "STRUCTURE_AND_CROSS_REFERENCE_ONLY",
+      "ci": false,
+      "quality_claim": false
+    },
+    "root_benchmark_contract_equivalent_check": {
+      "result": "PASS",
+      "scoring_schema": "1.0.2",
+      "scoring_weight_total": 100,
+      "hard_gate_count": 8,
+      "upstream_lock_preserved": true,
+      "experiment_template_preserved": true,
+      "private_ignore_boundaries_preserved": true,
+      "ci": false
+    },
+    "project_state_transition_preflight": {
+      "candidate_phase_ordinal": 340,
+      "accepted_phase_ordinal": 320,
+      "result": "PASS",
+      "reason": "forward or idempotent transition",
+      "accepted_checkpoint_advance": false
+    }
+  },
+  "known_failure_manuscript_reaudit": {
+    "manuscript": "一命过桥",
+    "source_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "context": "SAME_CONTEXT_NON_BLIND_DEVELOPMENTAL",
+    "manuscript_modified_before_reaudit": false,
+    "V3_G6D": "FAIL",
+    "known_regressions_expressed_and_located": ["MC-R001", "MC-R002", "MC-R003"],
+    "additional_non_seed_failure_found": {
+      "id": "YMGQ-G6D-004",
+      "code": "TEMPORAL_LOCATION_CHAIN_FAIL",
+      "severity": "BLOCKER"
+    },
+    "fresh_blind_rediscovery_claim_allowed": false,
+    "private_audit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg"
+  },
+  "acceptance_limits": {
+    "architecture_is_developmentally_integrated": true,
+    "blind_semantic_regression_proven": false,
+    "three_book_raw_microcraft_revalidation_complete": false,
+    "automatic_semantic_quality_validation_proven": false,
+    "production_manuscript_ready": false,
+    "external_human_validation": false
+  },
+  "remaining_hard_requirements": [
+    "Expose the canonical repaired BOOK-01 source in the current private read plane and extract at least 30 Scene-to-Speech samples with the same schema.",
+    "Run a genuinely fresh-context G6D audit of the unchanged historical manuscript without supplying known failure locations, diagnoses, or corrected wording; it must independently rediscover MC-R001, MC-R002, and MC-R003 before architecture promotion."
+  ],
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
