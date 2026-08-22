@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "microcraft-epistemic-pattern-regression-v1",
+  "purpose": "Privacy-safe active regression for calibrated G6D epistemic scope and G8 dialogue pattern-family density after Phase344 label calibration.",
+  "copyrighted_source_text_included": false,
+  "real_manuscript_text_included": false,
+  "historical_attempt_results_rewritten": false,
+  "universal_numeric_density_threshold": null,
+  "cases": [
+    {
+      "id": "EPD-R001",
+      "layer": "G6D",
+      "name": "INHERITED_TIME_SCOPE_CONTRADICTION",
+      "expected": "FAIL",
+      "expected_code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "scene": "A resource is explicitly obtained last night. A continuous spending list follows with no scope break. One listed beneficiary is then explicitly said to have been encountered two days earlier.",
+      "rationale": "The inherited temporal relation and later explicit fact cannot both be true."
+    },
+    {
+      "id": "EPD-R002",
+      "layer": "G6D",
+      "name": "KNOWN_FACT_BUT_NEW_PUBLIC_KNOWLEDGE",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "The listener knows event X and their role in X. A speaker reports that outsiders are now circulating X with the listener named, and visible arrivals show people are acting on that rumor.",
+      "rationale": "Knowing X differs from knowing that outsiders know X; exposure and spread are new actionable meta-information."
+    },
+    {
+      "id": "EPD-R003",
+      "layer": "G6D",
+      "name": "UNSUPPORTED_PUBLIC_KNOWLEDGE_CLAIM",
+      "expected": "HOLD",
+      "expected_code": null,
+      "scene": "A speaker says everyone knows the listener's secret mission, but no rumor source, outsider behavior, message, visible preparation or other exposure evidence appears in the scene or nearby context.",
+      "rationale": "The meta-knowledge proposition is possible but unsupported; the reviewer must not invent exposure evidence."
+    },
+    {
+      "id": "EPD-R004",
+      "layer": "G6D",
+      "name": "PURE_SHARED_BACKGROUND_MOUTHPIECE",
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "scene": "Two characters calmly restate a mission, role, reward and route that both already know. No public-knowledge update, warning, accusation, reframing, negotiation, teaching, misunderstanding or relationship purpose is present.",
+      "rationale": "No new object-level, meta-knowledge or scene payload exists; the reader is the primary beneficiary."
+    },
+    {
+      "id": "EPD-R005",
+      "layer": "G6D",
+      "name": "RUMOR_CONTENT_REQUIRES_EMBEDDED_KNOWN_FACT",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "A speaker warns that a circulating message explicitly says the listener will perform a known action at a known place. Repeating the action and place identifies what outsiders have learned and why the listener is exposed.",
+      "rationale": "Known object facts can be legitimately repeated as embedded content of a new report-about-knowledge proposition."
+    },
+    {
+      "id": "EPD-R006",
+      "layer": "G6D",
+      "name": "SINGLE_CONTEXT_SUPPORTED_BANTER",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Under visible relationship pressure, one character gives a brief teasing or evasive reply. Nearby behavior supports the deflection, the exchange carries no critical exposition, and no hard contradiction is created.",
+      "rationale": "A single locally grounded removable joke is not a hard G6D failure solely because a shorter reply exists."
+    },
+    {
+      "id": "EPD-R007",
+      "layer": "G6D",
+      "name": "CRITICAL_UNGROUNDED_DIALOGUE_REMAINS_HARD",
+      "expected": "FAIL",
+      "expected_code": "CRITICAL_DIALOGUE_HAS_NO_TRIGGER_OR_GOAL",
+      "scene": "A character suddenly reveals critical operational information to someone who neither asked nor needs it, with no threat, evidence, relationship pressure, negotiation, teaching or other textual trigger.",
+      "rationale": "Calibration does not weaken genuine local grounding failures for critical information."
+    },
+    {
+      "id": "EPD-R008",
+      "layer": "G8_STYLE_DENSITY",
+      "name": "REPEATED_PORTABLE_CADENCE_ACROSS_CHARACTERS",
+      "expected": "RISK",
+      "expected_code": "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+      "scene": "Separated scenes with different speaker pairs repeatedly use nearly interchangeable question-retort-followup-punchline scaffolds, similar reveal timing and little dependence on shared history, current objects or task conflict.",
+      "rationale": "The problem is cross-scene voice homogenization and portable cadence density, not necessarily a hard local logic failure in each instance."
+    },
+    {
+      "id": "EPD-R009",
+      "layer": "G8_STYLE_DENSITY",
+      "name": "VARIED_RELATIONSHIP_SPECIFIC_HUMOR",
+      "expected": "PASS",
+      "expected_code": null,
+      "scene": "Several humorous exchanges occur, but each depends on different shared history, current objects, task conflicts, status asymmetry or relationship grievances and has materially different cadence and consequences.",
+      "rationale": "Humor frequency alone does not prove template density when mechanisms and voices remain scene-specific."
+    },
+    {
+      "id": "EPD-R010",
+      "layer": "G8_STYLE_DENSITY",
+      "name": "ONE_CHARACTER_SUPPORTED_VERBAL_HABIT",
+      "expected": "HOLD",
+      "expected_code": null,
+      "scene": "One character repeatedly uses a similar evasive cadence, while other characters do not. The manuscript provides some evidence that this is the character's own coping habit, but the recurrence may still be excessive.",
+      "rationale": "Character-specific recurrence is not the same as cross-character model voice; evidence may justify either intentional voice or overuse."
+    }
+  ],
+  "acceptance": {
+    "MC_R001_equivalent_remains_hard": true,
+    "object_fact_and_public_knowledge_must_be_distinguished": true,
+    "pure_shared_background_still_fails": true,
+    "single_context_supported_banter_not_hard_failed_for_removability_alone": true,
+    "repeated_portable_family_routes_to_G8": true,
+    "no_universal_numeric_density_threshold": true,
+    "schema_validation_is_not_literary_quality_validation": true
+  }
+}
