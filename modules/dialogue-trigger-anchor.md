@@ -1,59 +1,39 @@
-# Dialogue Trigger Anchor Module V1.3
+# Dialogue Trigger Anchor Module V1.4
 
 ## Purpose
 
-Audit whether important dialogue is produced by the live scene and the speaker's purpose rather than by the author's need to brief, entertain, or transition the reader.
+Audit whether important dialogue is produced by the live scene and the speaker's purpose rather than by the author's need to brief, entertain or transition the reader.
 
-This module does **not** require an action beat before every utterance.
+This module does not require an action beat before every utterance.
 
-## Two-pass audit structure
+## Two-pass structure
 
 ### Pass 1 — candidate harvest
 
-Before judging any dialogue, inventory every located candidate that meets at least one trigger:
+Inventory every located candidate that meets at least one trigger:
 
 - a turn contains 3+ independently checkable factual claims;
-- a turn combines current event, timing, listener role, reward/stakes, rumor spread, arrival count, route, rule or consequence information;
+- a turn combines event/timing/listener role/reward/rumor spread/arrival count/route/rule/consequence information;
 - a speaker tells the listener facts about the listener's own mission or role;
 - a new topic is opened mainly through dialogue;
 - a rhetorical ladder resembles `Q -> retort -> follow-up -> punchline`;
 - an ordinary early/mid-scene line carries plot setup while appearing casual;
-- a high-information line may be a social anecdote rather than exposition.
+- a high-information line may be social anecdote rather than exposition;
+- a line reports who else knows a fact, what rumor says, or how public exposure changes risk.
 
 Record every candidate before deciding PASS/FAIL/HOLD.
 
-Required coverage fields:
+### Pass 2 — judgment
 
-```text
-candidate_inventory_count:
-candidate_audited_count:
-candidate_omitted_count:
-omitted_candidates_and_reason:
-public_background_bundle_candidates:
-social_anecdote_candidates:
-rhetorical_ladder_candidates:
-rhetorical_ladder_candidate_count:
-```
+Every harvested information/dialogue candidate gets a DTA record. Every harvested rhetorical ladder gets a dedicated ATS record.
 
-For PRE_DELIVERY / REGRESSION, selective sampling is not allowed for these candidate classes.
-
-### Pass 2 — candidate judgment
-
-Only after Pass 1 is complete, run the tests below.
-
-Every harvested rhetorical ladder must receive an explicit anti-template record. Final G6D cannot PASS unless:
+For PRE_DELIVERY / REGRESSION:
 
 `rhetorical_ladder_candidate_count == anti_template_record_count`
 
-If not, use `RHETORICAL_LADDER_AUDIT_INCOMPLETE`.
-
-## Unit of analysis
-
-Audit dialogue starts, high-information turns, suspicious rhetorical ladders, harvested ordinary exposition candidates, and possible social anecdotes. Do not only inspect climax speeches.
+Otherwise use `RHETORICAL_LADDER_AUDIT_INCOMPLETE`.
 
 ## Required DTA record
-
-For each audited information/dialogue candidate:
 
 ```text
 location:
@@ -63,29 +43,73 @@ scene_state:
 bundle_type: TASK_OR_CONFLICT_INFORMATION | PUBLIC_BACKGROUND_ORIENTATION | SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY | MIXED | UNCERTAIN
 immediate_trigger:
 trigger_textual_evidence:
-speaker_perception:
-non_speech_reaction_or_NONE:
 why_speak_now:
 speaker_in_scene_goal:
 speaker_goal_textual_evidence:
-listener_already_knows:
+object_facts:
+listener_object_fact_knowledge:
+speaker_claim_about_public_knowledge:
+listener_public_knowledge_before:
+reported_rumor_content:
+rumor_source_or_evidence:
+exposure_or_spread_evidence:
+actionable_risk_from_public_knowledge:
+epistemic_payload_delta:
+embedded_repetition_required_to_identify_meta_claim:
 atomic_information_claims:
-listener_need_per_claim:
-information_carrier_per_claim:
-reader_only_claim_count:
+reader_only_residue:
 social_value_or_NONE:
-social_value_textual_evidence_or_NONE:
 withheld_or_unsaid:
 aftereffect_per_claim_or_turn:
 exact_bundle_no_reader_counterfactual:
-bluff_or_deflection_claimed: true | false
-bluff_or_deflection_evidence_or_NONE:
 non_speech_option_checked:
-verdict:
+g8_pattern_family_candidate: true | false
+verdict: PASS | FAIL | HOLD
 failure_code:
 ```
 
-## Required anti-template record — one per harvested rhetorical ladder
+## Test A — Why now?
+
+The trigger and speaker goal require located textual evidence. A plausible motive invented by the reviewer is not evidence.
+
+## Test B — Epistemic scope before mouthpiece verdict
+
+Read `modules/dialogue-epistemic-scope.md`.
+
+Do not flatten:
+
+```text
+listener knows X
+outsiders know X
+listener knows outsiders know X
+speaker reports what outsiders are saying about X
+visible exposure/risk caused by outsiders knowing X
+```
+
+These can be different knowledge states.
+
+A character may repeat X to identify the content of a rumor or warning. Do not count that embedded repetition as reader-only automatically.
+
+If the public/exposure claim lacks evidence, use HOLD rather than inventing evidence.
+
+## Test C — Pure shared-background mouthpiece
+
+Use `AUTHOR_INFORMATION_MOUTHPIECE_FAIL` when:
+
+- listener already knows the object facts;
+- there is no new public/reported knowledge or exposure/risk payload;
+- there is no accusation, reframing, negotiation, teaching, misunderstanding, relationship act or practical task purpose;
+- the repeated facts mainly orient the reader.
+
+If a real epistemic payload exists but the line is over-complete, route pure economy/naturalness residue to G8/de-AI unless the residue independently breaks information-carrier truthfulness.
+
+## Test D — Social anecdote
+
+A social anecdote may PASS when it naturally answers/expands a person-event question, is owned by the speaker, fits the relationship and scene pressure, and creates voice/relationship texture rather than covert reader orientation.
+
+A social anecdote does not need each factual atom to change task state.
+
+## Required ATS record — one per harvested rhetorical ladder
 
 ```text
 candidate_id:
@@ -103,95 +127,48 @@ turn_3_goal_textual_evidence:
 turn_4_claim_or_function:
 turn_4_state_delta:
 turn_4_goal_textual_evidence:
-self_cancelling_assertion_present: true | false
+self_cancelling_assertion_present:
 assertion_created:
-next_turn_retracts_or_nullifies: true | false
-induced_followup_dependency: true | false
+next_turn_retracts_or_nullifies:
+induced_followup_dependency:
 counterfactual_turn_deletion_result:
-portable_generic_joke_risk: true | false
+portable_generic_joke_risk:
 relationship_or_task_specificity_evidence_or_NONE:
 bluff_or_deflection_evidence_or_NONE:
 empty_scaffold_turn_count:
+g8_pattern_family_candidate: true | false
 verdict: PASS | FAIL | HOLD
 failure_code:
 ```
 
-## Test A — Why now, with textual evidence?
+## Calibrated ATS judgment
 
-The line must have a credible current trigger. A reviewer must cite evidence for trigger and speaker goal. A plausible but unsupported motive is not evidence.
+Turn deletion, portability and self-cancellation are diagnostic evidence, not automatic hard-fail switches.
 
-## Test B — Exact-bundle no-reader counterfactual
+A locally plausible, noncritical joke/deflection may PASS or HOLD G6D when scene pressure, fear, relationship permission, status or other textual evidence supports it—even if a shorter version exists.
 
-Ask whether the speaker would say approximately this complete bundle to this listener at this moment if no reader existed.
+Use `DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE` only when the local exchange is independently ungrounded/materially misleading, such as:
 
-For `PUBLIC_BACKGROUND_ORIENTATION`, `WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE` is strong failure evidence.
+- no supported goal or relationship pressure;
+- critical information is delayed behind empty scaffold turns;
+- a false premise exists solely to induce the next question;
+- no independent scene value remains beyond portable cadence.
 
-For `SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY`, practical listener need is not required claim-by-claim; use the social-anecdote test.
-
-## Test C — Atomic information bundle
-
-Split multi-fact exposition into atomic claims. For every claim, identify listener knowledge, listener need, text-supported transmission goal, and actual aftereffect.
-
-For public-background/current-mission bundles, one legitimate trailing fact does not rescue several reader-orientation facts.
-
-## Test D — Social anecdote / relationship story
-
-A social anecdote may PASS when there is located evidence that it naturally answers/expands a person-event question, is owned by the speaker, fits the relationship and scene pressure, does not mainly restate the listener's own mission/setup, and creates voice/relationship texture rather than reader orientation.
-
-## Test E — Per-turn state delta
-
-For every harvested rhetorical ladder, evaluate every turn and emit the dedicated anti-template record.
-
-A valid state delta changes or deliberately manipulates knowledge, choice, task/action state, risk, relationship permission/pressure, concealment/misdirection, or negotiation position.
-
-“Sounds like the character”, “is funny”, “keeps rhythm”, “made the listener briefly wonder”, or “sets up the next question” are not sufficient by themselves.
-
-### E1 — Self-cancelling assertion
-
-If a retort introduces or strongly implies proposition P and later turns immediately reveal the speaker has no basis for P, do not count the temporary belief in P as a meaningful delta unless a text-supported bluff, concealment, deterrence, face-saving, provocation, protection, relationship or task goal exists.
-
-### E2 — Induced-follow-up dependency
-
-Flag when the next question exists mainly because the retort manufactured an uncertainty/false premise that the punchline immediately retracts or nullifies, with no independent scene goal.
-
-### E3 — Counterfactual turn deletion
-
-Mentally remove the suspicious retort and its induced follow-up.
-
-If the scene can move directly to the truthful/useful line with no loss of task information, necessary knowledge, relationship pressure, concealment, negotiation or character-specific history—and only generic joke cadence is lost—the removed turns are template-risk.
-
-### E4 — Portability
-
-If a retort/punchline could be moved to unrelated characters and situations nearly unchanged, mark portable-joke risk. Portability alone is not automatic FAIL, but it cannot substitute for character motive.
-
-Relationship-specific banter may PASS when shared history, current object/task, prior grievance, status asymmetry or later relationship action is located.
-
-## Test F — Aftereffect
-
-Block-level aftereffect cannot retroactively justify empty scaffold turns. A later useful line does not rescue an earlier turn that existed only to manufacture the next question.
-
-## Listener-knowledge test
-
-Do not let characters explain shared plot background to one another solely for the reader. Do not apply this mechanically to first-hand social anecdotes.
-
-## Bluff / deflection test
-
-Bluff/deflection is valid only when scene pressure or later behavior supports deterrence, concealment, face-saving, provocation or protection. Unsupported “maybe bluffing” is reviewer rescue.
+If local grounding is adequate but portability/generic cadence remains suspicious, set `g8_pattern_family_candidate=true` and defer density judgment to `modules/dialogue-pattern-family-density.md`.
 
 ## Non-speech alternatives
 
-Before accepting a reply, explicitly consider silence, delayed answer, incomplete answer, interruption, deflection, visible action, change of subject, lie or refusal to explain.
+Before accepting a reply, consider silence, delayed answer, incomplete answer, interruption, deflection, visible action, change of subject, lie or refusal.
 
 ## Repair order
 
-1. Confirm candidate harvest and rhetorical-ladder record parity.
-2. Delete empty scaffold turns before rewriting wording.
-3. Separate reader-only public-background claims from legitimate lines.
-4. Preserve legitimate social anecdote/relationship texture.
-5. Move information to a real trigger/evidence moment.
-6. Use silence/partial answer/deflection where pressure supports it.
-7. Only then consider wording.
+1. Resolve deterministic local semantic failures.
+2. Confirm epistemic scope before deleting repeated known facts.
+3. Remove pure reader-only shared setup.
+4. Preserve legitimate social anecdote and locally grounded banter.
+5. Route portable/generic but locally plausible cadence to G8 family analysis.
+6. Only then consider wording.
 
 ## Anti-fix
 
-Never repair lack of grounding by adding generic gestures before each quote. `ACTION_BEAT_SPAM_AS_FAKE_GROUNDING` is itself a failure.
+Never repair lack of grounding by adding generic gestures before each quote. `ACTION_BEAT_SPAM_AS_FAKE_GROUNDING` remains a failure.
