@@ -1,23 +1,29 @@
-# Microcraft Dialogue / Local Logic Audit V1.1
+# Microcraft Dialogue / Local Logic Audit V1.2
 
 ## Scope
 
 Manuscript / scene:
 Audit mode: DEVELOPMENT | PRE_DELIVERY | REGRESSION
 Reviewer context: SAME_CONTEXT | FRESH_CONTEXT | HUMAN
-Machinery commit / rule version:
+Machinery version / commit:
 
-## Coverage declaration
+## Pass 1 — Candidate inventory
 
 ```text
-full_manuscript_scanned: true | false
-ordinary_dialogue_starts_sampled:
-high_information_turns_sampled:
-rhetorical_ladders_sampled:
-known_answers_or_regression_cases_read: true | false
+candidate_inventory_count:
+candidate_audited_count:
+candidate_omitted_count:
+omitted_candidates_and_reason:
+public_background_bundle_candidates:
+social_anecdote_candidates:
+rhetorical_ladder_candidates:
+ordinary_early_mid_candidates:
+coverage_complete: true | false
 ```
 
-Do not sample only climaxes. Casual early/mid-scene exposition and banter must be represented.
+Inventory every turn/block that meets the frozen candidate-harvest criteria before judging any candidate.
+
+A PRE_DELIVERY or REGRESSION audit cannot PASS with `coverage_complete=false`.
 
 ## Dialogue Trigger Anchor records
 
@@ -28,6 +34,7 @@ location:
 speaker:
 listener:
 scene_state:
+bundle_type: TASK_OR_CONFLICT_INFORMATION | PUBLIC_BACKGROUND_ORIENTATION | SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY | MIXED | UNCERTAIN
 immediate_trigger:
 trigger_textual_evidence:
 speaker_perception:
@@ -37,14 +44,13 @@ speaker_in_scene_goal:
 speaker_goal_textual_evidence:
 listener_already_knows:
 atomic_information_claims:
-  - claim:
-    listener_knows: YES | NO | PARTIAL
-    listener_needs_now: YES | NO | UNCERTAIN
-    speaker_reason_to_transmit_now:
-    information_carrier:
-    aftereffect:
+listener_need_per_claim:
+information_carrier_per_claim:
 reader_only_claim_count:
+social_value_or_NONE:
+social_value_textual_evidence_or_NONE:
 withheld_or_unsaid:
+aftereffect_per_claim_or_turn:
 exact_bundle_no_reader_counterfactual: WOULD_SAY_THIS_BUNDLE | WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE | WOULD_NOT_SAY | UNCERTAIN
 bluff_or_deflection_claimed: true | false
 bluff_or_deflection_evidence_or_NONE:
@@ -53,7 +59,42 @@ verdict: PASS | FAIL | HOLD
 failure_code:
 ```
 
-A PASS may not rely on an invented speaker goal. `speaker_goal_textual_evidence` is mandatory for high-information turns.
+Duplicate for each harvested candidate.
+
+## Public-background bundle audit
+
+For any turn combining several of event/time/listener-role/reward/rumor/outsider-count/route/rule facts:
+
+```text
+location:
+claim_count:
+claims_listener_already_knows:
+claims_listener_needs_now:
+claims_with_text_supported_transmission_goal:
+claims_whose_main_beneficiary_is_reader:
+one_new_claim_rescuing_bundle_attempted: true | false
+exact_bundle_verdict:
+verdict:
+failure_code:
+```
+
+## Social anecdote audit
+
+For a possible anecdote/gossip/relationship story:
+
+```text
+location:
+directly_responsive_to_person_or_event_question:
+firsthand_or_owned_story:
+relationship_supports_social_sharing:
+scene_has_room_for_social_detail:
+mainly_restates_listener_own_mission_or_setup:
+voice_or_relationship_value:
+reader_orientation_payload_present:
+verdict:
+```
+
+Do not fail social detail merely because it is not task-essential.
 
 ## Local Semantic Logic records
 
@@ -76,25 +117,20 @@ repair_target:
 
 ## Anti-template scan
 
-### ATS-001
-
 ```text
 sequence_location:
 sequence_shape:
-turns:
-  - turn:
-    speaker_goal:
-    speaker_goal_textual_evidence:
-    state_delta:
-    delta_type: KNOWLEDGE | CHOICE | TASK | RISK | RELATIONSHIP | CONCEALMENT | NEGOTIATION | NONE
-    bluff_or_deflection_evidence_or_NONE:
-block_level_aftereffect:
+turn_1_state_delta:
+turn_2_state_delta:
+turn_3_state_delta:
+turn_4_state_delta:
+character_goal_per_turn:
+bluff_or_deflection_evidence_or_NONE:
+relationship_or_information_change:
 empty_scaffold_turn_count:
 verdict: PASS | FAIL | HOLD
 failure_code:
 ```
-
-Do not let a useful final line rescue empty middle turns. Humor/rhythm alone is not `state_delta`.
 
 ## Action-beat-spam check
 
@@ -110,13 +146,17 @@ verdict:
 
 ```text
 V3-G6D: PASS | FAIL | HOLD
+coverage_complete:
+candidate_inventory_count:
+candidate_audited_count:
+public_background_bundle_failures:
+social_anecdote_false_positive_risks:
+per_turn_template_failures:
+semantic_chain_failures:
 open_blockers:
 open_majors:
-exact_bundle_mouthpiece_failures:
-per_turn_dialogue_template_failures:
-semantic_chain_failures:
 protected_strengths:
 next_action:
 ```
 
-A numeric score is not evidence. A schema-complete form is not evidence. Every PASS must cite located manuscript evidence; every claimed speaker goal must cite textual support.
+A numeric score is not evidence. A schema-complete form is not evidence. Every PASS must cite located manuscript evidence.
