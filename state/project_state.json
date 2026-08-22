@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-22T13:01:00+08:00",
+  "updated_at": "2026-08-22T14:18:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -92,30 +92,32 @@
     "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2",
-    "phase": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING",
-    "phase_ordinal": 342,
-    "status": "RULES_HARDENED_ADVERSARIAL_BENCHMARK_READY_FRESH_V1_2_REGRESSION_PENDING",
-    "execution_scope": "Harden candidate coverage and distinguish public-background exposition from legitimate social anecdote after valid V1.1 fresh regression reached 2/3 but missed MC-R002 and showed a social-anecdote false-positive risk.",
+    "task_id": "MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3",
+    "phase": "MICROCRAFT_ANTI_TEMPLATE_HARDENING",
+    "phase_ordinal": 343,
+    "status": "RULES_HARDENED_ADVERSARIAL_BENCHMARK_READY_FRESH_V1_3_REGRESSION_PENDING",
+    "execution_scope": "Harden rhetorical-ladder judgment coverage after valid V1.2 fresh regression rediscovered MC-R001 and MC-R002 but missed MC-R003 despite harvesting that block as a rhetorical-ladder candidate.",
     "inputs": {
-      "phase341_task": "state/tasks/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1.json",
-      "phase341_promotion_rejection": "state/review_receipts/MICROCRAFT_DIALOGUE_GROUNDING_PHASE341_PROMOTION_REJECTION_V1.json",
-      "attempt3_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_1_FRESH_ATTEMPT3_ADJUDICATION_V1.json",
       "phase342_task": "state/tasks/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2.json",
-      "phase342_benchmark": "state/benchmarks/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_REGRESSION_V3.json",
-      "design_doc": "docs/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2.md",
-      "adversarial_suite": "benchmark/microcraft/dialogue-regression.v3.json",
+      "phase342_promotion_rejection": "state/review_receipts/MICROCRAFT_DIALOGUE_COVERAGE_PHASE342_PROMOTION_REJECTION_V1.json",
+      "attempt4_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_2_FRESH_ATTEMPT4_ADJUDICATION_V1.json",
+      "phase343_task": "state/tasks/MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3.json",
+      "phase343_benchmark": "state/benchmarks/MICROCRAFT_ANTI_TEMPLATE_HARDENING_REGRESSION_V4.json",
+      "design_doc": "docs/MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3.md",
+      "adversarial_suite": "benchmark/microcraft/dialogue-regression.v4.json",
       "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0"
     },
-    "phase341_settlement": {
-      "attempt3_machinery_binding_valid": true,
-      "attempt3_manuscript_hash_valid": true,
-      "attempt3_G6D": "FAIL",
+    "phase342_settlement": {
+      "attempt4_machinery_binding_valid": true,
+      "attempt4_manuscript_hash_valid": true,
+      "attempt4_G6D": "FAIL",
       "mandatory_exact_rediscovery": "2/3",
-      "rediscovered": ["MC-R001", "MC-R003"],
-      "missed": ["MC-R002"],
-      "alternate_mouthpiece_instance_substitution_allowed": false,
-      "social_anecdote_false_positive_risk": true,
+      "rediscovered": ["MC-R001", "MC-R002"],
+      "missed": ["MC-R003"],
+      "public_background_bundle_discriminator": "VALID_FRESH_SUCCESS",
+      "social_anecdote_false_positive_control": "VALID_FRESH_SUCCESS",
+      "candidate_harvest": "VALID_FRESH_SUCCESS",
+      "dialogue_anti_template": "MISS_AFTER_SUCCESSFUL_HARVEST",
       "promotion": "REJECTED",
       "repeat_attempts_without_architecture_change_forbidden": true
     },
@@ -126,30 +128,38 @@
       "three_book_raw_microcraft_revalidation_complete": true
     },
     "hardening": {
-      "machinery_commit": "4da850b210e37d11e6da3cf81fce34620789894e",
-      "quality_gate_schema": "3.0.2",
+      "machinery_commit": "ad20a24f1b12e1545ea82e5ecd785f07d748ed79",
+      "quality_gate_schema": "3.0.3",
       "adversarial_case_count": 16,
       "required_discriminators": [
-        "EXHAUSTIVE_CANDIDATE_HARVEST_BEFORE_JUDGMENT",
-        "PUBLIC_BACKGROUND_BUNDLE_HIGH_RISK_PATTERN",
-        "SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY_CARVEOUT",
-        "MIXED_BUNDLE_SEPARATION",
-        "COVERAGE_COUNTS_AND_OMISSION_REASONS"
+        "RHETORICAL_LADDER_RECORD_PARITY",
+        "SELF_CANCELLING_ASSERTION",
+        "INDUCED_FOLLOWUP_DEPENDENCY",
+        "COUNTERFACTUAL_TURN_DELETION",
+        "PORTABLE_GENERIC_JOKE_RISK",
+        "VALID_BANTER_FALSE_POSITIVE_CONTROL"
+      ],
+      "preserved_v1_2_capabilities": [
+        "PUBLIC_BACKGROUND_BUNDLE_DETECTION",
+        "SOCIAL_ANECDOTE_PROTECTION",
+        "EXHAUSTIVE_CANDIDATE_HARVEST",
+        "LOCAL_SEMANTIC_TIME_CHAIN"
       ]
     },
     "validation": {
-      "phase341_valid_fresh_regression": "PROMOTION_FAIL_2_OF_3_WITH_FALSE_POSITIVE_RISK",
-      "V1_2_rule_integration": "COMPLETE_PENDING_FRESH_SEMANTIC_VALIDATION",
+      "phase342_valid_fresh_regression": "PROMOTION_FAIL_2_OF_3_ANTI_TEMPLATE_MISS",
+      "V1_3_rule_integration": "COMPLETE_PENDING_FRESH_SEMANTIC_VALIDATION",
       "adversarial_regression_contract": "16_CASE_CONTRACT_CREATED_NOT_GENERAL_QUALITY_PROOF"
     },
-    "remaining_blockers": ["FRESH_CONTEXT_G6D_V1_2_REGRESSION_3_OF_3_WITH_FALSE_POSITIVE_CONTROL"],
-    "next_action": "Run one genuinely fresh/no-hint G6D regression against immutable V1.2 machinery commit 4da850b210e37d11e6da3cf81fce34620789894e. Do not reveal benchmark cases, prior diagnoses, failure locations or corrected wording. Require exact rediscovery of all three pre-registered failures and no unsupported social-anecdote false positive before promotion.",
+    "remaining_blockers": ["FRESH_CONTEXT_G6D_V1_3_REGRESSION_3_OF_3_WITH_FALSE_POSITIVE_CONTROL"],
+    "next_action": "Run one genuinely fresh/no-hint G6D regression against immutable V1.3 machinery commit ad20a24f1b12e1545ea82e5ecd785f07d748ed79. Keep benchmark cases, prior diagnoses, failure locations and corrected wording hidden. Require exact 3/3 rediscovery, rhetorical-ladder record parity, preservation of the V1.2 public-background success and no unsupported social-anecdote false positive.",
     "forbidden_actions": [
-      "REPAIR_YMGQ_BEFORE_V1_2_FRESH_REGRESSION_IS_PRESERVED",
+      "REPAIR_YMGQ_BEFORE_V1_3_FRESH_REGRESSION_IS_PRESERVED",
       "RUN_REPEATED_FRESH_ATTEMPTS_ON_SAME_MACHINERY_UNTIL_LUCKY_PASS",
-      "READ_DIALOGUE_REGRESSION_V3_IN_FRESH_MANUSCRIPT_AUDIT",
+      "READ_DIALOGUE_REGRESSION_V4_IN_FRESH_MANUSCRIPT_AUDIT",
       "RELAX_PRE_REGISTERED_3_OF_3_GATE",
-      "COUNT_ALTERNATE_MOUTHPIECE_INSTANCE_AS_MC_R002",
+      "COUNT_TEMPORARY_FALSE_STATE_AS_DELTA_WITHOUT_SUPPORTED_GOAL",
+      "COUNT_ALTERNATE_TEMPLATE_INSTANCE_AS_MC_R003",
       "CLAIM_SCHEMA_OR_SYNTHETIC_CASES_PROVE_LITERARY_QUALITY",
       "STORE_COPYRIGHTED_SOURCE_TEXT_IN_PUBLIC_GIT",
       "STORE_REAL_MANUSCRIPT_TEXT_IN_PUBLIC_GIT",
@@ -164,7 +174,7 @@
       "phase_ordinal": 330,
       "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
       "reason": "A real-manuscript final-quality freeze produced validation false negatives. System-level local semantic/dialogue validation must be repaired before further production-outcome accumulation is treated as trustworthy.",
-      "resume_condition": "Phase342 fresh regression gate closed or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
+      "resume_condition": "Phase343 fresh regression gate closed or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
     }
   ],
   "manuscript_quality_state": {
@@ -177,7 +187,8 @@
       "fresh_attempt1_promotion_status": "INVALID",
       "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3",
       "fresh_attempt3_promotion_status": "VALID_TEST_FAILED_2_OF_3_WITH_FALSE_POSITIVE_RISK",
-      "repair_blocked_by_phase342": true
+      "fresh_attempt4_promotion_status": "VALID_TEST_FAILED_2_OF_3_ANTI_TEMPLATE_MISS",
+      "repair_blocked_by_phase343": true
     }
   },
   "rollback": {
@@ -217,7 +228,8 @@
     "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1",
     "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1",
     "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
-    "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1"
+    "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1",
+    "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
