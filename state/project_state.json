@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-21T20:54:00+08:00",
+  "updated_at": "2026-08-22T08:53:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -92,57 +92,68 @@
     "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1",
-    "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
-    "phase_ordinal": 330,
-    "status": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_REAL_MANUSCRIPT_USE",
-    "execution_scope": "ACCUMULATE_PRIVACY_SAFE_OUTCOMES_ONLY_WHEN_A_REAL_MANUSCRIPT_DNA_CALL_ACTUALLY_OCCURS_DO_NOT_FORCE_CALLS",
+    "task_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
+    "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+    "phase_ordinal": 340,
+    "status": "STRUCTURE_INTEGRATED_DEVELOPMENTAL_REGRESSION_PASS_BOOK01_AND_FRESH_BLIND_PENDING",
+    "execution_scope": "Complete evidence-backed Scene-to-Speech, dialogue-grounding, and local-semantic-logic architecture validation before any repair of the invalidated historical manuscript candidate.",
     "inputs": {
-      "production_governance": "state/production/NOVEL_DNA_ROUTER_PRODUCTION_GOVERNANCE_V1.json",
-      "governance_contract": "docs/NOVEL_DNA_BOUNDED_PRODUCTION_GOVERNANCE_V1.md",
-      "real_use_ledger": "state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl",
-      "router": "rules/novel-dna-routing.md",
-      "call_record_template": "templates/dna-call-record-template.md",
-      "stable_global_id": "GN-VDNA-01"
+      "task_manifest": "state/tasks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
+      "architecture_receipt": "state/review_receipts/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
+      "architecture_benchmark": "state/benchmarks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1.json",
+      "final_freeze_invalidation_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
+      "developmental_reaudit_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_DEVELOPMENTAL_REAUDIT_V1.json",
+      "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+      "private_developmental_reaudit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg"
     },
-    "activation_condition": "A real user manuscript task reaches the optional Router and produces an APPLIED call or a post-use disposition that must be audited.",
-    "event_contract": {
-      "do_not_invent_real_manuscript": true,
-      "do_not_force_dna_call_for_progress": true,
-      "default_enabled_remains_false": true,
-      "problem_evidence_required": true,
-      "simpler_fix_precedence_required": true,
-      "call_record_required_for_applied": true,
-      "post_use_validation_required": true,
-      "append_privacy_safe_metadata_to_real_use_ledger": true,
-      "real_manuscript_text_in_git_forbidden": true,
-      "rollback_failed_or_harmful_call": true,
-      "pause_system_on_severe_governance_failure": true
+    "source_coverage": {
+      "BOOK_02_samples": 30,
+      "BOOK_03_samples": 30,
+      "BOOK_01_status": "SOURCE_BLOCKED_FOR_RAW_MICROCRAFT_SAMPLING"
     },
+    "validation": {
+      "microcraft_regression_contract": "PASS_NON_CI",
+      "G6D_config_contract": "PASS_NON_CI",
+      "V3_structure_isolated_mirror": "PASS_32_FILES_NON_CI",
+      "root_benchmark_contract_equivalent": "PASS_NON_CI",
+      "developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE"
+    },
+    "known_required_regressions": ["MC-R001", "MC-R002", "MC-R003"],
+    "additional_developmental_failure": "YMGQ-G6D-004_TEMPORAL_LOCATION_CHAIN_FAIL",
+    "remaining_blockers": [
+      "BOOK01_CANONICAL_RAW_MICROCRAFT_SAMPLING_AT_LEAST_30",
+      "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS"
+    ],
+    "next_action": "Obtain readable access to the canonical repaired BOOK-01 source and run at least 30 raw-derived Scene-to-Speech samples; separately run a genuinely fresh-context no-hint G6D re-audit of the unchanged historical manuscript before any text repair.",
     "forbidden_actions": [
-      "RERUN_ACCEPTED_BOOK_PHASES",
-      "RERUN_PHASE170_PAIR_COMPARISONS",
-      "RERUN_PHASE250_PAIR_COMPARISONS",
-      "RERUN_PHASE270_OR_PHASE310_SYNTHETIC_BENCHMARK_TO_FAKE_REAL_USE",
-      "INVENT_REAL_MANUSCRIPT_OUTCOME",
-      "FORCE_DNA_CALL_TO_ADVANCE_PHASE",
-      "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE",
-      "BROADEN_GN_VDNA_01",
-      "DEFAULT_ENABLE_NOVEL_DNA_ROUTER",
-      "AUTO_APPLY_GLOBAL_DNA_TO_ALL_WRITING",
-      "LOAD_ALL_DNA_INTO_PROSE_CONTEXT",
-      "PROMOTE_CBDNA_C01_TO_GLOBAL",
-      "PROMOTE_CBDNA_C03_TO_GLOBAL",
-      "PROMOTE_CBDNA_C04_TO_GLOBAL",
-      "CLAIM_EXTERNAL_BLIND_VALIDATION",
-      "CLAIM_UNIVERSAL_PRODUCTION_IMPROVEMENT",
+      "REPAIR_YMGQ_BEFORE_FRESH_G6D_REGRESSION_INPUT_IS_PRESERVED",
+      "CLAIM_THREE_BOOK_RAW_MICROCRAFT_VALIDATION_WITHOUT_BOOK01_RAW_SAMPLING",
+      "CLAIM_FRESH_BLIND_G6D_PASS_FROM_SAME_CONTEXT_REAUDIT",
+      "CLAIM_SCHEMA_VALIDATION_PROVES_LITERARY_QUALITY",
+      "STORE_COPYRIGHTED_SOURCE_TEXT_IN_PUBLIC_GIT",
       "STORE_REAL_MANUSCRIPT_TEXT_IN_PUBLIC_GIT",
-      "STYLE_IMITATION",
-      "PLOT_COPYING",
-      "SOURCE_MODIFICATION",
-      "CODEX_LITERARY_ANALYSIS",
-      "REWRITE_EXISTING_LOCAL_DIVERGED_BRANCH"
+      "DEFAULT_ENABLE_NOVEL_DNA_ROUTER",
+      "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE"
     ]
+  },
+  "parked_tasks": [
+    {
+      "task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1",
+      "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION",
+      "phase_ordinal": 330,
+      "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
+      "reason": "A real-manuscript final-quality freeze produced validation false negatives. System-level local semantic/dialogue validation must be repaired before further production-outcome accumulation is treated as trustworthy.",
+      "resume_condition": "Phase340 evidence blockers closed or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
+    }
+  ],
+  "manuscript_quality_state": {
+    "一命过桥": {
+      "historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+      "status": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED",
+      "reason": "VALIDATION_FALSE_NEGATIVE_MICROCRAFT_DIALOGUE_LOCAL_SEMANTIC_LOGIC",
+      "repair_started_after_invalidation": false,
+      "V3_G6D": "FAIL"
+    }
   },
   "rollback": {
     "authorized": false,
