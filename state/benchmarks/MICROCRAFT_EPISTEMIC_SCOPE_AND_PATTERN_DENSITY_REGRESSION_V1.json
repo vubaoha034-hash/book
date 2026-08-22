@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_REGRESSION_V1",
+  "phase": "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION",
+  "phase_ordinal": 345,
+  "status": "STRUCTURE_CONTRACT_PASS_PRIVACY_SCOPE_PASS_FRESH_SEMANTIC_VALIDATION_PENDING",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "active_regression": {
+    "path": "benchmark/microcraft/epistemic-pattern-regression.v1.json",
+    "blob_sha": "c647ac83b42b4e1d1f0ed64f10dc1786b9b205e5",
+    "case_count": 10,
+    "scope": "PRIVACY_SAFE_EXPECTED_LAYER_AND_CLASSIFICATION_CONTRACT"
+  },
+  "calibration_contract": "benchmark/microcraft/label-calibration.v1.json",
+  "structure_validation": {
+    "status": "PASS",
+    "mode": "ISOLATED_MIRROR_OF_PERSISTED_PHASE345_CONTRACTS",
+    "checks": [
+      "config JSON parse",
+      "active regression JSON parse",
+      "MC-R001-equivalent remains hard TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "known object fact vs public knowledge distinction",
+      "pure shared background remains mouthpiece FAIL",
+      "single context-supported banter not hard-failed for removability alone",
+      "repeated portable cadence routes to G8 DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+      "universal numeric density threshold remains null"
+    ],
+    "validator_logic": "scripts/validate_microcraft_regression.py",
+    "result": "Microcraft calibrated regression contract PASSED (10 active cases)",
+    "limitation": "Container could not resolve github.com, so the validator was executed in an isolated mirror using the Phase345 persisted contract content; GitHub connector separately re-fetched the persisted files and SHAs."
+  },
+  "privacy_validation": {
+    "status": "PASS_WITH_SCOPE_LIMITATION",
+    "changed_public_paths_checked": 16,
+    "forbidden_path_findings": 0,
+    "private_root_available_in_runtime": false,
+    "exact_private_source_hash_comparison_run": false,
+    "reason": "The current runtime does not mount E:/蒸馏小说/_private or an equivalent private-root corpus. Full exact-content leakage comparison cannot be claimed.",
+    "public_benchmark_flags": {
+      "copyrighted_source_text_included": false,
+      "real_manuscript_text_included": false
+    }
+  },
+  "fresh_semantic_validation": {
+    "status": "PENDING",
+    "required": true,
+    "historical_old_3_of_3_contract": "SUPERSEDED_BY_PHASE344_CALIBRATION"
+  },
+  "general_literary_quality_proven": false,
+  "universal_density_threshold_proven": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
