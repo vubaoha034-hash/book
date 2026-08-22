@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_SETTLEMENT",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "event_status": "STRUCTURE_INTEGRATED_DEVELOPMENTAL_REGRESSION_PASS_BOOK01_AND_FRESH_BLIND_PENDING",
+  "authorized_by_user": true,
+  "final_freeze_invalidation_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
+  "architecture_benchmark": "state/benchmarks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1.json",
+  "developmental_reaudit_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_DEVELOPMENTAL_REAUDIT_V1.json",
+  "public_architecture_integrated": true,
+  "permanent_regressions_locked": ["MC-R001", "MC-R002", "MC-R003"],
+  "source_evidence": {
+    "BOOK_02_samples": 30,
+    "BOOK_03_samples": 30,
+    "BOOK_01_status": "SOURCE_BLOCKED_FOR_RAW_MICROCRAFT_SAMPLING",
+    "private_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0"
+  },
+  "validation": {
+    "microcraft_regression_contract": "PASS_NON_CI",
+    "G6D_config_contract": "PASS_NON_CI",
+    "V3_structure_isolated_mirror": "PASS_32_FILES_NON_CI",
+    "root_benchmark_contract_equivalent": "PASS_NON_CI",
+    "transition_preflight": "PASS",
+    "semantic_developmental_reaudit": "FAIL_AS_EXPECTED_ON_UNCHANGED_KNOWN_FAILURE_MANUSCRIPT"
+  },
+  "manuscript_status": {
+    "title": "一命过桥",
+    "historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "status": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED",
+    "text_modified_during_architecture_upgrade": false,
+    "known_three_failures_represented": true,
+    "additional_failure_found": "YMGQ-G6D-004_TEMPORAL_LOCATION_CHAIN_FAIL",
+    "ready_for_final_delivery": false
+  },
+  "limitations": [
+    "Current semantic re-audit is same-context/non-blind because the three seed failures were already known to the executor.",
+    "Canonical repaired BOOK-01 raw text is not readable in the current private plane, so full three-book raw Scene-to-Speech revalidation is incomplete.",
+    "Schema and structure validators do not prove literary quality or arbitrary semantic understanding."
+  ],
+  "next_required_actions": [
+    "BOOK01_CANONICAL_RAW_MICROCRAFT_SAMPLING_AT_LEAST_30",
+    "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS"
+  ],
+  "phase330_disposition": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_semantics_changed": false,
+  "dna_applied": false,
+  "copyrighted_source_text_in_git": false,
+  "real_manuscript_text_in_git": false
+}
