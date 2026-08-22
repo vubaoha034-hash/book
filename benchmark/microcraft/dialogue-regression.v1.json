@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "microcraft-dialogue-regression-v1",
+  "purpose": "Permanent privacy-safe regression cases for dialogue grounding and local semantic logic. These cases validate expected classifications, not general literary quality.",
+  "copyrighted_source_text_included": false,
+  "manuscript_text_included": false,
+  "required_case_ids": ["MC-R001", "MC-R002", "MC-R003"],
+  "classes": ["PASS", "FAIL", "HOLD"],
+  "cases": [
+    {
+      "id": "MC-R001",
+      "name": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "type": "negative",
+      "input": {
+        "scene": "A child admits obtaining money last night. The adult immediately asks where that money went. The child lists food, drink, and then adds another person's consumption. The next line explicitly says that person's consumption happened two days ago, with no topic or time-scope break.",
+        "focus": "semantic time inheritance across a spending list"
+      },
+      "expected": "FAIL",
+      "expected_code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "rationale": "The list inherits the time/scope of spending the newly obtained money; the later explicit time is incompatible."
+    },
+    {
+      "id": "MC-R002",
+      "name": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "type": "negative",
+      "input": {
+        "scene": "A local child tells an experienced participant a compact bundle of public background facts: the target event, the participant's role, the reward amount, and how many outsiders arrived. The listener already knows most of the situation, the child has no warning/request/test goal, and no immediate decision depends on the bundle.",
+        "focus": "reader-benefit versus in-scene speech goal"
+      },
+      "expected": "FAIL",
+      "expected_code": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+      "rationale": "The main beneficiary is the reader; the line lacks a credible speaker goal and listener need."
+    },
+    {
+      "id": "MC-R003",
+      "name": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "type": "negative",
+      "input": {
+        "scene": "A asks whether B is alone. B gives a clever denial. A asks who else is coming. B answers that B does not know. No information, decision, relationship pressure, risk, or task state changes beyond the joke cadence.",
+        "focus": "neat dialogue scaffold without scene progress"
+      },
+      "expected": "FAIL",
+      "expected_code": "DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE",
+      "rationale": "The exchange exists as rhetorical ping-pong rather than character-motivated action."
+    },
+    {
+      "id": "MC-R004",
+      "name": "ENVIRONMENTAL_ANOMALY_TRIGGERS_JUDGMENT",
+      "type": "positive",
+      "input": {
+        "scene": "Several workers silently inspect a sample. The sample displays an abnormal physical sign. The experienced worker then warns that the condition below is dangerous.",
+        "focus": "evidence before speech"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "The utterance is directly triggered by shared evidence and has a practical warning function."
+    },
+    {
+      "id": "MC-R005",
+      "name": "VISIBLE_REACTION_TRIGGERS_FOLLOWUP",
+      "type": "positive",
+      "input": {
+        "scene": "One character studies a document and visibly changes expression. The other notices the change and asks what is wrong.",
+        "focus": "perception-triggered question"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "The question would still be asked without a reader because the reaction changes the interaction."
+    },
+    {
+      "id": "MC-R006",
+      "name": "SILENCE_CREATES_DELAYED_SAFE_TOPIC",
+      "type": "positive",
+      "input": {
+        "scene": "Two people with unresolved history encounter each other, remain silent for a long beat, answer the practical reason for being there, fall silent again, and only later ask about an injury.",
+        "focus": "silence as relationship pressure"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "The delay and safer topic are motivated by relationship cost; complete immediate disclosure would be less credible."
+    },
+    {
+      "id": "MC-R007",
+      "name": "ACTION_BEFORE_RULE_EXPLANATION",
+      "type": "positive",
+      "input": {
+        "scene": "A frightened character is about to destroy an unfamiliar creature. An expert physically stops the action first, then explains that the creature is needed to navigate out.",
+        "focus": "task action triggers explanation"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "The rule explanation is required by the listener's immediate action and changes the next decision."
+    },
+    {
+      "id": "MC-R008",
+      "name": "NONRESPONSE_IS_INFORMATION",
+      "type": "positive",
+      "input": {
+        "scene": "A leader looks to an expert for an opinion. The expert does not answer and instead intensely watches the water. The group's attention shifts to what the expert is seeing.",
+        "focus": "non-speech decision"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "Nonresponse itself changes group interpretation and preserves character behavior."
+    },
+    {
+      "id": "MC-R009",
+      "name": "SHARED_FACT_RESTATED_AS_LEVERAGE",
+      "type": "positive",
+      "input": {
+        "scene": "Two officials both know a failed promise. During negotiation one repeats the promise while presenting the signed document, explicitly using the shared fact to force a choice.",
+        "focus": "listener-known information with in-scene function"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "Restatement is leverage, not reader briefing."
+    },
+    {
+      "id": "MC-R010",
+      "name": "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING",
+      "type": "negative",
+      "input": {
+        "scene": "A four-line expository exchange has no trigger or goal. A revision inserts a glance, a sigh, a cup touch, and a frown before the same four lines, but no action changes information, choice, risk, or relationship.",
+        "focus": "decorative action beats"
+      },
+      "expected": "FAIL",
+      "expected_code": "ACTION_BEAT_SPAM_AS_FAKE_GROUNDING",
+      "rationale": "Generic gestures do not create a scene-level reason for the speech."
+    },
+    {
+      "id": "MC-R011",
+      "name": "AMBIGUOUS_TIME_SCOPE_WITH_EXPLICIT_BREAK_POSSIBLE",
+      "type": "boundary",
+      "input": {
+        "scene": "A character discusses what happened last night, then says 'speaking of him' and recalls a separate encounter two days earlier. The discourse marker may break the original temporal scope, but the wording is not fully clear.",
+        "focus": "scope ambiguity"
+      },
+      "expected": "HOLD",
+      "expected_code": "SEMANTIC_TIME_SCOPE_AMBIGUOUS",
+      "rationale": "Multiple readings remain plausible; the text needs an explicit scope break rather than a forced contradiction ruling."
+    },
+    {
+      "id": "MC-R012",
+      "name": "BANTER_CHANGES_RELATIONSHIP_PERMISSION",
+      "type": "positive",
+      "input": {
+        "scene": "A teasing exchange begins after one character notices a specific habit. The joke ends with the guarded character allowing help that was previously refused.",
+        "focus": "banter with state change"
+      },
+      "expected": "PASS",
+      "expected_code": null,
+      "rationale": "The banter is scene-grounded and changes relationship permission; it is not empty ping-pong."
+    }
+  ],
+  "acceptance": {
+    "all_required_cases_present": true,
+    "duplicate_case_ids_forbidden": true,
+    "expected_class_required": true,
+    "negative_cases_require_expected_code": true,
+    "schema_validation_is_not_semantic_quality_validation": true
+  }
+}
