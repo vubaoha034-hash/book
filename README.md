@@ -58,7 +58,7 @@ templates/v3-evidence-packet-template.md
 templates/microcraft-dialogue-audit-template.md
 ```
 
-## MICROCRAFT + DIALOGUE + LOCAL LOGIC V1.2
+## MICROCRAFT + DIALOGUE + LOCAL LOGIC V1.3
 
 真实稿件在经过旧 V3、去 AI 与 fresh cold read 后仍曾被误判为“最终冻结”，随后人工发现三类确定问题：跨句时间语义冲突、作者嘴替式说明对白、以及无人物动机的整齐对白 ping-pong。因此 V3 增加独立 `V3-G6D`。
 
@@ -88,16 +88,14 @@ scene state
 ### Fresh regression 的真实结果
 
 - Phase340 V1：有效能力主要集中在 local semantic logic，fresh promotion 未通过。
-- Phase341 V1.1：固定 machinery、6 个规则 blob 与正文 hash 全部命中的 fresh/no-hint 实稿回归，将预注册三类失败提升到 **2/3**：时间语义链和空转 ping-pong 被独立抓到，但预注册的公共背景作者嘴替信息包仍漏掉。
-- 同一 V1.1 evaluator 还把一个直接回答问题的第一手人物趣闻判成 mouthpiece，说明仅靠 listener practical need 会误杀真实闲聊。
+- Phase341 V1.1：固定 machinery、6 个规则 blob 与正文 hash 全部命中的 fresh/no-hint 实稿回归达到 **2/3**；抓到时间语义链和空转 ping-pong，但漏掉预注册公共背景嘴替，同时误杀了一段第一手人物趣闻。
+- Phase342 V1.2：加入候选全量收集和社交趣闻保护后，新的 correctly-bound fresh/no-hint 回归再次达到 **2/3**；这次成功抓到时间语义链和预注册公共背景嘴替，也正确保护了人物趣闻，但漏掉预注册空转 ping-pong。报告虽然把该段列进 `rhetorical_ladder_candidates`，却没有为它生成独立逐轮 ATS 记录。
 
-因此 V1.1 没有晋级，也禁止通过重复 fresh 尝试碰运气。
+因此 V1.2 仍未晋级。禁止通过重复 fresh 尝试碰运气。
 
 ### V1.2：候选全量收集 + 社交趣闻保护
 
-V1.2 增加两条关键机制。
-
-**一、先收集全部高风险候选，再判断。** PRE_DELIVERY / REGRESSION 模式必须 inventory：
+PRE_DELIVERY / REGRESSION 模式必须先 inventory：
 
 - 3+ 独立事实信息包；
 - 当前事件 + 时间 + 听者本人角色 + 奖励/价格 + 传闻 + 外来者数量/位置等公共背景包；
@@ -105,10 +103,6 @@ V1.2 增加两条关键机制。
 - `问 → 反问 → 追问 → 包袱` 修辞梯子；
 - 普通前段/中段的设定交代；
 - 可能属于第一手趣闻/关系闲聊的对白。
-
-这些候选不能只抽样。候选清单不完整，G6D 不能 PASS。
-
-**二、区分公共背景嘴替与活人会讲的趣闻。**
 
 必须区分：
 
@@ -123,12 +117,30 @@ MIXED
 
 反过来，如果一句话把“今天发生什么、你在里面做什么、奖励多少、消息传多广、来了多少外人”等当前剧情设定打包告诉一个已经知道自己任务的听者，则必须逐项检查 exact-bundle no-reader counterfactual；一条真正的新信息不能自动救活周围几条读者科普。
 
-V1.2 继续保留：speaker goal 必须有正文证据、atomic information claims、per-turn state delta、unsupported bluff 不得救场、action-beat spam 不是 grounding。
+### V1.3：修辞梯子判定覆盖 + 自我撤销断言
+
+Attempt 4 暴露的根因是：**候选已经 harvest，但 judgment 阶段可以跳过其中某个 rhetorical ladder。** V1.3 因此新增硬门禁：
+
+```text
+rhetorical_ladder_candidate_count == anti_template_record_count
+```
+
+每个修辞梯子候选必须单独生成逐轮 ATS 记录，否则直接 `RHETORICAL_LADDER_AUDIT_INCOMPLETE`，G6D 不能 PASS。
+
+V1.3 还增加：
+
+1. **self-cancelling assertion test**：一句话先制造“似乎有帮手/似乎知道答案”等命题，下一轮马上承认其实没有依据；若没有真实 bluff、concealment、deterrence、face-saving、relationship 或 task goal，这个短暂假状态不算有效 state delta。
+2. **induced-follow-up dependency**：如果追问只是上一句故意制造的假悬念逼出来，而 punchline 马上把悬念撤销，则高风险。
+3. **counterfactual turn deletion**：删除“机灵反问 + 被诱导追问”后，如果可以直接进入真实有效信息，且只损失通用笑点节奏，则中间 turn 是模板风险。
+4. **portability test**：一段机灵对白若能几乎原样搬给任何角色，不等于人物性格；具体旧账、任务冲突、物件、地位压力或后续关系行动才是更强的角色证据。
+
+合法幽默仍被保护：真实 bluff 改变敌人行为、具体任务冲突形成的荒诞谈判、共同记忆纠正带来的关系压力、玩笑导致许可/承诺/拒绝变化，都可以 PASS。
 
 高优先失败码：
 
 ```text
 DIALOGUE_CANDIDATE_HARVEST_INCOMPLETE
+RHETORICAL_LADDER_AUDIT_INCOMPLETE
 TEMPORAL_SEMANTIC_CHAIN_FAIL
 AUTHOR_INFORMATION_MOUTHPIECE_FAIL
 DIALOGUE_PINGPONG_TEMPLATE_WITHOUT_CHARACTER_MOTIVE
@@ -142,9 +154,10 @@ ACTION_BEAT_SPAM_AS_FAKE_GROUNDING
 benchmark/microcraft/dialogue-regression.v1.json
 benchmark/microcraft/dialogue-regression.v2.json
 benchmark/microcraft/dialogue-regression.v3.json
+benchmark/microcraft/dialogue-regression.v4.json
 ```
 
-V3 增加“公共背景 bundle 必抓”与“第一手社交趣闻不能误杀”的正反例。所有 JSON 只固定期望分类，不代表脚本已经自动理解任意小说语义。
+这些 JSON 只固定期望分类，不代表脚本已经自动理解任意小说语义。
 
 当前 source-book microcraft 证据已完成三书同 schema 覆盖：BOOK-01《射雕英雄传》、BOOK-02《诛仙》、BOOK-03《盗墓笔记【壹】》各 30 个 raw-derived abstract Scene-to-Speech 样本。BOOK-01 上传源已与冻结 canonical repaired source 做 byte-exact SHA-256 校验并覆盖 40 回。三书证据支持 Scene-to-Speech 架构，但不能替代 fresh 实稿回归或外部真人盲测。
 
@@ -202,7 +215,7 @@ state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl
 
 ### Dialogue Trigger Anchor
 
-V1.2 先建立 candidate inventory，再逐项检查 `why now / speaker goal evidence / listener knowledge / exact-bundle no-reader / atomic claims / per-turn delta`。公共背景说明与社交趣闻使用不同判别路径，避免既漏嘴替、又把人物生活感剪死。
+V1.3 先建立 candidate inventory，再逐项检查 `why now / speaker goal evidence / listener knowledge / exact-bundle no-reader / atomic claims / per-turn delta`。公共背景说明与社交趣闻使用不同判别路径；所有 rhetorical ladder 必须逐项生成 ATS 记录，并检查 self-cancelling assertion、induced follow-up、turn deletion 与 portability。
 
 ### Local Logic Ledger
 
