@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_REGRESSION_V2",
+  "phase": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING",
+  "phase_ordinal": 341,
+  "status": "ADVERSARIAL_CONTRACT_READY_FRESH_MANUSCRIPT_REGRESSION_PENDING",
+  "origin": {
+    "phase340_attempt2_valid": true,
+    "phase340_mandatory_rediscovery": "1/3",
+    "promotion": "REJECTED",
+    "attempt2_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT2_ADJUDICATION_V1.json"
+  },
+  "machinery_commit": "80c7635c590821ec41c30b588c7484881b9d5a08",
+  "regression_suite": {
+    "path": "benchmark/microcraft/dialogue-regression.v2.json",
+    "blob_sha": "9a2db2a9da5208b11bc80ef26525e1b639407aa1",
+    "case_count": 20,
+    "scope": "PRIVACY_SAFE_EXPECTED_CLASSIFICATION_CONTRACT_NOT_GENERAL_LITERARY_QUALITY"
+  },
+  "targeted_failure_modes": [
+    "REVIEWER_INVENTS_PLAUSIBLE_SPEAKER_GOAL",
+    "ONE_GROUNDED_CLAIM_RESCUES_READER_ONLY_FACT_BUNDLE",
+    "WOULD_SAY_SOMETHING_CONFUSED_WITH_WOULD_SAY_THIS_BUNDLE",
+    "BLOCK_LEVEL_AFTEREFFECT_RESCUES_EMPTY_MIDDLE_TURNS",
+    "UNSUPPORTED_BLUFF_OR_DEFLECTION_RESCUES_CLEVER_RETORT",
+    "CLIMAX_ONLY_SAMPLING_MISSES_CASUAL_DIALOGUE_FAILURES"
+  ],
+  "legacy_pre_registered_manuscript_failures": ["MC-R001", "MC-R002", "MC-R003"],
+  "fresh_manuscript_acceptance": {
+    "valid_machinery_binding_required": true,
+    "unchanged_manuscript_required": true,
+    "benchmark_cases_hidden_from_evaluator": true,
+    "prior_reviews_hidden_from_evaluator": true,
+    "required_exact_rediscovery": "3/3",
+    "new_non_seed_findings_allowed": true,
+    "false_positive_protection_required": true,
+    "protected_dialogue_strengths_must_be_reported": true
+  },
+  "automatic_semantic_quality_validation_proven": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
