@@ -1,4 +1,4 @@
-# Scene-to-Speech Microcraft V1.1
+# Scene-to-Speech Microcraft V1.2
 
 ## Principle
 
@@ -24,6 +24,28 @@ An important line should normally have at least one of these anchors:
 - new information or evidence.
 
 Do not invent empty action beats solely to manufacture an anchor.
+
+## Candidate-harvest pass — required before verdict
+
+A pre-delivery or regression audit must first build a candidate inventory before judging any dialogue.
+
+The inventory must include **every located turn/block** that meets any of these conditions:
+
+1. one utterance contains 3 or more independently checkable factual claims;
+2. one utterance bundles current-event facts such as target/event, listener role, reward/price, timing, rumor spread, location, quantity, arrivals, routes, rules or consequences;
+3. one character tells another facts about the listener's own mission/role that the listener is likely to already know;
+4. a neat rhetorical ladder appears, especially `Q -> retort -> Q -> punchline`;
+5. a new topic is introduced mainly through dialogue;
+6. a high-information line appears in ordinary early/mid-scene banter, not only at a climax.
+
+The audit must record:
+
+- `candidate_inventory_count`;
+- `candidate_audited_count`;
+- `candidate_omitted_count`;
+- omission reason for every omitted candidate.
+
+Sampling is not sufficient for these candidate classes. If the inventory is incomplete, the G6D verdict cannot be PASS.
 
 ## Textual-evidence burden for speaker goals
 
@@ -61,7 +83,7 @@ Distinguish:
 - `WOULD_NOT_SAY`;
 - `UNCERTAIN`.
 
-`WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE` is not a PASS for exposition.
+`WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE` is not a PASS for reader-orientation exposition.
 
 ## Atomic information-bundle test
 
@@ -74,15 +96,56 @@ For each claim record:
 3. what textual evidence shows the speaker wants this listener to know it now?
 4. what changes because this specific claim is heard?
 
-If a bundle contains multiple claims whose main beneficiary is the reader, and the listener has no current need for them, flag `AUTHOR_INFORMATION_MOUTHPIECE_FAIL` even when one claim in the bundle is scene-grounded.
+If a **public-background / current-mission** bundle contains several claims whose main beneficiary is the reader, and the listener already knows multiple claims or has no current use for them, flag `AUTHOR_INFORMATION_MOUTHPIECE_FAIL` even when one claim is scene-grounded.
 
 A legitimate warning may contain several facts, but the warning purpose must be visible in the scene and the facts must serve that warning.
+
+## Social-anecdote carveout — do not over-prune living speech
+
+Listener need is not the only valid reason to speak. Real conversation includes gossip, amusement, shared memory and firsthand anecdote.
+
+A social anecdote may PASS even when not every detail changes the listener's task, when all of the following are true:
+
+- it directly answers or naturally expands a question about a person/event;
+- the speaker personally witnessed or plausibly owns the anecdote;
+- the speaker-listener relationship supports casual sharing, gossip, teasing or recollection;
+- the anecdote is not mainly restating the listener's own mission, role, public reward, rule or already-known setup;
+- the scene is not under such immediate pressure that the excess detail becomes implausible;
+- the detail creates character/relationship texture rather than covertly carrying a reader orientation packet.
+
+Do **not** fail a colorful firsthand anecdote merely because a shorter answer could satisfy the listener's practical need.
+
+Conversely, do not use “people gossip” to rescue a compact bundle of current-plot setup facts told to someone who already knows the setup.
+
+Record bundle type as one of:
+
+- `TASK_OR_CONFLICT_INFORMATION`;
+- `PUBLIC_BACKGROUND_ORIENTATION`;
+- `SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY`;
+- `MIXED`;
+- `UNCERTAIN`.
+
+## Public-background bundle high-risk pattern
+
+Mandatory full audit is required when a single turn combines several of:
+
+- what the central event is;
+- when it will happen;
+- what the listener is doing in it;
+- the reward/price/stakes already known to the listener;
+- how widely the news has spread;
+- how many outsiders/armed people have arrived;
+- route/location facts that orient a first-time reader.
+
+If the listener already knows the event and their own role, and only one trailing fact is genuinely new/actionable, the new fact does not automatically justify repeating the entire bundle.
 
 ## Listener knowledge
 
 Shared facts do not need to be restated unless the act of restating has a scene function such as leverage, accusation, warning, mockery, ritual, reframing, testing memory, or forcing a choice.
 
-“Both characters know it, but the reader does not” is evidence **against** a natural exposition line unless a real scene purpose is present.
+“Both characters know it, but the reader does not” is evidence **against** a natural public-background exposition line unless a real scene purpose is present.
+
+This rule does not ban social anecdotes whose value is relationship, amusement or recollection rather than factual briefing.
 
 ## Non-speech is an option
 
@@ -145,7 +208,7 @@ Important exposition should arrive through a legitimate carrier:
 
 Do not force all carriers into dialogue. Sometimes the best carrier is action, silence, a document, or a visible consequence.
 
-Long dialogue is not inherently bad. A long explanation can PASS when it is required by an in-scene activity such as interrogation, negotiation, teaching, persuasion, testimony, command, confession, identity verification, or dispute resolution.
+Long dialogue is not inherently bad. A long explanation can PASS when it is required by an in-scene activity such as interrogation, negotiation, teaching, persuasion, testimony, command, confession, identity verification, dispute resolution, or a natural social anecdote.
 
 ## Semantic-time cross-check
 
@@ -184,7 +247,7 @@ unless those actions matter. Generic gestures are not grounding.
 
 A fresh reviewer must not use “I can imagine a reason” as evidence. PASS requires manuscript evidence.
 
-When a pre-delivery or regression audit evaluates high-information dialogue, it must sample the **ordinary early/mid-scene exchanges**, not only climax speeches and obviously important scenes. Author-mouthpiece and ping-pong failures often hide in casual exposition and banter.
+Candidate harvesting precedes judgment. Do not choose only memorable or high-drama lines; inventory ordinary multi-fact exposition and rhetorical ladders across the full manuscript first.
 
 ## Audit priority
 
