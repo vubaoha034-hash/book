@@ -1,38 +1,38 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 10,
-  "recorded_at": "2026-08-22T11:37:00+08:00",
+  "sequence": 11,
+  "recorded_at": "2026-08-22T13:02:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": ["MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1"],
-  "current_focus": "Run one genuinely fresh/no-hint G6D V1.1 regression on the preserved unchanged YMGQ historical candidate using immutable machinery commit 80c7635c590821ec41c30b588c7484881b9d5a08. Phase340 was rejected after a valid fresh test rediscovered only 1/3 pre-registered failures; do not repair the manuscript or repeat attempts on unchanged machinery until lucky.",
+  "active_task_ids": ["MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2"],
+  "current_focus": "Run one genuinely fresh/no-hint G6D V1.2 regression on the preserved unchanged YMGQ historical candidate using immutable machinery commit 4da850b210e37d11e6da3cf81fce34620789894e. Phase341 was rejected after a valid fresh test reached 2/3 mandatory rediscovery and showed a social-anecdote false-positive risk.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains remain accepted",
     "Three-book raw-derived Scene-to-Speech evidence is complete with 30 samples per book",
     "GN-VDNA-01 remains frozen DEFAULT OFF and Phase 320 remains the highest accepted checkpoint",
-    "The prior YMGQ final-quality freeze remains formally invalidated without deleting history",
-    "Phase340 V3-G6D architecture was tested in a correctly bound Fresh Context / No-Hint Attempt 2",
-    "Attempt 2 bound all six required files at commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18 and matched the unchanged manuscript SHA-256",
-    "Attempt 2 independently rediscovered MC-R001 and a new execution-time semantic contradiction but missed MC-R002 and MC-R003",
-    "Phase340 promotion was rejected at the pre-registered 3/3 gate; observed result was 1/3",
-    "Repeating fresh runs on unchanged Phase340 machinery until a lucky pass is now explicitly prohibited",
-    "Dialogue-grounding V1.1 hardening added textual speaker-goal evidence, exact-bundle no-reader counterfactual, atomic information claims with listener need, per-turn state delta, supported bluff/deflection evidence, and ordinary-dialogue coverage",
-    "V3-G6D machine-readable contract advanced to schema 3.0.1",
-    "A new privacy-safe 20-case adversarial dialogue regression V2 was added",
-    "README and isolated-review guidance were updated for V1.1"
+    "The prior YMGQ final-quality freeze remains invalidated without deleting history",
+    "Phase340 valid fresh regression produced 1/3 mandatory exact rediscovery and was rejected",
+    "Phase341 V1.1 added textual speaker-goal evidence, exact-bundle counterfactuals, atomic claims, per-turn state deltas and ordinary-dialogue coverage",
+    "Fresh V1.1 Attempt 3 bound all six required files and the unchanged manuscript correctly",
+    "Attempt 3 independently rediscovered MC-R001 and MC-R003 but missed MC-R002; observed mandatory exact rediscovery was 2/3",
+    "Attempt 3 also exposed a false-positive risk by classifying a directly responsive first-hand social anecdote as author-mouthpiece",
+    "Phase341 promotion was rejected without relaxing or substituting the pre-registered 3/3 requirement",
+    "V1.2 added exhaustive candidate harvesting before judgment, a public-background bundle high-risk pattern, social-anecdote protection, mixed-bundle separation and coverage accounting",
+    "V3-G6D machine-readable contract advanced to schema 3.0.2",
+    "A privacy-safe 16-case dialogue regression V3 was added"
   ],
   "incomplete": [
-    "A fresh/no-hint G6D V1.1 manuscript regression has not yet demonstrated exact rediscovery of all three pre-registered failures",
-    "The invalidated historical YMGQ candidate remains intentionally unrepaired until the Phase341 fresh regression is preserved and adjudicated",
-    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 remains parked during the microcraft architecture work; real_manuscript_applied_outcome_count remains 0",
+    "A fresh/no-hint G6D V1.2 manuscript regression has not yet demonstrated exact rediscovery of all three pre-registered failures with acceptable false-positive control",
+    "The invalidated historical YMGQ candidate remains intentionally unrepaired until the Phase342 fresh regression is preserved and adjudicated",
+    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 remains parked; real_manuscript_applied_outcome_count remains 0",
     "External human blind validation and stable statistical production improvement remain unproven"
   ],
-  "blocked": ["FRESH_CONTEXT_G6D_V1_1_REGRESSION_3_OF_3"],
+  "blocked": ["FRESH_CONTEXT_G6D_V1_2_REGRESSION_3_OF_3_WITH_FALSE_POSITIVE_CONTROL"],
   "unknowns": [
-    "Whether the V1.1 fresh/no-hint audit will independently rediscover all three pre-registered failures without reading benchmark cases",
-    "Whether the stronger discriminator will introduce unacceptable false positives on natural banter or legitimate exposition",
+    "Whether V1.2 will independently rediscover all three pre-registered failures without reading benchmark cases",
+    "Whether V1.2 will preserve legitimate social anecdote while still catching public-background mouthpiece bundles",
     "No external human blind dataset has validated the new G6D architecture",
     "Local Windows runtime/integration state is not inferred from GitHub"
   ],
@@ -42,64 +42,59 @@
     "Phase 270 and Phase 310 synthetic benchmarks as substitutes for real-manuscript outcomes",
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
     "Default-enable or automatic application of the Novel DNA Router",
-    "Universal production-improvement claims from synthetic, schema, or purposive three-book microcraft evidence",
     "Public storage of copyrighted source text or real manuscript text",
-    "Repair the historical YMGQ regression input before the V1.1 fresh regression is preserved",
-    "Claim Phase340 promotion from Attempt 2",
+    "Repair the historical YMGQ regression input before the V1.2 fresh regression is preserved",
+    "Claim Phase341 promotion from Attempt 3",
     "Relax the three pre-registered mandatory rediscovery requirements",
-    "Repeat fresh attempts on the same unchanged machinery until a favorable random result appears",
-    "Expose benchmark/microcraft/dialogue-regression.v2.json to the fresh manuscript evaluator",
+    "Count an alternate mouthpiece finding as the missed pre-registered MC-R002",
+    "Repeat fresh attempts on unchanged machinery until a favorable random result appears",
+    "Expose benchmark/microcraft/dialogue-regression.v3.json to the fresh manuscript evaluator",
     "No backward accepted-checkpoint transition without an authorized rollback receipt"
   ],
-  "active_change_ids": ["MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1"],
-  "next_required_action": "Open one genuinely fresh chat and run G6D against the unchanged YMGQ blind-input manuscript. First bind the six G6D machinery files to immutable commit 80c7635c590821ec41c30b588c7484881b9d5a08 and verify their expected blob SHAs. Do not read the V2 benchmark, prior reports, failure locations, or corrected wording. Promotion requires exact rediscovery of all three pre-registered failures while still protecting legitimate scene-grounded dialogue.",
+  "active_change_ids": ["MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2"],
+  "next_required_action": "Open one genuinely fresh chat and run G6D V1.2 against the unchanged YMGQ blind-input manuscript. First bind the six allowed G6D files to immutable commit 4da850b210e37d11e6da3cf81fce34620789894e. Keep benchmarks, prior reports, failure locations and corrected wording hidden. Promotion requires exact 3/3 rediscovery, complete candidate inventory, and no unsupported social-anecdote mouthpiece false positive.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-DIALOGUE-HARDENING-V1_1-20260822-010",
-      "event_hash": "995d3470078726cae7ea4e50eee6551fa722ce6ec32c8cd867c24c7dd42c6a93"
+      "event_id": "EVT-NOVEL-DISTILL-DIALOGUE-COVERAGE-V1_2-20260822-011",
+      "event_hash": "a6162fea2aa2f0c50b6a62966227d703287f9de9843028d443e93c7d50894681"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "highest accepted checkpoint plus active Phase341 dialogue-grounding hardening state",
-      "git_blob": "8c1462dfb179ca562e32e091b514d5e39d69e5b4"
+      "role": "highest accepted checkpoint plus active Phase342 G6D V1.2 state",
+      "git_blob": "311fff853763b0eca182d9647321487608ef742b"
     },
     {
-      "path": "state/tasks/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1.json",
-      "role": "Phase341 V1.1 scope, immutable machinery binding, and fresh regression contract",
-      "git_blob": "f9b7b8f94859e03cf89b3f375da476a00b9ad27c"
+      "path": "state/tasks/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2.json",
+      "role": "Phase342 scope, immutable machinery binding and fresh regression contract"
     },
     {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT2_ADJUDICATION_V1.json",
-      "role": "valid fresh Attempt 2 adjudication showing 1/3 mandatory rediscovery",
-      "git_blob": "2fefde7a65ad9f5eef507f57cfa23b4cf2f03865"
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_1_FRESH_ATTEMPT3_ADJUDICATION_V1.json",
+      "role": "valid V1.1 Attempt 3 adjudication showing 2/3 exact rediscovery and false-positive risk"
     },
     {
-      "path": "state/review_receipts/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_PHASE340_PROMOTION_REJECTION_V1.json",
-      "role": "Phase340 promotion rejection and required Phase341 successor",
-      "git_blob": "958949498fee6d286f651cae56175a5e357d1c2f"
+      "path": "state/review_receipts/MICROCRAFT_DIALOGUE_GROUNDING_PHASE341_PROMOTION_REJECTION_V1.json",
+      "role": "Phase341 promotion rejection"
     },
     {
-      "path": "state/benchmarks/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_REGRESSION_V2.json",
-      "role": "Phase341 adversarial regression contract and fresh acceptance requirements",
-      "git_blob": "d5b077e3399c6fe1ea2b0403aefe7c9a9352e457"
+      "path": "state/benchmarks/MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_REGRESSION_V3.json",
+      "role": "Phase342 adversarial regression contract"
     },
     {
-      "path": "benchmark/microcraft/dialogue-regression.v2.json",
-      "role": "privacy-safe 20-case adversarial expected-classification suite",
-      "git_blob": "9a2db2a9da5208b11bc80ef26525e1b639407aa1"
+      "path": "benchmark/microcraft/dialogue-regression.v3.json",
+      "role": "privacy-safe 16-case expected-classification suite"
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "hash-chained continuity settlement through sequence 10",
-      "git_blob": "ef9cddddefda4d1a3cfcc9318b6ee9c105f72788"
+      "role": "hash-chained continuity settlement through sequence 11",
+      "git_blob": "31c310bdb56c38c438eab4b1564208bdb502d171"
     },
     {
       "path": "config/novel-quality-gates.v3.json",
-      "role": "V3-G6D V1.1 machine-readable contract at hardening commit 80c7635c590821ec41c30b588c7484881b9d5a08",
-      "git_blob": "9bddca41853bfeb582a0b4ae83682854d8e8a393"
+      "role": "V3-G6D V1.2 machine-readable contract at machinery commit 4da850b210e37d11e6da3cf81fce34620789894e",
+      "git_blob": "fdaf52773db1e951b161fd02909bc2f64f4510aa"
     }
   ],
-  "status": "ACTIVE_PHASE341_FRESH_REGRESSION_PENDING"
+  "status": "ACTIVE_PHASE342_FRESH_REGRESSION_PENDING"
 }
