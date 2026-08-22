@@ -1,110 +1,91 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 8,
-  "recorded_at": "2026-08-22T09:13:00+08:00",
+  "sequence": 9,
+  "recorded_at": "2026-08-22T10:50:30+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"
-  ],
-  "current_focus": "Run the genuinely fresh-context no-hint G6D regression on the preserved unchanged historical YMGQ candidate. Three-book raw-derived microcraft evidence is complete; do not repair YMGQ before the fresh regression input is preserved.",
+  "active_task_ids": ["MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"],
+  "current_focus": "Run Fresh Context / No-Hint G6D Attempt 2 on the unchanged historical YMGQ candidate after exact binding of all six allowed rule files at pinned commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18. Attempt 1 is invalid for promotion and cannot be used as a pass.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains accepted",
-    "Three-book cross-book revalidation completed with 33 total pair comparisons",
-    "GN-VDNA-01 frozen as the first system-level Global Novel DNA and remains DEFAULT OFF",
-    "Phase 300 integrated the dedicated default-off Novel DNA Router into V3",
-    "Phase 310 passed a 12-case synthetic integration regression benchmark with scope limitation",
-    "Phase 320 promoted the Router only to OPTIONAL_BOUNDED_PRODUCTION while preserving all frozen GN-VDNA-01 semantics",
-    "The prior YMGQ final-quality freeze was formally invalidated without deleting history after validation false negatives were confirmed",
+    "Three-book raw-derived Scene-to-Speech evidence is complete with 30 samples per book",
+    "GN-VDNA-01 remains frozen DEFAULT OFF and Phase 320 remains the highest accepted checkpoint",
     "V3-G6D Scene-to-Speech, dialogue-grounding, non-speech, information-carrier, and local semantic logic architecture is developmentally integrated",
-    "Permanent privacy-safe microcraft regression suite V1 contains 12 cases including MC-R001, MC-R002, and MC-R003",
-    "BOOK-02 and BOOK-03 each contributed 30 raw-derived abstract Scene-to-Speech samples in private evidence",
-    "User-supplied BOOK-01 raw source matched the frozen canonical repaired source byte-for-byte: SHA-256 5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14, 2817298 bytes, UTF-8, exactly 40 第N回 headings",
-    "BOOK-01 contributed 30 raw-derived abstract Scene-to-Speech samples using the same frozen schema",
-    "Three-book raw-derived microcraft evidence now supports MC-C01 through MC-C07 with no semantic broadening",
-    "Same-context non-blind developmental YMGQ re-audit represented all three seed failures and additionally found YMGQ-G6D-004 TEMPORAL_LOCATION_CHAIN_FAIL",
-    "Microcraft contract, G6D config, root benchmark contract-equivalent check, and isolated V3 structure mirror passed within their stated non-CI scopes"
+    "Permanent privacy-safe microcraft regression suite V1 contains 12 cases including three pre-registered mandatory negative cases",
+    "The prior YMGQ final-quality freeze was formally invalidated without deleting history after validation false negatives were confirmed",
+    "Same-context developmental YMGQ re-audit represented all three seed failures and found an additional temporal-location contradiction",
+    "Fresh No-Hint Attempt 1 was received and formally adjudicated",
+    "Attempt 1 independently rediscovered the money/time semantic-chain failure and additional non-seed issues, including the Stone Chongshan route contradiction and an execution-time contradiction",
+    "Attempt 1 is invalid for architecture promotion because the evaluator used default main and four of six required Phase340 rule files returned 404",
+    "Observed mandatory exact rediscovery in Attempt 1 was 1/3; the required mouthpiece instance and dialogue-pingpong instance were missed",
+    "Attempt 2 handoff now pins all six rule files to exact commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18 and requires abort on any binding mismatch"
   ],
   "incomplete": [
-    "A genuinely fresh-context no-hint G6D audit of the unchanged historical YMGQ candidate has not yet been run, so blind semantic regression has not passed",
-    "The invalidated historical YMGQ candidate has not been repaired after G6D; this is intentional to preserve the regression input",
+    "A valid fresh-context no-hint G6D regression has not yet passed the pre-registered 3/3 mandatory rediscovery gate",
+    "The invalidated historical YMGQ candidate remains intentionally unrepaired until Attempt 2 is preserved and adjudicated",
     "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 remains parked during the authorized architecture upgrade; real_manuscript_applied_outcome_count remains 0",
     "External human blind validation and stable statistical production improvement remain unproven"
   ],
-  "blocked": [
-    "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS"
-  ],
+  "blocked": ["FRESH_CONTEXT_G6D_REAUDIT_ATTEMPT2_PINNED"],
   "unknowns": [
-    "Whether the fresh no-hint G6D audit will independently rediscover all three mandatory regressions",
+    "Whether a correctly bound fresh Attempt 2 will independently rediscover all three pre-registered mandatory failures",
     "No external human blind dataset has validated the new G6D architecture",
     "Local Windows runtime/integration state is not inferred from GitHub"
   ],
   "do_not_reopen": [
     "Accepted BOOK-01, BOOK-02, and BOOK-03 book-level phases",
-    "Phase 170 pair comparisons",
-    "Phase 250 pair comparisons",
+    "Phase 170 and Phase 250 pair comparisons",
     "Phase 270 and Phase 310 synthetic benchmarks as substitutes for real-manuscript outcomes",
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
     "Default-enable or automatic application of the Novel DNA Router",
     "Universal production-improvement claims from synthetic, schema, or purposive three-book microcraft evidence",
     "Public storage of copyrighted source text or real manuscript text",
-    "Repair the historical YMGQ regression input before the fresh no-hint G6D audit is preserved",
-    "Claim fresh blind semantic regression from the same-context developmental re-audit",
+    "Repair the historical YMGQ regression input before the correctly bound fresh Attempt 2 result is preserved",
+    "Claim fresh blind semantic regression pass from Attempt 1",
+    "Relax or rewrite the three pre-registered mandatory rediscovery requirements after seeing Attempt 1",
     "No backward accepted-checkpoint transition without an authorized rollback receipt"
   ],
-  "active_change_ids": [
-    "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"
-  ],
-  "next_required_action": "Run a genuinely fresh-context no-hint G6D audit of the preserved unchanged historical YMGQ candidate using the prepared private handoff. Do not reveal known failure locations, diagnoses, regression IDs, prior reviews, invalidation receipts, or corrected wording to the evaluator, and do not repair the manuscript before that fresh regression result is preserved.",
+  "active_change_ids": ["MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"],
+  "next_required_action": "Open a genuinely fresh chat, upload the unchanged YMGQ blind-input manuscript, and use FRESH_G6D_NO_HINT_ATTEMPT2_PINNED_HANDOFF_V1. The evaluator must first fetch and verify all six allowed rule files at exact commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18; any 404 or blob mismatch invalidates the run. Do not reveal prior findings or repair the manuscript before adjudication.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-BOOK01-MICROCRAFT-UNBLOCK-20260822-008",
-      "event_hash": "890468658aa5708799cdb061a43b4d89b08c98b6ef2fb39527c051f11de678ae"
+      "event_id": "EVT-NOVEL-DISTILL-G6D-FRESH-ATTEMPT1-ADJUDICATION-20260822-009",
+      "event_hash": "3d851be5551c1d025e89bf624020ab60c52747394bac20305677aa087442dbc3"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "highest accepted checkpoint plus active Phase340 authority after BOOK-01 source unblock",
-      "git_blob": "6819dcfee7e9e926793c27e5a29d109cecc6ad90"
+      "role": "highest accepted checkpoint plus active Phase340 retry state",
+      "git_blob": "69bda48766edd37158e87adb23a0bdf6d566dbaa"
     },
     {
       "path": "state/tasks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
-      "role": "Phase340 task state with three-book raw evidence complete and fresh blind as sole blocker",
-      "git_blob": "2af199956e951e641d6aa1d5673f1216d5870316"
-    },
-    {
-      "path": "state/review_receipts/BOOK01_CANONICAL_RAW_MICROCRAFT_SOURCE_ACCESS_V1.json",
-      "role": "BOOK-01 exact canonical source binding and 30-sample completion receipt",
-      "git_blob": "535437b9ddc0e35c0eb26ecb8138c372b8ae4ab0"
-    },
-    {
-      "path": "state/review_receipts/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
-      "role": "Phase340 settlement with three-book raw evidence complete",
-      "git_blob": "3c7f90e83a32b294d662239260254a740ac79c38"
+      "role": "Phase340 task state with Attempt 1 invalid and pinned Attempt 2 required",
+      "git_blob": "ef7f0094076d471db5cc800af6e2d3bef27a833a"
     },
     {
       "path": "state/benchmarks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1.json",
-      "role": "three-book raw evidence scope, developmental regression evidence, and remaining fresh-blind requirement",
-      "git_blob": "095d603e952285a777f4f10bdf47f3540235cc3e"
+      "role": "pre-registered mandatory rediscovery contract and Attempt 1 benchmark adjudication",
+      "git_blob": "df930470aea0fbc1cfd568043ecffd58366ce325"
     },
     {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
-      "role": "historical final-quality freeze invalidation without history deletion",
-      "git_blob": "f2192569cabb7f45cdbeb5c2e4b1386c3cb5566b"
-    },
-    {
-      "path": "config/novel-quality-gates.v3.json",
-      "role": "V3-G6D machine-readable gate contract",
-      "git_blob": "5977249836e4ba5bddc29ce18bef53ba02aac872"
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT1_ADJUDICATION_V1.json",
+      "role": "Attempt 1 invalid-for-promotion adjudication and 1/3 observed rediscovery receipt",
+      "git_blob": "821b9cffad750a7db5f78e59e555208a31577ec5"
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "hash-chained continuity settlement through sequence 8",
-      "git_blob": "47d41098ca64e95a080e1150117b57b46dff1699"
+      "role": "hash-chained continuity settlement through sequence 9",
+      "git_blob": "724b3cadbdf13d187bf88d3d880c09619e08312f"
+    },
+    {
+      "path": "config/novel-quality-gates.v3.json",
+      "role": "V3-G6D machine-readable gate contract at the pinned machinery commit",
+      "git_blob": "5977249836e4ba5bddc29ce18bef53ba02aac872"
     }
   ],
-  "status": "ACTIVE_FRESH_BLIND_PENDING"
+  "status": "ACTIVE_FRESH_BLIND_ATTEMPT2_REQUIRED"
 }
