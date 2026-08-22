@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "BOOK01_CANONICAL_RAW_MICROCRAFT_SOURCE_ACCESS",
+  "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
+  "phase_ordinal": 340,
+  "status": "PASS_CANONICAL_EXACT_MATCH_AND_30_SAMPLES_COMPLETE",
+  "book_id": "BOOK-01",
+  "title": "射雕英雄传",
+  "canonical_repaired_work_id": "wrk_5724415a203a194f1c9a481c",
+  "expected_canonical_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+  "observed_uploaded_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+  "byte_exact_canonical_match": true,
+  "observed_size_bytes": 2817298,
+  "encoding": "UTF-8",
+  "chapter_heading_count": 40,
+  "chapter_heading_contract": "第N回",
+  "raw_source_readable_in_current_plane": true,
+  "sample_result": {
+    "scene_to_speech_sample_count": 30,
+    "schema": "SCENE_STATE -> TRIGGER -> PERCEPTION_OR_NON_SPEECH_REACTION -> WHY_SPEAK_NOW -> SPEECH_FUNCTION -> WITHHELD_OR_UNSAID -> AFTEREFFECT",
+    "private_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+    "coverage_note": "Purposive diverse raw-derived samples spanning early, middle, and late-book dialogue situations; no copyrighted source passages stored in public Git.",
+    "candidate_effect": "SUPPORTS_MC_C01_THROUGH_MC_C07_WITH_NO_SEMANTIC_BROADENING"
+  },
+  "three_book_raw_microcraft_evidence_complete": true,
+  "remaining_phase340_blocker": "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS",
+  "copyrighted_source_text_in_git": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
