@@ -1,41 +1,44 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 12,
-  "recorded_at": "2026-08-22T14:19:00+08:00",
+  "sequence": 13,
+  "recorded_at": "2026-08-22T15:33:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": ["MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3"],
-  "current_focus": "Run one genuinely fresh/no-hint G6D V1.3 regression on the preserved unchanged YMGQ historical candidate using immutable machinery commit ad20a24f1b12e1545ea82e5ecd785f07d748ed79. Phase342 was rejected after valid V1.2 fresh evidence reached 2/3: public-background and semantic-chain detection passed, social anecdotes were protected, but the pre-registered empty rhetorical ladder was missed despite successful candidate harvest.",
+  "active_task_ids": ["MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1"],
+  "current_focus": "Implement the accepted Phase344 regression-label calibration as Phase345: distinguish object facts from public/reported knowledge in G6D and move cross-scene portable dialogue-cadence families into G8/de-AI pattern-density evidence. Do not repair YMGQ or run another fresh manuscript audit before the calibrated architecture is implemented and frozen.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains remain accepted",
     "Three-book raw-derived Scene-to-Speech evidence remains complete with 30 samples per book",
     "GN-VDNA-01 remains frozen DEFAULT OFF and Phase 320 remains the highest accepted checkpoint",
     "The prior YMGQ final-quality freeze remains invalidated without deleting history",
-    "Phase340 valid fresh regression produced 1/3 mandatory exact rediscovery and was rejected",
-    "Phase341 V1.1 valid fresh regression produced 2/3, missing the public-background mouthpiece and showing social-anecdote false-positive risk; promotion was rejected",
-    "Phase342 V1.2 added exhaustive candidate harvest, public-background bundle discrimination and social-anecdote protection",
-    "Fresh V1.2 Attempt 4 bound all six rule blobs and the unchanged manuscript correctly",
-    "Attempt 4 independently rediscovered MC-R001 and MC-R002 and preserved legitimate social anecdotes, but missed MC-R003; observed mandatory exact rediscovery was 2/3",
-    "Attempt 4 harvested the missed block as a rhetorical-ladder candidate, proving the remaining defect is judgment coverage/discrimination rather than candidate discovery",
-    "Phase342 promotion was rejected without relaxing the 3/3 requirement",
-    "V1.3 now requires one explicit ATS record per harvested rhetorical ladder and adds self-cancelling assertion, induced-follow-up, counterfactual turn-deletion and portability checks",
-    "V3-G6D machine-readable contract advanced to schema 3.0.3",
-    "A privacy-safe 16-case anti-template adversarial regression V4 was added",
-    "README and pass-isolation guidance were updated for V1.3"
+    "Fresh Attempts 2-5 were preserved with their original valid/invalid and old-gate outcomes",
+    "Fresh V1.3 Attempt5 correctly bound all six machinery files and the unchanged manuscript, completed 52/52 candidate judgment and 25/25 rhetorical-ladder record parity, and remained a 2/3 failure under the old mandatory contract",
+    "Phase343 promotion remains rejected; Attempt5 was not retroactively converted into a pass",
+    "Phase344 reviewed repeated fresh disagreement plus 90 three-book raw-derived Scene-to-Speech samples and accepted a regression-label calibration",
+    "MC-R001 remains a hard TEMPORAL_SEMANTIC_CHAIN_FAIL regression",
+    "MC-R002 is retired as a mandatory single-instance hard fail and reclassified as epistemic-scope/context-dependent because knowing an object fact is distinct from knowing that outsiders/public rumor know it",
+    "MC-R003 is retired as a mandatory single-instance hard fail and reclassified as local-context-dependent plus manuscript-level dialogue-template-family density risk",
+    "The old future 3/3 promotion contract is superseded by benchmark/microcraft/label-calibration.v1.json without rewriting historical attempt results",
+    "Phase345 implementation task is created but has not started"
   ],
   "incomplete": [
-    "A fresh/no-hint G6D V1.3 manuscript regression has not yet demonstrated exact rediscovery of all three pre-registered failures with acceptable false-positive control",
-    "The invalidated historical YMGQ candidate remains intentionally unrepaired until the Phase343 fresh regression is preserved and adjudicated",
+    "Phase345 has not yet implemented explicit epistemic-scope fields in G6D",
+    "Phase345 has not yet moved cross-scene portable dialogue cadence-family analysis into G8/de-AI evidence",
+    "No calibrated successor machinery commit has been frozen or fresh-validated",
+    "The invalidated historical YMGQ candidate remains intentionally unrepaired",
     "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 remains parked; real_manuscript_applied_outcome_count remains 0",
     "External human blind validation and stable statistical production improvement remain unproven"
   ],
-  "blocked": ["FRESH_CONTEXT_G6D_V1_3_REGRESSION_3_OF_3_WITH_FALSE_POSITIVE_CONTROL"],
+  "blocked": [
+    "PHASE345_IMPLEMENTATION_NOT_STARTED",
+    "CALIBRATED_ARCHITECTURE_NOT_FRESH_VALIDATED"
+  ],
   "unknowns": [
-    "Whether V1.3 will independently rediscover all three pre-registered failures without reading benchmark cases",
-    "Whether V1.3 will preserve legitimate shared-history banter and social anecdote while catching the empty rhetorical ladder",
-    "No external human blind dataset has validated the new G6D architecture",
+    "How much cross-scene template-family density is acceptable before AI-smell becomes materially harmful; no universal numeric threshold is frozen",
+    "Whether the calibrated successor architecture will reduce both false negatives and over-pruning on an unchanged real manuscript",
+    "No external human blind dataset has validated the calibrated architecture",
     "Local Windows runtime/integration state is not inferred from GitHub"
   ],
   "do_not_reopen": [
@@ -45,63 +48,57 @@
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
     "Default-enable or automatic application of the Novel DNA Router",
     "Public storage of copyrighted source text or real manuscript text",
-    "Repair the historical YMGQ regression input before the V1.3 fresh regression is preserved",
-    "Claim Phase342 promotion from Attempt 4",
-    "Relax the three pre-registered mandatory rediscovery requirements",
-    "Count an alternate template finding as the missed pre-registered MC-R003",
-    "Repeat fresh attempts on unchanged machinery until a favorable random result appears",
-    "Expose benchmark/microcraft/dialogue-regression.v4.json to the fresh manuscript evaluator",
+    "Retroactively mark Attempt5 as 3/3 or passed",
+    "Re-run V1.3 fresh attempts until the old labels happen to match",
+    "Re-enable MC-R002 or MC-R003 as mandatory single-instance hard labels without new calibration evidence",
+    "Repair the historical YMGQ candidate before Phase345 implementation and validation",
+    "Freeze a universal dialogue-template density threshold from the current purposive three-book sample",
     "No backward accepted-checkpoint transition without an authorized rollback receipt"
   ],
-  "active_change_ids": ["MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3"],
-  "next_required_action": "Open one genuinely fresh chat and run G6D V1.3 against the unchanged YMGQ blind-input manuscript. First bind the six allowed G6D files to immutable commit ad20a24f1b12e1545ea82e5ecd785f07d748ed79. Keep benchmarks, prior reports, failure locations and corrected wording hidden. Promotion requires exact 3/3 rediscovery, rhetorical-ladder record parity, preservation of the public-background success and no unsupported social-anecdote/valid-banter false positive.",
+  "active_change_ids": ["MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1"],
+  "next_required_action": "Execute exactly Phase345 from state/tasks/MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1.json. Implement calibrated epistemic-scope analysis in G6D and cross-scene pattern-family density evidence in G8/de-AI, add privacy-safe regressions, validate structure/privacy within stated scope, and freeze a new machinery commit. Do not edit the private manuscript in that implementation stage.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-ANTI-TEMPLATE-V1_3-20260822-012",
-      "event_hash": "77683551dda1adfa3bbbe46123f68af1bb972f745398d29a3b51fd507724c702"
+      "event_id": "EVT-NOVEL-DISTILL-MICROCRAFT-LABEL-CALIBRATION-20260822-013",
+      "event_hash": "d483eab304eee657c7d61667bb870508b0eba1a36610012ed561756620b8e866"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "highest accepted checkpoint plus active Phase343 G6D V1.3 state",
-      "git_blob": "9ff5d001fa621eaca869bf0416cbe11d75e05680"
+      "role": "highest accepted checkpoint plus active Phase345 calibrated implementation state",
+      "git_blob": "80d13046abc6366f0c441fcec67ed7710c0de24a"
     },
     {
-      "path": "state/tasks/MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3.json",
-      "role": "Phase343 scope, immutable machinery binding and fresh regression contract",
-      "git_blob": "d7414d5a1c15860af443ffed3b8b6070485a3b5b"
+      "path": "state/tasks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+      "role": "accepted Phase344 calibration task and legacy-label settlement",
+      "git_blob": "d493a1cae9ac5660c4837294a0b570eeca952bbd"
     },
     {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_2_FRESH_ATTEMPT4_ADJUDICATION_V1.json",
-      "role": "valid V1.2 Attempt 4 adjudication showing 2/3 exact rediscovery with anti-template miss",
-      "git_blob": "4a67c1fef7924558b5724453d5ce2c8027ba0faa"
+      "path": "state/review_receipts/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+      "role": "Phase344 accepted label-calibration receipt",
+      "git_blob": "18fb362f2fa16ffe0b8c42f20e7c87b508fdf123"
     },
     {
-      "path": "state/review_receipts/MICROCRAFT_DIALOGUE_COVERAGE_PHASE342_PROMOTION_REJECTION_V1.json",
-      "role": "Phase342 promotion rejection",
-      "git_blob": "f6f2b5a77982efea3cd742b1748e0751ad3a9173"
+      "path": "state/benchmarks/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json",
+      "role": "calibrated hard/context/style layer contract",
+      "git_blob": "3fef1bb8ae201d2f42b254fa18dd01f52e0eee6a"
     },
     {
-      "path": "state/benchmarks/MICROCRAFT_ANTI_TEMPLATE_HARDENING_REGRESSION_V4.json",
-      "role": "Phase343 adversarial regression contract",
-      "git_blob": "92587511eb8d947988aad57afeaeb87e7a88f343"
+      "path": "benchmark/microcraft/label-calibration.v1.json",
+      "role": "privacy-safe calibrated regression cases and legacy-label mapping",
+      "git_blob": "6a8812dbab748f5560e5b5a6fc7fcd7c24bba75e"
     },
     {
-      "path": "benchmark/microcraft/dialogue-regression.v4.json",
-      "role": "privacy-safe 16-case anti-template expected-classification suite",
-      "git_blob": "5d457f5b41741762c83fbb695e73ae974592ec30"
+      "path": "state/tasks/MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1.json",
+      "role": "Phase345 implementation scope; ready but not started",
+      "git_blob": "dcca2fc8fe0a54f3fb781c99081e06290ba82d6c"
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "hash-chained continuity settlement through sequence 12",
-      "git_blob": "84924c6f600612906aa91f41e853d4b5dba975be"
-    },
-    {
-      "path": "config/novel-quality-gates.v3.json",
-      "role": "V3-G6D V1.3 machine-readable contract at machinery commit ad20a24f1b12e1545ea82e5ecd785f07d748ed79",
-      "git_blob": "53eed0865f4c12f91cc1bc5ada00d64c6837e0f6"
+      "role": "hash-chained continuity settlement through sequence 13",
+      "git_blob": "fd72b29d320bcc5d7194dfe551a6558732049070"
     }
   ],
-  "status": "ACTIVE_PHASE343_FRESH_REGRESSION_PENDING"
+  "status": "ACTIVE_PHASE345_READY_NOT_STARTED"
 }
