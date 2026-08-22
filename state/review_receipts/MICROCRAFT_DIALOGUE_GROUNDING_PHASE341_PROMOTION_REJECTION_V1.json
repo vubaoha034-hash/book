@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "ARCHITECTURE_PROMOTION_REJECTION",
+  "phase": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING",
+  "phase_ordinal": 341,
+  "event_status": "REJECTED_FOR_PROMOTION_VALID_FRESH_REGRESSION_2_OF_3_WITH_FALSE_POSITIVE_RISK",
+  "attempt3_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_V1_1_FRESH_ATTEMPT3_ADJUDICATION_V1.json",
+  "pre_registered_required_rediscovery": 3,
+  "observed_exact_rediscovery": 2,
+  "rediscovered": ["MC-R001", "MC-R003"],
+  "missed": ["MC-R002"],
+  "promotion_result": "FAIL",
+  "false_positive_risk": {
+    "present": true,
+    "description": "A directly responsive first-hand social anecdote was classified as author-mouthpiece because V1.1 over-weighted immediate listener need.",
+    "must_not_substitute_for_MC_R002": true
+  },
+  "capability_split": {
+    "local_semantic_logic": "SUPPORTED_BY_REPEATED_VALID_FRESH_EVIDENCE",
+    "dialogue_anti_template": "IMPROVED_EXACT_SEED_REDISCOVERY_OBSERVED",
+    "public_background_information_carrier": "STILL_NOT_RELIABLE_ENOUGH_FOR_PROMOTION",
+    "social_anecdote_false_positive_control": "INSUFFICIENT"
+  },
+  "required_successor": {
+    "task_id": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2",
+    "phase_ordinal": 342,
+    "focus": [
+      "EXHAUSTIVE_DIALOGUE_CANDIDATE_HARVEST",
+      "PUBLIC_BACKGROUND_BUNDLE_DETECTION",
+      "SOCIAL_ANECDOTE_CARVEOUT",
+      "MIXED_BUNDLE_SEPARATION",
+      "LEGACY_3_OF_3_GATE_PRESERVATION"
+    ]
+  },
+  "manuscript_repair_allowed": false,
+  "repeat_same_machinery_attempts_forbidden": true,
+  "highest_accepted_checkpoint_unchanged": 320,
+  "accepted_checkpoint_advance": false
+}
