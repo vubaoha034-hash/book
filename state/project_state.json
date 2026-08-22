@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-22T10:49:00+08:00",
+  "updated_at": "2026-08-22T11:35:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -92,68 +92,63 @@
     "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
-    "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
-    "phase_ordinal": 340,
-    "status": "FRESH_BLIND_ATTEMPT1_INVALID_RETRY_ATTEMPT2_REQUIRED",
-    "execution_scope": "Complete evidence-backed Scene-to-Speech, dialogue-grounding, and local-semantic-logic architecture validation before any repair of the invalidated historical manuscript candidate.",
+    "task_id": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1",
+    "phase": "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING",
+    "phase_ordinal": 341,
+    "status": "RULES_HARDENED_ADVERSARIAL_BENCHMARK_READY_FRESH_V1_1_REGRESSION_PENDING",
+    "execution_scope": "Harden the dialogue-grounding discriminator after a valid fresh Phase340 regression rediscovered only 1/3 pre-registered mandatory failures; validate V1.1 before any manuscript repair.",
     "inputs": {
-      "task_manifest": "state/tasks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
-      "architecture_receipt": "state/review_receipts/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
-      "architecture_benchmark": "state/benchmarks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1.json",
-      "BOOK01_source_access_receipt": "state/review_receipts/BOOK01_CANONICAL_RAW_MICROCRAFT_SOURCE_ACCESS_V1.json",
-      "final_freeze_invalidation_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
-      "developmental_reaudit_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_DEVELOPMENTAL_REAUDIT_V1.json",
-      "attempt1_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT1_ADJUDICATION_V1.json",
-      "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
-      "private_developmental_reaudit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg",
-      "attempt2_pinned_handoff_file_id": "13FGNCwPCelKZToTRB-OTZh2vRcJa_RaGxoM-58YX5SI"
+      "phase340_task": "state/tasks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
+      "phase340_promotion_rejection": "state/review_receipts/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_PHASE340_PROMOTION_REJECTION_V1.json",
+      "attempt2_adjudication_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_G6D_FRESH_NO_HINT_ATTEMPT2_ADJUDICATION_V1.json",
+      "phase341_task": "state/tasks/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1.json",
+      "phase341_benchmark": "state/benchmarks/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_REGRESSION_V2.json",
+      "design_doc": "docs/MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1.md",
+      "adversarial_suite": "benchmark/microcraft/dialogue-regression.v2.json",
+      "private_scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0"
+    },
+    "phase340_settlement": {
+      "attempt2_machinery_binding_valid": true,
+      "attempt2_manuscript_hash_valid": true,
+      "attempt2_G6D": "FAIL",
+      "mandatory_exact_rediscovery": "1/3",
+      "rediscovered": ["MC-R001"],
+      "missed": ["MC-R002", "MC-R003"],
+      "promotion": "REJECTED",
+      "repeat_attempts_without_architecture_change_forbidden": true
     },
     "source_coverage": {
       "BOOK_01_samples": 30,
       "BOOK_02_samples": 30,
       "BOOK_03_samples": 30,
-      "BOOK_01_source_status": "RAW_READABLE_EXACT_CANONICAL_MATCH_30_SAMPLES_COMPLETE",
-      "BOOK_01_source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
-      "BOOK_01_chapter_count": 40,
-      "three_book_raw_microcraft_revalidation_complete": true,
-      "candidate_effect": "SUPPORTS_MC_C01_THROUGH_MC_C07_WITH_NO_SEMANTIC_BROADENING"
+      "three_book_raw_microcraft_revalidation_complete": true
+    },
+    "hardening": {
+      "machinery_commit": "80c7635c590821ec41c30b588c7484881b9d5a08",
+      "quality_gate_schema": "3.0.1",
+      "adversarial_case_count": 20,
+      "required_discriminators": [
+        "TEXTUAL_SPEAKER_GOAL_EVIDENCE",
+        "EXACT_BUNDLE_NO_READER_COUNTERFACTUAL",
+        "ATOMIC_INFORMATION_CLAIMS_WITH_LISTENER_NEED",
+        "PER_TURN_STATE_DELTA",
+        "NO_UNSUPPORTED_BLUFF_RESCUE",
+        "ORDINARY_EARLY_MID_DIALOGUE_COVERAGE"
+      ]
     },
     "validation": {
-      "microcraft_regression_contract": "PASS_NON_CI",
-      "G6D_config_contract": "PASS_NON_CI",
-      "V3_structure_isolated_mirror": "PASS_32_FILES_NON_CI",
-      "root_benchmark_contract_equivalent": "PASS_NON_CI",
-      "BOOK01_source_integrity": "PASS_SHA256_EXACT_CANONICAL_MATCH_40_CHAPTERS",
-      "BOOK01_scene_to_speech_sampling": "PASS_30_RAW_DERIVED_ABSTRACT_SAMPLES",
-      "developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE",
-      "fresh_G6D_attempt1": "INVALID_FOR_PROMOTION_OBSERVED_REDISCOVERY_1_OF_3"
+      "phase340_valid_fresh_regression": "PROMOTION_FAIL_1_OF_3",
+      "V1_1_rule_integration": "COMPLETE_PENDING_FRESH_SEMANTIC_VALIDATION",
+      "adversarial_regression_contract": "20_CASE_CONTRACT_CREATED_NOT_GENERAL_QUALITY_PROOF"
     },
-    "known_required_regressions": ["MC-R001", "MC-R002", "MC-R003"],
-    "additional_developmental_failure": "YMGQ-G6D-004_TEMPORAL_LOCATION_CHAIN_FAIL",
-    "fresh_attempt1": {
-      "machinery_binding_valid": false,
-      "cause": "DEFAULT_MAIN_USED_FOUR_REQUIRED_FILES_404",
-      "mandatory_exact_rediscovery_count": 1,
-      "mandatory_required_count": 3,
-      "rediscovered": ["MC-R001"],
-      "missed": ["MC-R002", "MC-R003"],
-      "additional_findings": ["TEMPORAL_LOCATION_CHAIN_FAIL", "RELATIVE_EXECUTION_TIME_CONTRADICTION", "AUTHOR_INFORMATION_MOUTHPIECE_FAIL_OTHER_INSTANCE"],
-      "promotion_eligible": false
-    },
-    "attempt2": {
-      "exact_machinery_commit": "9a9c2f712362f37cd2cb94764ad93ebc731bec18",
-      "required_rule_count": 6,
-      "abort_on_binding_failure": true,
-      "known_failure_examples_disclosed": false,
-      "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72"
-    },
-    "remaining_blockers": ["FRESH_CONTEXT_G6D_REAUDIT_ATTEMPT2_PINNED"],
-    "next_action": "Run Attempt 2 in a genuinely fresh chat. First bind all six allowed rule files at exact commit 9a9c2f712362f37cd2cb94764ad93ebc731bec18 and abort on any mismatch; then audit the unchanged historical manuscript without reading regression cases or prior reviews. Do not repair the manuscript before Attempt 2 is preserved.",
+    "remaining_blockers": ["FRESH_CONTEXT_G6D_V1_1_REGRESSION_3_OF_3"],
+    "next_action": "Run one genuinely fresh/no-hint G6D regression against immutable hardening commit 80c7635c590821ec41c30b588c7484881b9d5a08. Do not reveal benchmark cases, prior diagnoses, failure locations, or corrected wording. Require exact rediscovery of all three pre-registered failures before architecture promotion.",
     "forbidden_actions": [
-      "REPAIR_YMGQ_BEFORE_FRESH_G6D_ATTEMPT2_IS_PRESERVED",
-      "CLAIM_FRESH_BLIND_G6D_PASS_FROM_ATTEMPT1",
-      "CLAIM_SCHEMA_VALIDATION_PROVES_LITERARY_QUALITY",
+      "REPAIR_YMGQ_BEFORE_V1_1_FRESH_REGRESSION_IS_PRESERVED",
+      "RUN_REPEATED_FRESH_ATTEMPTS_ON_SAME_MACHINERY_UNTIL_LUCKY_PASS",
+      "READ_DIALOGUE_REGRESSION_V2_IN_FRESH_MANUSCRIPT_AUDIT",
+      "RELAX_PRE_REGISTERED_3_OF_3_GATE",
+      "CLAIM_SCHEMA_OR_SYNTHETIC_CASES_PROVE_LITERARY_QUALITY",
       "STORE_COPYRIGHTED_SOURCE_TEXT_IN_PUBLIC_GIT",
       "STORE_REAL_MANUSCRIPT_TEXT_IN_PUBLIC_GIT",
       "DEFAULT_ENABLE_NOVEL_DNA_ROUTER",
@@ -167,7 +162,7 @@
       "phase_ordinal": 330,
       "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE",
       "reason": "A real-manuscript final-quality freeze produced validation false negatives. System-level local semantic/dialogue validation must be repaired before further production-outcome accumulation is treated as trustworthy.",
-      "resume_condition": "Phase340 evidence blockers closed or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
+      "resume_condition": "Phase341 fresh regression gate closed or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."
     }
   ],
   "manuscript_quality_state": {
@@ -177,7 +172,9 @@
       "reason": "VALIDATION_FALSE_NEGATIVE_MICROCRAFT_DIALOGUE_LOCAL_SEMANTIC_LOGIC",
       "repair_started_after_invalidation": false,
       "V3_G6D": "FAIL",
-      "fresh_attempt1_promotion_status": "INVALID"
+      "fresh_attempt1_promotion_status": "INVALID",
+      "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3",
+      "repair_blocked_by_phase341": true
     }
   },
   "rollback": {
@@ -215,7 +212,8 @@
     "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS",
     "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1",
     "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1",
-    "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1"
+    "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1",
+    "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"
   ],
   "invariants": {
     "missing_result_means": "UNKNOWN",
