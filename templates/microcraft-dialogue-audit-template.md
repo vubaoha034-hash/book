@@ -1,4 +1,4 @@
-# Microcraft Dialogue / Local Logic Audit V1.3
+# Microcraft Dialogue / Local Logic Audit V1.4
 
 ## Scope
 
@@ -18,11 +18,10 @@ public_background_bundle_candidates:
 social_anecdote_candidates:
 rhetorical_ladder_candidates:
 rhetorical_ladder_candidate_count:
+epistemic_scope_candidates:
 ordinary_early_mid_candidates:
 coverage_complete: true | false
 ```
-
-Inventory every turn/block that meets the frozen candidate-harvest criteria before judging any candidate.
 
 A PRE_DELIVERY or REGRESSION audit cannot PASS with `coverage_complete=false`.
 
@@ -38,44 +37,69 @@ scene_state:
 bundle_type: TASK_OR_CONFLICT_INFORMATION | PUBLIC_BACKGROUND_ORIENTATION | SOCIAL_ANECDOTE_OR_RELATIONSHIP_STORY | MIXED | UNCERTAIN
 immediate_trigger:
 trigger_textual_evidence:
-speaker_perception:
-non_speech_reaction_or_NONE:
 why_speak_now:
 speaker_in_scene_goal:
 speaker_goal_textual_evidence:
-listener_already_knows:
+object_facts:
+listener_object_fact_knowledge:
+speaker_claim_about_public_knowledge:
+listener_public_knowledge_before: KNOWN | UNKNOWN | UNCERTAIN | NOT_APPLICABLE
+reported_rumor_content:
+rumor_source_or_evidence:
+exposure_or_spread_evidence:
+actionable_risk_from_public_knowledge:
+epistemic_payload_delta:
+embedded_repetition_required_to_identify_meta_claim: true | false | uncertain
 atomic_information_claims:
-listener_need_per_claim:
-information_carrier_per_claim:
-reader_only_claim_count:
+reader_only_residue:
 social_value_or_NONE:
-social_value_textual_evidence_or_NONE:
 withheld_or_unsaid:
 aftereffect_per_claim_or_turn:
 exact_bundle_no_reader_counterfactual: WOULD_SAY_THIS_BUNDLE | WOULD_SAY_SOMETHING_BUT_NOT_THIS_BUNDLE | WOULD_NOT_SAY | UNCERTAIN
-bluff_or_deflection_claimed: true | false
-bluff_or_deflection_evidence_or_NONE:
 non_speech_option_checked:
+g8_pattern_family_candidate: true | false
 verdict: PASS | FAIL | HOLD
 failure_code:
 ```
 
-Duplicate for each harvested information/dialogue candidate as required.
+Duplicate for each harvested candidate as required.
 
-## Public-background bundle audit
+## Epistemic-scope audit
 
 ```text
 location:
-claim_count:
+object_fact:
+listener_object_fact_knowledge:
+public_knowledge_proposition:
+listener_public_knowledge_before:
+reported_rumor_content:
+rumor_source_or_evidence:
+exposure_or_spread_evidence:
+actionable_risk_from_public_knowledge:
+epistemic_payload_delta:
+embedded_repetition_required_to_identify_meta_claim:
+reader_only_residue:
+verdict: PASS | FAIL | HOLD
+failure_code:
+```
+
+Do not treat `listener knows X` as equivalent to `listener knows outsiders know X`.
+
+## Pure shared-background mouthpiece audit
+
+```text
+location:
 claims_listener_already_knows:
-claims_listener_needs_now:
-claims_with_text_supported_transmission_goal:
+new_object_fact_payload:
+new_public_or_reported_knowledge_payload:
+new_exposure_or_risk_payload:
+other_scene_function:
 claims_whose_main_beneficiary_is_reader:
-one_new_claim_rescuing_bundle_attempted: true | false
-exact_bundle_verdict:
 verdict:
 failure_code:
 ```
+
+`AUTHOR_INFORMATION_MOUTHPIECE_FAIL` requires absence of a distinct scene/epistemic payload, not merely repetition of known object words.
 
 ## Social anecdote audit
 
@@ -90,8 +114,6 @@ voice_or_relationship_value:
 reader_orientation_payload_present:
 verdict:
 ```
-
-Do not fail social detail merely because it is not task-essential.
 
 ## Local Semantic Logic records
 
@@ -112,9 +134,9 @@ failure_code:
 repair_target:
 ```
 
-## Anti-template scan — REQUIRED ONE RECORD PER HARVESTED RHETORICAL LADDER
+## Anti-template scan — one record per harvested rhetorical ladder
 
-Before final verdict record:
+Before final verdict:
 
 ```text
 rhetorical_ladder_candidate_count:
@@ -122,7 +144,7 @@ anti_template_record_count:
 rhetorical_ladder_record_parity: PASS | FAIL
 ```
 
-If counts differ, use `RHETORICAL_LADDER_AUDIT_INCOMPLETE` and G6D cannot PASS.
+If counts differ, use `RHETORICAL_LADDER_AUDIT_INCOMPLETE`.
 
 ### ATS-001
 
@@ -147,17 +169,16 @@ assertion_created:
 next_turn_retracts_or_nullifies: true | false
 induced_followup_dependency: true | false
 counterfactual_turn_deletion_result:
-portable_generic_joke_risk: true | false
+portable_generic_joke_risk: LOW | MEDIUM | HIGH
 relationship_or_task_specificity_evidence_or_NONE:
 bluff_or_deflection_evidence_or_NONE:
 empty_scaffold_turn_count:
+g8_pattern_family_candidate: true | false
 verdict: PASS | FAIL | HOLD
 failure_code:
 ```
 
-Duplicate ATS record for every item listed in `rhetorical_ladder_candidates`.
-
-Temporary false belief that is immediately cancelled and causes no action/relationship/strategic effect does not count as meaningful state delta.
+A removable turn is not automatically a hard G6D failure. Local hard FAIL requires independent evidence of ungrounded/materially misleading dialogue. Portable but locally plausible cadence should be routed to G8 family analysis.
 
 ## Action-beat-spam check
 
@@ -176,13 +197,15 @@ V3-G6D: PASS | FAIL | HOLD
 coverage_complete:
 candidate_inventory_count:
 candidate_audited_count:
+epistemic_scope_candidate_count:
 rhetorical_ladder_candidate_count:
 anti_template_record_count:
 rhetorical_ladder_record_parity:
-public_background_bundle_failures:
+pure_shared_background_mouthpiece_failures:
+epistemic_scope_holds:
 social_anecdote_false_positive_risks:
-per_turn_template_failures:
-self_cancelling_assertion_failures:
+local_dialogue_template_failures:
+g8_pattern_family_candidates:
 semantic_chain_failures:
 open_blockers:
 open_majors:
@@ -190,4 +213,4 @@ protected_strengths:
 next_action:
 ```
 
-A numeric score is not evidence. A schema-complete form is not evidence. Every PASS must cite located manuscript evidence.
+Numeric scores and schema completeness are not quality evidence. Every verdict requires located manuscript evidence.
