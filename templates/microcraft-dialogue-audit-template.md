@@ -1,4 +1,4 @@
-# Microcraft Dialogue / Local Logic Audit V1.2
+# Microcraft Dialogue / Local Logic Audit V1.3
 
 ## Scope
 
@@ -17,6 +17,7 @@ omitted_candidates_and_reason:
 public_background_bundle_candidates:
 social_anecdote_candidates:
 rhetorical_ladder_candidates:
+rhetorical_ladder_candidate_count:
 ordinary_early_mid_candidates:
 coverage_complete: true | false
 ```
@@ -59,11 +60,9 @@ verdict: PASS | FAIL | HOLD
 failure_code:
 ```
 
-Duplicate for each harvested candidate.
+Duplicate for each harvested information/dialogue candidate as required.
 
 ## Public-background bundle audit
-
-For any turn combining several of event/time/listener-role/reward/rumor/outsider-count/route/rule facts:
 
 ```text
 location:
@@ -79,8 +78,6 @@ failure_code:
 ```
 
 ## Social anecdote audit
-
-For a possible anecdote/gossip/relationship story:
 
 ```text
 location:
@@ -115,22 +112,52 @@ failure_code:
 repair_target:
 ```
 
-## Anti-template scan
+## Anti-template scan — REQUIRED ONE RECORD PER HARVESTED RHETORICAL LADDER
+
+Before final verdict record:
 
 ```text
+rhetorical_ladder_candidate_count:
+anti_template_record_count:
+rhetorical_ladder_record_parity: PASS | FAIL
+```
+
+If counts differ, use `RHETORICAL_LADDER_AUDIT_INCOMPLETE` and G6D cannot PASS.
+
+### ATS-001
+
+```text
+candidate_id:
 sequence_location:
 sequence_shape:
+turn_1_claim_or_function:
 turn_1_state_delta:
+turn_1_goal_textual_evidence:
+turn_2_claim_or_function:
 turn_2_state_delta:
+turn_2_goal_textual_evidence:
+turn_3_claim_or_function:
 turn_3_state_delta:
+turn_3_goal_textual_evidence:
+turn_4_claim_or_function:
 turn_4_state_delta:
-character_goal_per_turn:
+turn_4_goal_textual_evidence:
+self_cancelling_assertion_present: true | false
+assertion_created:
+next_turn_retracts_or_nullifies: true | false
+induced_followup_dependency: true | false
+counterfactual_turn_deletion_result:
+portable_generic_joke_risk: true | false
+relationship_or_task_specificity_evidence_or_NONE:
 bluff_or_deflection_evidence_or_NONE:
-relationship_or_information_change:
 empty_scaffold_turn_count:
 verdict: PASS | FAIL | HOLD
 failure_code:
 ```
+
+Duplicate ATS record for every item listed in `rhetorical_ladder_candidates`.
+
+Temporary false belief that is immediately cancelled and causes no action/relationship/strategic effect does not count as meaningful state delta.
 
 ## Action-beat-spam check
 
@@ -149,9 +176,13 @@ V3-G6D: PASS | FAIL | HOLD
 coverage_complete:
 candidate_inventory_count:
 candidate_audited_count:
+rhetorical_ladder_candidate_count:
+anti_template_record_count:
+rhetorical_ladder_record_parity:
 public_background_bundle_failures:
 social_anecdote_false_positive_risks:
 per_turn_template_failures:
+self_cancelling_assertion_failures:
 semantic_chain_failures:
 open_blockers:
 open_majors:
