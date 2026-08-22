@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 6,
-  "recorded_at": "2026-08-21T20:54:30+08:00",
+  "sequence": 7,
+  "recorded_at": "2026-08-22T08:54:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
-    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1"
+    "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"
   ],
-  "current_focus": "Accumulate privacy-safe real-manuscript outcomes only when an actual eligible Novel DNA production call occurs; do not invent manuscripts or force calls merely to advance project state.",
+  "current_focus": "Finish the user-authorized MICROCRAFT + DIALOGUE + LOCAL LOGIC architecture evidence gates before repairing the invalidated historical YMGQ candidate: complete canonical BOOK-01 raw Scene-to-Speech sampling and a genuinely fresh-context no-hint G6D regression.",
   "completed": [
     "BOOK-01, BOOK-02, and BOOK-03 book-level distillation/validation/freeze/closeout chains accepted",
     "Three-book cross-book revalidation completed with 33 total pair comparisons",
@@ -17,70 +17,95 @@
     "Phase 300 integrated the dedicated default-off Novel DNA Router into V3",
     "Phase 310 passed a new 12-case synthetic integration regression benchmark with scope limitation",
     "Phase 320 promoted the Router only to OPTIONAL_BOUNDED_PRODUCTION while preserving DEFAULT OFF and all frozen GN-VDNA-01 semantics",
-    "Phase 320 established mandatory production call records, post-use validation, privacy-safe metadata, local rollback, system-pause triggers, and a metadata-only real-use ledger"
+    "The prior YMGQ final-quality freeze was formally invalidated without deleting history after validation false negatives were confirmed",
+    "V3-G6D Scene-to-Speech, dialogue-grounding, non-speech, information-carrier, and local semantic logic architecture is developmentally integrated",
+    "Permanent privacy-safe microcraft regression suite V1 now contains 12 cases including MC-R001, MC-R002, and MC-R003",
+    "BOOK-02 and BOOK-03 each contributed 30 raw-derived abstract Scene-to-Speech samples in private evidence",
+    "Same-context non-blind developmental YMGQ re-audit represented all three seed failures and additionally found YMGQ-G6D-004 TEMPORAL_LOCATION_CHAIN_FAIL",
+    "Microcraft contract, G6D config, root benchmark contract-equivalent check, and isolated V3 structure mirror passed within their stated non-CI scopes"
   ],
   "incomplete": [
-    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 is event-driven and has no real-manuscript outcome yet",
-    "External independent blind validation has not been performed",
-    "Stable statistical production improvement across real user manuscripts remains unproven"
+    "Canonical repaired BOOK-01 raw source is not readable in the current private plane, so at least 30 matching raw-derived Scene-to-Speech samples are still required for full three-book microcraft revalidation",
+    "A genuinely fresh-context no-hint G6D audit of the unchanged historical YMGQ candidate has not yet been run, so blind semantic regression has not passed",
+    "The invalidated historical YMGQ candidate has not been repaired after G6D; this is intentional to preserve the regression input",
+    "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1 is parked during the authorized architecture upgrade; real_manuscript_applied_outcome_count remains 0",
+    "External human blind validation and stable statistical production improvement remain unproven"
   ],
-  "blocked": [],
+  "blocked": [
+    "BOOK01_CANONICAL_RAW_MICROCRAFT_SAMPLING_AT_LEAST_30",
+    "FRESH_CONTEXT_G6D_REAUDIT_NO_HINTS"
+  ],
   "unknowns": [
-    "No external blind dataset has yet validated GN-VDNA-01 beyond the three frozen source books and synthetic benchmarks",
-    "No real user manuscript production outcome has yet been recorded in the production ledger",
+    "Whether the fresh no-hint G6D audit will independently rediscover all three mandatory regressions",
+    "Whether BOOK-01 raw microcraft sampling will support, narrow, or contradict the current two-book Scene-to-Speech candidates",
+    "No external human blind dataset has validated the new G6D architecture",
     "Local Windows runtime/integration state is not inferred from GitHub"
   ],
   "do_not_reopen": [
-    "Accepted BOOK-01, BOOK-02, and BOOK-03 phases",
+    "Accepted BOOK-01, BOOK-02, and BOOK-03 book-level phases",
     "Phase 170 pair comparisons",
     "Phase 250 pair comparisons",
     "Phase 270 and Phase 310 synthetic benchmarks as substitutes for real-manuscript outcomes",
     "GN-VDNA-01 V1 semantics without a new version and revalidation",
-    "CBDNA-C01/C03/C04 global promotion without separate evidence and gates",
     "Default-enable or automatic application of the Novel DNA Router",
-    "Universal production-improvement claims from synthetic evidence",
-    "Public storage of real manuscript text",
-    "No backward transition without an authorized rollback receipt"
+    "Universal production-improvement claims from synthetic or schema evidence",
+    "Public storage of copyrighted source text or real manuscript text",
+    "Repair the historical YMGQ regression input before the fresh no-hint G6D audit is preserved",
+    "Claim full three-book raw microcraft validation before canonical BOOK-01 raw sampling",
+    "Claim fresh blind semantic regression from the same-context developmental re-audit",
+    "No backward accepted-checkpoint transition without an authorized rollback receipt"
   ],
-  "active_change_ids": [],
-  "next_required_action": "Wait for an actual real-manuscript V3 task to reach the optional Router. If and only if a DNA call becomes APPLIED, bind an opaque production_use_id, preserve private pre/post manuscript references, complete post-use validation, and append privacy-safe metadata to state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl. Do not fabricate a manuscript or force a DNA call for progress.",
+  "active_change_ids": [
+    "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1"
+  ],
+  "next_required_action": "Complete two independent evidence blockers: (1) make canonical repaired BOOK-01 source readable in the private plane and extract at least 30 Scene-to-Speech samples with the frozen schema; (2) run a fresh-context no-hint G6D audit of the unchanged historical YMGQ candidate, without known failure locations/diagnoses/corrections. Do not repair the manuscript before the fresh regression input is preserved.",
   "ledger_tails": {
     "global": {
-      "event_id": "EVT-NOVEL-DISTILL-PHASE320-ACCEPT-20260821-006",
-      "event_hash": "f832d42b2ace3119c0625ac5dbc2c67d85cb1b25dce6f3ec79c650c0b241c4e9"
+      "event_id": "EVT-NOVEL-DISTILL-MICROCRAFT-UPGRADE-20260822-007",
+      "event_hash": "63fa402b5abf2ec6713f018483b0b044ab45eb6e8fb79fad71de908492e02a5a"
     }
   },
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "accepted checkpoint and event-driven active-task authority",
-      "git_blob": "aee0418304659829ac57f8912b7c86a3bdaa8598"
+      "role": "highest accepted checkpoint plus active Phase340 limited-upgrade authority",
+      "git_blob": "3c07f7ede00d7fabe4cebecacf14e20ab0970e43"
     },
     {
-      "path": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1.json",
-      "role": "Phase 320 accepted bounded-production promotion receipt",
-      "git_blob": "bf45ea6303b0bd571f5b3a48ce250469e93975d9"
+      "path": "state/tasks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
+      "role": "Phase340 task scope, evidence coverage, validation limits, and remaining blockers",
+      "git_blob": "9886ba5d6a3bf0fbdc27cabf0d213c7d994c91cb"
     },
     {
-      "path": "state/production/NOVEL_DNA_ROUTER_PRODUCTION_GOVERNANCE_V1.json",
-      "role": "optional bounded production status and gate manifest",
-      "git_blob": "c174556e4d3f18226819163596bc30dc9a47c5b6"
+      "path": "state/review_receipts/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1.json",
+      "role": "developmental architecture settlement receipt",
+      "git_blob": "e8b6794c10300677de21d7cc0379cbaf5bab48de"
     },
     {
-      "path": "docs/NOVEL_DNA_BOUNDED_PRODUCTION_GOVERNANCE_V1.md",
-      "role": "bounded production governance contract",
-      "git_blob": "1e8c21ceb82349248341ace6f1d43d6cb7c55cc4"
+      "path": "state/benchmarks/MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_REGRESSION_V1.json",
+      "role": "validation scopes, source coverage, and developmental regression evidence",
+      "git_blob": "aa3db7e45b049a271424553ea56d94f8a23ebba7"
+    },
+    {
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
+      "role": "historical final-quality freeze invalidation without history deletion",
+      "git_blob": "f2192569cabb7f45cdbeb5c2e4b1386c3cb5566b"
+    },
+    {
+      "path": "config/novel-quality-gates.v3.json",
+      "role": "V3-G6D machine-readable gate contract",
+      "git_blob": "5977249836e4ba5bddc29ce18bef53ba02aac872"
     },
     {
       "path": "state/production/NOVEL_DNA_REAL_USE_LEDGER_V1.jsonl",
-      "role": "metadata-only real-manuscript outcome ledger",
-      "git_blob": "adbdff94648fd659b5bcc8c89487319b4b86f7ef"
+      "role": "real-manuscript production history including final-freeze invalidation; DNA APPLIED count remains zero",
+      "git_blob": "be78ede09a0b1e8c5162c2009aea5b03c98d50e3"
     },
     {
-      "path": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
-      "role": "GN-VDNA-01 frozen Global DNA manifest",
-      "git_blob": "dde98aeb5566f734f373fffa5a1e0248a89be931"
+      "path": "state/continuity/STATE_LEDGER.jsonl",
+      "role": "hash-chained continuity settlement through sequence 7",
+      "git_blob": "4a67883b0b03a3dad7ce0a6f16dbdb69a71ebaa4"
     }
   ],
-  "status": "ACTIVE_EVENT_DRIVEN"
+  "status": "ACTIVE_DEVELOPMENTAL_WITH_BLOCKERS"
 }
