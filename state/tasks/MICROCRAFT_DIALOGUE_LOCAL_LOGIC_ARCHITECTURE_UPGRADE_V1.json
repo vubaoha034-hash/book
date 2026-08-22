@@ -4,7 +4,7 @@
   "task_id": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1",
   "phase": "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE",
   "phase_ordinal": 340,
-  "status": "IN_PROGRESS_TWO_BOOK_RAW_EVIDENCE_BOOK01_SOURCE_BLOCKED",
+  "status": "STRUCTURE_INTEGRATED_DEVELOPMENTAL_REGRESSION_PASS_BOOK01_AND_FRESH_BLIND_PENDING",
   "authorized_by_user": true,
   "authorized_scope": "Invalidate the false final-quality freeze, lock permanent regressions, distill Scene-to-Speech microcraft, implement MICROCRAFT + DIALOGUE + LOCAL LOGIC gates, validate them, then re-audit the unchanged manuscript before editing it.",
   "highest_accepted_checkpoint": {
@@ -16,7 +16,9 @@
   "private_evidence": {
     "folder_id": "181j4kdlMEoccdZlIoY5ASQB2KzujJ0xS",
     "scene_to_speech_evidence_file_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
-    "copyrighted_source_text_in_git": false
+    "developmental_reaudit_file_id": "1LYqwVDJrf3S-t-jpTAQwVUYaoVClMpUzoDOc_r4asTg",
+    "copyrighted_source_text_in_git": false,
+    "real_manuscript_text_in_git": false
   },
   "source_coverage": {
     "BOOK_02_ZHUXIAN": {
@@ -35,12 +37,7 @@
       "summary_substitution_for_raw_sampling_forbidden": true
     }
   },
-  "mandatory_regression_ids": [
-    "MC-R001",
-    "MC-R002",
-    "MC-R003"
-  ],
-  "planned_components": [
+  "integrated_components": [
     "DIALOGUE_TRIGGER_ANCHOR",
     "SCENE_TO_SPEECH_CHAIN",
     "NON_SPEECH_DECISION",
@@ -48,22 +45,50 @@
     "DIALOGUE_ANTI_TEMPLATE",
     "LOCAL_SEMANTIC_TIME_CHAIN",
     "NO_ACTION_BEAT_SPAM",
+    "V3_G6D",
     "PERMANENT_MICROCRAFT_REGRESSION_SUITE"
+  ],
+  "mandatory_regression_ids": ["MC-R001", "MC-R002", "MC-R003"],
+  "validation_status": {
+    "microcraft_regression_contract": "PASS_NON_CI",
+    "G6D_config_contract": "PASS_NON_CI",
+    "V3_structure_isolated_mirror": "PASS_32_FILES_NON_CI",
+    "root_benchmark_contract_equivalent": "PASS_NON_CI",
+    "project_state_transition_preflight": "PASS",
+    "same_context_developmental_YMGQ_reaudit": "FAIL_AS_EXPECTED_WITH_ADDITIONAL_NON_SEED_FAILURE"
+  },
+  "developmental_reaudit": {
+    "known_regressions_represented": ["MC-R001", "MC-R002", "MC-R003"],
+    "additional_non_seed_failure": "YMGQ-G6D-004_TEMPORAL_LOCATION_CHAIN_FAIL",
+    "blind_claim_allowed": false,
+    "manuscript_modified": false
+  },
+  "remaining_blockers": [
+    {
+      "id": "BOOK01_RAW_MICROCRAFT_SOURCE_ACCESS",
+      "requirement": "Expose canonical repaired BOOK-01 raw source in the current private read plane and sample at least 30 Scene-to-Speech dialogue starts with the same schema."
+    },
+    {
+      "id": "FRESH_CONTEXT_G6D_REGRESSION",
+      "requirement": "Run a genuinely fresh-context G6D audit of the unchanged historical manuscript without revealing known failure locations, diagnoses, or corrected wording; it must independently rediscover MC-R001, MC-R002, and MC-R003."
+    }
   ],
   "completion_gate": {
     "public_architecture_integrated": true,
     "three_mandatory_regressions_locked": true,
     "skill_structure_validator_pass": true,
-    "benchmark_structure_validator_pass_if_contract_changed": true,
     "microcraft_regression_schema_validator_pass": true,
-    "unmodified_YMGQ_reaudit_catches_all_three_mandatory_failures": true,
-    "BOOK01_three_book_microcraft_promotion_required_for_full_three_book_claim": true
+    "unmodified_YMGQ_developmental_reaudit_represents_three_failures": true,
+    "BOOK01_three_book_microcraft_promotion_required_for_full_three_book_claim": true,
+    "fresh_context_no_hint_regression_required_for_blind_semantic_promotion": true
   },
   "forbidden_claims": [
     "THREE_BOOK_RAW_MICROCRAFT_VALIDATED_BEFORE_BOOK01_SOURCE_ACCESS",
     "AUTOMATIC_SEMANTIC_QUALITY_VALIDATION_BY_SCHEMA_SCRIPT",
+    "FRESH_BLIND_REGRESSION_PASSED_BEFORE_NEW_CONTEXT_TEST",
     "EXTERNAL_HUMAN_BLIND_VALIDATION",
-    "FINAL_MANUSCRIPT_READY_BEFORE_REAUDIT",
+    "FINAL_MANUSCRIPT_READY_BEFORE_G6D_REPAIR_AND_REVALIDATION",
     "COPYRIGHTED_SOURCE_TEXT_STORED_IN_PUBLIC_GIT"
-  ]
+  ],
+  "next_action": "Complete BOOK-01 raw microcraft sampling when source becomes readable and run fresh-context no-hint G6D regression before any repair of the historical manuscript."
 }
