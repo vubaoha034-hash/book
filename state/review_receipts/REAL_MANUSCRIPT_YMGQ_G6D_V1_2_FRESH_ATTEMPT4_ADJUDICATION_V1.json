@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_G6D_V1_2_FRESH_NO_HINT_ADJUDICATION",
+  "phase": "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING",
+  "phase_ordinal": 342,
+  "attempt": 4,
+  "event_status": "VALID_FRESH_ATTEMPT_PROMOTION_GATE_FAIL_2_OF_3_MANDATORY_REDISCOVERED",
+  "manuscript_title": "一命过桥",
+  "manuscript_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "audit_report_sha256": "69e2a624a29542e15c5b340db5904a81f9c5afcf8733dbc0f839fd5fe9af7c40",
+  "audit_report_size_bytes": 18972,
+  "fresh_context_claim": true,
+  "machinery_binding": {
+    "valid": true,
+    "repository": "vubaoha034-hash/book",
+    "exact_commit": "4da850b210e37d11e6da3cf81fce34620789894e",
+    "required_file_count": 6,
+    "all_expected_blob_sha_matched": true,
+    "manuscript_hash_matched": true,
+    "binding_result": "PASS"
+  },
+  "reported_G6D_verdict": "FAIL",
+  "coverage": {
+    "coverage_complete": true,
+    "candidate_inventory_count": 60,
+    "candidate_audited_count": 60,
+    "rhetorical_ladder_candidate_count": 16,
+    "reported_per_turn_template_failures": 0
+  },
+  "pre_registered_mandatory_rediscovery": {
+    "required_count": 3,
+    "rediscovered_count": 2,
+    "rediscovered": [
+      {
+        "id": "MC-R001",
+        "status": "EXACT_SEMANTIC_MATCH",
+        "evaluator_label": "TEMPORAL_SEMANTIC_CHAIN_FAIL"
+      },
+      {
+        "id": "MC-R002",
+        "status": "EXACT_SEMANTIC_MATCH",
+        "evaluator_label": "AUTHOR_INFORMATION_MOUTHPIECE_FAIL",
+        "note": "The evaluator independently flagged the public-background bundle combining current event, listener role, reward/rumor/outsider information."
+      }
+    ],
+    "missed": [
+      {
+        "id": "MC-R003",
+        "status": "MISSED",
+        "reason": "The pre-registered alone/retort/follow-up/unknown exchange was harvested as a rhetorical-ladder candidate but not independently failed; final report stated per_turn_template_failures=0."
+      }
+    ],
+    "gate_requirement": "3_OF_3_REQUIRED",
+    "gate_result": "FAIL",
+    "post_hoc_relaxation_forbidden": true
+  },
+  "v1_2_successes": {
+    "public_background_bundle_discriminator": "VALID_FRESH_SUCCESS",
+    "social_anecdote_false_positive_control": "VALID_FRESH_SUCCESS",
+    "local_semantic_logic": "VALID_FRESH_SUCCESS",
+    "candidate_harvest": "VALID_FRESH_SUCCESS"
+  },
+  "v1_2_remaining_failure": {
+    "component": "DIALOGUE_ANTI_TEMPLATE",
+    "type": "JUDGMENT_COVERAGE_AND_SELF_CANCELLING_ASSERTION_MISS",
+    "evidence": "The target ladder was present in the harvested rhetorical_ladder candidate list, yet no dedicated turn-by-turn failure record was produced and the final template-failure count remained zero."
+  },
+  "additional_findings": [
+    {
+      "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+      "description": "Execution timing chain: three days before execution versus tomorrow/next-day execution.",
+      "novelty_relative_to_seed_cases": "NON_SEED_CONFIRMED"
+    },
+    {
+      "code": "LOCATION_CONTINUATION_AMBIGUOUS",
+      "description": "Baisha relay / Luoshui route chain remained HOLD because the manuscript does not establish the geographic relation strongly enough.",
+      "verdict": "HOLD"
+    }
+  ],
+  "capability_adjudication": {
+    "local_semantic_logic": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "public_background_information_carrier": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "social_anecdote_protection": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "candidate_harvest": "SUPPORTED_BY_VALID_FRESH_EVIDENCE",
+    "dialogue_anti_template": "NOT_RELIABLE_ENOUGH_FOR_PROMOTION",
+    "architecture_promotion_eligible": false
+  },
+  "manuscript_repair_authorized_after_attempt4": false,
+  "next_required_action": "Harden rhetorical-ladder judgment coverage and self-cancelling assertion discrimination before any new fresh regression or manuscript repair.",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "dna_applied": false,
+  "real_manuscript_text_stored": false
+}
