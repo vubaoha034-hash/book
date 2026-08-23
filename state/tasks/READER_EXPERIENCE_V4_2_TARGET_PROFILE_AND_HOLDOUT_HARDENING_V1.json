@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1",
+  "phase_ordinal": 358,
+  "status": "IMPLEMENTED_PENDING_SETTLEMENT",
+  "trigger": "PHASE357_VALID_FRESH_RUN_REMAINING_HIDDEN_HOLDOUT_FALSE_NEGATIVES",
+  "problem_statement": "V4.1 correctly detected experiential climax failure and some re-entry decision-delta failures, but still rationalized manuscript-level surface skeleton density, a target-reader-flagged live information packet, the target re-entry location, and black-arrow answer curiosity. Fresh AI taste also materially diverged from the declared human target reader.",
+  "scope": [
+    "calibrate a non-answer-key target-reader profile",
+    "harden dramatization surface with functional-mask/unused-pressure tests",
+    "harden natural speech with earliest-sufficient-warning and multi-role-stack tests",
+    "require re-entry deltas to be textually available to the returning character",
+    "separate danger interest from mystery answer interest",
+    "create V4.2 hidden-holdout regression and pipeline",
+    "make SKILL default V4.2"
+  ],
+  "forbidden": [
+    "edit manuscript",
+    "show located failure ledger to future fresh evaluator",
+    "show regression answer key to future fresh evaluator",
+    "retroactively rewrite V4/V4.1 history",
+    "use target profile as a location answer key",
+    "final freeze"
+  ],
+  "outputs": [
+    "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "modules/target-reader-profile-calibration.md",
+    "modules/dramatization-surface-density-v1_1.md",
+    "modules/natural-speech-pressure-v1_2.md",
+    "modules/scene-reentry-evidence-anchor-v1_1.md",
+    "modules/suspense-curiosity-charge-v1_1.md",
+    "config/novel-quality-gates.v4.2.json",
+    "workflows/10-novel-master-pipeline-v4.2.md",
+    "state/benchmarks/READER_EXPERIENCE_V4_2_REGRESSION_V3.json",
+    "SKILL.md"
+  ],
+  "acceptance": {
+    "target_profile_has_no_failure_locations": true,
+    "remaining_false_negative_classes_have_explicit_tests": true,
+    "false_positive_controls_preserved": true,
+    "fresh_profile_calibrated_holdout_validation_required": true,
+    "manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false
+  },
+  "next_task": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1"
+}
