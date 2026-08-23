@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "profile_id": "YMGQ_TARGET_READER_PROFILE_V1",
+  "status": "ACTIVE_TARGET_READER_CONTRACT",
+  "scope": "Target-reader experience calibration for 一命过桥 and closely related project validation; contains no known failure locations or answer-key excerpts.",
+  "source": "Explicit target-reader feedback on the current manuscript plus project-level stated quality goal.",
+  "quality_goal": "Highly immersive commercial-literary Chinese fiction with strong page-turn desire, lived emotional scenes, human speech texture, meaningful suspense pull and felt climax escalation.",
+  "preferences": {
+    "dramatization": [
+      "High-stakes scenes should feel lived rather than read like efficient event notes.",
+      "Minimal dialogue is welcome when specific physical pressure, relationship history, silence, perception or irreversible action makes the omitted emotion unavoidable.",
+      "Across a manuscript, repeated terse question-answer-command surfaces should not dominate unrelated emotional scenes even when each scene is locally logical.",
+      "Do not fix thin scenes with decorative description, generic gestures or lyrical padding; use scene-specific resistance, behavior, perception and consequence."
+    ],
+    "speech": [
+      "Live dialogue should prioritize what the speaker most urgently needs now, not what the reader needs summarized.",
+      "Shared context should usually be omitted or fragmented unless the speaker has a real reason to restate it.",
+      "Prefer plausible interruption, inference, partial answer and reaction over polished multi-fact packets in live pressure.",
+      "Formal testimony, briefing, public persuasion and deliberate confession may be complete when the scene supports uninterrupted delivery."
+    ],
+    "suspense": [
+      "A mystery must create desire to know the answer, not merely support a coherent theory.",
+      "Clues should change prediction, fear, hope, relationship interpretation or decision pressure.",
+      "If revealing the answer early would leave most of the scene's pull intact because danger/action alone carries interest, the mystery itself has weak curiosity charge.",
+      "Fair hypothesis-building is necessary but not sufficient."
+    ],
+    "climax": [
+      "Structural escalation must produce a felt rise in pressure or meaning, not only remove options on paper.",
+      "Major climax beats should not read as similarly weighted event units.",
+      "A quiet irreversible choice may be the highest peak; spectacle is not required.",
+      "Aftershock and emotional consequence matter as much as physical resolution."
+    ],
+    "reader_propulsion": [
+      "Event density is not page-turn compulsion.",
+      "The reader should repeatedly gain a stronger reason to continue: anticipation, dread, emotional debt, reward, question ownership or consequential choice.",
+      "Localized quiet is acceptable; sustained flatness is not."
+    ]
+  },
+  "false_positive_controls": [
+    "Do not require every scene to be loud, long or highly descriptive.",
+    "Do not penalize concise dialogue merely for being concise.",
+    "Do not demand cliffhangers in a complete ending.",
+    "Do not imitate the wording, characters, plot or recognizable style of source novels.",
+    "Do not use a numeric score as a standalone gate."
+  ],
+  "evaluation_governance": {
+    "profile_may_be_shown_to_fresh_target_reader_simulation": true,
+    "exact_located_failure_ledger_must_remain_hidden_during_fresh_audit": true,
+    "fresh_AI_reader_is_not_human_equivalent": true,
+    "final_freeze_requires_closure_of_located_human_target_reader_failures": true
+  }
+}
