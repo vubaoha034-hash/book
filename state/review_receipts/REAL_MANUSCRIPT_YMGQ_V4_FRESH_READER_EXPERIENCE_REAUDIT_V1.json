@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+  "phase_ordinal": 355,
+  "status": "ACCEPT_VALID_FRESH_EXECUTION_V4_ARCHITECTURE_VALIDATION_FAIL_FALSE_NEGATIVES",
+  "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "raw_report": {
+    "transport": "USER_UPLOADED_RAW_UNTOUCHED_FILE",
+    "sha256": "e824617e3f19c8c7ff1ae9fb0cf03a3d95609d9c6184cdf8b563063ef184cdfe",
+    "bytes": 46916,
+    "reported_pass_A_trace_sha256": "92c6c81451cf59a287797bd9bedc4e60ffe8411a34dbd54a040307898394ce72"
+  },
+  "execution_adjudication": {
+    "verdict": "ACCEPT",
+    "manuscript_binding": "PASS",
+    "two_pass_protocol": "PASS_REPORTED",
+    "pass_A_frozen_before_rules": true,
+    "rule_binding": "PASS_REPORTED_16_OF_16",
+    "repair_performed": false
+  },
+  "evaluator_verdict": "PASS_FOR_PHASE355_READER_EXPERIENCE_REAUDIT_SCOPE",
+  "coordinator_quality_adjudication": {
+    "verdict": "REJECT_AS_V4_ARCHITECTURE_VALIDATION",
+    "manuscript_quality": "FAIL_UNRESOLVED_TARGET_READER_EVIDENCE",
+    "final_freeze_authorized": false,
+    "manuscript_rewrite_authorized": false,
+    "reason": "The fresh run is valid evidence but demonstrates material V4 false negatives against pre-existing located target-reader failures. A valid fresh AI reader PASS cannot override unresolved located human target-reader evidence."
+  },
+  "false_negative_analysis": [
+    {
+      "class": "MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION",
+      "finding": "The evaluator treated a representative terse triage exchange as strongly human and passed the emotional scene, but the target-reader complaint concerns recurrent scene-surface skeletonization across the manuscript rather than the local truth of one exchange.",
+      "root_cause": "RX-R001 was specified too locally and did not test cross-scene dramatization-surface density."
+    },
+    {
+      "class": "AUTHOR_SHAPED_INFORMATION_PACKET",
+      "finding": "The evaluator passed the early warning speech that packages known mission context, public spread, reward and arrival evidence into one polished unit, directly missing the located target-reader natural-speech failure.",
+      "root_cause": "V4-G6N remained too permissive when a speech had a valid scene goal."
+    },
+    {
+      "class": "REENTRY_WITHOUT_POST_WITHDRAWAL_DECISION_DELTA",
+      "finding": "The evaluator accepted a supporting character's return because an old relationship motive and spatial feasibility existed, even though those facts already existed when the character previously chose to withdraw.",
+      "root_cause": "V4-G1M did not require a new post-withdrawal decision delta for reversal of an explicit exit choice."
+    },
+    {
+      "class": "CLIMAX_EXPERIENTIAL_VOLTAGE",
+      "finding": "The evaluator proved structural option compression and therefore passed the climax, while the located target-reader evidence reports very low felt climax intensity.",
+      "root_cause": "RX-R004 incorrectly used option compression as a proxy for experienced voltage."
+    },
+    {
+      "class": "SUSPENSE_CURIOSITY_CHARGE",
+      "finding": "The evaluator successfully formed working hypotheses around the black-arrow chain, yet the target-reader evidence reports little desire to discover the answer.",
+      "root_cause": "RX-R005 incorrectly equated hypothesis availability with curiosity charge."
+    }
+  ],
+  "governance_correction": {
+    "fresh_AI_reader_is_human_target_reader": false,
+    "located_human_reader_evidence_may_be_overridden_by_AI_PASS": false,
+    "historical_V4_static_regression_rewritten": false,
+    "new_version_required": "V4.1"
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1"
+}
