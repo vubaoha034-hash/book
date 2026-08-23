@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR",
+  "phase_ordinal": 347,
+  "status": "READY_NOT_STARTED",
+  "authority": {
+    "phase346_task": "state/tasks/MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1.json",
+    "phase346_receipt": "state/review_receipts/MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1.json",
+    "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+    "fresh_report_sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e"
+  },
+  "source_manuscript_binding": {
+    "title": "一命过桥",
+    "required_source_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "must_hash_before_edit": true,
+    "must_preserve_original": true,
+    "repair_output_must_be_new_private_copy": true,
+    "public_repository_manuscript_text_forbidden": true
+  },
+  "repair_scope": {
+    "mode": "MINIMAL_TARGETED_REPAIR",
+    "G6D_blockers": [
+      {
+        "id": "PH346-G6D-B01",
+        "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+        "report_location": "L55-L77",
+        "required_outcome": "Remove the deterministic inherited-time contradiction by making the money-spending scope and the Chu Shisan encounter timing semantically compatible. Use the smallest change supported by surrounding manuscript facts."
+      },
+      {
+        "id": "PH346-G6D-B02",
+        "code": "TEMPORAL_SEMANTIC_CHAIN_FAIL",
+        "report_location": "L2963-L3021",
+        "required_outcome": "Reconcile the execution-date anchor so the scene-level temporal statement, dialogue-relative day reference and subsequent execution date describe one coherent timeline. Use the smallest change supported by surrounding manuscript facts."
+      }
+    ],
+    "G8_family_repair": {
+      "risk_code": "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+      "family_id": "F1",
+      "family_skeleton": "question/claim -> evasive or clever answer -> induced follow-up/correction -> punchline/tag",
+      "objective": "Reduce cross-character voice homogenization without deleting legitimate humor or making every line task-functional.",
+      "priority_high_portability_instances_from_fresh_report": ["C005", "C017", "C027", "C074"],
+      "maximum_primary_F1_instances_to_rework_in_one_pass": 5,
+      "minimum_primary_F1_instances_to_rework_if_supported": 2,
+      "selection_rule": "Prefer the most portable, least character-specific instances. Preserve instances whose mechanism depends strongly on a unique object, shared history, status pressure, injury, task conflict, ritual or relationship-specific running joke.",
+      "universal_numeric_density_threshold": null
+    },
+    "hold_not_mandatory_repair": {
+      "report_location": "L893-L897; L963-L985; L1675; L2873-L2877",
+      "status": "AMBIGUOUS_HOLD",
+      "rule": "Do not force a geography rewrite unless the source manuscript itself supplies enough evidence to resolve the ambiguity safely."
+    }
+  },
+  "protected_dialogue_policy": {
+    "must_preserve_false_positive_controls": true,
+    "protected_categories": [
+      "relationship-specific banter",
+      "first-hand anecdote",
+      "running joke",
+      "character-specific cadence",
+      "concrete-task humor",
+      "shared-history grief",
+      "memorial ritual"
+    ],
+    "do_not_apply_rule": "removable_or_portable_equals_fail"
+  },
+  "allowed_rule_files_at_freeze": [
+    "config/novel-quality-gates.v3.json",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/dialogue-epistemic-scope.md",
+    "modules/local-logic-ledger.md",
+    "templates/microcraft-dialogue-audit-template.md",
+    "rules/pass-isolation.md",
+    "rules/no-ai-smell.md",
+    "modules/dialogue-pattern-family-density.md",
+    "templates/dialogue-pattern-family-audit-template.md"
+  ],
+  "forbidden_actions": [
+    "OVERWRITE_OR_DELETE_ORIGINAL_HISTORICAL_CANDIDATE",
+    "PUBLICLY_COMMIT_REAL_MANUSCRIPT_TEXT",
+    "FULL_MANUSCRIPT_REWRITE",
+    "CHANGE_PLOT_FACTS_NOT_REQUIRED_TO_CLOSE_IDENTIFIED_DEFECTS",
+    "DELETE_ALL_BANTER_OR_HUMOR",
+    "TREAT_EVERY_REMOVABLE_LINE_AS_G6D_FAIL",
+    "FORCE_OLD_3_OF_3_LABELS",
+    "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD",
+    "CHANGE_PHASE345_RULE_SEMANTICS_DURING_MANUSCRIPT_REPAIR",
+    "DEFAULT_ENABLE_NOVEL_DNA_ROUTER",
+    "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE"
+  ],
+  "required_outputs": [
+    "A new private repaired manuscript copy with a new SHA-256; original source remains byte-identical.",
+    "A repair ledger mapping each changed region to Phase346 finding IDs and intended effect without storing manuscript prose in the public repository.",
+    "A targeted post-edit G6D check proving both deterministic temporal blockers are closed.",
+    "A full-manuscript G8 pattern-family recount/reassessment proving the F1 risk was reduced or explaining why further reduction would damage character-specific dialogue.",
+    "A protected-dialogue recheck showing the repair did not flatten relationship-specific speech.",
+    "A downstream continuity check for facts, knowledge, objects, rules and relationships touched by edits."
+  ],
+  "acceptance": {
+    "exact_source_hash_required_before_edit": true,
+    "original_preserved": true,
+    "G6D_blocker_1_closed": true,
+    "G6D_blocker_2_closed": true,
+    "no_new_deterministic_G6D_failure_in_changed_regions": true,
+    "G8_F1_cross_character_homogenization_reduced": true,
+    "protected_dialogue_not_mechanically_flattened": true,
+    "universal_numeric_density_threshold_forbidden": true,
+    "manuscript_text_public_repo_forbidden": true,
+    "post_repair_independent_validation_required_before_final_freeze": true
+  },
+  "next_action": "Bind the untouched historical candidate by exact SHA-256, create a new private repaired copy, close the two temporal-semantic blockers, minimally rework 2-5 weakest F1 instances, run targeted G6D plus full-manuscript G8/protected-dialogue checks, preserve the repair evidence, and stop before final promotion."
+}
