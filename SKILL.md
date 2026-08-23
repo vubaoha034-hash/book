@@ -1,170 +1,177 @@
 ---
 name: novel-writing-master
-description: Design, draft, diagnose, rewrite and audit Chinese fiction with evidence-backed causality, emotion, suspense, reader propulsion, natural speech, scene motivation, climax escalation, continuity, microcraft and de-AI controls.
+description: Design, draft, diagnose, rewrite and audit Chinese fiction with evidence-backed causality, emotion, suspense, reader propulsion, natural speech, dramatization surface, scene motivation, climax experience, continuity, microcraft and de-AI controls.
 ---
 
-# Novel Writing Master V4
+# Novel Writing Master V4.1
 
-V4 exists because a manuscript can be logically correct, locally grounded and de-AI compliant while still being boring.
+V4.1 exists because two stronger statements are now proven necessary:
 
-New tasks default to V4. V3 remains an inherited integrity layer and historical contract; V4 does not rewrite old V3 results.
+1. a manuscript can pass logic, G6D, G8 and even structural V4 checks while still reading poorly;
+2. a fresh AI reader can rationalize text that an actual target reader has already located as weak.
+
+New tasks default to V4.1. V4 and V3 remain inherited historical layers; do not rewrite their old verdicts.
 
 ## Mandatory preflight
 
-For any continuing project task, read current durable state first and obey anti-rollback:
+For any continuing project task read, in order:
 
 ```text
 state/project_state.json
 state/continuity/LATEST_CHECKPOINT.json
 rules/pass-isolation.md
-```
-
-For complete writing, rewrite, diagnosis or final-quality judgment, then read:
-
-```text
-workflows/08-novel-master-pipeline-v4.md
-config/novel-quality-gates.v4.json
+workflows/09-novel-master-pipeline-v4.1.md
+config/novel-quality-gates.v4.1.json
 library/reader-experience-technique-bank.v1.md
 ```
 
-V4 currently has developmental status until its active fresh real-manuscript validation is accepted. While developmental validation is pending, **final freeze is forbidden**.
+If a current-manuscript target-reader evidence ledger exists, coordinator/delivery work must also read it. A fresh blind evaluator must not read it until its blind trace is frozen.
 
-## What V4 must prove
+V4.1 remains DEVELOPMENTAL until the current fresh real-manuscript validation task is coordinator-accepted. While developmental validation is pending, final freeze is forbidden.
 
-A deliverable manuscript must prove all applicable inherited V3 integrity gates plus these reader-experience dimensions:
+## Core non-equivalences
 
-1. **Scene-entry motivation** — important characters enter, return, leave or switch roles because something caused the choice, not because the author now needs their function.
-2. **Reader propulsion** — every material span changes not only story state but reader desire: curiosity, dread, expectation, emotional debt, reward or consequential choice.
-3. **Suspense hypothesis engine** — meaningful mysteries let the reader form/test/update a model. Repeated oddity plus later explanation is not enough.
-4. **Emotional staging** — important emotion is dramatized through pressure, conflicting wants, behavior/subtext, consequential turns and aftershock. Correct short dialogue can still fail if it is only an event skeleton.
-5. **Natural speech under pressure** — G6D truth/motive is not proof that a human would package the information that way. Check urgency, relationship, omission, inference and sentence completeness.
-6. **Climax escalation** — event volume is not climax. Options must narrow, personal stakes rise, earlier assets/relationships return, irreversible choices occur and payoff/aftershock is visible.
-7. **Fresh immersion reader** — before final freeze, a fresh reader must produce an untouched reading trace with real stop/skim points, desire-to-continue drivers, suspense hypotheses, emotional experience and written-vs-spoken dialogue evidence.
+```text
+LOCAL_DIALOGUE_GROUNDING != DRAMATIZED_SCENE
+VALID_SPEAKER_GOAL != NATURAL_UTTERANCE_PACKAGING
+OLD_RELATIONSHIP_MOTIVE != POST_WITHDRAWAL_REENTRY_TRIGGER
+WORKING_HYPOTHESIS != CURIOSITY_CHARGE
+OPTION_COMPRESSION != EXPERIENCED_CLIMAX_VOLTAGE
+EVENT_PROGRESS != READER_PROPULSION
+FRESH_AI_PASS != HUMAN_TARGET_READER_PASS
+```
 
-## Mandatory modules
+Never infer final quality from a downstream pass.
+
+## V4.1 reader-experience modules
 
 ```text
 modules/scene-entry-motivation.md
+modules/scene-reentry-decision-delta.md
 modules/reader-propulsion-ledger.md
 modules/suspense-hypothesis-engine.md
+modules/suspense-curiosity-charge.md
 modules/emotional-staging-ledger.md
-modules/natural-speech-pressure.md
+modules/dramatization-surface-density.md
+modules/natural-speech-pressure-v1_1.md
 modules/climax-escalation-curve.md
+modules/climax-experiential-voltage.md
+modules/target-reader-evidence-authority.md
 ```
 
-Inherited V3 microcraft remains required where applicable:
+Inherited V3/V4 integrity modules remain required where applicable.
+
+## Reader evidence authority
+
+A numeric score alone is not a blocker.
+
+A located human target-reader failure is different: it names a text scope and a concrete reader effect. While that failure remains open on the same manuscript SHA:
 
 ```text
-config/novel-quality-gates.v3.json
-workflows/07-novel-master-pipeline-v3.md
-rules/scene-to-speech-microcraft.md
-modules/dialogue-trigger-anchor.md
-modules/dialogue-epistemic-scope.md
-modules/local-logic-ledger.md
-rules/no-ai-smell.md
-modules/dialogue-pattern-family-density.md
+fresh AI PASS cannot erase it
+final freeze is blocked
 ```
 
-## Non-negotiable distinction
+The AI may show that the originally suspected mechanism was wrong. Then repair the mechanism diagnosis, not the existence of the reader failure.
+
+## Manuscript-level dramatization check
+
+Do not audit only isolated dialogue exchanges.
+
+If separated high-stakes scenes repeatedly use terse functional turns + thin generic blocking, build a cross-scene surface-family ledger. One short exchange may be excellent; repeated event-skeleton realization across unrelated scenes may still fail.
+
+Do not fix by adding padding, decorative description, generic gestures or longer dialogue.
+
+## Natural speech V1.1
+
+For high-information speech, test:
+
+1. first urgent payload;
+2. independently reactable information segments;
+3. where the listener would naturally interrupt or infer;
+4. shared-context subtraction;
+5. what a human would omit;
+6. whether the scene truly supports uninterrupted briefing/testimony/confession.
+
+A real reason to speak is not proof that the exact sentence is natural.
+
+## Re-entry reversal
+
+When a character explicitly withdraws and later returns, ask:
 
 ```text
-EVENT_PROGRESS != READER_PROPULSION
-G6D_PASS != NATURAL_SPEECH_PASS
-G8_PASS != READER_IMMERSION_PASS
-MYSTERY_OBJECT_PRESENT != SUSPENSE_ENGINE_PRESENT
-MANY_EVENTS != CLIMAX
-FUNCTIONAL_DIALOGUE != DRAMATIZED_DIALOGUE
+What changed after the decision to leave?
 ```
 
-Never infer:
+An old relationship, ongoing affection or nearby location that already existed at withdrawal time cannot by itself explain the reversal.
+
+## Suspense
+
+Run both:
 
 ```text
-ready_to_freeze = G6D_PASS && G8_PASS
+working hypothesis ledger
+curiosity charge ledger
 ```
 
-Final freeze requires the complete V4 delivery contract in `config/novel-quality-gates.v4.json`.
+A mystery may be fair and guessable yet boring. Reader desire to resolve must be justified by prediction tension, operational stakes, relationship consequence or another concrete cared-about outcome.
 
-## Reader Experience Technique Bank
+## Climax
 
-The three source-book evidence pipelines extracted many valuable suspense, emotion, pacing and reward techniques that were historically classified as Supporting. Supporting status must no longer make them invisible to production.
+Run both:
 
-Use:
+```text
+structural option-compression curve
+fresh-reader experiential-voltage curve
+```
+
+Many events are not a climax. Correct option compression is also not proof that the reader experiences a crescendo.
+
+## Source-book technique use
+
+Reader-experience techniques extracted from 《射雕英雄传》《诛仙》《盗墓笔记》 remain production-visible through:
 
 ```text
 library/reader-experience-technique-bank.v1.md
 ```
 
-This bank is separate from Novel DNA. Do not promote craft techniques into DNA merely to make them usable.
+Supporting classification does not make a technique second-class and does not require promotion into Novel DNA.
 
-Novel DNA remains default OFF and is only invoked through the existing evidence-based DNA Router when a specific structural problem survives simpler fixes.
+Do not copy source prose, plot, characters or recognizable author style.
 
-## Permanent V4 regressions
+Novel DNA remains default OFF and only routes structural problems that survive simpler fixes.
 
-Read during architecture/regression work, but **not as an answer key in a fresh evaluator context**:
+## Regression governance
+
+Historical V4 regression remains immutable:
 
 ```text
 state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json
 ```
 
-The system must detect these failure classes:
+Future V4.1 validation uses calibrated:
 
 ```text
-SKELETONIZED_DIALOGUE_WITHOUT_EMOTIONAL_STAGING
-OVERCOMPLETE_AUTHOR_SHAPED_SPEECH_PACKAGE
-UNMOTIVATED_MAJOR_SCENE_REENTRY
-LOW_READER_REWARD_AND_CLIMAX_VOLTAGE
-STIFF_SUSPENSE_WITHOUT_HYPOTHESIS_ENGINE
+state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json
 ```
 
-And must preserve false-positive controls for:
+Do not show regression cases or known manuscript failure locations to a fresh blind evaluator. Coordinator compares the returned blind report to them afterward.
 
-- short task dialogue that directly changes action;
-- memorial/relationship dialogue tied to unique shared history or objects;
-- quiet scenes that increase intimacy, dread or choice pressure;
-- complete formal briefing when duty, time and audience need genuinely support it.
-
-## Diagnosis order
-
-When a manuscript is bad, do not start by polishing sentences. Locate the highest upstream failure:
+## Delivery tiers
 
 ```text
-reader promise
-→ scene-entry causality
-→ causal/choice structure
-→ reader propulsion/reward
-→ suspense model
-→ emotional staging
-→ climax escalation
-→ continuity/local semantics
-→ dialogue grounding
-→ natural speech packaging
-→ de-AI/aesthetic finish
+MECHANICALLY_VALIDATED
+FRESH_AI_READER_VALIDATED
+TARGET_READER_VALIDATED
+FINAL_FREEZE_ELIGIBLE
 ```
 
-A downstream PASS never cancels an upstream failure.
+Do not call a manuscript final/top-tier merely because a fresh AI reader would continue reading.
 
-## Writing discipline
+`FINAL_FREEZE_ELIGIBLE` requires no open located target-reader failure on the current manuscript SHA.
 
-Before drafting a material scene, keep only the minimum active context:
+## Continuity and history
 
-- current scene cause and entry trigger;
-- what each present character wants now and what conflicts with it;
-- current reader question/expectation;
-- current suspense model/anomaly if applicable;
-- current emotional debt and scene voltage target;
-- character knowledge and what they would naturally omit;
-- scene choice, consequence and next pull;
-- active Novel DNA call only if explicitly APPLIED.
-
-Do not load every audit rule while drafting prose.
-
-## Fresh reader protocol
-
-For final-quality work, the fresh reader must first read the bound manuscript **before** loading V4/V3 rule files and freeze an immersion trace. Only afterward may the same fresh context run formal gates. This prevents checklist compliance from substituting for actual reading experience.
-
-## Safety / provenance
-
-- Do not copy source-book prose, plots, characters or recognizable living-author style.
-- Store real manuscript/source prose privately; public repository receives only abstract rules, hashes, ledgers and privacy-safe evidence.
-- Historical failures and freezes are immutable. New evidence creates a new forward settlement; never rewrite history.
-- Highest global promotion checkpoint and manuscript quality/freeze status are separate state dimensions.
+- Read durable state first; never roll back because an old chat or old receipt appears.
+- Historical failures/freezes remain immutable; new evidence supersedes forward, never rewrites history.
+- Public GitHub stores only abstract rules, hashes and privacy-safe evidence; manuscript/source prose stays private.
