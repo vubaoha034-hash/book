@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_SECOND_POST_REPAIR_FRESH_VALIDATION_V1",
+  "phase_ordinal": 350,
+  "status": "ACCEPT_VALID_FRESH_EXECUTION_MANUSCRIPT_FAIL_G8_ONLY",
+  "report_transport": "USER_PASTED_RAW_REPORT_IN_COORDINATOR_CHAT",
+  "report_sha256": null,
+  "report_hash_limitation": "No uploaded report byte object was supplied in this turn; the untouched raw report is preserved in the chat transcript, while only privacy-safe adjudication metadata is persisted publicly.",
+  "manuscript_sha256": "6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "binding": {
+    "manuscript": "PASS",
+    "machinery": "PASS_10_OF_10",
+    "strict_isolation": "PASS_REPORTED",
+    "full_scan": "PASS_68_OF_68",
+    "ATS_parity": "PASS_32_OF_32"
+  },
+  "coordinator_adjudication": {
+    "phase350_execution": "ACCEPT",
+    "G6D": "PASS_NO_DETERMINISTIC_BLOCKERS_NO_HOLDS",
+    "G8_raw": "FAIL_RISK_PFF_001",
+    "G8_coordinator": "ACCEPT_RISK_WITH_NARROWED_CORE_EVIDENCE",
+    "overall_manuscript": "FAIL_G8_ONLY",
+    "final_freeze_authorized": false
+  },
+  "g8_narrowing": {
+    "accepted_core_principle": "Cross-character short deadpan/retort convergence remains materially present, but not every raw PFF-001 instance is equally probative.",
+    "do_not_treat_as_core_risk": ["strong task-bound administrative exchanges", "injury/object-specific care exchanges", "memorial/running-debt ritual merely because they contain short turns"],
+    "core_high_portability_instances_for_next_repair": ["PFI-007", "PFI-012", "PFI-020", "PFI-024", "PFI-033"],
+    "universal_numeric_density_threshold": null
+  },
+  "preserved_strengths": {
+    "G6D_full_pass": true,
+    "public_knowledge_calibration": "PASS",
+    "protected_dialogue_groups_reviewed": 22,
+    "mouthpiece_failures": 0,
+    "local_pingpong_hard_failures": 0
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1"
+}
