@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1",
+  "phase_ordinal": 356,
+  "status": "IMPLEMENTED_DEVELOPMENTAL_REGRESSION_CALIBRATED_FRESH_VALIDATION_REQUIRED",
+  "trigger_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1.json",
+  "implementation": {
+    "quality_contract": "config/novel-quality-gates.v4.1.json",
+    "pipeline": "workflows/09-novel-master-pipeline-v4.1.md",
+    "skill_entry": "SKILL.md",
+    "target_reader_authority": "modules/target-reader-evidence-authority.md",
+    "dramatization_density": "modules/dramatization-surface-density.md",
+    "reentry_delta": "modules/scene-reentry-decision-delta.md",
+    "natural_speech_v1_1": "modules/natural-speech-pressure-v1_1.md",
+    "suspense_curiosity": "modules/suspense-curiosity-charge.md",
+    "climax_experiential_voltage": "modules/climax-experiential-voltage.md",
+    "regression_v2": "state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json",
+    "open_target_reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json"
+  },
+  "calibration_corrections": [
+    "Local short-dialogue validity no longer substitutes for manuscript-level dramatization surface quality.",
+    "Valid scene goal no longer automatically validates exact high-information speech packaging.",
+    "Explicit re-entry reversal requires a post-withdrawal decision delta.",
+    "Working suspense hypothesis is separated from curiosity charge.",
+    "Structural climax option compression is separated from experienced crescendo.",
+    "Fresh AI reader evidence is supporting and cannot erase unresolved located human target-reader evidence."
+  ],
+  "regression_status": {
+    "historical_V4_regression_preserved": true,
+    "V4_1_regression_failure_cases": 6,
+    "V4_1_false_positive_controls": 6,
+    "mis_specified_proxy_cases_versioned_not_rewritten": true,
+    "no_numeric_thresholds": true,
+    "no_padding_quota": true
+  },
+  "limitations": {
+    "V4_1_status": "DEVELOPMENTAL_UNTIL_FRESH_UNCHANGED_MANUSCRIPT_REAUDIT",
+    "unchanged_YMGQ_not_yet_formally_audited_under_V4_1": true,
+    "manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1"
+}
