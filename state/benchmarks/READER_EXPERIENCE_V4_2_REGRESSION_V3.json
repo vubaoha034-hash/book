@@ -1,0 +1,92 @@
+{
+  "schema_version": "3.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "READER_EXPERIENCE_V4_2_REGRESSION_V3",
+  "status": "CALIBRATED_FROM_PHASE357_HIDDEN_HOLDOUT_FALSE_NEGATIVES",
+  "historical_v1_v2_rewritten": false,
+  "privacy": "NO_MANUSCRIPT_PROSE",
+  "cases": [
+    {
+      "id": "RX3-R001",
+      "input_abstraction": "Several separated high-stakes scenes use different named props and relationships, but after masking those nouns they reduce to similar terse functional transitions; the props mostly label the scenes instead of altering behavior, timing, resistance or felt transition.",
+      "expected_gate": "V4.2-G5D",
+      "expected_codes_any": ["SCENE_SURFACE_SKELETON_DENSITY_RISK", "UNIQUE_PROPS_LABEL_SAME_THIN_SCENE_MACHINE", "AVAILABLE_DRAMATIC_PRESSURE_LEFT_UNUSED"]
+    },
+    {
+      "id": "RX3-R002",
+      "input_abstraction": "A live warning has one early clause already sufficient to trigger listener reaction, but the speaker continues through shared background, public-spread information, reward/incentive and physical-arrival evidence as one polished multi-role packet without briefing/testimony support.",
+      "expected_gate": "V4.2-G6N",
+      "expected_codes_any": ["EARLIEST_SUFFICIENT_WARNING_IGNORED_FOR_READER_PACKET", "MULTI_ROLE_INFORMATION_STACK_FEELS_COMPOSED", "PLAUSIBLE_LISTENER_REACTION_SUPPRESSED", "VALID_GOAL_BUT_AUTHOR_SHAPED_UTTERANCE"]
+    },
+    {
+      "id": "RX3-R003",
+      "input_abstraction": "After a supporting character explicitly withdraws, the scene later benefits from that character returning. The audit names a new battlefield need as motive, but there is no text showing the absent character perceived or learned that condition before re-entry.",
+      "expected_gate": "V4.2-G1M",
+      "expected_codes_any": ["REENTRY_DELTA_NOT_TEXTUALLY_AVAILABLE_TO_CHARACTER", "POST_REENTRY_FUNCTION_BACKFILLED_AS_PRE_REENTRY_MOTIVE"]
+    },
+    {
+      "id": "RX3-R004",
+      "input_abstraction": "A hidden threat makes scenes dangerous and produces a coherent investigation, but if the identity/explanation were revealed early most of the reading pull would remain because survival/action and friendship cost—not appetite for the answer—carry interest.",
+      "expected_gate": "V4.2-G5Q",
+      "expected_codes_any": ["DANGER_CARRIES_PULL_BUT_MYSTERY_ANSWER_DOES_NOT", "MYSTERY_HAS_MODEL_DELTA_WITHOUT_DESIRE_DELTA", "ANSWER_IDENTITY_HAS_WEAK_RECLASSIFICATION_VALUE"]
+    },
+    {
+      "id": "RX3-R005",
+      "input_abstraction": "A fresh AI reader genuinely likes and recommends a manuscript, but the declared target-reader profile rejects its dominant sparse dramatization/speech/suspense texture and located human failures on the same SHA remain open.",
+      "expected_gate": "V4.2-G0P_OR_G9H",
+      "expected_codes_any": ["FRESH_AI_DEFAULT_TASTE_SUBSTITUTED_FOR_TARGET_READER", "OPEN_LOCATED_TARGET_READER_FAILURE"]
+    },
+    {
+      "id": "RX3-R006",
+      "input_abstraction": "The final physical confrontation is structurally terminal but produces lower fresh-reader felt voltage than earlier relationship-loss peaks; later thematic payoff partially recovers meaning but does not create a sustained experiential crescendo through the physical climax.",
+      "expected_gate": "V4.1-G7V_INHERITED",
+      "expected_code": "STRUCTURAL_ESCALATION_WITHOUT_EXPERIENTIAL_CRESCENDO"
+    },
+    {
+      "id": "RX3-C001",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "Several short scenes use concise dialogue, but after functional masking their scene machines differ because one is task allocation, one is embodied memorial ritual, and one is an irreversible relationship choice; unique carriers actively change behavior.",
+      "expected": "PASS_NO_SKELETON_DENSITY"
+    },
+    {
+      "id": "RX3-C002",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "An urgent live warning contains three compact facts in one burst because delay itself is dangerous and the listener cannot act until all three coordinates/resources are known.",
+      "expected": "PASS_MULTI_FACT_URGENCY_SUPPORTED"
+    },
+    {
+      "id": "RX3-C003",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A withdrawn character receives a new report after leaving; the report is textually delivered before return and materially changes risk to a valued person.",
+      "expected": "PASS_REENTRY_TEXTUAL_DELTA_PRESENT"
+    },
+    {
+      "id": "RX3-C004",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A mystery's answer identity directly changes who can be trusted and which route is safe; revealing the answer early would materially collapse current prediction tension and change the protagonist's choice.",
+      "expected": "PASS_ANSWER_VALUE_HIGH"
+    },
+    {
+      "id": "RX3-C005",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A target-reader profile prefers immersive texture, but a restrained minimalist scene still satisfies it because specific silence, physical constraint and irreversible choice create a strong lived transition without added description.",
+      "expected": "PASS_PROFILE_DOES_NOT_MANDATE_PADDING"
+    },
+    {
+      "id": "RX3-C006",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A quiet final choice has lower spectacle than earlier combat but clearly produces the highest target-profile emotional voltage because long-built relationship debt converges into one irreversible act.",
+      "expected": "PASS_EXPERIENTIAL_CRESCENDO_WITHOUT_SPECTACLE"
+    }
+  ],
+  "acceptance": {
+    "failure_cases_required": 6,
+    "false_positive_controls_required": 6,
+    "hidden_holdout_comparison_required": true,
+    "target_profile_contains_no_failure_locations": true,
+    "no_numeric_threshold": true,
+    "no_length_or_description_quota": true,
+    "no_style_imitation": true,
+    "no_plot_copying": true
+  }
+}
