@@ -1,0 +1,91 @@
+{
+  "schema_version": "2.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "READER_EXPERIENCE_V4_1_REGRESSION_V2",
+  "status": "CALIBRATED_FROM_PHASE355_FALSE_NEGATIVE_ANALYSIS",
+  "supersedes_for_future_validation_only": "state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json",
+  "historical_v1_rewritten": false,
+  "privacy": "NO_MANUSCRIPT_PROSE",
+  "cases": [
+    {
+      "id": "RX2-R001",
+      "input_abstraction": "Across separated high-stakes scenes, locally valid terse dialogue and thin blocking repeatedly transmit event state without proportionate lived pressure, resistance, perception, subtext or aftershock. Any single scene may be defensible in isolation.",
+      "expected_gate": "V4.1-G5D",
+      "expected_code": "SCENE_SURFACE_SKELETON_DENSITY_RISK"
+    },
+    {
+      "id": "RX2-R002",
+      "input_abstraction": "A speaker with a real warning goal compresses shared mission context, public-spread meta information, reward information and physical-arrival evidence into one polished live utterance even though the listener could plausibly react after the first urgent fact.",
+      "expected_gate": "V4.1-G6N",
+      "expected_codes_any": ["LIVE_SPEECH_OVERSEGMENTATION_SUPPRESSED", "SHARED_CONTEXT_RESTATED_FOR_READER_ORIENTATION", "VALID_GOAL_BUT_AUTHOR_SHAPED_UTTERANCE"]
+    },
+    {
+      "id": "RX2-R003",
+      "input_abstraction": "A material supporting character explicitly withdraws, later reverses course, and the audit justifies the return only with an old relationship motive and spatial feasibility that already existed at withdrawal time.",
+      "expected_gate": "V4.1-G1M",
+      "expected_codes_any": ["REENTRY_REVERSAL_HAS_NO_DECISION_DELTA", "OLD_MOTIVE_REUSED_AS_POST_HOC_REENTRY_CAUSE"]
+    },
+    {
+      "id": "RX2-R004",
+      "input_abstraction": "A climax structurally removes options and raises stakes, but a located target reader still experiences the major beats as similarly weighted event units with weak felt crescendo.",
+      "expected_gate": "V4.1-G7V",
+      "expected_codes_any": ["STRUCTURAL_ESCALATION_WITHOUT_EXPERIENTIAL_CRESCENDO", "CLIMAX_BEATS_READ_AS_EQUIVALENT_EVENT_UNITS"]
+    },
+    {
+      "id": "RX2-R005",
+      "input_abstraction": "A mystery supports a coherent working hypothesis and fair clue updates, yet a located target reader has little desire to resolve it because the question feels generic, externally owned or insufficiently tied to a cared-about prediction/choice.",
+      "expected_gate": "V4.1-G5Q",
+      "expected_codes_any": ["SUSPENSE_HAS_WORKING_MODEL_BUT_LOW_CURIOSITY_CHARGE", "SUSPENSE_CLUES_UPDATE_MODEL_BUT_NOT_READER_DESIRE", "MYSTERY_LACKS_PERSONAL_OR_DECISION_OWNERSHIP"]
+    },
+    {
+      "id": "RX2-R006",
+      "input_abstraction": "A fresh AI reader independently approves the unchanged manuscript, while an actual target reader has unresolved located failures bound to the same manuscript SHA.",
+      "expected_gate": "V4.1-G9H",
+      "expected_code": "OPEN_LOCATED_TARGET_READER_FAILURE"
+    },
+    {
+      "id": "RX2-C001",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A very short task exchange under physical constraint changes immediate choices and the surrounding action/object state carries the omitted emotion.",
+      "expected": "PASS_NO_SKELETON_DENSITY_INFERENCE_FROM_ONE_EXCHANGE"
+    },
+    {
+      "id": "RX2-C002",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A quiet memorial exchange is short but a unique shared object, deceased relationship and ritual create strong specific aftershock.",
+      "expected": "PASS_NO_PADDING_REQUIRED"
+    },
+    {
+      "id": "RX2-C003",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A character returns after withdrawal because a new report received after leaving materially changes the risk to someone they care about.",
+      "expected": "PASS_REENTRY_HAS_DECISION_DELTA"
+    },
+    {
+      "id": "RX2-C004",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A formal briefing or confession contains multiple information units because the speaker has explicit duty, uninterrupted time and audience need.",
+      "expected": "PASS_COMPLETE_SPEECH_CONTEXT_SUPPORTED"
+    },
+    {
+      "id": "RX2-C005",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A mystery has a working model and also creates a concrete prediction whose truth would immediately alter a valued relationship or dangerous choice.",
+      "expected": "PASS_CURIOSITY_CHARGE_PRESENT"
+    },
+    {
+      "id": "RX2-C006",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A restrained quiet climax uses little spectacle but fresh-reader experience clearly rises because earlier relationship debt converges into one irreversible choice.",
+      "expected": "PASS_EXPERIENTIAL_VOLTAGE_WITHOUT_SPECTACLE"
+    }
+  ],
+  "acceptance": {
+    "failure_cases_required": 6,
+    "false_positive_controls_required": 6,
+    "no_numeric_reader_reward_threshold": true,
+    "no_length_or_description_quota": true,
+    "no_style_imitation": true,
+    "no_source_plot_copying": true
+  }
+}
