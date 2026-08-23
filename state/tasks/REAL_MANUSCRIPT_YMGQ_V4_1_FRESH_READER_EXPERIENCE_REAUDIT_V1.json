@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT",
+  "phase_ordinal": 357,
+  "status": "READY_NOT_STARTED",
+  "manuscript_binding": {
+    "title": "一命过桥",
+    "required_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+    "must_hash_before_read": true,
+    "must_remain_unchanged": true
+  },
+  "purpose": "Test whether V4.1 independently detects reader-experience failures that V4 rationalized away, without exposing target-reader critiques or regression answers to the fresh evaluator.",
+  "protocol": {
+    "two_pass_required": true,
+    "pass_A": "Blind immersion read before any quality-rule file; freeze trace.",
+    "pass_B": "Formal V4.1 plus inherited V4/V3 audit after frozen trace.",
+    "coordinator_after_return": "Only coordinator may compare the untouched report against V4.1 regression V2 and open target-reader evidence."
+  },
+  "pass_B_allowed_files": [
+    "config/novel-quality-gates.v4.1.json",
+    "workflows/09-novel-master-pipeline-v4.1.md",
+    "library/reader-experience-technique-bank.v1.md",
+    "modules/scene-entry-motivation.md",
+    "modules/scene-reentry-decision-delta.md",
+    "modules/reader-propulsion-ledger.md",
+    "modules/suspense-hypothesis-engine.md",
+    "modules/suspense-curiosity-charge.md",
+    "modules/emotional-staging-ledger.md",
+    "modules/dramatization-surface-density.md",
+    "modules/natural-speech-pressure-v1_1.md",
+    "modules/climax-escalation-curve.md",
+    "modules/climax-experiential-voltage.md",
+    "modules/target-reader-evidence-authority.md",
+    "config/novel-quality-gates.v4.json",
+    "config/novel-quality-gates.v3.json",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/dialogue-epistemic-scope.md",
+    "modules/local-logic-ledger.md",
+    "rules/no-ai-smell.md",
+    "modules/dialogue-pattern-family-density.md"
+  ],
+  "strict_isolation_do_not_read": [
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+    "state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json",
+    "state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json",
+    "Phase355 raw report or coordinator receipt",
+    "Phase356 task/receipt or calibration explanation",
+    "Phase353/354 receipts",
+    "older YMGQ versions",
+    "historical known bad locations",
+    "network/web"
+  ],
+  "required_outputs": [
+    "frozen blind immersion trace",
+    "scene entry and post-withdrawal reentry delta ledger",
+    "reader propulsion ledger",
+    "manuscript-level dramatization surface family ledger",
+    "suspense hypothesis ledgers",
+    "suspense curiosity-charge ledgers",
+    "emotional staging ledgers",
+    "natural speech V1.1 turn-segmentation records",
+    "structural climax curve",
+    "experiential climax-voltage curve",
+    "inherited G6D/G8 check",
+    "pass_A_vs_pass_B cross-check"
+  ],
+  "forbidden_actions": [
+    "EDIT_MANUSCRIPT",
+    "READ_TARGET_READER_EVIDENCE",
+    "READ_REGRESSION_ANSWER_KEYS",
+    "FORCE_EXPECTED_FAILURES_OR_VERDICT",
+    "DECLARE_FINAL_FREEZE"
+  ],
+  "final_freeze_authorized": false,
+  "manuscript_rewrite_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_action": "Run one genuinely fresh two-pass V4.1 re-audit on the unchanged manuscript and return the raw untouched report for coordinator adjudication."
+}
