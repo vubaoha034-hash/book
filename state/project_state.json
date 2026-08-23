@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-22T16:22:00+08:00",
+  "updated_at": "2026-08-23T15:34:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -38,18 +38,64 @@
     "candidate_manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json", "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json", "book_level_frozen_semantics_unchanged": true, "cross_book_candidate_v1_history_preserved": true, "global_dna": 1, "global_dna_ids": ["GN-VDNA-01"], "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1", "phase": "MICROCRAFT_CALIBRATED_FRESH_VALIDATION", "phase_ordinal": 346, "status": "READY_NOT_STARTED",
-    "execution_scope": "Freshly validate the frozen Phase345 calibrated G6D V1.4 + G8 dialogue-pattern architecture on the unchanged historical YMGQ candidate without old benchmark answers or prior manuscript findings.",
-    "inputs": {"phase344_calibration_receipt": "state/review_receipts/MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1.json", "phase345_task": "state/tasks/MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1.json", "phase345_receipt": "state/review_receipts/MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1.json", "phase345_benchmark": "state/benchmarks/MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_REGRESSION_V1.json", "phase346_task": "state/tasks/MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1.json"},
-    "machinery": {"freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887", "G6D_version": "1.4", "quality_gate_schema": "3.0.4", "active_regression": "benchmark/microcraft/epistemic-pattern-regression.v1.json", "universal_density_threshold": null},
-    "phase345_settlement": {"status": "IMPLEMENTED_FROZEN_VALIDATED_WITH_SCOPE_LIMITATION", "structure_contract": "PASS", "changed_path_privacy": "PASS", "full_private_exact_hash_privacy": "NOT_RUN_PRIVATE_ROOT_UNAVAILABLE", "fresh_semantic_validation": "PENDING", "historical_attempts_rewritten": false, "private_manuscript_modified": false, "accepted_checkpoint_advance": false},
-    "remaining_blockers": ["CALIBRATED_FRESH_MANUSCRIPT_VALIDATION_NOT_RUN", "PRIVATE_MANUSCRIPT_REPAIR_NOT_AUTHORIZED_BEFORE_FRESH_REPORT_ADJUDICATION"],
-    "next_action": "Run one genuinely fresh calibrated G6D + G8 audit from the Phase346 task contract. Preserve the untouched report before any manuscript repair.",
-    "forbidden_actions": ["FORCE_OLD_3_OF_3_LABELS", "READ_PRIOR_YMGQ_FAILURE_LOCATIONS_IN_FRESH_AUDIT", "READ_MICROCRAFT_BENCHMARK_CASES_IN_FRESH_AUDIT", "REPAIR_YMGQ_BEFORE_PHASE346_REPORT_IS_PRESERVED_AND_ADJUDICATED", "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD", "DEFAULT_ENABLE_NOVEL_DNA_ROUTER", "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE"]
+    "task_id": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR",
+    "phase_ordinal": 347,
+    "status": "READY_NOT_STARTED",
+    "execution_scope": "Create a new private repaired copy of the exact historical YMGQ candidate; close the two Phase346 deterministic temporal-semantic blockers and minimally reduce the high-risk F1 dialogue-template family without flattening protected relationship-specific speech.",
+    "inputs": {
+      "phase346_task": "state/tasks/MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1.json",
+      "phase346_receipt": "state/review_receipts/MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1.json",
+      "phase347_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1.json",
+      "phase346_report_sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e"
+    },
+    "machinery": {
+      "freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+      "G6D_version": "1.4",
+      "quality_gate_schema": "3.0.4",
+      "universal_density_threshold": null
+    },
+    "phase346_settlement": {
+      "task_adjudication": "ACCEPT_VALID_FRESH_EXECUTION_MANUSCRIPT_FAIL",
+      "machinery_binding": "PASS_10_OF_10_COORDINATOR_REVERIFIED",
+      "manuscript_binding_reported": "PASS",
+      "full_scan": "PASS_74_OF_74",
+      "ATS_parity": "PASS_34_OF_34",
+      "G6D": "FAIL_2_TEMPORAL_SEMANTIC_CHAIN_BLOCKERS",
+      "G8": "RISK_1_HIGH_RISK_FAMILY_1_HOLD_FAMILY",
+      "protected_dialogue_control": "PASS",
+      "accepted_checkpoint_advance": false
+    },
+    "remaining_blockers": ["TARGETED_REPAIR_NOT_EXECUTED", "POST_REPAIR_INDEPENDENT_VALIDATION_NOT_RUN"],
+    "next_action": "Bind the exact historical candidate SHA-256, preserve the original, produce a new private repaired copy, close both temporal-semantic blockers, minimally rework 2-5 weakest F1 instances, and run targeted G6D plus full-manuscript G8/protected-dialogue checks before any final validation.",
+    "forbidden_actions": ["OVERWRITE_OR_DELETE_ORIGINAL_HISTORICAL_CANDIDATE", "PUBLICLY_COMMIT_REAL_MANUSCRIPT_TEXT", "FULL_MANUSCRIPT_REWRITE", "DELETE_ALL_BANTER_OR_HUMOR", "FORCE_OLD_3_OF_3_LABELS", "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD", "CHANGE_PHASE345_RULE_SEMANTICS_DURING_MANUSCRIPT_REPAIR", "DEFAULT_ENABLE_NOVEL_DNA_ROUTER", "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE"]
   },
-  "parked_tasks": [{"task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1", "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION", "phase_ordinal": 330, "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE", "reason": "A real-manuscript final-quality freeze produced validation false negatives. Calibrated microcraft/dialogue validation must be implemented and fresh-validated before production-outcome accumulation resumes.", "resume_condition": "Phase346 fresh calibrated validation adjudicated or explicitly reviewed; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."}],
-  "manuscript_quality_state": {"一命过桥": {"historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72", "status": "HISTORICAL_FINAL_CANDIDATE_INVALIDATED", "reason": "VALIDATION_FALSE_NEGATIVE_MICROCRAFT_DIALOGUE_LOCAL_SEMANTIC_LOGIC", "repair_started_after_invalidation": false, "V3_G6D": "FAIL_UNDER_HISTORICAL_MACHINERY", "fresh_attempt1_promotion_status": "INVALID", "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3_OLD_GATE", "fresh_attempt3_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_WITH_FALSE_POSITIVE_RISK", "fresh_attempt4_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_ANTI_TEMPLATE_MISS", "fresh_attempt5_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_LABEL_VALIDITY_REVIEW_TRIGGERED", "phase344_label_calibration": "ACCEPTED", "phase345_calibrated_architecture": "IMPLEMENTED_FROZEN_PENDING_FRESH_VALIDATION", "repair_blocked_by_phase346": true}},
+  "parked_tasks": [{"task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1", "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION", "phase_ordinal": 330, "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE", "reason": "A real-manuscript final-quality freeze produced validation false negatives. Calibrated microcraft/dialogue validation is now real-manuscript validated, but the invalidated YMGQ candidate still requires targeted repair and post-repair validation before production-outcome accumulation resumes.", "resume_condition": "Phase347 targeted repair and the subsequent post-repair independent validation are adjudicated; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."}],
+  "manuscript_quality_state": {
+    "一命过桥": {
+      "historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+      "status": "CALIBRATED_FRESH_VALIDATED_FAIL_TARGETED_REPAIR_AUTHORIZED",
+      "reason": "PHASE346_VALID_FRESH_G6D_V1_4_FOUND_2_DETERMINISTIC_TEMPORAL_SEMANTIC_BLOCKERS_AND_G8_FOUND_F1_PATTERN_FAMILY_RISK",
+      "repair_started_after_invalidation": false,
+      "repair_authorized": true,
+      "repair_blocked_by_phase346": false,
+      "V3_G6D": "FAIL_UNDER_CALIBRATED_V1_4_2_BLOCKERS",
+      "V3_G8": "RISK_F1_DIALOGUE_TEMPLATE_FAMILY_DENSITY",
+      "fresh_attempt1_promotion_status": "INVALID",
+      "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3_OLD_GATE",
+      "fresh_attempt3_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_WITH_FALSE_POSITIVE_RISK",
+      "fresh_attempt4_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_ANTI_TEMPLATE_MISS",
+      "fresh_attempt5_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_LABEL_VALIDITY_REVIEW_TRIGGERED",
+      "phase344_label_calibration": "ACCEPTED",
+      "phase345_calibrated_architecture": "IMPLEMENTED_FROZEN_AND_REAL_MANUSCRIPT_VALIDATED",
+      "phase346_calibrated_fresh_validation": "ACCEPTED_EXECUTION_MANUSCRIPT_FAIL",
+      "phase346_report_sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e",
+      "phase346_G6D_blocker_count": 2,
+      "phase346_G8_high_risk_family_count": 1,
+      "phase346_G8_hold_family_count": 1
+    }
+  },
   "rollback": {"authorized": false, "receipt": null},
-  "superseded_states": ["BOOK-02_SOURCE_GATE_PENDING","BOOK-02_SOURCE_GATE_RETRY","BOOK-02_PACKET_PENDING","BOOK-02_EVIDENCE_SETTLEMENT_PENDING","BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING","BOOK-02_NOVEL_DNA_VALIDATION_PENDING","BOOK-02_NOVEL_DNA_FREEZE_PENDING","BOOK-02_CLOSEOUT_PENDING","BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED","BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1","BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1","BOOK-01_NOVEL_DNA_SYNTHESIS_V1","BOOK-01_NOVEL_DNA_VALIDATION_V1","BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1","BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1","CROSS_BOOK_NOVEL_DNA_VALIDATION_V1","CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1","BOOK-03_SOURCE_INTAKE_V1","BOOK-03_EVIDENCE_SETTLEMENT_V1","BOOK-03_NOVEL_DNA_V1","BOOK-03_NOVEL_DNA_VALIDATION_V1","BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1","BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1","CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1","CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS_V2","GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1","GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1","GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS","GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1","GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1","GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1","MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1","MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1","MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2","MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3","MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1","MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1"],
+  "superseded_states": ["BOOK-02_SOURCE_GATE_PENDING","BOOK-02_SOURCE_GATE_RETRY","BOOK-02_PACKET_PENDING","BOOK-02_EVIDENCE_SETTLEMENT_PENDING","BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING","BOOK-02_NOVEL_DNA_VALIDATION_PENDING","BOOK-02_NOVEL_DNA_FREEZE_PENDING","BOOK-02_CLOSEOUT_PENDING","BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED","BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1","BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1","BOOK-01_NOVEL_DNA_SYNTHESIS_V1","BOOK-01_NOVEL_DNA_VALIDATION_V1","BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1","BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1","CROSS_BOOK_NOVEL_DNA_VALIDATION_V1","CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1","BOOK-03_SOURCE_INTAKE_V1","BOOK-03_EVIDENCE_SETTLEMENT_V1","BOOK-03_NOVEL_DNA_V1","BOOK-03_NOVEL_DNA_VALIDATION_V1","BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1","BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1","CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1","CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS_V2","GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1","GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1","GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS","GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1","GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1","GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1","MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1","MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1","MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2","MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3","MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1","MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1","MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1"],
   "invariants": {"missing_result_means": "UNKNOWN", "unknown_may_lower_checkpoint": false, "accepted_task_may_repeat": false, "backward_transition_requires_rollback_receipt": true}
 }
