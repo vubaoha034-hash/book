@@ -1,0 +1,50 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "base_sequence": 22,
+  "base_event_id": "EVT-NOVEL-DISTILL-REVALIDATED-FINAL-FREEZE-V2-20260823-022",
+  "base_event_hash": "cd3ed520f2172c7b40bdeef52aa4397c28bb67343119f008677305a9f0cfd362",
+  "pending_events": [
+    {
+      "schema_version":"upcp-state-ledger-event/v1",
+      "event_id":"EVT-NOVEL-DISTILL-V2-READER-QUALITY-INVALIDATION-20260823-023",
+      "project_id":"novel-distillation",
+      "stream_id":"global",
+      "recorded_at":"2026-08-23T21:13:30+08:00",
+      "event_type":"V2_FINAL_FREEZE_QUALITY_INVALIDATED_READER_EXPERIENCE_ARCHITECTURE_RECOVERY_ACTIVATED",
+      "material":true,
+      "task_id":"REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2",
+      "change_id":"READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1",
+      "before":{"active_phase_ordinal":353,"active_task":"REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2","active_task_status":"CLOSED_FINAL_FROZEN_V2","highest_accepted_phase_ordinal":320,"physical_ledger_sequence":18,"pending_target_sequence":22},
+      "after":{"active_phase_ordinal":354,"active_task":"READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1","active_task_status":"IN_PROGRESS_ARCHITECTURE_IMPLEMENTATION","highest_accepted_phase_ordinal":320,"YMGQ_quality_status":"V2_FINAL_FREEZE_QUALITY_INVALIDATED_NEW_LOCATABLE_READER_FAILURES","manuscript_sha256":"3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf","rollback_authorized":false},
+      "reason":"User supplied new locatable reader-quality evidence showing that the V2 manuscript can pass G6D/G8 while remaining skeletonized, unnatural in information packaging, weak in scene-entry motivation, flat in reader reward/climax voltage, and stiff in suspense. Invalidate only the V2 quality sufficiency claim and activate reader-experience architecture recovery; preserve all historical results and Phase320 global checkpoint.",
+      "evidence":["state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_V2_READER_PROPULSION_INVALIDATION_V1.json","state/tasks/READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1.json","private_manuscript_sha256:3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf"],
+      "authorization":{"required":false,"scope":"New locatable quality evidence satisfies the Phase353 reopen condition; invalidate quality sufficiency only and recover architecture before rewriting.","status":"NOT_REQUIRED"},
+      "previous_event_id":"EVT-NOVEL-DISTILL-REVALIDATED-FINAL-FREEZE-V2-20260823-022",
+      "previous_event_hash":"cd3ed520f2172c7b40bdeef52aa4397c28bb67343119f008677305a9f0cfd362",
+      "event_hash":"d30bd030161b2e3f2784dbf842fefab9454c07e2c166afe4f7bf0bb0f7bebf84"
+    },
+    {
+      "schema_version":"upcp-state-ledger-event/v1",
+      "event_id":"EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4-ARCHITECTURE-20260823-024",
+      "project_id":"novel-distillation",
+      "stream_id":"global",
+      "recorded_at":"2026-08-23T21:14:30+08:00",
+      "event_type":"READER_EXPERIENCE_V4_ARCHITECTURE_IMPLEMENTED_FRESH_REAUDIT_QUEUED",
+      "material":true,
+      "task_id":"READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1",
+      "change_id":"REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+      "before":{"active_phase_ordinal":354,"active_task":"READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1","active_task_status":"IN_PROGRESS_ARCHITECTURE_IMPLEMENTATION","highest_accepted_phase_ordinal":320,"pending_sequence":23},
+      "after":{"active_phase_ordinal":355,"active_task":"REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"V4_status":"IMPLEMENTED_DEVELOPMENTAL_REGRESSION_PASS_FRESH_REAL_MANUSCRIPT_VALIDATION_REQUIRED","manuscript_rewrite_authorized":false,"rollback_authorized":false},
+      "reason":"Phase354 created a separate source-backed Reader Experience Technique Bank, V4 quality contract and pipeline, six reader-experience modules, and permanent regressions covering the five newly located failure classes with false-positive controls. Queue a fresh two-pass immersion-plus-formal V4 re-audit of the unchanged manuscript before any rewrite.",
+      "evidence":["state/review_receipts/READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1.json","config/novel-quality-gates.v4.json","workflows/08-novel-master-pipeline-v4.md","library/reader-experience-technique-bank.v1.md","state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json","state/tasks/REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1.json"],
+      "authorization":{"required":false,"scope":"Execute the already-authorized architecture recovery only; no manuscript rewrite, no DNA semantic change, no global checkpoint advance.","status":"NOT_REQUIRED"},
+      "previous_event_id":"EVT-NOVEL-DISTILL-V2-READER-QUALITY-INVALIDATION-20260823-023",
+      "previous_event_hash":"d30bd030161b2e3f2784dbf842fefab9454c07e2c166afe4f7bf0bb0f7bebf84",
+      "event_hash":"c3c55ee090c52c61e30a7e1683a5059a6cc0b37ebddcde8f7b4a7688367aac5b"
+    }
+  ],
+  "target_sequence": 24,
+  "target_event_hash": "c3c55ee090c52c61e30a7e1683a5059a6cc0b37ebddcde8f7b4a7688367aac5b",
+  "reason":"Physical STATE_LEDGER.jsonl remains through sequence 18; events 19-24 are pre-hashed for deterministic reconciliation without pretending they are already appended."
+}
