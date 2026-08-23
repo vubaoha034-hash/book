@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_REVALIDATED_FINAL_FREEZE_V2",
+  "phase": "REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE",
+  "phase_ordinal": 353,
+  "event_status": "ACCEPTED_REVALIDATED_FINAL_FROZEN_V2",
+  "manuscript_title": "一命过桥",
+  "final_manuscript": {
+    "status": "FROZEN_FINAL_MANUSCRIPT_V2",
+    "sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+    "source_phase": 351,
+    "shared_publicly": false,
+    "manuscript_text_stored_in_git": false
+  },
+  "validation_evidence": {
+    "phase352_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "raw_report_sha256": "abb81151a2372a208b492ce56d269f3c685d26035f4172caacc7fc70e126a4be",
+    "reader_mode": "INDEPENDENT_FRESH_THIRD_POST_REPAIR_VALIDATION",
+    "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+    "G6D": "PASS",
+    "G8": "PASS",
+    "hard_failures": 0,
+    "holds": 0,
+    "full_scan": true,
+    "ATS_parity": "22_OF_22_PASS",
+    "generic_short_QA_false_positive_control": "PASS"
+  },
+  "historical_integrity": {
+    "v1_freeze_receipt_preserved": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_AFTER_INDEPENDENT_COLD_READ_V1.json",
+    "v1_invalidation_receipt_preserved": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
+    "v1_quality_history_rewritten": false,
+    "fresh_attempts_1_to_5_rewritten": false,
+    "phase346_348_350_results_rewritten": false,
+    "v2_is_new_forward_settlement": true
+  },
+  "dna_router": {
+    "result": "NOT_APPLIED",
+    "dna_applied": false,
+    "GN_VDNA_01_status": "UNCHANGED_DEFAULT_OFF",
+    "real_manuscript_applied_dna_outcome_count_after": 0,
+    "this_event_is_not_an_applied_dna_success": true
+  },
+  "production_evidence_limits": {
+    "universal_production_improvement_claim_authorized": false,
+    "external_human_blind_validation_claimed": false,
+    "phase320_global_accepted_checkpoint_unchanged": true
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "manuscript_next_action": "STOP_EDITING_BY_DEFAULT. Reopen only for a concrete new independently located failure, factual error, or explicit author-directed creative change.",
+  "rollback_authorized": false
+}
