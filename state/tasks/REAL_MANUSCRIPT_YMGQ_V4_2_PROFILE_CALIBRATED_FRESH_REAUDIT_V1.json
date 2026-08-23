@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1",
+  "phase_ordinal": 359,
+  "status": "READY_NOT_STARTED",
+  "manuscript": {
+    "title": "一命过桥",
+    "required_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+    "must_remain_unchanged": true
+  },
+  "target_profile": {
+    "allowed_before_pass_A": "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "profile_role": "audience calibration only",
+    "must_not_contain_failure_locations": true
+  },
+  "strict_isolation": {
+    "forbidden": [
+      "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+      "state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json",
+      "state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json",
+      "state/benchmarks/READER_EXPERIENCE_V4_2_REGRESSION_V3.json",
+      "Phase355 report/receipt",
+      "Phase356 task/receipt",
+      "Phase357 report/receipt",
+      "Phase358 task/receipt",
+      "all known failure locations",
+      "repair history",
+      "older manuscript versions",
+      "repository history",
+      "network/web"
+    ],
+    "do_not_force_expected_verdict": true,
+    "do_not_force_failure_count": true
+  },
+  "protocol": {
+    "step_1": "hash manuscript and bind exact SHA",
+    "step_2": "read target-reader profile only; verify it contains no known failure locations",
+    "step_3": "read manuscript blind under that audience contract; freeze Pass-A trace before quality-rule files",
+    "step_4": "read V4.2/V4.1/V4/V3 allowlist and perform formal audit",
+    "step_5": "cross-check formal findings against frozen target-profile Pass-A experience without reading holdout answer keys"
+  },
+  "pass_A_required": [
+    "target-profile-specific skim/stop points",
+    "manuscript-level functional-mask surface recurrence noticed blind",
+    "live speech that feels composed versus spoken",
+    "danger interest versus answer interest for material mysteries",
+    "post-withdrawal returns and perceived new triggers",
+    "experienced climax voltage",
+    "willingness to recommend under the declared target profile"
+  ],
+  "formal_allowlist": [
+    "config/novel-quality-gates.v4.2.json",
+    "workflows/10-novel-master-pipeline-v4.2.md",
+    "library/reader-experience-technique-bank.v1.md",
+    "modules/target-reader-profile-calibration.md",
+    "modules/dramatization-surface-density-v1_1.md",
+    "modules/natural-speech-pressure-v1_2.md",
+    "modules/scene-reentry-evidence-anchor-v1_1.md",
+    "modules/suspense-curiosity-charge-v1_1.md",
+    "config/novel-quality-gates.v4.1.json",
+    "workflows/09-novel-master-pipeline-v4.1.md",
+    "modules/scene-entry-motivation.md",
+    "modules/scene-reentry-decision-delta.md",
+    "modules/reader-propulsion-ledger.md",
+    "modules/suspense-hypothesis-engine.md",
+    "modules/suspense-curiosity-charge.md",
+    "modules/emotional-staging-ledger.md",
+    "modules/dramatization-surface-density.md",
+    "modules/natural-speech-pressure-v1_1.md",
+    "modules/climax-escalation-curve.md",
+    "modules/climax-experiential-voltage.md",
+    "modules/target-reader-evidence-authority.md",
+    "config/novel-quality-gates.v4.json",
+    "config/novel-quality-gates.v3.json",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/dialogue-epistemic-scope.md",
+    "modules/local-logic-ledger.md",
+    "rules/no-ai-smell.md",
+    "modules/dialogue-pattern-family-density.md"
+  ],
+  "required_verdicts": [
+    "MANUSCRIPT_BINDING",
+    "TARGET_PROFILE_BINDING",
+    "PASS_A_PROFILE_CALIBRATED_IMMERSION",
+    "V4_2_G0P",
+    "V4_2_G1M",
+    "V4_2_G5D",
+    "V4_2_G5Q",
+    "V4_2_G6N",
+    "INHERITED_V4_1_G5R_G5S_G5E_G7C_G7V",
+    "LEGACY_G6D_G8",
+    "OVERALL"
+  ],
+  "forbidden_actions": ["EDIT_MANUSCRIPT", "FINAL_FREEZE", "READ_HOLDOUT_AFTER_PASS_A", "USE_TARGET_PROFILE_AS_LOCATION_ANSWER_KEY"],
+  "next_action": "Run once in a genuinely fresh chat and return untouched report for coordinator hidden-holdout comparison."
+}
