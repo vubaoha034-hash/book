@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION",
+  "phase_ordinal": 352,
+  "status": "ACCEPT_VALID_FRESH_EXECUTION_MANUSCRIPT_PASS",
+  "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "report_transport": "USER_UPLOADED_RAW_UNTOUCHED_FILE",
+  "report_sha256": "abb81151a2372a208b492ce56d269f3c685d26035f4172caacc7fc70e126a4be",
+  "report_bytes": 226785,
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "binding": {
+    "manuscript": "PASS_COORDINATOR_REHASHED",
+    "machinery": "PASS_10_OF_10",
+    "strict_isolation": "PASS_REPORTED",
+    "full_scan": "PASS_85_OF_85",
+    "ATS_parity": "PASS_22_OF_22"
+  },
+  "coordinator_adjudication": {
+    "phase352_execution": "ACCEPT",
+    "G6D": "PASS_ZERO_HARD_FAILURES_ZERO_HOLDS",
+    "G8": "PASS_ZERO_HIGH_RISK_FAMILIES_ZERO_HOLDS",
+    "overall_manuscript": "PASS",
+    "false_positive_control": "PASS_GENERIC_SHORT_QA_NOT_TREATED_AS_DENSITY_EVIDENCE",
+    "final_freeze_authorized": true
+  },
+  "g8_evidence": {
+    "pattern_instance_count": 32,
+    "pattern_family_count": 10,
+    "high_risk_family_count": 0,
+    "hold_family_count": 0,
+    "closest_recurrence": "PFF-005_COUNTERINTUITIVE_CAUSAL_INVERSION_TERMINAL",
+    "closest_recurrence_verdict": "PASS_MECHANISM_AND_CHARACTER_DIFFERENTIATION_SUFFICIENT",
+    "universal_numeric_density_threshold": null
+  },
+  "G6D_evidence": {
+    "candidate_inventory_count": 85,
+    "candidate_audited_count": 85,
+    "epistemic_scope_records": 8,
+    "knowledge_source_records": 16,
+    "local_semantic_records": 28,
+    "temporal_semantic_chain_failures": 0,
+    "author_information_mouthpiece_failures": 0,
+    "local_dialogue_template_failures": 0
+  },
+  "public_manuscript_text_committed": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2"
+}
