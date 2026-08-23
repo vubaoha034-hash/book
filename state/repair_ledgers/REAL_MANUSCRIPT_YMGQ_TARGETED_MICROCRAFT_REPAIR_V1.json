@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1",
+  "phase_ordinal": 347,
+  "privacy": "NO_MANUSCRIPT_PROSE",
+  "source_binding": {
+    "sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "line_count": 3159,
+    "preserved_byte_identical": true
+  },
+  "repaired_output": {
+    "sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7",
+    "line_count": 3147,
+    "private_copy_only": true,
+    "public_repo_text_committed": false
+  },
+  "authority": {
+    "phase346_report_sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e",
+    "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887"
+  },
+  "change_map": [
+    {"change_id": "R347-01", "finding_id": "PH346-G6D-B01", "kind": "TEMPORAL_SEMANTIC_SCOPE_BREAK", "source_region": "L55-L77", "outcome": "CLOSED"},
+    {"change_id": "R347-02", "finding_id": "F1/C005", "kind": "DIALOGUE_STRATEGY_VARIATION", "outcome": "F1_EXIT"},
+    {"change_id": "R347-03", "finding_id": "F1/C017", "kind": "DIALOGUE_STRATEGY_VARIATION", "outcome": "F1_EXIT"},
+    {"change_id": "R347-04", "finding_id": "F1/C027", "kind": "DIALOGUE_STRATEGY_VARIATION", "outcome": "F1_EXIT"},
+    {"change_id": "R347-05", "finding_id": "PH346-G6D-B02", "kind": "EXECUTION_DATE_ANCHOR_REPAIR", "outcome": "CLOSED"},
+    {"change_id": "R347-06", "finding_id": "F1/C074", "kind": "DIALOGUE_SCAFFOLD_COMPRESSION", "outcome": "F1_EXIT"},
+    {"change_id": "R347-01-F1-SIDE_EFFECT", "finding_id": "F1/C002", "kind": "INCIDENTAL_FAMILY_EXIT_FROM_G6D_SCOPE_REPAIR", "outcome": "F1_EXIT"}
+  ],
+  "targeted_G6D": {
+    "blockers_closed": 2,
+    "new_deterministic_failures_in_changed_regions": 0,
+    "luoshui_baisha_hold": "UNCHANGED_NOT_FORCED"
+  },
+  "G8": {
+    "F1_before": 18,
+    "F1_after": 13,
+    "high_portability_priority_before": 4,
+    "high_portability_priority_remaining": 0,
+    "residual_F1": ["C001", "C008", "C014", "C018", "C028", "C047", "C048", "C050", "C051", "C055", "C058", "C060", "C070"],
+    "executor_assessment": "HOLD_MEDIUM_RISK_REDUCED_PENDING_INDEPENDENT_VALIDATION",
+    "universal_numeric_density_threshold": null
+  },
+  "protected_dialogue": {
+    "phase346_records": 10,
+    "changed_region_overlap": 0,
+    "result": "PASS_10_OF_10_UNTOUCHED"
+  },
+  "downstream_continuity": {
+    "facts": "PASS",
+    "knowledge": "PASS",
+    "objects": "PASS",
+    "rules": "PASS",
+    "relationships": "PASS"
+  },
+  "final_freeze_authorized": false
+}
