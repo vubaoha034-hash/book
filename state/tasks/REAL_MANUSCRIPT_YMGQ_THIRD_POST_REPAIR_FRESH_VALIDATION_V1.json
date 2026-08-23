@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION",
+  "phase_ordinal": 352,
+  "status": "READY_NOT_STARTED",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "manuscript_binding": {"title":"一命过桥","required_sha256":"3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf","must_hash_before_audit":true,"must_remain_unchanged":true},
+  "allowed_rule_files": [
+    "config/novel-quality-gates.v3.json",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/dialogue-epistemic-scope.md",
+    "modules/local-logic-ledger.md",
+    "templates/microcraft-dialogue-audit-template.md",
+    "rules/pass-isolation.md",
+    "rules/no-ai-smell.md",
+    "modules/dialogue-pattern-family-density.md",
+    "templates/dialogue-pattern-family-audit-template.md"
+  ],
+  "strict_isolation": {
+    "phase350_report_forbidden": true,
+    "phase351_task_ledger_receipt_forbidden": true,
+    "historical_problem_or_repair_locations_forbidden": true,
+    "historical_manuscript_versions_forbidden": true,
+    "benchmark_case_files_forbidden": true,
+    "prior_expected_pattern_counts_or_family_ids_forbidden": true,
+    "network_search_forbidden": true
+  },
+  "validation_targets": [
+    "Full-manuscript G6D V1.4 candidate harvest and local semantic/epistemic validation.",
+    "Full-manuscript G8 pattern-family clustering from scratch by function and cadence.",
+    "Explicit false-positive control against over-clustering generic short Q/A exchanges.",
+    "Protected relationship/object/injury/memorial dialogue control.",
+    "No universal numeric density threshold."
+  ],
+  "acceptance": {
+    "exact_machinery_binding_required": true,
+    "exact_manuscript_hash_required": true,
+    "full_scan_required": true,
+    "no_deterministic_G6D_blocker_required": true,
+    "G8_family_evidence_must_show_same_portable_machine_not_merely_short_turns": true,
+    "protected_dialogue_required": true,
+    "universal_numeric_density_threshold_forbidden": true,
+    "fresh_report_preserved_before_any_further_repair_or_freeze": true
+  },
+  "forbidden_actions": [
+    "READ_PHASE350_REPORT",
+    "READ_PHASE351_TASK_LEDGER_OR_RECEIPT",
+    "READ_PRIOR_YMGQ_FAILURE_OR_REPAIR_LOCATIONS",
+    "READ_BENCHMARK_MICROCRAFT_CASES",
+    "FORCE_EXPECTED_PATTERN_COUNT_FAMILY_OR_VERDICT",
+    "TREAT_SHORT_QA_RECURRENCE_ALONE_AS_DENSITY_FAIL",
+    "REPAIR_MANUSCRIPT_DURING_VALIDATION",
+    "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD",
+    "CLAIM_FINAL_FREEZE_BEFORE_COORDINATOR_ADJUDICATION"
+  ],
+  "next_action": "Run one genuinely fresh independent G6D V1.4 + G8 audit on the third repaired manuscript bound only by exact SHA and immutable Phase345 machinery. Build G8 families from scratch and require same portable mechanism evidence beyond generic short turns. Preserve untouched report for coordinator adjudication."
+}
