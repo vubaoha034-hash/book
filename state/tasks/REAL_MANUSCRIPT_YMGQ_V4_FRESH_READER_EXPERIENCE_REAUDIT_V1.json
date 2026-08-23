@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT",
+  "phase_ordinal": 355,
+  "status": "READY_NOT_STARTED",
+  "manuscript_binding": {
+    "title": "一命过桥",
+    "required_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+    "must_hash_before_read": true,
+    "must_remain_unchanged": true
+  },
+  "protocol": {
+    "two_pass_required": true,
+    "pass_A_blind_immersion_before_rule_loading": {
+      "rule_files_forbidden_until_trace_frozen": true,
+      "historical_reports_forbidden": true,
+      "repair_history_forbidden": true,
+      "required_trace": [
+        "exact_attention_drop_or_skimming_points",
+        "exact_reading_stop_points_if_any",
+        "what_created_desire_to_continue",
+        "active_suspense_hypotheses_formed_before_payoff",
+        "emotion_scenes_experienced_vs_merely_understood",
+        "dialogue_that_sounded_spoken_vs_written_or_briefed",
+        "where_climax_pressure_subjectively_rose_or_flattened"
+      ],
+      "trace_must_be_frozen_before_pass_B": true
+    },
+    "pass_B_formal_V4_audit": {
+      "allowed_files": [
+        "config/novel-quality-gates.v4.json",
+        "workflows/08-novel-master-pipeline-v4.md",
+        "library/reader-experience-technique-bank.v1.md",
+        "modules/scene-entry-motivation.md",
+        "modules/reader-propulsion-ledger.md",
+        "modules/suspense-hypothesis-engine.md",
+        "modules/emotional-staging-ledger.md",
+        "modules/natural-speech-pressure.md",
+        "modules/climax-escalation-curve.md",
+        "config/novel-quality-gates.v3.json",
+        "rules/scene-to-speech-microcraft.md",
+        "modules/dialogue-trigger-anchor.md",
+        "modules/dialogue-epistemic-scope.md",
+        "modules/local-logic-ledger.md",
+        "rules/no-ai-smell.md",
+        "modules/dialogue-pattern-family-density.md"
+      ],
+      "required_outputs": [
+        "full_scene_entry_reentry_ledger",
+        "full_reader_propulsion_scene_ledger",
+        "all_material_suspense_chain_ledgers",
+        "all_high_emotion_scene_staging_records",
+        "all_high_information_dialogue_natural_speech_records",
+        "major_climax_escalation_curve",
+        "legacy_G6D_G8_regression_check",
+        "comparison_of_pass_A_reader_trace_to_pass_B_formal_findings"
+      ]
+    }
+  },
+  "strict_isolation": {
+    "do_not_read": [
+      "Phase346/348/350/352 audit reports",
+      "Phase347/349/351 repair ledgers or receipts",
+      "Phase353 final freeze receipt",
+      "Phase354 invalidation receipt",
+      "Phase354 permanent regression benchmark",
+      "user critique text or known problem locations",
+      "older YMGQ manuscript versions",
+      "repository history",
+      "network/web"
+    ],
+    "do_not_force_expected_failure_count": true,
+    "do_not_force_expected_verdict": true
+  },
+  "acceptance": {
+    "exact_manuscript_hash": true,
+    "pass_A_trace_precedes_rules": true,
+    "V4_G1M": "PASS_REQUIRED",
+    "V4_G5R": "PASS_REQUIRED",
+    "V4_G5S": "PASS_REQUIRED_IF_MATERIAL_SUSPENSE",
+    "V4_G5E": "PASS_REQUIRED",
+    "V4_G6N": "PASS_REQUIRED",
+    "V4_G7C": "PASS_REQUIRED",
+    "legacy_G6D_G8": "PASS_REQUIRED",
+    "fresh_reader_material_stop_or_skimming_failure": "NONE_REQUIRED_FOR_FINAL_DELIVERY",
+    "no_universal_numeric_thresholds": true
+  },
+  "forbidden_actions": [
+    "EDIT_MANUSCRIPT",
+    "READ_KNOWN_FAILURE_LOCATIONS_BEFORE_AUDIT",
+    "USE_PHASE354_BENCHMARK_AS_ANSWER_KEY",
+    "TURN_READER_TRACE_INTO_CHECKLIST_AFTER_THE_FACT",
+    "DECLARE_FINAL_FREEZE_FROM_G6D_G8_ONLY"
+  ],
+  "next_action": "Run a genuinely fresh two-pass V4 re-audit on the unchanged manuscript: blind immersion trace first, formal V4 audit second. Preserve the untouched report for coordinator adjudication before any rewrite."
+}
