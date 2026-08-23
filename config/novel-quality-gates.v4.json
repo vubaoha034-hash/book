@@ -1,0 +1,83 @@
+{
+  "schema_version": "4.0.0-development",
+  "project_id": "novel-distillation",
+  "status": "DEVELOPMENTAL_PENDING_FRESH_REAL_MANUSCRIPT_VALIDATION",
+  "inherits": {
+    "V3_quality_contract": "config/novel-quality-gates.v3.json",
+    "phase345_G6D_G8_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+    "rule": "V4 adds reader-experience gates; it does not retroactively change V3 historical verdicts."
+  },
+  "reader_experience_bank": "library/reader-experience-technique-bank.v1.md",
+  "new_required_modules": [
+    "modules/scene-entry-motivation.md",
+    "modules/reader-propulsion-ledger.md",
+    "modules/suspense-hypothesis-engine.md",
+    "modules/emotional-staging-ledger.md",
+    "modules/natural-speech-pressure.md",
+    "modules/climax-escalation-curve.md"
+  ],
+  "gates": {
+    "V4-G1M": {
+      "name": "SCENE_ENTRY_MOTIVATION",
+      "required": true,
+      "pass_condition": "Every material entry/re-entry/role switch has a located causal trigger or an already-established continuing obligation.",
+      "blockers": ["MAJOR_SCENE_ENTRY_HAS_NO_CAUSAL_TRIGGER", "AUTHOR_CONVENIENCE_REENTRY"]
+    },
+    "V4-G5R": {
+      "name": "READER_PROPULSION_AND_REWARD",
+      "required": true,
+      "pass_condition": "Material spans create a changing reader question, expectation, pressure, reward or consequential choice; event progress alone is insufficient.",
+      "blockers": ["READER_PROPULSION_COLLAPSE"]
+    },
+    "V4-G5S": {
+      "name": "SUSPENSE_HYPOTHESIS_ENGINE",
+      "required_when_material_suspense_exists": true,
+      "pass_condition": "Carried mysteries support a working reader model, fair evidence, a remaining anomaly or competing model, a validation action/cost, and meaningful model update/payoff.",
+      "blockers": ["SUSPENSE_HAS_NO_WORKING_HYPOTHESIS", "SUSPENSE_REPEATS_ANOMALY_WITHOUT_ESCALATION", "SUSPENSE_PAYOFF_IS_EXPLANATION_DUMP", "SUSPENSE_UNLOCK_CREATES_NO_LARGER_PRESSURE"]
+    },
+    "V4-G5E": {
+      "name": "EMOTIONAL_STAGING_AND_SCENE_VOLTAGE",
+      "required": true,
+      "pass_condition": "High-emotion scenes dramatize pressure, conflicting wants, subtext/behavior, consequential turns and aftershock rather than only reporting correct emotional facts.",
+      "blockers": ["EMOTIONAL_SCENE_REDUCED_TO_EVENT_SKELETON", "EMOTIONAL_PAYOFF_NOT_DRAMATIZED", "GENERIC_ACTION_BEAT_IS_NOT_STAGING"]
+    },
+    "V4-G6N": {
+      "name": "NATURAL_SPEECH_UNDER_PRESSURE",
+      "required": true,
+      "pass_condition": "High-information dialogue is packaged according to speaker urgency, relationship, listener knowledge and plausible omission/inference rather than reader-summary convenience.",
+      "blockers": ["SPEECH_PACKAGE_DOES_NOT_MATCH_HUMAN_PRESSURE", "CHARACTER_SPEAKS_IN_AUTHOR_SUMMARY_UNITS", "DIALOGUE_HAS_NO_HUMAN_OMISSION_OR_INFERENCE"]
+    },
+    "V4-G7C": {
+      "name": "CLIMAX_ESCALATION_CURVE",
+      "required": true,
+      "pass_condition": "Major climaxes compress options, increase personal stakes, reactivate prior assets/relationships, force irreversible choice and leave proportionate payoff/aftershock.",
+      "blockers": ["CLIMAX_HAS_EVENT_VOLUME_WITHOUT_OPTION_COMPRESSION", "CLIMAX_LACKS_PERSONAL_CONVERGENCE", "CLIMAX_RELEASE_HAS_NO_PAYOFF_OR_AFTERSHOCK"]
+    },
+    "V4-G9": {
+      "name": "FRESH_IMMERSION_READER",
+      "required_before_final_freeze": true,
+      "pass_condition": "A fresh reader report locates actual stop/skim points, desire-to-continue drivers, active suspense hypotheses, emotionally stated-vs-experienced scenes and written-vs-spoken dialogue. No earlier gate may substitute for this evidence.",
+      "blockers": ["FRESH_IMMERSION_READER_NOT_RUN", "FRESH_READER_MATERIAL_STOP_OR_SKIM_FAILURE", "FRESH_READER_NO_ACTIVE_CURIOSITY_OR_EMOTIONAL_PULL"]
+    }
+  },
+  "delivery_contract": {
+    "V3_G0_to_G8_still_required_as_applicable": true,
+    "V4_G1M_required": true,
+    "V4_G5R_required": true,
+    "V4_G5S_required_if_material_suspense": true,
+    "V4_G5E_required": true,
+    "V4_G6N_required": true,
+    "V4_G7C_required": true,
+    "V4_G9_required": true,
+    "G6D_and_G8_pass_alone_may_freeze": false,
+    "event_density_may_substitute_for_reader_propulsion": false,
+    "no_universal_numeric_thresholds": true
+  },
+  "false_positive_controls": [
+    "SHORT_TASK_DIALOGUE_MAY_PASS",
+    "MEMORIAL_OR_RELATIONSHIP_DIALOGUE_MAY_PASS",
+    "QUIET_SCENE_MAY_PASS_WITH_GROWING_INTIMACY_DREAD_OR_CHOICE_PRESSURE",
+    "FORMAL_BRIEFING_MAY_BE_COMPLETE_WHEN_SCENE_SUPPORTS_IT",
+    "NOT_EVERY_UNCERTAINTY_REQUIRES_MULTI_STAGE_SUSPENSE"
+  ]
+}
