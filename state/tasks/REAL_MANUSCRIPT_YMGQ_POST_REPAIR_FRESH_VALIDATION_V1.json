@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION",
+  "phase_ordinal": 348,
+  "status": "READY_NOT_STARTED",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "manuscript_binding": {
+    "title": "一命过桥",
+    "required_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7",
+    "must_hash_before_audit": true,
+    "must_remain_unchanged": true
+  },
+  "allowed_rule_files": [
+    "config/novel-quality-gates.v3.json",
+    "rules/scene-to-speech-microcraft.md",
+    "modules/dialogue-trigger-anchor.md",
+    "modules/dialogue-epistemic-scope.md",
+    "modules/local-logic-ledger.md",
+    "templates/microcraft-dialogue-audit-template.md",
+    "rules/pass-isolation.md",
+    "rules/no-ai-smell.md",
+    "modules/dialogue-pattern-family-density.md",
+    "templates/dialogue-pattern-family-audit-template.md"
+  ],
+  "strict_isolation": {
+    "phase346_report_forbidden": true,
+    "phase347_repair_ledger_forbidden": true,
+    "phase347_receipt_forbidden": true,
+    "historical_problem_locations_forbidden": true,
+    "historical_manuscript_versions_forbidden": true,
+    "benchmark_case_files_forbidden": true,
+    "old_R001_R002_R003_answers_forbidden": true,
+    "network_search_forbidden": true
+  },
+  "validation_targets": [
+    "Full-manuscript G6D candidate harvest under frozen V1.4 machinery.",
+    "Independent local semantic/temporal ledger with no hinted repair locations.",
+    "Full-manuscript G8 dialogue pattern-family ledger with qualitative portability/specificity evidence.",
+    "Protected relationship-specific/social dialogue false-positive controls.",
+    "No invented universal numeric density threshold."
+  ],
+  "acceptance": {
+    "exact_machinery_binding_required": true,
+    "exact_repaired_manuscript_hash_required": true,
+    "full_scan_required": true,
+    "no_deterministic_G6D_blocker_required": true,
+    "G8_pattern_family_ledger_required": true,
+    "protected_dialogue_required": true,
+    "universal_numeric_density_threshold_forbidden": true,
+    "fresh_report_preserved_before_any_further_repair": true
+  },
+  "forbidden_actions": [
+    "READ_PHASE346_REPORT",
+    "READ_PHASE347_REPAIR_LEDGER_OR_RECEIPT",
+    "READ_PRIOR_YMGQ_FAILURE_LOCATIONS",
+    "READ_BENCHMARK_MICROCRAFT_CASES",
+    "FORCE_EXPECTED_F1_COUNT_OR_VERDICT",
+    "REPAIR_MANUSCRIPT_DURING_VALIDATION",
+    "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD",
+    "CLAIM_FINAL_FREEZE_BEFORE_COORDINATOR_ADJUDICATION"
+  ],
+  "next_action": "Run one genuinely fresh independent G6D V1.4 + G8 audit on the repaired manuscript bound only by the exact repaired SHA and immutable Phase345 machinery; preserve the untouched report for coordinator adjudication."
+}
