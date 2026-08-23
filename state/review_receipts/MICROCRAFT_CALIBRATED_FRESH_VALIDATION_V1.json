@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1",
+  "phase": "MICROCRAFT_CALIBRATED_FRESH_VALIDATION",
+  "phase_ordinal": 346,
+  "adjudication_status": "ACCEPT",
+  "adjudicated_at": "2026-08-23T15:34:00+08:00",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "fresh_report": {
+    "transport_filename": "PHASE346_MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1_AUDIT.md",
+    "sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e",
+    "byte_count": 104750,
+    "line_count": 2194,
+    "raw_report_publicly_persisted": false,
+    "privacy_reason": "The report contains manuscript-derived text; only privacy-safe adjudication metadata is stored in the public repository."
+  },
+  "manuscript_binding": {
+    "title": "一命过桥",
+    "expected_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "reported_actual_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+    "result": "PASS",
+    "coordinator_independent_byte_rehash": "NOT_RUN_SOURCE_MANUSCRIPT_NOT_PRESENT_IN_COORDINATOR_RUNTIME"
+  },
+  "coordinator_machinery_reverification": {
+    "result": "PASS",
+    "exact_ref_reads": 10,
+    "exact_blob_matches": "10/10",
+    "quality_gate_schema": "3.0.4",
+    "G6D_version": "1.4",
+    "rule_blobs": {
+      "config/novel-quality-gates.v3.json": "67846c3fbc0b16df70570d6998bb485d29bdd25d",
+      "rules/scene-to-speech-microcraft.md": "105e0facbad7bf489484f03a45c33f40cf83afdb",
+      "modules/dialogue-trigger-anchor.md": "f0de6f9df32486c344f4a2e4b9675c0a1580d60b",
+      "modules/dialogue-epistemic-scope.md": "63b3deee052c71887db8b552f73744abe7631ab3",
+      "modules/local-logic-ledger.md": "9da7dd51139a5606e74053a124ae8fb22fdba1eb",
+      "templates/microcraft-dialogue-audit-template.md": "b42ecc8c7248a9cf30a2ad12bf1d6d9f7b3cb2a2",
+      "rules/pass-isolation.md": "6b6bc9ac9635d981f3300361d3c1fb98da2dcd3a",
+      "rules/no-ai-smell.md": "4313adc490aadca1184d02e4e25356a4687d57d2",
+      "modules/dialogue-pattern-family-density.md": "0462967e9e0ae51b146c32af1eae8ae44005b497",
+      "templates/dialogue-pattern-family-audit-template.md": "bd4c1e63906df3d40054abc2072372932b25671d"
+    }
+  },
+  "fresh_execution_acceptance": {
+    "fresh_context_attestation_present": true,
+    "contradictory_contamination_evidence_observed": false,
+    "full_scan": "PASS_3159_LINES_29_SCENE_BLOCKS",
+    "candidate_coverage": "PASS_74_OF_74",
+    "rhetorical_ladder_parity": "PASS_34_OF_34",
+    "epistemic_scope_records": 9,
+    "protected_dialogue_records": 10,
+    "G8_pattern_family_instances": 36,
+    "G8_pattern_family_count": 4,
+    "universal_numeric_density_threshold_invented": false,
+    "preserved_deterministic_temporal_regression_rediscovered": true,
+    "old_MC_R002_fixed_single_instance_label_required": false,
+    "old_MC_R003_fixed_single_instance_label_required": false
+  },
+  "manuscript_result": {
+    "G6D": "FAIL",
+    "G6D_hard_blocker_count": 2,
+    "hard_failure_codes": ["TEMPORAL_SEMANTIC_CHAIN_FAIL", "TEMPORAL_SEMANTIC_CHAIN_FAIL"],
+    "hard_failure_locations": ["L55-L77", "L2963-L3021"],
+    "G6D_mouthpiece_failures": 0,
+    "G6D_local_dialogue_template_failures": 0,
+    "G8": "RISK",
+    "G8_high_risk_family_count": 1,
+    "G8_hold_family_count": 1,
+    "G8_risk_code": "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+    "G8_high_risk_family": "F1",
+    "overall": "FAIL"
+  },
+  "calibration_validation": {
+    "object_fact_vs_public_knowledge_separation": "SUPPORTED_ON_REAL_MANUSCRIPT",
+    "public_exposure_meta_information_not_collapsed_to_object_fact": true,
+    "single_locally_supported_removable_banter_auto_hard_failed": false,
+    "portable_local_cadence_routed_to_G8": true,
+    "cross_character_pattern_family_risk_detected": true,
+    "protected_relationship_specific_dialogue_preserved": true,
+    "no_universal_density_threshold_frozen": true
+  },
+  "phase346_task_result": "ACCEPT_VALID_FRESH_EXECUTION_MANUSCRIPT_FAIL",
+  "repair_gate": {
+    "previous_phase346_repair_block": "CLOSED",
+    "targeted_manuscript_repair_authorized": true,
+    "repair_scope": "Close the two deterministic temporal-semantic blockers and reduce the high-risk F1 dialogue-template family with minimal manuscript changes while preserving protected relationship-specific dialogue.",
+    "full_rewrite_authorized": false,
+    "rule_or_machinery_change_authorized": false,
+    "post_repair_independent_validation_required": true
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "verdict": "PHASE346_ACCEPTED_TARGETED_REPAIR_UNLOCKED"
+}
