@@ -1,0 +1,102 @@
+{
+  "schema_version": "4.1.0-development",
+  "project_id": "novel-distillation",
+  "status": "DEVELOPMENTAL_PENDING_FRESH_REAL_MANUSCRIPT_VALIDATION",
+  "inherits": [
+    "config/novel-quality-gates.v4.json",
+    "config/novel-quality-gates.v3.json"
+  ],
+  "calibration_source": "Phase355 valid fresh execution exposed V4 false negatives and proxy-metric mismatch.",
+  "new_required_modules": [
+    "modules/target-reader-evidence-authority.md",
+    "modules/dramatization-surface-density.md",
+    "modules/scene-reentry-decision-delta.md",
+    "modules/natural-speech-pressure-v1_1.md",
+    "modules/suspense-curiosity-charge.md",
+    "modules/climax-experiential-voltage.md"
+  ],
+  "gates": {
+    "V4.1-G1M": {
+      "name": "SCENE_ENTRY_AND_REENTRY_DECISION_DELTA",
+      "required": true,
+      "inherits": "V4-G1M",
+      "additional_blockers": ["REENTRY_REVERSAL_HAS_NO_DECISION_DELTA", "OLD_MOTIVE_REUSED_AS_POST_HOC_REENTRY_CAUSE"]
+    },
+    "V4.1-G5D": {
+      "name": "DRAMATIZATION_SURFACE_DENSITY",
+      "required": true,
+      "pass_condition": "Separated material scenes do not repeatedly collapse high dramatic pressure into a portable event-skeleton surface.",
+      "blockers": ["SCENE_SURFACE_SKELETON_DENSITY_RISK", "DRAMATIC_PRESSURE_NOT_CONVERTED_TO_LIVED_SCENE"]
+    },
+    "V4.1-G5R": {
+      "name": "READER_PROPULSION_AND_REWARD",
+      "inherits": "V4-G5R",
+      "required": true
+    },
+    "V4.1-G5S": {
+      "name": "SUSPENSE_HYPOTHESIS_ENGINE",
+      "inherits": "V4-G5S",
+      "required_when_material_suspense_exists": true
+    },
+    "V4.1-G5Q": {
+      "name": "SUSPENSE_CURIOSITY_CHARGE",
+      "required_when_material_suspense_exists": true,
+      "pass_condition": "Material mysteries create meaningful desire to resolve, not merely a coherent working model.",
+      "blockers": ["SUSPENSE_HAS_WORKING_MODEL_BUT_LOW_CURIOSITY_CHARGE", "SUSPENSE_CLUES_UPDATE_MODEL_BUT_NOT_READER_DESIRE", "MYSTERY_LACKS_PERSONAL_OR_DECISION_OWNERSHIP"]
+    },
+    "V4.1-G5E": {
+      "name": "EMOTIONAL_STAGING_AND_SCENE_VOLTAGE",
+      "inherits": "V4-G5E",
+      "required": true
+    },
+    "V4.1-G6N": {
+      "name": "NATURAL_SPEECH_UNDER_PRESSURE_V1_1",
+      "required": true,
+      "inherits": "V4-G6N",
+      "additional_blockers": ["LIVE_SPEECH_OVERSEGMENTATION_SUPPRESSED", "SHARED_CONTEXT_RESTATED_FOR_READER_ORIENTATION", "VALID_GOAL_BUT_AUTHOR_SHAPED_UTTERANCE"]
+    },
+    "V4.1-G7C": {
+      "name": "CLIMAX_STRUCTURAL_ESCALATION",
+      "inherits": "V4-G7C",
+      "required": true
+    },
+    "V4.1-G7V": {
+      "name": "CLIMAX_EXPERIENTIAL_VOLTAGE",
+      "required": true,
+      "pass_condition": "Structural escalation produces a corresponding fresh-reader crescendo in anticipation, tension, emotion or concentrated meaning.",
+      "blockers": ["STRUCTURAL_ESCALATION_WITHOUT_EXPERIENTIAL_CRESCENDO", "CLIMAX_BEATS_READ_AS_EQUIVALENT_EVENT_UNITS", "PAYOFF_CONSEQUENCE_LANDS_AS_SUMMARY_NOT_EVENT"]
+    },
+    "V4.1-G9": {
+      "name": "FRESH_AI_IMMERSION_READER",
+      "inherits": "V4-G9",
+      "required_before_delivery": true,
+      "authority": "SUPPORTING_NOT_HUMAN_EQUIVALENT"
+    },
+    "V4.1-G9H": {
+      "name": "TARGET_READER_EVIDENCE_AUTHORITY",
+      "required_before_final_freeze": true,
+      "pass_condition": "No unresolved located human target-reader failure remains bound to the current manuscript SHA.",
+      "blockers": ["OPEN_LOCATED_TARGET_READER_FAILURE", "AI_PASS_IMPROPERLY_OVERRIDES_HUMAN_READER_EVIDENCE"]
+    }
+  },
+  "non_equivalences": [
+    "LOCAL_DIALOGUE_GROUNDING != DRAMATIZED_SCENE",
+    "VALID_SPEAKER_GOAL != NATURAL_UTTERANCE_PACKAGING",
+    "OLD_RELATIONSHIP_MOTIVE != POST_WITHDRAWAL_REENTRY_TRIGGER",
+    "WORKING_HYPOTHESIS != CURIOSITY_CHARGE",
+    "OPTION_COMPRESSION != EXPERIENCED_CLIMAX_VOLTAGE",
+    "FRESH_AI_PASS != HUMAN_TARGET_READER_PASS"
+  ],
+  "delivery_contract": {
+    "inherited_V3_V4_gates_required": true,
+    "V4_1_G5D_required": true,
+    "V4_1_G5Q_required_if_suspense": true,
+    "V4_1_G7V_required": true,
+    "V4_1_G9H_required": true,
+    "open_located_human_failure_may_be_frozen_over": false,
+    "fresh_AI_reader_may_substitute_for_human_target_reader": false,
+    "no_universal_numeric_thresholds": true,
+    "no_padding_or_length_quota": true
+  },
+  "regression": "state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json"
+}
