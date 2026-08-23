@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION",
+  "phase_ordinal": 351,
+  "status": "READY_NOT_STARTED",
+  "authority": {
+    "phase350_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_SECOND_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "phase350_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_SECOND_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887"
+  },
+  "source_manuscript_binding": {
+    "required_source_sha256": "6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb",
+    "must_hash_before_edit": true,
+    "must_preserve_source": true,
+    "repair_output_must_be_new_private_copy": true,
+    "public_repository_manuscript_text_forbidden": true
+  },
+  "repair_scope": {
+    "mode": "BOUNDED_G8_DIALOGUE_DEHOMOGENIZATION_ONLY",
+    "G6D_status_from_phase350": "PASS_DO_NOT_REOPEN_OR_BROADEN",
+    "target_family": "PFF-001_NARROWED_CORE",
+    "risk_code": "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+    "target_instances": ["PFI-007", "PFI-012", "PFI-020", "PFI-024", "PFI-033"],
+    "maximum_primary_instances_to_rework": 5,
+    "selection_reason": "These are the coordinator-confirmed most portable weak-core examples spanning unrelated relationships; stronger task/object/injury/memorial instances are explicitly protected from repair-by-count.",
+    "allowed_strategy_variation": ["direct statement", "action instead of comeback", "silence/non-response", "single complete answer", "relationship-specific behavior"],
+    "universal_numeric_density_threshold": null
+  },
+  "protected_policy": {
+    "do_not_repair_for_count_alone": true,
+    "preserve": ["opening Xiao Niuqiu silver joke if character-specific", "child fear observation if retained as relationship evidence", "injury-care humor", "memorial bow/debt dialogue", "bridge-bound task dialogue", "shared-history rituals"],
+    "no_global_humor_reduction": true
+  },
+  "forbidden_actions": [
+    "REOPEN_G6D_PASS_WITHOUT_NEW_LOCAL_EVIDENCE",
+    "FULL_MANUSCRIPT_REWRITE",
+    "DELETE_ALL_BANTER_OR_HUMOR",
+    "EDIT_MORE_THAN_FIVE_PRIMARY_PFF_001_CORE_INSTANCES",
+    "TREAT_PFF_001_COUNT_AS_THRESHOLD",
+    "CHANGE_PHASE345_RULE_SEMANTICS",
+    "PUBLICLY_COMMIT_MANUSCRIPT_PROSE",
+    "DEFAULT_ENABLE_NOVEL_DNA_ROUTER",
+    "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE"
+  ],
+  "required_outputs": [
+    "New private manuscript copy with new SHA-256 and source preserved byte-identically.",
+    "Privacy-safe repair ledger without manuscript prose.",
+    "Changed-region G6D recheck with zero new deterministic failure.",
+    "Full-manuscript G8 qualitative re-assessment without numeric pass cutoff.",
+    "Protected-dialogue recheck.",
+    "Next genuinely fresh validation task; no final self-freeze."
+  ],
+  "acceptance": {
+    "source_hash_exact": true,
+    "source_preserved": true,
+    "G6D_changed_regions_no_new_failure": true,
+    "PFF_001_core_portability_reduced": true,
+    "protected_dialogue_not_mechanically_flattened": true,
+    "numeric_threshold_forbidden": true,
+    "fresh_validation_required_after_repair": true
+  },
+  "next_action": "Bind the exact Phase349 candidate, rework only the five coordinator-confirmed weak-core PFF-001 instances using different response strategies, recheck changed regions and full G8 qualitatively, preserve privacy-safe evidence, then stop for fresh validation."
+}
