@@ -10,7 +10,7 @@
       "event_id": "EVT-NOVEL-DISTILL-PHASE350-ADJUDICATION-20260823-019",
       "project_id": "novel-distillation",
       "stream_id": "global",
-      "recorded_at": "2026-08-23T19:55:00+08:00",
+      "recorded_at": "2026-08-23T19:47:00+08:00",
       "event_type": "THIRD_FRESH_VALIDATION_ACCEPTED_G8_NARROWED_CORE_REPAIR_REQUIRED",
       "material": true,
       "task_id": "REAL_MANUSCRIPT_YMGQ_SECOND_POST_REPAIR_FRESH_VALIDATION_V1",
@@ -22,14 +22,14 @@
       "authorization": {"required":false,"scope":"Coordinator adjudication and bounded G8-only repair under existing frozen rules; no final freeze or accepted-checkpoint advance.","status":"NOT_REQUIRED"},
       "previous_event_id": "EVT-NOVEL-DISTILL-SECOND-TARGETED-REPAIR-20260823-018",
       "previous_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-      "event_hash": "261acba5b3746900ccb5b0006cd27641295769643f4f23aa9b47fdce8bed11c4"
+      "event_hash": "76cd0aa9d2758e1639c8f07e665dd02eacc2e0d251b93fdff7a8a0760d68d0a3"
     },
     {
       "schema_version": "upcp-state-ledger-event/v1",
       "event_id": "EVT-NOVEL-DISTILL-THIRD-DEHOMOGENIZATION-20260823-020",
       "project_id": "novel-distillation",
       "stream_id": "global",
-      "recorded_at": "2026-08-23T19:58:00+08:00",
+      "recorded_at": "2026-08-23T19:48:00+08:00",
       "event_type": "THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_COMPLETED_FRESH_VALIDATION_QUEUED",
       "material": true,
       "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1",
@@ -40,11 +40,11 @@
       "evidence": ["state/review_receipts/REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1.json","state/repair_ledgers/REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1.json","state/tasks/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json","private_source_sha256:6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb","private_repaired_sha256:3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf"],
       "authorization": {"required":false,"scope":"Execute bounded Phase351 repair and queue fresh validation; no public manuscript text, rule change, final freeze, or accepted-checkpoint advance.","status":"NOT_REQUIRED"},
       "previous_event_id": "EVT-NOVEL-DISTILL-PHASE350-ADJUDICATION-20260823-019",
-      "previous_event_hash": "261acba5b3746900ccb5b0006cd27641295769643f4f23aa9b47fdce8bed11c4",
-      "event_hash": "ab01d3e41bb2dd756bb80e787ed9d40f14bc14d829feb6ed746a628af029585c"
+      "previous_event_hash": "76cd0aa9d2758e1639c8f07e665dd02eacc2e0d251b93fdff7a8a0760d68d0a3",
+      "event_hash": "c892098740c9db22720646c4f9f46188ffc54810aa01f02a7cb0d96cec2ea6db"
     }
   ],
   "target_sequence": 20,
-  "target_event_hash": "ab01d3e41bb2dd756bb80e787ed9d40f14bc14d829feb6ed746a628af029585c",
+  "target_event_hash": "c892098740c9db22720646c4f9f46188ffc54810aa01f02a7cb0d96cec2ea6db",
   "reason": "Single-file ledger append could not be executed atomically with the available connector mutation surface; events are pre-hashed for deterministic reconciliation."
 }
