@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "manuscript_title": "一命过桥",
+  "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "evidence_type": "HUMAN_TARGET_READER_LOCATED_CRITIQUE",
+  "status": "OPEN_BLOCKING_READER_EVIDENCE",
+  "privacy": "ABSTRACTED_NO_LONG_MANUSCRIPT_PROSE",
+  "reader_overall_assessment": {
+    "reported_score_range_out_of_10": "3_TO_3_5",
+    "score_is_not_standalone_gate_evidence": true,
+    "located_reasons_are_gate_evidence": true
+  },
+  "failures": [
+    {
+      "id": "TR-F01",
+      "class": "MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION",
+      "locations": ["around L1239-L1255", "around L1083-L1105", "around L955-L965"],
+      "reader_effect": "Repeated terse functional exchanges feel like event notes rather than fully dramatized human scenes; emotional setup and lived texture are too thin across many scenes.",
+      "requires": "manuscript-level dramatization-surface audit, not a local dialogue truth check"
+    },
+    {
+      "id": "TR-F02",
+      "class": "AUTHOR_SHAPED_INFORMATION_PACKET",
+      "locations": ["L81"],
+      "reader_effect": "The warning speech sounds composed for reader information delivery rather than like this person naturally speaking to this listener in the moment.",
+      "requires": "pressure-aware utterance segmentation and human turn-taking test"
+    },
+    {
+      "id": "TR-F03",
+      "class": "REENTRY_WITHOUT_POST_WITHDRAWAL_DECISION_DELTA",
+      "locations": ["L1013-L1017"],
+      "reader_effect": "A supporting character returns after withdrawing without a newly shown reason for reversing that decision.",
+      "requires": "new post-exit trigger or changed obligation; old relationship alone is insufficient"
+    },
+    {
+      "id": "TR-F04",
+      "class": "LOW_EXPERIENTIAL_CLIMAX_VOLTAGE_AND_READER_PULL",
+      "locations": ["manuscript-wide", "battle middle and major climax chain"],
+      "reader_effect": "Many events occur but the reading experience remains unusually flat; the reader does not feel a strong crescendo or page-turn compulsion.",
+      "requires": "felt-voltage and desire-to-continue evidence, not event count or option compression alone"
+    },
+    {
+      "id": "TR-F05",
+      "class": "LOW_SUSPENSE_CURIOSITY_CHARGE",
+      "locations": ["black-arrow mystery chain"],
+      "reader_effect": "The mystery is legible but does not create strong desire to discover the answer; clue placement feels stiff and author-arranged.",
+      "requires": "curiosity charge, personal relevance, prediction tension and payoff desire beyond existence of a working hypothesis"
+    }
+  ],
+  "authority_rule": {
+    "fresh_AI_reader_may_contextualize": true,
+    "fresh_AI_reader_may_erase_open_located_human_failure": false,
+    "closure_requires": [
+      "manuscript_change addressing the located failure OR coordinator reasoned determination that the failure is outside the explicit target-reader contract",
+      "post-change reader validation"
+    ]
+  },
+  "final_freeze_blocked": true
+}
