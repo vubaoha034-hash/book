@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-23T15:54:00+08:00",
+  "updated_at": "2026-08-23T18:45:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "book_id": "GLOBAL-DNA-V1",
@@ -35,58 +35,40 @@
     "phase300_integration_status": "ACCEPTED_STRUCTURE_INTEGRATED_PENDING_REGRESSION_BENCHMARK", "phase300_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1.json",
     "phase310_benchmark_status": "ACCEPTED_PASS_WITH_SCOPE_LIMITATION", "phase310_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1.json",
     "phase320_production_governance_status": "ACCEPTED_OPTIONAL_BOUNDED_PRODUCTION", "phase320_receipt": "state/review_receipts/GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1.json",
-    "candidate_manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json", "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json", "book_level_frozen_semantics_unchanged": true, "cross_book_candidate_v1_history_preserved": true, "global_dna": 1, "global_dna_ids": ["GN-VDNA-01"], "other_global_promotions_authorized": false
+    "candidate_manifest": "state/frozen_dna/CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_V2.json",
+    "global_manifest": "state/frozen_dna/GLOBAL_NOVEL_DNA_FREEZE_V1.json",
+    "book_level_frozen_semantics_unchanged": true,
+    "cross_book_candidate_v1_history_preserved": true,
+    "global_dna": 1,
+    "global_dna_ids": ["GN-VDNA-01"],
+    "other_global_promotions_authorized": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION",
-    "phase_ordinal": 348,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_SECOND_TARGETED_MICROCRAFT_REPAIR_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_SECOND_TARGETED_MICROCRAFT_REPAIR",
+    "phase_ordinal": 349,
     "status": "READY_NOT_STARTED",
-    "execution_scope": "Freshly validate the repaired YMGQ candidate under the immutable Phase345 G6D V1.4 + G8 machinery without reading Phase346 findings or Phase347 repair evidence.",
-    "inputs": {
-      "phase347_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1.json",
-      "phase347_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1.json",
-      "phase347_repair_ledger": "state/repair_ledgers/REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1.json",
-      "phase348_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1.json",
-      "source_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
-      "repaired_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7"
-    },
-    "machinery": {
-      "freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
-      "G6D_version": "1.4",
-      "quality_gate_schema": "3.0.4",
-      "universal_density_threshold": null
-    },
-    "phase347_settlement": {
-      "status": "IMPLEMENTED_TARGETED_REPAIR_VALIDATED_LOCALLY_PENDING_INDEPENDENT_POST_REPAIR_VALIDATION",
-      "source_preserved_byte_identical": true,
-      "public_manuscript_text_committed": false,
-      "G6D_blockers_closed": "2_OF_2_LOCAL_CHECK",
-      "new_deterministic_G6D_failures_in_changed_regions": 0,
-      "F1_recount": "18_TO_13_DESCRIPTIVE_ONLY_NOT_THRESHOLD",
-      "high_portability_priority_F1_remaining": "0_OF_4",
-      "F1_executor_verdict": "HOLD_MEDIUM_RISK_REDUCED_PENDING_INDEPENDENT_VALIDATION",
-      "protected_dialogue": "PASS_10_OF_10_UNTOUCHED",
-      "downstream_continuity": "PASS",
-      "accepted_checkpoint_advance": false
-    },
-    "remaining_blockers": ["POST_REPAIR_INDEPENDENT_VALIDATION_NOT_RUN"],
-    "next_action": "Run exactly one genuinely fresh Phase348 audit on the repaired manuscript SHA-256 using only the task allowlist and immutable Phase345 machinery. Preserve the untouched report before coordinator adjudication.",
-    "forbidden_actions": ["REPAIR_MANUSCRIPT_DURING_PHASE348", "EXPOSE_PHASE346_FINDINGS_TO_PHASE348_EVALUATOR", "EXPOSE_PHASE347_REPAIR_LEDGER_OR_LOCATIONS_TO_PHASE348_EVALUATOR", "FORCE_EXPECTED_F1_COUNT_OR_VERDICT", "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD", "DEFAULT_ENABLE_NOVEL_DNA_ROUTER", "SEMANTIC_EDIT_OF_GN_VDNA_01_V1_IN_PLACE"]
+    "execution_scope": "Create a new private second-repair copy from the exact Phase347 repaired candidate; close the one confirmed Phase348 knowledge-state blocker, disambiguate the Baisha/Luoshui route as HOLD/clarity rather than retroactive hard fail, and minimally reduce the confirmed PFF-001 cross-character dialogue-template risk.",
+    "inputs": {"phase348_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1.json", "phase348_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1.json", "phase349_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_SECOND_TARGETED_MICROCRAFT_REPAIR_V1.json", "fresh_report_sha256": "444b65287c60db4e11f9cbb92c7b10dbac18ac7a0d5359a9285af5dd0eb6791b", "source_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7"},
+    "machinery": {"freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887", "G6D_version": "1.4", "quality_gate_schema": "3.0.4", "universal_density_threshold": null},
+    "phase348_settlement": {"task_adjudication": "ACCEPT_VALID_FRESH_EXECUTION_MANUSCRIPT_FAIL_WITH_FINDING_NARROWING", "manuscript_binding": "PASS", "machinery_binding": "PASS_10_OF_10", "full_scan": "PASS_93_OF_93", "ATS_parity": "PASS_32_OF_32", "confirmed_G6D_blockers": 1, "raw_G6D_second_hard_finding": "NARROWED_TO_HOLD_CLARITY_DEFECT", "G8_substantive": "RISK_PFF_001", "G8_formal": "HOLD_G6D_PRECONDITION_FAILED", "accepted_checkpoint_advance": false},
+    "remaining_blockers": ["SECOND_TARGETED_REPAIR_NOT_EXECUTED", "POST_SECOND_REPAIR_INDEPENDENT_VALIDATION_NOT_RUN"],
+    "next_action": "Execute Phase349 exactly: bind source SHA 774815..., preserve it, create a new private copy, close the confirmed unsupported-knowledge blocker without inventing a carrier, disambiguate Baisha/Luoshui using only existing route facts, rework at most five high-portability PFF-001 instances, recheck G6D/G8/protected dialogue/downstream continuity, then queue a fresh validation.",
+    "forbidden_actions": ["OVERWRITE_PHASE347_REPAIRED_SOURCE", "PUBLICLY_COMMIT_MANUSCRIPT_TEXT", "FULL_MANUSCRIPT_REWRITE", "INVENT_INFORMATION_CARRIER_TO_SAVE_G6D_BLOCKER", "RETROACTIVELY_RECLASSIFY_LUOSHUI_BAISHA_HOLD_AS_HISTORICAL_HARD_FAIL", "DELETE_ALL_BANTER_OR_HUMOR", "MAKE_EVERY_DIALOGUE_LINE_TASK_FUNCTIONAL", "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD", "CHANGE_PHASE345_RULE_SEMANTICS", "DEFAULT_ENABLE_NOVEL_DNA_ROUTER"]
   },
-  "parked_tasks": [{"task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1", "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION", "phase_ordinal": 330, "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE", "reason": "The real-manuscript calibration path now has a targeted repaired candidate, but independent post-repair validation is still required before production-outcome accumulation resumes.", "resume_condition": "Phase348 post-repair fresh validation is adjudicated; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."}],
+  "parked_tasks": [{"task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1", "phase": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION", "phase_ordinal": 330, "status": "PAUSED_BY_AUTHORIZED_MICROCRAFT_ARCHITECTURE_UPGRADE", "reason": "Phase348 independently validated the Phase347 manuscript but found one confirmed knowledge-state blocker plus continuing PFF-001 dialogue-pattern risk; a second bounded repair and fresh validation are required before production-outcome accumulation resumes.", "resume_condition": "Phase349 second targeted repair and subsequent fresh validation are adjudicated; GN-VDNA-01 remains DEFAULT OFF and real_manuscript_applied_outcome_count remains 0."}],
   "manuscript_quality_state": {
     "一命过桥": {
       "historical_candidate_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
       "repaired_candidate_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7",
-      "status": "TARGETED_REPAIR_COMPLETED_PENDING_INDEPENDENT_POST_REPAIR_VALIDATION",
-      "reason": "PHASE347_CLOSED_2_G6D_BLOCKERS_AND_REDUCED_F1_HIGH_PORTABILITY_WITHOUT_TOUCHING_PROTECTED_DIALOGUE",
+      "status": "PHASE348_FRESH_VALIDATED_FAIL_SECOND_TARGETED_REPAIR_REQUIRED",
+      "reason": "ONE_CONFIRMED_CHARACTER_KNOWLEDGE_BLOCKER_PLUS_PFF_001_DIALOGUE_PATTERN_RISK;_LUOSHUI_BAISHA_RAW_HARD_FINDING_NARROWED_TO_HOLD_CLARITY",
       "repair_started_after_invalidation": true,
       "repair_completed": true,
-      "repair_authorized": false,
-      "repair_blocked_by_phase348": true,
-      "V3_G6D": "TARGETED_LOCAL_CHECK_PASS_PENDING_INDEPENDENT_FULL_SCAN",
-      "V3_G8": "HOLD_MEDIUM_RISK_REDUCED_PENDING_INDEPENDENT_FULL_SCAN",
+      "second_repair_authorized": true,
+      "repair_blocked_by_phase349": false,
+      "V3_G6D": "FAIL_1_CONFIRMED_BLOCKER_PLUS_1_ROUTE_HOLD",
+      "V3_G8": "RISK_PFF_001_FORMAL_HOLD_UNTIL_G6D_PASS",
       "fresh_attempt1_promotion_status": "INVALID",
       "fresh_attempt2_promotion_status": "VALID_TEST_FAILED_1_OF_3_OLD_GATE",
       "fresh_attempt3_promotion_status": "VALID_TEST_FAILED_2_OF_3_OLD_GATE_WITH_FALSE_POSITIVE_RISK",
@@ -97,14 +79,14 @@
       "phase346_calibrated_fresh_validation": "ACCEPTED_EXECUTION_MANUSCRIPT_FAIL",
       "phase346_report_sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e",
       "phase347_targeted_repair": "IMPLEMENTED_LOCAL_CHECK_PASS_PENDING_PHASE348",
-      "phase347_G6D_blockers_closed": 2,
-      "phase347_F1_before": 18,
-      "phase347_F1_after": 13,
-      "phase347_high_portability_priority_remaining": 0,
-      "phase347_protected_dialogue_touched": 0
+      "phase348_post_repair_fresh_validation": "ACCEPTED_EXECUTION_MANUSCRIPT_FAIL_WITH_ONE_RAW_FINDING_NARROWED_TO_HOLD",
+      "phase348_report_sha256": "444b65287c60db4e11f9cbb92c7b10dbac18ac7a0d5359a9285af5dd0eb6791b",
+      "phase348_confirmed_G6D_blockers": 1,
+      "phase348_route_hold_count": 1,
+      "phase348_G8_high_risk_family_count": 1
     }
   },
   "rollback": {"authorized": false, "receipt": null},
-  "superseded_states": ["BOOK-02_SOURCE_GATE_PENDING","BOOK-02_SOURCE_GATE_RETRY","BOOK-02_PACKET_PENDING","BOOK-02_EVIDENCE_SETTLEMENT_PENDING","BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING","BOOK-02_NOVEL_DNA_VALIDATION_PENDING","BOOK-02_NOVEL_DNA_FREEZE_PENDING","BOOK-02_CLOSEOUT_PENDING","BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED","BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1","BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1","BOOK-01_NOVEL_DNA_SYNTHESIS_V1","BOOK-01_NOVEL_DNA_VALIDATION_V1","BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1","BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1","CROSS_BOOK_NOVEL_DNA_VALIDATION_V1","CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1","BOOK-03_SOURCE_INTAKE_V1","BOOK-03_EVIDENCE_SETTLEMENT_V1","BOOK-03_NOVEL_DNA_V1","BOOK-03_NOVEL_DNA_VALIDATION_V1","BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1","BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1","CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1","CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS_V2","GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1","GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1","GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS","GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1","GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1","GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1","MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1","MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1","MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2","MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3","MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1","MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1","MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1","REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1"],
+  "superseded_states": ["BOOK-02_SOURCE_GATE_PENDING", "BOOK-02_SOURCE_GATE_RETRY", "BOOK-02_PACKET_PENDING", "BOOK-02_EVIDENCE_SETTLEMENT_PENDING", "BOOK-02_NOVEL_DNA_SYNTHESIS_PENDING", "BOOK-02_NOVEL_DNA_VALIDATION_PENDING", "BOOK-02_NOVEL_DNA_FREEZE_PENDING", "BOOK-02_CLOSEOUT_PENDING", "BOOK-01_PARITY_RECOVERY_SCAN_V1_BLOCKED", "BOOK-01_TARGETED_LITERARY_RECOVERY_AND_SOURCE_BINDING_RECONCILIATION_V1", "BOOK-01_REPAIRED_SOURCE_SEMANTIC_RECONSTRUCTION_HANDOFF_V1", "BOOK-01_NOVEL_DNA_SYNTHESIS_V1", "BOOK-01_NOVEL_DNA_VALIDATION_V1", "BOOK-01_NOVEL_DNA_FREEZE_APPLICATION_V1", "BOOK-01_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1", "CROSS_BOOK_NOVEL_DNA_VALIDATION_V1", "CROSS_BOOK_NOVEL_DNA_CANDIDATE_FREEZE_AND_GOVERNANCE_V1", "BOOK-03_SOURCE_INTAKE_V1", "BOOK-03_EVIDENCE_SETTLEMENT_V1", "BOOK-03_NOVEL_DNA_V1", "BOOK-03_NOVEL_DNA_VALIDATION_V1", "BOOK-03_NOVEL_DNA_FREEZE_APPLICATION_V1", "BOOK-03_CLOSEOUT_AND_CROSS_BOOK_READINESS_V1", "CROSS_BOOK_NOVEL_DNA_REVALIDATION_WITH_BOOK03_V1", "CROSS_BOOK_REVALIDATED_CANDIDATE_FREEZE_AND_GLOBAL_PROPOSAL_READINESS_V2", "GLOBAL_NOVEL_DNA_PROPOSAL_GATE_C02_V2_V1", "GLOBAL_NOVEL_DNA_FREEZE_AND_GOVERNANCE_C02_V2_V1", "GLOBAL_NOVEL_DNA_V1_CLOSEOUT_AND_SYSTEM_INTEGRATION_READINESS", "GLOBAL_NOVEL_DNA_V1_SYSTEM_INTEGRATION_V1", "GLOBAL_NOVEL_DNA_V1_INTEGRATION_REGRESSION_BENCHMARK_V1", "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE_V1", "MICROCRAFT_DIALOGUE_LOCAL_LOGIC_ARCHITECTURE_UPGRADE_V1", "MICROCRAFT_DIALOGUE_GROUNDING_HARDENING_V1_1", "MICROCRAFT_DIALOGUE_COVERAGE_SOCIAL_SPEECH_HARDENING_V1_2", "MICROCRAFT_ANTI_TEMPLATE_HARDENING_V1_3", "MICROCRAFT_REGRESSION_LABEL_CALIBRATION_V1", "MICROCRAFT_EPISTEMIC_SCOPE_AND_PATTERN_DENSITY_IMPLEMENTATION_V1", "MICROCRAFT_CALIBRATED_FRESH_VALIDATION_V1", "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1", "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1"],
   "invariants": {"missing_result_means": "UNKNOWN", "unknown_may_lower_checkpoint": false, "accepted_task_may_repeat": false, "backward_transition_requires_rollback_receipt": true}
 }
