@@ -1,49 +1,79 @@
 ---
 name: novel-writing-master
-description: Design, draft, diagnose, rewrite and audit Chinese fiction with evidence-backed causality, emotion, suspense, reader propulsion, natural speech, dramatization surface, scene motivation, climax experience, continuity, microcraft and de-AI controls.
+description: Design, draft, diagnose, rewrite and audit Chinese fiction with evidence-backed causality, reader propulsion, target-reader calibration, suspense charge, natural speech, dramatization surface, scene motivation, climax experience, continuity, microcraft and de-AI controls.
 ---
 
-# Novel Writing Master V4.1
+# Novel Writing Master V4.2
 
-V4.1 exists because two stronger statements are now proven necessary:
+V4.2 is the default project writing/audit system.
 
-1. a manuscript can pass logic, G6D, G8 and even structural V4 checks while still reading poorly;
-2. a fresh AI reader can rationalize text that an actual target reader has already located as weak.
+It exists because:
 
-New tasks default to V4.1. V4 and V3 remain inherited historical layers; do not rewrite their old verdicts.
+1. logical correctness does not prove readability;
+2. fresh context does not calibrate taste;
+3. a fresh AI reader may genuinely like text that the declared target reader rejects;
+4. unique props or backstory can disguise repeated thin scene surfaces;
+5. every clause in a speech can be relevant while the turn still sounds writer-composed;
+6. danger can be compelling even when the mystery answer itself is not;
+7. a structurally terminal climax can still feel flatter than earlier emotional peaks.
 
-## Mandatory preflight
+V4.1, V4 and V3 remain inherited historical layers. Do not rewrite prior verdicts.
 
-For any continuing project task read, in order:
+## Mandatory continuity preflight
+
+For any continuing project task read first:
 
 ```text
 state/project_state.json
 state/continuity/LATEST_CHECKPOINT.json
 rules/pass-isolation.md
-workflows/09-novel-master-pipeline-v4.1.md
-config/novel-quality-gates.v4.1.json
+```
+
+For complete writing, rewrite, diagnosis or final-quality judgment then read:
+
+```text
+workflows/10-novel-master-pipeline-v4.2.md
+config/novel-quality-gates.v4.2.json
 library/reader-experience-technique-bank.v1.md
 ```
 
-If a current-manuscript target-reader evidence ledger exists, coordinator/delivery work must also read it. A fresh blind evaluator must not read it until its blind trace is frozen.
+If the project defines a non-answer-key target-reader profile, use it for target-fit evaluation. For current YMGQ:
 
-V4.1 remains DEVELOPMENTAL until the current fresh real-manuscript validation task is coordinator-accepted. While developmental validation is pending, final freeze is forbidden.
+```text
+state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json
+```
+
+A fresh target-reader simulation may read the profile before the manuscript, but must not read exact failure locations, prior reports, repair history or regression answer keys.
+
+V4.2 is DEVELOPMENTAL until the active fresh profile-calibrated holdout validation is coordinator-accepted. Final freeze is forbidden while developmental validation or located human failures remain open.
 
 ## Core non-equivalences
 
 ```text
-LOCAL_DIALOGUE_GROUNDING != DRAMATIZED_SCENE
-VALID_SPEAKER_GOAL != NATURAL_UTTERANCE_PACKAGING
-OLD_RELATIONSHIP_MOTIVE != POST_WITHDRAWAL_REENTRY_TRIGGER
+FRESH_CONTEXT != CALIBRATED_TASTE
+FRESH_AI_READER != TARGET_READER
+LOCAL_LOGIC_PASS != DRAMATIZED_SCENE
+UNIQUE_PROP != UNIQUE_SCENE_SURFACE
+VALID_SPEAKER_GOAL != NATURAL_LIVE_TURN
+ALL_FACTS_RELEVANT != NATURAL_INFORMATION_PACKET
 WORKING_HYPOTHESIS != CURIOSITY_CHARGE
+DANGER_INTEREST != MYSTERY_ANSWER_INTEREST
 OPTION_COMPRESSION != EXPERIENCED_CLIMAX_VOLTAGE
-EVENT_PROGRESS != READER_PROPULSION
-FRESH_AI_PASS != HUMAN_TARGET_READER_PASS
+EVENT_PROGRESS != PAGE_TURN_COMPULSION
+FRESH_AI_RECOMMENDATION != HUMAN_TARGET_READER_ACCEPTANCE
 ```
 
-Never infer final quality from a downstream pass.
+## Mandatory V4.2 hardening modules
 
-## V4.1 reader-experience modules
+```text
+modules/target-reader-profile-calibration.md
+modules/dramatization-surface-density-v1_1.md
+modules/natural-speech-pressure-v1_2.md
+modules/scene-reentry-evidence-anchor-v1_1.md
+modules/suspense-curiosity-charge-v1_1.md
+```
+
+Also load inherited V4.1 modules as applicable:
 
 ```text
 modules/scene-entry-motivation.md
@@ -59,75 +89,95 @@ modules/climax-experiential-voltage.md
 modules/target-reader-evidence-authority.md
 ```
 
-Inherited V3/V4 integrity modules remain required where applicable.
+Inherited V3 microcraft/continuity remains required where relevant.
 
-## Reader evidence authority
+## Target-reader profile rule
 
-A numeric score alone is not a blocker.
+A target-reader profile defines the audience contract, not the answer key.
 
-A located human target-reader failure is different: it names a text scope and a concrete reader effect. While that failure remains open on the same manuscript SHA:
+It may contain preferences such as:
+
+- tolerated dramatization density;
+- accepted minimalism conditions;
+- speech naturalness expectations;
+- suspense appetite;
+- climax voltage expectations;
+- reader-propulsion expectations.
+
+It must not contain exact failed locations or quoted known failures for a fresh evaluator.
+
+If no target profile exists, do not call a fresh AI read `target-reader validated`; call it generic fresh AI evidence only.
+
+## Dramatization surface V1.1
+
+For separated high-stakes scenes, perform a functional-mask audit:
+
+1. temporarily abstract names, props, factions and lore labels;
+2. record the remaining surface sequence;
+3. ask whether unique carriers actively change behavior, timing, resistance, subtext or consequence;
+4. ask whether available dramatic pressure actually entered the scene.
+
+Different props cannot automatically rescue the same thin event machine.
+
+Do not require padding, long dialogue, interior monologue or decorative description.
+
+## Natural speech V1.2
+
+For high-information live speech:
+
+1. identify the earliest sufficient warning/payload;
+2. classify later clauses by information role;
+3. identify plausible listener reaction boundaries;
+4. perform shared-context subtraction;
+5. test what the speaker would naturally omit;
+6. test whether visible environment can carry part of the packet;
+7. require a located reason for uninterrupted multi-role delivery.
+
+`all facts are useful` is not a PASS condition.
+
+## Re-entry evidence anchor
+
+If a character explicitly withdraws and later returns:
 
 ```text
-fresh AI PASS cannot erase it
-final freeze is blocked
+What exact text proves this character had a new reason before re-entry?
 ```
 
-The AI may show that the originally suspected mechanism was wrong. Then repair the mechanism diagnosis, not the existence of the reader failure.
+Do not infer motive from what the character does after returning.
 
-## Manuscript-level dramatization check
+Old affection, spatial proximity or scene utility cannot substitute for a post-choice delta.
 
-Do not audit only isolated dialogue exchanges.
+## Suspense curiosity V1.1
 
-If separated high-stakes scenes repeatedly use terse functional turns + thin generic blocking, build a cross-scene surface-family ledger. One short exchange may be excellent; repeated event-skeleton realization across unrelated scenes may still fail.
-
-Do not fix by adding padding, decorative description, generic gestures or longer dialogue.
-
-## Natural speech V1.1
-
-For high-information speech, test:
-
-1. first urgent payload;
-2. independently reactable information segments;
-3. where the listener would naturally interrupt or infer;
-4. shared-context subtraction;
-5. what a human would omit;
-6. whether the scene truly supports uninterrupted briefing/testimony/confession.
-
-A real reason to speak is not proof that the exact sentence is natural.
-
-## Re-entry reversal
-
-When a character explicitly withdraws and later returns, ask:
+Run an answer-value ablation:
 
 ```text
-What changed after the decision to leave?
+If the mystery answer were revealed now but current danger/action remained, how much reader pull disappears?
 ```
 
-An old relationship, ongoing affection or nearby location that already existed at withdrawal time cannot by itself explain the reversal.
-
-## Suspense
-
-Run both:
+Separate:
 
 ```text
-working hypothesis ledger
-curiosity charge ledger
+threat ownership
+answer ownership
+model delta
+desire delta
 ```
 
-A mystery may be fair and guessable yet boring. Reader desire to resolve must be justified by prediction tension, operational stakes, relationship consequence or another concrete cared-about outcome.
+A dangerous hidden force may create excellent action tension but weak mystery appetite.
 
 ## Climax
 
-Run both:
+Run both inherited curves:
 
 ```text
 structural option-compression curve
-fresh-reader experiential-voltage curve
+experiential-voltage curve
 ```
 
-Many events are not a climax. Correct option compression is also not proof that the reader experiences a crescendo.
+Do not require the highest peak to be the largest battle. Require the intended climax architecture to produce the target-reader experience it promises.
 
-## Source-book technique use
+## Source-book craft
 
 Reader-experience techniques extracted from 《射雕英雄传》《诛仙》《盗墓笔记》 remain production-visible through:
 
@@ -135,43 +185,41 @@ Reader-experience techniques extracted from 《射雕英雄传》《诛仙》《
 library/reader-experience-technique-bank.v1.md
 ```
 
-Supporting classification does not make a technique second-class and does not require promotion into Novel DNA.
-
-Do not copy source prose, plot, characters or recognizable author style.
+Do not copy prose, plot, characters or recognizable author style.
 
 Novel DNA remains default OFF and only routes structural problems that survive simpler fixes.
 
-## Regression governance
+## Hidden-holdout architecture validation
 
-Historical V4 regression remains immutable:
-
-```text
-state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json
-```
-
-Future V4.1 validation uses calibrated:
+Fresh evaluators must not see:
 
 ```text
-state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json
+state/reader_evidence/*
+state/benchmarks/READER_EXPERIENCE_*.json
+prior evaluator reports
+repair ledgers
+known bad locations
 ```
 
-Do not show regression cases or known manuscript failure locations to a fresh blind evaluator. Coordinator compares the returned blind report to them afterward.
+After a fresh report returns, coordinator compares it to hidden human evidence/regression cases.
+
+Architecture promotion fails if a material hidden holdout defect is missed or explicitly rationalized as PASS.
 
 ## Delivery tiers
 
 ```text
 MECHANICALLY_VALIDATED
-FRESH_AI_READER_VALIDATED
+GENERIC_FRESH_AI_VALIDATED
+PROFILE_CALIBRATED_FRESH_AI_VALIDATED
 TARGET_READER_VALIDATED
 FINAL_FREEZE_ELIGIBLE
 ```
 
-Do not call a manuscript final/top-tier merely because a fresh AI reader would continue reading.
+`FINAL_FREEZE_ELIGIBLE` requires no open located human target-reader failure on the current manuscript SHA.
 
-`FINAL_FREEZE_ELIGIBLE` requires no open located target-reader failure on the current manuscript SHA.
+## Continuity / history
 
-## Continuity and history
-
-- Read durable state first; never roll back because an old chat or old receipt appears.
-- Historical failures/freezes remain immutable; new evidence supersedes forward, never rewrites history.
-- Public GitHub stores only abstract rules, hashes and privacy-safe evidence; manuscript/source prose stays private.
+- Read durable state before task execution.
+- Never roll back because an older chat/receipt appears.
+- Historical failures/freezes remain immutable; new evidence supersedes forward.
+- Public GitHub stores abstract rules/hashes/privacy-safe evidence only; manuscript/source prose remains private.
