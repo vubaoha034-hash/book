@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1",
+  "phase_ordinal": 358,
+  "status": "IMPLEMENTED_DEVELOPMENTAL_PROFILE_CALIBRATED_HOLDOUT_VALIDATION_REQUIRED",
+  "trigger_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1.json",
+  "phase357_architecture_result": "FAIL_V4_1_REMAINING_FALSE_NEGATIVES",
+  "implementation": {
+    "target_reader_profile": "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "profile_module": "modules/target-reader-profile-calibration.md",
+    "dramatization_v1_1": "modules/dramatization-surface-density-v1_1.md",
+    "natural_speech_v1_2": "modules/natural-speech-pressure-v1_2.md",
+    "reentry_anchor_v1_1": "modules/scene-reentry-evidence-anchor-v1_1.md",
+    "suspense_charge_v1_1": "modules/suspense-curiosity-charge-v1_1.md",
+    "quality_contract": "config/novel-quality-gates.v4.2.json",
+    "pipeline": "workflows/10-novel-master-pipeline-v4.2.md",
+    "regression": "state/benchmarks/READER_EXPERIENCE_V4_2_REGRESSION_V3.json",
+    "skill_default": "V4.2"
+  },
+  "hardening_principles": [
+    "fresh context does not calibrate taste",
+    "functional masking prevents unique props from rescuing a repeated thin scene machine",
+    "all clauses being relevant does not prove a natural live turn",
+    "post-reentry function cannot be backfilled as pre-reentry motive",
+    "danger interest must be separated from mystery answer interest",
+    "human located failures remain blocking until post-change closure"
+  ],
+  "limitations": {
+    "V4_2_status": "DEVELOPMENTAL_PENDING_PHASE359",
+    "static_contract_regression_alone_sufficient": false,
+    "profile_calibrated_fresh_holdout_not_yet_run": true,
+    "manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1"
+}
