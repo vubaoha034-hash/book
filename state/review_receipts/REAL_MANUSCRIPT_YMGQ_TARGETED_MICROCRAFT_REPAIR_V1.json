@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR",
+  "phase_ordinal": 347,
+  "status": "IMPLEMENTED_TARGETED_REPAIR_VALIDATED_LOCALLY_PENDING_INDEPENDENT_POST_REPAIR_VALIDATION",
+  "source_sha256": "2c0a22ea9dbbe76be428b4bc8e2f294b807562f2e3d4057d714ada52f9882b72",
+  "repaired_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7",
+  "source_preserved_byte_identical": true,
+  "public_manuscript_text_committed": false,
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "phase346_report_sha256": "3a08c838ab42410b471e8ec482a0971dd8f22def96383c6534fbd73ebfac8d4e",
+  "local_validation": {
+    "G6D_blocker_1": "CLOSED_HIGH_CONFIDENCE",
+    "G6D_blocker_2": "CLOSED_HIGH_CONFIDENCE",
+    "new_deterministic_G6D_failures_in_changed_regions": 0,
+    "F1_instance_recount": "18_TO_13_DESCRIPTIVE_ONLY_NOT_THRESHOLD",
+    "high_portability_priority_F1_remaining": "0_OF_4",
+    "F1_executor_verdict": "HOLD_MEDIUM_RISK_REDUCED_PENDING_INDEPENDENT_VALIDATION",
+    "protected_dialogue": "PASS_10_OF_10_UNTOUCHED",
+    "downstream_continuity": "PASS_FACTS_KNOWLEDGE_OBJECTS_RULES_RELATIONSHIPS"
+  },
+  "repair_ledger": "state/repair_ledgers/REAL_MANUSCRIPT_YMGQ_TARGETED_MICROCRAFT_REPAIR_V1.json",
+  "verdict": "PHASE347_IMPLEMENTATION_COMPLETE_READY_FOR_PHASE348_INDEPENDENT_POST_REPAIR_VALIDATION",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
