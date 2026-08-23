@@ -1,15 +1,9 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-23T21:14:30+08:00",
+  "updated_at": "2026-08-23T22:15:00+08:00",
   "branch": "novel-distill-v1",
-  "state_compaction": {
-    "semantic_history_deleted": false,
-    "prior_full_state_blob": "9d6513ab76d7edb270510e1a50302c56c5d4c64a",
-    "prior_state_commit": "982d50846624831b98b7fee3f618a232201035d2",
-    "reason": "Compact current-state authority after Phase354 while preserving detailed prior state and immutable receipts in Git history."
-  },
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
     "phase_ordinal": 320,
@@ -18,49 +12,47 @@
     "GN_VDNA_01_default_enabled": false,
     "auto_application": false,
     "real_manuscript_applied_outcome_count": 0,
-    "accepted_checkpoint_advance_from_phase354": false
-  },
-  "cross_book_baseline": {
-    "BOOK01": "ACCEPTED_CLOSED",
-    "BOOK02": "ACCEPTED_CLOSED",
-    "BOOK03": "ACCEPTED_CLOSED",
-    "cross_book_revalidation": "ACCEPTED_WITH_NARROWING",
-    "global_dna_count": 1,
-    "global_dna_ids": ["GN-VDNA-01"],
-    "other_global_promotions_authorized": false,
-    "historical_detail_preserved_in_prior_state_and_receipts": true
+    "accepted_checkpoint_advance_from_phase355_356": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT",
-    "phase_ordinal": 355,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT",
+    "phase_ordinal": 357,
     "status": "READY_NOT_STARTED",
-    "execution_scope": "Fresh two-pass audit of the unchanged YMGQ candidate: blind immersion trace before any quality-rule loading, then formal V4 reader-experience plus inherited V3 integrity audit.",
     "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1.json",
-    "remaining_blockers": ["V4_FRESH_TWO_PASS_REAL_MANUSCRIPT_REAUDIT_NOT_RUN"],
-    "next_action": "Run exactly Phase355 in a genuinely fresh context on the unchanged manuscript. Do not rewrite before the untouched two-pass report is preserved and coordinator-adjudicated."
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1.json",
+    "execution_scope": "Fresh two-pass unchanged-manuscript V4.1 audit testing dramatization-surface density, post-withdrawal reentry delta, pressure-aware speech segmentation, suspense curiosity charge, experiential climax voltage and inherited integrity without exposing target-reader answer keys.",
+    "remaining_blockers": ["V4_1_FRESH_UNCHANGED_MANUSCRIPT_REAUDIT_NOT_RUN", "OPEN_LOCATED_TARGET_READER_FAILURES_5"],
+    "next_action": "Run exactly one genuinely fresh Phase357 re-audit on the unchanged manuscript. Preserve raw report and coordinator-compare it against V4.1 regression V2 and the open target-reader evidence only after return. Do not rewrite manuscript before adjudication."
   },
-  "phase354_settlement": {
-    "task_id": "READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1",
-    "status": "IMPLEMENTED_DEVELOPMENTAL_REGRESSION_PASS_FRESH_REAL_MANUSCRIPT_VALIDATION_REQUIRED",
-    "trigger": "NEW_LOCATABLE_USER_READER_QUALITY_FAILURES_AFTER_PHASE353",
-    "V2_quality_freeze_status": "INVALIDATED_AS_QUALITY_SUFFICIENCY_CLAIM",
-    "historical_phase353_receipt_preserved": true,
-    "reader_experience_bank": "library/reader-experience-technique-bank.v1.md",
-    "V4_contract": "config/novel-quality-gates.v4.json",
-    "V4_pipeline": "workflows/08-novel-master-pipeline-v4.md",
-    "regression": "state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json",
-    "failure_classes_locked": [
-      "SKELETONIZED_DIALOGUE_WITHOUT_EMOTIONAL_STAGING",
-      "OVERCOMPLETE_AUTHOR_SHAPED_SPEECH_PACKAGE",
-      "UNMOTIVATED_MAJOR_SCENE_REENTRY",
-      "LOW_READER_REWARD_AND_CLIMAX_VOLTAGE",
-      "STIFF_SUSPENSE_WITHOUT_HYPOTHESIS_ENGINE"
-    ],
-    "new_gate_ids": ["V4-G1M", "V4-G5R", "V4-G5S", "V4-G5E", "V4-G6N", "V4-G7C", "V4-G9"],
-    "G6D_G8_alone_can_final_freeze": false,
+  "phase355_settlement": {
+    "execution": "ACCEPT_VALID_FRESH_TWO_PASS_RUN",
+    "raw_report_sha256": "e824617e3f19c8c7ff1ae9fb0cf03a3d95609d9c6184cdf8b563063ef184cdfe",
+    "evaluator_overall": "PASS_FOR_PHASE355_READER_EXPERIENCE_REAUDIT_SCOPE",
+    "coordinator_architecture_verdict": "FAIL_V4_FALSE_NEGATIVES",
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1.json",
+    "final_freeze_authorized": false,
     "manuscript_rewrite_authorized": false
+  },
+  "phase356_settlement": {
+    "task_id": "READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1",
+    "status": "IMPLEMENTED_DEVELOPMENTAL_REGRESSION_CALIBRATED_FRESH_VALIDATION_REQUIRED",
+    "receipt": "state/review_receipts/READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1.json",
+    "quality_contract": "config/novel-quality-gates.v4.1.json",
+    "pipeline": "workflows/09-novel-master-pipeline-v4.1.md",
+    "regression": "state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json",
+    "skill_default": "V4.1",
+    "corrections": [
+      "manuscript-level dramatization surface density",
+      "post-withdrawal reentry decision delta",
+      "natural speech turn segmentation and shared-context subtraction",
+      "working hypothesis separated from curiosity charge",
+      "structural climax separated from experienced voltage",
+      "located human target-reader evidence outranks fresh AI PASS for final-freeze governance"
+    ],
+    "V4_1_status": "DEVELOPMENTAL_PENDING_PHASE357",
+    "manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false
   },
   "manuscript_quality_state": {
     "一命过桥": {
@@ -69,53 +61,46 @@
       "phase349_candidate_sha256": "6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb",
       "phase351_candidate_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
       "current_candidate_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
-      "status": "V2_FINAL_FREEZE_QUALITY_INVALIDATED_READER_PROPULSION_FAILURE_V4_REAUDIT_PENDING",
-      "phase352_G6D": "PASS_HISTORICAL_VALID_UNDER_V3_1_4_SCOPE",
-      "phase352_G8": "PASS_HISTORICAL_VALID_UNDER_V3_SCOPE",
-      "phase353_freeze": "HISTORICAL_RESULT_PRESERVED_QUALITY_SUFFICIENCY_SUPERSEDED_BY_PHASE354",
-      "new_reader_failures": ["RP-F01", "RP-F02", "RP-F03", "RP-F04", "RP-F05"],
+      "status": "QUALITY_FAIL_OPEN_TARGET_READER_EVIDENCE_V4_1_REAUDIT_PENDING",
+      "historical_phase352_G6D_G8": "PASS_VALID_WITHIN_OLD_SCOPE",
+      "historical_phase353_freeze": "PRESERVED_BUT_QUALITY_SUFFICIENCY_SUPERSEDED",
+      "phase355_fresh_AI": "PASS_VALID_RUN_BUT_NOT_TARGET_READER_VALIDATION",
+      "target_reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+      "open_target_reader_failure_count": 5,
       "rewrite_authorized": false,
-      "final_freeze_authorized": false,
-      "reason": "The manuscript can satisfy local correctness/deAI gates while failing reader propulsion, emotional staging, human speech packaging, causal scene re-entry, climax voltage and suspense hypothesis design."
+      "final_freeze_authorized": false
     }
   },
-  "historical_integrity": {
-    "phase352_report_preserved": true,
-    "phase353_V2_freeze_receipt_preserved": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2.json",
-    "phase354_invalidation_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_V2_READER_PROPULSION_INVALIDATION_V1.json",
-    "phase354_architecture_receipt": "state/review_receipts/READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1.json",
-    "fresh_attempts_1_to_5_rewritten": false,
-    "phase346_to_353_rewritten": false,
-    "rollback_authorized": false
+  "governance": {
+    "fresh_AI_reader_is_human_equivalent": false,
+    "fresh_AI_PASS_may_close_located_human_failure": false,
+    "numeric_score_alone_is_blocker": false,
+    "located_reader_effect_is_evidence": true,
+    "historical_results_rewritten": false,
+    "Novel_DNA_default_off": true
   },
-  "parked_tasks": [
-    {
-      "task_id": "GLOBAL_NOVEL_DNA_V1_REAL_MANUSCRIPT_OUTCOME_ACCUMULATION_V1",
-      "phase_ordinal": 330,
-      "status": "EVENT_DRIVEN_WAITING_FOR_ELIGIBLE_APPLIED_REAL_MANUSCRIPT_USE",
-      "resume_condition": "A future eligible manuscript actually applies GN-VDNA-01 under Phase320 governance."
-    }
-  ],
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "pending_sequences": [19,20,21,22,23,24],
+    "pending_sequences": [19,20,21,22,23,24,25,26],
     "pending_files": [
       "state/continuity/PENDING_SETTLEMENT_019_020.json",
       "state/continuity/PENDING_SETTLEMENT_021_022.json",
-      "state/continuity/PENDING_SETTLEMENT_023_024.json"
+      "state/continuity/PENDING_SETTLEMENT_023_024.json",
+      "state/continuity/PENDING_SETTLEMENT_025_026.json"
     ],
-    "pending_target_sequence": 24,
-    "pending_target_event_hash": "c3c55ee090c52c61e30a7e1683a5059a6cc0b37ebddcde8f7b4a7688367aac5b",
-    "claim_physically_appended_through_24": false
+    "pending_target_sequence": 26,
+    "pending_target_event_hash": "fba6fd3f2e4f4be83e18d4be996b31b8ee8aaa6810dc02d609c0a11f009dc639",
+    "claim_physically_appended_through_26": false
   },
-  "rollback": {"authorized": false, "receipt": null},
   "invariants": {
     "missing_result_means": "UNKNOWN",
     "unknown_may_lower_checkpoint": false,
     "accepted_task_may_repeat": false,
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
-    "final_freeze_requires_V4_fresh_immersion_after_phase354": true
-  }
+    "final_freeze_requires_no_open_located_target_reader_failure": true,
+    "manuscript_rewrite_before_phase357_adjudication": false
+  },
+  "rollback": {"authorized": false, "receipt": null}
 }
