@@ -1,0 +1,51 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "depends_on_pending_file": "state/continuity/PENDING_SETTLEMENT_019_020.json",
+  "base_sequence": 20,
+  "base_event_id": "EVT-NOVEL-DISTILL-THIRD-DEHOMOGENIZATION-20260823-020",
+  "base_event_hash": "c892098740c9db22720646c4f9f46188ffc54810aa01f02a7cb0d96cec2ea6db",
+  "pending_events": [
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE352-ADJUDICATION-20260823-021",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-23T20:32:30+08:00",
+      "event_type": "THIRD_POST_REPAIR_FRESH_VALIDATION_ACCEPTED_FINAL_FREEZE_AUTHORIZED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1",
+      "change_id": "REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2",
+      "before": {"active_phase_ordinal":352,"active_task":"REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"latest_verified_ledger_sequence":20},
+      "after": {"active_phase_ordinal":353,"active_task":"REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2","active_task_status":"READY_FOR_MECHANICAL_FREEZE","highest_accepted_phase_ordinal":320,"phase352_execution":"ACCEPT","G6D":"PASS","G8":"PASS","manuscript":"PASS","final_freeze_authorized":true,"rollback_authorized":false},
+      "reason": "Accept the exact-bound Phase352 fresh evaluator report after coordinator verification. The run completed full G6D/G8 coverage, preserved epistemic and social-speech false-positive controls, found zero hard failures and zero HOLDs, and demonstrated no material cross-character portable dialogue-family density risk. Authorize only a mechanical V2 final freeze of the exact Phase351 candidate; do not advance the Phase320 global promotion checkpoint or enable Novel DNA.",
+      "evidence": ["state/tasks/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json","state/review_receipts/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json","external_fresh_report_sha256:abb81151a2372a208b492ce56d269f3c685d26035f4172caacc7fc70e126a4be","private_manuscript_sha256:3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf"],
+      "authorization": {"required":false,"scope":"Coordinator adjudication and mechanical final freeze of the exact validated candidate only; no manuscript edit, rule change, accepted-checkpoint advance, or DNA enablement.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-THIRD-DEHOMOGENIZATION-20260823-020",
+      "previous_event_hash": "c892098740c9db22720646c4f9f46188ffc54810aa01f02a7cb0d96cec2ea6db",
+      "event_hash": "e2c3ab16b1c24ac831d63d19045aa8f86188472ba6369822b2b0713139866945"
+    },
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-REVALIDATED-FINAL-FREEZE-V2-20260823-022",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-23T20:33:00+08:00",
+      "event_type": "REAL_MANUSCRIPT_REVALIDATED_FINAL_FREEZE_V2_COMPLETED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2",
+      "change_id": null,
+      "before": {"active_phase_ordinal":353,"active_task":"REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2","active_task_status":"READY_FOR_MECHANICAL_FREEZE","highest_accepted_phase_ordinal":320,"latest_verified_ledger_sequence":21},
+      "after": {"active_phase_ordinal":353,"active_task":"REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2","active_task_status":"CLOSED_FINAL_FROZEN_V2","highest_accepted_phase_ordinal":320,"final_manuscript_sha256":"3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf","G6D":"PASS","G8":"PASS","default_editing":"STOP_EDITING_BY_DEFAULT","dna_applied":false,"rollback_authorized":false},
+      "reason": "Freeze the exact Phase351 candidate as the current revalidated final manuscript after the accepted Phase352 independent fresh validation. Preserve the historical V1 freeze and its later invalidation as immutable history; this V2 freeze is a new quality settlement, not a retroactive rewrite. No manuscript prose is stored in GitHub, no Novel DNA is applied, and Phase320 remains the highest global accepted checkpoint.",
+      "evidence": ["state/review_receipts/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json","state/tasks/REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2.json","state/review_receipts/REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2.json","private_final_manuscript_sha256:3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf","external_fresh_report_sha256:abb81151a2372a208b492ce56d269f3c685d26035f4172caacc7fc70e126a4be"],
+      "authorization": {"required":false,"scope":"Mechanical final freeze after accepted Phase352 validation; no text edit, DNA application, or global promotion checkpoint movement.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE352-ADJUDICATION-20260823-021",
+      "previous_event_hash": "e2c3ab16b1c24ac831d63d19045aa8f86188472ba6369822b2b0713139866945",
+      "event_hash": "cd3ed520f2172c7b40bdeef52aa4397c28bb67343119f008677305a9f0cfd362"
+    }
+  ],
+  "target_sequence": 22,
+  "target_event_hash": "cd3ed520f2172c7b40bdeef52aa4397c28bb67343119f008677305a9f0cfd362",
+  "reason": "Events 21-22 are pre-hashed on top of the already staged 19-20 chain. Actual STATE_LEDGER.jsonl remains physically appended only through sequence 18 until a safe single-file append/reconciliation surface is available."
+}
