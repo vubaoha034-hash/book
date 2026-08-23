@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_SECOND_TARGETED_MICROCRAFT_REPAIR_V1",
+  "phase_ordinal": 349,
+  "privacy": "NO_MANUSCRIPT_PROSE",
+  "source_binding": {"sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7", "preserved_byte_identical": true},
+  "repaired_output": {"sha256": "6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb", "line_count": 3125, "private_copy_only": true, "public_repo_text_committed": false},
+  "authority": {"phase348_report_sha256": "444b65287c60db4e11f9cbb92c7b10dbac18ac7a0d5359a9285af5dd0eb6791b", "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887"},
+  "change_map": [
+    {"change_id": "R349-01", "finding": "HF-01 CHARACTER_USES_UNKNOWN_INFORMATION", "kind": "REMOVE_UNSUPPORTED_PRE_ENCOUNTER_KNOWLEDGE", "outcome": "CLOSED_NO_INVENTED_CARRIER"},
+    {"change_id": "R349-02", "finding": "LUOSHUI_BAISHA_ROUTE_HOLD", "kind": "ROUTE_REFERENCE_NORMALIZATION", "outcome": "DISAMBIGUATED_WITH_EXISTING_BAISHA_THEN_TOWARD_LUOSHUI_FACTS"},
+    {"change_id": "R349-03", "finding": "PFF-001/C009", "kind": "RESPONSE_STRATEGY_VARIATION", "outcome": "PFF_001_EXIT"},
+    {"change_id": "R349-04", "finding": "PFF-001/C016", "kind": "QUESTION_LADDER_COMPRESSION", "outcome": "PFF_001_EXIT"},
+    {"change_id": "R349-05", "finding": "PFF-001/C036", "kind": "DIRECT_TARGETING_REMOVE_WRONG_LISTENER_SETUP", "outcome": "PFF_001_EXIT_ANCHOR_PRESERVED"},
+    {"change_id": "R349-06", "finding": "PFF-001/C061", "kind": "DIRECT_ACTION_FIRST_RESPONSE", "outcome": "PFF_001_EXIT"},
+    {"change_id": "R349-07", "finding": "PFF-001/C071", "kind": "REMOVE_LEXICAL_ECHO_WORDPLAY", "outcome": "PFF_001_EXIT"}
+  ],
+  "targeted_G6D": {"confirmed_blocker_closed": true, "route_hold_disambiguated": true, "new_deterministic_failure_in_changed_regions": 0, "arrow_count_hold": "UNCHANGED"},
+  "G8_local": {"PFF_001_before": 16, "PFF_001_after_estimate": 11, "high_portability_before_estimate": 14, "high_portability_after_estimate": 9, "assessment": "RISK_REDUCED_BUT_STILL_PRESENT_PENDING_INDEPENDENT_VALIDATION", "universal_numeric_density_threshold": null},
+  "protected_dialogue": {"mechanically_flattened": false, "note": "One protected four-friends span was touched only to remove the wrong-listener scaffold; Stone-specific wine-history payload remains."},
+  "downstream_continuity": {"facts": "PASS", "knowledge": "PASS", "objects": "PASS", "rules": "PASS", "relationships": "PASS"},
+  "final_freeze_authorized": false
+}
