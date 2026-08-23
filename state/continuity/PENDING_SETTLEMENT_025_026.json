@@ -1,0 +1,50 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "base_sequence": 24,
+  "base_event_id": "EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4-ARCHITECTURE-20260823-024",
+  "base_event_hash": "c3c55ee090c52c61e30a7e1683a5059a6cc0b37ebddcde8f7b4a7688367aac5b",
+  "pending_events": [
+    {
+      "schema_version":"upcp-state-ledger-event/v1",
+      "event_id":"EVT-NOVEL-DISTILL-PHASE355-ADJUDICATION-20260823-025",
+      "project_id":"novel-distillation",
+      "stream_id":"global",
+      "recorded_at":"2026-08-23T22:14:20+08:00",
+      "event_type":"V4_FRESH_EXECUTION_ACCEPTED_ARCHITECTURE_VALIDATION_FAILED_FALSE_NEGATIVES",
+      "material":true,
+      "task_id":"REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+      "change_id":"READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1",
+      "before":{"active_phase_ordinal":355,"active_task":"REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"physical_ledger_sequence":18,"pending_target_sequence":24},
+      "after":{"active_phase_ordinal":356,"active_task":"READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1","active_task_status":"READY_FOR_IMPLEMENTATION","highest_accepted_phase_ordinal":320,"phase355_execution":"ACCEPT","phase355_evaluator_verdict":"PASS","V4_architecture_validation":"FAIL_FALSE_NEGATIVES","manuscript_final_freeze_authorized":false,"rollback_authorized":false},
+      "reason":"Accept the genuinely fresh two-pass Phase355 execution as valid evidence, but reject V4 architecture adequacy because the unchanged manuscript still carries unresolved located target-reader failures that the evaluator rationalized as PASS. Version a V4.1 hardening rather than rewriting history or repairing the manuscript.",
+      "evidence":["state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1.json","state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json","private_raw_report_sha256:e824617e3f19c8c7ff1ae9fb0cf03a3d95609d9c6184cdf8b563063ef184cdfe"],
+      "authorization":{"required":false,"scope":"Coordinator adjudication of Phase355 and versioned reader-experience architecture hardening only; no manuscript edit, final freeze, DNA semantic edit or accepted-checkpoint advance.","status":"NOT_REQUIRED"},
+      "previous_event_id":"EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4-ARCHITECTURE-20260823-024",
+      "previous_event_hash":"c3c55ee090c52c61e30a7e1683a5059a6cc0b37ebddcde8f7b4a7688367aac5b",
+      "event_hash":"8b866e914f0fb15edb6969eccf0bd955f319542f623b54f0701f2eaeb9a4bd56"
+    },
+    {
+      "schema_version":"upcp-state-ledger-event/v1",
+      "event_id":"EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4_1-HARDENING-20260823-026",
+      "project_id":"novel-distillation",
+      "stream_id":"global",
+      "recorded_at":"2026-08-23T22:14:40+08:00",
+      "event_type":"V4_1_FALSE_NEGATIVE_HARDENING_IMPLEMENTED_FRESH_REAUDIT_QUEUED",
+      "material":true,
+      "task_id":"READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1",
+      "change_id":"REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+      "before":{"active_phase_ordinal":356,"active_task":"READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1","active_task_status":"READY_FOR_IMPLEMENTATION","highest_accepted_phase_ordinal":320,"latest_pending_sequence":25},
+      "after":{"active_phase_ordinal":357,"active_task":"REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"V4_1_status":"DEVELOPMENTAL_PENDING_FRESH_REAL_MANUSCRIPT_VALIDATION","open_target_reader_failures":5,"manuscript_rewrite_authorized":false,"final_freeze_authorized":false,"rollback_authorized":false},
+      "reason":"Implement versioned V4.1 calibration after Phase355: add target-reader evidence authority, manuscript-level dramatization-surface density, post-withdrawal reentry decision delta, pressure-aware speech segmentation, suspense curiosity charge, and experiential climax voltage. Preserve V4 history and queue a fresh unchanged-manuscript validation before any rewrite.",
+      "evidence":["state/review_receipts/READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1.json","config/novel-quality-gates.v4.1.json","workflows/09-novel-master-pipeline-v4.1.md","state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json","state/tasks/REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1.json","state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json"],
+      "authorization":{"required":false,"scope":"Versioned V4.1 architecture implementation and fresh re-audit queue only; no manuscript edit, final freeze, DNA semantic edit or accepted-checkpoint advance.","status":"NOT_REQUIRED"},
+      "previous_event_id":"EVT-NOVEL-DISTILL-PHASE355-ADJUDICATION-20260823-025",
+      "previous_event_hash":"8b866e914f0fb15edb6969eccf0bd955f319542f623b54f0701f2eaeb9a4bd56",
+      "event_hash":"fba6fd3f2e4f4be83e18d4be996b31b8ee8aaa6810dc02d609c0a11f009dc639"
+    }
+  ],
+  "target_sequence": 26,
+  "target_event_hash": "fba6fd3f2e4f4be83e18d4be996b31b8ee8aaa6810dc02d609c0a11f009dc639",
+  "reason": "STATE_LEDGER.jsonl remains physically appended only through sequence 18 with available connector mutation surface; these events are pre-hashed for deterministic reconciliation and must not be claimed physically appended yet."
+}
