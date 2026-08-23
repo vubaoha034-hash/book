@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1",
+  "phase_ordinal": 351,
+  "status": "IMPLEMENTED_BOUNDED_G8_DEHOMOGENIZATION_VALIDATED_LOCALLY_PENDING_FRESH_VALIDATION",
+  "source_sha256": "6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb",
+  "repaired_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "source_preserved_byte_identical": true,
+  "public_manuscript_text_committed": false,
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "local_validation": {
+    "phase350_G6D_pass_preserved": true,
+    "changed_region_G6D_new_deterministic_failures": 0,
+    "five_narrowed_core_PFF_001_instances_reworked": "5_OF_5",
+    "G8_executor_verdict": "HOLD_RESIDUAL_SHORT_TURN_SIMILARITY_BUT_CORE_PORTABILITY_REDUCED_PENDING_FRESH_VALIDATION",
+    "protected_dialogue_count_reduction_forbidden": true,
+    "downstream_continuity": "PASS_FACTS_KNOWLEDGE_TIME_OBJECTS_RULES_RELATIONSHIPS"
+  },
+  "verdict": "PHASE351_IMPLEMENTATION_COMPLETE_READY_FOR_PHASE352_FRESH_VALIDATION",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
