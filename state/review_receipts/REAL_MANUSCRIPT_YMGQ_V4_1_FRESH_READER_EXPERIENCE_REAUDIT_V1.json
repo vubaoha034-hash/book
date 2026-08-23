@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+  "phase_ordinal": 357,
+  "status": "ACCEPT_VALID_FRESH_RUN_OVERALL_FAIL_ARCHITECTURE_HOLDOUT_PARTIAL_RECALL",
+  "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "raw_report_transport": "USER_UPLOADED_RAW_UNTOUCHED_FILE",
+  "raw_report_sha256": "f6d309e41514bc5fccb9db64ac55cd32d428842452237374235d6d5635b67465",
+  "raw_report_bytes": 51007,
+  "pass_A_trace_sha256": "458d007623a158545adba0fdcbf63ae8d7394134019fa8c34043692c6b25d838",
+  "execution_adjudication": {
+    "verdict": "ACCEPT",
+    "manuscript_binding": "PASS",
+    "two_pass_order": "PASS_REPORTED",
+    "strict_isolation": "PASS_REPORTED",
+    "rule_binding": "PASS_22_OF_22_REPORTED",
+    "repair_performed": false,
+    "final_freeze_performed": false
+  },
+  "evaluator_verdicts": {
+    "PASS_A_IMMERSION": "PASS_WITH_LOCATED_SKIM_PRESSURE",
+    "V4_1_G1M": "FAIL",
+    "V4_1_G5D": "PASS_WITH_NON_BLOCKING_RECURRENCE_RISK",
+    "V4_1_G5R": "PASS",
+    "V4_1_G5S": "PASS",
+    "V4_1_G5Q": "PASS",
+    "V4_1_G5E": "PASS",
+    "V4_1_G6N": "PASS_WITH_LIMITED_AUTHOR_SHAPING_RISK",
+    "V4_1_G7C": "PASS",
+    "V4_1_G7V": "FAIL",
+    "LEGACY_G6D_G8": "PASS_WITH_NON_BLOCKING_PATTERN_RISK",
+    "OVERALL": "FAIL"
+  },
+  "coordinator_holdout_comparison": {
+    "target_reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+    "regression": "state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json",
+    "TR_F01_manuscript_level_skeletonized_dramatization": "MISS_G5D_PASSED",
+    "TR_F02_author_shaped_information_packet_L81": "MISS_G6N_PASSED_EXACT_LOCATION",
+    "TR_F03_reentry_without_post_withdrawal_delta": "PARTIAL_CLASS_HIT_BUT_TARGET_LOCATION_MISSED; evaluator failed 温玉楼/石重山 but passed 柳三娘 target reentry by inferring rescue need without a located perception/trigger",
+    "TR_F04_low_experiential_climax_voltage": "HIT_G7V_FAIL",
+    "TR_F05_low_suspense_curiosity_charge_black_arrow": "MISS_G5Q_HIGH_PASS",
+    "RX2_R006_open_human_evidence_authority": "COORDINATOR_ENFORCED_OPEN; fresh AI PASS cannot close",
+    "architecture_result": "FAIL_V4_1_REMAINING_FALSE_NEGATIVES"
+  },
+  "manuscript_quality_result": "FAIL_OPEN_TARGET_READER_EVIDENCE",
+  "open_target_reader_failure_count_after": 5,
+  "manuscript_rewrite_authorized": false,
+  "final_freeze_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1"
+}
