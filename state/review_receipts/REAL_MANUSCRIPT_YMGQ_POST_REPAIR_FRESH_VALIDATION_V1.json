@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION",
+  "phase_ordinal": 348,
+  "status": "ACCEPTED_VALID_FRESH_EXECUTION_MANUSCRIPT_FAIL_WITH_FINDING_NARROWING",
+  "fresh_report_sha256": "444b65287c60db4e11f9cbb92c7b10dbac18ac7a0d5359a9285af5dd0eb6791b",
+  "manuscript_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7",
+  "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887",
+  "execution_validation": {
+    "manuscript_binding": "PASS",
+    "machinery_binding": "PASS_10_OF_10",
+    "full_scan": "PASS_93_OF_93",
+    "rhetorical_ladder_ATS_parity": "PASS_32_OF_32",
+    "epistemic_scope_records": 12,
+    "G8_pattern_instances": 47,
+    "historical_lookup_declared": false,
+    "manuscript_modified_by_evaluator": false
+  },
+  "coordinator_adjudication": {
+    "HF_01_CHARACTER_USES_UNKNOWN_INFORMATION": {
+      "raw_report_status": "HARD_FAIL",
+      "coordinator_status": "ACCEPT_HARD_FAIL",
+      "basis": "The manuscript states that Liu knows Stone has arrived and is from Luoshui before any textual carrier, then stages Stone's north-alley appearance as Liu's first surprised recognition. No off-page messenger may be invented."
+    },
+    "HF_02_LUOSHUI_BAISHA_LOCATION_CONTINUITY": {
+      "raw_report_status": "HARD_FAIL",
+      "coordinator_status": "NARROW_TO_HOLD_CLARITY_DEFECT",
+      "basis": "The manuscript does not define whether Baisha Post lies within the broader Luoshui area or route. The phrase 'toward Luoshui' creates real ambiguity and reader-facing inconsistency, but the frozen deterministic-fail rule requires mutually incompatible facts under all supported readings. That threshold is not met."
+    },
+    "HOLD_01_ARROW_COUNT_TYPE": "PRESERVE_HOLD_NOT_MANDATORY_REPAIR",
+    "G8_PFF_001": {
+      "raw_report_status": "RISK",
+      "coordinator_status": "ACCEPT_RISK",
+      "basis": "The report provides separated-scene, cross-character, cross-relationship and high-portability evidence for the same short Q/retort/follow-up/tag cadence without using a numeric threshold."
+    },
+    "G8_formal_gate": "HOLD_BECAUSE_G6D_PRECONDITION_FAILED"
+  },
+  "final_execution_verdict": "ACCEPT",
+  "final_manuscript_verdict": "FAIL",
+  "remaining_required_repairs": [
+    "CLOSE_CONFIRMED_UNKNOWN_INFORMATION_BLOCKER",
+    "DISAMBIGUATE_LUOSHUI_BAISHA_ROUTE_WITHOUT_RETROACTIVELY_CALLING_IT_A_HARD_FAIL",
+    "REDUCE_PFF_001_HIGH_PORTABILITY_CROSS_CHARACTER_CADENCE_WITH_MINIMAL_FAMILY_LEVEL_EDITS"
+  ],
+  "historical_attempts_rewritten": false,
+  "phase347_receipt_rewritten": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "verdict": "PHASE348_EXECUTION_ACCEPTED_SECOND_TARGETED_REPAIR_REQUIRED"
+}
