@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1",
+  "phase": "READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY",
+  "phase_ordinal": 354,
+  "status": "IN_PROGRESS_ARCHITECTURE_IMPLEMENTATION",
+  "trigger": "USER_LOCATED_QUALITY_FAILURE_AFTER_PHASE353_V2_FREEZE",
+  "source_manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "scope": {
+    "mode": "SYSTEM_ARCHITECTURE_RECOVERY_BEFORE_MANUSCRIPT_REWRITE",
+    "do_not_edit_manuscript_yet": true,
+    "preserve_prior_freeze_and_invalidation_history": true,
+    "highest_global_accepted_checkpoint_remains": 320
+  },
+  "required_capabilities": [
+    "V4-G1M_SCENE_ENTRY_MOTIVATION",
+    "V4-G5R_READER_PROPULSION_AND_REWARD",
+    "V4-G5S_SUSPENSE_HYPOTHESIS_ENGINE",
+    "V4-G5E_EMOTIONAL_STAGING_AND_SCENE_VOLTAGE",
+    "V4-G6N_NATURAL_SPEECH_UNDER_PRESSURE",
+    "V4-G7C_CLIMAX_ESCALATION_CURVE",
+    "V4-G9_FRESH_IMMERSION_READER_GATE"
+  ],
+  "source_backed_recovery": {
+    "book01": "Promote validated reader-experience Supporting craft into a separate non-DNA production bank: fair wrong-model reversals, relationship reward through food/jokes/games, reward-opens-next-lock.",
+    "book02": "Route emotional and pacing craft into production: realizable future before tragedy, sensed-before-named danger, body/action before emotion explanation, false calm then stronger backlash, reward-opens-next-lock.",
+    "book03": "Route suspense craft into production: hypothesis iteration, local explanation with higher residual mystery, explanation changes immediate action, sensory anomaly before naming, existing-chain evidence reopens a solved problem, testimony/object contradiction exposes concealment."
+  },
+  "permanent_regression_cases": [
+    "SKELETONIZED_DIALOGUE_WITHOUT_EMOTIONAL_STAGING",
+    "OVERCOMPLETE_AUTHOR_SHAPED_SPEECH_PACKAGE",
+    "UNMOTIVATED_MAJOR_SCENE_REENTRY",
+    "LOW_READER_REWARD_AND_CLIMAX_VOLTAGE",
+    "STIFF_SUSPENSE_WITHOUT_HYPOTHESIS_ENGINE"
+  ],
+  "acceptance": {
+    "reader_experience_bank_created": true,
+    "v4_gate_contract_created": true,
+    "v4_pipeline_created": true,
+    "all_five_new_user_regressions_detectable": true,
+    "short_task_dialogue_false_positive_control_required": true,
+    "memorial_relationship_dialogue_false_positive_control_required": true,
+    "G6D_G8_pass_not_sufficient_for_final_freeze": true,
+    "fresh_immersion_reader_required_before_final_freeze": true,
+    "no_universal_numeric_thresholds": true,
+    "style_imitation_forbidden": true,
+    "plot_copying_forbidden": true,
+    "public_source_or_manuscript_prose_forbidden": true
+  },
+  "forbidden_actions": [
+    "PATCH_YMGQ_BEFORE_V4_ARCHITECTURE_EVIDENCE_EXISTS",
+    "TREAT_EVENT_DENSITY_AS_READER_PROPULSION",
+    "TREAT_DIALOGUE_LOGIC_GROUNDING_AS_NATURAL_SPEECH_PROOF",
+    "TREAT_MYSTERY_OBJECT_EXISTENCE_AS_SUSPENSE_PROOF",
+    "TREAT_ACTION_BEAT_INSERTION_AS_EMOTIONAL_STAGING",
+    "PROMOTE_SUPPORTING_CRAFT_TO_NOVEL_DNA_JUST_TO_MAKE_IT_VISIBLE",
+    "COPY_SOURCE_PLOT_OR_STYLE",
+    "RETROACTIVELY_REWRITE_PHASE352_OR_PHASE353"
+  ],
+  "next_action": "Implement the separate reader-experience craft layer and V4 gates, validate against permanent regressions and false-positive controls, then run a fresh V4 audit on the unchanged YMGQ candidate before any rewrite."
+}
