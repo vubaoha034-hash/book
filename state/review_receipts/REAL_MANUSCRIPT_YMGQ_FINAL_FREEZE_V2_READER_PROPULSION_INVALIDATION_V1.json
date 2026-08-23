@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "REAL_MANUSCRIPT_FINAL_FREEZE_V2_QUALITY_INVALIDATION_READER_PROPULSION",
+  "phase": "READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY",
+  "phase_ordinal": 354,
+  "event_status": "V2_FINAL_FREEZE_QUALITY_INVALIDATED_NEW_LOCATABLE_READER_FAILURES",
+  "manuscript_title": "一命过桥",
+  "affected_manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "supersedes_quality_claim_only": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2.json",
+  "historical_freeze_artifact_deleted": false,
+  "rollback": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "new_user_reader_evidence": [
+    {
+      "id": "RP-F01",
+      "class": "SKELETONIZED_DIALOGUE_WITHOUT_EMOTIONAL_STAGING",
+      "privacy_safe_description": "Multiple important exchanges are reduced to short functional turns with little pre-pressure, embodied hesitation, conflicting want or aftershock. They pass local logic but read like event notes rather than dramatized scenes."
+    },
+    {
+      "id": "RP-F02",
+      "class": "OVERCOMPLETE_AUTHOR_SHAPED_SPEECH_PACKAGE",
+      "privacy_safe_description": "Characters sometimes deliver compact packages of mission fact, public spread, reward amount and arrival evidence in one polished sentence that serves information transfer but does not resemble pressured human speech."
+    },
+    {
+      "id": "RP-F03",
+      "class": "UNMOTIVATED_MAJOR_SCENE_REENTRY",
+      "privacy_safe_description": "A major supporting character re-enters the active battlefield and changes role without a located perception, obligation, report, casualty cue or decision that causes the return."
+    },
+    {
+      "id": "RP-F04",
+      "class": "LOW_READER_REWARD_AND_CLIMAX_VOLTAGE",
+      "privacy_safe_description": "The macro outline is coherent but event progression does not reliably create escalating reader pressure, reward, irreversible choice and emotional amplitude; major passages feel flat despite many events."
+    },
+    {
+      "id": "RP-F05",
+      "class": "STIFF_SUSPENSE_WITHOUT_HYPOTHESIS_ENGINE",
+      "privacy_safe_description": "A recurring projectile mystery is introduced and repeated, but the reader is given little structured opportunity to form a plausible model, test it, be contradicted, pay a cost, and open a larger lock before later explanation."
+    }
+  ],
+  "root_cause": {
+    "G6D_G8_not_sufficient_for_readability": true,
+    "reader_reward_rules_existed_but_were_not_hard_final_evidence": true,
+    "suspense_rules_existed_but_were_not_hard_final_evidence": true,
+    "source_supporting_techniques_were_extracted_but_not_routed_into_production": true,
+    "formal_dna_pipeline_overweighted_high_level_causal_structure": true,
+    "final_validation_optimized_for_correctness_and_deAI_not_reader_compulsion": true
+  },
+  "required_recovery_path": [
+    "FREEZE_SOURCE_BACKED_READER_EXPERIENCE_TECHNIQUE_BANK",
+    "ADD_READER_PROPULSION_GATE",
+    "ADD_SUSPENSE_HYPOTHESIS_GATE",
+    "ADD_EMOTIONAL_STAGING_GATE",
+    "ADD_NATURAL_SPEECH_PRESSURE_GATE",
+    "ADD_SCENE_ENTRY_MOTIVATION_GATE",
+    "ADD_CLIMAX_ESCALATION_GATE",
+    "MAKE_FRESH_IMMERSION_READER_EVIDENCE_MANDATORY_BEFORE_FINAL_FREEZE",
+    "REAUDIT_UNCHANGED_YMGQ_BEFORE_ANY_NEW_TEXT_REWRITE"
+  ],
+  "historical_integrity": {
+    "phase352_report_preserved": true,
+    "phase353_v2_freeze_preserved_as_historical_result": true,
+    "phase353_was_valid_under_then-current_acceptance_contract": true,
+    "new_evidence_invalidates_quality_sufficiency_not_history": true
+  },
+  "dna_router": {
+    "GN_VDNA_01_status": "UNCHANGED_DEFAULT_OFF",
+    "dna_applied": false,
+    "this_invalidation_is_not_a_dna_failure_or_success": true
+  }
+}
