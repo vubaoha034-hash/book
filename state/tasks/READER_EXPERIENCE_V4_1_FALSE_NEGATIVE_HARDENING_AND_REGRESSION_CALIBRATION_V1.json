@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION_V1",
+  "phase": "READER_EXPERIENCE_V4_1_FALSE_NEGATIVE_HARDENING_AND_REGRESSION_CALIBRATION",
+  "phase_ordinal": 356,
+  "status": "READY_FOR_IMPLEMENTATION",
+  "trigger": "PHASE355_VALID_FRESH_EXECUTION_EXPOSED_V4_FALSE_NEGATIVES",
+  "inputs": [
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1.json",
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+    "state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json",
+    "config/novel-quality-gates.v4.json"
+  ],
+  "required_changes": [
+    "Add target-reader evidence authority so unresolved located human failures cannot be erased by fresh AI PASS.",
+    "Add manuscript-level dramatization-surface density rather than only local emotional-scene correctness.",
+    "Require post-withdrawal decision delta for explicit re-entry reversals.",
+    "Harden natural-speech testing with utterance segmentation, interruption and first-priority tests.",
+    "Separate structural climax escalation from experienced climax voltage.",
+    "Separate working suspense hypothesis from curiosity charge and desire-to-resolve.",
+    "Replace mis-specified V4 regression cases with versioned V4.1 cases while preserving V4 history."
+  ],
+  "constraints": [
+    "Do not rewrite the manuscript in Phase356.",
+    "Do not edit historical V4 receipts or regression V1 in place.",
+    "Do not use numeric style or reader-reward thresholds.",
+    "Do not require padding, lyrical prose, or longer dialogue as a universal fix.",
+    "Preserve short task and memorial false-positive controls.",
+    "Novel DNA remains default OFF and is unrelated to this repair."
+  ],
+  "acceptance": {
+    "versioned_V4_1_contract_created": true,
+    "versioned_regression_V2_created": true,
+    "five_target_reader_failures_have_faithful_test_constructs": true,
+    "human_evidence_authority_gate_created": true,
+    "final_freeze_from_AI_only_for_open_human_failure": false,
+    "fresh_unchanged_manuscript_validation_required_after": true
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task_after_pass": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1"
+}
