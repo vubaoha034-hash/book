@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "benchmark_id": "READER_EXPERIENCE_V4_REGRESSION_V1",
+  "status": "STATIC_CONTRACT_REGRESSION",
+  "privacy": "NO_MANUSCRIPT_PROSE",
+  "cases": [
+    {
+      "id": "RX-R001",
+      "input_abstraction": "An emotionally important separation/triage exchange consists mostly of terse functional question-answer turns. Facts and motives are correct, but little pressure, conflicting desire, embodied resistance or aftershock is dramatized.",
+      "expected_gate": "V4-G5E",
+      "expected_code": "EMOTIONAL_SCENE_REDUCED_TO_EVENT_SKELETON"
+    },
+    {
+      "id": "RX-R002",
+      "input_abstraction": "A character in immediate danger packages mission fact, external spread, reward value and arrival evidence into one polished explanatory speech despite shared context.",
+      "expected_gate": "V4-G6N",
+      "expected_code": "SPEECH_PACKAGE_DOES_NOT_MATCH_HUMAN_PRESSURE"
+    },
+    {
+      "id": "RX-R003",
+      "input_abstraction": "A named supporting character previously withdrew, later returns to the active scene and changes function, but no located new perception, report, obligation or continuing causal trigger supports the return.",
+      "expected_gate": "V4-G1M",
+      "expected_code": "MAJOR_SCENE_ENTRY_HAS_NO_CAUSAL_TRIGGER"
+    },
+    {
+      "id": "RX-R004",
+      "input_abstraction": "A manuscript contains many attacks, arrivals and revelations, but major spans do not strengthen reader expectation and the climax does not progressively compress meaningful options or make stakes more personal.",
+      "expected_gates": ["V4-G5R", "V4-G7C"],
+      "expected_codes": ["READER_PROPULSION_COLLAPSE", "CLIMAX_HAS_EVENT_VOLUME_WITHOUT_OPTION_COMPRESSION"]
+    },
+    {
+      "id": "RX-R005",
+      "input_abstraction": "A strange recurring projectile appears several times; characters note that it is odd and later an antagonist explains the scheme. Before payoff, the reader has little supported working hypothesis, verification action or model-changing contradiction.",
+      "expected_gate": "V4-G5S",
+      "expected_codes_any": ["SUSPENSE_HAS_NO_WORKING_HYPOTHESIS", "SUSPENSE_REPEATS_ANOMALY_WITHOUT_ESCALATION", "SUSPENSE_PAYOFF_IS_EXPLANATION_DUMP"]
+    },
+    {
+      "id": "RX-C001",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "Very short task dialogue directly allocates action under physical constraint and each turn changes an immediate choice.",
+      "expected": "PASS_NO_SKELETON_FAIL"
+    },
+    {
+      "id": "RX-C002",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "Very short memorial dialogue is anchored to a unique shared object, deceased relationship and ritual, and changes grief/relationship reading.",
+      "expected": "PASS_NO_GENERIC_DIALOGUE_FAIL"
+    },
+    {
+      "id": "RX-C003",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A quiet scene has little external action but increases dread and forces a meaningful private choice.",
+      "expected": "PASS_READER_PROPULSION_CAN_BE_QUIET"
+    },
+    {
+      "id": "RX-C004",
+      "type": "FALSE_POSITIVE_CONTROL",
+      "input_abstraction": "A formal briefing delivers complete information because the speaker has an explicit briefing duty, adequate time and an audience that needs the package.",
+      "expected": "PASS_NATURAL_SPEECH_CONTEXT_SUPPORTS_COMPLETENESS"
+    }
+  ],
+  "acceptance": {
+    "failure_cases_required": 5,
+    "false_positive_controls_required": 4,
+    "no_numeric_reader_reward_threshold": true,
+    "no_style_imitation": true,
+    "no_source_plot_copying": true
+  }
+}
