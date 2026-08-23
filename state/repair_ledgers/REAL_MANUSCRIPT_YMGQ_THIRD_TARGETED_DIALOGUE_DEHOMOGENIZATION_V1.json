@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_THIRD_TARGETED_DIALOGUE_DEHOMOGENIZATION_V1",
+  "phase_ordinal": 351,
+  "privacy": "NO_MANUSCRIPT_PROSE",
+  "source_binding": {"sha256": "6985b74b314c5b0118937830636404eefe295e0e3c2ab31b03a932e80b7cfabb", "line_count": 3125, "preserved_byte_identical": true},
+  "repaired_output": {"sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf", "line_count": 3113, "private_copy_only": true, "public_repo_text_committed": false},
+  "authority": {"phase350_execution": "ACCEPT", "phase350_G6D": "PASS", "phase350_G8": "RISK_PFF_001_NARROWED_CORE", "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887"},
+  "change_map": [
+    {"change_id":"R351-01","phase350_instance":"PFI-007","strategy":"MULTI_TURN_RETORT_TO_SINGLE_TASK_BOUND_STATEMENT","outcome":"CORE_FAMILY_EXIT"},
+    {"change_id":"R351-02","phase350_instance":"PFI-012","strategy":"DENIAL_EVIDENCE_QA_TO_NONVERBAL_REACTION","outcome":"CORE_FAMILY_EXIT"},
+    {"change_id":"R351-03","phase350_instance":"PFI-020","strategy":"CHALLENGE_BOAST_TAG_TO_PROTECTIVE_INSTRUCTION_PLUS_ACTION","outcome":"CORE_FAMILY_EXIT"},
+    {"change_id":"R351-04","phase350_instance":"PFI-024","strategy":"INSULT_COUNTERINSULT_TAG_TO_ONE_SIDED_REMARK_PLUS_NONRESPONSE","outcome":"CORE_FAMILY_EXIT"},
+    {"change_id":"R351-05","phase350_instance":"PFI-033","strategy":"WHY_JOKE_TAG_TO_DIRECT_HOUSE_POLICY_PLUS_RELATIONSHIP_ACTION","outcome":"CORE_FAMILY_EXIT"}
+  ],
+  "local_G6D": {"changed_regions_rechecked":5,"new_deterministic_failures":0,"facts":"PASS","knowledge":"PASS","time":"PASS","objects":"PASS","rules":"PASS","relationships":"PASS"},
+  "G8": {"phase350_raw_PFF_001_instances":13,"coordinator_core_targets":5,"core_targets_reworked":5,"remaining_phase350_PFF_001_instances_not_targeted":["PFI-001","PFI-003","PFI-005","PFI-015","PFI-016","PFI-027","PFI-030","PFI-034"],"executor_assessment":"HOLD_RESIDUAL_SHORT_TURN_SIMILARITY_BUT_CORE_CROSS_CHARACTER_PORTABILITY_REDUCED_PENDING_FRESH_VALIDATION","universal_numeric_density_threshold":null},
+  "protected_dialogue": {"count_based_repair_forbidden":true,"strong_task_object_injury_memorial_instances_intentionally_preserved":true},
+  "final_freeze_authorized": false
+}
