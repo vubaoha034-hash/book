@@ -1,0 +1,80 @@
+{
+  "schema_version": "4.2.0-development",
+  "project_id": "novel-distillation",
+  "status": "DEVELOPMENTAL_PENDING_FRESH_TARGET_PROFILE_HOLDOUT_VALIDATION",
+  "inherits": {
+    "v4_1": "config/novel-quality-gates.v4.1.json",
+    "v4": "config/novel-quality-gates.v4.json",
+    "v3": "config/novel-quality-gates.v3.json",
+    "rule": "V4.2 hardens remaining Phase357 false negatives and calibrates the simulated target reader without rewriting historical verdicts."
+  },
+  "target_reader_profile": {
+    "module": "modules/target-reader-profile-calibration.md",
+    "project_profile": "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "profile_may_be_visible_before_blind_read": true,
+    "known_failure_locations_may_be_visible": false,
+    "regression_answer_keys_may_be_visible": false
+  },
+  "new_or_hardened_modules": [
+    "modules/dramatization-surface-density-v1_1.md",
+    "modules/natural-speech-pressure-v1_2.md",
+    "modules/scene-reentry-evidence-anchor-v1_1.md",
+    "modules/suspense-curiosity-charge-v1_1.md",
+    "modules/target-reader-profile-calibration.md"
+  ],
+  "gates": {
+    "V4.2-G0P": {
+      "name": "TARGET_READER_PROFILE_CALIBRATION",
+      "required_for_target_fit_claim": true,
+      "pass_condition": "The evaluator knows the declared reader-experience contract but not known failure locations or answer keys.",
+      "blockers": ["UNSPECIFIED_TARGET_READER_SIMULATION", "FRESH_AI_DEFAULT_TASTE_SUBSTITUTED_FOR_TARGET_READER", "KNOWN_FAILURE_LEDGER_LEAKED_INTO_TARGET_PROFILE"]
+    },
+    "V4.2-G1M": {
+      "name": "REENTRY_DECISION_DELTA_WITH_TEXTUAL_EVIDENCE",
+      "required": true,
+      "pass_condition": "Every material post-withdrawal reversal has a located post-choice delta textually available to the returning character before re-entry.",
+      "blockers": ["REENTRY_REVERSAL_HAS_NO_DECISION_DELTA", "OLD_MOTIVE_REUSED_AS_POST_HOC_REENTRY_CAUSE", "REENTRY_DELTA_NOT_TEXTUALLY_AVAILABLE_TO_CHARACTER", "POST_REENTRY_FUNCTION_BACKFILLED_AS_PRE_REENTRY_MOTIVE"]
+    },
+    "V4.2-G5D": {
+      "name": "MANUSCRIPT_LEVEL_DRAMATIZATION_SURFACE_DENSITY_V1_1",
+      "required": true,
+      "pass_condition": "After functional masking, separated high-stakes scenes do not repeatedly collapse into the same thin event-transmission machine; unique props/history must actively alter scene behavior or felt transition.",
+      "blockers": ["SCENE_SURFACE_SKELETON_DENSITY_RISK", "UNIQUE_PROPS_LABEL_SAME_THIN_SCENE_MACHINE", "AVAILABLE_DRAMATIC_PRESSURE_LEFT_UNUSED", "LOCALLY_LIVED_SCENES_DO_NOT_CANCEL_MANUSCRIPT_SURFACE_FLATNESS"]
+    },
+    "V4.2-G5Q": {
+      "name": "SUSPENSE_CURIOSITY_CHARGE_V1_1",
+      "required_when_material_suspense_exists": true,
+      "pass_condition": "Material mysteries create answer-specific desire, not merely danger interest or a coherent theory; answer-value ablation and model-delta/desire-delta checks pass.",
+      "blockers": ["SUSPENSE_HAS_WORKING_MODEL_BUT_LOW_CURIOSITY_CHARGE", "SUSPENSE_CLUES_UPDATE_MODEL_BUT_NOT_READER_DESIRE", "MYSTERY_LACKS_PERSONAL_OR_DECISION_OWNERSHIP", "DANGER_CARRIES_PULL_BUT_MYSTERY_ANSWER_DOES_NOT", "MYSTERY_HAS_MODEL_DELTA_WITHOUT_DESIRE_DELTA", "ANSWER_IDENTITY_HAS_WEAK_RECLASSIFICATION_VALUE"]
+    },
+    "V4.2-G6N": {
+      "name": "NATURAL_SPEECH_UNDER_PRESSURE_V1_2",
+      "required": true,
+      "pass_condition": "Live high-information speech passes earliest-sufficient-warning, information-role-stack, listener-turn counterfactual, shared-context subtraction and visible-evidence carrier tests.",
+      "blockers": ["LIVE_SPEECH_OVERSEGMENTATION_SUPPRESSED", "SHARED_CONTEXT_RESTATED_FOR_READER_ORIENTATION", "VALID_GOAL_BUT_AUTHOR_SHAPED_UTTERANCE", "EARLIEST_SUFFICIENT_WARNING_IGNORED_FOR_READER_PACKET", "MULTI_ROLE_INFORMATION_STACK_FEELS_COMPOSED", "PLAUSIBLE_LISTENER_REACTION_SUPPRESSED"]
+    },
+    "V4.2-G9H": {
+      "name": "LOCATED_HUMAN_TARGET_READER_AUTHORITY",
+      "required_before_final_freeze": true,
+      "pass_condition": "No unresolved located human target-reader failure remains on the candidate SHA.",
+      "blockers": ["OPEN_LOCATED_TARGET_READER_FAILURE"]
+    }
+  },
+  "architecture_validation": {
+    "fresh_profile_calibrated_two_pass_required": true,
+    "hidden_holdout_comparison_after_return_required": true,
+    "fresh_evaluator_must_not_see_holdout_locations": true,
+    "promotion_requires_no_material_holdout_false_negative": true,
+    "static_regression_alone_is_not_sufficient": true
+  },
+  "delivery_contract": {
+    "all_applicable_v4_1_gates_remain_required": true,
+    "target_profile_required_for_target_fit_claim": true,
+    "fresh_AI_recommendation_is_not_human_acceptance": true,
+    "final_freeze_requires_no_open_located_human_failure": true,
+    "no_universal_numeric_thresholds": true,
+    "no_length_or_description_quota": true,
+    "style_imitation": "FORBIDDEN",
+    "plot_copying": "FORBIDDEN"
+  }
+}
