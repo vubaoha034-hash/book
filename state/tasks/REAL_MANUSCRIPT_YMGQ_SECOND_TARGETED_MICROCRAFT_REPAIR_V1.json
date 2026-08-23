@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_SECOND_TARGETED_MICROCRAFT_REPAIR_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_SECOND_TARGETED_MICROCRAFT_REPAIR",
+  "phase_ordinal": 349,
+  "status": "READY_NOT_STARTED",
+  "authority": {
+    "phase348_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "phase348_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "fresh_report_sha256": "444b65287c60db4e11f9cbb92c7b10dbac18ac7a0d5359a9285af5dd0eb6791b",
+    "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887"
+  },
+  "source_manuscript_binding": {
+    "required_source_sha256": "774815314045e5e83933ea9c6bc908c0071671f093d42ddabfe14ca04ecfd6f7",
+    "must_hash_before_edit": true,
+    "must_preserve_source_copy": true,
+    "output_must_be_new_private_copy": true,
+    "public_repository_manuscript_text_forbidden": true
+  },
+  "repair_scope": {
+    "mode": "MINIMAL_SECOND_TARGETED_REPAIR",
+    "confirmed_G6D_blocker": {
+      "code": "CHARACTER_USES_UNKNOWN_INFORMATION",
+      "fresh_report_cluster": "L887-L897 and L923-L935",
+      "required_outcome": "Remove Liu's unsupported pre-encounter knowledge that Stone has already arrived/from Luoshui. Do not invent an off-page messenger or earlier sighting. Preserve the later north-alley appearance as genuine first recognition."
+    },
+    "route_clarity_hold": {
+      "status": "HOLD_NOT_HARD_FAIL",
+      "fresh_report_cluster": "Baisha Post / Luoshui route references",
+      "required_outcome": "Disambiguate the route using only already-supported facts: Stone stayed at Baisha Post, then had already walked ten li toward Luoshui before turning back. Normalize later shorthand so readers are not asked to infer undefined geography. This is a clarity/continuity repair, not retroactive acceptance of the raw hard-fail label."
+    },
+    "G8_family_repair": {
+      "risk_code": "DIALOGUE_TEMPLATE_FAMILY_DENSITY_RISK",
+      "family": "PFF-001",
+      "objective": "Reduce the cross-character short Q/retort/follow-up/tag machine without deleting legitimate humor or flattening relationship-specific speech.",
+      "maximum_primary_instances_to_rework": 5,
+      "preferred_high_portability_candidates": ["C009", "C016", "C036", "C061", "C071"],
+      "selection_rule": "Prefer high-portability instances whose factual/relationship payload survives a different response strategy such as direct statement, action-first response, silence, interruption, or compression. Preserve grief, object-anchored rituals, first-hand anecdotes, and highly relationship-specific banter.",
+      "universal_numeric_density_threshold": null
+    },
+    "nonmandatory_hold": {
+      "code": "ARROW_COUNT_TYPE_AMBIGUITY",
+      "rule": "Do not force a repair unless the local edit can clarify it without changing combat facts; otherwise preserve HOLD."
+    }
+  },
+  "forbidden_actions": [
+    "OVERWRITE_PHASE347_REPAIRED_SOURCE",
+    "PUBLICLY_COMMIT_MANUSCRIPT_TEXT",
+    "FULL_MANUSCRIPT_REWRITE",
+    "INVENT_INFORMATION_CARRIER_TO_SAVE_G6D_BLOCKER",
+    "RETROACTIVELY_RECLASSIFY_LUOSHUI_BAISHA_HOLD_AS_HISTORICAL_HARD_FAIL",
+    "DELETE_ALL_BANTER_OR_HUMOR",
+    "MAKE_EVERY_DIALOGUE_LINE_TASK_FUNCTIONAL",
+    "FREEZE_UNIVERSAL_PATTERN_DENSITY_THRESHOLD",
+    "CHANGE_PHASE345_RULE_SEMANTICS",
+    "DEFAULT_ENABLE_NOVEL_DNA_ROUTER"
+  ],
+  "required_outputs": [
+    "A new private repaired manuscript copy with new SHA-256 while preserving source 774815... byte-identically.",
+    "A privacy-safe repair ledger with no manuscript prose.",
+    "Targeted G6D recheck proving the confirmed knowledge-state blocker is closed.",
+    "Route clarity recheck showing Baisha/Luoshui references are internally coherent without claiming a universal geography fact.",
+    "Full-manuscript G8 qualitative reassessment of PFF-001 and protected dialogue controls.",
+    "Downstream facts/knowledge/objects/rules/relationships check.",
+    "A separate fresh post-repair validation task; no final freeze from the repair executor."
+  ],
+  "acceptance": {
+    "exact_source_hash_required": true,
+    "source_preserved": true,
+    "confirmed_G6D_blocker_closed": true,
+    "route_hold_disambiguated_or_explicitly_preserved_as_hold": true,
+    "no_new_deterministic_G6D_failure_in_changed_regions": true,
+    "PFF_001_cross_character_portability_reduced": true,
+    "protected_dialogue_not_mechanically_flattened": true,
+    "universal_numeric_density_threshold_forbidden": true,
+    "post_repair_fresh_validation_required": true
+  },
+  "next_action": "Bind repaired source SHA, create a new private second-repair copy, close the confirmed unknown-information blocker, disambiguate the Baisha/Luoshui route without rewriting history, minimally rework at most five high-portability PFF-001 instances, recheck G6D/G8/protected dialogue/downstream continuity, and stop before final validation."
+}
