@@ -1,0 +1,50 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "base_sequence": 26,
+  "base_event_id": "EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4_1-HARDENING-20260823-026",
+  "base_event_hash": "fba6fd3f2e4f4be83e18d4be996b31b8ee8aaa6810dc02d609c0a11f009dc639",
+  "pending_events": [
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE357-ADJUDICATION-20260824-027",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T05:48:00+08:00",
+      "event_type": "V4_1_FRESH_RUN_ACCEPTED_ARCHITECTURE_REJECTED_REMAINING_FALSE_NEGATIVES",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1",
+      "change_id": "READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1",
+      "before": {"active_phase_ordinal":357,"active_task":"REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"open_target_reader_failures":5},
+      "after": {"active_phase_ordinal":358,"active_task":"READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1","active_task_status":"IMPLEMENTING","highest_accepted_phase_ordinal":320,"phase357_execution":"ACCEPT","phase357_evaluator_overall":"FAIL","V4_1_architecture":"FAIL_REMAINING_FALSE_NEGATIVES","open_target_reader_failures":5,"manuscript_rewrite_authorized":false,"rollback_authorized":false},
+      "reason": "Accept Phase357 as a valid fresh V4.1 two-pass run but reject V4.1 architecture sufficiency after hidden holdout comparison: experiential climax was detected, re-entry class was only partially recalled, while manuscript-level skeleton density, the target live information packet, the target re-entry location, and black-arrow answer curiosity remained false negatives. Advance to V4.2 hardening without editing the manuscript.",
+      "evidence": ["state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_1_FRESH_READER_EXPERIENCE_REAUDIT_V1.json","state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json","state/benchmarks/READER_EXPERIENCE_V4_1_REGRESSION_V2.json","private_report_sha256:f6d309e41514bc5fccb9db64ac55cd32d428842452237374235d6d5635b67465"],
+      "authorization": {"required":false,"scope":"Coordinator adjudication and architecture hardening only; no manuscript repair/final freeze/global checkpoint change.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4_1-HARDENING-20260823-026",
+      "previous_event_hash": "fba6fd3f2e4f4be83e18d4be996b31b8ee8aaa6810dc02d609c0a11f009dc639",
+      "event_hash": "dd7598fe99bd58737d1d3f8f023fdbfab07e973012442e6b9549500d6bc5d3c7"
+    },
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4_2-HARDENING-20260824-028",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T05:50:00+08:00",
+      "event_type": "V4_2_TARGET_PROFILE_AND_HIDDEN_HOLDOUT_HARDENING_IMPLEMENTED_PHASE359_QUEUED",
+      "material": true,
+      "task_id": "READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1",
+      "change_id": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1",
+      "before": {"active_phase_ordinal":358,"active_task":"READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1","active_task_status":"IMPLEMENTING","highest_accepted_phase_ordinal":320,"open_target_reader_failures":5},
+      "after": {"active_phase_ordinal":359,"active_task":"REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"quality_contract":"V4.2_DEVELOPMENTAL","skill_default":"V4.2","target_profile":"YMGQ_TARGET_READER_PROFILE_V1","open_target_reader_failures":5,"manuscript_rewrite_authorized":false,"final_freeze_authorized":false,"rollback_authorized":false},
+      "reason": "Implement V4.2 by separating fresh context from target-reader taste calibration, adding functional-mask dramatization checks, earliest-sufficient-warning live-speech tests, textual re-entry evidence anchors, and danger-vs-answer suspense ablation. Queue a fresh profile-calibrated unchanged-manuscript holdout audit before any repair.",
+      "evidence": ["state/review_receipts/READER_EXPERIENCE_V4_2_TARGET_PROFILE_AND_HOLDOUT_HARDENING_V1.json","config/novel-quality-gates.v4.2.json","workflows/10-novel-master-pipeline-v4.2.md","state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json","state/benchmarks/READER_EXPERIENCE_V4_2_REGRESSION_V3.json","SKILL.md","state/tasks/REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1.json"],
+      "authorization": {"required":false,"scope":"Architecture/profile calibration and next fresh validation only; no manuscript repair/final freeze/global checkpoint change.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE357-ADJUDICATION-20260824-027",
+      "previous_event_hash": "dd7598fe99bd58737d1d3f8f023fdbfab07e973012442e6b9549500d6bc5d3c7",
+      "event_hash": "55e7340a27aa9fa711533e7703ec323a8670f85c3f2a1308cbd734b893941ac3"
+    }
+  ],
+  "target_sequence": 28,
+  "target_event_hash": "55e7340a27aa9fa711533e7703ec323a8670f85c3f2a1308cbd734b893941ac3",
+  "reason": "Single-file continuity ledger remains physically verified only through sequence 18; events 19-28 are stored as deterministic pre-hashed pending settlements until safe mechanical reconciliation."
+}
