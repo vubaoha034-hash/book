@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "READER_PROPULSION_EMOTIONAL_STAGING_AND_SUSPENSE_ARCHITECTURE_RECOVERY_V1",
+  "phase_ordinal": 354,
+  "status": "IMPLEMENTED_DEVELOPMENTAL_REGRESSION_PASS_FRESH_REAL_MANUSCRIPT_VALIDATION_REQUIRED",
+  "trigger_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_V2_READER_PROPULSION_INVALIDATION_V1.json",
+  "implementation": {
+    "reader_experience_bank": "library/reader-experience-technique-bank.v1.md",
+    "V4_contract": "config/novel-quality-gates.v4.json",
+    "V4_pipeline": "workflows/08-novel-master-pipeline-v4.md",
+    "modules": [
+      "modules/scene-entry-motivation.md",
+      "modules/reader-propulsion-ledger.md",
+      "modules/suspense-hypothesis-engine.md",
+      "modules/emotional-staging-ledger.md",
+      "modules/natural-speech-pressure.md",
+      "modules/climax-escalation-curve.md"
+    ],
+    "permanent_regression": "state/benchmarks/READER_EXPERIENCE_V4_REGRESSION_V1.json"
+  },
+  "static_contract_regression": {
+    "five_new_failure_classes_have_distinct_gate_and_code": "PASS_5_OF_5",
+    "false_positive_controls_explicit": "PASS_4_OF_4",
+    "G6D_G8_alone_can_freeze": false,
+    "fresh_immersion_reader_required": true,
+    "numeric_reader_reward_threshold": null,
+    "style_imitation": "FORBIDDEN",
+    "plot_copying": "FORBIDDEN"
+  },
+  "source_recovery": {
+    "finding": "Reader-experience craft had been extracted from all three source books but a substantial portion was classified as Supporting and then excluded from Novel DNA synthesis/production routing.",
+    "resolution": "Supporting craft now has a separate production-visible reader-experience bank instead of being inflated into Novel DNA or discarded."
+  },
+  "limitations": {
+    "V4_status": "DEVELOPMENTAL_UNTIL_FRESH_REAL_MANUSCRIPT_REAUDIT",
+    "unchanged_YMGQ_not_yet_formally_audited_under_V4": true,
+    "manuscript_rewrite_authorized": false
+  },
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_task": "REAL_MANUSCRIPT_YMGQ_V4_FRESH_READER_EXPERIENCE_REAUDIT_V1"
+}
