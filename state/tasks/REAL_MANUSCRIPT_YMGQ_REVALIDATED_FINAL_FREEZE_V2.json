@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE_V2",
+  "phase": "REAL_MANUSCRIPT_YMGQ_REVALIDATED_FINAL_FREEZE",
+  "phase_ordinal": 353,
+  "status": "COMPLETED_MECHANICAL_FREEZE",
+  "mode": "MECHANICAL_FINAL_FREEZE_NO_TEXT_EDIT",
+  "authority": {
+    "phase352_task": "state/tasks/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "phase352_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_THIRD_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "phase352_report_sha256": "abb81151a2372a208b492ce56d269f3c685d26035f4172caacc7fc70e126a4be",
+    "machinery_freeze_commit": "e5ae8af17b7af3f212aa013352f48fed43c8e887"
+  },
+  "final_manuscript_binding": {
+    "title": "一命过桥",
+    "sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+    "source_phase": 351,
+    "must_remain_byte_identical": true,
+    "public_repository_manuscript_text_forbidden": true
+  },
+  "preconditions": {
+    "phase352_execution_accepted": true,
+    "G6D_pass": true,
+    "G8_pass": true,
+    "hard_failures": 0,
+    "holds": 0,
+    "exact_report_hash_bound": true,
+    "exact_manuscript_hash_reverified_by_coordinator": true
+  },
+  "historical_integrity": {
+    "historical_v1_final_freeze_receipt_preserved": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_AFTER_INDEPENDENT_COLD_READ_V1.json",
+    "historical_v1_invalidation_receipt_preserved": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_FINAL_FREEZE_INVALIDATION_V1.json",
+    "historical_attempts_rewritten": false,
+    "this_is_new_v2_quality_settlement": true
+  },
+  "dna_router": {
+    "GN_VDNA_01_status": "UNCHANGED_DEFAULT_OFF",
+    "dna_applied": false,
+    "real_manuscript_applied_outcome_count": 0
+  },
+  "acceptance": {
+    "final_sha_frozen": true,
+    "no_manuscript_edit": true,
+    "no_public_manuscript_text": true,
+    "no_global_checkpoint_advance": true,
+    "default_editing_state": "STOP_EDITING_BY_DEFAULT"
+  },
+  "next_action": "STOP_EDITING_BY_DEFAULT. Reopen this manuscript only for a new independently located factual/logic/quality failure or an explicit author-directed creative change."
+}
