@@ -1,8 +1,8 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-24T21:51:00+08:00",
+  "updated_at": "2026-08-25T01:54:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,70 +12,68 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_BLANK_PAGE_BROAD_REAUTHORING",
-    "phase_ordinal": 364,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE365_INDEPENDENT_POST_REAUTHORING_VALIDATION_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_INDEPENDENT_POST_REAUTHORING_VALIDATION",
+    "phase_ordinal": 365,
     "status": "READY_NOT_STARTED",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1.json",
-    "execution_scope": "Create a new architecture and a new full manuscript from the minimal story kernel using the human-accepted Phase363 Round3 prose engine. Broad structural changes are authorized. The rejected Phase360 V2 prose is not an authoring substrate.",
-    "full_manuscript_authoring_authorized": true,
-    "large_structural_change_authorized": true,
+    "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE365_INDEPENDENT_POST_REAUTHORING_VALIDATION_V1.json",
+    "execution_scope": "Independent fresh two-pass validation of the new Phase364 manuscript. Pass A must remain blind to prior human failure locations, calibration history, Phase364 architecture/note and old manuscript. Pass B may load formal quality rules only after Pass A freezes.",
+    "manuscript_edit_authorized": false,
     "human_failure_closure_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Freeze a new architecture, then draft an entirely new full manuscript and return architecture + manuscript + authoring note + exact manuscript SHA."
+    "next_action": "Run one independent Phase365 validation on exact SHA 2e725581.... Return RAW / UNTOUCHED report. Actual human target-reader revalidation remains mandatory regardless of AI verdict."
   },
   "phase362_settlement": {
     "execution": "ACTUAL_HUMAN_H1_DECISIVE_REJECTION",
-    "human_overall": "FAIL_CURRENT_CANDIDATE_REJECTED",
+    "human_overall": "FAIL_OLD_CANDIDATE_REJECTED",
     "rejected_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303"
   },
-  "phase363_round1": {
-    "CAL_01": "A_PREFERRED_USABLE_POSITIVE_DIRECTION",
-    "CAL_02": "BOTH_REJECTED",
-    "CAL_03": "A_PREFERRED_BUT_STILL_MECHANICAL"
-  },
-  "phase363_round2": {
-    "execution": "ACCEPT_HUMAN_DIRECTION_MATERIALLY_IMPROVED",
-    "CAL_02": "FUSE_A_BROTHERHOOD_WITH_B_BATTLE_PRESSURE",
-    "CAL_03": "B_PREFERRED_FUSE_WITH_A_RESTRAINED_EMBODIED_DETAIL"
-  },
-  "phase363_round3": {
-    "execution": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE",
+  "phase363_settlement": {
+    "round3_execution": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE",
     "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
     "human_result": "OVERALL_MATERIALLY_MORE_DESIRE_TO_CONTINUE_MUCH_BETTER",
-    "CAL_02": "FUSION_DIRECTION_ACCEPTED_FOR_SCALE",
-    "CAL_03": "FUSION_DIRECTION_ACCEPTED_FOR_SCALE",
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "full_scale_authorized": true
+  },
+  "phase364_settlement": {
+    "execution": "ACCEPT_EXECUTION_NEW_MANUSCRIPT_PRODUCED",
+    "architecture_sha256": "097861da7c8ac5c69e220527c7faad92cb28ea8c54673dec741f8a39ecf6efc7",
+    "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "manuscript_bytes": 110859,
+    "manuscript_lines": 4860,
+    "authoring_note_sha256": "8da2bc81832c4a48cdbf12f8ca90228f5843baab5c5803aaef80671de2080417",
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1.json",
+    "coordinator_mechanical_contract_check": "PASS",
+    "quality_acceptance_claimed": false
   },
   "manuscript_quality_state": {
     "old_rejected_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
-    "old_candidate_status": "FAILED_IMPLEMENTATION_REFERENCE_ONLY",
-    "new_working_candidate_sha256": null,
-    "status": "PHASE364_NEW_FULL_MANUSCRIPT_AUTHORING_PENDING",
+    "current_working_candidate_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "status": "PHASE365_INDEPENDENT_POST_REAUTHORING_VALIDATION_PENDING",
     "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
     "open_target_reader_failure_count": 7,
-    "TR_F01_to_TR_F07": "OPEN_UNTIL_NEW_FULL_MANUSCRIPT_POST_CHANGE_VALIDATION",
+    "TR_F01_to_TR_F07": "OPEN_PENDING_NEW_SHA_VALIDATION",
     "human_failures_closed": false,
     "final_freeze_authorized": false
   },
   "governance": {
     "actual_human_result_controls_current_candidate": true,
     "AI_may_not_override_human_rejection": true,
-    "human_surface_pilot_requirement_before_full_draft": "SATISFIED_BY_PHASE363_ROUND3",
-    "old_V2_prose_may_be_line_edited_into_new_draft": false,
-    "broad_structural_reauthoring_authorized": true,
-    "dialogue_should_be_one_channel_inside_continuous_scene_narration": true,
-    "adding_generic_gesture_tags_is_not_a_valid_fix": true,
-    "post_change_AI_and_actual_human_validation_required": true,
+    "Phase364_execution_acceptance_is_not_quality_acceptance": true,
+    "Phase365_pass_A_must_be_blind_to_prior_failure_locations_and_rewrite_rationale": true,
+    "Phase365_AI_pass_cannot_close_human_failures": true,
+    "post_change_actual_human_validation_required": true,
+    "short_dialogue_is_not_automatically_bad": true,
+    "generic_action_tagging_is_not_valid_embodiment": true,
     "architecture_promotion_requires_new_uncontaminated_holdout": true,
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "claim_later_sequences_physically_appended": false
+    "claim_later_sequences_physically_appended": false,
+    "later_material_transitions_exist_in_authoritative_state": true
   },
   "invariants": {
     "missing_result_means": "UNKNOWN",
@@ -84,8 +82,8 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase364_must_create_new_manuscript_SHA": true,
-    "Phase364_may_not_claim_human_failure_closure": true
+    "Phase365_may_not_edit_manuscript": true,
+    "Phase365_AI_result_cannot_replace_actual_human_revalidation": true
   },
   "rollback": {"authorized": false, "receipt": null}
 }
