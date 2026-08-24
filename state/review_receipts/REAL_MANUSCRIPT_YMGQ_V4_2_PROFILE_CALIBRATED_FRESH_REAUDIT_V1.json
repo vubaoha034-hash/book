@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1",
+  "phase_ordinal": 359,
+  "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "target_reader_profile_sha256": "010c1eb3055daf041c8f2a71bdfd3bfb5af3baa430cf1d7388bedeac341ce96d",
+  "raw_report_sha256": "fdec68590226398bd1ed815c3b6850e47e064e1197a6d7fcb85a890aa9361d85",
+  "raw_report_bytes": 24197,
+  "pass_A_trace_sha256": "9a291c762a87c29f59e187a7e2dfab38dd5ab44d0ceadf293ccdfd0799ec9bfd",
+  "execution_verdict": "ACCEPT_VALID_PROFILE_CALIBRATED_TWO_PASS_RUN",
+  "evaluator_overall": "FAIL",
+  "evaluator_key_results": {
+    "PASS_A_PROFILE_CALIBRATED_IMMERSION": "FAIL",
+    "V4_2_G1M": "FAIL",
+    "V4_2_G5D": "FAIL",
+    "V4_2_G5Q": "PASS",
+    "V4_2_G6N": "PASS",
+    "V4_1_G5R": "FAIL",
+    "V4_1_G5S": "PASS",
+    "V4_1_G5E": "PASS",
+    "V4_1_G7C": "PASS",
+    "V4_1_G7V": "PASS",
+    "LEGACY_G6D": "PASS",
+    "LEGACY_G8": "FAIL"
+  },
+  "hidden_holdout_comparison": {
+    "TR_F01_MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION": "HIT_STRONG",
+    "TR_F02_AUTHOR_SHAPED_INFORMATION_PACKET_L81": "MISS_G6N_PASS_AND_TARGET_LINE_NOT_IDENTIFIED",
+    "TR_F03_REENTRY_LIU_SANNIANG_TARGET_LOCATION": "MISS_TARGET_LOCATION_EXPLICITLY_PASSED_AS_NOT_MATERIAL_REENTRY_FAILURE",
+    "TR_F04_LOW_EXPERIENTIAL_CLIMAX_VOLTAGE_AND_READER_PULL": "PARTIAL_HIT_G5R_FAIL_BUT_G7V_PASS",
+    "TR_F05_LOW_BLACK_ARROW_SUSPENSE_CURIOSITY_CHARGE": "MISS_G5Q_PASS"
+  },
+  "v4_2_architecture_verdict": "REJECT_PROMOTION_REMAINING_MATERIAL_FALSE_NEGATIVES",
+  "architecture_status_after_adjudication": "DEVELOPMENTAL_REQUIRES_NEW_UNCONTAMINATED_HOLDOUT",
+  "holdout_contamination_determination": {
+    "current_manuscript_may_continue_as_architecture_promotion_holdout": false,
+    "reason": "V4/V4.1/V4.2 gates, target-reader profile and regressions were materially calibrated from target-reader evidence on this manuscript. Further same-manuscript tuning would measure memorized calibration rather than generalization.",
+    "governance_rule": "rules/holdout-contamination-and-repair-separation.md"
+  },
+  "current_manuscript_repair_authorization": {
+    "authorized": true,
+    "scope": "BOUNDED_TARGET_READER_EVIDENCE_REPAIR_ONLY",
+    "basis": [
+      "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+      "Phase359 profile-calibrated blind reader effects",
+      "Phase359 formal V4.2 findings",
+      "rules/holdout-contamination-and-repair-separation.md"
+    ],
+    "required_targets": ["TR-F01", "TR-F02", "TR-F03", "TR-F04", "TR-F05"],
+    "may_not_close_human_failures_without_post_change_validation": true,
+    "final_freeze_authorized": false
+  },
+  "highest_global_accepted_checkpoint_changed": false,
+  "highest_global_accepted_phase_ordinal": 320,
+  "novel_dna_default_off_unchanged": true,
+  "historical_results_rewritten": false,
+  "status": "ACCEPT_RUN_REJECT_V4_2_PROMOTION_AUTHORIZE_BOUNDED_MANUSCRIPT_REPAIR"
+}
