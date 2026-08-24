@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 363,
+  "round": 3,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1",
+  "status": "READY_NOT_STARTED",
+  "input_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "purpose": "Fuse the human-preferred Round2 mechanisms into one convergence sample for Chu Shisan and one for Huo Jiuweng before any full-manuscript reauthoring is authorized.",
+  "required_context": [
+    "state/project_state.json",
+    "state/continuity/LATEST_CHECKPOINT.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1.json",
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
+    "modules/human-prose-surface-calibration.md",
+    "library/reader-experience-technique-bank.v1.md"
+  ],
+  "human_binding": {
+    "CAL_02": "Fuse Round2 A's brotherhood/relationship texture with Round2 B's battle immediacy and live pressure.",
+    "CAL_03": "Use Round2 B as the stronger base, while integrating Round2 A's restrained embodied age/grief/detail where it improves the scene without slowing it into exposition."
+  },
+  "required_method": {
+    "variants": 1,
+    "targets": ["CAL-02_CHU_SHISAN_FUSION", "CAL-03_HUO_JIUWENG_FUSION"],
+    "sample_only": true,
+    "full_manuscript_rewrite": false,
+    "do_not_average_mechanically": true,
+    "select_best_functions_from_each_variant": true,
+    "continuous_scene_required": true,
+    "dialogue_is_one_channel_not_scene_skeleton": true,
+    "generic_gesture_tag_fix_forbidden": true,
+    "human_final_approval_required": true
+  },
+  "acceptance": {
+    "CAL_02_human_accepts_fused_direction": true,
+    "CAL_03_human_accepts_fused_direction": true,
+    "actual_human_says_prose_direction_good_enough_to_scale": true,
+    "only_after_acceptance_may_coordinator_authorize_large_rewrite": true,
+    "AI_self_rating_cannot_authorize_scale": true
+  },
+  "authorization": {
+    "round3_fusion_samples": true,
+    "full_manuscript_rewrite": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_completion": "Actual human judges the two fused samples. If both are accepted as sufficiently human, readable and desirable, coordinator may create the first broad reauthoring task with large structural changes authorized."
+}
