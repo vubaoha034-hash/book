@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 364,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1",
+  "status": "ACCEPT_EXECUTION_NEW_MANUSCRIPT_READY_FOR_INDEPENDENT_POST_CHANGE_VALIDATION",
+  "architecture_sha256": "097861da7c8ac5c69e220527c7faad92cb28ea8c54673dec741f8a39ecf6efc7",
+  "architecture_bytes": 26986,
+  "architecture_lines": 322,
+  "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "manuscript_bytes": 110859,
+  "manuscript_lines": 4860,
+  "authoring_note_sha256": "8da2bc81832c4a48cdbf12f8ca90228f5843baab5c5803aaef80671de2080417",
+  "authoring_note_bytes": 14311,
+  "authoring_note_lines": 254,
+  "coordinator_verification": {
+    "reported_identity_matches_actual_bytes": true,
+    "nine_major_scene_movements_present": true,
+    "cut_arrival_characters_absent": ["谢听雪","柳三娘","雷破山","商九翎","韩老四","小泥鳅"],
+    "old_black_arrow_device_present": false,
+    "old_xuan_register_device_present": false,
+    "new_route_mark_device_present": true,
+    "new_duplicate_ledger_device_present": true,
+    "bridge_boundary_device_present": true,
+    "generic_gesture_tag_fallback_detected_as_dominant_engine": false,
+    "three_or_more_consecutive_pure_dialogue_line_streaks_detected": 0,
+    "round3_distinctive_sentence_spot_checks_copied": false
+  },
+  "important_limits": {
+    "short_dialogue_statistics_are_not_quality_gates": true,
+    "mechanical_execution_acceptance_is_not_reader_quality_acceptance": true,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "adjudication": {
+    "phase364_execution": "ACCEPT",
+    "new_manuscript_identity": "BOUND",
+    "independent_post_change_validation_authorized": true,
+    "actual_human_target_reader_revalidation_required_after_ai_validation": true
+  }
+}
