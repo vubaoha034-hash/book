@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2",
+  "phase_ordinal": 360,
+  "attempt": 2,
+  "status": "ACCEPTED_NARROW_REPAIR_READY_FOR_PHASE361_VALIDATION",
+  "input_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
+  "output_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "repair_note_sha256": "3bd10a184b254f87451c059fbb2b7a8d1d1e361c2f88ad7e121d4c23871388c7",
+  "output_bytes": 66114,
+  "mechanical_diff": {
+    "deleted_lines": 5,
+    "added_lines": 5,
+    "change_groups": 5,
+    "all_changes_within_authorized_wen_shi_scope": true
+  },
+  "coordinator_verification": {
+    "wen_old_structure_removed": true,
+    "wen_current_structure": "prior southbound task -> targeted medicine-trader information becomes available -> route changes toward Qingshiyi -> arrival",
+    "shi_old_structure_removed": true,
+    "shi_current_structure": "prior Luoshui route -> targeted Baisha death warning becomes available -> route changes at Baisha -> arrival",
+    "post_trigger_continue_away_remains": false,
+    "reconsider_same_information_only_remains": false,
+    "contrived_new_trigger_added": false,
+    "attempt1_other_material_edits_preserved_by_diff": true,
+    "known_G1M_prevalidation_blockers": 0
+  },
+  "human_target_reader_failures": {
+    "TR-F01": "OPEN_PENDING_POST_CHANGE_VALIDATION",
+    "TR-F02": "OPEN_PENDING_POST_CHANGE_VALIDATION",
+    "TR-F03": "OPEN_PENDING_POST_CHANGE_VALIDATION",
+    "TR-F04": "OPEN_PENDING_POST_CHANGE_VALIDATION",
+    "TR-F05": "OPEN_PENDING_POST_CHANGE_VALIDATION"
+  },
+  "authorization": {
+    "phase361_fresh_post_repair_validation": true,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "conclusion": "Attempt2 is accepted as the current revised manuscript candidate. Both deterministic Phase359 G1M blockers are removed without broad rewrite. The new SHA may now enter Phase361 independent post-repair validation."
+}
