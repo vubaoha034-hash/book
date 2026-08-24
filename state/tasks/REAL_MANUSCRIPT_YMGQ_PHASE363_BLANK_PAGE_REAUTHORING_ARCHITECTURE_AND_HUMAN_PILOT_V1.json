@@ -1,71 +1,16 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "phase": 363,
   "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_BLANK_PAGE_REAUTHORING_ARCHITECTURE_AND_HUMAN_PILOT_V1",
-  "status": "READY_NOT_STARTED",
-  "trigger": "PHASE362_ACTUAL_HUMAN_GLOBAL_AESTHETIC_REJECTION",
-  "purpose": "Discard the failed prose/scene implementation, rebuild the novel from the minimal story kernel, and produce a small representative prose pilot for actual human approval before any new full manuscript is drafted.",
-  "required_inputs": [
-    "state/story_kernels/YMGQ_STORY_KERNEL_V1.json",
-    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1.json",
-    "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
-    "rules/human-aesthetic-rejection-blank-page-reauthoring-trigger.md",
-    "library/reader-experience-technique-bank.v1.md"
-  ],
-  "forbidden_inputs": [
-    "Phase360 V2 manuscript prose during architecture/pilot authoring",
-    "Phase360 repair reports/notes as prose guidance",
-    "Phase361 evaluator praise or PASS labels as preservation requirements",
-    "older manuscript prose",
-    "source-book prose or recognizable author style"
-  ],
-  "reauthoring_authority": {
-    "large_change": true,
-    "merge_or_delete_characters": true,
-    "merge_or_delete_factions": true,
-    "replace_black_arrow_device": true,
-    "reorder_or_replace_deaths": true,
-    "rebuild_suspense_chain": true,
-    "rebuild_climax": true,
-    "change_scene_order": true,
-    "change_ending_structure": true,
-    "preserve_only_minimal_story_kernel": true
+  "status": "DEFERRED_NOT_ACTIVE",
+  "superseded_for_current_execution_by": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE363_HUMAN_PROSE_SURFACE_CALIBRATION_V1.json",
+  "reason": "Authoritative Phase363 already uses a safer sample-only human prose-surface calibration gate. Broad blank-page architecture/reauthoring remains a future option only after the actual human accepts a prose-surface direction.",
+  "preserved_future_authority": {
+    "large_change_allowed_after_surface_acceptance": true,
+    "merge_delete_reorder_allowed": true,
+    "old_failed_prose_not_default_authoring_substrate": true,
+    "full_manuscript_before_human_pilot": false
   },
-  "architecture_requirements": [
-    "Every retained character/faction must have a distinct dramatic and emotional job; merge or delete redundant board-state actors.",
-    "The middle must not be structured as a parade of new entrants explaining motives and shifting the tactical board.",
-    "After masking names/props/lore, major scenes must use materially different dramatic engines.",
-    "Dialogue must arise from immediate desire, relationship asymmetry, current physical behavior, withheld information, interruption and misreading; do not use repeated short Q&A/dry-retort cadence as the default prose engine.",
-    "The first major sequence must create actual desire-to-continue before large-scale faction/system exposition.",
-    "Suspense must change a cared-about prediction, trust relation or costly decision.",
-    "Climax must grow through narrowing options, personal cost and irreversible choice rather than adding more combatants/events.",
-    "Do not preserve a scene just because a prior AI audit called it strong."
-  ],
-  "required_outputs": {
-    "architecture": "PHASE363_YMGQ_BLANK_PAGE_REAUTHORING_ARCHITECTURE_V1.txt",
-    "pilot_pack": "PHASE363_YMGQ_HUMAN_PROSE_PILOT_PACK_V1.txt",
-    "pilot_sections": [
-      "P1 opening + ordinary human interaction + hook",
-      "P2 high-pressure relationship dialogue",
-      "P3 suspense/reveal scene demonstrating answer-specific desire",
-      "P4 climax-adjacent moral/physical pressure scene"
-    ]
-  },
-  "pilot_rules": [
-    "Pilot prose must be written from the abstract architecture, not line-edited from the old manuscript.",
-    "Do not intentionally mimic Jin Yong, Xiao Ding, Nanpai Sanshu, or any living/dead author's recognizable prose style.",
-    "Do not explain to the human which old defect each sample is trying to fix before they read it.",
-    "Human reaction to the prose surface controls whether the approach can expand to a full manuscript."
-  ],
-  "acceptance": {
-    "AI_may_check_logic_and_contract_compliance": true,
-    "AI_may_approve_full_draft_from_pilot": false,
-    "actual_human_pilot_approval_required": true,
-    "full_manuscript_authoring_authorized": false,
-    "human_failure_closure_authorized": false,
-    "final_freeze_authorized": false,
-    "architecture_promotion_authorized": false
-  },
-  "next_after_completion": "Actual human reads the four pilot samples without old-repair framing. If prose/scene experience is accepted, coordinator may authorize a full blank-page manuscript draft. If rejected, discard/redesign the pilot approach before any full draft."
+  "do_not_execute_now": true
 }
