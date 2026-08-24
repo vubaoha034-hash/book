@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 364,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1",
+  "status": "READY_NOT_STARTED",
+  "purpose": "Produce a new full manuscript from the minimal story kernel after actual-human approval of the Phase363 Round3 prose engine. This is broad reauthoring, not repair of the rejected V2 prose.",
+  "authoritative_inputs": [
+    "state/story_kernels/YMGQ_STORY_KERNEL_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
+    "modules/human-prose-surface-calibration.md",
+    "library/reader-experience-technique-bank.v1.md"
+  ],
+  "private_positive_prose_reference": "PHASE363_ROUND3_EMBODIED_DIALOGUE_FUSION_PACK_V1.txt",
+  "old_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "old_candidate_role": "FAILED_IMPLEMENTATION_FACT_RESERVOIR_ONLY_NOT_PROSE_SUBSTRATE",
+  "identity_must_preserve": [
+    "刘还山 as protagonist",
+    "顾青禾 asks Liu to get 顾承岳 across a legally decisive bridge boundary",
+    "Gu is not morally innocent and must ultimately answer for his actions",
+    "the promise creates conflict because Liu's loyalty can cost other people",
+    "Chinese wuxia suspense direction with commercial page-turn drive and emotional consequence"
+  ],
+  "broad_reauthoring_authority": {
+    "merge_delete_or_rebuild_characters": true,
+    "merge_delete_or_rebuild_factions": true,
+    "replace_black_arrow_device": true,
+    "replace_or_rebuild_xuan_register_device": true,
+    "change_scene_order": true,
+    "change_friend_arrivals": true,
+    "change_who_dies_or_survives": true,
+    "rebuild_middle": true,
+    "rebuild_suspense_chain": true,
+    "rebuild_climax": true,
+    "change_ending_structure": true,
+    "large_change": true
+  },
+  "hard_prohibitions": [
+    "Do not line-edit or paraphrase the Phase360 V2 manuscript into a new version.",
+    "Do not preserve any scene/character/faction merely because an AI previously rated it strong.",
+    "Do not use repeated arrival -> explanation -> participation as a middle structure.",
+    "Do not use question -> short answer -> follow-up -> short answer / witty tag as the default dialogue engine.",
+    "Do not repair dialogue by mechanically inserting generic gestures.",
+    "Do not copy or imitate recognizable prose style, wording, characters or plots from reference novels."
+  ],
+  "mandatory_authoring_method": {
+    "step_1": "Create and freeze a new architecture before drafting prose. Architecture must state retained/cut/merged characters, central suspense chain, scene engines, act-level reader questions, emotional cost curve and climax convergence.",
+    "step_2": "Run a functional-mask check across major scenes so the middle is not a parade of equivalent tactical/social updates.",
+    "step_3": "Draft the full manuscript from the frozen new architecture and story kernel, using the Round3 human-accepted prose engine as a mechanism reference only.",
+    "step_4": "Perform a full-manuscript self-audit for dialogue embodiment, reader propulsion, suspense answer-value, emotional staging, climax voltage, continuity and AI-template recurrence; repair only clear self-detected defects before returning the draft."
+  },
+  "prose_engine_requirements": [
+    "Dialogue is one channel inside continuous action/reaction/perception.",
+    "Two spoken lines must not suspend the scene between them.",
+    "Important facts should often be inferred, observed, delayed, refused or interrupted rather than systematically asked and answered.",
+    "Embodied details must change meaning, pressure, judgment, relationship, timing, distance or choice.",
+    "Character-specific relationship is carried through permissions, refusals, coordination, misreadings, habits and physical consequences.",
+    "Action pressure may interrupt speech, but action choreography must not erase emotional reading.",
+    "No generic frown/glance/sigh/clench-fist tagging as a substitute for scene writing."
+  ],
+  "structural_requirements": [
+    "Opening creates attachment/curiosity before system explanation accumulates.",
+    "Every retained major character or faction has a distinct dramatic and emotional job; redundant board-state actors are merged or cut.",
+    "The middle has escalating causality and page-turn questions, not event accumulation.",
+    "Suspense changes a cared-about relationship, trust model, costly choice or safety prediction.",
+    "The public-persuasion scene's prior human response may inform protagonist agency/visible consequence, but its rhetoric is not protected.",
+    "Climax grows through narrowing options, personal cost and irreversible choice rather than adding combatants.",
+    "Ending preserves emotional residue and accountability rather than merely reporting outcomes."
+  ],
+  "required_outputs": {
+    "architecture": "PHASE364_YMGQ_BLANK_PAGE_REAUTHORING_ARCHITECTURE_V1.txt",
+    "manuscript": "一命过桥_Phase364_重构重写_V1.txt",
+    "authoring_note": "PHASE364_YMGQ_REAUTHORING_NOTE_V1.txt",
+    "manuscript_sha256": "REQUIRED"
+  },
+  "authorization": {
+    "full_manuscript_authoring": true,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "post_completion": "Coordinator verifies outputs and new SHA, then runs independent post-change validation before actual human target-reader revalidation."
+}
