@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 361,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1",
+  "status": "ACCEPT_VALID_POST_REPAIR_FRESH_VALIDATION_READY_FOR_HUMAN",
+  "manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "target_reader_profile_sha256": "010c1eb3055daf041c8f2a71bdfd3bfb5af3baa430cf1d7388bedeac341ce96d",
+  "raw_report_sha256": "fc427c6478dad5b414678632af515e264761decfb68b75e669177546d4dc79ad",
+  "raw_report_bytes": 44879,
+  "pass_A_trace_sha256": "f4be1c7bf8a6665f013f9d7aea89bc26c4be03e811873b8b7c6ed91bdd2e6669",
+  "evaluator_verdicts": {
+    "PASS_A_PROFILE_CALIBRATED_IMMERSION": "PASS_WITH_LOCATED_FRICTION",
+    "V4_2_G0P": "PASS",
+    "V4_2_G1M": "PASS",
+    "V4_2_G5D": "PASS_WITH_LOCATED_FRICTION",
+    "V4_2_G5Q": "PASS",
+    "V4_2_G6N": "PASS",
+    "V4_1_G5R": "PASS_WITH_LOCATED_FRICTION",
+    "V4_1_G5S": "PASS",
+    "V4_1_G5E": "PASS",
+    "V4_1_G7C": "PASS",
+    "V4_1_G7V": "PASS",
+    "LEGACY_G6D_G8": "PASS_WITH_LOCATED_FRICTION",
+    "OVERALL": "PASS_WITH_LOCATED_FRICTION",
+    "READY_FOR_ACTUAL_HUMAN_TARGET_READER_VALIDATION": "YES"
+  },
+  "located_nonblocking_friction": [
+    "middle multi-faction surface recurrence",
+    "localized event-density greater than incremental reader desire",
+    "some high-information explanatory dialogue remains writer-shaped but scene-supported",
+    "non-blocking G8 pattern-density risk",
+    "non-blocking body-state continuity ambiguity on leg bleeding provenance"
+  ],
+  "coordinator_adjudication": {
+    "execution": "ACCEPT",
+    "candidate_ai_post_repair_validation": "PASS_WITH_LOCATED_FRICTION",
+    "human_validation_authorized": true,
+    "further_ai_repair_before_human_validation": false,
+    "human_failure_closure_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "governance": {
+    "ai_pass_is_not_human_acceptance": true,
+    "all_five_human_failures_remain_open_until_actual_human_post_change_validation": true,
+    "current_YMGQ_may_not_promote_V4_2_architecture": true,
+    "do_not_repair_located_friction_before_human_validation": true
+  }
+}
