@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "UNSCHEDULED_PHASE357_REPLICATE_EVALUATOR_VARIANCE_DIAGNOSTIC",
+  "status": "DIAGNOSTIC_ONLY_NOT_PROMOTION_EVIDENCE",
+  "canonical_phase357_already_settled": true,
+  "active_task_unchanged": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1",
+  "active_phase_ordinal_unchanged": 359,
+  "manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "transport": {
+    "mode": "USER_PASTED_REPORT_TEXT",
+    "raw_report_file_sha256": null,
+    "reason": "No independently uploaded raw report file was supplied for this unscheduled replicate; do not invent a raw report hash."
+  },
+  "replicate_evidence": {
+    "reported_pass_A_freeze_sha256": "97ee35a2588d4e951dc60bebcc9cfeb3dec59a36fe594363783dbd5b9087f00d",
+    "canonical_phase357_pass_A_freeze_sha256": "458d007623a158545adba0fdcbf63ae8d7394134019fa8c34043692c6b25d838",
+    "same_pass_A_trace": false,
+    "reported_overall": "FAIL_REQUIRED_V4_1_GATE",
+    "reported_V4_1_G1M": "FAIL",
+    "reported_V4_1_G5D": "PASS_WITH_LOCATED_RISK",
+    "reported_V4_1_G5Q": "PASS",
+    "reported_V4_1_G6N": "PASS_WITH_LOCATED_NATURALNESS_RISK",
+    "reported_V4_1_G7V": "PASS_WITH_NONMONOTONIC_CURVE",
+    "reported_legacy_G6D_G8": "PASS_WITH_G8_WATCH"
+  },
+  "variance_findings": {
+    "material_verdict_drift_vs_canonical_phase357": [
+      "Canonical Phase357 classified experienced climax voltage as FAIL; this unscheduled replicate observed the same structural-versus-experiential divergence but downgraded it to non-blocking PASS.",
+      "Both replicates identify return/re-entry construction risk and V4.1-G1M failure, but the exact reader-effect interpretation and severity vary.",
+      "The replicate again accepts target-profile-disputed areas such as manuscript-level skeleton density, live information packaging, exact Liu Sanniang re-entry and black-arrow curiosity charge."
+    ],
+    "diagnostic_conclusion": "Fresh-context independence reduces answer leakage but does not guarantee stable evaluator severity or target-reader taste alignment. Repeating the same phase and selecting a preferred verdict is prohibited."
+  },
+  "governance": {
+    "may_replace_canonical_phase357": false,
+    "may_reopen_phase357": false,
+    "may_close_located_target_reader_failure": false,
+    "may_authorize_manuscript_repair": false,
+    "may_authorize_final_freeze": false,
+    "may_be_used_as_evaluator_variance_evidence": true,
+    "next_required_phase_remains": 359,
+    "next_required_task_remains": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1"
+  }
+}
