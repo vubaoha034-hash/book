@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_PROFILE_CALIBRATED_FRESH_VALIDATION",
+  "phase_ordinal": 361,
+  "status": "READY_NOT_STARTED",
+  "manuscript_binding": {
+    "title": "一命过桥_Phase360_目标读者证据绑定修复_V2",
+    "required_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+    "must_hash_before_read": true,
+    "must_remain_unchanged": true
+  },
+  "target_reader_profile": {
+    "path": "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "required_sha256": "010c1eb3055daf041c8f2a71bdfd3bfb5af3baa430cf1d7388bedeac341ce96d",
+    "may_be_read_before_manuscript": true,
+    "contains_answer_key": false
+  },
+  "purpose": "Independent post-repair quality validation of the new manuscript SHA. This is NOT an architecture-generalization holdout and cannot promote V4.2. It determines only whether the revised YMGQ candidate is ready to proceed to actual human target-reader validation.",
+  "protocol": {
+    "two_pass_required": true,
+    "pass_A_profile_calibrated_blind_immersion": {
+      "read_profile_first": true,
+      "known_failure_locations_forbidden": true,
+      "repair_report_forbidden": true,
+      "prior_evaluator_reports_forbidden": true,
+      "required_trace": [
+        "attention_drop_and_skim_urge_locations",
+        "realistic_stop_points_if_any",
+        "lived_fiction_vs_event_transcript_diagnosis",
+        "cross_scene_surface_recurrence",
+        "high_information_dialogue_spoken_vs_writer_shaped",
+        "material_reentry_causality_as_experienced",
+        "reader_propulsion_and_page_turn_drivers",
+        "suspense_working_model_and_answer_specific_curiosity",
+        "climax_structural_vs_experiential_voltage",
+        "voluntary_finish_recommend_and_seek_more_judgment"
+      ],
+      "trace_must_be_frozen_before_pass_B": true
+    },
+    "pass_B_formal_validation": {
+      "allowed_files": [
+        "config/novel-quality-gates.v4.2.json",
+        "workflows/10-novel-master-pipeline-v4.2.md",
+        "library/reader-experience-technique-bank.v1.md",
+        "modules/target-reader-profile-calibration.md",
+        "modules/dramatization-surface-density-v1_1.md",
+        "modules/natural-speech-pressure-v1_2.md",
+        "modules/scene-reentry-evidence-anchor-v1_1.md",
+        "modules/suspense-curiosity-charge-v1_1.md",
+        "config/novel-quality-gates.v4.1.json",
+        "modules/scene-entry-motivation.md",
+        "modules/scene-reentry-decision-delta.md",
+        "modules/reader-propulsion-ledger.md",
+        "modules/suspense-hypothesis-engine.md",
+        "modules/emotional-staging-ledger.md",
+        "modules/climax-escalation-curve.md",
+        "modules/climax-experiential-voltage.md",
+        "config/novel-quality-gates.v4.json",
+        "config/novel-quality-gates.v3.json",
+        "rules/scene-to-speech-microcraft.md",
+        "modules/dialogue-trigger-anchor.md",
+        "modules/dialogue-epistemic-scope.md",
+        "modules/local-logic-ledger.md",
+        "rules/no-ai-smell.md",
+        "modules/dialogue-pattern-family-density.md"
+      ]
+    }
+  },
+  "strict_isolation": {
+    "do_not_read": [
+      "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+      "Phase360 repair report or Attempt2 repair note",
+      "Phase359/357/355 reports or receipts",
+      "repair history or old manuscript versions",
+      "READER_EXPERIENCE regression answer keys",
+      "known bad/repaired locations",
+      "repository history",
+      "network/web"
+    ],
+    "do_not_force_expected_failure_count": true,
+    "do_not_force_expected_verdict": true
+  },
+  "acceptance_for_phase361_scope": {
+    "exact_manuscript_hash": true,
+    "exact_target_profile_hash": true,
+    "pass_A_precedes_rule_loading": true,
+    "no_known_deterministic_G1M_blocker": true,
+    "no_material_target_profile_immersion_failure": true,
+    "V4_2_G1M": "PASS_REQUIRED",
+    "V4_2_G5D": "PASS_REQUIRED",
+    "V4_2_G5Q": "PASS_REQUIRED_IF_MATERIAL_SUSPENSE",
+    "V4_2_G6N": "PASS_REQUIRED",
+    "V4_1_G5R": "PASS_REQUIRED",
+    "V4_1_G5S": "PASS_REQUIRED",
+    "V4_1_G5E": "PASS_REQUIRED",
+    "V4_1_G7C": "PASS_REQUIRED",
+    "V4_1_G7V": "PASS_REQUIRED",
+    "legacy_G6D_G8": "PASS_REQUIRED",
+    "fresh_AI_pass_may_close_human_failure": false,
+    "architecture_promotion": false
+  },
+  "next_after_completion": "Return raw untouched Phase361 report to coordinator. Coordinator compares it against the five still-open human target-reader failures. If no material repair regression/failure remains, advance only to human target-reader validation on the new SHA; do not final-freeze from AI validation alone."
+}
