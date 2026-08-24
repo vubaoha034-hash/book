@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-24T11:36:00+08:00",
+  "updated_at": "2026-08-24T12:24:00+08:00",
   "branch": "novel-distill-v1",
   "state_compaction": {
     "semantic_history_deleted": false,
-    "prior_full_state_blob": "7306053d2c6dc39450dc8503d3c2ebd46332360a",
-    "reason": "Settle Phase360 Attempt1 as materially executed but blocked before fresh validation because two already-known Phase359 G1M blockers remained; queue a narrow replacement Attempt2 without discarding Attempt1 improvements."
+    "prior_full_state_blob": "b58d5ce7deda826c2133a936e7de7d9abc17eb45",
+    "reason": "Accept Phase360 Replacement Attempt2 after independent SHA/diff/G1M verification and advance the revised candidate to Phase361 fresh post-repair validation without closing human reader evidence or promoting V4.2 architecture."
   },
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -17,22 +17,19 @@
     "GN_VDNA_01_default_enabled": false,
     "auto_application": false,
     "real_manuscript_applied_outcome_count": 0,
-    "accepted_checkpoint_advance_from_phase360": false
+    "accepted_checkpoint_advance_from_phase360_361": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2",
-    "phase": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR",
-    "phase_ordinal": 360,
-    "attempt": 2,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_POST_REPAIR_PROFILE_CALIBRATED_FRESH_VALIDATION",
+    "phase_ordinal": 361,
     "status": "READY_NOT_STARTED",
-    "input_manuscript_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2.json",
-    "execution_scope": "Narrow pre-validation repair of only the known Wen Yulou and Shi Chongshan V4.2-G1M re-entry decision-delta blockers while preserving all material Phase360 Attempt1 changes.",
-    "repair_authorized": true,
-    "human_failure_closure_authorized": false,
-    "final_freeze_authorized": false,
-    "architecture_promotion_authorized": false,
-    "next_action": "Run Phase360 Replacement Attempt2 on exact SHA 8d05824a... Prefer removing unnecessary post-warning continue-away/reconsider-only pseudo-reversals rather than inventing extra trigger events. Coordinator must verify both G1M blockers are gone before Phase361 fresh validation."
+    "manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+    "target_reader_profile_sha256": "010c1eb3055daf041c8f2a71bdfd3bfb5af3baa430cf1d7388bedeac341ce96d",
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1.json",
+    "execution_scope": "Independent target-profile-calibrated fresh validation of the revised manuscript SHA. Known failure locations, repair reports/notes, prior evaluator reports, old manuscript versions and regression answer keys remain hidden. This validates the candidate only and cannot promote V4.2 architecture or close human failures.",
+    "remaining_blockers": ["PHASE361_FRESH_POST_REPAIR_VALIDATION_NOT_RUN", "OPEN_LOCATED_TARGET_READER_FAILURES_5_PENDING_HUMAN_VALIDATION"],
+    "next_action": "Run exactly one Phase361 fresh two-pass validation on SHA 82c05523.... If the revised candidate passes the Phase361 manuscript-quality scope, advance only to actual human target-reader post-change validation; do not final-freeze from AI validation alone."
   },
   "phase359_settlement": {
     "execution": "ACCEPT_VALID_PROFILE_CALIBRATED_TWO_PASS_RUN",
@@ -47,10 +44,21 @@
     "output_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
     "private_report_sha256": "f86c02c1439b5dac751dffa5a46fb34c9fe3e84a04b2085f4113fb8040d0a79f",
     "all_five_human_failures_received_material_response": true,
-    "candidate_adjudication": "BLOCKED_PRE_VALIDATION_KNOWN_G1M_FAILURES_REMAIN",
-    "known_blockers": ["WEN_REENTRY_DECISION_DELTA", "SHI_REENTRY_DECISION_DELTA"],
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT1.json",
+    "candidate_adjudication": "SUPERSEDED_BY_ACCEPTED_ATTEMPT2",
     "fresh_validation_consumed": false
+  },
+  "phase360_attempt2_settlement": {
+    "execution": "ACCEPT_NARROW_REPAIR",
+    "input_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
+    "output_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+    "repair_note_sha256": "3bd10a184b254f87451c059fbb2b7a8d1d1e361c2f88ad7e121d4c23871388c7",
+    "diff_deleted_lines": 5,
+    "diff_added_lines": 5,
+    "known_G1M_blockers_before": 2,
+    "known_G1M_blockers_after": 0,
+    "attempt1_other_material_edits_preserved": true,
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2.json",
+    "phase361_authorized": true
   },
   "architecture_state": {
     "default_skill": "V4.2",
@@ -62,13 +70,14 @@
     "一命过桥": {
       "historical_phase351_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
       "phase360_attempt1_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
-      "current_working_candidate_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
-      "status": "PHASE360_ATTEMPT2_PRE_VALIDATION_G1M_REPAIR_PENDING",
+      "current_working_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+      "status": "PHASE361_FRESH_POST_REPAIR_VALIDATION_PENDING",
       "open_target_reader_failure_count": 5,
       "required_human_repair_targets": ["TR-F01", "TR-F02", "TR-F03", "TR-F04", "TR-F05"],
-      "known_prevalidation_blockers": ["WEN_REENTRY_DECISION_DELTA", "SHI_REENTRY_DECISION_DELTA"],
-      "rewrite_authorized": true,
+      "known_prevalidation_blockers": [],
+      "rewrite_authorized": false,
       "human_failures_closed": false,
+      "human_validation_pending": true,
       "final_freeze_authorized": false
     }
   },
@@ -77,14 +86,17 @@
     "fresh_AI_PASS_may_close_located_human_failure": false,
     "architecture_promotion_requires_new_uncontaminated_holdout": true,
     "current_labelled_manuscript_repair_may_use_human_failure_locations": true,
-    "known_deterministic_blocker_should_be_repaired_before_consuming_fresh_validation": true,
+    "phase361_may_read_target_profile_before_manuscript": true,
+    "phase361_may_read_known_failure_locations": false,
+    "phase361_pass_may_authorize_human_validation": true,
+    "phase361_pass_may_authorize_final_freeze": false,
     "repair_authorization_equals_architecture_promotion": false,
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "pending_sequences": [19,20,21,22,23,24,25,26,27,28,29,30,31,32],
+    "pending_sequences": [19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
     "pending_files": [
       "state/continuity/PENDING_SETTLEMENT_019_020.json",
       "state/continuity/PENDING_SETTLEMENT_021_022.json",
@@ -92,11 +104,12 @@
       "state/continuity/PENDING_SETTLEMENT_025_026.json",
       "state/continuity/PENDING_SETTLEMENT_027_028.json",
       "state/continuity/PENDING_SETTLEMENT_029_030.json",
-      "state/continuity/PENDING_SETTLEMENT_031_032.json"
+      "state/continuity/PENDING_SETTLEMENT_031_032.json",
+      "state/continuity/PENDING_SETTLEMENT_033_034.json"
     ],
-    "pending_target_sequence": 32,
-    "pending_target_event_hash": "392a0856c99f9c100a152ef8c4fd44755b1b539b630560297fe9a3ad2ba7fafb",
-    "claim_physically_appended_through_32": false
+    "pending_target_sequence": 34,
+    "pending_target_event_hash": "1dcc05e72a787616998ed8ffe09c11e4a308c20633f2f930ecf23ef9eee5ceba",
+    "claim_physically_appended_through_34": false
   },
   "invariants": {
     "missing_result_means": "UNKNOWN",
@@ -105,7 +118,8 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase361_may_not_start_until_attempt2_G1M_coordinator_check": true
+    "Phase361_is_not_architecture_promotion": true,
+    "Phase361_AI_PASS_cannot_close_human_failures": true
   },
   "rollback": {"authorized": false, "receipt": null}
 }
