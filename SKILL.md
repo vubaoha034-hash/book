@@ -41,6 +41,7 @@ Also obey:
 
 ```text
 rules/holdout-contamination-and-repair-separation.md
+rules/human-aesthetic-rejection-blank-page-reauthoring-trigger.md
 ```
 
 If the project defines a non-answer-key target-reader profile, use it for target-fit evaluation. For current YMGQ:
@@ -71,7 +72,23 @@ EVENT_PROGRESS != PAGE_TURN_COMPULSION
 FRESH_AI_RECOMMENDATION != HUMAN_TARGET_READER_ACCEPTANCE
 CURRENT_MANUSCRIPT_REPAIR_AUTHORIZATION != ARCHITECTURE_PROMOTION
 LABELLED_CALIBRATION_CASE != FRESH_GENERALIZATION_HOLDOUT
+LOCAL_SCENE_SPECIFICITY != MANUSCRIPT_LEVEL_VOICE_VARIETY
+HUMAN_GLOBAL_AESTHETIC_REJECTION != LOCAL_PATCH_QUEUE
 ```
+
+## Human aesthetic rejection hard stop
+
+If the actual target reader reports that the manuscript has no meaningful desire-to-continue, feels like an event outline/transcript, contains many mechanically generated dialogue exchanges, or would not be recommended, then:
+
+1. the actual human result controls the labelled manuscript;
+2. prior AI PASS / PASS_WITH_FRICTION may not rescue the candidate;
+3. bounded line repair and same-prose preservation stop immediately;
+4. invoke `rules/human-aesthetic-rejection-blank-page-reauthoring-trigger.md`;
+5. rebuild from a minimal story kernel rather than paraphrasing the failed prose;
+6. merging/deleting/reordering scenes, characters, factions, subplots, suspense devices and reveals is allowed when it improves the reading experience;
+7. do not draft the entire replacement manuscript before actual human approval of representative prose pilots.
+
+A local object, shared-history anchor, causal correctness, new-information payload, or character-specific noun does not automatically rescue a recurring portable dialogue cadence that the human target reader experiences as mechanical.
 
 ## Mandatory V4.2 hardening modules
 
@@ -234,6 +251,19 @@ A current manuscript may enter bounded repair when:
 Repair may use the located human evidence directly. It does not require a fresh AI evaluator to independently reproduce 100% of those aesthetic failures first.
 
 Repair does not promote V4.2, does not close human failures, and does not authorize final freeze. Closure requires post-change validation.
+
+## Representative human pilot before full reauthoring
+
+After a human-aesthetic rejection hard stop, full-manuscript reauthoring is gated by an actual-human pilot.
+
+The pilot must include representative prose from at least:
+
+- opening / ordinary human interaction;
+- high-pressure relationship dialogue;
+- suspense or reveal;
+- climax-adjacent pressure.
+
+If the actual target reader rejects the pilot voice/surface, discard or redesign the approach before writing the full manuscript. Do not accumulate another full-length draft on an unvalidated prose engine.
 
 ## Delivery tiers
 
