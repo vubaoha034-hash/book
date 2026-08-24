@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "work": "一命过桥",
+  "purpose": "Minimal identity kernel for blank-page reauthoring after actual human aesthetic rejection. This file is intentionally abstract and must not preserve failed prose or scene wording.",
+  "must_preserve_identity": {
+    "core_premise": "A prisoner must physically cross a legally decisive bridge boundary to enter protected imperial custody; before that exact crossing, the east-side force may not simply solve the west-side conflict for him.",
+    "protagonist": "刘还山",
+    "central_moral_conflict": "刘还山 has promised 顾青禾 to deliver her father 顾承岳 across the boundary even though Liu does not believe Gu is morally innocent and accepts that Gu must answer for what he has done.",
+    "central_question": "What does keeping a promise cost when the person being protected may deserve punishment, and when other people's loyalty to the protagonist becomes part of that cost?",
+    "genre_direction": "Chinese wuxia / martial-arts suspense with commercial page-turn drive and literary emotional consequence."
+  },
+  "optional_existing_material_not_protected": {
+    "characters_may_be_cut_merged_or_rebuilt": ["霍九翁", "楚十三", "温玉楼", "石重山", "谢听雪", "柳三娘", "雷破山", "韩老四", "贺三江", "商九翎", "曹无声", "小泥鳅及孩子群像"],
+    "devices_may_be_replaced_or_rebuilt": ["黑箭", "玄册", "多势力围桥", "定向消息召回朋友", "火油", "多次返场", "旧账/北营支线"],
+    "events_may_be_cut_reordered_or_replaced": ["朋友依次到场", "连续势力退场/转向", "多轮战术混战", "朋友死亡次序", "终局敌人身份揭示", "过桥后的供述与尾声结构"]
+  },
+  "human_rejection_evidence_to_control_redesign": {
+    "no_desire_to_continue": true,
+    "wants_to_fast_forward_by_Huo_Jiuweng_section": true,
+    "surface_feels_like_event_outline": true,
+    "many_dialogue_exchanges_feel_mechanical_and_unpleasant": true,
+    "black_arrow_suspense_not_meaningfully_assessable_due_disengagement": true,
+    "only_small_climax_feeling_reported_during_Liu_public_persuasion": true,
+    "would_recommend": false
+  },
+  "prohibited_anchoring": [
+    "Do not line-edit, paraphrase or cosmetically rewrite the Phase360 V2 manuscript.",
+    "Do not preserve a scene merely because an AI audit previously called it a strength.",
+    "Do not preserve a character/faction merely because it has an existing backstory or object motif.",
+    "Do not preserve short Q&A / dry-retort cadence as a house style when the human reader experiences it as mechanical.",
+    "Do not optimize for passing historical gates before establishing actual human desire-to-read."
+  ],
+  "target_experience": [
+    "The opening creates curiosity and attachment before system explanation accumulates.",
+    "Scenes feel inhabited by people with conflicting immediate wants, not like board-state updates.",
+    "Dialogue has character-specific rhythm, omissions, misreadings, interruptions and physical behavior; it is not a reusable Q&A machine.",
+    "Each major scene has a different dramatic engine after names/props/lore are masked.",
+    "Suspense changes a relationship, choice or safety prediction that the reader already cares about.",
+    "The middle does not become a parade of factions/old friends entering and explaining themselves.",
+    "Climax voltage grows through narrowing choices, relational cost and irreversible consequence rather than event count.",
+    "The reader has a concrete reason to turn the page repeatedly, not merely willingness to finish."
+  ],
+  "validation_strategy": {
+    "full_manuscript_before_human_pilot": false,
+    "first_required_output": "new architecture plus representative prose pilots",
+    "human_pilot_required_before_full_draft": true
+  }
+}
