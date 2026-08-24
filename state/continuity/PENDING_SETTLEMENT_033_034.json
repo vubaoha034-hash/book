@@ -1,0 +1,50 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "base_sequence": 32,
+  "base_event_id": "EVT-NOVEL-DISTILL-PHASE360-ATTEMPT2-QUEUED-20260824-032",
+  "base_event_hash": "392a0856c99f9c100a152ef8c4fd44755b1b539b630560297fe9a3ad2ba7fafb",
+  "pending_events": [
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE360-ATTEMPT2-ADJUDICATION-20260824-033",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T12:22:00+08:00",
+      "event_type": "PHASE360_ATTEMPT2_ACCEPTED_G1M_BLOCKERS_REMOVED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2",
+      "change_id": "REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1",
+      "before": {"active_phase_ordinal":360,"active_task":"REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2","active_task_status":"READY_NOT_STARTED","input_sha":"8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2","known_G1M_blockers":2,"open_target_reader_failures":5},
+      "after": {"active_phase_ordinal":360,"active_task":"REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2","active_task_status":"ACCEPTED","output_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","known_G1M_blockers":0,"attempt2_diff_deleted_lines":5,"attempt2_diff_added_lines":5,"attempt1_other_material_edits_preserved":true,"open_target_reader_failures":5,"phase361_authorized":true,"final_freeze_authorized":false,"rollback_authorized":false},
+      "reason": "Coordinator independently bound the Attempt2 output SHA, verified the V1-to-V2 diff is limited to five authorized local replacements, and confirmed Wen Yulou and Shi Chongshan no longer continue away after already knowing their triggers. The two deterministic G1M pre-validation blockers are removed without broad rewrite, so the new SHA may proceed to Phase361 fresh post-repair validation.",
+      "evidence": ["state/review_receipts/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2.json","private_manuscript_sha256:82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","private_attempt2_note_sha256:3bd10a184b254f87451c059fbb2b7a8d1d1e361c2f88ad7e121d4c23871388c7"],
+      "authorization": {"required":false,"scope":"Coordinator acceptance of narrow repair and authorization to queue Phase361 validation only; no human failure closure/final freeze/architecture promotion.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE360-ATTEMPT2-QUEUED-20260824-032",
+      "previous_event_hash": "392a0856c99f9c100a152ef8c4fd44755b1b539b630560297fe9a3ad2ba7fafb",
+      "event_hash": "0b63e5534a6eca860be5fbe190aff8e70a5ba87bc8e94cb4bf4c8e5311e9b614"
+    },
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE361-QUEUED-20260824-034",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T12:23:00+08:00",
+      "event_type": "PHASE361_POST_REPAIR_PROFILE_CALIBRATED_FRESH_VALIDATION_READY_NOT_STARTED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1",
+      "change_id": "POST_REPAIR_VALIDATION_NEW_SHA",
+      "before": {"active_phase_ordinal":360,"active_task":"REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2","active_task_status":"ACCEPTED","candidate_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","known_G1M_blockers":0,"open_target_reader_failures":5},
+      "after": {"active_phase_ordinal":361,"active_task":"REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1","active_task_status":"READY_NOT_STARTED","candidate_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","target_profile_sha":"010c1eb3055daf041c8f2a71bdfd3bfb5af3baa430cf1d7388bedeac341ce96d","open_target_reader_failures":5,"architecture_promotion_authorized":false,"human_failure_closure_authorized":false,"final_freeze_authorized":false,"rollback_authorized":false},
+      "reason": "Queue Phase361 as an independent profile-calibrated fresh post-repair validation of the new manuscript SHA. The evaluator may know the target-reader profile but must not read repair reports, known failure locations, prior evaluator reports, regression answer keys, or old manuscript versions. This validates the revised candidate only and cannot promote V4.2 architecture or close human target-reader failures.",
+      "evidence": ["state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1.json","state/review_receipts/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2.json"],
+      "authorization": {"required":false,"scope":"Fresh post-repair manuscript validation only; no human closure/final freeze/architecture promotion.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE360-ATTEMPT2-ADJUDICATION-20260824-033",
+      "previous_event_hash": "0b63e5534a6eca860be5fbe190aff8e70a5ba87bc8e94cb4bf4c8e5311e9b614",
+      "event_hash": "1dcc05e72a787616998ed8ffe09c11e4a308c20633f2f930ecf23ef9eee5ceba"
+    }
+  ],
+  "target_sequence": 34,
+  "target_event_hash": "1dcc05e72a787616998ed8ffe09c11e4a308c20633f2f930ecf23ef9eee5ceba",
+  "reason": "Single-file continuity ledger remains physically verified only through sequence 18; events 19-34 remain deterministic pre-hashed pending settlements until safe mechanical reconciliation."
+}
