@@ -1,0 +1,36 @@
+{
+  "schema_version": "3.0.0",
+  "project_id": "novel-distillation",
+  "manuscript_title": "一命过桥",
+  "current_manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "supersedes_for_current_candidate": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V2.json",
+  "historical_v2_rewritten": false,
+  "status": "OPEN_BLOCKING_HUMAN_READER_EVIDENCE_PHASE363_ROUND2_CALIBRATION_REQUIRED",
+  "current_open_failure_count": 7,
+  "failures": [
+    {"id":"TR-F01","class":"MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION","status":"STILL_FAILING_STRONGLY"},
+    {"id":"TR-F02","class":"AUTHOR_SHAPED_INFORMATION_PACKET","status":"OPEN_BROADER_SURFACE_EVIDENCE"},
+    {"id":"TR-F03","class":"REENTRY_WITHOUT_POST_WITHDRAWAL_DECISION_DELTA","status":"NOT_REASSESSED_BY_HUMAN"},
+    {"id":"TR-F04","class":"LOW_EXPERIENTIAL_CLIMAX_VOLTAGE_AND_READER_PULL","status":"STILL_FAILING_STRONGLY"},
+    {"id":"TR-F05","class":"LOW_SUSPENSE_CURIOSITY_CHARGE","status":"OPEN_NOT_DIRECTLY_REASSESSED"},
+    {"id":"TR-F06","class":"MANUSCRIPT_LEVEL_SYNTHETIC_SHORT_TURN_PROSE_AND_QUOTABLE_PUNCHLINE_CADENCE","status":"OPEN_BLOCKER"},
+    {
+      "id":"TR-F07",
+      "class":"DISEMBODIED_DIALOGUE_WITHOUT_SCENE_BEARING_ACTION_REACTION_PERCEPTION",
+      "status":"NEW_OPEN_BLOCKER",
+      "reader_effect":"Dialogue often feels like isolated question-answer information transfer because facial expression, physical behavior, listener reaction, perception, environmental interruption, and ongoing scene action do not sufficiently participate in meaning. The actual reader explicitly contrasts this with the reference novels, where dialogue is usually embedded in continuous narration and character behavior rather than left as floating turn exchanges.",
+      "anti_fake_fix":"Do not satisfy this by adding generic gesture tags after every line. Scene-bearing description must change meaning, pressure, timing, relationship, inference, or choice."
+    }
+  ],
+  "phase363_round1": {
+    "CAL_01": "A_PREFERRED_USABLE_DIRECTION",
+    "CAL_02": "BOTH_REJECTED",
+    "CAL_03": "A_PREFERRED_BUT_STILL_MECHANICAL"
+  },
+  "authority_rule": {
+    "actual_human_result_controls_current_candidate": true,
+    "AI_may_not_override": true,
+    "full_rewrite_blocked_until_surface_direction_is_human_accepted": true,
+    "generic_action_tag_padding_is_not_acceptance": true
+  }
+}
