@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 365,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE365_INDEPENDENT_POST_REAUTHORING_VALIDATION_V1",
+  "status": "READY_NOT_STARTED",
+  "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "purpose": "Independent post-change validation of the newly reauthored full manuscript before actual human target-reader revalidation. This validates the new manuscript only; it does not promote architecture and cannot close actual-human failures.",
+  "pass_A_isolation": {
+    "allowed_before_manuscript": ["state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json"],
+    "forbidden_before_pass_A_freeze": [
+      "state/reader_evidence/*",
+      "Phase362 human rejection receipts",
+      "Phase363 calibration packs/receipts",
+      "Phase364 architecture",
+      "Phase364 authoring note",
+      "old Phase360 V2 manuscript",
+      "prior evaluator reports",
+      "project_state or checkpoint conclusions about expected quality",
+      "regression answer keys"
+    ],
+    "instruction": "Read the bound new manuscript from beginning to end as the declared target-reader simulation, freeze a raw reader-experience trace, and do not infer what was changed or which prior defects were targeted."
+  },
+  "pass_A_required": [
+    "realistic skim/fast-forward onset",
+    "realistic stop-reading point",
+    "actual desire-to-continue locations and whether there are any",
+    "event-outline versus lived-fiction experience",
+    "dialogue embodiment and whether speech floats as information transfer",
+    "repeated question-answer or neat-punchline cadence",
+    "generic gesture-tag recurrence",
+    "cross-scene functional recurrence after masking names/props/lore",
+    "suspense questions actually cared about",
+    "answer-value ablation",
+    "emotional experience versus understood information",
+    "climax experiential voltage and last-step pressure",
+    "would finish voluntarily",
+    "would recommend",
+    "would seek another story in this mode",
+    "overall PASS / PASS_WITH_LOCATED_FRICTION / FAIL"
+  ],
+  "pass_B_after_pass_A_freeze": {
+    "read": [
+      "SKILL.md",
+      "config/novel-quality-gates.v4.2.json",
+      "workflows/10-novel-master-pipeline-v4.2.md",
+      "library/reader-experience-technique-bank.v1.md",
+      "modules/human-prose-surface-calibration.md",
+      "modules/dramatization-surface-density-v1_1.md",
+      "modules/natural-speech-pressure-v1_2.md",
+      "modules/scene-reentry-evidence-anchor-v1_1.md",
+      "modules/suspense-curiosity-charge-v1_1.md",
+      "modules/reader-propulsion-ledger.md",
+      "modules/emotional-staging-ledger.md",
+      "modules/climax-escalation-curve.md",
+      "modules/climax-experiential-voltage.md",
+      "modules/dialogue-pattern-family-density.md",
+      "rules/no-ai-smell.md"
+    ],
+    "required_checks": [
+      "profile calibration",
+      "scene/dramatization surface diversity",
+      "embodied dialogue under pressure",
+      "question-answer template recurrence",
+      "entry/re-entry causality",
+      "reader propulsion",
+      "suspense hypothesis and answer ownership",
+      "emotional staging",
+      "structural climax",
+      "experiential climax voltage",
+      "semantic/continuity integrity",
+      "dialogue pattern-family density"
+    ]
+  },
+  "anti_false_positive": [
+    "A fresh AI liking the prose is not human acceptance.",
+    "Scene-specific actions do not automatically rescue manuscript-level mechanical cadence.",
+    "Short dialogue is not automatically bad, but repeated question-answer handoffs must be judged at manuscript scale.",
+    "Embodied actions must change meaning/pressure/judgment/relationship/timing/distance/choice; generic tags do not count.",
+    "Event progress is not page-turn desire.",
+    "Working suspense model is not answer-specific curiosity.",
+    "Structural option compression is not felt climax voltage.",
+    "Formal PASS may not overwrite a frozen Pass-A reader-effect FAIL."
+  ],
+  "required_output": "PHASE365_RAW_UNTOUCHED_EVALUATOR_REPORT.txt",
+  "authorization": {
+    "manuscript_edit": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "post_completion": "Coordinator binds the raw report and decides whether the new manuscript is clean enough to hand directly to the actual human target reader. Regardless of AI result, actual human revalidation remains required before any failure closure or final freeze."
+}
