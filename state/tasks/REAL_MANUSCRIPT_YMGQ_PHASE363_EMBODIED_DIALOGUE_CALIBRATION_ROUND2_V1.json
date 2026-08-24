@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 363,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1",
+  "status": "READY_NOT_STARTED",
+  "candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "purpose": "Calibrate dialogue that is embedded in continuous lived narration rather than isolated question-answer information exchange. Rebuild only failed CAL-02 and CAL-03 while using CAL-01-A as a positive anchor. No full-manuscript rewrite.",
+  "human_round1": {
+    "CAL_01":"A_SELECTED",
+    "CAL_02":"NEITHER_SELECTED",
+    "CAL_03":"A_SELECTED_BUT_STILL_MECHANICAL"
+  },
+  "required_context": [
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_HUMAN_PROSE_SURFACE_CALIBRATION_ROUND1_V1.json",
+    "modules/human-prose-surface-calibration.md",
+    "library/reader-experience-technique-bank.v1.md"
+  ],
+  "source_reference_rule": {
+    "study_mechanism_only": true,
+    "reference_books": ["射雕英雄传","诛仙","盗墓笔记壹"],
+    "focus": ["dialogue embedded in action/perception","facial and bodily reaction changing meaning","silence and non-answer","continuous scene narration between turns","speaker/listener asymmetry","environmental interruption"],
+    "no_prose_imitation": true,
+    "no_plot_copying": true
+  },
+  "round2_targets": [
+    {
+      "id":"CAL2-R2-01",
+      "source":"CAL-02 Chu Shisan return",
+      "required_variants":2,
+      "goal":"Remove the feeling of a route-fact interview. Let Chu arrive as a person already doing something in danger; let Liu infer part of the route history from behavior/context; allow incomplete answers, physical interruption and listener reaction."
+    },
+    {
+      "id":"CAL2-R2-02",
+      "source":"CAL-03 Huo Jiuweng confrontation",
+      "required_variants":2,
+      "goal":"Make Huo feel physically present before he becomes a speaker. His age, grief, restraint, gaze, hands, weapon handling, distance from Liu, reaction to Huo Yun references, and response to the ledger information must participate in the conflict. Dialogue must not be a clean exchange of history and plot facts."
+    }
+  ],
+  "embodied_dialogue_requirement": {
+    "core":"Dialogue is one channel inside a continuous scene, not the whole scene.",
+    "must_test":[
+      "what each body is doing before/during/after speech",
+      "what the focal character notices and misreads",
+      "how facial expression or gaze changes interpretation when materially relevant",
+      "how the listener reacts before answering",
+      "whether someone refuses, delays, ignores or redirects a question",
+      "whether the physical environment interrupts or changes the conversation",
+      "whether description changes pressure/timing/relationship rather than decorating the prose"
+    ],
+    "forbidden_fake_fix":["generic look/frown/sigh after every line","gesture quota","random body-language padding","longer sentences as a quality proxy","synonym-only variants"]
+  },
+  "acceptance": {
+    "actual_human_must_choose": true,
+    "AI_self_rating_cannot_accept": true,
+    "full_manuscript_rewrite": false,
+    "next_scale_requires":"Human explicitly says at least one CAL-02 direction and one CAL-03 direction no longer feel mechanically AI-written."
+  }
+}
