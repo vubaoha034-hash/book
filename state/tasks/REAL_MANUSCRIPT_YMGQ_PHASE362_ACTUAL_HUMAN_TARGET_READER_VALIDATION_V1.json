@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 362,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1",
+  "status": "READY_NOT_STARTED",
+  "manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "purpose": "Actual human target-reader post-change validation of the revised YMGQ candidate. Determine whether the five still-open human reader failures are materially improved/closed on the new SHA. This is not an AI architecture test.",
+  "reader": "ACTUAL_TARGET_READER",
+  "protocol": {
+    "pass_H1": {
+      "name": "current-version immersion read",
+      "instruction": "Read the current manuscript from beginning to end without opening repair reports, Phase361 analysis, or the old failure ledger during the read. Record spontaneous skim/stop points, desire-to-continue, strongest and weakest sections, dialogue naturalness, suspense pull, climax experience, and whether the manuscript feels lived or mechanically constructed."
+    },
+    "pass_H2": {
+      "name": "targeted closure check",
+      "instruction": "After H1 is frozen, review the five prior human failure classes and judge each on the new SHA as CLOSED / MATERIAL_IMPROVEMENT_BUT_OPEN / STILL_FAILING, with located reasons."
+    }
+  },
+  "failure_classes_to_recheck_after_H1": [
+    "TR-F01 MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION",
+    "TR-F02 AUTHOR_SHAPED_INFORMATION_PACKET",
+    "TR-F03 REENTRY_WITHOUT_POST_WITHDRAWAL_DECISION_DELTA",
+    "TR-F04 LOW_EXPERIENTIAL_CLIMAX_VOLTAGE_AND_READER_PULL",
+    "TR-F05 LOW_SUSPENSE_CURIOSITY_CHARGE"
+  ],
+  "acceptance": {
+    "numeric_score_alone_is_insufficient": true,
+    "located_reader_reasons_required": true,
+    "all_five_failures_need_explicit_status": true,
+    "final_freeze_requires_no_open_material_human_failure": true,
+    "ai_may_not_override_human_result": true
+  },
+  "authorization": {
+    "manuscript_edit": false,
+    "human_failure_closure": "AUTHORIZED_ONLY_FROM_THIS_ACTUAL_HUMAN_RESULT_AFTER_COORDINATOR_REVIEW",
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_completion": "Coordinator binds the human validation report/result to manuscript SHA 82c05523... and decides whether failures close, whether one bounded repair remains necessary, or whether the manuscript becomes final-freeze eligible."
+}
