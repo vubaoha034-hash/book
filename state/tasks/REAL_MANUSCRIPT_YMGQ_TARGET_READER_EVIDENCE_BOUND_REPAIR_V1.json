@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1",
+  "phase": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR",
+  "phase_ordinal": 360,
+  "status": "READY_NOT_STARTED",
+  "input_manuscript": {
+    "title": "一命过桥",
+    "required_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+    "must_bind_before_edit": true
+  },
+  "authorization": {
+    "repair_authorized": true,
+    "scope": "BOUNDED_TARGET_READER_EVIDENCE_REPAIR",
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "required_context": [
+    "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json",
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1.json",
+    "library/reader-experience-technique-bank.v1.md",
+    "config/novel-quality-gates.v4.2.json",
+    "rules/holdout-contamination-and-repair-separation.md"
+  ],
+  "repair_targets": [
+    {
+      "id": "TR-F01",
+      "goal": "Reduce manuscript-level skeletonized dramatization across separated high-stakes scenes without padding or destroying effective minimalism.",
+      "method_constraints": [
+        "Preserve concise scenes where specific object, bodily constraint, silence or irreversible choice already carries emotion.",
+        "Change scene grammar, resistance, perception, timing, subtext and consequence rather than merely adding description.",
+        "Audit cross-scene recurrence after functional masking."
+      ]
+    },
+    {
+      "id": "TR-F02",
+      "goal": "Repair author-shaped live information packaging around the located early warning line while preserving the actual new meta-information.",
+      "method_constraints": [
+        "Use earliest-sufficient-warning and listener-reaction boundaries.",
+        "Allow environment, interruption, inference or later completion to carry information.",
+        "Do not repair with filler particles, fake stammering or slang."
+      ]
+    },
+    {
+      "id": "TR-F03",
+      "goal": "Give Liu Sanniang's return a textually available pre-return decision delta rather than inferring motive from rescue actions after she is already back.",
+      "method_constraints": [
+        "Plant the trigger before re-entry.",
+        "Do not use old affection or mere proximity as the only new reason.",
+        "Keep the trigger proportionate and non-expository."
+      ]
+    },
+    {
+      "id": "TR-F04",
+      "goal": "Increase target-reader page-turn pull and experiential climax crescendo without merely adding combat, deaths or louder prose.",
+      "method_constraints": [
+        "Compress or transform spans where event progress exceeds reader-state change.",
+        "Escalate through prediction, personal convergence, irreversible choice and changed consequence.",
+        "Preserve strong existing peaks but make the intended terminal sequence earn its position experientially.",
+        "Do not require monotonic spectacle."
+      ]
+    },
+    {
+      "id": "TR-F05",
+      "goal": "Increase black-arrow mystery answer-specific curiosity rather than relying on danger/action alone.",
+      "method_constraints": [
+        "Make clues create a cared-about prediction, trust/relationship reclassification or consequential choice.",
+        "Use fair evidence and model updates; do not withhold arbitrary facts.",
+        "Test answer-value ablation: revealing the answer early should materially reduce a meaningful part of suspense pull."
+      ]
+    }
+  ],
+  "must_preserve_strengths": [
+    "one-step bridge legal/physical lock",
+    "Liu Huanshan promise-versus-moral-disgust conflict",
+    "Shi Chongshan shield/chicken/death aftershock",
+    "Chu Shisan finite-arrow/death/broken-bow chain",
+    "Huo Jiuweng revenge-versus-truth choice",
+    "Gu Qinghe accountability confrontation",
+    "one-year tavern object-based aftershock"
+  ],
+  "non_goals": [
+    "Do not rewrite plot merely to satisfy gate vocabulary.",
+    "Do not imitate source-book prose or living-author style.",
+    "Do not apply Novel DNA unless a separate router call explicitly authorizes it; GN-VDNA-01 remains default off.",
+    "Do not commit manuscript prose to the public repository.",
+    "Do not declare final freeze or close human failures inside the repair run."
+  ],
+  "required_outputs": [
+    "revised private manuscript",
+    "new manuscript SHA-256",
+    "privacy-safe repair ledger mapping every material change to TR-F01..TR-F05 and any Phase359 supporting finding",
+    "preserved-strength regression notes",
+    "self-audit identifying unresolved risks without claiming target-reader closure"
+  ],
+  "acceptance": {
+    "all_five_target_reader_failures_must_receive_material_response": true,
+    "mere_line_polish_is_insufficient_for_TR_F01_TR_F04_TR_F05": true,
+    "no_public_manuscript_prose": true,
+    "post_repair_fresh_validation_required": true,
+    "post_repair_human_target_reader_validation_required_for_closure": true,
+    "final_freeze": false
+  },
+  "next_after_completion": "Preserve revised manuscript and repair ledger, then run a new post-repair validation phase on the new SHA. Architecture generalization must be tested later on a separate uncontaminated manuscript holdout."
+}
