@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 363,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_HUMAN_PROSE_SURFACE_CALIBRATION_V1",
+  "status": "ROUND1_HUMAN_FEEDBACK_RECORDED_MORE_CALIBRATION_REQUIRED",
+  "candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "human_round1": {
+    "CAL_01": {"selection":"A","interpretation":"PREFERRED_AND_USABLE_POSITIVE_DIRECTION"},
+    "CAL_02": {"selection":"NEITHER","interpretation":"BOTH_VARIANTS_REJECTED"},
+    "CAL_03": {"selection":"A","interpretation":"PREFERRED_OVER_B_BUT_NOT_ACCEPTED_AS_SUFFICIENT"}
+  },
+  "new_human_diagnosis": {
+    "class": "DISEMBODIED_DIALOGUE_WITHOUT_SCENE_BEARING_REACTION_ACTION_OR_PERCEPTION",
+    "summary": "Dialogue remains mechanically turn-based because speech often floats without enough expression, physical behavior, perception, listener reaction, environmental interruption, or scene-state change carrying meaning. The problem is not merely short lines; it is dialogue functioning as isolated information exchange rather than part of continuous lived narration.",
+    "important_constraint": "Do not respond by mechanically adding generic gesture tags such as looking, frowning, sighing, clenching fists, or pausing after every line. Actions/reactions must alter meaning, pressure, relationship, timing, inference, or choice."
+  },
+  "scale_authorization": {
+    "full_manuscript_rewrite": false,
+    "reason": "CAL-02 remains rejected and CAL-03 remains mechanically unsatisfactory; one preferred local direction is insufficient to define the whole manuscript surface."
+  },
+  "next": "Run Phase363 Round2 embodied-dialogue calibration using CAL-01-A as a positive anchor, rebuild CAL-02 and CAL-03, and explicitly test continuous narration/action/perception around speech before any full rewrite."
+}
