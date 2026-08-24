@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 363,
+  "round": 3,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1",
+  "status": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE",
+  "input_manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+  "fusion_pack_bytes": 10108,
+  "actual_human_result": {
+    "overall": "MATERIAL_IMPROVEMENT_ACCEPTED_FOR_SCALE",
+    "reader_effect": "Both fused scenes create materially more desire to continue reading and are much better than the rejected prior manuscript surface.",
+    "CAL_02": "FUSION_DIRECTION_ACCEPTED_FOR_SCALE",
+    "CAL_03": "FUSION_DIRECTION_ACCEPTED_FOR_SCALE"
+  },
+  "accepted_prose_engine": {
+    "dialogue_as_one_channel_inside_continuous_scene": true,
+    "scene_bearing_action_reaction_perception": true,
+    "relationship_carried_by_coordination_permission_refusal_and_inference": true,
+    "battle_or_environment_may_interrupt_and_reshape_speech": true,
+    "listener_reaction_before_clean_answer": true,
+    "facts_may_be_inferred_instead_of_directly_asked": true,
+    "embodiment_must_change_meaning_pressure_judgment_relation_timing_distance_or_choice": true,
+    "generic_gesture_tagging_is_not_a_fix": true,
+    "question_answer_interview_cadence_is_not_default": true
+  },
+  "scale_authorization": {
+    "broad_reauthoring": true,
+    "large_structural_change": true,
+    "merge_or_delete_characters": true,
+    "merge_or_delete_factions": true,
+    "replace_or_rebuild_suspense_devices": true,
+    "reorder_or_replace_events": true,
+    "rebuild_climax": true,
+    "old_V2_prose_as_authoring_substrate": false
+  },
+  "not_closed": {
+    "TR_F01_to_TR_F07": "REMAIN_OPEN_UNTIL_NEW_FULL_MANUSCRIPT_POST_CHANGE_VALIDATION",
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next": "Authorize Phase364 blank-page broad reauthoring from the minimal story kernel using the human-accepted Round3 prose engine."
+}
