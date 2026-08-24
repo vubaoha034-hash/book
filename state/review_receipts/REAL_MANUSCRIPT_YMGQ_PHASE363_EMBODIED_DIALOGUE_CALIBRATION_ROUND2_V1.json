@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 363,
+  "round": 2,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1",
+  "status": "HUMAN_DIRECTION_MATERIALLY_IMPROVED_FUSION_REQUIRED",
+  "input_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "round2_pack_sha256": "781dd625c1a5017339bd97e9c3962770d60f604f36c09b15ae0df9ab469f05b7",
+  "round2_pack_bytes": 14003,
+  "actual_human_result": {
+    "overall": "MUCH_BETTER",
+    "CAL_02_CHU_SHISAN": {
+      "preferred_direction": "FUSE_A_RELATIONSHIP_TEXTURE_WITH_B_BATTLE_PRESSURE",
+      "variant_A_value": "stronger brotherhood / old-friend relationship texture",
+      "variant_B_value": "stronger battle scene / live conflict pressure",
+      "single_variant_final_acceptance": false,
+      "fusion_requested": true
+    },
+    "CAL_03_HUO_JIUWENG": {
+      "preferred_base": "B",
+      "variant_A_value": "also good; restrained embodied old-man detail",
+      "variant_B_value": "preferred overall; stronger volatile conflict and live action",
+      "single_variant_final_acceptance": false,
+      "fusion_requested": true
+    }
+  },
+  "coordinator_adjudication": {
+    "round2_execution": "ACCEPT",
+    "TR_F07_direction_materially_improved": true,
+    "surface_direction_exists": true,
+    "full_manuscript_rewrite_authorized_now": false,
+    "reason": "Human likes complementary mechanisms across variants and explicitly requests fusion. One convergence pass should verify the combined prose engine before scaling to a full rewrite."
+  },
+  "authorization": {
+    "round3_fusion_calibration": true,
+    "full_manuscript_rewrite": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  }
+}
