@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.0.0",
+  "project_id": "novel-distillation",
+  "manuscript_title": "一命过桥",
+  "current_manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "supersedes_for_current_candidate": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json",
+  "historical_v1_rewritten": false,
+  "status": "OPEN_BLOCKING_HUMAN_READER_EVIDENCE_AFTER_PHASE362_H1_FAIL",
+  "privacy": "ABSTRACTED_NO_LONG_MANUSCRIPT_PROSE",
+  "current_evidence": [
+    {
+      "id": "TR-F01",
+      "class": "MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION",
+      "current_status": "STILL_FAILING_STRONGLY",
+      "reader_effect": "The revised manuscript still produces a mechanical constructed reading experience rather than sustained lived fiction; fast-forward desire begins by the Huo Jiuweng region and later friend/faction scenes do not create continued reading desire."
+    },
+    {
+      "id": "TR-F02",
+      "class": "AUTHOR_SHAPED_INFORMATION_PACKET",
+      "current_status": "OPEN_BROADER_SURFACE_EVIDENCE",
+      "reader_effect": "The revised manuscript still contains speech that feels written/constructed rather than naturally spoken. Human rejection now extends beyond one early information packet to manuscript-level dialogue surface."
+    },
+    {
+      "id": "TR-F03",
+      "class": "REENTRY_WITHOUT_POST_WITHDRAWAL_DECISION_DELTA",
+      "current_status": "NOT_REASSESSED_BY_PHASE362_H1",
+      "reader_effect": "No new human closure evidence in H1. AI/causal repair cannot close this human class by itself."
+    },
+    {
+      "id": "TR-F04",
+      "class": "LOW_EXPERIENTIAL_CLIMAX_VOLTAGE_AND_READER_PULL",
+      "current_status": "STILL_FAILING_STRONGLY",
+      "reader_effect": "Actual target reader reports no location that creates genuine desire to continue. Only the public persuasion/withdrawal scene produces a small amount of climax sensation."
+    },
+    {
+      "id": "TR-F05",
+      "class": "LOW_SUSPENSE_CURIOSITY_CHARGE",
+      "current_status": "OPEN_NOT_DIRECTLY_REASSESSED",
+      "reader_effect": "No direct black-arrow-specific H1 answer was supplied, but zero global desire-to-continue prevents closure of this class."
+    },
+    {
+      "id": "TR-F06",
+      "class": "MANUSCRIPT_LEVEL_SYNTHETIC_SHORT_TURN_PROSE_AND_QUOTABLE_PUNCHLINE_CADENCE",
+      "current_status": "NEW_OPEN_BLOCKER",
+      "reader_effect": "Many dialogue sequences use terse question-answer handoffs, neat witty explanations, and compact quotable character-summary punchlines. The actual target reader experiences this surface as strongly artificial and unpleasant rather than human or elegant.",
+      "diagnostic_support": {
+        "dialogue_lines": 434,
+        "median_dialogue_characters": 6,
+        "fraction_dialogue_lines_le_6_chars": 0.5714,
+        "fraction_dialogue_lines_le_10_chars": 0.7811,
+        "note": "Statistics are diagnostic support only; no line-length quota is created."
+      }
+    }
+  ],
+  "positive_anchor": {
+    "scene_class": "PROTAGONIST_PUBLIC_PERSUASION_WITH_VISIBLE_WORLD_STATE_CHANGE",
+    "human_effect": "Only located scene reported to produce even a small climax response.",
+    "inference_not_fact": "Possible target-reader preference for protagonist agency, status/reputation payoff, and immediate visible consequence should be tested rather than assumed universal."
+  },
+  "authority_rule": {
+    "actual_human_result_has_priority_for_current_candidate": true,
+    "ai_may_not_override_human_rejection": true,
+    "final_freeze_blocked": true,
+    "next_repair_requires_surface_calibration_before_full_manuscript_rewrite": true
+  }
+}
