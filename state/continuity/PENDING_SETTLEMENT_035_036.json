@@ -1,0 +1,50 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "base_sequence": 34,
+  "base_event_id": "EVT-NOVEL-DISTILL-PHASE361-QUEUED-20260824-034",
+  "base_event_hash": "1dcc05e72a787616998ed8ffe09c11e4a308c20633f2f930ecf23ef9eee5ceba",
+  "pending_events": [
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE361-ADJUDICATION-20260824-035",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T13:51:00+08:00",
+      "event_type": "PHASE361_POST_REPAIR_FRESH_VALIDATION_ACCEPTED_HUMAN_VALIDATION_AUTHORIZED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1",
+      "change_id": "REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1",
+      "before": {"active_phase_ordinal":361,"active_task":"REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1","active_task_status":"READY_NOT_STARTED","candidate_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","open_target_reader_failures":5},
+      "after": {"active_phase_ordinal":362,"active_task":"REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1","active_task_status":"PREPARING","phase361_execution":"ACCEPT","phase361_overall":"PASS_WITH_LOCATED_FRICTION","ready_for_actual_human_validation":true,"candidate_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","open_target_reader_failures":5,"manuscript_edit_authorized":false,"final_freeze_authorized":false,"architecture_promotion_authorized":false},
+      "reason": "Accept Phase361 as a valid fresh post-repair validation. The candidate has no blocker-level AI regression and is explicitly ready for actual human target-reader validation. Do not continue AI repair before the human read; all five human failures remain open until actual post-change human validation.",
+      "evidence": ["state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1.json","private_report_sha256:fc427c6478dad5b414678632af515e264761decfb68b75e669177546d4dc79ad"],
+      "authorization": {"required":false,"scope":"Advance to actual human target-reader validation only; no manuscript edit, final freeze or architecture promotion.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE361-QUEUED-20260824-034",
+      "previous_event_hash": "1dcc05e72a787616998ed8ffe09c11e4a308c20633f2f930ecf23ef9eee5ceba",
+      "event_hash": "8d28124bdf269948a13c43c6f222b016c0e1470bdd544b68a22b5804504e4776"
+    },
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE362-HUMAN-VALIDATION-QUEUED-20260824-036",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T13:52:00+08:00",
+      "event_type": "ACTUAL_HUMAN_TARGET_READER_POST_CHANGE_VALIDATION_READY_NOT_STARTED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1",
+      "change_id": "ACTUAL_HUMAN_POST_CHANGE_VALIDATION",
+      "before": {"active_phase_ordinal":362,"active_task":"REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1","active_task_status":"PREPARING","candidate_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","open_target_reader_failures":5},
+      "after": {"active_phase_ordinal":362,"active_task":"REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1","active_task_status":"READY_NOT_STARTED","candidate_sha":"82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303","human_validation_protocol":"H1_CURRENT_VERSION_IMMERSION_THEN_H2_TARGETED_CLOSURE","open_target_reader_failures":5,"manuscript_edit_authorized":false,"final_freeze_authorized":false,"architecture_promotion_authorized":false},
+      "reason": "Queue the actual human target-reader validation. The human read must precede any further repair. H1 records spontaneous current-version reading effects; H2 then explicitly rechecks TR-F01..TR-F05. AI findings cannot override the human result.",
+      "evidence": ["state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1.json","state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE361_POST_REPAIR_FRESH_VALIDATION_V1.json"],
+      "authorization": {"required":false,"scope":"Human validation setup only; no edit/freeze/promotion.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE361-ADJUDICATION-20260824-035",
+      "previous_event_hash": "8d28124bdf269948a13c43c6f222b016c0e1470bdd544b68a22b5804504e4776",
+      "event_hash": "06138e4fad0b45d9ea644bbdc6b410c5e4b30bbc13101a6729f7fc1c9500f59e"
+    }
+  ],
+  "target_sequence": 36,
+  "target_event_hash": "06138e4fad0b45d9ea644bbdc6b410c5e4b30bbc13101a6729f7fc1c9500f59e",
+  "reason": "STATE_LEDGER.jsonl remains physically verified only through sequence 18; events 19-36 remain deterministic pending settlements until safe mechanical reconciliation."
+}
