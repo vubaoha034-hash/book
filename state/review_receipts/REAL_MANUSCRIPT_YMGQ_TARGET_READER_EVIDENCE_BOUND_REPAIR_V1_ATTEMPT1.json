@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1",
+  "phase_ordinal": 360,
+  "attempt": 1,
+  "status": "EXECUTION_ACCEPTED_CANDIDATE_BLOCKED_BEFORE_FRESH_VALIDATION",
+  "input_manuscript_sha256": "3765e4396afbc15c5e3cf2d0aa34ea581a22c4dad648dc2bc59dd020fd31cebf",
+  "output_manuscript_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
+  "private_repair_report_sha256": "f86c02c1439b5dac751dffa5a46fb34c9fe3e84a04b2085f4113fb8040d0a79f",
+  "execution_adjudication": "ACCEPT",
+  "material_response_to_all_five_human_failures": true,
+  "verified_real_edits": [
+    "early live warning was segmented with listener reaction and environmental evidence",
+    "black-arrow clue chain gained route/control and targeted-network consequences",
+    "Liu Sanniang now has a pre-return perceived casualty trigger",
+    "repeated withdrawal/tactical spans were compressed or re-staged",
+    "Shi Chongshan separation/death setup was physically dramatized",
+    "late coalition/Cao/bridge sequence was compressed and converged"
+  ],
+  "preserved_strengths_materially_intact": true,
+  "known_pre_validation_blockers": [
+    {
+      "gate": "V4.2-G1M",
+      "character": "Wen Yulou",
+      "finding": "The revised scene still states that the warning was already known before an explicit continue-away choice; return is then justified only by reconsideration of the same information.",
+      "codes": ["REENTRY_REVERSAL_HAS_NO_DECISION_DELTA", "OLD_MOTIVE_REUSED_AS_POST_HOC_REENTRY_CAUSE"]
+    },
+    {
+      "gate": "V4.2-G1M",
+      "character": "Shi Chongshan",
+      "finding": "The revised scene still states that the death warning was already known before continuing toward Luoshui; return is then justified only by reconsideration of the same information.",
+      "codes": ["REENTRY_REVERSAL_HAS_NO_DECISION_DELTA", "OLD_MOTIVE_REUSED_AS_POST_HOC_REENTRY_CAUSE"]
+    }
+  ],
+  "repair_report_self_audit_correction": {
+    "claim": "rumor/re-entry causality PASS SELF-AUDIT",
+    "coordinator_verdict": "REJECTED_FOR_WEN_AND_SHI",
+    "reason": "Phase359 had already established deterministic G1M blockers and Attempt1 did not remove their post-warning continue-away/reconsider-only structure."
+  },
+  "candidate_adjudication": "BLOCKED_PRE_VALIDATION_KNOWN_DETERMINISTIC_G1M_FAILURES_REMAIN",
+  "human_failure_closure_authorized": false,
+  "final_freeze_authorized": false,
+  "architecture_promotion_authorized": false,
+  "next_action": "Run Phase360 Replacement Attempt 2 on output SHA 8d05824a... with only the Wen Yulou and Shi Chongshan re-entry decision structures in repair scope. Preserve all other Attempt1 material changes unless required to maintain local continuity. Do not consume a fresh Phase361 validation while these known blockers remain."
+}
