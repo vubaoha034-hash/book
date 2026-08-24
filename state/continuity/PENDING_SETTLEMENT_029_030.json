@@ -1,0 +1,50 @@
+{
+  "schema_version": "upcp-pending-ledger-settlement/v1",
+  "project_id": "novel-distillation",
+  "base_sequence": 28,
+  "base_event_id": "EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4_2-HARDENING-20260824-028",
+  "base_event_hash": "55e7340a27aa9fa711533e7703ec323a8670f85c3f2a1308cbd734b893941ac3",
+  "pending_events": [
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-PHASE359-ADJUDICATION-20260824-029",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T10:15:00+08:00",
+      "event_type": "V4_2_PROFILE_FRESH_RUN_ACCEPTED_ARCHITECTURE_REJECTED_BOUNDED_REPAIR_AUTHORIZED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1",
+      "change_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1",
+      "before": {"active_phase_ordinal":359,"active_task":"REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"open_target_reader_failures":5,"manuscript_rewrite_authorized":false},
+      "after": {"active_phase_ordinal":360,"active_task":"REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1","active_task_status":"PREPARING","highest_accepted_phase_ordinal":320,"phase359_execution":"ACCEPT","phase359_evaluator_overall":"FAIL","V4_2_architecture":"REJECT_PROMOTION_REMAINING_FALSE_NEGATIVES","open_target_reader_failures":5,"manuscript_rewrite_authorized":true,"repair_scope":"BOUNDED_TARGET_READER_EVIDENCE_REPAIR","final_freeze_authorized":false,"rollback_authorized":false},
+      "reason": "Accept Phase359 as a valid profile-calibrated two-pass run. Hidden holdout comparison shows strong detection of manuscript-level skeleton density and reader-propulsion weakness, but material false negatives remain for the exact live information packet, Liu Sanniang re-entry location, black-arrow answer curiosity, and full experiential-climax agreement. Reject V4.2 architecture promotion, but authorize bounded repair of the labelled manuscript using still-open human target-reader evidence after required coordinator adjudication.",
+      "evidence": ["state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1.json","state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V1.json","state/benchmarks/READER_EXPERIENCE_V4_2_REGRESSION_V3.json","private_report_sha256:fdec68590226398bd1ed815c3b6850e47e064e1197a6d7fcb85a890aa9361d85"],
+      "authorization": {"required":false,"scope":"Coordinator adjudication may authorize bounded repair after holdout comparison; no final freeze or architecture promotion.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-READER-EXPERIENCE-V4_2-HARDENING-20260824-028",
+      "previous_event_hash": "55e7340a27aa9fa711533e7703ec323a8670f85c3f2a1308cbd734b893941ac3",
+      "event_hash": "72b37b624653ea1575b5acd59a0ab862edb5d8e8876f62ceee09dc31e3fb8db1"
+    },
+    {
+      "schema_version": "upcp-state-ledger-event/v1",
+      "event_id": "EVT-NOVEL-DISTILL-HOLDOUT-SEPARATION-PHASE360-QUEUED-20260824-030",
+      "project_id": "novel-distillation",
+      "stream_id": "global",
+      "recorded_at": "2026-08-24T10:16:00+08:00",
+      "event_type": "LABELLED_CASE_REMOVED_FROM_ARCHITECTURE_HOLDOUT_AND_PHASE360_REPAIR_QUEUED",
+      "material": true,
+      "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1",
+      "change_id": "HOLDOUT_CONTAMINATION_AND_REPAIR_SEPARATION_V1",
+      "before": {"active_phase_ordinal":360,"active_task":"REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1","active_task_status":"PREPARING","highest_accepted_phase_ordinal":320,"open_target_reader_failures":5,"V4_2_architecture":"DEVELOPMENTAL"},
+      "after": {"active_phase_ordinal":360,"active_task":"REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1","active_task_status":"READY_NOT_STARTED","highest_accepted_phase_ordinal":320,"current_manuscript_architecture_holdout_eligible":false,"future_architecture_promotion_requires_new_uncontaminated_holdout":true,"skill_default":"V4.2","open_target_reader_failures":5,"manuscript_rewrite_authorized":true,"final_freeze_authorized":false,"rollback_authorized":false},
+      "reason": "Stop repeated same-manuscript architecture tuning after the manuscript's target-reader feedback materially shaped gates, profile, regressions and prompts. Treat YMGQ as a labelled repair/regression case, preserve V4.2 as developmental, require a new uncontaminated manuscript for future architecture promotion, and queue Phase360 bounded repair against all five open human failures.",
+      "evidence": ["rules/holdout-contamination-and-repair-separation.md","SKILL.md","state/tasks/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1.json","state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1.json"],
+      "authorization": {"required":false,"scope":"Governance separation and bounded repair task setup; no final freeze/global checkpoint change.","status":"NOT_REQUIRED"},
+      "previous_event_id": "EVT-NOVEL-DISTILL-PHASE359-ADJUDICATION-20260824-029",
+      "previous_event_hash": "72b37b624653ea1575b5acd59a0ab862edb5d8e8876f62ceee09dc31e3fb8db1",
+      "event_hash": "597ac1fee79298fa99e0ea740237f7211725249686095970a72586c61fcd3e8c"
+    }
+  ],
+  "target_sequence": 30,
+  "target_event_hash": "597ac1fee79298fa99e0ea740237f7211725249686095970a72586c61fcd3e8c",
+  "reason": "Single-file continuity ledger remains physically verified only through sequence 18; events 19-30 are stored as deterministic pre-hashed pending settlements until safe mechanical reconciliation."
+}
