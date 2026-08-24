@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT2",
+  "phase": "REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR",
+  "phase_ordinal": 360,
+  "attempt": 2,
+  "status": "READY_NOT_STARTED",
+  "replacement_for_attempt": 1,
+  "input_manuscript": {
+    "required_sha256": "8d05824aaf12a2b624acf13c39c0ec70bd6e16b405f170e037da776914e68cd2",
+    "identity": "Phase360 Attempt1 revised candidate",
+    "must_bind_before_edit": true
+  },
+  "authorization": {
+    "repair_authorized": true,
+    "scope": "NARROW_PRE_VALIDATION_G1M_BLOCKER_REPAIR",
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false,
+    "human_failure_closure_authorized": false
+  },
+  "required_context": [
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_TARGET_READER_EVIDENCE_BOUND_REPAIR_V1_ATTEMPT1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_V4_2_PROFILE_CALIBRATED_FRESH_REAUDIT_V1.json",
+    "modules/scene-reentry-decision-delta.md",
+    "modules/scene-reentry-evidence-anchor-v1_1.md",
+    "state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json"
+  ],
+  "repair_scope": [
+    {
+      "character": "Wen Yulou",
+      "problem": "Warning information is already known before a continue-away/non-entry choice; later return uses only reconsideration of the same information.",
+      "required_result": "No explicit post-warning withdrawal reversal may remain without a genuinely new textually available post-choice delta.",
+      "preferred_method": "Prefer removing the unnecessary post-warning continue-away/reconsider-only beat so the suspicious poison/message evidence itself changes route when received. Preserve poison-object inference and the distinct arrival surface. Do not invent an extra messenger merely to satisfy the gate."
+    },
+    {
+      "character": "Shi Chongshan",
+      "problem": "Death warning is already known before continuing toward Luoshui; later return uses only reconsideration of the same information.",
+      "required_result": "No explicit post-warning withdrawal reversal may remain without a genuinely new textually available post-choice delta.",
+      "preferred_method": "Prefer making the located targeted warning itself the route-changing trigger rather than keeping a ten-li post-warning continue-away/reconsider-only beat. Preserve boot-route evidence, food object, relationship texture and later shield/death chain."
+    }
+  ],
+  "frozen_preserve": [
+    "all Attempt1 TR-F02 early-warning segmentation changes",
+    "Liu Sanniang explicit pre-return rescue trigger",
+    "black-arrow clue and answer-value chain",
+    "compressed early faction withdrawal sequence",
+    "four-friend shelter realizable-future setup",
+    "Shi Chongshan failed-lift physical separation scene except only what local continuity requires",
+    "post-Chu evidence compression",
+    "coalition compression",
+    "Cao-to-one-step bridge convergence",
+    "Gu Qinghe accountability sharpening",
+    "all previously preserved strength scenes"
+  ],
+  "forbidden": [
+    "Do not broadly rewrite the manuscript.",
+    "Do not add a second artificial messenger/report solely to create a delta when removing the unnecessary false reversal is cleaner.",
+    "Do not close any human failure.",
+    "Do not declare final freeze.",
+    "Do not promote V4.2 architecture."
+  ],
+  "required_outputs": [
+    "revised private manuscript named 一命过桥_Phase360_目标读者证据绑定修复_V2.txt",
+    "new manuscript SHA-256",
+    "private Attempt2 repair note showing exact abstract causal before/after for Wen and Shi",
+    "full-manuscript local continuity smoke check",
+    "explicit preservation check for Attempt1 material changes"
+  ],
+  "acceptance": {
+    "Wen_G1M_known_blocker_removed": true,
+    "Shi_G1M_known_blocker_removed": true,
+    "no_new_post_hoc_reentry_trigger": true,
+    "Attempt1_material_improvements_preserved": true,
+    "post_repair_fresh_validation_required": true
+  },
+  "next_after_completion": "Coordinator verifies the two deterministic G1M blockers are actually removed and the new SHA is bound. Only then queue Phase361 independent post-repair validation."
+}
