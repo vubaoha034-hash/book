@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "phase": 363,
   "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_HUMAN_PROSE_SURFACE_CALIBRATION_V1",
@@ -9,7 +9,8 @@
   "required_context": [
     "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V2.json",
     "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_H1_FAIL_V1.json",
-    "modules/human-prose-surface-calibration.md"
+    "modules/human-prose-surface-calibration.md",
+    "rules/human-aesthetic-rejection-blank-page-reauthoring-trigger.md"
   ],
   "human_positive_anchor": {
     "scene_class": "Liu Huanshan public persuasion causing visible faction withdrawal",
@@ -57,5 +58,11 @@
     "current_manuscript_final_freeze": false,
     "architecture_promotion": false
   },
-  "next_after_completion": "If the actual target reader accepts a prose-surface direction, create a separately authorized full-manuscript rewrite task. If all variants are rejected, iterate calibration samples only."
+  "future_after_surface_acceptance": {
+    "large_structural_changes_authorized_by_human": true,
+    "old_failed_prose_is_not_default_substrate": true,
+    "broad_scene_character_faction_restructuring_may_be_used": true,
+    "next_phase_should_rebuild_architecture_before_or together_with_full_reauthoring": true
+  },
+  "next_after_completion": "If the actual target reader accepts a prose-surface direction, create a separately authorized broad reauthoring/architecture task using the human-approved surface. If all variants are rejected, iterate calibration samples only."
 }
