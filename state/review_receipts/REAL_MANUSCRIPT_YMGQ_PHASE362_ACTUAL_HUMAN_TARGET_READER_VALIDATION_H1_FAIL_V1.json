@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 362,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_V1",
+  "status": "ACTUAL_HUMAN_H1_FAIL_CURRENT_CANDIDATE_REJECTED",
+  "manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "human_evidence_type": "DIRECT_ACTUAL_TARGET_READER_POST_CHANGE_FEEDBACK",
+  "H1": {
+    "skim_or_fast_forward_onset": "around Huo Jiuweng section",
+    "desire_to_continue_anywhere": false,
+    "language_surface_rejection": "SEVERE",
+    "human_description": "many dialogue passages feel extremely unpleasant and very poorly written",
+    "only_located_partial_climax": "Liu Huanshan publicly persuading/causing factions to withdraw",
+    "finished_manuscript_acceptance": false
+  },
+  "located_surface_examples_abstracted": [
+    "old-friend return dialogue uses short question -> short answer -> polished witty explanation -> short route question -> short answer",
+    "child dialogue uses fear statement -> request for explanation -> neat aphoristic character-summary punchline"
+  ],
+  "coordinator_diagnosis": {
+    "phase361_ai_ready_for_human_was_false_positive_against_actual_human_taste": true,
+    "TR_F01": "STILL_FAILING_STRONGLY",
+    "TR_F02": "NOT_CLOSED_AND_BROADER_SYNTHETIC_SPEECH_EVIDENCE_FOUND",
+    "TR_F03": "NOT_REASSESSED_BY_THIS_H1_FEEDBACK",
+    "TR_F04": "STILL_FAILING_STRONGLY",
+    "TR_F05": "NOT_DIRECTLY_REASSESSED_BUT_CANNOT_CLOSE_WHILE_GLOBAL_CONTINUE_DESIRE_IS_ZERO",
+    "new_failure_class": "TR-F06_MANUSCRIPT_LEVEL_SYNTHETIC_SHORT_TURN_PROSE_AND_QUOTABLE_PUNCHLINE_CADENCE"
+  },
+  "quantitative_support_on_current_sha": {
+    "dialogue_lines": 434,
+    "dialogue_median_character_count": 6,
+    "dialogue_lines_le_6_chars_fraction": 0.5714,
+    "dialogue_lines_le_10_chars_fraction": 0.7811,
+    "interpretation": "diagnostic only; short dialogue is not inherently bad, but the distribution is consistent with the human-located manuscript-wide short-turn cadence failure"
+  },
+  "governance": {
+    "human_result_overrides_ai_readiness_for_current_candidate": true,
+    "candidate_final_freeze_eligible": false,
+    "further_micro_patch_without_surface_calibration_forbidden": true,
+    "architecture_promotion": false,
+    "historical_phase361_result_rewritten": false
+  }
+}
