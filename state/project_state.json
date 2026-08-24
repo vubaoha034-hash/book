@@ -1,14 +1,9 @@
 {
-  "schema_version": "1.9.0",
+  "schema_version": "2.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-24T17:52:00+08:00",
+  "updated_at": "2026-08-24T19:19:00+08:00",
   "branch": "novel-distill-v1",
-  "state_compaction": {
-    "semantic_history_deleted": false,
-    "prior_full_state_blob": "a381151740d0e0beb58a8842aecf4ae5bc357220",
-    "reason": "Record Phase363 round1 human A/neither/A preferences and the new embodied-dialogue diagnosis; continue sample calibration rather than scaling to a full rewrite."
-  },
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
     "phase_ordinal": 320,
@@ -17,24 +12,19 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1",
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1",
     "phase": "REAL_MANUSCRIPT_YMGQ_HUMAN_PROSE_SURFACE_CALIBRATION",
     "phase_ordinal": 363,
-    "round": 2,
+    "round": 3,
     "status": "READY_NOT_STARTED",
     "input_manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1.json",
-    "execution_scope": "Sample-only embodied-dialogue calibration. Rebuild CAL-02 and CAL-03; use CAL-01-A as the current positive anchor. Dialogue must be embedded in continuous action/reaction/perception rather than floating question-answer transfer.",
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "execution_scope": "Fusion convergence only. Produce one Chu Shisan sample combining Round2 A's brotherhood texture with Round2 B's battle pressure, and one Huo Jiuweng sample using Round2 B as the base while integrating Round2 A's restrained embodied age/grief detail. No full manuscript rewrite yet.",
     "sample_calibration_authorized": true,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Produce two genuinely different embodied-dialogue variants for Chu Shisan and Huo Jiuweng. Actual human must approve at least one direction for each before any full-manuscript rewrite."
-  },
-  "phase361_settlement": {
-    "historical_execution": "ACCEPT_VALID_POST_REPAIR_FRESH_VALIDATION",
-    "historical_overall": "PASS_WITH_LOCATED_FRICTION",
-    "actual_human_phase362_overrode_candidate_readiness": true
+    "next_action": "Create exactly two fused samples and return them to the actual target reader. If both are explicitly accepted as good enough to scale, coordinator may authorize broad reauthoring in the next phase."
   },
   "phase362_settlement": {
     "execution": "ACTUAL_HUMAN_H1_DECISIVE_REJECTION",
@@ -45,15 +35,22 @@
   "phase363_round1": {
     "CAL_01": "A_PREFERRED_USABLE_POSITIVE_DIRECTION",
     "CAL_02": "BOTH_REJECTED",
-    "CAL_03": "A_PREFERRED_BUT_STILL_MECHANICAL",
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_HUMAN_PROSE_SURFACE_CALIBRATION_ROUND1_V1.json"
+    "CAL_03": "A_PREFERRED_BUT_STILL_MECHANICAL"
+  },
+  "phase363_round2": {
+    "execution": "ACCEPT_HUMAN_DIRECTION_MATERIALLY_IMPROVED",
+    "pack_sha256": "781dd625c1a5017339bd97e9c3962770d60f604f36c09b15ae0df9ab469f05b7",
+    "CAL_02": "FUSE_A_BROTHERHOOD_WITH_B_BATTLE_PRESSURE",
+    "CAL_03": "B_PREFERRED_FUSE_WITH_A_RESTRAINED_EMBODIED_DETAIL",
+    "full_scale_ready": false,
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1.json"
   },
   "manuscript_quality_state": {
     "current_working_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
-    "status": "ACTUAL_HUMAN_REJECTED_PHASE363_ROUND2_EMBODIED_DIALOGUE_CALIBRATION_REQUIRED",
+    "status": "ACTUAL_HUMAN_REJECTED_PHASE363_ROUND3_FUSION_CALIBRATION_REQUIRED",
     "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
     "open_target_reader_failure_count": 7,
-    "new_failure": "TR-F07_DISEMBODIED_DIALOGUE_WITHOUT_SCENE_BEARING_ACTION_REACTION_PERCEPTION",
+    "TR_F07": "MATERIALLY_IMPROVED_DIRECTION_FOUND_NOT_YET_CLOSED",
     "full_rewrite_authorized": false,
     "human_failures_closed": false,
     "final_freeze_authorized": false
@@ -61,10 +58,11 @@
   "governance": {
     "actual_human_result_controls_current_candidate": true,
     "AI_may_not_override_human_rejection": true,
-    "short_dialogue_is_not_automatically_bad": true,
     "adding_generic_gesture_tags_is_not_a_valid_fix": true,
     "dialogue_should_be_one_channel_inside_continuous_scene_narration": true,
     "human_surface_calibration_before_scale": true,
+    "round3_fusion_is_convergence_not_average": true,
+    "full_rewrite_requires_explicit_human_acceptance_of_fused_samples": true,
     "architecture_promotion_requires_new_uncontaminated_holdout": true,
     "Novel_DNA_default_off": true
   },
