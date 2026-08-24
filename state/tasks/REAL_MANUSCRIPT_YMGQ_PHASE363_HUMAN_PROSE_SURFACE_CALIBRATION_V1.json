@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 363,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_HUMAN_PROSE_SURFACE_CALIBRATION_V1",
+  "status": "READY_NOT_STARTED",
+  "input_manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+  "purpose": "Calibrate a human-acceptable prose/dialogue surface on small representative samples before any new full-manuscript rewrite. This phase exists because the actual target reader strongly rejected the current language surface despite Phase361 AI readiness.",
+  "required_context": [
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V2.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE362_ACTUAL_HUMAN_TARGET_READER_VALIDATION_H1_FAIL_V1.json",
+    "modules/human-prose-surface-calibration.md"
+  ],
+  "human_positive_anchor": {
+    "scene_class": "Liu Huanshan public persuasion causing visible faction withdrawal",
+    "use": "preserve the qualities that produced the only reported partial climax; do not mechanically copy its rhetoric"
+  },
+  "private_calibration_targets": [
+    {
+      "id": "CAL-01",
+      "class": "CHILD_FEAR_DIALOGUE_APHORISTIC_PUNCHLINE",
+      "goal": "Remove setup-question-quotable-summary artificiality while keeping child relationship/fear information."
+    },
+    {
+      "id": "CAL-02",
+      "class": "CHU_SHISAN_RETURN_SHORT_QA_WITTY_EXPOSITION",
+      "goal": "Replace short question-answer ladder and polished witty route exposition with character-specific live interaction that still preserves route/rumor facts."
+    },
+    {
+      "id": "CAL-03",
+      "class": "HUO_JIUWENG_ONWARD_FAST_FORWARD_ONSET",
+      "goal": "Rebuild the first human-located skim-onset region so relationship/history/action are not delivered through an engineered dialogue machine."
+    }
+  ],
+  "required_method": {
+    "full_manuscript_rewrite": false,
+    "sample_only": true,
+    "variants_per_target": 2,
+    "variant_rule": "Each variant must use a genuinely different conversation/narration mechanism, not synonym swaps.",
+    "preserve_plot_facts": true,
+    "preserve_character_identity": true,
+    "no_style_imitation": true,
+    "no_line_length_quota": true,
+    "no_fake_stammer_or_random_slang": true,
+    "human_judgment_required_before_scale": true
+  },
+  "calibration_questions_for_actual_reader": [
+    "Which variant, if any, no longer feels AI-written or mechanically clever?",
+    "Which exact phrase/turn still causes rejection?",
+    "Does the scene create any desire to continue?",
+    "Does the character feel more like a person rather than a delivery mechanism?",
+    "Would you accept this surface as the direction for a full rewrite?"
+  ],
+  "acceptance": {
+    "at_least_one_human_accepted_surface_direction_required_before_full_rewrite": true,
+    "AI_self_rating_cannot_substitute": true,
+    "current_manuscript_final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_completion": "If the actual target reader accepts a prose-surface direction, create a separately authorized full-manuscript rewrite task. If all variants are rejected, iterate calibration samples only."
+}
