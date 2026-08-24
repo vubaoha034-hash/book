@@ -1,8 +1,8 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-24T19:19:00+08:00",
+  "updated_at": "2026-08-24T21:51:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,25 +12,23 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_HUMAN_PROSE_SURFACE_CALIBRATION",
-    "phase_ordinal": 363,
-    "round": 3,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_BLANK_PAGE_BROAD_REAUTHORING",
+    "phase_ordinal": 364,
     "status": "READY_NOT_STARTED",
-    "input_manuscript_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
-    "execution_scope": "Fusion convergence only. Produce one Chu Shisan sample combining Round2 A's brotherhood texture with Round2 B's battle pressure, and one Huo Jiuweng sample using Round2 B as the base while integrating Round2 A's restrained embodied age/grief detail. No full manuscript rewrite yet.",
-    "sample_calibration_authorized": true,
-    "full_manuscript_rewrite_authorized": false,
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE364_BLANK_PAGE_BROAD_REAUTHORING_V1.json",
+    "execution_scope": "Create a new architecture and a new full manuscript from the minimal story kernel using the human-accepted Phase363 Round3 prose engine. Broad structural changes are authorized. The rejected Phase360 V2 prose is not an authoring substrate.",
+    "full_manuscript_authoring_authorized": true,
+    "large_structural_change_authorized": true,
+    "human_failure_closure_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Create exactly two fused samples and return them to the actual target reader. If both are explicitly accepted as good enough to scale, coordinator may authorize broad reauthoring in the next phase."
+    "next_action": "Freeze a new architecture, then draft an entirely new full manuscript and return architecture + manuscript + authoring note + exact manuscript SHA."
   },
   "phase362_settlement": {
     "execution": "ACTUAL_HUMAN_H1_DECISIVE_REJECTION",
     "human_overall": "FAIL_CURRENT_CANDIDATE_REJECTED",
-    "any_genuine_desire_to_continue": false,
-    "language_surface_rejection": "SEVERE"
+    "rejected_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303"
   },
   "phase363_round1": {
     "CAL_01": "A_PREFERRED_USABLE_POSITIVE_DIRECTION",
@@ -39,30 +37,38 @@
   },
   "phase363_round2": {
     "execution": "ACCEPT_HUMAN_DIRECTION_MATERIALLY_IMPROVED",
-    "pack_sha256": "781dd625c1a5017339bd97e9c3962770d60f604f36c09b15ae0df9ab469f05b7",
     "CAL_02": "FUSE_A_BROTHERHOOD_WITH_B_BATTLE_PRESSURE",
-    "CAL_03": "B_PREFERRED_FUSE_WITH_A_RESTRAINED_EMBODIED_DETAIL",
-    "full_scale_ready": false,
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_CALIBRATION_ROUND2_V1.json"
+    "CAL_03": "B_PREFERRED_FUSE_WITH_A_RESTRAINED_EMBODIED_DETAIL"
+  },
+  "phase363_round3": {
+    "execution": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE",
+    "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+    "human_result": "OVERALL_MATERIALLY_MORE_DESIRE_TO_CONTINUE_MUCH_BETTER",
+    "CAL_02": "FUSION_DIRECTION_ACCEPTED_FOR_SCALE",
+    "CAL_03": "FUSION_DIRECTION_ACCEPTED_FOR_SCALE",
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "full_scale_authorized": true
   },
   "manuscript_quality_state": {
-    "current_working_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
-    "status": "ACTUAL_HUMAN_REJECTED_PHASE363_ROUND3_FUSION_CALIBRATION_REQUIRED",
+    "old_rejected_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303",
+    "old_candidate_status": "FAILED_IMPLEMENTATION_REFERENCE_ONLY",
+    "new_working_candidate_sha256": null,
+    "status": "PHASE364_NEW_FULL_MANUSCRIPT_AUTHORING_PENDING",
     "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
     "open_target_reader_failure_count": 7,
-    "TR_F07": "MATERIALLY_IMPROVED_DIRECTION_FOUND_NOT_YET_CLOSED",
-    "full_rewrite_authorized": false,
+    "TR_F01_to_TR_F07": "OPEN_UNTIL_NEW_FULL_MANUSCRIPT_POST_CHANGE_VALIDATION",
     "human_failures_closed": false,
     "final_freeze_authorized": false
   },
   "governance": {
     "actual_human_result_controls_current_candidate": true,
     "AI_may_not_override_human_rejection": true,
-    "adding_generic_gesture_tags_is_not_a_valid_fix": true,
+    "human_surface_pilot_requirement_before_full_draft": "SATISFIED_BY_PHASE363_ROUND3",
+    "old_V2_prose_may_be_line_edited_into_new_draft": false,
+    "broad_structural_reauthoring_authorized": true,
     "dialogue_should_be_one_channel_inside_continuous_scene_narration": true,
-    "human_surface_calibration_before_scale": true,
-    "round3_fusion_is_convergence_not_average": true,
-    "full_rewrite_requires_explicit_human_acceptance_of_fused_samples": true,
+    "adding_generic_gesture_tags_is_not_a_valid_fix": true,
+    "post_change_AI_and_actual_human_validation_required": true,
     "architecture_promotion_requires_new_uncontaminated_holdout": true,
     "Novel_DNA_default_off": true
   },
@@ -78,7 +84,8 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase363_may_not_rewrite_full_manuscript": true
+    "Phase364_must_create_new_manuscript_SHA": true,
+    "Phase364_may_not_claim_human_failure_closure": true
   },
   "rollback": {"authorized": false, "receipt": null}
 }
