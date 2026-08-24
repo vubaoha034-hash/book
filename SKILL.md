@@ -37,6 +37,12 @@ config/novel-quality-gates.v4.2.json
 library/reader-experience-technique-bank.v1.md
 ```
 
+Also obey:
+
+```text
+rules/holdout-contamination-and-repair-separation.md
+```
+
 If the project defines a non-answer-key target-reader profile, use it for target-fit evaluation. For current YMGQ:
 
 ```text
@@ -45,7 +51,9 @@ state/reader_profiles/YMGQ_TARGET_READER_PROFILE_V1.json
 
 A fresh target-reader simulation may read the profile before the manuscript, but must not read exact failure locations, prior reports, repair history or regression answer keys.
 
-V4.2 is DEVELOPMENTAL until the active fresh profile-calibrated holdout validation is coordinator-accepted. Final freeze is forbidden while developmental validation or located human failures remain open.
+V4.2 remains DEVELOPMENTAL for architecture promotion. Final freeze is forbidden while located human failures remain open.
+
+A developmental architecture may still authorize a bounded repair of a labelled manuscript after coordinator adjudication when located human reader evidence is already valid. Do not require the AI to rediscover every human aesthetic failure before repair.
 
 ## Core non-equivalences
 
@@ -61,6 +69,8 @@ DANGER_INTEREST != MYSTERY_ANSWER_INTEREST
 OPTION_COMPRESSION != EXPERIENCED_CLIMAX_VOLTAGE
 EVENT_PROGRESS != PAGE_TURN_COMPULSION
 FRESH_AI_RECOMMENDATION != HUMAN_TARGET_READER_ACCEPTANCE
+CURRENT_MANUSCRIPT_REPAIR_AUTHORIZATION != ARCHITECTURE_PROMOTION
+LABELLED_CALIBRATION_CASE != FRESH_GENERALIZATION_HOLDOUT
 ```
 
 ## Mandatory V4.2 hardening modules
@@ -204,6 +214,26 @@ known bad locations
 After a fresh report returns, coordinator compares it to hidden human evidence/regression cases.
 
 Architecture promotion fails if a material hidden holdout defect is missed or explicitly rationalized as PASS.
+
+### Holdout contamination stop rule
+
+Once a manuscript's human feedback has materially shaped gates, target profiles, regressions, prompts or acceptance criteria, that manuscript is a labelled calibration case rather than a valid architecture-promotion holdout.
+
+Do not continue same-manuscript fresh reruns until every known defect is reproduced. That is overfitting, not generalization.
+
+Use the labelled manuscript for repair and regression development. Test architecture generalization later on a genuinely new, pre-registered holdout that did not supply calibration evidence.
+
+## Repair authorization versus architecture promotion
+
+A current manuscript may enter bounded repair when:
+
+1. located human target-reader evidence is valid and bound to its SHA;
+2. the required coordinator adjudication cycle has completed;
+3. the failures remain inside the declared target-reader contract.
+
+Repair may use the located human evidence directly. It does not require a fresh AI evaluator to independently reproduce 100% of those aesthetic failures first.
+
+Repair does not promote V4.2, does not close human failures, and does not authorize final freeze. Closure requires post-change validation.
 
 ## Delivery tiers
 
