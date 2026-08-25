@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 366,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_V1",
+  "status": "READY_NOT_STARTED",
+  "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "reader": "ACTUAL_HUMAN_TARGET_READER",
+  "purpose": "Actual human revalidation of the newly reauthored manuscript. Determine real desire-to-read, prose naturalness, suspense, emotional experience, climax and whether prior target-reader failures remain material on the new SHA.",
+  "protocol": {
+    "H1": "Read the current manuscript from beginning to end without consulting the Phase365 evaluator report during the read. Record first skim/stop urge, genuine desire-to-continue locations, dialogue/prose reaction, suspense, felt climax, recommendation and whether the work feels like lived fiction or event outline.",
+    "H2": "After H1 is frozen, explicitly recheck TR-F01 through TR-F07 on this new SHA as CLOSED / MATERIAL_IMPROVEMENT_BUT_OPEN / STILL_FAILING, with located reasons."
+  },
+  "hard_rules": {
+    "AI_may_not_answer_for_human": true,
+    "numeric_score_alone_is_insufficient": true,
+    "located_reasons_control": true,
+    "manuscript_edit_before_human_result": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_completion": "Coordinator binds the actual human result to the Phase364 manuscript SHA and decides whether failures close, a bounded repair is needed, or final-freeze eligibility can be considered."
+}
