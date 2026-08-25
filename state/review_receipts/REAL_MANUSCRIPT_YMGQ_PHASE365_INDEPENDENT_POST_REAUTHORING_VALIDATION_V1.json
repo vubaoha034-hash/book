@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 365,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE365_INDEPENDENT_POST_REAUTHORING_VALIDATION_V1",
+  "status": "ACCEPT_VALID_FRESH_POST_REAUTHORING_VALIDATION_READY_FOR_ACTUAL_HUMAN_REVALIDATION",
+  "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "raw_report_sha256": "3c022f563102701ed1bb2ad80e532e8eb22c91d4ad6ee8c1707dfbbf0890c9fa",
+  "raw_report_bytes": 41446,
+  "raw_report_lines": 492,
+  "pass_A_artifact_sha256": "117d196315d4ddca1b14a8be29de5e2c3760528dcdea7e9ffc713f28c5543eba",
+  "pass_A": "PASS_WITH_LOCATED_FRICTION",
+  "overall": "PASS_WITH_LOCATED_FRICTION",
+  "ready_for_actual_human_target_reader_revalidation": true,
+  "coordinator_adjudication": {
+    "execution": "ACCEPT",
+    "manuscript_edit_authorized": false,
+    "human_failure_closure_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false,
+    "next_phase_authorized": "ACTUAL_HUMAN_TARGET_READER_REVALIDATION_ONLY"
+  },
+  "governance": {
+    "AI_pass_is_not_actual_human_acceptance": true,
+    "TR_F01_to_TR_F07_remain_open": true,
+    "do_not_repair_before_actual_human_read": true,
+    "Phase365_does_not_promote_V4_2": true
+  }
+}
