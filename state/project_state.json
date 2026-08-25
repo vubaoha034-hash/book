@@ -1,8 +1,8 @@
 {
-  "schema_version": "2.3.0",
+  "schema_version": "2.4.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-25T08:30:00+08:00",
+  "updated_at": "2026-08-25T10:30:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,72 +12,69 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION",
-    "phase_ordinal": 366,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT",
+    "phase_ordinal": 367,
     "status": "READY_NOT_STARTED",
-    "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_V1.json",
-    "execution_scope": "Actual human target-reader revalidation of the new Phase364 manuscript. H1 records spontaneous current-version reading experience; H2 then rechecks TR-F01 through TR-F07. No manuscript edit before human result.",
-    "manuscript_edit_authorized": false,
-    "human_failure_closure_authorized": "ONLY_AFTER_ACTUAL_HUMAN_RESULT_AND_COORDINATOR_REVIEW",
+    "input_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json",
+    "execution_scope": "Pilot-only redesign of the earliest human disengagement zone. Fix spatial causality/blocking, serial-checkpoint pacing drag, and manuscript-wide question-answer voice homogenization before any new full draft.",
+    "pilot_rewrite_authorized": true,
+    "full_manuscript_rewrite_authorized": false,
+    "human_failure_closure_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual human reads the current manuscript without consulting Phase365 evaluator details, freezes H1, then rechecks TR-F01..TR-F07."
-  },
-  "phase362_settlement": {
-    "execution": "ACTUAL_HUMAN_H1_DECISIVE_REJECTION",
-    "human_overall": "FAIL_OLD_CANDIDATE_REJECTED",
-    "rejected_candidate_sha256": "82c05523ba52aa3092631aac7bf8e287839f2f2aa4d889306b36c21d994ed303"
-  },
-  "phase363_settlement": {
-    "round3_execution": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE",
-    "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
-    "full_scale_authorized": true
-  },
-  "phase364_settlement": {
-    "execution": "ACCEPT_EXECUTION_NEW_MANUSCRIPT_PRODUCED",
-    "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
-    "manuscript_bytes": 110859,
-    "manuscript_lines": 4860,
-    "quality_acceptance_claimed": false
+    "next_action": "Produce a spatial/pacing redesign plan, a compressed first-act rewrite pilot, and a character dialogue-voice matrix. Actual human must accept clarity, pace, voice differentiation and desire-to-continue before any full-manuscript reconstruction."
   },
   "phase365_settlement": {
     "execution": "ACCEPT_VALID_FRESH_POST_REAUTHORING_VALIDATION",
-    "raw_report_sha256": "3c022f563102701ed1bb2ad80e532e8eb22c91d4ad6ee8c1707dfbbf0890c9fa",
-    "raw_report_bytes": 41446,
-    "raw_report_lines": 492,
-    "pass_A_artifact_sha256": "117d196315d4ddca1b14a8be29de5e2c3760528dcdea7e9ffc713f28c5543eba",
-    "pass_A": "PASS_WITH_LOCATED_FRICTION",
     "overall": "PASS_WITH_LOCATED_FRICTION",
-    "ready_for_actual_human_target_reader_revalidation": true,
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE365_INDEPENDENT_POST_REAUTHORING_VALIDATION_V1.json",
-    "human_failure_closure_authorized": false,
-    "final_freeze_authorized": false
+    "raw_report_sha256": "3c022f563102701ed1bb2ad80e532e8eb22c91d4ad6ee8c1707dfbbf0890c9fa",
+    "historical_result_preserved": true,
+    "actual_human_phase366_contradiction": "MAJOR_FALSE_POSITIVE_AGAINST_ACTUAL_TARGET_READER"
+  },
+  "phase366_settlement": {
+    "execution": "ACTUAL_HUMAN_H1_DECISIVE_REJECTION",
+    "candidate_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "human_overall": "FAIL_CURRENT_CANDIDATE_REJECTED",
+    "first_fast_forward_zone": "immediately after rear-window escape begins",
+    "any_genuine_desire_to_continue": false,
+    "dialogue_template_rejection": "SEVERE",
+    "narrative_clarity": "FAIL",
+    "pacing": "FAIL_SEVERELY_TOO_SLOW",
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_H1_FAIL_V1.json"
   },
   "manuscript_quality_state": {
     "current_working_candidate_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
-    "status": "PHASE366_ACTUAL_HUMAN_REVALIDATION_PENDING",
-    "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
-    "open_target_reader_failure_count": 7,
-    "TR_F01_to_TR_F07": "OPEN_PENDING_ACTUAL_HUMAN_NEW_SHA_REVALIDATION",
+    "status": "ACTUAL_HUMAN_REJECTED_PHASE367_PILOT_REDESIGN_REQUIRED",
+    "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V4.json",
+    "open_target_reader_failure_count": 9,
+    "TR_F06": "STILL_FAILING_STRONGLY_RECURRING_QA_TEMPLATE",
+    "TR_F07": "MATERIALLY_IMPROVED_BUT_NOT_SUFFICIENT",
+    "TR_F08": "NEW_OPEN_BLOCKER_SCENE_SPATIAL_CAUSALITY",
+    "TR_F09": "NEW_OPEN_BLOCKER_SERIAL_CHECKPOINT_PACING_DRAG",
     "human_failures_closed": false,
+    "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false
+  },
+  "architecture_state": {
+    "V4_2_status": "DEVELOPMENTAL_REQUIRES_NEW_UNCONTAMINATED_HOLDOUT",
+    "Phase365_false_positive_requires_hardening": true,
+    "new_developmental_module": "modules/spatial-causality-pacing-and-dialogue-voice.md"
   },
   "governance": {
     "actual_human_result_controls_current_candidate": true,
     "AI_may_not_override_human_result": true,
-    "Phase365_AI_pass_is_not_human_acceptance": true,
-    "do_not_repair_before_Phase366_human_result": true,
-    "post_change_actual_human_validation_required": true,
-    "architecture_promotion_requires_new_uncontaminated_holdout": true,
+    "functional_scene_uniqueness_does_not_prove_good_pacing": true,
+    "embedded_action_does_not_prove_voice_diversity": true,
+    "scene_exit_requires_on_page_resolution_of_declared_blockers": true,
+    "pilot_before_next_full_rewrite": true,
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "claim_later_sequences_physically_appended": false,
-    "later_material_transitions_exist_in_authoritative_state": true
+    "claim_later_sequences_physically_appended": false
   },
   "invariants": {
     "missing_result_means": "UNKNOWN",
@@ -86,8 +83,7 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase366_may_not_edit_manuscript_before_human_result": true,
-    "Phase365_AI_result_cannot_replace_actual_human_revalidation": true
+    "Phase367_may_not_rewrite_full_manuscript": true
   },
-  "rollback": {"authorized": false, "receipt": null}
+  "rollback": {"authorized": false,"receipt": null}
 }
