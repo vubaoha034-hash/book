@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 367,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1",
+  "status": "READY_NOT_STARTED",
+  "input_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "trigger": "PHASE366_ACTUAL_HUMAN_REJECTION_AFTER_PHASE365_FRESH_AI_FALSE_POSITIVE",
+  "purpose": "Redesign only the early disengagement zone to calibrate spatial clarity, pacing compression and character-specific dialogue voice before any new full-manuscript rewrite.",
+  "required_context": [
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_H1_FAIL_V1.json",
+    "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V4.json",
+    "modules/spatial-causality-pacing-and-dialogue-voice.md",
+    "modules/human-prose-surface-calibration.md",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json"
+  ],
+  "authoring_scope": {
+    "full_manuscript_rewrite": false,
+    "first_act_pilot_only": true,
+    "target_zone": "from opening meal/commission through the first post-escape major irreversible turn, covering the exact zone where the human first wanted to fast-forward",
+    "may_merge_cut_reorder_current_scenes": true,
+    "may_delete_current_route/checkpoint scenes": true,
+    "may_rewrite_opening_crowd_and_escape_blocking": true,
+    "may_change_information_delivery": true,
+    "may_change dialogue structure": true
+  },
+  "hard_requirements": {
+    "spatial_map_before_prose": true,
+    "all_declared_exit_blockers_must_be_resolved_on_page": true,
+    "crowd_nonentry_requires_legible_reason": true,
+    "rear_alley_people_cannot_disappear_off_page": true,
+    "serial_checkpoint_scenes_must_be_merged_or_cut": true,
+    "first_act_must_reach_a_major irreversible turn materially faster than current manuscript": true,
+    "major_characters_must_use_distinct conversational strategies": true,
+    "ordinary dialogue may_not_default_to_question_exact_answer_followup_exact_answer": true,
+    "Round3_embodied_dialogue_strength_must_be_preserved_without_copying_sentences": true,
+    "no_style_imitation": true
+  },
+  "voice_matrix_required_for": ["刘还山","顾青禾","顾承岳","楚十三","霍九翁_if_present_in_pilot"],
+  "required_outputs": [
+    "PHASE367_FIRST_ACT_SPATIAL_AND_PACING_REDESIGN_PLAN_V1.txt",
+    "PHASE367_FIRST_ACT_REWRITE_PILOT_V1.txt",
+    "PHASE367_CHARACTER_DIALOGUE_VOICE_MATRIX_V1.txt"
+  ],
+  "human_acceptance_questions": [
+    "Can you clearly picture where people are and why each route is or is not usable?",
+    "Does the story move materially faster after the opening?",
+    "Do the principal characters sound like different people rather than one authorial Q&A engine?",
+    "Do you want to continue after the pilot?"
+  ],
+  "authorization": {
+    "pilot_rewrite": true,
+    "full_manuscript_rewrite": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_completion": "Actual target reader judges the pilot. Full-manuscript reconstruction remains blocked unless the reader explicitly accepts clarity, pace, voice, and desire-to-continue."
+}
