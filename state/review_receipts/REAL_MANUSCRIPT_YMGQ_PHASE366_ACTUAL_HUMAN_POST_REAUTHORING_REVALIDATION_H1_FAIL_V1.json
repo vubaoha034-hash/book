@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 366,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_V1",
+  "status": "ACTUAL_HUMAN_H1_FAIL_CURRENT_CANDIDATE_REJECTED",
+  "manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "human_evidence_type": "DIRECT_ACTUAL_TARGET_READER_POST_REAUTHORING_FEEDBACK",
+  "H1": {
+    "first_fast_forward_or_stop_zone": "immediately after the group begins exiting through the rear window / early post-opening escape sequence",
+    "genuine_desire_to_continue": false,
+    "dialogue_rejection": "SEVERE_RECURRING_SINGLE_TEMPLATE_QA_CADENCE",
+    "character_surface": "individual scenes/characters may look better, but dialogue voice remains insufficiently differentiated",
+    "suspense_interest": "NOT_MEANINGFULLY_ASSESSABLE_BECAUSE_READER_DOES_NOT_WANT_TO_CONTINUE",
+    "narrative_clarity": "FAIL_CONFUSING_SCENE_STAGING_AND_CAUSAL_BLOCKING",
+    "pacing": "FAIL_SEVERELY_TOO_SLOW"
+  },
+  "located_current_sha_evidence": [
+    "Opening establishes a growing group outside and explicitly states the rear alley also has people, yet the later rear-window escape does not visibly resolve those rear-alley observers/blockers.",
+    "Repeated exact-question -> exact-short-answer -> follow-up-question cadence remains present even when actions are embedded around the turns.",
+    "Post-opening structure serializes multiple travel/checkpoint scenes, causing repeated stop-explain-discover-move cycles before the bridge."
+  ],
+  "coordinator_adjudication": {
+    "phase366_overall": "FAIL_CURRENT_CANDIDATE_REJECTED",
+    "phase365_fresh_ai_result": "HISTORICAL_VALID_EXECUTION_FALSE_POSITIVE_AGAINST_ACTUAL_HUMAN_READER",
+    "additional_H2_required_to_reject_candidate": false,
+    "current_candidate_final_freeze_eligible": false,
+    "full_manuscript_rewrite_immediately": false,
+    "next_required_method": "STRUCTURAL_SPATIAL_LOGIC_PACING_AND_VOICE_REDESIGN_PILOT_BEFORE_ANY_NEW_FULL_DRAFT"
+  },
+  "governance": {
+    "actual_human_result_controls_current_candidate": true,
+    "AI_may_not_override_human_rejection": true,
+    "functional_scene_uniqueness_does_not_prove_good_pacing": true,
+    "embodied_action_does_not_prove_dialogue_voice_diversity": true,
+    "scene_exit_requires_resolution_of_previously_declared_observers_or_blockers": true,
+    "serial_checkpoint_structure_can_fail_even_when_each_scene_has_a_valid_function": true
+  }
+}
