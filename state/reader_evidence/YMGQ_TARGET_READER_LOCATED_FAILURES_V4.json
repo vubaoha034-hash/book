@@ -1,0 +1,39 @@
+{
+  "schema_version": "4.0.0",
+  "project_id": "novel-distillation",
+  "manuscript_title": "一命过桥",
+  "current_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "supersedes_for_current_candidate": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V3.json",
+  "historical_v3_rewritten": false,
+  "status": "OPEN_BLOCKING_HUMAN_READER_EVIDENCE_AFTER_PHASE366_REJECTION",
+  "current_open_failure_count": 9,
+  "failures": [
+    {"id":"TR-F01","class":"MANUSCRIPT_LEVEL_SKELETONIZED_DRAMATIZATION","status":"OPEN_ON_CURRENT_SHA_NOT_CLOSED_BY_PHASE365_AI"},
+    {"id":"TR-F02","class":"AUTHOR_SHAPED_INFORMATION_PACKET","status":"OPEN_ON_CURRENT_SHA"},
+    {"id":"TR-F03","class":"REENTRY_WITHOUT_POST_WITHDRAWAL_DECISION_DELTA","status":"NOT_REASSESSED_BY_PHASE366_H1"},
+    {"id":"TR-F04","class":"LOW_EXPERIENTIAL_CLIMAX_VOLTAGE_AND_READER_PULL","status":"STILL_FAILING_STRONGLY_GLOBAL_READER_PULL_ZERO"},
+    {"id":"TR-F05","class":"LOW_SUSPENSE_CURIOSITY_CHARGE","status":"UNASSESSABLE_DUE_EARLY_DISENGAGEMENT"},
+    {"id":"TR-F06","class":"MANUSCRIPT_LEVEL_SYNTHETIC_SHORT_TURN_PROSE_AND_QUOTABLE_PUNCHLINE_CADENCE","status":"STILL_FAILING_STRONGLY_RECURRING_QA_TEMPLATE"},
+    {"id":"TR-F07","class":"DISEMBODIED_DIALOGUE_WITHOUT_SCENE_BEARING_ACTION_REACTION_PERCEPTION","status":"MATERIALLY_IMPROVED_BUT_DIALOGUE_ENGINE_STILL_TEMPLATE_BOUND"},
+    {
+      "id":"TR-F08",
+      "class":"SCENE_SPATIAL_CAUSALITY_AND_BLOCKING_CREDIBILITY_FAILURE",
+      "status":"NEW_OPEN_BLOCKER",
+      "reader_effect":"The reader cannot reliably picture who occupies which entrance/exit, what physically or socially prevents movement, or why previously declared blockers/observers cease to matter. This produces 'how can one door hold all those people?' and rear-alley continuity disbelief rather than useful uncertainty.",
+      "hard_rule":"Any scene that introduces a blocked exit, crowd, pursuer, watcher, guard line, or physical barrier must resolve or causally transform that constraint before characters use the route. Do not rely on invisible off-page disappearance. A barrier only holds a group if a material, legal, social, tactical, or motivational reason is legible in the scene."
+    },
+    {
+      "id":"TR-F09",
+      "class":"SERIAL_CHECKPOINT_PACING_DRAG_AND_OVERSEGMENTED_TRAVEL_STRUCTURE",
+      "status":"NEW_OPEN_BLOCKER",
+      "reader_effect":"After the opening escape, the story proceeds through too many full-stop travel/checkpoint scenes, each individually functional but cumulatively slow. The reader experiences repeated move -> stop -> explain/discover -> move cycles and loses desire to continue.",
+      "hard_rule":"Adjacent scenes must not be preserved merely because each has a distinct local function. If multiple consecutive scenes mainly move route, reveal a clue, re-state trust, or process injury, merge/cut/reorder until the forward objective changes faster. Scene uniqueness is not pacing proof."
+    }
+  ],
+  "authority_rule": {
+    "actual_human_result_controls_current_candidate": true,
+    "Phase365_fresh_AI_PASS_may_not_close_any_current_human_failure": true,
+    "current_candidate_rejected": true,
+    "next_full_rewrite_blocked_until_logic_pace_voice_pilot_is_human_accepted": true
+  }
+}
