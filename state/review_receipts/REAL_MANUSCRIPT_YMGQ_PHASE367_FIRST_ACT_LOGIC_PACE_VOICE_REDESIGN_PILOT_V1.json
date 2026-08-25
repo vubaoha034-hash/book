@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1",
+  "phase": 367,
+  "status": "OUTPUTS_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+  "input_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+  "outputs": {
+    "pilot": {
+      "file": "PHASE367_FIRST_ACT_REWRITE_PILOT_V1.txt",
+      "sha256": "ef15f83c961433cc192235ef9f14b3fb80d9ba1cf3fb90327d407bdd0617308e",
+      "bytes": 13629,
+      "lines": 359,
+      "human_response_sheet_present": true
+    },
+    "dialogue_voice_matrix": {
+      "file": "PHASE367_CHARACTER_DIALOGUE_VOICE_MATRIX_V1.txt",
+      "sha256": "63d0caa547f2b8e0aa83de6ae07f8d2230eb0ab97568c0e82224218fd3b46470",
+      "bytes": 12827,
+      "lines": 251
+    },
+    "spatial_pacing_plan": {
+      "file": "PHASE367_FIRST_ACT_SPATIAL_AND_PACING_REDESIGN_PLAN_V1.txt",
+      "sha256": "be276d13ac430e7e9db5846699b3173e1b51d38b366ea49d9c46518439fb752c",
+      "bytes": 12770,
+      "lines": 211
+    }
+  },
+  "contract_checks": {
+    "three_required_outputs_present": true,
+    "pilot_stops_at_first_major_irreversible_turn": true,
+    "pilot_does_not_continue_to_full_manuscript": true,
+    "human_response_sheet_present": true
+  },
+  "acceptance": {
+    "execution_complete": true,
+    "human_quality_acceptance": false,
+    "full_manuscript_rewrite_authorized": false,
+    "human_failure_closure_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "next_required_action": "Actual target reader reads only the Phase367 pilot as a human experience test and reports spatial clarity, remaining physical/causal errors, pace, first skim urge, voice differentiation, most AI-like dialogue, desire to continue, and whether full reconstruction may proceed."
+}
