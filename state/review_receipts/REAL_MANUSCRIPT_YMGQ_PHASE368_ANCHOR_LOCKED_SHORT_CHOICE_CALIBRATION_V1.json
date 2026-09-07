@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 368,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1",
+  "status": "OUTPUTS_RECEIVED_PENDING_ACTUAL_HUMAN_SELECTION",
+  "recorded_at": "2026-09-07T15:58:00+09:00",
+  "authoritative_anchor": {
+    "phase363_fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+    "anchor_scene": "CAL-03 HUO JIUWENG FUSION terminal passage",
+    "anchor_modified": false
+  },
+  "output": {
+    "file": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+    "sha256": "e283bbdc63e25fff32eb83bd29283b00b61ab9c80524a4b11918011bbf6cc0f9",
+    "git_blob_sha": "271e4fbbe186a3130df28f5b1fcb1bdcf9c11145",
+    "bytes": 6091,
+    "lines": 219,
+    "choices": ["A","B","C"]
+  },
+  "contract_checks": {
+    "exactly_three_short_choices": true,
+    "same_anchor_for_all_choices": true,
+    "full_manuscript_not_written": true,
+    "long_pilot_not_written": true,
+    "ai_winner_selection_not_performed": true,
+    "human_choice_sheet_present": true
+  },
+  "acceptance": {
+    "execution_complete": true,
+    "human_quality_acceptance": false,
+    "selected_choice": null,
+    "selected_choice_extension_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "next_required_action": "Actual target reader reads A/B/C and selects the best-reading, least-AI, strongest-desire-to-continue option, or returns ALL FAIL. No further scale is allowed before this human selection."
+}
