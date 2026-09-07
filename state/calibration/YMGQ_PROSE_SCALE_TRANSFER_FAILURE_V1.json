@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-09-07T15:56:30+09:00",
+  "status": "OPEN_BLOCKING_PIPELINE_FAILURE",
+  "failure_id": "PST-F01",
+  "class": "HUMAN_ACCEPTED_SHORT_FORM_PROSE_COLLAPSES_DURING_MECHANISM_ONLY_SCALE",
+  "evidence_chain": {
+    "phase363_human_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "phase363_status": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE",
+    "phase363_fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+    "phase364_scale_method": "Round3 used only as accepted MECHANISM reference; recognizable Round3 sentences were deliberately not copied.",
+    "phase366_full_manuscript_human_result": "FAIL_CURRENT_CANDIDATE_REJECTED",
+    "phase367_pilot_human_result": "FAIL_PILOT_REJECTED"
+  },
+  "diagnosis": {
+    "invalid_inference": "A human-accepted short-form prose surface can be reduced to abstract mechanisms and later regenerated at long-form scale without material quality loss.",
+    "observed_failure": "The exact prose surface that created reader pull was not preserved. Long-form regeneration satisfied increasingly explicit mechanisms and structural checks while losing the human-approved reading effect.",
+    "engineering_consequence": "Mechanism compliance is not sufficient evidence of prose-surface continuity."
+  },
+  "binding_repair_hypothesis": {
+    "exact_anchor_required": true,
+    "anchor_may_not_be_rewritten": true,
+    "short_choice_calibration_before_scale": true,
+    "human_selects_winner": true,
+    "no_ai_winner_selection": true,
+    "span_growth_only_after_human_acceptance": true,
+    "full_manuscript_rewrite_blocked": true
+  },
+  "not_authorized": [
+    "another mechanism-only broad rewrite",
+    "another full-manuscript rewrite",
+    "architecture promotion",
+    "final freeze"
+  ]
+}
