@@ -117,8 +117,10 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 19,
-    "physical_event_hash": "55111aa831188327e2003fcdcef665aa6d2e99c57b41dc5ba71fd16dc5f7e292",
+    "physical_STATE_LEDGER_sequence": 18,
+    "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
+    "logical_latest_checkpoint_sequence": 19,
+    "phase367_to_phase368_transition_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_ACTUAL_HUMAN_PILOT_REVIEW_H2_FAIL_V1.json",
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
