@@ -1,8 +1,8 @@
 {
-  "schema_version": "2.4.1",
+  "schema_version": "2.5.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-08-25T11:16:00+08:00",
+  "updated_at": "2026-09-07T15:59:30+09:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,19 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT",
-    "phase_ordinal": 367,
-    "status": "AWAITING_ACTUAL_HUMAN_REVIEW",
-    "input_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json",
-    "execution_scope": "Pilot-only redesign of the earliest human disengagement zone. Fix spatial causality/blocking, serial-checkpoint pacing drag, and manuscript-wide question-answer voice homogenization before any new full draft.",
-    "pilot_rewrite_authorized": true,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION",
+    "phase_ordinal": 368,
+    "status": "AWAITING_ACTUAL_HUMAN_SELECTION",
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1.json",
+    "execution_scope": "Exact Phase363 human-accepted prose anchor plus three short continuation choices. Test prose-surface transfer directly; no mechanism-only scale and no long-form drafting.",
+    "short_choice_authorized": true,
+    "selected_choice_extension_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "human_failure_closure_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only the Phase367 pilot and judges spatial clarity, physical/causal logic, pace, first skim urge, voice differentiation, AI-like dialogue, desire to continue, and whether a later full reconstruction may proceed."
+    "next_action": "Actual target reader reads only A/B/C in state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt and selects best-reading, least-AI, strongest-desire-to-continue choice, or ALL FAIL."
   },
   "phase365_settlement": {
     "execution": "ACCEPT_VALID_FRESH_POST_REAUTHORING_VALIDATION",
@@ -44,26 +44,56 @@
     "pacing": "FAIL_SEVERELY_TOO_SLOW",
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE366_ACTUAL_HUMAN_POST_REAUTHORING_REVALIDATION_H1_FAIL_V1.json"
   },
-  "phase367_outputs": {
-    "status": "OUTPUTS_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+  "phase367_settlement": {
+    "execution": "OUTPUTS_RECEIVED_THEN_ACTUAL_HUMAN_REJECTED",
     "pilot_sha256": "ef15f83c961433cc192235ef9f14b3fb80d9ba1cf3fb90327d407bdd0617308e",
-    "pilot_bytes": 13629,
-    "pilot_lines": 359,
-    "dialogue_voice_matrix_sha256": "63d0caa547f2b8e0aa83de6ae07f8d2230eb0ab97568c0e82224218fd3b46470",
-    "spatial_pacing_plan_sha256": "be276d13ac430e7e9db5846699b3173e1b51d38b366ea49d9c46518439fb752c",
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json",
+    "mechanical_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json",
+    "human_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_ACTUAL_HUMAN_PILOT_REVIEW_H2_FAIL_V1.json",
+    "human_overall": "FAIL_PILOT_REJECTED",
+    "reader_stopped_early": true,
+    "attraction": "FAIL_NO_ATTRACTIVE_PULL",
+    "ai_smell": "FAIL_STILL_HEAVY",
+    "desire_to_continue": false,
+    "full_reconstruction_authorized": false
+  },
+  "phase363_prose_anchor": {
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "status": "ACCEPT_HUMAN_PROSE_ENGINE_READY_TO_SCALE_HISTORICAL",
+    "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+    "human_reader_effect": "MATERIAL_IMPROVEMENT_ACCEPTED_FOR_SCALE",
+    "historical_acceptance_preserved": true,
+    "mechanism_only_scale_proven_sufficient": false
+  },
+  "phase368_outputs": {
+    "status": "OUTPUTS_RECEIVED_PENDING_ACTUAL_HUMAN_SELECTION",
+    "choice_pack": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+    "choice_pack_sha256": "e283bbdc63e25fff32eb83bd29283b00b61ab9c80524a4b11918011bbf6cc0f9",
+    "choices": [
+      "A",
+      "B",
+      "C"
+    ],
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1.json",
     "execution_complete": true,
-    "human_quality_acceptance": false
+    "human_quality_acceptance": false,
+    "selected_choice": null
+  },
+  "prose_scale_transfer_state": {
+    "failure_record": "state/calibration/YMGQ_PROSE_SCALE_TRANSFER_FAILURE_V1.json",
+    "failure_id": "PST-F01",
+    "status": "OPEN_BLOCKING_PIPELINE_FAILURE",
+    "diagnosis": "Human-accepted short-form prose quality did not survive mechanism-only long-form regeneration.",
+    "repair_mode": "EXACT_ANCHOR_SHORT_CHOICE_HUMAN_SELECTION_BEFORE_SPAN_GROWTH"
   },
   "manuscript_quality_state": {
     "current_working_candidate_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
-    "status": "ACTUAL_HUMAN_REJECTED_PHASE367_PILOT_HUMAN_REVIEW_PENDING",
+    "status": "CURRENT_FULL_MANUSCRIPT_REJECTED_PHASE367_PILOT_REJECTED_PHASE368_SHORT_CHOICE_PENDING",
     "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V4.json",
     "open_target_reader_failure_count": 9,
     "TR_F06": "STILL_FAILING_STRONGLY_RECURRING_QA_TEMPLATE",
     "TR_F07": "MATERIALLY_IMPROVED_BUT_NOT_SUFFICIENT",
-    "TR_F08": "NEW_OPEN_BLOCKER_SCENE_SPATIAL_CAUSALITY",
-    "TR_F09": "NEW_OPEN_BLOCKER_SERIAL_CHECKPOINT_PACING_DRAG",
+    "TR_F08": "OPEN_BLOCKER_SCENE_SPATIAL_CAUSALITY",
+    "TR_F09": "OPEN_BLOCKER_SERIAL_CHECKPOINT_PACING_DRAG",
     "human_failures_closed": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false
@@ -71,6 +101,7 @@
   "architecture_state": {
     "V4_2_status": "DEVELOPMENTAL_REQUIRES_NEW_UNCONTAMINATED_HOLDOUT",
     "Phase365_false_positive_requires_hardening": true,
+    "prose_scale_transfer_failure_requires_hardening": true,
     "new_developmental_module": "modules/spatial-causality-pacing-and-dialogue-voice.md"
   },
   "governance": {
@@ -79,13 +110,15 @@
     "functional_scene_uniqueness_does_not_prove_good_pacing": true,
     "embedded_action_does_not_prove_voice_diversity": true,
     "scene_exit_requires_on_page_resolution_of_declared_blockers": true,
-    "pilot_before_next_full_rewrite": true,
-    "Phase367_output_completion_is_not_human_acceptance": true,
+    "phase363_exact_prose_anchor_is_valid_direct_calibration_evidence": true,
+    "mechanism_only_distillation_does_not_prove_prose_surface_transfer": true,
+    "short_choice_human_selection_before_span_growth": true,
+    "Phase368_output_completion_is_not_human_acceptance": true,
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 18,
-    "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
+    "physical_STATE_LEDGER_sequence": 19,
+    "physical_event_hash": "55111aa831188327e2003fcdcef665aa6d2e99c57b41dc5ba71fd16dc5f7e292",
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -95,8 +128,12 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase367_may_not_rewrite_full_manuscript": true,
-    "Phase367_may_not_advance_to_full_rewrite_without_actual_human_acceptance": true
+    "Phase368_may_not_rewrite_full_manuscript": true,
+    "Phase368_may_not_extend_selected_choice_without_actual_human_selection": true,
+    "Phase363_historical_human_acceptance_may_not_be_rewritten": true
   },
-  "rollback": {"authorized": false,"receipt": null}
+  "rollback": {
+    "authorized": false,
+    "receipt": null
+  }
 }
