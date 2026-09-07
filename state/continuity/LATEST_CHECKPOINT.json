@@ -1,63 +1,87 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 18,
-  "recorded_at": "2026-08-25T11:16:30+08:00",
+  "sequence": 19,
+  "recorded_at": "2026-09-07T16:00:00+09:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": ["REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1"],
-  "current_focus": "Phase367 outputs received and mechanically verified. Pilot SHA ef15f83c...7308e, dialogue-voice matrix SHA 63d0caa5...646a70, spatial/pacing plan SHA be276d13...b752c. The pilot stops at the intended irreversible '阻缉，同拿' turn and does not continue into a full manuscript. Human quality acceptance is NOT yet established. Actual target reader must now judge clarity, causality, pace, voice differentiation and desire-to-continue before any full reconstruction is authorized.",
+  "active_task_ids": [
+    "REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1"
+  ],
+  "current_focus": "Phase367 pilot has now been actually-human rejected: reader stopped at the west-side old-man/coal-cart beat, reported no attractive pull and persistent AI-like prose, and did not authorize full reconstruction. Historical Phase363 Round3 remains the last human-positive prose surface. Phase368 therefore locks that exact prose as a direct anchor and provides only three short A/B/C continuations. Human selection is required before any span growth.",
   "completed": [
-    "Phase365 fresh-AI execution remains historically valid but is confirmed a major false positive against actual target-reader acceptance",
-    "Phase366 actual-human H1 decisively rejected current full manuscript SHA 2e725581...",
-    "TR-F08 scene spatial causality/blocking credibility failure and TR-F09 serial-checkpoint pacing drag remain open",
-    "Phase367 spatial/pacing redesign plan produced at SHA be276d13ac430e7e9db5846699b3173e1b51d38b366ea49d9c46518439fb752c",
-    "Phase367 character dialogue-voice matrix produced at SHA 63d0caa547f2b8e0aa83de6ae07f8d2230eb0ab97568c0e82224218fd3b46470",
-    "Phase367 first-act rewrite pilot produced at SHA ef15f83c961433cc192235ef9f14b3fb80d9ba1cf3fb90327d407bdd0617308e, 13629 bytes, 359 lines",
-    "Pilot contract check passed: required three outputs exist, pilot does not expand into full manuscript, and human response sheet is present",
-    "Phase367 output receipt persisted",
-    "GN-VDNA-01 remains DEFAULT OFF; Phase320 remains highest accepted checkpoint"
+    "Phase363 Round3 historical actual-human acceptance preserved at fusion-pack SHA d6d5f0bc...04bb9",
+    "Phase364/366 full manuscript remains actual-human rejected",
+    "Phase367 mechanically completed but actual-human H2 rejected pilot SHA ef15f83c...7308e",
+    "Phase367 human rejection receipt persisted",
+    "PST-F01 scale-transfer failure recorded: mechanism-only regeneration did not preserve human-accepted prose quality",
+    "Phase368 anchor-locked A/B/C short-choice pack produced at SHA256 e283bbdc...cc0f9",
+    "Phase368 mechanical output receipt persisted",
+    "Phase320 remains highest accepted checkpoint; GN-VDNA-01 remains DEFAULT OFF"
   ],
   "incomplete": [
-    "Actual human has not yet accepted or rejected Phase367 pilot",
-    "Spatial clarity on the pilot is not yet human-approved",
-    "Pace improvement on the pilot is not yet human-approved",
-    "Dialogue voice differentiation on the pilot is not yet human-approved",
-    "Desire-to-continue on the pilot is not yet human-approved",
+    "Actual human has not selected A/B/C or ALL FAIL for Phase368",
+    "No Phase368 choice has human quality acceptance",
+    "No selected-choice extension is authorized",
     "Current full manuscript remains rejected",
-    "Open human failure count remains 9",
-    "No next full manuscript reconstruction is authorized",
+    "Open target-reader failure count remains 9",
+    "PST-F01 prose scale-transfer failure remains open",
+    "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
     "V4.2 architecture remains developmental",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18"
+    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 19"
   ],
   "blocked": [
-    "PHASE367_PILOT_ACTUAL_HUMAN_REVIEW_NOT_COMPLETED",
+    "PHASE368_ACTUAL_HUMAN_SELECTION_NOT_COMPLETED",
+    "PST_F01_PROSE_SCALE_TRANSFER_FAILURE",
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
-    "TR_F06_RECURRING_QA_TEMPLATE",
-    "TR_F08_SPATIAL_CAUSALITY_FAILURE",
-    "TR_F09_SERIAL_CHECKPOINT_PACING_DRAG",
-    "FULL_REWRITE_BLOCKED_UNTIL_PHASE367_PILOT_HUMAN_ACCEPTANCE",
+    "PHASE367_PILOT_ACTUAL_HUMAN_REJECTED",
+    "FULL_REWRITE_BLOCKED_UNTIL_SHORT_CHOICE_AND_LATER_SPAN_GROWTH_HUMAN_ACCEPTANCE",
     "FINAL_FREEZE_BLOCKED"
   ],
   "do_not_reopen": [
     "Phase365 fresh-AI PASS as current-human acceptance",
+    "Phase367 pilot as if human accepted",
+    "Another immediate long pilot",
     "Another immediate full-manuscript rewrite",
-    "Phase364 nine-movement architecture as protected structure",
-    "Generic action insertion as dialogue repair",
-    "Scene uniqueness as proof of good pacing",
-    "Phase367 output completion as if it were human quality acceptance",
+    "Mechanism-only abstraction of Phase363 as sufficient prose preservation",
     "Accepted Phase320 checkpoint or GN-VDNA-01 semantics"
   ],
-  "next_required_action": "Actual target reader reads PHASE367_FIRST_ACT_REWRITE_PILOT_V1.txt and returns the human response sheet: spatial clarity, remaining physical/causal error, pace vs Phase364, first skim urge, voice differentiation, most AI-like dialogue, desire to continue, and whether full reconstruction may proceed.",
+  "next_required_action": "Actual target reader reads state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt and answers only: best A/B/C, least-AI A/B/C, strongest desire-to-continue A/B/C, Phase363-level recovery YES/PARTLY/NO, or ALL FAIL.",
   "source_state_refs": [
-    {"path":"state/project_state.json","role":"authoritative Phase367 human-review-pending state"},
-    {"path":"state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json","role":"mechanically verified Phase367 outputs pending human review"},
-    {"path":"state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V4.json","role":"nine open human failure classes"},
-    {"path":"modules/spatial-causality-pacing-and-dialogue-voice.md","role":"spatial/pacing/voice hardening module"},
-    {"path":"state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json","role":"active Phase367 pilot task"},
-    {"path":"state/continuity/STATE_LEDGER.jsonl","role":"physical ledger through sequence18"}
+    {
+      "path": "state/project_state.json",
+      "role": "authoritative Phase368 human-selection-pending state"
+    },
+    {
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_ACTUAL_HUMAN_PILOT_REVIEW_H2_FAIL_V1.json",
+      "role": "actual-human Phase367 rejection"
+    },
+    {
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+      "role": "historical human-positive prose anchor receipt"
+    },
+    {
+      "path": "state/calibration/YMGQ_PROSE_SCALE_TRANSFER_FAILURE_V1.json",
+      "role": "PST-F01 scale-transfer failure"
+    },
+    {
+      "path": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1.json",
+      "role": "active Phase368 contract"
+    },
+    {
+      "path": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+      "role": "A/B/C human selection artifact"
+    },
+    {
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1.json",
+      "role": "mechanically verified Phase368 output pending human selection"
+    },
+    {
+      "path": "state/continuity/STATE_LEDGER.jsonl",
+      "role": "physical ledger remains verified through sequence18"
+    }
   ],
-  "status": "ACTIVE_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_AWAITING_HUMAN_REVIEW"
+  "status": "ACTIVE_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_AWAITING_ACTUAL_HUMAN_SELECTION"
 }
