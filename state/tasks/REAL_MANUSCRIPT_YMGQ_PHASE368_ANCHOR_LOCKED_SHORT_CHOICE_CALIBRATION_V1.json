@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 368,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE367_ACTUAL_HUMAN_PILOT_REJECTION_AND_PHASE363_SHORT_FORM_POSITIVE_RECALL",
+  "purpose": "Test direct transfer of the exact human-accepted Phase363 prose surface into a slightly longer span without reducing it to abstract mechanisms first.",
+  "authoritative_anchor": {
+    "source_task": "REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1",
+    "source_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+    "anchor_scene": "CAL-03 HUO JIUWENG FUSION terminal passage",
+    "anchor_text_may_be_modified": false
+  },
+  "binding_failure_evidence": [
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_ACTUAL_HUMAN_PILOT_REVIEW_H2_FAIL_V1.json",
+    "state/calibration/YMGQ_PROSE_SCALE_TRANSFER_FAILURE_V1.json"
+  ],
+  "scope": {
+    "full_manuscript_rewrite": false,
+    "long_pilot": false,
+    "exactly_three_short_choices": true,
+    "choice_labels": ["A","B","C"],
+    "same_anchor_for_all_choices": true,
+    "each_choice_target_chinese_chars": "roughly 500-900",
+    "human_selection_required": true
+  },
+  "hard_requirements": {
+    "do_not_paraphrase_anchor": true,
+    "do_not_use_phase364_or_phase367_as_prose_substrate": true,
+    "do_not_first_translate_anchor_into_style_rules": true,
+    "continuation_must_read_as_scene_not_explanation": true,
+    "no_question_exact_answer_interview_engine": true,
+    "no_authorial_explanation_of_character_intent": true,
+    "no_ai_self_selection_of_winner": true,
+    "no_scale_beyond_short_choice_pack_before_human_selection": true
+  },
+  "required_output": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+  "human_questions": [
+    "Which of A/B/C is best to read?",
+    "Which feels least AI-like?",
+    "Which creates the strongest desire to continue?",
+    "Does any option recover the Phase363-level improvement?"
+  ],
+  "authorization": {
+    "short_choice_authoring": true,
+    "selected_choice_extension": false,
+    "full_manuscript_rewrite": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_execution": "Stop after the three short choices. Actual target reader selects A/B/C or ALL FAIL. Only a human-selected choice may be extended in the next phase."
+}
