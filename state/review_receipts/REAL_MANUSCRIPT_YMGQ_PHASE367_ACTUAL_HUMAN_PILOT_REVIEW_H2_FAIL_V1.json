@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 367,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1",
+  "review_id": "ACTUAL_HUMAN_PILOT_REVIEW_H2",
+  "recorded_at": "2026-09-07T15:56:00+09:00",
+  "status": "REJECT_ACTUAL_HUMAN",
+  "pilot_sha256": "ef15f83c961433cc192235ef9f14b3fb80d9ba1cf3fb90327d407bdd0617308e",
+  "historical_execution_receipt_preserved": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_FIRST_ACT_LOGIC_PACE_VOICE_REDESIGN_PILOT_V1.json",
+  "human_result": {
+    "overall": "FAIL_PILOT_REJECTED",
+    "reader_stopped_early": true,
+    "stop_locator": "Immediately when 刘还山 lands after the rear-window exit and the remaining west-side old man rises from behind the coal cart, beginning with: 他脚刚落地，西边那个没走的老人就从煤车后直起身。",
+    "attraction": "FAIL_NO_ATTRACTIVE_PULL",
+    "desire_to_continue": false,
+    "ai_smell": "FAIL_STILL_HEAVY",
+    "full_pilot_read_required": false,
+    "full_reconstruction_authorized_by_human": false
+  },
+  "human_clarification": {
+    "phase367_opening_was_not_accepted_as_good": true,
+    "earlier_short_choice_calibration_was_materially_better": true,
+    "reference": "Phase363 Round3 short calibration samples"
+  },
+  "adjudication": {
+    "phase367_mechanical_execution_remains_historically_valid": true,
+    "phase367_human_quality_acceptance": false,
+    "phase367_may_not_be_used_as_scale_prose_baseline": true,
+    "phase365_ai_pass_may_not_override_this_result": true,
+    "full_manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "next_required_action": "Do not write another long pilot or full manuscript. Lock the exact Phase363 human-accepted prose as a direct anchor and run a short A/B/C continuation calibration to test whether prose quality survives extension without mechanism-only abstraction."
+}
