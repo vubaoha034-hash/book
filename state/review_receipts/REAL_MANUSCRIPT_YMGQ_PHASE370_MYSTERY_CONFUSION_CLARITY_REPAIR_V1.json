@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 370,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1",
+  "status": "OUTPUT_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+  "output": {
+    "file": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "scope_check": "PASS_LOCALIZED_REPAIR_ONLY",
+    "new_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "one_central_mystery_target": true,
+    "human_response_sheet_present": true
+  },
+  "acceptance": {
+    "execution_complete": true,
+    "human_quality_acceptance": false,
+    "second_span_growth_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "human_failure_closure_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "next_required_action": "Actual target reader reads only Phase370 and judges immediate motive clarity, mystery-vs-confusion, AI-smell direction, and desire to continue."
+}
