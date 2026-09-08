@@ -1,93 +1,83 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 20,
-  "recorded_at": "2026-09-08T09:46:00+08:00",
+  "sequence": 21,
+  "recorded_at": "2026-09-08T15:04:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
-    "REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1"
+    "REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1"
   ],
-  "current_focus": "Actual target reader selected Phase368 choice B because it has some suspense. This is a bounded preference signal, not full quality acceptance. Phase369 therefore extends only B by one continuous span and is now awaiting actual-human review for quality direction, first skim/stop point, AI-smell direction and genuine desire to continue. No second span or full reconstruction is authorized.",
+  "current_focus": "Phase369 produced a material human improvement: better than Phase368 B, no skim/stop urge, lighter AI smell, and genuine desire to continue. It is not fully accepted because immediate character motives remain too opaque, making suspense partly feel like confusion. Phase370 therefore performs only a localized motive-clarity repair on the selected-B span, preserving suspense while making current objectives legible. No second span growth or full rewrite is authorized.",
   "completed": [
-    "Phase363 Round3 historical actual-human acceptance preserved at fusion-pack SHA d6d5f0bc...04bb9",
-    "Phase364/366 full manuscript remains actual-human rejected",
+    "Phase363 Round3 historical human-positive prose anchor preserved",
     "Phase367 pilot remains actual-human rejected",
-    "PST-F01 prose scale-transfer failure remains recorded",
-    "Phase368 human selected B for bounded extension because it has some suspense",
-    "Phase368 human selection receipt persisted without overstating least-AI or full-quality acceptance",
-    "Phase369 B-only bounded span-growth artifact produced at git blob 500d3c4a...6bf32",
-    "Phase369 mechanical output receipt persisted",
+    "Phase368 B selected for suspense",
+    "Phase369 actual-human review recorded as material improvement with no skim urge, lighter AI smell and real desire to continue",
+    "PST-F02 mystery-vs-confusion immediate-motive-opacity blocker recorded",
+    "Phase370 localized motive-clarity repair produced",
+    "Phase370 mechanical output receipt persisted",
     "Phase320 remains highest accepted checkpoint; GN-VDNA-01 remains DEFAULT OFF"
   ],
   "incomplete": [
-    "Actual human has not yet reviewed the longer Phase369 B span",
-    "Phase369 quality direction is not yet human-established",
-    "First skim/stop point on Phase369 is unknown",
-    "AI-smell direction on Phase369 is unknown",
-    "Genuine desire to continue after Phase369 is unknown",
+    "Actual human has not yet reviewed Phase370 motive clarity",
+    "PST-F02 is not closed",
     "No second span growth is authorized",
     "Current full manuscript remains rejected",
-    "Open target-reader failure count remains 9",
-    "PST-F01 prose scale-transfer failure remains open",
     "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
     "V4.2 architecture remains developmental",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 20"
+    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 21"
   ],
   "blocked": [
-    "PHASE369_ACTUAL_HUMAN_REVIEW_NOT_COMPLETED",
-    "PST_F01_PROSE_SCALE_TRANSFER_FAILURE",
+    "PHASE370_ACTUAL_HUMAN_REVIEW_NOT_COMPLETED",
+    "PST_F02_MYSTERY_CONFUSION_IMMEDIATE_MOTIVE_OPACITY",
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
-    "PHASE367_PILOT_ACTUAL_HUMAN_REJECTED",
-    "SECOND_SPAN_GROWTH_BLOCKED_UNTIL_PHASE369_HUMAN_REVIEW",
-    "FULL_REWRITE_BLOCKED_UNTIL_LATER_SPAN_GROWTH_HUMAN_ACCEPTANCE",
+    "SECOND_SPAN_GROWTH_BLOCKED_UNTIL_PHASE370_HUMAN_REVIEW",
+    "FULL_REWRITE_BLOCKED",
     "FINAL_FREEZE_BLOCKED"
   ],
   "do_not_reopen": [
     "Phase365 fresh-AI PASS as current-human acceptance",
     "Phase367 pilot as if human accepted",
     "Phase368 B selection as if full prose acceptance",
+    "Phase369 material improvement as if motive clarity already passed",
     "Another immediate long pilot",
     "Another immediate full-manuscript rewrite",
     "Mechanism-only abstraction of Phase363 as sufficient prose preservation",
     "Accepted Phase320 checkpoint or GN-VDNA-01 semantics"
   ],
-  "next_required_action": "Actual target reader reads state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt and reports: better/same/worse than Phase368 B, first skim/stop point, AI smell lighter/same/heavier, and genuine desire to continue YES/MAYBE/NO.",
+  "next_required_action": "Actual target reader reads state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt and answers: immediate motives YES/PARTLY/NO; remaining unknown feels like suspense/confusion/both; AI smell lighter/same/heavier; desire to continue YES/MAYBE/NO.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "authoritative Phase369 human-review-pending state"
+      "role": "authoritative Phase370 human-review-pending state"
     },
     {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ACTUAL_HUMAN_SELECTION_B_V1.json",
-      "role": "actual-human Phase368 B selection"
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE369_ACTUAL_HUMAN_REVIEW_H3_V1.json",
+      "role": "actual-human Phase369 material-improvement evidence"
     },
     {
-      "path": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1.json",
-      "role": "active Phase369 bounded span-growth contract"
+      "path": "state/calibration/YMGQ_MYSTERY_CONFUSION_BOUNDARY_FAILURE_V1.json",
+      "role": "PST-F02 motive-opacity blocker"
     },
     {
-      "path": "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
-      "role": "B-only bounded span-growth human review artifact"
+      "path": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1.json",
+      "role": "active Phase370 contract"
     },
     {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1.json",
-      "role": "mechanically verified Phase369 output pending actual-human review"
+      "path": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+      "role": "Phase370 human review artifact"
     },
     {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
-      "role": "historical human-positive prose anchor receipt"
-    },
-    {
-      "path": "state/calibration/YMGQ_PROSE_SCALE_TRANSFER_FAILURE_V1.json",
-      "role": "PST-F01 scale-transfer failure"
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1.json",
+      "role": "mechanically verified Phase370 output pending human review"
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
       "role": "physical ledger remains verified through sequence18"
     }
   ],
-  "status": "ACTIVE_PHASE369_B_SELECTED_SPAN_GROWTH_AWAITING_ACTUAL_HUMAN_REVIEW"
+  "status": "ACTIVE_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_AWAITING_ACTUAL_HUMAN_REVIEW"
 }
