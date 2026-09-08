@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 369,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE368_ACTUAL_HUMAN_SELECTED_B_FOR_ITS_SUSPENSE",
+  "purpose": "Test whether the human-preferred Phase368 choice B can grow by one bounded continuous span without losing suspense, prose naturalness or human pull.",
+  "authoritative_inputs": {
+    "phase363_human_positive_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "phase368_choice_pack": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+    "phase368_human_selection": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ACTUAL_HUMAN_SELECTION_B_V1.json",
+    "selected_choice": "B"
+  },
+  "scope": {
+    "one_continuous_span_growth": true,
+    "target_new_chinese_chars": "roughly 1200-1800",
+    "full_manuscript_rewrite": false,
+    "long_pilot": false,
+    "multiple_variants": false
+  },
+  "hard_requirements": {
+    "choice_B_existing_text_may_not_be_rewritten": true,
+    "continue_directly_from_B_terminal_state": true,
+    "preserve_or_increase_suspense_without_immediate_explanation": true,
+    "no_question_exact_answer_interview_engine": true,
+    "no_authorial_explanation_of_character_intent": true,
+    "no_checkpoint_machine": true,
+    "no_new_location_created_only_to_deliver_information": true,
+    "no_ai_self_acceptance": true,
+    "stop_after_one_span": true
+  },
+  "required_output": "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+  "human_questions": [
+    "Does this remain interesting after becoming longer?",
+    "Where is the first place you want to skim or stop?",
+    "Is the AI smell lighter, same, or heavier?",
+    "Does the suspense make you genuinely want the next paragraph/section?"
+  ],
+  "authorization": {
+    "one_selected_choice_span_growth": true,
+    "second_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "next_after_execution": "Actual target reader reads only the Phase369 B span-growth artifact. No further scale is authorized unless the human explicitly wants to keep reading and does not report a new quality collapse."
+}
