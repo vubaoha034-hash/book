@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 369,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1",
+  "status": "ACTUAL_HUMAN_REVIEW_MATERIAL_IMPROVEMENT_WITH_NEW_CLARITY_BLOCKER",
+  "artifact": "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+  "actual_human_result": {
+    "quality_direction": "BETTER",
+    "first_skim_or_stop_point": "NONE",
+    "ai_smell_direction": "LIGHTER",
+    "genuine_desire_to_continue": true,
+    "new_concern": "CHARACTER_MOTIVE_LOCAL_CLARITY_INSUFFICIENT",
+    "reader_effect": "The suspense works, but the reader feels uncomfortable because immediate character motives and what people are trying to do are not sufficiently legible. The reader cannot tell whether uncertainty is intentional mystery or simple confusion."
+  },
+  "adjudication": {
+    "phase369_quality_full_acceptance": false,
+    "phase369_rejected": false,
+    "result": "PARTIAL_PASS_NEW_BLOCKER",
+    "second_span_growth_authorized": false,
+    "localized_clarity_repair_authorized": true,
+    "full_manuscript_rewrite_authorized": false,
+    "human_failure_closure_authorized": false,
+    "final_freeze_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "next_required_action": "Run a bounded Phase370 mystery-vs-confusion clarity repair on the selected-B span. Preserve suspense and lighter AI smell, but make each principal character's immediate objective legible on-page while keeping the larger truth unresolved."
+}
