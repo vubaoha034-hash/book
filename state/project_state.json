@@ -1,8 +1,8 @@
 {
-  "schema_version": "2.5.0",
+  "schema_version": "2.6.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-07T15:59:30+09:00",
+  "updated_at": "2026-09-08T09:45:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,20 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1",
-    "phase": "REAL_MANUSCRIPT_YMGQ_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION",
-    "phase_ordinal": 368,
-    "status": "AWAITING_ACTUAL_HUMAN_SELECTION",
-    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1.json",
-    "execution_scope": "Exact Phase363 human-accepted prose anchor plus three short continuation choices. Test prose-surface transfer directly; no mechanism-only scale and no long-form drafting.",
-    "short_choice_authorized": true,
-    "selected_choice_extension_authorized": false,
+    "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1",
+    "phase": "REAL_MANUSCRIPT_YMGQ_B_SELECTED_SPAN_GROWTH",
+    "phase_ordinal": 369,
+    "status": "AWAITING_ACTUAL_HUMAN_REVIEW",
+    "task_contract": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1.json",
+    "execution_scope": "Extend only the human-selected Phase368 choice B by one bounded continuous span. Test whether suspense and prose quality survive modest span growth without mechanism-only regeneration.",
+    "selected_choice": "B",
+    "one_span_growth_authorized": true,
+    "second_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "human_failure_closure_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only A/B/C in state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt and selects best-reading, least-AI, strongest-desire-to-continue choice, or ALL FAIL."
+    "next_action": "Actual target reader reads only state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt and judges quality direction, first skim/stop point, AI-smell direction, and genuine desire to continue."
   },
   "phase365_settlement": {
     "execution": "ACCEPT_VALID_FRESH_POST_REAUTHORING_VALIDATION",
@@ -64,30 +65,38 @@
     "historical_acceptance_preserved": true,
     "mechanism_only_scale_proven_sufficient": false
   },
-  "phase368_outputs": {
-    "status": "OUTPUTS_RECEIVED_PENDING_ACTUAL_HUMAN_SELECTION",
+  "phase368_settlement": {
+    "execution": "SHORT_CHOICE_PACK_COMPLETED_AND_HUMAN_B_SELECTED",
     "choice_pack": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
     "choice_pack_sha256": "e283bbdc63e25fff32eb83bd29283b00b61ab9c80524a4b11918011bbf6cc0f9",
-    "choices": [
-      "A",
-      "B",
-      "C"
-    ],
-    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_CALIBRATION_V1.json",
+    "human_selection_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ACTUAL_HUMAN_SELECTION_B_V1.json",
+    "selected_choice": "B",
+    "selection_reason": "B has some suspense",
+    "least_ai_choice": "UNKNOWN_NOT_EXPLICITLY_JUDGED",
+    "phase363_level_recovery": "UNKNOWN_NOT_EXPLICITLY_JUDGED",
+    "human_quality_acceptance": false,
+    "bounded_extension_authorized": true,
+    "full_manuscript_rewrite_authorized": false
+  },
+  "phase369_outputs": {
+    "status": "OUTPUT_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+    "file": "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+    "git_blob_sha": "500d3c4a975d05d397ea66db6ef0a529f2a6bf32",
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE369_B_SELECTED_SPAN_GROWTH_V1.json",
     "execution_complete": true,
     "human_quality_acceptance": false,
-    "selected_choice": null
+    "second_span_growth_authorized": false
   },
   "prose_scale_transfer_state": {
     "failure_record": "state/calibration/YMGQ_PROSE_SCALE_TRANSFER_FAILURE_V1.json",
     "failure_id": "PST-F01",
-    "status": "OPEN_BLOCKING_PIPELINE_FAILURE",
+    "status": "OPEN_PHASE369_BOUNDED_SPAN_GROWTH_HUMAN_REVIEW_PENDING",
     "diagnosis": "Human-accepted short-form prose quality did not survive mechanism-only long-form regeneration.",
-    "repair_mode": "EXACT_ANCHOR_SHORT_CHOICE_HUMAN_SELECTION_BEFORE_SPAN_GROWTH"
+    "repair_mode": "EXACT_ANCHOR_HUMAN_SELECTION_THEN_ONE_SPAN_AT_A_TIME"
   },
   "manuscript_quality_state": {
     "current_working_candidate_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
-    "status": "CURRENT_FULL_MANUSCRIPT_REJECTED_PHASE367_PILOT_REJECTED_PHASE368_SHORT_CHOICE_PENDING",
+    "status": "FULL_MANUSCRIPT_REJECTED_PHASE367_REJECTED_PHASE369_BOUNDED_SPAN_HUMAN_REVIEW_PENDING",
     "reader_evidence": "state/reader_evidence/YMGQ_TARGET_READER_LOCATED_FAILURES_V4.json",
     "open_target_reader_failure_count": 9,
     "TR_F06": "STILL_FAILING_STRONGLY_RECURRING_QA_TEMPLATE",
@@ -107,20 +116,20 @@
   "governance": {
     "actual_human_result_controls_current_candidate": true,
     "AI_may_not_override_human_result": true,
+    "phase363_exact_prose_anchor_is_valid_direct_calibration_evidence": true,
+    "mechanism_only_distillation_does_not_prove_prose_surface_transfer": true,
+    "human_selection_of_B_does_not_equal_full_quality_acceptance": true,
+    "one_span_at_a_time_before_further_scale": true,
     "functional_scene_uniqueness_does_not_prove_good_pacing": true,
     "embedded_action_does_not_prove_voice_diversity": true,
     "scene_exit_requires_on_page_resolution_of_declared_blockers": true,
-    "phase363_exact_prose_anchor_is_valid_direct_calibration_evidence": true,
-    "mechanism_only_distillation_does_not_prove_prose_surface_transfer": true,
-    "short_choice_human_selection_before_span_growth": true,
-    "Phase368_output_completion_is_not_human_acceptance": true,
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 19,
-    "phase367_to_phase368_transition_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_ACTUAL_HUMAN_PILOT_REVIEW_H2_FAIL_V1.json",
+    "logical_latest_checkpoint_sequence": 20,
+    "phase368_human_selection_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ACTUAL_HUMAN_SELECTION_B_V1.json",
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -130,8 +139,8 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase368_may_not_rewrite_full_manuscript": true,
-    "Phase368_may_not_extend_selected_choice_without_actual_human_selection": true,
+    "Phase369_may_not_rewrite_full_manuscript": true,
+    "Phase369_may_not_do_second_span_growth_without_actual_human_review": true,
     "Phase363_historical_human_acceptance_may_not_be_rewritten": true
   },
   "rollback": {
