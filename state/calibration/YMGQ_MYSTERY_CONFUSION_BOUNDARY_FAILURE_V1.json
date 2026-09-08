@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "failure_id": "PST-F02",
+  "class": "MYSTERY_VS_CONFUSION_IMMEDIATE_MOTIVE_OPACITY",
+  "status": "OPEN_BLOCKING_SPAN_GROWTH",
+  "trigger_phase": 369,
+  "trigger_artifact": "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+  "human_evidence": "Reader reports the span is better, has no skim urge, lighter AI smell, and real suspense, but immediate character motives are hard to understand and the result feels uncomfortable/opaque rather than cleanly mysterious.",
+  "diagnosis": "Too many unknowns are active at the same narrative layer. The reader lacks a stable answer to what each principal character wants right now, so unresolved larger-truth questions are experienced as confusion instead of suspense.",
+  "hard_boundary": {
+    "reader_should_know_now": [
+      "what each principal character is trying to do in the current scene",
+      "what immediate consequence they are trying to cause or prevent",
+      "why the next physical action makes sense"
+    ],
+    "reader_may_not_know_yet": [
+      "who ultimately falsified or manipulated the past record",
+      "why the deeper conspiracy exists",
+      "which larger faction benefits",
+      "the full truth behind the clue"
+    ]
+  },
+  "repair_rule": "Preserve one central unresolved mystery while resolving local action motive. Do not solve opacity by adding exposition packets or interview-style Q&A.",
+  "scale_gate": "No second span growth until an actual human says immediate motives are clear enough while suspense remains."
+}
