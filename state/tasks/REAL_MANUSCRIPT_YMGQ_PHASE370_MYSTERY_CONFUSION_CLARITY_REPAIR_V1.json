@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 370,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE369_ACTUAL_HUMAN_PARTIAL_PASS_WITH_IMMEDIATE_MOTIVE_OPACITY",
+  "purpose": "Preserve the selected-B suspense and lighter AI smell while making immediate character objectives legible enough that mystery does not feel like confusion.",
+  "required_context": [
+    "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE369_ACTUAL_HUMAN_REVIEW_H3_V1.json",
+    "state/calibration/YMGQ_MYSTERY_CONFUSION_BOUNDARY_FAILURE_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json"
+  ],
+  "scope": {
+    "revise_selected_B_span_only": true,
+    "new_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "preserve_phase368_B_core": true,
+    "reduce_active_unknown_count": true,
+    "one_central_mystery_only": true
+  },
+  "hard_requirements": {
+    "reader_can_state_each_principal_immediate_objective": true,
+    "reader_can_state_why_each_major_action_happens": true,
+    "larger_truth_remains_unresolved": true,
+    "do_not_add_exposition_packet": true,
+    "do_not_add_question_exact_answer_interview_engine": true,
+    "do_not_add_new_mystery_objects": true,
+    "do_not_restore_heavy_ai_cadence": true,
+    "no_second_span_growth": true
+  },
+  "required_output": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+  "human_questions": [
+    "Do you understand what each important person is trying to do right now?",
+    "Does the remaining unknown feel like suspense rather than confusion?",
+    "Is the AI smell still lighter?",
+    "Do you still want to continue?"
+  ],
+  "authorization": {
+    "localized_clarity_repair": true,
+    "second_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "human_failure_closure": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  }
+}
