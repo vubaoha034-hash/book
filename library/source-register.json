@@ -1,3 +1,66 @@
 {
-  "sources": []
+  "schema_version": "2.0.0",
+  "privacy_policy": "Store provenance metadata only; do not store copyrighted source text in public Git.",
+  "sources": [
+    {
+      "book_id": "BOOK-01",
+      "title": "射雕英雄传",
+      "source_status": "VERIFIED_HISTORICAL_RAW_EXACT_CANONICAL_MATCH",
+      "current_public_git_raw_text": false,
+      "current_drive_raw_source_id": null,
+      "historical_source_plane": "user_chat_upload",
+      "work_id": "wrk_5724415a203a194f1c9a481c",
+      "sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "size_bytes": 2817298,
+      "scope": "40/40 回",
+      "direct_raw_recheck_status": "NOT_CURRENTLY_DRIVE_BOUND_BUT_HASH_EXACT_ACCESS_RECEIPT_EXISTS",
+      "private_evidence": {
+        "evidence_settlement_drive_id": "11ej20r5DLJ5O_MaQFwVLPkWq8NCacykqPSyIyW1N_jc",
+        "dna_validation_drive_id": "1DFqMw8_BCKSG_S--spoMGAc11gSbVvmJTmqXPgNL2rs",
+        "dna_freeze_drive_id": "1pj0FSe4fKBYE48cKr4Deag2r7x5vEwqQbcHLWWADDVU",
+        "microcraft_evidence_drive_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+        "raw_derived_scene_to_speech_samples": 30
+      }
+    },
+    {
+      "book_id": "BOOK-02",
+      "title": "诛仙",
+      "source_status": "VERIFIED_CURRENT_DRIVE_RAW_READABLE",
+      "current_public_git_raw_text": false,
+      "drive_source_id": "1BDFZ1TXCwbqWrdm-SLqkKO714R1Kj0AT",
+      "drive_source_name": "BOOK-02_诛仙_原著正文候选_修复v1.txt",
+      "sha256": "9897950a0e606f12516544ee4c9405c40af7cb3964508280b752dffcb6bb6fd3",
+      "size_bytes": 4723970,
+      "scope": "序章 + 第1—256章 + 尾声",
+      "private_evidence": {
+        "evidence_settlement_drive_id": "1WMrKKQc2MHAAREzZwLLm_puUih-9jgmkfdE9_0HGkRc",
+        "dna_validation_drive_id": "1ulqVzja7_A_Wcaiyxsp5b_mLIpgchrZkGZ4sXUdA5pk",
+        "dna_freeze_drive_id": "1Q0Dk5TmcE2Kv7Uakwdc7JoBFj9AMTZYJcuYo7FIuvp8",
+        "microcraft_evidence_drive_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+        "raw_derived_scene_to_speech_samples": 30
+      }
+    },
+    {
+      "book_id": "BOOK-03",
+      "title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+      "source_status": "VERIFIED_CURRENT_DRIVE_RAW_READABLE",
+      "current_public_git_raw_text": false,
+      "drive_docx_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
+      "drive_extracted_text_id": "1m5LnlmNks9rtnDwiA3MlRp2owkPXifC8REHa95JjVeo",
+      "docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
+      "extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
+      "paragraph_count": 4891,
+      "extracted_text_chars": 211155,
+      "scope": "2卷 / 75编号章节",
+      "private_evidence": {
+        "evidence_settlement_drive_id": "146jk5sYo7-V7byk6PU-O_6iEi-Y9JX-UZ51N_eoZlck",
+        "dna_validation_drive_id": "137LWHBqpFled5-fybrKZCtWkwnr7oPmIFpvjYLaErTM",
+        "dna_freeze_drive_id": "1ig1YnUFvceptWhKgO8GgeUBcnXqufdyUT9UWDjdLc14",
+        "microcraft_evidence_drive_id": "1P1gCYNCXEDnubYnzTp89Dg7k__SskODhos-XTUKPWO0",
+        "raw_derived_scene_to_speech_samples": 30
+      }
+    }
+  ],
+  "last_reconciled_at": "2026-09-09T10:40:00+08:00",
+  "audit_ref": "docs/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.md"
 }
