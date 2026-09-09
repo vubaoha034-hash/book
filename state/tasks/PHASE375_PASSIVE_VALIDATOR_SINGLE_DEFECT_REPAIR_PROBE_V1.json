@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 375,
+  "task_id": "PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE374_CALLING_MODE_FAILURE_DIAGNOSIS_ACCEPTED",
+  "purpose": "Test whether source-derived reader-experience knowledge helps when used only as a passive validator on an already fixed natural baseline, with one located defect and one minimal repair. Do not expose a candidate stack as prose-generation targets.",
+  "baseline_binding": {
+    "source": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+    "variant": "B",
+    "human_status": "PHASE373_CONTROL_HUMAN_WINNER",
+    "baseline_may_be_rewritten_before_validation": false
+  },
+  "required_method": [
+    "Read the fixed B baseline exactly as already judged by the human.",
+    "Run RX-C01 through RX-C08 only as passive validators; do not tell a prose generator to satisfy them.",
+    "If no material located defect exists, return NO_REPAIR_JUSTIFIED and stop.",
+    "If defects exist, rank by likely reader impact and select exactly one located defect.",
+    "Produce one minimally repaired version that changes only the selected defect and preserves unrelated wording/structure.",
+    "Blind the labels before actual-human comparison.",
+    "Do not stack multiple RX repairs.",
+    "Do not add countdowns, extra clues, extra mysteries, or deliberate motive withholding merely to satisfy a rule."
+  ],
+  "human_gate": {
+    "required": true,
+    "judge": [
+      "overall preference",
+      "desire to continue",
+      "AI smell",
+      "clarity",
+      "tension",
+      "first skim/stop point"
+    ],
+    "repair_win_required_for_any_transfer_signal": true
+  },
+  "hard_gates": {
+    "candidate_stacking": false,
+    "direct_RX_generation_activation": false,
+    "one_located_defect_max": true,
+    "YMGQ_writing": false,
+    "span_growth_before_human_win": false,
+    "full_manuscript_rewrite": false,
+    "architecture_promotion": false
+  },
+  "required_outputs_if_repair_justified": [
+    "state/calibration/PHASE375_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+    "state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+    "state/review_receipts/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json"
+  ],
+  "required_output_if_no_repair": "state/review_receipts/PHASE375_NO_REPAIR_JUSTIFIED_V1.json",
+  "next_after_human_win": "One bounded span-growth survival test for the single repaired dimension only.",
+  "next_after_human_loss_or_tie": "Reject that validator repair; return to diagnosis without scale-up.",
+  "created_at": "2026-09-09T16:03:00+08:00"
+}
