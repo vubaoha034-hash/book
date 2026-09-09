@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 374,
+  "task_id": "PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1",
+  "review_status": "ACCEPT_CALLING_MODE_FAILURE_DIAGNOSIS",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "inputs": {
+    "phase372_receipt": "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
+    "phase373_human_receipt": "state/review_receipts/PHASE373_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "phase373_choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt"
+  },
+  "diagnosis": {
+    "source_knowledge_invalidated": false,
+    "direct_generator_calling_mode_validated": false,
+    "calling_mode_failure": "SOURCE_OBSERVATIONS_OVERCONSTRAIN_PROSE_WHEN_EXPOSED_AS_DIRECT_CONSTRUCTION_TARGETS",
+    "RX_SURFACE_result": "TENSION_SIGNAL_WITH_CONFUSION_COST",
+    "RX_PULL_result": "EARLY_SKIM_FAILURE",
+    "CONTROL_result": "HUMAN_WINNER_ON_OVERALL_CONTINUE_AND_LEAST_AI",
+    "key_correction": "Less explanation or more visible state change does not automatically reduce AI smell. Natural semantic continuity is a controlling reader variable."
+  },
+  "governance_change": {
+    "rule": "rules/reader-experience-passive-validator-only-v1.md",
+    "RX_C01_to_C08_direct_generation_default": "OFF",
+    "RX_C01_to_C08_passive_validation_default": "ON",
+    "candidate_stacking_for_authoring": "FORBIDDEN_BY_DEFAULT",
+    "one_located_defect_per_repair_iteration": true,
+    "actual_human_blind_comparison_required": true
+  },
+  "candidate_status": {
+    "RX-C01": "SOURCE_SUPPORTED_PASSIVE_VALIDATOR_ONLY_DIRECT_TRANSFER_UNPROVEN",
+    "RX-C02": "SOURCE_SUPPORTED_PASSIVE_VALIDATOR_ONLY_DIRECT_TRANSFER_FAILED_IN_STACK",
+    "RX-C03": "SOURCE_SUPPORTED_PASSIVE_VALIDATOR_ONLY_DIRECT_TRANSFER_UNPROVEN",
+    "RX-C04": "SOURCE_SUPPORTED_PASSIVE_VALIDATOR_ONLY_DIRECT_TRANSFER_FAILED_IN_STACK",
+    "RX-C05": "SOURCE_SUPPORTED_NOT_TESTED_IN_PHASE373",
+    "RX-C06": "SOURCE_SUPPORTED_PASSIVE_VALIDATOR_ONLY_DIRECT_TRANSFER_UNPROVEN",
+    "RX-C07": "SOURCE_SUPPORTED_NOT_TESTED_IN_PHASE373",
+    "RX-C08": "SOURCE_SUPPORTED_PASSIVE_VALIDATOR_ONLY_DIRECT_TRANSFER_UNPROVEN"
+  },
+  "writing_transfer": "NOT_SUPPORTED",
+  "span_growth_transfer": "NOT_AUTHORIZED",
+  "long_form_transfer": "UNPROVEN",
+  "full_manuscript_rewrite_authorized": false,
+  "architecture_promotion_authorized": false,
+  "report": "docs/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.md",
+  "next_required_task": "PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1",
+  "recorded_at": "2026-09-09T16:02:00+08:00"
+}
