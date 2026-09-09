@@ -1,19 +1,20 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "privacy_policy": "Store provenance metadata only; do not store copyrighted source text in public Git.",
   "sources": [
     {
       "book_id": "BOOK-01",
       "title": "射雕英雄传",
-      "source_status": "VERIFIED_HISTORICAL_RAW_EXACT_CANONICAL_MATCH",
+      "source_status": "VERIFIED_CURRENT_FILE_LIBRARY_RAW_READABLE_EXACT_CANONICAL_MATCH",
       "current_public_git_raw_text": false,
       "current_drive_raw_source_id": null,
-      "historical_source_plane": "user_chat_upload",
+      "current_file_library_readable": true,
+      "file_library_title": "9dd76684-1260-47bc-a3f4-4555bdce006d.TXT",
       "work_id": "wrk_5724415a203a194f1c9a481c",
       "sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
       "size_bytes": 2817298,
       "scope": "40/40 回",
-      "direct_raw_recheck_status": "NOT_CURRENTLY_DRIVE_BOUND_BUT_HASH_EXACT_ACCESS_RECEIPT_EXISTS",
+      "direct_raw_recheck_status": "CURRENT_FILE_LIBRARY_TEXT_REOPENED_PHASE371_ADDENDUM; NOT_YET_DRIVE_UNIFIED",
       "private_evidence": {
         "evidence_settlement_drive_id": "11ej20r5DLJ5O_MaQFwVLPkWq8NCacykqPSyIyW1N_jc",
         "dna_validation_drive_id": "1DFqMw8_BCKSG_S--spoMGAc11gSbVvmJTmqXPgNL2rs",
@@ -61,6 +62,7 @@
       }
     }
   ],
-  "last_reconciled_at": "2026-09-09T10:40:00+08:00",
-  "audit_ref": "docs/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.md"
+  "last_reconciled_at": "2026-09-09T11:05:00+08:00",
+  "audit_ref": "docs/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.md",
+  "audit_addendum_ref": "state/review_receipts/PHASE371_BOOK01_CURRENT_SOURCE_REBIND_ADDENDUM_V1.json"
 }
