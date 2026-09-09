@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 376,
+  "attempt": 1,
+  "task_id": "PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1",
+  "status": "INVALIDATED_BEFORE_HUMAN_REVIEW",
+  "failure_class": "BLINDING_CONTAMINATION_BY_PRE_VERDICT_DEFECT_DISCLOSURE",
+  "cause": "Assistant disclosed the exact located defect and deletion operation in a progress update before actual-human X/Y review. A reader could infer which variant was repaired by comparing the pack.",
+  "human_result": null,
+  "attempt1_may_count_as_replication_evidence": false,
+  "attempt1_pack_may_be_used_for_transfer_adjudication": false,
+  "historical_artifacts_preserved": true,
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "next_required_action": "Run a fresh clean Phase376 Attempt2 on a different natural baseline. Do not disclose the located defect, repair operation, mapping, or diagnostic rationale until after actual-human verdict.",
+  "recorded_at": "2026-09-09T17:44:00+08:00"
+}
