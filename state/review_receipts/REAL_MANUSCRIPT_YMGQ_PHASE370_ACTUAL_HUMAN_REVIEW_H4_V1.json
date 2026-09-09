@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 370,
+  "task_id": "REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1",
+  "event_type": "ACTUAL_HUMAN_REVIEW",
+  "review_status": "PASS_LOCAL_CLARITY_REPAIR_WITH_AI_SMELL_UNCHANGED",
+  "artifact": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+  "actual_human_result": {
+    "immediate_motive_clarity": "YES",
+    "remaining_unknown_experience": "SUSPENSE_NOT_CONFUSION",
+    "ai_smell_direction_vs_phase369": "SAME",
+    "desire_to_continue": "YES"
+  },
+  "settlement": {
+    "PST_F02_mystery_confusion_boundary": "CLOSED_FOR_THIS_BOUNDED_SPAN",
+    "PST_F01_prose_scale_transfer": "MATERIALLY_IMPROVED_NOT_CLOSED_GLOBALLY",
+    "second_span_growth": "NOT_AUTO_AUTHORIZED_BY_THIS_RECEIPT",
+    "full_manuscript_rewrite": false,
+    "final_freeze": false,
+    "architecture_promotion": false
+  },
+  "note": "Human reader can now understand immediate objectives while experiencing the remaining unknown as suspense. AI smell did not improve further, so this is not a prose-surface final acceptance or long-form transfer proof.",
+  "recorded_at": "2026-09-09T10:35:00+08:00"
+}
