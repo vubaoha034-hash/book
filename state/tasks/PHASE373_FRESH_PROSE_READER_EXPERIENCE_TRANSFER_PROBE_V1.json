@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1",
+  "phase_ordinal": 373,
+  "status": "AUTHORIZED_BOUNDED_PROBE",
+  "purpose": "Test whether a small subset of Phase372 source-derived reader-experience candidates improves fresh prose under actual-human blind comparison before any further span growth.",
+  "source": {
+    "phase372_receipt": "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
+    "phase372_synthesis": "state/calibration/PHASE372_THREE_BOOK_READER_EXPERIENCE_SYNTHESIS_V1.md",
+    "candidate_status_at_entry": "SOURCE_DERIVED_NOT_TRANSFER_PROVEN"
+  },
+  "fresh_situation_contract": {
+    "must_not_copy_YMGQ_plot": true,
+    "must_not_copy_source_book_plot": true,
+    "same_factual_story_situation_across_variants": true,
+    "bounded_short_sample_only": true,
+    "no_second_span_growth": true,
+    "no_full_manuscript_rewrite": true
+  },
+  "variant_roles": {
+    "role_names": ["CONTROL", "RX_PULL", "RX_SURFACE"],
+    "labels_shown_to_human": ["A", "B", "C"],
+    "mapping_not_shown_before_human_verdict": true,
+    "mapping_derivation": "sha256(task_id + '|' + phase372_synthesis_sha256); take first 8 hex as integer mod 6 over lexicographic permutations of [CONTROL,RX_PULL,RX_SURFACE]",
+    "phase372_synthesis_sha256": "8fe0ef3ae9885362730c3f5eff77c4b9b25014328a713627ce818b8e64d75a27",
+    "deliberate_candidate_sets": {
+      "RX_PULL": ["RX-C01", "RX-C02", "RX-C04"],
+      "RX_SURFACE": ["RX-C03", "RX-C06", "RX-C08"]
+    },
+    "all_eight_activation_forbidden": true
+  },
+  "actual_human_questions": [
+    "best_overall variant A/B/C",
+    "strongest desire to continue A/B/C",
+    "first skim or stop point per variant, if any",
+    "remaining unknown feels like suspense/confusion/both",
+    "immediate motive clarity YES/PARTLY/NO",
+    "AI smell lightest A/B/C",
+    "tension strongest A/B/C"
+  ],
+  "adjudication": {
+    "candidate_wins_blind_human_comparison": "TRANSFER_SIGNAL_ONLY",
+    "candidate_does_not_win": "NO_TRANSFER_SIGNAL",
+    "same_context_control_limitation": "Even a candidate win is not independent transfer proof because the control was generated in a context that had already seen Phase372 concepts.",
+    "transfer_supported_requires": "A later independent/fresh-context comparison plus one bounded span-growth survival test.",
+    "architecture_promotion_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "YMGQ_rewrite_authorized": false
+  },
+  "required_outputs": [
+    "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+    "state/review_receipts/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json"
+  ]
+}
