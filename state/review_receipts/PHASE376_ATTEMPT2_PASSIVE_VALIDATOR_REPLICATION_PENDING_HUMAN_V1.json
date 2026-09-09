@@ -17,6 +17,13 @@
   "diagnosis": "state/calibration/PHASE376_ATTEMPT2_SINGLE_DEFECT_DIAGNOSIS_V1.md",
   "blind_choice_pack": "state/calibration/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
   "blind_choice_pack_git_blob_sha": "43c8692820efe4ded372201a69491fda9f18494a",
+  "drive_human_review_artifact": {
+    "folder": "小说蒸馏_真人验收",
+    "folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_",
+    "file_id": "17_0KtKmpurIapwaM-AuQIbxx93oa0942",
+    "file_name": "PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+    "mime_type": "text/plain"
+  },
   "selected_defect_count": 1,
   "repair_scope": "ONE_DELETION_ONLY_REPAIR",
   "new_clues_added": false,
