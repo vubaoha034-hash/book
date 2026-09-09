@@ -30,6 +30,11 @@ jobs:
         run: python -m unittest tests.test_project_state_anti_rollback -v
       - name: Prove current checkpoint rejects regression
         run: |
-          python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal 40 --progress-ordinal 210 && exit 1 || test $? -eq 2
-      - name: Prove next forward batch passes
-        run: python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal 40 --progress-ordinal 230
+          CURRENT_PHASE=$(python -c 'import json; print(json.load(open("state/project_state.json", encoding="utf-8"))["accepted_checkpoint"]["phase_ordinal"])')
+          STALE_PHASE=$((CURRENT_PHASE - 1))
+          python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal "$STALE_PHASE" && exit 1 || test $? -eq 2
+      - name: Prove next forward phase passes
+        run: |
+          CURRENT_PHASE=$(python -c 'import json; print(json.load(open("state/project_state.json", encoding="utf-8"))["accepted_checkpoint"]["phase_ordinal"])')
+          FORWARD_PHASE=$((CURRENT_PHASE + 1))
+          python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal "$FORWARD_PHASE"
