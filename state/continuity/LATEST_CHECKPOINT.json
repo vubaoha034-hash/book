@@ -1,44 +1,39 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 24,
-  "recorded_at": "2026-09-09T16:05:00+08:00",
+  "sequence": 25,
+  "recorded_at": "2026-09-09T16:16:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1"
   ],
-  "current_focus": "Phase373 actual-human blind review produced a control win: B/CONTROL was best overall, most desired to continue, and least AI-like; A/RX_SURFACE had the strongest tension but was experienced as very confusing; C/RX_PULL triggered skim urge after only a few lines. Phase374 therefore diagnosed an activation-overconstraint failure: the source-derived RX candidates may remain valid observations, but direct use as authoring targets is not validated and can expose visible rule machinery. RX-C01 through RX-C08 are now default-off for direct generation and default-on only as passive post-draft validators. Phase375 will test one located defect and one minimal repair on the immutable human-winning B baseline.",
+  "current_focus": "Phase375 passively validated the Phase373 human-winning B/CONTROL baseline. Exactly one redundant author-summary sentence was selected for a minimal deletion repair; all unrelated prose, clues, motives, tension structure and ending were preserved. A blinded X/Y baseline-versus-repair pack now awaits actual-human judgment. Direct RX generation remains OFF, span growth remains blocked, and YMGQ writing remains paused.",
   "completed": [
-    "Phase372 completed 90 source-anchored reader-experience cards and eight SOURCE_DERIVED_NOT_TRANSFER_PROVEN candidates",
-    "Phase373 actual-human blind review completed",
-    "Phase373 sealed role mapping revealed after verdict: A=RX_SURFACE, B=CONTROL, C=RX_PULL",
-    "Phase373 CONTROL won overall preference, desire to continue, and least-AI judgment",
-    "Phase373 RX_SURFACE produced strongest tension but a major confusion cost",
-    "Phase373 RX_PULL triggered early skim urge after a few lines",
-    "Phase373 candidate transfer signal = false; no candidate eligible for span growth",
-    "Phase374 activation-overconstraint diagnosis completed",
-    "rules/reader-experience-passive-validator-only-v1.md added",
-    "RX direct generation activation default set OFF; passive validation default set ON",
-    "Candidate stacking as an authoring target forbidden by default",
-    "Phase375 passive-validator single-defect repair contract created",
+    "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
+    "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
+    "Phase374 activation-overconstraint diagnosis completed; RX direct generation OFF and passive validation ON",
+    "Phase375 passive validation executed on immutable Phase373 B baseline",
+    "Exactly one located defect selected: redundant author-summary sentence after the reader model was already explicit",
+    "Exactly one minimal repair produced; no new clue, mystery, countdown, motive withholding, or candidate stacking",
+    "Phase375 X/Y blind comparison pack produced and sealed mapping persisted",
     "Phase320 remains highest accepted promotion checkpoint; GN-VDNA-01 remains DEFAULT OFF"
   ],
   "incomplete": [
-    "Phase375 passive-validator test has not yet been executed",
+    "Actual target reader has not yet blind-compared Phase375 X/Y",
+    "Passive-validator repair transfer signal is unknown",
     "No RX candidate has TRANSFER_SUPPORTED status",
-    "Reader-experience writing transfer remains unsupported/unproven",
     "No bounded span-growth survival test is authorized",
     "Stable long-form scale transfer remains UNPROVEN",
     "Current full YMGQ manuscript remains actual-human rejected",
     "YMGQ writing remains paused during transfer-method repair",
     "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 24"
+    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 25"
   ],
   "blocked": [
-    "RX_DIRECT_GENERATION_CALLING_MODE_FAILED",
+    "PHASE375_ACTUAL_HUMAN_BLIND_REVIEW_PENDING",
     "READER_EXPERIENCE_WRITING_TRANSFER_NOT_SUPPORTED",
     "SPAN_GROWTH_BLOCKED_UNTIL_PASSIVE_VALIDATOR_HUMAN_WIN",
     "YMGQ_WRITING_PAUSED_DURING_TRANSFER_METHOD_REPAIR",
@@ -47,28 +42,47 @@
     "FINAL_FREEZE_BLOCKED"
   ],
   "do_not_reopen": [
+    "Reveal Phase375 X/Y mapping before actual-human verdict",
+    "Repair more than the one selected defect in this Phase375 iteration",
     "Treat Phase373 B/CONTROL win as a Phase372 candidate success",
-    "Treat A tension win as sufficient overall acceptance despite human confusion",
-    "Treat C readable motives as sufficient acceptance despite early skim failure",
     "Directly activate RX-C01 through RX-C08 as stacked prose-construction targets",
     "Claim Phase372 source extraction proves writing transfer",
     "Claim source reading alone proves writing learning",
     "Claim book/global Novel DNA validation proves prose quality",
     "Claim YMGQ improvement as evidence of GN-VDNA-01 success",
-    "Phase365 fresh-AI PASS as current-human acceptance",
     "Another immediate long pilot or full-manuscript rewrite",
     "Accepted Phase320 checkpoint or GN-VDNA-01 semantics"
   ],
-  "next_required_action": "Execute PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1 on the immutable Phase373 B control baseline. RX candidates may only passively inspect the existing text. If no material located defect exists, stop with NO_REPAIR_JUSTIFIED. If one exists, repair exactly one defect minimally and present a blinded baseline-vs-repair comparison to the actual target reader. No YMGQ writing and no span growth before a human win.",
+  "next_required_action": "Actual target reader reads only state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt and answers: overall X/Y/tie; desire to continue X/Y/tie; least AI-like X/Y/tie; clarity/flow X/Y/tie; tension X/Y/tie; first skim/stop point X/Y/none. Do not reveal mapping before verdict.",
   "source_state_refs": [
-    {"path":"state/project_state.json","role":"authoritative Phase375 ready state"},
-    {"path":"state/review_receipts/PHASE373_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json","role":"actual-human Phase373 blind result and revealed mapping"},
-    {"path":"docs/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.md","role":"Phase374 calling-mode failure diagnosis"},
-    {"path":"state/review_receipts/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.json","role":"Phase374 settlement"},
-    {"path":"rules/reader-experience-passive-validator-only-v1.md","role":"mandatory passive-validator-only default"},
-    {"path":"state/tasks/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json","role":"active Phase375 contract"},
-    {"path":"state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt","role":"immutable B control baseline source"},
-    {"path":"state/continuity/STATE_LEDGER.jsonl","role":"physical ledger remains verified through sequence18"}
+    {
+      "path": "state/project_state.json",
+      "role": "authoritative Phase375 human-blind-review-pending state"
+    },
+    {
+      "path": "state/tasks/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
+      "role": "Phase375 one-defect passive-validator contract"
+    },
+    {
+      "path": "state/calibration/PHASE375_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+      "role": "single located defect diagnosis"
+    },
+    {
+      "path": "state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+      "role": "actual-human X/Y blind review artifact"
+    },
+    {
+      "path": "state/review_receipts/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
+      "role": "sealed mapping and pending-human receipt"
+    },
+    {
+      "path": "rules/reader-experience-passive-validator-only-v1.md",
+      "role": "mandatory passive-validator calling mode"
+    },
+    {
+      "path": "state/continuity/STATE_LEDGER.jsonl",
+      "role": "physical ledger remains verified through sequence18"
+    }
   ],
-  "status": "ACTIVE_PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_READY_NOT_STARTED"
+  "status": "ACTIVE_PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_AWAITING_ACTUAL_HUMAN_BLIND_REVIEW"
 }
