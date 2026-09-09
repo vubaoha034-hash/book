@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.5.0",
+  "schema_version": "3.6.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-09T17:38:00+08:00",
+  "updated_at": "2026-09-09T17:51:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,16 +15,16 @@
     "task_id": "PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1",
     "phase": "FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION",
     "phase_ordinal": 376,
-    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
+    "status": "ATTEMPT2_AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
     "task_contract": "state/tasks/PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1.json",
-    "execution_scope": "A fresh natural short-fiction baseline was frozen before validation. Passive RX validation located exactly one redundant author-inference sentence; exactly one deletion-only repair was produced and blinded against the untouched baseline. No direct RX generation, candidate stacking, YMGQ writing, or scale-up is authorized.",
+    "execution_scope": "Phase376 Attempt1 was invalidated before human review due blinding contamination. Attempt2 uses a different fresh natural baseline frozen before validation; one passive-validator repair was produced and cleanly blinded. No defect detail or X/Y mapping may be disclosed before verdict. No direct RX generation, YMGQ writing, or scale-up is authorized.",
     "direct_RX_generation_activation": false,
     "passive_RX_validation_authorized": true,
     "one_located_defect_max": true,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only PHASE376_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt in Drive folder 小说蒸馏_真人验收 and compares X/Y. Mapping remains sealed until verdict."
+    "next_action": "Actual target reader reads only PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt in Drive folder 小说蒸馏_真人验收 and compares X/Y. Do not disclose repair detail or mapping before verdict."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -167,7 +167,7 @@
     "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
     "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
     "direct_generation_calling_mode": "DISABLED",
-    "passive_validator_calling_mode": "PHASE376_HUMAN_BLIND_REVIEW_PENDING",
+    "passive_validator_calling_mode": "PHASE376_ATTEMPT2_CLEAN_HUMAN_BLIND_REVIEW_PENDING",
     "required_rules": [
       "rules/source-evidence-transfer-gate.md",
       "rules/reader-experience-passive-validator-only-v1.md"
@@ -210,7 +210,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 27,
+    "logical_latest_checkpoint_sequence": 28,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -232,7 +232,11 @@
     "Phase376_may_repair_at_most_one_located_defect": true,
     "Phase376_may_not_write_or_extend_YMGQ": true,
     "Phase376_mapping_may_not_be_revealed_before_human_verdict": true,
-    "Phase376_may_not_scale_before_actual_human_replication_result": true
+    "Phase376_may_not_scale_before_actual_human_replication_result": true,
+    "Phase376_attempt1_may_not_count_due_blinding_contamination": true,
+    "Phase376_attempt2_repair_detail_may_not_be_revealed_before_human_verdict": true,
+    "Phase376_attempt2_mapping_may_not_be_revealed_before_human_verdict": true,
+    "Phase376_may_not_scale_before_clean_actual_human_replication_result": true
   },
   "rollback": {
     "authorized": false,
@@ -268,16 +272,19 @@
     "accepted_checkpoint_advance": false
   },
   "phase376_outputs": {
-    "status": "ONE_DEFECT_REPAIR_BLIND_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
-    "baseline": "state/calibration/PHASE376_FRESH_NATURAL_BASELINE_V1.txt",
-    "baseline_git_blob_sha": "2dffb0b62830a53b1454f66900590f88bcfaf49f",
+    "attempt": 2,
+    "status": "CLEAN_BLIND_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+    "baseline": "state/calibration/PHASE376_ATTEMPT2_FRESH_NATURAL_BASELINE_V1.txt",
+    "baseline_git_blob_sha": "2830b20aca0dec47bbe5c7f86a5b05e6853eee9f",
     "baseline_frozen_before_validation": true,
-    "diagnosis": "state/calibration/PHASE376_SINGLE_DEFECT_DIAGNOSIS_V1.md",
-    "blind_choice_pack": "state/calibration/PHASE376_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
-    "receipt": "state/review_receipts/PHASE376_PASSIVE_VALIDATOR_REPLICATION_PENDING_HUMAN_V1.json",
+    "diagnosis": "state/calibration/PHASE376_ATTEMPT2_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+    "blind_choice_pack": "state/calibration/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+    "receipt": "state/review_receipts/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_REPLICATION_PENDING_HUMAN_V1.json",
     "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_",
-    "drive_file_id": "1KUS8e7iLx2mtoni7gjpul9ETQMCwc008",
+    "drive_file_id": "17_0KtKmpurIapwaM-AuQIbxx93oa0942",
     "selected_defect_count": 1,
+    "repair_detail_sealed_until_human_verdict": true,
+    "mapping_sealed_until_human_verdict": true,
     "direct_RX_generation_activation": false,
     "candidate_stacking": false,
     "human_review_pending": true,
@@ -285,5 +292,10 @@
     "span_growth_authorized": false,
     "YMGQ_writing_authorized": false,
     "accepted_checkpoint_advance": false
+  },
+  "phase376_attempt1": {
+    "status": "INVALIDATED_BEFORE_HUMAN_REVIEW",
+    "receipt": "state/review_receipts/PHASE376_ATTEMPT1_BLINDING_CONTAMINATION_V1.json",
+    "counts_as_replication_evidence": false
   }
 }
