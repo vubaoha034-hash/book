@@ -2,7 +2,14 @@ from pathlib import Path
 import base64, zlib, json
 
 ROOT = Path(__file__).resolve().parents[1]
-payload = ''.join((ROOT / f'tools/.phase372_payload_{i}').read_text(encoding='utf-8').strip() for i in range(5))
+parts = [
+    (ROOT / 'tools/.phase372_payload_0').read_text(encoding='utf-8').strip(),
+    (ROOT / 'tools/.phase372_payload_1').read_text(encoding='utf-8').strip(),
+    (ROOT / 'tools/.phase372_payload_2').read_text(encoding='utf-8').strip(),
+]
+parts.extend((ROOT / f'tools/.phase372_payload_3_{i}').read_text(encoding='utf-8').strip() for i in range(8))
+parts.append((ROOT / 'tools/.phase372_payload_4').read_text(encoding='utf-8').strip())
+payload = ''.join(parts)
 files = json.loads(zlib.decompress(base64.b64decode(payload)).decode('utf-8'))
 
 required = {
