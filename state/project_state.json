@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.0.0",
+  "schema_version": "3.1.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-09T11:15:00+08:00",
+  "updated_at": "2026-09-09T14:42:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,22 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1",
-    "phase": "THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION",
-    "phase_ordinal": 372,
-    "status": "READY_NOT_STARTED",
-    "task_contract": "state/tasks/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
-    "execution_scope": "Re-distill the missing reader-experience layer directly from the three real source novels using recoverable source anchors and later actual-human transfer tests. No YMGQ span growth or manuscript rewriting during this phase.",
-    "source_evidence_redistillation_authorized": true,
+    "task_id": "PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1",
+    "phase": "FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE",
+    "phase_ordinal": 373,
+    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
+    "task_contract": "state/tasks/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json",
+    "execution_scope": "Actual target reader blindly compares three bounded fresh-prose variants in a new story situation. Candidate roles remain sealed until the human verdict. No YMGQ writing or long-form expansion during this probe.",
+    "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+    "choice_pack_sha256": "85b109ef546eb500612668ffcf6ab199b4331d1b6a3a9087cf415f6a940f24b9",
+    "actual_human_blind_review_required": true,
+    "second_span_growth_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "human_failure_closure_authorized": false,
     "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Produce at least 30 source-anchored reader-experience cards per book across the ten required dimensions, then synthesize candidates without claiming writing transfer."
+    "next_action": "Actual target reader reads only PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1 and reports best overall, strongest desire to continue, lightest AI smell, strongest tension, skim/stop points, suspense-vs-confusion, and immediate motive clarity."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -94,6 +97,34 @@
     "stable_long_form_scale_transfer": "UNPROVEN",
     "accepted_checkpoint_advance": false
   },
+  "phase372_settlement": {
+    "execution": "THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_COMPLETED",
+    "receipt": "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
+    "synthesis": "state/calibration/PHASE372_THREE_BOOK_READER_EXPERIENCE_SYNTHESIS_V1.md",
+    "review_status": "ACCEPT_SOURCE_ANCHORED_EXTRACTION_AND_SYNTHESIS_NOT_TRANSFER",
+    "source_anchored_cards_total": 90,
+    "per_book_cards": "30/30/30",
+    "unique_scene_anchors_per_book": "10/10/10",
+    "required_dimension_coverage_per_book": 3,
+    "candidate_ids": ["RX-C01", "RX-C02", "RX-C03", "RX-C04", "RX-C05", "RX-C06", "RX-C07", "RX-C08"],
+    "candidate_status": "SOURCE_DERIVED_NOT_TRANSFER_PROVEN",
+    "writing_transfer": "UNPROVEN",
+    "span_growth_transfer": "UNPROVEN",
+    "long_form_transfer": "UNPROVEN",
+    "YMGQ_writing_during_phase372": "NONE",
+    "accepted_checkpoint_advance": false
+  },
+  "phase373_outputs": {
+    "status": "BLIND_CHOICE_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+    "task": "state/tasks/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json",
+    "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+    "choice_pack_sha256": "85b109ef546eb500612668ffcf6ab199b4331d1b6a3a9087cf415f6a940f24b9",
+    "receipt": "state/review_receipts/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json",
+    "role_mapping_status": "SEALED_UNTIL_HUMAN_VERDICT",
+    "same_context_control_limitation": true,
+    "human_review_pending": true,
+    "transfer_status": "UNPROVEN"
+  },
   "source_provenance_state": {
     "central_registry": "library/source-register.json",
     "manifest": "manifests/library_manifest.jsonl",
@@ -103,10 +134,13 @@
     "raw_copyrighted_text_in_public_git": false
   },
   "reader_experience_transfer_state": {
-    "status": "OPEN_MISSING_THREE_BOOK_SOURCE_ANCHORED_LAYER",
-    "existing_scene_to_speech_microcraft": "REAL_SOURCE_EVIDENCE_BUT_INSUFFICIENT_FOR_COMPLETE_READER_EXPERIENCE_TRANSFER",
+    "status": "SOURCE_LAYER_COMPLETE_PHASE373_HUMAN_TRANSFER_PROBE_PENDING",
+    "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
+    "candidate_status": "SOURCE_DERIVED_NOT_TRANSFER_PROVEN",
     "required_gate": "rules/source-evidence-transfer-gate.md",
-    "Phase372_required": true
+    "actual_human_transfer_test": "PHASE373_PENDING",
+    "independent_fresh_context_revalidation_required_after_signal": true,
+    "span_growth_survival_required_after_independent_win": true
   },
   "global_dna_transfer_state": {
     "GN_VDNA_01_default_enabled": false,
@@ -119,6 +153,7 @@
     "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
     "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
     "latest_bounded_span_status": "PHASE370_HUMAN_POSITIVE_LOCAL_CLARITY_AND_CONTINUE_DESIRE",
+    "YMGQ_writing_paused_for_transfer_probe": true,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false
   },
@@ -129,6 +164,8 @@
     "source_reading_does_not_equal_writing_learning": true,
     "structural_dna_validity_does_not_equal_prose_quality": true,
     "writing_transfer_requires_actual_human_directional_improvement": true,
+    "same_context_candidate_win_is_transfer_signal_only": true,
+    "independent_fresh_context_revalidation_required_for_transfer_support": true,
     "scale_transfer_requires_span_growth_survival": true,
     "short_form_success_does_not_authorize_full_manuscript": true,
     "mechanism_only_distillation_does_not_prove_prose_surface_transfer": true,
@@ -137,7 +174,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 22,
+    "logical_latest_checkpoint_sequence": 23,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -147,8 +184,11 @@
     "backward_transition_requires_rollback_receipt": true,
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
-    "Phase372_may_not_write_or_extend_YMGQ": true,
-    "Phase372_may_not_claim_transfer_proven_without_actual_human_test": true,
+    "Phase372_may_not_be_claimed_as_writing_transfer_proof": true,
+    "Phase373_may_not_reveal_variant_roles_before_human_verdict": true,
+    "Phase373_candidate_win_is_not_independent_transfer_proof": true,
+    "Phase373_may_not_write_or_extend_YMGQ": true,
+    "Phase373_may_not_do_span_growth_before_actual_human_blind_review": true,
     "Phase320_remains_highest_accepted_promotion_checkpoint": true
   },
   "rollback": {
