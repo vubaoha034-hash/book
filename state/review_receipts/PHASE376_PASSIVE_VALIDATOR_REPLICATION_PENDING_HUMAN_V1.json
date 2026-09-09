@@ -15,6 +15,13 @@
   "diagnosis": "state/calibration/PHASE376_SINGLE_DEFECT_DIAGNOSIS_V1.md",
   "blind_choice_pack": "state/calibration/PHASE376_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
   "blind_choice_pack_git_blob_sha": "18d4732189b6d45b2ba0c7ae1551fa76165be618",
+  "drive_human_review_artifact": {
+    "folder": "小说蒸馏_真人验收",
+    "folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_",
+    "file_id": "1KUS8e7iLx2mtoni7gjpul9ETQMCwc008",
+    "file_name": "PHASE376_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+    "mime_type": "text/plain"
+  },
   "selected_defect_count": 1,
   "selected_defect_type": "REDUNDANT_AUTHOR_INFERENCE_IMMEDIATELY_BEFORE_CONCRETE_REVEAL",
   "selected_defect_located_sentence": "这说明对方很可能一直在附近看着这家店。",
