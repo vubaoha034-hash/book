@@ -1,83 +1,71 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 21,
-  "recorded_at": "2026-09-08T15:04:00+08:00",
+  "sequence": 22,
+  "recorded_at": "2026-09-09T11:16:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
-    "REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1"
+    "PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1"
   ],
-  "current_focus": "Phase369 produced a material human improvement: better than Phase368 B, no skim/stop urge, lighter AI smell, and genuine desire to continue. It is not fully accepted because immediate character motives remain too opaque, making suspense partly feel like confusion. Phase370 therefore performs only a localized motive-clarity repair on the selected-B span, preserving suspense while making current objectives legible. No second span growth or full rewrite is authorized.",
+  "current_focus": "Phase370 passed actual-human local motive-clarity review: immediate motives are understandable, remaining unknown feels like suspense rather than confusion, AI smell is unchanged from Phase369, and desire to continue remains YES. Phase371 then audited the complete source→evidence→distillation→writing-transfer chain. The three books were genuinely read and source-derived evidence is real, but stable long-form writing transfer is not proven. Central source provenance was repaired, BOOK-01 raw source was re-located in File Library, and a new transfer-proof gate was added. Phase372 now re-distills the missing reader-experience layer directly from real source spans; YMGQ writing is paused during this phase.",
   "completed": [
-    "Phase363 Round3 historical human-positive prose anchor preserved",
-    "Phase367 pilot remains actual-human rejected",
-    "Phase368 B selected for suspense",
-    "Phase369 actual-human review recorded as material improvement with no skim urge, lighter AI smell and real desire to continue",
-    "PST-F02 mystery-vs-confusion immediate-motive-opacity blocker recorded",
-    "Phase370 localized motive-clarity repair produced",
-    "Phase370 mechanical output receipt persisted",
-    "Phase320 remains highest accepted checkpoint; GN-VDNA-01 remains DEFAULT OFF"
+    "Phase370 actual-human review accepted local motive clarity: YES / suspense / AI smell same / desire to continue YES",
+    "PST-F02 mystery-vs-confusion blocker closed for the current bounded B span only",
+    "Phase371 source-evidence-transfer audit completed and accepted with corrective actions",
+    "BOOK-01 source re-located and reopened in File Library; still not Drive-unified",
+    "BOOK-02 current Drive raw source directly readable",
+    "BOOK-03 current Drive raw source directly readable",
+    "Three-book Scene-to-Speech evidence confirmed real with 30 raw-derived samples per book",
+    "library/source-register.json restored and reconciled",
+    "manifests/library_manifest.jsonl restored and reconciled",
+    "rules/source-evidence-transfer-gate.md added",
+    "Global Novel DNA real-manuscript writing transfer classified UNPROVEN because applied outcomes = 0",
+    "Phase372 task contract created",
+    "Phase320 remains highest accepted promotion checkpoint; GN-VDNA-01 remains DEFAULT OFF"
   ],
   "incomplete": [
-    "Actual human has not yet reviewed Phase370 motive clarity",
-    "PST-F02 is not closed",
-    "No second span growth is authorized",
-    "Current full manuscript remains rejected",
+    "Phase372 source-anchored reader-experience cards have not yet been produced",
+    "Reader-experience transfer layer is not yet complete",
+    "Stable long-form scale transfer is not proven",
+    "Global Novel DNA writing transfer remains unproven",
+    "Current full YMGQ manuscript remains actual-human rejected",
+    "No new YMGQ span growth is authorized during Phase372",
     "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
-    "V4.2 architecture remains developmental",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 21"
+    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 22"
   ],
   "blocked": [
-    "PHASE370_ACTUAL_HUMAN_REVIEW_NOT_COMPLETED",
-    "PST_F02_MYSTERY_CONFUSION_IMMEDIATE_MOTIVE_OPACITY",
+    "READER_EXPERIENCE_SOURCE_ANCHORED_REDISTILLATION_NOT_COMPLETE",
+    "STABLE_LONG_FORM_SCALE_TRANSFER_UNPROVEN",
+    "GLOBAL_DNA_REAL_MANUSCRIPT_WRITING_TRANSFER_UNPROVEN",
+    "YMGQ_WRITING_PAUSED_DURING_PHASE372",
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
-    "SECOND_SPAN_GROWTH_BLOCKED_UNTIL_PHASE370_HUMAN_REVIEW",
     "FULL_REWRITE_BLOCKED",
     "FINAL_FREEZE_BLOCKED"
   ],
   "do_not_reopen": [
+    "Claim that the three source novels were never really read",
+    "Claim that source reading alone proves writing learning",
+    "Claim that book/global Novel DNA validation proves prose quality",
+    "Claim YMGQ improvement as evidence of GN-VDNA-01 success",
     "Phase365 fresh-AI PASS as current-human acceptance",
-    "Phase367 pilot as if human accepted",
-    "Phase368 B selection as if full prose acceptance",
-    "Phase369 material improvement as if motive clarity already passed",
-    "Another immediate long pilot",
-    "Another immediate full-manuscript rewrite",
+    "Another immediate long pilot or full-manuscript rewrite",
     "Mechanism-only abstraction of Phase363 as sufficient prose preservation",
     "Accepted Phase320 checkpoint or GN-VDNA-01 semantics"
   ],
-  "next_required_action": "Actual target reader reads state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt and answers: immediate motives YES/PARTLY/NO; remaining unknown feels like suspense/confusion/both; AI smell lighter/same/heavier; desire to continue YES/MAYBE/NO.",
+  "next_required_action": "Execute PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1: produce at least 30 recoverably anchored reader-experience cards per source book across hook, tension, mystery/clarity, motive, information release, voice, scene energy, pacing, emotion/payoff and anti-template prose; then synthesize candidates without claiming transfer until a later actual-human fresh-prose test.",
   "source_state_refs": [
-    {
-      "path": "state/project_state.json",
-      "role": "authoritative Phase370 human-review-pending state"
-    },
-    {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE369_ACTUAL_HUMAN_REVIEW_H3_V1.json",
-      "role": "actual-human Phase369 material-improvement evidence"
-    },
-    {
-      "path": "state/calibration/YMGQ_MYSTERY_CONFUSION_BOUNDARY_FAILURE_V1.json",
-      "role": "PST-F02 motive-opacity blocker"
-    },
-    {
-      "path": "state/tasks/REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1.json",
-      "role": "active Phase370 contract"
-    },
-    {
-      "path": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
-      "role": "Phase370 human review artifact"
-    },
-    {
-      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_V1.json",
-      "role": "mechanically verified Phase370 output pending human review"
-    },
-    {
-      "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "physical ledger remains verified through sequence18"
-    }
+    {"path":"state/project_state.json","role":"authoritative Phase372 ready state"},
+    {"path":"state/tasks/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json","role":"active Phase372 contract"},
+    {"path":"state/review_receipts/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.json","role":"Phase371 audit settlement"},
+    {"path":"state/review_receipts/PHASE371_BOOK01_CURRENT_SOURCE_REBIND_ADDENDUM_V1.json","role":"BOOK-01 current source re-access correction"},
+    {"path":"state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json","role":"latest actual-human YMGQ bounded-span result"},
+    {"path":"library/source-register.json","role":"central privacy-safe source provenance"},
+    {"path":"manifests/library_manifest.jsonl","role":"privacy-safe source manifest"},
+    {"path":"rules/source-evidence-transfer-gate.md","role":"mandatory transfer proof gate"},
+    {"path":"state/continuity/STATE_LEDGER.jsonl","role":"physical ledger remains verified through sequence18"}
   ],
-  "status": "ACTIVE_PHASE370_MYSTERY_CONFUSION_CLARITY_REPAIR_AWAITING_ACTUAL_HUMAN_REVIEW"
+  "status": "ACTIVE_PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_READY_NOT_STARTED"
 }
