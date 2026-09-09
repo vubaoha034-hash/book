@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 373,
+  "task_id": "PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1",
+  "review_status": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE_CONTROL_WIN",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+  "sealed_mapping_revealed_after_human_verdict": {
+    "derivation": "sha256(task_id + '|' + phase372_synthesis_sha256), permutation index = first8hex mod 6",
+    "seed_sha256": "e5c9583e0af301716d4e6a060b82928c09669b967a01c46e1534abf2377f869e",
+    "mapping": {
+      "A": "RX_SURFACE",
+      "B": "CONTROL",
+      "C": "RX_PULL"
+    },
+    "candidate_sets": {
+      "RX_SURFACE": ["RX-C03", "RX-C06", "RX-C08"],
+      "CONTROL": [],
+      "RX_PULL": ["RX-C01", "RX-C02", "RX-C04"]
+    }
+  },
+  "actual_human_results": {
+    "overall_best": "B",
+    "most_desire_to_continue": "B",
+    "least_ai_like": "B",
+    "strongest_tension": "A",
+    "first_skim_or_stop": {
+      "A": "NOT_EXPLICITLY_REPORTED",
+      "B": "NOT_EXPLICITLY_REPORTED",
+      "C": "AFTER_A_FEW_LINES"
+    },
+    "mystery_confusion": {
+      "A": "VERY_CONFUSING_BUT_ALSO_HAS_SUSPENSE",
+      "B": "HAS_SUSPENSE_BUT_WEAKER_THAN_A",
+      "C": "USER_DESCRIBED_AS_VERY_AVERAGE_NO_FORCED_CATEGORY"
+    },
+    "immediate_motive_legibility": {
+      "A": "FAIL_USER_SAID_VERY_CONFUSING",
+      "B": "READABLE",
+      "C": "READABLE"
+    },
+    "freeform_user_summary": "B wins overall, continuation desire, and least-AI. A has strongest tension but is very confusing. C causes skim urge after only a few lines and feels ordinary; B and C motives are understandable, A is messy."
+  },
+  "transfer_adjudication": {
+    "CONTROL": "HUMAN_WINNER",
+    "RX_SURFACE": "FAILED_PRIMARY_PREFERENCE; TENSION_SIGNAL_ONLY; CLARITY_COST_TOO_HIGH",
+    "RX_PULL": "FAILED_PRIMARY_PREFERENCE; EARLY_SKIM_FAILURE",
+    "phase372_candidate_transfer_signal": false,
+    "candidate_eligible_for_span_growth": [],
+    "writing_transfer": "NOT_SUPPORTED_BY_PHASE373",
+    "span_growth_transfer": "NOT_AUTHORIZED",
+    "long_form_transfer": "UNPROVEN"
+  },
+  "critical_interpretation": [
+    "Source-derived recurrence does not imply direct generator-instruction usefulness.",
+    "RX_SURFACE activation exposed rule-shaped prose and increased confusion despite stronger tension.",
+    "RX_PULL activation exposed mechanical state-change/countdown structure and triggered early skim urge.",
+    "The control winning the primary human metrics means Phase372 candidates may not be promoted or span-grown from this probe."
+  ],
+  "next_required_task": "PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1",
+  "recorded_at": "2026-09-09T15:53:00+08:00"
+}
