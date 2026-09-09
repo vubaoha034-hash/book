@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.1.0",
+  "schema_version": "3.2.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-09T14:42:00+08:00",
+  "updated_at": "2026-09-09T16:04:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,22 +12,19 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1",
-    "phase": "FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE",
-    "phase_ordinal": 373,
-    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
-    "task_contract": "state/tasks/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json",
-    "execution_scope": "Actual target reader blindly compares three bounded fresh-prose variants in a new story situation. Candidate roles remain sealed until the human verdict. No YMGQ writing or long-form expansion during this probe.",
-    "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
-    "choice_pack_sha256": "85b109ef546eb500612668ffcf6ab199b4331d1b6a3a9087cf415f6a940f24b9",
-    "actual_human_blind_review_required": true,
-    "second_span_growth_authorized": false,
+    "task_id": "PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1",
+    "phase": "PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE",
+    "phase_ordinal": 375,
+    "status": "READY_NOT_STARTED",
+    "task_contract": "state/tasks/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
+    "execution_scope": "Use Phase373 human-winning control B as an immutable natural baseline. Apply RX-C01 through RX-C08 only as passive validators, select at most one located material defect, make one minimal repair if justified, then blind human-compare baseline versus repair. No candidate stacking, no YMGQ writing, no span growth before human win.",
+    "direct_RX_generation_activation": false,
+    "passive_RX_validation_authorized": true,
+    "one_located_defect_max": true,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
-    "human_failure_closure_authorized": false,
-    "final_freeze_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1 and reports best overall, strongest desire to continue, lightest AI smell, strongest tension, skim/stop points, suspense-vs-confusion, and immediate motive clarity."
+    "next_action": "Execute Phase375 on the fixed Phase373 B control baseline. If no material located defect exists, return NO_REPAIR_JUSTIFIED. Otherwise repair exactly one located defect and create a blinded baseline-vs-repair human comparison."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -111,19 +108,42 @@
     "writing_transfer": "UNPROVEN",
     "span_growth_transfer": "UNPROVEN",
     "long_form_transfer": "UNPROVEN",
-    "YMGQ_writing_during_phase372": "NONE",
     "accepted_checkpoint_advance": false
   },
-  "phase373_outputs": {
-    "status": "BLIND_CHOICE_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
-    "task": "state/tasks/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json",
-    "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
-    "choice_pack_sha256": "85b109ef546eb500612668ffcf6ab199b4331d1b6a3a9087cf415f6a940f24b9",
-    "receipt": "state/review_receipts/PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1.json",
-    "role_mapping_status": "SEALED_UNTIL_HUMAN_VERDICT",
-    "same_context_control_limitation": true,
-    "human_review_pending": true,
-    "transfer_status": "UNPROVEN"
+  "phase373_settlement": {
+    "execution": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE",
+    "human_receipt": "state/review_receipts/PHASE373_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "revealed_mapping": {
+      "A": "RX_SURFACE",
+      "B": "CONTROL",
+      "C": "RX_PULL"
+    },
+    "overall_best": "B_CONTROL",
+    "most_desire_to_continue": "B_CONTROL",
+    "least_ai_like": "B_CONTROL",
+    "strongest_tension": "A_RX_SURFACE",
+    "C_first_skim_or_stop": "AFTER_A_FEW_LINES",
+    "A_experience": "VERY_CONFUSING_BUT_HAS_SUSPENSE",
+    "B_experience": "SUSPENSEFUL_READABLE",
+    "C_experience": "VERY_AVERAGE_READABLE_BUT_EARLY_SKIM",
+    "phase372_candidate_transfer_signal": false,
+    "candidate_eligible_for_span_growth": [],
+    "writing_transfer": "NOT_SUPPORTED",
+    "span_growth_transfer": "NOT_AUTHORIZED",
+    "accepted_checkpoint_advance": false
+  },
+  "phase374_settlement": {
+    "execution": "READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_COMPLETED",
+    "receipt": "state/review_receipts/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.json",
+    "report": "docs/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.md",
+    "new_rule": "rules/reader-experience-passive-validator-only-v1.md",
+    "source_knowledge_invalidated": false,
+    "direct_generator_calling_mode": "FAILED_NOT_VALIDATED",
+    "RX_direct_generation_default": "OFF",
+    "RX_passive_validation_default": "ON",
+    "candidate_stacking_for_authoring": "FORBIDDEN_BY_DEFAULT",
+    "diagnosis": "SOURCE_OBSERVATIONS_OVERCONSTRAIN_PROSE_WHEN_EXPOSED_AS_DIRECT_CONSTRUCTION_TARGETS",
+    "accepted_checkpoint_advance": false
   },
   "source_provenance_state": {
     "central_registry": "library/source-register.json",
@@ -134,13 +154,18 @@
     "raw_copyrighted_text_in_public_git": false
   },
   "reader_experience_transfer_state": {
-    "status": "SOURCE_LAYER_COMPLETE_PHASE373_HUMAN_TRANSFER_PROBE_PENDING",
+    "status": "SOURCE_LAYER_COMPLETE_DIRECT_ACTIVATION_FAILED_PASSIVE_VALIDATOR_PROBE_REQUIRED",
     "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
-    "candidate_status": "SOURCE_DERIVED_NOT_TRANSFER_PROVEN",
-    "required_gate": "rules/source-evidence-transfer-gate.md",
-    "actual_human_transfer_test": "PHASE373_PENDING",
-    "independent_fresh_context_revalidation_required_after_signal": true,
-    "span_growth_survival_required_after_independent_win": true
+    "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
+    "direct_generation_calling_mode": "DISABLED",
+    "passive_validator_calling_mode": "PHASE375_PENDING_TEST",
+    "required_rules": [
+      "rules/source-evidence-transfer-gate.md",
+      "rules/reader-experience-passive-validator-only-v1.md"
+    ],
+    "actual_human_phase373_result": "CONTROL_WIN_NO_TRANSFER_SIGNAL",
+    "span_growth_authorized": false,
+    "long_form_transfer": "UNPROVEN"
   },
   "global_dna_transfer_state": {
     "GN_VDNA_01_default_enabled": false,
@@ -164,17 +189,19 @@
     "source_reading_does_not_equal_writing_learning": true,
     "structural_dna_validity_does_not_equal_prose_quality": true,
     "writing_transfer_requires_actual_human_directional_improvement": true,
-    "same_context_candidate_win_is_transfer_signal_only": true,
-    "independent_fresh_context_revalidation_required_for_transfer_support": true,
     "scale_transfer_requires_span_growth_survival": true,
     "short_form_success_does_not_authorize_full_manuscript": true,
     "mechanism_only_distillation_does_not_prove_prose_surface_transfer": true,
+    "RX_direct_generation_default_off": true,
+    "RX_passive_validation_default_on": true,
+    "RX_candidate_stacking_for_authoring_forbidden_by_default": true,
+    "one_located_defect_per_repair_iteration": true,
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 23,
+    "logical_latest_checkpoint_sequence": 24,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -185,10 +212,11 @@
     "historical_result_may_be_superseded_forward_but_not_rewritten": true,
     "final_freeze_requires_no_open_located_target_reader_failure": true,
     "Phase372_may_not_be_claimed_as_writing_transfer_proof": true,
-    "Phase373_may_not_reveal_variant_roles_before_human_verdict": true,
-    "Phase373_candidate_win_is_not_independent_transfer_proof": true,
-    "Phase373_may_not_write_or_extend_YMGQ": true,
-    "Phase373_may_not_do_span_growth_before_actual_human_blind_review": true,
+    "Phase373_control_win_may_not_be_rewritten_as_candidate_success": true,
+    "RX_direct_activation_may_not_resume_without_new_evidence": true,
+    "Phase375_may_repair_at_most_one_located_defect": true,
+    "Phase375_may_not_write_or_extend_YMGQ": true,
+    "Phase375_may_not_do_span_growth_before_actual_human_win": true,
     "Phase320_remains_highest_accepted_promotion_checkpoint": true
   },
   "rollback": {
