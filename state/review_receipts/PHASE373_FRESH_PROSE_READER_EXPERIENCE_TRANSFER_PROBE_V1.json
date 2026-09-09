@@ -9,6 +9,11 @@
   "input_phase372_receipt": "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
   "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
   "choice_pack_sha256": "85b109ef546eb500612668ffcf6ab199b4331d1b6a3a9087cf415f6a940f24b9",
+  "drive_human_review_file": {
+    "file_name": "PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+    "file_id": "17n_uZ77-uXsAP_dyivvUAgPEMYNRXlNP",
+    "mime_type": "text/plain"
+  },
   "fresh_situation": "Spring Harmony Theatre backstage identity/murder puzzle; not YMGQ and not copied from any source-book plot.",
   "variants": 3,
   "labels": ["A", "B", "C"],
@@ -29,5 +34,6 @@
   "YMGQ_rewrite_authorized": false,
   "full_manuscript_rewrite_authorized": false,
   "architecture_promotion_authorized": false,
-  "recorded_at": "2026-09-09T14:40:00+08:00"
+  "recorded_at": "2026-09-09T14:40:00+08:00",
+  "drive_binding_recorded_at": "2026-09-09T14:47:00+08:00"
 }
