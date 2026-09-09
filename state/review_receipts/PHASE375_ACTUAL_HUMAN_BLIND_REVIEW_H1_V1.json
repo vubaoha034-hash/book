@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 375,
+  "task_id": "PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1",
+  "review_status": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE_WEAK_REPAIR_PREFERENCE",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "revealed_mapping_after_verdict": {
+    "X": "BASELINE_UNTOUCHED_PHASE373_B",
+    "Y": "SINGLE_DEFECT_REPAIR"
+  },
+  "actual_human_result": {
+    "overall_comparison": "NEAR_TIE",
+    "forced_preference_if_required": "Y",
+    "preference_strength": "WEAK",
+    "user_wording_summary": "The two versions are really almost the same; if forced to say which is better, Y is better.",
+    "desire_to_continue_comparison": "NOT_SEPARATELY_REPORTED",
+    "ai_smell_comparison": "NOT_SEPARATELY_REPORTED",
+    "clarity_flow_comparison": "NOT_SEPARATELY_REPORTED",
+    "tension_comparison": "NOT_SEPARATELY_REPORTED",
+    "skim_stop_comparison": "NOT_SEPARATELY_REPORTED"
+  },
+  "repair": {
+    "selected_defect_type": "REDUNDANT_AUTHOR_SUMMARY_AFTER_READER_MODEL_ALREADY_UPDATED",
+    "repair_scope": "DELETE_ONLY_SELECTED_REDUNDANT_SENTENCE",
+    "repair_variant": "Y"
+  },
+  "adjudication": {
+    "passive_validator_caused_harm": false,
+    "directional_signal": "WEAK_POSITIVE",
+    "transfer_supported": false,
+    "span_growth_authorized": false,
+    "reason": "Human preference is only a near-tie forced-choice edge and the remaining required human dimensions were not separately reported. This is insufficient for scale-up or TRANSFER_SUPPORTED status.",
+    "next_required_method": "Replicate passive-validator single-defect repair on a fresh natural baseline before any span-growth test."
+  },
+  "recorded_at": "2026-09-09T17:26:00+08:00"
+}
