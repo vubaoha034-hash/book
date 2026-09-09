@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 372,
+  "task_id": "PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_ACCEPTED",
+  "purpose": "Re-distill the missing reader-experience layer directly from the three real source novels, with stable source anchors and an explicit later human transfer gate. Do not treat macro Novel DNA as a substitute for prose/reader-experience evidence.",
+  "source_bindings": {
+    "BOOK-01": {
+      "title": "射雕英雄传",
+      "provider": "ChatGPT File Library",
+      "file_library_title": "9dd76684-1260-47bc-a3f4-4555bdce006d.TXT",
+      "canonical_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14",
+      "scope": "40/40 回"
+    },
+    "BOOK-02": {
+      "title": "诛仙",
+      "provider": "Google Drive",
+      "drive_source_id": "1BDFZ1TXCwbqWrdm-SLqkKO714R1Kj0AT",
+      "canonical_sha256": "9897950a0e606f12516544ee4c9405c40af7cb3964508280b752dffcb6bb6fd3",
+      "scope": "序章 + 第1—256章 + 尾声"
+    },
+    "BOOK-03": {
+      "title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+      "provider": "Google Drive",
+      "drive_docx_id": "1__-xv6Zz0P3uO2Nn9KSICE-51fxlNESs",
+      "drive_extracted_text_id": "1m5LnlmNks9rtnDwiA3MlRp2owkPXifC8REHa95JjVeo",
+      "docx_sha256": "f457f318d9f69088a9caf0ef286354ba0e766b56e622c3b48ddb44aa17fc1de6",
+      "extracted_text_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec",
+      "scope": "2卷 / 75编号章节"
+    }
+  },
+  "required_dimensions": [
+    "HOOK_AND_FIRST_PAGE_PROPULSION",
+    "PRESSURE_ESCALATION_AND_TENSION",
+    "MYSTERY_VS_CONFUSION_BOUNDARY",
+    "IMMEDIATE_MOTIVE_LEGIBILITY",
+    "INFORMATION_RELEASE_TIMING",
+    "CHARACTER_VOICE_DIFFERENTIATION",
+    "SCENE_ENTRY_EXIT_ENERGY",
+    "CONTINUOUS_SPAN_PACING",
+    "EMOTIONAL_ACCUMULATION_AND_PAYOFF",
+    "PROSE_SURFACE_ANTI_TEMPLATE_BEHAVIOR"
+  ],
+  "sampling_contract": {
+    "minimum_source_anchored_cards_per_book": 30,
+    "minimum_total_cards": 90,
+    "each_dimension_minimum_per_book": 2,
+    "non_adjacent_coverage_required": true,
+    "early_middle_late_coverage_required": true,
+    "source_location_required": true,
+    "long_copyrighted_quotes_in_git": false,
+    "abstract_card_must_preserve_concrete_scene_identity": true,
+    "generic_literary_praise_forbidden": true
+  },
+  "card_schema": [
+    "book_id",
+    "source_anchor",
+    "scene_identity",
+    "reader_question_or_expectation_before",
+    "immediate_character_objective",
+    "pressure_or_uncertainty_source",
+    "what_information_is_visible_now",
+    "what_information_is_withheld",
+    "why_withholding_is_not_confusion",
+    "state_change_per_beat",
+    "voice_or_prose_surface_signal",
+    "reader_reward_or_new_question",
+    "exit_energy",
+    "dimension_tags",
+    "failure_boundary",
+    "portable_mechanism_candidate"
+  ],
+  "hard_gates": {
+    "source_must_be_actually_read": true,
+    "source_anchor_must_be_recoverable": true,
+    "macro_dna_reuse_as_answer": false,
+    "scene_to_speech_only_is_insufficient": true,
+    "AI_only_transfer_validation": false,
+    "actual_human_transfer_required_before_promotion": true,
+    "full_manuscript_rewrite_during_phase372": false,
+    "YMGQ_span_growth_during_phase372": false,
+    "global_dna_promotion_during_phase372": false
+  },
+  "required_outputs": [
+    "state/calibration/PHASE372_BOOK01_READER_EXPERIENCE_CARDS_V1.jsonl",
+    "state/calibration/PHASE372_BOOK02_READER_EXPERIENCE_CARDS_V1.jsonl",
+    "state/calibration/PHASE372_BOOK03_READER_EXPERIENCE_CARDS_V1.jsonl",
+    "state/calibration/PHASE372_THREE_BOOK_READER_EXPERIENCE_SYNTHESIS_V1.md",
+    "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json"
+  ],
+  "promotion_contract": {
+    "reader_experience_candidate_may_be_created": true,
+    "candidate_may_be_called_transfer_proven": false,
+    "transfer_proven_requires_new_prose_baseline": true,
+    "transfer_proven_requires_actual_human_directional_improvement": true,
+    "transfer_proven_requires_one_span_growth_survival": true
+  },
+  "next_after_phase372": "Create a small source-derived reader-experience transfer probe on fresh prose; actual target reader chooses/reads it before any new long manuscript work.",
+  "created_at": "2026-09-09T11:10:00+08:00"
+}
