@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 372,
+  "task_id": "PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1",
+  "review_status": "ACCEPT_SOURCE_ANCHORED_EXTRACTION_AND_SYNTHESIS_NOT_TRANSFER",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "source_books": {
+    "BOOK-01": {
+      "title": "射雕英雄传",
+      "card_count": 30,
+      "unique_scene_anchors": 10,
+      "source_plane": "current_file_library_raw",
+      "source_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14"
+    },
+    "BOOK-02": {
+      "title": "诛仙",
+      "card_count": 30,
+      "unique_scene_anchors": 10,
+      "source_plane": "google_drive_raw",
+      "drive_source_id": "1BDFZ1TXCwbqWrdm-SLqkKO714R1Kj0AT",
+      "source_sha256": "9897950a0e606f12516544ee4c9405c40af7cb3964508280b752dffcb6bb6fd3"
+    },
+    "BOOK-03": {
+      "title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+      "card_count": 30,
+      "unique_scene_anchors": 10,
+      "source_plane": "google_drive_extracted_text",
+      "drive_source_id": "1m5LnlmNks9rtnDwiA3MlRp2owkPXifC8REHa95JjVeo",
+      "source_sha256": "b08437ab03a2eafd5f7e7dcb1cfe2070deaef68890d337ba8ce2a6fd2c6027ec"
+    }
+  },
+  "mechanical_validation": {
+    "total_cards": 90,
+    "json_parse": "PASS",
+    "required_fields_present": "PASS",
+    "per_book_card_count": "30/30/30",
+    "dimensions_per_book": {
+      "HOOK_AND_FIRST_PAGE_PROPULSION": 3,
+      "PRESSURE_ESCALATION_AND_TENSION": 3,
+      "MYSTERY_VS_CONFUSION_BOUNDARY": 3,
+      "IMMEDIATE_MOTIVE_LEGIBILITY": 3,
+      "INFORMATION_RELEASE_TIMING": 3,
+      "CHARACTER_VOICE_DIFFERENTIATION": 3,
+      "SCENE_ENTRY_EXIT_ENERGY": 3,
+      "CONTINUOUS_SPAN_PACING": 3,
+      "EMOTIONAL_ACCUMULATION_AND_PAYOFF": 3,
+      "PROSE_SURFACE_ANTI_TEMPLATE_BEHAVIOR": 3
+    },
+    "minimum_per_dimension_per_book": 2,
+    "early_middle_late_coverage": "PASS",
+    "non_adjacent_scene_coverage": "PASS",
+    "copyright_long_quote_storage": "NONE",
+    "YMGQ_writing_or_span_growth": "NONE"
+  },
+  "candidate_ids": [
+    "RX-C01",
+    "RX-C02",
+    "RX-C03",
+    "RX-C04",
+    "RX-C05",
+    "RX-C06",
+    "RX-C07",
+    "RX-C08"
+  ],
+  "candidate_status": "SOURCE_DERIVED_NOT_TRANSFER_PROVEN",
+  "writing_transfer": "UNPROVEN",
+  "span_growth_transfer": "UNPROVEN",
+  "long_form_transfer": "UNPROVEN",
+  "architecture_promotion_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "outputs": {
+    "state/calibration/PHASE372_BOOK01_READER_EXPERIENCE_CARDS_V1.jsonl": "680e984b00b9717c8b4d35b408215633f341a6cd186725d03e0c1a5b17b8b428",
+    "state/calibration/PHASE372_BOOK02_READER_EXPERIENCE_CARDS_V1.jsonl": "d83c59c573caeb18d9933b39250661ffa3c104f00bb64159b90b2c6c49c82029",
+    "state/calibration/PHASE372_BOOK03_READER_EXPERIENCE_CARDS_V1.jsonl": "4c5d773d4ff3a6332868fdc2bc909186158cacfc8d23623dc45760e58d0fd88f",
+    "state/calibration/PHASE372_THREE_BOOK_READER_EXPERIENCE_SYNTHESIS_V1.md": "8fe0ef3ae9885362730c3f5eff77c4b9b25014328a713627ce818b8e64d75a27"
+  },
+  "next_required_task": "PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1",
+  "recorded_at": "2026-09-09T13:55:00+08:00"
+}
