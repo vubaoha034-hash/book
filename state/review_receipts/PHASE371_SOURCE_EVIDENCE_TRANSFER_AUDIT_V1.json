@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 371,
+  "task_id": "NOVEL_DISTILLATION_PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1",
+  "review_status": "ACCEPT_AUDIT_WITH_CORRECTIVE_ACTIONS",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "verdicts": {
+    "source_reading": "REAL_EFFECTIVE",
+    "source_derived_evidence": "REAL_EFFECTIVE_WITH_PROVENANCE_DURABILITY_DEFECTS",
+    "book_level_distillation": "PARTIALLY_EFFECTIVE",
+    "cross_book_global_distillation_as_structural_knowledge": "PARTIALLY_EFFECTIVE",
+    "three_book_microcraft_source_evidence": "REAL_EFFECTIVE",
+    "microcraft_writing_transfer": "PARTIALLY_EFFECTIVE",
+    "global_dna_real_manuscript_writing_transfer": "UNPROVEN",
+    "stable_long_form_scale_transfer": "UNPROVEN"
+  },
+  "book_results": {
+    "BOOK-01": {
+      "title": "射雕英雄传",
+      "source_reality": "REAL_EFFECTIVE",
+      "source_durability": "PARTIALLY_EFFECTIVE",
+      "evidence_trace": "REAL_EFFECTIVE",
+      "distillation": "PARTIALLY_EFFECTIVE",
+      "writing_transfer": "UNPROVEN"
+    },
+    "BOOK-02": {
+      "title": "诛仙",
+      "source_reality": "REAL_EFFECTIVE",
+      "evidence_trace": "REAL_EFFECTIVE_WITH_HISTORICAL_INTERMEDIATE_GRANULARITY_LIMITATION",
+      "distillation": "PARTIALLY_EFFECTIVE",
+      "writing_transfer": "UNPROVEN"
+    },
+    "BOOK-03": {
+      "title": "盗墓笔记【壹】（七星鲁王 + 怒海潜沙）",
+      "source_reality": "REAL_EFFECTIVE",
+      "evidence_trace": "REAL_EFFECTIVE",
+      "distillation": "PARTIALLY_EFFECTIVE",
+      "writing_transfer": "UNPROVEN"
+    }
+  },
+  "critical_findings": [
+    "library/source-register.json was empty before Phase371",
+    "manifests/library_manifest.jsonl was empty before Phase371",
+    "private Drive evidence proved three real source chains despite missing central registry",
+    "three-book Scene-to-Speech microcraft evidence contains 30 source-derived samples per book",
+    "GN-VDNA-01 has zero real-manuscript applied outcomes",
+    "YMGQ router explicitly rejected GN-VDNA-01; YMGQ improvements cannot prove Global DNA transfer",
+    "Phase365 AI quality PASS was contradicted by actual-human rejection",
+    "Phase363 human-positive short prose did not survive Phase364/367 long-form regeneration",
+    "Phase369/370 recovered reader pull only after exact-anchor, short-choice, bounded-span, actual-human control"
+  ],
+  "corrective_actions_completed": [
+    "restored privacy-safe source registry",
+    "restored privacy-safe library manifest",
+    "added rules/source-evidence-transfer-gate.md",
+    "separated structural validity from writing-transfer validity",
+    "made actual-human directional improvement mandatory for transfer proof",
+    "blocked short-form PASS from authorizing immediate long-form generation"
+  ],
+  "report": "docs/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.md",
+  "next": "PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1",
+  "recorded_at": "2026-09-09T10:50:00+08:00"
+}
