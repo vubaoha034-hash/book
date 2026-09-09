@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 371,
+  "event_type": "SOURCE_PROVENANCE_REBIND_ADDENDUM",
+  "status": "ACCEPT_CURRENT_FILE_LIBRARY_SOURCE_RELOCATED",
+  "supersedes_claim_only": "BOOK-01 source was historical-only and not currently re-readable",
+  "historical_audit_receipt_rewritten": false,
+  "book_id": "BOOK-01",
+  "title": "射雕英雄传",
+  "current_source": {
+    "provider": "ChatGPT File Library",
+    "title": "9dd76684-1260-47bc-a3f4-4555bdce006d.TXT",
+    "current_readable": true,
+    "first_chapter_reopened": true,
+    "drive_unified": false,
+    "canonical_sha256": "5724415a203a194f1c9a481cb6a47b0d67807a89fa8c51b52b48afcafd410d14"
+  },
+  "settlement": {
+    "source_reality": "REAL_EFFECTIVE",
+    "source_current_reaccess": "REAL_EFFECTIVE",
+    "storage_consistency": "PARTIALLY_EFFECTIVE_NOT_DRIVE_UNIFIED",
+    "distillation_verdict_changed": false,
+    "writing_transfer_verdict_changed": false
+  },
+  "note": "This addendum corrects only current source accessibility. It does not alter the Phase371 conclusion that book-level knowledge transfer to stable long-form prose remains unproven.",
+  "recorded_at": "2026-09-09T11:06:00+08:00"
+}
