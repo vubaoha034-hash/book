@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 373,
+  "task_id": "PHASE373_FRESH_PROSE_READER_EXPERIENCE_TRANSFER_PROBE_V1",
+  "review_status": "OUTPUT_RECEIVED_PENDING_ACTUAL_HUMAN_BLIND_REVIEW",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "input_phase372_receipt": "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
+  "choice_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+  "choice_pack_sha256": "85b109ef546eb500612668ffcf6ab199b4331d1b6a3a9087cf415f6a940f24b9",
+  "fresh_situation": "Spring Harmony Theatre backstage identity/murder puzzle; not YMGQ and not copied from any source-book plot.",
+  "variants": 3,
+  "labels": ["A", "B", "C"],
+  "role_mapping_status": "SEALED_UNTIL_HUMAN_VERDICT",
+  "role_mapping_derivation_seed_sha256": "e5c9583e0af301716d4e6a060b82928c09669b967a01c46e1534abf2377f869e",
+  "candidate_sets": {
+    "RX_PULL": ["RX-C01", "RX-C02", "RX-C04"],
+    "RX_SURFACE": ["RX-C03", "RX-C06", "RX-C08"],
+    "CONTROL": "No deliberate Phase372 candidate activation; same-context contamination limitation still applies."
+  },
+  "human_review_pending": true,
+  "transfer_status": "UNPROVEN",
+  "same_context_control_limitation": true,
+  "candidate_win_would_mean": "TRANSFER_SIGNAL_ONLY",
+  "independent_fresh_context_revalidation_required": true,
+  "span_growth_survival_required_for_transfer_supported": true,
+  "second_span_growth_authorized": false,
+  "YMGQ_rewrite_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "architecture_promotion_authorized": false,
+  "recorded_at": "2026-09-09T14:40:00+08:00"
+}
