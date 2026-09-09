@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.3.0",
+  "schema_version": "3.4.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-09T16:15:00+08:00",
+  "updated_at": "2026-09-09T17:29:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,19 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1",
-    "phase": "PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE",
-    "phase_ordinal": 375,
-    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
-    "task_contract": "state/tasks/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
-    "execution_scope": "Phase375 passively validated the immutable Phase373 B baseline, located exactly one redundant author-summary defect, produced one minimal repair, and blinded untouched baseline versus repair as X/Y. No other prose changed; no YMGQ writing or span growth authorized.",
+    "task_id": "PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1",
+    "phase": "FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION",
+    "phase_ordinal": 376,
+    "status": "READY_NOT_STARTED",
+    "task_contract": "state/tasks/PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1.json",
+    "execution_scope": "Replicate the passive-validator method on a new natural short-fiction baseline. Freeze baseline first, passively locate at most one material defect, make at most one minimal repair, then blind human-compare. No direct RX generation activation, no YMGQ writing, and no scale-up.",
     "direct_RX_generation_activation": false,
     "passive_RX_validation_authorized": true,
     "one_located_defect_max": true,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt and compares X/Y on overall preference, desire to continue, AI smell, clarity/flow, tension, and skim/stop point. Mapping remains sealed until verdict."
+    "next_action": "Execute Phase376 fresh natural baseline replication and stop at actual-human blind review."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -167,7 +167,7 @@
     "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
     "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
     "direct_generation_calling_mode": "DISABLED",
-    "passive_validator_calling_mode": "PHASE375_HUMAN_BLIND_REVIEW_PENDING",
+    "passive_validator_calling_mode": "PHASE375_WEAK_POSITIVE_PHASE376_REPLICATION_REQUIRED",
     "required_rules": [
       "rules/source-evidence-transfer-gate.md",
       "rules/reader-experience-passive-validator-only-v1.md"
@@ -210,7 +210,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 25,
+    "logical_latest_checkpoint_sequence": 26,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -227,7 +227,10 @@
     "Phase375_may_not_write_or_extend_YMGQ": true,
     "Phase375_may_not_do_span_growth_before_actual_human_win": true,
     "Phase320_remains_highest_accepted_promotion_checkpoint": true,
-    "Phase375_mapping_may_not_be_revealed_before_human_verdict": true
+    "Phase375_mapping_may_not_be_revealed_before_human_verdict": true,
+    "Phase375_weak_preference_may_not_be_scaled_without_replication": true,
+    "Phase376_may_repair_at_most_one_located_defect": true,
+    "Phase376_may_not_write_or_extend_YMGQ": true
   },
   "rollback": {
     "authorized": false,
@@ -245,5 +248,21 @@
     "span_growth_authorized": false,
     "YMGQ_writing_authorized": false,
     "transfer_status": "UNPROVEN"
+  },
+  "phase375_settlement": {
+    "execution": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE_WEAK_REPAIR_PREFERENCE",
+    "human_receipt": "state/review_receipts/PHASE375_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "revealed_mapping": {
+      "X": "BASELINE_UNTOUCHED_PHASE373_B",
+      "Y": "SINGLE_DEFECT_REPAIR"
+    },
+    "overall_comparison": "NEAR_TIE",
+    "forced_preference_if_required": "Y_REPAIR",
+    "preference_strength": "WEAK",
+    "passive_validator_caused_harm": false,
+    "directional_signal": "WEAK_POSITIVE",
+    "transfer_supported": false,
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
   }
 }
