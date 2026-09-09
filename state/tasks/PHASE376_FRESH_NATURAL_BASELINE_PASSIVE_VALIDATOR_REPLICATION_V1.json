@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 376,
+  "task_id": "PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE375_WEAK_POSITIVE_PASSIVE_VALIDATOR_SIGNAL",
+  "purpose": "Replicate the passive-validator method on a fresh natural short-fiction baseline before allowing any scale-up. This phase tests method repeatability, not source-rule promotion.",
+  "required_method": [
+    "Create one fresh short-fiction baseline in a new situation without deliberately activating RX-C01 through RX-C08 as construction targets.",
+    "Freeze that natural baseline before validation.",
+    "Run RX-C01 through RX-C08 only as passive post-draft validators.",
+    "If no material located defect exists, return NO_REPAIR_JUSTIFIED and stop.",
+    "If a material defect exists, select exactly one located defect and make the smallest possible repair.",
+    "Preserve all unrelated prose and story facts.",
+    "Blind baseline versus repair before actual-human comparison.",
+    "Do not stack candidates or add countdowns, extra clues, mysteries, action beats, or motive withholding merely to satisfy a rule."
+  ],
+  "evidence_boundary": {
+    "phase375_result": "WEAK_POSITIVE_NEAR_TIE_REPAIR_PREFERENCE",
+    "phase375_repair_variant": "Y",
+    "phase375_transfer_supported": false,
+    "same_context_contamination_acknowledged": true,
+    "replication_win_required": true,
+    "even_replication_win_does_not_authorize_full_manuscript": true
+  },
+  "human_gate": {
+    "required": true,
+    "judge": [
+      "overall preference",
+      "desire to continue",
+      "AI smell",
+      "clarity/flow",
+      "tension",
+      "first skim/stop point"
+    ],
+    "minimum_interpretation": "A second independent directional preference for the repair is required before any bounded scale test is considered."
+  },
+  "hard_gates": {
+    "direct_RX_generation_activation": false,
+    "candidate_stacking": false,
+    "one_located_defect_max": true,
+    "YMGQ_writing": false,
+    "YMGQ_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "created_at": "2026-09-09T17:28:00+08:00"
+}
