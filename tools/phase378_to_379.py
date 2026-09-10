@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+# one-shot Phase378 -> Phase379 settlement
 state_path = Path('state/project_state.json')
 cp_path = Path('state/continuity/LATEST_CHECKPOINT.json')
 
