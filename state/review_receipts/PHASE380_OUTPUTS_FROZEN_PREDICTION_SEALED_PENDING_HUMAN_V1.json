@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "frozen_at": "2026-09-10T23:39:27.357030+00:00",
+  "basis_commit": "58d5441b93fb8975a2a847fab1d0c4c22e121238",
+  "outputs": [
+    {
+      "replicate": 1,
+      "drive_id": "1HSFFn3EaIO27LKtp5YMpYwmN7NSXIdPd",
+      "title": "PHASE380_R1_GENERATED_SCENE_V1.txt",
+      "size": 6273,
+      "modified_time": "2026-09-10T12:55:40.933Z",
+      "sha256": "84b2e22a91b9eee1db762af37a01ad191c318405a4ecdef9cf43e003efe2beb4",
+      "chinese_chars": 1758,
+      "characters": 2149
+    },
+    {
+      "replicate": 2,
+      "drive_id": "15xYBzUCntSWKqWPDm-pNuPrO6e_Hel14",
+      "title": "PHASE380_R2_GENERATED_SCENE_V1.txt",
+      "size": 5631,
+      "modified_time": "2026-09-10T12:56:33.746Z",
+      "sha256": "963803fcafc8209086f27d3137ce6e6d061308164a1e1b955f733d4babdf699f",
+      "chinese_chars": 1524,
+      "characters": 2040
+    }
+  ],
+  "structural_contract": "PASS_BOTH_TRUE_TEXT_PLAIN_NONEMPTY_WITHIN_1400_TO_2000_CHINESE_CHARACTERS_DISTINCT_BYTES",
+  "story_fact_review": "FIXED_CORE_EVENTS_PRESERVED_NO_FORBIDDEN_ADDITIONS_IDENTIFIED",
+  "nonblocking_local_friction": "Recorded privately in sealed evaluator; no prose edits and no quality acceptance inferred.",
+  "independence_evidence": "USER_RETURNED_TWO_SEPARATE_DONE_MARKERS_AND_DISTINCT_OUTPUT_FILES; GENERATOR_TRANSCRIPTS_NOT_AUDITED",
+  "prediction_sha256": "6a8b84945ad6973584169852b1f7906c241dbdea09e6147724a83bc2fee05f46",
+  "mapping_sha256": "02ec74811bba88e1c02b989da5a4666f2003906384de8fcde8b6c9dc1006bd8d",
+  "blind_pack_sha256": "e79e6dc7e1efd1fba843df021dabc9ebf724f96bf52daf6044b5d8e80435f661",
+  "blind_pack_bytes": 12506,
+  "human_review_pending": true,
+  "historical_promotion_phase": 320,
+  "prose_modified": false,
+  "display_byte_policy": "Each original prose byte sequence is embedded once; only optional initial UTF-8 BOM is omitted at inserted section boundary.",
+  "status": "OUTPUTS_VERIFIED_FROZEN_AND_PREDICTION_SEALED_AWAITING_ACTUAL_HUMAN",
+  "recorded_at": "2026-09-10T23:45:16.887039+00:00",
+  "private_evidence": {
+    "drive_file_id": "1lYDtsnfpIvoxnl9XbayI-za8Usd4Tg9K",
+    "sha256": "5d65724ff54d2e23c0b930ade80e02e60edda048072c7cd3fbb5d313ad571266",
+    "bytes": 10988,
+    "library_file_id": "libfile_60c6e2812d4c8191ad338af03b8c743b"
+  },
+  "reader_pack": {
+    "drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG",
+    "file_name": "PHASE380_匿名阅读稿_V1.txt",
+    "mime_type": "text/plain",
+    "sha256": "e79e6dc7e1efd1fba843df021dabc9ebf724f96bf52daf6044b5d8e80435f661",
+    "bytes": 12506,
+    "library_file_id": "libfile_b12ded0daad88191ac32d96e9749290a",
+    "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_"
+  },
+  "drive_readback": "BOTH_FILES_EXACT_SHA256_AND_SIZE_MATCH",
+  "library_upload": "BOTH_SUCCEEDED_LOCAL_IDENTITY_APPLIED",
+  "evaluator_context": "POST_GENERATION_COORDINATOR_DIAGNOSTIC_NOT_A_SEPARATE_FRESH_EVALUATOR_CHAT",
+  "pre_human_direction": "SEALED_ONLY_IN_PRIVATE_EVIDENCE_ARCHIVE",
+  "blind_mapping": "SEALED_ONLY_IN_PRIVATE_EVIDENCE_ARCHIVE",
+  "human_verdict": null,
+  "quality_gate_promoted": false,
+  "generation_repair_supported": false,
+  "budget_usage": {
+    "pairs_generated": 1,
+    "initial_outputs": 2,
+    "prose_rewrites": 0,
+    "actual_human_review_rounds": 0
+  },
+  "next_action_zh": "刘先生阅读匿名稿并给出本轮真人结果；之后按一次结算边界结束校准，不自动追加样本。"
+}

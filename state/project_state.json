@@ -2,7 +2,7 @@
   "schema_version": "3.10.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T09:20:39+00:00",
+  "updated_at": "2026-09-10T23:45:16.887039+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,7 +15,7 @@
     "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
     "phase": "PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION",
     "phase_ordinal": 380,
-    "status": "READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
+    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
     "task_contract": "state/tasks/PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json",
     "execution_scope": "Two neutral fresh generators receive equivalent story facts with no Phase377/379 diagnosis and no anti-AI process intervention. After both outputs are frozen, the recalibrated discriminator must seal a directional AI-smell prediction before target-reader blind review.",
     "R1_drive_file_id": "1OiASyZl6Lhv0qLw7-RVoHwWp9QyirI4z",
@@ -25,9 +25,11 @@
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Run R1 and R2 Drive invocation files in two separate brand-new chats and return each DONE marker plus actual output Drive File ID.",
+    "next_action": "Read PHASE380_匿名阅读稿_V1.txt (Drive 1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG), collect one actual-human review, then unseal and settle this single-pair campaign; no new generation.",
     "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
-    "execution_budget": "ONE_EXISTING_PAIR_ONE_HUMAN_REVIEW_NO_AUTOMATIC_RECALIBRATION"
+    "execution_budget": "ONE_EXISTING_PAIR_ONE_HUMAN_REVIEW_NO_AUTOMATIC_RECALIBRATION",
+    "human_review_drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG",
+    "current_execution_receipt": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -211,9 +213,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 19,
-    "physical_event_hash": "9b0b053282beba0429c362a03383d3a74de07c1a4d1faa18c2a3f6af860495e4",
-    "logical_latest_checkpoint_sequence": 33,
+    "physical_STATE_LEDGER_sequence": 20,
+    "physical_event_hash": "7f98a456c28a5e58752fe232a70b6b31b787a85dd1577f9a6c5ae394e2f5e75d",
+    "logical_latest_checkpoint_sequence": 34,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -428,17 +430,62 @@
   },
   "phase380_execution_state": {
     "neutral_generator_invocations_ready": true,
-    "generation_started": false,
-    "discriminator_prediction_sealed": false,
-    "human_blind_review_pending": false,
+    "generation_started": true,
+    "discriminator_prediction_sealed": true,
+    "human_blind_review_pending": true,
     "quality_gate_promoted": false,
     "generation_repair_supported": false,
-    "accepted_checkpoint_advance": false
+    "accepted_checkpoint_advance": false,
+    "generation_complete": true,
+    "both_outputs_frozen": true,
+    "actual_human_review_complete": false,
+    "raw_outputs_received": 2,
+    "generation_pair_budget_used": 1
   },
   "delivery_recovery_plan": {
     "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
     "followup_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
     "followup_status": "DRAFT_NOT_ACTIVE",
     "acceptance_is_actual_reader_evidence": true
+  },
+  "phase380_outputs": {
+    "receipt": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
+    "status": "FROZEN_AND_DELIVERED_PENDING_ACTUAL_HUMAN",
+    "raw_outputs": [
+      {
+        "replicate": 1,
+        "drive_id": "1HSFFn3EaIO27LKtp5YMpYwmN7NSXIdPd",
+        "title": "PHASE380_R1_GENERATED_SCENE_V1.txt",
+        "size": 6273,
+        "modified_time": "2026-09-10T12:55:40.933Z",
+        "sha256": "84b2e22a91b9eee1db762af37a01ad191c318405a4ecdef9cf43e003efe2beb4",
+        "chinese_chars": 1758,
+        "characters": 2149
+      },
+      {
+        "replicate": 2,
+        "drive_id": "15xYBzUCntSWKqWPDm-pNuPrO6e_Hel14",
+        "title": "PHASE380_R2_GENERATED_SCENE_V1.txt",
+        "size": 5631,
+        "modified_time": "2026-09-10T12:56:33.746Z",
+        "sha256": "963803fcafc8209086f27d3137ce6e6d061308164a1e1b955f733d4babdf699f",
+        "chinese_chars": 1524,
+        "characters": 2040
+      }
+    ],
+    "private_evidence_drive_file_id": "1lYDtsnfpIvoxnl9XbayI-za8Usd4Tg9K",
+    "private_evidence_sha256": "5d65724ff54d2e23c0b930ade80e02e60edda048072c7cd3fbb5d313ad571266",
+    "prediction_sha256": "6a8b84945ad6973584169852b1f7906c241dbdea09e6147724a83bc2fee05f46",
+    "mapping_sha256": "02ec74811bba88e1c02b989da5a4666f2003906384de8fcde8b6c9dc1006bd8d",
+    "reader_pack": {
+      "drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG",
+      "file_name": "PHASE380_匿名阅读稿_V1.txt",
+      "mime_type": "text/plain",
+      "sha256": "e79e6dc7e1efd1fba843df021dabc9ebf724f96bf52daf6044b5d8e80435f661",
+      "bytes": 12506,
+      "library_file_id": "libfile_b12ded0daad88191ac32d96e9749290a",
+      "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_"
+    },
+    "human_verdict": null
   }
 }

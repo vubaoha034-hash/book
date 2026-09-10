@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "phase": 380,
   "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
-  "status": "READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
+  "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
   "trigger": "PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_ACCEPTED_DIAGNOSTIC_ONLY",
   "purpose": "Prospectively test whether the recalibrated target-reader AI-smell discriminator can predict which of two independently generated neutral prose samples the actual target reader will judge less AI-like. This phase does not test a generation repair protocol.",
   "fixed_story_facts": "state/calibration/PHASE380_FIXED_STORY_FACTS_PACKET_V1.json",
@@ -54,8 +54,10 @@
     "architecture_promotion": false,
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Run R1 and R2 Drive invocation files in two separate brand-new ChatGPT chats. Each chat must return only PHASE380_R1_DONE or PHASE380_R2_DONE plus the actual output Drive File ID.",
+  "next_required_action": "Read PHASE380_匿名阅读稿_V1.txt (Drive 1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG), collect one actual-human review, then unseal and settle this single-pair campaign; no new generation.",
   "created_at": "2026-09-10T16:41:00+08:00",
-  "updated_at": "2026-09-10T09:20:39+00:00",
-  "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json"
+  "updated_at": "2026-09-10T23:45:16.887039+00:00",
+  "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
+  "execution_receipt": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
+  "human_review_drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG"
 }
