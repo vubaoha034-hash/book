@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 378,
+  "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+  "status": "READY_REQUIRES_FRESH_GENERATOR_CONTEXTS",
+  "trigger": "PHASE377_ROOT_CAUSE_TAXONOMY_ACCEPTED_REPAIR_UNPROVEN",
+  "purpose": "Test whether changing the prose-generation process reduces actual-human AI smell without exposing the Phase377 diagnostic taxonomy to the generator and without sacrificing reader pull or clarity.",
+  "fresh_context_requirement": {
+    "current_phase377_chat_may_generate_valid_candidate": false,
+    "reason": "This chat has already seen the AI-smell taxonomy and would contaminate a generator-isolation test.",
+    "required_independent_generation_contexts": 2,
+    "control_and_process_candidate_must_not_see_each_other": true,
+    "post_draft_evaluator_must_be_separate_from_generation": true
+  },
+  "fixed_story_facts_required_before_generation": true,
+  "generation_arms": {
+    "CONTROL": {
+      "generator_sees": ["fixed story facts", "character facts", "continuity facts", "length/output contract"],
+      "generator_must_not_see": ["Phase377 taxonomy", "RX candidate list", "anti-AI checklist", "candidate output", "human prior result"]
+    },
+    "PROCESS": {
+      "generator_sees": ["same fixed story facts", "same character facts", "same continuity facts", "length/output contract", "process-only drafting protocol"],
+      "process_only_protocol": [
+        "Draft from one bounded viewpoint and that person's immediate private/social priorities.",
+        "Do not pre-plan a beat-by-beat clue or tension ladder.",
+        "Do not require every detail to pay an immediate plot function.",
+        "Do not consult or optimize against an AI-smell checklist while drafting.",
+        "Do not self-explain what the reader should infer after each piece of evidence.",
+        "Finish the first draft before any evaluation."
+      ],
+      "generator_must_not_see": ["Phase377 signature IDs or taxonomy text", "RX candidate list", "control output", "human prior result", "target technique counts"]
+    }
+  },
+  "post_draft_method": [
+    "Freeze both outputs before evaluation.",
+    "Separate evaluator applies Phase377 global diagnostic after both drafts are frozen.",
+    "Do not locally rewrite either draft before the first human comparison.",
+    "Blind CONTROL versus PROCESS labels before actual-human review.",
+    "Actual human judges AI smell separately from desire to continue, clarity, tension and skim point."
+  ],
+  "human_acceptance": {
+    "process_candidate_must_win_ai_smell": true,
+    "process_candidate_must_not_materially_lose_clarity": true,
+    "process_candidate_must_not_materially_lose_desire_to_continue": true,
+    "single_win_means": "PROCESS_LEVEL_TRANSFER_SIGNAL_ONLY",
+    "repeat_independent_win_required_before_transfer_supported": true,
+    "long_form_scale_not_authorized_from_short_probe": true
+  },
+  "hard_gates": {
+    "current_chat_generation": false,
+    "direct_phase377_taxonomy_exposure_to_generator": false,
+    "direct_RX_generation_activation": false,
+    "candidate_stacking": false,
+    "YMGQ_writing": false,
+    "YMGQ_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "required_rules": [
+    "rules/source-evidence-transfer-gate.md",
+    "rules/reader-experience-passive-validator-only-v1.md",
+    "rules/ai-smell-global-optimization-diagnostic-v1.md"
+  ],
+  "next_execution_step": "Create a fixed fresh story/character facts packet and two fresh-context generator invocation files, then execute CONTROL and PROCESS in genuinely separate fresh contexts.",
+  "created_at": "2026-09-10T15:00:00+08:00"
+}
