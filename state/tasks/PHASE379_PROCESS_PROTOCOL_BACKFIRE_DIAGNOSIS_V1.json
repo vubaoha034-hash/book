@@ -1,38 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "project_id": "novel-distillation",
   "phase": 379,
   "task_id": "PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1",
-  "status": "READY_NOT_STARTED",
+  "status": "SUPERSEDED_BY_MORE_SPECIFIC_PHASE379_RECALIBRATION",
   "trigger": "PHASE378_PROCESS_ARM_DECISIVELY_LOST_TO_CONTROL_AND_MODEL_EVALUATOR_PREDICTION_REVERSED_BY_ACTUAL_HUMAN",
-  "purpose": "Diagnose why the Phase378 PROCESS-only drafting protocol increased actual-human AI smell and disorder despite being designed to reduce global authorial optimization regularity.",
-  "frozen_evidence": {
-    "A": "R1_PROCESS",
-    "B": "R2_CONTROL",
-    "human_receipt": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
-    "pre_human_receipt": "state/review_receipts/PHASE378_GENERATOR_OUTPUT_FREEZE_AND_PREHUMAN_EVALUATOR_V1.json",
-    "human_located_A_dialogue": "你要那个？ / 他说过给我。 / 什么时候？"
-  },
-  "required_questions": [
-    "Did the PROCESS protocol merely remove plot optimization while leaving default synthetic dialogue cadence intact?",
-    "Did process instructions about private/social priorities cause polished reader-facing emotional summaries rather than lived cognition?",
-    "Did supposedly incidental objects become over-designed emotional symbols or mirrored beats?",
-    "Why did the Phase377 evaluator underweight the actual-human salient dialogue/cadence failure?",
-    "Which parts of the PROCESS protocol must be retained, removed, or redesigned before any new prose probe?"
-  ],
-  "hard_gates": {
-    "no_rewrite_of_R1_or_R2": true,
-    "no_new_YMGQ_writing": true,
-    "no_span_growth": true,
-    "no_long_form_scale": true,
-    "no_architecture_promotion": true,
-    "accepted_checkpoint_advance": false
-  },
-  "acceptance": {
-    "must_explain_actual_human_locator": true,
-    "must_explain_control_win_without_calling_control_ai_free": true,
-    "must_settle_failed_model_evaluator": true,
-    "must_produce_revised_experimental_design_before_any_new_generation": true
-  },
-  "next_action": "Run contrastive diagnosis on the frozen Phase378 pair and produce a revised process/evaluator design. Do not generate prose during diagnosis."
+  "superseded_by": "PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1",
+  "superseding_receipt": "state/review_receipts/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.json",
+  "reason": "The more specific Phase379 task completed the required PROCESS-backfire diagnosis, target-reader dialogue-cadence recalibration, evaluator settlement, contrastive matrix, report and rule. This generic task must not remain active or be rerun.",
+  "historical_creation_preserved": true,
+  "rerun_authorized": false,
+  "accepted_checkpoint_advance": false
 }
