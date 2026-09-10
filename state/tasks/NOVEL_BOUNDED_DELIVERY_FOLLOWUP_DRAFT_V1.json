@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1",
+  "status": "DRAFT_NOT_ACTIVE_NOT_WRITING_AUTHORIZATION",
+  "created_at": "2026-09-10T09:20:39+00:00",
+  "depends_on": "Phase380 valid settlement or explicit scoped decision to defer/close it",
+  "goal_zh": "用有上限的成文交付，判断目前方法能否写出刘先生愿意继续读的一章。",
+  "reference_zh": "第363阶段正向短样、第370阶段局部正向稿是参照；第370并非低AI味最终验收，不得机械复制句式。",
+  "reference_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+  "reference_drive_file_id": "1hrdGOvAB49CGMBdnNl30VAWq0ZvTWoHD",
+  "first_delivery": {
+    "kind": "一个连续场景",
+    "target_new_chinese_characters": [
+      2000,
+      3000
+    ],
+    "development_input": "已认可片段、必要人物与事实状态、一个明确场景目标；不把整套审稿清单塞给写作者。",
+    "story_plan_before_prose": "确认场景的即时目标、阻力、主动选择、代价与局部兑现；缺失就补最小故事合同。",
+    "no_claim": "这不是整本重写，也不把当场写好归因为蒸馏已经成功。"
+  },
+  "human_questions_zh": [
+    "想不想继续看？",
+    "人物眼前为什么这样做是否清楚？",
+    "AI味是否仍明显到妨碍阅读？",
+    "哪里开始想跳读；预期的局部兑现是否到了？"
+  ],
+  "budget_per_stage": {
+    "max_initial_drafts": 1,
+    "max_human_located_repair_passes": 1,
+    "failed_after_repair": "停止该方法的扩写，保留失败，不自动开下一套去AI规则。"
+  },
+  "conditional_delivery_ladder_zh": [
+    "第一场景获明确真人支持后，换一个场景验证。",
+    "第二场景也获支持后，在新合同中申请一次6000—9000字连续章节交付。",
+    "章节必须产生一次实际情节或关系兑现；成品阅读结果与方法有效性分开报告。"
+  ],
+  "formal_method_validation": "后续若声称蒸馏有效，必须另做同题、同模型、同预算、匿名对照；不能仅靠三次主观通过证明因果或长篇泛化。",
+  "activation_requirements": [
+    "协调者完成当前阶段结算。",
+    "形成并激活有明确正文范围的原生任务合同。",
+    "保留第320阶段晋级状态与历史真人否定。"
+  ],
+  "full_manuscript_rewrite_authorized": false,
+  "automatic_activation": false
+}

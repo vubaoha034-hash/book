@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 32,
-  "recorded_at": "2026-09-10T17:02:00+08:00",
+  "sequence": 33,
+  "recorded_at": "2026-09-10T09:20:39+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1"
   ],
-  "current_focus": "Phase378 blinded target reader decisively preferred CONTROL/B over PROCESS/A on all six comparative judgments; PROCESS/A was very AI-heavy and felt messy. The sealed model evaluator predicted the opposite, so Phase379 recalibrated the AI-smell discriminator by adding high-priority functionally exact dialogue adjacency ladders while retaining Phase377 global signatures as diagnostic only. Phase380 now prospectively tests discriminator direction on two neutral fresh-generator outputs before any new generation intervention.",
+  "current_focus": "Phase380 remains the only active task. Complete the already-prepared neutral pair once, seal prediction before one actual-reader comparison, and close this calibration campaign regardless of hit/miss/tie. Evaluator remains diagnostic only. A bounded prose-delivery followup is prepared but is not active or writing authorization.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -81,7 +81,12 @@
     "Phase379 target-reader AI-smell discriminator recalibration completed and accepted diagnostic-only",
     "Phase379 added AS-F01 functionally exact dialogue adjacency ladder as high-priority target-reader candidate",
     "Phase380 fixed neutral story facts and two equivalent fresh generator invocation files created",
-    "Phase380 R1/R2 invocation files stored as text/plain in Drive folder 小说蒸馏_新聊天执行"
+    "Phase380 R1/R2 invocation files stored as text/plain in Drive folder 小说蒸馏_新聊天执行",
+    "Current stale pending-human fields for Phase375/376 reconciled to existing settlements",
+    "Current AI-smell fields reconciled to Phase378 human evidence and Phase379 diagnostic status",
+    "One real ledger reconciliation event appended; no missing history fabricated",
+    "Phase380 prospective one-pair exit budget registered before generation",
+    "Conditional bounded prose-delivery task draft prepared without authorizing prose"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -99,8 +104,9 @@
     "Phase380 prospective discriminator prediction has not yet been sealed",
     "Target-reader AI-smell evaluator remains DIAGNOSTIC ONLY",
     "Generation repair remains UNPROVEN",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 32",
-    "YMGQ writing remains paused during Phase380 prospective discriminator calibration"
+    "YMGQ writing remains paused during Phase380 prospective discriminator calibration",
+    "Historical event-by-event coverage between ledger entry18 and logical checkpoint32 remains PARTIAL; current snapshot reconciled by event19",
+    "Legacy validate_skill.py fails existing V3 name/schema expectations on current V4.2 baseline; separate packaging maintenance issue"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -147,32 +153,39 @@
   "source_state_refs": [
     {
       "path": "state/project_state.json",
-      "role": "authoritative Phase378 fresh-generator-pending state"
+      "role": "current authoritative Phase380 state"
     },
     {
-      "path": "state/review_receipts/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json",
-      "role": "Phase377 audit settlement"
+      "path": "state/tasks/PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json",
+      "role": "current active Phase380 contract"
     },
     {
-      "path": "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
-      "role": "AI-smell contrastive audit"
+      "path": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
+      "role": "prospective one-pair campaign exit budget"
     },
     {
-      "path": "rules/ai-smell-global-optimization-diagnostic-v1.md",
-      "role": "global AI-smell diagnostic gate"
+      "path": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+      "role": "historical settled human result, not active task"
     },
     {
-      "path": "state/tasks/PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1.json",
-      "role": "active Phase378 isolation contract"
-    },
-    {
-      "path": "state/review_receipts/PHASE378_GENERATOR_ROLE_MAPPING_SEALED_V1.json",
-      "role": "sealed R1/R2 role mapping"
+      "path": "docs/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.md",
+      "role": "completed diagnostic basis"
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "physical ledger remains verified through sequence18"
+      "role": "19 physical events; current snapshot reconciled, earlier event coverage remains partial"
+    },
+    {
+      "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
+      "role": "bounded delivery plan"
+    },
+    {
+      "path": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
+      "role": "conditional draft only, not active authorization"
     }
   ],
-  "status": "ACTIVE_PHASE380_READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS"
+  "status": "ACTIVE_PHASE380_READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
+  "physical_ledger_entry_count": 19,
+  "physical_ledger_tail_hash": "9b0b053282beba0429c362a03383d3a74de07c1a4d1faa18c2a3f6af860495e4",
+  "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json"
 }

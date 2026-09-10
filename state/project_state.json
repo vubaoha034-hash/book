@@ -2,7 +2,7 @@
   "schema_version": "3.10.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T17:01:00+08:00",
+  "updated_at": "2026-09-10T09:20:39+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -25,7 +25,9 @@
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Run R1 and R2 Drive invocation files in two separate brand-new chats and return each DONE marker plus actual output Drive File ID."
+    "next_action": "Run R1 and R2 Drive invocation files in two separate brand-new chats and return each DONE marker plus actual output Drive File ID.",
+    "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
+    "execution_budget": "ONE_EXISTING_PAIR_ONE_HUMAN_REVIEW_NO_AUTOMATIC_RECALIBRATION"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -164,7 +166,7 @@
     "raw_copyrighted_text_in_public_git": false
   },
   "reader_experience_transfer_state": {
-    "status": "SOURCE_LAYER_COMPLETE_DIRECT_ACTIVATION_FAILED_PASSIVE_VALIDATOR_PROBE_REQUIRED",
+    "status": "SOURCE_LAYER_COMPLETE_TESTED_DIRECT_AND_PASSIVE_TRANSFER_NOT_SUPPORTED",
     "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
     "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
     "direct_generation_calling_mode": "DISABLED",
@@ -209,10 +211,13 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 18,
-    "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 32,
-    "claim_later_sequences_physically_appended": false
+    "physical_STATE_LEDGER_sequence": 19,
+    "physical_event_hash": "9b0b053282beba0429c362a03383d3a74de07c1a4d1faa18c2a3f6af860495e4",
+    "logical_latest_checkpoint_sequence": 33,
+    "claim_later_sequences_physically_appended": false,
+    "current_snapshot_reconciled": true,
+    "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
+    "reconciliation_receipt": "state/review_receipts/PHASE380_CONTINUITY_RECONCILIATION_V1.json"
   },
   "invariants": {
     "missing_result_means": "UNKNOWN",
@@ -268,14 +273,14 @@
     "receipt": null
   },
   "phase375_outputs": {
-    "status": "ONE_DEFECT_REPAIR_BLIND_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+    "status": "HISTORICAL_OUTPUTS_SETTLED_SEE_PHASE375_SETTLEMENT",
     "diagnosis": "state/calibration/PHASE375_SINGLE_DEFECT_DIAGNOSIS_V1.md",
     "blind_choice_pack": "state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
     "receipt": "state/review_receipts/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
     "selected_defect_count": 1,
     "direct_RX_generation_activation": false,
     "candidate_stacking": false,
-    "human_review_pending": true,
+    "human_review_pending": false,
     "span_growth_authorized": false,
     "YMGQ_writing_authorized": false,
     "transfer_status": "UNPROVEN"
@@ -298,7 +303,7 @@
   },
   "phase376_outputs": {
     "attempt": 2,
-    "status": "CLEAN_BLIND_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+    "status": "HISTORICAL_OUTPUTS_SETTLED_SEE_PHASE376_SETTLEMENT",
     "baseline": "state/calibration/PHASE376_ATTEMPT2_FRESH_NATURAL_BASELINE_V1.txt",
     "baseline_git_blob_sha": "2830b20aca0dec47bbe5c7f86a5b05e6853eee9f",
     "baseline_frozen_before_validation": true,
@@ -312,7 +317,7 @@
     "mapping_sealed_until_human_verdict": true,
     "direct_RX_generation_activation": false,
     "candidate_stacking": false,
-    "human_review_pending": true,
+    "human_review_pending": false,
     "replication_status": "UNPROVEN",
     "span_growth_authorized": false,
     "YMGQ_writing_authorized": false,
@@ -344,11 +349,11 @@
     "accepted_checkpoint_advance": false
   },
   "ai_smell_state": {
-    "status": "OPEN_BLOCKING_FAILURE_PHASE377_ROOT_CAUSE_TAXONOMY_ACCEPTED_REPAIR_UNPROVEN",
-    "latest_actual_human_evidence": "PHASE376_ATTEMPT2_BOTH_VARIANTS_HEAVY_AI_SMELL_NO_SKIM",
+    "status": "OPEN_FAILURE_PHASE379_DIAGNOSTIC_RECALIBRATION_COMPLETE_PHASE380_ONE_PAIR_PENDING",
+    "latest_actual_human_evidence": "PHASE378_PROCESS_VERY_HEAVY_CONTROL_SOME_AI_SMELL_MODEL_DIRECTION_WRONG",
     "story_propulsion_separable_from_ai_smell": true,
     "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
-    "next_required_task": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+    "next_required_task": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
     "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
     "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md"
   },
@@ -429,5 +434,11 @@
     "quality_gate_promoted": false,
     "generation_repair_supported": false,
     "accepted_checkpoint_advance": false
+  },
+  "delivery_recovery_plan": {
+    "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
+    "followup_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
+    "followup_status": "DRAFT_NOT_ACTIVE",
+    "acceptance_is_actual_reader_evidence": true
   }
 }

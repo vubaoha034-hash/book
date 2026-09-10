@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-09-10T09:20:39+00:00",
+  "status": "CURRENT_STATE_RECONCILED_BUDGET_REGISTERED_NOT_LITERARY_ACCEPTANCE",
+  "basis_commit": "08849c266a4229654ed91201ee3f6f280f3f8add",
+  "user_request_zh": "所以现在我们如何进行下一步，这个项目这么久了。最后我怕又一点用都没了。",
+  "before_file_sha256": {
+    "state/project_state.json": "54b6ea471532b25fb487daf915faf8f3e92cf79d984361bb9264a9f19058fd1f",
+    "state/continuity/LATEST_CHECKPOINT.json": "190adcfc0b18321f67c7d531beb9cc2fe78a940b83093e43971321564b74cd28",
+    "state/continuity/STATE_LEDGER.jsonl": "8b0a63c6fc3a5b38931f3482fc0d561a11d3a3095f2962dde6e9cbe23f03c090",
+    "state/tasks/PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json": "fd9e96baaaed2ff0de02025431661e7f2c9223050f9f182482722d2c2ba8439b"
+  },
+  "historical_values_preserved_here": {
+    "phase375_outputs": {
+      "status": "ONE_DEFECT_REPAIR_BLIND_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+      "diagnosis": "state/calibration/PHASE375_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+      "blind_choice_pack": "state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+      "receipt": "state/review_receipts/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
+      "selected_defect_count": 1,
+      "direct_RX_generation_activation": false,
+      "candidate_stacking": false,
+      "human_review_pending": true,
+      "span_growth_authorized": false,
+      "YMGQ_writing_authorized": false,
+      "transfer_status": "UNPROVEN"
+    },
+    "phase376_outputs": {
+      "attempt": 2,
+      "status": "CLEAN_BLIND_PACK_RECEIVED_PENDING_ACTUAL_HUMAN_REVIEW",
+      "baseline": "state/calibration/PHASE376_ATTEMPT2_FRESH_NATURAL_BASELINE_V1.txt",
+      "baseline_git_blob_sha": "2830b20aca0dec47bbe5c7f86a5b05e6853eee9f",
+      "baseline_frozen_before_validation": true,
+      "diagnosis": "state/calibration/PHASE376_ATTEMPT2_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+      "blind_choice_pack": "state/calibration/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+      "receipt": "state/review_receipts/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_REPLICATION_PENDING_HUMAN_V1.json",
+      "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_",
+      "drive_file_id": "17_0KtKmpurIapwaM-AuQIbxx93oa0942",
+      "selected_defect_count": 1,
+      "repair_detail_sealed_until_human_verdict": true,
+      "mapping_sealed_until_human_verdict": true,
+      "direct_RX_generation_activation": false,
+      "candidate_stacking": false,
+      "human_review_pending": true,
+      "replication_status": "UNPROVEN",
+      "span_growth_authorized": false,
+      "YMGQ_writing_authorized": false,
+      "accepted_checkpoint_advance": false
+    },
+    "ai_smell_state": {
+      "status": "OPEN_BLOCKING_FAILURE_PHASE377_ROOT_CAUSE_TAXONOMY_ACCEPTED_REPAIR_UNPROVEN",
+      "latest_actual_human_evidence": "PHASE376_ATTEMPT2_BOTH_VARIANTS_HEAVY_AI_SMELL_NO_SKIM",
+      "story_propulsion_separable_from_ai_smell": true,
+      "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
+      "next_required_task": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+      "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
+      "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md"
+    },
+    "reader_experience_transfer_state": {
+      "status": "SOURCE_LAYER_COMPLETE_DIRECT_ACTIVATION_FAILED_PASSIVE_VALIDATOR_PROBE_REQUIRED",
+      "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
+      "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
+      "direct_generation_calling_mode": "DISABLED",
+      "passive_validator_calling_mode": "PHASE376_VALID_REPLICATION_FAILED_NOT_PRIMARY_REPAIR_PATH",
+      "required_rules": [
+        "rules/source-evidence-transfer-gate.md",
+        "rules/reader-experience-passive-validator-only-v1.md"
+      ],
+      "actual_human_phase373_result": "CONTROL_WIN_NO_TRANSFER_SIGNAL",
+      "span_growth_authorized": false,
+      "long_form_transfer": "UNPROVEN"
+    },
+    "continuity_settlement": {
+      "physical_STATE_LEDGER_sequence": 18,
+      "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
+      "logical_latest_checkpoint_sequence": 32,
+      "claim_later_sequences_physically_appended": false
+    },
+    "checkpoint_source_refs": [
+      {
+        "path": "state/project_state.json",
+        "role": "authoritative Phase378 fresh-generator-pending state"
+      },
+      {
+        "path": "state/review_receipts/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json",
+        "role": "Phase377 audit settlement"
+      },
+      {
+        "path": "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+        "role": "AI-smell contrastive audit"
+      },
+      {
+        "path": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+        "role": "global AI-smell diagnostic gate"
+      },
+      {
+        "path": "state/tasks/PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1.json",
+        "role": "active Phase378 isolation contract"
+      },
+      {
+        "path": "state/review_receipts/PHASE378_GENERATOR_ROLE_MAPPING_SEALED_V1.json",
+        "role": "sealed R1/R2 role mapping"
+      },
+      {
+        "path": "state/continuity/STATE_LEDGER.jsonl",
+        "role": "physical ledger remains verified through sequence18"
+      }
+    ],
+    "original_phase380_acceptance": {
+      "primary_measure": "directional agreement on lower AI smell",
+      "single_correct_prediction": "CALIBRATION_HIT_ONE_REPLICATE_ONLY",
+      "single_wrong_prediction": "CALIBRATION_MISS_REQUIRES_FURTHER_RECALIBRATION",
+      "multiple_independent_correct_predictions_required_before_quality_gate": true,
+      "generation_repair_supported_from_this_phase": false,
+      "long_form_scale_authorized": false
+    }
+  },
+  "highest_accepted_phase_ordinal": 320,
+  "active_phase_ordinal": 380,
+  "historical_settlement_objects_unchanged": true,
+  "original_ledger_prefix_bytes_unchanged": true,
+  "reconciliation_event_hash": "9b0b053282beba0429c362a03383d3a74de07c1a4d1faa18c2a3f6af860495e4",
+  "historical_coverage": "PARTIAL_NOT_RECONSTRUCTED",
+  "generation_executed": false,
+  "human_verdict_collected": false,
+  "writing_authorized": false,
+  "known_preexisting_validation_failure": {
+    "validator": "scripts/validate_skill.py",
+    "exit_code": 1,
+    "errors": [
+      "SKILL.md must identify V3 in its body.",
+      "V3 config schema_version must be 3.0.0."
+    ],
+    "scope": "Existing packaging validator/version mismatch; unchanged in this state-only recovery. Do not report all repository checks green."
+  },
+  "validation": {
+    "native_anti_rollback_tests": "10_PASSED",
+    "proposed_state_transition": "PASS",
+    "all_19_event_hashes_and_links": "PASS",
+    "original_ledger_prefix": "BYTE_IDENTICAL",
+    "historical_settlements": "UNCHANGED",
+    "current_task_consistency": "PASS",
+    "generator_inputs": "UNCHANGED",
+    "packaging_validation": "BASELINE_AND_CANDIDATE_SAME_TWO_EXISTING_FAILURES"
+  }
+}

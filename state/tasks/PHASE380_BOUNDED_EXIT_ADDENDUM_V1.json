@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "applies_to_task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "created_at": "2026-09-10T09:20:39+00:00",
+  "status": "ACTIVE_PROSPECTIVE_EXECUTION_BUDGET_ONLY",
+  "purpose_zh": "结束无限校准循环；本轮只完成已经准备的第380阶段一对样本，随后结算，评判器继续只作辅助。",
+  "evidence_basis": {
+    "commit": "08849c266a4229654ed91201ee3f6f280f3f8add",
+    "generation_started_at_registration": false,
+    "outputs_seen_at_registration": false,
+    "human_verdict_seen_at_registration": false
+  },
+  "budget": {
+    "max_new_candidate_pairs": 1,
+    "max_initial_generations": 2,
+    "max_content_rewrites": 0,
+    "max_human_comparison_rounds": 1,
+    "transient_read_retry_per_file": 1,
+    "transport_retry_may_not_regenerate_prose": true
+  },
+  "existing_generator_invocations_unchanged": true,
+  "prediction_must_be_sealed_before_human_review": true,
+  "after_valid_human_verdict": {
+    "hit": "CALIBRATION_HIT_ONE_REPLICATE_ONLY_CAMPAIGN_CLOSED",
+    "miss": "CALIBRATION_MISS_CAMPAIGN_CLOSED",
+    "tie_or_human_uncertain": "INCONCLUSIVE_CAMPAIGN_CLOSED",
+    "all_outcomes_keep_evaluator": "DIAGNOSTIC_ONLY",
+    "no_automatic_further_recalibration": true,
+    "generation_repair_supported": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "invalid_or_unavailable_execution": "BLOCKED_WITH_EXACT_DEPENDENCY_NO_AUTOMATIC_REPLACEMENT_OR_NEW_PHASE",
+  "human_review_not_returned": "AWAITING_HUMAN_WITHOUT_POLLING_OR_FALSE_COMPLETION",
+  "post_campaign_route": "Prepare the bounded prose delivery task under a new explicit native task contract; do not wait for an automatic evaluator to become a production gate.",
+  "current_YMGQ_writing_authorized": false,
+  "followup_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
+  "scope_note": "This prospective budget changes no historical result, no frozen story facts, no generator prompt, no lower-AI-smell primary measure, and grants no quality promotion. The original requirement for multiple independent results remains necessary for any future evaluator gate; this campaign does not pursue that gate."
+}
