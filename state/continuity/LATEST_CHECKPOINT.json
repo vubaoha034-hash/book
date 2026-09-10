@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 33,
-  "recorded_at": "2026-09-10T16:41:00+08:00",
+  "sequence": 32,
+  "recorded_at": "2026-09-10T16:53:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
-    "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1"
+    "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1"
   ],
-  "current_focus": "Phase379 target-reader AI-smell discriminator recalibration is complete and accepted only as diagnostic calibration. Phase378 PROCESS was decisively rejected; CONTROL won but retained some AI smell. The previous model evaluator produced a directional false positive. Phase379 added AS-F01 functionally exact dialogue adjacency ladder as a high-priority local discriminator and retained Phase377 global signatures only as diagnostic context. Phase380 will prospectively test evaluator direction on a new neutral fresh pair before using any discriminator to guide generation.",
+  "current_focus": "Phase378 blinded target reader decisively preferred CONTROL/B over PROCESS/A on all six comparative judgments; PROCESS/A was very AI-heavy and felt messy. The sealed model evaluator predicted the opposite, so Phase379 recalibrated the AI-smell discriminator by adding high-priority functionally exact dialogue adjacency ladders while retaining Phase377 global signatures as diagnostic only. Phase380 now prospectively tests discriminator direction on two neutral fresh-generator outputs before any new generation intervention.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -74,7 +74,14 @@
     "Phase379 discriminator recalibration report completed",
     "rules/target-reader-ai-smell-discriminator-v1.md completed",
     "Phase379 diagnostic recalibration accepted; generation repair remains unproven",
-    "Generic Phase379 PROCESS backfire task superseded by the more specific completed recalibration task"
+    "Generic Phase379 PROCESS backfire task superseded by the more specific completed recalibration task",
+    "Phase378 actual-human blind verdict completed: B/R2/CONTROL wins all six comparisons",
+    "Phase378 PROCESS/R1 rejected: A judged very AI-heavy and messy",
+    "Phase378 sealed pre-human evaluator direction was false positive",
+    "Phase379 target-reader AI-smell discriminator recalibration completed and accepted diagnostic-only",
+    "Phase379 added AS-F01 functionally exact dialogue adjacency ladder as high-priority target-reader candidate",
+    "Phase380 fixed neutral story facts and two equivalent fresh generator invocation files created",
+    "Phase380 R1/R2 invocation files stored as text/plain in Drive folder 小说蒸馏_新聊天执行"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -89,7 +96,11 @@
     "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 30",
     "Reliable AI-smell evaluator remains unproven",
     "Stable low-AI generation process remains unproven",
-    "Phase380 prospective discriminator calibration not yet executed"
+    "Phase380 prospective discriminator calibration not yet executed",
+    "Phase380 two neutral fresh generator outputs have not yet been produced",
+    "Phase380 prospective discriminator prediction has not yet been sealed",
+    "Target-reader AI-smell evaluator remains DIAGNOSTIC ONLY",
+    "Generation repair remains UNPROVEN"
   ],
   "blocked": [
     "PHASE378_TWO_FRESH_GENERATOR_OUTPUTS_PENDING",
@@ -132,7 +143,7 @@
     "Claim book/global Novel DNA validation proves prose quality",
     "Claim YMGQ improvement as evidence of GN-VDNA-01 success"
   ],
-  "next_required_action": "Prepare Phase380 new neutral fixed story facts and two equivalent fresh generator invocations; execute them in genuinely separate new chats, freeze outputs, seal discriminator prediction, then obtain actual-human blind verdict.",
+  "next_required_action": "Run Phase380 R1 Drive invocation 1OiASyZl6Lhv0qLw7-RVoHwWp9QyirI4z and R2 Drive invocation 1a16_NQn7suEMe0yeeo4KE3WQ45NIRW1W in two separate brand-new ChatGPT chats. Return only the two DONE markers with actual output Drive File IDs.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -163,5 +174,5 @@
       "role": "physical ledger remains verified through sequence18"
     }
   ],
-  "status": "ACTIVE_PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_READY"
+  "status": "ACTIVE_PHASE380_READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS"
 }
