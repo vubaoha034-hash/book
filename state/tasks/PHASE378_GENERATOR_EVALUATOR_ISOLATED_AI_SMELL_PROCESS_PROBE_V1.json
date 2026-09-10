@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "phase": 378,
   "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
-  "status": "READY_REQUIRES_FRESH_GENERATOR_CONTEXTS",
+  "status": "READY_FOR_TWO_FRESH_GENERATOR_CHATS",
   "trigger": "PHASE377_ROOT_CAUSE_TAXONOMY_ACCEPTED_REPAIR_UNPROVEN",
   "purpose": "Test whether changing the prose-generation process reduces actual-human AI smell without exposing the Phase377 diagnostic taxonomy to the generator and without sacrificing reader pull or clarity.",
   "fresh_context_requirement": {
@@ -13,7 +13,11 @@
     "control_and_process_candidate_must_not_see_each_other": true,
     "post_draft_evaluator_must_be_separate_from_generation": true
   },
-  "fixed_story_facts_required_before_generation": true,
+  "fixed_story_facts": {
+    "path": "state/calibration/PHASE378_FIXED_STORY_FACTS_PACKET_V1.json",
+    "frozen": true,
+    "genre": "contemporary social realism / family relationship scene"
+  },
   "generation_arms": {
     "CONTROL": {
       "generator_sees": ["fixed story facts", "character facts", "continuity facts", "length/output contract"],
@@ -31,6 +35,20 @@
       ],
       "generator_must_not_see": ["Phase377 signature IDs or taxonomy text", "RX candidate list", "control output", "human prior result", "target technique counts"]
     }
+  },
+  "fresh_invocations": {
+    "R1": {
+      "git_path": "state/tasks/PHASE378_FRESH_GENERATOR_R1_INVOCATION_V1.txt",
+      "drive_file_id": "1ChOJYeD7Y3WFupshMkAGcMbZ7DEx4mg8",
+      "drive_folder_id": "1LXWW3Vs-Hkx19Ogwzv20w2wUjP7RgCMu"
+    },
+    "R2": {
+      "git_path": "state/tasks/PHASE378_FRESH_GENERATOR_R2_INVOCATION_V1.txt",
+      "drive_file_id": "1pm5sbHpQpdE3btCgqPxVYrQ55Zz27RCU",
+      "drive_folder_id": "1LXWW3Vs-Hkx19Ogwzv20w2wUjP7RgCMu"
+    },
+    "role_mapping_receipt": "state/review_receipts/PHASE378_GENERATOR_ROLE_MAPPING_SEALED_V1.json",
+    "role_mapping_user_visible_before_verdict": false
   },
   "post_draft_method": [
     "Freeze both outputs before evaluation.",
@@ -63,6 +81,7 @@
     "rules/reader-experience-passive-validator-only-v1.md",
     "rules/ai-smell-global-optimization-diagnostic-v1.md"
   ],
-  "next_execution_step": "Create a fixed fresh story/character facts packet and two fresh-context generator invocation files, then execute CONTROL and PROCESS in genuinely separate fresh contexts.",
-  "created_at": "2026-09-10T15:00:00+08:00"
+  "next_execution_step": "Run R1 and R2 invocation files in two genuinely separate fresh ChatGPT chats. Each must save its output to Drive and return only its DONE marker plus actual Drive File ID. Do not execute either in this Phase377 chat.",
+  "created_at": "2026-09-10T15:00:00+08:00",
+  "prepared_at": "2026-09-10T15:15:00+08:00"
 }
