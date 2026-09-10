@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 31,
-  "recorded_at": "2026-09-10T16:17:00+08:00",
+  "sequence": 32,
+  "recorded_at": "2026-09-10T16:25:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
-    "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1"
+    "PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1"
   ],
-  "current_focus": "Phase378 R1/R2 fresh generator outputs are complete and byte-frozen. A separate post-generation evaluator applied Phase377 diagnostics after freeze and sealed its pre-human prediction. A deterministic hash-derived A/B blind pack is now in Drive. Actual-human AI-smell and reading-quality verdict is pending; mappings remain sealed. No YMGQ writing or scale-up is authorized.",
+  "current_focus": "Phase378 actual-human blind verdict is complete. A=R1=PROCESS and B=R2=CONTROL. B won overall preference, lower AI smell, more human-written feel, desire to continue, character naturalness and clarity/flow. A was judged very AI-heavy and messy enough to create a skim/stop urge. B still has some AI smell and is not accepted as AI-free. The sealed pre-human evaluator predicted the opposite AI-smell direction and failed this replicate. Phase379 must diagnose PROCESS backfire before any new generation.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -63,7 +63,13 @@
     "Both Phase378 generated outputs fetched as text/plain and frozen by SHA-256 before human review",
     "Separate post-generation Phase377 evaluator completed and sealed before human review",
     "Phase378 A/B order derived deterministically from frozen output hashes rather than evaluator preference",
-    "Phase378 actual-human blind-review pack stored in Drive folder 小说蒸馏_真人验收"
+    "Phase378 actual-human blind-review pack stored in Drive folder 小说蒸馏_真人验收",
+    "Phase378 actual-human blind review completed",
+    "Phase378 mapping revealed after verdict: A=R1=PROCESS, B=R2=CONTROL",
+    "Phase378 CONTROL won all six comparative human judgments",
+    "Phase378 PROCESS judged very AI-heavy and messy enough to create skim/stop urge",
+    "Phase378 CONTROL still has some AI smell; no AI-free claim authorized",
+    "Phase378 sealed model evaluator prediction failed against actual-human direction"
   ],
   "incomplete": [
     "Phase378 R1 fresh generator has not yet been executed",
@@ -80,7 +86,10 @@
     "Final freeze remains blocked",
     "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 30",
     "Phase378 actual target-reader blind verdict is pending",
-    "Phase378 process-level AI-smell transfer signal is not yet established"
+    "Phase378 process-level AI-smell transfer signal is not yet established",
+    "Phase379 PROCESS backfire diagnosis pending",
+    "Reliable AI-smell evaluator remains unproven",
+    "Stable low-AI generation process remains unproven"
   ],
   "blocked": [
     "PHASE378_TWO_FRESH_GENERATOR_OUTPUTS_PENDING",
@@ -123,7 +132,7 @@
     "Claim book/global Novel DNA validation proves prose quality",
     "Claim YMGQ improvement as evidence of GN-VDNA-01 success"
   ],
-  "next_required_action": "Actual target reader reads only PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PACK_V1.txt (Drive ID 1Yn1vXyhWKyw4FAlj5fWNIhhxmRfncjrP) and reports the requested A/B judgments. Do not reveal A/B to R1/R2 or R1/R2 to CONTROL/PROCESS before verdict.",
+  "next_required_action": "Execute PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1 using the frozen Phase378 pair and actual-human locator; do not write new fiction yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -154,5 +163,5 @@
       "role": "physical ledger remains verified through sequence18"
     }
   ],
-  "status": "ACTIVE_PHASE378_TWO_FRESH_OUTPUTS_FROZEN_AWAITING_ACTUAL_HUMAN_BLIND_REVIEW"
+  "status": "ACTIVE_PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_READY"
 }

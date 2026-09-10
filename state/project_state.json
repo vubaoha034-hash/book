@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.8.1",
+  "schema_version": "3.9.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T16:16:00+08:00",
+  "updated_at": "2026-09-10T16:24:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,23 +12,16 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
-    "phase": "GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE",
-    "phase_ordinal": 378,
-    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
-    "task_contract": "state/tasks/PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1.json",
-    "execution_scope": "Two genuinely separate fresh generator chats completed R1 and R2 on the same frozen story facts. Both raw text/plain outputs were fetched, byte-frozen and independently evaluated only after freeze. A/B mapping and generator role mapping remain sealed. No output rewrite, YMGQ writing or scale-up is authorized before actual-human blind verdict.",
-    "R1_output_drive_file_id": "1SZ7OiqyxlcnYIF8RaYXMjCPcPsCfVLkd",
-    "R2_output_drive_file_id": "1JXokSBnxk6KeDoMMHsTgN60YyZwy4uvG",
-    "output_freeze_receipt": "state/review_receipts/PHASE378_GENERATOR_OUTPUT_FREEZE_AND_PREHUMAN_EVALUATOR_V1.json",
-    "human_blind_review_receipt": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PENDING_V1.json",
-    "human_blind_review_drive_file_id": "1Yn1vXyhWKyw4FAlj5fWNIhhxmRfncjrP",
-    "role_mapping_reveal_authorized": false,
-    "A_B_mapping_reveal_authorized": false,
+    "task_id": "PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1",
+    "phase": "PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS",
+    "phase_ordinal": 379,
+    "status": "READY_NOT_STARTED",
+    "task_contract": "state/tasks/PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1.json",
+    "execution_scope": "Diagnose why the Phase378 PROCESS drafting protocol worsened actual-human AI smell and disorder using only the frozen R1/R2 pair, actual-human locator, and sealed evaluator record. Do not generate or rewrite prose during diagnosis.",
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PACK_V1.txt in Drive folder 小说蒸馏_真人验收 and reports the 11 requested judgments. Do not reveal A/B or R1/R2 roles before verdict."
+    "next_action": "Run Phase379 contrastive diagnosis and redesign the process/evaluator before any new prose generation."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -214,7 +207,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 31,
+    "logical_latest_checkpoint_sequence": 32,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -251,7 +244,10 @@
     "Phase378_requires_two_separate_fresh_generator_contexts": true,
     "Phase378_mapping_may_not_be_revealed_before_actual_human_verdict": true,
     "Phase378_outputs_may_not_be_rewritten_before_actual_human_verdict": true,
-    "Phase378_short_probe_may_not_authorize_long_form_scale": true
+    "Phase378_short_probe_may_not_authorize_long_form_scale": true,
+    "Phase378_PROCESS_may_not_be_claimed_successful": true,
+    "Phase378_CONTROL_may_not_be_called_AI_free": true,
+    "Phase378_model_evaluator_may_not_override_actual_human": true
   },
   "rollback": {
     "authorized": false,
@@ -375,6 +371,25 @@
     "pre_human_evaluator_complete_sealed": true,
     "human_blind_review_pending": true,
     "transfer_supported": false,
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase378_settlement": {
+    "actual_human_review_complete": true,
+    "A": "R1_PROCESS",
+    "B": "R2_CONTROL",
+    "human_overall_preference": "B",
+    "human_lower_ai_smell": "B",
+    "human_more_human_written_feel": "B",
+    "human_desire_to_continue": "B",
+    "human_character_naturalness": "B",
+    "human_clarity_flow": "B",
+    "A_ai_smell": "VERY_HEAVY",
+    "B_ai_smell": "SOME_BUT_NOT_STRONG",
+    "A_skim_or_stop": "YES_OR_CLEAR_URGE_DUE_TO_MESSY_FEEL",
+    "process_level_transfer_signal": false,
+    "control_won_this_replicate": true,
+    "pre_human_model_prediction_correct": false,
     "span_growth_authorized": false,
     "accepted_checkpoint_advance": false
   }
