@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "project_id": "novel-distillation",
   "phase": 380,
-  "task_id": "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
-  "status": "READY_FOR_TWO_FRESH_GENERATOR_CHATS",
+  "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "status": "READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
   "fixed_story_facts": "state/calibration/PHASE380_FIXED_STORY_FACTS_PACKET_V1.json",
   "generators": {
     "R1": {
