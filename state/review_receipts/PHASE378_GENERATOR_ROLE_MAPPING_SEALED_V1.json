@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 378,
+  "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+  "status": "SEALED_BEFORE_GENERATION",
+  "mapping": {
+    "R1": "PROCESS",
+    "R2": "CONTROL"
+  },
+  "mapping_must_not_be_revealed_before_both_outputs_frozen_and_human_blind_verdict": true,
+  "fixed_story_facts": "state/calibration/PHASE378_FIXED_STORY_FACTS_PACKET_V1.json",
+  "R1_invocation": "state/tasks/PHASE378_FRESH_GENERATOR_R1_INVOCATION_V1.txt",
+  "R2_invocation": "state/tasks/PHASE378_FRESH_GENERATOR_R2_INVOCATION_V1.txt",
+  "current_phase377_chat_is_contaminated_for_generation": true,
+  "generator_contexts_required": "TWO_GENUINELY_SEPARATE_FRESH_CHATS",
+  "post_generation_evaluator_context_required": "SEPARATE_FROM_BOTH_GENERATORS",
+  "recorded_at": "2026-09-10T15:05:00+08:00"
+}
