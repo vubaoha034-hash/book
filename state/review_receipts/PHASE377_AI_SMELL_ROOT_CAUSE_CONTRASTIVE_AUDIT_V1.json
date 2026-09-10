@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 377,
+  "task_id": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1",
+  "review_status": "ACCEPT_ROOT_CAUSE_TAXONOMY_NOT_REPAIR_PROOF",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "inputs": {
+    "phase376_human_receipt": "state/review_receipts/PHASE376_ATTEMPT2_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "phase363_private_drive_reopened": true,
+    "phase363_drive_id": "1Zwzkco_EthGcArPLL0ntcVVPYmh1_M8mDNvuVKYnP-A",
+    "phase364_drive_reopened": true,
+    "phase364_drive_id": "1Rb4PXd9a89bCmQJg7whwmfjsBCofvqCb",
+    "phase367_human_failure_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE367_ACTUAL_HUMAN_PILOT_REVIEW_H2_FAIL_V1.json",
+    "phase368_pack": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+    "phase370_positive_bounded_artifact": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "phase373_pack": "state/calibration/PHASE373_FRESH_PROSE_BLIND_CHOICE_PACK_V1.txt",
+    "phase376_attempt2_baseline": "state/calibration/PHASE376_ATTEMPT2_FRESH_NATURAL_BASELINE_V1.txt",
+    "source_books_reopened_for_surface_contrast": ["BOOK-01", "BOOK-02", "BOOK-03"]
+  },
+  "outputs": {
+    "matrix": {
+      "path": "state/calibration/PHASE377_AI_SMELL_CONTRASTIVE_EVIDENCE_MATRIX_V1.jsonl",
+      "git_blob_sha": "fb1a2dcec25580a8637470da36ce24930996d6ae",
+      "entries": 10
+    },
+    "report": {
+      "path": "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+      "git_blob_sha": "2f12fc3aab87fc79212b77a0c1f1d83225e5dfce"
+    }
+  },
+  "evidence_tests": {
+    "new_fiction_generated_during_audit": false,
+    "supported_signatures_with_at_least_two_generated_examples": ["AS-01", "AS-02", "AS-03", "AS-04", "AS-05", "AS-06", "AS-07"],
+    "supported_signatures_with_source_or_human_positive_contrast": ["AS-01", "AS-02", "AS-03", "AS-04", "AS-05", "AS-06", "AS-07"],
+    "simple_rules_rejected_or_refined": ["AS-08", "AS-09", "AS-10"],
+    "three_real_source_books_used": true,
+    "actual_human_positive_and_negative_generated_planes_used": true,
+    "copyright_long_source_passages_stored_in_git": false
+  },
+  "primary_failure_family": {
+    "id": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
+    "status": "OPEN_BLOCKING_FAILURE_FAMILY",
+    "definition": "Across contiguous prose, multiple locally reasonable devices remain too consistently optimized for reader comprehension, clue delivery, causal closure and next-step progression, exposing an authoring algorithm rather than an inhabited scene.",
+    "high_support_components": [
+      "AS-01_READER_FACING_INFERENCE_CLOSURE_CADENCE",
+      "AS-02_MAXIMIZED_FUNCTIONAL_DENSITY_NO_INCIDENTAL_LIFE",
+      "AS-03_UNIFORM_CLUE_INFERENCE_ACTION_CYCLE",
+      "AS-04_CHARACTER_AS_TASK_PROCESSOR",
+      "AS-06_LOW_SOCIAL_IDIOSYNCRASY_GENERIC_VOICE"
+    ],
+    "amplifiers": [
+      "AS-05_CAUSAL_NEATNESS_AND_EXECUTIVE_SUMMARY_NARRATOR",
+      "AS-07_ENGINEERED_REVEAL_ESCALATION"
+    ]
+  },
+  "adjudication": {
+    "root_cause_taxonomy": "ACCEPT_AS_EVIDENCE_SUPPORTED",
+    "repair_method": "UNPROVEN",
+    "one_sentence_deletion_as_primary_method": "DOWNGRADED_NOT_REPEATABLE",
+    "short_sentence_ban": "REJECTED",
+    "explanation_ban": "REJECTED",
+    "concrete_object_reduction_rule": "REJECTED_AS_SIMPLE_RULE",
+    "direct_RX_generation": "REMAINS_OFF",
+    "writing_transfer": "NOT_SUPPORTED",
+    "span_growth": "NOT_AUTHORIZED",
+    "long_form_transfer": "UNPROVEN",
+    "architecture_promotion": false,
+    "full_manuscript_rewrite": false
+  },
+  "next_required_task": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+  "recorded_at": "2026-09-10T14:55:00+08:00"
+}
