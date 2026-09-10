@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 376,
+  "attempt": 2,
+  "task_id": "PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1",
+  "review_status": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE_BASELINE_WIN_REPAIR_FAILED",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "sealed_mapping_revealed_after_human_verdict": {
+    "X": "SINGLE_DEFECT_REPAIR",
+    "Y": "BASELINE_UNTOUCHED"
+  },
+  "actual_human_results": {
+    "overall_preference": "Y",
+    "desire_to_continue": "Y",
+    "clarity_flow": "Y",
+    "tension": "Y",
+    "ai_smell_comparison": "BOTH_HEAVY_NO_MEANINGFUL_WINNER",
+    "first_skim_or_stop": "NONE_FOR_BOTH",
+    "user_freeform": "几个都是y，但是ai味道两个都很浓。没有快进。"
+  },
+  "adjudication": {
+    "attempt2_valid_blind_review": true,
+    "baseline_winner": true,
+    "repair_winner": false,
+    "phase375_weak_positive_replicated": false,
+    "passive_validator_repeatability": "FAILED",
+    "repair_transfer_signal": false,
+    "span_growth_authorized": false,
+    "transfer_supported": false,
+    "core_open_failure": "HEAVY_AI_SMELL_PERSISTS_IN_BOTH_BASELINE_AND_REPAIR_DESPITE_NO_SKIM"
+  },
+  "interpretation_limits": [
+    "No skim does not mean low AI smell.",
+    "The baseline win means the selected one-sentence passive repair did not improve this fresh sample.",
+    "Phase375 near-tie forced preference for repair is not repeatable evidence after this valid replication loss.",
+    "Do not continue one-sentence deletion experiments as the primary AI-smell repair method."
+  ],
+  "next_required_task": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1",
+  "recorded_at": "2026-09-10T14:33:00+08:00"
+}
