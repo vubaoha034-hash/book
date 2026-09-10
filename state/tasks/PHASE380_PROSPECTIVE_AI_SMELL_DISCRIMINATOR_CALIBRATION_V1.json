@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 380,
+  "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "status": "READY_REQUIRES_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
+  "trigger": "PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_ACCEPTED_DIAGNOSTIC_ONLY",
+  "purpose": "Prospectively test whether the recalibrated target-reader AI-smell discriminator can predict which of two independently generated neutral prose samples the actual target reader will judge less AI-like. This phase does not test a generation repair protocol.",
+  "fixed_story_facts": "state/calibration/PHASE380_FIXED_STORY_FACTS_PACKET_V1.json",
+  "generation_design": {
+    "required_fresh_generator_contexts": 2,
+    "both_generators_receive_equivalent_neutral_task": true,
+    "no_generator_receives_Phase377_or_Phase379": true,
+    "no_generator_receives_anti_AI_checklist": true,
+    "no_generator_receives_other_output": true,
+    "no_process_intervention_arm": true
+  },
+  "post_generation_method": [
+    "Freeze both raw outputs before evaluation.",
+    "Use the Phase379 discriminator only after both outputs are frozen.",
+    "Seal one directional prediction: which frozen output should feel less AI-like to the target reader.",
+    "Blind A/B mapping deterministically after freeze.",
+    "Actual target reader judges AI smell separately from overall preference, desire to continue, clarity/flow and skim/stop.",
+    "Reveal prediction and mappings only after human verdict."
+  ],
+  "acceptance": {
+    "primary_measure": "directional agreement on lower AI smell",
+    "single_correct_prediction": "CALIBRATION_HIT_ONE_REPLICATE_ONLY",
+    "single_wrong_prediction": "CALIBRATION_MISS_REQUIRES_FURTHER_RECALIBRATION",
+    "multiple_independent_correct_predictions_required_before_quality_gate": true,
+    "generation_repair_supported_from_this_phase": false,
+    "long_form_scale_authorized": false
+  },
+  "hard_gates": {
+    "YMGQ_writing": false,
+    "YMGQ_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_required_action": "Create two equivalent neutral fresh-generator invocation files, store them in Drive, run them in two separate new chats, return only DONE plus Drive File ID for each output.",
+  "created_at": "2026-09-10T16:41:00+08:00"
+}
