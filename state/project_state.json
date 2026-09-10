@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.8.0",
+  "schema_version": "3.8.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T15:18:00+08:00",
+  "updated_at": "2026-09-10T16:16:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,20 +15,20 @@
     "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
     "phase": "GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE",
     "phase_ordinal": 378,
-    "status": "READY_FOR_TWO_FRESH_GENERATOR_CHATS",
+    "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
     "task_contract": "state/tasks/PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1.json",
-    "execution_scope": "Use two genuinely separate fresh generator chats on one frozen social-realism story packet. R1/R2 roles are sealed. This Phase377 chat may not generate either output because it has seen the diagnostic taxonomy. No YMGQ writing or scale-up.",
-    "current_chat_generation_authorized": false,
-    "fresh_generator_contexts_required": 2,
-    "R1_drive_file_id": "1ChOJYeD7Y3WFupshMkAGcMbZ7DEx4mg8",
-    "R2_drive_file_id": "1pm5sbHpQpdE3btCgqPxVYrQ55Zz27RCU",
-    "execution_drive_folder_id": "1LXWW3Vs-Hkx19Ogwzv20w2wUjP7RgCMu",
-    "role_mapping_receipt": "state/review_receipts/PHASE378_GENERATOR_ROLE_MAPPING_SEALED_V1.json",
+    "execution_scope": "Two genuinely separate fresh generator chats completed R1 and R2 on the same frozen story facts. Both raw text/plain outputs were fetched, byte-frozen and independently evaluated only after freeze. A/B mapping and generator role mapping remain sealed. No output rewrite, YMGQ writing or scale-up is authorized before actual-human blind verdict.",
+    "R1_output_drive_file_id": "1SZ7OiqyxlcnYIF8RaYXMjCPcPsCfVLkd",
+    "R2_output_drive_file_id": "1JXokSBnxk6KeDoMMHsTgN60YyZwy4uvG",
+    "output_freeze_receipt": "state/review_receipts/PHASE378_GENERATOR_OUTPUT_FREEZE_AND_PREHUMAN_EVALUATOR_V1.json",
+    "human_blind_review_receipt": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PENDING_V1.json",
+    "human_blind_review_drive_file_id": "1Yn1vXyhWKyw4FAlj5fWNIhhxmRfncjrP",
     "role_mapping_reveal_authorized": false,
+    "A_B_mapping_reveal_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Run R1 and R2 Drive invocation files in two separate brand-new ChatGPT chats; each must write its exact output to Drive and return a DONE marker plus actual Drive File ID."
+    "next_action": "Actual target reader reads only PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PACK_V1.txt in Drive folder 小说蒸馏_真人验收 and reports the 11 requested judgments. Do not reveal A/B or R1/R2 roles before verdict."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -214,7 +214,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 30,
+    "logical_latest_checkpoint_sequence": 31,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -248,7 +248,10 @@
     "Phase377_audit_acceptance_does_not_close_ai_smell": true,
     "Phase378_current_chat_may_not_generate_either_arm": true,
     "Phase378_roles_may_not_be_revealed_before_human_verdict": true,
-    "Phase378_requires_two_separate_fresh_generator_contexts": true
+    "Phase378_requires_two_separate_fresh_generator_contexts": true,
+    "Phase378_mapping_may_not_be_revealed_before_actual_human_verdict": true,
+    "Phase378_outputs_may_not_be_rewritten_before_actual_human_verdict": true,
+    "Phase378_short_probe_may_not_authorize_long_form_scale": true
   },
   "rollback": {
     "authorized": false,
@@ -363,6 +366,15 @@
     "one_sentence_deletion_primary_method": "DOWNGRADED_NOT_REPEATABLE",
     "repair_method": "UNPROVEN",
     "writing_transfer": "NOT_SUPPORTED",
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase378_execution_state": {
+    "generation_complete": true,
+    "both_outputs_frozen": true,
+    "pre_human_evaluator_complete_sealed": true,
+    "human_blind_review_pending": true,
+    "transfer_supported": false,
     "span_growth_authorized": false,
     "accepted_checkpoint_advance": false
   }

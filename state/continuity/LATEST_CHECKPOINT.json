@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 30,
-  "recorded_at": "2026-09-10T15:19:00+08:00",
+  "sequence": 31,
+  "recorded_at": "2026-09-10T16:17:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1"
   ],
-  "current_focus": "Phase377 contrastive audit accepted an evidence-supported AI-smell root-cause family: GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY. The issue is not simply short sentences, explanation, or concrete objects; it is repeated coupling of reader-facing inference closure, maximized functional density, clue/inference/action cycles, task-processor cognition, causal neatness, generic social voice and engineered reveals. Repair remains unproven. Phase378 is prepared as an isolated process probe requiring two genuinely separate fresh generator chats; this current chat is contaminated for generation because it has seen the taxonomy.",
+  "current_focus": "Phase378 R1/R2 fresh generator outputs are complete and byte-frozen. A separate post-generation evaluator applied Phase377 diagnostics after freeze and sealed its pre-human prediction. A deterministic hash-derived A/B blind pack is now in Drive. Actual-human AI-smell and reading-quality verdict is pending; mappings remain sealed. No YMGQ writing or scale-up is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -58,7 +58,12 @@
     "Phase377 audit accepted as evidence; repair method remains unproven",
     "Phase378 fixed social-realism story facts packet frozen",
     "Phase378 R1/R2 fresh generator invocations created with sealed roles",
-    "R1/R2 invocation files stored as real text/plain in Drive folder 小说蒸馏_新聊天执行"
+    "R1/R2 invocation files stored as real text/plain in Drive folder 小说蒸馏_新聊天执行",
+    "Phase378 R1 and R2 executed in two genuinely separate fresh generator chats",
+    "Both Phase378 generated outputs fetched as text/plain and frozen by SHA-256 before human review",
+    "Separate post-generation Phase377 evaluator completed and sealed before human review",
+    "Phase378 A/B order derived deterministically from frozen output hashes rather than evaluator preference",
+    "Phase378 actual-human blind-review pack stored in Drive folder 小说蒸馏_真人验收"
   ],
   "incomplete": [
     "Phase378 R1 fresh generator has not yet been executed",
@@ -73,7 +78,9 @@
     "YMGQ writing remains paused during Phase378",
     "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 30"
+    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 30",
+    "Phase378 actual target-reader blind verdict is pending",
+    "Phase378 process-level AI-smell transfer signal is not yet established"
   ],
   "blocked": [
     "PHASE378_TWO_FRESH_GENERATOR_OUTPUTS_PENDING",
@@ -116,7 +123,7 @@
     "Claim book/global Novel DNA validation proves prose quality",
     "Claim YMGQ improvement as evidence of GN-VDNA-01 success"
   ],
-  "next_required_action": "Execute Phase378 R1 and R2 in two separate brand-new ChatGPT chats using the Drive invocation files. Do not let either generator see this chat, the Phase377 taxonomy, the other arm, or prior human results. Each must save its output to Drive and return only DONE plus actual Drive File ID.",
+  "next_required_action": "Actual target reader reads only PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PACK_V1.txt (Drive ID 1Yn1vXyhWKyw4FAlj5fWNIhhxmRfncjrP) and reports the requested A/B judgments. Do not reveal A/B to R1/R2 or R1/R2 to CONTROL/PROCESS before verdict.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -147,5 +154,5 @@
       "role": "physical ledger remains verified through sequence18"
     }
   ],
-  "status": "ACTIVE_PHASE378_ISOLATED_AI_SMELL_PROCESS_PROBE_AWAITING_TWO_FRESH_GENERATOR_CHATS"
+  "status": "ACTIVE_PHASE378_TWO_FRESH_OUTPUTS_FROZEN_AWAITING_ACTUAL_HUMAN_BLIND_REVIEW"
 }
