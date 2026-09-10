@@ -2,7 +2,7 @@
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
   "sequence": 32,
-  "recorded_at": "2026-09-10T16:53:00+08:00",
+  "recorded_at": "2026-09-10T17:02:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -90,27 +90,27 @@
     "No bounded span-growth survival test is authorized",
     "Stable long-form scale transfer remains UNPROVEN",
     "Current full YMGQ manuscript remains actual-human rejected",
-    "YMGQ writing remains paused during Phase378",
     "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
-    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 30",
     "Reliable AI-smell evaluator remains unproven",
     "Stable low-AI generation process remains unproven",
     "Phase380 prospective discriminator calibration not yet executed",
     "Phase380 two neutral fresh generator outputs have not yet been produced",
     "Phase380 prospective discriminator prediction has not yet been sealed",
     "Target-reader AI-smell evaluator remains DIAGNOSTIC ONLY",
-    "Generation repair remains UNPROVEN"
+    "Generation repair remains UNPROVEN",
+    "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 32",
+    "YMGQ writing remains paused during Phase380 prospective discriminator calibration"
   ],
   "blocked": [
-    "PHASE378_TWO_FRESH_GENERATOR_OUTPUTS_PENDING",
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
     "AI_F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY_OPEN",
     "SPAN_GROWTH_BLOCKED",
-    "YMGQ_WRITING_PAUSED_DURING_PHASE378",
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
     "FULL_REWRITE_BLOCKED",
-    "FINAL_FREEZE_BLOCKED"
+    "FINAL_FREEZE_BLOCKED",
+    "PHASE380_TWO_NEUTRAL_FRESH_GENERATOR_OUTPUTS_PENDING",
+    "YMGQ_WRITING_PAUSED_DURING_PHASE380_CALIBRATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",

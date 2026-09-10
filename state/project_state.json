@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.10.0",
+  "schema_version": "3.10.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T16:52:00+08:00",
+  "updated_at": "2026-09-10T17:01:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -259,7 +259,9 @@
     "Phase378_PROCESS_protocol_may_not_be_reused_as_validated_repair": true,
     "Phase379_AI_smell_evaluator_is_diagnostic_only_until_prospective_replication": true,
     "Phase380_generators_may_not_receive_Phase377_or_Phase379_diagnostics": true,
-    "Phase380_may_not_authorize_YMGQ_writing_or_scale": true
+    "Phase380_may_not_authorize_YMGQ_writing_or_scale": true,
+    "Phase380_duplicate_task_superseded": true,
+    "Phase380_ready_receipt_bound_to_authoritative_task": true
   },
   "rollback": {
     "authorized": false,
