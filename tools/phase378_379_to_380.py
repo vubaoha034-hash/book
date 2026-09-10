@@ -99,3 +99,5 @@ for item in [
         incomplete.append(item)
 cp['next_required_action'] = 'Run Phase380 R1 Drive invocation 1OiASyZl6Lhv0qLw7-RVoHwWp9QyirI4z and R2 Drive invocation 1a16_NQn7suEMe0yeeo4KE3WQ45NIRW1W in two separate brand-new ChatGPT chats. Return only the two DONE markers with actual output Drive File IDs.'
 cp_path.write_text(json.dumps(cp, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+# trigger one-shot workflow after workflow file exists
