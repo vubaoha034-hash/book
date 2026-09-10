@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.0.1",
   "project_id": "novel-distillation",
   "phase": 380,
   "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
-  "status": "READY_REQUIRES_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
+  "status": "READY_FOR_TWO_FRESH_NEUTRAL_GENERATOR_CHATS",
   "trigger": "PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_ACCEPTED_DIAGNOSTIC_ONLY",
   "purpose": "Prospectively test whether the recalibrated target-reader AI-smell discriminator can predict which of two independently generated neutral prose samples the actual target reader will judge less AI-like. This phase does not test a generation repair protocol.",
   "fixed_story_facts": "state/calibration/PHASE380_FIXED_STORY_FACTS_PACKET_V1.json",
@@ -14,6 +14,19 @@
     "no_generator_receives_anti_AI_checklist": true,
     "no_generator_receives_other_output": true,
     "no_process_intervention_arm": true
+  },
+  "invocations": {
+    "R1": {
+      "repo_path": "state/tasks/PHASE380_FRESH_NEUTRAL_GENERATOR_R1_INVOCATION_V1.txt",
+      "drive_file_id": "1OiASyZl6Lhv0qLw7-RVoHwWp9QyirI4z",
+      "mime_type": "text/plain"
+    },
+    "R2": {
+      "repo_path": "state/tasks/PHASE380_FRESH_NEUTRAL_GENERATOR_R2_INVOCATION_V1.txt",
+      "drive_file_id": "1a16_NQn7suEMe0yeeo4KE3WQ45NIRW1W",
+      "mime_type": "text/plain"
+    },
+    "drive_folder_id": "1LXWW3Vs-Hkx19Ogwzv20w2wUjP7RgCMu"
   },
   "post_generation_method": [
     "Freeze both raw outputs before evaluation.",
@@ -38,6 +51,7 @@
     "architecture_promotion": false,
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Create two equivalent neutral fresh-generator invocation files, store them in Drive, run them in two separate new chats, return only DONE plus Drive File ID for each output.",
-  "created_at": "2026-09-10T16:41:00+08:00"
+  "next_required_action": "Run R1 and R2 Drive invocation files in two separate brand-new ChatGPT chats. Each chat must return only PHASE380_R1_DONE or PHASE380_R2_DONE plus the actual output Drive File ID.",
+  "created_at": "2026-09-10T16:41:00+08:00",
+  "updated_at": "2026-09-10T16:49:00+08:00"
 }
