@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 378,
+  "packet_id": "PHASE378_FIXED_STORY_FACTS_PACKET_V1",
+  "language": "zh-CN",
+  "genre": "contemporary social realism / family relationship scene",
+  "setting": {
+    "place": "一座南方小县城即将拆掉的旧百货市场，一间已经停业的修鞋铺",
+    "time": "初冬傍晚，父亲去世后的第十二天",
+    "weather": "外面刚下过一阵小雨，市场地面湿，卷闸门和旧招牌偶尔响"
+  },
+  "viewpoint": {
+    "character": "罗芸",
+    "age": 34,
+    "distance": "third-person limited",
+    "current_goal": "和哥哥把父亲留下的修鞋铺收拾完，决定哪些东西留下、哪些扔掉",
+    "private_state": [
+      "她八年前离开县城，此后回来很少，对父亲的最后几年并不真正了解",
+      "她怨哥哥罗建平时嘴上总说忙，但她知道自己其实也没有资格指责他",
+      "她不想在父亲刚死后和哥哥吵遗产，也不愿表现得比哥哥更伤心"
+    ]
+  },
+  "characters": [
+    {
+      "name": "罗建",
+      "age": 39,
+      "relation": "罗芸的哥哥",
+      "surface_behavior": "收拾东西很快，倾向于扔掉旧物，讲话直接，有时显得不耐烦",
+      "private_fact_not_required_to_be_revealed": "他把父亲一把断了头的旧卷尺偷偷装进了自己外套口袋"
+    },
+    {
+      "name": "邱盛",
+      "age": 41,
+      "relation": "父亲十五年前的学徒，后来吵翻离开，此后很少来往",
+      "surface_goal": "来取一只绿色铁工具箱，说师父生前答应过给他",
+      "private_state": "他真正难开口的是当年离开时说过很难听的话，并不是工具箱值多少钱"
+    },
+    {
+      "name": "孙姨",
+      "age": "六十多岁",
+      "relation": "父亲多年的老顾客",
+      "surface_goal": "来找一双几个月前送修、已经付过钱的旧皮鞋",
+      "fact": "她没有留收据；铺里的旧本子上确实有一行父亲写的‘孙姨 35’，但没有注明是什么钱"
+    }
+  ],
+  "fixed_story_facts": [
+    "父亲靠修鞋、配钥匙和修拉链在这个铺子做了二十多年",
+    "铺子没有隐藏现金、秘密遗嘱、犯罪证据或惊天秘密",
+    "绿色铁工具箱旧而普通，里面主要是父亲多年使用的修鞋工具",
+    "罗芸不知道父亲是否真的答应把工具箱给邱盛",
+    "罗建认为工具箱不值钱，给谁都可以，但他不喜欢邱盛突然来拿东西的态度",
+    "孙姨的皮鞋确实还在铺子里，但需要翻找才能找到",
+    "场景允许人物互相误解、回避、说半句话或暂时不处理某个情绪",
+    "本段不需要解决兄妹多年关系，也不需要揭示一个大秘密",
+    "结尾应产生一个自然的未完成状态或关系变化，但不要求悬疑钩子"
+  ],
+  "forbidden_story_changes": [
+    "不得增加谋杀、绑架、失踪、勒索、重大疾病反转或犯罪线",
+    "不得在工具箱里放隐藏巨款、遗书、亲子秘密、证据或神秘照片",
+    "不得把父亲塑造成暗中经营重大秘密的人",
+    "不得添加为了制造悬念而服务的陌生电话、匿名纸条、监控照片或倒计时",
+    "不得改变人物关系和固定事实"
+  ],
+  "output_contract": {
+    "form": "one continuous readable fiction scene",
+    "target_chinese_characters": "1400-2000",
+    "title_required": false,
+    "analysis_or_outline_in_output": false,
+    "author_note_in_output": false,
+    "stop_after_scene": true
+  }
+}
