@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 379,
+  "task_id": "PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1",
+  "status": "ACCEPT_DIAGNOSTIC_RECALIBRATION_REPAIR_UNPROVEN",
+  "evidence": {
+    "phase378_actual_human_receipt": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "contrastive_matrix": "state/calibration/PHASE379_TARGET_READER_AI_SMELL_CONTRASTIVE_MATRIX_V1.jsonl",
+    "report": "docs/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.md",
+    "rule": "rules/target-reader-ai-smell-discriminator-v1.md"
+  },
+  "accepted_findings": {
+    "phase378_PROCESS_protocol_rejected": true,
+    "phase377_model_evaluator_directional_false_positive_confirmed": true,
+    "phase377_global_authorial_optimization_family_retained_as_diagnostic_not_gate": true,
+    "AS_F01_functionally_exact_dialogue_adjacency_ladder_added_as_high_priority_candidate": true,
+    "short_dialogue_as_simple_rule_rejected": true,
+    "anti_optimization_as_positive_generation_recipe_rejected": true,
+    "layered_local_global_coherence_discriminator_required": true,
+    "model_AI_smell_evaluator_diagnostic_only": true
+  },
+  "acceptance_checks": {
+    "actual_human_authority_preserved": true,
+    "phase378_not_reclassified_as_partial_process_success": true,
+    "human_locator_compared_against_control_counterpart": true,
+    "real_source_contrast_used": true,
+    "repair_method_promoted": false,
+    "new_fiction_generated_in_phase379": false
+  },
+  "unproven": [
+    "reliable target-reader AI-smell evaluator",
+    "generation protocol that consistently reduces AI smell",
+    "short-form transfer",
+    "long-form transfer"
+  ],
+  "adjudication": {
+    "result": "ACCEPT_PHASE379_DIAGNOSTIC_ONLY",
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320,
+    "YMGQ_writing_authorized": false,
+    "span_growth_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "next_required_action": "Run prospective fresh-pair discriminator calibration: two neutral independent generators on the same frozen story facts, freeze both outputs, seal revised discriminator prediction before actual-human blind review, and test directional agreement without using the discriminator as a generation prompt.",
+  "recorded_at": "2026-09-10T16:36:00+08:00"
+}
