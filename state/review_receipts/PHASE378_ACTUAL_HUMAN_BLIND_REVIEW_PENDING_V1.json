@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 378,
+  "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+  "status": "AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "output_freeze_and_pre_human_evaluator_receipt": "state/review_receipts/PHASE378_GENERATOR_OUTPUT_FREEZE_AND_PREHUMAN_EVALUATOR_V1.json",
+  "blind_review_pack": {
+    "drive_file_id": "1Yn1vXyhWKyw4FAlj5fWNIhhxmRfncjrP",
+    "file_name": "PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_PACK_V1.txt",
+    "mime_type": "text/plain",
+    "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_"
+  },
+  "A_B_mapping_sealed": true,
+  "R1_R2_role_mapping_sealed": true,
+  "human_review_fields": [
+    "overall_preference",
+    "lower_ai_smell",
+    "more_human_written_feel",
+    "desire_to_continue",
+    "character_naturalness",
+    "clarity_flow",
+    "A_ai_smell_strength",
+    "B_ai_smell_strength",
+    "first_A_ai_smell_locator",
+    "first_B_ai_smell_locator",
+    "skim_or_stop"
+  ],
+  "no_output_rewrite_before_human_verdict": true,
+  "transfer_supported": false,
+  "span_growth_authorized": false,
+  "YMGQ_writing_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "architecture_promotion_authorized": false,
+  "recorded_at": "2026-09-10T16:15:00+08:00"
+}
