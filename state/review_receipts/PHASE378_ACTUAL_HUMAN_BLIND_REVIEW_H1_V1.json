@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 378,
+  "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+  "review_id": "ACTUAL_HUMAN_BLIND_REVIEW_H1",
+  "status": "REJECT_PROCESS_CONTROL_WINS_DECISIVELY",
+  "blind_mapping_revealed_after_verdict": {
+    "A": "R1",
+    "B": "R2",
+    "R1": "PROCESS",
+    "R2": "CONTROL"
+  },
+  "actual_human_result": {
+    "overall_preference": "B",
+    "lower_ai_smell": "B",
+    "more_human_written_feel": "B",
+    "desire_to_continue": "B",
+    "character_naturalness": "B",
+    "clarity_flow": "B",
+    "A_ai_smell_strength": "VERY_HEAVY",
+    "B_ai_smell_strength": "SOME_BUT_NOT_STRONG",
+    "first_A_ai_smell_locator": "你要那个？ / 他说过给我。 / 什么时候？",
+    "first_B_ai_smell_locator": "NO_SINGLE_VERY_OBVIOUS_LOCATOR_BUT_SOME_AI_SMELL_PRESENT",
+    "skim_or_stop": {
+      "A": "YES_OR_CLEAR_URGE_DUE_TO_MESSY_FEEL",
+      "B": "NOT_REPORTED_AS_SKIM_OR_STOP"
+    },
+    "human_wording_notes": [
+      "1到6都是b",
+      "a非常重",
+      "有一点",
+      "比如这句：你要那个？ / 他说过给我。 / 什么时候？",
+      "没有很明显的，但是有一些",
+      "a有，因为写的很乱的感觉"
+    ]
+  },
+  "pre_human_evaluator_settlement": {
+    "sealed_prediction": "R1_LOWER_AI_SMELL_THAN_R2",
+    "actual_human_direction": "R2_LOWER_AI_SMELL_THAN_R1",
+    "prediction_correct": false,
+    "model_evaluator_may_not_override_human": true,
+    "evaluator_reliability_for_ai_smell_gate": "FAILED_THIS_REPLICATE"
+  },
+  "adjudication": {
+    "process_level_transfer_signal": false,
+    "PROCESS_protocol_supported": false,
+    "CONTROL_wins_this_replicate": true,
+    "long_form_scale_authorized": false,
+    "YMGQ_writing_authorized": false,
+    "architecture_promotion_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "next_required_action": "Diagnose why the PROCESS-only drafting protocol worsened actual-human AI smell and clarity, using the frozen R1/R2 pair and the human-located A dialogue cadence. Do not repair or scale yet."
+}
