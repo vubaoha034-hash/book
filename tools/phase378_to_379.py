@@ -1,13 +1,13 @@
 import json
 from pathlib import Path
 
-# one-shot Phase378 -> Phase379 settlement
+# one-shot Phase378 -> Phase379 settlement and stale-state cleanup
 state_path = Path('state/project_state.json')
 cp_path = Path('state/continuity/LATEST_CHECKPOINT.json')
 
 state = json.loads(state_path.read_text(encoding='utf-8'))
-state['schema_version'] = '3.9.0'
-state['updated_at'] = '2026-09-10T16:24:00+08:00'
+state['schema_version'] = '3.9.1'
+state['updated_at'] = '2026-09-10T16:28:00+08:00'
 state['phase378_settlement'] = {
     'actual_human_review_complete': True,
     'A': 'R1_PROCESS',
@@ -24,6 +24,19 @@ state['phase378_settlement'] = {
     'process_level_transfer_signal': False,
     'control_won_this_replicate': True,
     'pre_human_model_prediction_correct': False,
+    'span_growth_authorized': False,
+    'accepted_checkpoint_advance': False
+}
+state['phase378_execution_state'] = {
+    'generation_complete': True,
+    'both_outputs_frozen': True,
+    'pre_human_evaluator_complete_sealed': True,
+    'human_blind_review_pending': False,
+    'actual_human_review_complete': True,
+    'A_B_mapping_revealed_after_verdict': True,
+    'R1_R2_role_mapping_revealed_after_verdict': True,
+    'process_level_transfer_signal': False,
+    'control_won_this_replicate': True,
     'span_growth_authorized': False,
     'accepted_checkpoint_advance': False
 }
@@ -47,7 +60,7 @@ state_path.write_text(json.dumps(state, ensure_ascii=False, indent=2) + '\n', en
 
 cp = json.loads(cp_path.read_text(encoding='utf-8'))
 cp['sequence'] = 32
-cp['recorded_at'] = '2026-09-10T16:25:00+08:00'
+cp['recorded_at'] = '2026-09-10T16:29:00+08:00'
 cp['active_task_ids'] = ['PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1']
 cp['current_focus'] = 'Phase378 actual-human blind verdict is complete. A=R1=PROCESS and B=R2=CONTROL. B won overall preference, lower AI smell, more human-written feel, desire to continue, character naturalness and clarity/flow. A was judged very AI-heavy and messy enough to create a skim/stop urge. B still has some AI smell and is not accepted as AI-free. The sealed pre-human evaluator predicted the opposite AI-smell direction and failed this replicate. Phase379 must diagnose PROCESS backfire before any new generation.'
 cp['next_required_action'] = 'Execute PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1 using the frozen Phase378 pair and actual-human locator; do not write new fiction yet.'
@@ -63,13 +76,21 @@ for item in [
 ]:
     if item not in completed:
         completed.append(item)
-incomplete = cp.setdefault('incomplete', [])
+
+obsolete = {
+    'Phase378 R1 fresh generator has not yet been executed',
+    'Phase378 R2 fresh generator has not yet been executed',
+    'Phase378 isolated process candidate versus control human comparison is not available',
+    'Phase378 actual target-reader blind verdict is pending',
+    'Phase378 process-level AI-smell transfer signal is not yet established'
+}
+cp['incomplete'] = [item for item in cp.get('incomplete', []) if item not in obsolete]
 for item in [
     'Phase379 PROCESS backfire diagnosis pending',
     'Reliable AI-smell evaluator remains unproven',
     'Stable low-AI generation process remains unproven',
     'Stable long-form scale transfer remains UNPROVEN'
 ]:
-    if item not in incomplete:
-        incomplete.append(item)
+    if item not in cp['incomplete']:
+        cp['incomplete'].append(item)
 cp_path.write_text(json.dumps(cp, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
