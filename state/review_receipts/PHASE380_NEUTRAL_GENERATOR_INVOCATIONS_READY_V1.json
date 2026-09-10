@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 380,
+  "task_id": "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "status": "READY_FOR_TWO_FRESH_GENERATOR_CHATS",
+  "fixed_story_facts": "state/calibration/PHASE380_FIXED_STORY_FACTS_PACKET_V1.json",
+  "generators": {
+    "R1": {
+      "invocation_path": "state/tasks/PHASE380_FRESH_NEUTRAL_GENERATOR_R1_INVOCATION_V1.txt",
+      "drive_file_id": "1OiASyZl6Lhv0qLw7-RVoHwWp9QyirI4z",
+      "drive_file_name": "PHASE380_FRESH_NEUTRAL_GENERATOR_R1_INVOCATION_V1.txt",
+      "mime_type": "text/plain"
+    },
+    "R2": {
+      "invocation_path": "state/tasks/PHASE380_FRESH_NEUTRAL_GENERATOR_R2_INVOCATION_V1.txt",
+      "drive_file_id": "1a16_NQn7suEMe0yeeo4KE3WQ45NIRW1W",
+      "drive_file_name": "PHASE380_FRESH_NEUTRAL_GENERATOR_R2_INVOCATION_V1.txt",
+      "mime_type": "text/plain"
+    }
+  },
+  "equivalence_checks": {
+    "same_fixed_story_facts": true,
+    "same_prompt_class": true,
+    "same_prose_requirements": true,
+    "only_required_R1_R2_output_identity_differs": true,
+    "Phase377_or_Phase379_discriminator_exposed_to_generator": false,
+    "PROCESS_vs_CONTROL_intervention": false
+  },
+  "current_chat_generation_authorized": false,
+  "reason": "Current chat has seen Phase377/379 evaluator diagnostics. Phase380 requires genuinely fresh neutral generators.",
+  "next_required_action": "Execute R1 and R2 invocation files in two separate brand-new ChatGPT chats. Each must save its raw prose output to Drive and return only its DONE marker plus actual Drive File ID.",
+  "human_review_authorized_before_both_outputs_frozen_and_prediction_sealed": false,
+  "YMGQ_writing_authorized": false,
+  "span_growth_authorized": false,
+  "architecture_promotion_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "recorded_at": "2026-09-10T16:55:00+08:00"
+}
