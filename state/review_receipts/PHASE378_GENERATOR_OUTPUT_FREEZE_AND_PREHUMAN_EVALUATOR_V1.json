@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 378,
+  "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+  "status": "BOTH_GENERATOR_OUTPUTS_FROZEN_PREHUMAN_EVALUATION_SEALED",
+  "highest_accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320,
+  "outputs": {
+    "R1": {
+      "drive_file_id": "1SZ7OiqyxlcnYIF8RaYXMjCPcPsCfVLkd",
+      "file_name": "PHASE378_R1_GENERATED_SCENE_V1.txt",
+      "mime_type": "text/plain",
+      "bytes": 5327,
+      "sha256": "6980bd0ffc39da95ad7051db905fca5abb8a0df7f7892770dbdce3d17df96104",
+      "decoded_chars": 1851,
+      "han_chars": 1443
+    },
+    "R2": {
+      "drive_file_id": "1JXokSBnxk6KeDoMMHsTgN60YyZwy4uvG",
+      "file_name": "PHASE378_R2_GENERATED_SCENE_V1.txt",
+      "mime_type": "text/plain",
+      "bytes": 5421,
+      "sha256": "39378fc4c1e493750e88112baba50cf58f95c524f79e139d543ff177f1b03688",
+      "decoded_chars": 1891,
+      "han_chars": 1453
+    }
+  },
+  "independence_checks": {
+    "same_fixed_story_facts": true,
+    "different_generated_surface": true,
+    "sequence_match_ratio": 0.07536076964190272,
+    "shared_normalized_12char_ngrams": 0,
+    "forbidden_crime_or_mystery_escalation_added": false,
+    "outputs_modified_after_generation": false
+  },
+  "pre_human_evaluator": {
+    "must_remain_sealed_until_actual_human_verdict": true,
+    "method": "Phase377 global AI-smell contrastive taxonomy applied only after both outputs were frozen; no rewrite performed.",
+    "R1": {
+      "AS01_reader_facing_inference_closure": "MEDIUM",
+      "AS02_maximized_functional_density": "LOW_MEDIUM",
+      "AS03_uniform_clue_inference_action_cycle": "LOW",
+      "AS04_character_as_task_processor": "LOW_MEDIUM",
+      "AS05_causal_neatness_executive_summary_narrator": "MEDIUM",
+      "AS06_low_social_idiosyncrasy": "LOW_MEDIUM",
+      "AS07_engineered_reveal_escalation": "LOW",
+      "global_authorial_optimization_regularity": "LOWER_OF_TWO_BUT_NOT_ZERO"
+    },
+    "R2": {
+      "AS01_reader_facing_inference_closure": "MEDIUM_HIGH",
+      "AS02_maximized_functional_density": "MEDIUM",
+      "AS03_uniform_clue_inference_action_cycle": "LOW_MEDIUM",
+      "AS04_character_as_task_processor": "LOW_MEDIUM",
+      "AS05_causal_neatness_executive_summary_narrator": "MEDIUM_HIGH",
+      "AS06_low_social_idiosyncrasy": "MEDIUM",
+      "AS07_engineered_reveal_escalation": "LOW",
+      "global_authorial_optimization_regularity": "HIGHER_OF_TWO"
+    },
+    "evaluator_directional_prediction": "R1_LOWER_AI_SMELL_THAN_R2",
+    "prediction_is_not_human_verdict": true,
+    "prediction_may_not_authorize_transfer_or_scale": true
+  },
+  "blind_mapping_derivation": {
+    "rule": "combined = SHA256(R1_sha256 + '|' + R2_sha256); if first hexadecimal nibble is even, A=R1 and B=R2; otherwise A=R2 and B=R1",
+    "combined_sha256": "6471d2609782fcb9255b2a39dffdaa29977ebb89a7cba1c0349a373de8d6ccdc",
+    "mapping": {
+      "A": "R1",
+      "B": "R2"
+    },
+    "mapping_must_not_be_revealed_before_actual_human_blind_verdict": true,
+    "role_mapping_must_not_be_revealed_before_actual_human_blind_verdict": true
+  },
+  "human_review_pending": true,
+  "transfer_supported": false,
+  "YMGQ_writing_authorized": false,
+  "span_growth_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "architecture_promotion_authorized": false,
+  "recorded_at": "2026-09-10T16:12:00+08:00"
+}
