@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.9.1",
+  "schema_version": "4.0.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T16:28:00+08:00",
+  "updated_at": "2026-09-10T16:40:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,16 +12,16 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1",
-    "phase": "PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS",
-    "phase_ordinal": 379,
+    "task_id": "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "phase": "PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION",
+    "phase_ordinal": 380,
     "status": "READY_NOT_STARTED",
-    "task_contract": "state/tasks/PHASE379_PROCESS_PROTOCOL_BACKFIRE_DIAGNOSIS_V1.json",
-    "execution_scope": "Diagnose why the Phase378 PROCESS drafting protocol worsened actual-human AI smell and disorder using only the frozen R1/R2 pair, actual-human locator, and sealed evaluator record. Do not generate or rewrite prose during diagnosis.",
+    "task_contract": "state/tasks/PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json",
+    "execution_scope": "Prospectively test the recalibrated target-reader AI-smell discriminator on a new neutral fresh pair. Generators receive equivalent ordinary prompts and may not see the discriminator. Freeze both outputs, seal evaluator prediction before human blind review, then compare direction. No generation-repair protocol is being tested in this phase.",
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Run Phase379 contrastive diagnosis and redesign the process/evaluator before any new prose generation."
+    "next_action": "Prepare a new neutral fixed story-facts packet and two equivalent fresh generator invocation files. Do not generate prose in the current evaluator context."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -207,7 +207,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 32,
+    "logical_latest_checkpoint_sequence": 33,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -247,7 +247,11 @@
     "Phase378_short_probe_may_not_authorize_long_form_scale": true,
     "Phase378_PROCESS_may_not_be_claimed_successful": true,
     "Phase378_CONTROL_may_not_be_called_AI_free": true,
-    "Phase378_model_evaluator_may_not_override_actual_human": true
+    "Phase378_model_evaluator_may_not_override_actual_human": true,
+    "Phase379_generic_backfire_task_superseded": true,
+    "Phase379_discriminator_is_diagnostic_only": true,
+    "Phase380_may_not_expose_discriminator_to_generators": true,
+    "Phase380_single_correct_prediction_may_not_promote_gate": true
   },
   "rollback": {
     "authorized": false,
@@ -395,6 +399,21 @@
     "control_won_this_replicate": true,
     "pre_human_model_prediction_correct": false,
     "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase379_settlement": {
+    "execution": "ACCEPT_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_DIAGNOSTIC_ONLY",
+    "task": "state/tasks/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.json",
+    "matrix": "state/calibration/PHASE379_TARGET_READER_AI_SMELL_CONTRASTIVE_MATRIX_V1.jsonl",
+    "report": "docs/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.md",
+    "rule": "rules/target-reader-ai-smell-discriminator-v1.md",
+    "receipt": "state/review_receipts/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.json",
+    "phase378_PROCESS_protocol_rejected": true,
+    "phase377_model_evaluator_directional_false_positive_confirmed": true,
+    "AS_F01_functionally_exact_dialogue_adjacency_ladder_added": true,
+    "global_authorial_optimization_retained_as_diagnostic_not_scalar_gate": true,
+    "automatic_AI_smell_evaluator_reliable": false,
+    "generation_repair_proven": false,
     "accepted_checkpoint_advance": false
   }
 }
