@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 380,
+  "task_id": "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE379_ACCEPT_DIAGNOSTIC_RECALIBRATION_REPAIR_UNPROVEN",
+  "purpose": "Prospectively test whether the Phase379 target-reader-calibrated AI-smell discriminator can predict actual-human direction on genuinely fresh independent prose pairs before the human verdict, without using the discriminator as a generation prompt.",
+  "required_method": {
+    "generation": "Create a new frozen story-facts packet and two neutral, genuinely separate fresh generator invocations using the same facts and equivalent ordinary prose instructions. Neither generator may see Phase377/379 AI-smell taxonomies, prior human results, evaluator predictions, or the other output.",
+    "freeze": "Fetch and byte-freeze both outputs before evaluation.",
+    "prediction": "A separate evaluator applies rules/target-reader-ai-smell-discriminator-v1.md after freeze and seals a directional prediction before human review.",
+    "blind_review": "Deterministically blind A/B ordering and ask the actual target reader to judge lower AI smell separately from overall preference, desire to continue, character naturalness, clarity/flow, and skim/stop urge.",
+    "adjudication": "Reveal mappings only after human verdict; compare prediction direction to actual-human direction. Do not rewrite either output before verdict."
+  },
+  "critical_design_change_from_phase378": {
+    "no_PROCESS_vs_CONTROL_generation_intervention": true,
+    "reason": "Phase378 PROCESS generation itself backfired. Phase380 tests discriminator calibration only, not a new writing recipe.",
+    "neutral_generators_same_prompt_class": true,
+    "discriminator_exposed_to_generator": false
+  },
+  "acceptance": {
+    "single_correct_prediction_means": "ONE_PROSPECTIVE_CALIBRATION_HIT_ONLY",
+    "single_correct_prediction_does_not_mean_reliable": true,
+    "multiple_independent_fresh_hits_required_before_gate_status": true,
+    "human_ai_smell_direction_is_authority": true,
+    "clarity_and_continue_desire_must_remain_separate_metrics": true
+  },
+  "hard_gates": {
+    "YMGQ_writing": false,
+    "YMGQ_span_growth": false,
+    "new_generation_repair_protocol": false,
+    "use_discriminator_as_generator_checklist": false,
+    "long_form_scale": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "required_inputs": [
+    "state/review_receipts/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.json",
+    "rules/target-reader-ai-smell-discriminator-v1.md",
+    "state/calibration/PHASE379_TARGET_READER_AI_SMELL_CONTRASTIVE_MATRIX_V1.jsonl"
+  ],
+  "next_action": "Prepare one new neutral fixed story-facts packet and two equivalent fresh generator invocation files. Do not generate prose in the current diagnosis/evaluator context."
+}
