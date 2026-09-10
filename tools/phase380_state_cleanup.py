@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+# one-shot cleanup; no phase/sequence advance
 state_path = Path('state/project_state.json')
 cp_path = Path('state/continuity/LATEST_CHECKPOINT.json')
 
