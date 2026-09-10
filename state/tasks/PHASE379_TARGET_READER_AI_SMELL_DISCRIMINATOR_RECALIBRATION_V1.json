@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 379,
+  "task_id": "PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE378_ACTUAL_HUMAN_DECISIVE_CONTROL_WIN_AND_PREHUMAN_EVALUATOR_DIRECTIONAL_FALSE_POSITIVE",
+  "purpose": "Recalibrate the AI-smell discriminator to the actual target reader using the frozen Phase378 A/B pair, the exact human-located A dialogue cadence, prior positive/negative generated prose, and real-source contrasts. Do not generate new fiction in this phase.",
+  "authoritative_human_evidence": {
+    "receipt": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "A": "R1_PROCESS",
+    "B": "R2_CONTROL",
+    "human_overall_preference": "B",
+    "human_lower_ai_smell": "B",
+    "A_ai_smell": "VERY_HEAVY",
+    "B_ai_smell": "SOME_BUT_NOT_STRONG",
+    "A_clarity_problem": "MESSY_FEEL",
+    "first_A_ai_smell_locator": "你要那个？ / 他说过给我。 / 什么时候？"
+  },
+  "required_diagnosis": [
+    "Explain why the Phase377 evaluator predicted R1 lower AI smell while the target reader judged R1 much worse.",
+    "Separate short-sentence length from repeated functional adjacency-pair cadence.",
+    "Compare the human-located A dialogue with the analogous B passage and at least one real-source dialogue passage.",
+    "Identify which Phase377 weights or omissions caused the false positive.",
+    "Define a revised discriminator that can preserve coherent scene flow while detecting synthetic micro-cadence.",
+    "State what remains unproven and what may not be used as a generation checklist."
+  ],
+  "candidate_failure_family_to_test": {
+    "id": "AS-F01",
+    "name": "FUNCTIONALLY_EXACT_DIALOGUE_ADJACENCY_LADDER",
+    "description": "Repeated question -> exactly sufficient answer -> exactly useful follow-up, where each turn cleanly advances authorial information extraction and the exchange lacks relationship-specific interference, action competition, misunderstanding, overlap or speaker-private agenda.",
+    "important_boundary": "Short dialogue is not itself a failure. A short Q/A sequence is only high-risk when it forms a repeated functional information-acquisition ladder and contributes to target-reader AI smell."
+  },
+  "hard_gates": {
+    "new_fiction_generation": false,
+    "YMGQ_writing": false,
+    "YMGQ_span_growth": false,
+    "repeat_Phase378_PROCESS_protocol": false,
+    "use_Phase377_evaluator_as_quality_gate_without_recalibration": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "required_outputs": [
+    "state/calibration/PHASE379_TARGET_READER_AI_SMELL_CONTRASTIVE_MATRIX_V1.jsonl",
+    "docs/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.md",
+    "rules/target-reader-ai-smell-discriminator-v1.md",
+    "state/review_receipts/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.json"
+  ],
+  "acceptance": {
+    "must_treat_actual_human_as_authority": true,
+    "must_not_reclassify_Phase378_PROCESS_as_partial_success": true,
+    "must_preserve_Phase377_supported_global_findings_but_downgrade_evaluator_gate_reliability": true,
+    "must_not_promote_repair_method": true,
+    "next_generation_probe_requires_fresh_context_after_recalibration": true
+  },
+  "created_at": "2026-09-10T16:31:00+08:00"
+}
