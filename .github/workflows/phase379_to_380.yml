@@ -1,0 +1,28 @@
+name: Phase379 to 380
+
+on:
+  push:
+    branches: [novel-distill-v1]
+    paths:
+      - 'tools/phase379_to_380.py'
+
+permissions:
+  contents: write
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: novel-distill-v1
+      - name: Patch authoritative state
+        run: python tools/phase379_to_380.py
+      - name: Commit Phase380 state
+        run: |
+          git config user.name "vubaoha034-hash"
+          git config user.email "vubaoha034@gmail.com"
+          git add state/project_state.json state/continuity/LATEST_CHECKPOINT.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "phase380: settle phase379 and activate prospective calibration"
+          git push origin HEAD:novel-distill-v1
