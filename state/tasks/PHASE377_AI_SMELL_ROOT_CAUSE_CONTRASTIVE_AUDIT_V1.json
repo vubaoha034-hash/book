@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 377,
+  "task_id": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1",
+  "status": "READY_NOT_STARTED",
+  "trigger": "PHASE376_ATTEMPT2_VALID_REPLICATION_BASELINE_WIN_AND_BOTH_VARIANTS_HEAVY_AI_SMELL",
+  "purpose": "Identify the actual prose-surface causes of target-reader AI smell using contrastive evidence, instead of continuing generic anti-AI heuristics or one-sentence deletion repairs.",
+  "required_evidence_planes": [
+    "Human-positive bounded prose anchors, especially Phase363 and Phase369/370 directional improvements",
+    "Human-negative AI-heavy generated prose, especially Phase367 and Phase376 Attempt2",
+    "Phase373 control/candidate evidence showing natural baseline can beat explicit technique activation",
+    "Recoverable prose-surface evidence from the three real source novels without storing long copyrighted passages"
+  ],
+  "required_method": [
+    "Do not generate new fiction during the audit.",
+    "Separate story propulsion from prose-surface AI smell; no-skim is not evidence of natural prose.",
+    "Locate repeated surface signatures in AI-heavy generated prose and compare them against source prose and human-positive generated anchors.",
+    "Analyze sentence architecture, paragraph rhythm, inference/explanation habits, dialogue/action alternation, sensory staging, information packaging, lexical regularity, narrator certainty, causal neatness, and local unpredictability.",
+    "For every proposed AI-smell signature, require at least two located generated examples and at least one contrastive source/human-positive counterexample or mark it UNPROVEN.",
+    "Distinguish correlation from causal repair instructions.",
+    "Produce a ranked failure taxonomy with evidence strength and explicit non-rules.",
+    "Do not promote any anti-AI rule to generation use in this phase."
+  ],
+  "required_outputs": [
+    "state/calibration/PHASE377_AI_SMELL_CONTRASTIVE_EVIDENCE_MATRIX_V1.jsonl",
+    "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+    "state/review_receipts/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json"
+  ],
+  "hard_gates": {
+    "new_fiction_generation": false,
+    "one_sentence_deletion_iteration": false,
+    "direct_RX_generation_activation": false,
+    "candidate_stacking": false,
+    "YMGQ_writing": false,
+    "YMGQ_span_growth": false,
+    "full_manuscript_rewrite": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "acceptance_boundary": {
+    "audit_can_pass_without_proving_repair": true,
+    "repair_method_after_audit_requires_new_blind_human_test": true,
+    "stable_long_form_transfer_remains_unproven": true
+  },
+  "created_at": "2026-09-10T14:36:00+08:00"
+}
