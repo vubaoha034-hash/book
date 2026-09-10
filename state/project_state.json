@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.7.0",
+  "schema_version": "3.8.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T14:37:00+08:00",
+  "updated_at": "2026-09-10T15:18:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,23 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1",
-    "phase": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT",
-    "phase_ordinal": 377,
-    "status": "READY_NOT_STARTED",
-    "task_contract": "state/tasks/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json",
-    "execution_scope": "Contrast human-positive and AI-heavy generated prose against recoverable source-prose surface evidence to identify actual AI-smell signatures. No new fiction generation, no one-sentence repair loop, no YMGQ writing, no scale-up.",
-    "new_fiction_generation_authorized": false,
-    "direct_RX_generation_activation": false,
-    "passive_RX_validation_as_primary_repair": false,
+    "task_id": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+    "phase": "GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE",
+    "phase_ordinal": 378,
+    "status": "READY_FOR_TWO_FRESH_GENERATOR_CHATS",
+    "task_contract": "state/tasks/PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1.json",
+    "execution_scope": "Use two genuinely separate fresh generator chats on one frozen social-realism story packet. R1/R2 roles are sealed. This Phase377 chat may not generate either output because it has seen the diagnostic taxonomy. No YMGQ writing or scale-up.",
+    "current_chat_generation_authorized": false,
+    "fresh_generator_contexts_required": 2,
+    "R1_drive_file_id": "1ChOJYeD7Y3WFupshMkAGcMbZ7DEx4mg8",
+    "R2_drive_file_id": "1pm5sbHpQpdE3btCgqPxVYrQ55Zz27RCU",
+    "execution_drive_folder_id": "1LXWW3Vs-Hkx19Ogwzv20w2wUjP7RgCMu",
+    "role_mapping_receipt": "state/review_receipts/PHASE378_GENERATOR_ROLE_MAPPING_SEALED_V1.json",
+    "role_mapping_reveal_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Execute Phase377 contrastive AI-smell evidence audit before any new repair experiment."
+    "next_action": "Run R1 and R2 Drive invocation files in two separate brand-new ChatGPT chats; each must write its exact output to Drive and return a DONE marker plus actual Drive File ID."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -210,7 +214,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 29,
+    "logical_latest_checkpoint_sequence": 30,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -240,7 +244,11 @@
     "Phase376_baseline_win_may_not_be_rewritten_as_repair_success": true,
     "Phase375_weak_positive_is_not_repeatable_evidence": true,
     "no_skim_does_not_imply_low_ai_smell": true,
-    "Phase377_may_not_generate_new_fiction": true
+    "Phase377_may_not_generate_new_fiction": true,
+    "Phase377_audit_acceptance_does_not_close_ai_smell": true,
+    "Phase378_current_chat_may_not_generate_either_arm": true,
+    "Phase378_roles_may_not_be_revealed_before_human_verdict": true,
+    "Phase378_requires_two_separate_fresh_generator_contexts": true
   },
   "rollback": {
     "authorized": false,
@@ -323,10 +331,39 @@
     "accepted_checkpoint_advance": false
   },
   "ai_smell_state": {
-    "status": "OPEN_BLOCKING_FAILURE",
+    "status": "OPEN_BLOCKING_FAILURE_PHASE377_ROOT_CAUSE_TAXONOMY_ACCEPTED_REPAIR_UNPROVEN",
     "latest_actual_human_evidence": "PHASE376_ATTEMPT2_BOTH_VARIANTS_HEAVY_AI_SMELL_NO_SKIM",
     "story_propulsion_separable_from_ai_smell": true,
     "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
-    "next_required_task": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1"
+    "next_required_task": "PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1",
+    "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
+    "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md"
+  },
+  "phase377_settlement": {
+    "execution": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_ACCEPTED_AS_EVIDENCE_NOT_REPAIR_PROOF",
+    "receipt": "state/review_receipts/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json",
+    "report": "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+    "matrix": "state/calibration/PHASE377_AI_SMELL_CONTRASTIVE_EVIDENCE_MATRIX_V1.jsonl",
+    "new_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
+    "supported_high_signatures": [
+      "AS-01",
+      "AS-02",
+      "AS-03",
+      "AS-04",
+      "AS-06"
+    ],
+    "supported_amplifiers": [
+      "AS-05",
+      "AS-07"
+    ],
+    "simple_short_sentence_rule": "REJECTED",
+    "simple_explanation_ban": "REJECTED",
+    "concrete_object_reduction_simple_rule": "REJECTED",
+    "one_sentence_deletion_primary_method": "DOWNGRADED_NOT_REPEATABLE",
+    "repair_method": "UNPROVEN",
+    "writing_transfer": "NOT_SUPPORTED",
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
   }
 }
