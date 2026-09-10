@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.6.0",
+  "schema_version": "3.7.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-09T17:51:00+08:00",
+  "updated_at": "2026-09-10T14:37:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,19 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1",
-    "phase": "FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION",
-    "phase_ordinal": 376,
-    "status": "ATTEMPT2_AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
-    "task_contract": "state/tasks/PHASE376_FRESH_NATURAL_BASELINE_PASSIVE_VALIDATOR_REPLICATION_V1.json",
-    "execution_scope": "Phase376 Attempt1 was invalidated before human review due blinding contamination. Attempt2 uses a different fresh natural baseline frozen before validation; one passive-validator repair was produced and cleanly blinded. No defect detail or X/Y mapping may be disclosed before verdict. No direct RX generation, YMGQ writing, or scale-up is authorized.",
+    "task_id": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1",
+    "phase": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT",
+    "phase_ordinal": 377,
+    "status": "READY_NOT_STARTED",
+    "task_contract": "state/tasks/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json",
+    "execution_scope": "Contrast human-positive and AI-heavy generated prose against recoverable source-prose surface evidence to identify actual AI-smell signatures. No new fiction generation, no one-sentence repair loop, no YMGQ writing, no scale-up.",
+    "new_fiction_generation_authorized": false,
     "direct_RX_generation_activation": false,
-    "passive_RX_validation_authorized": true,
-    "one_located_defect_max": true,
+    "passive_RX_validation_as_primary_repair": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Actual target reader reads only PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt in Drive folder 小说蒸馏_真人验收 and compares X/Y. Do not disclose repair detail or mapping before verdict."
+    "next_action": "Execute Phase377 contrastive AI-smell evidence audit before any new repair experiment."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -167,7 +167,7 @@
     "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
     "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
     "direct_generation_calling_mode": "DISABLED",
-    "passive_validator_calling_mode": "PHASE376_ATTEMPT2_CLEAN_HUMAN_BLIND_REVIEW_PENDING",
+    "passive_validator_calling_mode": "PHASE376_VALID_REPLICATION_FAILED_NOT_PRIMARY_REPAIR_PATH",
     "required_rules": [
       "rules/source-evidence-transfer-gate.md",
       "rules/reader-experience-passive-validator-only-v1.md"
@@ -210,7 +210,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 18,
     "physical_event_hash": "7f2f8e7873d7f1cb72dfddcb8fd01ec17e1be19bd4180e5640fb3506278ee5e6",
-    "logical_latest_checkpoint_sequence": 28,
+    "logical_latest_checkpoint_sequence": 29,
     "claim_later_sequences_physically_appended": false
   },
   "invariants": {
@@ -236,7 +236,11 @@
     "Phase376_attempt1_may_not_count_due_blinding_contamination": true,
     "Phase376_attempt2_repair_detail_may_not_be_revealed_before_human_verdict": true,
     "Phase376_attempt2_mapping_may_not_be_revealed_before_human_verdict": true,
-    "Phase376_may_not_scale_before_clean_actual_human_replication_result": true
+    "Phase376_may_not_scale_before_clean_actual_human_replication_result": true,
+    "Phase376_baseline_win_may_not_be_rewritten_as_repair_success": true,
+    "Phase375_weak_positive_is_not_repeatable_evidence": true,
+    "no_skim_does_not_imply_low_ai_smell": true,
+    "Phase377_may_not_generate_new_fiction": true
   },
   "rollback": {
     "authorized": false,
@@ -297,5 +301,32 @@
     "status": "INVALIDATED_BEFORE_HUMAN_REVIEW",
     "receipt": "state/review_receipts/PHASE376_ATTEMPT1_BLINDING_CONTAMINATION_V1.json",
     "counts_as_replication_evidence": false
+  },
+  "phase376_settlement": {
+    "execution": "ATTEMPT1_INVALIDATED_ATTEMPT2_ACTUAL_HUMAN_REPLICATION_COMPLETE_BASELINE_WIN",
+    "attempt1_receipt": "state/review_receipts/PHASE376_ATTEMPT1_BLINDING_CONTAMINATION_V1.json",
+    "attempt2_human_receipt": "state/review_receipts/PHASE376_ATTEMPT2_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "attempt2_revealed_mapping": {
+      "X": "SINGLE_DEFECT_REPAIR",
+      "Y": "BASELINE_UNTOUCHED"
+    },
+    "overall_preference": "Y_BASELINE",
+    "desire_to_continue": "Y_BASELINE",
+    "clarity_flow": "Y_BASELINE",
+    "tension": "Y_BASELINE",
+    "ai_smell": "BOTH_HEAVY",
+    "first_skim_or_stop": "NONE_FOR_BOTH",
+    "phase375_weak_positive_replicated": false,
+    "passive_validator_repeatability": "FAILED",
+    "repair_transfer_signal": false,
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "ai_smell_state": {
+    "status": "OPEN_BLOCKING_FAILURE",
+    "latest_actual_human_evidence": "PHASE376_ATTEMPT2_BOTH_VARIANTS_HEAVY_AI_SMELL_NO_SKIM",
+    "story_propulsion_separable_from_ai_smell": true,
+    "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
+    "next_required_task": "PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1"
   }
 }
