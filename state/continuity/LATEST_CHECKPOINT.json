@@ -2,7 +2,7 @@
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
   "sequence": 32,
-  "recorded_at": "2026-09-10T16:25:00+08:00",
+  "recorded_at": "2026-09-10T16:29:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -72,9 +72,6 @@
     "Phase378 sealed model evaluator prediction failed against actual-human direction"
   ],
   "incomplete": [
-    "Phase378 R1 fresh generator has not yet been executed",
-    "Phase378 R2 fresh generator has not yet been executed",
-    "Phase378 isolated process candidate versus control human comparison is not available",
     "AI-smell repair method remains UNPROVEN",
     "AI-F01 remains OPEN_BLOCKING_FAILURE",
     "No RX candidate has TRANSFER_SUPPORTED status",
@@ -85,8 +82,6 @@
     "No full-manuscript reconstruction is authorized",
     "Final freeze remains blocked",
     "STATE_LEDGER.jsonl remains physically verified only through sequence 18; logical latest checkpoint is 30",
-    "Phase378 actual target-reader blind verdict is pending",
-    "Phase378 process-level AI-smell transfer signal is not yet established",
     "Phase379 PROCESS backfire diagnosis pending",
     "Reliable AI-smell evaluator remains unproven",
     "Stable low-AI generation process remains unproven"

@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.9.0",
+  "schema_version": "3.9.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-10T16:24:00+08:00",
+  "updated_at": "2026-09-10T16:28:00+08:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -369,8 +369,12 @@
     "generation_complete": true,
     "both_outputs_frozen": true,
     "pre_human_evaluator_complete_sealed": true,
-    "human_blind_review_pending": true,
-    "transfer_supported": false,
+    "human_blind_review_pending": false,
+    "actual_human_review_complete": true,
+    "A_B_mapping_revealed_after_verdict": true,
+    "R1_R2_role_mapping_revealed_after_verdict": true,
+    "process_level_transfer_signal": false,
+    "control_won_this_replicate": true,
     "span_growth_authorized": false,
     "accepted_checkpoint_advance": false
   },
