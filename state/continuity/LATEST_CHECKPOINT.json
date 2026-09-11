@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 36,
-  "recorded_at": "2026-09-11T08:17:09.153694+00:00",
+  "sequence": 37,
+  "recorded_at": "2026-09-11T08:24:30.690559+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
   ],
-  "current_focus": "Execute one bounded Phase381 scene under the current user continuation instruction; Phase380 remains closed and Phase320 promotion is unchanged.",
+  "current_focus": "Phase381 initial bounded scene is delivered; wait for actual-human reading before any located repair or further scene. Phase380 is closed; promotion remains Phase320.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -94,7 +94,8 @@
     "Phase380 actual-human six-item anonymous review received and preserved without dimension conflation",
     "Phase380 sealed prediction and mapping verified against pre-human Git hashes, then unsealed: A=R1; B=R2; predicted A; one directional hit",
     "Phase380 single-pair campaign closed; no additional calibration or quality promotion",
-    "Phase381 minimal private story contract formed from verified Phase370 source, activated under current user continuation instruction; no old prose changed"
+    "Phase381 minimal private story contract formed from verified Phase370 source, activated under current user continuation instruction; no old prose changed",
+    "Phase381 one bounded scene delivered unchanged after initial drafting, with durable files and exact Drive readback; structural checks do not claim literary acceptance"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -111,7 +112,7 @@
     "Generation repair remains UNPROVEN",
     "Historical event-by-event coverage between ledger entry18 and logical checkpoint32 remains PARTIAL; current snapshot reconciled by event19",
     "Legacy validate_skill.py fails existing V3 name/schema expectations on current V4.2 baseline; separate packaging maintenance issue",
-    "Phase381 initial bounded scene and actual-human reading remain pending"
+    "Phase381 actual-human reading and local quality settlement remain pending; no automatic next scene"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -119,7 +120,8 @@
     "SPAN_GROWTH_BLOCKED",
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
     "FULL_REWRITE_BLOCKED",
-    "FINAL_FREEZE_BLOCKED"
+    "FINAL_FREEZE_BLOCKED",
+    "PHASE381_ACTUAL_HUMAN_SCENE_REVIEW_PENDING"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -155,7 +157,7 @@
     "Treat Phase380 single prediction hit as reliable evaluator or generation repair proof",
     "Replace Phase380 B overall/continuation/clarity preference with A merely because A has lighter AI smell"
   ],
-  "next_required_action": "Write the one authorized 2000–3000 Chinese-character scene using the private minimal story contract and verified Phase370 anchor; preserve old prose, then deliver for actual-human reading without self-acceptance.",
+  "next_required_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -179,7 +181,7 @@
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "22 physical events; earlier event-by-event coverage remains partial"
+      "role": "23 physical events; earlier event-by-event coverage remains partial"
     },
     {
       "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
@@ -200,11 +202,15 @@
     {
       "path": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
       "role": "current Phase381 task or delivery evidence"
+    },
+    {
+      "path": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+      "role": "current Phase381 task or delivery evidence"
     }
   ],
-  "status": "ACTIVE_BOUNDED_INITIAL_DRAFT_AUTHORIZED",
-  "physical_ledger_entry_count": 22,
-  "physical_ledger_tail_hash": "275699cec878ba449b429fb2b7f0b9189af187b3203b1bd0c1e26d8b0a56d144",
+  "status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW",
+  "physical_ledger_entry_count": 23,
+  "physical_ledger_tail_hash": "586d566f5dcae42bbd2d5b1672494dc2634f0209c4b853ca94a8dd197dc43439",
   "last_completed_task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"

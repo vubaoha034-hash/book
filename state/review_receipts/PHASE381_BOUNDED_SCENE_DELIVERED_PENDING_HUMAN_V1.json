@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+  "recorded_at": "2026-09-11T08:24:30.690559+00:00",
+  "status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW",
+  "basis_commit": "c3ead3cee581ef33192e36abc923e7f2991c9899",
+  "private_story_contract": {
+    "drive_file_id": "17Xono2xYy0emKnvMgNVt_RJMnhdgJcKS",
+    "file_name": "PHASE381_场景合同_V1.json",
+    "sha256": "04ad25642a372b8f597931b51f86fed67972a9825f9a2d3c56d32fdbc2704d96"
+  },
+  "source_anchor": {
+    "repository_path": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "git_sha256": "dfa94f216669e4e2718da8d66e6b2116f3348e941a8b9f90f6ca71a7087b14a5",
+    "drive_file_id": "1hrdGOvAB49CGMBdnNl30VAWq0ZvTWoHD",
+    "drive_sha256": "8ff7b02c1004329cf2c99e2da087cdb215128251988e631b82c7103d8e5f34e5",
+    "comparison": "Nonempty lines match exactly; Drive has CRLF/additional blank lines.",
+    "human_acceptance_scope": "Immediate motive clear, remaining uncertainty felt like suspense, desire to continue yes; no final low-AI or long-form acceptance."
+  },
+  "delivery": {
+    "activation_commit": "c3ead3cee581ef33192e36abc923e7f2991c9899",
+    "new_chinese_characters": 2134,
+    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+    "reader_pack_sha256": "03c139ecb7695c166c149e6a4ea61c39aacb14fd6e60390445d0ceddd7ed658f",
+    "reader_file_name": "PHASE381_一命过桥_连续场景_V1.txt",
+    "reader_bytes": 8019,
+    "reader_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo",
+    "reader_drive_url": "https://drive.google.com/file/d/1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo/view?usp=drivesdk",
+    "reader_library_file_id": "libfile_c35b1fc9c5dc8191843faedd18344e4f",
+    "private_evidence_drive_file_id": "1s47D5CuFCTSt7rtudoQH8gOqbyYEf8FG",
+    "private_evidence_sha256": "b88063c3bb2d823cec5081356096359c24fb76d634d1cd966de239fdad4a051a",
+    "private_evidence_library_file_id": "libfile_7c740113a5148191a04f5cc5f01457e0",
+    "contract_library_file_id": "libfile_f7c45b57ef288191a2f30a0353dd49cb",
+    "contract_sha256": "04ad25642a372b8f597931b51f86fed67972a9825f9a2d3c56d32fdbc2704d96",
+    "drive_exact_readback": true,
+    "library_saved": true,
+    "local_identity_applied": true,
+    "pre_delivery_local_fixes": 2,
+    "human_located_repairs_used": 0,
+    "review_record_sha256": "07f45f17b6b2798591736d3375189ca70274f0d1d96b7aa0daf407db7942d4d3"
+  },
+  "authoring_context": "CURRENT_COORDINATOR_NOT_INDEPENDENT_FRESH_GENERATOR",
+  "checks": {
+    "new_chinese_characters": 2134,
+    "length_in_contract": true,
+    "anchor_exact_nonempty_lines_verified": true,
+    "new_prose_does_not_modify_anchor": true,
+    "reader_body_exact_match": true,
+    "blocking_continuity_errors_identified": 0,
+    "remaining_quality_uncertainty": "ACTUAL_HUMAN_READING_PENDING",
+    "source_fact_scope": "Exact Phase370 short anchor only; no full-manuscript canon integration claim.",
+    "located_evidence_zh": {
+      "identity_answer": "开头：入营登记名为陈长岭；中段本人解释断腿、弟弟替役及自己后来的别名。",
+      "Gu_knowledge": "前段顾说明陈曾去追问且顾在门内见过他；不从半个陈字直接推知身份。",
+      "records": "中段霍区分本人清点的饿死者与顾承认的上报逃卒名籍；不是更改小六死亡事实。",
+      "objects": "刘出巷归牌给陈；陈后交给旧卒；刘拔刀后陈主动交鞘；顾始终保留铁环。",
+      "exit": "入院见通街小门→刘确认车过不去→旧卒提前拆侧栏→顾仍带铁环从侧栏口出车。",
+      "choice_and_payoff": "陈停止勒杀并主动交鞘，要求同袍当场听见口供，最后扶顾撤离；仅取得口供和身份公开，不算正式平反。"
+    }
+  },
+  "quality_status": "UNACCEPTED_PENDING_ACTUAL_TARGET_READER",
+  "human_verdict": null,
+  "budget_used": {
+    "initial_drafts": 1,
+    "human_located_repair_passes": 0
+  },
+  "maximum_remaining_human_located_repair_passes": 1,
+  "old_source_and_failed_prose_unchanged": true,
+  "Phase380_result_unchanged": true,
+  "architecture_promoted": false,
+  "accepted_checkpoint_advance": false,
+  "distillation_writing_transfer_supported": false,
+  "next_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains."
+}

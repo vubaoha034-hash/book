@@ -2,7 +2,7 @@
   "schema_version": "3.10.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-11T08:17:09.153694+00:00",
+  "updated_at": "2026-09-11T08:24:30.690559+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,10 +15,10 @@
     "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
     "phase": "BOUNDED_SCENE_DELIVERY",
     "phase_ordinal": 381,
-    "status": "ACTIVE_BOUNDED_INITIAL_DRAFT_AUTHORIZED",
+    "status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW",
     "task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
     "execution_scope": "One 2000–3000 Chinese-character continuation after the accepted local Phase370 anchor; current human-facing manuscript candidate only.",
-    "YMGQ_writing_authorized": true,
+    "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
@@ -31,7 +31,9 @@
       "second_scene": false,
       "general_span_growth": false
     },
-    "next_action": "Write the one authorized 2000–3000 Chinese-character scene using the private minimal story contract and verified Phase370 anchor; preserve old prose, then deliver for actual-human reading without self-acceptance."
+    "next_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
+    "current_execution_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+    "human_review_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -197,8 +199,8 @@
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
-    "YMGQ_writing_paused": false,
-    "YMGQ_writing_pause_reason": null,
+    "YMGQ_writing_paused": true,
+    "YMGQ_writing_pause_reason": "PHASE381_ONE_SCENE_DELIVERED_AWAITING_ACTUAL_HUMAN",
     "current_writing_authorization_scope": {
       "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
       "new_chinese_characters_min": 2000,
@@ -207,7 +209,8 @@
       "full_manuscript_rewrite": false,
       "second_scene": false,
       "general_span_growth": false
-    }
+    },
+    "latest_unreviewed_candidate_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json"
   },
   "governance": {
     "actual_human_result_controls_current_candidate": true,
@@ -226,9 +229,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 22,
-    "physical_event_hash": "275699cec878ba449b429fb2b7f0b9189af187b3203b1bd0c1e26d8b0a56d144",
-    "logical_latest_checkpoint_sequence": 36,
+    "physical_STATE_LEDGER_sequence": 23,
+    "physical_event_hash": "586d566f5dcae42bbd2d5b1672494dc2634f0209c4b853ca94a8dd197dc43439",
+    "logical_latest_checkpoint_sequence": 37,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -371,7 +374,7 @@
     "next_required_task": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
     "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
     "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
-    "next_task_status": "ACTIVE_BOUNDED_INITIAL_DRAFT_AUTHORIZED"
+    "next_task_status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW"
   },
   "phase377_settlement": {
     "execution": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_ACCEPTED_AS_EVIDENCE_NOT_REPAIR_PROOF",
@@ -467,7 +470,7 @@
     "acceptance_is_actual_reader_evidence": true,
     "phase380_closed": true,
     "phase380_settlement_receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
-    "next_action": "Write the one authorized 2000–3000 Chinese-character scene using the private minimal story contract and verified Phase370 anchor; preserve old prose, then deliver for actual-human reading without self-acceptance.",
+    "next_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
     "active_delivery_task": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"
   },
   "phase380_outputs": {
@@ -545,12 +548,16 @@
   },
   "phase381_execution_state": {
     "contract_activated": true,
-    "initial_drafts_written": 0,
+    "initial_drafts_written": 1,
     "human_located_repairs_used": 0,
-    "actual_human_review_pending": false,
+    "actual_human_review_pending": true,
     "actual_human_review_complete": false,
     "quality_accepted": false,
     "generation_repair_supported": false,
-    "accepted_checkpoint_advance": false
+    "accepted_checkpoint_advance": false,
+    "source_frozen": true,
+    "prose_delivered": true,
+    "delivery_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a"
   }
 }
