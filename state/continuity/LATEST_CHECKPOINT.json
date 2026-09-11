@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 34,
-  "recorded_at": "2026-09-10T23:45:16.887039+00:00",
+  "sequence": 35,
+  "recorded_at": "2026-09-11T08:03:40.011209+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1"
-  ],
-  "current_focus": "Phase380 two returned outputs are raw-byte frozen; post-generation discriminator prediction and deterministic A/B mapping are sealed privately; exact prose reader pack is delivered. Await one actual-human verdict, then unseal and settle hit/miss/tie under the bounded exit. No further generation and no prose rewrite.",
+  "active_task_ids": [],
+  "current_focus": "Phase380 closed after actual human review: A lower AI smell, B preferred overall/continuation/clarity. Sealed A prediction matched once. Evaluator stays diagnostic-only. Next is preparation of the existing bounded prose contract; no active generation task.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -90,7 +88,10 @@
     "Phase380 both returned text/plain output files verified and raw-byte frozen",
     "Phase380 post-generation directional prediction and deterministic mapping sealed in private evidence archive before human review",
     "Phase380 anonymous reader pack delivered with original prose bytes unchanged and remote SHA-256 readback verified",
-    "Phase380 private evidence and reader pack durably saved; no raw prose or directional answer key published in Git"
+    "Phase380 private evidence and reader pack durably saved; no raw prose or directional answer key published in Git",
+    "Phase380 actual-human six-item anonymous review received and preserved without dimension conflation",
+    "Phase380 sealed prediction and mapping verified against pre-human Git hashes, then unsealed: A=R1; B=R2; predicted A; one directional hit",
+    "Phase380 single-pair campaign closed; no additional calibration or quality promotion"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -105,10 +106,9 @@
     "Stable low-AI generation process remains unproven",
     "Target-reader AI-smell evaluator remains DIAGNOSTIC ONLY",
     "Generation repair remains UNPROVEN",
-    "YMGQ writing remains paused during Phase380 prospective discriminator calibration",
     "Historical event-by-event coverage between ledger entry18 and logical checkpoint32 remains PARTIAL; current snapshot reconciled by event19",
     "Legacy validate_skill.py fails existing V3 name/schema expectations on current V4.2 baseline; separate packaging maintenance issue",
-    "Phase380 actual-human blind review and final one-pair settlement remain pending"
+    "Bounded prose delivery draft remains unactivated; prepare a scoped native contract with verified manuscript/fact inputs before drafting"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -117,8 +117,7 @@
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
     "FULL_REWRITE_BLOCKED",
     "FINAL_FREEZE_BLOCKED",
-    "YMGQ_WRITING_PAUSED_DURING_PHASE380_CALIBRATION",
-    "PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_PENDING"
+    "YMGQ_WRITING_REQUIRES_NEW_BOUNDED_TASK_CONTRACT"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -149,9 +148,12 @@
     "Treat Phase373 B/CONTROL win as a Phase372 candidate success",
     "Claim source reading alone proves writing learning",
     "Claim book/global Novel DNA validation proves prose quality",
-    "Claim YMGQ improvement as evidence of GN-VDNA-01 success"
+    "Claim YMGQ improvement as evidence of GN-VDNA-01 success",
+    "Repeat Phase380 generators or add calibration pairs automatically after its closed one-pair settlement",
+    "Treat Phase380 single prediction hit as reliable evaluator or generation repair proof",
+    "Replace Phase380 B overall/continuation/clarity preference with A merely because A has lighter AI smell"
   ],
-  "next_required_action": "Read PHASE380_匿名阅读稿_V1.txt (Drive 1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG), collect one actual-human review, then unseal and settle this single-pair campaign; no new generation.",
+  "next_required_action": "Prepare the bounded 2000–3000 Chinese-character scene contract from the existing delivery followup draft and verified Phase370 prose/facts. No further Phase380 calibration; writing requires a scoped native task contract, with at most one initial draft and one human-located repair.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -159,7 +161,7 @@
     },
     {
       "path": "state/tasks/PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json",
-      "role": "current active Phase380 contract"
+      "role": "closed Phase380 contract; design and acceptance terms preserved"
     },
     {
       "path": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
@@ -175,7 +177,7 @@
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "19 physical events; current snapshot reconciled, earlier event coverage remains partial"
+      "role": "21 physical events; current snapshot reconciled; earlier event coverage remains partial"
     },
     {
       "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
@@ -187,11 +189,16 @@
     },
     {
       "path": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
-      "role": "current frozen outputs and sealed prediction, pending-human receipt"
+      "role": "immutable pre-human freeze and seal receipt; superseded in current status by final human settlement"
+    },
+    {
+      "path": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
+      "role": "actual-human Phase380 verdict, verified unseal, and final campaign settlement"
     }
   ],
-  "status": "ACTIVE_PHASE380_AWAITING_ACTUAL_HUMAN_BLIND_REVIEW",
-  "physical_ledger_entry_count": 20,
-  "physical_ledger_tail_hash": "7f98a456c28a5e58752fe232a70b6b31b787a85dd1577f9a6c5ae394e2f5e75d",
-  "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json"
+  "status": "PHASE380_CAMPAIGN_CLOSED_FOLLOWUP_DRAFT_NOT_ACTIVE",
+  "physical_ledger_entry_count": 21,
+  "physical_ledger_tail_hash": "9baa6d1ef862bfaa575780d36a68806125257ee3eeb5bb1bc5411963cfeb0558",
+  "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
+  "last_completed_task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1"
 }

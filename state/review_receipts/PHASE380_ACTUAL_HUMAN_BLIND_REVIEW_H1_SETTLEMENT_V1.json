@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "phase": 380,
+  "basis_commit": "4beb23860c96295597e6f78f699d6dd0939675fd",
+  "recorded_at": "2026-09-11T08:03:40.011209+00:00",
+  "status": "CALIBRATION_HIT_ONE_REPLICATE_ONLY_CAMPAIGN_CLOSED",
+  "frozen_receipt": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
+  "raw_output_hashes": {
+    "1": "84b2e22a91b9eee1db762af37a01ad191c318405a4ecdef9cf43e003efe2beb4",
+    "2": "963803fcafc8209086f27d3137ce6e6d061308164a1e1b955f733d4babdf699f"
+  },
+  "reader_pack": {
+    "drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG",
+    "file_name": "PHASE380_匿名阅读稿_V1.txt",
+    "mime_type": "text/plain",
+    "sha256": "e79e6dc7e1efd1fba843df021dabc9ebf724f96bf52daf6044b5d8e80435f661",
+    "bytes": 12506,
+    "library_file_id": "libfile_b12ded0daad88191ac32d96e9749290a",
+    "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_"
+  },
+  "prior_private_evidence": {
+    "drive_file_id": "1lYDtsnfpIvoxnl9XbayI-za8Usd4Tg9K",
+    "sha256": "5d65724ff54d2e23c0b930ade80e02e60edda048072c7cd3fbb5d313ad571266",
+    "bytes": 10988,
+    "library_file_id": "libfile_60c6e2812d4c8191ad338af03b8c743b"
+  },
+  "sealed_evidence_verification": {
+    "checks": {
+      "PREDICTION_SEALED.json": true,
+      "BLIND_MAPPING_SEALED.json": true,
+      "PHASE380_匿名阅读稿_V1.txt": true,
+      "R1_raw.txt": true,
+      "R2_raw.txt": true,
+      "private_archive": true
+    },
+    "published_before_human_commit": "4beb23860c96295597e6f78f699d6dd0939675fd",
+    "prediction_sha256": "6a8b84945ad6973584169852b1f7906c241dbdea09e6147724a83bc2fee05f46",
+    "mapping_sha256": "02ec74811bba88e1c02b989da5a4666f2003906384de8fcde8b6c9dc1006bd8d",
+    "original_files_modified": false
+  },
+  "actual_human_review": {
+    "source": "ACTUAL_TARGET_READER_CURRENT_CHAT_MESSAGE_BEFORE_UNSEALING",
+    "received_date_utc": "2026-09-11",
+    "message_timestamp_available": false,
+    "verbatim_response_zh": "1 B的ai味道重一点。   2 A 轻微  B明显   3  B  4 B  5  B    6暂时没有",
+    "lower_ai_smell": "A",
+    "ai_smell_intensity": {
+      "A": "轻微",
+      "B": "明显"
+    },
+    "overall_preference": "B",
+    "more_desire_to_continue": "B",
+    "clearer_smoother": "B",
+    "skim_or_stop_response_zh": "暂时没有",
+    "located_skim_or_stop": null,
+    "specific_cause_of_preference": "NOT_PROVIDED",
+    "global_AI_free_acceptance": false,
+    "complete_manuscript_acceptance": false
+  },
+  "unsealed_prediction": {
+    "original_sealed_at": "2026-09-10T23:42:19.127459+00:00",
+    "revealed_after_human_at": "2026-09-11T08:03:40.011209+00:00",
+    "predicted_lower_ai_smell_replicate": 1,
+    "predicted_lower_ai_smell_blind_label": "A",
+    "original_confidence": "LOW_TO_MODERATE_QUALITATIVE_ONLY",
+    "evaluator_context": "POST_GENERATION_COORDINATOR_DIAGNOSTIC_NOT_A_SEPARATE_FRESH_EVALUATOR_CHAT",
+    "clarity_or_continuation_direction_was_pre_registered": false
+  },
+  "revealed_mapping": {
+    "A": {
+      "replicate": 1,
+      "sha256": "84b2e22a91b9eee1db762af37a01ad191c318405a4ecdef9cf43e003efe2beb4",
+      "drive_id": "1HSFFn3EaIO27LKtp5YMpYwmN7NSXIdPd"
+    },
+    "B": {
+      "replicate": 2,
+      "sha256": "963803fcafc8209086f27d3137ce6e6d061308164a1e1b955f733d4babdf699f",
+      "drive_id": "15xYBzUCntSWKqWPDm-pNuPrO6e_Hel14"
+    }
+  },
+  "settlement": {
+    "primary_measure": "directional agreement on lower AI smell",
+    "directional_agreement": true,
+    "valid_comparisons_in_this_campaign": 1,
+    "hits_in_this_campaign": 1,
+    "claim_reliable_hit_rate": false,
+    "human_overall_preference_differs_from_lower_ai_smell": true,
+    "secondary_human_preferences_override_model_editorial_impressions": true,
+    "evaluator_status": "DIAGNOSTIC_ONLY",
+    "generation_repair_supported": false,
+    "distillation_writing_transfer_proven": false,
+    "long_form_scale_supported": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "interpretation_zh": [
+    "本轮封存预测为A的AI味更轻，与真人方向一致；仅构成一对样本的一次命中。",
+    "真人更喜欢B、更想继续B、认为B更清楚顺畅；A的低AI味优势不得被改写成整体写作胜出。",
+    "B仍被评为AI味明显；偏好B不能证明B无AI味，也不能证明AI味无需改进。",
+    "第六项仅记录暂时没有跳读或停止位置，不扩大为所有阅读维度通过。",
+    "真人未定位喜欢B或其AI味的具体原因；不把模型事后解释冒充已验证根因。"
+  ],
+  "budget_used": {
+    "candidate_pairs": 1,
+    "initial_generations": 2,
+    "content_rewrites": 0,
+    "human_comparison_rounds": 1
+  },
+  "campaign_closed": true,
+  "automatic_additional_calibration": false,
+  "next_action": "Prepare the bounded 2000–3000 Chinese-character scene contract from the existing delivery followup draft and verified Phase370 prose/facts. No further Phase380 calibration; writing requires a scoped native task contract, with at most one initial draft and one human-located repair.",
+  "followup_status": "EXISTING_DRAFT_NOT_AUTO_ACTIVATED",
+  "scope_limits": [
+    "USER_RETURNED_TWO_SEPARATE_DONE_MARKERS_AND_DISTINCT_OUTPUT_FILES; GENERATOR_TRANSCRIPTS_NOT_AUDITED",
+    "Private manuscript prose and detailed sealed textual rationale remain outside public Git.",
+    "Historical Phase378 wrong prediction and all prior human rejections remain unchanged."
+  ]
+}
