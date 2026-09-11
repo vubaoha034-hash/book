@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+  "phase_ordinal": 381,
+  "status": "ACTIVE_BOUNDED_INITIAL_DRAFT_AUTHORIZED",
+  "created_at": "2026-09-11T08:17:09.153694+00:00",
+  "basis_commit": "66668c3a2cb241bcc36075cc74de1dd6a0e26b53",
+  "supersedes_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
+  "previous_closed_task": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "authorization": {
+    "user_instruction_zh": "继续下一步",
+    "context": "After Phase380 closure and explicit 2000–3000 character next-delivery proposal.",
+    "authorizer": "ACTUAL_USER_CURRENT_PROJECT_CHAT",
+    "scope": "Activate this native bounded prose task only; not an authorization from the Phase380 prediction hit."
+  },
+  "writing_scope": {
+    "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
+    "new_chinese_characters_min": 2000,
+    "new_chinese_characters_max": 3000,
+    "old_prose_modified": false,
+    "full_manuscript_rewrite": false,
+    "second_scene": false,
+    "general_span_growth": false
+  },
+  "private_story_contract": {
+    "drive_file_id": "17Xono2xYy0emKnvMgNVt_RJMnhdgJcKS",
+    "file_name": "PHASE381_场景合同_V1.json",
+    "sha256": "04ad25642a372b8f597931b51f86fed67972a9825f9a2d3c56d32fdbc2704d96"
+  },
+  "source_anchor": {
+    "repository_path": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "git_sha256": "dfa94f216669e4e2718da8d66e6b2116f3348e941a8b9f90f6ca71a7087b14a5",
+    "drive_file_id": "1hrdGOvAB49CGMBdnNl30VAWq0ZvTWoHD",
+    "drive_sha256": "8ff7b02c1004329cf2c99e2da087cdb215128251988e631b82c7103d8e5f34e5",
+    "comparison": "Nonempty lines match exactly; Drive has CRLF/additional blank lines.",
+    "human_acceptance_scope": "Immediate motive clear, remaining uncertainty felt like suspense, desire to continue yes; no final low-AI or long-form acceptance."
+  },
+  "budget": {
+    "max_initial_drafts": 1,
+    "max_human_located_repair_passes": 1,
+    "automatic_redraft": false
+  },
+  "authoring_context": "CURRENT_COORDINATOR_NOT_FRESH_ISOLATED_GENERATOR",
+  "acceptance": {
+    "authority": "ACTUAL_TARGET_READER",
+    "human_questions_zh": [
+      "还想继续看吗？",
+      "人物为什么这样做，是否清楚？",
+      "AI味是否明显到妨碍阅读？",
+      "哪里想跳读；弟弟名字这次解释是否让你觉得有所得？"
+    ],
+    "no_self_acceptance": true,
+    "no_skim_is_not_low_AI": true,
+    "AI_smell_not_overall_quality": true,
+    "failure_after_one_located_repair": "STOP_THIS_APPROACH_NO_AUTOMATIC_RULE_OR_CALIBRATION_LOOP",
+    "second_scene_requires_explicit_human_support": true,
+    "distillation_causal_transfer_claim": false,
+    "long_form_generalization_claim": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_required_action": "Write the one authorized 2000–3000 Chinese-character scene using the private minimal story contract and verified Phase370 anchor; preserve old prose, then deliver for actual-human reading without self-acceptance.",
+  "historical_phase370_stop_scope": "Old Phase370 output remains frozen. Current user instruction and this new native contract authorize only the separately delivered Phase381 scene; no original text edits."
+}

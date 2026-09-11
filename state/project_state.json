@@ -2,7 +2,7 @@
   "schema_version": "3.10.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-11T08:03:40.011209+00:00",
+  "updated_at": "2026-09-11T08:17:09.153694+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,25 +12,26 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
-    "phase": "PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION",
-    "phase_ordinal": 380,
-    "status": "CALIBRATION_HIT_ONE_REPLICATE_ONLY_CAMPAIGN_CLOSED",
-    "task_contract": "state/tasks/PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json",
-    "execution_scope": "Two neutral fresh generators receive equivalent story facts with no Phase377/379 diagnosis and no anti-AI process intervention. After both outputs are frozen, the recalibrated discriminator must seal a directional AI-smell prediction before target-reader blind review.",
-    "R1_drive_file_id": "1OiASyZl6Lhv0qLw7-RVoHwWp9QyirI4z",
-    "R2_drive_file_id": "1a16_NQn7suEMe0yeeo4KE3WQ45NIRW1W",
-    "execution_drive_folder_id": "1LXWW3Vs-Hkx19Ogwzv20w2wUjP7RgCMu",
-    "YMGQ_writing_authorized": false,
+    "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+    "phase": "BOUNDED_SCENE_DELIVERY",
+    "phase_ordinal": 381,
+    "status": "ACTIVE_BOUNDED_INITIAL_DRAFT_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
+    "execution_scope": "One 2000–3000 Chinese-character continuation after the accepted local Phase370 anchor; current human-facing manuscript candidate only.",
+    "YMGQ_writing_authorized": true,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "next_action": "Prepare the bounded 2000–3000 Chinese-character scene contract from the existing delivery followup draft and verified Phase370 prose/facts. No further Phase380 calibration; writing requires a scoped native task contract, with at most one initial draft and one human-located repair.",
-    "bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
-    "execution_budget": "ONE_EXISTING_PAIR_ONE_HUMAN_REVIEW_NO_AUTOMATIC_RECALIBRATION",
-    "human_review_drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG",
-    "current_execution_receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
-    "completed_at": "2026-09-11T08:03:40.011209+00:00"
+    "writing_authorization_scope": {
+      "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
+      "new_chinese_characters_min": 2000,
+      "new_chinese_characters_max": 3000,
+      "old_prose_modified": false,
+      "full_manuscript_rewrite": false,
+      "second_scene": false,
+      "general_span_growth": false
+    },
+    "next_action": "Write the one authorized 2000–3000 Chinese-character scene using the private minimal story contract and verified Phase370 anchor; preserve old prose, then deliver for actual-human reading without self-acceptance."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -196,8 +197,17 @@
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
-    "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE380_CLOSED_FOLLOWUP_REQUIRES_SCOPED_NATIVE_CONTRACT"
+    "YMGQ_writing_paused": false,
+    "YMGQ_writing_pause_reason": null,
+    "current_writing_authorization_scope": {
+      "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
+      "new_chinese_characters_min": 2000,
+      "new_chinese_characters_max": 3000,
+      "old_prose_modified": false,
+      "full_manuscript_rewrite": false,
+      "second_scene": false,
+      "general_span_growth": false
+    }
   },
   "governance": {
     "actual_human_result_controls_current_candidate": true,
@@ -216,9 +226,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 21,
-    "physical_event_hash": "9baa6d1ef862bfaa575780d36a68806125257ee3eeb5bb1bc5411963cfeb0558",
-    "logical_latest_checkpoint_sequence": 35,
+    "physical_STATE_LEDGER_sequence": 22,
+    "physical_event_hash": "275699cec878ba449b429fb2b7f0b9189af187b3203b1bd0c1e26d8b0a56d144",
+    "logical_latest_checkpoint_sequence": 36,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -358,10 +368,10 @@
     "latest_actual_human_evidence": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
     "story_propulsion_separable_from_ai_smell": true,
     "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
-    "next_required_task": "NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1",
+    "next_required_task": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
     "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
     "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
-    "next_task_status": "DRAFT_NOT_ACTIVE_NOT_WRITING_AUTHORIZATION"
+    "next_task_status": "ACTIVE_BOUNDED_INITIAL_DRAFT_AUTHORIZED"
   },
   "phase377_settlement": {
     "execution": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_ACCEPTED_AS_EVIDENCE_NOT_REPAIR_PROOF",
@@ -453,11 +463,12 @@
   "delivery_recovery_plan": {
     "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
     "followup_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
-    "followup_status": "DRAFT_NOT_ACTIVE",
+    "followup_status": "ACTIVATED_AS_PHASE381_BOUNDED_NATIVE_TASK",
     "acceptance_is_actual_reader_evidence": true,
     "phase380_closed": true,
     "phase380_settlement_receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
-    "next_action": "Prepare the bounded 2000–3000 Chinese-character scene contract from the existing delivery followup draft and verified Phase370 prose/facts. No further Phase380 calibration; writing requires a scoped native task contract, with at most one initial draft and one human-located repair."
+    "next_action": "Write the one authorized 2000–3000 Chinese-character scene using the private minimal story contract and verified Phase370 anchor; preserve old prose, then deliver for actual-human reading without self-acceptance.",
+    "active_delivery_task": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"
   },
   "phase380_outputs": {
     "receipt": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
@@ -531,5 +542,15 @@
     "generation_repair_supported": false,
     "accepted_checkpoint_advance": false,
     "campaign_closed": true
+  },
+  "phase381_execution_state": {
+    "contract_activated": true,
+    "initial_drafts_written": 0,
+    "human_located_repairs_used": 0,
+    "actual_human_review_pending": false,
+    "actual_human_review_complete": false,
+    "quality_accepted": false,
+    "generation_repair_supported": false,
+    "accepted_checkpoint_advance": false
   }
 }
