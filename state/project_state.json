@@ -2,7 +2,7 @@
   "schema_version": "3.10.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-11T08:24:30.690559+00:00",
+  "updated_at": "2026-09-12T03:45:20.145716+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,7 +15,7 @@
     "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
     "phase": "BOUNDED_SCENE_DELIVERY",
     "phase_ordinal": 381,
-    "status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW",
+    "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
     "task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
     "execution_scope": "One 2000–3000 Chinese-character continuation after the accepted local Phase370 anchor; current human-facing manuscript candidate only.",
     "YMGQ_writing_authorized": false,
@@ -31,9 +31,10 @@
       "second_scene": false,
       "general_span_growth": false
     },
-    "next_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
-    "current_execution_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
-    "human_review_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo"
+    "next_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
+    "current_execution_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "human_review_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo",
+    "completed_at": "2026-09-12T03:45:20.145716+00:00"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -195,12 +196,12 @@
   "manuscript_quality_state": {
     "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
     "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
-    "latest_bounded_span_status": "PHASE370_HUMAN_POSITIVE_LOCAL_CLARITY_AND_CONTINUE_DESIRE",
+    "latest_bounded_span_status": "PHASE381_ACTUAL_HUMAN_REJECTED_EARLY_STOP",
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE381_ONE_SCENE_DELIVERED_AWAITING_ACTUAL_HUMAN",
+    "YMGQ_writing_pause_reason": "PHASE381_ACTUAL_HUMAN_GLOBAL_AESTHETIC_REJECTION_CHAT_REAUTHORING_REQUESTED",
     "current_writing_authorization_scope": {
       "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
       "new_chinese_characters_min": 2000,
@@ -210,7 +211,8 @@
       "second_scene": false,
       "general_span_growth": false
     },
-    "latest_unreviewed_candidate_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json"
+    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
   },
   "governance": {
     "actual_human_result_controls_current_candidate": true,
@@ -229,9 +231,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 23,
-    "physical_event_hash": "586d566f5dcae42bbd2d5b1672494dc2634f0209c4b853ca94a8dd197dc43439",
-    "logical_latest_checkpoint_sequence": 37,
+    "physical_STATE_LEDGER_sequence": 24,
+    "physical_event_hash": "ec541675c6723bd4a8816c34ddcb5340f9a30447df2dd744e3d4d8ffa84ced42",
+    "logical_latest_checkpoint_sequence": 38,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -371,10 +373,10 @@
     "latest_actual_human_evidence": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
     "story_propulsion_separable_from_ai_smell": true,
     "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
-    "next_required_task": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+    "next_required_task": "CHAT_REAUTHORING_FROM_MINIMAL_KERNEL_PENDING_SCOPED_TASK",
     "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
     "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
-    "next_task_status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW"
+    "next_task_status": "NOT_ACTIVE"
   },
   "phase377_settlement": {
     "execution": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_ACCEPTED_AS_EVIDENCE_NOT_REPAIR_PROOF",
@@ -466,11 +468,11 @@
   "delivery_recovery_plan": {
     "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
     "followup_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
-    "followup_status": "ACTIVATED_AS_PHASE381_BOUNDED_NATIVE_TASK",
+    "followup_status": "PHASE381_CANDIDATE_REJECTED_REAUTHORING_REQUIRED",
     "acceptance_is_actual_reader_evidence": true,
     "phase380_closed": true,
     "phase380_settlement_receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
-    "next_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
+    "next_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
     "active_delivery_task": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"
   },
   "phase380_outputs": {
@@ -550,14 +552,39 @@
     "contract_activated": true,
     "initial_drafts_written": 1,
     "human_located_repairs_used": 0,
-    "actual_human_review_pending": true,
-    "actual_human_review_complete": false,
+    "actual_human_review_pending": false,
+    "actual_human_review_complete": true,
     "quality_accepted": false,
     "generation_repair_supported": false,
     "accepted_checkpoint_advance": false,
     "source_frozen": true,
     "prose_delivered": true,
     "delivery_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
-    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a"
+    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+    "human_rejection_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "candidate_rejected": true,
+    "local_patch_eligible": false
+  },
+  "phase381_settlement": {
+    "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
+    "receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+    "desire_to_continue": false,
+    "stop_point_source_lines": [
+      19,
+      23
+    ],
+    "affective_experience": "REJECTED_AS_EMOTIONALLY_FLAT_DIALOGUE",
+    "motive_clarity": "NOT_SEPARATELY_ANSWERED",
+    "local_payoff": "NOT_REACHED",
+    "accepted_checkpoint_advance": false,
+    "local_repair_eligible": false
+  },
+  "interaction_preferences": {
+    "preferred_mode": "CHAT",
+    "preferred_prose_delivery": "INLINE_IN_CONVERSATION",
+    "source": "ACTUAL_USER_2026_09_12",
+    "actual_mode_switch_verified": false,
+    "preserve_rejection_across_mode_change": true
   }
 }

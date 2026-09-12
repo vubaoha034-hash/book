@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
   "phase_ordinal": 381,
-  "status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW",
+  "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
   "created_at": "2026-09-11T08:17:09.153694+00:00",
   "basis_commit": "66668c3a2cb241bcc36075cc74de1dd6a0e26b53",
   "supersedes_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
@@ -60,11 +60,16 @@
     "architecture_promotion": false,
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
+  "next_required_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
   "historical_phase370_stop_scope": "Old Phase370 output remains frozen. Current user instruction and this new native contract authorize only the separately delivered Phase381 scene; no original text edits.",
-  "updated_at": "2026-09-11T08:24:30.690559+00:00",
+  "updated_at": "2026-09-12T03:45:20.145716+00:00",
   "initial_draft_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
   "reader_pack_sha256": "03c139ecb7695c166c149e6a4ea61c39aacb14fd6e60390445d0ceddd7ed658f",
   "reader_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo",
-  "delivery_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json"
+  "delivery_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+  "completed_at": "2026-09-12T03:45:20.145716+00:00",
+  "human_rejection_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+  "local_patch_eligibility": "STOPPED_BY_EXISTING_GLOBAL_AESTHETIC_REJECTION_RULE",
+  "requested_successor_delivery": "CHAT_INLINE_PROSE",
+  "remaining_nominal_human_repair_passes": 1
 }

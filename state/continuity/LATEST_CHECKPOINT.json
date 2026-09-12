@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 37,
-  "recorded_at": "2026-09-11T08:24:30.690559+00:00",
+  "sequence": 38,
+  "recorded_at": "2026-09-12T03:45:20.145716+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
-  ],
-  "current_focus": "Phase381 initial bounded scene is delivered; wait for actual-human reading before any located repair or further scene. Phase380 is closed; promotion remains Phase320.",
+  "active_task_ids": [],
+  "current_focus": "Phase381 candidate rejected by actual reader at the early dialogue. User requests Chat and direct conversation. Diagnose emotionless information-exchange surface; any successor must reauthor from minimal kernel, without continuing rejected prose or reopening calibration.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -95,7 +93,8 @@
     "Phase380 sealed prediction and mapping verified against pre-human Git hashes, then unsealed: A=R1; B=R2; predicted A; one directional hit",
     "Phase380 single-pair campaign closed; no additional calibration or quality promotion",
     "Phase381 minimal private story contract formed from verified Phase370 source, activated under current user continuation instruction; no old prose changed",
-    "Phase381 one bounded scene delivered unchanged after initial drafting, with durable files and exact Drive readback; structural checks do not claim literary acceptance"
+    "Phase381 one bounded scene delivered unchanged after initial drafting, with durable files and exact Drive readback; structural checks do not claim literary acceptance",
+    "Phase381 actual-human early-stop rejection recorded against exact frozen scene; Chat/inline preference preserved; no local rewrite or false mode-switch claim"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -112,7 +111,7 @@
     "Generation repair remains UNPROVEN",
     "Historical event-by-event coverage between ledger entry18 and logical checkpoint32 remains PARTIAL; current snapshot reconciled by event19",
     "Legacy validate_skill.py fails existing V3 name/schema expectations on current V4.2 baseline; separate packaging maintenance issue",
-    "Phase381 actual-human reading and local quality settlement remain pending; no automatic next scene"
+    "Current scene emotional engagement/early retention failed; requested Chat-based reauthoring has not yet produced a successor candidate"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -121,7 +120,7 @@
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
     "FULL_REWRITE_BLOCKED",
     "FINAL_FREEZE_BLOCKED",
-    "PHASE381_ACTUAL_HUMAN_SCENE_REVIEW_PENDING"
+    "PHASE381_HUMAN_AESTHETIC_REJECTION_LOCAL_PATCH_AND_EXPANSION_STOPPED"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -155,9 +154,12 @@
     "Claim YMGQ improvement as evidence of GN-VDNA-01 success",
     "Repeat Phase380 generators or add calibration pairs automatically after its closed one-pair settlement",
     "Treat Phase380 single prediction hit as reliable evaluator or generation repair proof",
-    "Replace Phase380 B overall/continuation/clarity preference with A merely because A has lighter AI smell"
+    "Replace Phase380 B overall/continuation/clarity preference with A merely because A has lighter AI smell",
+    "Treat Phase381 structural checks or later emotional paragraphs as overriding the actual early stop",
+    "Continue or line-patch rejected Phase381 prose merely because one nominal repair allowance remains",
+    "Claim the user-requested Chat interface mode was switched without actual capability/evidence"
   ],
-  "next_required_action": "Read the Phase381 scene and collect actual-human continuation, motive clarity, AI-smell interference, skim/stop and local payoff feedback. No further scene or automatic rewrite; if a defect is located, at most one scoped repair remains.",
+  "next_required_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -181,7 +183,7 @@
     },
     {
       "path": "state/continuity/STATE_LEDGER.jsonl",
-      "role": "23 physical events; earlier event-by-event coverage remains partial"
+      "role": "24 physical events; older event-by-event coverage remains partial"
     },
     {
       "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
@@ -201,17 +203,21 @@
     },
     {
       "path": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
-      "role": "current Phase381 task or delivery evidence"
+      "role": "closed Phase381 candidate contract with actual-human rejection"
     },
     {
       "path": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
-      "role": "current Phase381 task or delivery evidence"
+      "role": "immutable pre-human delivery receipt; final reader result is rejection"
+    },
+    {
+      "path": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+      "role": "actual-human early-stop rejection and requested Chat handoff preference"
     }
   ],
-  "status": "AWAITING_ACTUAL_HUMAN_SCENE_REVIEW",
-  "physical_ledger_entry_count": 23,
-  "physical_ledger_tail_hash": "586d566f5dcae42bbd2d5b1672494dc2634f0209c4b853ca94a8dd197dc43439",
-  "last_completed_task_id": "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+  "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
+  "physical_ledger_entry_count": 24,
+  "physical_ledger_tail_hash": "ec541675c6723bd4a8816c34ddcb5340f9a30447df2dd744e3d4d8ffa84ced42",
+  "last_completed_task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"
 }

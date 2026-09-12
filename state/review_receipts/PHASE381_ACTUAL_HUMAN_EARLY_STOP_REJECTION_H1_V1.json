@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 381,
+  "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+  "recorded_at": "2026-09-12T03:45:20.145716+00:00",
+  "basis_commit": "551074a93278dcf4fc2b59de55a193d8499e5790",
+  "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
+  "delivery_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+  "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+  "reader_pack_sha256": "03c139ecb7695c166c149e6a4ea61c39aacb14fd6e60390445d0ceddd7ed658f",
+  "reader_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo",
+  "actual_human_feedback": {
+    "source": "ACTUAL_USER_CURRENT_CHAT",
+    "date_utc": "2026-09-12",
+    "read_coverage": "EARLY_STOP_AND_GENERAL_STYLE_IMPRESSION_FULL_READ_NOT_CONFIRMED",
+    "quoted_stop_locator": {
+      "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+      "stop_excerpt_sha256": "983a4b8ec2a958273e2f60b13111e12291ce1539bab7f0709ac77b163bd93fed",
+      "start_character_offset_zero_based": 357,
+      "end_character_offset_exclusive": 414,
+      "first_source_line_one_based": 19,
+      "last_source_line_one_based": 23,
+      "chinese_characters_through_stop": 329
+    },
+    "desire_to_continue": false,
+    "stop_response_zh": "读到这里就没有读下去的欲望了。",
+    "style_response_zh": "整篇文章真的一点感情描述都没，简直就是一群僵尸在对话。",
+    "motive_clarity": "NOT_SEPARATELY_ANSWERED",
+    "AI_smell_intensity": "NOT_SEPARATELY_RATED",
+    "local_reveal_payoff": "NOT_REACHED_IN_CONFIRMED_READING",
+    "full_questionnaire_complete": false,
+    "decisive_rejection_received": true
+  },
+  "mode_request": {
+    "user_request_zh": "我希望你切换成聊天模式来完成。",
+    "requested_mode": "CHAT",
+    "requested_delivery": "INLINE_CONVERSATIONAL_PROSE",
+    "current_runtime_mode": "WORK_UNCHANGED",
+    "assistant_can_switch_interface": false,
+    "mode_switch_verified": false
+  },
+  "coordinator_diagnosis_not_human_verified": {
+    "factual_correction_zh": "后文确有母亲改衣、弟弟留粥及陈的心理描写；不能把缺乏情感读感记成全文不存在任何心理句的事实。",
+    "roots_zh": [
+      "停止点之前，较多篇幅先处理车、门、盾与路线，人物当下的痛感和主观体验尚未建立。",
+      "顾与陈的第一轮对话主要核对姓名和往访事实；咳血、抓栏等动作没有替代面对仇人时的怀疑、羞辱、回避或试探。",
+      "关键情感回忆从停止点后才开始；叙事组织先完成信息说明、后补情绪，未获得这个目标读者的早期投入。"
+    ],
+    "scope": "Target-reader-specific editorial diagnosis, not a new universal anti-AI rule or a proven repair method."
+  },
+  "governing_rejection_rule": "rules/human-aesthetic-rejection-blank-page-reauthoring-trigger.md",
+  "settlement": {
+    "current_candidate_accepted": false,
+    "early_reader_retention": "FAIL",
+    "affective_reading_experience": "ACTUAL_HUMAN_REJECTED",
+    "current_prose_default_preservation": false,
+    "local_patch_queue": "STOPPED_GLOBAL_AESTHETIC_REJECTION",
+    "followup_requires": "REAUTHOR_FROM_MINIMAL_STORY_KERNEL",
+    "expansion_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false,
+    "Phase380_single_hit_can_rescue_candidate": false
+  },
+  "budget_usage": {
+    "initial_drafts": 1,
+    "human_located_repair_passes": 0,
+    "remaining_nominal_repair_quota": 1,
+    "local_repair_eligible": false,
+    "reason": "Overall emotional/surface rejection invokes existing reauthoring rule; unused repair allowance is not a requirement to run a futile local patch."
+  },
+  "old_prose_and_receipts_modified": false,
+  "next_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn."
+}
