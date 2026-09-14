@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE382_CHAT_REAUTHORING_DIALOGUE_NATURALNESS_PILOT_V1",
+  "phase_ordinal": 382,
+  "status": "ACTIVE_BOUNDED_CHAT_REAUTHORING_PILOT",
+  "authorization": {
+    "source": "ACTUAL_USER_CURRENT_CHAT",
+    "instruction_zh": "我们所有归纳的问题，还有改进都汇总了吗？而后继续处理下一步",
+    "scope": "Consolidate current human-labelled failures/improvements, then execute the next bounded prose step in Chat."
+  },
+  "highest_accepted_checkpoint_unchanged": {
+    "phase_ordinal": 320,
+    "advance_authorized": false
+  },
+  "historical_constraints": {
+    "phase380_reopen": false,
+    "phase381_rejected_prose_preserved_as_default": false,
+    "historical_failures_rewritten": false,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion_authorized": false
+  },
+  "input_evidence": [
+    "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "state/calibration/PHASE382_CHAT_REAUTHORING_HUMAN_FEEDBACK_SYNTHESIS_V1.md",
+    "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt"
+  ],
+  "human_positive_direction": {
+    "emotion_and_interiority": "MATERIALLY_IMPROVED",
+    "whole_reading_impression": "MATERIALLY_IMPROVED",
+    "final_acceptance": false
+  },
+  "current_open_defect": {
+    "working_code": "AI-F02_OVERREGULARIZED_AUTHOR_SERVING_DIALOGUE_CADENCE",
+    "human_locator_zh": "‘埋了。’ / ‘哪儿？’ / ‘不知道。’ 这种类型的真的很ai，看起来非常不真实。",
+    "scope": "LABELLED_MANUSCRIPT_WORKING_DIAGNOSIS_NOT_UNIVERSAL_RULE"
+  },
+  "pilot_scope": {
+    "kind": "ONE_BOUNDED_CONTINUOUS_REAUTHORING_SPAN",
+    "goal": "Preserve the newly successful emotional/subjective surface while testing whether dialogue can lose author-serving Q&A regularity without becoming padded or artificially messy.",
+    "delivery": "INLINE_CHAT_PROSE",
+    "full_manuscript": false,
+    "automatic_scale": false
+  },
+  "acceptance_authority": "ACTUAL_TARGET_READER",
+  "acceptance_questions": [
+    "整体还想不想继续看？",
+    "人物的感情和内心是否仍然自然？",
+    "是否还有明显像作者摆好的问一句答一句？",
+    "哪一句或哪一小段最先让你觉得AI？"
+  ],
+  "stop_rule": "After this bounded pilot, wait for actual-human reading judgment before scaling or turning the working diagnosis into a rule.",
+  "created_at": "2026-09-14T17:25:00+08:00"
+}
