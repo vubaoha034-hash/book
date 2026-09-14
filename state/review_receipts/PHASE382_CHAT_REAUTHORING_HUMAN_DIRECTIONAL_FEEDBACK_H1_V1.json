@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 382,
+  "task_id": "PHASE382_CHAT_REAUTHORING_DIALOGUE_NATURALNESS_PILOT_V1",
+  "event_type": "ACTUAL_HUMAN_DIRECTIONAL_FEEDBACK",
+  "status": "MATERIAL_IMPROVEMENT_WITH_LOCATED_AI_SMELL_OPEN",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "human_feedback": {
+    "positive_1_zh": "我觉得这个写的好了很多，。感情什么到位，",
+    "positive_2_zh": "而后整个小说看下来的观感是好了很多。",
+    "located_ai_smell_excerpt_zh": ["埋了。", "哪儿？", "不知道。"],
+    "located_ai_smell_judgment_zh": "这种类型的真的很ai。。看起来非常不真实。"
+  },
+  "settlement": {
+    "emotion_and_interiority_direction": "MATERIALLY_IMPROVED",
+    "whole_reading_impression_direction": "MATERIALLY_IMPROVED",
+    "residual_ai_smell": "OPEN",
+    "working_defect": "AI-F02_OVERREGULARIZED_AUTHOR_SERVING_DIALOGUE_CADENCE",
+    "short_sentence_universal_ban": false,
+    "full_quality_acceptance": false,
+    "long_form_transfer_proven": false,
+    "architecture_promotion": false,
+    "accepted_checkpoint_advance": false
+  },
+  "evidence_summary": "Current Chat blank-page reauthoring materially improved affective engagement, but a specific prompt/exact-answer/follow-up cadence still feels conspicuously artificial to the actual target reader. Preserve the improved emotional direction and run a bounded dialogue-naturalness reauthoring pilot before scaling.",
+  "feedback_synthesis": "state/calibration/PHASE382_CHAT_REAUTHORING_HUMAN_FEEDBACK_SYNTHESIS_V1.md"
+}
