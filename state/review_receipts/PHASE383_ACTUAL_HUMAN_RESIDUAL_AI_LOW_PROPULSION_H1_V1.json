@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 383,
+  "event_type": "ACTUAL_HUMAN_READING_FEEDBACK",
+  "status": "MATERIAL_IMPROVEMENT_BUT_RESIDUAL_AI_AND_LOW_PROPULSION_OPEN",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "human_feedback_zh": {
+    "ai_smell": "AI味道虽然低了但是依旧有，并且我说不出到底哪里。",
+    "propulsion": "看下去的欲望真的很低。",
+    "comparison": "不会像我给你的那几本小说，看了一会就一直想接着看下去。",
+    "research_authorization": "可以自己搜索各类最热门小说进行对照。"
+  },
+  "settlement": {
+    "phase382_dialogue_naturalness_direction": "IMPROVED_NOT_CLOSED",
+    "residual_ai_smell": "OPEN_DIFFUSE_NOT_FULLY_LOCATED",
+    "reader_propulsion": "OPEN_BLOCKING_FAILURE",
+    "desire_to_continue": "LOW",
+    "emotion_and_interiority_improvement_preserved": true,
+    "naturalness_is_not_equivalent_to_page_turn_compulsion": true,
+    "full_quality_acceptance": false,
+    "long_form_transfer_proven": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "next_required_action": "Run cross-genre popular-fiction and narrative-engagement comparison, separate residual AI-smell diagnosis from reader-propulsion diagnosis, then redesign a bounded representative opening/scene architecture before further span growth. Do not merely continue explanatory dialogue or add more emotion prose."
+}
