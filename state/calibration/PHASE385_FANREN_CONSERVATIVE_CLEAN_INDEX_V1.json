@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 385,
+  "artifact": "PHASE385_FANREN_CONSERVATIVE_CLEAN_INDEX_V1",
+  "status": "CONSERVATIVE_SAMPLING_INDEX_READY_NOT_FULL_CANONICAL_RECONSTRUCTION",
+  "source": {
+    "title": "凡人修仙传",
+    "drive_file_id": "1wBtoq91KS5b7z2WrDIP2H8GO677CVgVb",
+    "sha256": "b853a949c1b21c92665f74ecaad114c9bb8966deee8a6c8c8f655af1540cce00",
+    "bytes": 10287306,
+    "body_html_files_scanned": 143,
+    "toc_like_file_excluded": "OEBPS/text00143.html"
+  },
+  "method": {
+    "principle": "Conservative DOM-order reconstruction for defensible stratified sampling; do not infer missing chapter bodies.",
+    "chapter_boundaries": [
+      "red page/chapter headers",
+      "inline star-prefixed chapter transitions when structurally present"
+    ],
+    "removed_or_flagged_contamination": [
+      "scraper-site advertising insertions",
+      "TXT/download/other-novel promotion fragments",
+      "website/navigation/script debris",
+      "repeated split/page-wrapper headings",
+      "malformed title/navigation fragments"
+    ],
+    "safe_anchor_rule": "1500-5000 cleaned characters; <=4 detected contamination-pattern hits; exactly one primary chapter header; no known website-debris title; no obvious numbered split-wrapper suffix."
+  },
+  "results": {
+    "conservative_reconstructed_chapter_records": 1816,
+    "chapter_numbers_not_reconstructable_under_conservative_rule": 630,
+    "median_clean_characters_per_reconstructed_record": 3091,
+    "detected_contamination_pattern_hits": 4364,
+    "sampling_safe_anchor_count": 1654,
+    "safe_anchor_range_min": 6,
+    "safe_anchor_range_max": 2430,
+    "coverage_by_number_window": [
+      {"range": "1-250", "safe_anchors": 241},
+      {"range": "251-500", "safe_anchors": 232},
+      {"range": "501-750", "safe_anchors": 242},
+      {"range": "751-1000", "safe_anchors": 229},
+      {"range": "1001-1250", "safe_anchors": 208},
+      {"range": "1251-1500", "safe_anchors": 241},
+      {"range": "1501-1750", "safe_anchors": 146},
+      {"range": "1751-2000", "safe_anchors": 39},
+      {"range": "2001-2250", "safe_anchors": 3},
+      {"range": "2251-2446", "safe_anchors": 73}
+    ],
+    "second_pass_sampling_anchors": [50, 300, 550, 800, 1051, 1300, 1550, 1800, 2095, 2312, 2420]
+  },
+  "integrity_interpretation": {
+    "early_and_mid_source": "Broadly usable for source-located qualitative sampling after local contamination stripping.",
+    "late_source": "Materially degraded and sparse under conservative reconstruction; use only explicitly located safe anchors and do not extrapolate quantitative whole-book statistics.",
+    "whole_narrative_range": "Still reaches the recorded finale in the raw source, but raw reach is not equivalent to clean chapter-by-chapter reconstructability."
+  },
+  "claims_not_authorized": [
+    "2446 clean canonical chapters reconstructed",
+    "final whole-book chapter-length or dialogue statistics",
+    "content imputation for missing or ambiguous chapter numbers",
+    "using contaminated late ranges as uniformly representative",
+    "writing-transfer success",
+    "accepted checkpoint advance"
+  ],
+  "next_use": "Use only safe, source-located anchors for Phase385 second-pass qualitative mechanism extraction; preserve source-quality caveats in every derived claim."
+}
