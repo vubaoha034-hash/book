@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 384,
+  "task_id": "PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1",
+  "event_type": "SOURCE_INGESTION_AND_INTEGRITY_AUDIT",
+  "status": "ACCEPT_SOURCE_BYTES_INGESTED_WITH_SOURCE_QUALITY_NOTES",
+  "sources": {
+    "诡秘之主": {
+      "drive_file_id": "1CKhAIUemAp_D_4JBCouRzq_1ahhnfQDj",
+      "sha256": "0368404d7925b180c7059387c28d8dc71614fa9bb79eab0eaf9b88d3c8cb2a4b",
+      "verdict": "READABLE_PARTIAL_SOURCE",
+      "parsed_chapters": 520,
+      "coverage_note": "two full early volumes plus early third volume; no whole-series claim"
+    },
+    "凡人修仙传": {
+      "drive_file_id": "1wBtoq91KS5b7z2WrDIP2H8GO677CVgVb",
+      "sha256": "b853a949c1b21c92665f74ecaad114c9bb8966deee8a6c8c8f655af1540cce00",
+      "verdict": "READABLE_FULL_NARRATIVE_RANGE_CONTAMINATED_SOURCE",
+      "finale_reached": "chapter 2446",
+      "contamination_note": "scraper ads, duplicate/split fragments and malformed navigation; preprocessing required before final quantitative claims"
+    },
+    "凡人修仙之仙界篇": {
+      "drive_file_id": "1gFqkkclHTeKYuhqrdXlrmCvBmf6YHXGG",
+      "sha256": "638c30e45904d5eee155b9d3e768bfe5f1b538dcef15b511a7d81dd8d472cf33",
+      "verdict": "READABLE_CLEAN_COMPLETE_SOURCE",
+      "parsed_chapters": 1394
+    }
+  },
+  "first_pass_outputs": [
+    "state/calibration/PHASE384_THREE_BOOK_FIRST_PASS_DISTILLATION_V1.md",
+    "state/calibration/PHASE385_CROSS_BOOK_READER_PROPULSION_EVIDENCE_CARDS_V1.md"
+  ],
+  "claims_not_authorized": [
+    "full-series conclusions for current 诡秘之主 file",
+    "final quantitative statistics from uncleaned 凡人修仙传",
+    "writing-transfer success",
+    "architecture promotion",
+    "accepted checkpoint advance"
+  ],
+  "next_task": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1"
+}
