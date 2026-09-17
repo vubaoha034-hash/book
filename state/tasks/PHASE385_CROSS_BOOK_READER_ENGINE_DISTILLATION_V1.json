@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
   "phase_ordinal": 385,
-  "status": "SOURCE_CLEAN_INDEX_AND_SECOND_PASS_COMPLETE_HUMAN_PILOT_READY",
+  "status": "HUMAN_PILOT_COMPLETE_READABLE_NOT_COMPELLING",
   "basis": {
     "phase384_task": "state/tasks/PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1.json",
     "first_pass": "state/calibration/PHASE384_THREE_BOOK_FIRST_PASS_DISTILLATION_V1.md",
@@ -40,8 +40,10 @@
     "cross_book_contrast_present": true,
     "YMGQ_specific_transfer_hypothesis_present": true,
     "actual_human_validation_required_for_prose_transfer": true,
-    "human_pilot_completed": false
+    "human_pilot_completed": true,
+    "human_pilot_propulsion_pass": false
   },
-  "next_action": "Generate exactly one short representative YMGQ human-read pilot using the Phase385 story-specific reader-desire engine, then stop for actual-human judgment before any span growth or long prose.",
-  "accepted_checkpoint_advance": false
+  "next_action": "Do not expand. Diagnose why the Phase385 pilot is merely readable rather than compelling, revise the YMGQ-specific forward-desire architecture, then run exactly one new short human-read pilot.",
+  "accepted_checkpoint_advance": false,
+  "human_pilot_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_H1_V1.json"
 }
