@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1",
+  "phase_ordinal": 384,
+  "status": "BLOCKED_EXTERNAL_SOURCE_BYTES_NOT_YET_IN_DRIVE",
+  "source_folder": {
+    "name": "小说",
+    "drive_folder_id": "1JsHCd6IvkjghZI0VmmIR0nkOUpRRShe1"
+  },
+  "requested_source_books": [
+    {
+      "title": "诡秘之主",
+      "expected_file": "诡秘之主.epub",
+      "quark_share_url": "https://pan.quark.cn/s/1cd755ff7189",
+      "verified_share_metadata": "1 EPUB file, about 2.2 MB",
+      "download_status": "LOGIN_REQUIRED"
+    },
+    {
+      "title": "凡人修仙传",
+      "expected_file": "凡人修仙传.epub",
+      "quark_share_url": "https://pan.quark.cn/s/6085161d510d",
+      "verified_share_metadata": "EPUB present in 2-file share, about 9.8 MB",
+      "download_status": "LOGIN_REQUIRED"
+    },
+    {
+      "title": "凡人修仙之仙界篇",
+      "expected_file": "凡人修仙之仙界篇.epub",
+      "quark_share_urls": [
+        "https://pan.quark.cn/s/739c9bb6fc70",
+        "https://pan.quark.cn/s/6085161d510d"
+      ],
+      "verified_share_metadata": "EPUB present, about 7.3 MB",
+      "download_status": "LOGIN_REQUIRED"
+    }
+  ],
+  "user_goal_zh": "真正通过这些小说，蒸馏出文笔、写法、逻辑以及为什么很多人愿意持续阅读，并用于改进小说创作。",
+  "required_analysis_dimensions": [
+    "prose_surface_and_sentence_texture",
+    "scene_construction",
+    "character_desire_and_personhood",
+    "dialogue_naturalness_and_voice",
+    "emotion_and_relationship_payoff",
+    "suspense_and_information_control",
+    "logic_and_causality",
+    "chapter_open_close_and_page_turn_engine",
+    "reward_rhythm_and_long_form_retention",
+    "worldbuilding_delivery",
+    "narrator_distance_and_reader_inference_space",
+    "anti_ai_transfer_lessons_for_YMGQ"
+  ],
+  "method_constraints": {
+    "do_not_distill_from_share_stub_text": true,
+    "do_not_claim_full_book_read_without_source_bytes": true,
+    "do_not_copy_protected_prose": true,
+    "extract_abstract_craft_only": true,
+    "compare_book_specific_mechanisms_and_cross_book_commonalities": true,
+    "actual_source_evidence_required": true
+  },
+  "next_required_action": "Place the actual EPUB/TXT source files into the Drive folder 小说, or provide authenticated Quark access in a supported browser workflow; then ingest and begin full-source distillation.",
+  "accepted_checkpoint_advance": false,
+  "architecture_promotion_authorized": false
+}
