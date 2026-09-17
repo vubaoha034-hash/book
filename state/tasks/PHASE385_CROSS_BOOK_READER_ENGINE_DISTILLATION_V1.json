@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
+  "phase_ordinal": 385,
+  "status": "ACTIVE_SOURCE_DERIVED_DISTILLATION",
+  "basis": {
+    "phase384_task": "state/tasks/PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1.json",
+    "first_pass": "state/calibration/PHASE384_THREE_BOOK_FIRST_PASS_DISTILLATION_V1.md",
+    "evidence_cards": "state/calibration/PHASE385_CROSS_BOOK_READER_PROPULSION_EVIDENCE_CARDS_V1.md"
+  },
+  "scope": [
+    "clean/index contaminated 凡人修仙传 source for defensible stratified sampling",
+    "expand source-located evidence cards across opening, ordinary life, dialogue, emotion, reveal, progression, threat, mid-book retention, major transition and ending where source permits",
+    "separate prose-surface naturalness from reader-propulsion",
+    "derive cross-book common mechanisms and book-specific mechanisms",
+    "compare mechanisms against current YMGQ residual AI smell and low desire-to-continue",
+    "design one story-specific YMGQ reader-desire engine before further long prose generation"
+  ],
+  "source_constraints": {
+    "诡秘之主": "PARTIAL_SOURCE_DO_NOT_CLAIM_WHOLE_SERIES",
+    "凡人修仙传": "FULL_NARRATIVE_RANGE_BUT_PREPROCESS_BEFORE_FINAL_QUANTITATIVE_CLAIMS",
+    "凡人修仙之仙界篇": "COMPLETE_CLEAN_SOURCE"
+  },
+  "forbidden": [
+    "copy protected source prose into public Git",
+    "imitate recognizable author style",
+    "turn one source-specific mechanism into a universal rule",
+    "resume long YMGQ continuation before reader-engine redesign",
+    "claim source reading itself proves writing transfer",
+    "advance the Phase320 accepted promotion checkpoint"
+  ],
+  "acceptance": {
+    "requires_source_locations": true,
+    "requires_cross_book_contrast": true,
+    "requires_YMGQ_specific_transfer_hypothesis": true,
+    "actual_human_validation_required_for_prose_transfer": true
+  },
+  "next_action": "Complete source cleaning/index and second-pass evidence extraction, then redesign the YMGQ forward-desire engine and test it with a short human-read pilot.",
+  "accepted_checkpoint_advance": false
+}
