@@ -1,39 +1,65 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1",
   "phase_ordinal": 384,
-  "status": "BLOCKED_EXTERNAL_SOURCE_BYTES_NOT_YET_IN_DRIVE",
+  "status": "SOURCE_BYTES_INGESTED_FIRST_PASS_COMPLETE",
   "source_folder": {
     "name": "小说",
     "drive_folder_id": "1JsHCd6IvkjghZI0VmmIR0nkOUpRRShe1"
   },
-  "requested_source_books": [
+  "sources": [
     {
       "title": "诡秘之主",
-      "expected_file": "诡秘之主.epub",
-      "quark_share_url": "https://pan.quark.cn/s/1cd755ff7189",
-      "verified_share_metadata": "1 EPUB file, about 2.2 MB",
-      "download_status": "LOGIN_REQUIRED"
+      "drive_file_id": "1CKhAIUemAp_D_4JBCouRzq_1ahhnfQDj",
+      "file_name": "诡秘之主.epub",
+      "bytes": 2313536,
+      "sha256": "0368404d7925b180c7059387c28d8dc71614fa9bb79eab0eaf9b88d3c8cb2a4b",
+      "ingestion": "READABLE_EPUB",
+      "coverage": "PARTIAL_520_CHAPTERS_APPROX_TWO_FULL_VOLUMES_PLUS_EARLY_VOLUME_THREE",
+      "full_book_claim_allowed": false,
+      "notes": "Useful for opening, early/mid retention, prose surface, dialogue, identity/mystery and author technical-note evidence; insufficient for whole-series ending/generalization claims."
     },
     {
       "title": "凡人修仙传",
-      "expected_file": "凡人修仙传.epub",
-      "quark_share_url": "https://pan.quark.cn/s/6085161d510d",
-      "verified_share_metadata": "EPUB present in 2-file share, about 9.8 MB",
-      "download_status": "LOGIN_REQUIRED"
+      "drive_file_id": "1wBtoq91KS5b7z2WrDIP2H8GO677CVgVb",
+      "file_name": "凡人修仙传.epub",
+      "bytes": 10287306,
+      "sha256": "b853a949c1b21c92665f74ecaad114c9bb8966deee8a6c8c8f655af1540cce00",
+      "ingestion": "READABLE_EPUB_WITH_HEAVY_SCRAPER_CONTAMINATION",
+      "coverage": "NARRATIVE_REACHES_CHAPTER_2446_FINALE",
+      "full_book_claim_allowed": "ONLY_AFTER_PREPROCESSING_FOR_QUANTITATIVE_ANALYSIS",
+      "notes": "Contains repeated scraped-site ads, duplicate/split chapter fragments and malformed navigation. Narrative remains usable for qualitative source reading; quantitative chapter statistics must use a cleaned index."
     },
     {
       "title": "凡人修仙之仙界篇",
-      "expected_file": "凡人修仙之仙界篇.epub",
-      "quark_share_urls": [
-        "https://pan.quark.cn/s/739c9bb6fc70",
-        "https://pan.quark.cn/s/6085161d510d"
-      ],
-      "verified_share_metadata": "EPUB present, about 7.3 MB",
-      "download_status": "LOGIN_REQUIRED"
+      "drive_file_id": "1gFqkkclHTeKYuhqrdXlrmCvBmf6YHXGG",
+      "file_name": "凡人修仙之仙界篇.epub",
+      "bytes": 7643445,
+      "sha256": "638c30e45904d5eee155b9d3e768bfe5f1b538dcef15b511a7d81dd8d472cf33",
+      "ingestion": "READABLE_CLEAN_EPUB",
+      "coverage": "COMPLETE_1394_CHAPTERS",
+      "full_book_claim_allowed": true
     }
   ],
+  "first_pass_metrics": {
+    "诡秘之主_current_520_chapters": {
+      "median_chapter_characters": 3253,
+      "median_paragraph_characters": 31,
+      "dialogue_paragraph_ratio_sample": 0.342
+    },
+    "凡人修仙传_cleaner_sample_only": {
+      "median_chapter_characters": 3019,
+      "median_paragraph_characters": 41,
+      "dialogue_paragraph_ratio_sample": 0.220,
+      "warning": "SOURCE_CONTAMINATION_PREVENTS_FINAL_QUANTITATIVE_CLAIMS"
+    },
+    "凡人修仙之仙界篇_full": {
+      "median_chapter_characters": 3192,
+      "median_paragraph_characters": 36,
+      "dialogue_paragraph_ratio_sample": 0.240
+    }
+  },
   "user_goal_zh": "真正通过这些小说，蒸馏出文笔、写法、逻辑以及为什么很多人愿意持续阅读，并用于改进小说创作。",
   "required_analysis_dimensions": [
     "prose_surface_and_sentence_texture",
@@ -55,9 +81,10 @@
     "do_not_copy_protected_prose": true,
     "extract_abstract_craft_only": true,
     "compare_book_specific_mechanisms_and_cross_book_commonalities": true,
-    "actual_source_evidence_required": true
+    "actual_source_evidence_required": true,
+    "source_integrity_before_quantitative_claims": true
   },
-  "next_required_action": "Place the actual EPUB/TXT source files into the Drive folder 小说, or provide authenticated Quark access in a supported browser workflow; then ingest and begin full-source distillation.",
+  "next_required_action": "Run source-integrity-aware cross-book distillation: opening retention, chapter-transition engine, prose/narrator surface, character agency, causal logic, reward cadence and anti-AI transfer. Preprocess the contaminated 凡人修仙传 source before final quantitative claims; treat current 诡秘之主 as partial source unless a fuller edition is later supplied.",
   "accepted_checkpoint_advance": false,
   "architecture_promotion_authorized": false
 }
