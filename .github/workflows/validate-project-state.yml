@@ -7,14 +7,16 @@ on:
     paths:
       - "state/**"
       - "scripts/validate_project_state_transition.py"
-      - "tests/test_project_state_anti_rollback.py"
+      - "tests/test_project_state*.py"
+      - "tools/phase*.py"
       - "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md"
       - ".github/workflows/validate-project-state.yml"
   pull_request:
     paths:
       - "state/**"
       - "scripts/validate_project_state_transition.py"
-      - "tests/test_project_state_anti_rollback.py"
+      - "tests/test_project_state*.py"
+      - "tools/phase*.py"
       - "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md"
       - ".github/workflows/validate-project-state.yml"
 
@@ -26,15 +28,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run anti-rollback unit tests
-        run: python -m unittest tests.test_project_state_anti_rollback -v
+      - name: Run checkpoint and actual execution-entrypoint tests
+        run: python -m unittest discover -s tests -p 'test_project_state*.py' -v
       - name: Prove current checkpoint rejects regression
         run: |
           CURRENT_PHASE=$(python -c 'import json; print(json.load(open("state/project_state.json", encoding="utf-8"))["accepted_checkpoint"]["phase_ordinal"])')
           STALE_PHASE=$((CURRENT_PHASE - 1))
           python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal "$STALE_PHASE" && exit 1 || test $? -eq 2
-      - name: Prove next forward phase passes
+      - name: Prove the previously accepted closed-task request is rejected
         run: |
-          CURRENT_PHASE=$(python -c 'import json; print(json.load(open("state/project_state.json", encoding="utf-8"))["accepted_checkpoint"]["phase_ordinal"])')
-          FORWARD_PHASE=$((CURRENT_PHASE + 1))
-          python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal "$FORWARD_PHASE"
+          python scripts/validate_project_state_transition.py --state state/project_state.json --phase-ordinal 380 --task-id PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1 --task-status PENDING && exit 1 || test $? -eq 2

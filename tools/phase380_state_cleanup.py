@@ -1,3 +1,12 @@
+# Check this one-shot action before loading historical payloads or writing state.
+import sys
+from pathlib import Path
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(_PROJECT_ROOT))
+from scripts.validate_project_state_transition import require_current_action
+require_current_action(_PROJECT_ROOT, task_id='PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1', phase_ordinal=380,
+                       action_id='tools/phase380_state_cleanup.py', parameters={})
+
 import json
 from pathlib import Path
 

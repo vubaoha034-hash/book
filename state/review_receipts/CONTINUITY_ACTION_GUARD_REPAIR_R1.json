@@ -1,0 +1,30 @@
+{
+  "schema_version": "continuity-action-guard-repair/v1",
+  "project_id": "novel-distillation",
+  "finding_id": "N1",
+  "recorded_at": "2026-09-17T23:13:58.014910+00:00",
+  "basis_commit": "fb8871e81b6a2bf1a24cb0cbfa78fa6231fe4a8d",
+  "scope": "Engineering-only repair of old-task dispatch acceptance; no fiction, source extraction, calibration, or quality promotion.",
+  "authorization": "Current user requested the next step after the concrete audit findings; existing session authorizes completion of continuation repairs.",
+  "closed_task_ids_added": [
+    "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
+  ],
+  "guarded_tools": [
+    "tools/phase372_materialize.py",
+    "tools/phase378_to_379.py",
+    "tools/phase379_to_380.py",
+    "tools/phase380_mark_ready.py",
+    "tools/phase380_state_cleanup.py"
+  ],
+  "enforcement": "COOPERATING_SCRIPT_ENTRYPOINTS",
+  "global_host_interception": false,
+  "accepted_research_phase_preserved": 320,
+  "business_focus_preserved": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+  "current_candidate_status_preserved": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
+  "new_business_action_authorized": false,
+  "counterexample_before": "Closed Phase380 PENDING returned PASS",
+  "counterexample_expected_after": "Closed/noncurrent task rejected before handler",
+  "legacy_auto_push_triggers_removed": true
+}

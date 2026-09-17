@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.10.1",
+  "schema_version": "3.10.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-12T03:45:20.145716+00:00",
+  "updated_at": "2026-09-17T23:13:58.014910+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -34,7 +34,8 @@
     "next_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
     "current_execution_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
     "human_review_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo",
-    "completed_at": "2026-09-12T03:45:20.145716+00:00"
+    "completed_at": "2026-09-12T03:45:20.145716+00:00",
+    "allowed_action_requests": []
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -231,13 +232,14 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 24,
-    "physical_event_hash": "ec541675c6723bd4a8816c34ddcb5340f9a30447df2dd744e3d4d8ffa84ced42",
-    "logical_latest_checkpoint_sequence": 38,
+    "physical_STATE_LEDGER_sequence": 25,
+    "physical_event_hash": "bf22f7b1fe84282f6402af5a6abeea783bf91c9ab8a4992013cf5aec1f586423",
+    "logical_latest_checkpoint_sequence": 39,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
-    "reconciliation_receipt": "state/review_receipts/PHASE380_CONTINUITY_RECONCILIATION_V1.json"
+    "reconciliation_receipt": "state/review_receipts/PHASE380_CONTINUITY_RECONCILIATION_V1.json",
+    "action_guard_repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json"
   },
   "invariants": {
     "missing_result_means": "UNKNOWN",
@@ -286,7 +288,9 @@
     "Phase380_generators_may_not_receive_Phase377_or_Phase379_diagnostics": true,
     "Phase380_may_not_authorize_YMGQ_writing_or_scale": true,
     "Phase380_duplicate_task_superseded": true,
-    "Phase380_ready_receipt_bound_to_authoritative_task": true
+    "Phase380_ready_receipt_bound_to_authoritative_task": true,
+    "closed_tasks_may_not_be_redispatched": true,
+    "current_task_and_exact_action_required_before_cooperating_handler": true
   },
   "rollback": {
     "authorized": false,
@@ -586,5 +590,10 @@
     "source": "ACTUAL_USER_2026_09_12",
     "actual_mode_switch_verified": false,
     "preserve_rejection_across_mode_change": true
-  }
+  },
+  "closed_task_ids": [
+    "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
+  ]
 }

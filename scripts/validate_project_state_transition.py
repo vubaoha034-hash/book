@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 
@@ -9,6 +10,11 @@ PASS = "PASS"
 REGRESSION = "STATE_REGRESSION_CONFLICT"
 SOURCE_CONFLICT = "STATE_SOURCE_CONFLICT"
 UNKNOWN = "UNKNOWN"
+
+
+def _closed(active: dict) -> bool:
+    status = str(active.get("status", "")).upper()
+    return bool(active.get("completed_at")) or status in {"DONE", "ACCEPTED", "CLOSED", "CANCELLED", "SUPERSEDED"} or any(token in status for token in ("REJECTED", "CAMPAIGN_CLOSED", "CLOSED_MERGED"))
 
 
 def load_state(path: Path) -> dict:
@@ -63,7 +69,61 @@ def validate_transition(
             return REGRESSION, f"task_id {task_id} is already accepted and cannot be re-dispatched"
         return PASS, f"task_id {task_id} already accepted; idempotent no-op"
 
+    # Research acceptance is not the work queue. A closed phase may be newer
+    # than the highest accepted research checkpoint and still cannot run again.
+    if task_id in set(state.get("closed_task_ids") or []):
+        if task_status in {"DONE", "ACCEPTED", "CLOSED", "SUPERSEDED"}:
+            return PASS, "closed task record comparison only; idempotent no-op"
+        return REGRESSION, f"task_id {task_id} is closed; re-dispatch forbidden"
+
+    active = state.get("active_task")
+    if isinstance(active, dict):
+        if not task_id:
+            return UNKNOWN, "current task identity required; phase rank alone cannot authorize execution"
+        if task_id != active.get("task_id"):
+            return SOURCE_CONFLICT, "candidate task is not the current native task"
+        if phase_ordinal != active.get("phase_ordinal"):
+            return SOURCE_CONFLICT, "candidate phase does not match the current task"
+        if _closed(active):
+            return REGRESSION, "current candidate is closed; prepare a scoped successor task instead of re-dispatch"
+
     return PASS, "forward or idempotent transition"
+
+
+def require_current_action(root: Path, *, task_id: str, phase_ordinal: int,
+                           action_id: str, parameters: dict | None = None) -> None:
+    """Fail before a cooperating script reads payloads or changes files.
+
+    The actual handler action and parameters must equal a request registered in
+    the current native task. This is not a host-wide tool interception hook.
+    """
+    try:
+        root = Path(root).resolve()
+        state_raw = (root / "state/project_state.json").read_bytes()
+        state = json.loads(state_raw)
+        cp = load_state(root / "state/continuity/LATEST_CHECKPOINT.json")
+        active = state.get("active_task", {})
+        verdict, reason = validate_transition(state, phase_ordinal=phase_ordinal,
+            progress_ordinal=None, task_id=task_id, task_status="RUNNING", rollback_authorized=False)
+        if verdict != PASS:
+            raise ValueError(verdict + ": " + reason)
+        if _closed(active) or task_id in set(state.get("closed_task_ids") or []) or task_id in set(state.get("accepted_task_ids") or []):
+            raise ValueError("CLOSED_TASK_DISPATCH")
+        if cp.get("active_task_ids") != [task_id]:
+            raise ValueError("CHECKPOINT_TASK_CONFLICT")
+        binding = cp.get("action_guard", {})
+        if binding.get("project_state_sha256") != hashlib.sha256(state_raw).hexdigest():
+            raise ValueError("STALE_OR_UNBOUND_STATE")
+        if binding.get("closed_task_ids") != state.get("closed_task_ids", []):
+            raise ValueError("CLOSED_TASK_MIRROR_CONFLICT")
+        if parameters is not None and not isinstance(parameters, dict):
+            raise ValueError("ACTION_PARAMETERS_MUST_BE_OBJECT")
+        request = {"action_id": action_id, "parameters": {} if parameters is None else parameters}
+        canonical = lambda value: json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
+        if not any(canonical(request) == canonical(allowed) for allowed in active.get("allowed_action_requests", [])):
+            raise ValueError("ACTION_OR_PARAMETERS_NOT_AUTHORIZED")
+    except (OSError, ValueError, TypeError, KeyError) as exc:
+        raise SystemExit("PROJECT_ACTION_BLOCKED: " + str(exc)) from exc
 
 
 def main() -> int:

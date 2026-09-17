@@ -1,11 +1,8 @@
 name: Phase372 Materialize
 
+# Historical one-shot migration; never restart on a source-code push.
 on:
-  push:
-    branches: [novel-distill-v1]
-    paths:
-      - 'tools/phase372_materialize.py'
-      - '.github/workflows/phase372_materialize.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write

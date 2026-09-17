@@ -138,3 +138,9 @@ Any proposal that returns BOOK-02 to Source Gate, Packet Gate, or evidence <= 21
 ## 11. Cross-project requirement
 
 This policy is intended as the baseline invariant for the user’s other long-running projects as well: novel distillation, song distillation, football, investment/market systems, automation bridges, and future staged workflows. Project-specific state schemas may differ, but the anti-rollback invariants above do not.
+
+## 12. Current task execution is separate from accepted research phase
+
+The accepted research checkpoint is not an execution queue. A phase above that checkpoint can already be closed, rejected, or superseded. A proposed dispatch must name the current task and its phase; a future-looking phase alone is insufficient. Preserve the explicit `closed_task_ids` across successor tasks.
+
+A cooperating handler calls `require_current_action` before reading historical payloads or changing files. The check binds state bytes to the current checkpoint and compares the actual action ID and parameters against the current task’s `allowed_action_requests`. Missing task/action bindings fail closed. Historical record comparison is a no-op, not permission to call a handler. A rejected candidate requires a distinct successor contract.

@@ -1,3 +1,12 @@
+# Check this one-shot action before loading historical payloads or writing state.
+import sys
+from pathlib import Path
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(_PROJECT_ROOT))
+from scripts.validate_project_state_transition import require_current_action
+require_current_action(_PROJECT_ROOT, task_id='PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1', phase_ordinal=372,
+                       action_id='tools/phase372_materialize.py', parameters={})
+
 from pathlib import Path
 import base64, zlib, json
 

@@ -1,10 +1,8 @@
 name: Phase378 to 379
 
+# Historical one-shot migration; never restart on a source-code push.
 on:
-  push:
-    branches: [novel-distill-v1]
-    paths:
-      - 'tools/phase378_to_379.py'
+  workflow_dispatch:
 
 permissions:
   contents: write

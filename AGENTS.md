@@ -10,7 +10,9 @@ Before resuming `novel-distill-v1`, answering “继续/下一步”, mutating p
 4. Apply both `docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md` and the central UPCP anti-rollback/write-through policy.
 5. Missing evidence is `UNKNOWN`, never automatic `NOT_STARTED`.
 6. Persist material state transitions when they happen; do not wait for a chat-end summary.
-7. UPCP is continuity governance only. It must not authorize source reruns, literary analysis, Novel DNA regeneration, branch reconciliation, or any action forbidden by the active project-state task.
+7. Before any task-dependent mutation or dispatch, call `scripts/validate_project_state_transition.py` with the actual current task ID and phase. Cooperating scripts must call `require_current_action` inside the handler with the actual action and parameters before payload reads/writes. A phase-only PASS is never execution authorization.
+8. Preserve `closed_task_ids`; register any new executable action in the current task’s `allowed_action_requests` and bind its state bytes in `LATEST_CHECKPOINT.action_guard`. Closed tasks require a distinct scoped successor contract, not a reset to PENDING.
+9. UPCP is continuity governance only. It must not authorize source reruns, literary analysis, Novel DNA regeneration, branch reconciliation, or any action forbidden by the active project-state task.
 
 If a stricter task/benchmark read-isolation rule conflicts with generic continuity reads, the stricter task rule wins.
 

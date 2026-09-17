@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 38,
-  "recorded_at": "2026-09-12T03:45:20.145716+00:00",
+  "sequence": 39,
+  "recorded_at": "2026-09-17T23:13:58.014910+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -215,9 +215,19 @@
     }
   ],
   "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
-  "physical_ledger_entry_count": 24,
-  "physical_ledger_tail_hash": "ec541675c6723bd4a8816c34ddcb5340f9a30447df2dd744e3d4d8ffa84ced42",
+  "physical_ledger_entry_count": 25,
+  "physical_ledger_tail_hash": "bf22f7b1fe84282f6402af5a6abeea783bf91c9ab8a4992013cf5aec1f586423",
   "last_completed_task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
-  "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"
+  "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
+  "action_guard": {
+    "project_state_sha256": "83828738b76649e1193dddfdff67217b6525e4bf7f7618fdc52d0c7ef4453c9d",
+    "closed_task_ids": [
+      "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+      "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+      "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
+    ],
+    "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
+    "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
+  }
 }

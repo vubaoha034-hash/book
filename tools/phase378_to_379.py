@@ -1,3 +1,12 @@
+# Check this one-shot action before loading historical payloads or writing state.
+import sys
+from pathlib import Path
+_PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(_PROJECT_ROOT))
+from scripts.validate_project_state_transition import require_current_action
+require_current_action(_PROJECT_ROOT, task_id='PHASE378_GENERATOR_EVALUATOR_ISOLATED_AI_SMELL_PROCESS_PROBE_V1', phase_ordinal=378,
+                       action_id='tools/phase378_to_379.py', parameters={})
+
 import json
 from pathlib import Path
 
