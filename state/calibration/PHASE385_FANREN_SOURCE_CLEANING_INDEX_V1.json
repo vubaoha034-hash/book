@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 385,
+  "artifact_type": "SOURCE_CLEANING_INDEX",
+  "source_title": "凡人修仙传",
+  "raw_sha256": "b853a949c1b21c92665f74ecaad114c9bb8966deee8a6c8c8f655af1540cce00",
+  "source_scope": "uploaded EPUB reaches narrative finale but contains scraper/navigation contamination",
+  "scan_method": {
+    "unit": "HTML paragraph elements across EPUB spine files",
+    "paragraph_records_scanned": 4440,
+    "chapter_marker_pattern": "Chinese-numeral 第…章 markers only",
+    "copyright_boundary": "no protected source prose stored in this artifact"
+  },
+  "structural_findings": {
+    "expected_numbered_range": "1-2446",
+    "chapter_marker_occurrences": 3172,
+    "unique_numbered_chapters_with_marker": 2388,
+    "missing_reliable_chapter_number_markers": 58,
+    "missing_chapter_numbers": [233,304,455,486,600,623,624,625,626,888,1118,1212,1545,1656,1695,1696,1704,1709,1713,1728,1747,1761,1776,1805,1808,1834,1875,1876,1883,1884,1906,1950,1955,1956,1957,1959,1966,1967,1968,1969,1971,2036,2055,2066,2120,2121,2148,2159,2180,2181,2182,2208,2209,2226,2306,2311,2324,2337],
+    "chapter_numbers_with_duplicate_marker_occurrences": 237,
+    "maximum_marker_repetition_for_one_chapter_number": 59,
+    "high_repetition_examples": [
+      {"chapter":1066,"marker_occurrences":59},
+      {"chapter":1330,"marker_occurrences":53},
+      {"chapter":1620,"marker_occurrences":44},
+      {"chapter":1418,"marker_occurrences":40},
+      {"chapter":1241,"marker_occurrences":39},
+      {"chapter":999,"marker_occurrences":25}
+    ],
+    "observed_transition_note": "Early material is substantially cleaner; around/after chapter 999 the EPUB increasingly uses repeated old chapter wrappers, embedded next-chapter markers, split fragments and malformed navigation.",
+    "pollution_string_occurrences": {
+      "其他书友正在看": 1876,
+      "好看的小说": 1907,
+      "未完待续": 189,
+      "完美世界小说网": 19,
+      "魔爪小说阅读器": 3
+    }
+  },
+  "sampling_policy": {
+    "naive_epub_toc_as_canonical_index": false,
+    "naive_whole_book_quantitative_claims": false,
+    "qualitative_stratified_sampling_authorized": true,
+    "rules": [
+      "Use manually verified chapter-marker location rather than EPUB TOC alone.",
+      "Exclude missing-marker chapters and conflicting duplicate locations from representative samples unless independently reconstructed.",
+      "Tag every sampled location with source confidence.",
+      "Use source passages privately; store only abstract mechanism/evidence summaries in public Git.",
+      "Do not extrapolate exact whole-book counts from contaminated regions."
+    ]
+  },
+  "second_pass_verified_samples": [
+    {"chapter":10,"confidence":"HIGH","focus":"resource discovery and future option expansion"},
+    {"chapter":60,"confidence":"HIGH","focus":"caution, agency and decision control"},
+    {"chapter":180,"confidence":"HIGH","focus":"intelligent trap and threat causality"},
+    {"chapter":300,"confidence":"HIGH","focus":"relationship pressure and unstable choice"},
+    {"chapter":500,"confidence":"HIGH","focus":"travel/status reconnaissance and social network hook"},
+    {"chapter":700,"confidence":"HIGH","focus":"competence trust and option control"},
+    {"chapter":900,"confidence":"HIGH","focus":"incidental social life and inhabited-world texture"},
+    {"chapter":1000,"confidence":"HIGH","focus":"multi-agent causal uncertainty"},
+    {"chapter":1200,"confidence":"HIGH","focus":"resource motive makes macro conflict actionable"},
+    {"chapter":1400,"confidence":"HIGH","focus":"world discovery changes navigation decision"},
+    {"chapter":1800,"confidence":"HIGH","focus":"exposition filtered through acquisition desire"},
+    {"chapter":2000,"confidence":"HIGH","focus":"progression payoff against a meaningful ceiling"},
+    {"chapter":2400,"confidence":"MEDIUM","focus":"late-book transition only; contaminated region"},
+    {"chapter":2446,"confidence":"LOW","focus":"ending fragments contaminated/split; not suitable for clean quantitative ending claims"}
+  ],
+  "verdict": "USABLE_FOR_DEFENSIBLE_STRATIFIED_QUALITATIVE_EVIDENCE_WITH_CONFIDENCE_TAGS",
+  "accepted_checkpoint_advance": false
+}
