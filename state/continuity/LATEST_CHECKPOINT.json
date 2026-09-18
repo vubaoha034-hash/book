@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 49,
-  "recorded_at": "2026-09-18T04:36:00+00:00",
+  "sequence": 50,
+  "recorded_at": "2026-09-18T04:45:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1"
   ],
-  "current_focus": "Phase390 rich-context scene packet and single-file fresh-writer entry are frozen. Current diagnostic-aware chat may not generate the candidate.",
+  "current_focus": "Phase390 fresh blind output is frozen unchanged. Obtain raw actual-human verdict before evaluator commentary or repair.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -110,7 +110,8 @@
     "Phase388 comparative root-cause diagnosis completed with no fiction generated",
     "Phase389 rich story/character context packet frozen and audited without diagnostic leakage",
     "Phase390 scene-specific rich context packet frozen and leakage-audited",
-    "Phase390 single-file fresh writer entry frozen"
+    "Phase390 single-file fresh writer entry frozen",
+    "Phase390 fresh blind writer output frozen unchanged"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -137,8 +138,8 @@
     "Phase388 root-cause hypotheses remain prospectively unvalidated",
     "Phase390 rich-context fresh blind pilot has not been created or run",
     "Phase388/389 input-context hypothesis remains prospectively unvalidated",
-    "Phase390 fresh blind writer run not yet completed",
-    "Phase390 output not yet frozen or human-reviewed"
+    "Phase390 output not yet frozen or human-reviewed",
+    "Phase390 actual-human raw verdict not yet recorded"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -208,7 +209,7 @@
     "Let the Phase390 writer read any repository file except delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
     "Generate multiple Phase390 candidates or repair the first before human review"
   ],
-  "next_required_action": "Run delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the fiction. Bring the unchanged output back for freezing and actual-human review.",
+  "next_required_action": "Obtain the actual human's raw verdict before evaluator commentary: overall pass/fail, AI-smell direction versus Phase387, desire to continue, and first skim/stop location if any. Do not repair before verdict.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -339,14 +340,14 @@
       "role": "Phase390 frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE390_READY_AWAITING_GENUINELY_FRESH_WRITER",
-  "physical_ledger_entry_count": 35,
-  "physical_ledger_tail_hash": "00e04d21b105e5552b455c124c34bc85cd312dee63356dc9f25ec4600aa650bc",
+  "status": "PHASE390_OUTPUT_FROZEN_PENDING_ACTUAL_HUMAN_VERDICT",
+  "physical_ledger_entry_count": 36,
+  "physical_ledger_tail_hash": "9b24e1131df74c37d1b3c71b1bdf0f3e75c1776c122243559e469852d1411bb8",
   "last_completed_task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "f1d3a19d4d62cfdc1969d7456ee9960ee0545785d9fd2c3a7ac1084feac11834",
+    "project_state_sha256": "675173e5e50f95b78bee676870cb198c91931e1173e4e07a6851ba4a63aea8ed",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
