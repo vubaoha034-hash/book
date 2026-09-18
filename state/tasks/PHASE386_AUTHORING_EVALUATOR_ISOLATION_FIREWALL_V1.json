@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
+  "phase_ordinal": 386,
+  "status": "ACTIVE_PROCESS_REPAIR_NO_FICTION",
+  "title": "Authoring / Evaluator Isolation Firewall",
+  "basis": {
+    "phase374_overconstraint": "docs/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.md",
+    "passive_validator_rule": "rules/reader-experience-passive-validator-only-v1.md",
+    "phase377_root_cause": "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+    "phase385_task": "state/tasks/PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1.json",
+    "phase385_actual_human_clarification": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_AI_SMELL_CLARIFICATION_H2_V1.json",
+    "phase385_evidence_correction": "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json"
+  },
+  "human_evidence_boundary": {
+    "allowed_actual_feedback": [
+      "能看。",
+      "ai味道没有哈，反倒越来越重了。"
+    ],
+    "suspense_positive_human_claim_authorized": false
+  },
+  "problem_statement": "Source-derived and anti-AI diagnostics have repeatedly become visible construction machinery when exposed directly to the prose generator. Phase386 repairs the process boundary, not the prose.",
+  "scope": [
+    "define the exact minimal writer-visible packet",
+    "define diagnostics and human-failure evidence hidden from the writer",
+    "define a post-draft evaluator-only packet",
+    "define one-way freeze and handoff rules so evaluation cannot leak into initial drafting",
+    "preserve the Phase385 source research as diagnostic evidence without using it as a beat-by-beat construction recipe"
+  ],
+  "forbidden": [
+    "generate new YMGQ fiction in Phase386",
+    "rewrite or line-patch the failed Phase385 pilot",
+    "show the writer Phase374/377/383/385 diagnostic taxonomies, reader-engine beats, target counts or known failure locations",
+    "treat the unsupported suspense-positive sentence as human evidence",
+    "imitate recognizable source-author style",
+    "authorize span growth, full manuscript rewrite, final freeze or architecture promotion",
+    "advance the Phase320 accepted promotion checkpoint"
+  ],
+  "required_outputs": [
+    "docs/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.md",
+    "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json"
+  ],
+  "acceptance": {
+    "exact_writer_visible_fields_required": true,
+    "explicit_hidden_diagnostic_fields_required": true,
+    "evaluator_must_run_only_after_draft_freeze": true,
+    "one_way_information_flow_required": true,
+    "fiction_generation_in_this_phase": false,
+    "separate_successor_task_required_for_next_pilot": true
+  },
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE386_DESIGN_AUTHORING_EVALUATOR_FIREWALL",
+      "parameters": {
+        "fiction_generation": false
+      }
+    }
+  ],
+  "next_action": "Design and freeze the authoring/evaluator firewall only. Do not generate a pilot in Phase386.",
+  "accepted_checkpoint_advance": false
+}
