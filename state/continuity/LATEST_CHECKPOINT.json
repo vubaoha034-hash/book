@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 46,
-  "recorded_at": "2026-09-18T02:48:00+00:00",
+  "sequence": 47,
+  "recorded_at": "2026-09-18T02:55:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1"
-  ],
-  "current_focus": "Build a richer writer-visible YMGQ story/character context from valid project facts and explicitly marked canon proposals, while excluding diagnostics and failed structural devices. No fiction authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase389 rich writer-visible YMGQ context is frozen and audited. The next experiment may use a scene-specific subset in one fresh blind writer context; diagnostics remain hidden.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -107,7 +105,8 @@
     "Phase387 one-run isolation contract activated",
     "Phase387 fresh blind writer output frozen unchanged",
     "Phase387 actual-human overall rejection recorded against frozen output",
-    "Phase388 comparative root-cause diagnosis completed with no fiction generated"
+    "Phase388 comparative root-cause diagnosis completed with no fiction generated",
+    "Phase389 rich story/character context packet frozen and audited without diagnostic leakage"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -131,7 +130,9 @@
     "Phase387 rejection subdimensions are not fully localized from human feedback",
     "Root cause of why the fresh blind candidate still fails acceptance remains open",
     "Rich story/character context packet has not yet been built or audited",
-    "Phase388 root-cause hypotheses remain prospectively unvalidated"
+    "Phase388 root-cause hypotheses remain prospectively unvalidated",
+    "Phase390 rich-context fresh blind pilot has not been created or run",
+    "Phase388/389 input-context hypothesis remains prospectively unvalidated"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -144,7 +145,7 @@
     "YMGQ_FICTION_BLOCKED_DURING_PHASE386_PROCESS_REPAIR",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE387_GENERATION",
     "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS",
-    "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_RICH_CONTEXT_PACKET_AUDITED"
+    "YMGQ_PROSE_REQUIRES_DISTINCT_PHASE390_FRESH_BLIND_CONTRACT"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -194,9 +195,11 @@
     "Generate another Phase387 candidate under the same task",
     "Treat Phase388 coordinator root-cause hypotheses as direct human quotes",
     "Respond to Phase387 rejection by exposing Phase388 diagnosis labels to the next prose writer",
-    "Use a thin premise-only author packet again"
+    "Use a thin premise-only author packet again",
+    "Expose Phase388 root-cause labels or prior human failure answer keys to the Phase390 blind writer",
+    "Treat Phase389 rich context packet acceptance as prose quality evidence"
   ],
-  "next_required_action": "Build and audit the rich story packet only. Do not generate a prose pilot in Phase389.",
+  "next_required_action": "Create PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1. Freeze one scene-specific subset of the Phase389 rich context and run exactly one genuinely fresh blind writer pilot. Do not expose diagnostics to the writer.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -293,16 +296,32 @@
     {
       "path": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
       "role": "Phase388 diagnostic settlement"
+    },
+    {
+      "path": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json",
+      "role": "completed Phase389 rich-context contract"
+    },
+    {
+      "path": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+      "role": "frozen writer-visible rich story context"
+    },
+    {
+      "path": "docs/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.md",
+      "role": "Phase389 provenance and diagnostic-leakage audit"
+    },
+    {
+      "path": "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json",
+      "role": "Phase389 accepted rich-context settlement"
     }
   ],
-  "status": "PHASE389_ACTIVE_RICH_CONTEXT_CONSTRUCTION_NO_FICTION",
-  "physical_ledger_entry_count": 32,
-  "physical_ledger_tail_hash": "57c13f573e639e2d5e9c6a829a588e47914e266e56da4b282470fe6a42df3974",
-  "last_completed_task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+  "status": "PHASE389_COMPLETED_RICH_CONTEXT_AUDITED_NO_FICTION",
+  "physical_ledger_entry_count": 33,
+  "physical_ledger_tail_hash": "abd0fbc99952c75162c942b2188ffb5365095882a91f525a8bf64a04a3852290",
+  "last_completed_task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "720c7bebdda3875c7f2e509fffd4ca28035c97c8694c4794c524cae2ea9f7023",
+    "project_state_sha256": "e9a493f546bbdd57014067b730ec3b7e762d86a880772c25fa964e687df85812",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -310,11 +329,12 @@
       "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
       "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
       "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
-      "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1"
+      "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+      "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json"
 }
