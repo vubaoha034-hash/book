@@ -15,7 +15,7 @@
     "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
     "phase": "FRESH_BLIND_AUTHORING_PILOT",
     "phase_ordinal": 387,
-    "status": "READY_AWAITING_GENUINELY_FRESH_WRITER",
+    "status": "OUTPUT_FROZEN_PENDING_EVALUATION_AND_ACTUAL_HUMAN_VERDICT",
     "task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
     "execution_scope": "Exactly one short YMGQ pilot from a genuinely fresh writer context that reads only the frozen execution entry.",
     "YMGQ_writing_authorized": true,
@@ -32,7 +32,7 @@
         }
       }
     ],
-    "next_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation."
+    "next_action": "Evaluate the frozen output only after freeze, then obtain actual-human judgments for AI-smell direction, desire to continue, and first skim/stop location. Do not auto-repair before human judgment."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -629,11 +629,12 @@
     "contract_activated": true,
     "author_packet_frozen": true,
     "execution_entry_frozen": true,
-    "fresh_writer_run_completed": false,
-    "output_frozen": false,
+    "fresh_writer_run_completed": true,
+    "output_frozen": true,
     "evaluator_run": false,
     "actual_human_review_complete": false,
     "candidate_accepted": false,
-    "accepted_checkpoint_advance": false
+    "accepted_checkpoint_advance": false,
+    "frozen_output_sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d"
   }
 }
