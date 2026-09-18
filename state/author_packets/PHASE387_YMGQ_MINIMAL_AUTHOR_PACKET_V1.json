@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+  "work": "一命过桥",
+  "purpose": "Write exactly one short Chinese-fiction pilot from the supplied story facts. This is the complete authoring context.",
+  "story_identity": {
+    "genre": "中国武侠悬疑",
+    "protagonist": "刘还山",
+    "core_fact": "刘还山必须把顾承岳本人送过一座具有法律效力的桥界。只有顾承岳实际跨过桥界，东岸官府才能依法接管他；在此之前，东岸不能直接替刘还山解决西岸的冲突。",
+    "promise": "刘还山答应过顾青禾，要把她父亲顾承岳活着送过桥。",
+    "moral_fact": "刘还山并不认为顾承岳无辜；他只是认为自己既然答应了顾青禾，就必须把人送到桥那边，再让顾承岳为自己做过的事承担后果。",
+    "relationship": "顾承岳知道刘还山不信任他，也知道刘还山护着他并不是因为原谅。"
+  },
+  "current_scene": {
+    "viewpoint": "第三人称近距离，主要跟随刘还山",
+    "time": "清晨",
+    "place": "离桥还有大约十里的一处废弃茶棚",
+    "physical_state": "两人赶了一夜路。顾承岳有旧伤，昨夜又裂开了，但还能自己走；刘还山也很疲惫。",
+    "immediate_situation": "他们必须继续赶路。官道更近，但昨夜沿路已经有人盘查顾承岳；河滩小路绕得远，而且昨夜下过雨，路况不明。",
+    "protagonist_immediate_want": "刘还山想尽快带顾承岳离开茶棚，继续往桥走。",
+    "gu_immediate_want": "顾承岳也想过桥，但他不愿完全听刘还山摆布。"
+  },
+  "continuity_limits": [
+    "不要使用此前任何版本的具体台词、场景、线索、配角或物件。",
+    "除刘还山、顾承岳、顾青禾之外，不需要继承任何旧角色；如场景自然需要，可以自行出现普通路人或小人物。",
+    "不要改变桥界必须由顾承岳本人实际跨越这一核心规则。",
+    "不要把顾承岳写成被洗白的无辜者。"
+  ],
+  "delivery": {
+    "language": "简体中文",
+    "form": "小说正文",
+    "length": "约1000至1500个汉字",
+    "versions": 1,
+    "explanation": false,
+    "heading": false
+  },
+  "general_boundary": [
+    "不要复制任何第三方作品原文。",
+    "不要模仿任何具体作家的可识别个人风格。"
+  ]
+}
