@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.12.0",
+  "schema_version": "3.12.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T01:40:00+00:00",
+  "updated_at": "2026-09-18T02:31:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,24 +15,17 @@
     "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
     "phase": "FRESH_BLIND_AUTHORING_PILOT",
     "phase_ordinal": 387,
-    "status": "OUTPUT_FROZEN_PENDING_EVALUATION_AND_ACTUAL_HUMAN_VERDICT",
+    "status": "ACTUAL_HUMAN_REJECTED_OVERALL_NOT_GOOD_ENOUGH",
     "task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
-    "execution_scope": "Exactly one short YMGQ pilot from a genuinely fresh writer context that reads only the frozen execution entry.",
-    "YMGQ_writing_authorized": true,
-    "YMGQ_writing_authorization_scope": "ONE_FRESH_BLIND_SHORT_PILOT_ONLY",
+    "execution_scope": "One frozen fresh blind short pilot; completed and rejected by actual human.",
+    "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "current_chat_may_generate_candidate": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE387_FREEZE_RETURNED_FRESH_OUTPUT",
-        "parameters": {
-          "source": "fresh_chat_return"
-        }
-      }
-    ],
-    "next_action": "Evaluate the frozen output only after freeze, then obtain actual-human judgments for AI-smell direction, desire to continue, and first skim/stop location. Do not auto-repair before human judgment."
+    "allowed_action_requests": [],
+    "next_action": "Do not generate another candidate yet. Diagnose why the frozen Phase387 candidate remains below the user's acceptance threshold, while preserving that fresh-writer isolation may have produced relative improvement. Create a distinct successor task for that diagnosis.",
+    "completed_at": "2026-09-18T02:31:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE387_ACTUAL_HUMAN_OVERALL_REJECTION_H1_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -194,12 +187,12 @@
   "manuscript_quality_state": {
     "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
     "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
-    "latest_bounded_span_status": "PHASE385_HUMAN_PILOT_AI_SMELL_WORSE",
+    "latest_bounded_span_status": "PHASE387_ACTUAL_HUMAN_REJECTED_OVERALL",
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
-    "YMGQ_writing_paused": false,
-    "YMGQ_writing_pause_reason": null,
+    "YMGQ_writing_paused": true,
+    "YMGQ_writing_pause_reason": "PHASE387_ACTUAL_HUMAN_REJECTION_DIAGNOSIS_REQUIRED_BEFORE_NEXT_CANDIDATE",
     "current_writing_authorization_scope": {
       "kind": "ONE_FRESH_BLIND_SHORT_PILOT",
       "run_entry": "delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
@@ -208,7 +201,7 @@
       "attempts": 1,
       "long_form": false
     },
-    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_AI_SMELL_CLARIFICATION_H2_V1.json",
+    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE387_ACTUAL_HUMAN_OVERALL_REJECTION_H1_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
   },
   "governance": {
@@ -228,9 +221,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 28,
-    "physical_event_hash": "fc2600f5eb96022c5ab1c716a2f192cba77324373f2f58bc8e2ed840b6df85c1",
-    "logical_latest_checkpoint_sequence": 42,
+    "physical_STATE_LEDGER_sequence": 29,
+    "physical_event_hash": "9a315f0a04b4019c4374bf2ea257b08f4be1e270d19c6bb4018f01731adcdcde",
+    "logical_latest_checkpoint_sequence": 43,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -602,7 +595,8 @@
     "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
     "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
     "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
-    "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1"
+    "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
+    "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -631,10 +625,12 @@
     "execution_entry_frozen": true,
     "fresh_writer_run_completed": true,
     "output_frozen": true,
-    "evaluator_run": false,
-    "actual_human_review_complete": false,
+    "evaluator_run": true,
+    "actual_human_review_complete": true,
     "candidate_accepted": false,
     "accepted_checkpoint_advance": false,
-    "frozen_output_sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d"
+    "frozen_output_sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d",
+    "overall_human_verdict": "FAIL_NOT_GOOD_ENOUGH",
+    "subdimension_detail_complete": false
   }
 }
