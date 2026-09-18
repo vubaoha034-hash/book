@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 41,
-  "recorded_at": "2026-09-18T01:34:00+00:00",
+  "sequence": 42,
+  "recorded_at": "2026-09-18T01:40:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase386 process repair is complete. Writer/evaluator isolation is frozen; current diagnostic-aware chat may not serve as the next blind writer. No fiction is currently authorized until a distinct Phase387 successor contract is created.",
+  "active_task_ids": [
+    "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1"
+  ],
+  "current_focus": "Phase387 is active and waiting for exactly one genuinely fresh blind-writer run. The current diagnostic-aware chat must not generate the candidate. Fresh writer reads only delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -99,7 +101,10 @@
     "Phase385 conservative Fanren sampling index and second-pass cross-book distillation completed",
     "Phase385 human pilot was readable but actual human reported AI smell became heavier; prose transfer not accepted",
     "Unsupported suspense-positive sentence attributed to the user is invalidated as human evidence",
-    "Phase386 authoring/evaluator information firewall frozen with no fiction generated"
+    "Phase386 authoring/evaluator information firewall frozen with no fiction generated",
+    "Phase387 minimal author packet frozen",
+    "Phase387 single-file fresh writer execution entry frozen",
+    "Phase387 one-run isolation contract activated"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -119,7 +124,10 @@
     "Current scene emotional engagement/early retention failed; requested Chat-based reauthoring has not yet produced a successor candidate",
     "Authoring/evaluator isolation firewall not yet frozen",
     "Stable low-AI prose generation remains unproven",
-    "Phase387 fresh blind authoring pilot has not been created or run"
+    "Phase387 fresh blind authoring pilot has not been created or run",
+    "Phase387 fresh blind writer run not yet completed",
+    "Phase387 output not yet frozen",
+    "Phase387 evaluator and actual-human review not yet completed"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -130,7 +138,7 @@
     "FINAL_FREEZE_BLOCKED",
     "PHASE381_HUMAN_AESTHETIC_REJECTION_LOCAL_PATCH_AND_EXPANSION_STOPPED",
     "YMGQ_FICTION_BLOCKED_DURING_PHASE386_PROCESS_REPAIR",
-    "YMGQ_FICTION_REQUIRES_DISTINCT_PHASE387_FRESH_WRITER_CONTRACT"
+    "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE387_GENERATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -171,9 +179,12 @@
     "Treat the unsupported suspense-positive sentence as actual-human evidence",
     "Expose Phase385 reader-engine beats or Phase377 AI-smell taxonomy directly to the prose generator",
     "Use the current diagnostic-aware chat as a clean Phase387 blind writer",
-    "Leak evaluator diagnostics back into the writer before initial draft freeze"
+    "Leak evaluator diagnostics back into the writer before initial draft freeze",
+    "Generate Phase387 candidate in this diagnostic-aware chat",
+    "Let the fresh Phase387 writer read any repository file except delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "Produce multiple Phase387 candidates or repair the first output before human review"
   ],
-  "next_required_action": "Create a distinct Phase387 successor contract and a minimal YMGQ author packet. Run exactly one short pilot in a genuinely fresh writer context; do not generate it in the current diagnostic-aware chat.",
+  "next_required_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -242,16 +253,32 @@
     {
       "path": "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
       "role": "accepted Phase386 process-repair settlement"
+    },
+    {
+      "path": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
+      "role": "current native Phase387 contract"
+    },
+    {
+      "path": "state/author_packets/PHASE387_YMGQ_MINIMAL_AUTHOR_PACKET_V1.json",
+      "role": "frozen minimal author packet"
+    },
+    {
+      "path": "delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
+      "role": "only file permitted to fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE387_FRESH_WRITER_READY_V1.json",
+      "role": "frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE386_COMPLETED_FIREWALL_FROZEN_NO_FICTION",
-  "physical_ledger_entry_count": 27,
-  "physical_ledger_tail_hash": "2f633001fd72c94ad9c408863e7d2d13b36b351c2df481c9adc9dc7fb12a2e32",
+  "status": "PHASE387_READY_AWAITING_GENUINELY_FRESH_WRITER",
+  "physical_ledger_entry_count": 28,
+  "physical_ledger_tail_hash": "fc2600f5eb96022c5ab1c716a2f192cba77324373f2f58bc8e2ed840b6df85c1",
   "last_completed_task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "d0be665f398ffc4d93f117c1e09f033ce8ddff76d0e74efc42435eb4f9b4b891",
+    "project_state_sha256": "07112624dbe2b400331ae3dd9fea817f1ff2c4c7f25c68f623c962637321040f",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -262,6 +289,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+  "active_task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json"
 }
