@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
   "phase_ordinal": 389,
-  "status": "ACTIVE_RICH_CONTEXT_CONSTRUCTION_NO_FICTION",
+  "status": "COMPLETED_RICH_CONTEXT_AUDITED_NO_FICTION",
   "purpose": "Build and audit a richer writer-visible YMGQ story/character context from existing project facts and explicitly marked new canon candidates, while keeping all diagnostic, anti-AI, reader-propulsion and failure-answer-key material out of the writer packet.",
   "source_basis": [
     "state/story_kernels/YMGQ_STORY_KERNEL_V1.json",
@@ -35,14 +35,15 @@
     "docs/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.md",
     "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE389_BUILD_AND_AUDIT_RICH_STORY_CONTEXT",
-      "parameters": {
-        "fiction_generation": false
-      }
-    }
+  "allowed_action_requests": [],
+  "next_action": "Create PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1. Freeze one scene-specific subset of the Phase389 rich context and run exactly one genuinely fresh blind writer pilot. Do not expose diagnostics to the writer.",
+  "accepted_checkpoint_advance": false,
+  "completed_outputs": [
+    "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+    "docs/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.md",
+    "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json"
   ],
-  "next_action": "Build and audit the rich story packet only. Do not generate a prose pilot in Phase389.",
-  "accepted_checkpoint_advance": false
+  "acceptance_result": "ACCEPT_RICH_CONTEXT_PACKET_NO_DIAGNOSTIC_LEAKAGE",
+  "packet_sha256": "1c4d9481bf25cece46aafb01c7ad92741675a715c069ce9e9532557374462339",
+  "completed_at": "2026-09-18T02:55:00+00:00"
 }
