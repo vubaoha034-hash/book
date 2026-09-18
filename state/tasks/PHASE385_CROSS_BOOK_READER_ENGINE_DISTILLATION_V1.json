@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
   "phase_ordinal": 385,
-  "status": "HUMAN_PILOT_SUSPENSE_POSITIVE_AI_SMELL_WORSENED",
+  "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
   "basis": {
     "phase384_task": "state/tasks/PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1.json",
     "first_pass": "state/calibration/PHASE384_THREE_BOOK_FIRST_PASS_DISTILLATION_V1.md",
@@ -33,7 +33,9 @@
     "resume long YMGQ continuation before human pilot approval",
     "claim source reading itself proves writing transfer",
     "claim Phase385 reader engine works before actual human reading",
-    "advance the Phase320 accepted promotion checkpoint"
+    "advance the Phase320 accepted promotion checkpoint",
+    "generate another pilot directly from a beat-by-beat reader-engine construction template",
+    "interpret readability as reduced AI smell"
   ],
   "acceptance": {
     "source_locations_present": true,
@@ -41,10 +43,11 @@
     "YMGQ_specific_transfer_hypothesis_present": true,
     "actual_human_validation_required_for_prose_transfer": true,
     "human_pilot_completed": true,
-    "human_pilot_propulsion_pass": "SUSPENSE_DIRECTIONAL_PASS_ONLY",
+    "human_pilot_propulsion_pass": false,
     "human_pilot_ai_smell_pass": false
   },
-  "next_action": "Preserve the suspense/forward-desire architecture that produced genuine desire to continue. Diagnose the prose-surface AI smell regression separately, then reauthor exactly one short pilot with the same suspense engine and reduced authorial regularity. Do not expand to long-form.",
+  "next_action": "Separate diagnosis from authoring. Draft the next short pilot from only the minimal YMGQ story kernel plus immediate character situation; keep Phase385 source-derived mechanisms hidden from the authoring pass and use them only afterward as passive diagnostic evidence. Then stop for actual-human judgment.",
   "accepted_checkpoint_advance": false,
-  "human_pilot_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_H1_V1.json"
+  "human_pilot_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_H1_V1.json",
+  "human_pilot_clarification_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_AI_SMELL_CLARIFICATION_H2_V1.json"
 }
