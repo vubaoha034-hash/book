@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 39,
-  "recorded_at": "2026-09-17T23:13:58.014910+00:00",
+  "sequence": 40,
+  "recorded_at": "2026-09-18T01:32:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase381 candidate rejected by actual reader at the early dialogue. User requests Chat and direct conversation. Diagnose emotionless information-exchange surface; any successor must reauthor from minimal kernel, without continuing rejected prose or reopening calibration.",
+  "active_task_ids": [
+    "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1"
+  ],
+  "current_focus": "Phase386 repairs the generation-process boundary after Phase385 became readable but more AI-like. No fiction is authorized: freeze a minimal writer packet, keep diagnostics hidden until after draft freeze, and invalidate unsupported suspense-positive human attribution.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -94,7 +96,11 @@
     "Phase380 single-pair campaign closed; no additional calibration or quality promotion",
     "Phase381 minimal private story contract formed from verified Phase370 source, activated under current user continuation instruction; no old prose changed",
     "Phase381 one bounded scene delivered unchanged after initial drafting, with durable files and exact Drive readback; structural checks do not claim literary acceptance",
-    "Phase381 actual-human early-stop rejection recorded against exact frozen scene; Chat/inline preference preserved; no local rewrite or false mode-switch claim"
+    "Phase381 actual-human early-stop rejection recorded against exact frozen scene; Chat/inline preference preserved; no local rewrite or false mode-switch claim",
+    "Phase384 three new source files ingested with integrity constraints",
+    "Phase385 conservative Fanren sampling index and second-pass cross-book distillation completed",
+    "Phase385 human pilot was readable but actual human reported AI smell became heavier; prose transfer not accepted",
+    "Unsupported suspense-positive sentence attributed to the user is invalidated as human evidence"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -111,7 +117,9 @@
     "Generation repair remains UNPROVEN",
     "Historical event-by-event coverage between ledger entry18 and logical checkpoint32 remains PARTIAL; current snapshot reconciled by event19",
     "Legacy validate_skill.py fails existing V3 name/schema expectations on current V4.2 baseline; separate packaging maintenance issue",
-    "Current scene emotional engagement/early retention failed; requested Chat-based reauthoring has not yet produced a successor candidate"
+    "Current scene emotional engagement/early retention failed; requested Chat-based reauthoring has not yet produced a successor candidate",
+    "Authoring/evaluator isolation firewall not yet frozen",
+    "Stable low-AI prose generation remains unproven"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -120,7 +128,8 @@
     "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
     "FULL_REWRITE_BLOCKED",
     "FINAL_FREEZE_BLOCKED",
-    "PHASE381_HUMAN_AESTHETIC_REJECTION_LOCAL_PATCH_AND_EXPANSION_STOPPED"
+    "PHASE381_HUMAN_AESTHETIC_REJECTION_LOCAL_PATCH_AND_EXPANSION_STOPPED",
+    "YMGQ_FICTION_BLOCKED_DURING_PHASE386_PROCESS_REPAIR"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -157,9 +166,11 @@
     "Replace Phase380 B overall/continuation/clarity preference with A merely because A has lighter AI smell",
     "Treat Phase381 structural checks or later emotional paragraphs as overriding the actual early stop",
     "Continue or line-patch rejected Phase381 prose merely because one nominal repair allowance remains",
-    "Claim the user-requested Chat interface mode was switched without actual capability/evidence"
+    "Claim the user-requested Chat interface mode was switched without actual capability/evidence",
+    "Treat the unsupported suspense-positive sentence as actual-human evidence",
+    "Expose Phase385 reader-engine beats or Phase377 AI-smell taxonomy directly to the prose generator"
   ],
-  "next_required_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
+  "next_required_action": "Design and freeze the authoring/evaluator firewall only. Do not generate a pilot in Phase386.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -212,22 +223,32 @@
     {
       "path": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
       "role": "actual-human early-stop rejection and requested Chat handoff preference"
+    },
+    {
+      "path": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+      "role": "current scoped Phase386 process-repair contract"
+    },
+    {
+      "path": "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json",
+      "role": "human-evidence attribution correction for Phase385"
     }
   ],
-  "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
-  "physical_ledger_entry_count": 25,
-  "physical_ledger_tail_hash": "bf22f7b1fe84282f6402af5a6abeea783bf91c9ab8a4992013cf5aec1f586423",
-  "last_completed_task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+  "status": "PHASE386_ACTIVE_PROCESS_REPAIR_NO_FICTION",
+  "physical_ledger_entry_count": 26,
+  "physical_ledger_tail_hash": "9c12e5681dba4cd75bd06f57b3dae84fd5d883fa223123f43e89df00d2859027",
+  "last_completed_task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "83828738b76649e1193dddfdff67217b6525e4bf7f7618fdc52d0c7ef4453c9d",
+    "project_state_sha256": "93d4b2f4acf8decf07aea967d7c916ab75982eccae2ea38a9de5f6ac05ed2226",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
-      "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
+      "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+      "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
-  }
+  },
+  "active_task_contract": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json"
 }
