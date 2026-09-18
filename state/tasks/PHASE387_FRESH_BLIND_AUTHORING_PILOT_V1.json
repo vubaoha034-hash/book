@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
   "phase_ordinal": 387,
-  "status": "OUTPUT_FROZEN_PENDING_EVALUATION_AND_ACTUAL_HUMAN_VERDICT",
+  "status": "ACTUAL_HUMAN_REJECTED_OVERALL_NOT_GOOD_ENOUGH",
   "purpose": "Test whether isolating the prose generator from accumulated diagnostics reduces visible AI-authored surface without exposing anti-AI or reader-propulsion rules to the writer.",
   "frozen_inputs": {
     "author_packet_path": "state/author_packets/PHASE387_YMGQ_MINIMAL_AUTHOR_PACKET_V1.json",
@@ -40,7 +40,9 @@
       "first skim/stop location if any"
     ],
     "no_overall_pass_from_model_only": true,
-    "short_pilot_success_does_not_authorize_long_form": true
+    "short_pilot_success_does_not_authorize_long_form": true,
+    "actual_human_overall_pass": false,
+    "subdimension_detail_complete": false
   },
   "forbidden": [
     "generate the pilot in the current diagnostic-aware chat",
@@ -51,15 +53,8 @@
     "authorize span growth or full manuscript rewrite",
     "advance the Phase320 accepted promotion checkpoint"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE387_FREEZE_RETURNED_FRESH_OUTPUT",
-      "parameters": {
-        "source": "fresh_chat_return"
-      }
-    }
-  ],
-  "next_action": "Evaluate the frozen output only after freeze, then obtain actual-human judgments for AI-smell direction, desire to continue, and first skim/stop location. Do not auto-repair before human judgment.",
+  "allowed_action_requests": [],
+  "next_action": "Do not generate another candidate yet. Diagnose why the frozen Phase387 candidate remains below the user's acceptance threshold, while preserving that fresh-writer isolation may have produced relative improvement. Create a distinct successor task for that diagnosis.",
   "accepted_checkpoint_advance": false,
   "frozen_output": {
     "path": "state/frozen_outputs/PHASE387_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
@@ -67,5 +62,7 @@
     "git_blob_sha": "74ae72066e85d22565e8a2477ac433506f7b4f78",
     "runtime_model_reported_by_user": "6.0 Astra",
     "runtime_model_independently_verified": false
-  }
+  },
+  "actual_human_receipt": "state/review_receipts/PHASE387_ACTUAL_HUMAN_OVERALL_REJECTION_H1_V1.json",
+  "completed_at": "2026-09-18T02:31:00+00:00"
 }
