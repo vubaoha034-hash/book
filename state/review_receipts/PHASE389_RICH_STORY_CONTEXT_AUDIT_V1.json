@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 389,
+  "task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+  "event_type": "RICH_STORY_CONTEXT_AUDIT",
+  "status": "ACCEPT_RICH_CONTEXT_PACKET_NO_DIAGNOSTIC_LEAKAGE",
+  "packet_path": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+  "packet_sha256": "1c4d9481bf25cece46aafb01c7ad92741675a715c069ce9e9532557374462339",
+  "packet_git_blob_sha": "8491c1a3f18cc361047f3132657eecf7aaa979c0",
+  "provenance": {
+    "hard_identity_canon": "PRESERVED",
+    "selected_legacy_fact_reservoir": "DOCUMENTED_NOT_PROSE_SUBSTRATE",
+    "phase389_new_or_synthesized_canon": "EXPLICITLY_SEPARATED"
+  },
+  "leakage_scan": {
+    "diagnostic_labels_found": 0,
+    "named_failed_structural_devices_found": 0,
+    "known_failure_locations_found": 0,
+    "acceptance_answer_key_found": 0
+  },
+  "richness": {
+    "core_relationship_history": true,
+    "ordinary_social_world": true,
+    "recurring_nonfunctional_relationships": true,
+    "habits_and_private_tensions": true,
+    "knowledge_boundaries": true,
+    "facts_allowed_to_remain_off_page": true
+  },
+  "fiction_generated": false,
+  "next_task_recommendation": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+  "next_action": "Create one scene-specific author packet as a subset of the Phase389 rich context, then run exactly one fresh blind writer pilot. Do not expose diagnostic rules or Phase388 labels to the writer.",
+  "accepted_checkpoint_advance": false
+}
