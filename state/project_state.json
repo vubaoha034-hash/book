@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.13.0",
+  "schema_version": "3.13.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T02:36:00+00:00",
+  "updated_at": "2026-09-18T02:42:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,22 +15,17 @@
     "task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
     "phase": "POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
     "phase_ordinal": 388,
-    "status": "ACTIVE_COMPARATIVE_DIAGNOSIS_NO_FICTION",
+    "status": "COMPLETED_COMPARATIVE_DIAGNOSIS_NO_FICTION",
     "task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
-    "execution_scope": "Evidence-bounded comparison only; no YMGQ fiction generation.",
+    "execution_scope": "Evidence-bounded comparison only; no YMGQ fiction generated.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE388_RUN_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
-        "parameters": {
-          "fiction_generation": false
-        }
-      }
-    ],
-    "next_action": "Complete evidence-bounded comparison and root-cause settlement. Do not generate new fiction in Phase388."
+    "allowed_action_requests": [],
+    "next_action": "Create PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1 to build and audit a richer canonical story/character packet. Do not generate prose yet.",
+    "completed_at": "2026-09-18T02:42:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -197,7 +192,7 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE387_ACTUAL_HUMAN_REJECTION_DIAGNOSIS_REQUIRED_BEFORE_NEXT_CANDIDATE",
+    "YMGQ_writing_pause_reason": "PHASE388_COMPLETE_RICH_STORY_CONTEXT_REDESIGN_REQUIRED_BEFORE_NEXT_PROSE",
     "current_writing_authorization_scope": {
       "kind": "ONE_FRESH_BLIND_SHORT_PILOT",
       "run_entry": "delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
@@ -226,9 +221,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 30,
-    "physical_event_hash": "b5dc74fe42c9f0e5fee953362dcbc2c7eacf5b70c5fc1da2eebb55fac05fe50b",
-    "logical_latest_checkpoint_sequence": 44,
+    "physical_STATE_LEDGER_sequence": 31,
+    "physical_event_hash": "b94f019b423c03ea77c48c8dfe9af0c45d59b0d98d3ab85443ae8430d644ab33",
+    "logical_latest_checkpoint_sequence": 45,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -601,7 +596,8 @@
     "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
     "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
     "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
-    "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1"
+    "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+    "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -637,5 +633,20 @@
     "frozen_output_sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d",
     "overall_human_verdict": "FAIL_NOT_GOOD_ENOUGH",
     "subdimension_detail_complete": false
+  },
+  "phase388_settlement": {
+    "status": "ACCEPT_DIAGNOSIS_INPUT_CONTEXT_STARVATION_PRIMARY_HYPOTHESIS",
+    "report": "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+    "receipt": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+    "primary_hypothesis": "AUTHORING_CONTEXT_STARVATION_AFTER_FIREWALL",
+    "secondary_hypotheses": [
+      "CORE_PREMISE_REHEARSAL_INSTEAD_OF_STORY_MODEL_CHANGE",
+      "DISPOSABLE_MULTI_FUNCTION_SIDE_CHARACTER",
+      "MORAL_THEME_EXPLICITLY_LITIGATED",
+      "LOW_HIGH_VALUE_MODEL_DELTA"
+    ],
+    "human_validation_boundary": "ROOT_CAUSES_COORDINATOR_HYPOTHESES_NOT_DIRECT_USER_ATTRIBUTION",
+    "writing_generated": false,
+    "accepted_checkpoint_advance": false
   }
 }
