@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+  "phase_ordinal": 388,
+  "status": "ACTIVE_COMPARATIVE_DIAGNOSIS_NO_FICTION",
+  "purpose": "Compare the rejected Phase387 frozen pilot against historically human-positive bounded YMGQ spans to diagnose why relative naturalness improvement still failed the user's acceptance threshold.",
+  "evidence_scope": {
+    "rejected_candidate": "state/frozen_outputs/PHASE387_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
+    "rejected_human_receipt": "state/review_receipts/PHASE387_ACTUAL_HUMAN_OVERALL_REJECTION_H1_V1.json",
+    "historical_choice_pack": "state/calibration/PHASE368_ANCHOR_LOCKED_SHORT_CHOICE_PACK_V1.txt",
+    "historical_choice_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE368_ACTUAL_HUMAN_SELECTION_B_V1.json",
+    "historical_growth": "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+    "historical_growth_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE369_ACTUAL_HUMAN_REVIEW_H3_V1.json",
+    "historical_clarity_repair": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "historical_clarity_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
+  },
+  "human_evidence_boundary": {
+    "phase387_overall_rejected": true,
+    "phase387_specific_failure_dimensions_not_fully_localized": true,
+    "phase368_B_reason": "some suspense only; not full acceptance",
+    "phase369": "better / no skim / lighter AI smell / genuine desire to continue, but motive-clarity blocker",
+    "phase370": "motive clarity yes / remaining unknown suspense / desire to continue yes / AI smell unchanged vs Phase369; not full acceptance"
+  },
+  "questions": [
+    "What does Phase387 spend reader attention on that yields little new value?",
+    "Does Phase387 merely restate the story contract rather than alter the reader's model?",
+    "Are side characters acting as author-serving multi-function devices?",
+    "What kinds of state/relation/model change were present in Phase368-370 but weak or absent in Phase387?",
+    "Which differences are diagnostic hypotheses versus actual-human-proven facts?"
+  ],
+  "forbidden": [
+    "generate or rewrite YMGQ fiction",
+    "treat Phase368-370 as final quality-approved prose",
+    "invent unspoken human feedback for Phase387",
+    "turn diagnosis directly into a beat-by-beat authoring template",
+    "authorize another candidate before diagnosis settlement",
+    "advance Phase320 accepted promotion checkpoint"
+  ],
+  "required_outputs": [
+    "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+    "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE388_RUN_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
+      "parameters": {
+        "fiction_generation": false
+      }
+    }
+  ],
+  "next_action": "Complete evidence-bounded comparison and root-cause settlement. Do not generate new fiction in Phase388.",
+  "accepted_checkpoint_advance": false
+}
