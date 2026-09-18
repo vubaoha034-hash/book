@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 385,
+  "task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
+  "event_type": "ACTUAL_HUMAN_PILOT_CLARIFICATION",
+  "status": "READABLE_BUT_AI_SMELL_WORSE_AND_PROPULSION_UNPROVEN",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "human_feedback_zh": "ai味道没有哈，反倒越来越重了。",
+  "clarification_of_prior_feedback": "Prior '能看' meant readability only. It must not be interpreted as reduced AI smell or directional prose improvement.",
+  "settlement": {
+    "readable": true,
+    "ai_smell_direction": "WORSE",
+    "ai_smell_blocker": true,
+    "explicit_desire_to_continue": false,
+    "propulsion_gate": "FAIL_WEAK",
+    "phase385_engine_transfer": "FAILED_CURRENT_PILOT",
+    "long_form_growth_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "coordinator_root_cause_hypothesis_not_human_verified": {
+    "label": "AI-F04_RULE_TO_PROSE_OVERCONSTRAINT_REBOUND",
+    "summary_zh": "Phase385 source-derived reader-propulsion mechanisms were exposed too directly as a construction blueprint. The pilot then visibly executed designed beats, causing high functional density, clean clue/reveal sequencing, explicit stake explanation and engineered stopping-point geometry.",
+    "observed_in_current_pilot": [
+      "practical object -> hidden token -> identity clue -> family-name recognition -> historical implication",
+      "dialogue turns repeatedly deliver exactly the next story-useful unit",
+      "narrator explains the consequence of crossing after the reader can already infer much of it",
+      "scene terminates on a deliberately suspended physical action"
+    ]
+  },
+  "next_required_action": "Do not generate another pilot from a beat-by-beat reader-engine template. Separate source-derived diagnosis from authoring. Redesign the authoring process so only the minimal story kernel and immediate character situation are visible during drafting; use Phase385 mechanisms only afterward as a passive diagnostic, then test one new short human-read pilot."
+}
