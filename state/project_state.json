@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.10.2",
+  "schema_version": "3.11.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-17T23:13:58.014910+00:00",
+  "updated_at": "2026-09-18T01:32:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,30 +12,25 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
-    "phase": "BOUNDED_SCENE_DELIVERY",
-    "phase_ordinal": 381,
-    "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
-    "task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
-    "execution_scope": "One 2000–3000 Chinese-character continuation after the accepted local Phase370 anchor; current human-facing manuscript candidate only.",
+    "task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
+    "phase": "AUTHORING_EVALUATOR_ISOLATION_FIREWALL",
+    "phase_ordinal": 386,
+    "status": "ACTIVE_PROCESS_REPAIR_NO_FICTION",
+    "task_contract": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+    "execution_scope": "Design and freeze writer/evaluator information isolation only; no YMGQ fiction generation.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "writing_authorization_scope": {
-      "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
-      "new_chinese_characters_min": 2000,
-      "new_chinese_characters_max": 3000,
-      "old_prose_modified": false,
-      "full_manuscript_rewrite": false,
-      "second_scene": false,
-      "general_span_growth": false
-    },
-    "next_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
-    "current_execution_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
-    "human_review_drive_file_id": "1RpKRrzpqnMAU1A5j0HghpYnDB9dJpBEo",
-    "completed_at": "2026-09-12T03:45:20.145716+00:00",
-    "allowed_action_requests": []
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE386_DESIGN_AUTHORING_EVALUATOR_FIREWALL",
+        "parameters": {
+          "fiction_generation": false
+        }
+      }
+    ],
+    "next_action": "Design and freeze the authoring/evaluator firewall only. Do not generate a pilot in Phase386."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -197,12 +192,12 @@
   "manuscript_quality_state": {
     "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
     "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
-    "latest_bounded_span_status": "PHASE381_ACTUAL_HUMAN_REJECTED_EARLY_STOP",
+    "latest_bounded_span_status": "PHASE385_HUMAN_PILOT_AI_SMELL_WORSE",
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE381_ACTUAL_HUMAN_GLOBAL_AESTHETIC_REJECTION_CHAT_REAUTHORING_REQUESTED",
+    "YMGQ_writing_pause_reason": "PHASE386_PROCESS_ISOLATION_REPAIR_ACTIVE_NO_FICTION",
     "current_writing_authorization_scope": {
       "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
       "new_chinese_characters_min": 2000,
@@ -212,7 +207,7 @@
       "second_scene": false,
       "general_span_growth": false
     },
-    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_AI_SMELL_CLARIFICATION_H2_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
   },
   "governance": {
@@ -232,9 +227,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 25,
-    "physical_event_hash": "bf22f7b1fe84282f6402af5a6abeea783bf91c9ab8a4992013cf5aec1f586423",
-    "logical_latest_checkpoint_sequence": 39,
+    "physical_STATE_LEDGER_sequence": 26,
+    "physical_event_hash": "9c12e5681dba4cd75bd06f57b3dae84fd5d883fa223123f43e89df00d2859027",
+    "logical_latest_checkpoint_sequence": 40,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -290,7 +285,10 @@
     "Phase380_duplicate_task_superseded": true,
     "Phase380_ready_receipt_bound_to_authoritative_task": true,
     "closed_tasks_may_not_be_redispatched": true,
-    "current_task_and_exact_action_required_before_cooperating_handler": true
+    "current_task_and_exact_action_required_before_cooperating_handler": true,
+    "Phase385_reader_engine_may_not_be_direct_authoring_blueprint": true,
+    "Phase385_unsupported_suspense_quote_may_not_be_used_as_human_evidence": true,
+    "Phase386_may_not_generate_fiction": true
   },
   "rollback": {
     "authorized": false,
@@ -594,6 +592,19 @@
   "closed_task_ids": [
     "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
     "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
-    "PHASE381_BOUNDED_SCENE_DELIVERY_V1"
-  ]
+    "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+    "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1"
+  ],
+  "phase385_settlement": {
+    "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
+    "valid_actual_human_feedback_zh": [
+      "能看。",
+      "ai味道没有哈，反倒越来越重了。"
+    ],
+    "suspense_positive_human_claim_authorized": false,
+    "evidence_correction_receipt": "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json",
+    "source_research_completed": true,
+    "prose_transfer_supported": false,
+    "accepted_checkpoint_advance": false
+  }
 }
