@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.11.0",
+  "schema_version": "3.11.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T01:32:00+00:00",
+  "updated_at": "2026-09-18T01:34:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,22 +15,17 @@
     "task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
     "phase": "AUTHORING_EVALUATOR_ISOLATION_FIREWALL",
     "phase_ordinal": 386,
-    "status": "ACTIVE_PROCESS_REPAIR_NO_FICTION",
+    "status": "COMPLETED_FIREWALL_FROZEN_NO_FICTION",
     "task_contract": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
-    "execution_scope": "Design and freeze writer/evaluator information isolation only; no YMGQ fiction generation.",
+    "execution_scope": "Process isolation only; no fiction was generated.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE386_DESIGN_AUTHORING_EVALUATOR_FIREWALL",
-        "parameters": {
-          "fiction_generation": false
-        }
-      }
-    ],
-    "next_action": "Design and freeze the authoring/evaluator firewall only. Do not generate a pilot in Phase386."
+    "allowed_action_requests": [],
+    "next_action": "Create a distinct Phase387 successor contract and a minimal YMGQ author packet. Run exactly one short pilot in a genuinely fresh writer context; do not generate it in the current diagnostic-aware chat.",
+    "completed_at": "2026-09-18T01:34:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -197,7 +192,7 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE386_PROCESS_ISOLATION_REPAIR_ACTIVE_NO_FICTION",
+    "YMGQ_writing_pause_reason": "PHASE386_COMPLETE_WAITING_DISTINCT_PHASE387_FRESH_WRITER_CONTRACT",
     "current_writing_authorization_scope": {
       "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
       "new_chinese_characters_min": 2000,
@@ -227,9 +222,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 26,
-    "physical_event_hash": "9c12e5681dba4cd75bd06f57b3dae84fd5d883fa223123f43e89df00d2859027",
-    "logical_latest_checkpoint_sequence": 40,
+    "physical_STATE_LEDGER_sequence": 27,
+    "physical_event_hash": "2f633001fd72c94ad9c408863e7d2d13b36b351c2df481c9adc9dc7fb12a2e32",
+    "logical_latest_checkpoint_sequence": 41,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -288,7 +283,9 @@
     "current_task_and_exact_action_required_before_cooperating_handler": true,
     "Phase385_reader_engine_may_not_be_direct_authoring_blueprint": true,
     "Phase385_unsupported_suspense_quote_may_not_be_used_as_human_evidence": true,
-    "Phase386_may_not_generate_fiction": true
+    "Phase386_may_not_generate_fiction": true,
+    "Phase387_blind_writer_must_not_see_Phase374_377_383_385_diagnostics": true,
+    "current_diagnostic_chat_may_not_count_as_Phase387_fresh_writer": true
   },
   "rollback": {
     "authorized": false,
@@ -593,7 +590,8 @@
     "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
     "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
     "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
-    "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1"
+    "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
+    "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -605,6 +603,15 @@
     "evidence_correction_receipt": "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json",
     "source_research_completed": true,
     "prose_transfer_supported": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase386_settlement": {
+    "status": "ACCEPT_FIREWALL_DESIGN_NO_FICTION",
+    "artifact": "docs/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.md",
+    "receipt": "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+    "fresh_writer_context_required_for_next_valid_pilot": true,
+    "current_chat_may_not_be_phase387_blind_writer": true,
+    "writing_transfer_supported": false,
     "accepted_checkpoint_advance": false
   }
 }
