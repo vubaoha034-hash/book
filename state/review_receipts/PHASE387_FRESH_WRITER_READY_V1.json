@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 387,
+  "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+  "event_type": "FRESH_WRITER_RUN_READY",
+  "status": "READY_INPUTS_FROZEN",
+  "author_packet_sha256": "78342d46cfcf15309438c1009b6929677873b672988da931f275490d95afc405",
+  "execution_entry_sha256": "05faae5311373e2f4177ad8cf0c3f3659e9f70d7aa9a0e6880ec543d3edd9819",
+  "git_blob_shas": {
+    "author_packet": "69d6e88320681e578cc50cf62cec1870f6d95594",
+    "execution_entry": "6637787c08bc1f8ad40a78f8e788296198f9ce27"
+  },
+  "isolation_checks": {
+    "minimal_author_packet_present": true,
+    "single_file_fresh_writer_entry_present": true,
+    "diagnostics_absent_from_author_packet": true,
+    "current_chat_generation_forbidden": true,
+    "exactly_one_run": true
+  },
+  "next_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation.",
+  "accepted_checkpoint_advance": false
+}
