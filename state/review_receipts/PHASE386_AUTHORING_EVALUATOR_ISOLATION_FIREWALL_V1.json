@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 386,
+  "task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
+  "event_type": "PROCESS_REPAIR_REVIEW",
+  "status": "ACCEPT_FIREWALL_DESIGN_NO_FICTION",
+  "artifact": "docs/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.md",
+  "evidence_basis": [
+    "docs/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.md",
+    "rules/reader-experience-passive-validator-only-v1.md",
+    "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+    "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_AI_SMELL_CLARIFICATION_H2_V1.json",
+    "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json"
+  ],
+  "acceptance": {
+    "exact_writer_visible_fields_defined": true,
+    "hidden_diagnostic_fields_defined": true,
+    "evaluator_after_freeze_only": true,
+    "one_way_information_flow_defined": true,
+    "fresh_writer_context_required_for_next_valid_pilot": true,
+    "fiction_generated_in_phase386": false
+  },
+  "claims_not_authorized": [
+    "AI smell improvement",
+    "reader-propulsion success",
+    "writing transfer",
+    "span growth",
+    "full manuscript rewrite",
+    "final freeze",
+    "architecture promotion",
+    "accepted checkpoint advance"
+  ],
+  "next_task_recommendation": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+  "next_action": "Create a distinct Phase387 successor contract and a minimal YMGQ author packet. Run exactly one short pilot in a genuinely fresh writer context; do not generate it in the current diagnostic-aware chat.",
+  "recorded_at": "2026-09-18T01:34:00+00:00",
+  "accepted_checkpoint_advance": false
+}
