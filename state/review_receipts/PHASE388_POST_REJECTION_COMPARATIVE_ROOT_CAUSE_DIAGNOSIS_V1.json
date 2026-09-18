@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 388,
+  "task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+  "event_type": "COMPARATIVE_ROOT_CAUSE_SETTLEMENT",
+  "status": "ACCEPT_DIAGNOSIS_INPUT_CONTEXT_STARVATION_PRIMARY_HYPOTHESIS",
+  "artifact": "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+  "evidence": {
+    "phase387_overall_human_rejection": true,
+    "phase368_B_selected_for_some_suspense": true,
+    "phase369_directional_improvement": true,
+    "phase369_desire_to_continue": true,
+    "phase370_desire_to_continue": true,
+    "phase370_full_quality_acceptance": false
+  },
+  "root_causes": [
+    "ROOT-1 AUTHORING_CONTEXT_STARVATION_AFTER_FIREWALL",
+    "ROOT-2 CORE_PREMISE_REHEARSAL_INSTEAD_OF_STORY_MODEL_CHANGE",
+    "ROOT-3 DISPOSABLE_MULTI_FUNCTION_SIDE_CHARACTER",
+    "ROOT-4 MORAL_THEME_EXPLICITLY_LITIGATED",
+    "ROOT-5 LOW_HIGH_VALUE_MODEL_DELTA"
+  ],
+  "primary_process_hypothesis": "Phase386 correctly hid diagnostics but Phase387 over-minimized legitimate story/character context. The writer had prose freedom but insufficient lived material, so it generated a more natural surface around a generic premise-driven scene.",
+  "human_validation_boundary": "Only the overall Phase387 rejection is actual-human evidence. Root-cause attribution remains coordinator diagnosis until prospectively tested.",
+  "writing_generated": false,
+  "next_task_recommendation": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+  "next_action": "Build and audit a richer canonical story/character packet while keeping all diagnostic and reader-engine instructions hidden. Do not generate prose yet.",
+  "accepted_checkpoint_advance": false
+}
