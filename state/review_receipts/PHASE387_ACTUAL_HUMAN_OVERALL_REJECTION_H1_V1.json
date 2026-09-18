@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 387,
+  "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+  "event_type": "ACTUAL_HUMAN_READER_VERDICT",
+  "status": "OVERALL_REJECTED_NOT_GOOD_ENOUGH",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "frozen_output_sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d",
+  "human_feedback_zh": "但是。我依旧不觉得这个可以过关。你懂吧。",
+  "interpretation_boundaries": {
+    "overall_acceptance": false,
+    "candidate_may_not_pass": true,
+    "relative_improvement_does_not_equal_acceptance": true,
+    "ai_smell_direction": "NOT_SEPARATELY_SETTLED_BY_THIS_MESSAGE",
+    "desire_to_continue": "NOT_SEPARATELY_SETTLED_BY_THIS_MESSAGE",
+    "first_skim_or_stop_location": "NOT_PROVIDED"
+  },
+  "settlement": {
+    "phase387_candidate_accepted": false,
+    "fresh_blind_isolation_proved_sufficient": false,
+    "model_choice_proved": false,
+    "long_form_growth_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "next_required_action": "Close Phase387 as an overall human rejection. Preserve the fresh-isolation process as useful evidence but do not treat it as sufficient. Diagnose why the frozen Astra-reported candidate still fails the user's acceptance threshold before generating another candidate."
+}
