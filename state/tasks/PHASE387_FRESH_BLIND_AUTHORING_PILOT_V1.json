@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+  "phase_ordinal": 387,
+  "status": "READY_AWAITING_GENUINELY_FRESH_WRITER",
+  "purpose": "Test whether isolating the prose generator from accumulated diagnostics reduces visible AI-authored surface without exposing anti-AI or reader-propulsion rules to the writer.",
+  "frozen_inputs": {
+    "author_packet_path": "state/author_packets/PHASE387_YMGQ_MINIMAL_AUTHOR_PACKET_V1.json",
+    "author_packet_sha256": "78342d46cfcf15309438c1009b6929677873b672988da931f275490d95afc405",
+    "author_packet_git_blob_sha": "69d6e88320681e578cc50cf62cec1870f6d95594",
+    "execution_entry_path": "delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "execution_entry_sha256": "05faae5311373e2f4177ad8cf0c3f3659e9f70d7aa9a0e6880ec543d3edd9819",
+    "execution_entry_git_blob_sha": "6637787c08bc1f8ad40a78f8e788296198f9ce27"
+  },
+  "freshness_contract": {
+    "current_diagnostic_chat_may_generate_candidate": false,
+    "writer_context_must_be_new": true,
+    "writer_may_read_only_execution_entry": true,
+    "project_memory_forbidden": true,
+    "prior_chat_history_forbidden": true,
+    "other_repo_files_forbidden": true,
+    "external_research_forbidden": true,
+    "diagnostic_taxonomies_forbidden": true
+  },
+  "run_contract": {
+    "attempts": 1,
+    "versions": 1,
+    "output": "one 1000-1500 Chinese-character fiction pilot",
+    "pre_output_self_revision_rounds": 0,
+    "output_must_be_returned_unchanged": true,
+    "evaluator_may_run_only_after_output_freeze": true
+  },
+  "acceptance": {
+    "actual_human_required": true,
+    "dimensions": [
+      "AI smell direction",
+      "desire to continue",
+      "first skim/stop location if any"
+    ],
+    "no_overall_pass_from_model_only": true,
+    "short_pilot_success_does_not_authorize_long_form": true
+  },
+  "forbidden": [
+    "generate the pilot in the current diagnostic-aware chat",
+    "show Phase374/377/383/385 diagnostics to the fresh writer",
+    "modify the frozen execution entry after generation and call it the same run",
+    "auto-repair the fresh output before actual-human reading",
+    "generate more than one candidate",
+    "authorize span growth or full manuscript rewrite",
+    "advance the Phase320 accepted promotion checkpoint"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE387_FREEZE_RETURNED_FRESH_OUTPUT",
+      "parameters": {
+        "source": "fresh_chat_return"
+      }
+    }
+  ],
+  "next_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation.",
+  "accepted_checkpoint_advance": false
+}
