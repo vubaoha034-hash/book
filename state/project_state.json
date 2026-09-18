@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.11.1",
+  "schema_version": "3.12.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T01:34:00+00:00",
+  "updated_at": "2026-09-18T01:40:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,27 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
-    "phase": "AUTHORING_EVALUATOR_ISOLATION_FIREWALL",
-    "phase_ordinal": 386,
-    "status": "COMPLETED_FIREWALL_FROZEN_NO_FICTION",
-    "task_contract": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
-    "execution_scope": "Process isolation only; no fiction was generated.",
-    "YMGQ_writing_authorized": false,
+    "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+    "phase": "FRESH_BLIND_AUTHORING_PILOT",
+    "phase_ordinal": 387,
+    "status": "READY_AWAITING_GENUINELY_FRESH_WRITER",
+    "task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
+    "execution_scope": "Exactly one short YMGQ pilot from a genuinely fresh writer context that reads only the frozen execution entry.",
+    "YMGQ_writing_authorized": true,
+    "YMGQ_writing_authorization_scope": "ONE_FRESH_BLIND_SHORT_PILOT_ONLY",
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Create a distinct Phase387 successor contract and a minimal YMGQ author packet. Run exactly one short pilot in a genuinely fresh writer context; do not generate it in the current diagnostic-aware chat.",
-    "completed_at": "2026-09-18T01:34:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json"
+    "current_chat_may_generate_candidate": false,
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE387_FREEZE_RETURNED_FRESH_OUTPUT",
+        "parameters": {
+          "source": "fresh_chat_return"
+        }
+      }
+    ],
+    "next_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -191,16 +198,15 @@
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
-    "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE386_COMPLETE_WAITING_DISTINCT_PHASE387_FRESH_WRITER_CONTRACT",
+    "YMGQ_writing_paused": false,
+    "YMGQ_writing_pause_reason": null,
     "current_writing_authorization_scope": {
-      "kind": "ONE_NEW_CONTINUOUS_SCENE_AFTER_PHASE370_ANCHOR",
-      "new_chinese_characters_min": 2000,
-      "new_chinese_characters_max": 3000,
-      "old_prose_modified": false,
-      "full_manuscript_rewrite": false,
-      "second_scene": false,
-      "general_span_growth": false
+      "kind": "ONE_FRESH_BLIND_SHORT_PILOT",
+      "run_entry": "delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
+      "writer_context": "GENUINELY_FRESH",
+      "current_chat_allowed": false,
+      "attempts": 1,
+      "long_form": false
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_AI_SMELL_CLARIFICATION_H2_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
@@ -222,9 +228,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 27,
-    "physical_event_hash": "2f633001fd72c94ad9c408863e7d2d13b36b351c2df481c9adc9dc7fb12a2e32",
-    "logical_latest_checkpoint_sequence": 41,
+    "physical_STATE_LEDGER_sequence": 28,
+    "physical_event_hash": "fc2600f5eb96022c5ab1c716a2f192cba77324373f2f58bc8e2ed840b6df85c1",
+    "logical_latest_checkpoint_sequence": 42,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -285,7 +291,12 @@
     "Phase385_unsupported_suspense_quote_may_not_be_used_as_human_evidence": true,
     "Phase386_may_not_generate_fiction": true,
     "Phase387_blind_writer_must_not_see_Phase374_377_383_385_diagnostics": true,
-    "current_diagnostic_chat_may_not_count_as_Phase387_fresh_writer": true
+    "current_diagnostic_chat_may_not_count_as_Phase387_fresh_writer": true,
+    "Phase387_exactly_one_fresh_writer_run": true,
+    "Phase387_current_chat_may_not_generate_candidate": true,
+    "Phase387_writer_may_read_only_frozen_execution_entry": true,
+    "Phase387_output_must_be_frozen_before_evaluation": true,
+    "Phase387_no_auto_repair_before_human": true
   },
   "rollback": {
     "authorized": false,
@@ -612,6 +623,17 @@
     "fresh_writer_context_required_for_next_valid_pilot": true,
     "current_chat_may_not_be_phase387_blind_writer": true,
     "writing_transfer_supported": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase387_execution_state": {
+    "contract_activated": true,
+    "author_packet_frozen": true,
+    "execution_entry_frozen": true,
+    "fresh_writer_run_completed": false,
+    "output_frozen": false,
+    "evaluator_run": false,
+    "actual_human_review_complete": false,
+    "candidate_accepted": false,
     "accepted_checkpoint_advance": false
   }
 }
