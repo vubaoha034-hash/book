@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
   "phase_ordinal": 388,
-  "status": "ACTIVE_COMPARATIVE_DIAGNOSIS_NO_FICTION",
+  "status": "COMPLETED_COMPARATIVE_DIAGNOSIS_NO_FICTION",
   "purpose": "Compare the rejected Phase387 frozen pilot against historically human-positive bounded YMGQ spans to diagnose why relative naturalness improvement still failed the user's acceptance threshold.",
   "evidence_scope": {
     "rejected_candidate": "state/frozen_outputs/PHASE387_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
@@ -41,14 +41,13 @@
     "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
     "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE388_RUN_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
-      "parameters": {
-        "fiction_generation": false
-      }
-    }
+  "allowed_action_requests": [],
+  "next_action": "Create PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1 to build and audit a richer canonical story/character packet. Do not generate prose yet.",
+  "accepted_checkpoint_advance": false,
+  "completed_outputs": [
+    "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+    "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
   ],
-  "next_action": "Complete evidence-bounded comparison and root-cause settlement. Do not generate new fiction in Phase388.",
-  "accepted_checkpoint_advance": false
+  "acceptance_result": "ACCEPT_DIAGNOSIS_INPUT_CONTEXT_STARVATION_PRIMARY_HYPOTHESIS",
+  "completed_at": "2026-09-18T02:42:00+00:00"
 }
