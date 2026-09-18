@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.13.1",
+  "schema_version": "3.14.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T02:42:00+00:00",
+  "updated_at": "2026-09-18T02:48:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,25 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
-    "phase": "POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
-    "phase_ordinal": 388,
-    "status": "COMPLETED_COMPARATIVE_DIAGNOSIS_NO_FICTION",
-    "task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
-    "execution_scope": "Evidence-bounded comparison only; no YMGQ fiction generated.",
+    "task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+    "phase": "RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE",
+    "phase_ordinal": 389,
+    "status": "ACTIVE_RICH_CONTEXT_CONSTRUCTION_NO_FICTION",
+    "task_contract": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json",
+    "execution_scope": "Build and audit a rich canonical story/character packet only; no fiction generation.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Create PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1 to build and audit a richer canonical story/character packet. Do not generate prose yet.",
-    "completed_at": "2026-09-18T02:42:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE389_BUILD_AND_AUDIT_RICH_STORY_CONTEXT",
+        "parameters": {
+          "fiction_generation": false
+        }
+      }
+    ],
+    "next_action": "Build and audit the rich story packet only. Do not generate a prose pilot in Phase389."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -221,9 +226,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 31,
-    "physical_event_hash": "b94f019b423c03ea77c48c8dfe9af0c45d59b0d98d3ab85443ae8430d644ab33",
-    "logical_latest_checkpoint_sequence": 45,
+    "physical_STATE_LEDGER_sequence": 32,
+    "physical_event_hash": "57c13f573e639e2d5e9c6a829a588e47914e266e56da4b282470fe6a42df3974",
+    "logical_latest_checkpoint_sequence": 46,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
