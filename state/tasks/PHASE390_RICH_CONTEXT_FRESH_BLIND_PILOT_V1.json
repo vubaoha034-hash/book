@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+  "phase_ordinal": 390,
+  "status": "ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
+  "purpose": "Prospectively test whether a richer legitimate story/character context improves a fresh blind YMGQ prose pilot while preserving the Phase386 writer/evaluator firewall.",
+  "parent_packet": {
+    "path": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+    "sha256": "1c4d9481bf25cece46aafb01c7ad92741675a715c069ce9e9532557374462339"
+  },
+  "isolation_contract": {
+    "current_diagnostic_chat_may_generate_candidate": false,
+    "fresh_writer_context_required": true,
+    "fresh_writer_may_read_only_phase390_execution_entry": true,
+    "diagnostics_forbidden": true,
+    "prior_human_failure_answer_keys_forbidden": true,
+    "old_manuscript_prose_forbidden": true
+  },
+  "run_budget": {
+    "fresh_writer_attempts": 1,
+    "candidate_versions": 1,
+    "long_form": false,
+    "auto_repair_before_human": false
+  },
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE390_FREEZE_INPUTS",
+      "parameters": {
+        "fiction_generation": false
+      }
+    },
+    {
+      "action_id": "PHASE390_FREEZE_RETURNED_FRESH_OUTPUT",
+      "parameters": {
+        "source": "fresh_chat_return"
+      }
+    }
+  ],
+  "forbidden": [
+    "generate the Phase390 pilot in the current diagnostic-aware chat",
+    "expose Phase388 diagnosis labels to the writer",
+    "expose anti-AI or reader-propulsion rules to the writer",
+    "copy old failed YMGQ prose into the scene packet",
+    "produce multiple candidates",
+    "repair the returned candidate before actual-human reading",
+    "authorize span growth or full-manuscript rewrite",
+    "advance the Phase320 accepted promotion checkpoint"
+  ],
+  "next_action": "Freeze one scene-specific rich-context subset and a single-file fresh-writer execution entry. Do not generate prose in the current chat.",
+  "accepted_checkpoint_advance": false
+}
