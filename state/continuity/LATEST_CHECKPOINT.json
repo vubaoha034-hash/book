@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 47,
-  "recorded_at": "2026-09-18T02:55:00+00:00",
+  "sequence": 48,
+  "recorded_at": "2026-09-18T04:34:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase389 rich writer-visible YMGQ context is frozen and audited. The next experiment may use a scene-specific subset in one fresh blind writer context; diagnostics remain hidden.",
+  "active_task_ids": [
+    "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1"
+  ],
+  "current_focus": "Prepare one rich-context scene subset and one single-file fresh writer entry. Current diagnostic-aware chat is blocked from prose generation.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -199,7 +201,7 @@
     "Expose Phase388 root-cause labels or prior human failure answer keys to the Phase390 blind writer",
     "Treat Phase389 rich context packet acceptance as prose quality evidence"
   ],
-  "next_required_action": "Create PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1. Freeze one scene-specific subset of the Phase389 rich context and run exactly one genuinely fresh blind writer pilot. Do not expose diagnostics to the writer.",
+  "next_required_action": "Freeze Phase390 inputs only; do not generate prose here.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -314,14 +316,14 @@
       "role": "Phase389 accepted rich-context settlement"
     }
   ],
-  "status": "PHASE389_COMPLETED_RICH_CONTEXT_AUDITED_NO_FICTION",
-  "physical_ledger_entry_count": 33,
-  "physical_ledger_tail_hash": "abd0fbc99952c75162c942b2188ffb5365095882a91f525a8bf64a04a3852290",
+  "status": "PHASE390_ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
+  "physical_ledger_entry_count": 34,
+  "physical_ledger_tail_hash": "b198db3dc9b7f1b9f710ad74e9af0f3dbd282e2787883049f7d80db52408f8ed",
   "last_completed_task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "e9a493f546bbdd57014067b730ec3b7e762d86a880772c25fa964e687df85812",
+    "project_state_sha256": "b0352a4f49074adad315a6f8d6b1433b9e9ceed5d61bf9589490421a8df00971",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -335,6 +337,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json",
+  "active_task_contract": "state/tasks/PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json"
 }
