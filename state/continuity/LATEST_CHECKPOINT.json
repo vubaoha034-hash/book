@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 44,
-  "recorded_at": "2026-09-18T02:36:00+00:00",
+  "sequence": 45,
+  "recorded_at": "2026-09-18T02:42:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1"
-  ],
-  "current_focus": "Compare rejected Phase387 against Phase368-370 positive bounded evidence to identify why relative naturalness still fails overall acceptance. No fiction is authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase388 diagnosis is complete. Primary process hypothesis: Phase386/387 correctly hid diagnostics but starved the writer of legitimate rich character/relationship/world context. No new prose is authorized until a richer canonical story packet is built and audited.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -106,7 +104,8 @@
     "Phase387 single-file fresh writer execution entry frozen",
     "Phase387 one-run isolation contract activated",
     "Phase387 fresh blind writer output frozen unchanged",
-    "Phase387 actual-human overall rejection recorded against frozen output"
+    "Phase387 actual-human overall rejection recorded against frozen output",
+    "Phase388 comparative root-cause diagnosis completed with no fiction generated"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -128,7 +127,9 @@
     "Stable low-AI prose generation remains unproven",
     "Phase387 fresh blind authoring pilot has not been created or run",
     "Phase387 rejection subdimensions are not fully localized from human feedback",
-    "Root cause of why the fresh blind candidate still fails acceptance remains open"
+    "Root cause of why the fresh blind candidate still fails acceptance remains open",
+    "Rich story/character context packet has not yet been built or audited",
+    "Phase388 root-cause hypotheses remain prospectively unvalidated"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -140,7 +141,8 @@
     "PHASE381_HUMAN_AESTHETIC_REJECTION_LOCAL_PATCH_AND_EXPANSION_STOPPED",
     "YMGQ_FICTION_BLOCKED_DURING_PHASE386_PROCESS_REPAIR",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE387_GENERATION",
-    "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS"
+    "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS",
+    "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_RICH_CONTEXT_PACKET_AUDITED"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -187,9 +189,12 @@
     "Produce multiple Phase387 candidates or repair the first output before human review",
     "Treat Phase387 relative improvement as a quality pass",
     "Declare Astra the default novel-writing model from one rejected pilot",
-    "Generate another Phase387 candidate under the same task"
+    "Generate another Phase387 candidate under the same task",
+    "Treat Phase388 coordinator root-cause hypotheses as direct human quotes",
+    "Respond to Phase387 rejection by exposing Phase388 diagnosis labels to the next prose writer",
+    "Use a thin premise-only author packet again"
   ],
-  "next_required_action": "Complete evidence-bounded comparison and root-cause settlement. Do not generate new fiction in Phase388.",
+  "next_required_action": "Create PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1 to build and audit a richer canonical story/character packet. Do not generate prose yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -274,27 +279,40 @@
     {
       "path": "state/review_receipts/PHASE387_FRESH_WRITER_READY_V1.json",
       "role": "frozen-input readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+      "role": "completed Phase388 diagnostic contract"
+    },
+    {
+      "path": "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+      "role": "Phase388 comparative root-cause report"
+    },
+    {
+      "path": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+      "role": "Phase388 diagnostic settlement"
     }
   ],
-  "status": "PHASE388_ACTIVE_COMPARATIVE_DIAGNOSIS_NO_FICTION",
-  "physical_ledger_entry_count": 30,
-  "physical_ledger_tail_hash": "b5dc74fe42c9f0e5fee953362dcbc2c7eacf5b70c5fc1da2eebb55fac05fe50b",
-  "last_completed_task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+  "status": "PHASE388_COMPLETED_COMPARATIVE_DIAGNOSIS_NO_FICTION",
+  "physical_ledger_entry_count": 31,
+  "physical_ledger_tail_hash": "b94f019b423c03ea77c48c8dfe9af0c45d59b0d98d3ab85443ae8430d644ab33",
+  "last_completed_task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "9e0319722a42333445e464931127702b187f4a502bbf9426a0d3d2a599fe632d",
+    "project_state_sha256": "dd1e23635105633db2aaa2bf2cce84d1f332c7e1223a80b7292c9c694c87e705",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
       "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
       "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
-      "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1"
+      "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+      "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
 }
