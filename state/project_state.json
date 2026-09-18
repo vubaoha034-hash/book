@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.12.1",
+  "schema_version": "3.13.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T02:31:00+00:00",
+  "updated_at": "2026-09-18T02:36:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,25 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
-    "phase": "FRESH_BLIND_AUTHORING_PILOT",
-    "phase_ordinal": 387,
-    "status": "ACTUAL_HUMAN_REJECTED_OVERALL_NOT_GOOD_ENOUGH",
-    "task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
-    "execution_scope": "One frozen fresh blind short pilot; completed and rejected by actual human.",
+    "task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+    "phase": "POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
+    "phase_ordinal": 388,
+    "status": "ACTIVE_COMPARATIVE_DIAGNOSIS_NO_FICTION",
+    "task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+    "execution_scope": "Evidence-bounded comparison only; no YMGQ fiction generation.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Do not generate another candidate yet. Diagnose why the frozen Phase387 candidate remains below the user's acceptance threshold, while preserving that fresh-writer isolation may have produced relative improvement. Create a distinct successor task for that diagnosis.",
-    "completed_at": "2026-09-18T02:31:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE387_ACTUAL_HUMAN_OVERALL_REJECTION_H1_V1.json"
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE388_RUN_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS",
+        "parameters": {
+          "fiction_generation": false
+        }
+      }
+    ],
+    "next_action": "Complete evidence-bounded comparison and root-cause settlement. Do not generate new fiction in Phase388."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -221,9 +226,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 29,
-    "physical_event_hash": "9a315f0a04b4019c4374bf2ea257b08f4be1e270d19c6bb4018f01731adcdcde",
-    "logical_latest_checkpoint_sequence": 43,
+    "physical_STATE_LEDGER_sequence": 30,
+    "physical_event_hash": "b5dc74fe42c9f0e5fee953362dcbc2c7eacf5b70c5fc1da2eebb55fac05fe50b",
+    "logical_latest_checkpoint_sequence": 44,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
