@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 48,
-  "recorded_at": "2026-09-18T04:34:00+00:00",
+  "sequence": 49,
+  "recorded_at": "2026-09-18T04:36:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1"
   ],
-  "current_focus": "Prepare one rich-context scene subset and one single-file fresh writer entry. Current diagnostic-aware chat is blocked from prose generation.",
+  "current_focus": "Phase390 rich-context scene packet and single-file fresh-writer entry are frozen. Current diagnostic-aware chat may not generate the candidate.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -108,7 +108,9 @@
     "Phase387 fresh blind writer output frozen unchanged",
     "Phase387 actual-human overall rejection recorded against frozen output",
     "Phase388 comparative root-cause diagnosis completed with no fiction generated",
-    "Phase389 rich story/character context packet frozen and audited without diagnostic leakage"
+    "Phase389 rich story/character context packet frozen and audited without diagnostic leakage",
+    "Phase390 scene-specific rich context packet frozen and leakage-audited",
+    "Phase390 single-file fresh writer entry frozen"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -134,7 +136,9 @@
     "Rich story/character context packet has not yet been built or audited",
     "Phase388 root-cause hypotheses remain prospectively unvalidated",
     "Phase390 rich-context fresh blind pilot has not been created or run",
-    "Phase388/389 input-context hypothesis remains prospectively unvalidated"
+    "Phase388/389 input-context hypothesis remains prospectively unvalidated",
+    "Phase390 fresh blind writer run not yet completed",
+    "Phase390 output not yet frozen or human-reviewed"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -147,7 +151,7 @@
     "YMGQ_FICTION_BLOCKED_DURING_PHASE386_PROCESS_REPAIR",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE387_GENERATION",
     "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS",
-    "YMGQ_PROSE_REQUIRES_DISTINCT_PHASE390_FRESH_BLIND_CONTRACT"
+    "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE390_GENERATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -199,9 +203,12 @@
     "Respond to Phase387 rejection by exposing Phase388 diagnosis labels to the next prose writer",
     "Use a thin premise-only author packet again",
     "Expose Phase388 root-cause labels or prior human failure answer keys to the Phase390 blind writer",
-    "Treat Phase389 rich context packet acceptance as prose quality evidence"
+    "Treat Phase389 rich context packet acceptance as prose quality evidence",
+    "Generate Phase390 candidate in this diagnostic-aware chat",
+    "Let the Phase390 writer read any repository file except delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "Generate multiple Phase390 candidates or repair the first before human review"
   ],
-  "next_required_action": "Freeze Phase390 inputs only; do not generate prose here.",
+  "next_required_action": "Run delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the fiction. Bring the unchanged output back for freezing and actual-human review.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -314,16 +321,32 @@
     {
       "path": "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json",
       "role": "Phase389 accepted rich-context settlement"
+    },
+    {
+      "path": "state/tasks/PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1.json",
+      "role": "current Phase390 fresh-blind contract"
+    },
+    {
+      "path": "state/author_packets/PHASE390_YMGQ_SCENE_PACKET_V1.json",
+      "role": "frozen scene-specific rich context"
+    },
+    {
+      "path": "delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
+      "role": "only file permitted to Phase390 fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE390_FRESH_WRITER_READY_V1.json",
+      "role": "Phase390 frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE390_ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
-  "physical_ledger_entry_count": 34,
-  "physical_ledger_tail_hash": "b198db3dc9b7f1b9f710ad74e9af0f3dbd282e2787883049f7d80db52408f8ed",
+  "status": "PHASE390_READY_AWAITING_GENUINELY_FRESH_WRITER",
+  "physical_ledger_entry_count": 35,
+  "physical_ledger_tail_hash": "00e04d21b105e5552b455c124c34bc85cd312dee63356dc9f25ec4600aa650bc",
   "last_completed_task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "b0352a4f49074adad315a6f8d6b1433b9e9ceed5d61bf9589490421a8df00971",
+    "project_state_sha256": "f1d3a19d4d62cfdc1969d7456ee9960ee0545785d9fd2c3a7ac1084feac11834",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
