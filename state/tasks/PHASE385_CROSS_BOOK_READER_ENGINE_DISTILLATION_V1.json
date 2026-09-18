@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
   "phase_ordinal": 385,
-  "status": "HUMAN_PILOT_COMPLETE_READABLE_NOT_COMPELLING",
+  "status": "HUMAN_PILOT_SUSPENSE_POSITIVE_AI_SMELL_WORSENED",
   "basis": {
     "phase384_task": "state/tasks/PHASE384_THREE_NEW_NOVELS_SOURCE_INGESTION_V1.json",
     "first_pass": "state/calibration/PHASE384_THREE_BOOK_FIRST_PASS_DISTILLATION_V1.md",
@@ -41,9 +41,10 @@
     "YMGQ_specific_transfer_hypothesis_present": true,
     "actual_human_validation_required_for_prose_transfer": true,
     "human_pilot_completed": true,
-    "human_pilot_propulsion_pass": false
+    "human_pilot_propulsion_pass": "SUSPENSE_DIRECTIONAL_PASS_ONLY",
+    "human_pilot_ai_smell_pass": false
   },
-  "next_action": "Do not expand. Diagnose why the Phase385 pilot is merely readable rather than compelling, revise the YMGQ-specific forward-desire architecture, then run exactly one new short human-read pilot.",
+  "next_action": "Preserve the suspense/forward-desire architecture that produced genuine desire to continue. Diagnose the prose-surface AI smell regression separately, then reauthor exactly one short pilot with the same suspense engine and reduced authorial regularity. Do not expand to long-form.",
   "accepted_checkpoint_advance": false,
   "human_pilot_receipt": "state/review_receipts/PHASE385_ACTUAL_HUMAN_PILOT_H1_V1.json"
 }
