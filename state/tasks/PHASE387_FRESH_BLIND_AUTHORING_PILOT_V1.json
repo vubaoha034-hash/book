@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
   "phase_ordinal": 387,
-  "status": "READY_AWAITING_GENUINELY_FRESH_WRITER",
+  "status": "OUTPUT_FROZEN_PENDING_EVALUATION_AND_ACTUAL_HUMAN_VERDICT",
   "purpose": "Test whether isolating the prose generator from accumulated diagnostics reduces visible AI-authored surface without exposing anti-AI or reader-propulsion rules to the writer.",
   "frozen_inputs": {
     "author_packet_path": "state/author_packets/PHASE387_YMGQ_MINIMAL_AUTHOR_PACKET_V1.json",
@@ -29,7 +29,8 @@
     "output": "one 1000-1500 Chinese-character fiction pilot",
     "pre_output_self_revision_rounds": 0,
     "output_must_be_returned_unchanged": true,
-    "evaluator_may_run_only_after_output_freeze": true
+    "evaluator_may_run_only_after_output_freeze": true,
+    "output_returned_unchanged": true
   },
   "acceptance": {
     "actual_human_required": true,
@@ -58,6 +59,13 @@
       }
     }
   ],
-  "next_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation.",
-  "accepted_checkpoint_advance": false
+  "next_action": "Evaluate the frozen output only after freeze, then obtain actual-human judgments for AI-smell direction, desire to continue, and first skim/stop location. Do not auto-repair before human judgment.",
+  "accepted_checkpoint_advance": false,
+  "frozen_output": {
+    "path": "state/frozen_outputs/PHASE387_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
+    "sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d",
+    "git_blob_sha": "74ae72066e85d22565e8a2477ac433506f7b4f78",
+    "runtime_model_reported_by_user": "6.0 Astra",
+    "runtime_model_independently_verified": false
+  }
 }
