@@ -1,27 +1,35 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "phase": 385,
   "task_id": "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
   "event_type": "ACTUAL_HUMAN_READER_PILOT_VERDICT",
-  "status": "READABLE_BUT_NOT_COMPELLING_PROPULSION_FAIL",
+  "status": "SUSPENSE_PROPULSION_POSITIVE_AI_SMELL_WORSENED",
   "source": "ACTUAL_USER_CURRENT_CHAT",
-  "human_feedback_zh": "能看。",
+  "human_feedback_zh": {
+    "initial": "能看。",
+    "clarification": "AI味道没有下降，反倒越来越重了。只是悬念让人有想看。"
+  },
   "interpretation_boundaries": {
     "readable": true,
-    "explicit_desire_to_continue": false,
-    "page_turn_compulsion_not_demonstrated": true,
-    "do_not_upgrade_to_pass": true
+    "suspense_creates_desire_to_continue": true,
+    "suspense_propulsion_signal": "POSITIVE",
+    "ai_smell_direction_vs_prior": "WORSE",
+    "ai_smell_remains_blocking": true,
+    "do_not_conflate_propulsion_with_ai_naturalness": true,
+    "do_not_upgrade_overall_quality_to_pass": true
   },
   "settlement": {
     "source_cleaning_and_second_pass_complete": true,
-    "YMGQ_reader_engine_transfer": "NOT_SUPPORTED_YET",
+    "YMGQ_reader_engine_suspense_transfer": "DIRECTIONALLY_SUPPORTED_FOR_THIS_PILOT",
+    "prose_surface_ai_naturalness": "FAIL_WORSENED",
     "human_pilot_completed": true,
-    "propulsion_gate": "FAIL_WEAK",
+    "propulsion_gate": "PARTIAL_PASS_SUSPENSE_ONLY",
+    "ai_smell_gate": "FAIL_WORSENED",
     "long_form_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "accepted_checkpoint_advance": false,
     "highest_accepted_phase_ordinal": 320
   },
-  "next_required_action": "Diagnose why the pilot is merely readable rather than compelling, revise the YMGQ-specific forward-desire engine at architecture level, and run one new short human pilot before any span growth."
+  "next_required_action": "Preserve the suspense/forward-desire mechanism that made the user want to continue, but diagnose and remove the increasingly visible AI-authored surface. Do not redesign away the suspense engine merely because the prose-naturalness gate failed. Run one short pilot after prose-surface reauthoring, not long-form growth."
 }
