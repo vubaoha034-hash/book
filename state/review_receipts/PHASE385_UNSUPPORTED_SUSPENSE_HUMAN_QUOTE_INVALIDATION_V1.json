@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 385,
+  "event_type": "HUMAN_EVIDENCE_ATTRIBUTION_CORRECTION",
+  "status": "INVALIDATE_UNSUPPORTED_SUSPENSE_QUOTE_ONLY",
+  "source": "CURRENT_CHAT_AUDIT_AGAINST_ACTUAL_USER_MESSAGES",
+  "valid_actual_human_feedback_zh": [
+    "能看。",
+    "ai味道没有哈，反倒越来越重了。"
+  ],
+  "invalidated_attribution_zh": "只是悬念让人有想看。",
+  "correction": "The suspense-positive sentence is not an actual user quote and may not be used as human evidence. No positive desire-to-continue claim is authorized from the current pilot.",
+  "historical_files_not_deleted": true,
+  "effect": "Any earlier receipt or commit attributing the invalidated sentence to the user is superseded for that claim only.",
+  "accepted_checkpoint_advance": false
+}
