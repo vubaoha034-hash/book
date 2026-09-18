@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 43,
-  "recorded_at": "2026-09-18T02:31:00+00:00",
+  "sequence": 44,
+  "recorded_at": "2026-09-18T02:36:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase387 fresh blind candidate is rejected overall by the actual human. Relative improvement does not equal acceptance. No new prose is authorized until a successor diagnosis identifies why it still fails the user's quality threshold.",
+  "active_task_ids": [
+    "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1"
+  ],
+  "current_focus": "Compare rejected Phase387 against Phase368-370 positive bounded evidence to identify why relative naturalness still fails overall acceptance. No fiction is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -187,7 +189,7 @@
     "Declare Astra the default novel-writing model from one rejected pilot",
     "Generate another Phase387 candidate under the same task"
   ],
-  "next_required_action": "Do not generate another candidate yet. Diagnose why the frozen Phase387 candidate remains below the user's acceptance threshold, while preserving that fresh-writer isolation may have produced relative improvement. Create a distinct successor task for that diagnosis.",
+  "next_required_action": "Complete evidence-bounded comparison and root-cause settlement. Do not generate new fiction in Phase388.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -274,14 +276,14 @@
       "role": "frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE387_ACTUAL_HUMAN_REJECTED_OVERALL_NOT_GOOD_ENOUGH",
-  "physical_ledger_entry_count": 29,
-  "physical_ledger_tail_hash": "9a315f0a04b4019c4374bf2ea257b08f4be1e270d19c6bb4018f01731adcdcde",
+  "status": "PHASE388_ACTIVE_COMPARATIVE_DIAGNOSIS_NO_FICTION",
+  "physical_ledger_entry_count": 30,
+  "physical_ledger_tail_hash": "b5dc74fe42c9f0e5fee953362dcbc2c7eacf5b70c5fc1da2eebb55fac05fe50b",
   "last_completed_task_id": "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "85a539cf49acbaabc19954dbc13ece74923e13765aee25e2d0c0348ab1a29bd1",
+    "project_state_sha256": "9e0319722a42333445e464931127702b187f4a502bbf9426a0d3d2a599fe632d",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -293,6 +295,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
+  "active_task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json"
 }
