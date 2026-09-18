@@ -9,7 +9,7 @@
   "active_task_ids": [
     "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1"
   ],
-  "current_focus": "Phase387 is active and waiting for exactly one genuinely fresh blind-writer run. The current diagnostic-aware chat must not generate the candidate. Fresh writer reads only delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt.",
+  "current_focus": "Phase387 fresh blind output is frozen unchanged. Evaluate only after freeze; no repair before actual-human judgment.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -104,7 +104,8 @@
     "Phase386 authoring/evaluator information firewall frozen with no fiction generated",
     "Phase387 minimal author packet frozen",
     "Phase387 single-file fresh writer execution entry frozen",
-    "Phase387 one-run isolation contract activated"
+    "Phase387 one-run isolation contract activated",
+    "Phase387 fresh blind writer output frozen unchanged"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -125,8 +126,6 @@
     "Authoring/evaluator isolation firewall not yet frozen",
     "Stable low-AI prose generation remains unproven",
     "Phase387 fresh blind authoring pilot has not been created or run",
-    "Phase387 fresh blind writer run not yet completed",
-    "Phase387 output not yet frozen",
     "Phase387 evaluator and actual-human review not yet completed"
   ],
   "blocked": [
@@ -184,7 +183,7 @@
     "Let the fresh Phase387 writer read any repository file except delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
     "Produce multiple Phase387 candidates or repair the first output before human review"
   ],
-  "next_required_action": "Run delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the generated fiction. Bring the unchanged output back for freezing and evaluation.",
+  "next_required_action": "Evaluate the frozen output only after freeze, then obtain actual-human judgments for AI-smell direction, desire to continue, and first skim/stop location. Do not auto-repair before human judgment.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -271,7 +270,7 @@
       "role": "frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE387_READY_AWAITING_GENUINELY_FRESH_WRITER",
+  "status": "PHASE387_OUTPUT_FROZEN_PENDING_EVALUATION_AND_ACTUAL_HUMAN_VERDICT",
   "physical_ledger_entry_count": 28,
   "physical_ledger_tail_hash": "fc2600f5eb96022c5ab1c716a2f192cba77324373f2f58bc8e2ed840b6df85c1",
   "last_completed_task_id": "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
