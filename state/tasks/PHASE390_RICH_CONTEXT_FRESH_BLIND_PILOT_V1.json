@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
   "phase_ordinal": 390,
-  "status": "ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
+  "status": "READY_AWAITING_GENUINELY_FRESH_WRITER",
   "purpose": "Prospectively test whether a richer legitimate story/character context improves a fresh blind YMGQ prose pilot while preserving the Phase386 writer/evaluator firewall.",
   "parent_packet": {
     "path": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
@@ -47,6 +47,15 @@
     "authorize span growth or full-manuscript rewrite",
     "advance the Phase320 accepted promotion checkpoint"
   ],
-  "next_action": "Freeze one scene-specific rich-context subset and a single-file fresh-writer execution entry. Do not generate prose in the current chat.",
-  "accepted_checkpoint_advance": false
+  "next_action": "Run delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the fiction. Bring the unchanged output back for freezing and actual-human review.",
+  "accepted_checkpoint_advance": false,
+  "frozen_inputs": {
+    "scene_packet_path": "state/author_packets/PHASE390_YMGQ_SCENE_PACKET_V1.json",
+    "scene_packet_sha256": "f78cdf3ec7a0ec0cce53addb99f96a6beee42c6004c8e571aa57f695c19707b6",
+    "scene_packet_git_blob_sha": "ab75ec467f3e61bfa845e783aa9388065ea8b56e",
+    "execution_entry_path": "delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "execution_entry_sha256": "37fa4f27d2ec017dc0b326fd097456b994275c162cca99c0f3dff76a0d7a51a4",
+    "execution_entry_git_blob_sha": "923bbc6f2f1b155313b2229a329d5f187f6b81b3"
+  },
+  "input_audit": "PASS_NO_DIAGNOSTIC_OR_LEGACY_DEVICE_LEAKAGE"
 }
