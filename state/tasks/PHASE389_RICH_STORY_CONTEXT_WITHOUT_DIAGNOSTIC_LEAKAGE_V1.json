@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+  "phase_ordinal": 389,
+  "status": "ACTIVE_RICH_CONTEXT_CONSTRUCTION_NO_FICTION",
+  "purpose": "Build and audit a richer writer-visible YMGQ story/character context from existing project facts and explicitly marked new canon candidates, while keeping all diagnostic, anti-AI, reader-propulsion and failure-answer-key material out of the writer packet.",
+  "source_basis": [
+    "state/story_kernels/YMGQ_STORY_KERNEL_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P2_CHU_SHISAN_DEATH_DIFFERENTIATION_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P3_PRISON_TOKEN_SETUP_PAYOFF_SEEDING_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P4_V3_FULL_REGRESSION_REVIEW_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_P5_LOCAL_CAUSAL_CONTINUITY_REPAIR_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_ROUTER_DECISION_V1.json",
+    "private Drive fact reservoir: REAL_MANUSCRIPT_一命过桥_P6_FINAL_RHYTHM_DEAI_V1"
+  ],
+  "scope": [
+    "separate hard identity canon from legacy fact reservoir and new Phase389 canon proposals",
+    "select only relationship, habit, local-life, knowledge-state and social-world facts worth carrying forward",
+    "exclude failed prose wording and failed structural devices from the packet",
+    "define writer-visible rich context that is not a beat sheet and does not require all facts to appear",
+    "audit for diagnostic leakage"
+  ],
+  "forbidden": [
+    "generate new YMGQ fiction",
+    "copy old failed manuscript prose into the writer packet",
+    "preserve black-arrow, Xuan-register, multi-faction parade or old climax merely because they existed",
+    "expose Phase374/377/383/385/388 diagnostic labels, anti-AI rules, reader-propulsion rules, target-reader failure locations or acceptance answer keys to the writer packet",
+    "turn story facts into instructions such as must reveal, must reverse, must hook, must create suspense",
+    "advance the Phase320 accepted promotion checkpoint"
+  ],
+  "required_outputs": [
+    "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+    "docs/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.md",
+    "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE389_BUILD_AND_AUDIT_RICH_STORY_CONTEXT",
+      "parameters": {
+        "fiction_generation": false
+      }
+    }
+  ],
+  "next_action": "Build and audit the rich story packet only. Do not generate a prose pilot in Phase389.",
+  "accepted_checkpoint_advance": false
+}
