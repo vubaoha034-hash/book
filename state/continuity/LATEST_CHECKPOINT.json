@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 45,
-  "recorded_at": "2026-09-18T02:42:00+00:00",
+  "sequence": 46,
+  "recorded_at": "2026-09-18T02:48:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase388 diagnosis is complete. Primary process hypothesis: Phase386/387 correctly hid diagnostics but starved the writer of legitimate rich character/relationship/world context. No new prose is authorized until a richer canonical story packet is built and audited.",
+  "active_task_ids": [
+    "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1"
+  ],
+  "current_focus": "Build a richer writer-visible YMGQ story/character context from valid project facts and explicitly marked canon proposals, while excluding diagnostics and failed structural devices. No fiction authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -194,7 +196,7 @@
     "Respond to Phase387 rejection by exposing Phase388 diagnosis labels to the next prose writer",
     "Use a thin premise-only author packet again"
   ],
-  "next_required_action": "Create PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1 to build and audit a richer canonical story/character packet. Do not generate prose yet.",
+  "next_required_action": "Build and audit the rich story packet only. Do not generate a prose pilot in Phase389.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -293,14 +295,14 @@
       "role": "Phase388 diagnostic settlement"
     }
   ],
-  "status": "PHASE388_COMPLETED_COMPARATIVE_DIAGNOSIS_NO_FICTION",
-  "physical_ledger_entry_count": 31,
-  "physical_ledger_tail_hash": "b94f019b423c03ea77c48c8dfe9af0c45d59b0d98d3ab85443ae8430d644ab33",
+  "status": "PHASE389_ACTIVE_RICH_CONTEXT_CONSTRUCTION_NO_FICTION",
+  "physical_ledger_entry_count": 32,
+  "physical_ledger_tail_hash": "57c13f573e639e2d5e9c6a829a588e47914e266e56da4b282470fe6a42df3974",
   "last_completed_task_id": "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "dd1e23635105633db2aaa2bf2cce84d1f332c7e1223a80b7292c9c694c87e705",
+    "project_state_sha256": "720c7bebdda3875c7f2e509fffd4ca28035c97c8694c4794c524cae2ea9f7023",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -313,6 +315,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+  "active_task_contract": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json"
 }
