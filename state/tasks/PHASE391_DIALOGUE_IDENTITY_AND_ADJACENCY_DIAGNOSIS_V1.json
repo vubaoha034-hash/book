@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+  "phase_ordinal": 391,
+  "status": "ACTIVE_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
+  "purpose": "Diagnose why the Phase390 rich-context fresh-blind pilot still produced heavy AI-like mechanical dialogue and weak character voice identity, using actual-human-located failures and historically human-positive dialogue samples.",
+  "evidence_scope": {
+    "rejected_candidate": "state/frozen_outputs/PHASE390_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
+    "actual_human_rejection": "state/review_receipts/PHASE390_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
+    "positive_reference_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "positive_reference_private_drive": "PHASE363_ROUND3_EMBODIED_DIALOGUE_FUSION_PACK_V1.txt",
+    "supporting_positive_spans": [
+      "state/calibration/PHASE369_B_SELECTED_SPAN_GROWTH_V1.txt",
+      "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt"
+    ]
+  },
+  "required_tests": [
+    "masked-speaker identifiability",
+    "dialogue swap/interchangeability",
+    "adjacency geometry / ping-pong completion",
+    "author-function-per-line audit"
+  ],
+  "forbidden": [
+    "generate or rewrite YMGQ fiction",
+    "treat character voice as catchphrase or dialect",
+    "turn Phase391 findings directly into a prose checklist for the next writer",
+    "claim isolated dialogue-line recognizability is the only definition of character voice",
+    "override actual-human rejection with model evaluation",
+    "advance Phase320 accepted checkpoint"
+  ],
+  "required_outputs": [
+    "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+    "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE391_RUN_DIALOGUE_IDENTITY_DIAGNOSIS",
+      "parameters": {
+        "fiction_generation": false
+      }
+    }
+  ],
+  "next_action": "Run the four dialogue-identity diagnostics against Phase390 and the human-positive Phase363 reference. Do not write new fiction.",
+  "accepted_checkpoint_advance": false
+}
