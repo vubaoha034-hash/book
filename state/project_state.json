@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.16.1",
+  "schema_version": "3.17.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-19T02:45:00+00:00",
+  "updated_at": "2026-09-19T02:50:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,25 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
-    "phase": "DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS",
-    "phase_ordinal": 391,
-    "status": "COMPLETED_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
-    "task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
-    "execution_scope": "Dialogue identity/interchangeability diagnosis only; no fiction generated.",
+    "task_id": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
+    "phase": "FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN",
+    "phase_ordinal": 392,
+    "status": "ACTIVE_FACTS_ONLY_CONTEXT_REDESIGN_NO_FICTION",
+    "task_contract": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json",
+    "execution_scope": "Writer-visible context redesign only; no YMGQ fiction generation.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Create PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1. Redesign writer-visible character context as concrete facts/events/obligations/knowledge boundaries, removing easy-to-perform personality labels. Do not generate fiction.",
-    "completed_at": "2026-09-19T02:45:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE392_BUILD_AND_AUDIT_FACTS_ONLY_CONTEXT",
+        "parameters": {
+          "fiction_generation": false
+        }
+      }
+    ],
+    "next_action": "Build and audit the facts-only writer-visible context. Do not generate prose in Phase392."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -222,9 +227,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 39,
-    "physical_event_hash": "431d8dec6146b5759952b54cb496a9bb38f3d918a6746a5f4491fb4723230930",
-    "logical_latest_checkpoint_sequence": 53,
+    "physical_STATE_LEDGER_sequence": 40,
+    "physical_event_hash": "7f7374a6172095a8c6e489b020f8b57260f932d7b78a3b2700f754c4cd3d116a",
+    "logical_latest_checkpoint_sequence": 54,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
