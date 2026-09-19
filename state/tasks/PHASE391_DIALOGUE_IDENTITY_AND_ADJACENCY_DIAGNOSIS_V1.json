@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
   "phase_ordinal": 391,
-  "status": "ACTIVE_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
+  "status": "COMPLETED_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
   "purpose": "Diagnose why the Phase390 rich-context fresh-blind pilot still produced heavy AI-like mechanical dialogue and weak character voice identity, using actual-human-located failures and historically human-positive dialogue samples.",
   "evidence_scope": {
     "rejected_candidate": "state/frozen_outputs/PHASE390_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
@@ -33,14 +33,13 @@
     "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
     "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE391_RUN_DIALOGUE_IDENTITY_DIAGNOSIS",
-      "parameters": {
-        "fiction_generation": false
-      }
-    }
+  "allowed_action_requests": [],
+  "next_action": "Create PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1. Redesign writer-visible character context as concrete facts/events/obligations/knowledge boundaries, removing easy-to-perform personality labels. Do not generate fiction.",
+  "accepted_checkpoint_advance": false,
+  "completed_outputs": [
+    "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+    "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
   ],
-  "next_action": "Run the four dialogue-identity diagnostics against Phase390 and the human-positive Phase363 reference. Do not write new fiction.",
-  "accepted_checkpoint_advance": false
+  "acceptance_result": "ACCEPT_DIAGNOSIS_CHARACTER_CARD_TO_DIALOGUE_COMPILATION_PRIMARY",
+  "completed_at": "2026-09-19T02:45:00+00:00"
 }
