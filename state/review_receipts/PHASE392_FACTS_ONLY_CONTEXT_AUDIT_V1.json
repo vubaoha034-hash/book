@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 392,
+  "task_id": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
+  "event_type": "FACTS_ONLY_CONTEXT_AUDIT",
+  "status": "ACCEPT_FACTS_ONLY_CONTEXT_NO_DIAGNOSTIC_LEAKAGE",
+  "packet_path": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
+  "packet_sha256": "4aaa4f9fc224d3cdcf185845c73ca5e2961407a1c193d80a915ae8b431ea1a72",
+  "packet_git_blob_sha": "b43a8da9388f20c399ee0478784ebb3372887c9d",
+  "audit": {
+    "declarative_personality_labels_removed": true,
+    "dialogue_strategy_removed": true,
+    "diagnosis_labels_removed": true,
+    "human_answer_key_removed": true,
+    "lived_traits_field_absent": true,
+    "current_private_tensions_field_absent": true
+  },
+  "fiction_generated": false,
+  "next_task_recommendation": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+  "next_action": "Create one scene-specific subset from the Phase392 facts-only context and run exactly one genuinely fresh blind writer pilot. Do not expose Phase391 diagnostics or reintroduce personality labels.",
+  "accepted_checkpoint_advance": false
+}
