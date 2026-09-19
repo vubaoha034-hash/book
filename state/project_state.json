@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.15.2",
+  "schema_version": "3.16.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-19T02:32:00+00:00",
+  "updated_at": "2026-09-19T02:40:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,25 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
-    "phase": "RICH_CONTEXT_FRESH_BLIND_PILOT",
-    "phase_ordinal": 390,
-    "status": "ACTUAL_HUMAN_REJECTED_HEAVY_AI_MECHANICAL_DIALOGUE",
-    "task_contract": "state/tasks/PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1.json",
-    "execution_scope": "One rich-context fresh-blind short pilot, frozen and rejected by actual human.",
+    "task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+    "phase": "DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS",
+    "phase_ordinal": 391,
+    "status": "ACTIVE_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
+    "task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+    "execution_scope": "Dialogue identity/interchangeability diagnosis only; no YMGQ fiction generation.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Create a distinct successor diagnosis task. Diagnose why rich character context still produced interchangeable turn-by-turn dialogue, without generating or repairing prose.",
-    "completed_at": "2026-09-19T02:32:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE390_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json"
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE391_RUN_DIALOGUE_IDENTITY_DIAGNOSIS",
+        "parameters": {
+          "fiction_generation": false
+        }
+      }
+    ],
+    "next_action": "Run the four dialogue-identity diagnostics against Phase390 and the human-positive Phase363 reference. Do not write new fiction."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -222,9 +227,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 37,
-    "physical_event_hash": "9e74af8822bf4dbb9fe921fd8cb881edc36b816586ae896abef9f1999dd0f2ed",
-    "logical_latest_checkpoint_sequence": 51,
+    "physical_STATE_LEDGER_sequence": 38,
+    "physical_event_hash": "058b691a087be66b0d948f70cf36b72bf3dc30f6c839e6d82111f9478d3af426",
+    "logical_latest_checkpoint_sequence": 52,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
