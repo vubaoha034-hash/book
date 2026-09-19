@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.15.1",
+  "schema_version": "3.15.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-18T04:45:00+00:00",
+  "updated_at": "2026-09-19T02:32:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,30 +15,17 @@
     "task_id": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
     "phase": "RICH_CONTEXT_FRESH_BLIND_PILOT",
     "phase_ordinal": 390,
-    "status": "OUTPUT_FROZEN_PENDING_ACTUAL_HUMAN_VERDICT",
+    "status": "ACTUAL_HUMAN_REJECTED_HEAVY_AI_MECHANICAL_DIALOGUE",
     "task_contract": "state/tasks/PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1.json",
-    "execution_scope": "Exactly one short pilot in a genuinely fresh writer context using only the frozen Phase390 execution entry.",
+    "execution_scope": "One rich-context fresh-blind short pilot, frozen and rejected by actual human.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "current_chat_may_generate_candidate": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE390_FREEZE_INPUTS",
-        "parameters": {
-          "fiction_generation": false
-        }
-      },
-      {
-        "action_id": "PHASE390_FREEZE_RETURNED_FRESH_OUTPUT",
-        "parameters": {
-          "source": "fresh_chat_return"
-        }
-      }
-    ],
-    "next_action": "Obtain the actual human's raw verdict before evaluator commentary: overall pass/fail, AI-smell direction versus Phase387, desire to continue, and first skim/stop location if any. Do not repair before verdict.",
-    "YMGQ_writing_authorization_scope": "ONE_PHASE390_FRESH_BLIND_SHORT_PILOT_ONLY"
+    "allowed_action_requests": [],
+    "next_action": "Create a distinct successor diagnosis task. Diagnose why rich character context still produced interchangeable turn-by-turn dialogue, without generating or repairing prose.",
+    "completed_at": "2026-09-19T02:32:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE390_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -200,12 +187,12 @@
   "manuscript_quality_state": {
     "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
     "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
-    "latest_bounded_span_status": "PHASE387_ACTUAL_HUMAN_REJECTED_OVERALL",
+    "latest_bounded_span_status": "PHASE390_ACTUAL_HUMAN_REJECTED_HEAVY_AI_MECHANICAL_DIALOGUE",
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE390_FROZEN_OUTPUT_PENDING_ACTUAL_HUMAN_RAW_VERDICT",
+    "YMGQ_writing_pause_reason": "PHASE390_DIALOGUE_VOICE_COLLAPSE_DIAGNOSIS_REQUIRED",
     "current_writing_authorization_scope": {
       "kind": "ONE_PHASE390_FRESH_BLIND_SHORT_PILOT",
       "run_entry": "delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
@@ -215,7 +202,7 @@
       "versions": 1,
       "long_form": false
     },
-    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE387_ACTUAL_HUMAN_OVERALL_REJECTION_H1_V1.json",
+    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE390_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
   },
   "governance": {
@@ -235,9 +222,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 36,
-    "physical_event_hash": "9b24e1131df74c37d1b3c71b1bdf0f3e75c1776c122243559e469852d1411bb8",
-    "logical_latest_checkpoint_sequence": 50,
+    "physical_STATE_LEDGER_sequence": 37,
+    "physical_event_hash": "9e74af8822bf4dbb9fe921fd8cb881edc36b816586ae896abef9f1999dd0f2ed",
+    "logical_latest_checkpoint_sequence": 51,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -612,7 +599,8 @@
     "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
     "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
     "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
-    "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1"
+    "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+    "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -680,11 +668,14 @@
     "execution_entry_frozen": true,
     "fresh_writer_run_completed": true,
     "output_frozen": true,
-    "actual_human_review_complete": false,
+    "actual_human_review_complete": true,
     "candidate_accepted": false,
     "scene_packet_sha256": "f78cdf3ec7a0ec0cce53addb99f96a6beee42c6004c8e571aa57f695c19707b6",
     "execution_entry_sha256": "37fa4f27d2ec017dc0b326fd097456b994275c162cca99c0f3dff76a0d7a51a4",
     "accepted_checkpoint_advance": false,
-    "frozen_output_sha256": "619898ffaf298381fd2c7b6ae1847a5e9c68921122bb75223dfe23084b861028"
+    "frozen_output_sha256": "619898ffaf298381fd2c7b6ae1847a5e9c68921122bb75223dfe23084b861028",
+    "overall_human_verdict": "FAIL_HEAVY_AI_MECHANICAL_DIALOGUE",
+    "ai_smell": "VERY_HEAVY",
+    "dialogue_voice_distinctiveness": "FAIL"
   }
 }
