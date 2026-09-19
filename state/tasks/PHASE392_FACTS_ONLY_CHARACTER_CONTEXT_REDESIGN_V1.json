@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
+  "phase_ordinal": 392,
+  "status": "ACTIVE_FACTS_ONLY_CONTEXT_REDESIGN_NO_FICTION",
+  "purpose": "Redesign writer-visible character context so it contains concrete history, relationship events, current obligations, physical/social state and knowledge boundaries, while removing declarative personality labels that can be compiled directly into dialogue.",
+  "parent_context": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+  "diagnosis_basis": "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+  "required_outputs": [
+    "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
+    "docs/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.md",
+    "state/review_receipts/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.json"
+  ],
+  "forbidden": [
+    "generate YMGQ fiction",
+    "include labels such as 嘴贫/自尊强/善于观察/害怕时话多/不摆架子 as writer-visible character traits",
+    "include dialogue strategy instructions",
+    "include Phase391 diagnosis labels in writer-visible packet",
+    "include anti-AI, reader-propulsion, suspense, hook or acceptance-answer-key instructions",
+    "advance Phase320 accepted checkpoint"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE392_BUILD_AND_AUDIT_FACTS_ONLY_CONTEXT",
+      "parameters": {
+        "fiction_generation": false
+      }
+    }
+  ],
+  "next_action": "Build and audit the facts-only writer-visible context. Do not generate prose in Phase392.",
+  "accepted_checkpoint_advance": false
+}
