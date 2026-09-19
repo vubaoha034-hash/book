@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 53,
-  "recorded_at": "2026-09-19T02:45:00+00:00",
+  "sequence": 54,
+  "recorded_at": "2026-09-19T02:50:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase391 diagnosis is complete. Primary process failure: declarative character traits are being compiled into dialogue demonstrations, producing interchangeable ping-pong speech. No prose until writer-visible context is redesigned as facts/events/obligations rather than personality labels.",
+  "active_task_ids": [
+    "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1"
+  ],
+  "current_focus": "Redesign writer-visible character context to concrete history/events/obligations/knowledge boundaries, removing declarative personality labels. No prose authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -219,7 +221,7 @@
     "Use catchphrases/dialect/slang as a shortcut for character voice",
     "Treat more declarative personality traits as a voice solution"
   ],
-  "next_required_action": "Create PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1. Redesign writer-visible character context as concrete facts/events/obligations/knowledge boundaries, removing easy-to-perform personality labels. Do not generate fiction.",
+  "next_required_action": "Build and audit the facts-only writer-visible context. Do not generate prose in Phase392.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -362,14 +364,14 @@
       "role": "Phase391 diagnostic settlement"
     }
   ],
-  "status": "PHASE391_COMPLETED_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
-  "physical_ledger_entry_count": 39,
-  "physical_ledger_tail_hash": "431d8dec6146b5759952b54cb496a9bb38f3d918a6746a5f4491fb4723230930",
+  "status": "PHASE392_ACTIVE_FACTS_ONLY_CONTEXT_REDESIGN_NO_FICTION",
+  "physical_ledger_entry_count": 40,
+  "physical_ledger_tail_hash": "7f7374a6172095a8c6e489b020f8b57260f932d7b78a3b2700f754c4cd3d116a",
   "last_completed_task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "4921737ce9c73f9287a0ab3daa0f5e7bde317064d000edb86d80fbeeb0cae564",
+    "project_state_sha256": "0dee22f11fb48c4f21ed8eccb67b2d16734fdb80934d33385a001a9879c84221",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -385,6 +387,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+  "active_task_contract": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
 }
