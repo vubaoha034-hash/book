@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.16.0",
+  "schema_version": "3.16.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-19T02:40:00+00:00",
+  "updated_at": "2026-09-19T02:45:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,22 +15,17 @@
     "task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
     "phase": "DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS",
     "phase_ordinal": 391,
-    "status": "ACTIVE_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
+    "status": "COMPLETED_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
     "task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
-    "execution_scope": "Dialogue identity/interchangeability diagnosis only; no YMGQ fiction generation.",
+    "execution_scope": "Dialogue identity/interchangeability diagnosis only; no fiction generated.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE391_RUN_DIALOGUE_IDENTITY_DIAGNOSIS",
-        "parameters": {
-          "fiction_generation": false
-        }
-      }
-    ],
-    "next_action": "Run the four dialogue-identity diagnostics against Phase390 and the human-positive Phase363 reference. Do not write new fiction."
+    "allowed_action_requests": [],
+    "next_action": "Create PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1. Redesign writer-visible character context as concrete facts/events/obligations/knowledge boundaries, removing easy-to-perform personality labels. Do not generate fiction.",
+    "completed_at": "2026-09-19T02:45:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -197,7 +192,7 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE390_DIALOGUE_VOICE_COLLAPSE_DIAGNOSIS_REQUIRED",
+    "YMGQ_writing_pause_reason": "PHASE391_COMPLETE_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_REQUIRED",
     "current_writing_authorization_scope": {
       "kind": "ONE_PHASE390_FRESH_BLIND_SHORT_PILOT",
       "run_entry": "delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
@@ -227,9 +222,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 38,
-    "physical_event_hash": "058b691a087be66b0d948f70cf36b72bf3dc30f6c839e6d82111f9478d3af426",
-    "logical_latest_checkpoint_sequence": 52,
+    "physical_STATE_LEDGER_sequence": 39,
+    "physical_event_hash": "431d8dec6146b5759952b54cb496a9bb38f3d918a6746a5f4491fb4723230930",
+    "logical_latest_checkpoint_sequence": 53,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -605,7 +600,8 @@
     "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
     "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
     "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
-    "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1"
+    "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+    "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -682,5 +678,18 @@
     "overall_human_verdict": "FAIL_HEAVY_AI_MECHANICAL_DIALOGUE",
     "ai_smell": "VERY_HEAVY",
     "dialogue_voice_distinctiveness": "FAIL"
+  },
+  "phase391_settlement": {
+    "status": "ACCEPT_DIAGNOSIS_CHARACTER_CARD_TO_DIALOGUE_COMPILATION_PRIMARY",
+    "report": "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+    "receipt": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+    "primary_root_cause": "CHARACTER_CARD_TO_DIALOGUE_COMPILATION",
+    "secondary_root_causes": [
+      "EXACT_ADJACENCY_COMPLETION",
+      "VOICE_AS_LABEL_NOT_BEHAVIOR",
+      "SUBTEXT_EXPLICITATION"
+    ],
+    "fiction_generated": false,
+    "accepted_checkpoint_advance": false
   }
 }
