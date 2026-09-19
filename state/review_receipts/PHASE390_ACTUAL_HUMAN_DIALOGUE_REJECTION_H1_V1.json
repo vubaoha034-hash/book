@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 390,
+  "task_id": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+  "event_type": "ACTUAL_HUMAN_READER_VERDICT",
+  "status": "FAIL_HEAVY_AI_SMELL_MECHANICAL_DIALOGUE_VOICE_COLLAPSE",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "frozen_output_sha256": "619898ffaf298381fd2c7b6ae1847a5e9c68921122bb75223dfe23084b861028",
+  "human_feedback_zh": [
+    "不能，非常重。",
+    "你自己看看参考图中的对话，你能知道谁是谁不，谁说的。这不就是机械的对话吗"
+  ],
+  "located_examples": [
+    {
+      "span": "小泥鳅离开前的连续短对话",
+      "examples": [
+        "刘叔。",
+        "又怎么了？",
+        "你还欠我五文。",
+        "记账。",
+        "你每次都这么说。",
+        "那说明我没赖账。"
+      ],
+      "reader_issue": "dialogue is syntactically traceable by turn order but character voice is not independently identifiable; feels mechanical"
+    },
+    {
+      "span": "小泥鳅/刘还山买饼对话",
+      "examples": [
+        "你手里的饼凉了，后面那几个小王八蛋就得吃硬的。",
+        "再买两张。",
+        "你不是没钱吗？",
+        "欠债归欠债，吃饭归吃饭。"
+      ],
+      "reader_issue": "clean ping-pong exchange with each line serving one exact author function"
+    },
+    {
+      "span": "小泥鳅走后顾承岳/刘还山对话",
+      "examples": [
+        "你怕他认出我。",
+        "他又不是衙门里的画像师。",
+        "你更怕他因为你出事。"
+      ],
+      "reader_issue": "inference ladder: observation -> deflection -> deeper correct inference, exposing authorial construction"
+    }
+  ],
+  "interpretation_boundaries": {
+    "overall_pass": false,
+    "ai_smell": "VERY_HEAVY",
+    "mechanical_dialogue": true,
+    "character_voice_distinctiveness": "FAIL",
+    "speaker_identity_from_voice_alone": "NOT_RELIABLE",
+    "syntax_or_turn_order_may_still_disambiguate": true,
+    "desire_to_continue": "NOT_SAFELY_INFERRED_FROM_CURRENT_MESSAGE",
+    "first_skim_or_stop_location": "LOCATED_TO_SCREENSHOT_DIALOGUE_REGION_NOT_EXACT_SINGLE_SENTENCE"
+  },
+  "settlement": {
+    "rich_context_packet_sufficient": false,
+    "phase390_candidate_accepted": false,
+    "long_form_growth_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "next_required_action": "Do not generate another prose candidate yet. Diagnose why richer character context still collapsed into turn-by-turn interchangeable dialogue. Focus on speaker-identity-by-voice, dialogue adjacency geometry, and the difference between character facts in context versus character-specific speech production. Do not expose the resulting diagnosis directly to a future writer as a checklist."
+}
