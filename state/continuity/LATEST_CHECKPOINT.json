@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 54,
-  "recorded_at": "2026-09-19T02:50:00+00:00",
+  "sequence": 55,
+  "recorded_at": "2026-09-19T02:56:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1"
-  ],
-  "current_focus": "Redesign writer-visible character context to concrete history/events/obligations/knowledge boundaries, removing declarative personality labels. No prose authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase392 facts-only writer-visible character context is frozen and audited. Declarative personality labels and dialogue-strategy leakage are removed. No prose is currently authorized until a distinct Phase393 fresh-blind contract is created.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -113,7 +111,8 @@
     "Phase390 single-file fresh writer entry frozen",
     "Phase390 fresh blind writer output frozen unchanged",
     "Phase390 actual-human heavy-AI mechanical-dialogue rejection recorded",
-    "Phase391 dialogue identity/interchangeability diagnosis completed with no fiction generated"
+    "Phase391 dialogue identity/interchangeability diagnosis completed with no fiction generated",
+    "Phase392 facts-only character context frozen and audited without diagnostic leakage"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -143,7 +142,9 @@
     "Phase390 output not yet frozen or human-reviewed",
     "Root cause of character-voice collapse despite rich context remains open",
     "Facts-only character context redesign has not yet been built or audited",
-    "Phase391 root-cause hypothesis remains prospectively unvalidated"
+    "Phase391 root-cause hypothesis remains prospectively unvalidated",
+    "Phase393 facts-only fresh blind pilot has not been created or run",
+    "Phase391 input-representation hypothesis remains prospectively unvalidated"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -158,7 +159,8 @@
     "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE390_GENERATION",
     "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DIALOGUE_VOICE_ROOT_CAUSE_DIAGNOSIS",
-    "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN"
+    "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN",
+    "YMGQ_PROSE_REQUIRES_DISTINCT_PHASE393_FRESH_BLIND_CONTRACT"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -219,9 +221,12 @@
     "Generate another Phase390 candidate under the same task",
     "Feed Phase391 dialogue diagnosis labels directly to a future prose writer",
     "Use catchphrases/dialect/slang as a shortcut for character voice",
-    "Treat more declarative personality traits as a voice solution"
+    "Treat more declarative personality traits as a voice solution",
+    "Reintroduce declarative personality labels into the Phase393 writer packet",
+    "Expose Phase391 diagnosis labels or mechanical-dialogue answer keys to the Phase393 blind writer",
+    "Treat Phase392 packet acceptance as prose quality proof"
   ],
-  "next_required_action": "Build and audit the facts-only writer-visible context. Do not generate prose in Phase392.",
+  "next_required_action": "Create PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1. Freeze one scene-specific subset from the Phase392 facts-only packet and run exactly one genuinely fresh blind writer pilot. Do not expose Phase391 diagnostics or reintroduce personality labels.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -362,16 +367,32 @@
     {
       "path": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
       "role": "Phase391 diagnostic settlement"
+    },
+    {
+      "path": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json",
+      "role": "completed Phase392 facts-only context contract"
+    },
+    {
+      "path": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
+      "role": "frozen writer-visible facts-only character context"
+    },
+    {
+      "path": "docs/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.md",
+      "role": "Phase392 facts-only context audit"
+    },
+    {
+      "path": "state/review_receipts/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.json",
+      "role": "Phase392 accepted context settlement"
     }
   ],
-  "status": "PHASE392_ACTIVE_FACTS_ONLY_CONTEXT_REDESIGN_NO_FICTION",
-  "physical_ledger_entry_count": 40,
-  "physical_ledger_tail_hash": "7f7374a6172095a8c6e489b020f8b57260f932d7b78a3b2700f754c4cd3d116a",
-  "last_completed_task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+  "status": "PHASE392_COMPLETED_FACTS_ONLY_CONTEXT_AUDITED_NO_FICTION",
+  "physical_ledger_entry_count": 41,
+  "physical_ledger_tail_hash": "f7107f73f21b947af0d0d4c3344b2bd8be92e3cfafeb2c9a0a756e772e2527e2",
+  "last_completed_task_id": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "0dee22f11fb48c4f21ed8eccb67b2d16734fdb80934d33385a001a9879c84221",
+    "project_state_sha256": "40771d3be574f56473efd9aa96485aff34b679cd71e5ec8e04d84db3f7897540",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -382,11 +403,12 @@
       "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
       "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
       "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
-      "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1"
+      "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+      "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json"
 }
