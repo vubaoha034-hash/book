@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 391,
+  "task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+  "event_type": "DIALOGUE_IDENTITY_DIAGNOSIS_SETTLEMENT",
+  "status": "ACCEPT_DIAGNOSIS_CHARACTER_CARD_TO_DIALOGUE_COMPILATION_PRIMARY",
+  "report": "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+  "actual_human_basis": "state/review_receipts/PHASE390_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
+  "positive_reference_basis": "Phase363 Round3 human-positive fusion pack / receipt",
+  "tests": {
+    "masked_speaker_identifiability": "PHASE390_FAIL",
+    "dialogue_swap_interchangeability": "PHASE390_FAIL",
+    "adjacency_geometry": "PHASE390_FAIL_EXACT_PING_PONG",
+    "author_function_per_line": "PHASE390_FAIL_CHARACTER_PROPERTIES_COMPILED_INTO_LINES"
+  },
+  "primary_root_cause": "CHARACTER_CARD_TO_DIALOGUE_COMPILATION",
+  "secondary_root_causes": [
+    "EXACT_ADJACENCY_COMPLETION",
+    "VOICE_AS_LABEL_NOT_BEHAVIOR",
+    "SUBTEXT_EXPLICITATION"
+  ],
+  "human_evidence_boundary": "User explicitly identified heavy AI smell and mechanical/unidentifiable dialogue. Detailed root-cause labels are coordinator diagnosis, not user quotes.",
+  "fiction_generated": false,
+  "next_task_recommendation": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
+  "next_action": "Redesign writer-visible character context to concrete history, relationship events, current obligations and knowledge boundaries while removing easy-to-demonstrate personality labels. Do not generate prose in Phase392.",
+  "accepted_checkpoint_advance": false
+}
