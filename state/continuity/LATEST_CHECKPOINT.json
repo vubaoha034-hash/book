@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 52,
-  "recorded_at": "2026-09-19T02:40:00+00:00",
+  "sequence": 53,
+  "recorded_at": "2026-09-19T02:45:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1"
-  ],
-  "current_focus": "Diagnose Phase390 speaker-voice collapse with masked-speaker, swap, adjacency and author-function tests against actual-human-positive Phase363 prose. No fiction authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase391 diagnosis is complete. Primary process failure: declarative character traits are being compiled into dialogue demonstrations, producing interchangeable ping-pong speech. No prose until writer-visible context is redesigned as facts/events/obligations rather than personality labels.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -112,7 +110,8 @@
     "Phase390 scene-specific rich context packet frozen and leakage-audited",
     "Phase390 single-file fresh writer entry frozen",
     "Phase390 fresh blind writer output frozen unchanged",
-    "Phase390 actual-human heavy-AI mechanical-dialogue rejection recorded"
+    "Phase390 actual-human heavy-AI mechanical-dialogue rejection recorded",
+    "Phase391 dialogue identity/interchangeability diagnosis completed with no fiction generated"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -140,7 +139,9 @@
     "Phase390 rich-context fresh blind pilot has not been created or run",
     "Phase388/389 input-context hypothesis remains prospectively unvalidated",
     "Phase390 output not yet frozen or human-reviewed",
-    "Root cause of character-voice collapse despite rich context remains open"
+    "Root cause of character-voice collapse despite rich context remains open",
+    "Facts-only character context redesign has not yet been built or audited",
+    "Phase391 root-cause hypothesis remains prospectively unvalidated"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -154,7 +155,8 @@
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE387_GENERATION",
     "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE390_GENERATION",
-    "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DIALOGUE_VOICE_ROOT_CAUSE_DIAGNOSIS"
+    "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DIALOGUE_VOICE_ROOT_CAUSE_DIAGNOSIS",
+    "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -212,9 +214,12 @@
     "Generate multiple Phase390 candidates or repair the first before human review",
     "Treat Phase390 rich-context packet as sufficient because the prose is more lived-in",
     "Use alternating short-turn dialogue as character voice",
-    "Generate another Phase390 candidate under the same task"
+    "Generate another Phase390 candidate under the same task",
+    "Feed Phase391 dialogue diagnosis labels directly to a future prose writer",
+    "Use catchphrases/dialect/slang as a shortcut for character voice",
+    "Treat more declarative personality traits as a voice solution"
   ],
-  "next_required_action": "Run Phase391 diagnostics only; no prose generation.",
+  "next_required_action": "Create PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1. Redesign writer-visible character context as concrete facts/events/obligations/knowledge boundaries, removing easy-to-perform personality labels. Do not generate fiction.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -343,16 +348,28 @@
     {
       "path": "state/review_receipts/PHASE390_FRESH_WRITER_READY_V1.json",
       "role": "Phase390 frozen-input readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+      "role": "completed Phase391 diagnostic contract"
+    },
+    {
+      "path": "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+      "role": "Phase391 dialogue identity and adjacency report"
+    },
+    {
+      "path": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+      "role": "Phase391 diagnostic settlement"
     }
   ],
-  "status": "PHASE391_ACTIVE_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
-  "physical_ledger_entry_count": 38,
-  "physical_ledger_tail_hash": "058b691a087be66b0d948f70cf36b72bf3dc30f6c839e6d82111f9478d3af426",
-  "last_completed_task_id": "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+  "status": "PHASE391_COMPLETED_DIALOGUE_IDENTITY_DIAGNOSIS_NO_FICTION",
+  "physical_ledger_entry_count": 39,
+  "physical_ledger_tail_hash": "431d8dec6146b5759952b54cb496a9bb38f3d918a6746a5f4491fb4723230930",
+  "last_completed_task_id": "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "39a2f3e4898c039000f9e3dcc9c106cc0fe931da82f9064b908d8fe3b3bf0469",
+    "project_state_sha256": "4921737ce9c73f9287a0ab3daa0f5e7bde317064d000edb86d80fbeeb0cae564",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -362,11 +379,12 @@
       "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
       "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
       "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
-      "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1"
+      "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+      "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json"
 }
