@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.18.3",
+  "schema_version": "3.19.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-20T11:56:00+00:00",
+  "updated_at": "2026-09-20T12:05:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,25 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
-    "phase": "FACTS_ONLY_FRESH_BLIND_PILOT",
-    "phase_ordinal": 393,
-    "status": "ACTUAL_HUMAN_REJECTED_AI_LIGHTER_BUT_MECHANICAL_DIALOGUE_PERSISTS",
-    "task_contract": "state/tasks/PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1.json",
-    "execution_scope": "One facts-only fresh-blind short pilot, frozen and rejected by actual human.",
+    "task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
+    "phase": "HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE",
+    "phase_ordinal": 394,
+    "status": "ACTIVE_PIPELINE_REPAIR_NO_FICTION",
+    "task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
+    "execution_scope": "Build writer-side positive anchor and evaluator-side mechanical dialogue blocker; no fiction generation.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Create a distinct successor diagnosis task focused on the deeper exact-adjacency generation bias that persists even with facts-only context. Do not generate another prose candidate yet.",
-    "completed_at": "2026-09-20T11:56:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE393_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json"
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE394_BUILD_PIPELINE",
+        "parameters": {
+          "fiction_generation": false
+        }
+      }
+    ],
+    "next_action": "Build and verify the positive-anchor plus post-freeze blocker pipeline. Do not generate fiction in Phase394."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -222,9 +227,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 45,
-    "physical_event_hash": "d7bdffdbfeebfef1af6809c10ed522c58d0775a97e54fb2657e251d6aa923b8e",
-    "logical_latest_checkpoint_sequence": 59,
+    "physical_STATE_LEDGER_sequence": 46,
+    "physical_event_hash": "c16b1d5d56ca5fdc3a4e104b58435bc4a4c9cb2c37fdfb791ffe118e05164614",
+    "logical_latest_checkpoint_sequence": 60,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
