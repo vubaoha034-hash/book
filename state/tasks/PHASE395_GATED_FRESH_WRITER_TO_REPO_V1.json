@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "phase_ordinal": 395,
+  "status": "READY_AWAITING_HIDDEN_FRESH_WRITER_A1",
+  "purpose": "Run a fresh writer with facts plus human-positive in-project prose anchor, store candidate unseen in repo inbox, then gate it before any user delivery.",
+  "attempt_budget": 3,
+  "current_attempt": "A1",
+  "writer_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A1.txt",
+  "writer_entry_sha256": "057aa1691dce055c2c27fbe02488fad0c562aae2b9ac9738622b49e79242aa49",
+  "candidate_inbox": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
+  "delivery_rule": "Do not show candidate to user until frozen and both deterministic and semantic dialogue blockers are CLEAR.",
+  "blocker_rule": "rules/dialogue-mechanical-blocker-v1.md",
+  "deterministic_tripwire": "scripts/check_dialogue_adjacency.py",
+  "semantic_blocker_required": true,
+  "on_block": {
+    "candidate_disposition": "WHOLE_CANDIDATE_REJECT",
+    "local_patch": false,
+    "feedback_to_same_writer": false,
+    "replacement_requires_new_fresh_context": true
+  },
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE395_STORE_A1_CANDIDATE",
+      "parameters": {
+        "output_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt"
+      }
+    },
+    {
+      "action_id": "PHASE395_FREEZE_AND_GATE_A1",
+      "parameters": {
+        "source_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt"
+      }
+    }
+  ],
+  "next_action": "Run the Phase395 A1 fresh-writer entry in a genuinely new chat. The writer stores prose in the repository inbox and replies only with the stored-status token. Then this coordinator freezes and gates it before any prose is shown to the user.",
+  "accepted_checkpoint_advance": false
+}
