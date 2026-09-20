@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+  "phase_ordinal": 393,
+  "status": "ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
+  "purpose": "Prospectively test whether replacing declarative character traits with concrete facts/events/obligations reduces mechanical interchangeable dialogue in a fresh blind YMGQ short scene.",
+  "parent_context": {
+    "path": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
+    "sha256": "4aaa4f9fc224d3cdcf185845c73ca5e2961407a1c193d80a915ae8b431ea1a72"
+  },
+  "comparison_control": "Keep Phase390's broad scene location/cast/situation comparable where practical; change the writer-visible character representation from declarative traits to facts-only.",
+  "isolation_contract": {
+    "current_diagnostic_chat_may_generate_candidate": false,
+    "genuinely_fresh_writer_required": true,
+    "writer_reads_only_phase393_execution_entry": true,
+    "Phase391_diagnostics_forbidden": true,
+    "personality_labels_forbidden": true,
+    "historical_human_answer_keys_forbidden": true,
+    "old_manuscript_prose_forbidden": true
+  },
+  "run_budget": {
+    "attempts": 1,
+    "candidate_versions": 1,
+    "long_form": false,
+    "auto_repair_before_human": false
+  },
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE393_FREEZE_INPUTS",
+      "parameters": {
+        "fiction_generation": false
+      }
+    },
+    {
+      "action_id": "PHASE393_FREEZE_RETURNED_FRESH_OUTPUT",
+      "parameters": {
+        "source": "fresh_chat_return"
+      }
+    }
+  ],
+  "forbidden": [
+    "generate Phase393 prose in current diagnostic-aware chat",
+    "reintroduce character labels such as 嘴贫/自尊强/善于观察/害怕时话多",
+    "expose Phase391 root-cause labels or dialogue diagnostics",
+    "expose anti-AI, page-turn, hook, suspense, reader or acceptance rules",
+    "produce multiple candidates",
+    "repair output before actual-human reading",
+    "authorize span growth or full manuscript rewrite",
+    "advance Phase320 accepted checkpoint"
+  ],
+  "next_action": "Freeze one facts-only scene packet and one single-file fresh-writer entry. Do not generate prose in the current chat.",
+  "accepted_checkpoint_advance": false
+}
