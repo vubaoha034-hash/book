@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
+  "phase_ordinal": 394,
+  "status": "ACTIVE_PIPELINE_REPAIR_NO_FICTION",
+  "purpose": "Replace repeated prompt-level dialogue repair with a production pipeline: human-positive in-project prose anchor for the fresh writer, plus a post-freeze mechanical-dialogue blocker that the writer never sees.",
+  "basis": [
+    "state/review_receipts/PHASE393_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
+    "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "private Drive PHASE363_ROUND3_EMBODIED_DIALOGUE_FUSION_PACK_V1.txt"
+  ],
+  "design": [
+    "writer sees scene facts plus a small human-positive in-project prose anchor",
+    "writer does not see anti-AI or mechanical-dialogue rules",
+    "candidate freezes before evaluation",
+    "deterministic tripwire catches obvious short-turn / Q&A adjacency ladders",
+    "semantic blocker evaluates whether speech is mainly exact response completion rather than character-owned action/priority",
+    "if either blocker fires, the whole candidate is rejected; no local dialogue patching",
+    "a replacement candidate, if authorized, must come from a genuinely fresh writer context with no blocker feedback"
+  ],
+  "forbidden": [
+    "generate YMGQ prose in Phase394",
+    "expose blocker rules to the prose writer",
+    "repair blocked dialogue locally and resubmit as the same candidate",
+    "treat deterministic metrics as sufficient proof of literary quality",
+    "copy external copyrighted prose into the writer anchor",
+    "advance Phase320 accepted checkpoint"
+  ],
+  "required_outputs": [
+    "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "rules/dialogue-mechanical-blocker-v1.md",
+    "scripts/check_dialogue_adjacency.py",
+    "tests/test_dialogue_adjacency_blocker.py",
+    "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE394_BUILD_PIPELINE",
+      "parameters": {
+        "fiction_generation": false
+      }
+    }
+  ],
+  "next_action": "Build and verify the positive-anchor plus post-freeze blocker pipeline. Do not generate fiction in Phase394.",
+  "accepted_checkpoint_advance": false
+}
