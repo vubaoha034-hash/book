@@ -8,7 +8,7 @@
   "attempt_budget": 3,
   "current_attempt": "A1",
   "writer_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A1.txt",
-  "writer_entry_sha256": "057aa1691dce055c2c27fbe02488fad0c562aae2b9ac9738622b49e79242aa49",
+  "writer_entry_sha256": "49141e8ee343a32da976210a8113c67d82f3f86f42a92d8e1998e1742ed8f256",
   "candidate_inbox": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
   "delivery_rule": "Do not show candidate to user until frozen and both deterministic and semantic dialogue blockers are CLEAR.",
   "blocker_rule": "rules/dialogue-mechanical-blocker-v1.md",
