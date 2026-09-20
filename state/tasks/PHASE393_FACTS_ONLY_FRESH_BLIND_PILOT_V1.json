@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
   "phase_ordinal": 393,
-  "status": "OUTPUT_FROZEN_PENDING_ACTUAL_HUMAN_VERDICT",
+  "status": "ACTUAL_HUMAN_REJECTED_AI_LIGHTER_BUT_MECHANICAL_DIALOGUE_PERSISTS",
   "purpose": "Prospectively test whether replacing declarative character traits with concrete facts/events/obligations reduces mechanical interchangeable dialogue in a fresh blind YMGQ short scene.",
   "parent_context": {
     "path": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
@@ -25,20 +25,7 @@
     "long_form": false,
     "auto_repair_before_human": false
   },
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE393_FREEZE_INPUTS",
-      "parameters": {
-        "fiction_generation": false
-      }
-    },
-    {
-      "action_id": "PHASE393_FREEZE_RETURNED_FRESH_OUTPUT",
-      "parameters": {
-        "source": "fresh_chat_return"
-      }
-    }
-  ],
+  "allowed_action_requests": [],
   "forbidden": [
     "generate Phase393 prose in current diagnostic-aware chat",
     "reintroduce character labels such as 嘴贫/自尊强/善于观察/害怕时话多",
@@ -49,7 +36,7 @@
     "authorize span growth or full manuscript rewrite",
     "advance Phase320 accepted checkpoint"
   ],
-  "next_action": "Obtain the actual human's raw verdict before evaluator commentary: overall pass/fail, AI-smell direction versus Phase390, whether dialogue feels mechanically interchangeable, desire to continue, and first skim/stop location if any. Do not repair before verdict.",
+  "next_action": "Create a distinct successor diagnosis task focused on the deeper exact-adjacency generation bias that persists even with facts-only context. Do not generate another prose candidate yet.",
   "accepted_checkpoint_advance": false,
   "frozen_inputs": {
     "scene_packet_path": "state/author_packets/PHASE393_YMGQ_SCENE_PACKET_V1.json",
@@ -64,5 +51,7 @@
     "path": "state/frozen_outputs/PHASE393_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
     "sha256": "58d55fb5f08f8fa9ac6e665eb95ae42693ff9d491edd9cec92b244c8382b52fa",
     "git_blob_sha": "57bcd4b192cea1ff265dfb0bb986fc759ce88d4a"
-  }
+  },
+  "actual_human_receipt": "state/review_receipts/PHASE393_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
+  "completed_at": "2026-09-20T11:56:00+00:00"
 }
