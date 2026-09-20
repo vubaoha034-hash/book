@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 55,
-  "recorded_at": "2026-09-19T02:56:00+00:00",
+  "sequence": 56,
+  "recorded_at": "2026-09-20T10:12:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase392 facts-only writer-visible character context is frozen and audited. Declarative personality labels and dialogue-strategy leakage are removed. No prose is currently authorized until a distinct Phase393 fresh-blind contract is created.",
+  "active_task_ids": [
+    "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1"
+  ],
+  "current_focus": "Prepare one facts-only scene subset and one single-file fresh writer entry. Current diagnostic-aware chat is blocked from prose generation.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -226,7 +228,7 @@
     "Expose Phase391 diagnosis labels or mechanical-dialogue answer keys to the Phase393 blind writer",
     "Treat Phase392 packet acceptance as prose quality proof"
   ],
-  "next_required_action": "Create PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1. Freeze one scene-specific subset from the Phase392 facts-only packet and run exactly one genuinely fresh blind writer pilot. Do not expose Phase391 diagnostics or reintroduce personality labels.",
+  "next_required_action": "Freeze Phase393 inputs only; do not generate prose here.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -385,14 +387,14 @@
       "role": "Phase392 accepted context settlement"
     }
   ],
-  "status": "PHASE392_COMPLETED_FACTS_ONLY_CONTEXT_AUDITED_NO_FICTION",
-  "physical_ledger_entry_count": 41,
-  "physical_ledger_tail_hash": "f7107f73f21b947af0d0d4c3344b2bd8be92e3cfafeb2c9a0a756e772e2527e2",
+  "status": "PHASE393_ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
+  "physical_ledger_entry_count": 42,
+  "physical_ledger_tail_hash": "7eebe4187bd391dc04617797abcbfb8bd7cccfaa04389ea6eecce171af4a6272",
   "last_completed_task_id": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "40771d3be574f56473efd9aa96485aff34b679cd71e5ec8e04d84db3f7897540",
+    "project_state_sha256": "4666c05ce70a72218eb1515faddd5ac965e4c07837ea60c6cdc6ef8670a8628c",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -409,6 +411,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json",
+  "active_task_contract": "state/tasks/PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json"
 }
