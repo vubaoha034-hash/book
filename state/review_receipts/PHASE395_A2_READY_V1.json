@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 395,
+  "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "event_type": "GATED_FRESH_WRITER_READY",
+  "attempt": "A2",
+  "status": "READY_HIDDEN_CANDIDATE_A2",
+  "writer_entry_path": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A2.txt",
+  "writer_entry_sha256": "a4127f3be27ddef88201c5a03807e61f3c4bafae97e8d96adf70719606360694",
+  "inbox_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A2.txt",
+  "previous_attempt_disclosed_to_writer": false,
+  "blocker_rules_disclosed_to_writer": false,
+  "writer_output_visible_to_user": false,
+  "post_freeze_gate_required": true,
+  "accepted_checkpoint_advance": false
+}
