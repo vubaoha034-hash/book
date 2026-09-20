@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 393,
+  "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+  "event_type": "ACTUAL_HUMAN_READER_VERDICT",
+  "status": "FAIL_AI_LIGHTER_BUT_STILL_HEAVY_MECHANICAL_DIALOGUE_PERSISTS",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "frozen_output_sha256": "58d55fb5f08f8fa9ac6e665eb95ae42693ff9d491edd9cec92b244c8382b52fa",
+  "human_feedback_zh": {
+    "overall": "不能",
+    "ai_smell_vs_phase390": "更轻，但是还是很重",
+    "dialogue_mechanicality": "明显",
+    "desire_to_continue": "一般；看到AI味道重就不想看了",
+    "located_stop_pattern": "类似这种来来回回的问答，一出现就没有看下去的欲望"
+  },
+  "located_example_from_user_screenshot": {
+    "span_description": "小泥鳅认出顾承岳前后的连续问答区域",
+    "representative_lines": [
+      "这个就是顾承岳？",
+      "你不是出来替那几个小的买早饭？",
+      "是啊。",
+      "那还不走？",
+      "他们饿一会儿又饿不死。",
+      "少学这些话。"
+    ],
+    "reader_effect": "back-and-forth adjacency itself triggers loss of desire to continue"
+  },
+  "adjudication": {
+    "overall_pass": false,
+    "ai_smell_direction_vs_phase390": "LIGHTER",
+    "ai_smell_absolute": "STILL_HEAVY",
+    "dialogue_mechanicality": "CLEAR_FAIL",
+    "facts_only_context_hypothesis": "PARTIAL_IMPROVEMENT_ONLY_NOT_ROOT_CAUSE_CLOSURE",
+    "long_form_growth_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "highest_accepted_phase_ordinal": 320
+  },
+  "implication": "Removing declarative personality labels reduced some AI smell but did not eliminate the deeper adjacency-generation bias. Character-card compilation is an amplifier, not the sole root cause.",
+  "next_required_action": "Close Phase393 as failed. Create a successor diagnosis focused on the deeper generation prior: why fresh blind prose defaults to exact question-answer adjacency even with facts-only character context. Do not generate another prose candidate yet."
+}
