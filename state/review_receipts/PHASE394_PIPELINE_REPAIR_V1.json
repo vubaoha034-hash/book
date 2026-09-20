@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 394,
+  "task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
+  "event_type": "PIPELINE_REPAIR_SETTLEMENT",
+  "status": "ACCEPT_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
+  "outputs": [
+    "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "rules/dialogue-mechanical-blocker-v1.md",
+    "scripts/check_dialogue_adjacency.py",
+    "tests/test_dialogue_adjacency_blocker.py"
+  ],
+  "executable_regression_verification": {
+    "phase390_known_failure": {
+      "verdict": "BLOCK",
+      "reasons": [
+        "RAPID_SHORT_TURN_LADDER"
+      ]
+    },
+    "phase393_known_failure": {
+      "verdict": "BLOCK",
+      "reasons": [
+        "ALTERNATING_QA_CHAIN",
+        "QUESTION_ANSWER_LADDER",
+        "RAPID_SHORT_TURN_LADDER"
+      ]
+    },
+    "phase363_human_positive_excerpt": {
+      "verdict": "CLEAR",
+      "caveat": "structural tripwire clear only; not literary approval"
+    }
+  },
+  "pipeline_invariants": {
+    "writer_sees_blocker": false,
+    "candidate_freezes_before_blocker": true,
+    "deterministic_clear_is_not_quality_pass": true,
+    "semantic_blocker_required": true,
+    "blocked_candidate_whole_reject": true,
+    "local_patch_after_block_forbidden": true,
+    "blocker_feedback_to_same_writer_forbidden": true
+  },
+  "fiction_generated": false,
+  "next_task_recommendation": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "next_action": "Create a fresh-writer run that writes its unseen candidate directly to a repository inbox. Coordinator then freezes and runs both blocker layers before any prose is shown to the user.",
+  "accepted_checkpoint_advance": false
+}
