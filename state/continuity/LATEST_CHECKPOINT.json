@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 61,
-  "recorded_at": "2026-09-20T12:12:00+00:00",
+  "sequence": 62,
+  "recorded_at": "2026-09-20T12:20:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase394 production pipeline repair is complete: future fresh writer sees human-positive in-project prose but not blocker rules; candidate must freeze and pass deterministic+semantic dialogue blocking before user delivery.",
+  "active_task_ids": [
+    "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1"
+  ],
+  "current_focus": "Fresh writer A1 must store prose directly in repo inbox and show no fiction to the user. Coordinator then freezes and runs both dialogue blocker layers before any user delivery.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -117,7 +119,8 @@
     "Phase393 single-file fresh writer entry frozen",
     "Phase393 fresh blind writer output frozen unchanged",
     "Phase393 actual-human rejection recorded: AI smell lighter than Phase390 but still heavy; mechanical Q&A remains clear blocker",
-    "Phase394 positive-anchor plus post-freeze dialogue-blocker pipeline implemented and regression-verified"
+    "Phase394 positive-anchor plus post-freeze dialogue-blocker pipeline implemented and regression-verified",
+    "Phase395 hidden-candidate writer entry frozen without diagnostic priming"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -153,7 +156,8 @@
     "Phase393 output not yet frozen or human-reviewed",
     "Deeper exact-adjacency generation bias remains unexplained and uncorrected",
     "Phase395 gated fresh-writer run has not yet been created or executed",
-    "Pipeline effectiveness remains prospectively unvalidated on a new candidate"
+    "Pipeline effectiveness remains prospectively unvalidated on a new candidate",
+    "Phase395 A1 hidden fresh-writer candidate not yet stored or gated"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -171,7 +175,8 @@
     "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE393_GENERATION",
     "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DEEP_ADJACENCY_GENERATION_DIAGNOSIS",
-    "USER_DELIVERY_OF_NEW_YMGQ_PROSE_REQUIRES_POST_FREEZE_DIALOGUE_GATE"
+    "USER_DELIVERY_OF_NEW_YMGQ_PROSE_REQUIRES_POST_FREEZE_DIALOGUE_GATE",
+    "PHASE395_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -245,9 +250,12 @@
     "Generate another Phase393 candidate under the same task",
     "Expose dialogue blocker rules or thresholds to the prose writer",
     "Locally patch a candidate after dialogue blocker failure",
-    "Treat structural CLEAR as literary PASS"
+    "Treat structural CLEAR as literary PASS",
+    "Show Phase395 inbox candidate to user before deterministic and semantic gates clear",
+    "Expose Phase394 blocker rules to Phase395 writer",
+    "Locally patch a blocked Phase395 candidate"
   ],
-  "next_required_action": "Create PHASE395_GATED_FRESH_WRITER_TO_REPO_V1. Fresh writer stores an unseen candidate directly in repository inbox; coordinator freezes and runs both blocker layers before any prose is shown to the user.",
+  "next_required_action": "Run the Phase395 A1 fresh-writer entry in a genuinely new chat. The writer stores prose in the repository inbox and replies only with the stored-status token. Then this coordinator freezes and gates it before any prose is shown to the user.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -440,16 +448,32 @@
     {
       "path": "scripts/check_dialogue_adjacency.py",
       "role": "deterministic structural tripwire"
+    },
+    {
+      "path": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json",
+      "role": "current hidden gated writer contract"
+    },
+    {
+      "path": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A1.txt",
+      "role": "fresh writer A1 single execution entry"
+    },
+    {
+      "path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "hidden candidate inbox"
+    },
+    {
+      "path": "state/review_receipts/PHASE395_A1_READY_V1.json",
+      "role": "Phase395 A1 readiness receipt"
     }
   ],
-  "status": "PHASE394_COMPLETED_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
-  "physical_ledger_entry_count": 47,
-  "physical_ledger_tail_hash": "12530494bbaee336a1e7d10e95653d76476027787f74d86f4dad16b2b4b9f598",
+  "status": "PHASE395_READY_AWAITING_HIDDEN_FRESH_WRITER_A1",
+  "physical_ledger_entry_count": 48,
+  "physical_ledger_tail_hash": "d052de2c65e6f4b0d5b332cb1b0769e7ab42a172eac7d017d6b553fbd2e77dec",
   "last_completed_task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "6992c148db1580bb39b531daad3a4ab8a65f09c6f9b29803fd2f73d60ab92015",
+    "project_state_sha256": "e7adbd33458e6666c80a61994cfe65d7b0b03129deaea10ab900fe7283ad41ef",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -468,6 +492,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
+  "active_task_contract": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json"
 }
