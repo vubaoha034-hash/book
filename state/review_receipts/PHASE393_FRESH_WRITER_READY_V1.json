@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 393,
+  "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+  "event_type": "FRESH_WRITER_RUN_READY",
+  "status": "READY_INPUTS_FROZEN",
+  "frozen_inputs": {
+    "scene_packet_path": "state/author_packets/PHASE393_YMGQ_SCENE_PACKET_V1.json",
+    "scene_packet_sha256": "bd6f05654de68c5b5adc50e0762a37f7cdf073654ec49fe2c75bdf4bbff52d85",
+    "scene_packet_git_blob_sha": "047188ed816ed8fae1ac353c4933905eded291dc",
+    "execution_entry_path": "delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "execution_entry_sha256": "7c1026d20240e99255f1135c47347de0487d878862fe4ec0ba17e8ffce28fc5d",
+    "execution_entry_git_blob_sha": "5fcba02da9803956b98bdad4a9eabeb89d01236e"
+  },
+  "comparison_control": "Broad scene location/cast/situation remain comparable to Phase390; writer-visible personality labels are removed.",
+  "isolation_checks": {
+    "diagnostic_leakage_found": false,
+    "personality_label_leakage_found": false,
+    "human_answer_key_found": false,
+    "current_chat_generation_forbidden": true,
+    "writer_reads_only_execution_entry": true,
+    "exactly_one_run": true,
+    "exactly_one_candidate": true
+  },
+  "next_action": "Run delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the fiction. Bring the unchanged output back for freezing before evaluation.",
+  "accepted_checkpoint_advance": false
+}
