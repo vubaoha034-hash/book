@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 393,
+  "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+  "event_type": "FRESH_BLIND_OUTPUT_FROZEN",
+  "status": "OUTPUT_FROZEN_PENDING_ACTUAL_HUMAN_VERDICT",
+  "output_path": "state/frozen_outputs/PHASE393_FRESH_BLIND_WRITER_OUTPUT_V1.txt",
+  "output_sha256": "58d55fb5f08f8fa9ac6e665eb95ae42693ff9d491edd9cec92b244c8382b52fa",
+  "output_git_blob_sha": "57bcd4b192cea1ff265dfb0bb986fc759ce88d4a",
+  "character_count_codepoints": 2328,
+  "source": "USER_RETURNED_FRESH_CHAT_OUTPUT",
+  "output_modified_after_return": false,
+  "evaluator_may_run_after_human_raw_verdict": true,
+  "actual_human_verdict_pending": true,
+  "accepted_checkpoint_advance": false
+}
