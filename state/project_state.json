@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.19.0",
+  "schema_version": "3.19.1",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-20T12:05:00+00:00",
+  "updated_at": "2026-09-20T12:12:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,22 +15,17 @@
     "task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
     "phase": "HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE",
     "phase_ordinal": 394,
-    "status": "ACTIVE_PIPELINE_REPAIR_NO_FICTION",
+    "status": "COMPLETED_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
     "task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
-    "execution_scope": "Build writer-side positive anchor and evaluator-side mechanical dialogue blocker; no fiction generation.",
+    "execution_scope": "Production pipeline repair only; no fiction generated.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE394_BUILD_PIPELINE",
-        "parameters": {
-          "fiction_generation": false
-        }
-      }
-    ],
-    "next_action": "Build and verify the positive-anchor plus post-freeze blocker pipeline. Do not generate fiction in Phase394."
+    "allowed_action_requests": [],
+    "next_action": "Create PHASE395_GATED_FRESH_WRITER_TO_REPO_V1. Fresh writer stores an unseen candidate directly in repository inbox; coordinator freezes and runs both blocker layers before any prose is shown to the user.",
+    "completed_at": "2026-09-20T12:12:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -197,7 +192,7 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE393_DEEP_ADJACENCY_GENERATION_BIAS_DIAGNOSIS_REQUIRED",
+    "YMGQ_writing_pause_reason": "PHASE394_COMPLETE_WAITING_GATED_FRESH_WRITER_RUN",
     "current_writing_authorization_scope": {
       "kind": "ONE_PHASE393_FACTS_ONLY_FRESH_BLIND_SHORT_PILOT",
       "run_entry": "delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt",
@@ -227,9 +222,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 46,
-    "physical_event_hash": "c16b1d5d56ca5fdc3a4e104b58435bc4a4c9cb2c37fdfb791ffe118e05164614",
-    "logical_latest_checkpoint_sequence": 60,
+    "physical_STATE_LEDGER_sequence": 47,
+    "physical_event_hash": "12530494bbaee336a1e7d10e95653d76476027787f74d86f4dad16b2b4b9f598",
+    "logical_latest_checkpoint_sequence": 61,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -608,7 +603,8 @@
     "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
     "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
     "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
-    "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1"
+    "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+    "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -727,5 +723,16 @@
     "dialogue_mechanicality": "CLEAR_FAIL",
     "desire_to_continue": "LOW_DUE_HEAVY_AI_SMELL",
     "first_stop_pattern": "BACK_AND_FORTH_QA_ADJACENCY"
+  },
+  "phase394_settlement": {
+    "status": "ACCEPT_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
+    "positive_anchor": "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "blocker_rule": "rules/dialogue-mechanical-blocker-v1.md",
+    "tripwire_script": "scripts/check_dialogue_adjacency.py",
+    "tests": "tests/test_dialogue_adjacency_blocker.py",
+    "writer_sees_blocker": false,
+    "whole_candidate_reject_on_block": true,
+    "fiction_generated": false,
+    "accepted_checkpoint_advance": false
   }
 }
