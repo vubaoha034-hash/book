@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 59,
-  "recorded_at": "2026-09-20T11:56:00+00:00",
+  "sequence": 60,
+  "recorded_at": "2026-09-20T12:05:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase393 failed. Removing personality labels reduced AI smell directionally, but exact back-and-forth Q&A remains a clear blocker and directly causes reader disengagement. No new prose until deeper adjacency-generation diagnosis.",
+  "active_task_ids": [
+    "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1"
+  ],
+  "current_focus": "Implement a real production gate: writer sees human-positive in-project prose anchor but never the blocker; output freezes before deterministic+semantic mechanical-dialogue evaluation; blocked candidates are discarded whole.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -240,7 +242,7 @@
     "Treat facts-only context as sufficient repair",
     "Generate another Phase393 candidate under the same task"
   ],
-  "next_required_action": "Create a distinct successor diagnosis task focused on the deeper exact-adjacency generation bias that persists even with facts-only context. Do not generate another prose candidate yet.",
+  "next_required_action": "Build and verify Phase394 pipeline; no prose generation.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -415,14 +417,14 @@
       "role": "Phase393 frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE393_ACTUAL_HUMAN_REJECTED_AI_LIGHTER_BUT_MECHANICAL_DIALOGUE_PERSISTS",
-  "physical_ledger_entry_count": 45,
-  "physical_ledger_tail_hash": "d7bdffdbfeebfef1af6809c10ed522c58d0775a97e54fb2657e251d6aa923b8e",
+  "status": "PHASE394_ACTIVE_PIPELINE_REPAIR_NO_FICTION",
+  "physical_ledger_entry_count": 46,
+  "physical_ledger_tail_hash": "c16b1d5d56ca5fdc3a4e104b58435bc4a4c9cb2c37fdfb791ffe118e05164614",
   "last_completed_task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "0a8b339419756c113ee738b152237bdbdf5db7f45c67f45e60a492a249737908",
+    "project_state_sha256": "5846668f41fd573fe5a5be7c2fb1b326e4184c1799e987938dd77b9747a0f928",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -440,6 +442,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1.json",
+  "active_task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1.json"
 }
