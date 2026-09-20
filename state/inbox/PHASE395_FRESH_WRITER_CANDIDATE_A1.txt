@@ -1,0 +1,4 @@
+PENDING_FRESH_WRITER_OUTPUT
+task=PHASE395_GATED_FRESH_WRITER_TO_REPO_V1
+attempt=A1
+Do not use this file as story context.
