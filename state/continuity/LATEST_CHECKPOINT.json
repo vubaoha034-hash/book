@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 57,
-  "recorded_at": "2026-09-20T10:16:00+00:00",
+  "sequence": 58,
+  "recorded_at": "2026-09-20T10:22:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1"
   ],
-  "current_focus": "Phase393 facts-only scene packet and single-file execution entry are frozen. Current diagnostic-aware chat may not generate the candidate.",
+  "current_focus": "Phase393 facts-only fresh blind output is frozen unchanged. Obtain raw actual-human verdict before evaluator commentary or repair.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -116,7 +116,8 @@
     "Phase391 dialogue identity/interchangeability diagnosis completed with no fiction generated",
     "Phase392 facts-only character context frozen and audited without diagnostic leakage",
     "Phase393 facts-only scene packet frozen and leakage-audited",
-    "Phase393 single-file fresh writer entry frozen"
+    "Phase393 single-file fresh writer entry frozen",
+    "Phase393 fresh blind writer output frozen unchanged"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -149,8 +150,8 @@
     "Phase391 root-cause hypothesis remains prospectively unvalidated",
     "Phase393 facts-only fresh blind pilot has not been created or run",
     "Phase391 input-representation hypothesis remains prospectively unvalidated",
-    "Phase393 fresh blind writer run not yet completed",
-    "Phase393 output not yet frozen or human-reviewed"
+    "Phase393 output not yet frozen or human-reviewed",
+    "Phase393 actual-human raw verdict not yet recorded"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -236,7 +237,7 @@
     "Reintroduce personality labels or Phase391 diagnostics into the Phase393 writer context",
     "Generate multiple Phase393 candidates or repair the first before human review"
   ],
-  "next_required_action": "Run delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the fiction. Bring the unchanged output back for freezing before evaluation.",
+  "next_required_action": "Obtain the actual human's raw verdict before evaluator commentary: overall pass/fail, AI-smell direction versus Phase390, whether dialogue feels mechanically interchangeable, desire to continue, and first skim/stop location if any. Do not repair before verdict.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -411,14 +412,14 @@
       "role": "Phase393 frozen-input readiness receipt"
     }
   ],
-  "status": "PHASE393_READY_AWAITING_GENUINELY_FRESH_WRITER",
-  "physical_ledger_entry_count": 43,
-  "physical_ledger_tail_hash": "2e3350a228e1d3d4f453a40798d211a2b7e3b951ee6172816549985fdc599d20",
+  "status": "PHASE393_OUTPUT_FROZEN_PENDING_ACTUAL_HUMAN_VERDICT",
+  "physical_ledger_entry_count": 44,
+  "physical_ledger_tail_hash": "8c6e8470fed7dfd22607294bd931cce027208dd306054e6f0a2105ddd705e60a",
   "last_completed_task_id": "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "58e28b581e0412b61031041d5629a594d321eea9c87db32a6ff2e52e84d63d40",
+    "project_state_sha256": "37572ca06c903f690f007fa20a847b0716305f441e2917a3c25519b33b984d22",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
