@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.19.1",
+  "schema_version": "3.20.0",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-20T12:12:00+00:00",
+  "updated_at": "2026-09-20T12:20:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,20 +12,34 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
-    "phase": "HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE",
-    "phase_ordinal": 394,
-    "status": "COMPLETED_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
-    "task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
-    "execution_scope": "Production pipeline repair only; no fiction generated.",
-    "YMGQ_writing_authorized": false,
+    "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+    "phase": "GATED_FRESH_WRITER_TO_REPO",
+    "phase_ordinal": 395,
+    "status": "READY_AWAITING_HIDDEN_FRESH_WRITER_A1",
+    "task_contract": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json",
+    "execution_scope": "Fresh writer stores one unseen candidate directly in repo inbox. Current coordinator then freezes and runs deterministic + semantic dialogue blockers before user delivery.",
+    "YMGQ_writing_authorized": true,
+    "YMGQ_writing_authorization_scope": "ONE_HIDDEN_FRESH_WRITER_A1_TO_REPO_ONLY",
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "Create PHASE395_GATED_FRESH_WRITER_TO_REPO_V1. Fresh writer stores an unseen candidate directly in repository inbox; coordinator freezes and runs both blocker layers before any prose is shown to the user.",
-    "completed_at": "2026-09-20T12:12:00+00:00",
-    "current_execution_receipt": "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json"
+    "current_chat_may_generate_candidate": false,
+    "candidate_may_be_shown_to_user_before_gate": false,
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE395_STORE_A1_CANDIDATE",
+        "parameters": {
+          "output_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt"
+        }
+      },
+      {
+        "action_id": "PHASE395_FREEZE_AND_GATE_A1",
+        "parameters": {
+          "source_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt"
+        }
+      }
+    ],
+    "next_action": "Run the Phase395 A1 fresh-writer entry in a genuinely new chat. The writer stores prose in the repository inbox and replies only with the stored-status token. Then this coordinator freezes and gates it before any prose is shown to the user."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -191,15 +205,15 @@
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
-    "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE394_COMPLETE_WAITING_GATED_FRESH_WRITER_RUN",
+    "YMGQ_writing_paused": false,
+    "YMGQ_writing_pause_reason": null,
     "current_writing_authorization_scope": {
-      "kind": "ONE_PHASE393_FACTS_ONLY_FRESH_BLIND_SHORT_PILOT",
-      "run_entry": "delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt",
-      "writer_context": "GENUINELY_FRESH",
+      "kind": "ONE_HIDDEN_FRESH_WRITER_A1_TO_REPO",
+      "run_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A1.txt",
+      "output_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
       "current_chat_allowed": false,
+      "user_visible_output": false,
       "attempts": 1,
-      "versions": 1,
       "long_form": false
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE393_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
@@ -222,9 +236,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 47,
-    "physical_event_hash": "12530494bbaee336a1e7d10e95653d76476027787f74d86f4dad16b2b4b9f598",
-    "logical_latest_checkpoint_sequence": 61,
+    "physical_STATE_LEDGER_sequence": 48,
+    "physical_event_hash": "d052de2c65e6f4b0d5b332cb1b0769e7ab42a172eac7d017d6b553fbd2e77dec",
+    "logical_latest_checkpoint_sequence": 62,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -733,6 +747,21 @@
     "writer_sees_blocker": false,
     "whole_candidate_reject_on_block": true,
     "fiction_generated": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase395_execution_state": {
+    "contract_activated": true,
+    "current_attempt": "A1",
+    "attempt_budget": 3,
+    "writer_entry_frozen": true,
+    "writer_entry_sha256": "49141e8ee343a32da976210a8113c67d82f3f86f42a92d8e1998e1742ed8f256",
+    "inbox_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
+    "candidate_stored": false,
+    "candidate_frozen": false,
+    "deterministic_gate": null,
+    "semantic_gate": null,
+    "user_delivery_authorized": false,
+    "actual_human_review_complete": false,
     "accepted_checkpoint_advance": false
   }
 }
