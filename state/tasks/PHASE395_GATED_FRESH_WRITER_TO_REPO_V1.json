@@ -3,13 +3,13 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
   "phase_ordinal": 395,
-  "status": "A1_BLOCKED_A2_READY_AWAITING_HIDDEN_FRESH_WRITER",
+  "status": "A1_A2_BLOCKED_A3_READY_AWAITING_HIDDEN_FRESH_WRITER",
   "purpose": "Run a fresh writer with facts plus human-positive in-project prose anchor, store candidate unseen in repo inbox, then gate it before any user delivery.",
   "attempt_budget": 3,
-  "current_attempt": "A2",
-  "writer_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A2.txt",
-  "writer_entry_sha256": "a4127f3be27ddef88201c5a03807e61f3c4bafae97e8d96adf70719606360694",
-  "candidate_inbox": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A2.txt",
+  "current_attempt": "A3",
+  "writer_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A3.txt",
+  "writer_entry_sha256": "b495e26bd7b665b4b9fd9639fd72140cd122898ab39bf7da40d7634c7c80300a",
+  "candidate_inbox": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A3.txt",
   "delivery_rule": "Do not show candidate to user until frozen and both deterministic and semantic dialogue blockers are CLEAR.",
   "blocker_rule": "rules/dialogue-mechanical-blocker-v1.md",
   "deterministic_tripwire": "scripts/check_dialogue_adjacency.py",
@@ -34,12 +34,19 @@
       }
     }
   ],
-  "next_action": "Run the Phase395 A2 fresh-writer entry in a genuinely new chat. Writer stores candidate in A2 inbox and replies only with PHASE395_CANDIDATE_A2_STORED. Then coordinator freezes and gates it before any user delivery.",
+  "next_action": "Run the Phase395 A3 fresh-writer entry in a genuinely new chat. Writer stores candidate in A3 inbox and replies only with PHASE395_CANDIDATE_A3_STORED. Then coordinator freezes and gates it before any user delivery.",
   "accepted_checkpoint_advance": false,
   "attempt_results": {
     "A1": {
       "status": "REJECT_MECHANICAL_DIALOGUE",
       "receipt": "state/review_receipts/PHASE395_A1_DIALOGUE_GATE_REJECTION_V1.json",
+      "deterministic_gate": "BLOCK",
+      "semantic_gate": "BLOCK",
+      "user_delivery_authorized": false
+    },
+    "A2": {
+      "status": "REJECT_MECHANICAL_DIALOGUE",
+      "receipt": "state/review_receipts/PHASE395_A2_DIALOGUE_GATE_REJECTION_V1.json",
       "deterministic_gate": "BLOCK",
       "semantic_gate": "BLOCK",
       "user_delivery_authorized": false
