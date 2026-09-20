@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
   "phase_ordinal": 394,
-  "status": "ACTIVE_PIPELINE_REPAIR_NO_FICTION",
+  "status": "COMPLETED_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
   "purpose": "Replace repeated prompt-level dialogue repair with a production pipeline: human-positive in-project prose anchor for the fresh writer, plus a post-freeze mechanical-dialogue blocker that the writer never sees.",
   "basis": [
     "state/review_receipts/PHASE393_ACTUAL_HUMAN_DIALOGUE_REJECTION_H1_V1.json",
@@ -34,14 +34,16 @@
     "tests/test_dialogue_adjacency_blocker.py",
     "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE394_BUILD_PIPELINE",
-      "parameters": {
-        "fiction_generation": false
-      }
-    }
+  "allowed_action_requests": [],
+  "next_action": "Create PHASE395_GATED_FRESH_WRITER_TO_REPO_V1. Fresh writer stores an unseen candidate directly in repository inbox; coordinator freezes and runs both blocker layers before any prose is shown to the user.",
+  "accepted_checkpoint_advance": false,
+  "completed_outputs": [
+    "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "rules/dialogue-mechanical-blocker-v1.md",
+    "scripts/check_dialogue_adjacency.py",
+    "tests/test_dialogue_adjacency_blocker.py",
+    "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json"
   ],
-  "next_action": "Build and verify the positive-anchor plus post-freeze blocker pipeline. Do not generate fiction in Phase394.",
-  "accepted_checkpoint_advance": false
+  "acceptance_result": "ACCEPT_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
+  "completed_at": "2026-09-20T12:12:00+00:00"
 }
