@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 395,
+  "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "attempt": "A2",
+  "event_type": "POST_FREEZE_DIALOGUE_GATE",
+  "status": "REJECT_MECHANICAL_DIALOGUE",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE395_FRESH_WRITER_CANDIDATE_A2.txt",
+    "sha256": "209461feccbb2be093b4d903c69783b986adf4e4b0e54deedca1d7be9a707c3a"
+  },
+  "deterministic_gate": {
+    "verdict": "BLOCK",
+    "blocked_run_count": 3,
+    "blocked_runs": [
+      {
+        "turn_count": 5,
+        "question_count": 2,
+        "reasons": [
+          "QUESTION_ANSWER_LADDER"
+        ]
+      },
+      {
+        "turn_count": 12,
+        "question_count": 3,
+        "reasons": [
+          "QUESTION_ANSWER_LADDER"
+        ]
+      },
+      {
+        "turn_count": 20,
+        "question_count": 5,
+        "reasons": [
+          "RAPID_SHORT_TURN_LADDER",
+          "QUESTION_ANSWER_LADDER",
+          "ALTERNATING_QA_CHAIN"
+        ]
+      }
+    ]
+  },
+  "semantic_gate": {
+    "verdict": "BLOCK",
+    "located_failure_families": [
+      {
+        "location": "post-road-repair Liu/Gu exchange",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "SUBTEXT_EXPLICITATION"
+        ]
+      },
+      {
+        "location": "approach-to-bridge relationship discussion",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "TURN_ORDER_SPEAKER_IDENTITY",
+          "SUBTEXT_EXPLICITATION"
+        ]
+      }
+    ],
+    "note": "Candidate was frozen before semantic review and was never delivered to the user."
+  },
+  "disposition": {
+    "whole_candidate_reject": true,
+    "local_patch_forbidden": true,
+    "feedback_to_same_writer_forbidden": true,
+    "user_delivery_authorized": false
+  },
+  "implication": "Human-positive prose anchoring improved scene embodiment but did not prevent the generator from converting supplied backstory into a long explanatory dialogue agenda.",
+  "next_action": "Prepare A3 as a genuinely fresh writer attempt with positive prose anchor but a much smaller current-scene fact set, so historical relationship detail is not available as an easy dialogue topic. Do not expose A2 text or blocker feedback."
+}
