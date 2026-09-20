@@ -6,7 +6,7 @@
   "event_type": "GATED_FRESH_WRITER_READY",
   "status": "READY_HIDDEN_CANDIDATE_A1",
   "writer_entry_path": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A1.txt",
-  "writer_entry_sha256": "057aa1691dce055c2c27fbe02488fad0c562aae2b9ac9738622b49e79242aa49",
+  "writer_entry_sha256": "49141e8ee343a32da976210a8113c67d82f3f86f42a92d8e1998e1742ed8f256",
   "inbox_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
   "writer_output_visible_to_user": false,
   "post_freeze_gate_required": true,
