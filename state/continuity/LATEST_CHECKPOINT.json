@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 62,
-  "recorded_at": "2026-09-20T12:20:00+00:00",
+  "sequence": 63,
+  "recorded_at": "2026-09-20T19:20:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1"
   ],
-  "current_focus": "Fresh writer A1 must store prose directly in repo inbox and show no fiction to the user. Coordinator then freezes and runs both dialogue blocker layers before any user delivery.",
+  "current_focus": "A1 was blocked and permanently rejected before user delivery. A2 is ready in a genuinely fresh writer context with no blocker/A1 feedback. User delivery remains blocked until A2 passes both gates.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -120,7 +120,9 @@
     "Phase393 fresh blind writer output frozen unchanged",
     "Phase393 actual-human rejection recorded: AI smell lighter than Phase390 but still heavy; mechanical Q&A remains clear blocker",
     "Phase394 positive-anchor plus post-freeze dialogue-blocker pipeline implemented and regression-verified",
-    "Phase395 hidden-candidate writer entry frozen without diagnostic priming"
+    "Phase395 hidden-candidate writer entry frozen without diagnostic priming",
+    "Phase395 A1 frozen and rejected whole by deterministic+semantic dialogue gates",
+    "Phase395 A2 hidden fresh-writer inputs frozen without blocker feedback"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -157,7 +159,7 @@
     "Deeper exact-adjacency generation bias remains unexplained and uncorrected",
     "Phase395 gated fresh-writer run has not yet been created or executed",
     "Pipeline effectiveness remains prospectively unvalidated on a new candidate",
-    "Phase395 A1 hidden fresh-writer candidate not yet stored or gated"
+    "Phase395 A2 hidden fresh-writer candidate not yet stored or gated"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -176,7 +178,8 @@
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE393_GENERATION",
     "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DEEP_ADJACENCY_GENERATION_DIAGNOSIS",
     "USER_DELIVERY_OF_NEW_YMGQ_PROSE_REQUIRES_POST_FREEZE_DIALOGUE_GATE",
-    "PHASE395_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR"
+    "PHASE395_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
+    "PHASE395_A2_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -253,9 +256,11 @@
     "Treat structural CLEAR as literary PASS",
     "Show Phase395 inbox candidate to user before deterministic and semantic gates clear",
     "Expose Phase394 blocker rules to Phase395 writer",
-    "Locally patch a blocked Phase395 candidate"
+    "Locally patch a blocked Phase395 candidate",
+    "Show or repair rejected Phase395 A1 prose",
+    "Reveal A1 blocker findings to the A2 writer"
   ],
-  "next_required_action": "Run the Phase395 A1 fresh-writer entry in a genuinely new chat. The writer stores prose in the repository inbox and replies only with the stored-status token. Then this coordinator freezes and gates it before any prose is shown to the user.",
+  "next_required_action": "Run the Phase395 A2 fresh-writer entry in a genuinely new chat. Writer stores candidate in A2 inbox and replies only with PHASE395_CANDIDATE_A2_STORED. Then coordinator freezes and gates it before any user delivery.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -466,14 +471,14 @@
       "role": "Phase395 A1 readiness receipt"
     }
   ],
-  "status": "PHASE395_READY_AWAITING_HIDDEN_FRESH_WRITER_A1",
-  "physical_ledger_entry_count": 48,
-  "physical_ledger_tail_hash": "d052de2c65e6f4b0d5b332cb1b0769e7ab42a172eac7d017d6b553fbd2e77dec",
+  "status": "PHASE395_A1_BLOCKED_A2_READY_AWAITING_HIDDEN_FRESH_WRITER",
+  "physical_ledger_entry_count": 49,
+  "physical_ledger_tail_hash": "5ce355c7fa07008ada1d0070fdaae64588a7ad37ef7316fc9cdb096b948dda7f",
   "last_completed_task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "e7adbd33458e6666c80a61994cfe65d7b0b03129deaea10ab900fe7283ad41ef",
+    "project_state_sha256": "211bcccd62dde218ba6b4568d75346cb029a1e6da32266583049a03a32e62fde",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
