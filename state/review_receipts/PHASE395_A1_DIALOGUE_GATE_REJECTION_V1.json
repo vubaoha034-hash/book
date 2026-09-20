@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 395,
+  "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "attempt": "A1",
+  "event_type": "POST_FREEZE_DIALOGUE_GATE",
+  "status": "REJECT_MECHANICAL_DIALOGUE",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
+    "sha256": "4badb7bc1e9d342d0525d7c3739d349f14f0f137ffeba5ce0cd7d845b92efdd1"
+  },
+  "deterministic_gate": {
+    "verdict": "BLOCK",
+    "blocked_run_count": 3,
+    "reason_classes": [
+      "RAPID_SHORT_TURN_LADDER",
+      "QUESTION_ANSWER_LADDER",
+      "ALTERNATING_QA_CHAIN"
+    ]
+  },
+  "semantic_gate": {
+    "verdict": "BLOCK",
+    "located_failure_families": [
+      {
+        "location": "early roadblock / cart-owner recognition exchange",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "TURN_ORDER_SPEAKER_IDENTITY"
+        ]
+      },
+      {
+        "location": "cart-owner challenges Liu about protecting Gu",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SUBTEXT_EXPLICITATION"
+        ]
+      },
+      {
+        "location": "final approach to bridge / Liu-Gu exchange",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "SUBTEXT_EXPLICITATION"
+        ]
+      }
+    ],
+    "note": "Semantic judgment performed only after candidate freeze. Candidate was not shown to user."
+  },
+  "disposition": {
+    "whole_candidate_reject": true,
+    "local_patch_forbidden": true,
+    "feedback_to_same_writer_forbidden": true,
+    "user_delivery_authorized": false
+  },
+  "next_action": "Prepare A2 as a genuinely fresh writer attempt. Do not expose A1 text, blocker findings, or blocker rules to A2 writer."
+}
