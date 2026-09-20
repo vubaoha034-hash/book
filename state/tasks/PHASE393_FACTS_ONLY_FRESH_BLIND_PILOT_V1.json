@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
   "phase_ordinal": 393,
-  "status": "ACTIVE_PREPARING_FROZEN_INPUTS_NO_PROSE",
+  "status": "READY_AWAITING_GENUINELY_FRESH_WRITER",
   "purpose": "Prospectively test whether replacing declarative character traits with concrete facts/events/obligations reduces mechanical interchangeable dialogue in a fresh blind YMGQ short scene.",
   "parent_context": {
     "path": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
@@ -49,6 +49,15 @@
     "authorize span growth or full manuscript rewrite",
     "advance Phase320 accepted checkpoint"
   ],
-  "next_action": "Freeze one facts-only scene packet and one single-file fresh-writer entry. Do not generate prose in the current chat.",
-  "accepted_checkpoint_advance": false
+  "next_action": "Run delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt exactly once in a genuinely new ChatGPT conversation. That conversation must read only that file and return only the fiction. Bring the unchanged output back for freezing before evaluation.",
+  "accepted_checkpoint_advance": false,
+  "frozen_inputs": {
+    "scene_packet_path": "state/author_packets/PHASE393_YMGQ_SCENE_PACKET_V1.json",
+    "scene_packet_sha256": "bd6f05654de68c5b5adc50e0762a37f7cdf073654ec49fe2c75bdf4bbff52d85",
+    "scene_packet_git_blob_sha": "047188ed816ed8fae1ac353c4933905eded291dc",
+    "execution_entry_path": "delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "execution_entry_sha256": "7c1026d20240e99255f1135c47347de0487d878862fe4ec0ba17e8ffce28fc5d",
+    "execution_entry_git_blob_sha": "5fcba02da9803956b98bdad4a9eabeb89d01236e"
+  },
+  "input_audit": "PASS_FACTS_ONLY_NO_DIAGNOSTIC_OR_PERSONALITY_LABEL_LEAKAGE"
 }
