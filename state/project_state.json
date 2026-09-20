@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.20.1",
+  "schema_version": "3.20.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-20T19:20:00+00:00",
+  "updated_at": "2026-09-20T21:42:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,11 +15,11 @@
     "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
     "phase": "GATED_FRESH_WRITER_TO_REPO",
     "phase_ordinal": 395,
-    "status": "A1_BLOCKED_A2_READY_AWAITING_HIDDEN_FRESH_WRITER",
+    "status": "A1_A2_BLOCKED_A3_READY_AWAITING_HIDDEN_FRESH_WRITER",
     "task_contract": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json",
-    "execution_scope": "A1 rejected whole. A2 fresh writer stores one unseen candidate directly in repo inbox; coordinator freezes and gates before any user delivery.",
+    "execution_scope": "A1 and A2 rejected whole. A3 is final hidden fresh attempt; candidate must freeze and pass deterministic + semantic dialogue gates before any user delivery.",
     "YMGQ_writing_authorized": true,
-    "YMGQ_writing_authorization_scope": "ONE_HIDDEN_FRESH_WRITER_A2_TO_REPO_ONLY",
+    "YMGQ_writing_authorization_scope": "ONE_HIDDEN_FRESH_WRITER_A3_TO_REPO_ONLY",
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
@@ -39,7 +39,7 @@
         }
       }
     ],
-    "next_action": "Run the Phase395 A2 fresh-writer entry in a genuinely new chat. Writer stores candidate in A2 inbox and replies only with PHASE395_CANDIDATE_A2_STORED. Then coordinator freezes and gates it before any user delivery."
+    "next_action": "Run the Phase395 A3 fresh-writer entry in a genuinely new chat. Writer stores candidate in A3 inbox and replies only with PHASE395_CANDIDATE_A3_STORED. Then coordinator freezes and gates it before any user delivery."
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -208,9 +208,9 @@
     "YMGQ_writing_paused": false,
     "YMGQ_writing_pause_reason": null,
     "current_writing_authorization_scope": {
-      "kind": "ONE_HIDDEN_FRESH_WRITER_A2_TO_REPO",
-      "run_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A2.txt",
-      "output_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A2.txt",
+      "kind": "ONE_HIDDEN_FRESH_WRITER_A3_TO_REPO",
+      "run_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A3.txt",
+      "output_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A3.txt",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "attempts": 1,
@@ -236,9 +236,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 49,
-    "physical_event_hash": "5ce355c7fa07008ada1d0070fdaae64588a7ad37ef7316fc9cdb096b948dda7f",
-    "logical_latest_checkpoint_sequence": 63,
+    "physical_STATE_LEDGER_sequence": 50,
+    "physical_event_hash": "f46ee27f4863b72a22decbded1d04641e00d579a6cdff2b135cd248db1d56c5c",
+    "logical_latest_checkpoint_sequence": 64,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -751,7 +751,7 @@
   },
   "phase395_execution_state": {
     "contract_activated": true,
-    "current_attempt": "A2",
+    "current_attempt": "A3",
     "attempt_budget": 3,
     "writer_entry_frozen": true,
     "writer_entry_sha256": "49141e8ee343a32da976210a8113c67d82f3f86f42a92d8e1998e1742ed8f256",
@@ -772,9 +772,17 @@
       "receipt": "state/review_receipts/PHASE395_A1_DIALOGUE_GATE_REJECTION_V1.json"
     },
     "A2": {
-      "writer_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A2.txt",
-      "writer_entry_sha256": "a4127f3be27ddef88201c5a03807e61f3c4bafae97e8d96adf70719606360694",
-      "inbox_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A2.txt",
+      "candidate_frozen": true,
+      "deterministic_gate": "BLOCK",
+      "semantic_gate": "BLOCK",
+      "disposition": "WHOLE_CANDIDATE_REJECT",
+      "user_delivery_authorized": false,
+      "receipt": "state/review_receipts/PHASE395_A2_DIALOGUE_GATE_REJECTION_V1.json"
+    },
+    "A3": {
+      "writer_entry": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A3.txt",
+      "writer_entry_sha256": "b495e26bd7b665b4b9fd9639fd72140cd122898ab39bf7da40d7634c7c80300a",
+      "inbox_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A3.txt",
       "candidate_stored": false,
       "candidate_frozen": false,
       "deterministic_gate": null,
