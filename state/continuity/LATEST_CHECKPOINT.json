@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 60,
-  "recorded_at": "2026-09-20T12:05:00+00:00",
+  "sequence": 61,
+  "recorded_at": "2026-09-20T12:12:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1"
-  ],
-  "current_focus": "Implement a real production gate: writer sees human-positive in-project prose anchor but never the blocker; output freezes before deterministic+semantic mechanical-dialogue evaluation; blocked candidates are discarded whole.",
+  "active_task_ids": [],
+  "current_focus": "Phase394 production pipeline repair is complete: future fresh writer sees human-positive in-project prose but not blocker rules; candidate must freeze and pass deterministic+semantic dialogue blocking before user delivery.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -118,7 +116,8 @@
     "Phase393 facts-only scene packet frozen and leakage-audited",
     "Phase393 single-file fresh writer entry frozen",
     "Phase393 fresh blind writer output frozen unchanged",
-    "Phase393 actual-human rejection recorded: AI smell lighter than Phase390 but still heavy; mechanical Q&A remains clear blocker"
+    "Phase393 actual-human rejection recorded: AI smell lighter than Phase390 but still heavy; mechanical Q&A remains clear blocker",
+    "Phase394 positive-anchor plus post-freeze dialogue-blocker pipeline implemented and regression-verified"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -152,7 +151,9 @@
     "Phase393 facts-only fresh blind pilot has not been created or run",
     "Phase391 input-representation hypothesis remains prospectively unvalidated",
     "Phase393 output not yet frozen or human-reviewed",
-    "Deeper exact-adjacency generation bias remains unexplained and uncorrected"
+    "Deeper exact-adjacency generation bias remains unexplained and uncorrected",
+    "Phase395 gated fresh-writer run has not yet been created or executed",
+    "Pipeline effectiveness remains prospectively unvalidated on a new candidate"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -169,7 +170,8 @@
     "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DIALOGUE_VOICE_ROOT_CAUSE_DIAGNOSIS",
     "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN",
     "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE393_GENERATION",
-    "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DEEP_ADJACENCY_GENERATION_DIAGNOSIS"
+    "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DEEP_ADJACENCY_GENERATION_DIAGNOSIS",
+    "USER_DELIVERY_OF_NEW_YMGQ_PROSE_REQUIRES_POST_FREEZE_DIALOGUE_GATE"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -240,9 +242,12 @@
     "Generate multiple Phase393 candidates or repair the first before human review",
     "Treat Phase393 lighter AI smell as acceptance",
     "Treat facts-only context as sufficient repair",
-    "Generate another Phase393 candidate under the same task"
+    "Generate another Phase393 candidate under the same task",
+    "Expose dialogue blocker rules or thresholds to the prose writer",
+    "Locally patch a candidate after dialogue blocker failure",
+    "Treat structural CLEAR as literary PASS"
   ],
-  "next_required_action": "Build and verify Phase394 pipeline; no prose generation.",
+  "next_required_action": "Create PHASE395_GATED_FRESH_WRITER_TO_REPO_V1. Fresh writer stores an unseen candidate directly in repository inbox; coordinator freezes and runs both blocker layers before any prose is shown to the user.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -415,16 +420,36 @@
     {
       "path": "state/review_receipts/PHASE393_FRESH_WRITER_READY_V1.json",
       "role": "Phase393 frozen-input readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
+      "role": "completed Phase394 pipeline task"
+    },
+    {
+      "path": "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json",
+      "role": "Phase394 pipeline settlement"
+    },
+    {
+      "path": "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+      "role": "writer-visible human-positive in-project prose anchor"
+    },
+    {
+      "path": "rules/dialogue-mechanical-blocker-v1.md",
+      "role": "writer-hidden post-freeze delivery blocker"
+    },
+    {
+      "path": "scripts/check_dialogue_adjacency.py",
+      "role": "deterministic structural tripwire"
     }
   ],
-  "status": "PHASE394_ACTIVE_PIPELINE_REPAIR_NO_FICTION",
-  "physical_ledger_entry_count": 46,
-  "physical_ledger_tail_hash": "c16b1d5d56ca5fdc3a4e104b58435bc4a4c9cb2c37fdfb791ffe118e05164614",
-  "last_completed_task_id": "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+  "status": "PHASE394_COMPLETED_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
+  "physical_ledger_entry_count": 47,
+  "physical_ledger_tail_hash": "12530494bbaee336a1e7d10e95653d76476027787f74d86f4dad16b2b4b9f598",
+  "last_completed_task_id": "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "5846668f41fd573fe5a5be7c2fb1b326e4184c1799e987938dd77b9747a0f928",
+    "project_state_sha256": "6992c148db1580bb39b531daad3a4ab8a65f09c6f9b29803fd2f73d60ab92015",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -437,11 +462,12 @@
       "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
       "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
       "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
-      "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1"
+      "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+      "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json"
 }
