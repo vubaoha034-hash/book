@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 396,
+  "task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+  "attempt": "A1",
+  "event_type": "POST_FREEZE_DIALOGUE_GATE",
+  "status": "CLEAR_FOR_ACTUAL_HUMAN_REVIEW",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+    "sha256": "3be7041ecc800a7c5732cfdbe30e5a1dcb77d5096c28d9383a16b3a103bc4e42",
+    "git_blob_sha": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb"
+  },
+  "deterministic_gate": {
+    "verdict": "CLEAR",
+    "blocked_run_count": 0,
+    "total_dialogue_runs": 2,
+    "note": "Structural CLEAR only; not literary approval."
+  },
+  "semantic_gate": {
+    "verdict": "CLEAR",
+    "exact_adjacency_completion": false,
+    "single_shared_conversational_agenda": false,
+    "turn_order_speaker_identity_failure": false,
+    "subtext_explicitation": false,
+    "gesture_padding_without_geometry_change": false,
+    "note": "Only two isolated imperative utterances occur; neither forms a response-completion chain. Scene action, risk, relationship pressure and handoff are carried primarily by physical events and choices."
+  },
+  "delivery": {
+    "user_delivery_authorized": true,
+    "literary_quality_not_yet_judged": true,
+    "actual_human_verdict_required": true
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Show the frozen candidate unchanged to the actual human target reader. Record raw verdict before any repair or evaluator commentary."
+}
