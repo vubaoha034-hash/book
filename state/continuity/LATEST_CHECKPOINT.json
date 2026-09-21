@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 65,
-  "recorded_at": "2026-09-21T00:28:00+00:00",
+  "sequence": 66,
+  "recorded_at": "2026-09-21T00:40:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase395 is complete: gate worked and prevented all three mechanical-dialogue candidates from reaching the user; direct story-facts -> full prose scene generation is unsupported and must be replaced by silent scene simulation -> separate prose render.",
+  "active_task_ids": [
+    "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1"
+  ],
+  "current_focus": "Phase396 replaces direct facts-to-prose generation. A causally complete no-dialogue event trace is frozen; fresh renderer stores unseen prose in repo; user sees prose only after deterministic+semantic dialogue gates clear.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -124,7 +126,9 @@
     "Phase395 A2 frozen and rejected whole by deterministic+semantic dialogue gates",
     "Phase395 A3 hidden fresh-writer inputs frozen without blocker feedback",
     "Phase395 A3 frozen and rejected whole; A1/A2/A3 all blocked before user delivery",
-    "Phase395 direct facts-to-full-prose generation architecture rejected"
+    "Phase395 direct facts-to-full-prose generation architecture rejected",
+    "Phase396 no-dialogue scene trace frozen",
+    "Phase396 hidden renderer A1 entry frozen"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -161,7 +165,8 @@
     "Deeper exact-adjacency generation bias remains unexplained and uncorrected",
     "Phase395 gated fresh-writer run has not yet been created or executed",
     "Pipeline effectiveness remains prospectively unvalidated on a new candidate",
-    "Phase396 silent-scene-simulation architecture has not yet been built or prospectively tested"
+    "Phase396 silent-scene-simulation architecture has not yet been built or prospectively tested",
+    "Phase396 hidden prose renderer A1 has not yet stored or gated a candidate"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -183,7 +188,8 @@
     "PHASE395_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
     "PHASE395_A2_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
     "PHASE395_A3_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
-    "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED"
+    "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED",
+    "PHASE396_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -266,9 +272,11 @@
     "Show or repair rejected Phase395 A2 prose",
     "Reveal A2 blocker findings to the A3 writer",
     "Continue Phase395 with A4/A5 retries",
-    "Return any rejected A1/A2/A3 prose to user"
+    "Return any rejected A1/A2/A3 prose to user",
+    "Return to direct story-facts -> full prose generation",
+    "Show Phase396 renderer output before dialogue gates clear"
   ],
-  "next_required_action": "Create PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1. Do not continue A4/A5. Replace direct story-facts-to-prose generation with silent scene simulation followed by separate prose rendering.",
+  "next_required_action": "Run the Phase396 prose-renderer A1 entry in a genuinely new chat. Renderer stores candidate in repo and replies only with PHASE396_RENDER_A1_STORED. Then coordinator freezes and gates before user delivery.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -477,16 +485,32 @@
     {
       "path": "state/review_receipts/PHASE395_A1_READY_V1.json",
       "role": "Phase395 A1 readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
+      "role": "current Phase396 architecture contract"
+    },
+    {
+      "path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
+      "role": "frozen no-dialogue event substrate"
+    },
+    {
+      "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+      "role": "fresh hidden prose renderer entry"
+    },
+    {
+      "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+      "role": "hidden renderer inbox"
     }
   ],
-  "status": "PHASE395_COMPLETED_PIPELINE_VALID_GENERATION_ARCHITECTURE_FAILED",
-  "physical_ledger_entry_count": 51,
-  "physical_ledger_tail_hash": "0c732071130f3924b7b87ad80e72753da51edb208ab106d2fd435178323d1d3e",
+  "status": "PHASE396_READY_AWAITING_HIDDEN_PROSE_RENDERER_A1",
+  "physical_ledger_entry_count": 52,
+  "physical_ledger_tail_hash": "009d1fb05f8afc5618b3511559c0d13fe4004efbdb9f32baf32dbf9766ce998f",
   "last_completed_task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "77f781ccee370a02f299f9e1a9bc0d034481cc37f8e1fabdc4c4fc22ffe8b103",
+    "project_state_sha256": "868bd1286171d85f477dc22bbff137333f04760576d47829b1a643d0dbc90f63",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -506,6 +530,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json",
+  "active_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json"
 }
