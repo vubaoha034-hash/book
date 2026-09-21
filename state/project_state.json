@@ -1,8 +1,8 @@
 {
-  "schema_version": "3.21.1",
+  "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-21T02:22:00+00:00",
+  "updated_at": "2026-09-21T10:35:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,31 +15,17 @@
     "task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
     "phase": "SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE",
     "phase_ordinal": 396,
-    "status": "A1_GATE_CLEAR_PENDING_ACTUAL_HUMAN_VERDICT",
+    "status": "COMPLETED_BOUNDED_DIALOGUE_SURFACE_PASS_FORWARD_DESIRE_FAIL",
     "task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
-    "execution_scope": "Phase396 A1 frozen and both dialogue gates clear. Unchanged candidate may now be shown only for actual-human raw review.",
+    "execution_scope": "Phase396 A1 cleared both dialogue gates and actual human found no mechanical-dialogue feel; forward desire remained absent.",
     "YMGQ_writing_authorized": false,
-    "YMGQ_writing_authorization_scope": "ONE_HIDDEN_PHASE396_RENDER_A1_TO_REPO_ONLY",
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "current_chat_may_generate_candidate": false,
-    "candidate_may_be_shown_to_user_before_gate": true,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE396_STORE_RENDER_A1",
-        "parameters": {
-          "output_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt"
-        }
-      },
-      {
-        "action_id": "PHASE396_FREEZE_AND_GATE_RENDER_A1",
-        "parameters": {
-          "source_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt"
-        }
-      }
-    ],
-    "next_action": "Show the frozen A1 renderer candidate unchanged to the actual human reader and record raw verdict before any repair or evaluator commentary."
+    "allowed_action_requests": [],
+    "next_action": "Create a distinct new-story transfer task using the Phase396 silent-scene-simulation -> hidden prose render -> post-freeze gate pipeline. Do not use YMGQ for the next prose test.",
+    "completed_at": "2026-09-21T10:35:00+00:00",
+    "current_execution_receipt": "state/review_receipts/PHASE396_ACTUAL_HUMAN_VERDICT_H1_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -206,7 +192,7 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE396_A1_GATE_CLEAR_PENDING_ACTUAL_HUMAN_VERDICT",
+    "YMGQ_writing_pause_reason": "PHASE396_COMPLETE_NEXT_TEST_MUST_USE_NEW_STORY",
     "current_writing_authorization_scope": {
       "kind": "ONE_HIDDEN_PHASE396_RENDER_A1_TO_REPO",
       "run_entry": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
@@ -236,9 +222,9 @@
     "Novel_DNA_default_off": true
   },
   "continuity_settlement": {
-    "physical_STATE_LEDGER_sequence": 53,
-    "physical_event_hash": "3127039b9337cd553ce26d6a3143d7e7471d82c6e8434300d5a6c3752b3b0271",
-    "logical_latest_checkpoint_sequence": 67,
+    "physical_STATE_LEDGER_sequence": 54,
+    "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+    "logical_latest_checkpoint_sequence": 68,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
@@ -619,7 +605,8 @@
     "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
     "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
     "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
-    "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1"
+    "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+    "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -809,7 +796,21 @@
     "deterministic_gate": "CLEAR",
     "semantic_gate": "CLEAR",
     "user_delivery_authorized": true,
-    "actual_human_review_complete": false,
+    "actual_human_review_complete": true,
+    "accepted_checkpoint_advance": false,
+    "human_overall": "PASS_BOUNDED",
+    "ai_smell": "LIGHT",
+    "mechanical_dialogue": "NONE",
+    "forward_desire": "FAIL",
+    "first_boredom_location": "RIVER_CROSSING",
+    "novelty_issue": "REPEATED_SAME_STORY_LOW_NOVELTY"
+  },
+  "phase396_settlement": {
+    "status": "DIALOGUE_SURFACE_PIPELINE_SUPPORTED_PROPULSION_UNRESOLVED",
+    "silent_simulation_then_render_supported_for_dialogue_surface": true,
+    "propulsion_solved": false,
+    "next_test_requires_new_story": true,
+    "ymgq_reuse_for_next_test": false,
     "accepted_checkpoint_advance": false
   }
 }
