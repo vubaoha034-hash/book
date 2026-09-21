@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "ACTIVE_NEW_STORY_TRANSFER_PREPARATION_NO_PROSE",
+  "status": "A1_FROZEN_DIALOGUE_GATES_CLEAR_PENDING_ACTUAL_HUMAN",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -55,6 +55,18 @@
       }
     }
   ],
-  "next_action": "Freeze the new-story silent event trace and hidden prose-renderer entry. Do not generate or show prose in the current chat.",
-  "accepted_checkpoint_advance": false
+  "next_action": "Deliver the frozen A1 unchanged to the actual human target reader and record raw judgments for novelty, suspense, forward desire, AI smell, mechanical dialogue, and emotion before any repair.",
+  "accepted_checkpoint_advance": false,
+  "execution_state": {
+    "renderer_attempt": "A1",
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt",
+    "frozen_output_sha256": "d53528b299a13f96d5b7c99ba8e0f87581944147c1a5ff9423fb43b8ba474258",
+    "deterministic_gate": "CLEAR",
+    "semantic_gate": "CLEAR",
+    "gate_receipt": "state/review_receipts/PHASE397_NS01_A1_DIALOGUE_GATE_CLEAR_V1.json",
+    "user_delivery_authorized": true,
+    "actual_human_review_complete": false
+  }
 }
