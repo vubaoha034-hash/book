@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "phase_ordinal": 396,
-  "status": "READY_AWAITING_HIDDEN_PROSE_RENDERER_A1",
+  "status": "A1_GATE_CLEAR_PENDING_ACTUAL_HUMAN_VERDICT",
   "purpose": "Replace direct story-facts-to-prose generation with a causally complete silent event simulation followed by a separate prose renderer, then apply the existing post-freeze dialogue gate before user delivery.",
   "scene_trace_path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
   "writer_entry": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
@@ -31,10 +31,16 @@
       }
     }
   ],
-  "next_action": "Run the Phase396 prose-renderer A1 entry in a genuinely new chat. Renderer stores candidate in repo and replies only with PHASE396_RENDER_A1_STORED. Then coordinator freezes and gates before user delivery.",
+  "next_action": "Show the frozen A1 renderer candidate unchanged to the actual human reader and record raw verdict before any repair or evaluator commentary.",
   "accepted_checkpoint_advance": false,
   "writer_entry_sha256": "5b4f1fa4d70c0ec5b148659e905721b4827a2e189a843f853086c854a15293fd",
   "scene_trace_sha256": "91abe49aaaff79d7d42a5228d0aed75b6de0dc816f3c62dcf8015d7762b1ea6d",
   "writer_entry_blob_sha": "fafe06be8416de0024bae0e9b85063e5275b35d0",
-  "scene_trace_blob_sha": "c76c95c6a877c946aba8a544359dc129988874e6"
+  "scene_trace_blob_sha": "c76c95c6a877c946aba8a544359dc129988874e6",
+  "frozen_output": {
+    "path": "state/frozen_outputs/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+    "sha256": "3be7041ecc800a7c5732cfdbe30e5a1dcb77d5096c28d9383a16b3a103bc4e42",
+    "git_blob_sha": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb"
+  },
+  "gate_receipt": "state/review_receipts/PHASE396_A1_DIALOGUE_GATE_CLEAR_V1.json"
 }
