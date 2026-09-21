@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 395,
+  "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "event_type": "PHASE_FINAL_SETTLEMENT",
+  "status": "COMPLETE_PIPELINE_VALID_GENERATION_ARCHITECTURE_FAILED",
+  "attempts": {
+    "A1": {
+      "deterministic": "BLOCK",
+      "semantic": "BLOCK",
+      "user_shown": false
+    },
+    "A2": {
+      "deterministic": "BLOCK",
+      "semantic": "BLOCK",
+      "user_shown": false
+    },
+    "A3": {
+      "deterministic": "BLOCK",
+      "semantic": "BLOCK",
+      "user_shown": false
+    }
+  },
+  "conclusions": [
+    "Post-freeze gate successfully prevented three known-bad candidates from reaching the user.",
+    "Positive prose anchoring alone did not remove mechanical adjacency.",
+    "Reducing backstory exposure alone did not remove mechanical adjacency.",
+    "Direct story-facts -> full prose scene generation remains structurally unreliable for this project."
+  ],
+  "next_architecture": "SCENE_SIMULATION_THEN_PROSE_RENDER",
+  "next_task_recommendation": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+  "accepted_checkpoint_advance": false,
+  "highest_accepted_phase_ordinal": 320
+}
