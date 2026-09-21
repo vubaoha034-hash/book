@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+  "phase_ordinal": 396,
+  "status": "READY_AWAITING_HIDDEN_PROSE_RENDERER_A1",
+  "purpose": "Replace direct story-facts-to-prose generation with a causally complete silent event simulation followed by a separate prose renderer, then apply the existing post-freeze dialogue gate before user delivery.",
+  "scene_trace_path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
+  "writer_entry": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+  "candidate_inbox": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+  "gate_rule": "rules/dialogue-mechanical-blocker-v1.md",
+  "architecture": [
+    "coordinator freezes no-dialogue event trace",
+    "fresh prose renderer receives trace plus human-positive in-project prose anchor",
+    "renderer may not invent major events or explain intentionally unresolved motives",
+    "candidate writes unseen to repo",
+    "candidate freezes",
+    "deterministic + semantic dialogue gates run before user delivery"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE396_STORE_RENDER_A1",
+      "parameters": {
+        "output_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt"
+      }
+    },
+    {
+      "action_id": "PHASE396_FREEZE_AND_GATE_RENDER_A1",
+      "parameters": {
+        "source_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt"
+      }
+    }
+  ],
+  "next_action": "Run the Phase396 prose-renderer A1 entry in a genuinely new chat. Renderer stores candidate in repo and replies only with PHASE396_RENDER_A1_STORED. Then coordinator freezes and gates before user delivery.",
+  "accepted_checkpoint_advance": false
+}
