@@ -32,5 +32,9 @@
     }
   ],
   "next_action": "Run the Phase396 prose-renderer A1 entry in a genuinely new chat. Renderer stores candidate in repo and replies only with PHASE396_RENDER_A1_STORED. Then coordinator freezes and gates before user delivery.",
-  "accepted_checkpoint_advance": false
+  "accepted_checkpoint_advance": false,
+  "writer_entry_sha256": "5b4f1fa4d70c0ec5b148659e905721b4827a2e189a843f853086c854a15293fd",
+  "scene_trace_sha256": "91abe49aaaff79d7d42a5228d0aed75b6de0dc816f3c62dcf8015d7762b1ea6d",
+  "writer_entry_blob_sha": "fafe06be8416de0024bae0e9b85063e5275b35d0",
+  "scene_trace_blob_sha": "c76c95c6a877c946aba8a544359dc129988874e6"
 }
