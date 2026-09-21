@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
   "phase_ordinal": 395,
-  "status": "A1_A2_BLOCKED_A3_READY_AWAITING_HIDDEN_FRESH_WRITER",
+  "status": "COMPLETED_PIPELINE_VALID_GENERATION_ARCHITECTURE_FAILED",
   "purpose": "Run a fresh writer with facts plus human-positive in-project prose anchor, store candidate unseen in repo inbox, then gate it before any user delivery.",
   "attempt_budget": 3,
   "current_attempt": "A3",
@@ -20,21 +20,8 @@
     "feedback_to_same_writer": false,
     "replacement_requires_new_fresh_context": true
   },
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE395_STORE_A1_CANDIDATE",
-      "parameters": {
-        "output_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt"
-      }
-    },
-    {
-      "action_id": "PHASE395_FREEZE_AND_GATE_A1",
-      "parameters": {
-        "source_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt"
-      }
-    }
-  ],
-  "next_action": "Run the Phase395 A3 fresh-writer entry in a genuinely new chat. Writer stores candidate in A3 inbox and replies only with PHASE395_CANDIDATE_A3_STORED. Then coordinator freezes and gates it before any user delivery.",
+  "allowed_action_requests": [],
+  "next_action": "Create PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1. Do not continue A4/A5. Replace direct story-facts-to-prose generation with silent scene simulation followed by separate prose rendering.",
   "accepted_checkpoint_advance": false,
   "attempt_results": {
     "A1": {
@@ -50,6 +37,14 @@
       "deterministic_gate": "BLOCK",
       "semantic_gate": "BLOCK",
       "user_delivery_authorized": false
+    },
+    "A3": {
+      "status": "REJECT_MECHANICAL_DIALOGUE",
+      "receipt": "state/review_receipts/PHASE395_A3_DIALOGUE_GATE_REJECTION_V1.json",
+      "deterministic_gate": "BLOCK",
+      "semantic_gate": "BLOCK",
+      "user_delivery_authorized": false
     }
-  }
+  },
+  "completed_at": "2026-09-21T00:28:00+00:00"
 }
