@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 396,
+  "task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+  "event_type": "SILENT_SIMULATION_RENDER_PIPELINE_READY",
+  "status": "READY_HIDDEN_RENDER_A1",
+  "scene_trace_path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
+  "writer_entry_path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+  "inbox_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+  "user_delivery_before_gate": false,
+  "accepted_checkpoint_advance": false
+}
