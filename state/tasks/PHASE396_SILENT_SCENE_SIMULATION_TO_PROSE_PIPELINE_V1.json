@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "project_id": "novel-distillation",
   "task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "phase_ordinal": 396,
-  "status": "A1_GATE_CLEAR_PENDING_ACTUAL_HUMAN_VERDICT",
+  "status": "COMPLETED_BOUNDED_DIALOGUE_SURFACE_PASS_FORWARD_DESIRE_FAIL",
   "purpose": "Replace direct story-facts-to-prose generation with a causally complete silent event simulation followed by a separate prose renderer, then apply the existing post-freeze dialogue gate before user delivery.",
   "scene_trace_path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
   "writer_entry": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
@@ -17,21 +17,8 @@
     "candidate freezes",
     "deterministic + semantic dialogue gates run before user delivery"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE396_STORE_RENDER_A1",
-      "parameters": {
-        "output_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt"
-      }
-    },
-    {
-      "action_id": "PHASE396_FREEZE_AND_GATE_RENDER_A1",
-      "parameters": {
-        "source_path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt"
-      }
-    }
-  ],
-  "next_action": "Show the frozen A1 renderer candidate unchanged to the actual human reader and record raw verdict before any repair or evaluator commentary.",
+  "allowed_action_requests": [],
+  "next_action": "Create a distinct new-story transfer task using the Phase396 silent-scene-simulation -> hidden prose render -> post-freeze gate pipeline. Do not use YMGQ for the next prose test.",
   "accepted_checkpoint_advance": false,
   "writer_entry_sha256": "5b4f1fa4d70c0ec5b148659e905721b4827a2e189a843f853086c854a15293fd",
   "scene_trace_sha256": "91abe49aaaff79d7d42a5228d0aed75b6de0dc816f3c62dcf8015d7762b1ea6d",
@@ -42,5 +29,7 @@
     "sha256": "3be7041ecc800a7c5732cfdbe30e5a1dcb77d5096c28d9383a16b3a103bc4e42",
     "git_blob_sha": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb"
   },
-  "gate_receipt": "state/review_receipts/PHASE396_A1_DIALOGUE_GATE_CLEAR_V1.json"
+  "gate_receipt": "state/review_receipts/PHASE396_A1_DIALOGUE_GATE_CLEAR_V1.json",
+  "actual_human_receipt": "state/review_receipts/PHASE396_ACTUAL_HUMAN_VERDICT_H1_V1.json",
+  "completed_at": "2026-09-21T10:35:00+00:00"
 }
