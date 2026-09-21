@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 395,
+  "task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "attempt": "A3",
+  "event_type": "POST_FREEZE_DIALOGUE_GATE",
+  "status": "REJECT_MECHANICAL_DIALOGUE",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE395_FRESH_WRITER_CANDIDATE_A3.txt",
+    "sha256": "78c5b771997f6bcefe1ce435d55ede890392beb73e8d5f17f713f641f297f28d"
+  },
+  "deterministic_gate": {
+    "verdict": "BLOCK",
+    "blocked_run_count": 4,
+    "blocked_runs": [
+      {
+        "turn_count": 9,
+        "question_count": 2,
+        "reasons": [
+          "RAPID_SHORT_TURN_LADDER",
+          "QUESTION_ANSWER_LADDER",
+          "ALTERNATING_QA_CHAIN"
+        ]
+      },
+      {
+        "turn_count": 7,
+        "question_count": 0,
+        "reasons": [
+          "RAPID_SHORT_TURN_LADDER"
+        ]
+      },
+      {
+        "turn_count": 11,
+        "question_count": 3,
+        "reasons": [
+          "RAPID_SHORT_TURN_LADDER",
+          "QUESTION_ANSWER_LADDER",
+          "ALTERNATING_QA_CHAIN"
+        ]
+      },
+      {
+        "turn_count": 5,
+        "question_count": 2,
+        "reasons": [
+          "QUESTION_ANSWER_LADDER",
+          "ALTERNATING_QA_CHAIN"
+        ]
+      }
+    ]
+  },
+  "semantic_gate": {
+    "verdict": "BLOCK",
+    "located_failure_families": [
+      {
+        "location": "rope preparation / descent exchange",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "TURN_ORDER_SPEAKER_IDENTITY"
+        ]
+      },
+      {
+        "location": "post-crossing rest / boundary discussion",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "SUBTEXT_EXPLICITATION"
+        ]
+      },
+      {
+        "location": "bridge-center promise clarification",
+        "findings": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SUBTEXT_EXPLICITATION"
+        ]
+      }
+    ],
+    "note": "Candidate frozen before semantic review and never delivered to user."
+  },
+  "disposition": {
+    "whole_candidate_reject": true,
+    "local_patch_forbidden": true,
+    "feedback_to_same_writer_forbidden": true,
+    "user_delivery_authorized": false
+  }
+}
