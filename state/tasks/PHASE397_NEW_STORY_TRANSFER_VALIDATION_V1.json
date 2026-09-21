@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "phase_ordinal": 397,
+  "status": "ACTIVE_NEW_STORY_TRANSFER_PREPARATION_NO_PROSE",
+  "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
+  "new_story": {
+    "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
+    "relationship_to_YMGQ": "NONE",
+    "setting": "historical Chinese county-town suspense",
+    "premise": "A man returns home after nine days away and discovers his own funeral already underway, with an unidentified corpse being buried as him and the person who sent him away sitting in the mourning hall."
+  },
+  "target_human_dimensions": [
+    "novelty",
+    "suspense",
+    "forward desire",
+    "AI smell",
+    "mechanical dialogue"
+  ],
+  "inherited_pipeline": [
+    "silent event trace before prose",
+    "separate fresh prose renderer",
+    "hidden repository inbox",
+    "freeze before evaluation",
+    "deterministic dialogue tripwire",
+    "semantic mechanical-dialogue blocker",
+    "actual human verdict controls"
+  ],
+  "forbidden": [
+    "reuse YMGQ characters, bridge premise, scenes or prose",
+    "generate prose in the current coordinator chat",
+    "expose dialogue blocker rules to renderer",
+    "resolve the central identity/funeral mystery in the first scene",
+    "treat gate clear as literary pass",
+    "advance Phase320 accepted checkpoint"
+  ],
+  "required_outputs": [
+    "state/simulations/PHASE397_NS01_SILENT_SCENE_TRACE_A1.json",
+    "delivery/phase397/RUN_NS01_PROSE_RENDERER_TO_REPO_A1.txt",
+    "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt",
+    "state/review_receipts/PHASE397_NS01_A1_READY_V1.json"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE397_STORE_NS01_RENDER_A1",
+      "parameters": {
+        "output_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt"
+      }
+    },
+    {
+      "action_id": "PHASE397_FREEZE_AND_GATE_NS01_A1",
+      "parameters": {
+        "source_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt"
+      }
+    }
+  ],
+  "next_action": "Freeze the new-story silent event trace and hidden prose-renderer entry. Do not generate or show prose in the current chat.",
+  "accepted_checkpoint_advance": false
+}
