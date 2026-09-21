@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 67,
-  "recorded_at": "2026-09-21T02:22:00+00:00",
+  "sequence": 68,
+  "recorded_at": "2026-09-21T10:35:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1"
-  ],
-  "current_focus": "Phase396 A1 is frozen and is the first candidate to clear both mechanical-dialogue gates. It is authorized for unchanged actual-human review only; no prose quality conclusion yet.",
+  "active_task_ids": [],
+  "current_focus": "Phase396 solved the recurrent mechanical-dialogue failure on the tested candidate: human says AI smell light and mechanical dialogue absent. Forward desire still failed; next prose test must use a genuinely different story to remove repeated-YMGQ novelty fatigue.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -131,7 +129,9 @@
     "Phase396 hidden renderer A1 entry frozen",
     "Phase396 A1 frozen unchanged",
     "Phase396 A1 deterministic dialogue gate CLEAR",
-    "Phase396 A1 semantic dialogue gate CLEAR"
+    "Phase396 A1 semantic dialogue gate CLEAR",
+    "Phase396 actual-human verdict: bounded overall pass, light AI smell, no mechanical dialogue",
+    "Phase396 silent-scene-simulation -> prose-render pipeline supported for dialogue-surface control"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -169,7 +169,8 @@
     "Phase395 gated fresh-writer run has not yet been created or executed",
     "Pipeline effectiveness remains prospectively unvalidated on a new candidate",
     "Phase396 silent-scene-simulation architecture has not yet been built or prospectively tested",
-    "Phase396 A1 actual-human raw verdict not yet recorded"
+    "Forward desire / suspense / novelty remain unresolved",
+    "New-story transfer validation has not yet been performed"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -191,7 +192,8 @@
     "PHASE395_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
     "PHASE395_A2_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
     "PHASE395_A3_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
-    "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED"
+    "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED",
+    "REUSE_OF_YMGQ_FOR_NEXT_PROSE_TRANSFER_TEST_BLOCKED_BY_HUMAN_NOVELTY_REQUEST"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -278,9 +280,11 @@
     "Return to direct story-facts -> full prose generation",
     "Show Phase396 renderer output before dialogue gates clear",
     "Edit or repair Phase396 A1 before actual-human verdict",
-    "Treat gate CLEAR as literary acceptance"
+    "Treat gate CLEAR as literary acceptance",
+    "Treat Phase396 dialogue-surface success as propulsion success",
+    "Use another YMGQ bridge/crossing scene for the next prose test"
   ],
-  "next_required_action": "Show the frozen A1 renderer candidate unchanged to the actual human reader and record raw verdict before any repair or evaluator commentary.",
+  "next_required_action": "Create a distinct new-story transfer task using the Phase396 silent-scene-simulation -> hidden prose render -> post-freeze gate pipeline. Do not use YMGQ for the next prose test.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -507,14 +511,14 @@
       "role": "hidden renderer inbox"
     }
   ],
-  "status": "PHASE396_A1_GATE_CLEAR_PENDING_ACTUAL_HUMAN_VERDICT",
-  "physical_ledger_entry_count": 53,
-  "physical_ledger_tail_hash": "3127039b9337cd553ce26d6a3143d7e7471d82c6e8434300d5a6c3752b3b0271",
-  "last_completed_task_id": "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+  "status": "PHASE396_COMPLETED_BOUNDED_DIALOGUE_SURFACE_PASS_FORWARD_DESIRE_FAIL",
+  "physical_ledger_entry_count": 54,
+  "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+  "last_completed_task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "d52438c089b7a9bd950f05cd8900d67a9f6a52bb9be27197858be782180fd9cd",
+    "project_state_sha256": "a857353187168d76bce7bcca51b1fb44f2755883808b53a02e0712217d163ffe",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -529,11 +533,12 @@
       "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
       "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
       "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
-      "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1"
+      "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+      "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json"
 }
