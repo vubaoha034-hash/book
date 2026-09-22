@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A3",
+  "event_type": "NEW_STORY_RENDERER_READY",
+  "status": "READY_HIDDEN_NS01_RENDER_A3",
+  "story_id": "NS01_DEAD_MAN_RETURNS_HOME",
+  "substrate_path": "state/simulations/PHASE397_NS01_CONTINUOUS_SCENE_SUBSTRATE_A3.json",
+  "writer_entry_path": "delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt",
+  "inbox_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+  "writer_sees_diagnosis_labels": false,
+  "source_fidelity_lock": true,
+  "user_delivery_before_gate": false,
+  "accepted_checkpoint_advance": false
+}
