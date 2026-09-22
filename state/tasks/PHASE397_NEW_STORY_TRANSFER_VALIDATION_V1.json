@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A2_FROZEN_ALL_GATES_CLEAR_PENDING_ACTUAL_HUMAN",
+  "status": "A2_HUMAN_REJECTED_LOW_IMMERSION_HEAVY_AI",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -55,7 +55,7 @@
       }
     }
   ],
-  "next_action": "Deliver frozen A2 unchanged to the actual human target reader. Record raw judgment on ordinary-human plausibility, emotion, suspense, forward desire, AI smell and first boredom/stop point before any repair.",
+  "next_action": "Diagnose A2 narrative-transportation failure before authorizing any A3. Do not solve by simply adding more emotion language.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
     "renderer_attempt": "A1",
@@ -89,8 +89,16 @@
       "deterministic_dialogue_gate": "CLEAR",
       "semantic_dialogue_gate": "CLEAR",
       "dialogue_gate_receipt": "state/review_receipts/PHASE397_NS01_A2_DIALOGUE_GATE_CLEAR_V1.json",
-      "actual_human_review_complete": false,
-      "user_delivery_authorized": true
+      "actual_human_review_complete": true,
+      "user_delivery_authorized": true,
+      "literary_acceptance": false,
+      "ordinary_human_reaction": "PASS",
+      "emotion": "INSUFFICIENT",
+      "suspense": "PRESENT",
+      "forward_desire": "FAIL",
+      "ai_smell": "HEAVY",
+      "narrative_transportation": "FAIL",
+      "human_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json"
     }
   }
 }
