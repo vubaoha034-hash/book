@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A1",
+  "event_type": "ACTUAL_HUMAN_READER_REJECTION",
+  "status": "REJECT_AFFECTIVE_CAUSALITY_AND_SOURCE_FIDELITY",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt",
+  "human_feedback_zh": {
+    "verbatim": "我觉得这个任务太冷静了，有些人因为见过很多市面确实可以很冷静。但是他就是一个跑街的。为什么能这么冷静？",
+    "located_problem": "主角面对自己的灵堂、妻子守灵、替身尸体等极端事件时，几乎始终以观察、确认、推理、撤离的方式行动，缺少普通人的本能失衡和情绪对行为的干扰。",
+    "reader_judgment": "严九作为普通跑街人，其冷静程度缺乏人物依据。"
+  },
+  "adjudication": {
+    "literary_acceptance": false,
+    "transfer_pass": false,
+    "mechanical_dialogue_gate_result_preserved": "CLEAR_ONLY_FOR_KNOWN_DIALOGUE_FAILURE",
+    "primary_located_failure": "UNJUSTIFIED_COMPOSURE_AFFECT_NOT_IN_CAUSAL_CHAIN",
+    "repair_scope": "EVENT_SUBSTRATE_ONLY",
+    "abstract_emotion_prompting_forbidden": true,
+    "source_fidelity_breach_also_present": true,
+    "a1_counts_as_valid_transfer_evidence": false,
+    "human_feedback_usable_for_failure_localization": true,
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Prepare Phase397 A2 in the same phase. Rewrite only the silent event substrate so ordinary-human affect changes action before practical experience regains control. Preserve mystery, exact names and fixed facts; then run one fresh renderer."
+}
