@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A2",
+  "event_type": "POST_FREEZE_DIALOGUE_GATE",
+  "status": "CLEAR_FOR_ACTUAL_HUMAN_REVIEW",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A2.txt",
+    "sha256": "ebe1a8d453c68b7f7e38a80d58e8d7a6db977cfe969bef9055b0ec07606ea2c6",
+    "git_blob_sha": "5a307c7c89ee3bf06e963b19b4b69b209541357e"
+  },
+  "deterministic_gate": {
+    "verdict": "CLEAR",
+    "blocked_run_count": 0,
+    "total_dialogue_runs": 0,
+    "note": "No character dialogue runs are present."
+  },
+  "semantic_gate": {
+    "verdict": "CLEAR",
+    "exact_adjacency_completion": false,
+    "single_shared_conversational_agenda": false,
+    "turn_order_speaker_identity_failure": false,
+    "subtext_explicitation": false,
+    "gesture_padding_without_geometry_change": false,
+    "note": "No multi-turn dialogue exchange exists; the known mechanical Q&A failure is absent."
+  },
+  "source_fidelity_gate": "CLEAR",
+  "delivery": {
+    "user_delivery_authorized": true,
+    "literary_quality_not_yet_judged": true,
+    "actual_human_verdict_required": true
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Deliver the frozen A2 unchanged to the actual human reader and record the raw verdict before any repair."
+}
