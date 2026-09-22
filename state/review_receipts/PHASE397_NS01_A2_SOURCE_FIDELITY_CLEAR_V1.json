@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A2",
+  "event_type": "SOURCE_FIDELITY_GATE",
+  "status": "CLEAR",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A2.txt",
+    "sha256": "ebe1a8d453c68b7f7e38a80d58e8d7a6db977cfe969bef9055b0ec07606ea2c6",
+    "git_blob_sha": "5a307c7c89ee3bf06e963b19b4b69b209541357e"
+  },
+  "checks": {
+    "exact_names_present": [
+      "严九",
+      "苏荷",
+      "韩敬",
+      "韩记票号"
+    ],
+    "forbidden_substitutions_present": [],
+    "black_lacquer_box_opened": false,
+    "new_transport_setup": false,
+    "new_weapon_or_combat_history": false,
+    "central_mystery_resolved": false,
+    "new_cause_of_death_claim": false
+  },
+  "note": "A2 preserves the explicit fact lock. This gate does not judge literary quality."
+}
