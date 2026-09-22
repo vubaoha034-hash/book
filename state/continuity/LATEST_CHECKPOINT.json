@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 68,
-  "recorded_at": "2026-09-21T10:35:00+00:00",
+  "sequence": 69,
+  "recorded_at": "2026-09-22T16:07:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase396 solved the recurrent mechanical-dialogue failure on the tested candidate: human says AI smell light and mechanical dialogue absent. Forward desire still failed; next prose test must use a genuinely different story to remove repeated-YMGQ novelty fatigue.",
+  "active_task_ids": [
+    "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1"
+  ],
+  "current_focus": "Phase397 new-story transfer remains active. A2 improved ordinary-human reaction and preserved suspense, but actual human still found emotion insufficient, AI smell heavy, no desire to continue, and weak narrative transportation. A3 is prepared to test continuous lived-scene rendering with minimal relationship specificity and less explanatory closure.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -151,26 +153,23 @@
     "Current scene emotional engagement/early retention failed; requested Chat-based reauthoring has not yet produced a successor candidate",
     "Authoring/evaluator isolation firewall not yet frozen",
     "Stable low-AI prose generation remains unproven",
-    "Phase387 fresh blind authoring pilot has not been created or run",
     "Phase387 rejection subdimensions are not fully localized from human feedback",
     "Root cause of why the fresh blind candidate still fails acceptance remains open",
     "Rich story/character context packet has not yet been built or audited",
     "Phase388 root-cause hypotheses remain prospectively unvalidated",
-    "Phase390 rich-context fresh blind pilot has not been created or run",
     "Phase388/389 input-context hypothesis remains prospectively unvalidated",
-    "Phase390 output not yet frozen or human-reviewed",
     "Root cause of character-voice collapse despite rich context remains open",
     "Facts-only character context redesign has not yet been built or audited",
     "Phase391 root-cause hypothesis remains prospectively unvalidated",
     "Phase393 facts-only fresh blind pilot has not been created or run",
     "Phase391 input-representation hypothesis remains prospectively unvalidated",
-    "Phase393 output not yet frozen or human-reviewed",
     "Deeper exact-adjacency generation bias remains unexplained and uncorrected",
-    "Phase395 gated fresh-writer run has not yet been created or executed",
     "Pipeline effectiveness remains prospectively unvalidated on a new candidate",
-    "Phase396 silent-scene-simulation architecture has not yet been built or prospectively tested",
     "Forward desire / suspense / novelty remain unresolved",
-    "New-story transfer validation has not yet been performed"
+    "Phase397 A3 human review has not yet been performed",
+    "Narrative transportation remains unresolved",
+    "AI smell remains heavy on Phase397 A2",
+    "Forward desire remains unresolved despite suspense"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -193,7 +192,9 @@
     "PHASE395_A2_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
     "PHASE395_A3_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
     "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED",
-    "REUSE_OF_YMGQ_FOR_NEXT_PROSE_TRANSFER_TEST_BLOCKED_BY_HUMAN_NOVELTY_REQUEST"
+    "REUSE_OF_YMGQ_FOR_NEXT_PROSE_TRANSFER_TEST_BLOCKED_BY_HUMAN_NOVELTY_REQUEST",
+    "CURRENT_COORDINATOR_CHAT_BLOCKED_FROM_PHASE397_A3_GENERATION",
+    "PHASE397_A3_USER_DELIVERY_BLOCKED_UNTIL_SOURCE_FIDELITY_AND_DIALOGUE_GATES_CLEAR"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -284,7 +285,7 @@
     "Treat Phase396 dialogue-surface success as propulsion success",
     "Use another YMGQ bridge/crossing scene for the next prose test"
   ],
-  "next_required_action": "Create a distinct new-story transfer task using the Phase396 silent-scene-simulation -> hidden prose render -> post-freeze gate pipeline. Do not use YMGQ for the next prose test.",
+  "next_required_action": "Run exactly one fresh isolated Phase397 A3 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and deliver only if all clear.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -511,14 +512,14 @@
       "role": "hidden renderer inbox"
     }
   ],
-  "status": "PHASE396_COMPLETED_BOUNDED_DIALOGUE_SURFACE_PASS_FORWARD_DESIRE_FAIL",
+  "status": "PHASE397_A3_READY_AWAITING_FRESH_RENDERER",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "a857353187168d76bce7bcca51b1fb44f2755883808b53a02e0712217d163ffe",
+    "project_state_sha256": "7dd821708a7d62bd274fb9e3fa64a64d51c2eb86c7cf6fc7f9627c26f562002a",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -539,6 +540,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
+  "active_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json"
 }
