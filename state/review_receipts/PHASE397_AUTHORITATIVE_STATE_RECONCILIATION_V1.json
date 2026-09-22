@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "event_type": "AUTHORITATIVE_STATE_RECONCILIATION",
+  "status": "PASS_RECONCILED_TO_PHASE397_A3_READY",
+  "reason": "Phase397 durable task, A1/A2 frozen outputs and actual-human receipts existed while state/project_state.json and LATEST_CHECKPOINT.json still reflected completed Phase396. Reconciled forward without changing the accepted promotion checkpoint.",
+  "evidence": [
+    "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+    "state/review_receipts/PHASE397_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
+    "docs/PHASE397_A2_NARRATIVE_TRANSPORTATION_DIAGNOSIS_V1.md",
+    "state/review_receipts/PHASE397_NS01_A3_READY_V1.json"
+  ],
+  "checkpoint": {
+    "logical_sequence": 69,
+    "active_task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+    "active_status": "A3_READY_AWAITING_FRESH_RENDERER",
+    "highest_accepted_phase_ordinal": 320,
+    "accepted_checkpoint_advance": false
+  },
+  "physical_ledger": {
+    "entry_count": 54,
+    "tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+    "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
+    "claim_missing_events_reconstructed": false
+  }
+}
