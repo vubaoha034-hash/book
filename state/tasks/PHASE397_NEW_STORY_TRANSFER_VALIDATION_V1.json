@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A1_HUMAN_REJECTED_A2_READY",
+  "status": "A2_FROZEN_ALL_GATES_CLEAR_PENDING_ACTUAL_HUMAN",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -55,7 +55,7 @@
       }
     }
   ],
-  "next_action": "Run exactly one fresh isolated A2 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_TO_REPO_A2.txt. Then freeze unchanged, run source-fidelity and dialogue gates, and only deliver if all clear.",
+  "next_action": "Deliver frozen A2 unchanged to the actual human target reader. Record raw judgment on ordinary-human plausibility, emotion, suspense, forward desire, AI smell and first boredom/stop point before any repair.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
     "renderer_attempt": "A1",
@@ -80,11 +80,17 @@
     "A2": {
       "scene_trace_frozen": true,
       "writer_entry_frozen": true,
-      "candidate_stored": false,
-      "candidate_frozen": false,
-      "gates": null,
+      "candidate_stored": true,
+      "candidate_frozen": true,
+      "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A2.txt",
+      "frozen_output_sha256": "ebe1a8d453c68b7f7e38a80d58e8d7a6db977cfe969bef9055b0ec07606ea2c6",
+      "source_fidelity_gate": "CLEAR",
+      "source_fidelity_receipt": "state/review_receipts/PHASE397_NS01_A2_SOURCE_FIDELITY_CLEAR_V1.json",
+      "deterministic_dialogue_gate": "CLEAR",
+      "semantic_dialogue_gate": "CLEAR",
+      "dialogue_gate_receipt": "state/review_receipts/PHASE397_NS01_A2_DIALOGUE_GATE_CLEAR_V1.json",
       "actual_human_review_complete": false,
-      "user_delivery_authorized": false
+      "user_delivery_authorized": true
     }
   }
 }
