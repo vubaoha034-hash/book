@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A2",
+  "event_type": "ACTUAL_HUMAN_READER_VERDICT",
+  "status": "REJECT_LOW_IMMERSION_HEAVY_AI_LOW_FORWARD_DESIRE",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A2.txt",
+  "frozen_output_sha256": "ebe1a8d453c68b7f7e38a80d58e8d7a6db977cfe969bef9055b0ec07606ea2c6",
+  "human_feedback_zh": {
+    "verbatim": "真实反应有了，情绪还是不够。有悬念，不想继续看，ai味道还是重。就是觉得很难看进去，没有那种好的小说，看了一会就把人带进去小说的感觉。",
+    "ordinary_human_reaction": "PASS",
+    "emotion": "INSUFFICIENT",
+    "suspense": "PRESENT",
+    "desire_to_continue": false,
+    "ai_smell": "HEAVY",
+    "immersion_transportation": "FAIL_HARD_TO_ENTER_STORY",
+    "first_stop_location": null
+  },
+  "adjudication": {
+    "literary_acceptance": false,
+    "source_fidelity": "CLEAR",
+    "mechanical_dialogue": "CLEAR",
+    "affective_plausibility": "IMPROVED",
+    "suspense": "PRESENT_NOT_SUFFICIENT",
+    "forward_desire": "FAIL",
+    "narrative_transportation": "FAIL",
+    "ai_smell": "HEAVY",
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Diagnose why a causally plausible suspense scene still fails narrative transportation and feels AI-heavy. Do not immediately add more emotion instructions or extend the story."
+}
