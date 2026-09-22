@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A2_HUMAN_REJECTED_DIAGNOSIS_COMPLETE",
+  "status": "A3_READY_AWAITING_FRESH_RENDERER",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -43,19 +43,19 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE397_STORE_NS01_RENDER_A2",
+      "action_id": "PHASE397_STORE_NS01_RENDER_A3",
       "parameters": {
-        "output_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A2.txt"
+        "output_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt"
       }
     },
     {
-      "action_id": "PHASE397_FREEZE_AND_GATE_NS01_A2",
+      "action_id": "PHASE397_FREEZE_AND_GATE_NS01_A3",
       "parameters": {
-        "source_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A2.txt"
+        "source_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt"
       }
     }
   ],
-  "next_action": "Prepare one bounded A3 that removes visible event-card rendering, embeds minimal lived relationship specificity in current action, and leaves more meaning for reader inference. Do not increase mystery count or add emotion/exposition blocks.",
+  "next_action": "Run exactly one fresh isolated A3 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and deliver only if all clear.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
     "renderer_attempt": "A1",
@@ -99,6 +99,15 @@
       "ai_smell": "HEAVY",
       "narrative_transportation": "FAIL",
       "human_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json"
+    },
+    "A3": {
+      "substrate_frozen": true,
+      "writer_entry_frozen": true,
+      "candidate_stored": false,
+      "candidate_frozen": false,
+      "gates": null,
+      "actual_human_review_complete": false,
+      "user_delivery_authorized": false
     }
   },
   "a2_diagnosis": {
