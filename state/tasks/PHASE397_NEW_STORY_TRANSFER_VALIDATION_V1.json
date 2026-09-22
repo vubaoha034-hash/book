@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A2_HUMAN_REJECTED_LOW_IMMERSION_HEAVY_AI",
+  "status": "A2_HUMAN_REJECTED_DIAGNOSIS_COMPLETE",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -55,7 +55,7 @@
       }
     }
   ],
-  "next_action": "Diagnose A2 narrative-transportation failure before authorizing any A3. Do not solve by simply adding more emotion language.",
+  "next_action": "Prepare one bounded A3 that removes visible event-card rendering, embeds minimal lived relationship specificity in current action, and leaves more meaning for reader inference. Do not increase mystery count or add emotion/exposition blocks.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
     "renderer_attempt": "A1",
@@ -100,5 +100,17 @@
       "narrative_transportation": "FAIL",
       "human_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json"
     }
+  },
+  "a2_diagnosis": {
+    "report": "docs/PHASE397_A2_NARRATIVE_TRANSPORTATION_DIAGNOSIS_V1.md",
+    "primary_failure": "NT-F01_EVENT_TRACE_VISIBLE_THROUGH_PROSE",
+    "secondary_failures": [
+      "NT-F02_RELATIONSHIP_WITHOUT_LIVED_HISTORY",
+      "NT-F03_PREMISE_SUSPENSE_WITHOUT_SCENE_PLEASURE"
+    ],
+    "suspense_present": true,
+    "narrative_transportation": false,
+    "ai_smell": "HEAVY",
+    "forward_desire": false
   }
 }
