@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-24T08:50:17.762Z",
+  "updated_at": "2026-09-24T12:44:57.982Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -12,19 +12,35 @@
     "accepted_checkpoint_advance": false
   },
   "active_task": {
-    "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
-    "phase": "NEW_STORY_TRANSFER_VALIDATION",
-    "phase_ordinal": 397,
-    "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
-    "task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
-    "execution_scope": "Phase397 is closed as a negative new-story transfer result. A1 and A2 were actual-human rejected. A3 preserved source fidelity and dialogue-surface control but was blocked before human delivery by the anti-storyboard / immersion gate. The same silent-scene-to-renderer architecture is not supported for narrative transportation, low-AI prose, or forward desire. No A4 or Phase398 exists.",
+    "task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+    "phase": "AUTHOR_INPUT_REPRESENTATION_REDESIGN",
+    "phase_ordinal": 398,
+    "status": "ARCHITECTURE_DESIGN_FROZEN_READY_FOR_STORY_PACKET_BUILD",
+    "task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+    "execution_scope": "Phase398 is an architecture-only successor after Phase397 negative transfer settlement. SCENE_FIELD_AUTHOR_PACKET_V1 design and schema are frozen/audited. Only one genuinely new NS02 story-specific scene-field packet may now be built and audited. No fresh writer or prose generation is authorized.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
-    "allowed_action_requests": [],
-    "next_action": "No further Phase397 execution. Any future prose experiment requires a separately authorized successor task with a materially different author-input representation or authoring architecture. Do not create Phase398 automatically.",
-    "current_execution_receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json"
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE398_BUILD_STORY_SPECIFIC_SCENE_FIELD_PACKET",
+        "parameters": {
+          "output_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json"
+        }
+      },
+      {
+        "action_id": "PHASE398_AUDIT_FREEZE_STORY_SPECIFIC_PACKET",
+        "parameters": {
+          "source_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+          "receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json"
+        }
+      }
+    ],
+    "next_action": "Build one genuinely new NS02 story-specific SCENE_FIELD_AUTHOR_PACKET_V1, audit it for sequence leakage, and freeze it. Do not generate prose.",
+    "current_execution_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -191,15 +207,17 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE397_NEGATIVE_TRANSFER_SETTLEMENT",
+    "YMGQ_writing_pause_reason": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_ACTIVE_NO_PROSE",
     "current_writing_authorization_scope": {
-      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE397_CLOSE",
+      "kind": "PHASE398_STORY_PACKET_BUILD_ONLY_NO_PROSE",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "A4_authorized": false,
-      "phase398_created": false,
-      "settlement_receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json"
+      "fresh_writer_authorized": false,
+      "prose_generation_authorized": false,
+      "story_packet_build_authorized": true,
+      "story_packet_output": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -224,7 +242,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 72,
+    "logical_latest_checkpoint_sequence": 73,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -850,9 +868,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "No active prose task exists. Preserve Phase397 as a negative transfer settlement. Any future continuation requires an explicitly authorized successor task with a materially different author-input representation or authoring architecture; do not create Phase398 automatically.",
-  "status": "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
-  "active_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+  "next_required_action": "Build and audit/freeze one genuinely new NS02 SCENE_FIELD_AUTHOR_PACKET_V1. Do not run a fresh writer or generate prose.",
+  "status": "PHASE398_ACTIVE_STORY_PACKET_BUILD_NO_PROSE",
+  "active_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
   "last_completed_task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "last_completed_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
   "source_state_refs": [
@@ -875,6 +893,22 @@
     {
       "path": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json",
       "role": "validated Opera Neon isolated fresh-writer transport and A3 execution handoff"
+    },
+    {
+      "path": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+      "role": "active Phase398 architecture redesign contract; prose generation remains unauthorized"
+    },
+    {
+      "path": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+      "role": "Phase398 frozen author-input architecture design"
+    },
+    {
+      "path": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
+      "role": "machine-readable unordered SCENE_FIELD_AUTHOR_PACKET_V1 schema"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
+      "role": "Phase398 architecture design freeze and audit receipt"
     }
   ],
   "incomplete": [
