@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 398,
+  "task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+  "event_type": "ARCHITECTURE_DESIGN_FREEZE_AND_AUDIT",
+  "status": "READY_DESIGN_ONLY_NO_PROSE",
+  "artifacts": {
+    "task_contract": {
+      "path": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+      "sha256": "f7078d7e201e0a008aa928b32b02f39b62e7d84b2a15458cd8987f9fbf36914d"
+    },
+    "design_doc": {
+      "path": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+      "sha256": "e09b2bff69df2624bf621cc096d60911328ac3ebaf0137302b889de66cbcbe77"
+    },
+    "scene_field_schema": {
+      "path": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
+      "sha256": "a833345552f151d7001085b56489c03ae72b02e74404ce6a7f2566483df995f3"
+    }
+  },
+  "audit": {
+    "representation_materially_differs_from_phase396_397_event_trace": true,
+    "overall_order_semantics": "NONE",
+    "sequence_bearing_fields_forbidden": true,
+    "forbidden_sequence_tokens_present_outside_declared_forbidden_list": [],
+    "keyed_maps_preferred": true,
+    "arrays_marked_unordered": true,
+    "terminal_route_not_specified": true,
+    "writer_visible_diagnostics": false,
+    "prose_generation_authorized": false,
+    "positive_anchor_converted_to_surface_recipe": false
+  },
+  "frozen_design_claims": [
+    "SCENE_FIELD_AUTHOR_PACKET_V1 exists as a writer-input representation design.",
+    "It models simultaneous agents, pressures, information asymmetries, relationship residues and environmental processes rather than an ordered event route.",
+    "The architecture design itself is ready for a story-specific packet build.",
+    "No prose transfer claim is made."
+  ],
+  "non_claims": [
+    "This does not prove lower AI smell.",
+    "This does not prove narrative transportation.",
+    "This does not prove forward desire.",
+    "This does not authorize a fresh writer run.",
+    "This does not advance the Phase320 accepted checkpoint."
+  ],
+  "next_action": "Within Phase398, build one story-specific SCENE_FIELD_AUTHOR_PACKET_V1 for a genuinely new test story, audit it for sequence leakage, and freeze it. Do not generate prose yet.",
+  "accepted_checkpoint_advance": false
+}
