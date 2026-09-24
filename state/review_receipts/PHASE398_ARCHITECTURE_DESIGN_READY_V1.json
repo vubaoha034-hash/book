@@ -8,7 +8,9 @@
   "artifacts": {
     "task_contract": {
       "path": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
-      "sha256": "f7078d7e201e0a008aa928b32b02f39b62e7d84b2a15458cd8987f9fbf36914d"
+      "sha256": "8f308d80fe7db0f6267a81798e2b90cb9d8842f24b6b952506329c080a14d2f9",
+      "prior_design_stage_sha256": "f7078d7e201e0a008aa928b32b02f39b62e7d84b2a15458cd8987f9fbf36914d",
+      "note": "Task contract advanced after design freeze to authorize only NS02 scene-field packet build/audit; prose remains unauthorized."
     },
     "design_doc": {
       "path": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
@@ -44,6 +46,6 @@
     "This does not authorize a fresh writer run.",
     "This does not advance the Phase320 accepted checkpoint."
   ],
-  "next_action": "Within Phase398, build one story-specific SCENE_FIELD_AUTHOR_PACKET_V1 for a genuinely new test story, audit it for sequence leakage, and freeze it. Do not generate prose yet.",
+  "next_action": "Build one genuinely new NS02 story-specific SCENE_FIELD_AUTHOR_PACKET_V1, audit it for sequence leakage, and freeze it. Do not generate prose.",
   "accepted_checkpoint_advance": false
 }
