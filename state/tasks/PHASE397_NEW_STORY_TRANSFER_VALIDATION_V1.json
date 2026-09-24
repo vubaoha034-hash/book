@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A3_GENERATED_IN_OPERA_EXECUTOR_AWAITING_VERBATIM_STORE",
+  "status": "A3_REJECTED_POST_FREEZE_ANTI_STORYBOARD_PRECHECK",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -41,32 +41,19 @@
     "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt",
     "state/review_receipts/PHASE397_NS01_A1_READY_V1.json"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE397_STORE_NS01_RENDER_A3",
-      "parameters": {
-        "output_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt"
-      }
-    },
-    {
-      "action_id": "PHASE397_FREEZE_AND_GATE_NS01_A3",
-      "parameters": {
-        "source_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt"
-      }
-    }
-  ],
-  "next_action": "Use the already-returned A3 prose in the current Opera Neon executor chat. Store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt; do not regenerate if present. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and only then deliver/upload to Drive if all clear.",
+  "allowed_action_requests": [],
+  "next_action": "A3 is durably stored and frozen. Source fidelity and both dialogue gates are CLEAR, but the anti-storyboard / immersion precheck BLOCKED the candidate before human delivery. Do not modify A3, do not upload it to Drive, do not create Phase398, and do not authorize or generate A4 without a separate Phase397 decision.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
-    "renderer_attempt": "A1",
+    "renderer_attempt": "A3",
     "candidate_stored": true,
     "candidate_frozen": true,
-    "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A1.txt",
-    "frozen_output_sha256": "d53528b299a13f96d5b7c99ba8e0f87581944147c1a5ff9423fb43b8ba474258",
+    "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+    "frozen_output_sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
     "deterministic_gate": "CLEAR",
     "semantic_gate": "CLEAR",
-    "gate_receipt": "state/review_receipts/PHASE397_NS01_A1_DIALOGUE_GATE_CLEAR_V1.json",
-    "user_delivery_authorized": true,
+    "gate_receipt": "state/review_receipts/PHASE397_NS01_A3_DIALOGUE_GATE_CLEAR_V1.json",
+    "user_delivery_authorized": false,
     "actual_human_review_complete": false,
     "A1": {
       "candidate_frozen": true,
@@ -103,16 +90,34 @@
     "A3": {
       "substrate_frozen": true,
       "writer_entry_frozen": true,
-      "candidate_stored": false,
-      "candidate_frozen": false,
+      "candidate_stored": true,
+      "candidate_frozen": true,
       "gates": null,
       "actual_human_review_complete": false,
       "user_delivery_authorized": false,
       "isolated_generation_complete": true,
       "isolated_generation_transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
       "generated_prose_location": "CURRENT_OPERA_NEON_EXECUTOR_CHAT",
-      "workflow_receipt": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json"
-    }
+      "workflow_receipt": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json",
+      "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+      "frozen_output_sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+      "source_fidelity_gate": "CLEAR",
+      "source_fidelity_receipt": "state/review_receipts/PHASE397_NS01_A3_SOURCE_FIDELITY_CLEAR_V1.json",
+      "deterministic_dialogue_gate": "CLEAR",
+      "semantic_dialogue_gate": "CLEAR",
+      "dialogue_gate_receipt": "state/review_receipts/PHASE397_NS01_A3_DIALOGUE_GATE_CLEAR_V1.json",
+      "anti_storyboard_precheck": "BLOCK",
+      "anti_storyboard_receipt": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json",
+      "literary_acceptance": false,
+      "pre_human_rejection": "ANTI_STORYBOARD_IMMERSION_PRECHECK_BLOCK"
+    },
+    "source_fidelity_gate": "CLEAR",
+    "source_fidelity_receipt": "state/review_receipts/PHASE397_NS01_A3_SOURCE_FIDELITY_CLEAR_V1.json",
+    "deterministic_dialogue_gate": "CLEAR",
+    "semantic_dialogue_gate": "CLEAR",
+    "dialogue_gate_receipt": "state/review_receipts/PHASE397_NS01_A3_DIALOGUE_GATE_CLEAR_V1.json",
+    "anti_storyboard_precheck": "BLOCK",
+    "anti_storyboard_receipt": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json"
   },
   "a2_diagnosis": {
     "report": "docs/PHASE397_A2_NARRATIVE_TRANSPORTATION_DIAGNOSIS_V1.md",
