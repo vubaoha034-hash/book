@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-22T16:05:00+00:00",
+  "updated_at": "2026-09-24T06:27:00+00:00",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,9 +15,9 @@
     "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
     "phase": "NEW_STORY_TRANSFER_VALIDATION",
     "phase_ordinal": 397,
-    "status": "A3_READY_AWAITING_FRESH_RENDERER",
+    "status": "A3_GENERATED_IN_OPERA_EXECUTOR_AWAITING_VERBATIM_STORE",
     "task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
-    "execution_scope": "New-story NS01 transfer test. A1 rejected for unjustified composure/source drift; A2 improved ordinary-human reaction but human rejected heavy AI smell, insufficient emotion, low immersion and no forward desire. A3 is prepared as one bounded continuous-scene repair.",
+    "execution_scope": "Phase397 NS01 transfer test. A1/A2 are human-rejected. A3 was generated in a fresh ChatGPT tab through the validated Opera Neon advanced-plugin workflow and returned unchanged to the Opera executor chat; repository inbox is still placeholder, so the next action is verbatim storage, not regeneration.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
@@ -36,8 +36,8 @@
         }
       }
     ],
-    "next_action": "Run exactly one fresh isolated A3 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and deliver only if all clear.",
-    "current_execution_receipt": "state/review_receipts/PHASE397_NS01_A3_READY_V1.json"
+    "next_action": "Use the already-returned A3 prose in the current Opera Neon executor chat. Store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt; do not regenerate if present. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and only then deliver/upload to Drive if all clear.",
+    "current_execution_receipt": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -206,13 +206,15 @@
     "YMGQ_writing_paused": true,
     "YMGQ_writing_pause_reason": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_IN_PROGRESS",
     "current_writing_authorization_scope": {
-      "kind": "ONE_HIDDEN_PHASE397_NS01_RENDER_A3",
+      "kind": "PHASE397_A3_GENERATED_AWAITING_VERBATIM_STORE_AND_GATES",
       "run_entry": "delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt",
       "output_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "attempts": 1,
-      "long_form": false
+      "long_form": false,
+      "generation_transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+      "regeneration_if_output_present": false
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json"
@@ -853,12 +855,16 @@
       "candidate_stored": false,
       "candidate_frozen": false,
       "user_delivery_authorized": false,
-      "actual_human_review_complete": false
+      "actual_human_review_complete": false,
+      "isolated_generation_complete": true,
+      "isolated_generation_transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+      "generated_prose_location": "CURRENT_OPERA_NEON_EXECUTOR_CHAT",
+      "workflow_receipt": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json"
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Run exactly one fresh isolated A3 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and deliver only if all clear.",
-  "status": "PHASE397_A3_READY_AWAITING_FRESH_RENDERER",
+  "next_required_action": "Use the already-returned A3 prose in the current Opera Neon executor chat. Store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt; do not regenerate if present. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and only then deliver/upload to Drive if all clear.",
+  "status": "PHASE397_A3_GENERATED_IN_OPERA_EXECUTOR_AWAITING_VERBATIM_STORE",
   "active_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
   "last_completed_task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "last_completed_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
@@ -878,6 +884,10 @@
     {
       "path": "state/review_receipts/PHASE397_NS01_A3_READY_V1.json",
       "role": "current A3 frozen-input readiness receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json",
+      "role": "validated Opera Neon isolated fresh-writer transport and A3 execution handoff"
     }
   ]
 }
