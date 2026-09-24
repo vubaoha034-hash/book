@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A3",
+  "event_type": "SOURCE_FIDELITY_GATE",
+  "status": "CLEAR",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+    "sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+    "git_blob_sha": "a267955768d985261456180a7b305238c5983a54"
+  },
+  "checks": {
+    "exact_names_present": [
+      "严九",
+      "苏荷",
+      "韩敬",
+      "韩记票号"
+    ],
+    "forbidden_substitutions_present": [],
+    "black_lacquer_box_opened": false,
+    "new_transport_setup": false,
+    "new_weapon_or_combat_history": false,
+    "central_mystery_resolved": false,
+    "new_cause_of_death_claim": false
+  },
+  "note": "A3 preserves the explicit fact lock. GitHub Web added one terminal LF only; prose text is otherwise unchanged. This gate does not judge literary quality.",
+  "storage_verbatim": {
+    "opera_executor_text_sha256_without_terminal_lf": "80d293311ec6842636ab94d9ca0081494abc93f7fe40b62f5f48a70ba6250c76",
+    "repository_raw_sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+    "normalization": "GITHUB_WEB_SINGLE_TERMINAL_LF_ONLY",
+    "prose_text_equal_after_removing_single_terminal_lf": true,
+    "inbox_and_frozen_raw_equal": true
+  }
+}
