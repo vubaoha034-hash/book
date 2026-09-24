@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "event_type": "ARCHITECTURE_SETTLEMENT_AFTER_A3",
+  "status": "CLOSE_PHASE397_TRANSFER_NOT_SUPPORTED_NO_A4",
+  "evidence": {
+    "A1": {
+      "actual_human_review": true,
+      "literary_acceptance": false,
+      "primary_failure": "UNJUSTIFIED_COMPOSURE_AFFECT_NOT_IN_CAUSAL_CHAIN",
+      "source_fidelity_valid": false,
+      "receipt": "state/review_receipts/PHASE397_A1_ACTUAL_HUMAN_REJECTION_V1.json"
+    },
+    "A2": {
+      "actual_human_review": true,
+      "literary_acceptance": false,
+      "ordinary_human_reaction": "PASS",
+      "emotion": "INSUFFICIENT",
+      "suspense": "PRESENT",
+      "desire_to_continue": false,
+      "ai_smell": "HEAVY",
+      "narrative_transportation": "FAIL",
+      "receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json"
+    },
+    "A3": {
+      "actual_human_review": false,
+      "source_fidelity": "CLEAR",
+      "deterministic_dialogue": "CLEAR",
+      "semantic_dialogue": "CLEAR",
+      "anti_storyboard_precheck": "BLOCK",
+      "frozen_output": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+      "frozen_sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+      "anti_storyboard_receipt": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json"
+    }
+  },
+  "diagnosis": {
+    "A3_runner_already_prohibited_target_failure": true,
+    "runner_prohibitions": [
+      "不要把底稿的条目顺序机械翻译成段落顺序",
+      "读者能从动作和物件自己推出来的含义，不要再替读者解释一遍",
+      "不要为了强调而连续使用大量一句一段",
+      "不得把一两千字写成大量单句独立段落组成的电影分镜稿"
+    ],
+    "observed_A3_failure": [
+      "71 of 93 paragraphs contain one sentence or less",
+      "52 of 93 paragraphs are 16 characters or fewer",
+      "the copper-coin relationship code is explicitly explained after the action"
+    ],
+    "conclusion": "The failure survived explicit anti-storyboard instructions and the A3 continuous-scene substrate. Repeating the same renderer architecture as A4 would primarily be a stochastic retry or further prompt escalation rather than a new validated mechanism."
+  },
+  "settlement": {
+    "phase397_transfer_result": "NOT_SUPPORTED_FOR_NARRATIVE_TRANSPORTATION",
+    "silent_scene_to_renderer_dialogue_surface_control": "SUPPORTED_BOUNDED_ONLY",
+    "mechanical_dialogue_failure_control": "SUPPORTED_BOUNDED_ONLY",
+    "narrative_transportation_transfer": "NOT_SUPPORTED",
+    "low_ai_prose_transfer": "NOT_SUPPORTED",
+    "forward_desire_transfer": "NOT_SUPPORTED",
+    "A4_under_current_architecture_authorized": false,
+    "same_runner_retry_authorized": false,
+    "local_patch_A3_authorized": false,
+    "drive_upload_A3_authorized": false,
+    "create_phase398_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "successor_boundary": {
+    "successor_task_created": false,
+    "phase398_created": false,
+    "requirement": "Any future prose experiment must use a materially different author-input representation or authoring architecture and must be authorized by a separately scoped successor task. Do not treat more anti-storyboard prompt wording as a new mechanism."
+  },
+  "final_note": "This is a negative transfer settlement, not a claim that Phase396 dialogue-surface control was false. Phase320 remains the highest accepted promotion checkpoint."
+}
