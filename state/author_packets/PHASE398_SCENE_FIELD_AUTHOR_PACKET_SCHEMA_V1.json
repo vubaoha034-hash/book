@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "SCENE_FIELD_AUTHOR_PACKET_V1",
+  "project_id": "novel-distillation",
+  "phase": 398,
+  "status": "FROZEN_DESIGN_SCHEMA_NO_STORY_CONTENT",
+  "semantics": {
+    "overall_order": "NONE",
+    "arrays_are_unordered_sets": true,
+    "keyed_maps_preferred": true,
+    "sequence_bearing_fields_forbidden": true,
+    "writer_visible_diagnostics": false
+  },
+  "packet_root": {
+    "metadata": {
+      "story_id": "string",
+      "bounded_scene_id": "string",
+      "packet_version": "string",
+      "order_semantics": "NONE"
+    },
+    "fixed_world_facts": {
+      "order_semantics": "NONE",
+      "facts_by_id": {
+        "<fact_id>": {
+          "statement": "string",
+          "source_lock": "string",
+          "mutable": false
+        }
+      }
+    },
+    "character_agents": {
+      "order_semantics": "NONE",
+      "agents_by_id": {
+        "<character_id>": {
+          "identity_lock": "string",
+          "immediate_physical_objective": "string",
+          "immediate_emotional_pressure": "string",
+          "active_avoidance": "string",
+          "private_knowledge_by_id": {
+            "<knowledge_id>": "string"
+          },
+          "mistaken_beliefs_or_uncertainty_by_id": {
+            "<belief_id>": "string"
+          },
+          "current_body_state": "string",
+          "attention_bias": {
+            "likely_to_notice_by_id": {
+              "<notice_id>": "string"
+            },
+            "likely_to_miss_by_id": {
+              "<miss_id>": "string"
+            }
+          },
+          "independent_activity": "string"
+        }
+      }
+    },
+    "relationship_residues": {
+      "order_semantics": "NONE",
+      "relations_by_id": {
+        "<relation_id>": {
+          "participants_by_id": {
+            "<character_id>": true
+          },
+          "present_habit_or_coordination_by_id": {
+            "<habit_id>": "string"
+          },
+          "avoided_or_unfinished_pressure_by_id": {
+            "<pressure_id>": "string"
+          },
+          "lived_material_detail_by_id": {
+            "<detail_id>": "string"
+          },
+          "trust_asymmetry": "string",
+          "symbolic_interpretation_for_writer": null
+        }
+      }
+    },
+    "environmental_processes": {
+      "order_semantics": "NONE",
+      "processes_by_id": {
+        "<process_id>": {
+          "process": "string",
+          "continues_without_protagonist_attention": true,
+          "possible_interference": "string"
+        }
+      }
+    },
+    "pressure_field": {
+      "order_semantics": "NONE",
+      "pressures_by_id": {
+        "<pressure_id>": {
+          "kind": "danger|time|social_exposure|obligation|opportunity|other",
+          "condition": "string",
+          "affected_agents_by_id": {
+            "<character_id>": true
+          },
+          "affordances_by_id": {
+            "<affordance_id>": "string"
+          }
+        }
+      }
+    },
+    "information_asymmetry": {
+      "order_semantics": "NONE",
+      "facts_by_id": {
+        "<info_id>": {
+          "proposition": "string",
+          "knows_by_id": {
+            "<character_id>": true
+          },
+          "suspects_by_id": {
+            "<character_id>": true
+          },
+          "falsely_believes_opposite_by_id": {
+            "<character_id>": true
+          },
+          "does_not_know_by_id": {
+            "<character_id>": true
+          }
+        }
+      }
+    },
+    "mystery_boundary": {
+      "order_semantics": "NONE",
+      "unresolved_by_id": {
+        "<mystery_id>": "string"
+      },
+      "forbidden_explanations_by_id": {
+        "<forbidden_id>": "string"
+      }
+    },
+    "terminal_world_state": {
+      "order_semantics": "NONE",
+      "must_be_true_by_end_by_id": {
+        "<terminal_id>": "string"
+      },
+      "route_not_specified": true
+    },
+    "rendering_freedom": {
+      "writer_selects_local_order": true,
+      "writer_selects_perception_order": true,
+      "writer_selects_paragraph_structure": true,
+      "writer_may_allow_concurrent_actions": true,
+      "writer_may_leave_inference_unclosed": true
+    }
+  },
+  "forbidden_fields": [
+    "beats",
+    "steps",
+    "event_sequence",
+    "event_trace",
+    "reveal_order",
+    "paragraph_plan",
+    "shot_list",
+    "camera_sequence",
+    "first_then_next",
+    "target_sentence_length",
+    "paragraph_quota",
+    "anti_storyboard_label",
+    "ai_smell_label",
+    "evaluator_thresholds"
+  ],
+  "audit_rules": [
+    "BLOCK if any field or key carries normative chronological order.",
+    "BLOCK if numeric IDs encode intended prose order.",
+    "BLOCK if a relationship detail is assigned to a reveal moment or paragraph.",
+    "BLOCK if a clue is assigned a reveal position.",
+    "BLOCK if evaluator diagnoses are writer-visible.",
+    "BLOCK if positive-anchor surface features are converted into mandatory imitation rules.",
+    "BLOCK if terminal state is expanded into route instructions."
+  ],
+  "writer_visibility": {
+    "visible": [
+      "packet_root"
+    ],
+    "hidden": [
+      "forbidden_fields",
+      "audit_rules",
+      "post_generation_evaluators",
+      "human_review_rubric"
+    ]
+  },
+  "prose_generation_authorized": false,
+  "note": "This file is a representation schema only. It contains no story packet and authorizes no prose generation."
+}
