@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "event_type": "OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATION",
+  "status": "VALIDATED_FOR_PHASE397_ISOLATED_GENERATION",
+  "source": "ACTUAL_USER_CURRENT_CHAT",
+  "validated_chain": [
+    "current coordinator/executor chat",
+    "Opera Neon advanced plugin",
+    "new independent ChatGPT tab",
+    "one complete prompt submitted in a single fill",
+    "new ChatGPT reads only specified GitHub Raw runner file",
+    "new ChatGPT generates one prose output",
+    "Opera Neon waits for completion",
+    "Opera Neon reads full response",
+    "response returned unchanged to executor chat"
+  ],
+  "required_runtime_rules": [
+    "Do not use TinyFish for isolated novel generation.",
+    "Do not use old Opera Browser Connector.",
+    "Always create a new ChatGPT tab for a fresh writer run; do not reuse an existing ChatGPT conversation.",
+    "Send the complete multiline prompt with one fill operation, then click Send separately.",
+    "Do not use type_text plus Enter for multiline prompts because embedded newlines may trigger premature sends.",
+    "Wait until generation is complete before reading the response.",
+    "Do not modify the returned prose before repository storage."
+  ],
+  "known_operational_risks": [
+    "A new ChatGPT tab may be redirected by login state; verify the final page is a usable authenticated ChatGPT session before sending.",
+    "A stale UI spinner is not evidence of incomplete external work; verify durable repository/output evidence before retrying."
+  ],
+  "current_A3_execution": {
+    "isolated_generation_reported_complete": true,
+    "generated_prose_location": "CURRENT_OPERA_NEON_EXECUTOR_CHAT",
+    "repository_inbox_still_placeholder": true,
+    "repository_store_complete": false,
+    "frozen": false,
+    "gates_run": false
+  },
+  "next_action": "The Opera Neon executor chat must take the already-returned A3 prose from its own current conversation and store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt. Do not regenerate A3 unless that prose is genuinely unavailable."
+}
