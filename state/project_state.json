@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-24T08:40:12.442Z",
+  "updated_at": "2026-09-24T08:50:17.762Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,16 +15,16 @@
     "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
     "phase": "NEW_STORY_TRANSFER_VALIDATION",
     "phase_ordinal": 397,
-    "status": "A3_PREHUMAN_BLOCKED_AWAITING_NEXT_PHASE397_DECISION",
+    "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
     "task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
-    "execution_scope": "Phase397 NS01 transfer test. A1 and A2 remain actual-human rejected. A3 was generated once through the validated Opera Neon fresh-writer workflow, stored and frozen unchanged apart from one GitHub Web terminal LF normalization. Source fidelity and deterministic/semantic dialogue gates are CLEAR. The anti-storyboard / immersion precheck BLOCKED A3 before human delivery. A3 may not be patched, uploaded to Drive, or treated as literary evidence; no A4 or Phase398 is authorized.",
+    "execution_scope": "Phase397 is closed as a negative new-story transfer result. A1 and A2 were actual-human rejected. A3 preserved source fidelity and dialogue-surface control but was blocked before human delivery by the anti-storyboard / immersion gate. The same silent-scene-to-renderer architecture is not supported for narrative transportation, low-AI prose, or forward desire. No A4 or Phase398 exists.",
     "YMGQ_writing_authorized": false,
     "YMGQ_span_growth_authorized": false,
     "full_manuscript_rewrite_authorized": false,
     "architecture_promotion_authorized": false,
     "allowed_action_requests": [],
-    "next_action": "Preserve A3 as a frozen pre-human rejection. Do not modify A3, do not upload it to Drive, and do not generate new prose. The next coordinator action is a separate Phase397 decision on whether another attempt is justified; A4 is not currently authorized.",
-    "current_execution_receipt": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json"
+    "next_action": "No further Phase397 execution. Any future prose experiment requires a separately authorized successor task with a materially different author-input representation or authoring architecture. Do not create Phase398 automatically.",
+    "current_execution_receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -186,24 +186,20 @@
   "manuscript_quality_state": {
     "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
     "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
-    "latest_bounded_span_status": "PHASE397_A3_PREHUMAN_BLOCKED_ANTI_STORYBOARD",
+    "latest_bounded_span_status": "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_A3_PREHUMAN_BLOCK",
     "YMGQ_writing_paused_for_transfer_probe": false,
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_IN_PROGRESS",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE397_NEGATIVE_TRANSFER_SETTLEMENT",
     "current_writing_authorization_scope": {
-      "kind": "PHASE397_A3_BLOCKED_NO_NEW_PROSE_AUTHORIZED",
-      "run_entry": "delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt",
-      "output_path": "state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE397_CLOSE",
       "current_chat_allowed": false,
       "user_visible_output": false,
-      "attempts": 1,
       "long_form": false,
-      "generation_transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
-      "regeneration_if_output_present": false,
       "A4_authorized": false,
-      "block_receipt": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json"
+      "phase398_created": false,
+      "settlement_receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -228,7 +224,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 71,
+    "logical_latest_checkpoint_sequence": 72,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -610,7 +606,8 @@
     "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
     "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
     "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
-    "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1"
+    "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+    "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -853,11 +850,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Preserve the frozen A3 rejection and its receipts. Do not modify A3, do not upload to Drive, do not create Phase398, and do not generate A4 unless a separate Phase397 decision explicitly authorizes a successor attempt.",
-  "status": "PHASE397_A3_PREHUMAN_BLOCKED_AWAITING_NEXT_DECISION",
+  "next_required_action": "No active prose task exists. Preserve Phase397 as a negative transfer settlement. Any future continuation requires an explicitly authorized successor task with a materially different author-input representation or authoring architecture; do not create Phase398 automatically.",
+  "status": "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
   "active_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
-  "last_completed_task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
-  "last_completed_task_contract": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
+  "last_completed_task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "last_completed_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -881,17 +878,40 @@
     }
   ],
   "incomplete": [
-    "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3"
+    "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
+    "No successor authoring architecture has been authorized after Phase397 close"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
-    "PHASE397_A4_NOT_AUTHORIZED"
+    "PHASE397_A4_NOT_AUTHORIZED",
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE397_CLOSE",
+    "PHASE398_NOT_CREATED_OR_AUTHORIZED"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
     "Deliver Phase397 A3 to actual-human review despite anti-storyboard precheck block",
     "Generate Phase397 A4 without a separate explicit Phase397 authorization",
-    "Create Phase398 before Phase397 is separately settled"
+    "Create Phase398 before Phase397 is separately settled",
+    "Retry Phase397 A4 under the same silent-scene-to-renderer architecture",
+    "Treat additional anti-storyboard prompt wording as a materially new mechanism"
+  ],
+  "phase397_settlement": {
+    "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
+    "receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json",
+    "A1_actual_human": "REJECTED",
+    "A2_actual_human": "REJECTED_LOW_IMMERSION_HEAVY_AI_LOW_FORWARD_DESIRE",
+    "A3": "PREHUMAN_ANTI_STORYBOARD_BLOCK",
+    "dialogue_surface_control": "SUPPORTED_BOUNDED_ONLY",
+    "narrative_transportation_transfer": "NOT_SUPPORTED",
+    "low_ai_prose_transfer": "NOT_SUPPORTED",
+    "forward_desire_transfer": "NOT_SUPPORTED",
+    "A4_authorized": false,
+    "phase398_created": false,
+    "accepted_checkpoint_advance": false
+  },
+  "completed": [
+    "Phase397 closed as negative transfer result after A3 pre-human anti-storyboard block; no A4 authorized",
+    "Phase397 settlement preserves bounded dialogue-surface control while rejecting narrative-transportation transfer"
   ]
 }
