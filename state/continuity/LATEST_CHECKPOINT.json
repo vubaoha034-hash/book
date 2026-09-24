@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 70,
-  "recorded_at": "2026-09-24T06:28:00+00:00",
+  "sequence": 71,
+  "recorded_at": "2026-09-24T08:38:35.870Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1"
   ],
-  "current_focus": "Phase397 A3 has already been generated in a genuinely fresh ChatGPT tab through the validated Opera Neon advanced-plugin workflow and returned unchanged to the Opera executor chat. Repository A3 inbox is still placeholder. The next action is verbatim storage from that executor-chat output, then freeze and gates; regeneration is forbidden while that output is available.",
+  "current_focus": "Phase397 A3 is durably stored and frozen. Source fidelity, deterministic dialogue, and semantic dialogue gates are CLEAR. The anti-storyboard / immersion precheck BLOCKED A3 before actual-human delivery because storyboard-card cadence remains dominant. A3 is a frozen pre-human rejection; no Drive upload, local patch, A4 generation, Phase398 creation, or accepted-checkpoint advance is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -133,7 +133,13 @@
     "Phase396 A1 deterministic dialogue gate CLEAR",
     "Phase396 A1 semantic dialogue gate CLEAR",
     "Phase396 actual-human verdict: bounded overall pass, light AI smell, no mechanical dialogue",
-    "Phase396 silent-scene-simulation -> prose-render pipeline supported for dialogue-surface control"
+    "Phase396 silent-scene-simulation -> prose-render pipeline supported for dialogue-surface control",
+    "Phase397 A3 Opera Neon output stored in repository inbox; GitHub Web terminal-LF normalization recorded explicitly",
+    "Phase397 A3 frozen output created and raw bytes verified identical to repository inbox",
+    "Phase397 A3 source-fidelity gate CLEAR",
+    "Phase397 A3 deterministic dialogue gate CLEAR",
+    "Phase397 A3 semantic mechanical-dialogue gate CLEAR",
+    "Phase397 A3 anti-storyboard / immersion precheck BLOCK; candidate rejected before actual-human delivery"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -169,7 +175,9 @@
     "Phase397 A3 human review has not yet been performed",
     "Narrative transportation remains unresolved",
     "AI smell remains heavy on Phase397 A2",
-    "Forward desire remains unresolved despite suspense"
+    "Forward desire remains unresolved despite suspense",
+    "Phase397 next-step decision after A3 pre-human block is not yet made; A4 is not authorized",
+    "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -194,7 +202,10 @@
     "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED",
     "REUSE_OF_YMGQ_FOR_NEXT_PROSE_TRANSFER_TEST_BLOCKED_BY_HUMAN_NOVELTY_REQUEST",
     "CURRENT_COORDINATOR_CHAT_BLOCKED_FROM_PHASE397_A3_GENERATION",
-    "PHASE397_A3_USER_DELIVERY_BLOCKED_UNTIL_SOURCE_FIDELITY_AND_DIALOGUE_GATES_CLEAR"
+    "PHASE397_A3_USER_DELIVERY_BLOCKED_UNTIL_SOURCE_FIDELITY_AND_DIALOGUE_GATES_CLEAR",
+    "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
+    "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
+    "PHASE397_A4_NOT_AUTHORIZED"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -283,9 +294,13 @@
     "Edit or repair Phase396 A1 before actual-human verdict",
     "Treat gate CLEAR as literary acceptance",
     "Treat Phase396 dialogue-surface success as propulsion success",
-    "Use another YMGQ bridge/crossing scene for the next prose test"
+    "Use another YMGQ bridge/crossing scene for the next prose test",
+    "Modify or locally patch frozen Phase397 A3",
+    "Deliver Phase397 A3 to actual-human review despite anti-storyboard precheck block",
+    "Generate Phase397 A4 without a separate explicit Phase397 authorization",
+    "Create Phase398 before Phase397 is separately settled"
   ],
-  "next_required_action": "Take the already-returned A3 prose from the current Opera Neon executor chat and store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt. Do not regenerate A3 if the prose is present. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and only deliver/upload to Drive if all clear.",
+  "next_required_action": "Preserve the frozen A3 rejection and its gate receipts. Do not modify or deliver A3. The next coordinator step is a separate Phase397 decision on whether a successor attempt is justified; A4 is not currently authorized and Phase398 must not be created.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -510,16 +525,36 @@
     {
       "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
       "role": "hidden renderer inbox"
+    },
+    {
+      "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+      "role": "current Phase397 contract after A3 pre-human block"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+      "role": "immutable Phase397 A3 frozen prose"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_SOURCE_FIDELITY_CLEAR_V1.json",
+      "role": "A3 source-fidelity CLEAR receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_DIALOGUE_GATE_CLEAR_V1.json",
+      "role": "A3 deterministic and semantic dialogue CLEAR receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json",
+      "role": "A3 pre-human anti-storyboard BLOCK and whole-candidate rejection"
     }
   ],
-  "status": "PHASE397_A3_GENERATED_IN_OPERA_EXECUTOR_AWAITING_VERBATIM_STORE",
+  "status": "PHASE397_A3_PREHUMAN_BLOCKED_AWAITING_NEXT_DECISION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "9664035b4c9670cf41f2edee1d8af1a06f610fab529b9f47cdd9fc0da7059ff4",
+    "project_state_sha256": "34ee3bf8ae5d1337405fc41bcf8a4d1f7a4c5ec3b3fa050d7c033c7f96a64126",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
