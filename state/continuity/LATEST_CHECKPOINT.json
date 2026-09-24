@@ -2,7 +2,7 @@
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
   "sequence": 71,
-  "recorded_at": "2026-09-24T08:38:35.870Z",
+  "recorded_at": "2026-09-24T08:42:32.121Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -554,7 +554,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "34ee3bf8ae5d1337405fc41bcf8a4d1f7a4c5ec3b3fa050d7c033c7f96a64126",
+    "project_state_sha256": "7c3c339891be9754b284955f1296c482332a4917000741a105dc0f1353f9e58a",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
