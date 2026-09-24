@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+  "phase_ordinal": 398,
+  "status": "ACTIVE_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "purpose": "Design a materially different writer-visible author-input representation that removes ordered event-trace leakage before any new prose generation is authorized.",
+  "predecessor": {
+    "phase397_settlement": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json",
+    "predecessor_result": "NOT_SUPPORTED_FOR_NARRATIVE_TRANSPORTATION",
+    "inherited_bounded_success": "MECHANICAL_DIALOGUE_SURFACE_CONTROL_ONLY"
+  },
+  "evidence_scope": [
+    "docs/PHASE397_A2_NARRATIVE_TRANSPORTATION_DIAGNOSIS_V1.md",
+    "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json",
+    "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt"
+  ],
+  "working_hypothesis": "The dominant failure is not insufficient anti-AI wording. Ordered or quasi-ordered event substrates remain legible to the renderer as a paragraph scaffold. A successor architecture should expose a simultaneous dramatic field of agents, pressures, relationships, information asymmetries and environmental processes without prescribing event order, reveal order or paragraph order.",
+  "target_representation": {
+    "id": "SCENE_FIELD_AUTHOR_PACKET_V1",
+    "order_semantics": "NONE",
+    "required_layers": [
+      "fixed world facts",
+      "character agents with independent immediate objectives",
+      "private knowledge and mistaken beliefs",
+      "relationship residues embedded in present behavior",
+      "ongoing environmental processes",
+      "simultaneous pressures and affordances",
+      "hard prohibitions and mystery boundaries",
+      "terminal world-state boundary without route instructions"
+    ],
+    "explicitly_absent": [
+      "ordered beat list",
+      "event trace",
+      "reveal sequence",
+      "paragraph plan",
+      "camera-shot sequence",
+      "one-clue-per-step progression",
+      "target sentence rhythm",
+      "anti-storyboard labels shown to writer",
+      "AI-smell diagnostic taxonomy shown to writer"
+    ]
+  },
+  "required_outputs": [
+    "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+    "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
+    "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
+  ],
+  "acceptance_tests": [
+    "Representation is materially different from Phase396/397 silent-event traces.",
+    "No field has normative sequence semantics for events or reveals.",
+    "Characters can pursue conflicting physical objectives independently of information delivery.",
+    "Relationship specificity can exist without a backstory paragraph or symbolic explanation requirement.",
+    "Environment continues independently of protagonist attention.",
+    "Terminal boundary specifies what must remain true by scene end without prescribing how to get there.",
+    "Writer is not shown evaluator diagnoses, threshold metrics, paragraph quotas or anti-AI labels.",
+    "No prose generation is performed in Phase398 design stage."
+  ],
+  "forbidden": [
+    "generate fiction in the coordinator chat",
+    "run a fresh writer before the representation design is frozen and audited",
+    "repair or reuse frozen Phase397 A3",
+    "convert Phase397 blocker labels into direct writer instructions",
+    "treat more prompt prohibitions as a new architecture",
+    "advance Phase320 accepted checkpoint",
+    "authorize full-manuscript writing or span growth"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE398_BUILD_SCENE_FIELD_REPRESENTATION",
+      "parameters": {
+        "design_doc": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+        "schema": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE398_AUDIT_AND_FREEZE_ARCHITECTURE_DESIGN",
+      "parameters": {
+        "receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
+      }
+    }
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build and audit SCENE_FIELD_AUTHOR_PACKET_V1. Do not generate prose."
+}
