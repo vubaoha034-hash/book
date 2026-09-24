@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A3",
+  "event_type": "POST_FREEZE_DIALOGUE_GATE",
+  "status": "CLEAR_DIALOGUE_ONLY",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+    "sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+    "git_blob_sha": "a267955768d985261456180a7b305238c5983a54"
+  },
+  "deterministic_gate": {
+    "verdict": "CLEAR",
+    "blocked_run_count": 0,
+    "total_dialogue_runs": 3,
+    "isolated_quote_fragments": [
+      "借过",
+      "苏荷",
+      "啪"
+    ],
+    "note": "Three isolated quoted fragments only; no structural dialogue ladder triggered."
+  },
+  "semantic_gate": {
+    "verdict": "CLEAR",
+    "exact_adjacency_completion": false,
+    "single_shared_conversational_agenda": false,
+    "turn_order_speaker_identity_failure": false,
+    "subtext_explicitation": false,
+    "gesture_padding_without_geometry_change": false,
+    "note": "No multi-turn dialogue exchange functions as an exact response-completion machine; the known mechanical Q&A failure is absent."
+  },
+  "source_fidelity_gate": "CLEAR",
+  "delivery": {
+    "user_delivery_authorized": false,
+    "literary_quality_not_yet_judged": true,
+    "additional_precheck_required": "ANTI_STORYBOARD_IMMERSION_PRECHECK"
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Run the A3 anti-storyboard / immersion precheck on the frozen candidate. Do not deliver to the user unless that precheck also clears."
+}
