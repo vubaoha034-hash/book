@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A3_READY_AWAITING_FRESH_RENDERER",
+  "status": "A3_GENERATED_IN_OPERA_EXECUTOR_AWAITING_VERBATIM_STORE",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -55,7 +55,7 @@
       }
     }
   ],
-  "next_action": "Run exactly one fresh isolated A3 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and deliver only if all clear.",
+  "next_action": "Use the already-returned A3 prose in the current Opera Neon executor chat. Store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt; do not regenerate if present. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and only then deliver/upload to Drive if all clear.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
     "renderer_attempt": "A1",
@@ -107,7 +107,11 @@
       "candidate_frozen": false,
       "gates": null,
       "actual_human_review_complete": false,
-      "user_delivery_authorized": false
+      "user_delivery_authorized": false,
+      "isolated_generation_complete": true,
+      "isolated_generation_transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+      "generated_prose_location": "CURRENT_OPERA_NEON_EXECUTOR_CHAT",
+      "workflow_receipt": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json"
     }
   },
   "a2_diagnosis": {
