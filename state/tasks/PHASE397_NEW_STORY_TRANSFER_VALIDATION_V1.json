@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
   "phase_ordinal": 397,
-  "status": "A3_REJECTED_POST_FREEZE_ANTI_STORYBOARD_PRECHECK",
+  "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
   "purpose": "Validate whether the Phase396 silent-scene-simulation -> separate prose-render -> hidden dialogue-gate pipeline transfers to a genuinely new story with novelty, suspense and forward desire.",
   "new_story": {
     "working_id": "NS01_DEAD_MAN_RETURNS_HOME",
@@ -42,7 +42,7 @@
     "state/review_receipts/PHASE397_NS01_A1_READY_V1.json"
   ],
   "allowed_action_requests": [],
-  "next_action": "A3 is durably stored and frozen. Source fidelity and both dialogue gates are CLEAR, but the anti-storyboard / immersion precheck BLOCKED the candidate before human delivery. Do not modify A3, do not upload it to Drive, do not create Phase398, and do not authorize or generate A4 without a separate Phase397 decision.",
+  "next_action": "Phase397 is closed as a negative transfer result. Do not run A4, do not modify or deliver A3, and do not create Phase398. Any future experiment requires a separately authorized successor task using a materially different author-input representation or authoring architecture.",
   "accepted_checkpoint_advance": false,
   "execution_state": {
     "renderer_attempt": "A3",
@@ -130,5 +130,14 @@
     "narrative_transportation": false,
     "ai_smell": "HEAVY",
     "forward_desire": false
-  }
+  },
+  "architecture_settlement_receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json",
+  "phase397_settlement": {
+    "transfer_result": "NOT_SUPPORTED_FOR_NARRATIVE_TRANSPORTATION",
+    "dialogue_surface_control": "SUPPORTED_BOUNDED_ONLY",
+    "A4_authorized": false,
+    "phase398_created": false,
+    "accepted_checkpoint_advance": false
+  },
+  "completed_at": "2026-09-24T08:49:05.780Z"
 }
