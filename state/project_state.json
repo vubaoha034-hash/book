@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-24T12:46:36.793Z",
+  "updated_at": "2026-09-24T12:49:18.714Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -948,8 +948,10 @@
     "low_ai_prose_transfer": "NOT_SUPPORTED",
     "forward_desire_transfer": "NOT_SUPPORTED",
     "A4_authorized": false,
-    "phase398_created": false,
-    "accepted_checkpoint_advance": false
+    "phase398_created": true,
+    "accepted_checkpoint_advance": false,
+    "phase398_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+    "phase398_transition_note": "Phase398 was later created after explicit user continuation authorization; Phase397 remains closed and its accepted-checkpoint status is unchanged."
   },
   "completed": [
     "Phase397 closed as negative transfer result after A3 pre-human anti-storyboard block; no A4 authorized",
