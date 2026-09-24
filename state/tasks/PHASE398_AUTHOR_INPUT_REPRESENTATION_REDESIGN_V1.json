@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
   "phase_ordinal": 398,
-  "status": "ACTIVE_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "status": "ARCHITECTURE_DESIGN_FROZEN_READY_FOR_STORY_PACKET_BUILD",
   "purpose": "Design a materially different writer-visible author-input representation that removes ordered event-trace leakage before any new prose generation is authorized.",
   "predecessor": {
     "phase397_settlement": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json",
@@ -68,16 +68,16 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE398_BUILD_SCENE_FIELD_REPRESENTATION",
+      "action_id": "PHASE398_BUILD_STORY_SPECIFIC_SCENE_FIELD_PACKET",
       "parameters": {
-        "design_doc": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
-        "schema": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json"
+        "output_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json"
       }
     },
     {
-      "action_id": "PHASE398_AUDIT_AND_FREEZE_ARCHITECTURE_DESIGN",
+      "action_id": "PHASE398_AUDIT_FREEZE_STORY_SPECIFIC_PACKET",
       "parameters": {
-        "receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
+        "source_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+        "receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json"
       }
     }
   ],
@@ -85,5 +85,6 @@
   "fresh_writer_authorized": false,
   "full_manuscript_rewrite_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and audit SCENE_FIELD_AUTHOR_PACKET_V1. Do not generate prose."
+  "next_action": "Build one genuinely new NS02 story-specific SCENE_FIELD_AUTHOR_PACKET_V1, audit it for sequence leakage, and freeze it. Do not generate prose.",
+  "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
 }
