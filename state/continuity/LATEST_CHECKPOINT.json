@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 69,
-  "recorded_at": "2026-09-22T16:07:00+00:00",
+  "sequence": 70,
+  "recorded_at": "2026-09-24T06:28:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1"
   ],
-  "current_focus": "Phase397 new-story transfer remains active. A2 improved ordinary-human reaction and preserved suspense, but actual human still found emotion insufficient, AI smell heavy, no desire to continue, and weak narrative transportation. A3 is prepared to test continuous lived-scene rendering with minimal relationship specificity and less explanatory closure.",
+  "current_focus": "Phase397 A3 has already been generated in a genuinely fresh ChatGPT tab through the validated Opera Neon advanced-plugin workflow and returned unchanged to the Opera executor chat. Repository A3 inbox is still placeholder. The next action is verbatim storage from that executor-chat output, then freeze and gates; regeneration is forbidden while that output is available.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -285,7 +285,7 @@
     "Treat Phase396 dialogue-surface success as propulsion success",
     "Use another YMGQ bridge/crossing scene for the next prose test"
   ],
-  "next_required_action": "Run exactly one fresh isolated Phase397 A3 renderer from delivery/phase397/RUN_NS01_PROSE_RENDERER_A3.txt. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and deliver only if all clear.",
+  "next_required_action": "Take the already-returned A3 prose from the current Opera Neon executor chat and store it verbatim into state/inbox/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt. Do not regenerate A3 if the prose is present. Then freeze unchanged, run source-fidelity, dialogue and anti-storyboard checks, and only deliver/upload to Drive if all clear.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -512,14 +512,14 @@
       "role": "hidden renderer inbox"
     }
   ],
-  "status": "PHASE397_A3_READY_AWAITING_FRESH_RENDERER",
+  "status": "PHASE397_A3_GENERATED_IN_OPERA_EXECUTOR_AWAITING_VERBATIM_STORE",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "7dd821708a7d62bd274fb9e3fa64a64d51c2eb86c7cf6fc7f9627c26f562002a",
+    "project_state_sha256": "9664035b4c9670cf41f2edee1d8af1a06f610fab529b9f47cdd9fc0da7059ff4",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
