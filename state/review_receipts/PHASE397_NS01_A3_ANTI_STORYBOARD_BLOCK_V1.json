@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 397,
+  "task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "attempt": "A3",
+  "event_type": "ANTI_STORYBOARD_IMMERSION_PRECHECK",
+  "status": "BLOCK_REJECT_CANDIDATE",
+  "frozen_candidate": {
+    "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+    "sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+    "git_blob_sha": "a267955768d985261456180a7b305238c5983a54"
+  },
+  "preceding_gates": {
+    "source_fidelity": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR"
+  },
+  "metrics": {
+    "paragraph_count": 93,
+    "one_sentence_or_less_count": 71,
+    "one_sentence_or_less_ratio": 0.7634,
+    "length_le_16_count": 52,
+    "length_le_16_ratio": 0.5591
+  },
+  "located_failures": [
+    "MASS_SINGLE_SENTENCE_PARAGRAPH_CADENCE",
+    "STORYBOARD_CARD_RHYTHM_REMAINS_VISIBLE",
+    "RELATIONSHIP_CODE_MEANING_EXPLAINED_EXPLICITLY"
+  ],
+  "evidence": {
+    "explicit_explanation_phrases_present": [],
+    "code_explanation_sentence_present": true,
+    "code_explanation_sentence": "成亲多年，他们早就约过：若后门门闩上单独压着一枚铜钱，便说明屋里不安全，不要进门。",
+    "substrate_forbidden_rule": "不得把一两千字写成大量单句独立段落组成的电影分镜稿。"
+  },
+  "settlement": {
+    "candidate_rejected_whole": true,
+    "local_repair_forbidden": true,
+    "user_delivery_authorized": false,
+    "drive_upload_authorized": false,
+    "actual_human_review_not_performed": true,
+    "literary_acceptance": false,
+    "transfer_pass": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Persist the A3 pre-human rejection in Phase397 state. Do not modify the frozen A3, do not upload it to Drive, do not create Phase398, and do not authorize or generate A4 without a separate Phase397 decision."
+}
