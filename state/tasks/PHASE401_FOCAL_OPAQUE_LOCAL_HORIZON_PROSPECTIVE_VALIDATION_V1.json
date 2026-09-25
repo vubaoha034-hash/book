@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
   "phase_ordinal": 401,
-  "status": "ACTIVE_PREPARING_MINIMAL_SINGLE_A1_NO_PROSE",
+  "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "purpose": "Prospectively test whether FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 reduces the Phase399 failure pattern of shared-agenda exact-adjacency dialogue and global scene-completion optimization.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE400_CLOSE",
@@ -104,23 +104,26 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE401_BUILD_AND_FREEZE_LOCAL_VIEW_A1",
+      "action_id": "PHASE401_EXECUTE_SINGLE_ISOLATED_A1",
       "parameters": {
-        "path": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json"
+        "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+        "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
       }
     },
     {
-      "action_id": "PHASE401_AUDIT_LOCAL_VIEW_AND_BUILD_FROZEN_WRITER_ENTRY_A1",
+      "action_id": "PHASE401_STORE_FREEZE_AND_GATE_A1",
       "parameters": {
-        "projection": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
-        "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
-        "readiness_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json"
+        "inbox": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+        "frozen": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt"
       }
     }
   ],
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and freeze the Lin Qiao writer-visible local-horizon projection from the immutable NS02 world model. Audit hidden-state leakage before deciding whether the single A1 fresh-writer pilot may run."
+  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen runner. Persist and freeze output verbatim, then run all hidden gates. Do not retry automatically.",
+  "readiness_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
+  "writer_visible_projection_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
+  "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6"
 }
