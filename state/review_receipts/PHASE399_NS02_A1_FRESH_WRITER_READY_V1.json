@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 399,
+  "task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+  "event_type": "FRESH_WRITER_A1_READY",
+  "status": "READY_SINGLE_ISOLATED_A1",
+  "source_packet": {
+    "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7"
+  },
+  "writer_entry": {
+    "path": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+    "sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a",
+    "immutable_commit": "abe522a2ca9be2032bbe5efcf7dea6532a8b0946",
+    "writer_visible_projection_exact_match": true,
+    "projected_fields": [
+      "metadata.story_id",
+      "metadata.bounded_scene_id",
+      "metadata.packet_version",
+      "metadata.order_semantics",
+      "fixed_world_facts",
+      "character_agents",
+      "relationship_residues",
+      "environmental_processes",
+      "pressure_field",
+      "information_asymmetry",
+      "mystery_boundary",
+      "terminal_world_state",
+      "rendering_freedom"
+    ],
+    "excluded_control_fields": [
+      "metadata.story_origin",
+      "schema_version",
+      "schema_id",
+      "project_id",
+      "phase",
+      "provenance",
+      "prose_generation_authorized",
+      "fresh_writer_authorized",
+      "note"
+    ]
+  },
+  "isolation_audit": {
+    "prior_story_or_phase_labels_visible": false,
+    "historical_human_feedback_visible": false,
+    "ai_smell_diagnostics_visible": false,
+    "anti_storyboard_metrics_visible": false,
+    "dialogue_blocker_thresholds_visible": false,
+    "evaluator_answer_key_visible": false,
+    "current_coordinator_context_visible": false,
+    "single_writer_entry_only": true,
+    "single_prompt_submission_required": true,
+    "new_chat_required": true,
+    "result": "PASS"
+  },
+  "execution_authorization": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "fresh_writer_authorized": true,
+    "prose_generation_authorized": true,
+    "retry_authorized": false,
+    "A2_authorized": false,
+    "returned_prose_must_be_verbatim": true
+  },
+  "post_generation": {
+    "user_delivery_authorized": false,
+    "required_before_delivery": [
+      "source fidelity CLEAR",
+      "deterministic dialogue CLEAR",
+      "semantic dialogue CLEAR",
+      "anti-storyboard / immersion precheck CLEAR"
+    ]
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Activate Phase399 control state, then execute exactly one isolated Opera Neon fresh-writer A1 from the frozen writer entry."
+}
