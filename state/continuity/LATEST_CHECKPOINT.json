@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 85,
-  "recorded_at": "2026-09-25T07:54:41.765Z",
+  "sequence": 86,
+  "recorded_at": "2026-09-25T08:13:17.092Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1"
   ],
-  "current_focus": "Phase403 is active in no-prose A1 input preparation. The architecture audit PASSed for LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1, which targets the actual-human Phase402 failure: slow/boring entry, weak live stake, low consequence-value salience and no forward-facing local outcome. No prose is authorized until the concrete writer-visible view and runner pass readiness audit.",
+  "current_focus": "Phase403 is active and ready for exactly one isolated Lin Qiao live-vector/selective-salience A1. The writer-visible view and frozen runner passed readiness audit. No best-of-N, parallel candidate, retry, A2, second window or pre-gate human review is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -216,7 +216,10 @@
     "Phase403 reader-drive causal diagnosis completed",
     "Phase403 LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 schema frozen",
     "Phase403 single-A1 validation contract frozen as same-task non-task artifact",
-    "Phase403 reader-drive architecture audit PASS; exactly one A1 preparation allowed"
+    "Phase403 reader-drive architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase403 live-vector/selective-salience writer-visible view frozen and audited",
+    "Phase403 single A1 runner frozen with exact embedded projection",
+    "Phase403 A1 readiness audit PASS; exactly one isolated A1 authorized"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -254,7 +257,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "Phase403 concrete live-vector writer view, runner and readiness audit are pending"
+    "Phase403 single A1 execution, verbatim freeze and hidden gate evaluation are pending"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -289,7 +292,6 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE403_PROSE_BLOCKED_PENDING_READINESS",
     "PHASE403_BEST_OF_N_FORBIDDEN",
     "PHASE403_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE403_A2_NOT_AUTHORIZED",
@@ -446,7 +448,7 @@
     "Create best-of-N, parallel candidates, A2 or a second window automatically",
     "Create Phase404 automatically"
   ],
-  "next_required_action": "Build the Phase403 NS02 Lin Qiao live-vector/selective-salience writer-visible view and a single frozen runner; audit readiness. Do not generate prose until readiness PASS.",
+  "next_required_action": "Execute exactly one isolated A1 from delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -851,16 +853,28 @@
     {
       "path": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
       "role": "Phase403 architecture-ready PASS receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "role": "frozen Phase403 live-vector selective-salience writer-visible view"
+    },
+    {
+      "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+      "role": "frozen Phase403 single A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase403 single A1 fresh-writer readiness PASS receipt"
     }
   ],
-  "status": "PHASE403_ACTIVE_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+  "status": "PHASE403_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "97bcf01cb16454b84443faf2fbaef65e1cae48be86ff102a623a65dc5eb76a95",
+    "project_state_sha256": "e6921e6ab451a8f8cbeb01f207914e5e2d41c57127c284bb0388e6e68cc2b517",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
