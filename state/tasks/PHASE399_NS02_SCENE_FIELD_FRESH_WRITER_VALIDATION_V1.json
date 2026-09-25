@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+  "phase_ordinal": 399,
+  "status": "ACTIVE_PREPARING_SINGLE_FRESH_WRITER_A1",
+  "purpose": "Run one isolated fresh-writer prose validation from the frozen Phase398 NS02 scene-field packet without exposing evaluator diagnostics or historical failure answer keys.",
+  "predecessor": {
+    "phase398_task": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+    "phase398_receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+    "phase398_result": "PACKET_AUDIT_PASS_NO_PROSE",
+    "accepted_checkpoint_unchanged": 320
+  },
+  "frozen_source_packet": {
+    "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "story_id": "NS02_LAST_ROLL_AT_DAWN"
+  },
+  "execution": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "writer_context": "FRESH_ISOLATED_CHATGPT_CHAT",
+    "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+    "candidate_inbox": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+    "frozen_output": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+    "writer_entry_must_be_frozen_before_execution": true,
+    "returned_prose_must_be_stored_verbatim": true,
+    "local_repair_forbidden": true,
+    "automatic_retry_forbidden": true,
+    "A2_not_authorized": true
+  },
+  "writer_visibility": {
+    "permitted": [
+      "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt"
+    ],
+    "forbidden": [
+      "historical human rejection receipts",
+      "AI-smell diagnoses",
+      "anti-storyboard metrics",
+      "dialogue blocker rules or thresholds",
+      "Phase397 A1/A2/A3 prose or findings",
+      "positive-anchor surface recipes",
+      "current coordinator conversation"
+    ]
+  },
+  "post_generation_gates": [
+    "source fidelity to frozen NS02 packet",
+    "deterministic dialogue adjacency gate",
+    "semantic mechanical-dialogue gate",
+    "anti-storyboard / immersion precheck"
+  ],
+  "delivery_rule": "Only if all post-generation gates CLEAR may the frozen A1 prose be delivered unchanged for actual-human literary judgment.",
+  "human_review_dimensions": [
+    "是否真正被带进小说世界",
+    "情绪够不够",
+    "AI味重不重",
+    "有无悬念",
+    "想不想继续看",
+    "最早从哪里开始觉得无聊、假或想跳过"
+  ],
+  "forbidden": [
+    "generate prose in coordinator chat",
+    "reuse an existing ChatGPT conversation",
+    "send the writer prompt in multiple messages",
+    "modify returned prose",
+    "locally patch a blocked candidate",
+    "retry A1 automatically",
+    "create A2 or Phase400 automatically",
+    "advance Phase320 accepted checkpoint from structural gates alone"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE399_BUILD_AND_FREEZE_WRITER_ENTRY_A1",
+      "parameters": {
+        "path": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt"
+      }
+    },
+    {
+      "action_id": "PHASE399_EXECUTE_SINGLE_ISOLATED_FRESH_WRITER_A1",
+      "parameters": {
+        "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+        "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
+      }
+    },
+    {
+      "action_id": "PHASE399_STORE_FREEZE_AND_GATE_A1",
+      "parameters": {
+        "inbox": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+        "frozen": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt"
+      }
+    }
+  ],
+  "prose_generation_authorized": true,
+  "prose_generation_scope": "ONE_ISOLATED_A1_ONLY",
+  "fresh_writer_authorized": true,
+  "user_delivery_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build and freeze the single writer entry from the immutable NS02 scene-field packet. Audit writer-visible isolation before executing A1."
+}
