@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
   "phase_ordinal": 402,
-  "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+  "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "purpose": "Target the two residual Phase401 failures without reverting to surface quotas: (1) local dialogue still collapses into exact-adjacency/shared-agenda response chains, and (2) observed objects/actions are rapidly converted into memory, explanation and relationship conclusions, preserving local global-optimization regularity.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE401_CLOSE",
@@ -116,34 +116,28 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE402_BUILD_NON_FOCAL_ACTOR_COMMITMENTS_A1",
+      "action_id": "PHASE402_EXECUTE_SINGLE_ISOLATED_A1",
       "parameters": {
-        "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json"
+        "writer_entry": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+        "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
       }
     },
     {
-      "action_id": "PHASE402_BUILD_DEFERRED_ATTRIBUTION_LOCAL_VIEW_A1",
+      "action_id": "PHASE402_STORE_FREEZE_AND_GATE_A1",
       "parameters": {
-        "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json"
-      }
-    },
-    {
-      "action_id": "PHASE402_BUILD_FROZEN_RUNNER_A1",
-      "parameters": {
-        "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt"
-      }
-    },
-    {
-      "action_id": "PHASE402_AUDIT_AND_FREEZE_A1_READINESS",
-      "parameters": {
-        "receipt": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json"
+        "inbox": "state/inbox/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+        "frozen": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt"
       }
     }
   ],
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and freeze Phase402 A1 actor commitments, deferred-attribution local view and runner. Audit them for hidden-state/evaluator leakage and renderer authority boundaries. Do not generate prose until readiness PASS.",
-  "architecture_ready_receipt": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json"
+  "next_action": "Execute exactly one isolated Phase402 A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "architecture_ready_receipt": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json",
+  "readiness_receipt": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+  "actor_commitments_sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+  "writer_visible_projection_sha256": "b9fcad69ef1c725f8beed932839aa4cbcd4d7d679f178a7e8f6e386ffdbfa742",
+  "writer_entry_sha256": "1eecd9f588268882e67b49bc67209d79c9989c204b9469475d96b73c82be185e"
 }
