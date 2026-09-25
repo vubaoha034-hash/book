@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "ACTUAL_HUMAN_PREMISE_REVIEW_BATCH3",
+  "status": "ACTUAL_HUMAN_REJECTED_ALL",
+  "candidates": [
+    "P408-L",
+    "P408-M",
+    "P408-O"
+  ],
+  "human_verbatim": "没有一个想看的。现在的快节奏爆款小说，你可以自己查下。到底是什么样子的。你写的这些连普通小说都算不上",
+  "dimensions": {
+    "desire_to_continue": "NONE",
+    "premise_quality": "BELOW_ORDINARY_NOVEL_IN_HUMAN_JUDGMENT",
+    "requested_correction": "RESEARCH_CURRENT_FAST_PACED_BREAKOUT_WEBNOVELS"
+  },
+  "governance": {
+    "prior_internal_gate_pass_does_not_override_human_rejection": true,
+    "L_M_O_withdrawn_from_selection": true,
+    "no_prose_from_rejected_premises": true
+  },
+  "accepted_checkpoint_advance": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "OPENING_ENGINE_RESEARCH_READY",
+  "status": "RESEARCH_COMPLETE_BATCH3_HUMAN_REJECTED_NEW_OPENING_ENGINE_CONTRACT_FROZEN",
+  "evidence_head": "ee227ed4c56cc0ad44d7839983ae4f77c36f8ebf",
+  "artifacts": {
+    "human_rejection": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json",
+    "research": "state/calibration/PHASE408_CURRENT_FAST_WEBNOVEL_OPENING_RESEARCH_V1.json",
+    "opening_engine_contract": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json"
+  },
+  "checks": {
+    "batch3_L_M_O_human_rejected": true,
+    "current_web_research_completed": true,
+    "current_platform_rankings_consulted": true,
+    "real_first_chapters_inspected": true,
+    "official_writer_guidance_consulted": true,
+    "no_new_premise_generated": true,
+    "no_prose_generated": true,
+    "phase409_not_created": true
+  },
+  "accepted_checkpoint_advance": false
+}

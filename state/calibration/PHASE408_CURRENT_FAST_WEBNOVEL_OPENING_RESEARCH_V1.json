@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_CURRENT_FAST_WEBNOVEL_OPENING_RESEARCH_V1",
+  "status": "COMPLETE_WEB_RESEARCH_NO_PROSE",
+  "researched_at": "2026-09-25",
+  "public_sources": [
+    {
+      "kind": "fanqie_current_ranking",
+      "note": "Ranking pages state data through 2026-09-24 24:00 and rank by active reading data for eligible titles."
+    },
+    {
+      "kind": "fanqie_current_titles",
+      "examples": [
+        {
+          "title": "作精不吸血后，恋爱脑糙汉追着亲",
+          "active_readers": "90.5万",
+          "first_chapter_chars": 2069
+        },
+        {
+          "title": "诡舍2",
+          "active_readers": "48.2万",
+          "first_chapter_chars": 2833
+        },
+        {
+          "title": "名义：刚提名省服，你让我退休？",
+          "active_readers": "32.9万",
+          "first_chapter_chars": 2022
+        },
+        {
+          "title": "不拱火我来汉东干什么？",
+          "active_readers": "34.3万",
+          "first_chapter_chars": 2237
+        }
+      ]
+    },
+    {
+      "kind": "fanqie_writer_course",
+      "signals": [
+        "主动引爆剧情",
+        "利用反差和锚点",
+        "前三章节奏",
+        "开篇精铸",
+        "看点密集度",
+        "强设定开局×高密度爽点"
+      ]
+    }
+  ],
+  "observed_opening_patterns": [
+    {
+      "pattern": "START_INSIDE_LIVE_EVENT",
+      "finding": "Popular fast openings often begin after the event has already started: confrontation, physical danger, relationship rupture, institutional attack, or rule test. They do not spend a page proving that the premise is reasonable."
+    },
+    {
+      "pattern": "PROTAGONIST_RESPONDS_WITH_ACTION_EARLY",
+      "finding": "Within the first few hundred Chinese characters the protagonist usually performs an observable action that reveals temperament and changes the situation, rather than only thinking or debating."
+    },
+    {
+      "pattern": "SHORT_CAUSAL_LOOPS",
+      "finding": "The opening repeatedly cycles action -> visible consequence -> new pressure/information -> next action. A chapter is not one dilemma stretched across 2000 words."
+    },
+    {
+      "pattern": "EARLY_PAYOFF_NOT_ONLY_DEFERRED_HOOK",
+      "finding": "The first chapter normally pays off at least one promised competence, reversal, joke, survival rule, retaliation, intimacy beat or status change before asking the reader to continue."
+    },
+    {
+      "pattern": "CHARACTER_PROMISE_IS_BEHAVIORAL",
+      "finding": "The protagonist's sell is often legible from what they do under pressure: provoke, retaliate, manipulate, survive, refuse, exploit a rule, or choose aggressively."
+    },
+    {
+      "pattern": "STATE_CHANGES_ARE_DENSE",
+      "finding": "Multiple meaningful state changes occur in one 1800-2800 character chapter. Exposition is attached to immediate use."
+    },
+    {
+      "pattern": "CHAPTER_TITLES_AND_ENDINGS_PROMISE_NEXT_BEAT",
+      "finding": "Current high-read titles frequently use chapter titles and endings as explicit action/result promises; the next click is tied to a concrete upcoming event."
+    }
+  ],
+  "concrete_examples": [
+    {
+      "title": "作精不吸血后，恋爱脑糙汉追着亲",
+      "opening_sequence": "Opens inside an intimate confrontation; within ~30 lines the heroine learns her fatal future; she immediately interrupts the act physically; the same chapter turns into money/dependency/breakup conflict. The chapter keeps converting information into action."
+    },
+    {
+      "title": "诡舍2",
+      "opening_sequence": "Establishes a dangerous abnormal street and known survival rule; protagonist chooses to walk through it; the entity confronts and attacks; protagonist demonstrates rule-based composure and survives the test within chapter one."
+    },
+    {
+      "title": "不拱火我来汉东干什么？",
+      "opening_sequence": "First sentence is already an argument in a meeting; protagonist's provocative personality is demonstrated through speech/action immediately; conflict and comic consequence arrive before background explanation."
+    },
+    {
+      "title": "名义：刚提名省服，你让我退休？",
+      "opening_sequence": "The first chapter establishes an imminent promotion, political opposition, protagonist competence/status, then ends by concretely freezing the promotion—clear loss creates the next action."
+    }
+  ],
+  "phase408_root_correction": {
+    "previous_error": "We treated premise validation as if a strong one-line moral/relationship dilemma were sufficient for fast web fiction.",
+    "stronger_diagnosis": "The missing unit is an executable opening event engine: live event + protagonist action + consequence + revaluation/payoff + next forced action.",
+    "why_batch3_failed": "L/M/O are static decision tableaux. They describe meaningful histories and one choice, but do not demonstrate a chain of escalating state changes or a protagonist whose behavior itself is enjoyable to follow."
+  },
+  "boundary": {
+    "do_not_copy": "Do not mechanically imitate sexual shock, extreme violence, systems, rebirth, political fan-fiction or other genre devices simply because current hits use them.",
+    "transferable_structure": "Imitate event density, early agency, short causal loops, same-chapter payoff, strong behavioral character signal and concrete next-action pressure."
+  },
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}

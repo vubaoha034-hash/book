@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "OPENING_ENGINE_DESIGN_CONTRACT_NOT_PROSE",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1",
+  "status": "FROZEN_NO_PROSE_NO_NEW_PREMISE_YET",
+  "purpose": "Replace static logline/premise optimization with research-grounded opening event-engine design while preserving prior anti-AI and fidelity constraints for any future prose stage.",
+  "core_unit": "EVENT_LOOP, not abstract premise statement",
+  "required_opening_engine": {
+    "beat_0": "Reader enters during a live event already in progress; no neutral setup block.",
+    "beat_1": "Within the initial segment, the protagonist must make an observable choice/action that reveals character and changes state.",
+    "beat_2": "That action produces a visible consequence, not merely another explanation.",
+    "beat_3": "New information or resistance reprices the situation and forces a second action.",
+    "beat_4": "Before the end of the opening chapter, at least one concrete payoff occurs.",
+    "beat_5": "Chapter-end pressure is a specific next action/problem created by prior events, not a generic mystery question."
+  },
+  "density_gate": {
+    "target_chapter_scale": "approximately 1800-2800 Chinese characters for calibration only; not a surface quota for final prose",
+    "required_meaningful_state_changes_minimum": 3,
+    "state_change_definition": "A change in goal feasibility, relationship position, danger, status, resource, knowledge usable immediately, or irreversible commitment.",
+    "reject_if": "Most paragraphs can be removed without changing what anyone can or must do next."
+  },
+  "protagonist_agency_gate": [
+    "The protagonist must not spend the opening primarily waiting, remembering, observing or debating.",
+    "At least one early action must carry cost/risk and reveal a specific behavioral signature.",
+    "The protagonist's behavior itself should be a repeatable source of reading pleasure."
+  ],
+  "payoff_gate": [
+    "At least one setup in chapter one must pay off in chapter one.",
+    "The opening may create longer mystery, but cannot defer all satisfaction.",
+    "Reader must receive proof of the book's promised experience, not only a promise."
+  ],
+  "reject_patterns": [
+    "single static moral choice described as a premise",
+    "social issue debate with no event chain",
+    "high-concept twist that replaces action",
+    "character history used as the main attraction without present-tense consequence",
+    "one unresolved question stretched across the whole opening",
+    "background exposition before the first consequential action"
+  ],
+  "future_design_output": {
+    "mode": "OPENING_ENGINE_CARD_ONLY_NO_PROSE",
+    "fields": [
+      "genre/promise",
+      "protagonist behavioral signature",
+      "live opening event",
+      "first costly action",
+      "immediate consequence",
+      "revaluation",
+      "second action",
+      "same-chapter payoff",
+      "chapter-end forced next action",
+      "at least 3 state changes"
+    ]
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Remain in Phase408. Generate no prose yet. Next authorized step should create a small set of OPENING_ENGINE_CARD candidates derived from current fast-webnovel research, internally audit event density/agency/payoff, and only then show survivors to the human."
+}

@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_PREMISE_SELECTION_CONTRACT_V1",
-  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_VERDICT_ON_BATCH3_CHARACTER_SPECIFIC_SURVIVORS",
+  "status": "SUSPENDED_BATCH3_ACTUAL_HUMAN_REJECTED",
   "objective": "Validate story-engine attraction before any prose generation.",
   "candidate_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V3.json",
   "human_question": "Which premise, if any, makes you genuinely want to know what happens next?",
@@ -36,12 +36,9 @@
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Ask the actual human whether any of L/M/O creates genuine desire to continue because of these specific people. Reject-all or multi-select is valid. Do not generate prose.",
+  "next_action": "No premise selection is active. Follow PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1 before any new human choice.",
   "audit": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
-  "retained_candidates": [
-    "P408-L",
-    "P408-M",
-    "P408-O"
-  ],
-  "human_selection_authorized": true
+  "retained_candidates": [],
+  "human_selection_authorized": false,
+  "actual_human_rejection": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json"
 }
