@@ -5,7 +5,7 @@
   "phase": 407,
   "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
   "contract_id": "PHASE407_SINGLE_A1_VALIDATION_CONTRACT_V1",
-  "status": "FROZEN_ARCHITECTURE_READY_AWAITING_COMPILED_INPUT",
+  "status": "FROZEN_READY_SINGLE_A1_AUTHORIZED",
   "architecture_under_test": "HARD_IDENTITY_LITERAL_BINDING_V1",
   "changed_variable": "Bind source-authoritative character names as exact Chinese canonical literals instead of allowing semantic/romanized reconstruction.",
   "frozen_variables": [
@@ -60,8 +60,11 @@
       "long-form transfer proven"
     ]
   },
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Compile exactly one Phase407 A1 packet/runner with canonical hard-identity literals and run readiness before prose."
+  "next_action": "Execute the one authorized isolated A1, freeze raw output verbatim, then run all required hidden gates.",
+  "compiled_writer_projection": "state/author_packets/PHASE407_NS02_LINQIAO_HARD_IDENTITY_VIEW_A1.json",
+  "writer_entry": "delivery/phase407/RUN_NS02_LINQIAO_HARD_IDENTITY_A1.txt",
+  "readiness_receipt": "state/review_receipts/PHASE407_NS02_A1_FRESH_WRITER_READY_V1.json"
 }

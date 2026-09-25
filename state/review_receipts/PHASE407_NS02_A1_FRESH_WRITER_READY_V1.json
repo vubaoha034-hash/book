@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 407,
+  "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "event_type": "A1_HARD_IDENTITY_INPUT_AND_WRITER_ENTRY_READINESS",
+  "status": "READY_SINGLE_ISOLATED_A1",
+  "immutable_evidence_head": "213ef306f9f34301a2dbf90172e776752573aefe",
+  "architecture": {
+    "id": "HARD_IDENTITY_LITERAL_BINDING_V1",
+    "architecture_ready_receipt": "state/review_receipts/PHASE407_IDENTITY_ARCHITECTURE_READY_V1.json"
+  },
+  "artifacts": {
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE407_NS02_LINQIAO_HARD_IDENTITY_VIEW_A1.json"
+    },
+    "writer_entry": {
+      "path": "delivery/phase407/RUN_NS02_LINQIAO_HARD_IDENTITY_A1.txt"
+    },
+    "validation_contract": "state/tasks/PHASE407_SINGLE_A1_VALIDATION_CONTRACT_V1.json"
+  },
+  "readiness_audit": {
+    "result": "PASS",
+    "canonical_literals_exact": {
+      "lin_qiao": "林乔",
+      "lin_guozhong": "林国忠",
+      "wu_lan": "吴兰",
+      "xu_wen": "许雯"
+    },
+    "romanization_only_identity_path": false,
+    "semantic_fields_reference_identity_ids": true,
+    "ordinary_language_locked": false,
+    "style_template_added": false,
+    "phase406_cost_carrier_unchanged": true,
+    "phase405_non_focal_ownership_preserved": true,
+    "abstract_live_vector_summaries_visible": false,
+    "phase404_response_transaction_reused_verbatim": true,
+    "output_cardinality": 1
+  },
+  "execution_authorization": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "fresh_writer_authorized": true,
+    "prose_generation_authorized": true,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "post_generation_required_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "hard_identity_literal_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "actual_human_review_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Execute exactly one isolated fresh-writer A1 using the frozen Phase407 runner. Freeze raw output verbatim, then run all required hidden gates. No retry."
+}

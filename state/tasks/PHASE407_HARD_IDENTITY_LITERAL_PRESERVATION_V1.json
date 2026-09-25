@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
   "phase_ordinal": 407,
-  "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "status": "ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
   "purpose": "Repair only Phase406 hard-identity token drift without changing the successful focal cost-carrier or previously stabilized mechanism families.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE406_CLOSE",
@@ -31,9 +31,12 @@
     "A2": false,
     "second_window": false
   },
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and audit one compiled Phase407 A1 packet/runner. Do not generate prose until readiness PASS."
+  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase407 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry.",
+  "writer_visible_projection": "state/author_packets/PHASE407_NS02_LINQIAO_HARD_IDENTITY_VIEW_A1.json",
+  "writer_entry": "delivery/phase407/RUN_NS02_LINQIAO_HARD_IDENTITY_A1.txt",
+  "readiness_receipt": "state/review_receipts/PHASE407_NS02_A1_FRESH_WRITER_READY_V1.json"
 }
