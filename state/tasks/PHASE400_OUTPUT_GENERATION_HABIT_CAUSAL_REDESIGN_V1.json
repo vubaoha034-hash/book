@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+  "phase_ordinal": 400,
+  "status": "ACTIVE_DIAGNOSIS_AND_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "purpose": "Diagnose why a fresh writer, even when given an unordered scene-field packet, reconstructs serialized micro-paragraphs, exact-adjacency dialogue and scene-as-task-completion; then design one materially different writer-execution architecture without generating prose.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE399_CLOSE",
+    "predecessor_closed": true,
+    "predecessor_checkpoint_sequence": 76,
+    "predecessor_accepted_checkpoint": 320
+  },
+  "predecessor": {
+    "task": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+    "settlement": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+    "frozen_candidate": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+    "result": "A1_WHOLE_CANDIDATE_REJECTED_ATTEMPT_EXHAUSTED"
+  },
+  "frozen_evidence_scope": [
+    "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+    "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+    "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json"
+  ],
+  "established_facts": [
+    "Phase398 removed normative event/reveal/paragraph ordering from the writer input.",
+    "Phase399 writer-entry isolation passed and exposed no historical blocker taxonomy.",
+    "Phase399 A1 preserved hard source locks but deterministic dialogue BLOCKED 21 of 43 detected dialogue runs.",
+    "Phase399 semantic dialogue gate BLOCKED on exact-adjacency shared-agenda chains.",
+    "Phase399 A1 had 631 of 658 paragraphs at one sentence or less and 547 paragraphs at 16 characters or less.",
+    "Phase399 A1 appended three non-prose editorial suggestion lines despite a prose-only output contract.",
+    "Short sentences and one-line paragraphs are not universal failure rules; verified human-positive prose can contain them."
+  ],
+  "primary_hypotheses": [
+    {
+      "id": "H400_01_OMNISCIENT_COVERAGE_PRESSURE",
+      "statement": "Giving one prose generator simultaneous access to every agent's private objective, private knowledge, relationship residue, pressure and terminal boundary creates an implicit obligation to cover and coordinate the whole scene, even when the packet has no explicit event order."
+    },
+    {
+      "id": "H400_02_TOKEN_LEVEL_RESPONSE_COMPLETION_BIAS",
+      "statement": "Once dialogue begins, the one-shot prose generator locally optimizes for the most relevant next reply, collapsing independent character agendas into a shared conversational agenda."
+    },
+    {
+      "id": "H400_03_GLOBAL_SCENE_COMPLETION_PRESSURE",
+      "statement": "Requesting one complete bounded scene in a single generation encourages efficient closure, checklist coverage and paragraph-by-paragraph state advancement rather than partial perception, opacity and incidental life."
+    },
+    {
+      "id": "H400_04_EDITOR_MODE_LEAKAGE",
+      "statement": "The final three advice lines indicate the model can switch from fiction generation into implicit editorial/planning mode at the end of a long one-shot completion."
+    }
+  ],
+  "design_principles": [
+    "Do not treat paragraph length, question count or sentence length as writer-facing quotas.",
+    "Do not expose Phase377/394/399 evaluator labels, thresholds or blocker findings to the prose writer.",
+    "Do not repair or reuse Phase399 A1 prose.",
+    "Do not modify the frozen Phase398 NS02 packet.",
+    "Change execution visibility/horizon/agency structure, not merely add more negative prompt wording.",
+    "The full scene-field world model may remain coordinator-visible while the prose writer receives only a causally limited projection.",
+    "Other characters should retain opacity and independent activity rather than expose all private states to one omniscient prose generator.",
+    "A future prose pilot must be separately authorized after the Phase400 design is frozen."
+  ],
+  "candidate_architecture_families": [
+    {
+      "id": "F400_A_FOCALIZED_OPAQUE_AGENT_VIEW",
+      "mechanism": "Writer sees full internal state only for one focal consciousness; non-focal agents are represented through observable state, current activity and bounded uncertainty rather than their complete private knowledge/objectives."
+    },
+    {
+      "id": "F400_B_LOCAL_HORIZON_ROLLING_RENDER",
+      "mechanism": "Writer renders only the current local interaction horizon instead of receiving an obligation to finish the entire scene in one completion; state is advanced outside the writer between bounded windows."
+    },
+    {
+      "id": "F400_C_ACTOR_STATE_THEN_NARRATOR",
+      "mechanism": "Non-prose actor/environment drivers independently propose state changes before a narrator renders observable consequences, preventing the narrator from inventing every character as a cooperative information-delivery machine."
+    }
+  ],
+  "required_outputs": [
+    "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+    "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+    "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+    "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json"
+  ],
+  "acceptance_tests": [
+    "Diagnosis distinguishes surface symptoms from causal generation-process hypotheses.",
+    "At least one human-positive counterexample is used to reject simplistic bans on short paragraphs or short dialogue.",
+    "Selected successor architecture materially changes writer visibility, generation horizon or agency ownership rather than adding blocker wording.",
+    "Selected architecture does not expose hidden evaluator labels or thresholds to the writer.",
+    "Selected architecture has a machine-readable execution schema with explicit coordinator-visible versus writer-visible fields.",
+    "No Phase400 fiction is generated.",
+    "No Phase399/NS02 frozen artifact is modified.",
+    "No Phase401 or prose pilot is created automatically."
+  ],
+  "forbidden": [
+    "reopen Phase399",
+    "retry Phase399 A1",
+    "create Phase399 A2",
+    "modify state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+    "modify state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "turn dialogue blocker metrics into writer-facing quotas",
+    "tell the writer to simply use longer paragraphs or ask fewer questions",
+    "generate fiction in Phase400",
+    "create Phase401 automatically",
+    "advance the Phase320 accepted checkpoint"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE400_BUILD_OUTPUT_SURFACE_CONTRAST_PROFILE",
+      "parameters": {
+        "output": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE400_WRITE_CAUSAL_DIAGNOSIS_AND_SELECT_ARCHITECTURE",
+      "parameters": {
+        "report": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+        "schema": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE400_AUDIT_AND_FREEZE_ARCHITECTURE",
+      "parameters": {
+        "receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json"
+      }
+    }
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_prose_authorized": false,
+  "full_manuscript_rewrite_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build a contrast profile from Phase399 failure versus verified human-positive evidence, diagnose the output-generation causal bottleneck, select and freeze one materially different writer-execution architecture. Do not generate prose."
+}
