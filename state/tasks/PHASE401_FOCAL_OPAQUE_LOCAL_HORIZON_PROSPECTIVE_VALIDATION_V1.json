@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
   "phase_ordinal": 401,
-  "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+  "status": "CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NO_SUCCESSOR_AUTHORIZED",
   "purpose": "Prospectively test whether FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 reduces the Phase399 failure pattern of shared-agenda exact-adjacency dialogue and global scene-completion optimization.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE400_CLOSE",
@@ -102,28 +102,39 @@
     "create Phase402 automatically",
     "advance Phase320 accepted checkpoint from structural gates alone"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE401_EXECUTE_SINGLE_ISOLATED_A1",
-      "parameters": {
-        "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
-        "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
-      }
-    },
-    {
-      "action_id": "PHASE401_STORE_FREEZE_AND_GATE_A1",
-      "parameters": {
-        "inbox": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
-        "frozen": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt"
-      }
-    }
-  ],
-  "prose_generation_authorized": true,
-  "fresh_writer_authorized": true,
+  "allowed_action_requests": [],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen runner. Persist and freeze output verbatim, then run all hidden gates. Do not retry automatically.",
+  "next_action": "No active Phase401 execution remains. Preserve the partial directional reduction signal, but do not repair/retry A1, create A2/second window, or create Phase402 automatically. Any successor requires separate explicit authorization.",
   "readiness_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
   "writer_visible_projection_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
-  "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6"
+  "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
+  "post_generation_result": {
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "BLOCK",
+    "deterministic_dialogue": "BLOCK",
+    "semantic_dialogue": "BLOCK",
+    "hidden_global_optimization": "BLOCK",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "causal_validation": "PARTIAL_DIRECTIONAL_REDUCTION_NOT_VALIDATED"
+  },
+  "execution_settlement": {
+    "candidate_inbox": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "frozen_output": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "repository_sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b",
+    "writer_chat_sha256": "8991c4d5a9d48bba1ad740252123dc1233e27af65fe15a235cf0d0cdaee0705e",
+    "settlement_receipt": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "attempts_used": 1,
+    "attempt_budget": 1,
+    "attempt_exhausted": true,
+    "best_of_n_used": false,
+    "parallel_candidates_created": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "actual_human_review_performed": false,
+    "phase402_authorized": false
+  }
 }
