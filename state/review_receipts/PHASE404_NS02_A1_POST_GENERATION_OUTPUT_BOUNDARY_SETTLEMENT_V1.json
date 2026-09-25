@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 404,
+  "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+  "attempt": "A1",
+  "event_type": "POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT",
+  "status": "BLOCK_REJECT_A1_ATTEMPT_EXHAUSTED_OUTPUT_BOUNDARY_FIXED_OTHER_HIDDEN_GATES_REGRESSED",
+  "evidence_head_before_settlement": "f87b7c6d158dc7a4336eff1b8ab47208f5583d12",
+  "architecture_under_test": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+  "controlled_literary_payload": "PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1",
+  "storage": {
+    "writer_chat_output": {
+      "page_id": 87,
+      "chars": 2433,
+      "sha256": "ad9f17db95be0bd523d2c5677212fe969f7a1033774d7e61fb047e6ae2d71a98",
+      "source_page_title": "文件任务执行"
+    },
+    "inbox": {
+      "path": "state/inbox/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "chars": 2433,
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "chars": 2433,
+      "exact_writer_output": true
+    },
+    "inbox_and_frozen_byte_identical": true,
+    "storage_normalization": "NONE"
+  },
+  "source_fidelity": {
+    "verdict": "CLEAR",
+    "identities_present": [
+      "林乔",
+      "林国忠",
+      "吴兰"
+    ],
+    "invented_xuwen_departure_resolution": false,
+    "invented_magic_evidence": false,
+    "signature_requirement_preserved": true,
+    "worsening_water_condition_preserved": true,
+    "wet_wiring_condition_preserved": true,
+    "focal_leave_stake_preserved": true
+  },
+  "writer_output_contract": {
+    "verdict": "CLEAR",
+    "leading_non_prose_label": false,
+    "trailing_editorial_material": false,
+    "preface": false,
+    "postscript": false,
+    "self_evaluation": false,
+    "explanation_section": false,
+    "second_version": false,
+    "structured_envelope": false,
+    "first_block": "雨水已经漫过后门内侧那条发黑的水泥缝。",
+    "last_block": "片刻后，她把它抽出来，单独放在最上面。",
+    "causal_signal": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 successfully eliminated the Phase403 leading label and trailing editorial-advice failure in this single raw response."
+  },
+  "deterministic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "script": "scripts/check_dialogue_adjacency.py",
+    "run_count": 15,
+    "blocked_run_count": 0
+  },
+  "semantic_dialogue_gate": {
+    "verdict": "BLOCK",
+    "rule": "rules/dialogue-mechanical-blocker-v1.md",
+    "located_stretch": {
+      "blocks": "114-119",
+      "excerpt": "“能先办到哪一步，就办到哪一步。” / 吴兰说明库存与房屋状态还能继续核、签字不补则交不了 / “我知道。” / “你父亲得本人签。” / “我知道。”",
+      "criteria": [
+        "EXACT_ADJACENCY_COMPLETION",
+        "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+        "TURN_ORDER_SPEAKER_IDENTITY"
+      ],
+      "reason": "The exchange stays on one procedural agenda and repeatedly completes already-known handover information through acknowledgement/reiteration rather than independent actor progression."
+    },
+    "contrasting_nonblock_chain": {
+      "excerpt": "“你先签。” / “等一下。” / “等多久？” / “把这箱搬了。” / “搬完这箱还有下一箱。”",
+      "reason": "This chain is conflict between incompatible active priorities; Lin Guozhong continues the salvage objective rather than cooperatively completing Lin Qiao's agenda."
+    }
+  },
+  "hidden_global_optimization_diagnostic": {
+    "verdict": "BLOCK",
+    "rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "signatures": {
+      "AS_01_READER_FACING_INFERENCE_CLOSURE_CADENCE": {
+        "status": "SUPPORTED_RECURRING",
+        "examples": [
+          "卷闸门连续落下后立即总结：‘这条街正在一间一间关掉。’",
+          "空签名栏与搬运物件后立即解释：‘只有它必须等一个人停下来…拿起笔。’",
+          "父亲继续搬箱后立即上升为关系性概括：‘为什么总有东西比她说的话更急，为什么每次都要等…’",
+          "时间流逝后集中总结当前动机：‘天一亮，手续过去，她就走。’"
+        ]
+      },
+      "AS_02_MAXIMIZED_FUNCTIONAL_DENSITY_NO_INCIDENTAL_LIFE": "PARTIAL_NOT_SOLE_BLOCKER",
+      "AS_03_UNIFORM_CLUE_INFERENCE_ACTION_CYCLE": "NOT_SUPPORTED",
+      "AS_04_CHARACTER_AS_TASK_PROCESSOR": "PARTIAL",
+      "AS_05_CAUSAL_NEATNESS_AND_EXECUTIVE_SUMMARY_NARRATOR": "SUPPORTED_AMPLIFIER",
+      "AS_06_LOW_SOCIAL_IDIOSYNCRASY_GENERIC_VOICE": "PARTIAL",
+      "AS_07_ENGINEERED_REVEAL_ESCALATION": "UNPROVEN"
+    },
+    "reason": "Recurring inference-closure plus executive-summary narration is strong enough to reintroduce the known global-optimization family in this sample."
+  },
+  "response_ownership_residual": {
+    "verdict": "BLOCK",
+    "located_evidence": [
+      "The final handover exchange gives Wu Lan two sequential information-bearing completions on the same procedural agenda, separated by repeated '我知道'.",
+      "This exceeds the intended effect of independent actor commitment and recreates local response ownership by the renderer."
+    ]
+  },
+  "interpretation_liquidity_residual": {
+    "verdict": "NO_BLOCK_WITH_SINGLE_LOCATED_CLOSURE",
+    "located_evidence": [
+      "‘为什么总有东西比她说的话更急，为什么每次都要等…’ is an explicit relationship-level inference."
+    ],
+    "reason": "A strong single closure exists, but the passage does not repeatedly convert concrete objects into memory + relationship thesis cycles."
+  },
+  "reader_drive_entry_state": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Water ingress is active in the opening.",
+      "The unsigned handover form is already present in the opening state.",
+      "Lin Guozhong is occupied with salvage while the signature remains unresolved."
+    ]
+  },
+  "neutral_salience_flooding": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "Phase402 display-cabinet/sample/frame inventory flooding does not return.",
+      "Most details remain coupled to water/electrical risk, salvage or the unsigned form."
+    ]
+  },
+  "focal_personal_cost_visibility": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Time visibly advances while the signature remains unresolved.",
+      "Lin Qiao explicitly states she intends to finish the handover and leave."
+    ]
+  },
+  "live_open_outcome_visibility": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "The signature remains unresolved throughout.",
+      "Worsening water/electrical conditions continue.",
+      "The passage ends with the unsigned document isolated on top rather than resolved."
+    ],
+    "outcome_precommitted": false
+  },
+  "paragraph_geometry_diagnostic_only": {
+    "paragraph_count": 128,
+    "one_sentence_or_less_count": 111,
+    "one_sentence_or_less_ratio": 0.8672,
+    "length_le_16_count": 90,
+    "length_le_16_ratio": 0.7031,
+    "blocker_status": "DIAGNOSTIC_ONLY"
+  },
+  "causal_validation_result": {
+    "output_boundary_hypothesis": "SUPPORTED_SINGLE_RUN",
+    "output_contract": "CLEAR",
+    "all_required_hidden_gates": "NOT_CLEAR",
+    "overall": "OUTPUT_BOUNDARY_FIXED_BUT_CANDIDATE_NOT_ELIGIBLE_FOR_HUMAN_REVIEW",
+    "human_review_allowed": false,
+    "forbidden_claims": [
+      "Phase404 validates reader-drive architecture",
+      "Phase404 proves lower AI smell",
+      "Phase404 proves human immersion or forward desire",
+      "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 is production-promoted"
+    ]
+  },
+  "settlement": {
+    "candidate_rejected_whole": true,
+    "required_gate_failures": [
+      "SEMANTIC_DIALOGUE_BLOCK",
+      "HIDDEN_GLOBAL_OPTIMIZATION_BLOCK",
+      "RESPONSE_OWNERSHIP_RESIDUAL_BLOCK"
+    ],
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "best_of_n_used": false,
+    "parallel_candidates_created": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "local_repair_forbidden": true,
+    "user_delivery_authorized": false,
+    "actual_human_review_performed": false,
+    "phase405_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Close Phase404 as a single-attempt blocked validation. Preserve the positive output-boundary signal, but do not enter actual-human review because other required hidden gates BLOCKED. Do not repair/retry, create A2/second window, or create Phase405 automatically."
+}
