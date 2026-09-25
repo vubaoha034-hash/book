@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "PREMISE_GENERATION_CONTRACT_NOT_CANDIDATE_PACK",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1",
+  "status": "FROZEN_NO_NEW_CANDIDATES_YET",
+  "purpose": "Prevent the next premise batch from replacing low-energy realism with short-drama secret/reversal machinery.",
+  "core_principle": "A secret, mystery, reversal or unusual fact may amplify an already-working human conflict, but may not be the sole reason the story moves or the sole reason the reader cares.",
+  "mandatory_counterfactual_gate": {
+    "test": "Remove or delay the central secret/reveal. The premise must still contain a meaningful WANT, irreversible COST and active relationship conflict.",
+    "required_result": "PASS_ALL_THREE"
+  },
+  "human_engine_requirements": [
+    "At least two characters have understandable but incompatible wants before any reveal.",
+    "The protagonist must make a costly choice rather than merely investigate an answer.",
+    "The central cost must remain real even if the truth is never revealed.",
+    "The emotional conflict must be legible before the mystery is solved.",
+    "A simpler obvious action may change tactics but must not dissolve the core conflict.",
+    "At least one irreversible relationship, status, resource or moral consequence must already be in motion.",
+    "New information should reprice an existing choice; it must not manufacture the choice from nothing."
+  ],
+  "anti_overcorrection_rules": [
+    "No candidate may rely primarily on presumed death, disappearance, crime, secret parentage, resurrected footage, hidden inheritance claimant or equivalent reveal device unless the non-reveal engine independently passes.",
+    "Do not add homicide, kidnapping, terminal illness, infidelity or criminal conspiracy merely to raise stakes.",
+    "Do not use a countdown or ceremony only to force characters to ignore an obvious simpler action.",
+    "Do not score a premise highly just because its one-line logline is surprising.",
+    "Do not equate mystery intensity with emotional value."
+  ],
+  "preferred_engine_sources": [
+    "incompatible loyalties",
+    "betrayal with ongoing relationship",
+    "caregiving burden and unequal sacrifice",
+    "love versus dignity",
+    "parent/child or sibling obligations with conflicting memories",
+    "money/property/status only when tied to relationship and self-image",
+    "a choice where either outcome costs something the character genuinely values",
+    "social consequences that cannot be undone by simply learning the truth"
+  ],
+  "evaluation_dimensions": [
+    "WANT independent of reveal",
+    "COST independent of reveal",
+    "relationship conflict independent of reveal",
+    "simpler-action resistance",
+    "emotion before explanation",
+    "choice pressure",
+    "revaluation potential",
+    "hook-versus-engine distinction"
+  ],
+  "candidate_policy": {
+    "generate_new_candidates_now": false,
+    "retain_existing_pass_candidates": [
+      "P408-C",
+      "P408-E"
+    ],
+    "user_choice_now": false,
+    "next_candidate_batch_requires_separate_execution_under_this_contract": true
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Keep C and E as retained audit-passing references. Generate no new premise candidates in this audit step. A later Phase408 action may generate a new premise batch under this contract; only audit-passing premises may reach actual-human selection."
+}

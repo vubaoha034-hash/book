@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "PREMISE_AUDIT_READY",
+  "status": "PASS_AUDIT_MAJORITY_FAIL_NEW_GENERATION_CONTRACT_FROZEN",
+  "evidence_head": "4577b272140fdad41dd5c9b60bd3be862ee2a932",
+  "artifacts": {
+    "audit": "state/calibration/PHASE408_PREMISE_AUDIT_V1.json",
+    "new_generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
+    "original_pack": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json"
+  },
+  "checks": {
+    "no_new_candidates_generated": true,
+    "no_prose_generated": true,
+    "original_A_to_F_unchanged": true,
+    "user_selection_paused": true,
+    "majority_fail": true,
+    "only_pass_candidates_retained": [
+      "P408-C",
+      "P408-E"
+    ],
+    "phase409_not_created": true
+  },
+  "next_action": "Remain in Phase408. Do not present A-F for forced selection. Use the new generation contract before any new premise batch.",
+  "accepted_checkpoint_advance": false
+}

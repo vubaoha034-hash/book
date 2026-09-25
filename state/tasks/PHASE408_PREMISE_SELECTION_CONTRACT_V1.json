@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_PREMISE_SELECTION_CONTRACT_V1",
-  "status": "FROZEN_AWAITING_ACTUAL_HUMAN_PREMISE_VERDICT",
+  "status": "SUSPENDED_BY_PREMISE_AUDIT_MAJORITY_FAIL",
   "objective": "Validate story-engine attraction before any prose generation.",
   "candidate_pack": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
   "human_question": "Which premise, if any, makes you genuinely want to know what happens next?",
@@ -36,5 +36,11 @@
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Present the frozen premise kernel choice pack to the actual human. Persist the verdict before any prose successor is considered."
+  "next_action": "Do not ask the user to choose from A-F. Await a new Phase408 premise batch generated under PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1, with only audit-passing premises eligible for human selection.",
+  "audit": "state/calibration/PHASE408_PREMISE_AUDIT_V1.json",
+  "retained_candidates": [
+    "P408-C",
+    "P408-E"
+  ],
+  "human_selection_authorized": false
 }

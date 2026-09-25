@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 101,
-  "recorded_at": "2026-09-25T11:20:00Z",
+  "sequence": 102,
+  "recorded_at": "2026-09-25T12:30:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 is the sole active successor. After Phase407 hidden-gate success but decisive human literary rejection, prose generation is paused. Six premise kernels are frozen for actual-human attraction selection. No prose may be generated until at least one premise creates genuine human desire to continue.",
+  "current_focus": "Phase408 remains the sole active task. A-F premise audit is complete: A/B/D/F FAIL because their engines depend too heavily on secret/reversal machinery; C/E PASS because their relationship conflicts and costs survive removal of the reveal. Because 4/6 failed, human selection is paused. A new anti-overcorrection premise-generation contract is frozen; no new candidates or prose were generated.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -305,7 +305,11 @@
     "Phase408 explicit successor authorization received after Phase407 checkpoint 100 close.",
     "Phase408 contrastive diagnosis supports premise/scene-engine weakness as the primary next diagnostic target, without claiming topic alone is the sole cause.",
     "Phase370 positive evidence contrasted against Phase407: consequence magnitude, active unknown, adversarial agency, irreversibility and revaluation cadence identified as engine-level differences.",
-    "Phase408 premise-only choice pack frozen; no fiction prose generated."
+    "Phase408 premise-only choice pack frozen; no fiction prose generated.",
+    "Phase408-PREMISE-AUDIT completed without new candidates or prose.",
+    "A/B/D/F failed reveal-removal engine audit; C/E passed and are retained.",
+    "Majority failure detected; A-F human selection suspended rather than forcing a choice.",
+    "PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1 frozen: secrets may amplify but may not constitute the story engine."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1048,5 +1052,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Deliver the Phase408 premise-only choice pack to the actual human and record selection/reject-all. Do not generate prose."
+  "next_action": "Remain in Phase408. Do not generate prose or enter user premise selection. A later authorized Phase408 step may generate a new premise batch under the frozen anti-overcorrection contract."
 }

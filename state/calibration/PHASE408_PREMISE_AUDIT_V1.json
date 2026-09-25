@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "artifact_id": "PHASE408_PREMISE_AUDIT_V1",
+  "status": "COMPLETE_NO_PROSE_NO_NEW_CANDIDATES",
+  "evidence_head": "4577b272140fdad41dd5c9b60bd3be862ee2a932",
+  "audit_question": "Does the story engine still function if the secret/reversal/high-concept reveal is removed or delayed?",
+  "criteria": {
+    "want_survives_reveal_removal": "A concrete character WANT still matters now without the secret.",
+    "cost_survives_reveal_removal": "An irreversible or materially costly consequence remains without the secret.",
+    "relationship_conflict_survives_reveal_removal": "Two or more people still want incompatible things for understandable reasons.",
+    "simpler_action_resistance": "The premise is not trivially dissolved by an obvious call, confrontation, pause, verification or legal/administrative action.",
+    "emotional_value_independent_of_reveal": "The relationship or choice can hurt/matter even before truth is disclosed.",
+    "hook_vs_engine": "A high-concept question may amplify the story but may not be the sole source of motion."
+  },
+  "results": [
+    {
+      "id": "P408-A",
+      "verdict": "FAIL_HOOK_DEPENDENT",
+      "want_without_secret": "WEAK_BUT_PRESENT",
+      "cost_without_secret": "PARTIAL_STORE_SALE_IS_IRREVERSIBLE_BUT_NOT_EMOTIONALLY_SUFFICIENT",
+      "relationship_conflict_without_secret": "WEAK",
+      "simpler_action": "FAIL_CALL_THE_NUMBER_AND_CONFRONT_FATHER_ARE_IMMEDIATE_OBVIOUS_ACTIONS",
+      "emotional_value_without_reveal": "LOW",
+      "hook_strength": "HIGH",
+      "engine_strength": "LOW_TO_MEDIUM",
+      "rationale": "The live phone/possibly-alive mother carries most of the attraction. Remove that reveal and the remaining sell-the-shop conflict reverts toward the weak Phase407 family."
+    },
+    {
+      "id": "P408-B",
+      "verdict": "FAIL_REVEAL_DEPENDENT_WITH_STRONG_COST",
+      "want_without_secret": "PASS_DNR_DECISION",
+      "cost_without_secret": "PASS_IRREVERSIBLE_MEDICAL_DECISION",
+      "relationship_conflict_without_secret": "PARTIAL_FATHER_IS_UNCONSCIOUS_SO_ACTIVE_RELATIONAL_OPPOSITION_IS_WEAK",
+      "simpler_action": "PARTIAL_VERIFY_BOY_IDENTITY_OR_DELAY_NONEMERGENT_CONTACT",
+      "emotional_value_without_reveal": "MEDIUM",
+      "hook_strength": "HIGH",
+      "engine_strength": "MEDIUM",
+      "rationale": "The DNR gives real cost, but the premise's actual forward pull is still concentrated in the paternity/forbidden-boy reveal. It risks becoming a hospital identity-twist machine rather than a relationship engine."
+    },
+    {
+      "id": "P408-C",
+      "verdict": "PASS_ENGINE_SURVIVES_REVEAL",
+      "want_without_secret": "PASS_MAN_WANTS_DISTANCE_FROM_FAMILY_AFTER_RELEASE",
+      "cost_without_secret": "PASS_MOTHER_IS_ALREADY_DEAD_AND_LAST_CHANCE_FOR_POSTHUMOUS_RECKONING_IS FINITE",
+      "relationship_conflict_without_secret": "PASS_BROTHER_BETRAYED_HIM_AND_NOW_WANTS_CONTACT",
+      "simpler_action": "PASS_HE_CAN_LEAVE_BUT_DOING_SO_HAS A REAL_RELATIONAL_COST_RATHER_THAN_SOLVING_THE_CONFLICT",
+      "emotional_value_without_reveal": "HIGH_BETRAYAL_GRIEF_SHAME_AND_FAMILY_LOYALTY_EXIST_BEFORE_OPENING_ANY_OBJECT",
+      "hook_strength": "MEDIUM_TO_HIGH",
+      "engine_strength": "HIGH",
+      "rationale": "The mother's object can be removed and there is still a durable story: two brothers must face the consequences of one having helped imprison the other on the day their mother dies."
+    },
+    {
+      "id": "P408-D",
+      "verdict": "FAIL_CONTRIVANCE_AND_HOOK_DEPENDENCE",
+      "want_without_secret": "WEAK_COMPLETE_WEDDING",
+      "cost_without_secret": "PASS_PUBLIC_MARRIAGE_IS_IRREVERSIBLE_ENOUGH",
+      "relationship_conflict_without_secret": "WEAK_UNTIL_SURVEILLANCE_REVEAL",
+      "simpler_action": "FAIL_PAUSE_CEREMONY_VERIFY_VIDEO_AND_CONFRONT_FIANCE_IS_THE_NATURAL_ACTION",
+      "emotional_value_without_reveal": "LOW",
+      "hook_strength": "VERY_HIGH",
+      "engine_strength": "LOW",
+      "rationale": "The dead-ex-on-camera image is the premise. The decision to continue the ceremony mainly exists to preserve the set piece and feels engineered against obvious behavior."
+    },
+    {
+      "id": "P408-E",
+      "verdict": "PASS_ENGINE_SURVIVES_REVEAL",
+      "want_without_secret": "PASS_SIBLINGS_WANT_RECOGNITION_INHERITANCE_AND_MORAL_VINDICATION",
+      "cost_without_secret": "PASS_PARENT_IS_DEAD_AND_INHERITANCE/FAMILY_RUPTURE_HAS_IRREVERSIBLE_EFFECTS",
+      "relationship_conflict_without_secret": "PASS_SIBLINGS_HAVE_COMPETING_CLAIMS_ABOUT_WHO_ACTUALLY_CARED",
+      "simpler_action": "PASS_PROBATE_CAN_SETTLE_TITLE_BUT_CANNOT_SETTLE_THE_RELATIONAL_AND_MORAL_CONFLICT",
+      "emotional_value_without_reveal": "HIGH_GUILT_NEGLECT_RESENTMENT_AND_COMPETING_MEMORY_EXIST_WITHOUT_THE_DELIVERYMAN",
+      "hook_strength": "MEDIUM",
+      "engine_strength": "HIGH",
+      "rationale": "The unknown deliveryman is expendable. The stronger story is the siblings' incompatible self-images and evidence about who was present for the parent."
+    },
+    {
+      "id": "P408-F",
+      "verdict": "FAIL_REVERSAL_DEPENDENT",
+      "want_without_secret": "PASS_CLOSE_CASE_AND_REUNITE_SURVIVOR",
+      "cost_without_secret": "PARTIAL_OLD_EVIDENCE_DECAY",
+      "relationship_conflict_without_secret": "WEAK_WITHOUT_FATHER-AS-THREAT_REVERSAL",
+      "simpler_action": "PARTIAL_INVESTIGATE_TESTIMONY_IS_NATURAL_BUT_THE_ENGINE_BECOMES_CASE_PROCEDURE",
+      "emotional_value_without_reveal": "MEDIUM",
+      "hook_strength": "VERY_HIGH",
+      "engine_strength": "LOW_TO_MEDIUM",
+      "rationale": "The attraction is overwhelmingly the inversion that the kidnapper saved her and father tried to kill her. Remove it and the premise becomes a conventional cold-case resolution."
+    }
+  ],
+  "summary": {
+    "pass": [
+      "P408-C",
+      "P408-E"
+    ],
+    "fail": [
+      "P408-A",
+      "P408-B",
+      "P408-D",
+      "P408-F"
+    ],
+    "fail_count": 4,
+    "pass_count": 2,
+    "majority_fail": true,
+    "human_selection_status": "PAUSED_NOT_PRESENTED",
+    "conclusion": "The first Phase408 pack overcorrected from low-energy realism toward high-concept secret/reversal dependence. C and E survive the counterfactual engine audit; A, B, D and F do not."
+  },
+  "disposition": {
+    "preserve_original_pack_unchanged": true,
+    "retain_for_future_human_selection": [
+      "P408-C",
+      "P408-E"
+    ],
+    "do_not_ask_user_to_choose_yet": true,
+    "no_new_candidates_generated": true,
+    "freeze_new_generation_contract": true,
+    "phase409_authorized": false,
+    "prose_generation_authorized": false
+  },
+  "accepted_checkpoint_advance": false
+}
