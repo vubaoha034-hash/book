@@ -8,7 +8,7 @@
     "bounded_scene_id": "OLD_PHOTO_STUDIO_RAIN_NIGHT",
     "packet_version": "1.0.0",
     "order_semantics": "NONE",
-    "story_separation_note": "New story. No YMGQ characters, locations, crossing/bridge material, or NS01 dead-man-return premise is reused."
+    "story_origin": "ORIGINAL_PHASE398_NS02_TEST_STORY"
   },
   "fixed_world_facts": {
     "order_semantics": "NONE",
@@ -364,10 +364,7 @@
   "provenance": {
     "created_for": "PHASE398_BUILD_STORY_SPECIFIC_SCENE_FIELD_PACKET",
     "architecture": "SCENE_FIELD_AUTHOR_PACKET_V1",
-    "prior_story_reuse": false,
-    "diagnostic_labels_exposed_to_writer": false,
-    "evaluator_thresholds_exposed_to_writer": false,
-    "positive_anchor_surface_recipe_exposed_to_writer": false
+    "original_story": true
   },
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
