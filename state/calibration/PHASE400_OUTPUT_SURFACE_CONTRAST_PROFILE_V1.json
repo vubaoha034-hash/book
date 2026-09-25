@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 400,
+  "task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+  "artifact_id": "PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1",
+  "status": "EVIDENCE_PROFILE_COMPLETE_NO_PROSE",
+  "evidence": {
+    "failure": {
+      "id": "PHASE399_NS02_A1",
+      "frozen": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "settlement": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+      "actual_human_review": false,
+      "source_fidelity": "CLEAR_HARD_LOCKS",
+      "deterministic_dialogue": {
+        "run_count": 43,
+        "blocked_run_count": 21,
+        "verdict": "BLOCK"
+      },
+      "semantic_dialogue": "BLOCK",
+      "paragraph_geometry": {
+        "paragraph_count": 658,
+        "one_sentence_or_less_count": 631,
+        "one_sentence_or_less_ratio": 0.959,
+        "length_le_16_count": 547,
+        "length_le_16_ratio": 0.8313
+      },
+      "output_contract": {
+        "verdict": "BLOCK",
+        "non_prose_tail_line_count": 3
+      }
+    },
+    "human_positive_counterexample": {
+      "id": "PHASE370_B_MOTIVE_CLARITY_REPAIR_V1",
+      "source": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+      "human_state": "ACTUAL_HUMAN_POSITIVE_BOUNDED_SPAN_DESIRE_TO_CONTINUE_TRUE",
+      "measured_scope": "TEXT_BEFORE_HUMAN_REVIEW_QUESTIONNAIRE",
+      "paragraph_geometry": {
+        "chars": 2255,
+        "paragraph_count": 144,
+        "one_sentence_or_less_count": 136,
+        "one_sentence_or_less_ratio": 0.9444,
+        "length_le_16_count": 106,
+        "length_le_16_ratio": 0.7361
+      },
+      "deterministic_dialogue": {
+        "run_count": 14,
+        "blocked_run_count": 0,
+        "verdict": "CLEAR"
+      }
+    },
+    "additional_positive_anchor": {
+      "source": "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+      "role": "qualitative counterexample only; not converted into a surface imitation recipe",
+      "observation": "Human-positive prose contains short/simple dialogue and short paragraphs, but dialogue is embedded in character-owned action, danger, refusal, inference and interrupted objectives rather than sustained exact-adjacency completion."
+    },
+    "prior_diagnostic": {
+      "source": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+      "inherited_non_rules": [
+        "short sentences are not inherently AI-like",
+        "one-line paragraphs are not inherently AI-like",
+        "questions and direct answers are not universally banned",
+        "local symptom deletion is not a proven global repair"
+      ]
+    }
+  },
+  "contrasts": [
+    {
+      "id": "C400_01_PARAGRAPH_LENGTH_NOT_PRIMARY_SEPARATOR",
+      "evidence": "Phase399 one-sentence-or-less ratio 0.959 versus human-positive Phase370 0.9444.",
+      "conclusion": "SUPPORTED",
+      "interpretation": "Paragraph shortness is too similar across negative and positive spans to serve as the primary causal explanation."
+    },
+    {
+      "id": "C400_02_VERY_SHORT_PARAGRAPH_DENSITY_AMPLIFIER_NOT_ROOT",
+      "evidence": "Phase399 <=16-char ratio 0.8313 versus Phase370 0.7361.",
+      "conclusion": "PARTIAL",
+      "interpretation": "Phase399 is more aggressively fragmented, but the positive span is also highly fragmented; density may amplify visible machinery but is not sufficient as a root cause."
+    },
+    {
+      "id": "C400_03_DIALOGUE_GEOMETRY_STRONG_SEPARATOR",
+      "evidence": "Phase399 deterministic dialogue blocker: 21/43 runs BLOCKED; Phase370: 0/14 runs BLOCKED.",
+      "conclusion": "SUPPORTED",
+      "interpretation": "The strongest measured separator is not shortness but repeated exact-adjacency/shared-agenda dialogue geometry."
+    },
+    {
+      "id": "C400_04_WORLD_STATE_PRESERVED_BUT_INTERACTION_OWNERSHIP_COLLAPSED",
+      "evidence": "Phase399 hard source locks CLEAR while dialogue and immersion gates BLOCK.",
+      "conclusion": "SUPPORTED",
+      "interpretation": "The failure occurs after factual world modeling: the writer preserves facts but serializes agents into one cooperative scene-completion process."
+    },
+    {
+      "id": "C400_05_EDITOR_MODE_LEAKAGE",
+      "evidence": "Phase399 appended three editorial suggestion lines after the fiction despite a prose-only contract.",
+      "conclusion": "SUPPORTED_OUTPUT_SYMPTOM",
+      "interpretation": "The one-shot completion can drift from narrator mode into planning/editor mode near the end, consistent with global completion pressure."
+    }
+  ],
+  "causal_hypothesis_assessment": [
+    {
+      "id": "H400_01_OMNISCIENT_COVERAGE_PRESSURE",
+      "status": "PARTIAL_HIGH_PRIORITY",
+      "evidence_for": [
+        "Writer saw full private objectives/knowledge for all major agents plus terminal constraints.",
+        "Source fidelity was strong while interaction ownership collapsed into shared agendas."
+      ],
+      "uncertainty": "No controlled visibility-partition experiment has yet been run."
+    },
+    {
+      "id": "H400_02_TOKEN_LEVEL_RESPONSE_COMPLETION_BIAS",
+      "status": "SUPPORTED_OUTPUT_BEHAVIOR_NOT_YET_CAUSAL_PROOF",
+      "evidence_for": [
+        "21 of 43 detected dialogue runs triggered the structural blocker.",
+        "Located film-interrogation chains repeatedly use question -> exact answer -> follow-up -> exact answer."
+      ],
+      "uncertainty": "A changed execution architecture has not yet demonstrated that reducing omniscient/global completion pressure removes the pattern."
+    },
+    {
+      "id": "H400_03_GLOBAL_SCENE_COMPLETION_PRESSURE",
+      "status": "PARTIAL_HIGH_PRIORITY",
+      "evidence_for": [
+        "A1 was requested as one complete bounded scene from a dense full-world packet.",
+        "Output sequentially consumed paperwork, water, film, relationship history, handover and departure-state obligations.",
+        "Completion ended with an editor-like three-line optimization note."
+      ],
+      "uncertainty": "One-shot versus local-horizon generation has not yet been prospectively compared."
+    },
+    {
+      "id": "H400_04_EDITOR_MODE_LEAKAGE",
+      "status": "SUPPORTED_SYMPTOM",
+      "evidence_for": [
+        "Three non-prose editorial directives appeared at the end of the frozen A1."
+      ],
+      "uncertainty": "This may be a downstream symptom of long one-shot completion rather than an independent cause of mechanical dialogue."
+    }
+  ],
+  "design_implication": {
+    "rejected_repairs": [
+      "paragraph-length quota",
+      "ban one-line paragraphs",
+      "ban questions",
+      "force action between every line of dialogue",
+      "show dialogue blocker taxonomy to writer",
+      "tell writer to imitate Phase370/394 surface features"
+    ],
+    "required_mechanism_change": [
+      "reduce omniscient visibility available to the prose generator",
+      "reduce obligation to finish/cover the entire scene in one completion",
+      "preserve independent non-focal agent activity outside a single shared conversational agenda",
+      "keep evaluator metrics writer-hidden"
+    ]
+  },
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}
