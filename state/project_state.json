@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T05:07:13.601Z",
+  "updated_at": "2026-09-25T05:23:32.785Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,43 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": {
-    "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
-    "phase": "FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION",
-    "phase_ordinal": 401,
-    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
-    "task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
-    "execution_scope": "Exactly one isolated A1 local-passage prose pilot using FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1. No best-of-N, no parallel candidates, no automatic retry, no A2, no second window, no human review before all required hidden gates clear.",
-    "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
-    "writer_visible_projection": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
-    "writer_visible_projection_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
-    "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
-    "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
-    "prose_generation_authorized": true,
-    "prose_generation_scope": "ONE_LOCAL_PASSAGE_A1_ONLY",
-    "fresh_writer_authorized": true,
-    "user_delivery_authorized": false,
-    "full_manuscript_rewrite_authorized": false,
-    "architecture_promotion_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE401_EXECUTE_SINGLE_ISOLATED_A1",
-        "parameters": {
-          "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
-          "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
-        }
-      },
-      {
-        "action_id": "PHASE401_STORE_FREEZE_AND_GATE_A1",
-        "parameters": {
-          "inbox": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
-          "frozen": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt"
-        }
-      }
-    ],
-    "next_action": "Execute exactly one isolated fresh-writer A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
-    "current_execution_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json"
-  },
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -213,19 +177,18 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE400_ARCHITECTURE_FREEZE",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE401_BLOCK",
     "current_writing_authorization_scope": {
-      "kind": "PHASE401_ONE_FOCAL_LOCAL_PASSAGE_A1_ONLY",
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE401_BLOCK",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": true,
-      "prose_generation_authorized": true,
-      "best_of_n": false,
+      "fresh_writer_authorized": false,
+      "prose_generation_authorized": false,
       "retry_authorized": false,
       "A2_authorized": false,
-      "automatic_second_window": false,
-      "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt"
+      "second_window_authorized": false,
+      "settlement_receipt": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -250,7 +213,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 79,
+    "logical_latest_checkpoint_sequence": 80,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -636,7 +599,8 @@
     "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
     "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
     "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
-    "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1"
+    "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+    "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -886,11 +850,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Execute exactly one isolated fresh-writer A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
-  "status": "PHASE401_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
-  "active_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
-  "last_completed_task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
-  "last_completed_task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+  "next_required_action": "No active task. Phase401 produced a strong directional reduction in deterministic mechanical-dialogue triggers but still failed output-contract, deterministic, semantic and hidden global-optimization gates. Do not repair/retry, create A2/second window, or create Phase402 automatically.",
+  "status": "PHASE401_CLOSED_A1_BLOCKED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NO_SUCCESSOR_AUTHORIZED",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+  "last_completed_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -995,21 +959,29 @@
     {
       "path": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
       "role": "Phase401 readiness receipt with first-audit block, repair and final PASS"
+    },
+    {
+      "path": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "role": "verbatim Phase401 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "role": "immutable Phase401 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+      "role": "Phase401 causal validation settlement with partial reduction signal and required gate blockers"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "Phase401 A1 isolated local-passage execution, verbatim freeze and hidden gate evaluation are pending"
+    "No separately authorized successor task exists after Phase401 partial-improvement blocker settlement"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "PHASE401_BEST_OF_N_FORBIDDEN",
-    "PHASE401_AUTOMATIC_RETRY_FORBIDDEN",
-    "PHASE401_A2_NOT_AUTHORIZED",
-    "PHASE401_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE401_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE401_BLOCK"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1035,7 +1007,13 @@
     "Treat Phase400 architecture-design PASS as proof of prose quality or mechanical-dialogue repair",
     "Run a prose pilot from Phase400 without a separately authorized successor task",
     "Create Phase401 automatically",
-    "Expose coordinator-only non-focal private state, terminal checklist, or evaluator diagnostics to a future prose writer"
+    "Expose coordinator-only non-focal private state, terminal checklist, or evaluator diagnostics to a future prose writer",
+    "Repair or clean frozen Phase401 A1",
+    "Retry Phase401 A1 automatically",
+    "Create Phase401 A2 or a second local window automatically",
+    "Enter actual-human review for blocked Phase401 A1",
+    "Treat the Phase401 directional reduction as proof that the architecture solved mechanical dialogue or AI smell",
+    "Create Phase402 without separate explicit authorization"
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -1083,7 +1061,15 @@
     "Phase401 successor validation task created after explicit user authorization",
     "Phase401 Lin Qiao local-view projection built from immutable NS02",
     "Phase401 first readiness audit blocked coordinator control metadata leakage and repair was applied",
-    "Phase401 repaired local-view and runner final readiness audit PASS"
+    "Phase401 repaired local-view and runner final readiness audit PASS",
+    "Phase401 exactly one isolated Lin Qiao local-horizon A1 executed; no retry or parallel candidate",
+    "Phase401 A1 stored and frozen verbatim with only GitHub terminal-LF normalization",
+    "Phase401 source fidelity CLEAR under focal-opacity constraints",
+    "Phase401 deterministic dialogue trigger ratio reduced from Phase399 21/43 to 2/12 but remained BLOCK",
+    "Phase401 semantic mechanical dialogue remained BLOCK",
+    "Phase401 hidden global-optimization diagnostic remained BLOCK",
+    "Phase401 output contract failed due title-like label and three editorial suggestion lines",
+    "Phase401 candidate rejected whole without actual-human review; attempt budget exhausted"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1203,24 +1189,60 @@
     "accepted_checkpoint_advance": false
   },
   "phase401_state": {
-    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+    "status": "CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NO_SUCCESSOR_AUTHORIZED",
     "task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
     "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
     "local_view": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
     "local_view_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
     "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
     "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
-    "readiness_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
     "attempt": "A1",
     "attempt_budget": 1,
-    "best_of_n": false,
-    "parallel_candidates": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "inbox": {
+      "path": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b"
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b"
+    },
+    "writer_chat_sha256": "8991c4d5a9d48bba1ad740252123dc1233e27af65fe15a235cf0d0cdaee0705e",
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "BLOCK",
+    "deterministic_dialogue": "BLOCK",
+    "deterministic_phase399_baseline": "21/43",
+    "deterministic_phase401": "2/12",
+    "semantic_dialogue": "BLOCK",
+    "hidden_global_optimization": "BLOCK",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "causal_validation": "PARTIAL_DIRECTIONAL_REDUCTION_NOT_VALIDATED",
+    "settlement_receipt": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "candidate_rejected_whole": true,
+    "actual_human_review_performed": false,
+    "user_delivery_authorized": false,
+    "best_of_n_used": false,
     "automatic_retry_authorized": false,
     "A2_authorized": false,
-    "automatic_second_window": false,
-    "candidate_stored": false,
-    "candidate_frozen": false,
-    "user_delivery_authorized": false,
+    "automatic_second_window_authorized": false,
+    "phase402_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase401_settlement": {
+    "status": "CLOSED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NOT_VALIDATED",
+    "receipt": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "deterministic_blocked_run_ratio_phase399": 0.4884,
+    "deterministic_blocked_run_ratio_phase401": 0.1667,
+    "deterministic_ratio_absolute_change": -0.3217,
+    "semantic_dialogue_still_blocked": true,
+    "hidden_global_optimization_still_blocked": true,
+    "output_contract_still_blocked": true,
+    "architecture_globally_validated": false,
+    "prose_quality_claim": false,
+    "actual_human_review_performed": false,
+    "phase402_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }
