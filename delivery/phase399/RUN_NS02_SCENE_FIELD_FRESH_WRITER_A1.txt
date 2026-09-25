@@ -12,8 +12,7 @@
     "story_id": "NS02_LAST_ROLL_AT_DAWN",
     "bounded_scene_id": "OLD_PHOTO_STUDIO_RAIN_NIGHT",
     "packet_version": "1.0.0",
-    "order_semantics": "NONE",
-    "story_origin": "ORIGINAL_PHASE398_NS02_TEST_STORY"
+    "order_semantics": "NONE"
   },
   "fixed_world_facts": {
     "order_semantics": "NONE",
