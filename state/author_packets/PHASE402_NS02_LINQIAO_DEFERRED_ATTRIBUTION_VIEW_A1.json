@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "PHASE402_DEFERRED_ATTRIBUTION_WRITER_VIEW_A1",
+  "story_id": "NS02_LAST_ROLL_AT_DAWN",
+  "local_window_id": "NS02_LIN_QIAO_LOCAL_WINDOW_A1",
+  "focal_character_id": "lin_qiao",
+  "architecture_id": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+  "order_semantics": "NONE",
+  "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE",
+  "focal_live_state": {
+    "identity_lock": "Lin Qiao, 32, Lin Guozhong's daughter. She works away from the county town and returned specifically for the studio handover.",
+    "current_practical_objective": "Separate documents, family photographs and portable valuables from water-damaged or disposable studio stock before the building becomes inaccessible.",
+    "current_body_state": "Tired from travel, clothes damp from the rain, fingertips irritated from old paper dust and wet cardboard.",
+    "current_attention_targets_by_id": {
+      "paperwork": "Missing signatures, receipts and handover material that can delay the municipal transfer.",
+      "water": "Boxes, paper, photographs and wiring currently exposed to the moving water line."
+    },
+    "factual_private_knowledge_by_id": {
+      "departure_plan": "She intends to leave town again immediately after the handover and has not told her father that she has no plan to return for the later demolition."
+    },
+    "uncertainty_by_id": {
+      "studio_reason": "She does not know why her father kept the failing studio open as long as he did.",
+      "mother_trace": "She does not know whether any meaningful trace of Xu Wen remains in the studio or whether anything was deliberately kept from her."
+    }
+  },
+  "current_observable_situation": {
+    "place": "The Lin family photo studio on the old county-town street during the rainy night before municipal handover.",
+    "current_state": "Lin Qiao is inside sorting documents, photographs and movable studio material while rainwater enters from the rear. Lin Guozhong and Wu Lan are present and continue their own work.",
+    "no_required_next_event": true
+  },
+  "current_observable_environment": {
+    "processes_by_id": {
+      "rain_ingress": {
+        "observable_process": "Rainwater continues entering through the rear wall and under the back door.",
+        "current_state": "The water line is slowly advancing across the floor toward low boxes and old electrical fittings.",
+        "may_continue_without_focal_attention": true
+      },
+      "district_clearance": {
+        "observable_process": "Other shops on the old street are also being emptied, tagged and locked.",
+        "current_state": "Carts, voices, metal shutters and handover activity remain audible outside.",
+        "may_continue_without_focal_attention": true
+      },
+      "electrical_risk": {
+        "observable_process": "The old wiring is unreliable in wet weather.",
+        "current_state": "Lights and outlets cannot be assumed to remain stable as water advances.",
+        "may_continue_without_focal_attention": true
+      },
+      "material_decay": {
+        "observable_process": "Wet cardboard softens, photo paper curls, adhesive loosens and old envelopes absorb dampness.",
+        "current_state": "Objects left near the floor may worsen while attention is elsewhere.",
+        "may_continue_without_focal_attention": true
+      }
+    }
+  },
+  "non_focal_actor_commitments_by_id": {
+    "lin_guozhong": {
+      "identity_lock": "Lin Guozhong, 63, owner of the studio and Lin Qiao's father.",
+      "observable_commitment_horizon": "For the next short local passage while water continues entering and movable studio material remains exposed.",
+      "ongoing_activity": "Continue moving vulnerable photographic material, ledgers and darkroom tools from low or damp storage to higher dry surfaces; inspect labels while working.",
+      "next_observable_priority": "Protect photographic material from water damage and keep sorting items by immediate handling need.",
+      "public_constraint": "The municipal handover still requires his signature, but this commitment does not assign or reveal any private reason for when he signs.",
+      "optional_public_emission": {
+        "enabled": true,
+        "emission_kind": "PUBLIC_FACT | PRACTICAL_DIRECTIVE",
+        "content_boundary": "He may state a brief already-public practical fact about where an object is, how photographic material should be handled, or an immediate electrical/water safety fact if the current physical work makes that information necessary. No family-history explanation is committed."
+      }
+    },
+    "wu_lan": {
+      "identity_lock": "Wu Lan, 46, municipal inventory clerk assigned to the old-street handover.",
+      "observable_commitment_horizon": "For the same short local passage while inventory, water ingress and electrical safety remain active.",
+      "ongoing_activity": "Continue inventory marks, handover paperwork and practical safety checks while monitoring the rear-water line and usable lighting/power.",
+      "next_observable_priority": "Keep the handover record usable and prevent an immediate safety problem from wet wiring or water reaching vulnerable material.",
+      "public_constraint": "She is present in an official role and does not own or resolve the Lin family history.",
+      "optional_public_emission": {
+        "enabled": true,
+        "emission_kind": "PUBLIC_FACT | PRACTICAL_DIRECTIVE | SOCIAL_ACKNOWLEDGEMENT",
+        "content_boundary": "She may state one bounded handover fact, immediate safety directive or brief acknowledgement when her observable official/safety work makes it relevant. She is not committed to completing another character's conversational agenda."
+      }
+    }
+  },
+  "raw_relationship_history_by_id": {
+    "father_relation": {
+      "factual_history": "Lin Guozhong is Lin Qiao's father. They have been estranged for years.",
+      "interpretation": "OMITTED"
+    },
+    "mother_departure": {
+      "factual_history": "Xu Wen left the household when Lin Qiao was a teenager. Lin Qiao and Lin Guozhong do not share one established explanation of why she left.",
+      "interpretation": "OMITTED"
+    },
+    "old_studio_work": {
+      "factual_history": "As a child, Lin Qiao spent time in the studio and learned some ordinary handling routines around photographs and darkroom materials.",
+      "interpretation": "OMITTED"
+    }
+  },
+  "unlocked_raw_memory_fragments_by_id": {
+    "height_mark_memory": {
+      "sensory_or_event_fragment": "When she was about seven or eight, Lin Qiao once wrote the character '乔' beside one pencil height mark on the darkroom doorframe. The pencil was blunt and the final stroke ran outside the mark.",
+      "interpretation": "OMITTED",
+      "relationship_meaning": "OMITTED",
+      "coverage_required": false
+    }
+  },
+  "immutable_hard_locks_by_id": {
+    "handover": "The studio is scheduled for municipal handover at dawn.",
+    "rain": "Rainwater is entering the building.",
+    "wiring": "The studio wiring is old and unreliable in the wet conditions.",
+    "estrangement": "Lin Qiao and Lin Guozhong have been estranged for years.",
+    "mother_departure": "Xu Wen left the household when Lin Qiao was a teenager; the family does not share one established explanation.",
+    "signature": "Lin Guozhong's signature is required for the handover."
+  },
+  "mystery_boundaries_by_id": {
+    "mother_departure": "Do not invent a complete explanation for why Xu Wen left.",
+    "father_silence": "Do not invent a complete explanation that resolves all of Lin Guozhong's past silence.",
+    "hidden_evidence": "Do not introduce a letter, recording, confession, official file or single hidden object that fully explains the family rupture."
+  },
+  "optional_salience_pool_by_id": {
+    "developing_tray": {
+      "concrete_detail": "A developing tray and a narrow strip of usable table surface remain in the old darkroom work area.",
+      "semantic_link": "OMITTED",
+      "coverage_required": false
+    },
+    "narrow_drawer": {
+      "concrete_detail": "A narrow old drawer remains under the counter among ordinary tools, clips and papers.",
+      "semantic_link": "OMITTED",
+      "coverage_required": false
+    },
+    "red_thermos": {
+      "concrete_detail": "A chipped red thermos remains near the old customer waiting area.",
+      "semantic_link": "OMITTED",
+      "coverage_required": false
+    },
+    "doorframe_marks": {
+      "concrete_detail": "Several pencil height marks remain on the darkroom doorframe.",
+      "semantic_link": "OMITTED",
+      "coverage_required": false
+    }
+  },
+  "output_request": {
+    "mode": "FICTION_PROSE_ONLY",
+    "language": "Chinese",
+    "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+    "focalization": "Stay with what Lin Qiao can presently perceive, physically do, factually know, remain uncertain about, or recall from the explicitly unlocked raw memory fragment.",
+    "whole_scene_completion_required": false,
+    "use_every_available_detail_required": false,
+    "reveal_every_available_fact_required": false,
+    "resolve_larger_scene_required": false,
+    "natural_local_stop_allowed": true,
+    "editor_notes_allowed": false,
+    "analysis_or_self_evaluation_allowed": false,
+    "second_version_allowed": false
+  }
+}
