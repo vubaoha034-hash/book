@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 98,
-  "recorded_at": "2026-09-25T10:35:00Z",
+  "sequence": 99,
+  "recorded_at": "2026-09-25T10:45:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1"
   ],
-  "current_focus": "Phase407 compiled A1 packet/runner passed readiness. Canonical Chinese identity literals are bound exactly while ordinary prose remains generative. Phase406 cost-carrier, Phase405 anti-regression architecture and Phase404 response transaction remain unchanged. Exactly one isolated fresh-writer A1 is authorized.",
+  "current_focus": "Phase407 exactly one fresh A1 cleared all required hidden gates. Canonical identity literals remained exact, Phase406 focal personal-cost visibility stayed clear, and Phase405/404 anti-regression mechanisms stayed clear/no-block. The immutable A1 is now authorized for actual-human literary review; no Phase408 is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -292,7 +292,12 @@
     "Phase407 single-A1 validation contract frozen; no retry, A2, second window or best-of-N.",
     "Phase407 canonical identity literals frozen: 林乔 / 林国忠 / 吴兰 / 许雯.",
     "Phase407 semantic character fields now reference identity IDs instead of requiring romanized-to-Chinese name reconstruction.",
-    "Phase407 readiness/guard audit passed; exactly one isolated A1 authorized."
+    "Phase407 readiness/guard audit passed; exactly one isolated A1 authorized.",
+    "Phase407 exactly one fresh-writer A1 executed; no retry, A2, best-of-N or second window.",
+    "Phase407 hard identity literal fidelity CLEAR: 林乔 / 林国忠 / 吴兰 emitted canonically.",
+    "Phase407 focal personal-cost visibility remained CLEAR without abstract live-vector summaries.",
+    "Phase407 semantic dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK, interpretation liquidity NO_BLOCK.",
+    "Phase407 all required hidden gates CLEAR; immutable A1 authorized for actual-human literary review."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1035,5 +1040,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase407 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry."
+  "next_action": "Deliver the immutable Phase407 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision. Do not create Phase408 automatically."
 }

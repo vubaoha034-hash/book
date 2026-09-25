@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 407,
+  "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "attempt": "A1",
+  "event_type": "POST_GENERATION_HARD_IDENTITY_SETTLEMENT",
+  "status": "ALL_REQUIRED_HIDDEN_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
+  "evidence_head_before_settlement": "7ad4efbea8d915639528b23a197dc1c2f53edb44",
+  "architecture_under_test": "HARD_IDENTITY_LITERAL_BINDING_V1",
+  "storage": {
+    "writer_chat_output": {
+      "page_id": 97,
+      "chat_url": "https://chatgpt.com/c/6ab64aeb-7f40-83ee-887e-7452b6ce472f",
+      "chars": 963,
+      "sha256": "180dbb61d571186c5c3b84edaad291519477cbc84dc8b08c127520056dbee844"
+    },
+    "inbox": {
+      "path": "state/inbox/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+      "chars": 963,
+      "sha256": "180dbb61d571186c5c3b84edaad291519477cbc84dc8b08c127520056dbee844",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+      "chars": 963,
+      "sha256": "180dbb61d571186c5c3b84edaad291519477cbc84dc8b08c127520056dbee844",
+      "exact_writer_output": true
+    },
+    "inbox_and_frozen_byte_identical": true,
+    "storage_normalization": "NONE"
+  },
+  "source_fidelity": {
+    "verdict": "CLEAR",
+    "canonical_identity_checks": {
+      "林乔": "EXACT",
+      "林国忠": "EXACT",
+      "吴兰": "EXACT",
+      "许雯": "NOT_EMITTED"
+    },
+    "signature_requirement_preserved": true,
+    "rain_ingress_preserved": true,
+    "wet_wiring_preserved": true,
+    "invented_family_truth": false,
+    "invented_magic_evidence": false
+  },
+  "hard_identity_literal_fidelity": {
+    "verdict": "CLEAR",
+    "emitted_bound_names": [
+      "林乔",
+      "林国忠",
+      "吴兰"
+    ],
+    "noncanonical_homophone_or_variant_detected": false,
+    "wu_lan_exact_occurrences": 2,
+    "note": "Bound explicit names match canonical Chinese literals exactly; omitted bound names do not count as failure."
+  },
+  "writer_output_contract": {
+    "verdict": "CLEAR",
+    "leading_non_prose_label": false,
+    "trailing_editorial_material": false,
+    "preface": false,
+    "postscript": false,
+    "self_evaluation": false,
+    "explanation_section": false,
+    "second_version": false,
+    "structured_envelope": false,
+    "first_block": "林乔把最后一叠表格往干处挪了挪，纸角还是沾到一点水，软下来，贴在她发红的指腹上。",
+    "last_block": "屋里没有人停下来。",
+    "phase404_transaction_preserved": true
+  },
+  "deterministic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "No repeated alternating exact-response chain forms.",
+      "Non-focal speech remains sparse and tied to independent salvage/safety activity."
+    ]
+  },
+  "semantic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Lin Guozhong's directive about lower boxes arises from salvage work rather than completion of Lin Qiao's agenda.",
+      "Wu Lan's electrical warning arises from her own safety check.",
+      "No shared multi-turn information agenda develops."
+    ]
+  },
+  "hidden_global_optimization_diagnostic": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "The departure fact appears once after dawn/time perception and is not recursively interpreted.",
+      "No recurring object-to-thesis or executive-summary cadence is present.",
+      "The sentence '这个念头只停了一下' is a single local transition, not a recurring explanatory closure pattern."
+    ],
+    "note": "This remains a bounded single-run diagnostic, not global proof."
+  },
+  "response_ownership_residual": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "Non-focal characters continue independent salvage/safety/inventory objectives.",
+      "No non-focal response sequence is selected to complete Lin Qiao's conversational agenda."
+    ]
+  },
+  "interpretation_liquidity_residual": {
+    "verdict": "NO_BLOCK",
+    "relationship_thesis": false,
+    "memory_to_meaning_cycle": false
+  },
+  "reader_drive_entry_state": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Water ingress is active immediately.",
+      "Unsigned signature remains visible near the opening.",
+      "Salvage is already in progress."
+    ]
+  },
+  "neutral_salience_flooding": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "Details remain coupled to water, salvage, handover or safety.",
+      "No broad neutral inventory exposition dominates."
+    ]
+  },
+  "focal_personal_cost_visibility": {
+    "verdict": "CLEAR",
+    "located_evidence": [
+      "Lin Qiao notices dawn/time progression.",
+      "正文明确：‘等这里该搬的搬完，该签的签完，她就走。她原本就是这样打算的。后面拆的时候，她不会再回来。’"
+    ],
+    "abstract_live_vector_summary_reintroduced": false
+  },
+  "live_open_outcome_visibility": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Signature remains unresolved.",
+      "Pen is placed by the signature line.",
+      "The passage ends with work continuing and no signature."
+    ]
+  },
+  "causal_validation_result": {
+    "target_blocker": "HARD_IDENTITY_LITERAL_FIDELITY",
+    "target_result": "CLEAR",
+    "phase406_cost_carrier": "CLEAR_PRESERVED",
+    "anti_regression_families": {
+      "semantic_mechanical_dialogue": "CLEAR",
+      "response_ownership": "NO_BLOCK",
+      "hidden_global_optimization": "NO_BLOCK",
+      "interpretation_liquidity": "NO_BLOCK"
+    },
+    "full_required_hidden_gate_result": "CLEAR_FOR_ACTUAL_HUMAN_REVIEW",
+    "architecture_signal": "POSITIVE_SINGLE_RUN",
+    "architecture_globally_validated": false,
+    "literary_quality_claim": false,
+    "human_review_allowed": true
+  },
+  "settlement": {
+    "candidate_rejected_whole": false,
+    "required_gate_failures": [],
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "best_of_n_used": false,
+    "parallel_candidates_created": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "actual_human_review_authorized": true,
+    "actual_human_review_performed": false,
+    "phase408_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "human_review_dimensions": [
+    "现在有没有真正被带进小说世界",
+    "情绪够不够",
+    "AI味重不重",
+    "有无悬念",
+    "想不想继续看",
+    "最早从哪里开始觉得无聊、假或想跳过"
+  ],
+  "next_action": "Deliver the immutable Phase407 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision. Do not create Phase408 automatically."
+}

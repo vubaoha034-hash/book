@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T10:35:00Z",
+  "updated_at": "2026-09-25T10:45:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,20 +177,19 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE407_SINGLE_ISOLATED_A1_AUTHORIZED",
+    "YMGQ_writing_pause_reason": "PHASE407_AWAITING_ACTUAL_HUMAN_LITERARY_REVIEW",
     "current_writing_authorization_scope": {
-      "kind": "PHASE407_SINGLE_ISOLATED_A1_ONLY",
-      "current_chat_allowed": false,
-      "user_visible_output": false,
+      "kind": "PHASE407_HUMAN_REVIEW_ONLY",
+      "current_chat_allowed": true,
+      "user_visible_output": true,
       "long_form": false,
-      "fresh_writer_authorized": true,
-      "prose_generation_authorized": true,
+      "fresh_writer_authorized": false,
+      "prose_generation_authorized": false,
       "retry_authorized": false,
       "A2_authorized": false,
       "second_window_authorized": false,
-      "human_review_authorized": false,
-      "task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
-      "writer_entry": "delivery/phase407/RUN_NS02_LINQIAO_HARD_IDENTITY_A1.txt"
+      "human_review_authorized": true,
+      "settlement_receipt": "state/review_receipts/PHASE407_NS02_A1_POST_GENERATION_IDENTITY_SETTLEMENT_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -857,8 +856,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase407 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry.",
-  "status": "PHASE407_ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
+  "next_required_action": "Deliver the immutable Phase407 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision. Do not create Phase408 automatically.",
+  "status": "PHASE407_A1_ALL_REQUIRED_HIDDEN_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
   "active_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
   "last_completed_task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
   "last_completed_task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
@@ -1115,7 +1114,7 @@
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "Phase407 architecture is ready, but no prose may run until the single compiled A1 packet/runner passes readiness and guard audit."
+    "Phase407 immutable A1 cleared all required hidden gates and is awaiting actual-human literary review."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1937,7 +1936,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase407_state": {
-    "status": "ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
+    "status": "ACTIVE_A1_ALL_REQUIRED_HIDDEN_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
     "task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE407_HARD_IDENTITY_CAUSAL_DIAGNOSIS_V1.json",
@@ -1959,8 +1958,8 @@
     "inherited_phase406_cost_carrier": "UNCHANGED",
     "inherited_phase405_targeted_families": "PRESERVE_REQUIRED",
     "phase404_response_transaction": "UNCHANGED",
-    "prose_generation_authorized": true,
-    "fresh_writer_authorized": true,
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
     "attempt": "A1",
     "attempt_budget": 1,
     "best_of_n": false,
@@ -1968,7 +1967,7 @@
     "automatic_retry_authorized": false,
     "A2_authorized": false,
     "automatic_second_window": false,
-    "actual_human_review_authorized": false,
+    "actual_human_review_authorized": true,
     "accepted_checkpoint_advance": false,
     "writer_visible_projection": {
       "path": "state/author_packets/PHASE407_NS02_LINQIAO_HARD_IDENTITY_VIEW_A1.json",
@@ -1981,6 +1980,35 @@
     "readiness_receipt": {
       "path": "state/review_receipts/PHASE407_NS02_A1_FRESH_WRITER_READY_V1.json",
       "status": "PASS"
-    }
+    },
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "inbox": {
+      "path": "state/inbox/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE407_NS02_A1_POST_GENERATION_IDENTITY_SETTLEMENT_V1.json",
+    "writer_chat_chars": 963,
+    "writer_chat_sha256": "180dbb61d571186c5c3b84edaad291519477cbc84dc8b08c127520056dbee844",
+    "source_fidelity": "CLEAR",
+    "hard_identity_literal_fidelity": "CLEAR",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "CLEAR",
+    "live_open_outcome_visibility": "CLEAR",
+    "actual_human_review_performed": false,
+    "phase408_authorized": false
   }
 }
