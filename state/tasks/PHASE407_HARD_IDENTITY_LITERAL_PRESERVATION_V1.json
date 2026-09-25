@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "phase_ordinal": 407,
+  "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "purpose": "Repair only Phase406 hard-identity token drift without changing the successful focal cost-carrier or previously stabilized mechanism families.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE406_CLOSE",
+    "predecessor_checkpoint_sequence": 96,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "predecessor": {
+    "settlement": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json",
+    "focal_personal_cost_visibility": "CLEAR",
+    "source_fidelity": "BLOCK_IDENTITY",
+    "retry_authorized": false,
+    "A2_authorized": false,
+    "second_window_authorized": false
+  },
+  "diagnosis": "state/calibration/PHASE407_HARD_IDENTITY_CAUSAL_DIAGNOSIS_V1.json",
+  "architecture_schema": "state/author_packets/PHASE407_HARD_IDENTITY_LITERAL_SCHEMA_V1.json",
+  "validation_contract": "state/tasks/PHASE407_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+  "architecture_ready_receipt": "state/review_receipts/PHASE407_IDENTITY_ARCHITECTURE_READY_V1.json",
+  "fixed_controls": {
+    "phase406_cost_carrier": "FOCAL_COST_CARRIER_EVENT_V1_UNCHANGED",
+    "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1_UNCHANGED",
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2": false,
+    "second_window": false
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build and audit one compiled Phase407 A1 packet/runner. Do not generate prose until readiness PASS."
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 407,
+  "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "artifact_id": "PHASE407_HARD_IDENTITY_CAUSAL_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence_head": "8a6f05fe8f585aebeafd5ea06bae9e38d8de366d",
+  "evidence": {
+    "phase406_packet": "state/author_packets/PHASE406_NS02_LINQIAO_COST_CARRIER_VIEW_A1.json",
+    "phase406_settlement": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json",
+    "phase406_identity_failure": {
+      "canonical": "吴兰",
+      "emitted": "吴岚",
+      "occurrences": 2
+    },
+    "phase406_target_mechanism": "FOCAL_PERSONAL_COST_VISIBILITY_CLEAR",
+    "inherited_nonregression": [
+      "semantic dialogue CLEAR",
+      "response ownership NO_BLOCK",
+      "hidden global optimization NO_BLOCK",
+      "interpretation liquidity NO_BLOCK",
+      "output transaction CLEAR",
+      "live open outcome CLEAR"
+    ]
+  },
+  "causal_diagnosis": {
+    "id": "RD407_A_SEMANTIC_NAME_RECONSTRUCTION_INSTEAD_OF_LITERAL_BINDING",
+    "status": "SUPPORTED_HIGH_PRIORITY",
+    "evidence": [
+      "Phase406 writer-visible packet represented the clerk identity semantically/romanized as Wu Lan rather than as an immutable Chinese literal.",
+      "The fresh writer had to reconstruct the Chinese name during free language generation.",
+      "The output produced a plausible homophonic Chinese character substitution: 兰 -> 岚.",
+      "No evidence indicates the character identity itself was intentionally changed at the story-model level."
+    ],
+    "distinction": "This is a lexical identity fidelity failure, not a general prose-quality, dialogue, pacing or style failure."
+  },
+  "rejected_repairs": [
+    "tell writer to be more careful with names",
+    "add a general spelling-quality checklist",
+    "post-generation typo correction",
+    "retry until spelling happens to match",
+    "lock ordinary nouns or prose wording",
+    "expand into a global surface-style rule"
+  ],
+  "selected_architecture": {
+    "id": "HARD_IDENTITY_LITERAL_BINDING_V1",
+    "mechanism": "Provide canonical hard identities as exact Chinese literal tokens in a separate immutable binding table. Semantic character records reference identity IDs, while any emitted explicit name must be copied from the canonical literal rather than reconstructed from romanization or semantics.",
+    "scope": "Only hard identity tokens and similarly exact proper-name literals explicitly designated by source authority.",
+    "writer_freedom_preserved": [
+      "whether to use the proper name or a natural pronoun/reference where source-consistent",
+      "all surrounding syntax, rhythm, paragraphing, dialogue and narration",
+      "Phase406 focal cost-carrier realization",
+      "Phase405 non-focal causal ownership"
+    ],
+    "forbidden": [
+      "phonetic reconstruction of a bound identity",
+      "homophone/near-shape substitution",
+      "nickname invention unless source-authorized",
+      "post-generation cleanup"
+    ]
+  },
+  "validation_limit": "A single Phase407 A1 can show one bounded hard-identity preservation signal only; it cannot prove universal proper-name fidelity.",
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}

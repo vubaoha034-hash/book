@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "VALIDATION_CONTRACT_NOT_A_SECOND_TASK",
+  "project_id": "novel-distillation",
+  "phase": 407,
+  "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "contract_id": "PHASE407_SINGLE_A1_VALIDATION_CONTRACT_V1",
+  "status": "FROZEN_ARCHITECTURE_READY_AWAITING_COMPILED_INPUT",
+  "architecture_under_test": "HARD_IDENTITY_LITERAL_BINDING_V1",
+  "changed_variable": "Bind source-authoritative character names as exact Chinese canonical literals instead of allowing semantic/romanized reconstruction.",
+  "frozen_variables": [
+    "Phase406 focal cost-carrier mechanism and factual content",
+    "Phase405 non-focal causal ownership",
+    "Phase405 abstract live-vector firewall",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "story world/hard locks",
+    "single A1 budget"
+  ],
+  "A1_execution_budget": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "separate_writer_chat_required": true,
+    "only_one_new_chatgpt_page": true
+  },
+  "pre_generation_required_gates": {
+    "canonical_identity_literals_present": true,
+    "no_romanization_only_identity_path": true,
+    "identity_binding_scope_hard_tokens_only": true,
+    "phase406_cost_carrier_unchanged": true,
+    "phase405_non_focal_ownership_preserved": true,
+    "abstract_live_vector_summaries_hidden": true,
+    "phase404_response_transaction_unchanged": true
+  },
+  "post_generation_required_hidden_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "hard_identity_literal_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "claim_boundary": {
+    "if_all_required_hidden_gates_clear": "ONE_BOUNDED_PHASE407_A1_ELIGIBLE_FOR_ACTUAL_HUMAN_LITERARY_REVIEW",
+    "forbidden": [
+      "universal proper-name fidelity proven",
+      "global stability proven",
+      "long-form transfer proven"
+    ]
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Compile exactly one Phase407 A1 packet/runner with canonical hard-identity literals and run readiness before prose."
+}

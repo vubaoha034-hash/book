@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "HARD_IDENTITY_LITERAL_BINDING_V1",
+  "project_id": "novel-distillation",
+  "phase": 407,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Separate exact source-authoritative proper-name literals from ordinary generative language so character-level identity fidelity does not depend on semantic or phonetic reconstruction.",
+  "writer_visible_binding_table": {
+    "format": "identity_id -> canonical_literal",
+    "requirements": [
+      "canonical_literal is source-authoritative Unicode text",
+      "canonical_literal is not paraphrasable",
+      "semantic character descriptions reference identity_id rather than alternate spellings",
+      "if explicit name is emitted, canonical_literal is copied exactly",
+      "pronouns or omission remain allowed when natural and source-consistent"
+    ]
+  },
+  "exact_scope": {
+    "hard_identity_tokens_only": true,
+    "ordinary_language_locked": false,
+    "prose_surface_template_added": false,
+    "dialogue_surface_template_added": false
+  },
+  "inherited_architecture": {
+    "focal_cost_carrier": "FOCAL_COST_CARRIER_EVENT_V1_UNCHANGED",
+    "causal_ownership": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1_UNCHANGED",
+    "response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1_UNCHANGED",
+    "abstract_live_vector_summaries": "HIDDEN"
+  },
+  "audit_rules": [
+    "BLOCK if a canonical identity is represented to writer only through romanization or semantic description when a source-authoritative Chinese literal exists.",
+    "BLOCK if the mechanism locks ordinary prose words or creates a style template.",
+    "BLOCK if Phase406 focal cost-carrier semantics are changed.",
+    "BLOCK if Phase405 non-focal ownership or abstract-live-vector firewall is weakened.",
+    "BLOCK if Phase404 response transaction is changed.",
+    "BLOCK if cleanup, retry, A2, second window or best-of-N is introduced."
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}
