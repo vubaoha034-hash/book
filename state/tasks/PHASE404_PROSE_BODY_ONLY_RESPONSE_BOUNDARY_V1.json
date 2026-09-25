@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
   "phase_ordinal": 404,
-  "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_RUNNER_NO_PROSE",
+  "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "purpose": "Fix only the remaining Phase403 writer-output contract violation: the fresh writer emitted a title-like label before the prose and editorial suggestions after the prose even though the literary/reader-drive architecture passed all other required hidden gates.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE403_CLOSE",
@@ -138,22 +138,27 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE404_BUILD_FROZEN_RUNNER_A1",
+      "action_id": "PHASE404_EXECUTE_SINGLE_ISOLATED_A1",
       "parameters": {
-        "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt"
+        "writer_entry": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+        "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
       }
     },
     {
-      "action_id": "PHASE404_AUDIT_AND_FREEZE_A1_READINESS",
+      "action_id": "PHASE404_STORE_FREEZE_AND_GATE_A1",
       "parameters": {
-        "receipt": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json"
+        "inbox": "state/inbox/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+        "frozen": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt"
       }
     }
   ],
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build exactly one Phase404 frozen runner using the unchanged Phase403 writer-visible payload and PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1; audit readiness. Do not generate prose until readiness PASS.",
-  "architecture_ready_receipt": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json"
+  "next_action": "Execute exactly one isolated Phase404 fresh-writer A1 from the frozen runner using the minimal outer prompt. Persist/freeze raw output verbatim and run all required hidden gates. Do not retry automatically.",
+  "architecture_ready_receipt": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json",
+  "readiness_receipt": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+  "writer_entry": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+  "writer_entry_sha256": "a70fdef75ddd535c16b32fa30e8599816713e2df1598e989bac5c196546b80d8"
 }
