@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 86,
-  "recorded_at": "2026-09-25T08:13:17.092Z",
+  "sequence": 87,
+  "recorded_at": "2026-09-25T08:42:19.235Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1"
-  ],
-  "current_focus": "Phase403 is active and ready for exactly one isolated Lin Qiao live-vector/selective-salience A1. The writer-visible view and frozen runner passed readiness audit. No best-of-N, parallel candidate, retry, A2, second window or pre-gate human review is authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase403 is durably closed after exactly one authorized A1. The candidate was stored/frozen verbatim. Source fidelity, deterministic dialogue, semantic dialogue, hidden global optimization, response-ownership residual, interpretation-liquidity residual, reader-drive entry state, neutral-salience flooding, focal personal-cost visibility and live open-outcome visibility all CLEAR/NO_BLOCK; writer-output contract BLOCKED due a title-like label and three editorial suggestion lines. No actual-human review occurred.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -219,7 +217,20 @@
     "Phase403 reader-drive architecture audit PASS; exactly one A1 preparation allowed",
     "Phase403 live-vector/selective-salience writer-visible view frozen and audited",
     "Phase403 single A1 runner frozen with exact embedded projection",
-    "Phase403 A1 readiness audit PASS; exactly one isolated A1 authorized"
+    "Phase403 A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase403 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase403 A1 stored and frozen verbatim including title-like label and three editorial suggestion lines",
+    "Phase403 source fidelity CLEAR",
+    "Phase403 deterministic dialogue CLEAR",
+    "Phase403 semantic mechanical dialogue CLEAR",
+    "Phase403 hidden global optimization NO_BLOCK",
+    "Phase403 response-ownership residual NO_BLOCK",
+    "Phase403 interpretation-liquidity residual NO_BLOCK",
+    "Phase403 reader-drive entry-state CLEAR",
+    "Phase403 neutral-salience flooding NO_BLOCK",
+    "Phase403 focal personal-cost visibility CLEAR",
+    "Phase403 live open-outcome visibility CLEAR",
+    "Phase403 writer-output contract BLOCK; candidate rejected whole and human review not authorized"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -257,7 +268,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "Phase403 single A1 execution, verbatim freeze and hidden gate evaluation are pending"
+    "No separately authorized successor task exists after Phase403 output-contract blocker settlement"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -292,11 +303,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE403_BEST_OF_N_FORBIDDEN",
-    "PHASE403_AUTOMATIC_RETRY_FORBIDDEN",
-    "PHASE403_A2_NOT_AUTHORIZED",
-    "PHASE403_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE403_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE403_OUTPUT_CONTRACT_BLOCK"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -446,9 +453,15 @@
     "Retry or repair Phase402 A1",
     "Use paragraph length, question count, AI-smell or mechanical-dialogue rules as the Phase403 primary repair",
     "Create best-of-N, parallel candidates, A2 or a second window automatically",
-    "Create Phase404 automatically"
+    "Create Phase404 automatically",
+    "Delete or repair the Phase403 title-like label or three editorial suggestion lines in frozen A1",
+    "Retry Phase403 A1 automatically",
+    "Create Phase403 A2 or second window automatically",
+    "Enter actual-human review for blocked Phase403 A1",
+    "Treat hidden reader-drive gate success as actual-human reader-drive validation",
+    "Create Phase404 without separate explicit authorization"
   ],
-  "next_required_action": "Execute exactly one isolated A1 from delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "next_required_action": "No active task. Preserve the Phase403 hidden positive reader-drive signal, but do not repair/retry, create A2/second window, enter human review, or create Phase404 automatically. Any successor requires separate explicit authorization.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -865,16 +878,24 @@
     {
       "path": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
       "role": "Phase403 single A1 fresh-writer readiness PASS receipt"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "role": "immutable Phase403 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+      "role": "Phase403 hidden-gate settlement with output-contract BLOCK"
     }
   ],
-  "status": "PHASE403_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+  "status": "PHASE403_CLOSED_A1_BLOCKED_OUTPUT_CONTRACT_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+  "last_completed_task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "e6921e6ab451a8f8cbeb01f207914e5e2d41c57127c284bb0388e6e68cc2b517",
+    "project_state_sha256": "4103b6154aab401c638138e298e9803552e3c542505457d2a14e93ed456432a2",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -896,11 +917,12 @@
       "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
       "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
       "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
-      "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1"
+      "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+      "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json"
+  "active_task_contract": null,
+  "last_completed_task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json"
 }
