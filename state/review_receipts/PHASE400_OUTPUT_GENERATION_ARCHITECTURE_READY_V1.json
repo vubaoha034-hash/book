@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 400,
+  "task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+  "event_type": "OUTPUT_GENERATION_ARCHITECTURE_FREEZE_AND_AUDIT",
+  "status": "READY_ARCHITECTURE_ONLY_NO_PROSE",
+  "evidence_head": "05ed223e51716e64b9a60b3679147b94c7ef60ef",
+  "artifacts": {
+    "task_contract": {
+      "path": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+      "sha256": "028ba70d7d45823cb0b8001f30314ed831d2b7725020334d6fcf0e9c4582acce"
+    },
+    "contrast_profile": {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "sha256": "050bc50c8d3dcd2f1eef3250a4f0da0eb1e5a797cedd273320625cb0348b8a32"
+    },
+    "causal_diagnosis": {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "sha256": "aca3f709bd9b4411661eb2fdf0c795a9ecec77c29334c9e33b3c46fc413f272a"
+    },
+    "successor_execution_schema": {
+      "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+      "sha256": "5798b5585edf75157ee6d74445e061503988cf1de4438212055485b556e09aaa",
+      "schema_id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1"
+    }
+  },
+  "contrast_findings": {
+    "phase399_one_sentence_ratio": 0.959,
+    "phase370_human_positive_one_sentence_ratio": 0.9444,
+    "paragraph_shortness_primary_separator": false,
+    "phase399_dialogue_blocked_runs": "21/43",
+    "phase370_dialogue_blocked_runs": "0/14",
+    "strongest_measured_separator": "REPEATED_EXACT_ADJACENCY_SHARED_AGENDA_DIALOGUE_GEOMETRY"
+  },
+  "causal_diagnosis": {
+    "omniscient_coverage_pressure": "PARTIAL_HIGH_PRIORITY",
+    "token_level_response_completion_bias": "SUPPORTED_OUTPUT_BEHAVIOR_NOT_YET_CAUSAL_PROOF",
+    "global_scene_completion_pressure": "PARTIAL_HIGH_PRIORITY",
+    "editor_mode_leakage": "SUPPORTED_SYMPTOM"
+  },
+  "selected_architecture": {
+    "id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "material_changes": [
+      "The coordinator retains the full scene/world model instead of exposing it wholesale to the prose writer.",
+      "The writer receives full private state only for one focal consciousness.",
+      "Non-focal characters remain partially opaque; only observable/focal-known state is writer-visible.",
+      "The full terminal world-state checklist remains coordinator-only.",
+      "The writer is asked for one local continuous passage rather than whole-scene completion.",
+      "Optional scene details are not mandatory coverage.",
+      "Any later window requires separate authorization."
+    ]
+  },
+  "audit": {
+    "result": "PASS",
+    "task_http_200": true,
+    "profile_http_200": true,
+    "diagnosis_http_200": true,
+    "schema_http_200": true,
+    "full_world_model_hidden_from_writer": true,
+    "non_focal_private_state_coordinator_only": true,
+    "writer_non_focal_visibility_observable_only": true,
+    "full_terminal_world_state_hidden_from_writer": true,
+    "writer_whole_scene_completion_required": false,
+    "writer_use_every_detail_required": false,
+    "automatic_next_window": false,
+    "next_window_requires_separate_authorization": true,
+    "future_pilot_fresh_isolated_writer_required": true,
+    "automatic_retry": false,
+    "automatic_second_window": false,
+    "writer_visible_hidden_diagnostic_leakage": [],
+    "paragraph_or_question_quota_exposed": false
+  },
+  "freeze_claims": [
+    "Phase400 has a materially different successor writer-execution architecture.",
+    "The architecture targets visibility and horizon rather than paragraph/dialogue surface quotas.",
+    "The writer-hidden evaluator firewall remains intact.",
+    "No Phase400 fiction was generated."
+  ],
+  "non_claims": [
+    "The architecture has not been prospectively tested on prose.",
+    "Mechanical dialogue is not claimed solved.",
+    "AI smell is not claimed reduced.",
+    "Narrative transportation is not claimed improved.",
+    "No Phase401 pilot is authorized or created.",
+    "The Phase320 accepted checkpoint does not advance."
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "phase401_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Close Phase400 as architecture-design complete. Any prose pilot of FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 requires a separately authorized successor task."
+}
