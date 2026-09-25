@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 76,
-  "recorded_at": "2026-09-25T04:04:50.543Z",
+  "sequence": 77,
+  "recorded_at": "2026-09-25T04:38:46.687Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase399 is durably closed after its single authorized NS02 A1 fresh-writer attempt. The output was stored and frozen verbatim. Hard source locks are clear, but the candidate is rejected by writer-output-contract, deterministic mechanical-dialogue, semantic mechanical-dialogue, and anti-storyboard/immersion blockers. No actual-human literary review occurred.",
+  "active_task_ids": [
+    "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1"
+  ],
+  "current_focus": "Phase400 is active as a no-prose output-generation architecture redesign. Evidence shows paragraph shortness alone is not the separator: Phase399 and human-positive Phase370 are both highly fragmented, while dialogue geometry differs sharply. Selected architecture is FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -160,7 +162,11 @@
     "Phase399 A1 semantic mechanical-dialogue BLOCK",
     "Phase399 A1 anti-storyboard/immersion BLOCK: 631 of 658 paragraphs one sentence or less",
     "Phase399 A1 writer-output contract BLOCK from three non-prose editorial suggestion lines",
-    "Phase399 A1 rejected whole; attempt budget 1/1 exhausted without actual-human delivery"
+    "Phase399 A1 rejected whole; attempt budget 1/1 exhausted without actual-human delivery",
+    "Phase400 successor task created after explicit user authorization",
+    "Phase400 output-surface contrast profile completed: Phase399 21/43 dialogue runs blocked versus Phase370 0/14",
+    "Phase400 causal diagnosis rejected paragraph-length quotas as primary repair",
+    "Phase400 selected FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 as the successor architecture"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -198,7 +204,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "No separately authorized successor task exists after Phase399 A1 blocker settlement"
+    "Phase400 successor execution schema and architecture freeze receipt are pending"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -228,7 +234,9 @@
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
     "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE399_A1_BLOCK"
+    "PHASE400_PROSE_GENERATION_NOT_AUTHORIZED",
+    "PHASE400_FRESH_WRITER_NOT_AUTHORIZED",
+    "PHASE401_NOT_AUTHORIZED"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -338,9 +346,15 @@
     "Locally patch frozen Phase399 A1 dialogue or paragraph rhythm",
     "Automatically retry Phase399 A1 or create A2",
     "Deliver Phase399 A1 to actual-human review despite blocker settlement",
-    "Create Phase400 without separate explicit authorization"
+    "Create Phase400 without separate explicit authorization",
+    "Reopen Phase399 or retry its A1",
+    "Create Phase399 A2",
+    "Modify frozen Phase399 A1 or frozen Phase398 NS02",
+    "Use paragraph-length or question-count quotas as the Phase400 primary repair",
+    "Expose Phase377/399 evaluator labels or blocker thresholds to a future writer",
+    "Generate Phase400 prose or create Phase401 automatically"
   ],
-  "next_required_action": "No active task. Do not repair or retry Phase399 A1, create A2, or create Phase400 automatically. Any successor requires separate explicit authorization.",
+  "next_required_action": "Build the machine-readable FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 execution schema and audit/freeze the Phase400 architecture. Do not generate prose.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -629,16 +643,28 @@
     {
       "path": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
       "role": "Phase399 A1 storage, source-fidelity, output-contract, dialogue and anti-storyboard settlement"
+    },
+    {
+      "path": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+      "role": "active Phase400 output-generation causal redesign contract"
+    },
+    {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "role": "Phase400 failure-versus-human-positive output-surface contrast profile"
+    },
+    {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "role": "Phase400 causal diagnosis and selected successor architecture"
     }
   ],
-  "status": "PHASE399_CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
+  "status": "PHASE400_ACTIVE_OUTPUT_GENERATION_ARCHITECTURE_REDESIGN_NO_PROSE",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "4fa7c5d2b432bf4716f5d3bffdc3b9c329bf49a837394c79ca2d21834d0b6e24",
+    "project_state_sha256": "c89f00b56b2c27ff4ad26992396e78de351672d3c62576f6c15fa981f1e17e25",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -662,6 +688,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": null,
+  "active_task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json"
 }
