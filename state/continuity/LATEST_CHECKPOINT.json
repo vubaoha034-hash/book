@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 73,
-  "recorded_at": "2026-09-24T12:51:35.986Z",
+  "sequence": 74,
+  "recorded_at": "2026-09-25T00:39:51.005Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1"
-  ],
-  "current_focus": "Phase398 is active after explicit user continuation authorization. SCENE_FIELD_AUTHOR_PACKET_V1 architecture design and machine-readable schema are frozen/audited. The only authorized work is to build, audit and freeze one genuinely new NS02 story-specific scene-field author packet. Fresh-writer execution and prose generation remain forbidden.",
+  "active_task_ids": [],
+  "current_focus": "Phase398 is durably closed. The NS02 SCENE_FIELD_AUTHOR_PACKET_V1 for the old-photo-studio test story is frozen after a first audit BLOCK for writer-visible experiment leakage, repair, and final immutable PASS. No active prose task exists. Fresh-writer execution and prose generation remain unauthorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -145,7 +143,12 @@
     "Phase398 successor architecture task created after explicit user continuation authorization",
     "Phase398 SCENE_FIELD_AUTHOR_PACKET_V1 design document and unordered machine-readable schema committed",
     "Phase398 architecture design audit READY_DESIGN_ONLY_NO_PROSE; no prose transfer claim",
-    "Phase398 control state now authorizes only one NS02 story-specific scene-field packet build/audit/freeze"
+    "Phase398 control state now authorizes only one NS02 story-specific scene-field packet build/audit/freeze",
+    "Phase398 NS02 scene-field author packet created as a genuinely new old-photo-studio story",
+    "Phase398 NS02 first packet audit BLOCKED five writer-visible experiment-history leaks",
+    "Phase398 NS02 packet repaired before freeze by removing prior-story/evaluator metadata from writer-visible context",
+    "Phase398 NS02 final immutable packet audit PASS with no sequence leakage and no writer-visible experiment leakage",
+    "Phase398 architecture and NS02 packet-build task closed without prose generation"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -183,7 +186,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "Phase398 NS02 story-specific scene-field packet has not yet been built, audited, or frozen"
+    "No separately authorized successor prose test exists after Phase398 close"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -213,8 +216,7 @@
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
     "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
-    "PHASE398_FRESH_WRITER_NOT_AUTHORIZED",
-    "PHASE398_PROSE_GENERATION_NOT_AUTHORIZED"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE398_CLOSE"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -312,9 +314,12 @@
     "Create Phase398 without a separately authorized successor task using a materially different author-input representation or authoring architecture",
     "Generate Phase398 prose before NS02 scene-field packet is built, audited and frozen",
     "Expose evaluator diagnoses, anti-storyboard metrics or AI-smell labels inside the Phase398 writer-visible scene-field packet",
-    "Convert SCENE_FIELD_AUTHOR_PACKET_V1 back into an ordered event trace, reveal sequence, paragraph plan or beat list"
+    "Convert SCENE_FIELD_AUTHOR_PACKET_V1 back into an ordered event trace, reveal sequence, paragraph plan or beat list",
+    "Modify the frozen Phase398 NS02 packet after its PASS receipt; future changes require a new version/task",
+    "Run a fresh writer from Phase398 without a separately authorized successor task",
+    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof"
   ],
-  "next_required_action": "Build one genuinely new NS02 SCENE_FIELD_AUTHOR_PACKET_V1, audit it for sequence leakage, and freeze it. Do not run a fresh writer or generate prose.",
+  "next_required_action": "No active task. Any prose test using the frozen NS02 packet requires a separately authorized successor task and a fresh isolated writer context.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -575,16 +580,24 @@
     {
       "path": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
       "role": "Phase398 architecture design freeze and audit receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "role": "frozen Phase398 NS02 writer-visible scene-field packet; final immutable audit PASS"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+      "role": "Phase398 NS02 first-audit BLOCK, repair, final PASS and freeze receipt"
     }
   ],
-  "status": "PHASE398_ACTIVE_STORY_PACKET_BUILD_NO_PROSE",
+  "status": "PHASE398_CLOSED_NS02_PACKET_FROZEN_NO_SUCCESSOR_AUTHORIZED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+  "last_completed_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "e2814902b2a0f7f792251eafb88e3ad22cda32498a5a5ce0d6200d09679e228d",
+    "project_state_sha256": "48f820d6d54d9019cd983281710f5d8e01421a0794799d7b37895759bb7b8867",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -601,11 +614,12 @@
       "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
       "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
       "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
-      "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1"
+      "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+      "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json"
+  "active_task_contract": null,
+  "last_completed_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json"
 }
