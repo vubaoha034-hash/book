@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 74,
-  "recorded_at": "2026-09-25T00:39:51.005Z",
+  "sequence": 75,
+  "recorded_at": "2026-09-25T03:31:49.678Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase398 is durably closed. The NS02 SCENE_FIELD_AUTHOR_PACKET_V1 for the old-photo-studio test story is frozen after a first audit BLOCK for writer-visible experiment leakage, repair, and final immutable PASS. No active prose task exists. Fresh-writer execution and prose generation remain unauthorized.",
+  "active_task_ids": [
+    "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1"
+  ],
+  "current_focus": "Phase399 is active and ready for exactly one isolated NS02 fresh-writer A1. The frozen writer entry passed isolation audit and exposes only the writer-visible projection of the frozen NS02 scene-field packet. Automatic retry, A2, local repair and user delivery remain forbidden until the single A1 is stored, frozen and all post-generation gates clear.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -148,7 +150,11 @@
     "Phase398 NS02 first packet audit BLOCKED five writer-visible experiment-history leaks",
     "Phase398 NS02 packet repaired before freeze by removing prior-story/evaluator metadata from writer-visible context",
     "Phase398 NS02 final immutable packet audit PASS with no sequence leakage and no writer-visible experiment leakage",
-    "Phase398 architecture and NS02 packet-build task closed without prose generation"
+    "Phase398 architecture and NS02 packet-build task closed without prose generation",
+    "Phase399 single-A1 validation task created after explicit user authorization",
+    "Phase399 writer-visible entry frozen from immutable NS02 scene-field packet projection",
+    "Phase399 writer-entry isolation audit PASS with no historical diagnostic leakage",
+    "Phase399 control state bound for exactly one isolated A1 execution"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -186,7 +192,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "No separately authorized successor prose test exists after Phase398 close"
+    "Phase399 A1 fresh-writer execution, verbatim freeze, post-generation gates and possible actual-human review are pending"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -216,7 +222,9 @@
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
     "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE398_CLOSE"
+    "PHASE399_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE399_A2_NOT_AUTHORIZED",
+    "PHASE399_USER_DELIVERY_BLOCKED_PENDING_GATES"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -317,9 +325,13 @@
     "Convert SCENE_FIELD_AUTHOR_PACKET_V1 back into an ordered event trace, reveal sequence, paragraph plan or beat list",
     "Modify the frozen Phase398 NS02 packet after its PASS receipt; future changes require a new version/task",
     "Run a fresh writer from Phase398 without a separately authorized successor task",
-    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof"
+    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof",
+    "Run a second Phase399 A1 automatically if the single fresh-writer result is blocked or rejected",
+    "Create Phase399 A2 without separate explicit authorization",
+    "Modify the frozen Phase398 NS02 packet or Phase399 writer entry after readiness freeze",
+    "Deliver Phase399 A1 to the user before source fidelity, dialogue and anti-storyboard/immersion gates all CLEAR"
   ],
-  "next_required_action": "No active task. Any prose test using the frozen NS02 packet requires a separately authorized successor task and a fresh isolated writer context.",
+  "next_required_action": "Execute exactly one isolated Opera Neon fresh-writer A1 in a brand-new ChatGPT tab using only delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt. Store returned prose verbatim; do not retry automatically.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -588,16 +600,28 @@
     {
       "path": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
       "role": "Phase398 NS02 first-audit BLOCK, repair, final PASS and freeze receipt"
+    },
+    {
+      "path": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+      "role": "active Phase399 single isolated NS02 A1 validation contract"
+    },
+    {
+      "path": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+      "role": "frozen writer-visible A1 entry; only file permitted to fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase399 A1 writer-entry freeze and isolation PASS receipt"
     }
   ],
-  "status": "PHASE398_CLOSED_NS02_PACKET_FROZEN_NO_SUCCESSOR_AUTHORIZED",
+  "status": "PHASE399_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "48f820d6d54d9019cd983281710f5d8e01421a0794799d7b37895759bb7b8867",
+    "project_state_sha256": "30e5264c04ba86057aceef09c3ee4bdd6ff78264a6d2e40b362c3233733cedab",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -620,6 +644,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": null,
+  "active_task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json"
 }
