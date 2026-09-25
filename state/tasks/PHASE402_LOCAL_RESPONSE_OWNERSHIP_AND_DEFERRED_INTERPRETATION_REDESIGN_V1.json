@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
   "phase_ordinal": 402,
-  "status": "ACTIVE_RESIDUAL_CAUSAL_DIAGNOSIS_AND_MINIMAL_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
   "purpose": "Target the two residual Phase401 failures without reverting to surface quotas: (1) local dialogue still collapses into exact-adjacency/shared-agenda response chains, and (2) observed objects/actions are rapidly converted into memory, explanation and relationship conclusions, preserving local global-optimization regularity.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE401_CLOSE",
@@ -116,27 +116,27 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE402_BUILD_RESIDUAL_CAUSAL_DIAGNOSIS",
+      "action_id": "PHASE402_BUILD_NON_FOCAL_ACTOR_COMMITMENTS_A1",
       "parameters": {
-        "output": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json"
+        "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json"
       }
     },
     {
-      "action_id": "PHASE402_BUILD_MINIMAL_ARCHITECTURE_SCHEMA",
+      "action_id": "PHASE402_BUILD_DEFERRED_ATTRIBUTION_LOCAL_VIEW_A1",
       "parameters": {
-        "output": "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json"
+        "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json"
       }
     },
     {
-      "action_id": "PHASE402_FREEZE_SINGLE_A1_VALIDATION_CONTRACT",
+      "action_id": "PHASE402_BUILD_FROZEN_RUNNER_A1",
       "parameters": {
-        "output": "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json"
+        "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt"
       }
     },
     {
-      "action_id": "PHASE402_AUDIT_MINIMAL_ARCHITECTURE",
+      "action_id": "PHASE402_AUDIT_AND_FREEZE_A1_READINESS",
       "parameters": {
-        "receipt": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json"
+        "receipt": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json"
       }
     }
   ],
@@ -144,5 +144,6 @@
   "fresh_writer_authorized": false,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build residual causal diagnosis, freeze ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema and a single-A1 validation contract, then audit whether the minimum architecture is safe to prospectively test. Do not generate prose yet."
+  "next_action": "Build and freeze Phase402 A1 actor commitments, deferred-attribution local view and runner. Audit them for hidden-state/evaluator leakage and renderer authority boundaries. Do not generate prose until readiness PASS.",
+  "architecture_ready_receipt": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json"
 }
