@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 93,
-  "recorded_at": "2026-09-25T09:40:00Z",
+  "sequence": 94,
+  "recorded_at": "2026-09-25T09:50:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase405 is durably closed after exactly one authorized fresh A1. Semantic mechanical dialogue, response ownership and hidden global optimization all cleared/no-block in the next fresh run, providing only a bounded single-run stability signal. The full contract still BLOCKED because Lin Qiao's concrete personal cost of delay (leaving town after handover) did not become reader-visible. No human literary review occurred and no successor is authorized.",
+  "active_task_ids": [
+    "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1"
+  ],
+  "current_focus": "Phase406 is the sole active successor. It addresses only Phase405 FOCAL_PERSONAL_COST_VISIBILITY by adding one source-grounded focal cost-carrier event while keeping desired-state, personal-cost and unresolved-outcome summaries coordinator-only. Architecture gate passed; no prose authorized until compiled A1 readiness PASS.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -267,7 +269,12 @@
     "Phase405 output contract remained CLEAR under the unchanged Phase404 response transaction.",
     "Phase405 semantic mechanical dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK.",
     "Phase405 focal personal-cost visibility BLOCK: the factual leave-town stake did not survive into reader-visible prose.",
-    "Phase405 closed without actual-human literary review and without Phase406 authorization."
+    "Phase405 closed without actual-human literary review and without Phase406 authorization.",
+    "Phase406 explicit successor authorization received after Phase405 checkpoint 93 close.",
+    "Phase406 minimal diagnosis located static-fact-without-causal-carrier as the residual personal-cost visibility failure.",
+    "FOCAL_COST_CARRIER_EVENT_V1 selected; abstract live-vector summaries remain hidden.",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 remains unchanged.",
+    "Phase406 single-A1 validation contract frozen; no retry, A2, second window or best-of-N."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1010,5 +1017,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Close Phase405. Preserve the bounded positive next-fresh-run signal for semantic dialogue/response ownership/global optimization, but do not human-review, repair, retry, create A2/second window, or create Phase406 automatically. Any successor must address the lost concrete personal-cost transfer without re-exposing abstract semantic summaries and requires separate explicit authorization."
+  "next_action": "Build and audit one compiled Phase406 A1 input/runner. Do not generate prose until readiness PASS."
 }

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+  "phase_ordinal": 406,
+  "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "purpose": "Repair only the Phase405 focal-personal-cost visibility blocker without re-exposing abstract live-vector semantics or weakening the Phase405 targeted stability gains.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE405_CLOSE",
+    "predecessor_checkpoint_sequence": 93,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "predecessor": {
+    "task": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json",
+    "settlement": "state/review_receipts/PHASE405_NS02_A1_POST_GENERATION_STABILITY_SETTLEMENT_V1.json",
+    "targeted_three_families": "BOUNDED_POSITIVE_SINGLE_RUN",
+    "focal_personal_cost_visibility": "BLOCK",
+    "retry_authorized": false,
+    "A2_authorized": false,
+    "second_window_authorized": false
+  },
+  "diagnosis": "state/calibration/PHASE406_PERSONAL_COST_VISIBILITY_CAUSAL_DIAGNOSIS_V1.json",
+  "architecture_schema": "state/author_packets/PHASE406_FOCAL_COST_CARRIER_SCHEMA_V1.json",
+  "validation_contract": "state/tasks/PHASE406_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+  "architecture_ready_receipt": "state/review_receipts/PHASE406_COST_CARRIER_ARCHITECTURE_READY_V1.json",
+  "fixed_controls": {
+    "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "phase404_response_transaction_changed": false,
+    "abstract_live_vector_summaries_writer_visible": false,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2": false,
+    "second_window": false
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build and audit one compiled Phase406 A1 input/runner. Do not generate prose until readiness PASS."
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "FOCAL_COST_CARRIER_EVENT_V1",
+  "project_id": "novel-distillation",
+  "phase": 406,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Make one concrete source-grounded personal cost survive into reader-visible prose through focal event ownership while keeping abstract live-vector semantics hidden.",
+  "inherits": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+  "coordinator_only": {
+    "desired_local_state": "HIDDEN",
+    "personal_cost_if_unresolved": "HIDDEN",
+    "unresolved_local_outcome_question": "HIDDEN",
+    "relationship_thesis": "HIDDEN",
+    "evaluator_labels": "HIDDEN"
+  },
+  "writer_visible_addition": {
+    "focal_cost_carrier_event": {
+      "cardinality": 1,
+      "owner": "FOCAL_CHARACTER_ONLY",
+      "generated_before_prose": true,
+      "source_grounded": true,
+      "trigger_must_be_observable_and_already_present_in_scene_state": true,
+      "carries_factual_future_commitment": true,
+      "carries_abstract_importance_or_meaning": false,
+      "carries_relationship_thesis": false,
+      "may_invent_new_external_deadline": false,
+      "realization_forms": [
+        "observable time-check or attention shift",
+        "preparation-to-leave behavior consistent with existing facts",
+        "brief factual thought about the already-established departure plan"
+      ],
+      "realization_must_be_reader_visible": true
+    }
+  },
+  "preserved_non_focal_model": {
+    "preowned_causal_event_cards": true,
+    "information_bearing_non_focal_response_may_not_be_invented": true,
+    "event_cards_not_triggered_by_focal_speech": true
+  },
+  "response_surface_contract": {
+    "reuse": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "modified": false
+  },
+  "audit_rules": [
+    "BLOCK if desired-state/personal-cost/open-question summaries become writer-visible.",
+    "BLOCK if the focal cost carrier states abstract importance, emotional thesis or explanatory moral.",
+    "BLOCK if a new ticket, train, booking, appointment or other unsupported external deadline is invented.",
+    "BLOCK if the focal cost carrier can be omitted from prose.",
+    "BLOCK if non-focal causal ownership from Phase405 is weakened.",
+    "BLOCK if Phase404 response transaction is changed.",
+    "BLOCK if surface quotas, best-of-N, retry, A2 or second window are introduced."
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}

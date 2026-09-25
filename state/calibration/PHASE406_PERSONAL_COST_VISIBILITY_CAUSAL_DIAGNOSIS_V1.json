@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 406,
+  "task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+  "artifact_id": "PHASE406_PERSONAL_COST_VISIBILITY_CAUSAL_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence_head": "ec24742534c621ba447e79a43dc1e0dcee5445b8",
+  "evidence": {
+    "phase405_settlement": "state/review_receipts/PHASE405_NS02_A1_POST_GENERATION_STABILITY_SETTLEMENT_V1.json",
+    "phase405_packet": "state/author_packets/PHASE405_NS02_LINQIAO_COMPILED_CAUSAL_VIEW_A1.json",
+    "phase405_frozen": "state/frozen_outputs/PHASE405_NS02_CAUSAL_OWNERSHIP_CANDIDATE_A1.txt",
+    "phase405_targeted_stability_signal": {
+      "semantic_mechanical_dialogue": "CLEAR",
+      "response_ownership": "NO_BLOCK",
+      "hidden_global_optimization": "NO_BLOCK"
+    },
+    "phase405_blocker": "FOCAL_PERSONAL_COST_VISIBILITY_BLOCK"
+  },
+  "residual_diagnosis": {
+    "id": "RD406_A_STATIC_FACT_WITHOUT_CAUSAL_CARRIER",
+    "status": "SUPPORTED_HIGH_PRIORITY",
+    "evidence": [
+      "Phase405 writer-visible packet did contain factual_exit_plan: Lin Qiao intends to leave town after the handover and has no current plan to return for demolition.",
+      "The generated prose never surfaced that fact or any equivalent concrete personal consequence of delay.",
+      "Phase405 deliberately hid abstract desired-state/personal-cost/outcome summaries and thereby avoided the earlier recurring inference-closure/global-optimization pattern."
+    ],
+    "causal_chain": [
+      "factual future commitment is present only as static background knowledge",
+      "renderer is free to omit it while rendering physically active water/salvage events",
+      "no focal-owned observable event is causally tied to passage of local time",
+      "delay remains procedurally inconvenient but not personally costly to the reader",
+      "personal-cost gate blocks even though targeted anti-regression families stay clean"
+    ]
+  },
+  "rejected_repairs": [
+    "restore abstract personal_cost_if_unresolved summary to writer",
+    "restore desired_local_state summary",
+    "restore unresolved_outcome_question",
+    "tell writer to explain why she wants to leave",
+    "require an internal monologue sentence about stakes",
+    "add urgency/suspense quotas",
+    "retry Phase405 until factual_exit_plan happens to appear"
+  ],
+  "selected_minimal_architecture": {
+    "id": "FOCAL_COST_CARRIER_EVENT_V1",
+    "mechanism": "Compile one source-grounded focal future commitment into a focal-owned concrete event card whose trigger is an independently observable time/state change already present in the local scene. The card carries only a factual action/attention consequence, not an abstract statement of importance or narrative meaning.",
+    "carrier": {
+      "owner": "lin_qiao",
+      "source_fact": "After the handover she intends to leave town again and currently has no plan to return for later demolition.",
+      "trigger_source": "Already-visible approach of dawn / old-street closing activity / time advancing during unresolved handover.",
+      "allowed_realization": "A concrete time-check, preparation-to-leave behavior, or brief factual thought that the handover must be finished before she can enact the already-known departure plan.",
+      "forbidden_realization": "Narrator explanation of why this matters, relationship thesis, generalized personal-cost summary, motivational recap, or future-outcome question."
+    },
+    "preservation": [
+      "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1 non-focal ownership model",
+      "Phase405 abstract live-vector firewall",
+      "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 unchanged",
+      "single focal consciousness",
+      "single local passage",
+      "no new story fact such as ticket, train, booking or deadline"
+    ]
+  },
+  "falsifiable_prediction": [
+    "If the problem is static-fact omission rather than need for abstract summary, one pre-owned focal cost-carrier event should make the departure consequence reader-visible without recurring inference closure.",
+    "If the carrier itself reactivates global optimization, hidden global-optimization or interpretation-liquidity gates will BLOCK.",
+    "If the carrier drives dialogue completion, semantic dialogue/response-ownership gates will BLOCK."
+  ],
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}
