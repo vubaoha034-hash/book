@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "BATCH3_MINIMAL_REVIEWER_ATTACK_READY",
+  "status": "PASS_AUDIT_ALL_FAIL_NO_SELECTION_NO_PROSE",
+  "evidence_head": "6270f21e5269f7df40241f3589c39c92c50555ba",
+  "artifact": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json",
+  "checks": {
+    "L_reaudited": true,
+    "M_reaudited": true,
+    "O_reaudited": true,
+    "survivors": [],
+    "new_premises_generated": false,
+    "prose_generated": false,
+    "phase409_created": false,
+    "checkpoint106_opening_event_engine_contract_preserved": true
+  },
+  "next_action": "Remain in Phase408 under PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1. Do not restore L/M/O to selection. No new premise or prose was generated in this audit.",
+  "accepted_checkpoint_advance": false
+}

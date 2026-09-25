@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 106,
-  "recorded_at": "2026-09-25T14:00:00Z",
+  "sequence": 107,
+  "recorded_at": "2026-09-25T14:15:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. Actual human rejected all batch3 premises L/M/O and stated they do not feel worth reading. Current Fanqie rankings, real first chapters and official writer guidance were researched. The key correction is to stop optimizing static premise dilemmas and design an executable opening event engine with early protagonist action, short causal loops, multiple state changes, same-chapter payoff and a concrete next-action hook. New contract frozen; no new premise, no prose, no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. A checkpoint-104-style reviewer attack was applied to frozen L/M/O after their already-recorded human rejection. All three fail strict SIMPLE-ACTION/READER-DRIVE/PLAUSIBILITY review: L is easily dissolved by truthful rewrite and uses clippings as an emotional-proof device; M has an avoidable stage binary and dubious sole-songwriter-credit setup; O has specific history but a natural deflection path avoids the claimed forced binary. No batch3 survivor remains. Opening-event-engine contract from checkpoint106 is preserved; no new premise, no prose, no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -323,7 +323,11 @@
     "Phase408 batch3 actual-human reject-all recorded verbatim.",
     "Current 2026 fast-webnovel rankings and real first chapters researched; official Fanqie writer guidance consulted.",
     "Phase408 root correction: static premise/logline validation is insufficient; opening event-engine is the next unit of design.",
-    "PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1 frozen with no prose authorization."
+    "PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1 frozen with no prose authorization.",
+    "Phase408 batch3 minimal reviewer attack completed after existing human rejection; L/M/O all fail strict checkpoint104 gates.",
+    "L failed because a truthful dedication rewrite dissolves the binary and the clipping archive functions as an emotional-proof device.",
+    "M failed because the stage decision is avoidable and the sole-songwriter-credit label condition is institutionally dubious without additional rights structure.",
+    "O failed strict SIMPLE-ACTION because 陈志 can naturally refuse/deflect and return the answer to 胡强, leaving no truly forced binary."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",

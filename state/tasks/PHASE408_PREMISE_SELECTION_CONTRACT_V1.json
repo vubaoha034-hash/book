@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_PREMISE_SELECTION_CONTRACT_V1",
-  "status": "SUSPENDED_BATCH3_ACTUAL_HUMAN_REJECTED",
+  "status": "SUSPENDED_BATCH3_ACTUAL_HUMAN_REJECTED_REVIEWER_ATTACK_ALL_FAIL",
   "objective": "Validate story-engine attraction before any prose generation.",
   "candidate_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V3.json",
   "human_question": "Which premise, if any, makes you genuinely want to know what happens next?",
@@ -36,9 +36,10 @@
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "No premise selection is active. Follow PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1 before any new human choice.",
+  "next_action": "No batch3 candidate is selectable. Follow PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1; no prose.",
   "audit": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
   "retained_candidates": [],
   "human_selection_authorized": false,
-  "actual_human_rejection": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json"
+  "actual_human_rejection": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json",
+  "reviewer_attack": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json"
 }

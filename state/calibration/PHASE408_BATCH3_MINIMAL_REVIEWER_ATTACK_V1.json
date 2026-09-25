@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "artifact_id": "PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1",
+  "status": "COMPLETE_ALL_FAIL_NO_NEW_PREMISE_NO_PROSE",
+  "evidence_head": "6270f21e5269f7df40241f3589c39c92c50555ba",
+  "purpose": "Re-audit frozen batch3 candidates L/M/O against checkpoint-104 SIMPLE-ACTION, CHARACTER-SPECIFICITY and READER-DRIVE gates without generating replacements.",
+  "criteria": {
+    "remove_twist": "The premise must still work when all material facts are already known.",
+    "simple_action": "A normal response, deferment, private conversation, formal correction or practical workaround must not dissolve the supposed forced choice.",
+    "reader_drive": "The next-page question must be behavior under pressure, not merely whether a person reveals, corrects or withholds a known fact.",
+    "character_specificity": "Specific shared history must materially constrain present behavior rather than decorate a generic dilemma.",
+    "plausibility": "Institutional and human behavior must be realistic enough that the conflict does not depend on a dubious setup."
+  },
+  "results": [
+    {
+      "id": "P408-L",
+      "verdict": "FAIL",
+      "remove_twist": "PASS_WITH_CAUTION. There is no hidden factual twist, but the saved clippings function as a sentimental proof device that efficiently demonstrates hidden maternal attention.",
+      "simple_action": "FAIL. 苏岚 can replace the inaccurate sentence with a narrower truthful acknowledgment, remove the line, or separate public wording from the private mother-daughter disagreement. Those actions preserve the exhibition while avoiding the binary keep/delete framing.",
+      "reader_drive": "FAIL/PARTIAL. The active question collapses toward how 苏岚 will phrase a dedication and what the mother's sacrifice 'really meant', rather than a consequential behavioral chain.",
+      "character_specificity": "PASS/PARTIAL. The bracelet and twelve-year absence are specific, but the clippings risk acting as a prepackaged emotional-evidence prop rather than constraining present action.",
+      "plausibility": "PASS at surface level, but the engineered entrance-wall sentence creates an artificial pressure point.",
+      "key_failure": "The premise mistakes wording selection for an irreversible relationship act."
+    },
+    {
+      "id": "P408-M",
+      "verdict": "FAIL",
+      "remove_twist": "PASS. The credit history is disclosed up front.",
+      "simple_action": "FAIL. 陆川 has explicitly asked not to be named on stage. 程野 can respect that request and pursue a later formal credit correction, joint statement, catalog correction or other mutually agreed acknowledgment rather than turning the acceptance speech into the decisive moment.",
+      "reader_drive": "FAIL/PARTIAL. Once 陆川's preference is explicit, the scene risks becoming a single ethics question: respect his stated autonomy versus perform public correction.",
+      "character_specificity": "PASS. The private half-royalty/public-credit arrangement is specific.",
+      "plausibility": "FAIL_CURRENT_FORM. For a genuinely co-written musical work, treating 'the label required only the lead singer to be listed as the sole songwriter' as a routine condition is legally/industry dubious without a clearer written transfer, work-for-hire or ghostwriting arrangement.",
+      "external_reality_sources": [
+        "https://www.copyright.gov/title17/92chap2.html",
+        "https://www.copyright.gov/eco/gram-pa/author.html",
+        "https://www.bmi.com/legal/work-registration-terms-and-conditions"
+      ],
+      "key_failure": "The award-stage binary is unnecessary, and the underlying songwriting-credit setup is insufficiently credible as written."
+    },
+    {
+      "id": "P408-O",
+      "verdict": "FAIL_STRICT_GATE",
+      "remove_twist": "PASS. The reader already knows what happened twenty-five years ago.",
+      "simple_action": "FAIL. 陈志 can naturally answer '这是你爸自己的事，让他自己告诉你', decline to arbitrate the father-son conflict, or say they should discuss it later. This is not costless, but it breaks the premise's claimed truth-versus-protect binary.",
+      "reader_drive": "PARTIAL. The premise is behavior-driven more than truth-driven because the reader knows the past, but it still concentrates attention on whether 陈志 will expose the old false account at the table.",
+      "character_specificity": "PASS. The night-train separation plus three returned remittances/job addresses create genuinely specific shared history.",
+      "plausibility": "PASS. The behavior and history are plausible.",
+      "key_failure": "Strongest of the three, but the immediate act is not truly forced; ordinary deflection preserves a credible third path, so it does not strictly pass checkpoint-104 SIMPLE-ACTION."
+    }
+  ],
+  "summary": {
+    "survivors": [],
+    "rejected": [
+      "P408-L",
+      "P408-M",
+      "P408-O"
+    ],
+    "all_fail": true,
+    "strongest_but_not_pass": "P408-O",
+    "conclusion": "Batch3 should not be restored to human selection. L is a wording tableau with an emotional-proof prop; M is both structurally avoidable and institutionally dubious; O has the best specific history but still fails the strict simple-action attack because a natural third response exists."
+  },
+  "relationship_to_checkpoint106": {
+    "actual_human_rejection_already_recorded": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json",
+    "current_opening_engine_contract": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json",
+    "effect": "This audit adds mechanistic support for the existing withdrawal of L/M/O. It does not reopen batch3, generate replacements, or roll back checkpoint106."
+  },
+  "prose_generated": false,
+  "new_premise_generated": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

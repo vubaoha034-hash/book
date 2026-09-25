@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T14:00:00Z",
+  "updated_at": "2026-09-25T14:15:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,7 +177,7 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE408_OPENING_EVENT_ENGINE_REDESIGN_AFTER_BATCH3_HUMAN_REJECTION",
+    "YMGQ_writing_pause_reason": "PHASE408_OPENING_EVENT_ENGINE_REDESIGN_AFTER_BATCH3_HUMAN_AND_REVIEWER_REJECTION",
     "current_writing_authorization_scope": {
       "kind": "PHASE408_RESEARCH_AND_OPENING_ENGINE_DESIGN_ONLY_NO_PROSE",
       "current_chat_allowed": true,
@@ -858,7 +858,7 @@
     "accepted_checkpoint_advance": false
   },
   "next_required_action": "Remain in Phase408. Generate no prose yet. Next authorized step should create a small set of OPENING_ENGINE_CARD candidates derived from current fast-webnovel research, internally audit event density/agency/payoff, and only then show survivors to the human.",
-  "status": "PHASE408_ACTIVE_FAST_WEBNOVEL_RESEARCH_COMPLETE_OPENING_ENGINE_CONTRACT_FROZEN",
+  "status": "PHASE408_ACTIVE_FAST_WEBNOVEL_RESEARCH_COMPLETE_OPENING_ENGINE_CONTRACT_FROZEN_BATCH3_REVIEWER_ATTACK_ALL_FAIL",
   "active_task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
   "last_completed_task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
   "last_completed_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
@@ -2135,6 +2135,10 @@
     "opening_event_engine_contract": {
       "path": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json",
       "status": "FROZEN"
+    },
+    "batch3_minimal_reviewer_attack": {
+      "path": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json",
+      "status": "COMPLETE_ALL_FAIL"
     }
   }
 }

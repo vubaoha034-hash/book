@@ -29,5 +29,6 @@
   "batch3_internal_audit": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
   "actual_human_batch3_receipt": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json",
   "current_fast_webnovel_research": "state/calibration/PHASE408_CURRENT_FAST_WEBNOVEL_OPENING_RESEARCH_V1.json",
-  "opening_event_engine_contract": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json"
+  "opening_event_engine_contract": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json",
+  "batch3_minimal_reviewer_attack": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json"
 }
