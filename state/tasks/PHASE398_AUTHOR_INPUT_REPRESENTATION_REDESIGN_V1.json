@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
   "phase_ordinal": 398,
-  "status": "ARCHITECTURE_DESIGN_FROZEN_READY_FOR_STORY_PACKET_BUILD",
+  "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
   "purpose": "Design a materially different writer-visible author-input representation that removes ordered event-trace leakage before any new prose generation is authorized.",
   "predecessor": {
     "phase397_settlement": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json",
@@ -66,25 +66,18 @@
     "advance Phase320 accepted checkpoint",
     "authorize full-manuscript writing or span growth"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE398_BUILD_STORY_SPECIFIC_SCENE_FIELD_PACKET",
-      "parameters": {
-        "output_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json"
-      }
-    },
-    {
-      "action_id": "PHASE398_AUDIT_FREEZE_STORY_SPECIFIC_PACKET",
-      "parameters": {
-        "source_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
-        "receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json"
-      }
-    }
-  ],
+  "allowed_action_requests": [],
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "full_manuscript_rewrite_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build one genuinely new NS02 story-specific SCENE_FIELD_AUTHOR_PACKET_V1, audit it for sequence leakage, and freeze it. Do not generate prose.",
-  "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
+  "next_action": "No active Phase398 execution remains. Any prose experiment requires a separately authorized successor task using the frozen NS02 packet and a fresh isolated writer context.",
+  "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
+  "ns02_packet": {
+    "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "audit_receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+    "audit_status": "PASS"
+  }
 }
