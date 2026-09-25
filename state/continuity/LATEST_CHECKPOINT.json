@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 89,
-  "recorded_at": "2026-09-25T08:57:11.697Z",
+  "sequence": 90,
+  "recorded_at": "2026-09-25T09:10:43.276Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1"
-  ],
-  "current_focus": "Phase404 is active and ready for exactly one isolated prose-body-only A1. The Phase403 literary payload is unchanged; only the response-surface transaction and minimal outer execution prompt differ. No best-of-N, parallel candidate, retry, A2, second window or pre-gate human review is authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase404 is durably closed after exactly one authorized A1. The prose-body-only response transaction successfully removed the Phase403 leading-label/trailing-editorial failure, but the fresh sample regressed on semantic mechanical dialogue, hidden global optimization and response ownership. No actual-human literary review occurred.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -240,7 +238,20 @@
     "Phase404 output-boundary architecture audit PASS; exactly one A1 runner preparation allowed",
     "Phase404 frozen runner built with unchanged Phase403 payload",
     "Phase404 first readiness audit blocked artifact-label term and repaired wrapper",
-    "Phase404 final A1 readiness audit PASS; exactly one isolated A1 authorized"
+    "Phase404 final A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase404 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase404 A1 stored and frozen verbatim",
+    "Phase404 writer-output contract CLEAR: no leading label, no trailing editorial material, no second section",
+    "Phase404 source fidelity CLEAR",
+    "Phase404 deterministic dialogue CLEAR",
+    "Phase404 semantic mechanical dialogue BLOCK on a procedural shared-agenda chain",
+    "Phase404 hidden global optimization BLOCK due recurring inference-closure cadence",
+    "Phase404 response-ownership residual BLOCK",
+    "Phase404 reader-drive entry state CLEAR",
+    "Phase404 neutral-salience flooding NO_BLOCK",
+    "Phase404 focal personal-cost visibility CLEAR",
+    "Phase404 live open-outcome visibility CLEAR",
+    "Phase404 candidate rejected whole; actual-human review not authorized"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -278,7 +289,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "Phase404 single A1 execution, verbatim freeze and hidden gate evaluation are pending"
+    "No separately authorized successor task exists after Phase404 hidden-gate blocker settlement"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -313,11 +324,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE404_BEST_OF_N_FORBIDDEN",
-    "PHASE404_AUTOMATIC_RETRY_FORBIDDEN",
-    "PHASE404_A2_NOT_AUTHORIZED",
-    "PHASE404_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE404_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE404_OTHER_GATE_BLOCK"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -478,9 +485,15 @@
     "Repair or trim Phase403 frozen A1",
     "Use best-of-N, retry, A2, parallel candidates or a second window",
     "Enter human review before Phase404 required hidden gates clear",
-    "Create Phase405 automatically"
+    "Create Phase405 automatically",
+    "Modify or repair frozen Phase404 A1",
+    "Retry Phase404 A1 automatically",
+    "Create Phase404 A2 or second window automatically",
+    "Enter actual-human review for blocked Phase404 A1",
+    "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
+    "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "Execute exactly one isolated Phase404 A1 from delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt using the minimal outer prompt. Persist/freeze raw output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "next_required_action": "No active task. Preserve the Phase404 positive output-boundary signal, but do not repair/retry, create A2/second window, enter human review, or create Phase405 automatically. Any successor requires separate explicit authorization.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -933,16 +946,24 @@
     {
       "path": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
       "role": "Phase404 A1 readiness PASS receipt"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "role": "immutable Phase404 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
+      "role": "Phase404 output-boundary settlement; output contract CLEAR but other required hidden gates BLOCK"
     }
   ],
-  "status": "PHASE404_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+  "status": "PHASE404_CLOSED_OUTPUT_BOUNDARY_FIXED_OTHER_REQUIRED_GATES_BLOCKED_NO_SUCCESSOR_AUTHORIZED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+  "last_completed_task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "4ac771f53d8a17ee9946ab261a3dbaddb746c33e7193c759d2cb122f70f328ca",
+    "project_state_sha256": "3af623dab6b9828fc67b25e69d66d032ba2e82528bfc54f6e775ce3c548157b9",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -965,11 +986,12 @@
       "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
       "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
       "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
-      "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1"
+      "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+      "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json"
+  "active_task_contract": null,
+  "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json"
 }
