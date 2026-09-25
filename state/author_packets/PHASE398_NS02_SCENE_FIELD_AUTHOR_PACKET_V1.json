@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "SCENE_FIELD_AUTHOR_PACKET_V1",
+  "project_id": "novel-distillation",
+  "phase": 398,
+  "metadata": {
+    "story_id": "NS02_LAST_ROLL_AT_DAWN",
+    "bounded_scene_id": "OLD_PHOTO_STUDIO_RAIN_NIGHT",
+    "packet_version": "1.0.0",
+    "order_semantics": "NONE",
+    "story_separation_note": "New story. No YMGQ characters, locations, crossing/bridge material, or NS01 dead-man-return premise is reused."
+  },
+  "fixed_world_facts": {
+    "order_semantics": "NONE",
+    "facts_by_id": {
+      "studio_handover": {
+        "statement": "The Lin family photo studio sits on an old county-town street scheduled for municipal handover at dawn; the building must be emptied enough for sealing and inventory.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      },
+      "weather_pressure": {
+        "statement": "A sustained night rain is pushing water through the rear wall and under the back door; paper stock and low shelves are already at risk.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      },
+      "power_condition": {
+        "statement": "The studio wiring is old and intermittently unsafe in the wet weather; the district maintenance team may cut power for safety before the handover window.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      },
+      "family_history": {
+        "statement": "Lin Qiao left the county town years ago after a prolonged rupture with her father, Lin Guozhong. They can coordinate practical work but avoid direct discussion of why the family broke apart.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      },
+      "mother_absence": {
+        "statement": "Lin Qiao's mother, Xu Wen, left the household when Lin Qiao was a teenager. The family never established one shared account of why she left, and Lin Guozhong has avoided giving a full explanation.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      },
+      "undeveloped_roll": {
+        "statement": "An old unlabelled 35mm film canister remains in the studio. Lin Guozhong recognizes it as connected to Xu Wen, but the film has never been developed and its images are unknown.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      },
+      "compensation_control": {
+        "statement": "The demolition compensation and handover documents require Lin Guozhong's signature; Lin Qiao cannot complete the handover in his place.",
+        "source_lock": "NS02_ORIGINAL_TEST_FACT",
+        "mutable": false
+      }
+    }
+  },
+  "character_agents": {
+    "order_semantics": "NONE",
+    "agents_by_id": {
+      "lin_qiao": {
+        "identity_lock": "Lin Qiao, 32, Lin Guozhong's daughter. She works away from the county town and returned specifically for the studio handover.",
+        "immediate_physical_objective": "Separate documents, family photographs and portable valuables from water-damaged or disposable studio stock before the building becomes inaccessible.",
+        "immediate_emotional_pressure": "She wants the night to remain a practical cleanup job because practical work is safer than asking her father why he stayed silent about her mother for years.",
+        "active_avoidance": "Avoid being pulled into a family explanation that could force her to admit she still cares what her father says.",
+        "private_knowledge_by_id": {
+          "compensation_plan": "She intends to leave town again immediately after the handover and has not told her father that she has no plan to return for the later demolition."
+        },
+        "mistaken_beliefs_or_uncertainty_by_id": {
+          "studio_motive": "She believes her father kept the failing studio open mainly from stubbornness and financial denial.",
+          "mother_material": "She assumes any meaningful trace of her mother was either discarded long ago or deliberately kept from her."
+        },
+        "current_body_state": "Tired from travel, clothes damp from the rain, fingertips irritated from old paper dust and wet cardboard.",
+        "attention_bias": {
+          "likely_to_notice_by_id": {
+            "paperwork_gaps": "Missing signatures, receipts, labeled envelopes and anything that can delay the handover.",
+            "practiced_locations": "Objects whose locations she remembers from childhood even when she claims not to remember the studio."
+          },
+          "likely_to_miss_by_id": {
+            "father_hesitation": "Small pauses or detours her father makes around items he is emotionally protecting.",
+            "environment_drift": "Slow changes in water level while she is focused on sorting."
+          }
+        },
+        "independent_activity": "She keeps making keep/discard decisions and moving salvageable material even when no one is speaking to her."
+      },
+      "lin_guozhong": {
+        "identity_lock": "Lin Guozhong, 63, owner of the studio and Lin Qiao's father. He has spent most of his adult life working in the same rooms.",
+        "immediate_physical_objective": "Keep specific negatives, ledgers, darkroom tools and one unlabelled film canister from being discarded or water-damaged.",
+        "immediate_emotional_pressure": "He knows his silence has become evidence against him in his daughter's mind, but speaking now risks sounding like a late self-defense.",
+        "active_avoidance": "Avoid giving a neat explanation of Xu Wen's departure or asking Lin Qiao to forgive him.",
+        "private_knowledge_by_id": {
+          "roll_identity": "He recognizes the unlabelled film canister as a roll Xu Wen left with him during the period when the family was breaking apart.",
+          "unsigned_reason": "He has delayed signing the handover partly because he has not finished deciding what can be lost with the studio."
+        },
+        "mistaken_beliefs_or_uncertainty_by_id": {
+          "daughter_return": "He assumes Lin Qiao came only because the paperwork requires family help and that she will leave as soon as the handover is done.",
+          "film_content": "He does not know what is on the old roll because he never developed it."
+        },
+        "current_body_state": "Lower back stiff from lifting boxes; hands still steady enough for delicate film work but slower than they were when the studio was busy.",
+        "attention_bias": {
+          "likely_to_notice_by_id": {
+            "film_risk": "Heat, moisture, light exposure and careless handling that could destroy old negatives.",
+            "daughter_habits": "Small work habits Lin Qiao learned in the studio as a child."
+          },
+          "likely_to_miss_by_id": {
+            "official_patience": "How close the outside workers are to ending negotiations and enforcing the handover timetable.",
+            "daughter_exit_plan": "Signs that Lin Qiao intends to leave town immediately after the paperwork."
+          }
+        },
+        "independent_activity": "He continues protecting vulnerable photographic material and making his own keep/discard choices without waiting for Lin Qiao's approval."
+      },
+      "wu_lan": {
+        "identity_lock": "Wu Lan, 46, municipal inventory clerk assigned to the old street handover. She grew up nearby and has known the Lin family for years without being part of it.",
+        "immediate_physical_objective": "Complete a defensible inventory, get the necessary signature, and prevent people from leaving hazardous darkroom chemicals or unsafe wiring problems for the demolition crew.",
+        "immediate_emotional_pressure": "She dislikes becoming the person who closes a place she remembers from childhood, but she also refuses to let sentiment turn into an unsafe or undocumented handover.",
+        "active_avoidance": "Avoid taking sides in the father-daughter conflict or being recruited as a witness to family history.",
+        "private_knowledge_by_id": {
+          "power_cut": "The maintenance team has warned her that power may be cut on safety grounds if the rear wall gets wetter.",
+          "schedule_tolerance": "She has limited discretion to delay sealing, but not enough to keep the building open indefinitely."
+        },
+        "mistaken_beliefs_or_uncertainty_by_id": {
+          "hidden_chemicals": "She suspects Lin Guozhong may be delaying because old chemicals or unregistered equipment are still in the back rooms.",
+          "family_conflict": "She knows the family is estranged but does not know the real history of Xu Wen's departure."
+        },
+        "current_body_state": "Raincoat damp, feet cold, phone battery low after a night of inventory calls.",
+        "attention_bias": {
+          "likely_to_notice_by_id": {
+            "safety_risk": "Exposed wires, leaking containers, blocked exits and water near electrical equipment.",
+            "paperwork_status": "Whether the handover record is actually complete and signed."
+          },
+          "likely_to_miss_by_id": {
+            "object_meaning": "Why an ordinary envelope, stool, film canister or drawer matters emotionally to either Lin.",
+            "old_coordination": "The degree to which father and daughter still share practiced work habits."
+          }
+        },
+        "independent_activity": "She continues inventory and safety checks whether or not the Lins resolve anything between themselves."
+      }
+    }
+  },
+  "relationship_residues": {
+    "order_semantics": "NONE",
+    "relations_by_id": {
+      "father_daughter_work_memory": {
+        "participants_by_id": {
+          "lin_qiao": true,
+          "lin_guozhong": true
+        },
+        "present_habit_or_coordination_by_id": {
+          "tray_space": "Both still leave the same clear strip of table beside a developing tray without discussing it.",
+          "key_locations": "Lin Qiao still reaches toward the drawer where spare cabinet keys used to be kept.",
+          "wet_print_handling": "Lin Guozhong instinctively shifts fragile paper toward Lin Qiao's dry hand rather than placing it on the wet table."
+        },
+        "avoided_or_unfinished_pressure_by_id": {
+          "mother_silence": "Neither wants to be the first person to name Xu Wen's departure directly.",
+          "departure_again": "Neither asks whether Lin Qiao will stay in town after the handover."
+        },
+        "lived_material_detail_by_id": {
+          "height_marks": "Pencil height marks from Lin Qiao's childhood remain on the darkroom door frame.",
+          "red_thermos": "A chipped red thermos still sits where Lin Qiao remembers customers waiting for portraits."
+        },
+        "trust_asymmetry": "Lin Qiao trusts her father's hands around photographs more than she trusts his account of the past; Lin Guozhong trusts her practical judgment more than he trusts that she will remain present once the paperwork is finished.",
+        "symbolic_interpretation_for_writer": null
+      },
+      "guozhong_wulan_neighbor_memory": {
+        "participants_by_id": {
+          "lin_guozhong": true,
+          "wu_lan": true
+        },
+        "present_habit_or_coordination_by_id": {
+          "old_address": "Wu Lan still uses the old neighborhood form of address for Lin Guozhong when they are not arguing over the handover.",
+          "inventory_shorthand": "Lin Guozhong understands Wu Lan's inventory categories without needing them explained."
+        },
+        "avoided_or_unfinished_pressure_by_id": {
+          "enforcement_role": "Both know Wu Lan may have to enforce a deadline against someone she has known for decades."
+        },
+        "lived_material_detail_by_id": {
+          "school_portrait": "Wu Lan's old school graduation portrait was taken in this studio and a faded sample print still exists in a display folder."
+        },
+        "trust_asymmetry": "Wu Lan believes Lin Guozhong will not intentionally endanger workers, but she does not trust him to prioritize the municipal schedule over the studio's contents.",
+        "symbolic_interpretation_for_writer": null
+      }
+    }
+  },
+  "environmental_processes": {
+    "order_semantics": "NONE",
+    "processes_by_id": {
+      "rain_ingress": {
+        "process": "Rainwater continues entering through the rear wall and under the back door.",
+        "continues_without_protagonist_attention": true,
+        "possible_interference": "Boxes, paper sleeves, power strips and low cabinets can become newly vulnerable while people are focused elsewhere."
+      },
+      "district_clearance": {
+        "process": "Other shops on the old street are being emptied, tagged and locked by workers operating on the same municipal schedule.",
+        "continues_without_protagonist_attention": true,
+        "possible_interference": "Noise, carts, requests for access and changing street conditions can interrupt private conversation."
+      },
+      "electrical_risk": {
+        "process": "Moisture and old wiring continue degrading the reliability of the studio's lights and outlets.",
+        "continues_without_protagonist_attention": true,
+        "possible_interference": "Darkroom equipment, lighting and phone charging cannot be assumed to remain available."
+      },
+      "material_decay": {
+        "process": "Wet cardboard softens, photo paper curls, adhesive loosens and old envelopes absorb dampness.",
+        "continues_without_protagonist_attention": true,
+        "possible_interference": "Objects can become harder to identify or save without anyone choosing that outcome."
+      }
+    }
+  },
+  "pressure_field": {
+    "order_semantics": "NONE",
+    "pressures_by_id": {
+      "handover_deadline": {
+        "kind": "time",
+        "condition": "The municipal handover window is approaching and Wu Lan cannot leave the building open indefinitely.",
+        "affected_agents_by_id": {
+          "lin_qiao": true,
+          "lin_guozhong": true,
+          "wu_lan": true
+        },
+        "affordances_by_id": {
+          "sign": "Lin Guozhong may sign the handover record.",
+          "refuse": "Lin Guozhong may refuse or delay signing within the consequences of the deadline.",
+          "prioritize": "Any agent may choose which physical task matters most under limited time."
+        }
+      },
+      "water_damage": {
+        "kind": "danger",
+        "condition": "Water threatens paper, film, electrical equipment and footing inside the studio.",
+        "affected_agents_by_id": {
+          "lin_qiao": true,
+          "lin_guozhong": true,
+          "wu_lan": true
+        },
+        "affordances_by_id": {
+          "salvage": "People may move or protect vulnerable material.",
+          "abandon": "People may decide some material cannot be saved.",
+          "redirect": "People may attempt practical measures against the water."
+        }
+      },
+      "family_exposure": {
+        "kind": "social_exposure",
+        "condition": "A public official who knows the family is present while private history presses into ordinary handover work.",
+        "affected_agents_by_id": {
+          "lin_qiao": true,
+          "lin_guozhong": true,
+          "wu_lan": true
+        },
+        "affordances_by_id": {
+          "deflect": "Agents may keep speech practical.",
+          "withdraw": "Agents may avoid answering.",
+          "misread": "Agents may interpret practical behavior as emotional evidence."
+        }
+      },
+      "undeveloped_film": {
+        "kind": "obligation",
+        "condition": "The unlabelled roll is physically vulnerable and emotionally charged, but its contents are unknown.",
+        "affected_agents_by_id": {
+          "lin_qiao": true,
+          "lin_guozhong": true
+        },
+        "affordances_by_id": {
+          "protect": "Either Lin may choose to protect the roll.",
+          "ignore": "Either Lin may leave it unattended.",
+          "ask": "Either Lin may ask about its provenance without guaranteeing an answer.",
+          "infer": "Either Lin may form a belief from the other's handling of it."
+        }
+      }
+    }
+  },
+  "information_asymmetry": {
+    "order_semantics": "NONE",
+    "facts_by_id": {
+      "roll_provenance": {
+        "proposition": "The unlabelled film canister is connected to Xu Wen and came into Lin Guozhong's possession during the family's rupture.",
+        "knows_by_id": {
+          "lin_guozhong": true
+        },
+        "suspects_by_id": {},
+        "falsely_believes_opposite_by_id": {},
+        "does_not_know_by_id": {
+          "lin_qiao": true,
+          "wu_lan": true
+        }
+      },
+      "roll_content_unknown": {
+        "proposition": "No one in the scene knows what images are on the old film roll.",
+        "knows_by_id": {
+          "lin_guozhong": true
+        },
+        "suspects_by_id": {
+          "lin_qiao": true
+        },
+        "falsely_believes_opposite_by_id": {},
+        "does_not_know_by_id": {
+          "wu_lan": true
+        }
+      },
+      "qiao_exit_plan": {
+        "proposition": "Lin Qiao intends to leave town again immediately after the handover and has no current plan to return for demolition day.",
+        "knows_by_id": {
+          "lin_qiao": true
+        },
+        "suspects_by_id": {
+          "lin_guozhong": true
+        },
+        "falsely_believes_opposite_by_id": {},
+        "does_not_know_by_id": {
+          "wu_lan": true
+        }
+      },
+      "power_cut_risk": {
+        "proposition": "The district maintenance team may cut power early if the rear-wall moisture worsens.",
+        "knows_by_id": {
+          "wu_lan": true
+        },
+        "suspects_by_id": {
+          "lin_guozhong": true
+        },
+        "falsely_believes_opposite_by_id": {},
+        "does_not_know_by_id": {
+          "lin_qiao": true
+        }
+      },
+      "studio_motive_complexity": {
+        "proposition": "Lin Guozhong's refusal to close the studio earlier cannot be reduced to one financial or sentimental motive.",
+        "knows_by_id": {},
+        "suspects_by_id": {
+          "lin_guozhong": true
+        },
+        "falsely_believes_opposite_by_id": {
+          "lin_qiao": true
+        },
+        "does_not_know_by_id": {
+          "wu_lan": true
+        }
+      }
+    }
+  },
+  "mystery_boundary": {
+    "order_semantics": "NONE",
+    "unresolved_by_id": {
+      "film_images": "The actual images on the old film roll remain unknown within this bounded scene.",
+      "mother_departure": "The complete reason Xu Wen left the household remains unresolved.",
+      "father_silence": "The full reason Lin Guozhong maintained years of silence remains unresolved."
+    },
+    "forbidden_explanations_by_id": {
+      "neat_vindication": "Do not convert the scene into a complete vindication of Lin Guozhong or a complete condemnation of Xu Wen.",
+      "hidden_letter_solution": "Do not introduce a letter, recording, confession, official file or other single artifact that fully explains the family history.",
+      "film_magic_answer": "Do not let the undeveloped film itself become a complete answer to the family rupture."
+    }
+  },
+  "terminal_world_state": {
+    "order_semantics": "NONE",
+    "must_be_true_by_end_by_id": {
+      "handover_not_total_resolution": "The municipal handover problem has materially advanced, but the family history is not fully resolved.",
+      "film_unresolved": "The old film roll still has unknown image content.",
+      "relationship_shift": "Lin Qiao and Lin Guozhong are no longer functioning only as two people completing paperwork; some provisional practical alignment exists without forgiveness being declared.",
+      "departure_uncertain": "Whether Lin Qiao will remain in town beyond the immediate handover is still not settled between father and daughter."
+    },
+    "route_not_specified": true
+  },
+  "rendering_freedom": {
+    "writer_selects_local_order": true,
+    "writer_selects_perception_order": true,
+    "writer_selects_paragraph_structure": true,
+    "writer_may_allow_concurrent_actions": true,
+    "writer_may_leave_inference_unclosed": true
+  },
+  "provenance": {
+    "created_for": "PHASE398_BUILD_STORY_SPECIFIC_SCENE_FIELD_PACKET",
+    "architecture": "SCENE_FIELD_AUTHOR_PACKET_V1",
+    "prior_story_reuse": false,
+    "diagnostic_labels_exposed_to_writer": false,
+    "evaluator_thresholds_exposed_to_writer": false,
+    "positive_anchor_surface_recipe_exposed_to_writer": false
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "note": "Story-specific author packet only. It does not prescribe event order, reveal order, paragraph order or sentence rhythm and does not authorize prose generation."
+}
