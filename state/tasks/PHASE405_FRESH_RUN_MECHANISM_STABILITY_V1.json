@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+  "phase_ordinal": 405,
+  "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "purpose": "Stabilize the Phase402/403 gains against fresh-run regression of semantic mechanical dialogue, response ownership and hidden global optimization without changing the Phase404 output-boundary transaction or adding surface prose rules.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE404_CLOSE",
+    "predecessor_checkpoint_sequence": 90,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "evidence": [
+    "state/calibration/PHASE405_CROSS_RUN_STABILITY_CAUSAL_DIAGNOSIS_V1.json",
+    "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+    "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json"
+  ],
+  "selected_architecture": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+  "architecture_schema": "state/author_packets/PHASE405_CAUSAL_OWNERSHIP_COMPILED_WRITER_SCHEMA_V1.json",
+  "validation_contract": "state/tasks/PHASE405_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+  "architecture_ready_receipt": "state/review_receipts/PHASE405_STABILITY_ARCHITECTURE_READY_V1.json",
+  "fixed_controls": {
+    "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "phase404_response_transaction_changed": false,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2": false,
+    "second_window": false
+  },
+  "preparation_acceptance_tests": [
+    "Cross-phase diagnosis distinguishes mechanism instability, sampling variation and coordinator-state leakage.",
+    "Repair changes information ownership/abstraction, not question count, summary count, paragraph length or sentence length.",
+    "Abstract live-vector semantic summaries are coordinator-only.",
+    "Any information-bearing non-focal event is pre-owned before prose and not triggered by focal dialogue.",
+    "Phase404 response transaction is reused unchanged.",
+    "Single A1 only; human review remains gated by all hidden gates."
+  ],
+  "allowed_action_requests": [
+    "BUILD_COMPILED_A1_INPUT_AFTER_ARCHITECTURE_READY_PASS",
+    "RUN_SINGLE_FRESH_A1_AFTER_READINESS_PASS"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build and audit exactly one compiled A1 input/runner. Do not generate prose until readiness PASS."
+}

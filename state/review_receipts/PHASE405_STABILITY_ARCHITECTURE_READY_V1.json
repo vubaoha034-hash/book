@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 405,
+  "task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+  "event_type": "STABILITY_ARCHITECTURE_READY_AUDIT",
+  "status": "PASS_ARCHITECTURE_ONLY_NO_PROSE",
+  "evidence_head": "3305ac7d3bd91bea1c1748690399f3ec816f460d",
+  "artifacts": {
+    "diagnosis": "state/calibration/PHASE405_CROSS_RUN_STABILITY_CAUSAL_DIAGNOSIS_V1.json",
+    "schema": "state/author_packets/PHASE405_CAUSAL_OWNERSHIP_COMPILED_WRITER_SCHEMA_V1.json",
+    "validation_contract": "state/tasks/PHASE405_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+    "task": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json"
+  },
+  "checks": {
+    "phase404_response_transaction_preserved": true,
+    "no_surface_question_rule": true,
+    "no_surface_summary_rule": true,
+    "no_sentence_or_paragraph_length_rule": true,
+    "cross_run_causal_classes_separated": true,
+    "same_payload_phase403_phase404_acknowledged": true,
+    "coordinator_leak_not_overclaimed": true,
+    "sampling_variation_not_used_to_justify_retry": true,
+    "abstract_semantic_goal_removed_from_writer_visible_layer": true,
+    "non_focal_information_ownership_externalized": true,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2": false,
+    "second_window": false,
+    "human_review_before_hidden_gates": false
+  },
+  "decision": "ARCHITECTURE_GATE_CLEAR",
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "next_action": "Create the single compiled writer-visible A1 packet and runner, then execute a readiness/guard audit. Only a PASS may activate the one allowed fresh-writer A1.",
+  "accepted_checkpoint_advance": false
+}

@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 90,
-  "recorded_at": "2026-09-25T09:10:43.276Z",
+  "sequence": 91,
+  "recorded_at": "2026-09-25T09:25:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase404 is durably closed after exactly one authorized A1. The prose-body-only response transaction successfully removed the Phase403 leading-label/trailing-editorial failure, but the fresh sample regressed on semantic mechanical dialogue, hidden global optimization and response ownership. No actual-human literary review occurred.",
+  "active_task_ids": [
+    "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1"
+  ],
+  "current_focus": "Phase405 is the sole active successor. Cross-run diagnosis attributes the Phase404 regression primarily to renderer-owned semantic degrees of freedom exposed by fresh-run sampling, not supported coordinator-state leakage. Architecture gate passed for CAUSAL_OWNERSHIP_COMPILED_WRITER_V1; no prose is authorized until one compiled A1 input and runner pass readiness.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -251,7 +253,13 @@
     "Phase404 neutral-salience flooding NO_BLOCK",
     "Phase404 focal personal-cost visibility CLEAR",
     "Phase404 live open-outcome visibility CLEAR",
-    "Phase404 candidate rejected whole; actual-human review not authorized"
+    "Phase404 candidate rejected whole; actual-human review not authorized",
+    "Phase405 explicit successor authorization received after Phase404 checkpoint 90 close.",
+    "Phase405 cross-run Phase402/403/404 causal comparison completed without generating prose.",
+    "Coordinator-state leakage is not supported by current evidence; random sampling is plausible but treated as an exposure of latent mechanism instability, not as grounds for retry.",
+    "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1 selected: abstract live-vector semantics become coordinator-only and information-bearing non-focal events become pre-owned causal event cards.",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 remains frozen and unchanged.",
+    "Phase405 single-A1 validation contract frozen: one candidate, no best-of-N, no retry, no A2, no second window, no human review before all required hidden gates clear."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -993,5 +1001,6 @@
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json"
+  "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
+  "next_action": "Build and audit the single Phase405 compiled A1 packet and runner. Only after readiness PASS may the one isolated fresh-writer A1 run."
 }

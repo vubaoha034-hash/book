@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+  "project_id": "novel-distillation",
+  "phase": 405,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Stabilize semantic dialogue, response ownership and hidden global optimization across a fresh run by changing information ownership and writer-visible abstraction level rather than adding surface prose rules.",
+  "coordinator_only": {
+    "semantic_live_vector": {
+      "desired_local_state": "HIDDEN_FROM_RENDERER",
+      "personal_cost_if_unresolved": "HIDDEN_AS_ABSTRACT_SUMMARY",
+      "unresolved_local_outcome_question": "HIDDEN_FROM_RENDERER",
+      "validation_role": "Used only to compile concrete affordances and to evaluate reader-drive after generation."
+    },
+    "causal_event_compiler": {
+      "input": [
+        "current world state",
+        "focal factual private knowledge",
+        "non-focal observable commitments",
+        "environment processes",
+        "hard locks",
+        "mystery boundaries"
+      ],
+      "output": "writer-visible concrete state packet plus pre-owned non-focal causal event cards",
+      "may_use_evaluator_labels_in_writer_output": false
+    }
+  },
+  "writer_visible_projection": {
+    "focal_concrete_state": [
+      "identity lock",
+      "current body state",
+      "current practical objective/action tendency",
+      "factual exit plan without abstract relationship thesis",
+      "current observable obstruction"
+    ],
+    "concrete_environment_affordances": [
+      "advancing water",
+      "wet wiring",
+      "unsigned handover form",
+      "ongoing salvage",
+      "official inventory work"
+    ],
+    "non_focal_causal_event_cards": {
+      "properties": [
+        "generated before prose",
+        "owned by one non-focal actor",
+        "anchored to that actor's own task or environment change",
+        "contains observable action and at most one bounded public fact payload",
+        "no private motive",
+        "no dialogue wording",
+        "no turn-order placement instruction",
+        "not triggered by focal speech",
+        "not created in response to writer-generated dialogue"
+      ],
+      "renderer_authority": "Renderer may choose wording and may omit a non-required card, but may not invent an additional information-bearing non-focal response."
+    },
+    "abstract_semantic_fields_omitted": [
+      "desired_local_state summary",
+      "personal_cost_if_unresolved summary",
+      "unresolved_local_outcome_question",
+      "relationship thesis",
+      "evaluator labels",
+      "anti-AI labels"
+    ]
+  },
+  "response_surface_contract": {
+    "reuse": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "modified": false,
+    "rule": "Phase405 must reuse the Phase404 positive closed response-surface transaction without expansion."
+  },
+  "renderer_authority_boundary": {
+    "may_choose_focal_micro_actions": true,
+    "may_render_preowned_non_focal_events": true,
+    "may_choose_incidental_sensory_detail_within_visible_state": true,
+    "may_stop_at_natural_local_boundary": true,
+    "may_not_invent_information_bearing_non_focal_response": true,
+    "may_not_receive_coordinator_semantic_summary": true,
+    "may_not_convert_hidden_abstract_goals_into_explicit_narration": true,
+    "may_not_receive_gate_labels_or_historical_failure_examples": true
+  },
+  "audit_rules": [
+    "BLOCK if abstract live-vector question/cost/desired-state summaries remain writer-visible.",
+    "BLOCK if non-focal information-bearing speech remains renderer-inventable without a pre-owned causal event card.",
+    "BLOCK if a causal event card is triggered by or formulated as a response to focal dialogue.",
+    "BLOCK if Phase404 response transaction is altered or expanded.",
+    "BLOCK if dialogue/question/paragraph/summary quotas are introduced.",
+    "BLOCK if best-of-N, retry, A2 or second window is introduced."
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}

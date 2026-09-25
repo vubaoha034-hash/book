@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T09:10:19.748Z",
+  "updated_at": "2026-09-25T09:25:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": null,
+  "active_task": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -177,10 +177,10 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE404_OTHER_GATE_BLOCK",
+    "YMGQ_writing_pause_reason": "PHASE405_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
     "current_writing_authorization_scope": {
-      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE404_BLOCK",
-      "current_chat_allowed": false,
+      "kind": "PHASE405_PREGEN_ARCHITECTURE_ONLY",
+      "current_chat_allowed": true,
       "user_visible_output": false,
       "long_form": false,
       "fresh_writer_authorized": false,
@@ -189,7 +189,7 @@
       "A2_authorized": false,
       "second_window_authorized": false,
       "human_review_authorized": false,
-      "settlement_receipt": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json"
+      "task_contract": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -854,9 +854,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "No active task. Preserve Phase404 as a bounded positive signal that PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 removed the leading-label/trailing-editorial failure, but the candidate still failed semantic dialogue, hidden global optimization and response-ownership required gates. Do not retry, create A2/second window, enter human review, or create Phase405 automatically.",
-  "status": "PHASE404_CLOSED_OUTPUT_BOUNDARY_FIXED_OTHER_REQUIRED_GATES_BLOCKED_NO_SUCCESSOR_AUTHORIZED",
-  "active_task_contract": null,
+  "next_required_action": "Build exactly one Phase405 compiled writer-visible A1 packet and runner under CAUSAL_OWNERSHIP_COMPILED_WRITER_V1, reuse PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 unchanged, run readiness/guard audit, and only then activate the single isolated fresh-writer A1.",
+  "status": "PHASE405_ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "active_task_contract": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json",
   "last_completed_task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
   "source_state_refs": [
@@ -1112,7 +1112,7 @@
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "No separately authorized successor task exists after Phase404 hidden-gate blocker settlement"
+    "Phase405 architecture is ready, but no prose may run until the compiled A1 packet/runner passes readiness and guard audit."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1122,7 +1122,7 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE404_OTHER_GATE_BLOCK"
+    "PHASE405_PROSE_BEFORE_READINESS_FORBIDDEN"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1749,6 +1749,40 @@
     "actual_human_review_performed": false,
     "architecture_human_validated": false,
     "phase405_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase405_state": {
+    "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+    "task_contract": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE405_CROSS_RUN_STABILITY_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE405_CAUSAL_OWNERSHIP_COMPILED_WRITER_SCHEMA_V1.json",
+      "schema_id": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE405_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE405_STABILITY_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "phase404_response_transaction_changed": false,
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "actual_human_review_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }

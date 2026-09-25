@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 405,
+  "task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+  "artifact_id": "PHASE405_CROSS_RUN_STABILITY_CAUSAL_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence_head": "3305ac7d3bd91bea1c1748690399f3ec816f460d",
+  "comparison_scope": {
+    "phase402": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "phase403": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+    "phase404": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
+    "controlled_payload": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+    "controlled_payload_sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7"
+  },
+  "observed_cross_run_pattern": {
+    "phase402": {
+      "semantic_dialogue": "CLEAR",
+      "hidden_global_optimization": "NO_BLOCK",
+      "response_ownership": "NO_BLOCK",
+      "human_reader_drive": "REJECT"
+    },
+    "phase403": {
+      "semantic_dialogue": "CLEAR",
+      "hidden_global_optimization": "NO_BLOCK",
+      "response_ownership": "NO_BLOCK",
+      "output_contract": "BLOCK"
+    },
+    "phase404": {
+      "semantic_dialogue": "BLOCK",
+      "hidden_global_optimization": "BLOCK",
+      "response_ownership": "BLOCK",
+      "output_contract": "CLEAR"
+    },
+    "key_control_fact": "Phase403 and Phase404 used the exact same literary payload SHA in isolated fresh writer chats; Phase404 changed only the outer response-boundary transaction."
+  },
+  "causal_classification": [
+    {
+      "id": "C405_A_COORDINATOR_STATE_LEAKAGE",
+      "verdict": "NOT_SUPPORTED_BY_CURRENT_EVIDENCE",
+      "evidence": [
+        "Phase404 readiness verified the embedded Phase403 payload exact-match.",
+        "Historical failure examples, AI/dialogue evaluator terms and broad neutral inventory were absent from writer-visible input.",
+        "The Phase404 writer ran in a separate fresh chat."
+      ],
+      "limitation": "The outer response wrapper changed between Phase403 and Phase404, so wrapper-induced decoding effects cannot be ruled out completely; there is no evidence that hidden coordinator state itself leaked."
+    },
+    {
+      "id": "C405_B_RANDOM_SAMPLING_VARIATION",
+      "verdict": "PLAUSIBLE_CONTRIBUTOR_BUT_NOT_SUFFICIENT_EXPLANATION",
+      "evidence": [
+        "Identical literary payload produced materially different semantic gate outcomes across two fresh runs.",
+        "Only one run exists for each condition, so no statistical variance estimate is available."
+      ],
+      "interpretation": "Sampling variation exposed a latent degree-of-freedom problem; it should not be treated as an excuse to retry until a passing sample appears."
+    },
+    {
+      "id": "C405_C_MECHANISM_INSTABILITY",
+      "verdict": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "The Phase402/403 mechanism freezes actor commitments but still lets the renderer decide when optional information emissions occur and how they answer adjacent dialogue.",
+        "The writer-visible live-vector packet exposes abstract desired state, personal cost and unresolved outcome semantics directly to the renderer.",
+        "Phase404 shows the renderer can re-liquidate those abstractions into executive-summary narration and shared-agenda dialogue even when deterministic adjacency counts remain clean."
+      ],
+      "causal_chain": [
+        "abstract semantic objective remains directly visible to renderer",
+        "renderer locally optimizes prose toward semantically useful completion",
+        "optional non-focal emissions are placed where they best answer current focal agenda",
+        "narrator closes intended meaning explicitly",
+        "fresh-run sampling determines whether this latent freedom stays quiet or becomes visible",
+        "semantic dialogue, response ownership and global optimization can therefore regress together"
+      ]
+    }
+  ],
+  "rejected_explanations": [
+    "question count as root cause",
+    "short paragraph ratio as root cause",
+    "sentence length as root cause",
+    "generic instruction to summarize less",
+    "generic instruction to sound less AI",
+    "best-of-N selection",
+    "automatic retry"
+  ],
+  "minimal_stability_fix": {
+    "architecture_id": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+    "component_1": "Move abstract live-vector semantics back to coordinator-only control and compile them into concrete current-state affordances before writer exposure.",
+    "component_2": "Replace optional non-focal information-emission freedom with pre-owned causal event cards whose trigger is the non-focal actor's own ongoing task/environment state, not the focal character's immediately preceding line.",
+    "component_3": "Writer may realize wording and local sensory texture but may not select new information-bearing non-focal next-state or attach coordinator-only semantic interpretation.",
+    "preserves": [
+      "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 unchanged",
+      "Phase403 reader-drive entry-state selection",
+      "Phase403 selective salience principle",
+      "Phase402 non-focal private-state opacity",
+      "single focal consciousness",
+      "single local passage"
+    ]
+  },
+  "validation_limit": "With the user's one-A1 budget, Phase405 can only show prospective survival of the next independent fresh run. It cannot statistically prove universal cross-run stability. Any claim stronger than bounded next-run stability is forbidden.",
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}

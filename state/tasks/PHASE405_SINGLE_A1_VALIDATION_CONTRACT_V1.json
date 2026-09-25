@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "VALIDATION_CONTRACT_NOT_A_SECOND_TASK",
+  "project_id": "novel-distillation",
+  "phase": 405,
+  "task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+  "contract_id": "PHASE405_SINGLE_A1_VALIDATION_CONTRACT_V1",
+  "status": "FROZEN_ARCHITECTURE_READY_AWAITING_COMPILED_INPUT",
+  "architecture_under_test": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+  "historical_controls": {
+    "phase402": "CLEAR semantic/global/ownership; human reader-drive rejection",
+    "phase403": "CLEAR semantic/global/ownership and reader-drive hidden gates; output contract BLOCK",
+    "phase404": "output contract CLEAR; semantic/global/ownership BLOCK"
+  },
+  "changed_variables": [
+    "abstract live-vector semantics move from writer-visible to coordinator-only",
+    "information-bearing non-focal next-state becomes pre-owned causal event cards"
+  ],
+  "frozen_variables": [
+    "story world and hard locks",
+    "Phase403 entry-state and selective-salience intent",
+    "Phase402 private-state opacity/deferred attribution intent",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1"
+  ],
+  "A1_execution_budget": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "separate_writer_chat_required": true,
+    "only_one_new_chatgpt_page": true
+  },
+  "pre_generation_required_gates": {
+    "compiled_writer_projection_exactly_matches_schema": true,
+    "no_abstract_live_vector_summary_visible": true,
+    "causal_event_cards_preowned_and_nonresponsive": true,
+    "phase404_response_transaction_reused_unchanged": true,
+    "evaluator_and_historical_failure_firewall_clear": true
+  },
+  "post_generation_required_hidden_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "stability_claim_boundary": {
+    "if_A1_clears_all_required_hidden_gates": "BOUNDED_NEXT_FRESH_RUN_STABILITY_SIGNAL_ONLY",
+    "forbidden_claims": [
+      "statistically proven stable",
+      "globally solved",
+      "production-ready",
+      "long-form transfer proven"
+    ]
+  },
+  "forbidden": [
+    "modify Phase404 output transaction",
+    "surface quotas",
+    "best-of-N",
+    "automatic retry",
+    "A2",
+    "second window",
+    "human review before hidden gates clear"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build one compiled writer-visible packet and one runner under this frozen contract. Run readiness/guard audit. Only then may the single isolated A1 be activated."
+}
