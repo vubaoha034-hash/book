@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+  "phase_ordinal": 401,
+  "status": "ACTIVE_PREPARING_MINIMAL_SINGLE_A1_NO_PROSE",
+  "purpose": "Prospectively test whether FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 reduces the Phase399 failure pattern of shared-agenda exact-adjacency dialogue and global scene-completion optimization.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE400_CLOSE",
+    "predecessor_checkpoint_sequence": 78,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "predecessor": {
+    "phase400_task": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+    "architecture_ready_receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+    "architecture_schema": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+    "architecture_schema_sha256": "5798b5585edf75157ee6d74445e061503988cf1de4438212055485b556e09aaa",
+    "architecture_id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1"
+  },
+  "controlled_world_source": {
+    "packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "reuse_reason": "Keep the world/story constant while changing only writer visibility and generation horizon.",
+    "source_packet_must_not_be_modified": true
+  },
+  "pilot_design": {
+    "focal_character_id": "lin_qiao",
+    "local_window_id": "NS02_LIN_QIAO_LOCAL_WINDOW_A1",
+    "writer_visible_projection": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+    "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+    "candidate_inbox": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "frozen_output": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false
+  },
+  "causal_variable": {
+    "held_constant": [
+      "NS02 world facts",
+      "Lin Qiao focal identity and private state",
+      "observable environment",
+      "hard source locks",
+      "mystery non-resolution"
+    ],
+    "changed": [
+      "Non-focal private state is hidden from the prose writer.",
+      "Full information-asymmetry table is hidden from the prose writer.",
+      "Full terminal world-state checklist is hidden from the prose writer.",
+      "Writer is asked for one local continuous passage, not whole-scene completion.",
+      "Optional details are not mandatory coverage."
+    ]
+  },
+  "preparation_gates": [
+    "writer-visible projection derives from immutable NS02 without modifying source",
+    "non-focal private objectives and private knowledge absent",
+    "full terminal world-state checklist absent",
+    "evaluator labels/thresholds absent",
+    "no paragraph-length/question-count/dialogue-interruption quota",
+    "local passage request does not require whole-scene completion",
+    "writer entry frozen before any prose execution"
+  ],
+  "prospective_post_generation_gates": {
+    "source_fidelity": "REQUIRED_CLEAR",
+    "writer_output_contract": "REQUIRED_CLEAR",
+    "deterministic_dialogue_adjacency": "REQUIRED_CLEAR",
+    "semantic_mechanical_dialogue": "REQUIRED_CLEAR",
+    "hidden_global_optimization_diagnostic": "REQUIRED_NO_BLOCK",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY_NOT_PRIMARY_BLOCKER",
+    "actual_human_review": "ALLOWED_ONLY_AFTER_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "comparative_question": {
+    "baseline": "PHASE399_NS02_A1",
+    "baseline_deterministic_blocked_runs": "21/43",
+    "baseline_semantic_dialogue": "BLOCK",
+    "target_claim_if_clear": "The visibility/horizon architecture prospectively removed the previously dominant shared-agenda exact-adjacency failure on this single controlled local passage.",
+    "forbidden_claims": [
+      "architecture globally solved AI smell",
+      "architecture globally solved immersion",
+      "architecture is promoted to accepted production",
+      "one clear passage proves long-form transfer"
+    ]
+  },
+  "forbidden": [
+    "reopen Phase399",
+    "retry Phase399 A1",
+    "modify frozen Phase399 A1",
+    "modify frozen Phase398 NS02 packet",
+    "modify frozen Phase400 architecture evidence",
+    "best-of-N",
+    "parallel prose candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second local window",
+    "show evaluator labels or thresholds to writer",
+    "enter actual-human literary review before required gates clear",
+    "create Phase402 automatically",
+    "advance Phase320 accepted checkpoint from structural gates alone"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE401_BUILD_AND_FREEZE_LOCAL_VIEW_A1",
+      "parameters": {
+        "path": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json"
+      }
+    },
+    {
+      "action_id": "PHASE401_AUDIT_LOCAL_VIEW_AND_BUILD_FROZEN_WRITER_ENTRY_A1",
+      "parameters": {
+        "projection": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+        "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+        "readiness_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json"
+      }
+    }
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build and freeze the Lin Qiao writer-visible local-horizon projection from the immutable NS02 world model. Audit hidden-state leakage before deciding whether the single A1 fresh-writer pilot may run."
+}
