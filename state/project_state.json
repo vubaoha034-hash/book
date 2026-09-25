@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T06:07:44.370Z",
+  "updated_at": "2026-09-25T07:02:56.225Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,28 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": {
-    "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
-    "phase": "LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN",
-    "phase_ordinal": 402,
-    "status": "A1_FROZEN_ALL_REQUIRED_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
-    "task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
-    "architecture": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
-    "user_delivery_authorized": true,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE402_ACTUAL_HUMAN_REVIEW",
-        "parameters": {
-          "frozen": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
-          "settlement": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json"
-        }
-      }
-    ],
-    "next_action": "Deliver the immutable Phase402 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision.",
-    "current_execution_receipt": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json"
-  },
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -198,16 +177,18 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE401_BLOCK",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE402_HUMAN_REJECTION",
     "current_writing_authorization_scope": {
-      "kind": "PHASE402_ACTUAL_HUMAN_REVIEW_ONLY_NO_PROSE_GENERATION",
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE402_HUMAN_REJECTION",
       "current_chat_allowed": false,
-      "user_visible_output": true,
+      "user_visible_output": false,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
-      "frozen_candidate": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
-      "settlement_receipt": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json"
+      "retry_authorized": false,
+      "A2_authorized": false,
+      "second_window_authorized": false,
+      "phase403_authorized": false
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -232,7 +213,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 83,
+    "logical_latest_checkpoint_sequence": 84,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -619,7 +600,8 @@
     "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
     "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
     "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
-    "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1"
+    "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+    "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -869,11 +851,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Deliver the immutable Phase402 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision.",
-  "status": "PHASE402_ACTIVE_A1_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
-  "active_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
-  "last_completed_task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
-  "last_completed_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+  "next_required_action": "No active task. Preserve Phase402 as a human-rejected single-attempt result: AI smell and hidden structural gates improved, but immersion, emotion, suspense and forward desire failed. Do not retry, create A2/second window, or create Phase403 automatically.",
+  "status": "PHASE402_CLOSED_ACTUAL_HUMAN_REJECTED_AI_SMELL_IMPROVED_LOW_IMMERSION_NO_FORWARD_DESIRE_NO_SUCCESSOR_AUTHORIZED",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+  "last_completed_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1034,11 +1016,16 @@
     {
       "path": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
       "role": "Phase402 post-generation hidden-gate settlement; all required gates clear"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+      "role": "Phase402 actual-human verbatim rejection; authoritative literary verdict"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "Phase402 actual-human literary review of immutable A1 is pending"
+    "Phase402 actual-human literary review of immutable A1 is pending",
+    "No separately authorized successor task exists after Phase402 human rejection"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1048,7 +1035,7 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE402_SUCCESSOR_DECISION_BLOCKED_PENDING_ACTUAL_HUMAN_REVIEW"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE402_HUMAN_REJECTION"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1080,7 +1067,12 @@
     "Create Phase401 A2 or a second local window automatically",
     "Enter actual-human review for blocked Phase401 A1",
     "Treat the Phase401 directional reduction as proof that the architecture solved mechanical dialogue or AI smell",
-    "Create Phase402 without separate explicit authorization"
+    "Create Phase402 without separate explicit authorization",
+    "Override Phase402 actual-human rejection with model gate results",
+    "Retry Phase402 A1 automatically",
+    "Create Phase402 A2 or second window automatically",
+    "Treat lighter AI smell as literary acceptance",
+    "Create Phase403 without separate explicit authorization"
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -1155,7 +1147,12 @@
     "Phase402 hidden global-optimization diagnostic NO_BLOCK",
     "Phase402 response-ownership residual NO_BLOCK",
     "Phase402 interpretation-liquidity residual NO_BLOCK",
-    "Phase402 A1 authorized for actual-human literary review without model quality claim"
+    "Phase402 A1 authorized for actual-human literary review without model quality claim",
+    "Phase402 actual-human review completed and persisted verbatim",
+    "Phase402 human verdict: no immersion, general/low emotion, no suspense, no forward desire",
+    "Phase402 human verdict: AI smell materially lighter than prior attempts",
+    "Phase402 earliest boredom point located at display-cabinet description; human reason: introduction feels very slow and boring",
+    "Phase402 closed as human-rejected despite all required hidden gates CLEAR"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1332,7 +1329,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase402_state": {
-    "status": "A1_FROZEN_ALL_REQUIRED_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
+    "status": "CLOSED_ACTUAL_HUMAN_REJECTED_AI_SMELL_IMPROVED_LOW_IMMERSION_NO_FORWARD_DESIRE",
     "task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
     "residual_diagnosis": {
       "path": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
@@ -1399,7 +1396,33 @@
     "response_ownership_residual": "NO_BLOCK",
     "interpretation_liquidity_residual": "NO_BLOCK",
     "actual_human_review_authorized": true,
-    "actual_human_review_performed": false,
-    "settlement_receipt": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json"
+    "actual_human_review_performed": true,
+    "settlement_receipt": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "actual_human_review_result": "REJECT",
+    "human_review_receipt": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "literary_acceptance": false,
+    "immersion": "FAIL",
+    "emotion": "GENERAL_LOW",
+    "ai_smell": "MUCH_LIGHTER_THAN_BEFORE",
+    "suspense": "ABSENT",
+    "desire_to_continue": false,
+    "first_stop_quote": "玻璃后面还插着几张褪色的样片，边角已经翘起来。下层柜门里堆着空相框和一卷背景布。她拉开柜门检查了一遍，没有看见文件。",
+    "first_stop_reason": "因为一整个介绍真的很慢。感觉很无聊",
+    "hidden_gates": "CLEAR",
+    "automatic_second_window_authorized": false
+  },
+  "phase402_settlement": {
+    "status": "CLOSED_HUMAN_REJECTED_AFTER_HIDDEN_GATES_CLEAR",
+    "hidden_gates": "CLEAR",
+    "human_review": "REJECT",
+    "ai_smell_direction": "POSITIVE_SIGNAL",
+    "immersion_transfer": "FAIL",
+    "suspense_transfer": "FAIL",
+    "forward_desire": "FAIL",
+    "emotion": "INSUFFICIENT",
+    "architecture_globally_validated": false,
+    "phase403_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "human_review_receipt": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json"
   }
 }
