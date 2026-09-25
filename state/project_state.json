@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T00:37:12.486Z",
+  "updated_at": "2026-09-25T01:20:00.543Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,38 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": null,
+  "active_task": {
+    "task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+    "phase": "NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION",
+    "phase_ordinal": 399,
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+    "task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+    "execution_scope": "Exactly one isolated A1 fresh-writer run from the frozen Phase399 writer entry. No retry, no A2, no local repair, no user delivery before all post-generation gates CLEAR.",
+    "prose_generation_authorized": true,
+    "prose_generation_scope": "ONE_ISOLATED_A1_ONLY",
+    "fresh_writer_authorized": true,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion_authorized": false,
+    "user_delivery_authorized": false,
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE399_EXECUTE_SINGLE_ISOLATED_FRESH_WRITER_A1",
+        "parameters": {
+          "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+          "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
+        }
+      },
+      {
+        "action_id": "PHASE399_STORE_FREEZE_AND_GATE_A1",
+        "parameters": {
+          "inbox": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+          "frozen": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt"
+        }
+      }
+    ],
+    "next_action": "Execute exactly one isolated Opera Neon fresh-writer A1 in a brand-new ChatGPT tab using only the frozen writer entry. Store returned prose verbatim; do not retry automatically.",
+    "current_execution_receipt": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json"
+  },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -177,16 +208,18 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE398_PACKET_FREEZE",
+    "YMGQ_writing_pause_reason": "PHASE399_SINGLE_NS02_FRESH_WRITER_VALIDATION_ACTIVE",
     "current_writing_authorization_scope": {
-      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE398_CLOSE",
+      "kind": "PHASE399_ONE_ISOLATED_NS02_A1_ONLY",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": false,
-      "prose_generation_authorized": false,
-      "frozen_packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
-      "freeze_receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json"
+      "fresh_writer_authorized": true,
+      "prose_generation_authorized": true,
+      "retry_authorized": false,
+      "A2_authorized": false,
+      "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+      "writer_entry_sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -211,7 +244,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 74,
+    "logical_latest_checkpoint_sequence": 75,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -845,9 +878,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "No active task. Any prose test using the frozen NS02 packet requires a separately authorized successor task and a fresh isolated writer context.",
-  "status": "PHASE398_CLOSED_NS02_PACKET_FROZEN_NO_SUCCESSOR_AUTHORIZED",
-  "active_task_contract": null,
+  "next_required_action": "Execute exactly one isolated Opera Neon fresh-writer A1 in a brand-new ChatGPT tab using only the frozen writer entry. Store returned prose verbatim; do not retry automatically.",
+  "status": "PHASE399_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+  "active_task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
   "last_completed_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
   "last_completed_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
   "source_state_refs": [
@@ -894,17 +927,31 @@
     {
       "path": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
       "role": "Phase398 NS02 first-failure, repair and final packet-freeze receipt"
+    },
+    {
+      "path": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+      "role": "active Phase399 single isolated NS02 A1 validation contract"
+    },
+    {
+      "path": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+      "role": "frozen writer-visible Phase399 A1 entry; only file permitted to fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase399 A1 writer-entry freeze and isolation PASS receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "No separately authorized successor prose test exists after Phase398 close"
+    "Phase399 A1 fresh-writer execution, verbatim freeze, post-generation gates and possible actual-human review are pending"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE398_CLOSE"
+    "PHASE399_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE399_A2_NOT_AUTHORIZED",
+    "PHASE399_USER_DELIVERY_BLOCKED_PENDING_GATES"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -942,7 +989,10 @@
     "Phase398 NS02 first packet audit blocked five writer-visible experiment-history leaks and preserved the failure",
     "Phase398 NS02 packet repaired by removing prior-story/evaluator metadata from writer-visible context",
     "Phase398 NS02 final immutable audit PASS: no sequence fields, no numeric sequence keys, no writer-visible experiment leakage",
-    "Phase398 architecture and NS02 packet-build task closed without prose generation"
+    "Phase398 architecture and NS02 packet-build task closed without prose generation",
+    "Phase399 single-A1 validation task created after explicit user authorization",
+    "Phase399 writer-visible entry frozen from immutable NS02 scene-field packet projection",
+    "Phase399 writer-entry isolation audit PASS; no historical diagnostic leakage"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -975,6 +1025,24 @@
     "writer_visible_experiment_leakage": false,
     "fresh_writer_authorized": false,
     "prose_generation_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase399_state": {
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+    "task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+    "source_packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "source_packet_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+    "writer_entry_sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a",
+    "writer_entry_immutable_commit": "abe522a2ca9be2032bbe5efcf7dea6532a8b0946",
+    "ready_receipt": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "candidate_stored": false,
+    "candidate_frozen": false,
+    "user_delivery_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }
