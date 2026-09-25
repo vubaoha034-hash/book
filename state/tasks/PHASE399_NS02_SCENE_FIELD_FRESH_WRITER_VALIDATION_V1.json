@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
   "phase_ordinal": 399,
-  "status": "ACTIVE_PREPARING_SINGLE_FRESH_WRITER_A1",
+  "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "purpose": "Run one isolated fresh-writer prose validation from the frozen Phase398 NS02 scene-field packet without exposing evaluator diagnostics or historical failure answer keys.",
   "predecessor": {
     "phase398_task": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
@@ -29,7 +29,11 @@
     "returned_prose_must_be_stored_verbatim": true,
     "local_repair_forbidden": true,
     "automatic_retry_forbidden": true,
-    "A2_not_authorized": true
+    "A2_not_authorized": true,
+    "writer_entry_sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a",
+    "writer_entry_immutable_commit": "abe522a2ca9be2032bbe5efcf7dea6532a8b0946",
+    "ready_receipt": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
+    "writer_entry_isolation_audit": "PASS"
   },
   "writer_visibility": {
     "permitted": [
@@ -98,5 +102,5 @@
   "user_delivery_authorized": false,
   "full_manuscript_rewrite_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and freeze the single writer entry from the immutable NS02 scene-field packet. Audit writer-visible isolation before executing A1."
+  "next_action": "Execute exactly one isolated Opera Neon fresh-writer A1 in a brand-new ChatGPT tab using only the frozen writer entry. Store returned prose verbatim; do not retry automatically."
 }
