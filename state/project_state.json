@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T04:02:17.846Z",
+  "updated_at": "2026-09-25T04:37:05.684Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,35 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": null,
+  "active_task": {
+    "task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+    "phase": "OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN",
+    "phase_ordinal": 400,
+    "status": "ACTIVE_DIAGNOSIS_AND_ARCHITECTURE_REDESIGN_NO_PROSE",
+    "task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+    "execution_scope": "Phase400 is diagnosis/design only. It targets the writer's output-side reconstruction of exact-adjacency shared-agenda dialogue and global scene-completion behavior after Phase399. No fiction or fresh writer execution is authorized.",
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion_authorized": false,
+    "user_delivery_authorized": false,
+    "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE400_WRITE_SUCCESSOR_EXECUTION_SCHEMA",
+        "parameters": {
+          "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json"
+        }
+      },
+      {
+        "action_id": "PHASE400_AUDIT_AND_FREEZE_ARCHITECTURE",
+        "parameters": {
+          "receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json"
+        }
+      }
+    ],
+    "next_action": "Build the machine-readable FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 execution schema and audit/freeze the Phase400 architecture. Do not generate prose."
+  },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -177,18 +205,15 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE399_A1_BLOCK",
+    "YMGQ_writing_pause_reason": "PHASE400_OUTPUT_GENERATION_ARCHITECTURE_REDESIGN_ACTIVE_NO_PROSE",
     "current_writing_authorization_scope": {
-      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE399_A1_BLOCK",
+      "kind": "PHASE400_ARCHITECTURE_DESIGN_ONLY_NO_PROSE",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
-      "retry_authorized": false,
-      "A2_authorized": false,
-      "frozen_candidate": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
-      "settlement_receipt": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json"
+      "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -213,7 +238,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 76,
+    "logical_latest_checkpoint_sequence": 77,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -848,9 +873,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "No active task. Phase399 A1 was frozen and rejected by output-contract, deterministic dialogue, semantic dialogue, and anti-storyboard/immersion blockers. No retry, A2, or Phase400 is authorized.",
-  "status": "PHASE399_CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
-  "active_task_contract": null,
+  "next_required_action": "Build the machine-readable FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 execution schema and audit/freeze the Phase400 architecture. Do not generate prose.",
+  "status": "PHASE400_ACTIVE_OUTPUT_GENERATION_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "active_task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
   "last_completed_task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
   "last_completed_task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
   "source_state_refs": [
@@ -921,17 +946,31 @@
     {
       "path": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
       "role": "Phase399 A1 storage, source-fidelity, output-contract, dialogue and anti-storyboard settlement"
+    },
+    {
+      "path": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+      "role": "active Phase400 output-generation causal redesign contract"
+    },
+    {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "role": "Phase400 failure-versus-human-positive output-surface contrast profile"
+    },
+    {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "role": "Phase400 causal diagnosis and selected successor writer-execution architecture"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "No separately authorized successor task exists after Phase399 A1 blocker settlement"
+    "Phase400 successor execution schema and architecture freeze receipt are pending"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE399_A1_BLOCK"
+    "PHASE400_PROSE_GENERATION_NOT_AUTHORIZED",
+    "PHASE400_FRESH_WRITER_NOT_AUTHORIZED",
+    "PHASE401_NOT_AUTHORIZED"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -947,7 +986,13 @@
     "Locally patch frozen Phase399 A1 dialogue or paragraph rhythm",
     "Automatically retry Phase399 A1 or create A2",
     "Deliver Phase399 A1 to actual-human review despite blocker settlement",
-    "Create Phase400 without separate explicit authorization"
+    "Create Phase400 without separate explicit authorization",
+    "Reopen Phase399 or retry its A1",
+    "Create Phase399 A2",
+    "Modify frozen Phase399 A1 or frozen Phase398 NS02",
+    "Use paragraph-length or question-count quotas as the Phase400 primary repair",
+    "Expose Phase377/399 evaluator labels or blocker thresholds to a future writer",
+    "Generate Phase400 prose or create Phase401 automatically"
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -985,7 +1030,10 @@
     "Phase399 A1 semantic mechanical-dialogue BLOCK",
     "Phase399 A1 anti-storyboard/immersion BLOCK: 631 of 658 paragraphs are one sentence or less",
     "Phase399 A1 writer-output contract BLOCK: three non-prose editorial suggestion lines preserved verbatim",
-    "Phase399 A1 rejected whole and single-attempt budget exhausted without actual-human delivery"
+    "Phase399 A1 rejected whole and single-attempt budget exhausted without actual-human delivery",
+    "Phase400 successor task created after explicit user authorization",
+    "Phase400 output-surface contrast profile completed; paragraph shortness rejected as primary separator",
+    "Phase400 causal diagnosis selected FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1053,6 +1101,31 @@
     "automatic_retry_authorized": false,
     "A2_authorized": false,
     "phase400_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase400_state": {
+    "status": "ACTIVE_DIAGNOSIS_AND_ARCHITECTURE_REDESIGN_NO_PROSE",
+    "task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+    "contrast_profile": {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "status": "COMPLETE"
+    },
+    "causal_diagnosis": {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "status": "COMPLETE"
+    },
+    "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "successor_schema": {
+      "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+      "status": "PENDING"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+      "status": "PENDING"
+    },
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "phase401_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }
