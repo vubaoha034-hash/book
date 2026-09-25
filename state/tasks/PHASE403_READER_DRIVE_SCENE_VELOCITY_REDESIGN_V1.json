@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
   "phase_ordinal": 403,
-  "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+  "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "purpose": "Diagnose and repair the human-identified literary failure that remained after Phase402 structural gates cleared: low reader drive, slow scene progression, weak emotional tension, low information-value density, no suspense, and no desire to continue.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE402_CLOSE",
@@ -152,28 +152,27 @@
   ],
   "allowed_action_requests": [
     {
-      "action_id": "PHASE403_BUILD_LIVE_VECTOR_VIEW_A1",
+      "action_id": "PHASE403_EXECUTE_SINGLE_ISOLATED_A1",
       "parameters": {
-        "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json"
+        "writer_entry": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+        "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
       }
     },
     {
-      "action_id": "PHASE403_BUILD_FROZEN_RUNNER_A1",
+      "action_id": "PHASE403_STORE_FREEZE_AND_GATE_A1",
       "parameters": {
-        "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt"
-      }
-    },
-    {
-      "action_id": "PHASE403_AUDIT_AND_FREEZE_A1_READINESS",
-      "parameters": {
-        "receipt": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json"
+        "inbox": "state/inbox/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+        "frozen": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt"
       }
     }
   ],
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build the Phase403 concrete live-vector/selective-salience writer-visible view and a single frozen runner; audit readiness. Do not generate prose until readiness PASS.",
-  "architecture_ready_receipt": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json"
+  "next_action": "Execute exactly one isolated Phase403 fresh-writer A1 from the frozen runner. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "architecture_ready_receipt": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
+  "readiness_receipt": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
+  "writer_visible_projection_sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+  "writer_entry_sha256": "4dd178c3323767dc92dee254bd6c15d0f307e5c3c1f38dbac025fed13c228b9e"
 }
