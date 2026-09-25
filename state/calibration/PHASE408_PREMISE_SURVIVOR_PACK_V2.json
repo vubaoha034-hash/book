@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_PREMISE_SURVIVOR_PACK_V2",
+  "mode": "PREMISE_ONLY_NO_PROSE",
+  "source_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
+  "candidates": [
+    {
+      "id": "P408-G",
+      "premise": "母亲失去独立生活能力后，大姐辞职照顾了她七年，弟弟一直出钱，但很少真正回来照料。现在母亲需要全天护理，现有收入负担不起。大姐提出卖掉母亲唯一的房子支付长期护理费用，弟弟反对，因为母亲清醒时最怕的就是‘死前连自己的家都没了’。大姐不再争谁更孝顺，只问弟弟：如果房子不卖，那从下个月开始由谁每天照顾？"
+    },
+    {
+      "id": "P408-H",
+      "premise": "一对结婚十五年的夫妻共同经营一家小餐馆。店能赚钱，但长期欠款和每天十几个小时的营业把婚姻磨到准备离婚。房东准备重新开发这栋楼，愿意补偿他们提前退租；妻子想拿补偿关店，各自重新生活，丈夫却想用这笔钱搬到附近重开，因为六个跟了多年的员工靠这家店吃饭，也因为这块招牌是他父亲留下的。妻子明确告诉他：店可以继续，但她不会再跟过去。"
+    },
+    {
+      "id": "P408-I",
+      "premise": "离婚三年的父母一直轮流照顾十岁的女儿。母亲得到外地工作机会，收入几乎翻倍，也能给孩子更稳定的生活；父亲不同意女儿搬走，因为那会把他从每周陪伴变成偶尔见面。母亲说她可以放弃工作，但那样父亲必须把主要照护真正接过去——平日接送、作业、生病请假、家长会都由他负责，而不是只保留轻松的那一半。父亲第一次发现，自己争的也许不只是‘别把女儿带走’。"
+    },
+    {
+      "id": "P408-J",
+      "premise": "女儿在父亲的五金厂干了十二年，从跑客户做到实际负责人。父亲准备退休，却坚持把控股权交给一直在外地上班的儿子，只给女儿一笔现金补偿，理由是‘厂最后还是要姓家里的姓’。女儿没有要求父亲改遗嘱，她直接提出辞职，并准备把自己长期维护的客户关系一起交还给公司；哥哥认为她明知道厂离不开她，却故意在父亲退休时抽身。三个人都清楚：她留下，是接受这套分配；她走，厂很可能迅速失去订单。"
+    }
+  ],
+  "human_instruction": "Judge only whether you genuinely care about these people and want to see what choice they make. All material facts are already visible; there is no promised hidden twist required to make the premise work. Reject-all remains valid.",
+  "prose_generation_authorized": false,
+  "accepted_checkpoint_advance": false
+}

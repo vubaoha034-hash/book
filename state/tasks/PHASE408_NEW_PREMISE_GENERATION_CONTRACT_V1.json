@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1",
-  "status": "FROZEN_NO_NEW_CANDIDATES_YET",
+  "status": "EXECUTED_BATCH2_INTERNAL_AUDIT_COMPLETE",
   "purpose": "Prevent the next premise batch from replacing low-energy realism with short-drama secret/reversal machinery.",
   "core_principle": "A secret, mystery, reversal or unusual fact may amplify an already-working human conflict, but may not be the sole reason the story moves or the sole reason the reader cares.",
   "mandatory_counterfactual_gate": {
@@ -50,15 +50,14 @@
   ],
   "candidate_policy": {
     "generate_new_candidates_now": false,
-    "retain_existing_pass_candidates": [
-      "P408-C",
-      "P408-E"
-    ],
-    "user_choice_now": false,
+    "retain_existing_pass_candidates": [],
+    "user_choice_now": true,
     "next_candidate_batch_requires_separate_execution_under_this_contract": true
   },
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Keep C and E as retained audit-passing references. Generate no new premise candidates in this audit step. A later Phase408 action may generate a new premise batch under this contract; only audit-passing premises may reach actual-human selection."
+  "next_action": "Present only the internally audited Phase408 batch2 survivors G/H/I/J to the actual human. No prose.",
+  "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
+  "batch2_survivor_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V2.json"
 }

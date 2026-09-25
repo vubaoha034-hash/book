@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 102,
-  "recorded_at": "2026-09-25T12:30:00Z",
+  "sequence": 103,
+  "recorded_at": "2026-09-25T12:50:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. A-F premise audit is complete: A/B/D/F FAIL because their engines depend too heavily on secret/reversal machinery; C/E PASS because their relationship conflicts and costs survive removal of the reveal. Because 4/6 failed, human selection is paused. A new anti-overcorrection premise-generation contract is frozen; no new candidates or prose were generated.",
+  "current_focus": "Phase408 remains the sole active task. Under the stricter REMOVE-TWIST/HUMAN-STAKE/EMOTIONAL-ENGINE/PLAUSIBILITY/user-fit audit, all original A-F are withdrawn from selection. A new contract-governed batch of five premises was internally audited; G/H/I/J survived and K failed simple-solution resistance. Only G/H/I/J are now eligible for actual-human premise selection. No prose and no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -309,7 +309,11 @@
     "Phase408-PREMISE-AUDIT completed without new candidates or prose.",
     "A/B/D/F failed reveal-removal engine audit; C/E passed and are retained.",
     "Majority failure detected; A-F human selection suspended rather than forcing a choice.",
-    "PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1 frozen: secrets may amplify but may not constitute the story engine."
+    "PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1 frozen: secrets may amplify but may not constitute the story engine.",
+    "Phase408 strict audit V2 withdrew all original A-F from human selection.",
+    "Phase408 batch2 generated five premise candidates under the frozen anti-overcorrection contract; no prose generated.",
+    "Phase408 batch2 internal audit rejected K for simple-solution/business-procedure risk.",
+    "Phase408 batch2 survivors G/H/I/J passed remove-twist, active WANT conflict, irreversible COST, relationship emotion and natural-behavior gates."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1052,5 +1056,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Remain in Phase408. Do not generate prose or enter user premise selection. A later authorized Phase408 step may generate a new premise batch under the frozen anti-overcorrection contract."
+  "next_action": "Deliver only the Phase408 batch2 survivors G/H/I/J for actual-human premise selection. Reject-all is valid. No prose."
 }

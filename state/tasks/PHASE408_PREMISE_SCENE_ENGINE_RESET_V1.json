@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "phase_ordinal": 408,
-  "status": "ACTIVE_PREMISE_AUDIT_COMPLETE_MAJORITY_FAIL_NEW_GENERATION_CONTRACT_FROZEN",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_PREMISE_SELECTION_BATCH2_SURVIVORS",
   "purpose": "Reset the premise/scene engine after Phase407 actual-human rejection despite all hidden prose gates clearing. Validate reader pull at premise level before any further fiction generation.",
   "authorization": {
     "source": "EXPLICIT_USER_CONTINUE_NEXT_STEP_AFTER_PHASE407_CLOSE",
@@ -12,18 +12,21 @@
     "accepted_checkpoint_at_authorization": 320
   },
   "diagnosis": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
-  "premise_pack": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
+  "premise_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V2.json",
   "selection_contract": "state/tasks/PHASE408_PREMISE_SELECTION_CONTRACT_V1.json",
   "architecture_ready_receipt": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
-  "user_delivery_authorized": false,
+  "user_delivery_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Remain in Phase408. Do not generate prose or enter user premise selection. A later authorized Phase408 step may generate a new premise batch under the frozen anti-overcorrection contract.",
-  "premise_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V1.json",
+  "next_action": "Deliver only the Phase408 batch2 survivors G/H/I/J for actual-human premise selection. Reject-all is valid. No prose.",
+  "premise_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
   "new_premise_generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
   "retained_candidates": [
-    "P408-C",
-    "P408-E"
-  ]
+    "P408-G",
+    "P408-H",
+    "P408-I",
+    "P408-J"
+  ],
+  "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json"
 }

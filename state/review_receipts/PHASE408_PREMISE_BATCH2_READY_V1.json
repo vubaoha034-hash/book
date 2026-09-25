@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "PREMISE_BATCH2_READY",
+  "status": "PASS_SURVIVORS_READY_FOR_ACTUAL_HUMAN_PREMISE_SELECTION_NO_PROSE",
+  "evidence_head": "e54a3b105407d024297324106e040dad341cbee2",
+  "artifacts": {
+    "strict_original_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
+    "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
+    "survivor_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V2.json",
+    "generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json"
+  },
+  "checks": {
+    "original_A_to_F_selectable_count": 0,
+    "new_internal_candidate_count": 5,
+    "new_survivor_count": 4,
+    "all_survivors_remove_twist_pass": true,
+    "all_survivors_active_want_conflict": true,
+    "all_survivors_irreversible_cost": true,
+    "all_survivors_relationship_emotion_independent_of_reveal": true,
+    "all_survivors_simple_solution_resistant": true,
+    "no_prose_generated": true,
+    "phase409_not_created": true
+  },
+  "next_action": "Present only G/H/I/J to the actual human for premise-level attraction judgment. Reject-all is valid. Do not generate prose.",
+  "accepted_checkpoint_advance": false
+}

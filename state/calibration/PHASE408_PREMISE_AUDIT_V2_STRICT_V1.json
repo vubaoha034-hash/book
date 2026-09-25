@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "artifact_id": "PHASE408_PREMISE_AUDIT_V2_STRICT_V1",
+  "status": "COMPLETE_ALL_ORIGINAL_CANDIDATES_FAIL_NO_PROSE",
+  "evidence_head": "e54a3b105407d024297324106e040dad341cbee2",
+  "criteria": [
+    "REMOVE_TWIST_TEST: reveal the secret immediately; the story itself must still be worth following.",
+    "HUMAN_STAKE: clear WANT, COST and irreversible choice must exist now.",
+    "EMOTIONAL_ENGINE: reader concern must attach to people/relationships, not merely the answer.",
+    "PLAUSIBILITY: premise may not require characters or institutions to behave unnaturally to preserve a hook.",
+    "USER_FIT: should support immersion, emotion and suspense without feeling fake."
+  ],
+  "results": [
+    {
+      "id": "P408-A",
+      "verdict": "FAIL",
+      "remove_twist": "FAIL_WITH_MOTHER_STATUS_DISCLOSED_THE_CORE_SHRINKS_TO_SELLING_A_SHOP",
+      "human_stake": "WEAK",
+      "emotional_engine": "ANSWER_DOMINANT",
+      "plausibility": "PARTIAL_CALL_THE_NUMBER_AND_DIRECT_CONFRONTATION_ARE_OBVIOUS",
+      "user_fit": "FAIL_RISKS_SHORT_DRAMA_MYSTERY"
+    },
+    {
+      "id": "P408-B",
+      "verdict": "FAIL",
+      "remove_twist": "PARTIAL_DNR_REMAINS_BUT_FORBIDDEN_BOY_IS_THE_MAIN_PULL",
+      "human_stake": "STRONG_MEDICAL_COST",
+      "emotional_engine": "MIXED_BUT_REVEAL_DOMINANT",
+      "plausibility": "PARTIAL_FATHER_UNCONSCIOUS_LIMITS_ACTIVE_RELATIONSHIP_CONFLICT",
+      "user_fit": "FAIL_OVERENGINEERED_IDENTITY_REVEAL"
+    },
+    {
+      "id": "P408-C",
+      "verdict": "FAIL_CURRENT_PREMISE_DESPITE_RELATIONSHIP_CORE",
+      "remove_twist": "PASS_BROTHER_BETRAYAL_STILL_MATTERS",
+      "human_stake": "PASS",
+      "emotional_engine": "PASS_CORE",
+      "plausibility": "FAIL_STACKED_COINCIDENCE_RELEASE_DAY_PLUS_MOTHER_DIED_LAST_NIGHT_PLUS_MURDER_TESTIMONY_PLUS_UNOPENED_OBJECT_FEELS_STAGED",
+      "user_fit": "FAIL_CURRENT_FORM_RISKS_FAKE_MELODRAMA"
+    },
+    {
+      "id": "P408-D",
+      "verdict": "FAIL",
+      "remove_twist": "FAIL_WITH_DEAD_EX_EXPLAINED_THE_PREMISE_LOSES_MOST_MOTION",
+      "human_stake": "PARTIAL_MARRIAGE_IS_IRREVERSIBLE",
+      "emotional_engine": "ANSWER_DOMINANT",
+      "plausibility": "FAIL_CONTINUING_CEREMONY_BEFORE_VERIFYING_IS_ENGINEERED_BEHAVIOR",
+      "user_fit": "FAIL_SHORT_DRAMA_CONTRIVANCE"
+    },
+    {
+      "id": "P408-E",
+      "verdict": "FAIL_CURRENT_PREMISE_DESPITE_RELATIONSHIP_CORE",
+      "remove_twist": "PASS_SIBLING_CAREGIVING_CONFLICT_SURVIVES",
+      "human_stake": "PASS",
+      "emotional_engine": "PASS_CORE",
+      "plausibility": "FAIL_VAGUE_ONE_LINE_WILL_AND_UNKNOWN_DELIVERYMAN_WITH_KEY_FUNCTION_AS_GIMMICK_AND_CREATE_LEGAL_REALISM_PROBLEMS",
+      "user_fit": "FAIL_CURRENT_FORM_FEELS_WRITTEN_FOR_REVEAL"
+    },
+    {
+      "id": "P408-F",
+      "verdict": "FAIL",
+      "remove_twist": "FAIL_IF_WHO_TRIED_TO_KILL_HER_IS_KNOWN_THE_COLD_CASE_ENGINE_BECOMES_PROCEDURAL",
+      "human_stake": "PARTIAL",
+      "emotional_engine": "ANSWER_DOMINANT",
+      "plausibility": "PARTIAL_EXTREME_INVERSION_REQUIRES_HEAVY_EXPLANATION",
+      "user_fit": "FAIL_HIGH_CONCEPT_REVERSAL_DOMINATES"
+    }
+  ],
+  "summary": {
+    "pass": [],
+    "fail": [
+      "P408-A",
+      "P408-B",
+      "P408-C",
+      "P408-D",
+      "P408-E",
+      "P408-F"
+    ],
+    "all_fail": true,
+    "human_selection": "FORBIDDEN_FROM_ORIGINAL_PACK"
+  },
+  "note": "C and E contain salvageable relationship cores, but their current premises fail the stricter plausibility/user-fit gate and are not retained as selectable candidates.",
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}

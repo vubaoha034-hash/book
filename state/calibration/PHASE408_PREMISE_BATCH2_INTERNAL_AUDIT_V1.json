@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
+  "internal_candidates": [
+    {
+      "id": "P408-G",
+      "premise": "母亲失去独立生活能力后，大姐辞职照顾了她七年，弟弟一直出钱，但很少真正回来照料。现在母亲需要全天护理，现有收入负担不起。大姐提出卖掉母亲唯一的房子支付长期护理费用，弟弟反对，因为母亲清醒时最怕的就是‘死前连自己的家都没了’。大姐不再争谁更孝顺，只问弟弟：如果房子不卖，那从下个月开始由谁每天照顾？",
+      "audit": {
+        "remove_twist": "PASS_NO_TWIST_REQUIRED",
+        "want_conflict": "PASS_SISTER_WANTS_END_UNSUSTAINABLE_CARE_AND_SECURE_MOTHER_CARE;BROTHER_WANTS_PRESERVE_MOTHERS_HOME_AND_DIGNITY",
+        "irreversible_cost": "PASS_SELLING_HOME_IS_IRREVERSIBLE;NOT_SELLING_CONTINUES_SISTERS_LIFE_SACRIFICE_AND_RISKS_CARE_GAP",
+        "relationship_emotion": "PASS_GUILT_DUTY_RECOGNITION_AND_UNEQUAL_SACRIFICE_EXIST_OPENLY",
+        "simpler_solution_attack": "PASS_HIRE_CARE_IS_THE_COST_PROBLEM;BROTHER_TAKING_OVER_IS_POSSIBLE_BUT_ITSELF_THE_COSTLY_CHOICE",
+        "natural_behavior": "PASS_ALL_SIDES_HAVE_ORDINARY_REASONS",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "P408-H",
+      "premise": "一对结婚十五年的夫妻共同经营一家小餐馆。店能赚钱，但长期欠款和每天十几个小时的营业把婚姻磨到准备离婚。房东准备重新开发这栋楼，愿意补偿他们提前退租；妻子想拿补偿关店，各自重新生活，丈夫却想用这笔钱搬到附近重开，因为六个跟了多年的员工靠这家店吃饭，也因为这块招牌是他父亲留下的。妻子明确告诉他：店可以继续，但她不会再跟过去。",
+      "audit": {
+        "remove_twist": "PASS_NO_SECRET",
+        "want_conflict": "PASS_WIFE_WANTS_END_SHARED_BUSINESS_AND_MARRIAGE;HUSBAND_WANTS_PRESERVE_BUSINESS_PEOPLE_AND_FAMILY_IDENTITY",
+        "irreversible_cost": "PASS_CLOSE_AND_DISPERSE_TEAM_OR_RECOMMIT_CAPITAL_AND_ACCEPT_MARRIAGE_END",
+        "relationship_emotion": "PASS_LOVE_EXHAUSTION_LOYALTY_AND_IDENTITY_PREEXIST_ANY_REVEAL",
+        "simpler_solution_attack": "PASS_HIRING_MANAGER_OR_SEPARATING_OWNERSHIP_MAY_HELP_OPERATIONS_BUT_DOES_NOT_RESOLVE_WHO_BEARs_DEBT_RISK_OR_WHAT_THE_BUSINESS_MEANS_TO_THE_MARRIAGE",
+        "natural_behavior": "PASS",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "P408-I",
+      "premise": "离婚三年的父母一直轮流照顾十岁的女儿。母亲得到外地工作机会，收入几乎翻倍，也能给孩子更稳定的生活；父亲不同意女儿搬走，因为那会把他从每周陪伴变成偶尔见面。母亲说她可以放弃工作，但那样父亲必须把主要照护真正接过去——平日接送、作业、生病请假、家长会都由他负责，而不是只保留轻松的那一半。父亲第一次发现，自己争的也许不只是‘别把女儿带走’。",
+      "audit": {
+        "remove_twist": "PASS_NO_TWIST",
+        "want_conflict": "PASS_MOTHER_WANTS_REAL_OPPORTUNITY_AND_FAIR_CARE_LOAD;FATHER_WANTS_PRESERVE_DAILY_PARENT_RELATIONSHIP",
+        "irreversible_cost": "PASS_MOVE_CHANGES_PARENT_CHILD_DAILY_LIFE;STAYING_COSTS_CAREER_AND_CONTINUES_UNEQUAL_LABOR",
+        "relationship_emotion": "PASS_PARENTAL_LOVE_RESENTMENT_AND_SELF_IMAGE_EXIST_OPENLY",
+        "simpler_solution_attack": "PASS_MORE_VISITS_OR_MONEY_DO_NOT_RECREATE_DAILY_PARENTING;FATHER_TAKING_PRIMARY_CARE_IS_THE_REAL_CHOICE",
+        "natural_behavior": "PASS",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "P408-J",
+      "premise": "女儿在父亲的五金厂干了十二年，从跑客户做到实际负责人。父亲准备退休，却坚持把控股权交给一直在外地上班的儿子，只给女儿一笔现金补偿，理由是‘厂最后还是要姓家里的姓’。女儿没有要求父亲改遗嘱，她直接提出辞职，并准备把自己长期维护的客户关系一起交还给公司；哥哥认为她明知道厂离不开她，却故意在父亲退休时抽身。三个人都清楚：她留下，是接受这套分配；她走，厂很可能迅速失去订单。",
+      "audit": {
+        "remove_twist": "PASS_NO_SECRET",
+        "want_conflict": "PASS_DAUGHTER_WANTS_DIGNITY_AND_OWNERSHIP_MATCHING_CONTRIBUTION;FATHER_WANTS_TRADITIONAL_SUCCESSION;BROTHER_WANTS_INHERIT_WITHOUT_BUSINESS_COLLAPSE",
+        "irreversible_cost": "PASS_LEAVING_CAN_DESTROY_CAREER_RELATIONSHIPS_AND_FACTORY_VALUE;STAYING_ACCEPTS_STRUCTURAL_INJUSTICE",
+        "relationship_emotion": "PASS_RECOGNITION_FAMILY_LOYALTY_GENDER_EXPECTATION_AND_SELF_RESPECT",
+        "simpler_solution_attack": "PASS_EQUITY_NEGOTIATION_IS_THE_CONFLICT_NOT_AN_ESCAPE;IF_FATHER_REFUSES_THE_CHOICE_REMAINS",
+        "natural_behavior": "PASS_BUT_REQUIRES_AVOIDING_CARTOON_VILLAIN_FATHER_IN_EXECUTION",
+        "verdict": "PASS_WITH_EXECUTION_CAUTION"
+      }
+    },
+    {
+      "id": "P408-K",
+      "premise": "两个大学同学合伙创业十年，公司终于得到收购报价。一人想卖，因为婚姻已经被创业拖到临界点；另一人拒绝，因为员工期权和自己全部身份都押在公司继续独立上。两人各占一半股份，谁都不能单独决定。",
+      "audit": {
+        "remove_twist": "PASS_NO_TWIST",
+        "want_conflict": "PASS",
+        "irreversible_cost": "PARTIAL",
+        "relationship_emotion": "MEDIUM",
+        "simpler_solution_attack": "FAIL_BUYOUT_RESTRUCTURED_DEAL_OR_BOARD_MEDIATION_CAN_TOO_EASILY_BECOME_TECHNICAL_SOLUTION_UNLESS_EXTRA_FACTS_ARE_ADDED",
+        "natural_behavior": "PASS",
+        "verdict": "FAIL_SIMPLE_SOLUTION_AND_BUSINESS_PROCEDURE_RISK"
+      }
+    }
+  ],
+  "survivors": [
+    "P408-G",
+    "P408-H",
+    "P408-I",
+    "P408-J"
+  ],
+  "rejected": [
+    "P408-K"
+  ],
+  "summary": "Four premises survive because the conflict, cost and emotion remain visible even when the reader knows all material facts. None relies on a hidden death, crime, identity reversal, secret claimant or mystery object.",
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}
