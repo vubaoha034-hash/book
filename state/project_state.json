@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T04:46:08.775Z",
+  "updated_at": "2026-09-25T05:07:13.601Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,43 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": null,
+  "active_task": {
+    "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+    "phase": "FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION",
+    "phase_ordinal": 401,
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+    "task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+    "execution_scope": "Exactly one isolated A1 local-passage prose pilot using FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1. No best-of-N, no parallel candidates, no automatic retry, no A2, no second window, no human review before all required hidden gates clear.",
+    "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "writer_visible_projection": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+    "writer_visible_projection_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
+    "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+    "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
+    "prose_generation_authorized": true,
+    "prose_generation_scope": "ONE_LOCAL_PASSAGE_A1_ONLY",
+    "fresh_writer_authorized": true,
+    "user_delivery_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion_authorized": false,
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE401_EXECUTE_SINGLE_ISOLATED_A1",
+        "parameters": {
+          "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+          "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
+        }
+      },
+      {
+        "action_id": "PHASE401_STORE_FREEZE_AND_GATE_A1",
+        "parameters": {
+          "inbox": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+          "frozen": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt"
+        }
+      }
+    ],
+    "next_action": "Execute exactly one isolated fresh-writer A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+    "current_execution_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json"
+  },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -179,14 +215,17 @@
     "YMGQ_writing_paused": true,
     "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE400_ARCHITECTURE_FREEZE",
     "current_writing_authorization_scope": {
-      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE400_CLOSE",
+      "kind": "PHASE401_ONE_FOCAL_LOCAL_PASSAGE_A1_ONLY",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": false,
-      "prose_generation_authorized": false,
-      "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
-      "architecture_ready_receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json"
+      "fresh_writer_authorized": true,
+      "prose_generation_authorized": true,
+      "best_of_n": false,
+      "retry_authorized": false,
+      "A2_authorized": false,
+      "automatic_second_window": false,
+      "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -211,7 +250,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 78,
+    "logical_latest_checkpoint_sequence": 79,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -847,9 +886,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "No active task. Any prose pilot of FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 requires a separately authorized successor task. Do not create Phase401 automatically.",
-  "status": "PHASE400_CLOSED_ARCHITECTURE_READY_NO_SUCCESSOR_AUTHORIZED",
-  "active_task_contract": null,
+  "next_required_action": "Execute exactly one isolated fresh-writer A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "status": "PHASE401_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+  "active_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
   "last_completed_task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
   "last_completed_task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
   "source_state_refs": [
@@ -940,17 +979,37 @@
     {
       "path": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
       "role": "Phase400 architecture freeze and audit receipt; no prose transfer claim"
+    },
+    {
+      "path": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+      "role": "active Phase401 single local-passage prospective validation contract"
+    },
+    {
+      "path": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+      "role": "frozen Phase401 writer-visible Lin Qiao local-view projection"
+    },
+    {
+      "path": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+      "role": "frozen Phase401 single A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase401 readiness receipt with first-audit block, repair and final PASS"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "No separately authorized prose pilot exists after Phase400 architecture-design close"
+    "Phase401 A1 isolated local-passage execution, verbatim freeze and hidden gate evaluation are pending"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE400_CLOSE"
+    "PHASE401_BEST_OF_N_FORBIDDEN",
+    "PHASE401_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE401_A2_NOT_AUTHORIZED",
+    "PHASE401_SECOND_WINDOW_NOT_AUTHORIZED",
+    "PHASE401_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1020,7 +1079,11 @@
     "Phase400 causal diagnosis selected FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
     "Phase400 successor execution schema FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 committed and audited PASS",
     "Phase400 architecture-ready receipt committed with no prose-transfer claim",
-    "Phase400 closed as architecture-design complete without fiction generation or Phase401 creation"
+    "Phase400 closed as architecture-design complete without fiction generation or Phase401 creation",
+    "Phase401 successor validation task created after explicit user authorization",
+    "Phase401 Lin Qiao local-view projection built from immutable NS02",
+    "Phase401 first readiness audit blocked coordinator control metadata leakage and repair was applied",
+    "Phase401 repaired local-view and runner final readiness audit PASS"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1137,6 +1200,27 @@
     "prose_generated": false,
     "prospective_prose_test_performed": false,
     "phase401_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase401_state": {
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+    "task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+    "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "local_view": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+    "local_view_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
+    "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+    "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
+    "readiness_receipt": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "candidate_stored": false,
+    "candidate_frozen": false,
+    "user_delivery_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }
