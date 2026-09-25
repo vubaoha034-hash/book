@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-24T12:49:18.714Z",
+  "updated_at": "2026-09-25T00:37:12.486Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,37 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": {
-    "task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
-    "phase": "AUTHOR_INPUT_REPRESENTATION_REDESIGN",
-    "phase_ordinal": 398,
-    "status": "ARCHITECTURE_DESIGN_FROZEN_READY_FOR_STORY_PACKET_BUILD",
-    "task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
-    "execution_scope": "Phase398 is an architecture-only successor after Phase397 negative transfer settlement. SCENE_FIELD_AUTHOR_PACKET_V1 design and schema are frozen/audited. Only one genuinely new NS02 story-specific scene-field packet may now be built and audited. No fresh writer or prose generation is authorized.",
-    "YMGQ_writing_authorized": false,
-    "YMGQ_span_growth_authorized": false,
-    "full_manuscript_rewrite_authorized": false,
-    "architecture_promotion_authorized": false,
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE398_BUILD_STORY_SPECIFIC_SCENE_FIELD_PACKET",
-        "parameters": {
-          "output_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json"
-        }
-      },
-      {
-        "action_id": "PHASE398_AUDIT_FREEZE_STORY_SPECIFIC_PACKET",
-        "parameters": {
-          "source_path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
-          "receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json"
-        }
-      }
-    ],
-    "next_action": "Build one genuinely new NS02 story-specific SCENE_FIELD_AUTHOR_PACKET_V1, audit it for sequence leakage, and freeze it. Do not generate prose.",
-    "current_execution_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
-  },
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -207,17 +177,16 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_ACTIVE_NO_PROSE",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE398_PACKET_FREEZE",
     "current_writing_authorization_scope": {
-      "kind": "PHASE398_STORY_PACKET_BUILD_ONLY_NO_PROSE",
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE398_CLOSE",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
-      "story_packet_build_authorized": true,
-      "story_packet_output": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
-      "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json"
+      "frozen_packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "freeze_receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -242,7 +211,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 73,
+    "logical_latest_checkpoint_sequence": 74,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -625,7 +594,8 @@
     "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
     "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
     "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
-    "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1"
+    "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+    "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -875,11 +845,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Build and audit/freeze one genuinely new NS02 SCENE_FIELD_AUTHOR_PACKET_V1. Do not run a fresh writer or generate prose.",
-  "status": "PHASE398_ACTIVE_STORY_PACKET_BUILD_NO_PROSE",
-  "active_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
-  "last_completed_task_id": "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
-  "last_completed_task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+  "next_required_action": "No active task. Any prose test using the frozen NS02 packet requires a separately authorized successor task and a fresh isolated writer context.",
+  "status": "PHASE398_CLOSED_NS02_PACKET_FROZEN_NO_SUCCESSOR_AUTHORIZED",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+  "last_completed_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -916,18 +886,25 @@
     {
       "path": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
       "role": "Phase398 architecture design freeze and audit receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "role": "frozen Phase398 NS02 writer-visible scene-field packet; final audit PASS"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+      "role": "Phase398 NS02 first-failure, repair and final packet-freeze receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "Phase398 NS02 story-specific scene-field packet has not yet been built, audited, or frozen"
+    "No separately authorized successor prose test exists after Phase398 close"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "PHASE398_FRESH_WRITER_NOT_AUTHORIZED",
-    "PHASE398_PROSE_GENERATION_NOT_AUTHORIZED"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE398_CLOSE"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -935,7 +912,10 @@
     "Generate Phase397 A4 without a separate explicit Phase397 authorization",
     "Create Phase398 before Phase397 is separately settled",
     "Retry Phase397 A4 under the same silent-scene-to-renderer architecture",
-    "Treat additional anti-storyboard prompt wording as a materially new mechanism"
+    "Treat additional anti-storyboard prompt wording as a materially new mechanism",
+    "Modify the frozen Phase398 NS02 packet after its PASS receipt; future changes require a new version/task",
+    "Run a fresh writer from Phase398 without a separately authorized successor task",
+    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof"
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -957,18 +937,44 @@
     "Phase397 closed as negative transfer result after A3 pre-human anti-storyboard block; no A4 authorized",
     "Phase397 settlement preserves bounded dialogue-surface control while rejecting narrative-transportation transfer",
     "Phase398 successor architecture task created after explicit user continuation authorization",
-    "Phase398 SCENE_FIELD_AUTHOR_PACKET_V1 design and schema frozen/audited; story-specific packet build is next and prose remains unauthorized"
+    "Phase398 SCENE_FIELD_AUTHOR_PACKET_V1 design and schema frozen/audited; story-specific packet build is next and prose remains unauthorized",
+    "Phase398 NS02 scene-field author packet created as a genuinely new old-photo-studio story",
+    "Phase398 NS02 first packet audit blocked five writer-visible experiment-history leaks and preserved the failure",
+    "Phase398 NS02 packet repaired by removing prior-story/evaluator metadata from writer-visible context",
+    "Phase398 NS02 final immutable audit PASS: no sequence fields, no numeric sequence keys, no writer-visible experiment leakage",
+    "Phase398 architecture and NS02 packet-build task closed without prose generation"
   ],
   "phase398_state": {
-    "status": "ARCHITECTURE_DESIGN_FROZEN_READY_FOR_STORY_PACKET_BUILD",
+    "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
     "task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
     "design_doc": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
     "schema": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
     "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
     "target_representation": "SCENE_FIELD_AUTHOR_PACKET_V1",
-    "target_story_packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "ns02_packet": {
+      "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+      "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+      "audit_receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+      "first_audit": "BLOCK_WRITER_VISIBLE_EXPERIMENT_LEAKAGE",
+      "final_audit": "PASS"
+    },
     "prose_generation_authorized": false,
     "fresh_writer_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase398_settlement": {
+    "status": "CLOSED_NS02_SCENE_FIELD_PACKET_AUDITED_AND_FROZEN_NO_PROSE",
+    "receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+    "packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "packet_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "first_audit": "BLOCK_WRITER_VISIBLE_EXPERIMENT_LEAKAGE",
+    "repair_applied": true,
+    "final_audit": "PASS",
+    "writer_visible_sequence_leakage": false,
+    "writer_visible_experiment_leakage": false,
+    "fresh_writer_authorized": false,
+    "prose_generation_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }
