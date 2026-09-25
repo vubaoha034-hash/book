@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "VALIDATION_CONTRACT_NOT_A_SECOND_TASK",
+  "project_id": "novel-distillation",
+  "phase": 404,
+  "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+  "contract_id": "PHASE404_SINGLE_A1_VALIDATION_CONTRACT_V1",
+  "status": "FROZEN_PENDING_ARCHITECTURE_AUDIT",
+  "architecture_under_test": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+  "controlled_payload": {
+    "writer_visible_projection": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+    "writer_visible_projection_sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+    "reuse_without_modification": true,
+    "reader_drive_architecture": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+    "actor_commitments": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+    "actor_commitments_sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469"
+  },
+  "changed_variable": {
+    "phase403_runner": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+    "phase404_runner": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+    "only_change": "response-surface wrapper and minimal outer execution prompt",
+    "literary_payload_changed": false
+  },
+  "prospective_pilot_artifacts": {
+    "writer_entry": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+    "readiness_receipt": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+    "inbox": "state/inbox/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+    "frozen": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+    "post_generation_settlement": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json"
+  },
+  "response_boundary_requirements": [
+    "The raw assistant response is exactly one fiction prose body.",
+    "Line 1 is fiction prose, not an artifact label.",
+    "No content appears before the fiction body.",
+    "No content appears after the final fiction paragraph.",
+    "No structured envelope or wrapper surrounds the prose.",
+    "Raw output is frozen before any evaluation."
+  ],
+  "A1_execution_budget": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "separate_writer_chat_required": true,
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "required_hidden_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "output_contract_causal_test": {
+    "baseline": "PHASE403_NS02_A1",
+    "baseline_result": "BLOCK_TITLE_PLUS_TRAILING_EDITORIAL_ADVICE",
+    "success_condition": "The raw Phase404 assistant response contains prose body only and all other required hidden gates remain clear/no-block.",
+    "failure_condition": "Any leading artifact label, preface, trailing editorial/helpful text, self-evaluation, explanation, or second section appears in the raw assistant output."
+  },
+  "forbidden": [
+    "modify Phase403 literary payload",
+    "modify Phase403/402 frozen evidence",
+    "trim or clean Phase404 raw output before freezing",
+    "best-of-N",
+    "parallel candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second window",
+    "structured output envelope",
+    "enter human review before all required gates clear",
+    "create Phase405 automatically"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "pilot_decision": "PENDING_ARCHITECTURE_AUDIT",
+  "next_action": "Audit Phase404 diagnosis, response-boundary schema and this contract. If and only if architecture-ready PASS, build one frozen runner and readiness receipt before authorizing a single isolated A1."
+}
