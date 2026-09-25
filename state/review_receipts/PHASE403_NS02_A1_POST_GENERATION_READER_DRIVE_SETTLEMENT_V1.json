@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 403,
+  "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+  "attempt": "A1",
+  "event_type": "POST_GENERATION_READER_DRIVE_SETTLEMENT",
+  "status": "BLOCK_REJECT_A1_ATTEMPT_EXHAUSTED_OUTPUT_CONTRACT_ONLY_REQUIRED_GATE_FAILURE",
+  "evidence_head_before_settlement": "aa3aec72abc61f3e50d2d90aaa90160574b70d3b",
+  "architecture_under_test": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+  "storage": {
+    "writer_chat_output": {
+      "page_id": 77,
+      "chars": 2153,
+      "sha256": "7ccb2b47c7a45adee4d0f4a01a823ca4f66cbb8d1d1c195f59a492d9e0bc44e1",
+      "source_page_title": "中文小说正文"
+    },
+    "inbox": {
+      "path": "state/inbox/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "chars": 2153,
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "chars": 2153,
+      "exact_writer_output": true
+    },
+    "inbox_and_frozen_byte_identical": true,
+    "storage_normalization": "NONE"
+  },
+  "source_fidelity": {
+    "verdict": "CLEAR",
+    "identities_present": [
+      "林乔",
+      "林国忠",
+      "吴兰"
+    ],
+    "invented_xuwen_departure_resolution": false,
+    "invented_magic_evidence": false,
+    "signature_requirement_preserved": true,
+    "worsening_water_condition_preserved": true,
+    "wet_wiring_condition_preserved": true,
+    "lin_guozhong_actor_commitment_consistent": true,
+    "wu_lan_actor_commitment_consistent": true,
+    "note": "No hard source lock or focal-knowledge boundary violation located."
+  },
+  "writer_output_contract": {
+    "verdict": "BLOCK",
+    "violations": [
+      "Title-like label '小说正文' appears before prose despite no-title instruction.",
+      "Three non-prose editorial suggestion lines appear after the frozen prose."
+    ],
+    "preserved_verbatim": [
+      "小说正文",
+      "让父女冲突再具体一些",
+      "把签字线索收得更有回响",
+      "减少重复的搬运动作"
+    ],
+    "disposition": "Preserved verbatim in inbox and frozen output. No cleanup or deletion allowed."
+  },
+  "deterministic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "script": "scripts/check_dialogue_adjacency.py",
+    "run_count": 9,
+    "blocked_run_count": 0,
+    "note": "CLEAR is only a structural tripwire result and not literary approval."
+  },
+  "semantic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "rule": "rules/dialogue-mechanical-blocker-v1.md",
+    "located_assessment": [
+      "Lin Qiao's requests to sign are often unanswered; Lin Guozhong continues his independent salvage objective.",
+      "Wu Lan's speech remains bounded to practical safety/handover activity.",
+      "The single '抬哪儿？/上面。' pair is brief practical coordination and does not form a repeated shared-agenda response machine."
+    ],
+    "exact_adjacency_completion_repeated": false,
+    "single_shared_conversational_agenda_repeated": false,
+    "turn_order_identity_dominant": false,
+    "gesture_padding_without_geometry_change": false
+  },
+  "hidden_global_optimization_diagnostic": {
+    "verdict": "NO_BLOCK",
+    "rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "signatures": {
+      "AS_01_READER_FACING_INFERENCE_CLOSURE_CADENCE": "NO_RECURRING_SUPPORT",
+      "AS_02_MAXIMIZED_FUNCTIONAL_DENSITY_NO_INCIDENTAL_LIFE": "NO_BLOCK",
+      "AS_03_UNIFORM_CLUE_INFERENCE_ACTION_CYCLE": "NO_RECURRING_SUPPORT",
+      "AS_04_CHARACTER_AS_TASK_PROCESSOR": "NO_BLOCK",
+      "AS_05_CAUSAL_NEATNESS_AND_EXECUTIVE_SUMMARY_NARRATOR": "PARTIAL_SINGLE_MOTIVE_EXPOSITION_NOT_RECURRING",
+      "AS_06_LOW_SOCIAL_IDIOSYNCRASY_GENERIC_VOICE": "NO_BLOCK",
+      "AS_07_ENGINEERED_REVEAL_ESCALATION": "UNPROVEN"
+    },
+    "note": "The passage contains one explicit focal-stake exposition ('这件事做完，她就走...'), but does not repeatedly convert every object/action into explanation or clue closure."
+  },
+  "response_ownership_residual": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "Lin Guozhong repeatedly continues salvage instead of completing Lin Qiao's conversational agenda.",
+      "Wu Lan remains tied to independent safety/inventory commitments.",
+      "No multi-turn exact-response chain survives."
+    ]
+  },
+  "interpretation_liquidity_residual": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "No unlocked memory fragment is present.",
+      "Objects and handling actions are not repeatedly liquidated into childhood memory plus relationship thesis.",
+      "The main explicit interpretation is the factual present stake that Lin Qiao intends to leave after the handover."
+    ]
+  },
+  "reader_drive_entry_state": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Water ingress is active in the opening.",
+      "The unsigned signature field appears within the opening blocks.",
+      "Lin Guozhong is already occupied with salvage while the signature remains unresolved."
+    ],
+    "neutral_setup_before_live_vector": "MINIMAL"
+  },
+  "neutral_salience_flooding": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "The Phase402 display-cabinet/sample/frame inventory cluster does not recur.",
+      "Most visible details are coupled to water/electrical risk, the unsigned form, salvage constraints or the finite handover window.",
+      "Some incidental street/light description remains but does not dominate the passage."
+    ]
+  },
+  "focal_personal_cost_visibility": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Lin Qiao explicitly notes she did not intend to remain until after dawn.",
+      "She states internally that once this is done she will leave and does not intend to leave a 'next time' for the place.",
+      "The unresolved signature and worsening conditions therefore carry a visible cost of delay."
+    ]
+  },
+  "live_open_outcome_visibility": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Lin Qiao asks for the signature more than once and Lin Guozhong does not sign.",
+      "The environment worsens while the unsigned form remains present.",
+      "The passage ends with the signature line still blank and rain still entering."
+    ],
+    "outcome_precommitted": false
+  },
+  "paragraph_geometry_diagnostic_only": {
+    "paragraph_count": 103,
+    "one_sentence_or_less_count": 86,
+    "one_sentence_or_less_ratio": 0.835,
+    "length_le_16_count": 72,
+    "length_le_16_ratio": 0.699,
+    "blocker_status": "DIAGNOSTIC_ONLY"
+  },
+  "causal_validation_result": {
+    "required_hidden_gates_except_output_contract": "CLEAR_OR_NO_BLOCK",
+    "output_contract": "BLOCK",
+    "reader_drive_architecture_hidden_signal": "POSITIVE_BUT_NOT_HUMAN_VALIDATED",
+    "overall": "NOT_VALIDATED_DUE_REQUIRED_OUTPUT_CONTRACT_FAILURE",
+    "human_review_allowed": false,
+    "forbidden_claims": [
+      "Phase403 improved actual-human reader drive",
+      "Phase403 improved suspense or emotion",
+      "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 is validated",
+      "Phase403 is ready for long-form or production promotion"
+    ]
+  },
+  "settlement": {
+    "candidate_rejected_whole": true,
+    "required_gate_failures": [
+      "WRITER_OUTPUT_CONTRACT_BLOCK"
+    ],
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "best_of_n_used": false,
+    "parallel_candidates_created": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "local_repair_forbidden": true,
+    "user_delivery_authorized": false,
+    "actual_human_review_performed": false,
+    "phase404_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Close Phase403 as a single-attempt blocked validation. Preserve the hidden positive reader-drive signal, but do not enter actual-human review because writer-output contract BLOCKED. Do not repair/retry, create A2/second window, or create Phase404 automatically."
+}
