@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 399,
+  "task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+  "attempt": "A1",
+  "event_type": "POST_GENERATION_GATE_SETTLEMENT",
+  "status": "BLOCK_REJECT_A1_ATTEMPT_EXHAUSTED",
+  "evidence_head_before_settlement": "79bc5e87aba6a3f76b15fa057b6373758d3d91ed",
+  "storage": {
+    "writer_chat_output": {
+      "chars": 8756,
+      "sha256": "bebdd2aaa7de4ead828706b432bf65803b0b30c2b76283f1226b415de4a15d0d",
+      "terminal_lf": false
+    },
+    "inbox": {
+      "path": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "chars": 8757,
+      "sha256": "27ddbd103b77f04142f53b89cc336b6956452e48acb11be8a234c9af12f92ffe",
+      "terminal_lf": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "chars": 8757,
+      "sha256": "27ddbd103b77f04142f53b89cc336b6956452e48acb11be8a234c9af12f92ffe",
+      "terminal_lf": true
+    },
+    "normalization": {
+      "kind": "GITHUB_WEB_SINGLE_TERMINAL_LF_ONLY",
+      "prose_equal_after_removing_single_terminal_lf": true,
+      "normalized_sha256": "bebdd2aaa7de4ead828706b432bf65803b0b30c2b76283f1226b415de4a15d0d",
+      "inbox_and_frozen_raw_equal": true
+    }
+  },
+  "source_fidelity": {
+    "verdict": "CLEAR_HARD_LOCKS",
+    "exact_names_present": [
+      "林乔",
+      "林国忠",
+      "吴兰",
+      "许雯"
+    ],
+    "film_opened": false,
+    "film_images_revealed": false,
+    "mother_departure_fully_explained": false,
+    "father_fully_vindicated": false,
+    "mother_fully_condemned": false,
+    "handover_materially_advanced": true,
+    "provisional_practical_alignment_present": true,
+    "departure_remains_unsettled": true,
+    "film_content_unknown_at_end": true,
+    "observed_nonlocked_local_detail": [
+      "林记照相"
+    ],
+    "note": "The observed shop-name rendering is not in the frozen packet, but it does not contradict a locked fact. This CLEAR applies only to hard source locks and does not override other blockers."
+  },
+  "writer_output_contract": {
+    "verdict": "BLOCK",
+    "required": "Directly output complete Chinese novel prose only; no analysis or self-evaluation.",
+    "located_non_prose_tail": [
+      "强化许雯离开的核心谜团",
+      "压缩重复的搬运清理段落",
+      "让胶卷线索更晚更狠地落下"
+    ],
+    "disposition": "Preserved verbatim in inbox and frozen output; no cleanup or deletion allowed."
+  },
+  "deterministic_dialogue_gate": {
+    "verdict": "BLOCK",
+    "script": "scripts/check_dialogue_adjacency.py",
+    "run_count": 43,
+    "blocked_run_count": 21,
+    "representative_blocks": [
+      {
+        "start_block": 189,
+        "end_block": 214,
+        "turn_count": 18,
+        "short_turn_ratio": 0.9444,
+        "question_count": 8,
+        "average_interturn_narration_chars": 4.06,
+        "reasons": [
+          "ALTERNATING_QA_CHAIN",
+          "QUESTION_ANSWER_LADDER",
+          "RAPID_SHORT_TURN_LADDER"
+        ]
+      },
+      {
+        "start_block": 411,
+        "end_block": 444,
+        "turn_count": 27,
+        "short_turn_ratio": 0.963,
+        "question_count": 5,
+        "average_interturn_narration_chars": 2.27,
+        "reasons": [
+          "ALTERNATING_QA_CHAIN",
+          "QUESTION_ANSWER_LADDER",
+          "RAPID_SHORT_TURN_LADDER"
+        ]
+      }
+    ],
+    "hard_rule": "A deterministic BLOCK is sufficient to reject the frozen candidate."
+  },
+  "semantic_dialogue_gate": {
+    "verdict": "BLOCK",
+    "rule": "rules/dialogue-mechanical-blocker-v1.md",
+    "located_stretches": [
+      {
+        "description": "Film provenance/content interrogation chain",
+        "examples": [
+          "谁的？ / 以前留下的。 / 谁留下的？",
+          "她拍的？ / 不知道。 / 她的是什么意思？ / 她放在我这里的。",
+          "里面是什么？ / 不知道。 / 你没洗？ / 没有。 / 这么多年？ / 嗯。"
+        ],
+        "criteria": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "TURN_ORDER_SPEAKER_IDENTITY",
+          "GESTURE_PADDING_WITHOUT_GEOMETRY_CHANGE"
+        ]
+      },
+      {
+        "description": "What-to-do-with-the-film chain",
+        "examples": [
+          "你准备怎么办？ / 什么？ / 那卷胶卷。 / 先带走。 / 然后呢？ / 不知道。",
+          "受潮了能不能洗都不知道。 / 得先看乳剂。 / 你看得出来？ / 差不多。"
+        ],
+        "criteria": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "TURN_ORDER_SPEAKER_IDENTITY"
+        ]
+      }
+    ],
+    "note": "Located stretches strongly satisfy at least two semantic blocker criteria."
+  },
+  "anti_storyboard_immersion_precheck": {
+    "verdict": "BLOCK",
+    "paragraph_count": 658,
+    "one_sentence_or_less_count": 631,
+    "one_sentence_or_less_ratio": 0.959,
+    "length_le_16_count": 547,
+    "length_le_16_ratio": 0.8313,
+    "located_pattern": "Extremely high one-line/short-paragraph density; scene remains visibly segmented into micro-cards despite unordered input representation.",
+    "note": "This is a post-freeze diagnostic; no repair is authorized."
+  },
+  "settlement": {
+    "candidate_rejected_whole": true,
+    "rejection_reasons": [
+      "WRITER_OUTPUT_CONTRACT_BLOCK",
+      "DETERMINISTIC_MECHANICAL_DIALOGUE_BLOCK",
+      "SEMANTIC_MECHANICAL_DIALOGUE_BLOCK",
+      "ANTI_STORYBOARD_IMMERSION_BLOCK"
+    ],
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "local_repair_forbidden": true,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "user_delivery_authorized": false,
+    "drive_upload_authorized": false,
+    "actual_human_review_performed": false,
+    "accepted_checkpoint_advance": false,
+    "phase400_authorized": false
+  },
+  "next_action": "Close Phase399 as a blocked single-attempt validation. Do not repair A1, do not retry, do not create A2 or Phase400 automatically. Any successor requires separate explicit authorization and should treat the scene-field architecture as not yet validated for low-mechanical-dialogue / immersion transfer."
+}
