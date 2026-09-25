@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 401,
+  "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+  "event_type": "A1_WRITER_ENTRY_READINESS",
+  "status": "READY_SINGLE_ISOLATED_A1",
+  "source_architecture": {
+    "id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "schema": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+    "sha256": "5798b5585edf75157ee6d74445e061503988cf1de4438212055485b556e09aaa"
+  },
+  "controlled_world_source": {
+    "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3"
+  },
+  "writer_visible_projection": {
+    "path": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+    "sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
+    "focal_character_id": "lin_qiao",
+    "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE"
+  },
+  "writer_entry": {
+    "path": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+    "sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
+    "immutable_commit": "1f0aca74d3e0dd87fd9a693876d73e360d5587c2",
+    "embedded_projection_exact_match": true
+  },
+  "first_audit": {
+    "status": "BLOCK_COORDINATOR_CONTROL_METADATA_VISIBLE",
+    "issue": "The first projection contained coordinator-only control metadata including the key full_terminal_world_state_included=false. No terminal-state content leaked, but the architecture/control vocabulary itself was writer-visible.",
+    "disposition": "REPAIR_BEFORE_FREEZE"
+  },
+  "repair": {
+    "status": "APPLIED",
+    "change": "Removed the entire coordinator-only control object from the writer-visible projection and rebuilt the runner from the repaired projection.",
+    "story_or_character_facts_changed": false,
+    "frozen_phase398_or_phase399_or_phase400_artifacts_modified": false
+  },
+  "final_audit": {
+    "status": "PASS",
+    "task_http_200": true,
+    "projection_http_200": true,
+    "runner_http_200": true,
+    "embedded_projection_exact_match": true,
+    "historical_phase_labels_visible": false,
+    "evaluator_labels_or_thresholds_visible": false,
+    "non_focal_private_objectives_visible": false,
+    "non_focal_private_knowledge_visible": false,
+    "full_terminal_world_state_visible": false,
+    "whole_scene_completion_required": false,
+    "use_every_detail_required": false,
+    "resolve_larger_scene_required": false,
+    "paragraph_length_quota_visible": false,
+    "question_count_quota_visible": false,
+    "best_of_n": false
+  },
+  "execution_authorization": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "fresh_writer_authorized": true,
+    "prose_generation_authorized": true,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "post_generation_requirements": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization_diagnostic": "NO_BLOCK_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Activate Phase401 control state for exactly one isolated A1 fresh-writer run. Do not retry automatically."
+}
