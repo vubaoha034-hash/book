@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "artifact_id": "PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence_head": "617e4fa9f6b67d1c8c8f46c326edf83f103d64ad",
+  "evidence": {
+    "phase407_human_rejection": "state/review_receipts/PHASE407_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "phase407_hidden_gate_state": "ALL_REQUIRED_HIDDEN_GATES_CLEAR_BEFORE_HUMAN_REJECTION",
+    "phase370_human_positive": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+    "phase370_positive_text": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt"
+  },
+  "contrastive_findings": [
+    {
+      "dimension": "immediate consequence magnitude",
+      "phase407": "Delay mainly prolongs handover and time with estranged father.",
+      "phase370": "A man may kill a prisoner while the group is under active attack.",
+      "inference": "Phase407 consequence is real but too weak to command reader attention."
+    },
+    {
+      "dimension": "active unknown",
+      "phase407": "When/if father will sign.",
+      "phase370": "Why a dead teenager's burned identity marker causes recognition, fear, targeted arrows and a hidden name discrepancy.",
+      "inference": "Phase407 unknown is procedural; Phase370 unknown can reframe character identity and prior events."
+    },
+    {
+      "dimension": "adversarial agency",
+      "phase407": "No actor actively opposes the focal objective beyond passive non-cooperation and physical conditions.",
+      "phase370": "Multiple human agents want incompatible outcomes; unseen attackers target evidence.",
+      "inference": "Human opposition creates decisions, not merely delay."
+    },
+    {
+      "dimension": "irreversibility",
+      "phase407": "Most local actions can be postponed or resumed.",
+      "phase370": "Death, loss of evidence, identity exposure and escape through the alley create irreversible branches.",
+      "inference": "Reader pull rises when the next action can permanently change what remains possible."
+    },
+    {
+      "dimension": "revaluation cadence",
+      "phase407": "New details mostly confirm the same situation: water rises, work continues, signature remains blank.",
+      "phase370": "Each new event changes the meaning of the last: knife -> burned tag -> windows close -> arrows target tag -> true name spoken.",
+      "inference": "A strong scene engine does not merely add activity; it repeatedly reprices the reader's model."
+    }
+  ],
+  "causal_conclusion": {
+    "verdict": "PREMISE_SCENE_ENGINE_FAILURE_SUPPORTED_AS_PRIMARY_NEXT_DIAGNOSTIC_TARGET",
+    "boundary": "This does not prove topic alone is the sole cause or that prose execution is solved. It proves that further prose repair on the same low-energy handover engine is not justified before premise validation.",
+    "rejected_next_moves": [
+      "rewrite Phase407 prose",
+      "add more emotion words",
+      "add another hidden prose rule",
+      "manufacture suspense with random secret objects",
+      "generate a full new scene before premise selection"
+    ]
+  },
+  "minimum_engine_requirements": [
+    "A concrete human want that matters now.",
+    "A blocking force with agency or a genuinely irreversible constraint.",
+    "A near-term loss/change that cannot simply be postponed without consequence.",
+    "An unknown whose answer would materially change how the reader understands a person, relationship, danger or choice.",
+    "At least one plausible event that can reprice the current situation rather than merely repeat it.",
+    "The premise must create a natural reader question before prose style is considered."
+  ],
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}

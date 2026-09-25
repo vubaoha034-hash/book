@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 100,
-  "recorded_at": "2026-09-25T11:10:00Z",
+  "sequence": 101,
+  "recorded_at": "2026-09-25T11:20:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase407 is durably closed after actual-human literary rejection. All required hidden gates had cleared, including hard identity fidelity and focal personal-cost visibility, but the human reader reported complete lack of immersion, no emotion, no suspense and that the passage was very bad, while suspecting the topic/scene itself. No successor is authorized.",
+  "active_task_ids": [
+    "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
+  ],
+  "current_focus": "Phase408 is the sole active successor. After Phase407 hidden-gate success but decisive human literary rejection, prose generation is paused. Six premise kernels are frozen for actual-human attraction selection. No prose may be generated until at least one premise creates genuine human desire to continue.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -299,7 +301,11 @@
     "Phase407 actual-human review received and preserved verbatim.",
     "Phase407 actual-human verdict: complete immersion failure, no emotion, no suspense, very poor overall attraction.",
     "Phase407 human hypothesis recorded: current topic/scene may itself be the problem; this is not yet treated as sole proven cause.",
-    "Phase407 closed; no retry, rewrite or Phase408 authorized."
+    "Phase407 closed; no retry, rewrite or Phase408 authorized.",
+    "Phase408 explicit successor authorization received after Phase407 checkpoint 100 close.",
+    "Phase408 contrastive diagnosis supports premise/scene-engine weakness as the primary next diagnostic target, without claiming topic alone is the sole cause.",
+    "Phase370 positive evidence contrasted against Phase407: consequence magnitude, active unknown, adversarial agency, irreversibility and revaluation cadence identified as engine-level differences.",
+    "Phase408 premise-only choice pack frozen; no fiction prose generated."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1042,5 +1048,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Close Phase407. Preserve hidden-gate success and the actual-human rejection separately. Do not retry/rewrite Phase407 or create Phase408 automatically. Any successor should first diagnose premise/scene-selection failure versus prose-execution failure."
+  "next_action": "Deliver the Phase408 premise-only choice pack to the actual human and record selection/reject-all. Do not generate prose."
 }

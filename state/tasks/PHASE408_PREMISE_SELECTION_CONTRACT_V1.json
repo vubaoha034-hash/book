@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "PREMISE_SELECTION_CONTRACT_NOT_PROSE_VALIDATION",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_PREMISE_SELECTION_CONTRACT_V1",
+  "status": "FROZEN_AWAITING_ACTUAL_HUMAN_PREMISE_VERDICT",
+  "objective": "Validate story-engine attraction before any prose generation.",
+  "candidate_pack": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
+  "human_question": "Which premise, if any, makes you genuinely want to know what happens next?",
+  "acceptance": {
+    "minimum": "At least one premise receives an unforced actual-human desire-to-continue signal.",
+    "not_enough": [
+      "technically logical",
+      "could be written well",
+      "interesting setting only",
+      "model evaluator likes it"
+    ],
+    "reject_all_allowed": true
+  },
+  "forbidden": [
+    "fiction prose generation before actual-human premise selection",
+    "select a winner by model score",
+    "best-of-N prose",
+    "automatic prose retry",
+    "reuse Phase407 scene as default",
+    "treat a premise selection as literary acceptance"
+  ],
+  "inherited_for_future_only": [
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "Phase405 causal ownership / anti-regression architecture",
+    "Phase406 focal cost carrier",
+    "Phase407 hard identity literal binding"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Present the frozen premise kernel choice pack to the actual human. Persist the verdict before any prose successor is considered."
+}

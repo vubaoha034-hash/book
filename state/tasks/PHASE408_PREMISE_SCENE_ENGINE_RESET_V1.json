@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "phase_ordinal": 408,
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_PREMISE_SELECTION",
+  "purpose": "Reset the premise/scene engine after Phase407 actual-human rejection despite all hidden prose gates clearing. Validate reader pull at premise level before any further fiction generation.",
+  "authorization": {
+    "source": "EXPLICIT_USER_CONTINUE_NEXT_STEP_AFTER_PHASE407_CLOSE",
+    "predecessor_checkpoint_sequence": 100,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "diagnosis": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
+  "premise_pack": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
+  "selection_contract": "state/tasks/PHASE408_PREMISE_SELECTION_CONTRACT_V1.json",
+  "architecture_ready_receipt": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": true,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Deliver the Phase408 premise-only choice pack to the actual human and record selection/reject-all. Do not generate prose."
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1",
+  "mode": "PREMISE_ONLY_NO_PROSE",
+  "instruction": "Judge only whether the underlying story makes you want to know what happens next. Do not judge sentence style.",
+  "candidates": [
+    {
+      "id": "P408-A",
+      "premise": "一个失踪十五年的母亲突然被法院宣告死亡。女儿回乡替父亲卖掉老照相馆，却在当晚发现：父亲过去十五年每个月都在给母亲一个从未停机的号码交话费，而那个号码昨晚刚打回来一次。",
+      "engine": {
+        "immediate_want": "完成卖店和死亡后的手续，离开。",
+        "blocking_force": "父亲隐瞒持续联系痕迹。",
+        "irreversible_pressure": "店即将完成出售，旧物和记录将被清空。",
+        "active_unknown": "母亲到底死没死，父亲知道多少。",
+        "revaluation_potential": "一次来电可以重写十五年的家庭叙事。"
+      }
+    },
+    {
+      "id": "P408-B",
+      "premise": "父亲病危，女儿赶回去签放弃抢救书。医生却告诉她：父亲昏迷前最后一次清醒时，指定绝不能让她见一个正在医院走廊等他的陌生男孩。男孩十七岁，身份证上的父亲姓名正是她父亲。",
+      "engine": {
+        "immediate_want": "决定父亲最后的医疗选择。",
+        "blocking_force": "一个与父亲身份直接冲突的陌生少年出现。",
+        "irreversible_pressure": "父亲可能随时死亡，答案会永久消失。",
+        "active_unknown": "少年是谁，父亲为什么阻止女儿见他。",
+        "revaluation_potential": "每个新证据都可能改变女儿对父亲和自己家庭的理解。"
+      }
+    },
+    {
+      "id": "P408-C",
+      "premise": "一个男人出狱当天，发现当年亲手指认他杀人的弟弟在监狱门口等他。弟弟没有道歉，只递给他一把家门钥匙，说：‘妈昨晚死了。她留给你的东西，我没敢打开。’",
+      "engine": {
+        "immediate_want": "男人只想离开这家人。",
+        "blocking_force": "弟弟掌握母亲遗留物且曾是让他入狱的关键证人。",
+        "irreversible_pressure": "母亲已死，最后一次解释只能来自遗物和弟弟。",
+        "active_unknown": "弟弟当年为什么指认他，母亲留下了什么。",
+        "revaluation_potential": "遗物可能证明背叛、保护或更大的谎言。"
+      }
+    },
+    {
+      "id": "P408-D",
+      "premise": "婚礼开始前二十分钟，新娘收到一段监控：三年前已经葬掉的前男友，昨天晚上走进了她未婚夫经营的地下车库。她没有取消婚礼，而是决定先把仪式办完。",
+      "engine": {
+        "immediate_want": "完成婚礼同时确认影像真伪。",
+        "blocking_force": "未婚夫可能知道前男友仍活着。",
+        "irreversible_pressure": "婚礼正在发生，公开关系即将被确认。",
+        "active_unknown": "死去的人为什么出现，他和未婚夫是什么关系。",
+        "revaluation_potential": "每一次婚礼流程都可能与隐藏事实发生冲突。"
+      }
+    },
+    {
+      "id": "P408-E",
+      "premise": "独居老人死后，三个子女回家分遗产，发现遗嘱只有一句：房子留给‘真正照顾我最后三年的人’。三个人都以为写的是自己，直到门外来了一个他们谁也不认识的外卖员，手里有老人家的钥匙。",
+      "engine": {
+        "immediate_want": "确认继承权并处理遗产。",
+        "blocking_force": "陌生人拥有进入老人生活的真实证据。",
+        "irreversible_pressure": "老人已死，无法再直接解释。",
+        "active_unknown": "老人最后三年到底和谁生活、子女各自忽略了什么。",
+        "revaluation_potential": "每个子女自认为的孝顺都可能被具体事实推翻。"
+      }
+    },
+    {
+      "id": "P408-F",
+      "premise": "一个刑警追了十二年的失踪儿童案终于找到幸存者。女孩已经成年，却坚持说：当年把她拐走的人救了她，而真正想杀她的是报案寻找她十二年的亲生父亲。",
+      "engine": {
+        "immediate_want": "确认幸存者身份并完成案件。",
+        "blocking_force": "幸存者证词直接颠倒警方和家庭十二年的基本叙事。",
+        "irreversible_pressure": "旧案证据正在消失，关键涉案者已陆续死亡。",
+        "active_unknown": "当年究竟发生了什么，谁才是施害者。",
+        "revaluation_potential": "每条旧证据都可能在新证词下得到相反解释。"
+      }
+    }
+  ],
+  "selection_response": "User may choose A-F, rank a few, or reject all. Reject-all is valid and must trigger a new premise calibration rather than prose generation.",
+  "prose_generation_authorized": false
+}
