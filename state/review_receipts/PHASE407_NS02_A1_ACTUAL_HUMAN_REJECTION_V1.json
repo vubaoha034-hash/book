@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 407,
+  "task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "event_type": "ACTUAL_HUMAN_LITERARY_REVIEW",
+  "status": "ACTUAL_HUMAN_REJECTED",
+  "candidate": "state/frozen_outputs/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+  "candidate_sha256": "180dbb61d571186c5c3b84edaad291519477cbc84dc8b08c127520056dbee844",
+  "human_verbatim": "完全没有代入，非常不好看。情绪一点都没有。毫无悬念。我觉得是你这个题材的问题吧？",
+  "dimensions": {
+    "immersion": "FAIL_COMPLETE",
+    "overall_readability_or_attraction": "FAIL_VERY_BAD",
+    "emotion": "FAIL_NONE",
+    "suspense": "FAIL_NONE",
+    "ai_smell": "NOT_EXPLICITLY_RATED_IN_THIS_REVIEW",
+    "desire_to_continue": "NOT_EXPLICITLY_STATED_IN_THIS_REVIEW",
+    "first_boredom_or_fake_point": "NOT_SPECIFIED",
+    "human_hypothesis": "TOPIC_OR_SCENE_PREMISE_MAY_BE_THE_PROBLEM"
+  },
+  "governance": {
+    "human_result_overrides_hidden_gate_success": true,
+    "hidden_gate_clear_does_not_equal_literary_acceptance": true,
+    "no_rewrite_of_human_wording": true
+  },
+  "interpretation_boundary": {
+    "established": "The current bounded scene failed actual-human immersion, emotion and suspense despite all required hidden gates being clear.",
+    "not_established": "The topic alone is proven to be the sole cause.",
+    "next_diagnostic_need": "Distinguish premise/scene selection failure from prose execution failure before any new generation."
+  },
+  "accepted_checkpoint_advance": false,
+  "phase408_authorized": false
+}

@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T10:45:00Z",
+  "updated_at": "2026-09-25T11:10:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -177,19 +177,19 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE407_AWAITING_ACTUAL_HUMAN_LITERARY_REVIEW",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE407_HUMAN_REJECTION",
     "current_writing_authorization_scope": {
-      "kind": "PHASE407_HUMAN_REVIEW_ONLY",
-      "current_chat_allowed": true,
-      "user_visible_output": true,
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE407_HUMAN_REJECTION",
+      "current_chat_allowed": false,
+      "user_visible_output": false,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
       "retry_authorized": false,
       "A2_authorized": false,
       "second_window_authorized": false,
-      "human_review_authorized": true,
-      "settlement_receipt": "state/review_receipts/PHASE407_NS02_A1_POST_GENERATION_IDENTITY_SETTLEMENT_V1.json"
+      "human_review_authorized": false,
+      "human_review_receipt": "state/review_receipts/PHASE407_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -606,7 +606,8 @@
     "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
     "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
     "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
-    "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1"
+    "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+    "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -856,11 +857,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Deliver the immutable Phase407 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision. Do not create Phase408 automatically.",
-  "status": "PHASE407_A1_ALL_REQUIRED_HIDDEN_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
-  "active_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
-  "last_completed_task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
-  "last_completed_task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
+  "next_required_action": "Close Phase407. Preserve hidden-gate success and the actual-human rejection separately. Do not retry/rewrite Phase407 or create Phase408 automatically. Any successor should first diagnose premise/scene-selection failure versus prose-execution failure.",
+  "status": "PHASE407_CLOSED_ACTUAL_HUMAN_REJECTED_NO_SUCCESSOR_AUTHORIZED",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "last_completed_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1114,7 +1115,7 @@
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "Phase407 immutable A1 cleared all required hidden gates and is awaiting actual-human literary review."
+    "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1125,7 +1126,8 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
-    "PHASE406_A1_SOURCE_IDENTITY_BLOCK"
+    "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE407_HUMAN_REJECTION"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1180,7 +1182,10 @@
     "Create Phase406 without separate explicit authorization.",
     "Correct 吴岚 to 吴兰 inside frozen Phase406 A1 or treat corrected text as the same attempt.",
     "Retry Phase406 A1, create Phase406 A2/second window, or human-review the blocked Phase406 candidate.",
-    "Create Phase407 without separate explicit authorization."
+    "Create Phase407 without separate explicit authorization.",
+    "Treat Phase407 hidden-gate CLEAR as literary acceptance.",
+    "Retry or locally rewrite frozen Phase407 A1.",
+    "Create Phase408 without separate explicit authorization."
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -1936,7 +1941,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase407_state": {
-    "status": "ACTIVE_A1_ALL_REQUIRED_HIDDEN_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
+    "status": "CLOSED_ACTUAL_HUMAN_REJECTED_NO_SUCCESSOR_AUTHORIZED",
     "task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE407_HARD_IDENTITY_CAUSAL_DIAGNOSIS_V1.json",
@@ -1967,7 +1972,7 @@
     "automatic_retry_authorized": false,
     "A2_authorized": false,
     "automatic_second_window": false,
-    "actual_human_review_authorized": true,
+    "actual_human_review_authorized": false,
     "accepted_checkpoint_advance": false,
     "writer_visible_projection": {
       "path": "state/author_packets/PHASE407_NS02_LINQIAO_HARD_IDENTITY_VIEW_A1.json",
@@ -2008,7 +2013,26 @@
     "neutral_salience_flooding": "NO_BLOCK",
     "focal_personal_cost_visibility": "CLEAR",
     "live_open_outcome_visibility": "CLEAR",
-    "actual_human_review_performed": false,
-    "phase408_authorized": false
+    "actual_human_review_performed": true,
+    "phase408_authorized": false,
+    "actual_human_review_receipt": "state/review_receipts/PHASE407_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "actual_human_result": {
+      "overall": "REJECT",
+      "immersion": "FAIL_COMPLETE",
+      "emotion": "FAIL_NONE",
+      "suspense": "FAIL_NONE",
+      "ai_smell": "NOT_EXPLICITLY_RATED",
+      "premise_hypothesis": "USER_SUSPECTS_TOPIC_OR_SCENE_PROBLEM"
+    }
+  },
+  "phase407_settlement": {
+    "status": "CLOSED_ACTUAL_HUMAN_REJECTED",
+    "hidden_gates": "ALL_CLEAR_OR_NO_BLOCK",
+    "hard_identity_literal_fidelity": "CLEAR",
+    "focal_personal_cost_visibility": "CLEAR",
+    "human_review": "REJECT",
+    "human_receipt": "state/review_receipts/PHASE407_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "phase408_authorized": false,
+    "accepted_checkpoint_advance": false
   }
 }

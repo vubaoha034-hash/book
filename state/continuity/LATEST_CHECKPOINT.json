@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 99,
-  "recorded_at": "2026-09-25T10:45:00Z",
+  "sequence": 100,
+  "recorded_at": "2026-09-25T11:10:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1"
-  ],
-  "current_focus": "Phase407 exactly one fresh A1 cleared all required hidden gates. Canonical identity literals remained exact, Phase406 focal personal-cost visibility stayed clear, and Phase405/404 anti-regression mechanisms stayed clear/no-block. The immutable A1 is now authorized for actual-human literary review; no Phase408 is authorized.",
+  "active_task_ids": [],
+  "current_focus": "Phase407 is durably closed after actual-human literary rejection. All required hidden gates had cleared, including hard identity fidelity and focal personal-cost visibility, but the human reader reported complete lack of immersion, no emotion, no suspense and that the passage was very bad, while suspecting the topic/scene itself. No successor is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -297,7 +295,11 @@
     "Phase407 hard identity literal fidelity CLEAR: 林乔 / 林国忠 / 吴兰 emitted canonically.",
     "Phase407 focal personal-cost visibility remained CLEAR without abstract live-vector summaries.",
     "Phase407 semantic dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK, interpretation liquidity NO_BLOCK.",
-    "Phase407 all required hidden gates CLEAR; immutable A1 authorized for actual-human literary review."
+    "Phase407 all required hidden gates CLEAR; immutable A1 authorized for actual-human literary review.",
+    "Phase407 actual-human review received and preserved verbatim.",
+    "Phase407 actual-human verdict: complete immersion failure, no emotion, no suspense, very poor overall attraction.",
+    "Phase407 human hypothesis recorded: current topic/scene may itself be the problem; this is not yet treated as sole proven cause.",
+    "Phase407 closed; no retry, rewrite or Phase408 authorized."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1040,5 +1042,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Deliver the immutable Phase407 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision. Do not create Phase408 automatically."
+  "next_action": "Close Phase407. Preserve hidden-gate success and the actual-human rejection separately. Do not retry/rewrite Phase407 or create Phase408 automatically. Any successor should first diagnose premise/scene-selection failure versus prose-execution failure."
 }
