@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T10:00:00Z",
+  "updated_at": "2026-09-25T10:15:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -177,20 +177,19 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE406_SINGLE_ISOLATED_A1_AUTHORIZED",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE406_SOURCE_IDENTITY_BLOCK",
     "current_writing_authorization_scope": {
-      "kind": "PHASE406_SINGLE_ISOLATED_A1_ONLY",
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE406_BLOCK",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": true,
-      "prose_generation_authorized": true,
+      "fresh_writer_authorized": false,
+      "prose_generation_authorized": false,
       "retry_authorized": false,
       "A2_authorized": false,
       "second_window_authorized": false,
       "human_review_authorized": false,
-      "task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
-      "writer_entry": "delivery/phase406/RUN_NS02_LINQIAO_COST_CARRIER_A1.txt"
+      "settlement_receipt": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -606,7 +605,8 @@
     "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
     "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
     "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
-    "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1"
+    "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+    "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -856,11 +856,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase406 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry.",
-  "status": "PHASE406_ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
-  "active_task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
-  "last_completed_task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
-  "last_completed_task_contract": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json",
+  "next_required_action": "Close Phase406. Preserve the bounded positive signal that the focal cost-carrier made the departure consequence reader-visible while semantic dialogue/response ownership/global optimization remained clear/no-block. Do not correct the 吴岚 identity typo, retry, create A2/second window, or human-review this blocked candidate. Any successor requires separate explicit authorization.",
+  "status": "PHASE406_CLOSED_PERSONAL_COST_SIGNAL_POSITIVE_SOURCE_IDENTITY_BLOCK_NO_SUCCESSOR_AUTHORIZED",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+  "last_completed_task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1114,7 +1114,7 @@
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "Phase406 architecture is ready, but no prose may run until the single compiled A1 packet/runner passes readiness and guard audit."
+    "Phase406 personal-cost carrier cleared its target in the single A1, but source fidelity failed because 吴兰 was emitted as 吴岚; no actual-human literary review is authorized."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1124,7 +1124,9 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK"
+    "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
+    "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE406_BLOCK"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1176,7 +1178,10 @@
     "Create Phase405 without separate explicit authorization",
     "Retry Phase405 A1, create Phase405 A2/second window, or human-review the blocked Phase405 candidate.",
     "Treat the Phase405 single-run targeted stability signal as statistically proven cross-run stability.",
-    "Create Phase406 without separate explicit authorization."
+    "Create Phase406 without separate explicit authorization.",
+    "Correct 吴岚 to 吴兰 inside frozen Phase406 A1 or treat corrected text as the same attempt.",
+    "Retry Phase406 A1, create Phase406 A2/second window, or human-review the blocked Phase406 candidate.",
+    "Create Phase407 without separate explicit authorization."
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -1845,7 +1850,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase406_state": {
-    "status": "ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
+    "status": "CLOSED_A1_BLOCKED_SOURCE_IDENTITY_PERSONAL_COST_SIGNAL_POSITIVE_NO_SUCCESSOR_AUTHORIZED",
     "task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE406_PERSONAL_COST_VISIBILITY_CAUSAL_DIAGNOSIS_V1.json",
@@ -1867,8 +1872,8 @@
     "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
     "phase404_response_transaction_changed": false,
     "inherited_phase405_targeted_stability_signal": "BOUNDED_POSITIVE_SINGLE_RUN",
-    "prose_generation_authorized": true,
-    "fresh_writer_authorized": true,
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
     "attempt": "A1",
     "attempt_budget": 1,
     "best_of_n": false,
@@ -1889,6 +1894,46 @@
     "readiness_receipt": {
       "path": "state/review_receipts/PHASE406_NS02_A1_FRESH_WRITER_READY_V1.json",
       "status": "PASS"
-    }
+    },
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "inbox": {
+      "path": "state/inbox/PHASE406_NS02_COST_CARRIER_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE406_NS02_COST_CARRIER_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json",
+    "writer_chat_chars": 870,
+    "writer_chat_sha256": "d79b84ded4a08fead12d453b31aab0c6f31bb201f138a54efea119078cf80a74",
+    "source_fidelity": "BLOCK_IDENTITY",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "CLEAR",
+    "live_open_outcome_visibility": "CLEAR",
+    "bounded_cost_carrier_signal": "POSITIVE_SINGLE_RUN",
+    "actual_human_review_performed": false,
+    "phase407_authorized": false
+  },
+  "phase406_settlement": {
+    "status": "CLOSED_REQUIRED_GATE_BLOCK",
+    "receipt": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json",
+    "focal_personal_cost_visibility": "CLEAR",
+    "targeted_anti_regression_signal": "POSITIVE_SINGLE_RUN",
+    "source_fidelity": "BLOCK_IDENTITY",
+    "actual_human_review_performed": false,
+    "architecture_globally_validated": false,
+    "phase407_authorized": false,
+    "accepted_checkpoint_advance": false
   }
 }

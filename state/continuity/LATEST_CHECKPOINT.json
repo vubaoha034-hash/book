@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 95,
-  "recorded_at": "2026-09-25T10:00:00Z",
+  "sequence": 96,
+  "recorded_at": "2026-09-25T10:15:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1"
-  ],
-  "current_focus": "Phase406 compiled A1 packet/runner passed readiness. Exactly one isolated fresh-writer A1 is authorized. The writer sees one source-grounded focal cost-carrier event, but still does not see abstract desired-state, personal-cost or unresolved-outcome summaries. Phase404 response transaction and Phase405 non-focal ownership remain unchanged.",
+  "active_task_ids": [],
+  "current_focus": "Phase406 is durably closed after exactly one authorized fresh A1. The focal cost-carrier succeeded in making Lin Qiao's departure consequence reader-visible, while semantic dialogue, response ownership and hidden global optimization remained clear/no-block. The full required gate still BLOCKED because source identity 吴兰 was emitted as 吴岚 twice. No repair/retry or human literary review occurred; no successor is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -278,7 +276,13 @@
     "Phase406 compiled one source-grounded focal cost-carrier event tied to observable dawn/time progression.",
     "Phase406 readiness confirms abstract live-vector summaries remain hidden and no unsupported external deadline was added.",
     "Phase406 runner reuses Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 verbatim.",
-    "Phase406 readiness/guard audit passed; one isolated A1 authorized."
+    "Phase406 readiness/guard audit passed; one isolated A1 authorized.",
+    "Phase406 exactly one fresh-writer A1 executed; no retry, A2, best-of-N or second window.",
+    "Phase406 focal personal-cost visibility CLEAR via dawn/time trigger plus factual departure thought.",
+    "Phase406 semantic mechanical dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK.",
+    "Phase406 output contract remained CLEAR under unchanged Phase404 response transaction.",
+    "Phase406 source fidelity BLOCK: 吴兰 was emitted as 吴岚 twice; raw output frozen unchanged.",
+    "Phase406 closed without actual-human literary review and without Phase407 authorization."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1021,5 +1025,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase406 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry."
+  "next_action": "Close Phase406. Preserve the bounded positive signal that the focal cost-carrier made the departure consequence reader-visible while semantic dialogue/response ownership/global optimization remained clear/no-block. Do not correct the 吴岚 identity typo, retry, create A2/second window, or human-review this blocked candidate. Any successor requires separate explicit authorization."
 }

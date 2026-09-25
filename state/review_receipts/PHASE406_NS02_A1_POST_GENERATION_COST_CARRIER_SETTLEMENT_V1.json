@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 406,
+  "task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+  "attempt": "A1",
+  "event_type": "POST_GENERATION_COST_CARRIER_SETTLEMENT",
+  "status": "BLOCK_REJECT_A1_ATTEMPT_EXHAUSTED_PERSONAL_COST_VISIBILITY_FIXED_SOURCE_IDENTITY_FAILED",
+  "evidence_head_before_settlement": "e2d3da67a9145b62e66fe8bd8348a2a83d41329b",
+  "architecture_under_test": "FOCAL_COST_CARRIER_EVENT_V1",
+  "storage": {
+    "writer_chat_output": {
+      "page_id": 93,
+      "chat_url": "https://chatgpt.com/c/6ab647e5-8c84-83ee-b0e0-0d47e256b292",
+      "chars": 870,
+      "sha256": "d79b84ded4a08fead12d453b31aab0c6f31bb201f138a54efea119078cf80a74"
+    },
+    "inbox": {
+      "path": "state/inbox/PHASE406_NS02_COST_CARRIER_CANDIDATE_A1.txt",
+      "chars": 870,
+      "sha256": "d79b84ded4a08fead12d453b31aab0c6f31bb201f138a54efea119078cf80a74",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE406_NS02_COST_CARRIER_CANDIDATE_A1.txt",
+      "chars": 870,
+      "sha256": "d79b84ded4a08fead12d453b31aab0c6f31bb201f138a54efea119078cf80a74",
+      "exact_writer_output": true
+    },
+    "inbox_and_frozen_byte_identical": true,
+    "storage_normalization": "NONE"
+  },
+  "source_fidelity": {
+    "verdict": "BLOCK",
+    "located_violation": {
+      "expected_identity": "吴兰",
+      "emitted_identity": "吴岚",
+      "occurrences": 2,
+      "reason": "Named source identity was changed in the raw writer output."
+    },
+    "other_source_locks": {
+      "lin_qiao": "CLEAR",
+      "lin_guozhong": "CLEAR",
+      "signature_requirement": "CLEAR",
+      "rain_ingress": "CLEAR",
+      "wet_wiring": "CLEAR",
+      "invented_family_truth": false,
+      "invented_magic_evidence": false
+    },
+    "disposition": "Freeze raw output verbatim and reject whole candidate. No character-level correction is allowed."
+  },
+  "writer_output_contract": {
+    "verdict": "CLEAR",
+    "leading_non_prose_label": false,
+    "trailing_editorial_material": false,
+    "preface": false,
+    "postscript": false,
+    "self_evaluation": false,
+    "explanation_section": false,
+    "second_version": false,
+    "structured_envelope": false,
+    "first_block": "后门那边又传来一声水响。",
+    "last_block": "林乔把笔放回表上，没有再叫他。",
+    "phase404_transaction_preserved": true
+  },
+  "focal_personal_cost_visibility": {
+    "verdict": "CLEAR",
+    "located_evidence": [
+      "林乔先感知天色变亮与邻铺落锁。",
+      "随后主动看手机时间。",
+      "正文出现事实性念头：‘等这里交接完，她就走。后面的拆除她不打算再回来。’"
+    ],
+    "assessment": "The Phase405 static exit-plan fact became reader-visible through an observable time-state trigger without adding a new external deadline or abstract personal-cost summary."
+  },
+  "deterministic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Signature requests are followed by Lin Guozhong continuing his independent salvage activity.",
+      "No alternating exact-response chain forms."
+    ]
+  },
+  "semantic_dialogue_gate": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Lin Guozhong does not cooperatively complete Lin Qiao's signing agenda.",
+      "The rear-outlet safety line belongs to Wu Lan's pre-owned safety activity rather than focal dialogue.",
+      "No shared multi-turn information agenda forms."
+    ]
+  },
+  "hidden_global_optimization_diagnostic": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "The focal departure fact is stated once after an observable time cue and is not repeatedly re-explained.",
+      "No recurring inference-closure cadence or relationship thesis is attached to objects/actions.",
+      "The remainder stays grounded in water, salvage, safety and unsigned paperwork."
+    ],
+    "note": "Single-run diagnostic only."
+  },
+  "response_ownership_residual": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "Non-focal characters retain independent salvage/safety/inventory activity.",
+      "No information-bearing non-focal response sequence completes Lin Qiao's agenda."
+    ]
+  },
+  "interpretation_liquidity_residual": {
+    "verdict": "NO_BLOCK",
+    "relationship_thesis": false,
+    "memory_to_meaning_cycle": false
+  },
+  "reader_drive_entry_state": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Dawn/time progression appears immediately.",
+      "Unsigned form remains unresolved.",
+      "Active water/salvage conditions remain present."
+    ]
+  },
+  "neutral_salience_flooding": {
+    "verdict": "NO_BLOCK",
+    "evidence": [
+      "Most details are coupled to current handover/water/safety activity.",
+      "No broad neutral inventory exposition cluster dominates."
+    ]
+  },
+  "live_open_outcome_visibility": {
+    "verdict": "CLEAR",
+    "evidence": [
+      "Signature remains unsigned.",
+      "Lin Guozhong repeatedly does not sign.",
+      "Passage ends with the pen returned to the form and no signature."
+    ]
+  },
+  "causal_validation_result": {
+    "target_blocker": "FOCAL_PERSONAL_COST_VISIBILITY",
+    "target_result": "CLEAR",
+    "anti_regression_families": {
+      "semantic_mechanical_dialogue": "CLEAR",
+      "response_ownership": "NO_BLOCK",
+      "hidden_global_optimization": "NO_BLOCK"
+    },
+    "full_required_hidden_gate_result": "BLOCK_SOURCE_FIDELITY_IDENTITY",
+    "architecture_signal": "POSITIVE_FOR_PERSONAL_COST_CARRIER_AND_TARGETED_ANTI_REGRESSION_FAMILIES_IN_THIS_SINGLE_RUN",
+    "architecture_globally_validated": false,
+    "literary_quality_claim": false,
+    "human_review_allowed": false
+  },
+  "settlement": {
+    "candidate_rejected_whole": true,
+    "required_gate_failures": [
+      "SOURCE_FIDELITY_IDENTITY_BLOCK"
+    ],
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "best_of_n_used": false,
+    "parallel_candidates_created": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "local_repair_forbidden": true,
+    "actual_human_review_authorized": false,
+    "actual_human_review_performed": false,
+    "phase407_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Close Phase406. Preserve the bounded positive signal that the focal cost-carrier made the departure consequence reader-visible while semantic dialogue/response ownership/global optimization remained clear/no-block. Do not correct the 吴岚 identity typo, retry, create A2/second window, or human-review this blocked candidate. Any successor requires separate explicit authorization."
+}
