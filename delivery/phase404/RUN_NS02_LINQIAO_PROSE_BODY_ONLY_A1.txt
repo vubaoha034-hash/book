@@ -1,0 +1,133 @@
+响应事务：
+你的整个回复只由一个中文小说正文主体构成。
+第一行就是正文第一句。
+正文可以自然分成多段。
+完成最后一句正文后，立即结束本次回复。
+发送前只在内部确认三件事：第一行属于正文，最后一行属于正文，整个回复只有这一个正文主体。内部确认不进入回复内容。
+
+下面的文学输入是正文生成的唯一内容依据：
+{
+  "schema_version": "1.0.0",
+  "schema_id": "PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_VIEW_A1",
+  "story_id": "NS02_LAST_ROLL_AT_DAWN",
+  "local_window_id": "NS02_LIN_QIAO_LIVE_VECTOR_A1",
+  "focal_character_id": "lin_qiao",
+  "order_semantics": "NONE",
+  "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE",
+  "focal_live_vector": {
+    "desired_local_state": "Get the municipal handover materially advanced so she can leave town after the handover is done.",
+    "blocking_condition_or_uncertainty": "The handover still requires Lin Guozhong's signature, the form is still unsigned, and rainwater/electrical conditions are worsening around the studio. Lin Qiao does not know when or whether he will stop his current salvage work and sign.",
+    "personal_cost_if_unresolved": "Further delay keeps Lin Qiao in the studio and in town longer than she intends, and keeps her in direct contact with her estranged father instead of letting her finish the handover and leave.",
+    "unresolved_local_outcome_question": "Will the handover materially advance before worsening conditions force another delay, and what will Lin Qiao do if her father still does not sign?",
+    "outcome_known_to_writer": false,
+    "resolution_required_in_passage": false
+  },
+  "focal_live_state": {
+    "identity_lock": "Lin Qiao, 32, Lin Guozhong's daughter. She returned specifically for the studio handover after years away.",
+    "factual_private_knowledge_by_id": {
+      "exit_plan": "She intends to leave town again immediately after the handover and currently has no plan to return for the later demolition."
+    },
+    "current_body_state": "Tired from travel, clothes damp from the rain, fingertips irritated by paper dust, damp cardboard and repeated handling.",
+    "current_action_tendency": "Keep the handover moving now, deal with what is necessary, and avoid letting the night turn into an open-ended stay.",
+    "current_avoidance": "She does not want to turn the immediate handover problem into a full family-history conversation.",
+    "abstract_relationship_thesis": "OMITTED"
+  },
+  "non_focal_actor_commitments_by_id": {
+    "lin_guozhong": {
+      "identity_lock": "Lin Guozhong, 63, owner of the studio and Lin Qiao's father.",
+      "observable_commitment_horizon": "For the next short local passage while water continues entering and movable studio material remains exposed.",
+      "ongoing_activity": "Continue moving vulnerable photographic material, ledgers and darkroom tools from low or damp storage to higher dry surfaces; inspect labels while working.",
+      "next_observable_priority": "Protect photographic material from water damage and keep sorting items by immediate handling need.",
+      "public_constraint": "The municipal handover still requires his signature, but this commitment does not assign or reveal any private reason for when he signs.",
+      "optional_public_emission": {
+        "enabled": true,
+        "emission_kind": "PUBLIC_FACT | PRACTICAL_DIRECTIVE",
+        "content_boundary": "He may state a brief already-public practical fact about where an object is, how photographic material should be handled, or an immediate electrical/water safety fact if the current physical work makes that information necessary. No family-history explanation is committed."
+      }
+    },
+    "wu_lan": {
+      "identity_lock": "Wu Lan, 46, municipal inventory clerk assigned to the old-street handover.",
+      "observable_commitment_horizon": "For the same short local passage while inventory, water ingress and electrical safety remain active.",
+      "ongoing_activity": "Continue inventory marks, handover paperwork and practical safety checks while monitoring the rear-water line and usable lighting/power.",
+      "next_observable_priority": "Keep the handover record usable and prevent an immediate safety problem from wet wiring or water reaching vulnerable material.",
+      "public_constraint": "She is present in an official role and does not own or resolve the Lin family history.",
+      "optional_public_emission": {
+        "enabled": true,
+        "emission_kind": "PUBLIC_FACT | PRACTICAL_DIRECTIVE | SOCIAL_ACKNOWLEDGEMENT",
+        "content_boundary": "She may state one bounded handover fact, immediate safety directive or brief acknowledgement when her observable official/safety work makes it relevant. She is not committed to completing another character's conversational agenda."
+      }
+    }
+  },
+  "active_environment_processes_by_id": {
+    "water_ingress": {
+      "observable_process": "Rainwater continues entering through the rear part of the studio.",
+      "current_consequence_for_live_vector": "Water is moving toward low stored material and makes continued sorting/electrical use less reliable, increasing the chance that handover work will be interrupted.",
+      "may_continue_without_focal_attention": true
+    },
+    "old_street_handover": {
+      "observable_process": "Other shops on the old street are being cleared and locked under the same handover schedule.",
+      "current_consequence_for_live_vector": "Outside locking and handover activity makes the remaining time feel finite without guaranteeing when the Lin studio will finish.",
+      "may_continue_without_focal_attention": true
+    },
+    "wet_wiring": {
+      "observable_process": "The studio's old wiring remains unreliable in wet conditions.",
+      "current_consequence_for_live_vector": "Lighting or safe use of outlets cannot be assumed to remain available while the paperwork and salvage are unfinished.",
+      "may_continue_without_focal_attention": true
+    }
+  },
+  "active_salience_by_id": {
+    "unsigned_handover_form": {
+      "concrete_detail_or_state": "The handover form Lin Qiao has found is still unsigned and requires Lin Guozhong's signature.",
+      "relevance_kind": "CHOICE | UNCERTAINTY | COST",
+      "abstract_meaning": "OMITTED",
+      "coverage_required": false
+    },
+    "father_continues_salvage": {
+      "concrete_detail_or_state": "Lin Guozhong is still occupied with moving vulnerable photographic material instead of standing at the form.",
+      "relevance_kind": "UNCERTAINTY | CONSTRAINT",
+      "abstract_meaning": "OMITTED",
+      "coverage_required": false
+    },
+    "advancing_water": {
+      "concrete_detail_or_state": "Water is advancing across the rear floor toward vulnerable stored material and old electrical points.",
+      "relevance_kind": "COST | CONSTRAINT",
+      "abstract_meaning": "OMITTED",
+      "coverage_required": false
+    },
+    "official_handover_presence": {
+      "concrete_detail_or_state": "Wu Lan is still working through inventory and handover paperwork in an official capacity while monitoring the water/safety situation.",
+      "relevance_kind": "CONSTRAINT | CHOICE",
+      "abstract_meaning": "OMITTED",
+      "coverage_required": false
+    }
+  },
+  "unlocked_raw_memory_fragments_by_id": {},
+  "immutable_hard_locks_by_id": {
+    "handover_at_dawn": "The studio is scheduled for municipal handover at dawn.",
+    "signature_required": "Lin Guozhong's signature is required for the handover; Lin Qiao cannot sign in his place.",
+    "rain_ingress": "Rainwater is entering the building.",
+    "old_wiring": "The studio wiring is old and unreliable in wet conditions.",
+    "estrangement": "Lin Qiao and Lin Guozhong have been estranged for years.",
+    "mother_departure": "Xu Wen left the household when Lin Qiao was a teenager; the family has no single shared account of why she left."
+  },
+  "mystery_boundaries_by_id": {
+    "mother_departure": "Do not invent a complete explanation for why Xu Wen left.",
+    "father_silence": "Do not invent a complete explanation that resolves all of Lin Guozhong's past silence.",
+    "no_magic_evidence": "Do not introduce a letter, recording, confession, official file or newly invented hidden object that fully explains the family rupture."
+  },
+  "output_request": {
+    "mode": "FICTION_PROSE_ONLY",
+    "language": "Chinese",
+    "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+    "start_from_current_entry_state": true,
+    "whole_scene_completion_required": false,
+    "use_every_available_detail_required": false,
+    "resolve_open_outcome_required": false,
+    "invent_new_mystery_for_hook": false,
+    "stay_with_focal_knowledge": true,
+    "editor_notes_allowed": false,
+    "analysis_or_self_evaluation_allowed": false,
+    "second_version_allowed": false,
+    "natural_local_stop_allowed": true
+  }
+}
