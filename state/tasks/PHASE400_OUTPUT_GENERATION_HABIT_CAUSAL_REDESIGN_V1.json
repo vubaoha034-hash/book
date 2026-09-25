@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
   "phase_ordinal": 400,
-  "status": "ACTIVE_DIAGNOSIS_AND_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "status": "CLOSED_ARCHITECTURE_DESIGN_READY_NO_PROSE_NO_SUCCESSOR_AUTHORIZED",
   "purpose": "Diagnose why a fresh writer, even when given an unordered scene-field packet, reconstructs serialized micro-paragraphs, exact-adjacency dialogue and scene-as-task-completion; then design one materially different writer-execution architecture without generating prose.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE399_CLOSE",
@@ -104,31 +104,35 @@
     "create Phase401 automatically",
     "advance the Phase320 accepted checkpoint"
   ],
-  "allowed_action_requests": [
-    {
-      "action_id": "PHASE400_BUILD_OUTPUT_SURFACE_CONTRAST_PROFILE",
-      "parameters": {
-        "output": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json"
-      }
-    },
-    {
-      "action_id": "PHASE400_WRITE_CAUSAL_DIAGNOSIS_AND_SELECT_ARCHITECTURE",
-      "parameters": {
-        "report": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
-        "schema": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json"
-      }
-    },
-    {
-      "action_id": "PHASE400_AUDIT_AND_FREEZE_ARCHITECTURE",
-      "parameters": {
-        "receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json"
-      }
-    }
-  ],
+  "allowed_action_requests": [],
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "user_delivery_prose_authorized": false,
   "full_manuscript_rewrite_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build a contrast profile from Phase399 failure versus verified human-positive evidence, diagnose the output-generation causal bottleneck, select and freeze one materially different writer-execution architecture. Do not generate prose."
+  "next_action": "No active Phase400 execution remains. Any prose pilot of FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 requires a separately authorized successor task.",
+  "design_settlement": {
+    "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "contrast_profile": {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "sha256": "050bc50c8d3dcd2f1eef3250a4f0da0eb1e5a797cedd273320625cb0348b8a32"
+    },
+    "causal_diagnosis": {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "sha256": "aca3f709bd9b4411661eb2fdf0c795a9ecec77c29334c9e33b3c46fc413f272a"
+    },
+    "successor_execution_schema": {
+      "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+      "sha256": "5798b5585edf75157ee6d74445e061503988cf1de4438212055485b556e09aaa",
+      "schema_id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1"
+    },
+    "architecture_ready_receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+    "architecture_audit": "PASS",
+    "prose_transfer_tested": false,
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "phase401_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase401_authorized": false
 }
