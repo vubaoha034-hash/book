@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T08:53:47.196Z",
+  "updated_at": "2026-09-25T08:56:50.660Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,13 +15,18 @@
     "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
     "phase": "PROSE_BODY_ONLY_RESPONSE_BOUNDARY",
     "phase_ordinal": 404,
-    "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_RUNNER_NO_PROSE",
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
     "task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-    "execution_scope": "Prepare exactly one Phase404 runner that reuses the frozen Phase403 literary payload unchanged and changes only the response-surface transaction. No prose generation until runner readiness audit PASS.",
+    "execution_scope": "Exactly one isolated Phase404 A1 using the unchanged Phase403 literary payload and PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1. No best-of-N, parallel candidate, retry, A2 or second window.",
     "architecture": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
+    "writer_entry": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+    "writer_entry_sha256": "a70fdef75ddd535c16b32fa30e8599816713e2df1598e989bac5c196546b80d8",
+    "prose_generation_authorized": true,
+    "prose_generation_scope": "ONE_LOCAL_PASSAGE_A1_ONLY",
+    "fresh_writer_authorized": true,
     "user_delivery_authorized": false,
+    "full_manuscript_rewrite_authorized": false,
+    "architecture_promotion_authorized": false,
     "best_of_n": false,
     "parallel_candidates": 1,
     "automatic_retry_authorized": false,
@@ -29,20 +34,22 @@
     "automatic_second_window": false,
     "allowed_action_requests": [
       {
-        "action_id": "PHASE404_BUILD_FROZEN_RUNNER_A1",
+        "action_id": "PHASE404_EXECUTE_SINGLE_ISOLATED_A1",
         "parameters": {
-          "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt"
+          "writer_entry": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+          "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
         }
       },
       {
-        "action_id": "PHASE404_AUDIT_AND_FREEZE_A1_READINESS",
+        "action_id": "PHASE404_STORE_FREEZE_AND_GATE_A1",
         "parameters": {
-          "receipt": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json"
+          "inbox": "state/inbox/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+          "frozen": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt"
         }
       }
     ],
-    "next_action": "Build exactly one Phase404 frozen runner using the unchanged Phase403 writer-visible payload and positive prose-body-only response transaction; audit readiness. Do not generate prose until readiness PASS.",
-    "current_execution_receipt": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json"
+    "next_action": "Execute exactly one isolated fresh-writer A1 with the minimal outer prompt. Persist/freeze raw output verbatim, then run all required hidden gates. Do not retry automatically.",
+    "current_execution_receipt": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -209,15 +216,19 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE404_OUTPUT_BOUNDARY_A1_RUNNER_PREPARATION_ACTIVE",
+    "YMGQ_writing_pause_reason": "PHASE404_SINGLE_OUTPUT_BOUNDARY_A1_ACTIVE",
     "current_writing_authorization_scope": {
-      "kind": "PHASE404_A1_RUNNER_PREPARATION_ONLY_NO_PROSE",
+      "kind": "PHASE404_ONE_PROSE_BODY_ONLY_A1",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": false,
-      "prose_generation_authorized": false,
-      "architecture": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1"
+      "fresh_writer_authorized": true,
+      "prose_generation_authorized": true,
+      "best_of_n": false,
+      "retry_authorized": false,
+      "A2_authorized": false,
+      "automatic_second_window": false,
+      "writer_entry": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -242,7 +253,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 88,
+    "logical_latest_checkpoint_sequence": 89,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -881,8 +892,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Build exactly one Phase404 frozen runner using the unchanged Phase403 writer-visible payload and positive prose-body-only response transaction; audit readiness. Do not generate prose until readiness PASS.",
-  "status": "PHASE404_ACTIVE_PREPARING_SINGLE_A1_RUNNER_NO_PROSE",
+  "next_required_action": "Execute exactly one isolated fresh-writer A1 with the minimal outer prompt. Persist/freeze raw output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "status": "PHASE404_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "active_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
   "last_completed_task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
   "last_completed_task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
@@ -1114,12 +1125,20 @@
     {
       "path": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json",
       "role": "Phase404 architecture-ready PASS receipt"
+    },
+    {
+      "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+      "role": "frozen Phase404 prose-body-only A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase404 A1 readiness receipt with first-audit BLOCK, repair and final PASS"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "Phase404 frozen runner and A1 readiness audit are pending"
+    "Phase404 single A1 execution, verbatim freeze and hidden gate evaluation are pending"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1129,7 +1148,6 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE404_PROSE_BLOCKED_PENDING_READINESS",
     "PHASE404_BEST_OF_N_FORBIDDEN",
     "PHASE404_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE404_A2_NOT_AUTHORIZED",
@@ -1284,7 +1302,10 @@
     "Phase404 output-contract causal diagnosis completed with Phase402 clean counterexample",
     "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 schema frozen",
     "Phase404 single-A1 validation contract frozen as same-task non-task artifact",
-    "Phase404 output-boundary architecture audit PASS; exactly one A1 runner preparation allowed"
+    "Phase404 output-boundary architecture audit PASS; exactly one A1 runner preparation allowed",
+    "Phase404 frozen runner built with unchanged Phase403 payload",
+    "Phase404 first readiness audit blocked artifact-label term and repaired wrapper",
+    "Phase404 final A1 readiness audit PASS; exactly one isolated A1 authorized"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1646,7 +1667,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase404_state": {
-    "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_RUNNER_NO_PROSE",
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
     "task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1.json",
@@ -1672,11 +1693,31 @@
     },
     "writer_entry": {
       "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
-      "status": "PENDING"
+      "sha256": "a70fdef75ddd535c16b32fa30e8599816713e2df1598e989bac5c196546b80d8",
+      "status": "FROZEN_PASS"
     },
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
+    "prose_generation_authorized": true,
+    "fresh_writer_authorized": true,
     "phase405_authorized": false,
-    "accepted_checkpoint_advance": false
+    "accepted_checkpoint_advance": false,
+    "controlled_payload": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+      "status": "FROZEN_CONTROL"
+    },
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "candidate_stored": false,
+    "candidate_frozen": false,
+    "user_delivery_authorized": false
   }
 }
