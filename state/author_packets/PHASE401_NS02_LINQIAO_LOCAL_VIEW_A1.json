@@ -163,16 +163,5 @@
     "editor_notes_allowed": false,
     "analysis_or_self_evaluation_allowed": false,
     "second_version_allowed": false
-  },
-  "control": {
-    "source_world_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
-    "source_world_immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
-    "derived_without_modifying_source": true,
-    "non_focal_private_state_included": false,
-    "full_information_asymmetry_included": false,
-    "full_terminal_world_state_included": false,
-    "evaluator_labels_included": false,
-    "paragraph_or_question_quota_included": false,
-    "prose_generation_authorized": false
   }
 }
