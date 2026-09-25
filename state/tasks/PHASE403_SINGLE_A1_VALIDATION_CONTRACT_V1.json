@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "VALIDATION_CONTRACT_NOT_A_SECOND_TASK",
+  "project_id": "novel-distillation",
+  "phase": 403,
+  "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+  "contract_id": "PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1",
+  "status": "FROZEN_PENDING_ARCHITECTURE_AUDIT",
+  "architecture_under_test": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+  "controlled_world_source": {
+    "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "source_must_not_be_modified": true
+  },
+  "inherited_controls": {
+    "phase402_actor_commitments": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+    "phase402_actor_commitments_sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+    "same_story_world": true,
+    "same_focal_character": "lin_qiao",
+    "same_non_focal_actor_commitments": true,
+    "deferred_attribution_preserved": true,
+    "comparison_baseline": "PHASE402_NS02_A1"
+  },
+  "prospective_entry_state": {
+    "start_after_neutral_setup": true,
+    "entry_condition": "Lin Qiao has already found the unsigned handover form while water/electrical conditions are worsening.",
+    "focal_desired_state": "Materially complete the handover and leave town after it is done.",
+    "blocking_condition": "Lin Guozhong's signature is required and not yet secured; worsening conditions may delay or interrupt the handover.",
+    "personal_cost_if_unresolved": "Delay keeps Lin Qiao in the studio/town longer than she intends and prolongs direct exposure to the unresolved family situation.",
+    "unresolved_local_outcome": "Whether the handover can materially advance before worsening conditions force delay, without Lin Qiao knowing in advance what Lin Guozhong will choose.",
+    "outcome_precommitted": false,
+    "arbitrary_new_mystery_added": false
+  },
+  "prospective_pilot_artifacts": {
+    "writer_visible_projection": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+    "writer_entry": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+    "readiness_receipt": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
+    "inbox": "state/inbox/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+    "frozen": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+    "post_generation_settlement": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json"
+  },
+  "preparation_protocol": [
+    "Reuse the immutable Phase402 non-focal actor commitments exactly; do not modify them.",
+    "Build writer-visible input from the causally loaded entry state rather than chronological setup.",
+    "Expose Lin Qiao's factual intent to leave after handover as a present cost-bearing stake.",
+    "Expose only active salience affecting choice, uncertainty, cost, constraint or embodied affect.",
+    "Do not expose broad inventory, display-cabinet detail pool, or neutral photograph/object lists wholesale.",
+    "Do not add a new hidden clue, arbitrary mystery or cliffhanger.",
+    "Preserve deferred attribution and hidden relationship-thesis firewall.",
+    "Audit projection and runner before any prose generation."
+  ],
+  "A1_execution_budget": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "separate_writer_chat_required": true,
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "required_hidden_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "actual_human_review_dimensions": [
+    "有没有真正被带进小说",
+    "情绪够不够",
+    "AI味重不重",
+    "有没有悬念或继续读的动力",
+    "想不想继续看",
+    "最早从哪里开始无聊、假、拖或想跳过"
+  ],
+  "causal_success_boundary": {
+    "if_all_required_gates_and_human_review_pass": "Supports only a bounded signal that LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 improved reader drive in this controlled passage.",
+    "forbidden_claims": [
+      "global suspense solved",
+      "global emotion solved",
+      "long-form transfer proven",
+      "production promotion authorized",
+      "accepted checkpoint advanced"
+    ]
+  },
+  "forbidden": [
+    "modify Phase399/400/401/402 frozen evidence",
+    "repair or retry Phase402 A1",
+    "best-of-N",
+    "parallel candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second window",
+    "writer-facing paragraph/question/information-density quotas",
+    "new arbitrary mystery for suspense",
+    "enter human review before all hidden gates clear",
+    "create Phase404 automatically"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "pilot_decision": "PENDING_ARCHITECTURE_AUDIT",
+  "next_action": "Audit the Phase403 diagnosis, schema and this validation contract. If and only if architecture-ready PASS, decide whether one isolated A1 pilot is justified."
+}
