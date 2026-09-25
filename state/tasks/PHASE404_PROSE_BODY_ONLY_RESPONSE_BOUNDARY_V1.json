@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+  "phase_ordinal": 404,
+  "status": "ACTIVE_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_AND_BOUNDARY_REDESIGN_NO_PROSE",
+  "purpose": "Fix only the remaining Phase403 writer-output contract violation: the fresh writer emitted a title-like label before the prose and editorial suggestions after the prose even though the literary/reader-drive architecture passed all other required hidden gates.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE403_CLOSE",
+    "predecessor_checkpoint_sequence": 87,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "predecessor": {
+    "phase403_task": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+    "phase403_settlement": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+    "phase403_frozen": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+    "phase403_architecture": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+    "phase403_hidden_gate_result": "ALL_REQUIRED_GATES_CLEAR_OR_NO_BLOCK_EXCEPT_OUTPUT_CONTRACT",
+    "output_contract_failure": {
+      "leading_label": "小说正文",
+      "trailing_editorial_lines": [
+        "让父女冲突再具体一些",
+        "把签字线索收得更有回响",
+        "减少重复的搬运动作"
+      ]
+    },
+    "retry_authorized": false,
+    "A2_authorized": false,
+    "phase404_was_not_previously_created": true
+  },
+  "frozen_control_artifacts": {
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+      "reuse_without_modification": true
+    },
+    "reader_drive_architecture": {
+      "path": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+      "reuse_without_modification": true
+    },
+    "actor_commitments": {
+      "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+      "sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+      "reuse_without_modification": true
+    }
+  },
+  "residual_failure_families": [
+    {
+      "id": "R404_01_META_NEGATION_PRIMING",
+      "evidence": [
+        "The Phase403 writer entry explicitly mentioned title/editorial/self-evaluation categories in negative instructions.",
+        "The writer nevertheless emitted a title-like label and editorial suggestions matching those prohibited modes."
+      ],
+      "causal_hypothesis": "Enumerating forbidden assistant/editor modes can keep those response modes semantically active and available at the beginning/end of a long completion."
+    },
+    {
+      "id": "R404_02_RESPONSE_SURFACE_AMBIGUITY",
+      "evidence": [
+        "The literary task asks for fiction prose but does not structurally define line 1 as prose sentence 1 or define a terminal response boundary after the final prose sentence.",
+        "The assistant therefore retains ordinary chat freedom to wrap the content with a helpful label or follow-up suggestions."
+      ],
+      "causal_hypothesis": "A content-generation instruction is weaker than an explicit response-surface transaction: the model needs a positive rule for what the entire response surface consists of, not only a list of forbidden add-ons."
+    },
+    {
+      "id": "R404_03_POST_COMPLETION_EDITOR_ROLE_REENTRY",
+      "evidence": [
+        "The three trailing lines are not story continuation; they are editorial optimization notes.",
+        "The same family of trailing advice also appeared in earlier isolated writer attempts."
+      ],
+      "causal_hypothesis": "After the model decides the prose passage is complete, the chat assistant role can reassert itself and append helpful editorial follow-up unless response termination is part of the frozen output contract."
+    }
+  ],
+  "rejected_repairs": [
+    "delete title or suggestions after generation",
+    "post-process or trim frozen prose",
+    "retry Phase403",
+    "change reader-drive architecture",
+    "change dialogue architecture",
+    "change paragraph length",
+    "change question count",
+    "add AI-smell rules",
+    "best-of-N and select the cleanest response"
+  ],
+  "minimal_architecture_direction": {
+    "architecture_id": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "mechanism": "Keep the entire Phase403 writer-visible literary payload unchanged while replacing the chat/meta wrapper with a positive closed response-surface transaction.",
+    "response_surface_contract": [
+      "The response consists of exactly one fiction prose body.",
+      "Line 1 is the first sentence of the fiction passage, not a label or category name.",
+      "After the final fiction sentence, the response terminates immediately.",
+      "The final non-whitespace character belongs to the fiction passage and is terminal prose punctuation.",
+      "No second response section exists."
+    ],
+    "meta_instruction_strategy": {
+      "enumerate_forbidden_editor_modes_to_writer": false,
+      "show_phase403_failure_examples_to_writer": false,
+      "ask_for_self_check_output": false,
+      "allow_internal_preflight_without_printing": true
+    },
+    "literary_payload_changed": false,
+    "reader_drive_architecture_changed": false,
+    "actor_commitments_changed": false,
+    "source_world_changed": false
+  },
+  "required_outputs": [
+    "state/calibration/PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1.json",
+    "state/author_packets/PHASE404_PROSE_BODY_ONLY_RESPONSE_SCHEMA_V1.json",
+    "state/tasks/PHASE404_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+    "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json"
+  ],
+  "preparation_acceptance_tests": [
+    "Phase403 literary payload/view is reused without modification.",
+    "Response-boundary redesign does not mention the Phase403 offending title or editorial suggestions inside writer-visible instructions.",
+    "Writer-visible wrapper does not enumerate title/self-evaluation/editorial-note categories as a negative checklist.",
+    "Line 1 is positively defined as the first fiction sentence.",
+    "Response termination is positively defined immediately after the final fiction sentence.",
+    "No structured envelope, JSON, markdown fence or marker may remain in returned output.",
+    "Validation contract allows one A1, one candidate, no retry, no best-of-N, no A2, no second window.",
+    "No prose pilot runs before architecture-ready PASS and readiness/guard PASS."
+  ],
+  "forbidden": [
+    "modify Phase399/400/401/402/403 frozen evidence",
+    "repair or trim Phase403 A1",
+    "change Phase403 reader-drive/live-vector/selective-salience payload",
+    "change Phase402 actor commitments",
+    "add AI-smell, mechanical-dialogue, paragraph or question rules",
+    "structured-output envelope around prose",
+    "post-generation cleanup before freezing",
+    "best-of-N",
+    "parallel candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second window",
+    "enter human review before all required gates clear",
+    "create Phase405 automatically",
+    "advance Phase320 accepted checkpoint from design or hidden gates alone"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE404_BUILD_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS",
+      "parameters": {
+        "output": "state/calibration/PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE404_BUILD_PROSE_BODY_ONLY_RESPONSE_SCHEMA",
+      "parameters": {
+        "output": "state/author_packets/PHASE404_PROSE_BODY_ONLY_RESPONSE_SCHEMA_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE404_FREEZE_SINGLE_A1_VALIDATION_CONTRACT",
+      "parameters": {
+        "output": "state/tasks/PHASE404_SINGLE_A1_VALIDATION_CONTRACT_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE404_AUDIT_OUTPUT_BOUNDARY_ARCHITECTURE",
+      "parameters": {
+        "receipt": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json"
+      }
+    }
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build the Phase404 output-contract causal diagnosis, freeze PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 and a single-A1 validation contract, then audit whether one isolated A1 is justified. Do not generate prose yet."
+}
