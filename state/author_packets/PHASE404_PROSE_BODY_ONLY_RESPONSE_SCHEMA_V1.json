@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+  "project_id": "novel-distillation",
+  "phase": 404,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Constrain only the assistant response surface while keeping the Phase403 literary payload unchanged.",
+  "controlled_payload": {
+    "source_path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+    "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+    "must_be_reused_without_modification": true
+  },
+  "response_transaction": {
+    "response_cardinality": 1,
+    "response_kind": "FICTION_PROSE_BODY_ONLY",
+    "line_1_contract": "The first emitted line is the first sentence/paragraph of the fiction passage itself.",
+    "terminal_contract": "After the final fiction sentence/paragraph, the model terminates the response immediately.",
+    "additional_sections_allowed": false,
+    "prose_body_may_span_multiple_paragraphs": true,
+    "markdown_fence_allowed": false,
+    "structured_envelope_allowed": false,
+    "title_line_allowed": false,
+    "preface_allowed": false,
+    "postscript_allowed": false,
+    "self_evaluation_allowed": false,
+    "explanation_allowed": false,
+    "editorial_advice_allowed": false,
+    "second_version_allowed": false
+  },
+  "writer_visible_wrapper_policy": {
+    "positive_contract_only": true,
+    "enumerate_phase403_failure_examples": false,
+    "enumerate_editorial_suggestion_examples": false,
+    "mention_phase_numbers": false,
+    "mention_hidden_gates": false,
+    "mention_evaluator_labels": false,
+    "repeat_negative_meta_checklist": false,
+    "internal_preflight_allowed": true,
+    "internal_preflight_printed": false
+  },
+  "internal_preflight": {
+    "writer_visible_as_process": false,
+    "checks": [
+      "The first emitted line belongs to the fiction body.",
+      "The response contains exactly one prose body.",
+      "There is no content before the first prose line.",
+      "There is no content after the final prose line."
+    ]
+  },
+  "outer_execution_prompt_contract": {
+    "must_be_minimal": true,
+    "points_to_single_frozen_runner": true,
+    "repeats_literary_payload": false,
+    "repeats_meta_failure_categories": false,
+    "asks_exact_execution": true,
+    "second_message_forbidden": true
+  },
+  "output_contract_gate": {
+    "evaluates_raw_assistant_output_before_any_cleanup": true,
+    "cleanup_or_trimming_forbidden": true,
+    "clear_requires": [
+      "No leading non-prose label/preface.",
+      "No trailing non-prose/editorial material.",
+      "No self-evaluation/explanation.",
+      "No second version or second response section."
+    ],
+    "block_disposition": [
+      "Freeze raw output verbatim.",
+      "Reject whole candidate.",
+      "Do not repair.",
+      "Do not retry automatically."
+    ]
+  },
+  "preserved_hidden_gates": [
+    "source_fidelity",
+    "deterministic_dialogue_adjacency",
+    "semantic_mechanical_dialogue",
+    "hidden_global_optimization",
+    "response_ownership_residual",
+    "interpretation_liquidity_residual",
+    "reader_drive_entry_state",
+    "neutral_salience_flooding",
+    "focal_personal_cost_visibility",
+    "live_open_outcome_visibility"
+  ],
+  "audit_rules": [
+    "BLOCK if the Phase403 literary payload is modified.",
+    "BLOCK if the writer-visible wrapper contains the Phase403 offending title or editorial suggestion text.",
+    "BLOCK if the wrapper enumerates a long list of forbidden assistant/editor categories instead of the positive whole-response contract.",
+    "BLOCK if a markdown/code/JSON/XML envelope is required around prose.",
+    "BLOCK if any post-generation cleanup is permitted before freezing.",
+    "BLOCK if best-of-N, retry, A2, second window or parallel candidates are introduced."
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}
