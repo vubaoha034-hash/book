@@ -1,13 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 80,
-  "recorded_at": "2026-09-25T05:25:03.114Z",
+  "sequence": 81,
+  "recorded_at": "2026-09-25T05:46:09.649Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [],
-  "current_focus": "Phase401 is durably closed after its single authorized focal/opaque/local-horizon A1. The architecture produced a strong directional reduction in deterministic mechanical-dialogue trigger rate versus Phase399, but required gates still BLOCKED: writer-output contract, deterministic dialogue, semantic dialogue and hidden global optimization. No actual-human literary review occurred.",
+  "active_task_ids": [
+    "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1"
+  ],
+  "current_focus": "Phase402 is active in A1-input preparation mode only. Residual diagnosis and ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 architecture passed design audit. Exactly one A1 may be prepared, but prose generation remains blocked until actor commitments, deferred-attribution local view and frozen runner pass readiness audit.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -180,7 +182,12 @@
     "Phase401 semantic mechanical dialogue remained BLOCK",
     "Phase401 hidden global-optimization diagnostic remained BLOCK",
     "Phase401 writer-output contract BLOCK from title-like label plus three editorial suggestion lines",
-    "Phase401 rejected whole without actual-human review; single attempt exhausted"
+    "Phase401 rejected whole without actual-human review; single attempt exhausted",
+    "Phase402 successor task created after explicit authorization",
+    "Phase402 residual causal diagnosis completed",
+    "Phase402 ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema frozen",
+    "Phase402 single-A1 validation contract frozen as non-task artifact",
+    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -218,7 +225,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "No separately authorized successor task exists after Phase401 partial-improvement blocker settlement"
+    "Phase402 A1 actor commitments, deferred-attribution local view, runner and readiness audit are pending"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -248,7 +255,12 @@
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
     "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE401_BLOCK"
+    "PHASE402_PROSE_BLOCKED_PENDING_READINESS",
+    "PHASE402_BEST_OF_N_FORBIDDEN",
+    "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE402_A2_NOT_AUTHORIZED",
+    "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
+    "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -378,9 +390,15 @@
     "Create Phase401 A2 or second local window automatically",
     "Enter actual-human review for blocked Phase401 A1",
     "Treat Phase401 deterministic reduction as proof that FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 solved mechanical dialogue, AI smell or immersion",
-    "Create Phase402 without separate explicit authorization"
+    "Create Phase402 without separate explicit authorization",
+    "Modify Phase399/400/401 frozen evidence",
+    "Repair or retry Phase401 A1",
+    "Turn Phase402 residual repair into paragraph-length or question-count quotas",
+    "Generate Phase402 prose before readiness PASS",
+    "Create best-of-N, parallel candidates, A2 or second window automatically",
+    "Create Phase403 without separate explicit authorization"
   ],
-  "next_required_action": "No active task. Preserve the Phase401 partial directional signal, but do not repair/retry, create A2/second window, or create Phase402 automatically. Any successor requires separate explicit authorization.",
+  "next_required_action": "Build and freeze Phase402 A1 actor commitments, deferred-attribution local view and runner; audit readiness. Do not generate prose until readiness PASS.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -713,16 +731,36 @@
     {
       "path": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
       "role": "Phase401 causal validation settlement preserving partial directional improvement and remaining blockers"
+    },
+    {
+      "path": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
+      "role": "active Phase402 residual causal redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase402 residual causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json",
+      "role": "Phase402 minimal architecture schema"
+    },
+    {
+      "path": "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase402 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json",
+      "role": "Phase402 architecture-ready PASS receipt"
     }
   ],
-  "status": "PHASE401_CLOSED_A1_BLOCKED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NO_SUCCESSOR_AUTHORIZED",
+  "status": "PHASE402_ACTIVE_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "90a7274d7c55e83c4d3ada2ace5085fe4e0a787f1cbb12111915b127792cdd26",
+    "project_state_sha256": "f714cf3aa7fb438f2a6de3d3f24da4e588a86e753e07055b72df62bb6e8f34d2",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -748,6 +786,6 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": null,
+  "active_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
   "last_completed_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json"
 }
