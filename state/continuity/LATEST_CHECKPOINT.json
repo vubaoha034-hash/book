@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 103,
-  "recorded_at": "2026-09-25T12:50:00Z",
+  "sequence": 104,
+  "recorded_at": "2026-09-25T12:58:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. Under the stricter REMOVE-TWIST/HUMAN-STAKE/EMOTIONAL-ENGINE/PLAUSIBILITY/user-fit audit, all original A-F are withdrawn from selection. A new contract-governed batch of five premises was internally audited; G/H/I/J survived and K failed simple-solution resistance. Only G/H/I/J are now eligible for actual-human premise selection. No prose and no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. G/H/I/J were re-audited for issue-template dependence, scene act, reader behavior drive, character specificity and simple-action resistance; all four failed in their current form. No premise is eligible for human selection. A stricter character-specific premise contract is frozen; no new candidates, no prose, no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -313,7 +313,10 @@
     "Phase408 strict audit V2 withdrew all original A-F from human selection.",
     "Phase408 batch2 generated five premise candidates under the frozen anti-overcorrection contract; no prose generated.",
     "Phase408 batch2 internal audit rejected K for simple-solution/business-procedure risk.",
-    "Phase408 batch2 survivors G/H/I/J passed remove-twist, active WANT conflict, irreversible COST, relationship emotion and natural-behavior gates."
+    "Phase408 batch2 survivors G/H/I/J passed remove-twist, active WANT conflict, irreversible COST, relationship emotion and natural-behavior gates.",
+    "Phase408 G/H/I/J issue-template audit completed without new premise generation.",
+    "G/H/I/J all withdrawn from human selection: each remains too generic, issue-led, or vulnerable to routine solution/logistics framing.",
+    "PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2 frozen: future premises must be driven by specific shared history and irreversible behavior, not social-topic positions."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1056,5 +1059,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Deliver only the Phase408 batch2 survivors G/H/I/J for actual-human premise selection. Reject-all is valid. No prose."
+  "next_action": "Remain in Phase408. Do not generate prose or ask for premise selection. A later authorized Phase408 step may generate a small new premise batch under PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2."
 }

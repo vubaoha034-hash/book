@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_PREMISE_SELECTION_CONTRACT_V1",
-  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_VERDICT_ON_BATCH2_SURVIVORS",
+  "status": "SUSPENDED_BATCH2_ALL_FAIL_ISSUE_TEMPLATE_AUDIT",
   "objective": "Validate story-engine attraction before any prose generation.",
   "candidate_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V2.json",
   "human_question": "Which premise, if any, makes you genuinely want to know what happens next?",
@@ -36,13 +36,8 @@
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Ask the actual human whether any of G/H/I/J creates genuine desire to continue. Reject-all is valid. Do not generate prose.",
-  "audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
-  "retained_candidates": [
-    "P408-G",
-    "P408-H",
-    "P408-I",
-    "P408-J"
-  ],
-  "human_selection_authorized": true
+  "next_action": "Do not ask the user to choose G/H/I/J. Await a future Phase408 batch generated under the character-specific premise contract.",
+  "audit": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
+  "retained_candidates": [],
+  "human_selection_authorized": false
 }

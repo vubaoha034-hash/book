@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "BATCH2_ISSUE_TEMPLATE_AUDIT_READY",
+  "status": "PASS_AUDIT_ALL_FAIL_NEXT_CONTRACT_FROZEN_NO_SELECTION_NO_PROSE",
+  "evidence_head": "9d783426c9490a4fd4b6ec137481781b0a54d927",
+  "artifacts": {
+    "audit": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
+    "next_premise_contract": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
+    "batch2_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V2.json"
+  },
+  "checks": {
+    "G_H_I_J_audited_only": true,
+    "new_premises_generated": false,
+    "prose_generated": false,
+    "survivors": [],
+    "human_selection_paused": true,
+    "phase409_not_created": true
+  },
+  "next_action": "Remain in Phase408. G/H/I/J are withdrawn. Await separate authorization to generate a new small premise batch under PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.",
+  "accepted_checkpoint_advance": false
+}

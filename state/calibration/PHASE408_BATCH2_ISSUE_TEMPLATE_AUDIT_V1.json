@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "artifact_id": "PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1",
+  "status": "COMPLETE_ALL_BATCH2_SURVIVORS_FAIL_NO_NEW_CANDIDATES_NO_PROSE",
+  "evidence_head": "9d783426c9490a4fd4b6ec137481781b0a54d927",
+  "audit_criteria": {
+    "remove_issue_test": "Strip the social-issue label (eldercare/divorce/custody/inheritance/business succession). The specific people and relationship history must still create reader pull.",
+    "scene_engine": "There must be a concrete choice that must be made now and whose execution changes the relationship irreversibly; not merely a position debate.",
+    "reader_drive": "The next-page question must be what these specific people will do, not which side is morally correct.",
+    "character_specificity": "Replacing the family/couple with generic equivalents must materially damage the premise; otherwise the characters are templates.",
+    "plausibility_simple_action": "Normal communication, law, finance, mediation or operational fixes may change tactics but cannot dissolve the core conflict."
+  },
+  "results": [
+    {
+      "id": "P408-G",
+      "verdict": "FAIL_ISSUE_TEMPLATE_AND_SOLUTION_SPACE",
+      "remove_issue_test": "FAIL. Remove eldercare/house-sale framing and the premise has almost no individualized sibling history beyond one sacrifices time and one contributes money.",
+      "scene_engine": "PARTIAL. 'Sell the house or take over care next month' is concrete, but it functions primarily as a policy/household allocation decision rather than a character-specific irreversible relational act.",
+      "reader_drive": "FAIL_RISK. The natural reading question is largely who is fairer/right about care, money and the mother's home.",
+      "character_specificity": "FAIL. It can be transplanted with minimal loss to thousands of sibling-caregiving families.",
+      "plausibility_simple_action": "FAIL/PARTIAL. Nursing-home tiers, hiring care, renting/mortgaging the house, public benefits, rotating care, and revised cost-sharing can materially reshape the conflict; the premise does not yet show why those ordinary options have already failed.",
+      "user_fit": "FAIL. Realistic, but likely to feel like a social-issue case discussion rather than immersive fiction."
+    },
+    {
+      "id": "P408-H",
+      "verdict": "FAIL_OPERATIONAL_SOLUTION_AND_GENERIC_COUPLE",
+      "remove_issue_test": "PARTIAL. Marriage exhaustion survives the restaurant label, but the current premise gives little unique relational history beyond work consumed the marriage.",
+      "scene_engine": "PARTIAL. Taking compensation to close versus reopen is concrete, but the wife has already stated she will not continue; that makes a clean separation of business/life a plausible endpoint rather than forcing an emotionally irreducible choice.",
+      "reader_drive": "FAIL_RISK. The reader may mostly evaluate whether the husband should save the shop/employees or choose the marriage.",
+      "character_specificity": "FAIL. Replace restaurant with a studio/shop/family business and the structure remains nearly identical.",
+      "plausibility_simple_action": "FAIL/PARTIAL. Divide compensation, restructure ownership, hire management, husband reopen independently, negotiate debt allocation; these normal actions can reduce the conflict substantially.",
+      "user_fit": "FAIL. More human than the twist batch, but still reads as a relationship/business dilemma template."
+    },
+    {
+      "id": "P408-I",
+      "verdict": "FAIL_GENERIC_CUSTODY_DEBATE_DESPITE_REAL_COST",
+      "remove_issue_test": "PARTIAL/PASS. Parent-child attachment and unequal care labor are human, but the current characterization is still almost entirely the custody/career issue.",
+      "scene_engine": "PASS/PARTIAL. The father can accept the move or actually become primary caregiver; either changes family life materially.",
+      "reader_drive": "PARTIAL. There is some interest in whether the father will accept the full burden, but the premise strongly invites a judgment about whether he only wants the easy parts of parenting.",
+      "character_specificity": "FAIL. No unique history, habit, failure, promise, or child-specific bond makes these exact three people non-interchangeable.",
+      "plausibility_simple_action": "PARTIAL. Mediation, adjusted schedules, remote work, relocation negotiation or shared-care changes cannot erase all cost, but they can turn the story into custody logistics unless more specific relational facts exist.",
+      "user_fit": "FAIL_CURRENT_FORM. Emotion is possible, but it currently reads more like a family-court thought experiment than a novel engine."
+    },
+    {
+      "id": "P408-J",
+      "verdict": "FAIL_TROPE_TEMPLATE_AND_NEGOTIATION_ESCAPE",
+      "remove_issue_test": "PARTIAL. Recognition versus family loyalty survives the gender-inheritance label, but current people are archetypal: capable daughter, traditional father, absent son.",
+      "scene_engine": "PASS/PARTIAL. Daughter resigning is a real act, yet the premise is built around a negotiation position rather than a specific relational wound/event.",
+      "reader_drive": "FAIL_RISK. The reader is strongly prompted to decide whether the father is sexist/unfair rather than become curious about unpredictable behavior from specific people.",
+      "character_specificity": "FAIL. The roles are highly replaceable and map directly onto a common social trope.",
+      "plausibility_simple_action": "FAIL/PARTIAL. Management control, minority equity, vesting, buyout, customer-transition contracts or staged succession are ordinary options; if the father rejects all, the story risks making him a device to preserve the issue.",
+      "user_fit": "FAIL_CURRENT_FORM. Clear anger potential, but too easy to become a thesis about gender/family-business succession."
+    }
+  ],
+  "summary": {
+    "pass": [],
+    "fail": [
+      "P408-G",
+      "P408-H",
+      "P408-I",
+      "P408-J"
+    ],
+    "all_fail": true,
+    "principal_failure_families": [
+      "ISSUE_LABEL_CARRIES_TOO_MUCH_OF_THE_PREMISE",
+      "CHARACTERS_ARE_ROLE_TEMPLATES_NOT_SPECIFIC_PEOPLE",
+      "READER_IS_INVITED_TO_JUDGE_WHO_IS_RIGHT",
+      "NORMAL_LEGAL_FINANCIAL_OR_OPERATIONAL_SOLUTIONS_CAN_DOMINATE",
+      "SCENE_CHOICE_IS_OFTEN_A_POLICY_POSITION_NOT_A_RELATIONSHIP-ALTERING_ACT"
+    ],
+    "human_selection_status": "FORBIDDEN_NO_SURVIVORS"
+  },
+  "disposition": {
+    "withdraw_batch2_survivor_pack_from_selection": true,
+    "no_new_candidates_generated": true,
+    "no_prose_generated": true,
+    "freeze_next_premise_contract": true,
+    "remain_phase408": true,
+    "phase409_authorized": false
+  },
+  "accepted_checkpoint_advance": false
+}

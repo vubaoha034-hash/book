@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "PREMISE_GENERATION_CONTRACT_NOT_CANDIDATE_PACK",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2",
+  "status": "FROZEN_NO_CANDIDATES_GENERATED",
+  "purpose": "Prevent the next premise batch from becoming either high-concept twist machinery or generic social-issue dilemma templates.",
+  "core_principle": "The story engine must come from these specific people having a specific shared history that makes an immediate action costly. Social issues, secrets and themes may contextualize the conflict but may not substitute for individualized character causality.",
+  "mandatory_gates": [
+    {
+      "gate": "REMOVE_ISSUE_TEST",
+      "requirement": "Remove the topic label (eldercare, divorce, inheritance, class, gender, workplace, etc.). The relationship must still contain a compelling conflict that only makes sense for these specific people."
+    },
+    {
+      "gate": "SCENE_ACT_NOT_POSITION",
+      "requirement": "The premise must contain one concrete action/decision that occurs now and cannot be cleanly undone, changing what one person can expect from another. 'Should we agree on X?' is insufficient."
+    },
+    {
+      "gate": "BEHAVIOR_NOT_VERDICT",
+      "requirement": "The next-page question must be 'what will this person actually do now, given who they are and what they did before?' rather than 'which side is correct?'"
+    },
+    {
+      "gate": "CHARACTER_NON_SUBSTITUTABILITY",
+      "requirement": "At least two relationship-specific facts, prior actions, promises, betrayals, dependencies, habits or shared events must make role substitution lossy. If generic mother/father/sibling/spouse labels preserve the premise, FAIL."
+    },
+    {
+      "gate": "SIMPLE_ACTION_ATTACK",
+      "requirement": "Explicitly test ordinary communication, separation, mediation, legal process, money, outsourcing, relocation, buyout and delay. If one routine option dissolves the core conflict, FAIL."
+    },
+    {
+      "gate": "EMOTION_BEFORE_THEME",
+      "requirement": "Emotion must arise from what one named person did or failed to do to another, not from the abstract issue being sad/unfair."
+    },
+    {
+      "gate": "KNOWN_FACTS_FIRST",
+      "requirement": "The premise should remain readable and tense even if the reader is told the material facts early. Hidden answers may amplify but may not rescue the engine."
+    }
+  ],
+  "anti_template_rules": [
+    "Do not start from a social issue and assign family roles to illustrate both sides.",
+    "Do not use one character mainly as the spokesperson for a moral position.",
+    "Do not make the irreversible cost depend only on property/money/custody paperwork; show what one person's act means specifically to another.",
+    "Do not create artificial deadlines solely to block ordinary solutions.",
+    "Do not rely on villain rigidity ('father simply refuses every fair option') to preserve conflict.",
+    "Do not reward topical relevance, moral seriousness or logline neatness as reader drive."
+  ],
+  "desired_character_engine": [
+    "A prior promise one person now cannot keep without hurting someone else.",
+    "A favor/debt that changed who is allowed to ask what of whom.",
+    "A past sacrifice that the recipient interprets differently from the sacrificer.",
+    "A repeated behavior pattern that becomes intolerable at a specific moment.",
+    "A relationship where both people know the same facts but assign incompatible meanings to the same shared history.",
+    "A decision that forces one person to demonstrate, not merely state, what they value."
+  ],
+  "evaluation_output_required_for_future_batch": [
+    "specific shared-history facts",
+    "immediate irreversible act",
+    "what the reader already knows",
+    "why simple solution fails naturally",
+    "what exact behavior the reader wants to witness next",
+    "role-substitution test result"
+  ],
+  "candidate_policy": {
+    "generate_new_candidates_now": false,
+    "existing_G_H_I_J_retained_for_selection": [],
+    "human_choice_now": false,
+    "next_batch_must_be_internally_audited_before_display": true
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Remain in Phase408. Do not generate new premises in this audit step. A later authorized Phase408 action may generate a small batch under this character-specific contract; only survivors may be shown to the user."
+}
