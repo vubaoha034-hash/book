@@ -5,7 +5,7 @@
   "phase": 405,
   "task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
   "contract_id": "PHASE405_SINGLE_A1_VALIDATION_CONTRACT_V1",
-  "status": "FROZEN_ARCHITECTURE_READY_AWAITING_COMPILED_INPUT",
+  "status": "FROZEN_READY_SINGLE_A1_AUTHORIZED",
   "architecture_under_test": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
   "historical_controls": {
     "phase402": "CLEAR semantic/global/ownership; human reader-drive rejection",
@@ -73,8 +73,11 @@
     "second window",
     "human review before hidden gates clear"
   ],
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build one compiled writer-visible packet and one runner under this frozen contract. Run readiness/guard audit. Only then may the single isolated A1 be activated."
+  "next_action": "Execute the one authorized isolated A1, freeze raw output verbatim, then run all required hidden gates.",
+  "compiled_writer_projection": "state/author_packets/PHASE405_NS02_LINQIAO_COMPILED_CAUSAL_VIEW_A1.json",
+  "writer_entry": "delivery/phase405/RUN_NS02_LINQIAO_CAUSAL_OWNERSHIP_A1.txt",
+  "readiness_receipt": "state/review_receipts/PHASE405_NS02_A1_FRESH_WRITER_READY_V1.json"
 }

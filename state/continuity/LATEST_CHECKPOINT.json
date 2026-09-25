@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 91,
-  "recorded_at": "2026-09-25T09:25:00Z",
+  "sequence": 92,
+  "recorded_at": "2026-09-25T09:30:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1"
   ],
-  "current_focus": "Phase405 is the sole active successor. Cross-run diagnosis attributes the Phase404 regression primarily to renderer-owned semantic degrees of freedom exposed by fresh-run sampling, not supported coordinator-state leakage. Architecture gate passed for CAUSAL_OWNERSHIP_COMPILED_WRITER_V1; no prose is authorized until one compiled A1 input and runner pass readiness.",
+  "current_focus": "Phase405 compiled A1 input and runner passed readiness. Exactly one isolated fresh-writer A1 is authorized under CAUSAL_OWNERSHIP_COMPILED_WRITER_V1 with Phase404 response transaction reused verbatim. No retry, A2, second window or human review is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -259,7 +259,11 @@
     "Coordinator-state leakage is not supported by current evidence; random sampling is plausible but treated as an exposure of latent mechanism instability, not as grounds for retry.",
     "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1 selected: abstract live-vector semantics become coordinator-only and information-bearing non-focal events become pre-owned causal event cards.",
     "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 remains frozen and unchanged.",
-    "Phase405 single-A1 validation contract frozen: one candidate, no best-of-N, no retry, no A2, no second window, no human review before all required hidden gates clear."
+    "Phase405 single-A1 validation contract frozen: one candidate, no best-of-N, no retry, no A2, no second window, no human review before all required hidden gates clear.",
+    "Phase405 compiled writer-visible packet removes abstract live-vector summaries while preserving concrete current state and source locks.",
+    "Phase405 non-focal information-bearing behavior is pre-owned by causal event cards anchored to each actor's own task/environment state.",
+    "Phase405 runner reuses the Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 text verbatim.",
+    "Phase405 readiness/guard audit passed; one isolated A1 authorized."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1002,5 +1006,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Build and audit the single Phase405 compiled A1 packet and runner. Only after readiness PASS may the one isolated fresh-writer A1 run."
+  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase405 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry."
 }

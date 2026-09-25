@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
   "phase_ordinal": 405,
-  "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "status": "ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
   "purpose": "Stabilize the Phase402/403 gains against fresh-run regression of semantic mechanical dialogue, response ownership and hidden global optimization without changing the Phase404 output-boundary transaction or adding surface prose rules.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE404_CLOSE",
@@ -41,9 +41,12 @@
     "BUILD_COMPILED_A1_INPUT_AFTER_ARCHITECTURE_READY_PASS",
     "RUN_SINGLE_FRESH_A1_AFTER_READINESS_PASS"
   ],
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and audit exactly one compiled A1 input/runner. Do not generate prose until readiness PASS."
+  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase405 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry.",
+  "writer_visible_projection": "state/author_packets/PHASE405_NS02_LINQIAO_COMPILED_CAUSAL_VIEW_A1.json",
+  "writer_entry": "delivery/phase405/RUN_NS02_LINQIAO_CAUSAL_OWNERSHIP_A1.txt",
+  "readiness_receipt": "state/review_receipts/PHASE405_NS02_A1_FRESH_WRITER_READY_V1.json"
 }
