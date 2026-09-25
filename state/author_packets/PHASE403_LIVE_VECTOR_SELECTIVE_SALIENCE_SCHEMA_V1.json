@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+  "project_id": "novel-distillation",
+  "phase": 403,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Increase reader drive and scene velocity by changing local entry-state selection and writer-visible salience, while preserving Phase402 gains.",
+  "coordinator_only": {
+    "full_world_model_ref": "string",
+    "broad_ambient_inventory_by_id": {
+      "<id>": "string"
+    },
+    "full_relationship_model": "HIDDEN",
+    "evaluator_layer": "HIDDEN",
+    "entry_state_selector": {
+      "selects_first_causally_loaded_state": true,
+      "required_properties": [
+        "focal desired outcome is active now",
+        "a real obstruction or uncertainty is active now",
+        "non-resolution carries a concrete personal cost",
+        "outcome is not precommitted"
+      ],
+      "earliest_chronological_state_is_not_default": true,
+      "may_skip_neutral_setup": true
+    },
+    "selective_salience_gate": {
+      "broad_realistic_detail_pool_hidden": true,
+      "writer_visible_detail_eligibility": [
+        "can alter current practical choice",
+        "can alter current uncertainty",
+        "can alter cost or consequence",
+        "can create or change embodied affect",
+        "can materially constrain the live vector"
+      ],
+      "no_numeric_detail_quota": true,
+      "no_information_density_score_visible_to_writer": true
+    }
+  },
+  "writer_visible_projection": {
+    "metadata": {
+      "story_id": "string",
+      "local_window_id": "string",
+      "focal_character_id": "string",
+      "order_semantics": "NONE",
+      "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE"
+    },
+    "focal_live_vector": {
+      "desired_local_state": "string",
+      "blocking_condition_or_uncertainty": "string",
+      "personal_cost_if_unresolved": "string",
+      "unresolved_local_outcome_question": "string",
+      "outcome_known_to_writer": false,
+      "resolution_required_in_passage": false
+    },
+    "focal_live_state": {
+      "identity_lock": "string",
+      "factual_private_knowledge_by_id": {
+        "<id>": "string"
+      },
+      "current_body_state": "string",
+      "current_action_tendency": "string",
+      "current_avoidance": "string",
+      "abstract_relationship_thesis": "OMITTED"
+    },
+    "non_focal_actor_commitments_ref": {
+      "source_path": "string",
+      "immutable_sha256": "string",
+      "writer_receives_observable_commitments_only": true
+    },
+    "active_environment_processes_by_id": {
+      "<id>": {
+        "observable_process": "string",
+        "current_consequence_for_live_vector": "string",
+        "may_continue_without_focal_attention": true
+      }
+    },
+    "active_salience_by_id": {
+      "<id>": {
+        "concrete_detail_or_state": "string",
+        "relevance_kind": "CHOICE | UNCERTAINTY | COST | CONSTRAINT | EMBODIED_AFFECT",
+        "abstract_meaning": "OMITTED",
+        "coverage_required": false
+      }
+    },
+    "immutable_hard_locks_by_id": {
+      "<id>": "string"
+    },
+    "mystery_boundaries_by_id": {
+      "<id>": "string"
+    },
+    "output_request": {
+      "mode": "FICTION_PROSE_ONLY",
+      "language": "Chinese",
+      "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+      "start_from_current_entry_state": true,
+      "whole_scene_completion_required": false,
+      "use_every_available_detail_required": false,
+      "resolve_open_outcome_required": false,
+      "invent_new_mystery_for_hook": false,
+      "editor_notes_allowed": false,
+      "analysis_or_self_evaluation_allowed": false,
+      "second_version_allowed": false
+    }
+  },
+  "preserved_architecture_layers": {
+    "actor_commitment_deferred_attribution": true,
+    "non_focal_private_state_hidden": true,
+    "abstract_relationship_interpretation_hidden": true,
+    "one_or_zero_raw_memory_fragment": true,
+    "hidden_evaluator_firewall": true,
+    "single_focal_consciousness": true
+  },
+  "renderer_authority_boundary": {
+    "may_choose_focal_actions_within_live_vector": true,
+    "may_realize_frozen_non_focal_commitments": true,
+    "may_ignore_optional_active_salience": true,
+    "may_not_reintroduce_hidden_neutral_inventory": true,
+    "may_not_invent_new_secret_or_mystery_to_manufacture_suspense": true,
+    "may_not_receive_or_apply_pacing_quotas": true,
+    "may_stop_before_outcome_resolution": true
+  },
+  "audit_rules": [
+    "BLOCK if writer-visible input begins from neutral setup while a later already-existing causally loaded state is intentionally withheld only for chronology.",
+    "BLOCK if broad inventory/detail pools are exposed wholesale.",
+    "BLOCK if focal personal cost is replaced by abstract relationship commentary.",
+    "BLOCK if live outcome is pre-solved or accompanied by reveal order.",
+    "BLOCK if a new arbitrary mystery is invented only to create suspense.",
+    "BLOCK if paragraph length, question count, mandatory state-change frequency or suspense quotas are exposed.",
+    "BLOCK if Phase402 actor commitments/private-state firewall is weakened.",
+    "BLOCK if whole-scene completion or best-of-N returns."
+  ],
+  "hidden_post_generation_reader_drive_diagnostics": {
+    "writer_visible": false,
+    "dimensions": [
+      "time_to_first_live_vector",
+      "neutral_detail_before_first_consequential_choice",
+      "focal_cost_visibility",
+      "open_outcome_visibility",
+      "scene_state_change_without_explanatory_overclosure"
+    ],
+    "note": "These are evaluator dimensions, not writer quotas."
+  },
+  "prospective_claim_boundary": {
+    "if_single_A1_clears_hidden_gates_and_human_review": "Only supports a bounded signal that the new reader-drive architecture improved this controlled passage.",
+    "no_claims": [
+      "long-form transfer",
+      "global suspense solved",
+      "global emotion solved",
+      "production promotion",
+      "accepted checkpoint advancement"
+    ]
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}
