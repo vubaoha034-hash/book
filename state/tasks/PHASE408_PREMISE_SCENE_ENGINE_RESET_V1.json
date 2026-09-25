@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "phase_ordinal": 408,
-  "status": "ACTIVE_FAST_WEBNOVEL_RESEARCH_COMPLETE_OPENING_ENGINE_CONTRACT_FROZEN",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_OPENING_ENGINE_SELECTION_BATCH1",
   "purpose": "Reset the premise/scene engine after Phase407 actual-human rejection despite all hidden prose gates clearing. Validate reader pull at premise level before any further fiction generation.",
   "authorization": {
     "source": "EXPLICIT_USER_CONTINUE_NEXT_STEP_AFTER_PHASE407_CLOSE",
@@ -17,12 +17,16 @@
   "architecture_ready_receipt": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
-  "user_delivery_authorized": false,
+  "user_delivery_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Remain in Phase408. Generate no prose yet. Next authorized step should create a small set of OPENING_ENGINE_CARD candidates derived from current fast-webnovel research, internally audit event density/agency/payoff, and only then show survivors to the human.",
+  "next_action": "Deliver only OE408-A/B/C opening-engine cards for actual-human selection. No prose; no Phase409.",
   "premise_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
   "new_premise_generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
-  "retained_candidates": [],
+  "retained_candidates": [
+    "OE408-A",
+    "OE408-B",
+    "OE408-C"
+  ],
   "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
   "issue_template_audit": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
   "character_specific_premise_contract": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
@@ -30,5 +34,8 @@
   "actual_human_batch3_receipt": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json",
   "current_fast_webnovel_research": "state/calibration/PHASE408_CURRENT_FAST_WEBNOVEL_OPENING_RESEARCH_V1.json",
   "opening_event_engine_contract": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json",
-  "batch3_minimal_reviewer_attack": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json"
+  "batch3_minimal_reviewer_attack": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json",
+  "opening_engine_batch1_internal_audit": "state/calibration/PHASE408_OPENING_ENGINE_BATCH1_INTERNAL_AUDIT_V1.json",
+  "opening_engine_survivor_pack": "state/calibration/PHASE408_OPENING_ENGINE_SURVIVOR_PACK_V1.json",
+  "opening_engine_selection_contract": "state/tasks/PHASE408_OPENING_ENGINE_SELECTION_CONTRACT_V1.json"
 }

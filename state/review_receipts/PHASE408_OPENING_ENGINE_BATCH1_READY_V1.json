@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "OPENING_ENGINE_BATCH1_READY",
+  "status": "PASS_THREE_OPENING_ENGINE_SURVIVORS_READY_FOR_HUMAN_SELECTION_NO_PROSE",
+  "evidence_head": "f763b558bd1049be34e4cc20b14e400fde8df68d",
+  "artifacts": {
+    "internal_audit": "state/calibration/PHASE408_OPENING_ENGINE_BATCH1_INTERNAL_AUDIT_V1.json",
+    "survivor_pack": "state/calibration/PHASE408_OPENING_ENGINE_SURVIVOR_PACK_V1.json",
+    "selection_contract": "state/tasks/PHASE408_OPENING_ENGINE_SELECTION_CONTRACT_V1.json"
+  },
+  "checks": {
+    "current_successor_is_opening_event_engine": true,
+    "checkpoint106_precedes_checkpoint107": true,
+    "checkpoint107_preserved_as_additional_reviewer_evidence": true,
+    "candidate_count": 4,
+    "survivor_count": 3,
+    "rejected_count": 1,
+    "every_survivor_state_changes_at_least_3": true,
+    "every_survivor_early_protagonist_action": true,
+    "every_survivor_same_chapter_payoff": true,
+    "every_survivor_concrete_next_action_hook": true,
+    "no_prose_generated": true,
+    "no_phase409": true,
+    "L_M_O_not_reopened": true
+  },
+  "next_action": "Human opening-engine selection only.",
+  "accepted_checkpoint_advance": false
+}

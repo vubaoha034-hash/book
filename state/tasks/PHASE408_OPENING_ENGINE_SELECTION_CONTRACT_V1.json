@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "OPENING_ENGINE_SELECTION_CONTRACT_NOT_PROSE",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_OPENING_ENGINE_SELECTION_CONTRACT_V1",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_OPENING_ENGINE_SELECTION",
+  "candidate_pack": "state/calibration/PHASE408_OPENING_ENGINE_SURVIVOR_PACK_V1.json",
+  "acceptance": "At least one engine receives an unforced actual-human desire-to-read-next signal based on event chain/protagonist behavior, not topic prestige.",
+  "reject_all_allowed": true,
+  "multi_select_allowed": true,
+  "forbidden": [
+    "fiction prose",
+    "Phase409",
+    "best-of-N prose",
+    "revive L/M/O",
+    "treat selection as literary acceptance"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Present only OE408-A/B/C to the human for opening-engine selection. Record selection/reject-all before any prose."
+}

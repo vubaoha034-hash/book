@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 107,
-  "recorded_at": "2026-09-25T14:15:00Z",
+  "sequence": 108,
+  "recorded_at": "2026-09-25T14:30:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. A checkpoint-104-style reviewer attack was applied to frozen L/M/O after their already-recorded human rejection. All three fail strict SIMPLE-ACTION/READER-DRIVE/PLAUSIBILITY review: L is easily dissolved by truthful rewrite and uses clippings as an emotional-proof device; M has an avoidable stage binary and dubious sole-songwriter-credit setup; O has specific history but a natural deflection path avoids the claimed forced binary. No batch3 survivor remains. Opening-event-engine contract from checkpoint106 is preserved; no new premise, no prose, no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. Idempotent reconciliation confirms checkpoint106 activated the opening-event-engine direction and checkpoint107 only added reviewer evidence rejecting L/M/O. Under the existing opening-engine contract, four OPENING_ENGINE_CARD candidates were generated and internally audited; A/B/C survive event-density, early-agency, causal-loop, same-chapter-payoff and concrete-next-action gates; D fails because its finals-starter continuation is not causally sharp enough. No prose and no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -327,7 +327,11 @@
     "Phase408 batch3 minimal reviewer attack completed after existing human rejection; L/M/O all fail strict checkpoint104 gates.",
     "L failed because a truthful dedication rewrite dissolves the binary and the clipping archive functions as an emotional-proof device.",
     "M failed because the stage decision is avoidable and the sole-songwriter-credit label condition is institutionally dubious without additional rights structure.",
-    "O failed strict SIMPLE-ACTION because 陈志 can naturally refuse/deflect and return the answer to 胡强, leaving no truly forced binary."
+    "O failed strict SIMPLE-ACTION because 陈志 can naturally refuse/deflect and return the answer to 胡强, leaving no truly forced binary.",
+    "Phase408 reconciled checkpoint106 -> checkpoint107 ordering without rollback.",
+    "Phase408 opening-event-engine contract confirmed as current legal successor.",
+    "Phase408 opening-engine batch1 generated four cards and internally audited them without prose.",
+    "OE408-D rejected for weak causally-derived next-action hook; OE408-A/B/C survive."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1070,5 +1074,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Remain in Phase408. Generate no prose yet. Next authorized step should create a small set of OPENING_ENGINE_CARD candidates derived from current fast-webnovel research, internally audit event density/agency/payoff, and only then show survivors to the human."
+  "next_action": "Deliver only OE408-A/B/C opening-engine cards for actual-human selection. No prose; no Phase409."
 }
