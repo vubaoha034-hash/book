@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 401,
+  "task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+  "attempt": "A1",
+  "event_type": "POST_GENERATION_CAUSAL_VALIDATION_SETTLEMENT",
+  "status": "BLOCK_REJECT_A1_ATTEMPT_EXHAUSTED_PARTIAL_DIRECTIONAL_IMPROVEMENT",
+  "evidence_head_before_settlement": "f2f1e26e3327e52bb4fa3e2bd3040224de3eea29",
+  "architecture_under_test": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+  "storage": {
+    "writer_chat_output": {
+      "chars": 2741,
+      "sha256": "8991c4d5a9d48bba1ad740252123dc1233e27af65fe15a235cf0d0cdaee0705e",
+      "terminal_lf": false
+    },
+    "inbox": {
+      "path": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "chars": 2742,
+      "sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b",
+      "terminal_lf": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "chars": 2742,
+      "sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b",
+      "terminal_lf": true
+    },
+    "normalization": {
+      "kind": "GITHUB_WEB_SINGLE_TERMINAL_LF_ONLY",
+      "prose_equal_after_removing_single_terminal_lf": true,
+      "normalized_sha256": "8991c4d5a9d48bba1ad740252123dc1233e27af65fe15a235cf0d0cdaee0705e",
+      "inbox_and_frozen_raw_equal": true
+    }
+  },
+  "source_fidelity": {
+    "verdict": "CLEAR",
+    "identities_preserved": [
+      "林乔",
+      "林国忠",
+      "吴兰",
+      "许雯"
+    ],
+    "complete_xuwen_departure_explanation_invented": false,
+    "complete_linguozhong_silence_explanation_invented": false,
+    "magical_single_evidence_resolution_invented": false,
+    "non_focal_hidden_motive_asserted_as_objective_narrator_fact": false,
+    "focal_inference_or_misreading_preserved": true,
+    "note": "Lin Qiao makes strong inferences about her father's refusal to let go, but these are represented through her focal interpretation rather than privileged access to his hidden private state."
+  },
+  "writer_output_contract": {
+    "verdict": "BLOCK",
+    "violations": [
+      "A title-like non-fiction label '中文小说局部正文' appears before the prose despite the no-title instruction.",
+      "Three non-prose editorial suggestion lines appear after the frozen prose."
+    ],
+    "located_tail": [
+      "强化许雯线索的悬念回收",
+      "让林国忠的拒签更有动作支撑",
+      "减少重复的留白句式"
+    ],
+    "disposition": "Preserved verbatim. No cleanup or deletion."
+  },
+  "deterministic_dialogue_gate": {
+    "verdict": "BLOCK",
+    "rule": "scripts/check_dialogue_adjacency.py",
+    "phase401": {
+      "run_count": 12,
+      "blocked_run_count": 2,
+      "blocked_run_ratio": 0.1667
+    },
+    "phase399_baseline": {
+      "run_count": 43,
+      "blocked_run_count": 21,
+      "blocked_run_ratio": 0.4884
+    },
+    "directional_comparison": {
+      "absolute_blocked_run_ratio_change": -0.3217,
+      "relative_ratio_reduction_approx": 0.6587,
+      "interpretation": "Strong directional reduction in the structural tripwire rate, but Layer A remains BLOCK. Count comparison is not treated as length-normalized causal proof because Phase401 is a shorter local passage."
+    },
+    "blocked_runs": [
+      {
+        "description": "Signature / urgent water / box-selection chain",
+        "turns": [
+          "签字要一分钟吗？",
+          "不急这一分钟，先把后面东西抬起来。水要碰到纸箱了。",
+          "哪几个？",
+          "墙边那排。",
+          "别踩。"
+        ],
+        "reasons": [
+          "QUESTION_ANSWER_LADDER",
+          "ALTERNATING_QA_CHAIN"
+        ]
+      },
+      {
+        "description": "Power-cut / main-switch / recent-fuse chain",
+        "turns": [
+          "再往里就得先断总电了。",
+          "总闸还能用吗？",
+          "能。",
+          "你确定？",
+          "上个月换过里面的保险。",
+          "上个月？"
+        ],
+        "reasons": [
+          "RAPID_SHORT_TURN_LADDER",
+          "QUESTION_ANSWER_LADDER",
+          "ALTERNATING_QA_CHAIN"
+        ]
+      }
+    ],
+    "settlement_rule": "Any deterministic BLOCK is sufficient to reject the candidate."
+  },
+  "semantic_dialogue_gate": {
+    "verdict": "BLOCK",
+    "rule": "rules/dialogue-mechanical-blocker-v1.md",
+    "located_stretches": [
+      {
+        "description": "Handover-form lookup and signature exchange",
+        "examples": [
+          "交接表呢？ / 柜台下面。 / 下面没有。 / 左边。",
+          "你还没签。 / 知道。 / 吴兰明早要交。 / 知道。 / 那你现在签了不就行了？"
+        ],
+        "criteria": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "TURN_ORDER_SPEAKER_IDENTITY"
+        ]
+      },
+      {
+        "description": "Electrical-safety exchange",
+        "examples": [
+          "总闸还能用吗？ / 能。 / 你确定？ / 上个月换过里面的保险。 / 上个月？"
+        ],
+        "criteria": [
+          "EXACT_ADJACENCY_COMPLETION",
+          "SINGLE_SHARED_CONVERSATIONAL_AGENDA",
+          "TURN_ORDER_SPEAKER_IDENTITY"
+        ]
+      }
+    ],
+    "improvement_note": "The shared-agenda machinery is materially less pervasive than Phase399, and environmental/action interruptions are more present, but at least one strong multi-criterion stretch remains. Therefore Layer B is still BLOCK."
+  },
+  "paragraph_geometry_diagnostic_only": {
+    "paragraph_count": 134,
+    "one_sentence_or_less_count": 115,
+    "one_sentence_or_less_ratio": 0.8582,
+    "length_le_16_count": 93,
+    "length_le_16_ratio": 0.694,
+    "phase399_reference": {
+      "paragraph_count": 658,
+      "one_sentence_or_less_ratio": 0.959,
+      "length_le_16_ratio": 0.8313
+    },
+    "phase370_human_positive_reference": {
+      "one_sentence_or_less_ratio": 0.9444,
+      "length_le_16_ratio": 0.7361
+    },
+    "blocker_status": "DIAGNOSTIC_ONLY",
+    "interpretation": "Fragmentation decreased from Phase399, but short paragraph geometry is not used as a primary pass/fail separator because Phase370 human-positive prose is also highly fragmented."
+  },
+  "hidden_global_optimization_diagnostic": {
+    "verdict": "BLOCK",
+    "rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "signatures": {
+      "AS_01_READER_FACING_INFERENCE_CLOSURE_CADENCE": {
+        "status": "SUPPORTED",
+        "located_examples": [
+          "‘这些以后也不用了’ is immediately converted into an explicit conclusion that the studio has no '以后'.",
+          "The shared tray-space action is followed by childhood explanation and an explicit relationship interpretation.",
+          "The recent fuse repair is followed by a direct focal thesis that the studio remains open because Lin Guozhong refuses to admit loss."
+        ]
+      },
+      "AS_02_MAXIMIZED_FUNCTIONAL_DENSITY_NO_INCIDENTAL_LIFE": {
+        "status": "PARTIAL",
+        "evidence": "Many practical objects—drawer, unsigned form, wet photos, tray space, fuse, height marks—are quickly monetized into handover progress, memory, or relationship inference, though rain/street/material activity provides some independent life."
+      },
+      "AS_03_UNIFORM_CLUE_INFERENCE_ACTION_CYCLE": {
+        "status": "SUPPORTED",
+        "located_cycles": [
+          "drawer location -> childhood key memory -> return to paperwork",
+          "wet photos/shared tray space -> childhood work habit -> relationship meaning",
+          "recent fuse repair -> inference about father's refusal to let go -> next moving task",
+          "height marks -> childhood memory -> silent mutual look -> changed pressure on signature"
+        ]
+      },
+      "AS_04_CHARACTER_AS_TASK_PROCESSOR": {
+        "status": "PARTIAL",
+        "evidence": "Lin Qiao and Wu Lan still conduct several highly functional exchanges, but non-focal characters also continue independent physical activity and sometimes redirect the agenda; this is improved relative to Phase399."
+      },
+      "AS_05_CAUSAL_NEATNESS_AND_EXECUTIVE_SUMMARY_NARRATOR": {
+        "status": "PARTIAL",
+        "evidence": "The focal narration repeatedly converts observed facts into compact explanatory theses such as '好像什么事只要不说...' and '就是他不肯认'."
+      },
+      "AS_06_LOW_SOCIAL_IDIOSYNCRASY_GENERIC_VOICE": {
+        "status": "PARTIAL",
+        "evidence": "Much dialogue remains practical and role-defined, though the father-daughter work history supplies more relationship-specific behavior than Phase399."
+      },
+      "AS_07_ENGINEERED_REVEAL_ESCALATION": {
+        "status": "UNPROVEN",
+        "evidence": "The local passage does not force the undeveloped-film reveal and allows a natural stop."
+      }
+    },
+    "overall_reason": "Multiple recurring supported global-optimization signatures remain across the passage, especially inference-closure cadence and object/detail -> interpretation -> task progression cycles. Therefore the required NO_BLOCK condition is not met.",
+    "improvement_note": "The architecture reduced whole-scene checklist coverage and major reveal escalation, but did not eliminate global authorial optimization regularity."
+  },
+  "causal_validation_result": {
+    "hypothesis_test": "Does focal/opaque/local-horizon visibility materially reduce Phase399 shared-agenda exact-adjacency/global-optimization failure?",
+    "shared_agenda_exact_adjacency": "PARTIAL_DIRECTIONAL_REDUCTION_NOT_CLEAR",
+    "global_optimization": "PARTIAL_REDUCTION_STILL_BLOCK",
+    "output_contract": "FAILED_AGAIN",
+    "overall": "NOT_VALIDATED",
+    "evidence_summary": [
+      "Deterministic blocked-run ratio fell from 21/43 (48.84%) to 2/12 (16.67%).",
+      "Semantic mechanical dialogue still BLOCKED.",
+      "Hidden global optimization still BLOCKED.",
+      "Writer output contract failed again with a label and three editorial suggestion lines."
+    ],
+    "claims_forbidden": [
+      "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 solved mechanical dialogue",
+      "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 solved AI smell",
+      "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 solved immersion",
+      "Phase401 is ready for long-form or production promotion"
+    ]
+  },
+  "settlement": {
+    "candidate_rejected_whole": true,
+    "required_gate_failures": [
+      "WRITER_OUTPUT_CONTRACT_BLOCK",
+      "DETERMINISTIC_DIALOGUE_BLOCK",
+      "SEMANTIC_DIALOGUE_BLOCK",
+      "HIDDEN_GLOBAL_OPTIMIZATION_BLOCK"
+    ],
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "best_of_n_used": false,
+    "parallel_candidates_created": 1,
+    "local_repair_forbidden": true,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "user_delivery_authorized": false,
+    "actual_human_review_performed": false,
+    "phase402_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "next_action": "Close Phase401 as a blocked single-attempt prospective validation with a preserved partial directional improvement signal. Do not repair, retry, create A2/second window, or create Phase402 automatically. Any successor requires separate explicit authorization."
+}
