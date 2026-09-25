@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "generation_contract": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
+  "candidates": [
+    {
+      "id": "P408-L",
+      "premise": "苏岚十七岁那年和母亲大吵一架，说家里没人相信她能靠画画活。第二天，母亲把自己唯一的一只金镯子卖了，替她交了第一年美院学费；可此后十二年，母亲一次也没去过她的展览，只把所有报道和展签剪下来收在抽屉里。今晚是苏岚第一次回老家办个人展，她在入口墙上写了一句：‘谢谢我母亲，她是第一个相信我的人。’开门前一个小时，母亲提前来了，看完只说：‘把这句删掉。我当年交钱，是想让你离开那个家，不是因为我懂你的画。’观众很快就要进场。苏岚必须决定，这句话到底留不留。",
+      "shared_history": [
+        "17岁争吵后，母亲卖掉唯一金镯替苏岚交美院第一年学费。",
+        "之后十二年母亲从未到场看展，却持续保存每一份与女儿有关的报道和展签。"
+      ],
+      "internal_audit": {
+        "remove_issue_twist": "PASS. No social-issue label or secret is needed; both know the same history.",
+        "character_non_substitutability": "PASS. The sold bracelet plus twelve years of absent attendance/kept clippings creates a specific contradictory relationship history; generic mother/daughter substitution loses the engine.",
+        "immediate_irreversible_act": "PASS. Before the hometown solo exhibition opens, 苏岚 must keep or remove a public sentence that fixes the meaning of their shared past in front of others.",
+        "reader_drive": "PASS. The next-page question is what 苏岚 will do with her mother's refusal of the supportive-mother story, not which abstract parenting theory is right.",
+        "simple_action_attack": "PASS. Private clarification, rewriting a neutral dedication, or postponing conversation can avoid embarrassment but cannot settle whether 苏岚 publicly preserves or relinquishes the story she has used to understand that sacrifice.",
+        "prohibited_high_concept": "PASS. No death, terminal illness, crime, identity secret, mystery object, resurrection footage or hidden-answer engine.",
+        "natural_behavior": "PASS. A parent objecting to being publicly represented in a way she considers false, immediately before an exhibition, is plausible.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "P408-M",
+      "premise": "十九岁时，程野和陆川在学校排练楼的楼梯间写出了一首歌。后来唱片公司只肯签主唱程野，条件之一是首张专辑的词曲署名只能放他一个人的名字。陆川当时亲口说‘先把歌发出去’，此后二十年，程野一直把这首歌一半的版税转给陆川；陆川却再也没有以创作者身份回到舞台。今晚这首歌被选进年度经典作品，程野要上台领奖。陆川也来了，但进场前已经告诉他：‘别在台上补偿我。你说我的名字，观众最后记住的还是你终于做了件好事。’主持人正在念程野的名字。程野接下来必须决定，领奖时到底说不说陆川。",
+      "shared_history": [
+        "19岁两人在学校排练楼楼梯间共同完成这首成名曲。",
+        "发行时陆川同意程野单独署名，之后二十年程野持续私下转付一半版税，但公开署名从未改变。"
+      ],
+      "internal_audit": {
+        "remove_issue_twist": "PASS. There is no hidden authorship reveal; the reader knows the full credit history from the start.",
+        "character_non_substitutability": "PASS. Their exact bargain—public sole credit paired with twenty years of private half royalties—creates a relationship that cannot be reduced to generic 'friends had conflict'.",
+        "immediate_irreversible_act": "PASS. A live acceptance speech forces an immediate public act: name 陆川 or deliberately remain silent again; either changes what their twenty-year arrangement now means.",
+        "reader_drive": "PASS. The question is whether 程野 will obey 陆川's explicit wish or publicly correct a wrong he can no longer tolerate—not who is legally entitled to credit.",
+        "simple_action_attack": "PASS. Money, contracts, private apology and quiet credit have effectively already been attempted or are inadequate; the unresolved conflict is specifically public recognition versus refusal to become material for 程野's redemption.",
+        "prohibited_high_concept": "PASS. No prohibited high-concept mechanism.",
+        "natural_behavior": "PASS. Award speeches and disputes over public versus private acknowledgment are plausible; 陆川's refusal gives a credible reason the problem cannot be solved by a simple apology.",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "id": "P408-N",
+      "premise": "林澈六岁开始跟父亲拉小提琴。十七岁想考音乐学院时，父亲坚决反对，两人因此断了往来；但之后十五个春节，父亲都会寄一套她小时候最常用的琴弦，从不写信，也从不去她的演出。林澈今年第一次回老家开独奏会，临时提出让父亲在返场时和她合奏小时候那首曲子。父亲拒绝，说自己十五年没登台，也不愿让全场观众误以为‘你今天能站在这里，是我一路支持你的’。林澈仍要求他上台，否则取消这段返场。",
+      "shared_history": [
+        "父亲从六岁起亲自教林澈小提琴，十七岁却因反对她报考音乐学院而决裂。",
+        "决裂后的十五个春节，父亲持续寄她小时候惯用的琴弦，却从未参加任何一场演出。"
+      ],
+      "internal_audit": {
+        "remove_issue_twist": "PASS",
+        "character_non_substitutability": "PASS",
+        "immediate_irreversible_act": "PARTIAL",
+        "reader_drive": "PARTIAL",
+        "simple_action_attack": "FAIL. 林澈完全可以不把父亲推上公开舞台，改为私下合奏、自己返场或以后再处理；为了制造当场选择而坚持‘不上台就取消返场’显得是作者在锁死自然出口。",
+        "prohibited_high_concept": "PASS",
+        "natural_behavior": "FAIL/PARTIAL. The daughter's public-performance ultimatum is too staged relative to ordinary relational behavior.",
+        "verdict": "FAIL"
+      }
+    },
+    {
+      "id": "P408-O",
+      "premise": "十九岁那年，陈志和胡强约好一起坐夜班火车去深圳打工。陈志上了车，胡强在站台上被父亲拦下，最后自己把行李提回了家。接下来两年，陈志三次寄钱和工厂招工地址回来，胡强三次原封不动退回，从此两人很少联系。胡强后来一直对儿子说，自己年轻时本来也想走，是陈志先把他丢下了。二十五年后，胡强的儿子考到深圳工作，胡强又拿这句话劝儿子别走。送行饭桌上，儿子当着两人的面问陈志：‘陈叔，当年真是你把我爸一个人扔下的吗？’胡强看着陈志，只说了一句：‘你想好了再答。’陈志必须决定，是继续替胡强保住这套说了二十五年的解释，还是当着他儿子的面讲出两个人都知道的事实。",
+      "shared_history": [
+        "19岁约定同去深圳，陈志实际上登车离开，胡强在父亲阻拦后自己选择留在站台。",
+        "随后两年陈志三次寄钱和招工地址，胡强三次原样退回；两人都知道并不是‘陈志从此没管他’。"
+      ],
+      "internal_audit": {
+        "remove_issue_twist": "PASS. The reader is told the complete past; there is no truth reveal reserved as a hook.",
+        "character_non_substitutability": "PASS. The three returned remittances/job addresses and twenty-five-year abandonment narrative create a specific debt between these two men.",
+        "immediate_irreversible_act": "PASS. 陈志's answer, in front of 胡强's son at the moment 胡强 is using the old story to shape the son's decision, cannot be taken back without changing both friendships and father-son trust.",
+        "reader_drive": "PASS. The next page is driven by what 陈志 chooses to say and what 胡强 does in response, not by discovering what really happened—the reader already knows.",
+        "simple_action_attack": "PASS. They could discuss privately, but private talk cannot undo that 胡强 is presently using the false version as authority over his son's life; silence itself is also an action with a cost.",
+        "prohibited_high_concept": "PASS. No prohibited high-concept device.",
+        "natural_behavior": "PASS. A parent invoking his own life story to influence an adult child, and an old friend being directly asked to confirm it, is plausible.",
+        "verdict": "PASS"
+      }
+    }
+  ],
+  "survivors": [
+    "P408-L",
+    "P408-M",
+    "P408-O"
+  ],
+  "rejected": [
+    "P408-N"
+  ],
+  "summary": "Three of four candidates survive. Each is driven by known shared history and an immediate public/interpersonal act; the rejected father-daughter violin premise required an unnatural public-performance ultimatum to prevent simpler solutions.",
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}

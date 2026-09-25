@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 104,
-  "recorded_at": "2026-09-25T12:58:00Z",
+  "sequence": 105,
+  "recorded_at": "2026-09-25T13:15:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. G/H/I/J were re-audited for issue-template dependence, scene act, reader behavior drive, character specificity and simple-action resistance; all four failed in their current form. No premise is eligible for human selection. A stricter character-specific premise contract is frozen; no new candidates, no prose, no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. Under the checkpoint-104 character-specific premise contract, four new premises were internally audited. N failed because its public-performance ultimatum was behaviorally engineered and vulnerable to simpler solutions. L/M/O passed all seven required gates and are the only premises eligible for actual-human selection. No prose and no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -316,7 +316,10 @@
     "Phase408 batch2 survivors G/H/I/J passed remove-twist, active WANT conflict, irreversible COST, relationship emotion and natural-behavior gates.",
     "Phase408 G/H/I/J issue-template audit completed without new premise generation.",
     "G/H/I/J all withdrawn from human selection: each remains too generic, issue-led, or vulnerable to routine solution/logistics framing.",
-    "PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2 frozen: future premises must be driven by specific shared history and irreversible behavior, not social-topic positions."
+    "PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2 frozen: future premises must be driven by specific shared history and irreversible behavior, not social-topic positions.",
+    "Phase408 batch3 generated four character-specific premises under the frozen checkpoint-104 contract; no prose generated.",
+    "Phase408 batch3 internal audit rejected N for unnatural public-performance pressure/simple-action failure.",
+    "Phase408 L/M/O passed remove-issue/twist, specific shared-history, irreversible act, behavior-driven reader pull, simple-action attack, no-high-concept and natural-behavior gates."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1059,5 +1062,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Remain in Phase408. Do not generate prose or ask for premise selection. A later authorized Phase408 step may generate a small new premise batch under PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2."
+  "next_action": "Deliver only Phase408 batch3 survivors L/M/O for actual-human premise selection. No prose; no Phase409."
 }

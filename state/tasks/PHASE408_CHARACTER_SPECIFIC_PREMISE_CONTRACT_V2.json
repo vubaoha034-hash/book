@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2",
-  "status": "FROZEN_NO_CANDIDATES_GENERATED",
+  "status": "EXECUTED_BATCH3_INTERNAL_AUDIT_COMPLETE",
   "purpose": "Prevent the next premise batch from becoming either high-concept twist machinery or generic social-issue dilemma templates.",
   "core_principle": "The story engine must come from these specific people having a specific shared history that makes an immediate action costly. Social issues, secrets and themes may contextualize the conflict but may not substitute for individualized character causality.",
   "mandatory_gates": [
@@ -65,11 +65,13 @@
   "candidate_policy": {
     "generate_new_candidates_now": false,
     "existing_G_H_I_J_retained_for_selection": [],
-    "human_choice_now": false,
+    "human_choice_now": true,
     "next_batch_must_be_internally_audited_before_display": true
   },
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Remain in Phase408. Do not generate new premises in this audit step. A later authorized Phase408 action may generate a small batch under this character-specific contract; only survivors may be shown to the user."
+  "next_action": "Present only Phase408 batch3 survivors L/M/O to the actual human. No prose.",
+  "batch3_internal_audit": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
+  "batch3_survivor_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V3.json"
 }

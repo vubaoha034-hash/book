@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "BATCH3_CHARACTER_SPECIFIC_READY",
+  "status": "PASS_THREE_SURVIVORS_READY_FOR_ACTUAL_HUMAN_PREMISE_SELECTION_NO_PROSE",
+  "evidence_head": "8ffaace2366029124bfa249483a1889b32c0a04d",
+  "artifacts": {
+    "internal_audit": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
+    "survivor_pack": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V3.json",
+    "contract": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json"
+  },
+  "checks": {
+    "generated_candidate_count": 4,
+    "survivor_count": 3,
+    "rejected_count": 1,
+    "all_survivors_remove_issue_twist_pass": true,
+    "all_survivors_two_or_more_specific_shared_history_facts": true,
+    "all_survivors_immediate_irreversible_act": true,
+    "all_survivors_reader_drive_behavior_not_verdict": true,
+    "all_survivors_simple_action_resistant": true,
+    "all_survivors_prohibited_high_concept_absent": true,
+    "all_survivors_natural_behavior_pass": true,
+    "no_prose_generated": true,
+    "phase409_not_created": true
+  },
+  "next_action": "Present only L/M/O for actual-human premise-level selection. Reject-all and multi-select are valid. Do not generate prose.",
+  "accepted_checkpoint_advance": false
+}

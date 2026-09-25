@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T12:58:00Z",
+  "updated_at": "2026-09-25T13:15:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,9 +177,9 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE408_BATCH2_ALL_FAIL_CHARACTER_SPECIFIC_PREMISE_CONTRACT_FROZEN",
+    "YMGQ_writing_pause_reason": "PHASE408_BATCH3_CHARACTER_SPECIFIC_SURVIVORS_AWAITING_HUMAN_SELECTION_NO_PROSE",
     "current_writing_authorization_scope": {
-      "kind": "PHASE408_AUDIT_ONLY_NO_SELECTION_NO_PROSE",
+      "kind": "PHASE408_PREMISE_SELECTION_ONLY_BATCH3_CHARACTER_SPECIFIC",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
@@ -188,7 +188,7 @@
       "retry_authorized": false,
       "A2_authorized": false,
       "second_window_authorized": false,
-      "human_review_authorized": false,
+      "human_review_authorized": true,
       "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
@@ -857,8 +857,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Remain in Phase408. Do not generate prose or ask for premise selection. A later authorized Phase408 step may generate a small new premise batch under PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.",
-  "status": "PHASE408_ACTIVE_BATCH2_AUDIT_ALL_FAIL_CHARACTER_SPECIFIC_CONTRACT_FROZEN",
+  "next_required_action": "Deliver only Phase408 batch3 survivors L/M/O for actual-human premise selection. No prose; no Phase409.",
+  "status": "PHASE408_ACTIVE_AWAITING_ACTUAL_HUMAN_PREMISE_SELECTION_BATCH3_CHARACTER_SPECIFIC",
   "active_task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
   "last_completed_task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
   "last_completed_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
@@ -1116,7 +1116,7 @@
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase408 G/H/I/J all failed issue-template/character-specificity audit. No premise is currently eligible for human selection; next character-specific contract is frozen and no new candidates have been generated."
+    "Phase408 batch3 generated four character-specific premises under checkpoint-104 contract; N failed internal natural-behavior/simple-action audit, while L/M/O await actual-human premise selection. No prose is authorized."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1129,8 +1129,7 @@
     "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
     "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
     "PHASE408_PROSE_FORBIDDEN_UNTIL_AUDIT_PASSING_PREMISE_SELECTED",
-    "PHASE408_NO_PREMISE_SURVIVOR_FOR_HUMAN_SELECTION",
-    "PHASE408_PROSE_FORBIDDEN_UNTIL_FUTURE_AUDIT_PASSING_PREMISE"
+    "PHASE408_PROSE_FORBIDDEN_UNTIL_BATCH3_HUMAN_PREMISE_SELECTION"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -2039,7 +2038,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase408_state": {
-    "status": "ACTIVE_BATCH2_AUDIT_ALL_FAIL_CHARACTER_SPECIFIC_CONTRACT_FROZEN",
+    "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_PREMISE_SELECTION_BATCH3_CHARACTER_SPECIFIC",
     "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
@@ -2059,7 +2058,7 @@
     },
     "prose_generation_authorized": false,
     "fresh_writer_authorized": false,
-    "human_premise_review_authorized": false,
+    "human_premise_review_authorized": true,
     "accepted_checkpoint_advance": false,
     "premise_audit": {
       "path": "state/calibration/PHASE408_PREMISE_AUDIT_V1.json",
@@ -2069,7 +2068,11 @@
       "path": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
       "status": "ALL_WITHDRAWN_FROM_SELECTION"
     },
-    "retained_candidates": [],
+    "retained_candidates": [
+      "P408-L",
+      "P408-M",
+      "P408-O"
+    ],
     "rejected_candidates": [
       "P408-A",
       "P408-B",
@@ -2113,7 +2116,18 @@
     ],
     "character_specific_premise_contract": {
       "path": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
-      "status": "FROZEN"
-    }
+      "status": "EXECUTED_BATCH3"
+    },
+    "batch3_internal_audit": {
+      "path": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
+      "status": "COMPLETE"
+    },
+    "batch3_survivor_pack": {
+      "path": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V3.json",
+      "status": "READY_FOR_HUMAN_SELECTION"
+    },
+    "rejected_batch3_candidates": [
+      "P408-N"
+    ]
   }
 }
