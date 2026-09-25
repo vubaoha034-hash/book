@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 81,
-  "recorded_at": "2026-09-25T05:46:09.649Z",
+  "sequence": 82,
+  "recorded_at": "2026-09-25T05:57:13.153Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1"
   ],
-  "current_focus": "Phase402 is active in A1-input preparation mode only. Residual diagnosis and ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 architecture passed design audit. Exactly one A1 may be prepared, but prose generation remains blocked until actor commitments, deferred-attribution local view and frozen runner pass readiness audit.",
+  "current_focus": "Phase402 is ready for exactly one isolated A1 under ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1. Actor commitments, deferred-attribution local view and runner passed readiness audit. No best-of-N, retry, A2, second window or pre-gate human review is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -187,7 +187,11 @@
     "Phase402 residual causal diagnosis completed",
     "Phase402 ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema frozen",
     "Phase402 single-A1 validation contract frozen as non-task artifact",
-    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed"
+    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase402 non-focal actor commitments frozen",
+    "Phase402 deferred-attribution local view frozen",
+    "Phase402 single A1 runner frozen",
+    "Phase402 A1 readiness audit PASS; exactly one isolated A1 authorized"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -225,7 +229,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "Phase402 A1 actor commitments, deferred-attribution local view, runner and readiness audit are pending"
+    "Phase402 single A1 execution, verbatim freeze and hidden gate evaluation are pending"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -398,7 +402,7 @@
     "Create best-of-N, parallel candidates, A2 or second window automatically",
     "Create Phase403 without separate explicit authorization"
   ],
-  "next_required_action": "Build and freeze Phase402 A1 actor commitments, deferred-attribution local view and runner; audit readiness. Do not generate prose until readiness PASS.",
+  "next_required_action": "Execute exactly one isolated Phase402 A1 from delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -753,14 +757,14 @@
       "role": "Phase402 architecture-ready PASS receipt"
     }
   ],
-  "status": "PHASE402_ACTIVE_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+  "status": "PHASE402_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "f714cf3aa7fb438f2a6de3d3f24da4e588a86e753e07055b72df62bb6e8f34d2",
+    "project_state_sha256": "116d13d99b9e1fcc5a41ada6faa31163bf13988651982d802df0c1b8d4e90acd",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
