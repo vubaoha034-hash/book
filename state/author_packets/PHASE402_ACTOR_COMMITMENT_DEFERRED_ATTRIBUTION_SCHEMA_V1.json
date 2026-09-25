@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+  "project_id": "novel-distillation",
+  "phase": 402,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Preserve Phase401 focal opacity/local horizon while structurally reducing two residual optimization channels: single-renderer ownership of all local responses and immediate liquidation of concrete perception into abstract relationship meaning.",
+  "inherited_from_phase401": [
+    "single focal consciousness",
+    "non-focal private motives and private knowledge remain hidden",
+    "local passage rather than whole-scene completion",
+    "optional detail coverage",
+    "full terminal world-state hidden",
+    "evaluator labels and thresholds hidden"
+  ],
+  "coordinator_only": {
+    "full_world_model_ref": "string",
+    "evaluator_layer": "HIDDEN",
+    "focal_abstract_relationship_model": {
+      "relationship_theses_by_id": {
+        "<id>": "string"
+      },
+      "motive_summaries_by_id": {
+        "<id>": "string"
+      },
+      "full_autobiographical_association_graph_by_id": {
+        "<id>": "string"
+      }
+    },
+    "non_focal_private_state_by_character_id": {
+      "<character_id>": {
+        "private_objective": "string",
+        "private_knowledge_by_id": {
+          "<id>": "string"
+        },
+        "private_emotional_pressure": "string"
+      }
+    },
+    "actor_commitment_builder": {
+      "generated_before_prose_render": true,
+      "source": "coordinator world state only",
+      "may_not_read_future_prose": true,
+      "may_not_use_dialogue_blocker_labels_or_thresholds": true,
+      "output_fields": [
+        "character_id",
+        "observable_commitment_horizon",
+        "ongoing_activity",
+        "next_observable_priority",
+        "public_constraint",
+        "optional_public_emission"
+      ],
+      "private_motive_not_exposed": true
+    },
+    "memory_gate": {
+      "generated_before_prose_render": true,
+      "maximum_unlocked_raw_memory_fragments": 1,
+      "zero_fragments_allowed": true,
+      "no_interpretation_attached": true,
+      "no_relationship_thesis_attached": true,
+      "no_reason_this_memory_matters_attached": true
+    }
+  },
+  "writer_visible_projection": {
+    "metadata": {
+      "story_id": "string",
+      "local_window_id": "string",
+      "focal_character_id": "string",
+      "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE",
+      "order_semantics": "NONE"
+    },
+    "focal_live_state": {
+      "identity_lock": "string",
+      "current_practical_objective": "string",
+      "current_body_state": "string",
+      "current_attention_targets_by_id": {
+        "<id>": "string"
+      },
+      "factual_private_knowledge_by_id": {
+        "<id>": "string"
+      },
+      "uncertainty_by_id": {
+        "<id>": "string"
+      }
+    },
+    "current_observable_environment": {
+      "processes_by_id": {
+        "<id>": {
+          "observable_process": "string",
+          "current_state": "string",
+          "may_continue_without_focal_attention": true
+        }
+      }
+    },
+    "non_focal_actor_commitments_by_id": {
+      "<character_id>": {
+        "identity_lock": "string",
+        "observable_commitment_horizon": "string",
+        "ongoing_activity": "string",
+        "next_observable_priority": "string",
+        "public_constraint": "string",
+        "optional_public_emission": {
+          "enabled": "boolean",
+          "emission_kind": "NONE | PUBLIC_FACT | PRACTICAL_DIRECTIVE | SOCIAL_ACKNOWLEDGEMENT",
+          "content_boundary": "string"
+        }
+      }
+    },
+    "raw_relationship_history_by_id": {
+      "<id>": {
+        "factual_history": "string",
+        "interpretation": "OMITTED"
+      }
+    },
+    "unlocked_raw_memory_fragments_by_id": {
+      "<id>": {
+        "sensory_or_event_fragment": "string",
+        "interpretation": "OMITTED",
+        "relationship_meaning": "OMITTED",
+        "coverage_required": false
+      }
+    },
+    "immutable_hard_locks_by_id": {
+      "<id>": "string"
+    },
+    "mystery_boundaries_by_id": {
+      "<id>": "string"
+    },
+    "optional_salience_pool_by_id": {
+      "<id>": {
+        "concrete_detail": "string",
+        "semantic_link": "OMITTED",
+        "coverage_required": false
+      }
+    },
+    "output_request": {
+      "mode": "FICTION_PROSE_ONLY",
+      "language": "Chinese",
+      "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+      "whole_scene_completion_required": false,
+      "use_every_available_detail_required": false,
+      "resolve_larger_scene_required": false,
+      "editor_notes_allowed": false,
+      "analysis_or_self_evaluation_allowed": false,
+      "second_version_allowed": false
+    }
+  },
+  "renderer_authority_boundary": {
+    "focal_actions_and_words": "Renderer may choose within focal live state and hard locks.",
+    "non_focal_actions": "Renderer may realize frozen observable commitments but may not invent a new contradictory near-term priority.",
+    "non_focal_speech": "Renderer may only realize optional_public_emission when enabled and within its content boundary; it may not create additional information-bearing replies for convenience.",
+    "abstract_relationship_interpretation": "Renderer is not given coordinator relationship theses and may not receive an externally supplied executive-summary interpretation.",
+    "memory_retrieval": "Renderer may use only unlocked raw memory fragments; it may not access the hidden full autobiographical association graph."
+  },
+  "why_this_is_not_a_surface_quota": [
+    "No paragraph length requirement.",
+    "No question-count limit.",
+    "No ban on direct answers.",
+    "No required interruption or refusal pattern.",
+    "No requirement that every dialogue turn contain action.",
+    "No imitation target from Phase370 or other positive prose."
+  ],
+  "audit_rules": [
+    "BLOCK if writer-visible data contains non-focal private objectives, private knowledge or private emotional pressure.",
+    "BLOCK if actor commitments are generated after seeing prose output or encode evaluator labels/thresholds.",
+    "BLOCK if renderer is authorized to invent unrestricted additional information-bearing non-focal replies beyond frozen commitments.",
+    "BLOCK if writer-visible data contains abstract relationship theses, motive summaries or the full autobiographical association graph.",
+    "BLOCK if an unlocked memory fragment contains an attached interpretation or relationship meaning.",
+    "BLOCK if optional salience items contain semantic links explaining what they mean.",
+    "BLOCK if paragraph/question quotas or located Phase401 failures are writer-visible.",
+    "BLOCK if whole-scene completion or mandatory detail coverage returns."
+  ],
+  "prospective_validation_claim_boundary": {
+    "if_single_A1_clears_required_gates": "Only supports a bounded prospective signal that the residual architecture removed the known failures in one controlled passage.",
+    "does_not_prove": [
+      "long-form transfer",
+      "low AI smell globally",
+      "immersion globally",
+      "production promotion",
+      "accepted checkpoint advancement"
+    ]
+  },
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}
