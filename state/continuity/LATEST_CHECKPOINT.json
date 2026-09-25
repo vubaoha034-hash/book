@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 83,
-  "recorded_at": "2026-09-25T06:15:39.563Z",
+  "sequence": 84,
+  "recorded_at": "2026-09-25T07:04:30.436Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1"
-  ],
-  "current_focus": "Phase402 A1 is durably stored and frozen. All required hidden gates are CLEAR: source fidelity, writer-output contract, deterministic dialogue, semantic dialogue, hidden global optimization, response-ownership residual and interpretation-liquidity residual. The only authorized next step is actual-human literary review of the immutable A1.",
+  "active_task_ids": [],
+  "current_focus": "Phase402 is durably closed after actual-human literary rejection. All required hidden structural gates were CLEAR and AI smell was reported much lighter, but actual-human immersion, emotion, suspense and forward desire did not pass. Earliest boredom was located at the display-cabinet description because the introduction felt slow and boring.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -201,7 +199,16 @@
     "Phase402 hidden global-optimization diagnostic NO_BLOCK",
     "Phase402 response-ownership residual NO_BLOCK",
     "Phase402 interpretation-liquidity residual NO_BLOCK",
-    "Phase402 required hidden gates CLEAR; actual-human review authorized"
+    "Phase402 required hidden gates CLEAR; actual-human review authorized",
+    "Phase402 actual-human literary review completed",
+    "Phase402 actual-human verdict persisted verbatim",
+    "Phase402 human verdict: immersion FAIL",
+    "Phase402 human verdict: emotion general/low",
+    "Phase402 human verdict: AI smell much lighter than prior attempts",
+    "Phase402 human verdict: suspense absent",
+    "Phase402 human verdict: no desire to continue",
+    "Phase402 earliest boredom point located at display-cabinet description; introduction reported slow and boring",
+    "Phase402 closed as human-rejected despite all required hidden gates CLEAR"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -239,7 +246,7 @@
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
-    "Phase402 actual-human literary review is authorized but not yet performed"
+    "No separately authorized successor task exists after Phase402 human rejection"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -274,7 +281,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE402_SUCCESSOR_DECISION_BLOCKED_PENDING_ACTUAL_HUMAN_REVIEW"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE402_HUMAN_REJECTION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -414,9 +421,14 @@
     "Run a second Phase402 A1, retry, best-of-N, A2, second window or parallel candidate",
     "Modify Phase402 inbox/frozen A1 before or after human review",
     "Replace actual-human literary judgment with model literary judgment",
-    "Create Phase403 or any successor before the Phase402 human response is persisted verbatim"
+    "Create Phase403 or any successor before the Phase402 human response is persisted verbatim",
+    "Override Phase402 actual-human rejection with hidden gate results",
+    "Retry Phase402 A1 automatically",
+    "Create Phase402 A2 or second window automatically",
+    "Treat lighter AI smell as literary acceptance",
+    "Modify frozen Phase402 A1"
   ],
-  "next_required_action": "Deliver the immutable Phase402 A1 to the actual human reader without model literary evaluation. Persist the human response verbatim before any successor decision.",
+  "next_required_action": "No active task. Preserve the Phase402 human verdict verbatim. Do not retry, create A2/second window, or create Phase403 automatically. Any successor requires separate explicit authorization.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -792,21 +804,25 @@
     },
     {
       "path": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
-      "role": "immutable Phase402 A1 frozen candidate"
+      "role": "immutable Phase402 A1 frozen candidate; actual-human rejected"
     },
     {
       "path": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
-      "role": "Phase402 all-required-hidden-gates CLEAR settlement; awaiting actual-human review"
+      "role": "Phase402 hidden-gates CLEAR settlement preceding human review"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+      "role": "authoritative Phase402 actual-human verbatim rejection"
     }
   ],
-  "status": "PHASE402_ACTIVE_A1_GATES_CLEAR_AWAITING_ACTUAL_HUMAN_REVIEW",
+  "status": "PHASE402_CLOSED_ACTUAL_HUMAN_REJECTED_AI_SMELL_IMPROVED_LOW_IMMERSION_NO_FORWARD_DESIRE_NO_SUCCESSOR_AUTHORIZED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+  "last_completed_task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "ea42c88b67e8cab6cac6d3bf273a30a73f5e82d316936f2ba7e198e3e7e3d1fe",
+    "project_state_sha256": "7912b6a706c253fc76c1debd1cf3614b4b251d796309c125555a99b966e1edaf",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -827,11 +843,12 @@
       "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
       "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
       "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
-      "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1"
+      "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+      "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
-  "last_completed_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json"
+  "active_task_contract": null,
+  "last_completed_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json"
 }
