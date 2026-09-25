@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 402,
+  "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+  "artifact_id": "PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence": {
+    "phase401_settlement": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "phase401_frozen": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "inherited_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "deterministic_phase399": {
+      "blocked_runs": 21,
+      "total_runs": 43,
+      "ratio": 0.4884
+    },
+    "deterministic_phase401": {
+      "blocked_runs": 2,
+      "total_runs": 12,
+      "ratio": 0.1667
+    },
+    "phase401_semantic_dialogue": "BLOCK",
+    "phase401_global_optimization": "BLOCK",
+    "phase401_output_contract": "BLOCK"
+  },
+  "residual_diagnoses": [
+    {
+      "id": "RD402_A_RESPONSE_OWNERSHIP_COLLAPSE",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "distinction_from_surface_form": "The problem is not question count, answer length or paragraph length. The problem is that one renderer chooses the focal move and the non-focal next move inside the same local optimization loop.",
+      "located_evidence": [
+        "‘交接表呢？ / 柜台下面。 / 下面没有。 / 左边。’",
+        "‘你还没签。 / 知道。 / 吴兰明早要交。 / 知道。 / 那你现在签了不就行了？’",
+        "‘总闸还能用吗？ / 能。 / 你确定？ / 上个月换过里面的保险。 / 上个月？’"
+      ],
+      "causal_chain": [
+        "focal line or question is generated",
+        "same renderer immediately predicts the most relevant non-focal response",
+        "reply establishes a narrower shared conversational agenda",
+        "same renderer continues completing that agenda",
+        "speaker identity becomes recoverable from turn order rather than independent actor behavior"
+      ],
+      "architecture_implication": "Separate near-term non-focal response ownership from the prose renderer by freezing observable actor commitments before prose rendering."
+    },
+    {
+      "id": "RD402_B_INTERPRETATION_LIQUIDITY",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "distinction_from_surface_form": "The problem is not that memories or interpretations exist. The problem is that abstract meaning and semantically matched autobiographical material are simultaneously liquid and immediately available at the instant a concrete object appears.",
+      "located_evidence": [
+        "drawer location -> childhood key memory -> return to paperwork",
+        "shared tray-space -> childhood work habit -> explicit relationship meaning",
+        "recent fuse repair -> compact thesis that father refuses to admit loss",
+        "height marks -> childhood memory -> silent mutual look -> changed relationship pressure"
+      ],
+      "causal_chain": [
+        "concrete object/action becomes salient",
+        "writer already has abstract emotional/relationship interpretation",
+        "writer also has directly matched autobiographical residue",
+        "memory is retrieved with almost zero friction",
+        "narration closes the inference for the reader",
+        "scene immediately resumes task progression"
+      ],
+      "architecture_implication": "Keep abstract relationship theses and full autobiographical association graphs coordinator-only. Prose writer receives only current perception/body/task and at most a pre-unlocked raw memory fragment without its interpretation."
+    }
+  ],
+  "interaction_between_residuals": {
+    "status": "COUPLED",
+    "explanation": "Exact-response dialogue and instant interpretation are two forms of the same local optimization tendency: the renderer converts the immediately available state into the most semantically useful next output. One operates across speakers; the other operates across perception->memory->meaning.",
+    "design_requirement": "Change ownership/availability of next-state information rather than adding wording constraints."
+  },
+  "minimal_change_boundary": {
+    "preserve": [
+      "single focal consciousness",
+      "non-focal private-state opacity",
+      "local passage instead of whole-scene completion",
+      "optional detail coverage",
+      "hidden evaluator firewall"
+    ],
+    "change_only": [
+      "near-term non-focal observable response/action ownership",
+      "availability of abstract relationship interpretation and autobiographical linkage"
+    ],
+    "explicitly_not_changed": [
+      "paragraph length",
+      "question count",
+      "sentence length",
+      "dialogue quota",
+      "story world facts",
+      "Phase399/400/401 frozen outputs"
+    ]
+  },
+  "selected_architecture": {
+    "id": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+    "component_A": {
+      "name": "PRE_FROZEN_NON_FOCAL_ACTOR_COMMITMENTS",
+      "coordinator_generates": true,
+      "writer_receives": "observable near-term commitments only",
+      "private_motives_hidden": true,
+      "commitments_are_not_dialogue_templates": true,
+      "commitments_do_not_require_refusal_or_interruption": true,
+      "purpose": "Prevent the prose renderer from freely selecting every non-focal next-state solely as a semantic completion of the focal character's immediately previous line."
+    },
+    "component_B": {
+      "name": "DEFERRED_ATTRIBUTION_MEMORY_GATE",
+      "coordinator_keeps_hidden": [
+        "abstract relationship thesis",
+        "full emotional interpretation",
+        "full autobiographical association graph"
+      ],
+      "writer_receives": [
+        "current perception",
+        "current body state",
+        "current practical objective",
+        "raw observable relationship history",
+        "zero or one explicitly unlocked raw memory fragment"
+      ],
+      "unlocked_memory_has_interpretation_attached": false,
+      "memory_fragment_coverage_required": false,
+      "purpose": "Increase friction between object perception and reader-facing interpretive closure."
+    }
+  },
+  "falsifiable_predictions": [
+    {
+      "id": "P402_01",
+      "prediction": "If response ownership is a real residual cause, a prospective passage should show fewer or no blocked exact-adjacency/shared-agenda dialogue stretches without a writer-facing dialogue quota."
+    },
+    {
+      "id": "P402_02",
+      "prediction": "If interpretation liquidity is a real residual cause, concrete objects should more often remain sensory/practical for some span rather than immediately producing memory+relationship thesis closure."
+    },
+    {
+      "id": "P402_03",
+      "prediction": "If the change only suppresses symptoms, hidden global-optimization signatures will simply migrate to other forms and the candidate will still BLOCK."
+    }
+  ],
+  "pilot_decision_rule": "A pilot may be authorized only after a machine-readable schema and single-A1 validation contract demonstrate that both changes are structural, evaluator-hidden, and do not introduce surface quotas or multi-candidate selection.",
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}
