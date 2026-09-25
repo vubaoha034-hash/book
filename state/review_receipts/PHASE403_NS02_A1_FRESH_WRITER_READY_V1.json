@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 403,
+  "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+  "event_type": "A1_INPUT_AND_WRITER_ENTRY_READINESS",
+  "status": "READY_SINGLE_ISOLATED_A1",
+  "architecture": {
+    "id": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+    "architecture_ready_receipt": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json"
+  },
+  "immutable_evidence_head": "550e1f2ad883b439545bbe300132341b01e59d61",
+  "artifacts": {
+    "inherited_actor_commitments": {
+      "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+      "sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+      "reused_without_modification": true
+    },
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+      "actor_commitments_exact_match": true
+    },
+    "writer_entry": {
+      "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+      "sha256": "4dd178c3323767dc92dee254bd6c15d0f307e5c3c1f38dbac025fed13c228b9e",
+      "embedded_projection_exact_match": true
+    }
+  },
+  "readiness_audit": {
+    "result": "PASS",
+    "projection_matches_runner": true,
+    "actor_commitments_match_projection": true,
+    "non_focal_private_motive_visible": false,
+    "non_focal_private_knowledge_visible": false,
+    "historical_failure_text_visible": false,
+    "actual_human_boredom_quote_visible": false,
+    "ai_smell_or_dialogue_evaluator_visible": false,
+    "information_density_or_pacing_score_visible": false,
+    "paragraph_or_question_quota_visible": false,
+    "broad_neutral_inventory_visible": false,
+    "phase402_display_cabinet_inventory_visible": false,
+    "arbitrary_new_mystery_visible": false,
+    "unlocked_raw_memory_count": 0,
+    "focal_abstract_relationship_thesis_visible": false,
+    "live_vector_desired_state_present": true,
+    "live_vector_block_or_uncertainty_present": true,
+    "live_vector_personal_cost_present": true,
+    "live_vector_open_outcome_present": true,
+    "outcome_precommitted": false,
+    "whole_scene_completion_required": false,
+    "mandatory_detail_coverage": false,
+    "open_outcome_resolution_required": false,
+    "title_forbidden": true,
+    "editor_notes_forbidden": true,
+    "second_version_forbidden": true
+  },
+  "execution_authorization": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "fresh_writer_authorized": true,
+    "prose_generation_authorized": true,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "post_generation_required_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Activate Phase403 for exactly one isolated fresh-writer A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically."
+}
