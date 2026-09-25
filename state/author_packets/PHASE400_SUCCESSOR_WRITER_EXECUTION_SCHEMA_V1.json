@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+  "project_id": "novel-distillation",
+  "phase": 400,
+  "status": "DESIGN_SCHEMA_NO_PROSE",
+  "purpose": "Define a materially different writer-execution contract that reduces omniscient coverage pressure and whole-scene completion pressure without exposing evaluator diagnostics or imposing paragraph/dialogue quotas.",
+  "architecture": {
+    "selected_from_task": "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+    "causal_basis": [
+      "Phase399 preserved hard world facts but reconstructed exact-adjacency shared-agenda dialogue.",
+      "Phase399 and human-positive Phase370 both used many short paragraphs; paragraph shortness is not the primary separator.",
+      "The selected mechanism changes visibility and generation horizon rather than surface quotas."
+    ]
+  },
+  "coordinator_only": {
+    "full_world_model_ref": "string",
+    "full_world_model_must_remain_hidden_from_writer": true,
+    "terminal_world_state_by_id": {
+      "<terminal_id>": "string"
+    },
+    "non_focal_private_state_by_character_id": {
+      "<character_id>": {
+        "private_objective": "string",
+        "private_emotional_pressure": "string",
+        "private_knowledge_by_id": {
+          "<knowledge_id>": "string"
+        },
+        "mistaken_beliefs_or_uncertainty_by_id": {
+          "<belief_id>": "string"
+        }
+      }
+    },
+    "full_information_asymmetry_by_id": {
+      "<info_id>": {
+        "proposition": "string",
+        "knows_by_id": {
+          "<character_id>": true
+        },
+        "suspects_by_id": {
+          "<character_id>": true
+        },
+        "falsely_believes_opposite_by_id": {
+          "<character_id>": true
+        },
+        "does_not_know_by_id": {
+          "<character_id>": true
+        }
+      }
+    },
+    "evaluator_layer": {
+      "source_fidelity_rules": "HIDDEN",
+      "mechanical_dialogue_rules": "HIDDEN",
+      "anti_storyboard_or_ai_smell_rules": "HIDDEN",
+      "thresholds": "HIDDEN",
+      "human_review_rubric": "HIDDEN"
+    },
+    "future_window_controller": {
+      "automatic_next_window": false,
+      "any_next_window_requires_separate_authorization": true,
+      "may_use_frozen_output_to_update_world_state": true,
+      "may_not_rewrite_frozen_prose": true
+    }
+  },
+  "writer_visible_projection": {
+    "metadata": {
+      "story_id": "string",
+      "local_window_id": "string",
+      "focal_character_id": "string",
+      "order_semantics": "NONE",
+      "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE"
+    },
+    "focal_private_state": {
+      "identity_lock": "string",
+      "immediate_physical_objective": "string",
+      "immediate_emotional_pressure": "string",
+      "active_avoidance": "string",
+      "private_knowledge_by_id": {
+        "<knowledge_id>": "string"
+      },
+      "mistaken_beliefs_or_uncertainty_by_id": {
+        "<belief_id>": "string"
+      },
+      "current_body_state": "string",
+      "attention_bias": {
+        "likely_to_notice_by_id": {
+          "<notice_id>": "string"
+        },
+        "likely_to_miss_by_id": {
+          "<miss_id>": "string"
+        }
+      }
+    },
+    "current_observable_environment": {
+      "processes_by_id": {
+        "<process_id>": {
+          "observable_process": "string",
+          "current_visible_or_audible_state": "string",
+          "may_continue_without_focal_attention": true
+        }
+      }
+    },
+    "non_focal_observable_agents_by_id": {
+      "<character_id>": {
+        "identity_lock": "string",
+        "observable_body_state": "string",
+        "current_observable_activity": "string",
+        "public_or_focal_known_facts_by_id": {
+          "<fact_id>": "string"
+        },
+        "focal_known_relationship_residues_by_id": {
+          "<residue_id>": "string"
+        },
+        "unknown_private_motive_remains_opaque": true
+      }
+    },
+    "locally_observable_pressures_by_id": {
+      "<pressure_id>": {
+        "condition_visible_to_focal": "string",
+        "immediate_affordances_by_id": {
+          "<affordance_id>": "string"
+        }
+      }
+    },
+    "immutable_hard_locks_by_id": {
+      "<lock_id>": "string"
+    },
+    "mystery_boundaries_by_id": {
+      "<mystery_id>": "string"
+    },
+    "optional_salience_pool_by_id": {
+      "<detail_id>": {
+        "detail": "string",
+        "coverage_required": false
+      }
+    },
+    "output_request": {
+      "mode": "FICTION_PROSE_ONLY",
+      "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+      "whole_scene_completion_required": false,
+      "use_every_available_detail_required": false,
+      "reveal_every_available_fact_required": false,
+      "resolve_larger_scene_required": false,
+      "editor_notes_allowed": false,
+      "analysis_or_self_evaluation_allowed": false
+    }
+  },
+  "writer_forbidden_visibility": [
+    "non_focal_private_objectives",
+    "non_focal_private_knowledge",
+    "full_information_asymmetry_table",
+    "full_terminal_world_state_checklist",
+    "future_event_route",
+    "reveal_order",
+    "paragraph_plan",
+    "dialogue_blocker_labels",
+    "dialogue_blocker_thresholds",
+    "ai_smell_taxonomy",
+    "anti_storyboard_metrics",
+    "human_review_answer_key",
+    "positive_anchor_surface_recipe",
+    "paragraph_length_quota",
+    "question_count_quota",
+    "mandatory_action_between_dialogue_lines"
+  ],
+  "local_horizon_protocol": {
+    "phase400_design_only": true,
+    "future_pilot_preconditions": [
+      "A separately authorized successor task exists.",
+      "A focal character is selected before prose generation.",
+      "A writer-visible projection is built from a frozen coordinator-only world model.",
+      "Projection audit confirms hidden-state and evaluator leakage are absent.",
+      "Writer entry is frozen before execution."
+    ],
+    "generation": {
+      "fresh_isolated_writer_required": true,
+      "allowed_writer_entries": 1,
+      "local_passage_only": true,
+      "automatic_retry": false,
+      "automatic_second_window": false
+    },
+    "after_generation": {
+      "store_output_verbatim": true,
+      "freeze_output_before_evaluation": true,
+      "hidden_source_fidelity_gate": true,
+      "hidden_dialogue_gate": true,
+      "hidden_immersion_or_ai_smell_gate": true,
+      "local_repair_forbidden": true,
+      "actual_human_review_only_after_required_gates_clear": true
+    },
+    "state_update": {
+      "coordinator_may_extract_observable_state_changes_from_frozen_passage": true,
+      "coordinator_may_update_hidden_world_state": true,
+      "coordinator_may_not_edit_frozen_passage": true,
+      "next_window_requires_new_authorization": true
+    }
+  },
+  "audit_rules": [
+    "BLOCK if the writer-visible projection contains non-focal private objectives or private knowledge.",
+    "BLOCK if the full terminal world-state checklist is writer-visible.",
+    "BLOCK if the writer-visible projection contains evaluator labels, thresholds, failure diagnoses or human-review answer keys.",
+    "BLOCK if the writer is instructed to meet paragraph-length, question-count or dialogue-interruption quotas.",
+    "BLOCK if the writer is given a future event sequence, reveal sequence or paragraph plan.",
+    "BLOCK if optional scene details are marked as mandatory coverage.",
+    "BLOCK if a future pilot asks the writer to complete the entire scene in one generation.",
+    "BLOCK if Phase399 frozen A1 or Phase398 frozen NS02 is modified."
+  ],
+  "material_difference_from_phase399": {
+    "full_scene_field_wholesale_writer_visibility": false,
+    "non_focal_private_state_writer_visibility": false,
+    "full_terminal_boundary_writer_visibility": false,
+    "whole_scene_one_shot_completion": false,
+    "local_horizon_only": true,
+    "focalized_information_asymmetry": true
+  },
+  "non_claims": [
+    "This design does not prove prose quality.",
+    "This design does not prove lower AI smell.",
+    "This design does not prove mechanical dialogue is solved.",
+    "This design does not authorize a Phase401 pilot.",
+    "This design does not advance the Phase320 accepted checkpoint."
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "accepted_checkpoint_advance": false
+}
