@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T07:02:56.225Z",
+  "updated_at": "2026-09-25T07:52:57.442Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,45 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": null,
+  "active_task": {
+    "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+    "phase": "READER_DRIVE_SCENE_VELOCITY_REDESIGN",
+    "phase_ordinal": 403,
+    "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+    "task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+    "execution_scope": "Prepare exactly one A1 input for LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1. No prose generation until writer-visible view and runner pass readiness audit.",
+    "architecture": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "user_delivery_authorized": false,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "allowed_action_requests": [
+      {
+        "action_id": "PHASE403_BUILD_LIVE_VECTOR_VIEW_A1",
+        "parameters": {
+          "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json"
+        }
+      },
+      {
+        "action_id": "PHASE403_BUILD_FROZEN_RUNNER_A1",
+        "parameters": {
+          "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt"
+        }
+      },
+      {
+        "action_id": "PHASE403_AUDIT_AND_FREEZE_A1_READINESS",
+        "parameters": {
+          "receipt": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json"
+        }
+      }
+    ],
+    "next_action": "Build the concrete Phase403 live-vector/selective-salience writer-visible view and a single frozen runner; audit readiness. Do not generate prose until readiness PASS.",
+    "current_execution_receipt": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json"
+  },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -177,18 +215,15 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE402_HUMAN_REJECTION",
+    "YMGQ_writing_pause_reason": "PHASE403_READER_DRIVE_A1_INPUT_PREPARATION_ACTIVE",
     "current_writing_authorization_scope": {
-      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE402_HUMAN_REJECTION",
+      "kind": "PHASE403_A1_INPUT_PREPARATION_ONLY_NO_PROSE",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
-      "retry_authorized": false,
-      "A2_authorized": false,
-      "second_window_authorized": false,
-      "phase403_authorized": false
+      "architecture": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -213,7 +248,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 84,
+    "logical_latest_checkpoint_sequence": 85,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -851,9 +886,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "No active task. Preserve Phase402 as a human-rejected single-attempt result: AI smell and hidden structural gates improved, but immersion, emotion, suspense and forward desire failed. Do not retry, create A2/second window, or create Phase403 automatically.",
-  "status": "PHASE402_CLOSED_ACTUAL_HUMAN_REJECTED_AI_SMELL_IMPROVED_LOW_IMMERSION_NO_FORWARD_DESIRE_NO_SUCCESSOR_AUTHORIZED",
-  "active_task_contract": null,
+  "next_required_action": "Build the concrete Phase403 live-vector/selective-salience writer-visible view and a single frozen runner; audit readiness. Do not generate prose until readiness PASS.",
+  "status": "PHASE403_ACTIVE_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+  "active_task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
   "last_completed_task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
   "last_completed_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
   "source_state_refs": [
@@ -1020,12 +1055,32 @@
     {
       "path": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
       "role": "Phase402 actual-human verbatim rejection; authoritative literary verdict"
+    },
+    {
+      "path": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+      "role": "active Phase403 reader-drive redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase403 reader-drive causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+      "role": "Phase403 live-vector selective-salience architecture schema"
+    },
+    {
+      "path": "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase403 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
+      "role": "Phase403 architecture-ready PASS receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "No separately authorized successor task exists after Phase402 human rejection"
+    "Phase403 concrete live-vector writer view, runner and readiness audit are pending"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1035,7 +1090,12 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE402_HUMAN_REJECTION"
+    "PHASE403_PROSE_BLOCKED_PENDING_READINESS",
+    "PHASE403_BEST_OF_N_FORBIDDEN",
+    "PHASE403_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE403_A2_NOT_AUTHORIZED",
+    "PHASE403_SECOND_WINDOW_NOT_AUTHORIZED",
+    "PHASE403_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1152,7 +1212,13 @@
     "Phase402 human verdict: no immersion, general/low emotion, no suspense, no forward desire",
     "Phase402 human verdict: AI smell materially lighter than prior attempts",
     "Phase402 earliest boredom point located at display-cabinet description; human reason: introduction feels very slow and boring",
-    "Phase402 closed as human-rejected despite all required hidden gates CLEAR"
+    "Phase402 closed as human-rejected despite all required hidden gates CLEAR",
+    "Phase403 successor task created after explicit user authorization",
+    "Phase403 actual-human Phase402 rejection preserved as authoritative causal evidence",
+    "Phase403 reader-drive causal diagnosis completed",
+    "Phase403 LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 schema frozen",
+    "Phase403 single-A1 validation contract frozen as same-task non-task artifact",
+    "Phase403 reader-drive architecture audit PASS; exactly one A1 preparation allowed"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1424,5 +1490,38 @@
     "phase403_authorized": false,
     "accepted_checkpoint_advance": false,
     "human_review_receipt": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json"
+  },
+  "phase403_state": {
+    "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+    "task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+      "schema_id": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "status": "PENDING"
+    },
+    "writer_entry": {
+      "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+      "status": "PENDING"
+    },
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "phase404_authorized": false,
+    "accepted_checkpoint_advance": false
   }
 }
