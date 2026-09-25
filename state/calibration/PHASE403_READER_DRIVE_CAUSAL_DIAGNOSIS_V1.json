@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 403,
+  "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+  "artifact_id": "PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence": {
+    "phase402_human_rejection": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "phase402_hidden_settlement": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "phase402_frozen": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+    "phase370_positive": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "phase370_human_review": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+    "phase385_forward_desire_engine": "state/calibration/PHASE385_YMGQ_FORWARD_DESIRE_ENGINE_V1.md"
+  },
+  "authoritative_human_result": {
+    "immersion": "FAIL",
+    "emotion": "GENERAL_LOW",
+    "ai_smell": "MUCH_LIGHTER_THAN_BEFORE",
+    "suspense": "ABSENT",
+    "desire_to_continue": false,
+    "first_boredom_quote": "玻璃后面还插着几张褪色的样片，边角已经翘起来。下层柜门里堆着空相框和一卷背景布。她拉开柜门检查了一遍，没有看见文件。",
+    "first_boredom_reason": "因为一整个介绍真的很慢。感觉很无聊",
+    "priority": "OVERRIDES_HIDDEN_GATE_SUCCESS_FOR_LITERARY_ACCEPTANCE"
+  },
+  "established_non_causes": [
+    "AI smell is not the dominant remaining cause because the human explicitly reported it much lighter.",
+    "Mechanical dialogue is not the dominant remaining cause because Phase402 deterministic and semantic dialogue gates were CLEAR.",
+    "Global authorial optimization is not the dominant remaining cause because Phase402 hidden global-optimization gate was NO_BLOCK.",
+    "Paragraph length and question count are not accepted root causes."
+  ],
+  "residual_diagnoses": [
+    {
+      "id": "RD403_A_NEUTRAL_ENTRY_BEFORE_LIVE_VECTOR",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "Phase402 opens on salvage/categorization before a personally costly unresolved outcome is active on-page.",
+        "The human reader reports no suspense and no forward desire.",
+        "Phase370 human-positive prose establishes immediate danger, competing objectives and unresolved consequences very early."
+      ],
+      "causal_chain": [
+        "passage begins at earliest practical activity",
+        "reader spends attention learning environment and procedures",
+        "no consequential focal uncertainty yet requires resolution",
+        "realism accumulates without forward pressure",
+        "reader experiences slowness before a narrative vector forms"
+      ]
+    },
+    {
+      "id": "RD403_B_CONSEQUENCE_NEUTRAL_SALIENCE",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "Phase402 devotes substantial attention to envelopes, drawers, sample photographs, frames and background cloth.",
+        "The located human boredom point occurs inside display-cabinet inspection.",
+        "These details are realistic but mostly do not alter immediate goal, knowledge, cost, relationship pressure or choice."
+      ],
+      "causal_chain": [
+        "writer sees broad realistic detail pool",
+        "safe neutral detail is easy to render",
+        "detail consumes reader attention without repricing current choice",
+        "perceived information value density falls",
+        "scene feels descriptive rather than advancing"
+      ]
+    },
+    {
+      "id": "RD403_C_PERSONAL_COST_NOT_COUPLED_TO_CURRENT_TASK",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "Source world contains Lin Qiao's private intention to leave town immediately after handover.",
+        "Phase402 local prose foregrounds sorting and water risk but does not make delay personally costly in the present reading experience.",
+        "Unsigned handover material appears but functions mainly as paperwork."
+      ],
+      "causal_chain": [
+        "practical goal exists",
+        "personal reason for needing resolution now is not active",
+        "obstruction lacks emotional price",
+        "reader sees work rather than a pressured choice"
+      ]
+    },
+    {
+      "id": "RD403_D_NO_FUTURE_FACING_LOCAL_QUESTION",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "Phase402 intentionally avoids the undeveloped-film reveal and does not replace it with another live consequential uncertainty.",
+        "Human reader reports suspense absent and no desire to continue.",
+        "Phase385 forward-desire evidence identifies future-facing consequence questions as propulsion, not retrospective explanation volume."
+      ],
+      "causal_chain": [
+        "reader sees current activity",
+        "no meaningful near-term outcome is open",
+        "details answer 'what is here' rather than raise 'what will she do / what will happen'",
+        "attention lacks a forward target"
+      ]
+    },
+    {
+      "id": "RD403_E_AFFECTIVE_UNDERLOAD_AFTER_INTERPRETATION_FIREWALL",
+      "status": "SUPPORTED_PARTIAL",
+      "evidence": [
+        "Phase402 successfully withheld abstract relationship theses to reduce AI-like explanation.",
+        "Human reader simultaneously reports emotion only general/low.",
+        "This suggests the firewall removed harmful explanation but did not supply enough embodied present-tense cost."
+      ],
+      "architecture_implication": "Restore affect only as concrete current stake, bodily pressure, avoidance and action tendency; keep abstract relationship interpretation hidden."
+    }
+  ],
+  "positive_counterexample_constraints": {
+    "phase370_actual_human": {
+      "immediate_motive_clarity": "YES",
+      "remaining_unknown": "SUSPENSE_NOT_CONFUSION",
+      "desire_to_continue": "YES"
+    },
+    "transferable_principles": [
+      "future-facing uncertainty should matter to a current character objective",
+      "new information should reprice a present choice rather than merely explain old facts",
+      "ordinary details can remain ordinary but should not monopolize the entry span",
+      "reader drive can come from consequence and choice without arbitrary mystery"
+    ],
+    "explicitly_not_transferred": [
+      "Phase370 surface rhythm",
+      "its specific action density",
+      "its danger level",
+      "its sentence/paragraph lengths",
+      "its manuscript-specific anti-AI controls"
+    ]
+  },
+  "selected_architecture": {
+    "id": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+    "entry_state_gate": "Begin the prose window at the first causally loaded local state rather than the earliest chronological setup state.",
+    "live_vector": "Expose current desired state + blocking condition/uncertainty + personal cost of delay/non-resolution + unresolved local outcome; do not precommit outcome.",
+    "selective_salience": "Expose only currently active details capable of affecting the live vector, immediate choice, uncertainty or embodied affect. Keep broad neutral inventory coordinator-only.",
+    "embodied_affect": "Expose concrete bodily/action pressure and avoidance, not abstract relationship thesis.",
+    "preserves": [
+      "Phase402 non-focal actor commitments",
+      "deferred attribution",
+      "focal opacity",
+      "single local passage",
+      "hidden evaluator firewall"
+    ]
+  },
+  "controlled_phase403_hypothesis": {
+    "source_world": "NS02",
+    "focal_character": "lin_qiao",
+    "candidate_entry_state": "Lin Qiao has already found the unsigned handover form while water/electrical conditions are worsening.",
+    "factual_personal_stake": "Lin Qiao intends to leave town immediately after the handover; completion depends on Lin Guozhong's signature.",
+    "local_open_outcome": "Whether the handover can materially advance without forcing Lin Qiao to remain in the studio/town longer than she intends.",
+    "arbitrary_new_mystery_added": false,
+    "phase402_actor_commitments_may_be_reused_as_frozen_control": true
+  },
+  "falsifiable_predictions": [
+    "If neutral-entry and low-value salience are causal, the prospective A1 should form a readable current problem earlier without adding a random mystery.",
+    "If personal cost coupling is causal, practical paperwork/water actions should carry more emotional tension without abstract relationship exposition.",
+    "If the repair merely manufactures urgency superficially, hidden structural gates or human AI-smell judgment may regress.",
+    "A human PASS still requires immersion, suspense/forward desire and emotional effect; hidden gates alone cannot validate the architecture."
+  ],
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}
