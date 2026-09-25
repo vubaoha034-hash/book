@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "VALIDATION_CONTRACT_NOT_A_SECOND_TASK",
+  "project_id": "novel-distillation",
+  "phase": 402,
+  "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+  "contract_id": "PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1",
+  "status": "FROZEN_PENDING_ARCHITECTURE_AUDIT",
+  "architecture_under_test": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+  "controlled_world_source": {
+    "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "source_must_not_be_modified": true
+  },
+  "inherited_control": {
+    "same_story_world": true,
+    "same_focal_character": "lin_qiao",
+    "same_local_horizon_family": true,
+    "comparison_baseline": "PHASE401_NS02_A1",
+    "phase401_deterministic_blocked_runs": "2/12",
+    "phase401_semantic": "BLOCK",
+    "phase401_global_optimization": "BLOCK"
+  },
+  "prospective_pilot_artifacts": {
+    "actor_commitments": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+    "writer_visible_projection": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+    "writer_entry": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+    "readiness_receipt": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+    "inbox": "state/inbox/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+    "frozen": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+    "post_generation_settlement": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json"
+  },
+  "preparation_protocol": [
+    "Build non-focal actor commitments from the frozen coordinator world state before prose generation.",
+    "Actor commitments may expose only observable near-term commitments and bounded optional public emissions.",
+    "Build focal writer-visible projection without abstract relationship theses, motive summaries or full autobiographical association graph.",
+    "Unlock zero or one raw memory fragment with no attached interpretation or relationship meaning.",
+    "Audit actor commitments and focal projection for evaluator leakage and surface quotas.",
+    "Freeze writer entry before prose generation.",
+    "Only after architecture-ready PASS and project_state/checkpoint guard consistency may A1 be authorized."
+  ],
+  "A1_execution_budget": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "separate_writer_chat_required": true,
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "post_generation_required_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "response_ownership_residual_check": {
+    "description": "Check whether remaining dialogue stretches still behave as a shared exact-response machine despite actor commitments.",
+    "writer_visibility": "FORBIDDEN",
+    "surface_quota": false
+  },
+  "interpretation_liquidity_residual_check": {
+    "description": "Check whether concrete perceptions are repeatedly liquidated into immediate memory+explanation+relationship-thesis closure.",
+    "writer_visibility": "FORBIDDEN",
+    "surface_quota": false
+  },
+  "causal_success_boundary": {
+    "if_all_required_gates_clear": "Supports only a bounded single-passage prospective signal that the Phase402 residual architecture removed the known response-ownership and interpretation-liquidity failures in this controlled test.",
+    "forbidden_claims": [
+      "global AI-smell solved",
+      "global immersion solved",
+      "long-form transfer proven",
+      "production promotion authorized",
+      "accepted checkpoint advanced"
+    ]
+  },
+  "forbidden": [
+    "modify Phase399/400/401 frozen evidence",
+    "repair Phase401 A1",
+    "reuse Phase401 writer chat",
+    "best-of-N",
+    "parallel candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second window",
+    "feed hidden gate labels or located failures to writer",
+    "enter human review before all required gates clear",
+    "create Phase403 automatically"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "pilot_decision": "PENDING_ARCHITECTURE_AUDIT",
+  "next_action": "Audit the residual diagnosis, schema and this contract. If and only if architecture-ready PASS, decide whether to build the single A1 actor-commitment projection and authorize one isolated fresh-writer pilot."
+}
