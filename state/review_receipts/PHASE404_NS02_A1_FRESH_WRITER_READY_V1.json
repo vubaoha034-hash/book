@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 404,
+  "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+  "event_type": "A1_WRITER_ENTRY_READINESS",
+  "status": "READY_SINGLE_ISOLATED_A1",
+  "architecture": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+  "immutable_evidence_head": "7eb3e82c9cbf2a3eb135f36d4991717442294938",
+  "controlled_literary_payload": {
+    "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+    "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+    "reused_without_modification": true
+  },
+  "writer_entry": {
+    "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+    "sha256": "a70fdef75ddd535c16b32fa30e8599816713e2df1598e989bac5c196546b80d8",
+    "immutable_commit": "7eb3e82c9cbf2a3eb135f36d4991717442294938",
+    "embedded_payload_exact_match": true
+  },
+  "first_readiness_audit": {
+    "status": "BLOCK_ARTIFACT_LABEL_TERM_PRESENT_IN_WRAPPER",
+    "located_issue": "The first wrapper draft used the phrase '中文小说正文主体', which retained the exact artifact-type substring '小说正文' that Phase403 had emitted as an unwanted leading label.",
+    "disposition": "REPAIR_WRAPPER_BEFORE_FREEZE",
+    "prose_attempt_consumed": false
+  },
+  "repair": {
+    "status": "APPLIED",
+    "changed_only": "Response wrapper wording.",
+    "replacement_surface": "中文叙事文本 / 故事中的第一句 / 故事中的最后一句",
+    "literary_payload_changed": false,
+    "Phase403_payload_sha256_unchanged": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7"
+  },
+  "final_readiness_audit": {
+    "status": "PASS",
+    "embedded_payload_exact_match": true,
+    "phase403_failure_examples_visible": false,
+    "artifact_label_term_visible": false,
+    "ai_or_dialogue_evaluator_terms_visible": false,
+    "structured_envelope": false,
+    "response_cardinality": 1,
+    "line1_is_story_content_contract": true,
+    "terminate_after_final_story_sentence_contract": true,
+    "printed_self_check": false,
+    "long_negative_meta_checklist": false
+  },
+  "execution_authorization": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "fresh_writer_authorized": true,
+    "prose_generation_authorized": true,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "outer_execution_prompt_contract": {
+    "minimal": true,
+    "repeat_failure_categories": false,
+    "repeat_literary_payload": false,
+    "second_message_forbidden": true
+  },
+  "post_generation_required_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "accepted_checkpoint_advance": false,
+  "next_action": "Activate Phase404 control state for exactly one isolated A1. Execute the frozen runner with a minimal outer prompt, persist/freeze raw output verbatim, then run all required hidden gates. Do not retry automatically."
+}
