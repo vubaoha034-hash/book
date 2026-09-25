@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+  "phase_ordinal": 403,
+  "status": "ACTIVE_RESIDUAL_CAUSAL_DIAGNOSIS_AND_MINIMAL_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "purpose": "Diagnose and repair the human-identified literary failure that remained after Phase402 structural gates cleared: low reader drive, slow scene progression, weak emotional tension, low information-value density, no suspense, and no desire to continue.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE402_CLOSE",
+    "predecessor_checkpoint_sequence": 84,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "predecessor": {
+    "phase402_task": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
+    "phase402_hidden_settlement": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "phase402_human_rejection": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "phase402_frozen": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+    "phase402_result": "HIDDEN_GATES_CLEAR_ACTUAL_HUMAN_REJECT",
+    "human_ai_smell": "MUCH_LIGHTER_THAN_BEFORE",
+    "human_immersion": "FAIL",
+    "human_emotion": "GENERAL_LOW",
+    "human_suspense": "ABSENT",
+    "human_desire_to_continue": false,
+    "first_boredom_quote": "玻璃后面还插着几张褪色的样片，边角已经翘起来。下层柜门里堆着空相框和一卷背景布。她拉开柜门检查了一遍，没有看见文件。",
+    "first_boredom_reason": "因为一整个介绍真的很慢。感觉很无聊"
+  },
+  "frozen_evidence_scope": [
+    "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+    "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+    "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+    "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt"
+  ],
+  "residual_failure_families": [
+    {
+      "id": "R403_01_NEUTRAL_ENTRY_STATE",
+      "evidence": [
+        "Phase402 begins before any focal objective is visibly blocked by a personally meaningful consequence.",
+        "The first substantial span is procedural salvage and cataloguing.",
+        "Actual human reader reported no immersion, no suspense, no forward desire."
+      ],
+      "causal_hypothesis": "Starting at the earliest physical activity rather than the first causally loaded state forces the prose to spend reader attention on setup before a live narrative vector exists."
+    },
+    {
+      "id": "R403_02_LOW_VALUE_SALIENCE_FLOODING",
+      "evidence": [
+        "The frozen passage repeatedly presents boxes, envelopes, drawers, samples, frames and background cloth with little immediate change in action, knowledge, relationship pressure or choice.",
+        "The actual human stop point occurs during display-cabinet inventory detail.",
+        "Hidden global-optimization was clear, so the remaining boredom is not explained by overt explanatory closure."
+      ],
+      "causal_hypothesis": "Even when each detail is realistic, exposing too many currently consequence-neutral details encourages procedural description and lowers perceived information value per unit of reader attention."
+    },
+    {
+      "id": "R403_03_WEAK_LIVE_PERSONAL_STAKE",
+      "evidence": [
+        "The writer-visible local view foregrounded practical sorting and water risk.",
+        "The frozen source world already contains a private Lin Qiao intention to leave town after the handover, but the Phase402 local passage does not carry that personal cost as an active present pressure.",
+        "The required signature is practical but not strongly connected on-page to a focal cost of delay."
+      ],
+      "causal_hypothesis": "Removing abstract relationship interpretation successfully reduced AI smell, but the focal passage also lost a concrete personal consequence linking the immediate task to what Lin Qiao wants to escape, finish or avoid."
+    },
+    {
+      "id": "R403_04_NO_LIVE_OPEN_OUTCOME_QUESTION",
+      "evidence": [
+        "The passage contains many physical processes but no strong local uncertainty whose outcome matters to Lin Qiao now.",
+        "The undeveloped-film mystery is not used, which avoids engineered reveal pressure but leaves no substitute forward-facing uncertainty.",
+        "The human reader explicitly reported no suspense and no desire to continue."
+      ],
+      "causal_hypothesis": "A local passage can be opaque and natural yet still lack forward drive if no current unresolved outcome has meaningful consequences for the focal character."
+    }
+  ],
+  "rejected_repairs": [
+    "make paragraphs longer",
+    "reduce the number of questions",
+    "reintroduce mechanical dialogue instructions",
+    "add more AI-smell rules",
+    "insert a random mystery object or cliffhanger",
+    "force a reveal every N paragraphs",
+    "require every paragraph to change state",
+    "use a suspense quota",
+    "simply shorten the prose after generation",
+    "tell writer to be faster, more exciting or more emotional"
+  ],
+  "minimal_architecture_direction": {
+    "architecture_id": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+    "component_A_entry_state_gate": {
+      "mechanism": "Coordinator selects the local passage entry at the first state where the focal character has an active desired outcome, a real obstruction or uncertainty, and a personal cost if the state persists. Writer does not receive earlier neutral setup merely because it happened first.",
+      "not_a_surface_hook_rule": true,
+      "no_mandatory_action_opening": true,
+      "no_cliffhanger_requirement": true
+    },
+    "component_B_live_vector": {
+      "mechanism": "Writer receives a factual current desired state, blocking condition, cost-of-delay or non-resolution, and one unresolved local outcome question without receiving the answer or a reveal schedule.",
+      "outcome_not_precommitted": true,
+      "suspense_not_required_as_mystery": true
+    },
+    "component_C_selective_salience_gate": {
+      "mechanism": "Coordinator keeps broad ambient inventory hidden. Writer receives only currently active details that can plausibly affect the live vector, immediate practical choices, uncertainty, or embodied affect. Other realistic details remain available in the world model but are not obligatory writer-visible material.",
+      "no_numeric_density_quota": true,
+      "no_mandatory_detail_count": true
+    },
+    "component_D_embodied_affective_load": {
+      "mechanism": "Reintroduce emotional force only as current embodied pressure, action tendency, avoidance or concrete personal cost. Do not restore abstract relationship theses or executive-summary interpretations.",
+      "abstract_relationship_thesis_writer_visible": false
+    },
+    "preserved_from_phase402": [
+      "non-focal actor commitments",
+      "deferred attribution",
+      "single focal consciousness",
+      "non-focal private-state opacity",
+      "local passage only",
+      "hidden evaluator firewall",
+      "one candidate / one A1 budget"
+    ]
+  },
+  "required_outputs": [
+    "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json",
+    "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+    "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+    "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json"
+  ],
+  "preparation_acceptance_tests": [
+    "Diagnosis treats Phase402 human verdict as authoritative and does not overwrite it with hidden-gate success.",
+    "Diagnosis distinguishes low information-value density from AI smell/global optimization.",
+    "Architecture changes entry-state selection and writer-visible salience rather than paragraph/dialogue surface rules.",
+    "Architecture creates a factual live vector with personal consequence and unresolved outcome but no precommitted solution.",
+    "Architecture does not inject a new arbitrary mystery solely to manufacture suspense.",
+    "Embodied affect may be visible but abstract relationship theses remain coordinator-only.",
+    "Validation contract allows one A1, one candidate, no best-of-N, no retry, no A2, no second window.",
+    "No prose pilot may run before architecture-ready PASS and control-state guard consistency."
+  ],
+  "forbidden": [
+    "modify Phase399, Phase400, Phase401 or Phase402 frozen evidence",
+    "repair Phase402 A1",
+    "retry Phase402 A1",
+    "create Phase402 A2",
+    "use paragraph-length or question-count rules",
+    "add AI-smell or mechanical-dialogue rules as the Phase403 primary repair",
+    "add arbitrary suspense/mystery facts not grounded in the frozen source world",
+    "generate Phase403 prose before architecture-ready PASS",
+    "best-of-N",
+    "parallel candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second window",
+    "enter actual-human review before required hidden gates clear",
+    "create Phase404 automatically",
+    "advance Phase320 accepted checkpoint from design or structural gates alone"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE403_BUILD_READER_DRIVE_CAUSAL_DIAGNOSIS",
+      "parameters": {
+        "output": "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE403_BUILD_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA",
+      "parameters": {
+        "output": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE403_FREEZE_SINGLE_A1_VALIDATION_CONTRACT",
+      "parameters": {
+        "output": "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE403_AUDIT_READER_DRIVE_ARCHITECTURE",
+      "parameters": {
+        "receipt": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json"
+      }
+    }
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build reader-drive residual diagnosis, freeze LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 and a single-A1 validation contract, then audit whether one prospective A1 is justified. Do not generate prose yet."
+}
