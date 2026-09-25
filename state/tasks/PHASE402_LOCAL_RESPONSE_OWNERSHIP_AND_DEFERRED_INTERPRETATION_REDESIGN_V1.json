@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+  "phase_ordinal": 402,
+  "status": "ACTIVE_RESIDUAL_CAUSAL_DIAGNOSIS_AND_MINIMAL_ARCHITECTURE_REDESIGN_NO_PROSE",
+  "purpose": "Target the two residual Phase401 failures without reverting to surface quotas: (1) local dialogue still collapses into exact-adjacency/shared-agenda response chains, and (2) observed objects/actions are rapidly converted into memory, explanation and relationship conclusions, preserving local global-optimization regularity.",
+  "authorization": {
+    "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE401_CLOSE",
+    "predecessor_checkpoint_sequence": 80,
+    "predecessor_closed": true,
+    "accepted_checkpoint_at_authorization": 320
+  },
+  "predecessor": {
+    "phase401_task": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+    "phase401_settlement": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "phase401_frozen": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "phase401_result": "PARTIAL_DIRECTIONAL_REDUCTION_NOT_VALIDATED",
+    "inherited_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "deterministic_baseline_phase399": "21/43",
+    "deterministic_phase401": "2/12"
+  },
+  "frozen_evidence_scope": [
+    "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+    "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+    "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+    "rules/dialogue-mechanical-blocker-v1.md",
+    "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt"
+  ],
+  "residual_failure_families": [
+    {
+      "id": "R402_01_SINGLE_RENDERER_RESPONSE_OWNERSHIP",
+      "evidence": [
+        "Phase401 hid non-focal private state, yet the prose renderer still selected every character's next spoken reply.",
+        "Remaining blocked chains are locally efficient response completions around signature lookup and electrical safety.",
+        "Non-focal ongoing activity reduced but did not eliminate exact-adjacency geometry."
+      ],
+      "causal_hypothesis": "As long as one prose renderer owns both the focal utterance and every non-focal reply, token-level relevance pressure can reconstruct a shared conversational agenda even under focal opacity."
+    },
+    {
+      "id": "R402_02_INTERPRETATION_LIQUIDITY",
+      "evidence": [
+        "Phase401 writer-visible input exposed abstract focal emotional pressure, relationship residues and directly usable autobiographical salience.",
+        "Frozen output repeatedly converts an object/action into memory, then an explanatory thesis, then relationship meaning or task progression.",
+        "Located cycles include drawer->key memory->paperwork, tray-space->childhood work habit->relationship meaning, fuse repair->father-refusal thesis, height marks->childhood memory->mutual look."
+      ],
+      "causal_hypothesis": "When abstract relationship meaning and semantically matched memories are prose-visible at the same time as a concrete stimulus, the renderer can cash out the latent interpretation immediately, producing reader-facing inference closure."
+    }
+  ],
+  "rejected_repairs": [
+    "minimum paragraph length",
+    "maximum one-line paragraph count",
+    "maximum question count",
+    "ban direct answers",
+    "mandatory action between every dialogue line",
+    "tell writer to be less optimized or more human",
+    "copy Phase370 surface rhythm",
+    "feed Phase401 blocker labels or located failures to writer"
+  ],
+  "minimal_architecture_direction": {
+    "architecture_id": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+    "change_A_response_ownership": {
+      "mechanism": "Freeze near-term observable commitments for each non-focal actor before prose rendering. The prose renderer may realize those commitments but may not freely invent a cooperative next-state for every non-focal actor solely to complete the focal character's latest conversational move.",
+      "coordinator_only_private_motive": true,
+      "writer_visible_form": "observable near-term commitment only; no evaluator label, no dialogue quota, no required refusal/interrupt pattern"
+    },
+    "change_B_deferred_interpretation": {
+      "mechanism": "Keep abstract relationship interpretations, motive summaries and full autobiographical linkage coordinator-only. Writer receives current perception/body/task plus at most a small raw memory fragment that has been explicitly unlocked before rendering, without the coordinator's interpretation of what that fragment means.",
+      "abstract_relationship_thesis_writer_visible": false,
+      "full_memory_association_graph_writer_visible": false,
+      "raw_unlocked_memory_fragment_allowed": true,
+      "memory_fragment_coverage_required": false
+    },
+    "preserved_from_phase401": [
+      "single focal consciousness",
+      "non-focal private state opacity",
+      "local passage instead of whole-scene completion",
+      "optional detail coverage",
+      "hidden evaluator firewall"
+    ]
+  },
+  "required_outputs": [
+    "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
+    "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json",
+    "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+    "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json"
+  ],
+  "preparation_acceptance_tests": [
+    "Residual diagnosis distinguishes dialogue response ownership from dialogue surface length/question count.",
+    "Residual diagnosis distinguishes interpretive liquidity from paragraph shortness.",
+    "Revised architecture preserves focal opacity/local horizon while changing only response ownership and interpretation availability.",
+    "Writer-visible layer contains no evaluator labels, thresholds, paragraph/question quotas or located Phase401 failures.",
+    "Writer-visible layer contains no abstract relationship thesis for the focal character and no full autobiographical association graph.",
+    "Non-focal private motives remain coordinator-only.",
+    "Any non-focal actor commitment is observable/action-state, not a mandated dialogue pattern.",
+    "Validation contract permits at most one A1, one candidate, no best-of-N, no automatic retry, no A2 and no automatic second window.",
+    "No prose pilot may run until architecture-ready receipt PASS and project_state/checkpoint guard are consistent."
+  ],
+  "forbidden": [
+    "modify Phase399/400/401 frozen evidence",
+    "repair Phase401 A1",
+    "retry Phase401 A1",
+    "create Phase401 A2",
+    "generate Phase402 prose before architecture-ready PASS",
+    "best-of-N",
+    "parallel candidates",
+    "automatic retry",
+    "automatic A2",
+    "automatic second window",
+    "show hidden gate labels or thresholds to writer",
+    "enter actual-human literary review before all required post-generation gates clear",
+    "create Phase403 automatically",
+    "advance Phase320 accepted checkpoint from design or structural gates alone"
+  ],
+  "allowed_action_requests": [
+    {
+      "action_id": "PHASE402_BUILD_RESIDUAL_CAUSAL_DIAGNOSIS",
+      "parameters": {
+        "output": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE402_BUILD_MINIMAL_ARCHITECTURE_SCHEMA",
+      "parameters": {
+        "output": "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE402_FREEZE_SINGLE_A1_VALIDATION_CONTRACT",
+      "parameters": {
+        "output": "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json"
+      }
+    },
+    {
+      "action_id": "PHASE402_AUDIT_MINIMAL_ARCHITECTURE",
+      "parameters": {
+        "receipt": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json"
+      }
+    }
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "user_delivery_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Build residual causal diagnosis, freeze ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema and a single-A1 validation contract, then audit whether the minimum architecture is safe to prospectively test. Do not generate prose yet."
+}
