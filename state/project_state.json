@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T09:50:00Z",
+  "updated_at": "2026-09-25T10:00:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,19 +177,20 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE406_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+    "YMGQ_writing_pause_reason": "PHASE406_SINGLE_ISOLATED_A1_AUTHORIZED",
     "current_writing_authorization_scope": {
-      "kind": "PHASE406_PREGEN_ARCHITECTURE_ONLY",
-      "current_chat_allowed": true,
+      "kind": "PHASE406_SINGLE_ISOLATED_A1_ONLY",
+      "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": false,
-      "prose_generation_authorized": false,
+      "fresh_writer_authorized": true,
+      "prose_generation_authorized": true,
       "retry_authorized": false,
       "A2_authorized": false,
       "second_window_authorized": false,
       "human_review_authorized": false,
-      "task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json"
+      "task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
+      "writer_entry": "delivery/phase406/RUN_NS02_LINQIAO_COST_CARRIER_A1.txt"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -855,8 +856,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Build and audit one compiled Phase406 A1 input/runner. Do not generate prose until readiness PASS.",
-  "status": "PHASE406_ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "next_required_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase406 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry.",
+  "status": "PHASE406_ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
   "active_task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
   "last_completed_task_id": "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
   "last_completed_task_contract": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json",
@@ -1123,8 +1124,7 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
-    "PHASE406_PROSE_BEFORE_READINESS_FORBIDDEN"
+    "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1845,7 +1845,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase406_state": {
-    "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+    "status": "ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
     "task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE406_PERSONAL_COST_VISIBILITY_CAUSAL_DIAGNOSIS_V1.json",
@@ -1867,8 +1867,8 @@
     "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
     "phase404_response_transaction_changed": false,
     "inherited_phase405_targeted_stability_signal": "BOUNDED_POSITIVE_SINGLE_RUN",
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
+    "prose_generation_authorized": true,
+    "fresh_writer_authorized": true,
     "attempt": "A1",
     "attempt_budget": 1,
     "best_of_n": false,
@@ -1877,6 +1877,18 @@
     "A2_authorized": false,
     "automatic_second_window": false,
     "actual_human_review_authorized": false,
-    "accepted_checkpoint_advance": false
+    "accepted_checkpoint_advance": false,
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE406_NS02_LINQIAO_COST_CARRIER_VIEW_A1.json",
+      "status": "FROZEN_PASS"
+    },
+    "writer_entry": {
+      "path": "delivery/phase406/RUN_NS02_LINQIAO_COST_CARRIER_A1.txt",
+      "status": "FROZEN_PASS"
+    },
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE406_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    }
   }
 }

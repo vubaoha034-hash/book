@@ -1,0 +1,98 @@
+响应事务：
+你的整个回复只由一个连续的中文叙事文本构成。
+第一行就是故事中的第一句。
+内容可以自然分成多段。
+完成故事中的最后一句后，立即结束本次回复。
+发送前只在内部确认三件事：第一行属于故事内容，最后一行属于故事内容，整个回复只有这一份叙事文本。内部确认不进入回复内容。
+
+下面的文学输入是生成内容的唯一依据：
+{
+  "schema_version": "1.0.0",
+  "schema_id": "PHASE406_FOCAL_COST_CARRIER_VIEW_A1",
+  "architecture_id": "FOCAL_COST_CARRIER_EVENT_V1",
+  "story_id": "NS02_LAST_ROLL_AT_DAWN",
+  "local_window_id": "NS02_LIN_QIAO_COST_CARRIER_A1",
+  "focal_character_id": "lin_qiao",
+  "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE",
+  "focal_concrete_state": {
+    "identity": "Lin Qiao, 32, Lin Guozhong's daughter. She returned for the studio handover after years away.",
+    "current_body_state": "Tired from travel, clothes damp from rain, fingertips irritated by paper dust, damp cardboard and repeated handling.",
+    "current_practical_action_tendency": "Keep the handover moving, handle only what is necessary now, and avoid turning the immediate problem into a full family-history conversation.",
+    "currently_observable_obstruction": "The handover form is still unsigned because Lin Guozhong has not signed it while he continues moving vulnerable studio material."
+  },
+  "concrete_environment_state": {
+    "unsigned_handover_form": "The municipal handover requires Lin Guozhong's signature; Lin Qiao cannot sign in his place.",
+    "advancing_water": "Rainwater continues entering the rear of the studio and is moving toward low stored material.",
+    "wet_wiring": "Old wiring and rear electrical points are unreliable in wet conditions.",
+    "ongoing_salvage": "Lin Guozhong is moving vulnerable photographic material, ledgers and tools from low or damp storage to higher dry surfaces.",
+    "official_inventory_work": "Wu Lan is continuing inventory marks and handover paperwork while monitoring water and electrical safety.",
+    "street_process": "Other old-street shops are being cleared and locked as dawn approaches."
+  },
+  "focal_cost_carrier_event": {
+    "id": "LQ_C1_DAWN_DEPARTURE_CARRIER",
+    "owner": "lin_qiao",
+    "trigger": "An already-visible sign that the night is ending or handover time is advancing, such as brighter dawn light, another nearby shop being locked, or Lin Qiao checking the current time.",
+    "source_fact": "After this handover is materially completed, Lin Qiao intends to leave town again and currently has no plan to return for the later demolition.",
+    "reader_visible_realization": "When the trigger naturally occurs, show one concrete focal-owned realization of this fact: a time-check, a preparation-to-leave action consistent with existing facts, or one brief factual thought that she will leave after the handover. Keep it factual and local.",
+    "not_allowed": [
+      "Do not explain why this departure plan is emotionally important.",
+      "Do not summarize a personal cost of delay.",
+      "Do not state a narrative theme or relationship thesis.",
+      "Do not invent a ticket, train, flight, booking, appointment or external deadline.",
+      "Do not turn this into a speech that another character must answer."
+    ],
+    "required_in_passage": true
+  },
+  "preowned_non_focal_causal_event_cards": [
+    {
+      "id": "LGZ_E1_WET_MATERIAL_SALVAGE",
+      "owner": "lin_guozhong",
+      "trigger": "He independently notices that a low-stored photographic box/material is threatened by advancing water during his ongoing salvage work.",
+      "observable_action": "He interrupts his current handling long enough to move or re-support that threatened material on a higher dry surface.",
+      "public_fact_payload": "If speech is naturally needed during this self-owned action, it may contain only a brief handling directive about the threatened photographic material. It does not answer a focal conversational question.",
+      "required": false
+    },
+    {
+      "id": "WL_E1_REAR_ELECTRICAL_SAFETY",
+      "owner": "wu_lan",
+      "trigger": "During her own rear-water/safety check, she sees water close enough to an old outlet or wiring point that current use becomes unsafe.",
+      "observable_action": "She independently moves to the switch/outlet area and disables or warns against using the affected rear electrical point.",
+      "public_fact_payload": "If speech is naturally needed, it may contain only the immediate safety directive attached to that observed electrical risk.",
+      "required": false
+    },
+    {
+      "id": "WL_E2_INVENTORY_CONTINUES",
+      "owner": "wu_lan",
+      "trigger": "While the other two handle wet material, she reaches the next inventory item or paperwork line in her own official workflow.",
+      "observable_action": "She continues marking the inventory or organizing the handover papers without taking ownership of the Lin family disagreement.",
+      "public_fact_payload": "No new information-bearing statement is assigned.",
+      "required": false
+    }
+  ],
+  "renderer_boundary": {
+    "may_realize_wording_and_local_sensory_texture": true,
+    "may_omit_optional_non_focal_event_cards": true,
+    "may_choose_natural_local_stop": true,
+    "may_not_omit_focal_cost_carrier_event": true,
+    "may_not_invent_additional_information_bearing_non_focal_response": true,
+    "may_not_add_family_history_explanation": true,
+    "may_not_add_hidden_evidence": true
+  },
+  "immutable_hard_locks": {
+    "handover_at_dawn": "The studio is scheduled for municipal handover at dawn.",
+    "signature_required": "Lin Guozhong's signature is required; Lin Qiao cannot sign in his place.",
+    "mother_departure": "Xu Wen left when Lin Qiao was a teenager; there is no single shared account of why she left.",
+    "no_magic_resolution": "Do not introduce a letter, recording, confession, official file or newly invented hidden object that fully explains the family rupture."
+  },
+  "output_request": {
+    "mode": "FICTION_PROSE_ONLY",
+    "language": "Chinese",
+    "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+    "start_from_current_state": true,
+    "whole_scene_completion_required": false,
+    "use_every_available_detail_required": false,
+    "resolve_handover_required": false,
+    "stay_with_focal_knowledge": true,
+    "natural_local_stop_allowed": true
+  }
+}

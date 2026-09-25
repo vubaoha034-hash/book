@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
   "phase_ordinal": 406,
-  "status": "ACTIVE_ARCHITECTURE_READY_AWAITING_SINGLE_A1_READINESS",
+  "status": "ACTIVE_SINGLE_A1_AUTHORIZED_NOT_YET_EXECUTED",
   "purpose": "Repair only the Phase405 focal-personal-cost visibility blocker without re-exposing abstract live-vector semantics or weakening the Phase405 targeted stability gains.",
   "authorization": {
     "source": "EXPLICIT_USER_SUCCESSOR_AUTHORIZATION_AFTER_PHASE405_CLOSE",
@@ -33,9 +33,12 @@
     "A2": false,
     "second_window": false
   },
-  "prose_generation_authorized": false,
-  "fresh_writer_authorized": false,
+  "prose_generation_authorized": true,
+  "fresh_writer_authorized": true,
   "user_delivery_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Build and audit one compiled Phase406 A1 input/runner. Do not generate prose until readiness PASS."
+  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase406 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry.",
+  "writer_visible_projection": "state/author_packets/PHASE406_NS02_LINQIAO_COST_CARRIER_VIEW_A1.json",
+  "writer_entry": "delivery/phase406/RUN_NS02_LINQIAO_COST_CARRIER_A1.txt",
+  "readiness_receipt": "state/review_receipts/PHASE406_NS02_A1_FRESH_WRITER_READY_V1.json"
 }

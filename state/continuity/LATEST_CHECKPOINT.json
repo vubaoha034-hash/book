@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 94,
-  "recorded_at": "2026-09-25T09:50:00Z",
+  "sequence": 95,
+  "recorded_at": "2026-09-25T10:00:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1"
   ],
-  "current_focus": "Phase406 is the sole active successor. It addresses only Phase405 FOCAL_PERSONAL_COST_VISIBILITY by adding one source-grounded focal cost-carrier event while keeping desired-state, personal-cost and unresolved-outcome summaries coordinator-only. Architecture gate passed; no prose authorized until compiled A1 readiness PASS.",
+  "current_focus": "Phase406 compiled A1 packet/runner passed readiness. Exactly one isolated fresh-writer A1 is authorized. The writer sees one source-grounded focal cost-carrier event, but still does not see abstract desired-state, personal-cost or unresolved-outcome summaries. Phase404 response transaction and Phase405 non-focal ownership remain unchanged.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -274,7 +274,11 @@
     "Phase406 minimal diagnosis located static-fact-without-causal-carrier as the residual personal-cost visibility failure.",
     "FOCAL_COST_CARRIER_EVENT_V1 selected; abstract live-vector summaries remain hidden.",
     "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 remains unchanged.",
-    "Phase406 single-A1 validation contract frozen; no retry, A2, second window or best-of-N."
+    "Phase406 single-A1 validation contract frozen; no retry, A2, second window or best-of-N.",
+    "Phase406 compiled one source-grounded focal cost-carrier event tied to observable dawn/time progression.",
+    "Phase406 readiness confirms abstract live-vector summaries remain hidden and no unsupported external deadline was added.",
+    "Phase406 runner reuses Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 verbatim.",
+    "Phase406 readiness/guard audit passed; one isolated A1 authorized."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1017,5 +1021,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Build and audit one compiled Phase406 A1 input/runner. Do not generate prose until readiness PASS."
+  "next_action": "Execute exactly one isolated fresh-writer A1 from the frozen Phase406 runner; persist/freeze raw output verbatim and run required hidden gates. Do not retry."
 }

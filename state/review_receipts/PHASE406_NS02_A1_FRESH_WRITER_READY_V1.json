@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 406,
+  "task_id": "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+  "event_type": "A1_COST_CARRIER_INPUT_AND_WRITER_ENTRY_READINESS",
+  "status": "READY_SINGLE_ISOLATED_A1",
+  "immutable_evidence_head": "a372d43262d02dc0c034b2c87fd7f44d5ecddf9a",
+  "architecture": {
+    "id": "FOCAL_COST_CARRIER_EVENT_V1",
+    "architecture_ready_receipt": "state/review_receipts/PHASE406_COST_CARRIER_ARCHITECTURE_READY_V1.json"
+  },
+  "artifacts": {
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE406_NS02_LINQIAO_COST_CARRIER_VIEW_A1.json"
+    },
+    "writer_entry": {
+      "path": "delivery/phase406/RUN_NS02_LINQIAO_COST_CARRIER_A1.txt"
+    },
+    "validation_contract": "state/tasks/PHASE406_SINGLE_A1_VALIDATION_CONTRACT_V1.json"
+  },
+  "readiness_audit": {
+    "result": "PASS",
+    "exactly_one_focal_cost_carrier": true,
+    "focal_cost_carrier_source_grounded": true,
+    "focal_cost_carrier_reader_visible_required": true,
+    "carrier_trigger_observable_and_existing": true,
+    "new_external_deadline_visible": false,
+    "abstract_desired_state_summary_visible": false,
+    "abstract_personal_cost_summary_visible": false,
+    "unresolved_outcome_question_visible": false,
+    "relationship_thesis_visible": false,
+    "evaluator_labels_visible": false,
+    "historical_failure_examples_visible": false,
+    "surface_dialogue_or_paragraph_quotas_visible": false,
+    "phase405_non_focal_event_ownership_preserved": true,
+    "phase404_response_transaction_reused_verbatim": true,
+    "output_cardinality": 1
+  },
+  "execution_authorization": {
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "parallel_candidates": 1,
+    "best_of_n": false,
+    "automatic_retry": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "fresh_writer_authorized": true,
+    "prose_generation_authorized": true,
+    "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+    "only_one_new_chatgpt_page": true,
+    "close_writer_page_after_persistence_and_readback": true
+  },
+  "post_generation_required_gates": {
+    "source_fidelity": "CLEAR_REQUIRED",
+    "writer_output_contract": "CLEAR_REQUIRED",
+    "deterministic_dialogue_adjacency": "CLEAR_REQUIRED",
+    "semantic_mechanical_dialogue": "CLEAR_REQUIRED",
+    "hidden_global_optimization": "NO_BLOCK_REQUIRED",
+    "response_ownership_residual": "NO_BLOCK_REQUIRED",
+    "interpretation_liquidity_residual": "NO_BLOCK_REQUIRED",
+    "reader_drive_entry_state": "CLEAR_REQUIRED",
+    "neutral_salience_flooding": "NO_BLOCK_REQUIRED",
+    "focal_personal_cost_visibility": "CLEAR_REQUIRED",
+    "live_open_outcome_visibility": "CLEAR_REQUIRED",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review": "FORBIDDEN_UNTIL_ALL_REQUIRED_GATES_CLEAR"
+  },
+  "actual_human_review_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "next_action": "Execute exactly one isolated fresh-writer A1 using the frozen Phase406 runner. Freeze raw output verbatim, then run all required hidden gates. No retry."
+}
