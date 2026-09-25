@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T01:20:00.543Z",
+  "updated_at": "2026-09-25T04:02:17.846Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,38 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": {
-    "task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
-    "phase": "NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION",
-    "phase_ordinal": 399,
-    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
-    "task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
-    "execution_scope": "Exactly one isolated A1 fresh-writer run from the frozen Phase399 writer entry. No retry, no A2, no local repair, no user delivery before all post-generation gates CLEAR.",
-    "prose_generation_authorized": true,
-    "prose_generation_scope": "ONE_ISOLATED_A1_ONLY",
-    "fresh_writer_authorized": true,
-    "full_manuscript_rewrite_authorized": false,
-    "architecture_promotion_authorized": false,
-    "user_delivery_authorized": false,
-    "allowed_action_requests": [
-      {
-        "action_id": "PHASE399_EXECUTE_SINGLE_ISOLATED_FRESH_WRITER_A1",
-        "parameters": {
-          "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
-          "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
-        }
-      },
-      {
-        "action_id": "PHASE399_STORE_FREEZE_AND_GATE_A1",
-        "parameters": {
-          "inbox": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
-          "frozen": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt"
-        }
-      }
-    ],
-    "next_action": "Execute exactly one isolated Opera Neon fresh-writer A1 in a brand-new ChatGPT tab using only the frozen writer entry. Store returned prose verbatim; do not retry automatically.",
-    "current_execution_receipt": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json"
-  },
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -208,18 +177,18 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE399_SINGLE_NS02_FRESH_WRITER_VALIDATION_ACTIVE",
+    "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE399_A1_BLOCK",
     "current_writing_authorization_scope": {
-      "kind": "PHASE399_ONE_ISOLATED_NS02_A1_ONLY",
+      "kind": "NO_ACTIVE_PROSE_AUTHORIZATION_AFTER_PHASE399_A1_BLOCK",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": true,
-      "prose_generation_authorized": true,
+      "fresh_writer_authorized": false,
+      "prose_generation_authorized": false,
       "retry_authorized": false,
       "A2_authorized": false,
-      "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
-      "writer_entry_sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a"
+      "frozen_candidate": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "settlement_receipt": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -244,7 +213,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 75,
+    "logical_latest_checkpoint_sequence": 76,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -628,7 +597,8 @@
     "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
     "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
     "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
-    "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1"
+    "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+    "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -878,11 +848,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Execute exactly one isolated Opera Neon fresh-writer A1 in a brand-new ChatGPT tab using only the frozen writer entry. Store returned prose verbatim; do not retry automatically.",
-  "status": "PHASE399_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
-  "active_task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
-  "last_completed_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
-  "last_completed_task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+  "next_required_action": "No active task. Phase399 A1 was frozen and rejected by output-contract, deterministic dialogue, semantic dialogue, and anti-storyboard/immersion blockers. No retry, A2, or Phase400 is authorized.",
+  "status": "PHASE399_CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+  "last_completed_task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -939,19 +909,29 @@
     {
       "path": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
       "role": "Phase399 A1 writer-entry freeze and isolation PASS receipt"
+    },
+    {
+      "path": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "verbatim Phase399 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "immutable Phase399 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+      "role": "Phase399 A1 storage, source-fidelity, output-contract, dialogue and anti-storyboard settlement"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "Phase399 A1 fresh-writer execution, verbatim freeze, post-generation gates and possible actual-human review are pending"
+    "No separately authorized successor task exists after Phase399 A1 blocker settlement"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "PHASE399_AUTOMATIC_RETRY_FORBIDDEN",
-    "PHASE399_A2_NOT_AUTHORIZED",
-    "PHASE399_USER_DELIVERY_BLOCKED_PENDING_GATES"
+    "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE399_A1_BLOCK"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -962,7 +942,12 @@
     "Treat additional anti-storyboard prompt wording as a materially new mechanism",
     "Modify the frozen Phase398 NS02 packet after its PASS receipt; future changes require a new version/task",
     "Run a fresh writer from Phase398 without a separately authorized successor task",
-    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof"
+    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof",
+    "Repair or delete the final three non-prose lines from frozen Phase399 A1",
+    "Locally patch frozen Phase399 A1 dialogue or paragraph rhythm",
+    "Automatically retry Phase399 A1 or create A2",
+    "Deliver Phase399 A1 to actual-human review despite blocker settlement",
+    "Create Phase400 without separate explicit authorization"
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -992,7 +977,15 @@
     "Phase398 architecture and NS02 packet-build task closed without prose generation",
     "Phase399 single-A1 validation task created after explicit user authorization",
     "Phase399 writer-visible entry frozen from immutable NS02 scene-field packet projection",
-    "Phase399 writer-entry isolation audit PASS; no historical diagnostic leakage"
+    "Phase399 writer-entry isolation audit PASS; no historical diagnostic leakage",
+    "Phase399 exactly one isolated NS02 A1 fresh-writer run executed; no retry occurred",
+    "Phase399 A1 writer output stored verbatim to inbox and frozen output with only GitHub terminal-LF normalization",
+    "Phase399 A1 hard source locks CLEAR",
+    "Phase399 A1 deterministic dialogue BLOCK: 21 of 43 dialogue runs triggered structural blocker",
+    "Phase399 A1 semantic mechanical-dialogue BLOCK",
+    "Phase399 A1 anti-storyboard/immersion BLOCK: 631 of 658 paragraphs are one sentence or less",
+    "Phase399 A1 writer-output contract BLOCK: three non-prose editorial suggestion lines preserved verbatim",
+    "Phase399 A1 rejected whole and single-attempt budget exhausted without actual-human delivery"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1028,21 +1021,38 @@
     "accepted_checkpoint_advance": false
   },
   "phase399_state": {
-    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
+    "status": "CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
     "task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
     "source_packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
     "source_packet_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
     "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
     "writer_entry_sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a",
-    "writer_entry_immutable_commit": "abe522a2ca9be2032bbe5efcf7dea6532a8b0946",
-    "ready_receipt": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
     "attempt": "A1",
     "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "inbox": {
+      "path": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "sha256": "27ddbd103b77f04142f53b89cc336b6956452e48acb11be8a234c9af12f92ffe"
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "sha256": "27ddbd103b77f04142f53b89cc336b6956452e48acb11be8a234c9af12f92ffe"
+    },
+    "writer_chat_sha256": "bebdd2aaa7de4ead828706b432bf65803b0b30c2b76283f1226b415de4a15d0d",
+    "source_fidelity": "CLEAR_HARD_LOCKS",
+    "writer_output_contract": "BLOCK",
+    "deterministic_dialogue": "BLOCK",
+    "semantic_dialogue": "BLOCK",
+    "anti_storyboard_immersion": "BLOCK",
+    "post_generation_receipt": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+    "candidate_rejected_whole": true,
+    "actual_human_review_performed": false,
+    "user_delivery_authorized": false,
+    "drive_upload_authorized": false,
     "automatic_retry_authorized": false,
     "A2_authorized": false,
-    "candidate_stored": false,
-    "candidate_frozen": false,
-    "user_delivery_authorized": false,
+    "phase400_authorized": false,
     "accepted_checkpoint_advance": false
   }
 }
