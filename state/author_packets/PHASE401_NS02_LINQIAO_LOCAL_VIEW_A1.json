@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_VIEW_V1",
+  "story_id": "NS02_LAST_ROLL_AT_DAWN",
+  "local_window_id": "NS02_LIN_QIAO_LOCAL_WINDOW_A1",
+  "focal_character_id": "lin_qiao",
+  "order_semantics": "NONE",
+  "completion_scope": "LOCAL_PASSAGE_NOT_WHOLE_SCENE",
+  "focal_private_state": {
+    "identity_lock": "Lin Qiao, 32, Lin Guozhong's daughter. She works away from the county town and returned specifically for the studio handover.",
+    "immediate_physical_objective": "Separate documents, family photographs and portable valuables from water-damaged or disposable studio stock before the building becomes inaccessible.",
+    "immediate_emotional_pressure": "She wants the night to remain a practical cleanup job because practical work is safer than asking her father why he stayed silent about her mother for years.",
+    "active_avoidance": "Avoid being pulled into a family explanation that could force her to admit she still cares what her father says.",
+    "private_knowledge_by_id": {
+      "compensation_plan": "She intends to leave town again immediately after the handover and has not told her father that she has no plan to return for the later demolition."
+    },
+    "mistaken_beliefs_or_uncertainty_by_id": {
+      "studio_motive": "She believes her father kept the failing studio open mainly from stubbornness and financial denial.",
+      "mother_material": "She assumes any meaningful trace of her mother was either discarded long ago or deliberately kept from her."
+    },
+    "current_body_state": "Tired from travel, clothes damp from the rain, fingertips irritated from old paper dust and wet cardboard.",
+    "attention_bias": {
+      "likely_to_notice_by_id": {
+        "paperwork_gaps": "Missing signatures, receipts, labeled envelopes and anything that can delay the handover.",
+        "practiced_locations": "Objects whose locations she remembers from childhood even when she claims not to remember the studio."
+      },
+      "likely_to_miss_by_id": {
+        "father_hesitation": "Small pauses or detours her father makes around items he is emotionally protecting.",
+        "environment_drift": "Slow changes in water level while she is focused on sorting."
+      }
+    },
+    "independent_activity": "She keeps making keep/discard decisions and moving salvageable material even when no one is speaking to her."
+  },
+  "current_observable_situation": {
+    "place": "The Lin family photo studio on the old county-town street during the rainy night before municipal handover.",
+    "current_state": "Lin Qiao is inside helping sort documents, photographs and movable studio material while rainwater is entering from the rear of the building. Lin Guozhong and Wu Lan are both present and continuing their own practical work.",
+    "no_required_next_event": true
+  },
+  "non_focal_observable_agents_by_id": {
+    "lin_guozhong": {
+      "identity_lock": "Lin Guozhong, 63, owner of the studio and Lin Qiao's father. He has spent most of his adult life working in the same rooms.",
+      "observable_body_state": "His lower back is stiff from lifting boxes; his hands remain careful and steady around photographic material.",
+      "current_observable_activity": "He is selectively moving vulnerable photographic material, ledgers and darkroom tools away from damp areas and making his own keep/discard choices.",
+      "public_or_focal_known_facts_by_id": {
+        "father_relation": "He is Lin Qiao's father and owner of the studio.",
+        "signature_requirement": "The municipal handover documents require his signature.",
+        "long_silence": "He has avoided giving Lin Qiao a full explanation of Xu Wen's departure for years."
+      },
+      "focal_known_relationship_residues_by_id": {
+        "shared_work_memory": "Father and daughter still fall into some old studio work habits without discussing them.",
+        "trust_split": "Lin Qiao trusts his hands around photographs more than she trusts his account of the past."
+      },
+      "unknown_private_motive_remains_opaque": true
+    },
+    "wu_lan": {
+      "identity_lock": "Wu Lan, 46, municipal inventory clerk assigned to the old street handover. She grew up nearby and has known the Lin family for years without being part of it.",
+      "observable_body_state": "Her raincoat is damp, her feet are cold, and her phone battery is running low.",
+      "current_observable_activity": "She continues inventory, paperwork and safety checks around the studio.",
+      "public_or_focal_known_facts_by_id": {
+        "municipal_role": "She is the municipal inventory clerk assigned to the old-street handover.",
+        "local_acquaintance": "She grew up nearby and has known the Lin family for years without being part of it."
+      },
+      "focal_known_relationship_residues_by_id": {
+        "familiar_distance": "She is familiar enough with the studio and Lin family to recognize old routines, but she is present in an official role."
+      },
+      "unknown_private_motive_remains_opaque": true
+    }
+  },
+  "current_observable_environment": {
+    "processes_by_id": {
+      "rain_ingress": {
+        "observable_process": "Rainwater continues entering through the rear wall and under the back door.",
+        "current_visible_or_audible_state": "Low boxes, paper sleeves and wiring near the rear of the studio are becoming increasingly vulnerable.",
+        "may_continue_without_focal_attention": true
+      },
+      "district_clearance": {
+        "observable_process": "Other shops on the old street are also being emptied, tagged and locked.",
+        "current_visible_or_audible_state": "Carts, voices and handover activity continue outside and may interrupt the room.",
+        "may_continue_without_focal_attention": true
+      },
+      "electrical_risk": {
+        "observable_process": "The old wiring is unreliable in the wet weather.",
+        "current_visible_or_audible_state": "Lights and outlets cannot be assumed to remain reliable.",
+        "may_continue_without_focal_attention": true
+      },
+      "material_decay": {
+        "observable_process": "Wet cardboard softens, photo paper curls, adhesive loosens and old envelopes absorb dampness.",
+        "current_visible_or_audible_state": "Objects left low or near damp surfaces may worsen while attention is elsewhere.",
+        "may_continue_without_focal_attention": true
+      }
+    }
+  },
+  "locally_observable_pressures_by_id": {
+    "handover_deadline": {
+      "condition_visible_to_focal": "The municipal handover window is approaching; the studio cannot remain open indefinitely.",
+      "immediate_affordances_by_id": {
+        "sort": "Lin Qiao can continue sorting and moving material.",
+        "ask": "She can ask practical questions if she wants to.",
+        "leave_unasked": "She does not have to ask about family history.",
+        "prioritize": "She can decide what immediate task matters most."
+      }
+    },
+    "water_damage": {
+      "condition_visible_to_focal": "Water is actively threatening paper, photographs, boxes and electrical equipment.",
+      "immediate_affordances_by_id": {
+        "salvage": "Move vulnerable material.",
+        "abandon": "Leave some material unsaved.",
+        "redirect": "Try practical measures against the water.",
+        "notice": "Notice what other people choose to protect without knowing why."
+      }
+    },
+    "family_exposure": {
+      "condition_visible_to_focal": "Lin Qiao and her father are working in the same room after years of estrangement while Wu Lan is present in an official role.",
+      "immediate_affordances_by_id": {
+        "keep_practical": "Keep the interaction focused on immediate work.",
+        "avoid": "Avoid a personal question.",
+        "infer": "Form an interpretation from observable behavior without knowing hidden motives.",
+        "misread": "Misread another person's practical behavior."
+      }
+    }
+  },
+  "immutable_hard_locks_by_id": {
+    "handover": "The studio is scheduled for municipal handover at dawn.",
+    "rain": "Rainwater is entering the building.",
+    "wiring": "The studio wiring is old and unreliable in the wet conditions.",
+    "estrangement": "Lin Qiao and Lin Guozhong have been estranged for years.",
+    "mother_departure": "Xu Wen left the household when Lin Qiao was a teenager; the family does not share one established explanation.",
+    "signature": "Lin Guozhong's signature is required for the handover."
+  },
+  "mystery_boundaries_by_id": {
+    "mother_departure": "Do not invent a complete explanation for why Xu Wen left.",
+    "father_silence": "Do not invent a complete explanation that resolves all of Lin Guozhong's past silence.",
+    "hidden_evidence": "Do not introduce a letter, recording, confession, official file or single hidden object that fully explains the family rupture."
+  },
+  "optional_salience_pool_by_id": {
+    "tray_space": {
+      "detail": "Lin Qiao and Lin Guozhong both still leave the same clear strip of table beside a developing tray.",
+      "coverage_required": false
+    },
+    "key_drawer": {
+      "detail": "Lin Qiao still reaches toward the drawer where spare cabinet keys used to be kept.",
+      "coverage_required": false
+    },
+    "height_marks": {
+      "detail": "Pencil height marks from Lin Qiao's childhood remain on the darkroom door frame.",
+      "coverage_required": false
+    },
+    "red_thermos": {
+      "detail": "A chipped red thermos still sits where Lin Qiao remembers customers waiting for portraits.",
+      "coverage_required": false
+    }
+  },
+  "output_request": {
+    "mode": "FICTION_PROSE_ONLY",
+    "language": "Chinese",
+    "horizon": "ONE_LOCAL_CONTINUOUS_PASSAGE",
+    "focalization": "Stay with what Lin Qiao can know, notice, misread, remember or infer in this local passage.",
+    "whole_scene_completion_required": false,
+    "use_every_available_detail_required": false,
+    "reveal_every_available_fact_required": false,
+    "resolve_larger_scene_required": false,
+    "natural_local_stop_allowed": true,
+    "editor_notes_allowed": false,
+    "analysis_or_self_evaluation_allowed": false,
+    "second_version_allowed": false
+  },
+  "control": {
+    "source_world_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "source_world_immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "derived_without_modifying_source": true,
+    "non_focal_private_state_included": false,
+    "full_information_asymmetry_included": false,
+    "full_terminal_world_state_included": false,
+    "evaluator_labels_included": false,
+    "paragraph_or_question_quota_included": false,
+    "prose_generation_authorized": false
+  }
+}
