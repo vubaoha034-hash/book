@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T05:44:45.019Z",
+  "updated_at": "2026-09-25T05:56:06.107Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -15,12 +15,19 @@
     "task_id": "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
     "phase": "LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN",
     "phase_ordinal": 402,
-    "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
     "task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
-    "execution_scope": "Prepare exactly one A1 input using pre-frozen non-focal actor commitments and deferred-attribution focal visibility. No prose generation until actor commitments, local view and runner pass readiness audit.",
+    "execution_scope": "Exactly one isolated A1 under ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1. No best-of-N, parallel candidate, retry, A2, second window or pre-gate human review.",
     "architecture": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
+    "actor_commitments": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+    "actor_commitments_sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+    "writer_visible_projection": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+    "writer_visible_projection_sha256": "b9fcad69ef1c725f8beed932839aa4cbcd4d7d679f178a7e8f6e386ffdbfa742",
+    "writer_entry": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+    "writer_entry_sha256": "1eecd9f588268882e67b49bc67209d79c9989c204b9469475d96b73c82be185e",
+    "prose_generation_authorized": true,
+    "prose_generation_scope": "ONE_LOCAL_PASSAGE_A1_ONLY",
+    "fresh_writer_authorized": true,
     "user_delivery_authorized": false,
     "best_of_n": false,
     "parallel_candidates": 1,
@@ -29,32 +36,22 @@
     "automatic_second_window": false,
     "allowed_action_requests": [
       {
-        "action_id": "PHASE402_BUILD_NON_FOCAL_ACTOR_COMMITMENTS_A1",
+        "action_id": "PHASE402_EXECUTE_SINGLE_ISOLATED_A1",
         "parameters": {
-          "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json"
+          "writer_entry": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+          "transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB"
         }
       },
       {
-        "action_id": "PHASE402_BUILD_DEFERRED_ATTRIBUTION_LOCAL_VIEW_A1",
+        "action_id": "PHASE402_STORE_FREEZE_AND_GATE_A1",
         "parameters": {
-          "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json"
-        }
-      },
-      {
-        "action_id": "PHASE402_BUILD_FROZEN_RUNNER_A1",
-        "parameters": {
-          "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt"
-        }
-      },
-      {
-        "action_id": "PHASE402_AUDIT_AND_FREEZE_A1_READINESS",
-        "parameters": {
-          "receipt": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json"
+          "inbox": "state/inbox/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+          "frozen": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt"
         }
       }
     ],
-    "next_action": "Build and freeze Phase402 A1 actor commitments, deferred-attribution local view and runner; audit readiness. Do not generate prose until readiness PASS.",
-    "current_execution_receipt": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json"
+    "next_action": "Execute exactly one isolated Phase402 A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+    "current_execution_receipt": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json"
   },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
@@ -223,13 +220,17 @@
     "YMGQ_writing_paused": true,
     "YMGQ_writing_pause_reason": "NO_ACTIVE_SUCCESSOR_TASK_AFTER_PHASE401_BLOCK",
     "current_writing_authorization_scope": {
-      "kind": "PHASE402_A1_INPUT_PREPARATION_ONLY_NO_PROSE",
+      "kind": "PHASE402_ONE_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_A1_ONLY",
       "current_chat_allowed": false,
       "user_visible_output": false,
       "long_form": false,
-      "fresh_writer_authorized": false,
-      "prose_generation_authorized": false,
-      "architecture": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1"
+      "fresh_writer_authorized": true,
+      "prose_generation_authorized": true,
+      "best_of_n": false,
+      "retry_authorized": false,
+      "A2_authorized": false,
+      "second_window_authorized": false,
+      "writer_entry": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -254,7 +255,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 81,
+    "logical_latest_checkpoint_sequence": 82,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -891,8 +892,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Build and freeze Phase402 A1 actor commitments, deferred-attribution local view and runner; audit readiness. Do not generate prose until readiness PASS.",
-  "status": "PHASE402_ACTIVE_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+  "next_required_action": "Execute exactly one isolated Phase402 A1. Persist and freeze output verbatim, then run all required hidden gates. Do not retry automatically.",
+  "status": "PHASE402_ACTIVE_READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
   "active_task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
   "last_completed_task_id": "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
   "last_completed_task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
@@ -1032,17 +1033,32 @@
     {
       "path": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json",
       "role": "Phase402 architecture-ready PASS receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+      "role": "Phase402 frozen non-focal actor commitments A1"
+    },
+    {
+      "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+      "role": "Phase402 frozen deferred-attribution writer view A1"
+    },
+    {
+      "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+      "role": "Phase402 frozen single A1 runner"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase402 A1 readiness PASS receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
-    "Phase402 A1 actor commitments, deferred-attribution local view, runner and readiness audit are pending"
+    "Phase402 single A1 execution, verbatim freeze and hidden gate evaluation are pending"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
     "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
     "PHASE397_A4_NOT_AUTHORIZED",
-    "PHASE402_PROSE_BLOCKED_PENDING_READINESS",
     "PHASE402_BEST_OF_N_FORBIDDEN",
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
@@ -1140,7 +1156,11 @@
     "Phase402 residual causal diagnosis completed",
     "Phase402 ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema frozen",
     "Phase402 single-A1 validation contract frozen as non-task artifact",
-    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed"
+    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase402 non-focal actor commitments frozen and audit-safe",
+    "Phase402 deferred-attribution focal view frozen with one raw uninterpreted memory fragment",
+    "Phase402 A1 runner frozen with hidden-diagnostic leakage zero",
+    "Phase402 A1 readiness audit PASS; exactly one isolated A1 authorized"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -1317,7 +1337,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase402_state": {
-    "status": "ARCHITECTURE_READY_PREPARING_SINGLE_A1_INPUT_NO_PROSE",
+    "status": "READY_TO_EXECUTE_SINGLE_FRESH_WRITER_A1",
     "task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
     "residual_diagnosis": {
       "path": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
@@ -1338,19 +1358,34 @@
     },
     "actor_commitments": {
       "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
-      "status": "PENDING"
+      "sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+      "status": "FROZEN_PASS"
     },
     "local_view": {
       "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
-      "status": "PENDING"
+      "sha256": "b9fcad69ef1c725f8beed932839aa4cbcd4d7d679f178a7e8f6e386ffdbfa742",
+      "status": "FROZEN_PASS"
     },
     "writer_entry": {
       "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
-      "status": "PENDING"
+      "sha256": "1eecd9f588268882e67b49bc67209d79c9989c204b9469475d96b73c82be185e",
+      "status": "FROZEN_PASS"
     },
-    "prose_generation_authorized": false,
-    "fresh_writer_authorized": false,
+    "prose_generation_authorized": true,
+    "fresh_writer_authorized": true,
     "phase403_authorized": false,
-    "accepted_checkpoint_advance": false
+    "accepted_checkpoint_advance": false,
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "user_delivery_authorized": false
   }
 }
