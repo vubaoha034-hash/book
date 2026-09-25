@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 404,
+  "task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+  "artifact_id": "PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_PROSE",
+  "evidence": {
+    "phase402_runner": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+    "phase402_output_contract": "CLEAR",
+    "phase403_runner": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+    "phase403_output_contract": "BLOCK",
+    "phase403_frozen": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+    "phase403_settlement": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json"
+  },
+  "key_counterexample": {
+    "statement": "Phase402 and Phase403 both used a negative meta line forbidding analysis, self-evaluation, title, editorial advice and second version, yet Phase402 output contract was CLEAR while Phase403 BLOCKED.",
+    "consequence": "Negative meta vocabulary alone is not supported as a sufficient primary cause."
+  },
+  "residual_diagnoses": [
+    {
+      "id": "RD404_A_RESPONSE_SURFACE_NOT_TRANSACTIONALLY_CLOSED",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "Phase403 literary payload successfully produced prose but the chat response still had freedom to prepend a generic label and append post-prose assistant text.",
+        "The runner specified content behavior but did not define the entire response surface as a closed transaction with line-1 and response-termination invariants."
+      ],
+      "causal_hypothesis": "A content request plus prohibitions leaves ordinary chat-wrapper behavior available; the response needs a positive whole-surface contract."
+    },
+    {
+      "id": "RD404_B_POST_COMPLETION_ASSISTANT_EDITOR_REENTRY",
+      "status": "SUPPORTED_HIGH_PRIORITY",
+      "evidence": [
+        "Phase403 appended three optimization suggestions after the fiction passage.",
+        "Similar trailing editorial advice appeared in earlier isolated writer attempts.",
+        "These lines occur after the prose has already reached a natural stop."
+      ],
+      "causal_hypothesis": "Once the narrative completion is internally judged finished, generic assistant/helpfulness behavior can re-enter unless termination is itself part of the response contract."
+    },
+    {
+      "id": "RD404_C_LEADING_LABEL_NORMALIZATION",
+      "status": "SUPPORTED_OUTPUT_PATTERN_NOT_CAUSAL_PROOF",
+      "evidence": [
+        "Phase403 begins with the generic category label '小说正文'.",
+        "The requested artifact is explicitly a Chinese fiction passage, which makes a helpful label a plausible chat formatting behavior."
+      ],
+      "causal_hypothesis": "The chat surface may normalize artifact type into a heading when line 1 is not explicitly reserved for prose sentence 1."
+    },
+    {
+      "id": "RD404_D_META_NEGATION_PRIMING",
+      "status": "UNPROVEN_SECONDARY",
+      "evidence_for": [
+        "Forbidden categories are explicitly named in the runner."
+      ],
+      "evidence_against": [
+        "Phase402 used essentially the same negative meta list and still returned a clean prose-only response."
+      ],
+      "conclusion": "Do not use this as the primary explanation; remove enumerated negative meta categories in the successor wrapper because they are unnecessary, not because causality is proven."
+    }
+  ],
+  "selected_architecture": {
+    "id": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "mechanism": "Keep the Phase403 literary payload byte-for-byte unchanged and replace only the chat response wrapper with a positive closed transaction.",
+    "transaction_invariants": [
+      "The entire response is one fiction prose body.",
+      "Line 1 is fiction sentence 1.",
+      "There is no pre-prose label section.",
+      "After the final fiction sentence the response terminates immediately.",
+      "There is no post-prose section.",
+      "No markdown fence, JSON envelope, XML marker or writing-block wrapper is used."
+    ],
+    "internal_preflight": {
+      "allowed": true,
+      "printed": false,
+      "checks": [
+        "line 1 is prose rather than a category label",
+        "there is no text after the final fiction sentence",
+        "response contains exactly one prose body"
+      ]
+    },
+    "outer_prompt_strategy": "Use a minimal execution prompt that points to the frozen runner and asks the model to execute it exactly, without repeating a list of forbidden meta categories."
+  },
+  "controlled_variable": {
+    "held_constant": [
+      "Phase403 writer-visible projection bytes",
+      "Phase403 LIVE_VECTOR_SELECTIVE_SALIENCE literary architecture",
+      "Phase402 actor commitments",
+      "NS02 story world",
+      "Lin Qiao focalization",
+      "local passage horizon"
+    ],
+    "changed_only": [
+      "writer response-surface wrapper",
+      "outer fresh-writer execution prompt"
+    ]
+  },
+  "falsifiable_prediction": {
+    "prediction": "If response-surface ambiguity/editor re-entry is the real residual cause, the single Phase404 A1 should return the same type of local fiction passage with no leading artifact label and no trailing assistant/editor material, without changing the literary payload.",
+    "failure_condition": "Any title/preface/postscript/self-evaluation/explanation/editorial suggestion/second section still appears in the raw assistant output."
+  },
+  "prose_generated": false,
+  "accepted_checkpoint_advance": false
+}
