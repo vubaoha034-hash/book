@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "schema_id": "PHASE402_NON_FOCAL_ACTOR_COMMITMENTS_A1",
+  "project_id": "novel-distillation",
+  "phase": 402,
+  "story_id": "NS02_LAST_ROLL_AT_DAWN",
+  "local_window_id": "NS02_LIN_QIAO_LOCAL_WINDOW_A1",
+  "architecture_id": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+  "commitments_by_character_id": {
+    "lin_guozhong": {
+      "identity_lock": "Lin Guozhong, 63, owner of the studio and Lin Qiao's father.",
+      "observable_commitment_horizon": "For the next short local passage while water continues entering and movable studio material remains exposed.",
+      "ongoing_activity": "Continue moving vulnerable photographic material, ledgers and darkroom tools from low or damp storage to higher dry surfaces; inspect labels while working.",
+      "next_observable_priority": "Protect photographic material from water damage and keep sorting items by immediate handling need.",
+      "public_constraint": "The municipal handover still requires his signature, but this commitment does not assign or reveal any private reason for when he signs.",
+      "optional_public_emission": {
+        "enabled": true,
+        "emission_kind": "PUBLIC_FACT | PRACTICAL_DIRECTIVE",
+        "content_boundary": "He may state a brief already-public practical fact about where an object is, how photographic material should be handled, or an immediate electrical/water safety fact if the current physical work makes that information necessary. No family-history explanation is committed."
+      }
+    },
+    "wu_lan": {
+      "identity_lock": "Wu Lan, 46, municipal inventory clerk assigned to the old-street handover.",
+      "observable_commitment_horizon": "For the same short local passage while inventory, water ingress and electrical safety remain active.",
+      "ongoing_activity": "Continue inventory marks, handover paperwork and practical safety checks while monitoring the rear-water line and usable lighting/power.",
+      "next_observable_priority": "Keep the handover record usable and prevent an immediate safety problem from wet wiring or water reaching vulnerable material.",
+      "public_constraint": "She is present in an official role and does not own or resolve the Lin family history.",
+      "optional_public_emission": {
+        "enabled": true,
+        "emission_kind": "PUBLIC_FACT | PRACTICAL_DIRECTIVE | SOCIAL_ACKNOWLEDGEMENT",
+        "content_boundary": "She may state one bounded handover fact, immediate safety directive or brief acknowledgement when her observable official/safety work makes it relevant. She is not committed to completing another character's conversational agenda."
+      }
+    }
+  },
+  "commitment_properties": {
+    "generated_before_prose": true,
+    "future_prose_not_seen": true,
+    "private_motives_exposed": false,
+    "private_knowledge_exposed": false,
+    "evaluator_labels_exposed": false,
+    "paragraph_or_question_quota_exposed": false,
+    "refusal_or_interruption_pattern_required": false,
+    "dialogue_sequence_preplanned": false
+  },
+  "source_control": {
+    "full_world_source": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+    "source_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "source_modified": false
+  },
+  "prose_generation_authorized": false
+}
