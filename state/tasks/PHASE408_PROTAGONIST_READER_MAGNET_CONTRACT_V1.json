@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "PROTAGONIST_READER_MAGNET_CONTRACT_NOT_PROSE",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_PROTAGONIST_READER_MAGNET_CONTRACT_V1",
+  "status": "EXECUTED_BATCH1",
+  "predecessor_checkpoint": 109,
+  "recovery_status": "PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED",
+  "purpose": "Test whether a protagonist creates long-horizon reader desire independent of profession, opening event, generic status gain or task escalation.",
+  "required_card_fields": [
+    "long_term_desire",
+    "self_contradictory_desire",
+    "repeatable_50_chapter_reader_pleasure",
+    "why_pleasure_comes_from_person_not_profession",
+    "success_cost_that_reduces_return_path",
+    "reader_tracks_task_or_transformation"
+  ],
+  "mandatory_attacks": {
+    "REMOVE_PROFESSION": "If occupation/genre task is removed, the magnet must remain.",
+    "SWAP_PROTAGONIST": "If another competent protagonist can inherit the same magnet with little loss, FAIL.",
+    "FIFTY_CHAPTER_REPETITION": "The pleasure must generate variation and escalation for 50 chapters rather than repeat one loop mechanically."
+  },
+  "forbidden_shortcuts": [
+    "generic face-slapping/revenge/rise-to-power as magnet without person-specific contradiction",
+    "profession competence as magnet",
+    "task escalation as long-horizon promise",
+    "opening mystery as substitute for protagonist desire"
+  ],
+  "prose_generation_authorized": false,
+  "fresh_writer_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

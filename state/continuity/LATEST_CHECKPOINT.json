@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 109,
-  "recorded_at": "2026-09-26T04:10:00Z",
+  "sequence": 110,
+  "recorded_at": "2026-09-26T05:40:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. Human review of OE408-A/B/C says the engines have flavor in principle but create no desire to continue. This rejects event-density/causal-propulsion as sufficient. Diagnosis now targets protagonist reader-magnet and long-range desire promise: why follow this exact person beyond the opening task. No candidate selected, no new premise, no prose, no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. Previous internal protagonist-magnet draft was not persisted and is explicitly marked PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED. Under checkpoint109's reader-desire diagnosis, one new batch of four protagonist magnet cards was generated and immediately attacked with REMOVE-PROFESSION, SWAP-PROTAGONIST and 50-CHAPTER-REPETITION tests. A/B/C survive; D fails as a generic rescuer loop. No opening-event card, no prose, no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -334,7 +334,11 @@
     "OE408-D rejected for weak causally-derived next-action hook; OE408-A/B/C survive.",
     "Phase408 actual-human opening-engine batch1 review recorded: A/B/C have plausible flavor but zero continuation desire.",
     "Phase408 diagnosis separates event propulsion from reader attachment; more events alone are not the next repair.",
-    "Phase408 next diagnostic target set to protagonist reader-magnet / long-range desire promise; no new engine batch or prose authorized."
+    "Phase408 next diagnostic target set to protagonist reader-magnet / long-range desire promise; no new engine batch or prose authorized.",
+    "Phase408 protagonist-magnet recovery settled as PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED; no claim of restoring nonexistent prior cards.",
+    "Phase408 generated exactly one new batch of four protagonist magnet cards under checkpoint109.",
+    "Phase408 PRM408-D rejected for SWAP-PROTAGONIST and 50-CHAPTER-REPETITION failure.",
+    "Phase408 PRM408-A/B/C passed REMOVE-PROFESSION, SWAP-PROTAGONIST and 50-CHAPTER-REPETITION attacks."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1077,5 +1081,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Remain in Phase408. Do not generate prose or another engine batch yet. Freeze/validate the protagonist reader-magnet and long-range desire-promise layer before any new opening-engine candidates."
+  "next_action": "Deliver only PRM408-A/B/C protagonist magnet cards for actual-human review. Do not generate opening events or prose; no Phase409."
 }

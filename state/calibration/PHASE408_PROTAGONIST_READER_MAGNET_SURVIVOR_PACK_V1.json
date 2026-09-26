@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_PROTAGONIST_READER_MAGNET_SURVIVOR_PACK_V1",
+  "mode": "PROTAGONIST_READER_MAGNET_ONLY_NO_OPENING_EVENT_NO_PROSE",
+  "recovery_status": "PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED",
+  "candidates": [
+    {
+      "id": "PRM408-A",
+      "name": "程砚",
+      "card": {
+        "long_term_desire": "他想成为一个随时可以转身离开、永远不再把自己的人生押在任何人身上的人。",
+        "self_contradictory_desire": "他最恨被人依赖，却无法忍受自己成为那个‘明明答应过却把人留在原地’的人。十二岁时父亲让他在车站等十分钟后再也没回来；十九岁时他为了一个难得机会提前离开，放了最要好的朋友鸽子，这件事让两人彻底断掉。于是他一生都在逃避承诺，可一旦亲口答应，就会为了兑现把自己重新绑回去。",
+        "repeatable_50_chapter_reader_pleasure": "读者反复看到他为自己设计最干净的退路，却因为一个自己亲口作出的承诺主动返回；不同阶段返回的对象、代价和边界会越来越大，直到‘不欠任何人’和‘我答应过’彻底不能兼容。",
+        "why_pleasure_comes_from_person_not_profession": "磁力来自他对‘离开/留下’的私人创伤和行为准则，换成厨师、镖师、销售、流浪者甚至无职业者都成立。",
+        "success_cost_that_reduces_return_path": "每次他兑现承诺，都会增加一个真正有资格要求他留下的人；他越值得信任，就越失去最想要的自由。",
+        "reader_tracks_task_or_transformation": "读者最终想看的是：一个把自由看得比关系重要的人，会不会亲手把自己变成最不能离开的人。"
+      }
+    },
+    {
+      "id": "PRM408-B",
+      "name": "顾岚",
+      "card": {
+        "long_term_desire": "她想得到一种不需要靠赢、靠证明、靠比别人强才能获得的选择与偏爱。",
+        "self_contradictory_desire": "她越害怕不被选择，就越会把关系变成比赛。十四岁那年，她第一次得到父亲真正的夸奖，是在公开竞赛里赢过一直被偏爱的哥哥；二十三岁时，第一段认真恋爱结束，对方留下一句‘和你在一起，连道歉都像在争输赢’。她知道自己在破坏关系，却仍会本能地通过测试、较量、逼人表态来确认自己值得被留下。",
+        "repeatable_50_chapter_reader_pleasure": "读者会持续看到她在外部博弈中极其强势、聪明、善于赢，但每当关系真正重要时，她又会把亲密转化成胜负题。不同人物会以完全不同方式拒绝、利用、反击或穿透她的测试，使每次‘赢’都产生不同的人际后果。",
+        "why_pleasure_comes_from_person_not_profession": "即使完全拿掉职业、竞技或权力场，她仍会在友情、爱情、家人、合作和敌对关系中把‘被选择’改造成‘我要赢到你选我’。",
+        "success_cost_that_reduces_return_path": "她越擅长赢，越容易把身边真正重要的人训练成对手；每次成功都会强化‘只有赢才配被爱’的旧信念，让真正的亲密更难。",
+        "reader_tracks_task_or_transformation": "读者想看的不是她还能赢谁，而是她什么时候第一次敢在可能输的时候仍然留下，并接受别人不是因为她赢才选择她。"
+      }
+    },
+    {
+      "id": "PRM408-C",
+      "name": "韩照",
+      "card": {
+        "long_term_desire": "他想建立一种任何人都无法用恩情、照顾、关系或人情债控制他的生活。",
+        "self_contradictory_desire": "他最讨厌欠人，却又习惯把自己给出去的帮助变成一笔对方迟早要还的债。小时候家里最困难时，邻居常当众送东西，他母亲每次都逼他记清楚谁给了什么、以后一定加倍还；十八岁他终于把多年欠过的人情一笔笔还完，却发现自己已经不会接受‘不用还’这句话。于是他渴望平等关系，却本能地把所有亲近都做成账本。",
+        "repeatable_50_chapter_reader_pleasure": "读者会看他极擅长把帮助、资源和承诺设计成互不亏欠的交换；但真正让他失控的，是那些拒绝被他结算、或者帮助他却明确不要回报的人。不同关系会不断逼他选择：继续把一切量化，还是承认有些关系无法清账。",
+        "why_pleasure_comes_from_person_not_profession": "职业可以随意更换，因为磁力来自他把情感也处理成债务结构的行为方式；任何资源交换、友情、爱情、合作甚至敌对都能触发。",
+        "success_cost_that_reduces_return_path": "他越成功地让所有关系‘公平’，就越没有人敢无条件靠近他；而一旦他第一次接受无法偿还的好意，他原本赖以保护自己的整套规则就会开始崩。",
+        "reader_tracks_task_or_transformation": "读者真正想看的是：一个一生都在清账的人，最后会不会允许自己欠下一个永远还不清的人情。"
+      }
+    }
+  ],
+  "human_instruction": "只判断：这个人本身有没有让你产生‘我想看他/她最后会变成什么样’的长期兴趣。不要按职业、题材或开场事件判断；这些卡没有绑定任何职业或正文。",
+  "prose_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

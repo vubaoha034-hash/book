@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "phase_ordinal": 408,
-  "status": "ACTIVE_OPENING_ENGINE_BATCH1_HUMAN_REJECTED_READER_DESIRE_DIAGNOSIS_COMPLETE",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_PROTAGONIST_MAGNET_REVIEW_BATCH1",
   "purpose": "Reset the premise/scene engine after Phase407 actual-human rejection despite all hidden prose gates clearing. Validate reader pull at premise level before any further fiction generation.",
   "authorization": {
     "source": "EXPLICIT_USER_CONTINUE_NEXT_STEP_AFTER_PHASE407_CLOSE",
@@ -17,12 +17,16 @@
   "architecture_ready_receipt": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
-  "user_delivery_authorized": false,
+  "user_delivery_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Remain in Phase408. Do not generate prose or another engine batch yet. Freeze/validate the protagonist reader-magnet and long-range desire-promise layer before any new opening-engine candidates.",
+  "next_action": "Deliver only PRM408-A/B/C protagonist magnet cards for actual-human review. Do not generate opening events or prose; no Phase409.",
   "premise_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
   "new_premise_generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
-  "retained_candidates": [],
+  "retained_candidates": [
+    "PRM408-A",
+    "PRM408-B",
+    "PRM408-C"
+  ],
   "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
   "issue_template_audit": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
   "character_specific_premise_contract": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
@@ -35,5 +39,8 @@
   "opening_engine_survivor_pack": "state/calibration/PHASE408_OPENING_ENGINE_SURVIVOR_PACK_V1.json",
   "opening_engine_selection_contract": "state/tasks/PHASE408_OPENING_ENGINE_SELECTION_CONTRACT_V1.json",
   "actual_human_opening_engine_batch1_receipt": "state/review_receipts/PHASE408_OPENING_ENGINE_BATCH1_ACTUAL_HUMAN_REJECTION_V1.json",
-  "event_engine_vs_reader_desire_diagnosis": "state/calibration/PHASE408_EVENT_ENGINE_VS_READER_DESIRE_DIAGNOSIS_V1.json"
+  "event_engine_vs_reader_desire_diagnosis": "state/calibration/PHASE408_EVENT_ENGINE_VS_READER_DESIRE_DIAGNOSIS_V1.json",
+  "protagonist_reader_magnet_contract": "state/tasks/PHASE408_PROTAGONIST_READER_MAGNET_CONTRACT_V1.json",
+  "protagonist_reader_magnet_batch1_audit": "state/calibration/PHASE408_PROTAGONIST_READER_MAGNET_BATCH1_AUDIT_V1.json",
+  "protagonist_reader_magnet_survivor_pack": "state/calibration/PHASE408_PROTAGONIST_READER_MAGNET_SURVIVOR_PACK_V1.json"
 }
