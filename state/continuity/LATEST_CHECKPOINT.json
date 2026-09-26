@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 112,
-  "recorded_at": "2026-09-26T07:10:00Z",
+  "sequence": 113,
+  "recorded_at": "2026-09-26T09:35:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. After checkpoint111 zeroed the overexplained psychology magnets, PROTAGONIST_BEHAVIORAL_MAGNET_V2 generated exactly four current-behavior-only cards with no childhood origin or diagnostic backstory. REMOVE-BIOGRAPHY, SWAP-PROTAGONIST, HUMAN_MESSINESS and 50-CHAPTER-REPETITION attacks retain 江衡/闻雪/罗钧 and reject 许南 as a generic rescuer loop. No opening event, no prose, no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. Actual-human review of PROTAGONIST_BEHAVIORAL_MAGNET_V2 rated 江衡 and 闻雪 as average and 罗钧 as wanting to read. 罗钧 is the sole human-positive protagonist-magnet survivor. This validates only protagonist-level reader magnet; no opening event, prose, or Phase409 is authorized.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -346,7 +346,9 @@
     "Phase408 protagonist magnet survivor count is now zero; no human selection authorized.",
     "Phase408 PROTAGONIST_BEHAVIORAL_MAGNET_V2 batch1 generated four behavior-only cards without biography origins.",
     "PBM408-D 许南 rejected for protagonist-swappability, cosmetic exception and 50-chapter repetition.",
-    "PBM408-A 江衡, PBM408-B 闻雪 and PBM408-C 罗钧 passed REMOVE-BIOGRAPHY / SWAP-PROTAGONIST / HUMAN_MESSINESS / 50-CHAPTER-REPETITION."
+    "PBM408-A 江衡, PBM408-B 闻雪 and PBM408-C 罗钧 passed REMOVE-BIOGRAPHY / SWAP-PROTAGONIST / HUMAN_MESSINESS / 50-CHAPTER-REPETITION.",
+    "Phase408 actual-human behavioral magnet review recorded verbatim: 江衡一般, 闻雪一般, 罗钧想看.",
+    "Phase408 罗钧 becomes the sole human-positive protagonist-magnet survivor; 江衡/闻雪 are not retained as positive survivors."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1089,5 +1091,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Deliver only PBM408-A/B/C behavioral magnet cards for actual-human review. No opening event, no prose, no Phase409."
+  "next_action": "Remain in Phase408 with 罗钧 as the sole human-positive protagonist-magnet survivor. Do not generate opening events, prose, or Phase409 without a separately authorized next step."
 }

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "ACTUAL_HUMAN_PROTAGONIST_BEHAVIORAL_MAGNET_V2_REVIEW",
+  "status": "ONE_HUMAN_POSITIVE_SURVIVOR",
+  "human_verbatim": "1  2  都一般 3  想看。",
+  "mapping": {
+    "1": "PBM408-A 江衡",
+    "2": "PBM408-B 闻雪",
+    "3": "PBM408-C 罗钧"
+  },
+  "verdicts": {
+    "PBM408-A": {
+      "name": "江衡",
+      "human_rating": "GENERAL/AVERAGE",
+      "selectable_survivor": false
+    },
+    "PBM408-B": {
+      "name": "闻雪",
+      "human_rating": "GENERAL/AVERAGE",
+      "selectable_survivor": false
+    },
+    "PBM408-C": {
+      "name": "罗钧",
+      "human_rating": "WANT_TO_READ",
+      "selectable_survivor": true
+    }
+  },
+  "interpretation": {
+    "sole_human_positive_survivor": "PBM408-C 罗钧",
+    "note": "This is protagonist-magnet validation only. It does not authorize prose, opening-event generation, or Phase409."
+  },
+  "governance": {
+    "actual_human_result_overrides_internal_pass": true,
+    "no_forced_choice_between_average_candidates": true,
+    "only_positive_survivor_may_carry_forward": true
+  },
+  "accepted_checkpoint_advance": false
+}
