@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "ACTUAL_HUMAN_OPENING_ENGINE_REVIEW_BATCH1",
+  "status": "ACTUAL_HUMAN_REJECTED_ALL_NO_DESIRE_TO_CONTINUE",
+  "candidates": [
+    "OE408-A",
+    "OE408-B",
+    "OE408-C"
+  ],
+  "human_verbatim": "按理说这几个都应该挺有味道的，但是就是让我没有看下去的欲望",
+  "interpretation": {
+    "concept_or_flavor": "POSITIVE_OR_PLAUSIBLE",
+    "desire_to_continue": "NONE",
+    "implication": "Event density and causal propulsion alone are insufficient to create actual-human continuation desire."
+  },
+  "governance": {
+    "internal_engine_gate_pass_does_not_override_human_rejection": true,
+    "A_B_C_withdrawn_from_selection": true,
+    "no_prose_from_rejected_engines": true
+  },
+  "accepted_checkpoint_advance": false
+}

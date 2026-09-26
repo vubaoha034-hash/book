@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_EVENT_ENGINE_VS_READER_DESIRE_DIAGNOSIS_V1",
+  "status": "COMPLETE_NO_NEW_CANDIDATE_NO_PROSE",
+  "evidence": {
+    "human_receipt": "state/review_receipts/PHASE408_OPENING_ENGINE_BATCH1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "opening_engine_contract": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json",
+    "batch1_audit": "state/calibration/PHASE408_OPENING_ENGINE_BATCH1_INTERNAL_AUDIT_V1.json",
+    "prior_batch3_human_rejection": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json"
+  },
+  "findings": [
+    {
+      "id": "D408_1_ENGINE_PROPULSION_NOT_EQUAL_READER_ATTACHMENT",
+      "assessment": "SUPPORTED",
+      "evidence": "A/B/C contain early action, multiple state changes, same-chapter payoff and concrete next-action pressure, yet human continuation desire remains absent.",
+      "implication": "The missing factor is not merely more events or faster pacing."
+    },
+    {
+      "id": "D408_2_PROTAGONIST_IS_FUNCTIONAL_BUT_NOT_MAGNETIC",
+      "assessment": "SUPPORTED_HIGH",
+      "evidence": [
+        "A primarily promises competent crisis management in a kitchen.",
+        "B primarily promises clever route/rule exploitation in escort work.",
+        "C primarily promises professional verification and independence."
+      ],
+      "implication": "These protagonists demonstrate usefulness, but the cards do not yet create a strong personal identification/fantasy/emotional attachment that makes the reader want to spend many chapters with them."
+    },
+    {
+      "id": "D408_3_NEXT_ACTION_IS_TASK_ESCALATION_NOT_PERSONAL_TRAJECTORY",
+      "assessment": "SUPPORTED",
+      "evidence": "A ends with independent catering work, B with finding a new route, C with taking an independent inspection order.",
+      "implication": "The next beat is concrete but mainly expands workload/mission scope. It does not yet reveal a compelling long-range personal trajectory, obsession, revenge, relationship, identity change or life reversal."
+    },
+    {
+      "id": "D408_4_ENGINE_CARD_FORMAT_OVEREXPLAINS_PAYOFF",
+      "assessment": "PLAUSIBLE_CONTRIBUTOR_NOT_SOLE_CAUSE",
+      "evidence": "The cards disclose action, consequence, revaluation, payoff and next action in summary form.",
+      "implication": "The user is judging a fully explained mechanism rather than experiencing uncertainty, discovery, voice or micro-payoff. However strong concepts often still create desire in summary, so format alone cannot explain the rejection."
+    },
+    {
+      "id": "D408_5_READER_PROMISE_TOO_EXTERNAL",
+      "assessment": "SUPPORTED_HIGH",
+      "evidence": "The promised pleasures are 'watch him solve this job' rather than 'watch this specific person become/do something emotionally or aspirationally irresistible.'",
+      "implication": "Future design must bind event propulsion to a protagonist-level reader promise."
+    }
+  ],
+  "next_diagnostic_target": {
+    "name": "PROTAGONIST_READER_MAGNET / LONG-RANGE_DESIRE_PROMISE",
+    "required_questions": [
+      "Why would a reader want to follow this exact protagonist for 50+ chapters after the opening problem is solved?",
+      "What repeatable behavioral pleasure does the protagonist provide beyond competence?",
+      "What personal hunger/obsession/relationship/status transformation is activated by the opening event?",
+      "What does the reader want to experience through this protagonist—not merely see them accomplish?",
+      "Can the opening payoff simultaneously satisfy one desire and intensify a deeper personal trajectory?"
+    ]
+  },
+  "rejected_next_moves": [
+    "increase event count again",
+    "add a larger twist only to create curiosity",
+    "write full prose merely to see if style fixes the problem",
+    "generate many more opening-engine cards before fixing protagonist reader promise"
+  ],
+  "no_new_premise": true,
+  "no_prose": true,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

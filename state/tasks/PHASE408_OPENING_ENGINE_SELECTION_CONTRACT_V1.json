@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_OPENING_ENGINE_SELECTION_CONTRACT_V1",
-  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_OPENING_ENGINE_SELECTION",
+  "status": "SUSPENDED_BATCH1_ACTUAL_HUMAN_REJECTED_NO_CONTINUATION_DESIRE",
   "candidate_pack": "state/calibration/PHASE408_OPENING_ENGINE_SURVIVOR_PACK_V1.json",
   "acceptance": "At least one engine receives an unforced actual-human desire-to-read-next signal based on event chain/protagonist behavior, not topic prestige.",
   "reject_all_allowed": true,
@@ -21,5 +21,8 @@
   "fresh_writer_authorized": false,
   "phase409_authorized": false,
   "accepted_checkpoint_advance": false,
-  "next_action": "Present only OE408-A/B/C to the human for opening-engine selection. Record selection/reject-all before any prose."
+  "next_action": "No opening-engine candidate is selected. Remain in Phase408 and diagnose protagonist reader-magnet / long-range desire promise before generating another engine batch. No prose.",
+  "retained_candidates": [],
+  "human_selection_authorized": false,
+  "actual_human_rejection": "state/review_receipts/PHASE408_OPENING_ENGINE_BATCH1_ACTUAL_HUMAN_REJECTION_V1.json"
 }

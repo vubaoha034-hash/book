@@ -2,7 +2,7 @@
   "schema_version": "3.21.2",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-25T14:30:00Z",
+  "updated_at": "2026-09-26T04:10:00Z",
   "branch": "novel-distill-v1",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,9 +177,9 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE408_OPENING_ENGINE_BATCH1_AWAITING_HUMAN_SELECTION_NO_PROSE",
+    "YMGQ_writing_pause_reason": "PHASE408_EVENT_ENGINE_HAS_FLAVOR_BUT_NO_HUMAN_CONTINUATION_DESIRE",
     "current_writing_authorization_scope": {
-      "kind": "PHASE408_OPENING_ENGINE_SELECTION_ONLY_NO_PROSE",
+      "kind": "PHASE408_READER_DESIRE_DIAGNOSIS_ONLY_NO_PROSE",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
@@ -188,7 +188,7 @@
       "retry_authorized": false,
       "A2_authorized": false,
       "second_window_authorized": false,
-      "human_review_authorized": true,
+      "human_review_authorized": false,
       "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
@@ -857,8 +857,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Deliver only OE408-A/B/C opening-engine cards for actual-human selection. No prose; no Phase409.",
-  "status": "PHASE408_ACTIVE_AWAITING_ACTUAL_HUMAN_OPENING_ENGINE_SELECTION_BATCH1",
+  "next_required_action": "Remain in Phase408. Do not generate prose or another engine batch yet. Freeze/validate the protagonist reader-magnet and long-range desire-promise layer before any new opening-engine candidates.",
+  "status": "ACTIVE_OPENING_ENGINE_BATCH1_HUMAN_REJECTED_READER_DESIRE_DIAGNOSIS_COMPLETE",
   "active_task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
   "last_completed_task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
   "last_completed_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
@@ -2037,7 +2037,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase408_state": {
-    "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_OPENING_ENGINE_SELECTION_BATCH1",
+    "status": "ACTIVE_OPENING_ENGINE_BATCH1_HUMAN_REJECTED_READER_DESIRE_DIAGNOSIS_COMPLETE",
     "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
@@ -2057,7 +2057,7 @@
     },
     "prose_generation_authorized": false,
     "fresh_writer_authorized": false,
-    "human_premise_review_authorized": true,
+    "human_premise_review_authorized": false,
     "accepted_checkpoint_advance": false,
     "premise_audit": {
       "path": "state/calibration/PHASE408_PREMISE_AUDIT_V1.json",
@@ -2067,11 +2067,7 @@
       "path": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
       "status": "ALL_WITHDRAWN_FROM_SELECTION"
     },
-    "retained_candidates": [
-      "OE408-A",
-      "OE408-B",
-      "OE408-C"
-    ],
+    "retained_candidates": [],
     "rejected_candidates": [
       "P408-A",
       "P408-B",
@@ -2158,6 +2154,14 @@
     },
     "rejected_opening_engine_candidates": [
       "OE408-D"
-    ]
+    ],
+    "actual_human_opening_engine_batch1_receipt": {
+      "path": "state/review_receipts/PHASE408_OPENING_ENGINE_BATCH1_ACTUAL_HUMAN_REJECTION_V1.json",
+      "status": "REJECT_ALL_NO_DESIRE"
+    },
+    "event_engine_vs_reader_desire_diagnosis": {
+      "path": "state/calibration/PHASE408_EVENT_ENGINE_VS_READER_DESIRE_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    }
   }
 }
