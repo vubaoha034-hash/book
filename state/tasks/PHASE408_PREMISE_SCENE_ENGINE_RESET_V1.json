@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "phase_ordinal": 408,
-  "status": "ACTIVE_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_AUDIT_ZERO_SURVIVORS",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_BEHAVIORAL_MAGNET_V2_REVIEW_BATCH1",
   "purpose": "Reset the premise/scene engine after Phase407 actual-human rejection despite all hidden prose gates clearing. Validate reader pull at premise level before any further fiction generation.",
   "authorization": {
     "source": "EXPLICIT_USER_CONTINUE_NEXT_STEP_AFTER_PHASE407_CLOSE",
@@ -17,12 +17,16 @@
   "architecture_ready_receipt": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
-  "user_delivery_authorized": false,
+  "user_delivery_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Remain in Phase408 with zero protagonist-magnet survivors. Do not ask for human selection from checkpoint110 cards. Any future magnet work requires a successor action that does not reuse these overexplained psychological formulas.",
+  "next_action": "Deliver only PBM408-A/B/C behavioral magnet cards for actual-human review. No opening event, no prose, no Phase409.",
   "premise_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
   "new_premise_generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
-  "retained_candidates": [],
+  "retained_candidates": [
+    "PBM408-A",
+    "PBM408-B",
+    "PBM408-C"
+  ],
   "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
   "issue_template_audit": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
   "character_specific_premise_contract": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
@@ -39,5 +43,8 @@
   "protagonist_reader_magnet_contract": "state/tasks/PHASE408_PROTAGONIST_READER_MAGNET_CONTRACT_V1.json",
   "protagonist_reader_magnet_batch1_audit": "state/calibration/PHASE408_PROTAGONIST_READER_MAGNET_BATCH1_AUDIT_V1.json",
   "protagonist_reader_magnet_survivor_pack": "state/calibration/PHASE408_PROTAGONIST_MAGNET_SURVIVOR_PACK_V2.json",
-  "protagonist_magnet_anti_overexplained_audit": "state/calibration/PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1.json"
+  "protagonist_magnet_anti_overexplained_audit": "state/calibration/PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1.json",
+  "protagonist_behavioral_magnet_v2_contract": "state/tasks/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_CONTRACT.json",
+  "protagonist_behavioral_magnet_v2_batch1_audit": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_BATCH1_AUDIT.json",
+  "protagonist_behavioral_magnet_v2_survivor_pack": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_SURVIVOR_PACK.json"
 }

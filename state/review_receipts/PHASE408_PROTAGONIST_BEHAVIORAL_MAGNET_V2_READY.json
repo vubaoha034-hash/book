@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "PROTAGONIST_BEHAVIORAL_MAGNET_V2_BATCH1_READY",
+  "status": "PASS_THREE_SURVIVORS_READY_FOR_HUMAN_REVIEW_NO_OPENING_EVENT_NO_PROSE",
+  "evidence_head": "f93da0b00e267f3c7ef8e0071ac2803b73770408",
+  "artifacts": {
+    "contract": "state/tasks/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_CONTRACT.json",
+    "audit": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_BATCH1_AUDIT.json",
+    "survivor_pack": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_SURVIVOR_PACK.json"
+  },
+  "checks": {
+    "generated_card_count": 4,
+    "survivor_count": 3,
+    "rejected_count": 1,
+    "all_survivors_remove_biography_pass": true,
+    "all_survivors_swap_protagonist_pass": true,
+    "all_survivors_human_messiness_pass": true,
+    "all_survivors_fifty_chapter_repetition_pass": true,
+    "no_opening_event": true,
+    "no_prose": true,
+    "no_phase409": true
+  },
+  "next_action": "Present only PBM408-A/B/C behavioral magnet cards to the human. Do not generate opening events or prose.",
+  "accepted_checkpoint_advance": false
+}

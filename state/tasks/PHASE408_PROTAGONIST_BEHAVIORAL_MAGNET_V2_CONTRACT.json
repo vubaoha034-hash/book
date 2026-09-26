@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "PROTAGONIST_BEHAVIORAL_MAGNET_CONTRACT_NOT_PROSE",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2",
+  "predecessor_checkpoint": 111,
+  "status": "EXECUTED_BATCH1",
+  "purpose": "Generate protagonist magnet from current observable choices rather than biography, trauma explanation, symbolic origin or complete psychological diagnosis.",
+  "requirements": [
+    "At least three observable current choices across different relationships/scenes.",
+    "At least one natural exception that does not fully obey the apparent pattern but still feels like the same person.",
+    "One long-term desire may be stated, but it may not be used as a causal explanation for every behavior.",
+    "Long-horizon reader desire must come from what this person may choose next and whether they change, not from repeated proof of a diagnosis."
+  ],
+  "mandatory_attacks": {
+    "REMOVE_BIOGRAPHY": "Card must remain fully usable because it contains no required origin story.",
+    "SWAP_PROTAGONIST": "If another generally competent/strong/avoidant protagonist can inherit the same behavioral texture with little loss, FAIL.",
+    "HUMAN_MESSINESS": "At least one already-visible exception/inconsistency must remain unresolved rather than explained away.",
+    "FIFTY_CHAPTER_REPETITION": "Behavioral pleasure must branch into meaningfully different choices and costs across 50 chapters."
+  },
+  "prohibited": [
+    "childhood origin as explanation",
+    "trauma shorthand",
+    "complete psychological thesis",
+    "new opening-event card",
+    "fiction prose",
+    "Phase409"
+  ],
+  "prose_generation_authorized": false,
+  "opening_event_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

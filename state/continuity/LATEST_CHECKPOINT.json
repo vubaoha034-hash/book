@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 111,
-  "recorded_at": "2026-09-26T06:50:00Z",
+  "sequence": 112,
+  "recorded_at": "2026-09-26T07:10:00Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
   ],
-  "current_focus": "Phase408 remains the sole active task. Checkpoint110 protagonist magnets 程砚/顾岚/韩照 were re-audited for REMOVE-ORIGIN-EXPLANATION, ANTI-SYMMETRY, HUMAN_MESSINESS and 50-chapter choice durability. All three fail: their origin stories form overly neat causal theses, and none contains an already-present natural exception outside its central psychological rule. Zero survivor remains. No new card, no opening event, no prose, no Phase409.",
+  "current_focus": "Phase408 remains the sole active task. After checkpoint111 zeroed the overexplained psychology magnets, PROTAGONIST_BEHAVIORAL_MAGNET_V2 generated exactly four current-behavior-only cards with no childhood origin or diagnostic backstory. REMOVE-BIOGRAPHY, SWAP-PROTAGONIST, HUMAN_MESSINESS and 50-CHAPTER-REPETITION attacks retain 江衡/闻雪/罗钧 and reject 许南 as a generic rescuer loop. No opening event, no prose, no Phase409.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -343,7 +343,10 @@
     "程砚 failed anti-symmetry/human-messiness/50-chapter diagnosis repetition despite partial origin-removal survival.",
     "顾岚 failed anti-symmetry/human-messiness/50-chapter diagnosis repetition despite partial origin-removal survival.",
     "韩照 failed anti-symmetry/human-messiness/50-chapter diagnosis repetition despite partial origin-removal survival.",
-    "Phase408 protagonist magnet survivor count is now zero; no human selection authorized."
+    "Phase408 protagonist magnet survivor count is now zero; no human selection authorized.",
+    "Phase408 PROTAGONIST_BEHAVIORAL_MAGNET_V2 batch1 generated four behavior-only cards without biography origins.",
+    "PBM408-D 许南 rejected for protagonist-swappability, cosmetic exception and 50-chapter repetition.",
+    "PBM408-A 江衡, PBM408-B 闻雪 and PBM408-C 罗钧 passed REMOVE-BIOGRAPHY / SWAP-PROTAGONIST / HUMAN_MESSINESS / 50-CHAPTER-REPETITION."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1086,5 +1089,5 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
-  "next_action": "Remain in Phase408 with zero protagonist-magnet survivors. Do not ask for human selection from checkpoint110 cards. Any future magnet work requires a successor action that does not reuse these overexplained psychological formulas."
+  "next_action": "Deliver only PBM408-A/B/C behavioral magnet cards for actual-human review. No opening event, no prose, no Phase409."
 }
