@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "artifact_id": "PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1",
+  "status": "COMPLETE_ZERO_SURVIVORS_NO_NEW_BACKGROUND_NO_PROSE",
+  "evidence_head": "fbcfb9dde26f6c17b2c1e0cbe2f0a9603fcb7d26",
+  "source_pack": "state/calibration/PHASE408_PROTAGONIST_READER_MAGNET_SURVIVOR_PACK_V1.json",
+  "rules": {
+    "remove_origin_explanation": "Delete origin explanation and test whether current behavioral choices still establish the magnet.",
+    "anti_symmetry": "Reject or downgrade neat mirrored causality that reads like a designed thematic loop.",
+    "human_messiness": "Require at least one already-existing natural exception or inconsistency not fully absorbed by the main rule. No new background may be added.",
+    "fifty_chapter_choice_test": "Long-term interest must come from changing choices, not repeated demonstrations that the psychological diagnosis was correct."
+  },
+  "results": [
+    {
+      "id": "PRM408-A",
+      "name": "程砚",
+      "verdict": "FAIL",
+      "remove_origin_explanation": {
+        "result": "PARTIAL_PASS",
+        "note": "After removing the father-station abandonment and later self-authored abandonment story, the remaining observable rule—avoid promises, but once he gives his word he returns—can still function as a character behavior."
+      },
+      "anti_symmetry": {
+        "result": "FAIL",
+        "note": "The original design is too perfectly mirrored: he was abandoned, then abandoned someone, therefore he avoids commitment but compulsively honors explicit promises. The causal geometry is unusually neat and reads as author-built thematic symmetry."
+      },
+      "human_messiness": {
+        "result": "FAIL",
+        "note": "The card contains no independent natural exception. 'Avoids commitment until he explicitly promises, then must return' is not messiness; it is the rule itself with a switch condition."
+      },
+      "fifty_chapter_choice_test": {
+        "result": "FAIL_WITHOUT_REVISION",
+        "note": "Across 50 chapters the reader risks watching repeated proofs of the same diagnosis: he creates an exit, promises something, returns, loses freedom. Variation in who asks him to stay does not by itself prevent psychological repetition."
+      },
+      "deletion_only_salvage": "Insufficient. Removing the origin stories makes the card less overexplained, but there is still no already-present contradictory behavior outside the central mechanism."
+    },
+    {
+      "id": "PRM408-B",
+      "name": "顾岚",
+      "verdict": "FAIL",
+      "remove_origin_explanation": {
+        "result": "PARTIAL_PASS",
+        "note": "Without father/older-brother praise history and the ex-partner quote, the present pattern—turning important relationships into contests when she fears not being chosen—still describes a possible person."
+      },
+      "anti_symmetry": {
+        "result": "FAIL",
+        "note": "The origin-to-adult loop is too elegant: praise arrives only through winning, then adult intimacy becomes competition, and the long arc is to accept being chosen without winning. It reads as a completed psychological thesis."
+      },
+      "human_messiness": {
+        "result": "FAIL",
+        "note": "The card offers no existing relationship where she does not convert attachment into competition, nor any ordinary inconsistency that escapes the rule. The proposed future variations are repair possibilities, not evidence already present in the card."
+      },
+      "fifty_chapter_choice_test": {
+        "result": "FAIL",
+        "note": "The long-horizon pleasure remains dangerously close to repeated confirmation of one diagnosis: every important relationship becomes another test of whether she can stop competing."
+      },
+      "deletion_only_salvage": "Insufficient. Deleting origin explanation removes neat causality but leaves an overly totalizing behavioral rule."
+    },
+    {
+      "id": "PRM408-C",
+      "name": "韩照",
+      "verdict": "FAIL",
+      "remove_origin_explanation": {
+        "result": "PARTIAL_PASS",
+        "note": "After removing childhood charity and maternal repayment teaching, the observable tendency to structure closeness as balanced exchange can still be understood."
+      },
+      "anti_symmetry": {
+        "result": "FAIL",
+        "note": "The design is highly thesis-driven: childhood debts are meticulously recorded, adulthood becomes total emotional accounting, and the terminal arc is learning to accept an unpayable debt. The metaphor is too complete."
+      },
+      "human_messiness": {
+        "result": "FAIL",
+        "note": "No current exception exists where he accepts care without accounting, gives without expecting settlement, or maintains a relationship that does not fit the ledger model. Adding one now would violate the no-new-background instruction."
+      },
+      "fifty_chapter_choice_test": {
+        "result": "FAIL",
+        "note": "Changing the denomination of the 'debt'—money, favor, loyalty, protection, affection—still risks repeating the same psychological demonstration rather than opening genuinely different choices."
+      },
+      "deletion_only_salvage": "Insufficient. The card's strongest appeal is precisely the clean debt metaphor, which is also what makes it feel authored rather than messy."
+    }
+  ],
+  "summary": {
+    "survivors": [],
+    "rejected": [
+      "PRM408-A",
+      "PRM408-B",
+      "PRM408-C"
+    ],
+    "survivor_count": 0,
+    "conclusion": "All three checkpoint110 survivors fail the anti-overexplained-psychology audit. Each remains intelligible after origin deletion, but each was built around a single elegant causal mechanism with no already-present natural exception. Keeping them would risk turning 50 chapters into repeated proof of a psychological diagnosis."
+  },
+  "constraints_preserved": {
+    "new_background_added": false,
+    "new_protagonist_cards_generated": false,
+    "opening_event_cards_generated": false,
+    "prose_generated": false,
+    "phase409_authorized": false
+  },
+  "accepted_checkpoint_advance": false
+}

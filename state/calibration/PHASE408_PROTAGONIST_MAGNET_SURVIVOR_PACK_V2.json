@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_PROTAGONIST_MAGNET_SURVIVOR_PACK_V2",
+  "mode": "PROTAGONIST_READER_MAGNET_ONLY_NO_OPENING_EVENT_NO_PROSE",
+  "source_audit": "state/calibration/PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1.json",
+  "candidates": [],
+  "status": "ZERO_SURVIVORS",
+  "human_instruction": "No protagonist magnet from checkpoint110 remains eligible for human selection after anti-overexplained-psychology review.",
+  "prose_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

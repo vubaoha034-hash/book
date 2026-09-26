@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_READY",
+  "status": "PASS_AUDIT_ZERO_SURVIVORS_NO_SELECTION_NO_PROSE",
+  "evidence_head": "fbcfb9dde26f6c17b2c1e0cbe2f0a9603fcb7d26",
+  "artifacts": {
+    "audit": "state/calibration/PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1.json",
+    "survivor_pack": "state/calibration/PHASE408_PROTAGONIST_MAGNET_SURVIVOR_PACK_V2.json"
+  },
+  "checks": {
+    "checkpoint110_cards_reaudited_only": true,
+    "origin_explanations_not_replaced_with_new_background": true,
+    "survivors": [],
+    "new_cards_generated": false,
+    "opening_event_generated": false,
+    "prose_generated": false,
+    "phase409_created": false
+  },
+  "next_action": "Remain in Phase408 with zero protagonist-magnet survivors. Do not ask for human selection from checkpoint110 cards. Any future magnet work requires a successor action that does not reuse these overexplained psychological formulas.",
+  "accepted_checkpoint_advance": false
+}

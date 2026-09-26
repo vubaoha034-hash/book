@@ -5,7 +5,7 @@
   "phase": 408,
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "contract_id": "PHASE408_PROTAGONIST_READER_MAGNET_CONTRACT_V1",
-  "status": "EXECUTED_BATCH1",
+  "status": "BATCH1_REAUDITED_ANTI_OVEREXPLAINED_ZERO_SURVIVORS",
   "predecessor_checkpoint": 109,
   "recovery_status": "PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED",
   "purpose": "Test whether a protagonist creates long-horizon reader desire independent of profession, opening event, generic status gain or task escalation.",
@@ -31,5 +31,8 @@
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
   "phase409_authorized": false,
-  "accepted_checkpoint_advance": false
+  "accepted_checkpoint_advance": false,
+  "anti_overexplained_psychology_audit": "state/calibration/PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1.json",
+  "current_survivor_pack": "state/calibration/PHASE408_PROTAGONIST_MAGNET_SURVIVOR_PACK_V2.json",
+  "next_action": "Remain in Phase408 with zero protagonist-magnet survivors. Do not ask for human selection from checkpoint110 cards. Any future magnet work requires a successor action that does not reuse these overexplained psychological formulas."
 }
