@@ -1057,7 +1057,7 @@
       "role": "Phase404 output-boundary settlement; output contract CLEAR but other required hidden gates BLOCK"
     }
   ],
-  "status": "PHASE404_CLOSED_OUTPUT_BOUNDARY_FIXED_OTHER_REQUIRED_GATES_BLOCKED_NO_SUCCESSOR_AUTHORIZED",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH1",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
