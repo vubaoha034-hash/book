@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_AUDIT_V1",
+  "status": "COMPLETE_ONE_SURVIVOR_NO_PROSE",
+  "contract": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+  "generated_candidate_count": 4,
+  "candidates": [
+    {
+      "id": "RJ-OE408-A",
+      "label": "饭桌上的两种笑",
+      "event_engine": {
+        "live_event": "一次普通朋友聚餐里，有人拿罗钧最近的一次丢脸经历开玩笑。罗钧不仅跟着笑，还顺手补了一句。几分钟后，同一个人又把笑头转向席间一个明显不敢还嘴的年轻人。",
+        "first_choice": "罗钧当场把第二个玩笑截断，让桌面瞬间冷下来。",
+        "consequence": "邀请他来的亲近朋友把他拉到一边，认定他是在借题发挥、因为刚才自己被笑而故意找茬。",
+        "revaluation": "罗钧本能地开始解释自己为什么不在乎第一个玩笑，却越说越像是在证明自己没受伤；与此同时，被他护住的年轻人明确表示不需要他替自己出头。",
+        "next_choice_pressure": "他必须决定是继续向重要的人证明自己不是记仇，还是收手接受两个当事人都不按他预期理解自己。",
+        "reader_center": "罗钧会不会继续解释，以及他是否能在被误解时停下来。"
+      }
+    },
+    {
+      "id": "RJ-OE408-B",
+      "label": "不能拿别人替自己脱罪",
+      "event_engine": {
+        "live_event": "一个小型朋友出行正在群里最后确认。新加入的人私下告诉罗钧自己临时承担不起分摊费用，请他只对外说‘有事不去’，不要提钱。",
+        "first_choice": "罗钧照做，只在群里说对方退出，并重新安排剩余人的房间和费用。",
+        "consequence": "一个罗钧很重视的朋友误以为他是在排挤那个人——因为对方前几天在饭桌上拿罗钧开过一次过分的玩笑。",
+        "revaluation": "罗钧开始发时间线、订房记录和聊天片段替自己解释，但所有不泄露隐私的证据都无法证明‘不是他赶人走的’，反而显得越来越刻意。",
+        "second_choice": "他停住，不把那条涉及钱的私聊发出去，接受对方暂时不信自己。",
+        "same_segment_payoff": "退出的人看到群里争执后主动告诉罗钧：‘你可以说是我没钱。’这给了罗钧一个合法自证出口，却把问题变成新的选择——现在他可以完全洗清自己，但代价是把对方最不想公开的东西公开。",
+        "continuation_pressure": "真正的下一步不是‘真相是什么’，而是罗钧在已经获得许可之后，会不会为了被重要的人相信而使用这份许可；即使使用，关系也会因为此前的不信任留下东西。",
+        "reader_center": "读者已经知道全部事实，只想看罗钧究竟把‘被重要的人相信’放在多高的位置。"
+      }
+    },
+    {
+      "id": "RJ-OE408-C",
+      "label": "拒绝之后替对方留脸",
+      "event_engine": {
+        "live_event": "一个前几天当众拿罗钧开过过分玩笑的人，临时来求他帮一个不算大的忙。罗钧很客气地拒绝，没有翻旧账。",
+        "first_choice": "旁边几个人顺势嘲笑求助者‘现在知道求人了’，罗钧反而把话头挡回去，明确说拒绝是自己的决定，不等于别人可以拿这件事羞辱对方。",
+        "consequence": "求助者以为罗钧是在故意摆出高姿态，态度反而更差；旁人也觉得他前后矛盾。",
+        "revaluation": "罗钧没有继续证明自己，只把拒绝维持到底。",
+        "continuation_pressure": "场面结束后，一个重要的人问他：既然那么讨厌对方，为什么还替对方留脸；罗钧没有现成答案。",
+        "reader_center": "读者想看罗钧下一次面对‘不喜欢一个人’和‘不允许别人羞辱他’冲突时怎么选。"
+      }
+    },
+    {
+      "id": "RJ-OE408-D",
+      "label": "被拒绝以后",
+      "event_engine": {
+        "live_event": "罗钧主动找一个自己以前拒绝过的人帮一个实际的小忙。对方没有讽刺他，只平静地拒绝。",
+        "first_choice": "罗钧直接接受，没有解释自己当初为什么拒绝过对方，也没有追问。",
+        "consequence": "旁边熟人替他不平，准备私下给对方施压，认为那个人是在报复。",
+        "revaluation": "罗钧制止施压，并说不用替他讨这个人情。",
+        "second_choice": "当天晚些时候，对方又主动提出只能帮一半，而且会让罗钧在别人面前显得确实‘有求于人’。",
+        "continuation_pressure": "罗钧要决定接受这种不完美的帮助，还是为了不欠人/不显弱而另找办法。",
+        "reader_center": "他会不会允许自己在别人面前处于需要帮助的位置。"
+      }
+    }
+  ],
+  "attacks": [
+    {
+      "id": "RJ-OE408-A",
+      "swap_protagonist": "PASS_WITH_CAUTION. The split between tolerating jokes about himself and interrupting jokes aimed at weaker others is 罗钧-specific, especially once a valued person misreads him.",
+      "human_messiness": "PASS. The defended person explicitly rejects his intervention, denying 罗钧 the clean role of protector.",
+      "author_thesis_dependency": "FAIL. The event too neatly places all known traits in sequence—self-deprecation, defending weaker person, valued-person misunderstanding, overexplaining—so it reads like a laboratory built to demonstrate the character card.",
+      "continuation_value": "PARTIAL. There is curiosity about how he handles the valued friend's misunderstanding, but much of the scene's energy comes from seeing the behavioral thesis illustrated once.",
+      "verdict": "FAIL_AUTHOR_THESIS_DEPENDENCY"
+    },
+    {
+      "id": "RJ-OE408-B",
+      "swap_protagonist": "PASS. Another privacy-respecting protagonist could protect the private message, but the attraction specifically comes from 罗钧's known tendency to overexplain to valued people colliding with his different standard for another person's dignity.",
+      "human_messiness": "PASS. He first overexplains, then stops; later he receives explicit permission to disclose, so neither 'always protects privacy' nor 'always clears himself' fully predicts him.",
+      "author_thesis_dependency": "PASS. The trip cost/private-message situation can occur naturally without existing solely to prove 罗钧's personality; his magnet emerges from how he handles a mundane conflict.",
+      "continuation_value": "PASS. The reader already knows the facts. Even after this misunderstanding resolves, the interesting residue is how much distrust from a valued person changes 罗钧's future behavior and whether he uses permission simply because it is available.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "RJ-OE408-C",
+      "swap_protagonist": "PASS_WITH_CAUTION. Refusing help while protecting the requester's dignity fits 罗钧, but can also fit many principled protagonists.",
+      "human_messiness": "PASS. He dislikes the person but protects their dignity without reversing his refusal.",
+      "author_thesis_dependency": "FAIL/PARTIAL. The event is almost a direct demonstration of the already-stated 'different rules for own dignity vs others' trait.",
+      "continuation_value": "FAIL. Once the moment ends, 'why did he defend someone he dislikes?' is character color but not enough by itself to create durable next-page pressure.",
+      "verdict": "FAIL_CONTINUATION_VALUE"
+    },
+    {
+      "id": "RJ-OE408-D",
+      "swap_protagonist": "FAIL/PARTIAL. Accepting refusal without resentment and deciding whether to accept imperfect help is plausible for 罗钧 but not sufficiently unique; many proud/self-reliant protagonists can carry the same event.",
+      "human_messiness": "PASS. He asks for help despite pride and accepts refusal without retaliating.",
+      "author_thesis_dependency": "PASS/PARTIAL. The event is ordinary enough, but the offered partial help is clearly designed to test whether he can appear needy.",
+      "continuation_value": "PARTIAL. The local question is engaging but risks collapsing into generic pride-versus-help conflict.",
+      "verdict": "FAIL_SWAP_PROTAGONIST"
+    }
+  ],
+  "survivors": [
+    "RJ-OE408-B"
+  ],
+  "rejected": [
+    "RJ-OE408-A",
+    "RJ-OE408-C",
+    "RJ-OE408-D"
+  ],
+  "conclusion": "Only RJ-OE408-B survives. Its event remains mundane and fully known to the reader; the attraction comes from how 罗钧 navigates being misread by someone he values while holding another person's private dignity, including the messy revaluation when disclosure permission is later granted.",
+  "constraints_preserved": {
+    "江衡_闻雪_not_revived": true,
+    "prior_rejected_opening_modes_not_reused": true,
+    "childhood_trauma_not_used": true,
+    "complete_psychological_diagnosis_not_used": true,
+    "forced_accident_or_high_stakes_not_used": true,
+    "prose_generated": false,
+    "phase409_authorized": false
+  },
+  "accepted_checkpoint_advance": false
+}

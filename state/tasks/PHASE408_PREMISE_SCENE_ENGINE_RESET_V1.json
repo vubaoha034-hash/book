@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
   "phase_ordinal": 408,
-  "status": "ACTIVE_ONE_HUMAN_POSITIVE_BEHAVIORAL_MAGNET_SURVIVOR",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH1",
   "purpose": "Reset the premise/scene engine after Phase407 actual-human rejection despite all hidden prose gates clearing. Validate reader pull at premise level before any further fiction generation.",
   "authorization": {
     "source": "EXPLICIT_USER_CONTINUE_NEXT_STEP_AFTER_PHASE407_CLOSE",
@@ -17,13 +17,13 @@
   "architecture_ready_receipt": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
   "prose_generation_authorized": false,
   "fresh_writer_authorized": false,
-  "user_delivery_authorized": false,
+  "user_delivery_authorized": true,
   "accepted_checkpoint_advance": false,
-  "next_action": "Remain in Phase408 with 罗钧 as the sole human-positive protagonist-magnet survivor. Do not generate opening events, prose, or Phase409 without a separately authorized next step.",
+  "next_action": "Deliver only RJ-OE408-B for actual-human protagonist-bound opening-event review. No prose; no Phase409.",
   "premise_audit": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
   "new_premise_generation_contract": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
   "retained_candidates": [
-    "PBM408-C"
+    "RJ-OE408-B"
   ],
   "batch2_internal_audit": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
   "issue_template_audit": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
@@ -45,5 +45,8 @@
   "protagonist_behavioral_magnet_v2_contract": "state/tasks/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_CONTRACT.json",
   "protagonist_behavioral_magnet_v2_batch1_audit": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_BATCH1_AUDIT.json",
   "protagonist_behavioral_magnet_v2_survivor_pack": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_SURVIVOR_PACK.json",
-  "actual_human_behavioral_magnet_v2_receipt": "state/review_receipts/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_ACTUAL_HUMAN_REVIEW_V1.json"
+  "actual_human_behavioral_magnet_v2_receipt": "state/review_receipts/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_ACTUAL_HUMAN_REVIEW_V1.json",
+  "rojun_protagonist_bound_opening_event_contract": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+  "rojun_protagonist_bound_opening_event_batch1_audit": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_AUDIT_V1.json",
+  "rojun_protagonist_bound_opening_event_survivor_pack": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1.json"
 }

@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "PROTAGONIST_BOUND_OPENING_EVENT_ENGINE_CONTRACT_NOT_PROSE",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "contract_id": "PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1",
+  "predecessor_checkpoint": 113,
+  "sole_protagonist": "PBM408-C 罗钧",
+  "human_positive_receipt": "state/review_receipts/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_ACTUAL_HUMAN_REVIEW_V1.json",
+  "status": "EXECUTED_BATCH1",
+  "purpose": "Test opening events whose attraction comes from 罗钧's next behavioral choice, not from occupation spectacle, event stakes, mystery, trauma explanation or generic twist.",
+  "constraints": [
+    "Maximum 4 candidates.",
+    "Do not revive 江衡/闻雪.",
+    "No prose or chapter drafting.",
+    "Do not reuse rejected kitchen-crisis, escort-route, car-inspection, static moral-tableau patterns.",
+    "No childhood trauma, complete psychological diagnosis, neat mirrored origin, aphoristic line, forced accident, or inflated stakes.",
+    "Reader knows material facts; curiosity must center on 罗钧's choice."
+  ],
+  "reviewer_attacks": {
+    "SWAP_PROTAGONIST": "If the event remains equally attractive with another decent/competent protagonist, FAIL.",
+    "HUMAN_MESSINESS": "罗钧 must retain contradictory or non-totalized behavior; event may not reduce him to one trait demonstration.",
+    "AUTHOR_THESIS_DEPENDENCY": "If the scene exists mainly to prove the card's stated personality thesis, FAIL.",
+    "CONTINUATION_VALUE": "After the local event resolves, reader must still want to observe 罗钧's next choices rather than merely know the event outcome."
+  },
+  "prose_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

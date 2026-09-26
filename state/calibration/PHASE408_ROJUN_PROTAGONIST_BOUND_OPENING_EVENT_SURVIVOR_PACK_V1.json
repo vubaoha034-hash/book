@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1",
+  "mode": "PROTAGONIST_BOUND_OPENING_EVENT_ENGINE_ONLY_NO_PROSE",
+  "sole_protagonist": "罗钧",
+  "candidates": [
+    {
+      "id": "RJ-OE408-B",
+      "label": "不能拿别人替自己脱罪",
+      "event_engine": {
+        "live_event": "一个小型朋友出行正在群里最后确认。新加入的人私下告诉罗钧自己临时承担不起分摊费用，请他只对外说‘有事不去’，不要提钱。",
+        "first_choice": "罗钧照做，只在群里说对方退出，并重新安排剩余人的房间和费用。",
+        "consequence": "一个罗钧很重视的朋友误以为他是在排挤那个人——因为对方前几天在饭桌上拿罗钧开过一次过分的玩笑。",
+        "revaluation": "罗钧开始发时间线、订房记录和聊天片段替自己解释，但所有不泄露隐私的证据都无法证明‘不是他赶人走的’，反而显得越来越刻意。",
+        "second_choice": "他停住，不把那条涉及钱的私聊发出去，接受对方暂时不信自己。",
+        "same_segment_payoff": "退出的人看到群里争执后主动告诉罗钧：‘你可以说是我没钱。’这给了罗钧一个合法自证出口，却把问题变成新的选择——现在他可以完全洗清自己，但代价是把对方最不想公开的东西公开。",
+        "continuation_pressure": "真正的下一步不是‘真相是什么’，而是罗钧在已经获得许可之后，会不会为了被重要的人相信而使用这份许可；即使使用，关系也会因为此前的不信任留下东西。",
+        "reader_center": "读者已经知道全部事实，只想看罗钧究竟把‘被重要的人相信’放在多高的位置。"
+      }
+    }
+  ],
+  "status": "ONE_SURVIVOR",
+  "human_instruction": "只判断：这个开场是否让你想继续看罗钧下一步怎么选。不要按事件大小、题材刺激度或文笔判断；这不是正文。",
+  "prose_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

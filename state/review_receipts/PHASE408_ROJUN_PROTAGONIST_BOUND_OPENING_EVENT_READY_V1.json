@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "event_type": "ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_READY",
+  "status": "PASS_ONE_SURVIVOR_READY_FOR_HUMAN_ENGINE_REVIEW_NO_PROSE",
+  "evidence_head": "cd444587cc08c9f78e7cb9a0e6511885f0c7a6be",
+  "artifacts": {
+    "contract": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+    "audit": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_AUDIT_V1.json",
+    "survivor_pack": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1.json"
+  },
+  "checks": {
+    "sole_protagonist_is_rojun": true,
+    "generated_count": 4,
+    "survivor_count": 1,
+    "rejected_count": 3,
+    "survivor_swap_protagonist_pass": true,
+    "survivor_human_messiness_pass": true,
+    "survivor_author_thesis_dependency_pass": true,
+    "survivor_continuation_value_pass": true,
+    "no_prose": true,
+    "no_phase409": true
+  },
+  "next_action": "Present only RJ-OE408-B to the human for protagonist-bound opening-event review. Do not generate prose or Phase409.",
+  "accepted_checkpoint_advance": false
+}
