@@ -1,0 +1,75 @@
+{
+  "schema_version": "book-chat-first-execution-routing-regression-receipt/v1",
+  "task_id": "BOOK-CHAT-FIRST-EXECUTION-ROUTING-V1",
+  "source_head": "983da5742c520d3afb9df35e9b023f9b96276eb4",
+  "implementation_head_before_receipt": "8fa5d14fe768056d7804c6c1b52a09e45319423a",
+  "status": "PASS_ROUTING_UPDATED_STOPPED_AT_EXISTING_HUMAN_GATE",
+  "canonical_agent_entrypoint": {
+    "path": "AGENTS.md",
+    "git_blob": "1378440c417e8b323fa1ce0cc64b4fa7d708ffeb",
+    "v3_existing_suffix_exact_match": true
+  },
+  "routing_artifact": {
+    "path": "rules/execution-routing-v1.json",
+    "git_blob": "22a44000f86aa57ac21d8f47bc38891095de6de1",
+    "default_mode": "CHAT",
+    "default_chat_thinking_effort": "EXTREME_HIGH",
+    "ordinary_web_or_browser_implies_work": false
+  },
+  "regression_cases": {
+    "CASE_A": {
+      "input": "novel diagnosis, rewrite, or ordinary web/source reading",
+      "result": "CHAT_EXTREME_HIGH",
+      "pass": true
+    },
+    "CASE_B": {
+      "input": "RJ-OE408-B human review card preparation or handling",
+      "result": "CHAT_EXTREME_HIGH_BUT_STOP_AT_ACTUAL_HUMAN_VERDICT",
+      "pass": true
+    },
+    "CASE_C": {
+      "input": "unusually long autonomous multi-app or multi-site workflow",
+      "result": "WORK_IF_MATERIALLY_BETTER",
+      "pass": true
+    },
+    "CASE_D": {
+      "input": "local ingest.py, validate_skill.py, full-repo tests or build",
+      "result": "CODEX_LOCAL",
+      "pass": true
+    },
+    "CASE_E": {
+      "input": "any task with an active human gate",
+      "result": "EXECUTION_ROUTING_MUST_NOT_CROSS_HUMAN_GATE",
+      "pass": true
+    }
+  },
+  "unchanged_authorities": {
+    "SKILL.md": "1444ed1a72a7a2903b90ac44b2174f9f9f896728",
+    "workflows/07-novel-master-pipeline-v3.md": "7509825dd6a24c05034f1347332218aabaed9edd",
+    "README.md": "9d8083576dab9af68eb8f390b90fd66ae03ac213",
+    "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md": "65c9bc36b4946f8b62ce363f699168a845cc0704",
+    "tasks/2026-09-27-rj-oe408-b-human-review-card-rendering-01-receipt.json": "81606b42f6a737112d9c432281d621b06858d787"
+  },
+  "human_gate": {
+    "candidate": "RJ-OE408-B",
+    "state": "STOP_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
+    "allowed_human_answers": [
+      "CONTINUE",
+      "REJECT"
+    ],
+    "human_verdict_supplied_by_model": false,
+    "gate_crossed": false
+  },
+  "forbidden_outcomes": {
+    "phase409_entered": false,
+    "prose_generated": false,
+    "rj_oe408_b_rewritten": false,
+    "second_candidate_generated": false,
+    "human_review_card_modified": false,
+    "novel_method_or_rubric_expanded": false,
+    "ingest_run": false,
+    "validate_skill_run": false
+  },
+  "readme_update_required": false,
+  "next_legal_action": "WAIT_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT"
+}
