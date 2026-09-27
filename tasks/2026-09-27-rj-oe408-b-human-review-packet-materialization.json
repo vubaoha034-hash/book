@@ -5,7 +5,7 @@
   "branch": "main",
   "created_from_head": "8a42a4b389fe400dc3ca42ac5f36dc0398875fa1",
   "recovered_authority_head": "9b26d9f201e80192e2aac233bce701e7386a0bc5",
-  "status": "STARTED_PACKET_MATERIALIZATION",
+  "status": "COMPLETED_HUMAN_REVIEW_PACKET_MATERIALIZED",
   "sole_candidate": "RJ-OE408-B",
   "authority_refs": {
     "checkpoint": {
@@ -59,5 +59,10 @@
   },
   "pass_condition": "Only an actual-human CONTINUE on the frozen RJ-OE408-B packet can authorize the next human-approved step.",
   "reject_condition": "Actual-human REJECT closes this candidate; no automatic replacement is allowed in this task.",
-  "next_required_action": "MATERIALIZE_ONE_HUMAN_FACING_RJ_OE408_B_REVIEW_PACKET_FROM_FROZEN_AUTHORITY_AND_STOP_FOR_HUMAN_VERDICT"
+  "next_required_action": "WAIT_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
+  "result": "ONE_FROZEN_HUMAN_REVIEW_CARD_READY",
+  "review_card": {
+    "path": "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md",
+    "git_blob": "65c9bc36b4946f8b62ce363f699168a845cc0704"
+  }
 }
