@@ -1,0 +1,48 @@
+{
+  "schema_version": "book-execution-routing/v1",
+  "policy_id": "BOOK-CHAT-FIRST-EXECUTION-ROUTING-V1",
+  "status": "ACTIVE",
+  "authority": {
+    "canonical_agent_entrypoint": "AGENTS.md",
+    "content_method_entrypoint": "SKILL.md",
+    "full_pipeline": "workflows/07-novel-master-pipeline-v3.md"
+  },
+  "default_mode": "CHAT",
+  "default_chat_thinking_effort": "EXTREME_HIGH",
+  "chat": {
+    "covers": [
+      "story design, diagnosis, review, and rewrite",
+      "ordinary web search and source reading",
+      "ordinary browser navigation and clicking",
+      "human-review-card preparation, rendering, and handling",
+      "ordinary GitHub or connector reads",
+      "small canonical repository writes when no local runtime is required"
+    ],
+    "ordinary_web_or_browser_implies_work": false
+  },
+  "work_if_materially_better": {
+    "conditions": [
+      "the workflow is unusually long and autonomous",
+      "multiple apps or websites must be coordinated over many steps",
+      "Chat would be materially slower, fragmented, or unstable",
+      "a required capability is genuinely Work-only"
+    ],
+    "is_default_web_mode": false
+  },
+  "codex_local": {
+    "conditions": [
+      "full local repository access is required",
+      "shell or Python execution is required",
+      "tests, dependency installation, build or compilation are required",
+      "bulk file processing is required",
+      "large-scale local Git operations are required"
+    ]
+  },
+  "precedence": {
+    "execution_surface_only": true,
+    "does_not_modify_v3_content_or_phase_routing": true,
+    "human_and_quality_gates_remain_authoritative": true,
+    "execution_routing_never_authorizes_gate_crossing": true,
+    "actual_human_verdicts_must_be_supplied_by_the_human": true
+  }
+}
