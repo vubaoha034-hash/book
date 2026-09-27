@@ -1,0 +1,62 @@
+{
+  "schema_version": "novel-rj-oe408-b-human-evaluation-authority-recovery-task/v1",
+  "task_id": "RJ-OE408-B-HUMAN-EVAL-AUTHORITY-RECOVERY",
+  "project": "novel-writing-master",
+  "branch": "main",
+  "created_from_head": "7f7f3dd1f603cad11eecde74d1d428ad116a8726",
+  "status": "STARTED_SOURCE_AUTHORITY_RECOVERY",
+  "objective": "Recover the exact private-project authority for candidate RJ-OE408-B and prepare a human-evaluation packet without judging, rewriting, or advancing the story.",
+  "why_this_task_exists": [
+    "RJ-OE408-B is not persisted in the public book repository at the current HEAD.",
+    "The active candidate therefore needs an explicit private-source/version binding before any further review or revision.",
+    "Novel Writing Master V3 forbids treating same-context roleplay or file presence as human-quality evidence."
+  ],
+  "required_authority_reads": [
+    "SKILL.md",
+    "AGENTS.md",
+    "rules/pass-isolation.md",
+    "workflows/07-novel-master-pipeline-v3.md",
+    "config/novel-quality-gates.v3.json"
+  ],
+  "private_source_recovery": [
+    "locate the exact ChatGPT novel-project conversation/message or private file containing RJ-OE408-B",
+    "record stable conversation/file identity and version timestamp/hash when available",
+    "do not copy private full text into the public repository",
+    "if multiple versions exist, fail closed until the exact candidate version is identified"
+  ],
+  "evaluation_packet_must_prepare": [
+    "one-sentence reader promise slot",
+    "one-sentence mainline slot",
+    "irreversible event slot",
+    "climax choice slot",
+    "ending payoff slot",
+    "causal-proof evidence references for key scenes",
+    "primary emotional-debt and payoff references",
+    "protagonist costly-choice reference",
+    "harm-doer active-harm/consequence reference where applicable",
+    "opening exact stop-point question",
+    "continuity risk checklist",
+    "human questions limited to taste, credibility, emotional payoff, desire-to-continue, and exact distrust/skim point"
+  ],
+  "human_gate_rules": {
+    "no_model_pass_fail_judgment": true,
+    "no_numeric_score_as_proof": true,
+    "no_same_context_independent_reader_claim": true,
+    "no_auto_continue": true,
+    "no_rewrite_before_human_feedback": true,
+    "no_full_text_commit_to_public_repo": true
+  },
+  "allowed_output": [
+    "private-source authority receipt containing refs/hashes only",
+    "human evaluation packet/template",
+    "specific unresolved evidence gaps"
+  ],
+  "forbidden": [
+    "continue or rewrite RJ-OE408-B",
+    "declare it good/bad/pass/fail on behalf of the user",
+    "invent missing candidate text",
+    "publish private manuscript text into this repository",
+    "perform de-AI line editing before structural/human gate resolution"
+  ],
+  "next_required_action": "LOCATE_EXACT_PRIVATE_RJ_OE408_B_VERSION_AND_FREEZE_HUMAN_EVALUATION_PACKET_WITHOUT_JUDGMENT"
+}
