@@ -6,7 +6,7 @@
   "created_from_head": "6b6816d4b36be01cb65c20368fc4c748f3006692",
   "parent_task": "RJ-OE408-B-HUMAN-REVIEW-PACKET-MATERIALIZATION",
   "recovered_authority_head": "9b26d9f201e80192e2aac233bce701e7386a0bc5",
-  "status": "STARTED_HUMAN_REVIEW_CARD_RENDERING",
+  "status": "COMPLETED_STOP_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
   "sole_candidate": "RJ-OE408-B",
   "authority_refs": {
     "survivor_pack": {
@@ -68,5 +68,14 @@
     "one rendering receipt binding the card to the frozen authority",
     "STOP_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT"
   ],
-  "next_required_action": "RENDER_ONE_HUMAN_REVIEW_CARD_FROM_FROZEN_RJ_OE408_B_AND_STOP_FOR_ACTUAL_HUMAN_VERDICT"
+  "next_required_action": "WAIT_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
+  "result": "HUMAN_REVIEW_CARD_RENDERED_FROM_FROZEN_AUTHORITY",
+  "review_card": {
+    "path": "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md",
+    "git_blob": "65c9bc36b4946f8b62ce363f699168a845cc0704"
+  },
+  "rendering_receipt": {
+    "path": "tasks/2026-09-27-rj-oe408-b-human-review-card-rendering-01-receipt.json",
+    "git_blob": "81606b42f6a737112d9c432281d621b06858d787"
+  }
 }
