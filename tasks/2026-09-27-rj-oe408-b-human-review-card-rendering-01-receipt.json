@@ -1,0 +1,42 @@
+{
+  "schema_version": "novel-human-review-card-rendering-receipt/v1",
+  "task_id": "RJ-OE408-B-HUMAN-REVIEW-CARD-RENDERING-01",
+  "source_main_head": "3f96cb0366c89ecd76a01011b21afbeeb107231d",
+  "frozen_authority_head": "9b26d9f201e80192e2aac233bce701e7386a0bc5",
+  "authority_refs": {
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1.json",
+      "git_blob": "8b8106857cc915b271196e6bf5a56f5d0f1df3b1"
+    },
+    "ready_receipt": {
+      "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_READY_V1.json",
+      "git_blob": "2c6e97028326774873a9f99bf400e914d61e5330"
+    },
+    "contract": {
+      "path": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+      "git_blob": "89c04b2225b07f786c68fd4bb0a16ca2ff511a95"
+    }
+  },
+  "sole_candidate": "RJ-OE408-B",
+  "review_card": {
+    "path": "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md",
+    "git_blob": "65c9bc36b4946f8b62ce363f699168a845cc0704"
+  },
+  "frozen_event_fields": [
+    "live_event",
+    "first_choice",
+    "consequence",
+    "revaluation",
+    "second_choice",
+    "same_segment_payoff",
+    "continuation_pressure",
+    "reader_center"
+  ],
+  "event_fields_exact_match": true,
+  "prose_generated": false,
+  "phase409_entered": false,
+  "human_verdict_supplied_by_model": false,
+  "accepted_checkpoint_advanced": false,
+  "status": "STOP_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
+  "next_legal_action": "WAIT_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT"
+}
