@@ -4,7 +4,7 @@
   "project_id": "novel-writing-master",
   "branch": "main",
   "created_from_head": "f9dc3d80428fa9b8cee0423c9388b2b49ed553ed",
-  "status": "STARTED_CHAT_MODE_EXTREME_HIGH",
+  "status": "COMPLETED_CANONICALIZED_HUMAN_GATE_UNCHANGED",
   "routing": {
     "mode": "CHAT",
     "thinking_effort": "EXTREME_HIGH",
@@ -86,5 +86,14 @@
     "crossing any current human gate"
   ],
   "success_condition": "The novel project's canonical agent entrypoint makes Chat + EXTREME_HIGH the default execution surface, Work an exception only when materially advantageous, Codex the local-engineering route, and the current RJ-OE408-B human gate remains untouched.",
-  "next_required_action": "UPDATE_CANONICAL_EXECUTION_ROUTING_WRITE_REGRESSION_RECEIPT_AND_STOP_WITH_HUMAN_GATE_UNCHANGED"
+  "next_required_action": "STOP_AT_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
+  "result": "CHAT_FIRST_EXTREME_HIGH_CANONICAL__V3_PHASE_ROUTING_UNCHANGED__RJ_OE408_B_HUMAN_GATE_UNCHANGED",
+  "routing_artifact": {
+    "path": "rules/execution-routing-v1.json",
+    "git_blob": "22a44000f86aa57ac21d8f47bc38891095de6de1"
+  },
+  "regression_receipt": {
+    "path": "tasks/2026-09-27-chat-first-execution-routing-v1-receipt.json",
+    "git_blob": "1c10875b5b546ad61cdfedb7ed72cf9275a6eb75"
+  }
 }
