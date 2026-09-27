@@ -1,0 +1,90 @@
+{
+  "schema_version": "book-chat-first-execution-routing-task/v1",
+  "task_id": "BOOK-CHAT-FIRST-EXECUTION-ROUTING-V1",
+  "project_id": "novel-writing-master",
+  "branch": "main",
+  "created_from_head": "f9dc3d80428fa9b8cee0423c9388b2b49ed553ed",
+  "status": "STARTED_CHAT_MODE_EXTREME_HIGH",
+  "routing": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "reason": "This task updates execution-surface routing only; it must not cross the current human review gate or generate prose."
+  },
+  "current_human_gate": {
+    "review_card": "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md",
+    "required_human_answers": [
+      "CONTINUE",
+      "REJECT"
+    ],
+    "state": "STOP_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT",
+    "must_remain_unchanged": true
+  },
+  "objective": "Make Chat + EXTREME_HIGH the canonical default execution surface for the novel project while preserving all V3 content/phase routing and the current human review gate. Work becomes an exception only when materially better for long autonomous multi-app workflows; Codex remains the local-engineering route.",
+  "mandatory_reads": [
+    "AGENTS.md",
+    "README.md",
+    "SKILL.md",
+    "workflows/07-novel-master-pipeline-v3.md",
+    "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md",
+    "tasks/2026-09-27-rj-oe408-b-human-review-card-rendering-01-receipt.json"
+  ],
+  "canonical_policy": {
+    "default_mode": "CHAT",
+    "default_chat_thinking_effort": "EXTREME_HIGH",
+    "chat_covers": [
+      "story design and diagnosis",
+      "draft/rewrite/review work",
+      "ordinary web search and source reading",
+      "ordinary browser navigation/clicking",
+      "human-review-card rendering and review preparation",
+      "normal repository/connector reads and small canonical writes when no local runtime is required"
+    ],
+    "work_only_when": [
+      "workflow is unusually long and autonomous",
+      "multiple apps/sites must be coordinated over many steps",
+      "Chat would be materially slower, fragmented, or unstable",
+      "a required capability is genuinely Work-only"
+    ],
+    "codex_local_when": [
+      "full local repository access is required",
+      "shell/python/tests/dependency installation/build/bulk file processing are required"
+    ]
+  },
+  "required_changes": [
+    "Add a highest-priority execution-surface routing section to AGENTS.md or another clearly canonical agent entrypoint, without changing V3 phase/content semantics.",
+    "Explicitly state ordinary web/browser work does not imply Work.",
+    "Explicitly state every newly opened Chat execution uses EXTREME_HIGH thinking.",
+    "Create one reusable routing policy artifact and one regression receipt.",
+    "Update README only if needed for user-facing consistency; do not alter story method content."
+  ],
+  "regression_cases": [
+    {
+      "case": "story diagnosis/rewrite or ordinary web/source check",
+      "expected_route": "CHAT_EXTREME_HIGH"
+    },
+    {
+      "case": "current RJ-OE408-B human review preparation/card handling",
+      "expected_route": "CHAT_EXTREME_HIGH_BUT_STOP_AT_HUMAN_VERDICT"
+    },
+    {
+      "case": "long multi-app autonomous production workflow",
+      "expected_route": "WORK_IF_MATERIALLY_BETTER"
+    },
+    {
+      "case": "local script validation, ingest pipeline execution, full-repo tests/build",
+      "expected_route": "CODEX_LOCAL"
+    }
+  ],
+  "forbidden": [
+    "answering CONTINUE or REJECT on the user's behalf",
+    "Phase409",
+    "new prose",
+    "rewrite of RJ-OE408-B",
+    "second candidate",
+    "human-review-card content mutation",
+    "story method/rubric expansion",
+    "crossing any current human gate"
+  ],
+  "success_condition": "The novel project's canonical agent entrypoint makes Chat + EXTREME_HIGH the default execution surface, Work an exception only when materially advantageous, Codex the local-engineering route, and the current RJ-OE408-B human gate remains untouched.",
+  "next_required_action": "UPDATE_CANONICAL_EXECUTION_ROUTING_WRITE_REGRESSION_RECEIPT_AND_STOP_WITH_HUMAN_GATE_UNCHANGED"
+}
