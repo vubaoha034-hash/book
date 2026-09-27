@@ -1,0 +1,63 @@
+{
+  "schema_version": "novel-rj-oe408-b-human-review-packet-materialization-task/v1",
+  "task_id": "RJ-OE408-B-HUMAN-REVIEW-PACKET-MATERIALIZATION",
+  "project_id": "novel-distillation",
+  "branch": "main",
+  "created_from_head": "8a42a4b389fe400dc3ca42ac5f36dc0398875fa1",
+  "recovered_authority_head": "9b26d9f201e80192e2aac233bce701e7386a0bc5",
+  "status": "STARTED_PACKET_MATERIALIZATION",
+  "sole_candidate": "RJ-OE408-B",
+  "authority_refs": {
+    "checkpoint": {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "git_blob": "d97650f25eee4c564c695fc94b9b1690196a3678",
+      "sequence": 114
+    },
+    "contract": {
+      "path": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+      "git_blob": "89c04b2225b07f786c68fd4bb0a16ca2ff511a95"
+    },
+    "audit": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_AUDIT_V1.json",
+      "git_blob": "af734bb78f83263faa81f1cce68cbab0113013de"
+    },
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1.json",
+      "git_blob": "8b8106857cc915b271196e6bf5a56f5d0f1df3b1"
+    },
+    "ready_receipt": {
+      "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_READY_V1.json",
+      "git_blob": "2c6e97028326774873a9f99bf400e914d61e5330"
+    }
+  },
+  "packet_scope": [
+    "present only RJ-OE408-B",
+    "preserve the exact event-engine facts from the frozen survivor pack",
+    "ask the actual human only whether this opening makes them want to continue watching 罗钧's next choice",
+    "capture optional exact reason, distrust point, boredom point, or strongest pull if the human volunteers it",
+    "do not mix prose quality, event size, topic刺激度, or writing style into the primary judgment because this is not prose"
+  ],
+  "primary_human_question": "这个开场，会不会让你想继续看罗钧下一步怎么选？",
+  "allowed_human_answers": [
+    "CONTINUE",
+    "REJECT"
+  ],
+  "optional_followup_fields": [
+    "为什么",
+    "最想继续看的点",
+    "最早觉得无聊/不可信的位置"
+  ],
+  "hard_boundaries": {
+    "model_may_not_answer_for_human": true,
+    "no_prose_generation": true,
+    "no_phase409": true,
+    "no_candidate_substitution": true,
+    "no_second_candidate": true,
+    "no_rewrite_before_human_verdict": true,
+    "no_numeric_score_as_quality_proof": true,
+    "accepted_checkpoint_advance": false
+  },
+  "pass_condition": "Only an actual-human CONTINUE on the frozen RJ-OE408-B packet can authorize the next human-approved step.",
+  "reject_condition": "Actual-human REJECT closes this candidate; no automatic replacement is allowed in this task.",
+  "next_required_action": "MATERIALIZE_ONE_HUMAN_FACING_RJ_OE408_B_REVIEW_PACKET_FROM_FROZEN_AUTHORITY_AND_STOP_FOR_HUMAN_VERDICT"
+}
