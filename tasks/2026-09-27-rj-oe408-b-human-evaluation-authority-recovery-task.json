@@ -4,7 +4,7 @@
   "project": "novel-writing-master",
   "branch": "main",
   "created_from_head": "7f7f3dd1f603cad11eecde74d1d428ad116a8726",
-  "status": "STARTED_SOURCE_AUTHORITY_RECOVERY",
+  "status": "COMPLETED_AUTHORITY_RECOVERED",
   "objective": "Recover the exact private-project authority for candidate RJ-OE408-B and prepare a human-evaluation packet without judging, rewriting, or advancing the story.",
   "why_this_task_exists": [
     "RJ-OE408-B is not persisted in the public book repository at the current HEAD.",
@@ -58,5 +58,30 @@
     "publish private manuscript text into this repository",
     "perform de-AI line editing before structural/human gate resolution"
   ],
-  "next_required_action": "LOCATE_EXACT_PRIVATE_RJ_OE408_B_VERSION_AND_FREEZE_HUMAN_EVALUATION_PACKET_WITHOUT_JUDGMENT"
+  "next_required_action": "MATERIALIZE_HUMAN_REVIEW_PACKET_FOR_RJ_OE408_B_ONLY_NO_PROSE_NO_PHASE409",
+  "recovered_authority": {
+    "head": "9b26d9f201e80192e2aac233bce701e7386a0bc5",
+    "checkpoint_path": "state/continuity/LATEST_CHECKPOINT.json",
+    "checkpoint_sequence": 114,
+    "checkpoint_blob": "d97650f25eee4c564c695fc94b9b1690196a3678",
+    "checkpoint_status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH1",
+    "contract": {
+      "path": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+      "git_blob": "89c04b2225b07f786c68fd4bb0a16ca2ff511a95"
+    },
+    "audit": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_AUDIT_V1.json",
+      "git_blob": "af734bb78f83263faa81f1cce68cbab0113013de"
+    },
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1.json",
+      "git_blob": "8b8106857cc915b271196e6bf5a56f5d0f1df3b1"
+    },
+    "ready_receipt": {
+      "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_READY_V1.json",
+      "git_blob": "2c6e97028326774873a9f99bf400e914d61e5330"
+    },
+    "sole_survivor": "RJ-OE408-B"
+  },
+  "result": "EXACT_PRIVATE_PROJECT_AUTHORITY_RECOVERED_FROM_REPOSITORY_HISTORY"
 }
