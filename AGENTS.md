@@ -1,5 +1,18 @@
 # AGENTS.md
 
+## Highest-priority execution-surface routing
+
+This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.
+
+- Default execution mode: `CHAT`.
+- Every newly opened Chat execution uses `thinking_effort = EXTREME_HIGH`.
+- CHAT covers story design/diagnosis/review/rewrite, ordinary web search and source reading, ordinary browser navigation/clicking, human-review-card preparation/handling, ordinary repository/connector reads, and small canonical writes that do not require a local runtime.
+- Ordinary web or browser work does **not** imply Work.
+- Use Work only when it is materially better: an unusually long autonomous workflow, many-step coordination across multiple apps/sites, Chat becoming materially slower/fragmented/unstable, or a genuinely Work-only capability.
+- Use Codex local for local engineering: full repository access, shell/Python, tests, dependency installation, build/compilation, bulk file processing, or large-scale local Git.
+- Execution routing never authorizes crossing a quality gate, phase gate, or human gate, and never supplies a required human verdict on the user's behalf.
+- Reusable machine-readable policy: `rules/execution-routing-v1.json`.
+
 ## Repository purpose
 
 This repository contains `novel-writing-master`, an evidence-driven Chinese-fiction Skill.
