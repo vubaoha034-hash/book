@@ -1,0 +1,53 @@
+{
+  "schema_version": "novel-phase408-rojun-opening-event-batch2-ready-receipt/v1",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "task_id": "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
+  "event_type": "ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_READY",
+  "status": "PASS_ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW_NO_PROSE",
+  "source_head": "ecc0b86c75c28735ad2758b427991557ff9855d9",
+  "human_negative_authority": {
+    "candidate": "RJ-OE408-B",
+    "verdict": "REJECT",
+    "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+    "blob": "76f48ac9f8b7d41115cceb037a2297b2ba40d2e7",
+    "human_gate_pending": false
+  },
+  "artifacts": {
+    "audit": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_AUDIT_V1.json",
+      "git_blob": "31f87cef8c41a8175546b3b885bb009ff8d7df11"
+    },
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_SURVIVOR_PACK_V1.json",
+      "git_blob": "c5c88856bd4e13bba3444796c265916e2b9dbd54"
+    },
+    "review_card": {
+      "path": "delivery/phase408/RJ-OE408-F_HUMAN_REVIEW_CARD.md",
+      "git_blob": "c86900e01ea59f50fb4dfae6dea1d875c87af800"
+    }
+  },
+  "checks": {
+    "generated_count": 4,
+    "survivor_count": 1,
+    "sole_protagonist_is_rojun": true,
+    "survivor_swap_protagonist_pass": true,
+    "survivor_human_messiness_pass": true,
+    "survivor_author_thesis_dependency_pass": true,
+    "survivor_continuation_value_pass": true,
+    "survivor_immediate_felt_pull_pass": true,
+    "survivor_decision_puzzle_dependency_pass": true,
+    "batch1_candidates_not_reused": true,
+    "no_prose": true,
+    "no_phase409": true
+  },
+  "sole_survivor": "RJ-OE408-F",
+  "human_gate": "PENDING",
+  "primary_human_question": "这个开场，会不会让你想继续看罗钧下一步怎么选？",
+  "allowed_human_answers": [
+    "CONTINUE",
+    "REJECT"
+  ],
+  "next_action": "Present only RJ-OE408-F for actual-human event-engine review. STOP_AT_ACTUAL_HUMAN_GATE. No prose; no Phase409.",
+  "accepted_checkpoint_advance": false
+}

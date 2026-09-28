@@ -1,0 +1,30 @@
+{
+  "schema_version": "novel-phase408-rojun-opening-event-batch2-survivor-pack/v1",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_SURVIVOR_PACK_V1",
+  "mode": "PROTAGONIST_BOUND_OPENING_EVENT_ENGINE_ONLY_NO_PROSE",
+  "sole_protagonist": "罗钧",
+  "candidates": [
+    {
+      "id": "RJ-OE408-F",
+      "label": "被熟人代替回答",
+      "live_event": "一场很普通的四人饭局里，罗钧的老朋友为了让他省事，连续替他回答几个关于吃什么、喝不喝、饭后还去不去下一处的随口问题；这些回答都符合罗钧过去的习惯，朋友也没有恶意。",
+      "first_choice": "前两次罗钧都默认；第三次朋友替他说“他肯定不去”时，罗钧却当场改口说自己去，并马上把自己加进后续安排。",
+      "immediate_consequence": "老朋友立刻问他是不是故意唱反调。罗钧没有把自己包装成突然改变兴趣，只承认这个决定里确实有一部分是因为被替他答得烦了。",
+      "revaluation": "他同时承认朋友原本判断得没错——进门前他确实不想去。于是他既不是被误解的受害者，也不是单纯坚持自主，而是亲手把自己推进了一个本来不想参加的安排。",
+      "next_choice_pressure": "饭局结束时，老朋友这次一句也不替他说，其他人直接等罗钧自己决定是否真的跟去。罗钧必须选择：把刚才那句带着赌气成分的“去”兑现，还是当众承认自己只是因为被说中了才临时改口。",
+      "reader_center": "读者已经知道他原本不想去，也知道朋友没有恶意；兴趣只在罗钧会不会为自己这个有点拧巴、又不够体面的选择继续买单。"
+    }
+  ],
+  "status": "ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW",
+  "human_gate": "PENDING",
+  "human_instruction": "只判断：这个开场，会不会让你想继续看罗钧下一步怎么选？",
+  "allowed_human_answers": [
+    "CONTINUE",
+    "REJECT"
+  ],
+  "prose_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false
+}

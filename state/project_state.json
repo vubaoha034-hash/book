@@ -1,0 +1,2271 @@
+{
+  "schema_version": "3.21.3",
+  "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
+  "project_id": "novel-distillation",
+  "updated_at": "2026-09-28T00:38:00Z",
+  "branch": "main",
+  "accepted_checkpoint": {
+    "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
+    "phase_ordinal": 320,
+    "status": "ACCEPTED_OPTIONAL_BOUNDED_PRODUCTION",
+    "GN_VDNA_01_default_enabled": false,
+    "accepted_checkpoint_advance": false
+  },
+  "active_task": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "phase363_prose_anchor": {
+    "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+    "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
+    "fusion_pack_sha256": "d6d5f0bca52b9b06d91f6724bdb41873bd7d5e0fcc7246f8e870a7420db04bb9",
+    "mechanism_only_scale_proven_sufficient": false
+  },
+  "phase365_settlement": {
+    "execution": "ACCEPT_VALID_FRESH_POST_REAUTHORING_VALIDATION",
+    "overall": "PASS_WITH_LOCATED_FRICTION",
+    "historical_result_preserved": true,
+    "actual_human_contradiction": "MAJOR_FALSE_POSITIVE_AGAINST_ACTUAL_TARGET_READER"
+  },
+  "phase366_settlement": {
+    "execution": "ACTUAL_HUMAN_DECISIVE_REJECTION",
+    "candidate_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "human_overall": "FAIL_CURRENT_CANDIDATE_REJECTED",
+    "pacing": "FAIL_SEVERELY_TOO_SLOW",
+    "dialogue_template_rejection": "SEVERE",
+    "desire_to_continue": false
+  },
+  "phase367_settlement": {
+    "execution": "OUTPUTS_RECEIVED_THEN_ACTUAL_HUMAN_REJECTED",
+    "human_overall": "FAIL_PILOT_REJECTED",
+    "attraction": "FAIL_NO_ATTRACTIVE_PULL",
+    "ai_smell": "FAIL_STILL_HEAVY",
+    "desire_to_continue": false
+  },
+  "phase368_settlement": {
+    "execution": "SHORT_CHOICE_PACK_COMPLETED_AND_HUMAN_B_SELECTED",
+    "selected_choice": "B",
+    "selection_reason": "B has some suspense",
+    "full_quality_acceptance": false
+  },
+  "phase369_settlement": {
+    "execution": "BOUNDED_SPAN_COMPLETED_AND_ACTUAL_HUMAN_PARTIAL_PASS",
+    "quality_direction": "BETTER",
+    "first_skim_or_stop_point": "NONE",
+    "ai_smell_direction": "LIGHTER",
+    "genuine_desire_to_continue": true,
+    "new_blocker": "PST-F02_MYSTERY_VS_CONFUSION_IMMEDIATE_MOTIVE_OPACITY"
+  },
+  "phase370_settlement": {
+    "execution": "LOCALIZED_MOTIVE_CLARITY_REPAIR_ACTUAL_HUMAN_PASS",
+    "artifact": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+    "human_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+    "immediate_motive_clarity": "YES",
+    "remaining_unknown_experience": "SUSPENSE_NOT_CONFUSION",
+    "ai_smell_direction_vs_phase369": "SAME",
+    "desire_to_continue": true,
+    "PST_F02_status": "CLOSED_FOR_THIS_BOUNDED_SPAN",
+    "PST_F01_status": "MATERIALLY_IMPROVED_NOT_CLOSED_GLOBALLY",
+    "full_manuscript_rewrite_authorized": false
+  },
+  "phase371_settlement": {
+    "execution": "SOURCE_EVIDENCE_TRANSFER_AUDIT_ACCEPTED_WITH_CORRECTIVE_ACTIONS",
+    "receipt": "state/review_receipts/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.json",
+    "book01_source_rebind_addendum": "state/review_receipts/PHASE371_BOOK01_CURRENT_SOURCE_REBIND_ADDENDUM_V1.json",
+    "report": "docs/PHASE371_SOURCE_EVIDENCE_TRANSFER_AUDIT_V1.md",
+    "source_reading": "REAL_EFFECTIVE",
+    "source_derived_evidence": "REAL_EFFECTIVE_WITH_STORAGE_AND_HISTORICAL_GRANULARITY_DEFECTS",
+    "book_level_distillation": "PARTIALLY_EFFECTIVE",
+    "cross_book_global_structural_distillation": "PARTIALLY_EFFECTIVE",
+    "three_book_microcraft_source_evidence": "REAL_EFFECTIVE",
+    "microcraft_writing_transfer": "PARTIALLY_EFFECTIVE",
+    "global_dna_real_manuscript_writing_transfer": "UNPROVEN",
+    "stable_long_form_scale_transfer": "UNPROVEN",
+    "accepted_checkpoint_advance": false
+  },
+  "phase372_settlement": {
+    "execution": "THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_COMPLETED",
+    "receipt": "state/review_receipts/PHASE372_THREE_BOOK_SOURCE_ANCHORED_READER_EXPERIENCE_REDISTILLATION_V1.json",
+    "synthesis": "state/calibration/PHASE372_THREE_BOOK_READER_EXPERIENCE_SYNTHESIS_V1.md",
+    "review_status": "ACCEPT_SOURCE_ANCHORED_EXTRACTION_AND_SYNTHESIS_NOT_TRANSFER",
+    "source_anchored_cards_total": 90,
+    "per_book_cards": "30/30/30",
+    "unique_scene_anchors_per_book": "10/10/10",
+    "required_dimension_coverage_per_book": 3,
+    "candidate_ids": [
+      "RX-C01",
+      "RX-C02",
+      "RX-C03",
+      "RX-C04",
+      "RX-C05",
+      "RX-C06",
+      "RX-C07",
+      "RX-C08"
+    ],
+    "candidate_status": "SOURCE_DERIVED_NOT_TRANSFER_PROVEN",
+    "writing_transfer": "UNPROVEN",
+    "span_growth_transfer": "UNPROVEN",
+    "long_form_transfer": "UNPROVEN",
+    "accepted_checkpoint_advance": false
+  },
+  "phase373_settlement": {
+    "execution": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE",
+    "human_receipt": "state/review_receipts/PHASE373_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "revealed_mapping": {
+      "A": "RX_SURFACE",
+      "B": "CONTROL",
+      "C": "RX_PULL"
+    },
+    "overall_best": "B_CONTROL",
+    "most_desire_to_continue": "B_CONTROL",
+    "least_ai_like": "B_CONTROL",
+    "strongest_tension": "A_RX_SURFACE",
+    "C_first_skim_or_stop": "AFTER_A_FEW_LINES",
+    "A_experience": "VERY_CONFUSING_BUT_HAS_SUSPENSE",
+    "B_experience": "SUSPENSEFUL_READABLE",
+    "C_experience": "VERY_AVERAGE_READABLE_BUT_EARLY_SKIM",
+    "phase372_candidate_transfer_signal": false,
+    "candidate_eligible_for_span_growth": [],
+    "writing_transfer": "NOT_SUPPORTED",
+    "span_growth_transfer": "NOT_AUTHORIZED",
+    "accepted_checkpoint_advance": false
+  },
+  "phase374_settlement": {
+    "execution": "READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_COMPLETED",
+    "receipt": "state/review_receipts/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.json",
+    "report": "docs/PHASE374_READER_EXPERIENCE_ACTIVATION_OVERCONSTRAINT_DIAGNOSIS_V1.md",
+    "new_rule": "rules/reader-experience-passive-validator-only-v1.md",
+    "source_knowledge_invalidated": false,
+    "direct_generator_calling_mode": "FAILED_NOT_VALIDATED",
+    "RX_direct_generation_default": "OFF",
+    "RX_passive_validation_default": "ON",
+    "candidate_stacking_for_authoring": "FORBIDDEN_BY_DEFAULT",
+    "diagnosis": "SOURCE_OBSERVATIONS_OVERCONSTRAIN_PROSE_WHEN_EXPOSED_AS_DIRECT_CONSTRUCTION_TARGETS",
+    "accepted_checkpoint_advance": false
+  },
+  "source_provenance_state": {
+    "central_registry": "library/source-register.json",
+    "manifest": "manifests/library_manifest.jsonl",
+    "BOOK01": "CURRENT_FILE_LIBRARY_RAW_READABLE_EXACT_CANONICAL_MATCH_NOT_DRIVE_UNIFIED",
+    "BOOK02": "CURRENT_DRIVE_RAW_READABLE",
+    "BOOK03": "CURRENT_DRIVE_RAW_READABLE",
+    "raw_copyrighted_text_in_public_git": false
+  },
+  "reader_experience_transfer_state": {
+    "status": "SOURCE_LAYER_COMPLETE_TESTED_DIRECT_AND_PASSIVE_TRANSFER_NOT_SUPPORTED",
+    "phase372_source_layer": "COMPLETE_90_SOURCE_ANCHORED_CARDS",
+    "candidate_status": "SOURCE_SUPPORTED_NOT_TRANSFER_SUPPORTED",
+    "direct_generation_calling_mode": "DISABLED",
+    "passive_validator_calling_mode": "PHASE376_VALID_REPLICATION_FAILED_NOT_PRIMARY_REPAIR_PATH",
+    "required_rules": [
+      "rules/source-evidence-transfer-gate.md",
+      "rules/reader-experience-passive-validator-only-v1.md"
+    ],
+    "actual_human_phase373_result": "CONTROL_WIN_NO_TRANSFER_SIGNAL",
+    "span_growth_authorized": false,
+    "long_form_transfer": "UNPROVEN"
+  },
+  "global_dna_transfer_state": {
+    "GN_VDNA_01_default_enabled": false,
+    "real_manuscript_router_decisions": 1,
+    "GN_VDNA_01_applied_outcomes": 0,
+    "writing_transfer_verdict": "UNPROVEN",
+    "YMGQ_may_not_be_cited_as_GN_VDNA_01_success": true
+  },
+  "manuscript_quality_state": {
+    "current_full_manuscript_sha256": "2e72558137c75732614c38c05fc6181e13568f9e5d863cc370338c283bc7d2a0",
+    "full_manuscript_status": "ACTUAL_HUMAN_REJECTED",
+    "latest_bounded_span_status": "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_A3_PREHUMAN_BLOCK",
+    "YMGQ_writing_paused_for_transfer_probe": false,
+    "full_manuscript_rewrite_authorized": false,
+    "final_freeze_authorized": false,
+    "YMGQ_writing_paused": true,
+    "YMGQ_writing_pause_reason": "PHASE408_ROJUN_BOUND_OPENING_EVENT_BATCH2_ONE_SURVIVOR_AWAITING_HUMAN_REVIEW_NO_PROSE",
+    "current_writing_authorization_scope": {
+      "kind": "PHASE408_ROJUN_BOUND_OPENING_EVENT_BATCH2_REVIEW_ONLY_NO_PROSE",
+      "current_chat_allowed": true,
+      "user_visible_output": true,
+      "long_form": false,
+      "fresh_writer_authorized": false,
+      "prose_generation_authorized": false,
+      "retry_authorized": false,
+      "A2_authorized": false,
+      "second_window_authorized": false,
+      "human_review_authorized": true,
+      "task_contract": "tasks/2026-09-28-phase408-rojun-opening-event-batch2-after-human-reject-01.json"
+    },
+    "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
+    "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+    "latest_pre_human_gate_receipt": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json"
+  },
+  "governance": {
+    "actual_human_result_controls_current_candidate": true,
+    "AI_may_not_override_human_result": true,
+    "source_evidence_transfer_gate_required": true,
+    "source_reading_does_not_equal_writing_learning": true,
+    "structural_dna_validity_does_not_equal_prose_quality": true,
+    "writing_transfer_requires_actual_human_directional_improvement": true,
+    "scale_transfer_requires_span_growth_survival": true,
+    "short_form_success_does_not_authorize_full_manuscript": true,
+    "mechanism_only_distillation_does_not_prove_prose_surface_transfer": true,
+    "RX_direct_generation_default_off": true,
+    "RX_passive_validation_default_on": true,
+    "RX_candidate_stacking_for_authoring_forbidden_by_default": true,
+    "one_located_defect_per_repair_iteration": true,
+    "Novel_DNA_default_off": true
+  },
+  "continuity_settlement": {
+    "physical_STATE_LEDGER_sequence": 54,
+    "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+    "logical_latest_checkpoint_sequence": 115,
+    "claim_later_sequences_physically_appended": false,
+    "current_snapshot_reconciled": true,
+    "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
+    "reconciliation_receipt": "state/review_receipts/PHASE380_CONTINUITY_RECONCILIATION_V1.json",
+    "action_guard_repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
+    "logical_checkpoint_mirror_path": "state/continuity/LATEST_CHECKPOINT.json"
+  },
+  "invariants": {
+    "missing_result_means": "UNKNOWN",
+    "unknown_may_lower_checkpoint": false,
+    "accepted_task_may_repeat": false,
+    "backward_transition_requires_rollback_receipt": true,
+    "historical_result_may_be_superseded_forward_but_not_rewritten": true,
+    "final_freeze_requires_no_open_located_target_reader_failure": true,
+    "Phase372_may_not_be_claimed_as_writing_transfer_proof": true,
+    "Phase373_control_win_may_not_be_rewritten_as_candidate_success": true,
+    "RX_direct_activation_may_not_resume_without_new_evidence": true,
+    "Phase375_may_repair_at_most_one_located_defect": true,
+    "Phase375_may_not_write_or_extend_YMGQ": true,
+    "Phase375_may_not_do_span_growth_before_actual_human_win": true,
+    "Phase320_remains_highest_accepted_promotion_checkpoint": true,
+    "Phase375_mapping_may_not_be_revealed_before_human_verdict": true,
+    "Phase375_weak_preference_may_not_be_scaled_without_replication": true,
+    "Phase376_may_repair_at_most_one_located_defect": true,
+    "Phase376_may_not_write_or_extend_YMGQ": true,
+    "Phase376_mapping_may_not_be_revealed_before_human_verdict": true,
+    "Phase376_may_not_scale_before_actual_human_replication_result": true,
+    "Phase376_attempt1_may_not_count_due_blinding_contamination": true,
+    "Phase376_attempt2_repair_detail_may_not_be_revealed_before_human_verdict": true,
+    "Phase376_attempt2_mapping_may_not_be_revealed_before_human_verdict": true,
+    "Phase376_may_not_scale_before_clean_actual_human_replication_result": true,
+    "Phase376_baseline_win_may_not_be_rewritten_as_repair_success": true,
+    "Phase375_weak_positive_is_not_repeatable_evidence": true,
+    "no_skim_does_not_imply_low_ai_smell": true,
+    "Phase377_may_not_generate_new_fiction": true,
+    "Phase377_audit_acceptance_does_not_close_ai_smell": true,
+    "Phase378_current_chat_may_not_generate_either_arm": true,
+    "Phase378_roles_may_not_be_revealed_before_human_verdict": true,
+    "Phase378_requires_two_separate_fresh_generator_contexts": true,
+    "Phase378_mapping_may_not_be_revealed_before_actual_human_verdict": true,
+    "Phase378_outputs_may_not_be_rewritten_before_actual_human_verdict": true,
+    "Phase378_short_probe_may_not_authorize_long_form_scale": true,
+    "Phase378_PROCESS_may_not_be_claimed_successful": true,
+    "Phase378_CONTROL_may_not_be_called_AI_free": true,
+    "Phase378_model_evaluator_may_not_override_actual_human": true,
+    "Phase379_generic_backfire_task_superseded": true,
+    "Phase379_discriminator_is_diagnostic_only": true,
+    "Phase380_may_not_expose_discriminator_to_generators": true,
+    "Phase380_single_correct_prediction_may_not_promote_gate": true,
+    "Phase378_PROCESS_protocol_may_not_be_reused_as_validated_repair": true,
+    "Phase379_AI_smell_evaluator_is_diagnostic_only_until_prospective_replication": true,
+    "Phase380_generators_may_not_receive_Phase377_or_Phase379_diagnostics": true,
+    "Phase380_may_not_authorize_YMGQ_writing_or_scale": true,
+    "Phase380_duplicate_task_superseded": true,
+    "Phase380_ready_receipt_bound_to_authoritative_task": true,
+    "closed_tasks_may_not_be_redispatched": true,
+    "current_task_and_exact_action_required_before_cooperating_handler": true,
+    "Phase385_reader_engine_may_not_be_direct_authoring_blueprint": true,
+    "Phase385_unsupported_suspense_quote_may_not_be_used_as_human_evidence": true,
+    "Phase386_may_not_generate_fiction": true,
+    "Phase387_blind_writer_must_not_see_Phase374_377_383_385_diagnostics": true,
+    "current_diagnostic_chat_may_not_count_as_Phase387_fresh_writer": true,
+    "Phase387_exactly_one_fresh_writer_run": true,
+    "Phase387_current_chat_may_not_generate_candidate": true,
+    "Phase387_writer_may_read_only_frozen_execution_entry": true,
+    "Phase387_output_must_be_frozen_before_evaluation": true,
+    "Phase387_no_auto_repair_before_human": true
+  },
+  "rollback": {
+    "authorized": false,
+    "receipt": null
+  },
+  "phase375_outputs": {
+    "status": "HISTORICAL_OUTPUTS_SETTLED_SEE_PHASE375_SETTLEMENT",
+    "diagnosis": "state/calibration/PHASE375_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+    "blind_choice_pack": "state/calibration/PHASE375_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+    "receipt": "state/review_receipts/PHASE375_PASSIVE_VALIDATOR_SINGLE_DEFECT_REPAIR_PROBE_V1.json",
+    "selected_defect_count": 1,
+    "direct_RX_generation_activation": false,
+    "candidate_stacking": false,
+    "human_review_pending": false,
+    "span_growth_authorized": false,
+    "YMGQ_writing_authorized": false,
+    "transfer_status": "UNPROVEN"
+  },
+  "phase375_settlement": {
+    "execution": "ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE_WEAK_REPAIR_PREFERENCE",
+    "human_receipt": "state/review_receipts/PHASE375_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "revealed_mapping": {
+      "X": "BASELINE_UNTOUCHED_PHASE373_B",
+      "Y": "SINGLE_DEFECT_REPAIR"
+    },
+    "overall_comparison": "NEAR_TIE",
+    "forced_preference_if_required": "Y_REPAIR",
+    "preference_strength": "WEAK",
+    "passive_validator_caused_harm": false,
+    "directional_signal": "WEAK_POSITIVE",
+    "transfer_supported": false,
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase376_outputs": {
+    "attempt": 2,
+    "status": "HISTORICAL_OUTPUTS_SETTLED_SEE_PHASE376_SETTLEMENT",
+    "baseline": "state/calibration/PHASE376_ATTEMPT2_FRESH_NATURAL_BASELINE_V1.txt",
+    "baseline_git_blob_sha": "2830b20aca0dec47bbe5c7f86a5b05e6853eee9f",
+    "baseline_frozen_before_validation": true,
+    "diagnosis": "state/calibration/PHASE376_ATTEMPT2_SINGLE_DEFECT_DIAGNOSIS_V1.md",
+    "blind_choice_pack": "state/calibration/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_BLIND_CHOICE_PACK_V1.txt",
+    "receipt": "state/review_receipts/PHASE376_ATTEMPT2_PASSIVE_VALIDATOR_REPLICATION_PENDING_HUMAN_V1.json",
+    "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_",
+    "drive_file_id": "17_0KtKmpurIapwaM-AuQIbxx93oa0942",
+    "selected_defect_count": 1,
+    "repair_detail_sealed_until_human_verdict": true,
+    "mapping_sealed_until_human_verdict": true,
+    "direct_RX_generation_activation": false,
+    "candidate_stacking": false,
+    "human_review_pending": false,
+    "replication_status": "UNPROVEN",
+    "span_growth_authorized": false,
+    "YMGQ_writing_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase376_attempt1": {
+    "status": "INVALIDATED_BEFORE_HUMAN_REVIEW",
+    "receipt": "state/review_receipts/PHASE376_ATTEMPT1_BLINDING_CONTAMINATION_V1.json",
+    "counts_as_replication_evidence": false
+  },
+  "phase376_settlement": {
+    "execution": "ATTEMPT1_INVALIDATED_ATTEMPT2_ACTUAL_HUMAN_REPLICATION_COMPLETE_BASELINE_WIN",
+    "attempt1_receipt": "state/review_receipts/PHASE376_ATTEMPT1_BLINDING_CONTAMINATION_V1.json",
+    "attempt2_human_receipt": "state/review_receipts/PHASE376_ATTEMPT2_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "attempt2_revealed_mapping": {
+      "X": "SINGLE_DEFECT_REPAIR",
+      "Y": "BASELINE_UNTOUCHED"
+    },
+    "overall_preference": "Y_BASELINE",
+    "desire_to_continue": "Y_BASELINE",
+    "clarity_flow": "Y_BASELINE",
+    "tension": "Y_BASELINE",
+    "ai_smell": "BOTH_HEAVY",
+    "first_skim_or_stop": "NONE_FOR_BOTH",
+    "phase375_weak_positive_replicated": false,
+    "passive_validator_repeatability": "FAILED",
+    "repair_transfer_signal": false,
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "ai_smell_state": {
+    "status": "PHASE380_SINGLE_PROSPECTIVE_HIT_DIAGNOSTIC_ONLY_REPAIR_UNPROVEN",
+    "latest_actual_human_evidence": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
+    "story_propulsion_separable_from_ai_smell": true,
+    "one_sentence_deletion_method": "NOT_REPEATABLE_NOT_PRIMARY_REPAIR",
+    "next_required_task": "CHAT_REAUTHORING_FROM_MINIMAL_KERNEL_PENDING_SCOPED_TASK",
+    "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
+    "diagnostic_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "next_task_status": "NOT_ACTIVE"
+  },
+  "phase377_settlement": {
+    "execution": "AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_ACCEPTED_AS_EVIDENCE_NOT_REPAIR_PROOF",
+    "receipt": "state/review_receipts/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.json",
+    "report": "docs/PHASE377_AI_SMELL_ROOT_CAUSE_CONTRASTIVE_AUDIT_V1.md",
+    "matrix": "state/calibration/PHASE377_AI_SMELL_CONTRASTIVE_EVIDENCE_MATRIX_V1.jsonl",
+    "new_rule": "rules/ai-smell-global-optimization-diagnostic-v1.md",
+    "primary_failure_family": "AI-F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY",
+    "supported_high_signatures": [
+      "AS-01",
+      "AS-02",
+      "AS-03",
+      "AS-04",
+      "AS-06"
+    ],
+    "supported_amplifiers": [
+      "AS-05",
+      "AS-07"
+    ],
+    "simple_short_sentence_rule": "REJECTED",
+    "simple_explanation_ban": "REJECTED",
+    "concrete_object_reduction_simple_rule": "REJECTED",
+    "one_sentence_deletion_primary_method": "DOWNGRADED_NOT_REPEATABLE",
+    "repair_method": "UNPROVEN",
+    "writing_transfer": "NOT_SUPPORTED",
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase378_execution_state": {
+    "generation_complete": true,
+    "both_outputs_frozen": true,
+    "pre_human_evaluator_complete_sealed": true,
+    "human_blind_review_pending": false,
+    "actual_human_review_complete": true,
+    "A_B_mapping_revealed_after_verdict": true,
+    "R1_R2_role_mapping_revealed_after_verdict": true,
+    "process_level_transfer_signal": false,
+    "control_won_this_replicate": true,
+    "span_growth_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase378_settlement": {
+    "execution": "TWO_FRESH_GENERATORS_COMPLETED_AND_ACTUAL_HUMAN_BLIND_REVIEW_COMPLETE",
+    "human_receipt": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+    "A": "R1_PROCESS",
+    "B": "R2_CONTROL",
+    "human_overall_preference": "B_CONTROL",
+    "human_lower_ai_smell": "B_CONTROL",
+    "A_ai_smell": "VERY_HEAVY",
+    "B_ai_smell": "SOME_BUT_NOT_STRONG",
+    "human_A_clarity": "MESSY_WITH_SKIM_OR_STOP_URGE",
+    "first_A_ai_smell_locator": "你要那个？ / 他说过给我。 / 什么时候？",
+    "sealed_model_prediction": "R1_LOWER_AI_SMELL_THAN_R2",
+    "model_prediction_correct": false,
+    "PROCESS_protocol_supported": false,
+    "process_level_transfer_signal": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase379_settlement": {
+    "execution": "TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_ACCEPTED_DIAGNOSTIC_ONLY",
+    "receipt": "state/review_receipts/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.json",
+    "report": "docs/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.md",
+    "matrix": "state/calibration/PHASE379_TARGET_READER_AI_SMELL_CONTRASTIVE_MATRIX_V1.jsonl",
+    "rule": "rules/target-reader-ai-smell-discriminator-v1.md",
+    "AS_F01_status": "HIGH_PRIORITY_TARGET_READER_CANDIDATE_NOT_UNIVERSAL_RULE",
+    "phase377_global_family_status": "RETAINED_DIAGNOSTIC_NOT_SUFFICIENT_GATE",
+    "model_AI_smell_evaluator_status": "DIAGNOSTIC_ONLY_UNTIL_PROSPECTIVE_REPLICATIONS",
+    "generation_repair_proven": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase380_execution_state": {
+    "neutral_generator_invocations_ready": true,
+    "generation_started": true,
+    "discriminator_prediction_sealed": true,
+    "human_blind_review_pending": false,
+    "quality_gate_promoted": false,
+    "generation_repair_supported": false,
+    "accepted_checkpoint_advance": false,
+    "generation_complete": true,
+    "both_outputs_frozen": true,
+    "actual_human_review_complete": true,
+    "raw_outputs_received": 2,
+    "generation_pair_budget_used": 1,
+    "prediction_unsealed": true,
+    "campaign_closed": true,
+    "human_comparison_budget_used": 1,
+    "automatic_additional_calibration": false
+  },
+  "delivery_recovery_plan": {
+    "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
+    "followup_draft": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
+    "followup_status": "PHASE381_CANDIDATE_REJECTED_REAUTHORING_REQUIRED",
+    "acceptance_is_actual_reader_evidence": true,
+    "phase380_closed": true,
+    "phase380_settlement_receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
+    "next_action": "Continue with plain Chinese conversational diagnosis and inline prose in the user-requested Chat setting. Re-author from the minimal story kernel and Chen inner experience under a scoped successor task; do not line-patch or extend rejected Phase381 prose, rerun Phase380, or claim the interface mode has been switched. No new fiction generated in this rejection-recording turn.",
+    "active_delivery_task": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json"
+  },
+  "phase380_outputs": {
+    "receipt": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
+    "status": "FROZEN_HUMAN_REVIEWED_AND_CAMPAIGN_SETTLED",
+    "raw_outputs": [
+      {
+        "replicate": 1,
+        "drive_id": "1HSFFn3EaIO27LKtp5YMpYwmN7NSXIdPd",
+        "title": "PHASE380_R1_GENERATED_SCENE_V1.txt",
+        "size": 6273,
+        "modified_time": "2026-09-10T12:55:40.933Z",
+        "sha256": "84b2e22a91b9eee1db762af37a01ad191c318405a4ecdef9cf43e003efe2beb4",
+        "chinese_chars": 1758,
+        "characters": 2149
+      },
+      {
+        "replicate": 2,
+        "drive_id": "15xYBzUCntSWKqWPDm-pNuPrO6e_Hel14",
+        "title": "PHASE380_R2_GENERATED_SCENE_V1.txt",
+        "size": 5631,
+        "modified_time": "2026-09-10T12:56:33.746Z",
+        "sha256": "963803fcafc8209086f27d3137ce6e6d061308164a1e1b955f733d4babdf699f",
+        "chinese_chars": 1524,
+        "characters": 2040
+      }
+    ],
+    "private_evidence_drive_file_id": "1lYDtsnfpIvoxnl9XbayI-za8Usd4Tg9K",
+    "private_evidence_sha256": "5d65724ff54d2e23c0b930ade80e02e60edda048072c7cd3fbb5d313ad571266",
+    "prediction_sha256": "6a8b84945ad6973584169852b1f7906c241dbdea09e6147724a83bc2fee05f46",
+    "mapping_sha256": "02ec74811bba88e1c02b989da5a4666f2003906384de8fcde8b6c9dc1006bd8d",
+    "reader_pack": {
+      "drive_file_id": "1mU3NY_a03UVDObq3fBcAQPel7_OZjLrG",
+      "file_name": "PHASE380_匿名阅读稿_V1.txt",
+      "mime_type": "text/plain",
+      "sha256": "e79e6dc7e1efd1fba843df021dabc9ebf724f96bf52daf6044b5d8e80435f661",
+      "bytes": 12506,
+      "library_file_id": "libfile_b12ded0daad88191ac32d96e9749290a",
+      "drive_folder_id": "1by_PdzIkx8KJYq9-z9T29egd5ZSrpcu_"
+    },
+    "human_verdict": {
+      "source": "ACTUAL_TARGET_READER_CURRENT_CHAT_MESSAGE_BEFORE_UNSEALING",
+      "received_date_utc": "2026-09-11",
+      "message_timestamp_available": false,
+      "verbatim_response_zh": "1 B的ai味道重一点。   2 A 轻微  B明显   3  B  4 B  5  B    6暂时没有",
+      "lower_ai_smell": "A",
+      "ai_smell_intensity": {
+        "A": "轻微",
+        "B": "明显"
+      },
+      "overall_preference": "B",
+      "more_desire_to_continue": "B",
+      "clearer_smoother": "B",
+      "skim_or_stop_response_zh": "暂时没有",
+      "located_skim_or_stop": null,
+      "specific_cause_of_preference": "NOT_PROVIDED",
+      "global_AI_free_acceptance": false,
+      "complete_manuscript_acceptance": false
+    },
+    "human_settlement_receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json"
+  },
+  "phase380_settlement": {
+    "status": "CALIBRATION_HIT_ONE_REPLICATE_ONLY_CAMPAIGN_CLOSED",
+    "receipt": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
+    "predicted_lower_ai_smell": "A",
+    "human_lower_ai_smell": "A",
+    "directional_agreement": true,
+    "human_overall_preference": "B",
+    "human_more_desire_to_continue": "B",
+    "human_clearer_smoother": "B",
+    "evaluator_status": "DIAGNOSTIC_ONLY",
+    "generation_repair_supported": false,
+    "accepted_checkpoint_advance": false,
+    "campaign_closed": true
+  },
+  "phase381_execution_state": {
+    "contract_activated": true,
+    "initial_drafts_written": 1,
+    "human_located_repairs_used": 0,
+    "actual_human_review_pending": false,
+    "actual_human_review_complete": true,
+    "quality_accepted": false,
+    "generation_repair_supported": false,
+    "accepted_checkpoint_advance": false,
+    "source_frozen": true,
+    "prose_delivered": true,
+    "delivery_receipt": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+    "human_rejection_receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "candidate_rejected": true,
+    "local_patch_eligible": false
+  },
+  "phase381_settlement": {
+    "status": "ACTUAL_HUMAN_REJECTED_EARLY_STOP_REAUTHORING_REQUIRED",
+    "receipt": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+    "scene_sha256": "a4502e6c8f207868e3bc612b19867ebe4b02b471f3cbad0d9e34d3774fbc3c8a",
+    "desire_to_continue": false,
+    "stop_point_source_lines": [
+      19,
+      23
+    ],
+    "affective_experience": "REJECTED_AS_EMOTIONALLY_FLAT_DIALOGUE",
+    "motive_clarity": "NOT_SEPARATELY_ANSWERED",
+    "local_payoff": "NOT_REACHED",
+    "accepted_checkpoint_advance": false,
+    "local_repair_eligible": false
+  },
+  "interaction_preferences": {
+    "preferred_mode": "CHAT",
+    "preferred_prose_delivery": "INLINE_IN_CONVERSATION",
+    "source": "ACTUAL_USER_2026_09_12",
+    "actual_mode_switch_verified": false,
+    "preserve_rejection_across_mode_change": true
+  },
+  "closed_task_ids": [
+    "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+    "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+    "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
+    "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
+    "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+    "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+    "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+    "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+    "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+    "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
+    "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+    "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
+    "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+    "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+    "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+    "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+    "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+    "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+    "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+    "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+    "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+    "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+    "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+    "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+    "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1"
+  ],
+  "phase385_settlement": {
+    "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
+    "valid_actual_human_feedback_zh": [
+      "能看。",
+      "ai味道没有哈，反倒越来越重了。"
+    ],
+    "suspense_positive_human_claim_authorized": false,
+    "evidence_correction_receipt": "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json",
+    "source_research_completed": true,
+    "prose_transfer_supported": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase386_settlement": {
+    "status": "ACCEPT_FIREWALL_DESIGN_NO_FICTION",
+    "artifact": "docs/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.md",
+    "receipt": "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+    "fresh_writer_context_required_for_next_valid_pilot": true,
+    "current_chat_may_not_be_phase387_blind_writer": true,
+    "writing_transfer_supported": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase387_execution_state": {
+    "contract_activated": true,
+    "author_packet_frozen": true,
+    "execution_entry_frozen": true,
+    "fresh_writer_run_completed": true,
+    "output_frozen": true,
+    "evaluator_run": true,
+    "actual_human_review_complete": true,
+    "candidate_accepted": false,
+    "accepted_checkpoint_advance": false,
+    "frozen_output_sha256": "858902d04f78218b1ca6c9cdfa551f636423e8fadd6ee2f0f3b87d43452d067d",
+    "overall_human_verdict": "FAIL_NOT_GOOD_ENOUGH",
+    "subdimension_detail_complete": false
+  },
+  "phase388_settlement": {
+    "status": "ACCEPT_DIAGNOSIS_INPUT_CONTEXT_STARVATION_PRIMARY_HYPOTHESIS",
+    "report": "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+    "receipt": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+    "primary_hypothesis": "AUTHORING_CONTEXT_STARVATION_AFTER_FIREWALL",
+    "secondary_hypotheses": [
+      "CORE_PREMISE_REHEARSAL_INSTEAD_OF_STORY_MODEL_CHANGE",
+      "DISPOSABLE_MULTI_FUNCTION_SIDE_CHARACTER",
+      "MORAL_THEME_EXPLICITLY_LITIGATED",
+      "LOW_HIGH_VALUE_MODEL_DELTA"
+    ],
+    "human_validation_boundary": "ROOT_CAUSES_COORDINATOR_HYPOTHESES_NOT_DIRECT_USER_ATTRIBUTION",
+    "writing_generated": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase389_settlement": {
+    "status": "ACCEPT_RICH_CONTEXT_PACKET_NO_DIAGNOSTIC_LEAKAGE",
+    "packet": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+    "packet_sha256": "1c4d9481bf25cece46aafb01c7ad92741675a715c069ce9e9532557374462339",
+    "audit": "docs/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.md",
+    "receipt": "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json",
+    "diagnostic_leakage_found": false,
+    "fiction_generated": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase390_execution_state": {
+    "contract_activated": true,
+    "scene_packet_frozen": true,
+    "execution_entry_frozen": true,
+    "fresh_writer_run_completed": true,
+    "output_frozen": true,
+    "actual_human_review_complete": true,
+    "candidate_accepted": false,
+    "scene_packet_sha256": "f78cdf3ec7a0ec0cce53addb99f96a6beee42c6004c8e571aa57f695c19707b6",
+    "execution_entry_sha256": "37fa4f27d2ec017dc0b326fd097456b994275c162cca99c0f3dff76a0d7a51a4",
+    "accepted_checkpoint_advance": false,
+    "frozen_output_sha256": "619898ffaf298381fd2c7b6ae1847a5e9c68921122bb75223dfe23084b861028",
+    "overall_human_verdict": "FAIL_HEAVY_AI_MECHANICAL_DIALOGUE",
+    "ai_smell": "VERY_HEAVY",
+    "dialogue_voice_distinctiveness": "FAIL"
+  },
+  "phase391_settlement": {
+    "status": "ACCEPT_DIAGNOSIS_CHARACTER_CARD_TO_DIALOGUE_COMPILATION_PRIMARY",
+    "report": "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+    "receipt": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+    "primary_root_cause": "CHARACTER_CARD_TO_DIALOGUE_COMPILATION",
+    "secondary_root_causes": [
+      "EXACT_ADJACENCY_COMPLETION",
+      "VOICE_AS_LABEL_NOT_BEHAVIOR",
+      "SUBTEXT_EXPLICITATION"
+    ],
+    "fiction_generated": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase392_settlement": {
+    "status": "ACCEPT_FACTS_ONLY_CONTEXT_NO_DIAGNOSTIC_LEAKAGE",
+    "packet": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
+    "packet_sha256": "4aaa4f9fc224d3cdcf185845c73ca5e2961407a1c193d80a915ae8b431ea1a72",
+    "report": "docs/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.md",
+    "receipt": "state/review_receipts/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.json",
+    "declarative_personality_labels_removed": true,
+    "diagnostic_leakage_found": false,
+    "fiction_generated": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase393_execution_state": {
+    "contract_activated": true,
+    "scene_packet_frozen": true,
+    "execution_entry_frozen": true,
+    "fresh_writer_run_completed": true,
+    "output_frozen": true,
+    "actual_human_review_complete": true,
+    "candidate_accepted": false,
+    "scene_packet_sha256": "bd6f05654de68c5b5adc50e0762a37f7cdf073654ec49fe2c75bdf4bbff52d85",
+    "execution_entry_sha256": "7c1026d20240e99255f1135c47347de0487d878862fe4ec0ba17e8ffce28fc5d",
+    "accepted_checkpoint_advance": false,
+    "frozen_output_sha256": "58d55fb5f08f8fa9ac6e665eb95ae42693ff9d491edd9cec92b244c8382b52fa",
+    "overall_human_verdict": "FAIL",
+    "ai_smell_vs_phase390": "LIGHTER_BUT_STILL_HEAVY",
+    "dialogue_mechanicality": "CLEAR_FAIL",
+    "desire_to_continue": "LOW_DUE_HEAVY_AI_SMELL",
+    "first_stop_pattern": "BACK_AND_FORTH_QA_ADJACENCY"
+  },
+  "phase394_settlement": {
+    "status": "ACCEPT_PIPELINE_REPAIR_READY_FOR_PROSPECTIVE_RUN",
+    "positive_anchor": "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+    "blocker_rule": "rules/dialogue-mechanical-blocker-v1.md",
+    "tripwire_script": "scripts/check_dialogue_adjacency.py",
+    "tests": "tests/test_dialogue_adjacency_blocker.py",
+    "writer_sees_blocker": false,
+    "whole_candidate_reject_on_block": true,
+    "fiction_generated": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase395_execution_state": {
+    "contract_activated": true,
+    "current_attempt": null,
+    "attempt_budget": 3,
+    "writer_entry_frozen": true,
+    "writer_entry_sha256": "49141e8ee343a32da976210a8113c67d82f3f86f42a92d8e1998e1742ed8f256",
+    "inbox_path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
+    "candidate_stored": false,
+    "candidate_frozen": false,
+    "deterministic_gate": null,
+    "semantic_gate": null,
+    "user_delivery_authorized": false,
+    "actual_human_review_complete": false,
+    "accepted_checkpoint_advance": false,
+    "A1": {
+      "candidate_frozen": true,
+      "deterministic_gate": "BLOCK",
+      "semantic_gate": "BLOCK",
+      "disposition": "WHOLE_CANDIDATE_REJECT",
+      "user_delivery_authorized": false,
+      "receipt": "state/review_receipts/PHASE395_A1_DIALOGUE_GATE_REJECTION_V1.json"
+    },
+    "A2": {
+      "candidate_frozen": true,
+      "deterministic_gate": "BLOCK",
+      "semantic_gate": "BLOCK",
+      "disposition": "WHOLE_CANDIDATE_REJECT",
+      "user_delivery_authorized": false,
+      "receipt": "state/review_receipts/PHASE395_A2_DIALOGUE_GATE_REJECTION_V1.json"
+    },
+    "A3": {
+      "candidate_frozen": true,
+      "deterministic_gate": "BLOCK",
+      "semantic_gate": "BLOCK",
+      "disposition": "WHOLE_CANDIDATE_REJECT",
+      "user_delivery_authorized": false,
+      "receipt": "state/review_receipts/PHASE395_A3_DIALOGUE_GATE_REJECTION_V1.json"
+    },
+    "attempt_budget_exhausted": true
+  },
+  "phase395_settlement": {
+    "status": "COMPLETE_PIPELINE_VALID_GENERATION_ARCHITECTURE_FAILED",
+    "all_attempts_blocked": true,
+    "user_bad_prose_exposure_count": 0,
+    "direct_facts_to_full_prose_architecture_supported": false,
+    "next_architecture": "SILENT_SCENE_SIMULATION_THEN_PROSE_RENDER",
+    "accepted_checkpoint_advance": false
+  },
+  "phase396_execution_state": {
+    "contract_activated": true,
+    "scene_trace_frozen": true,
+    "scene_trace_sha256": "91abe49aaaff79d7d42a5228d0aed75b6de0dc816f3c62dcf8015d7762b1ea6d",
+    "writer_entry_frozen": true,
+    "writer_entry_sha256": "5b4f1fa4d70c0ec5b148659e905721b4827a2e189a843f853086c854a15293fd",
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "deterministic_gate": "CLEAR",
+    "semantic_gate": "CLEAR",
+    "user_delivery_authorized": true,
+    "actual_human_review_complete": true,
+    "accepted_checkpoint_advance": false,
+    "human_overall": "PASS_BOUNDED",
+    "ai_smell": "LIGHT",
+    "mechanical_dialogue": "NONE",
+    "forward_desire": "FAIL",
+    "first_boredom_location": "RIVER_CROSSING",
+    "novelty_issue": "REPEATED_SAME_STORY_LOW_NOVELTY"
+  },
+  "phase396_settlement": {
+    "status": "DIALOGUE_SURFACE_PIPELINE_SUPPORTED_PROPULSION_UNRESOLVED",
+    "silent_simulation_then_render_supported_for_dialogue_surface": true,
+    "propulsion_solved": false,
+    "next_test_requires_new_story": true,
+    "ymgq_reuse_for_next_test": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase397_execution_state": {
+    "task_contract": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+    "story_id": "NS01_DEAD_MAN_RETURNS_HOME",
+    "YMGQ_reused": false,
+    "A1": {
+      "actual_human_review_complete": true,
+      "literary_acceptance": false,
+      "primary_failure": "UNJUSTIFIED_COMPOSURE_AFFECT_NOT_IN_CAUSAL_CHAIN",
+      "source_fidelity_valid": false
+    },
+    "A2": {
+      "actual_human_review_complete": true,
+      "literary_acceptance": false,
+      "ordinary_human_reaction": "PASS",
+      "emotion": "INSUFFICIENT",
+      "suspense": "PRESENT",
+      "forward_desire": "FAIL",
+      "ai_smell": "HEAVY",
+      "narrative_transportation": "FAIL",
+      "source_fidelity": "CLEAR",
+      "mechanical_dialogue": "CLEAR"
+    },
+    "A3": {
+      "substrate_frozen": true,
+      "writer_entry_frozen": true,
+      "candidate_stored": true,
+      "candidate_frozen": true,
+      "user_delivery_authorized": false,
+      "actual_human_review_complete": false,
+      "isolated_generation_complete": true,
+      "isolated_generation_transport": "OPERA_NEON_ADVANCED_PLUGIN_NEW_CHATGPT_TAB",
+      "generated_prose_location": "CURRENT_OPERA_NEON_EXECUTOR_CHAT",
+      "workflow_receipt": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json",
+      "frozen_output_path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+      "frozen_output_sha256": "7dd9bbe7364822845f2cf245abb74a712add8139be1517222d63909dba7c932d",
+      "source_fidelity": "CLEAR",
+      "deterministic_dialogue": "CLEAR",
+      "semantic_dialogue": "CLEAR",
+      "anti_storyboard_precheck": "BLOCK",
+      "literary_acceptance": false
+    },
+    "accepted_checkpoint_advance": false
+  },
+  "next_required_action": "Deliver only RJ-OE408-B for actual-human protagonist-bound opening-event review. No prose; no Phase409.",
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH1",
+  "active_task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
+  "last_completed_task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+  "last_completed_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
+  "source_state_refs": [
+    {
+      "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+      "role": "current Phase397 new-story transfer task"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
+      "role": "actual-human A2 immersion rejection"
+    },
+    {
+      "path": "docs/PHASE397_A2_NARRATIVE_TRANSPORTATION_DIAGNOSIS_V1.md",
+      "role": "bounded A2 diagnosis"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_READY_V1.json",
+      "role": "current A3 frozen-input readiness receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_OPERA_NEON_FRESH_WRITER_WORKFLOW_VALIDATED_V1.json",
+      "role": "validated Opera Neon isolated fresh-writer transport and A3 execution handoff"
+    },
+    {
+      "path": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+      "role": "active Phase398 architecture redesign contract; prose generation remains unauthorized"
+    },
+    {
+      "path": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+      "role": "Phase398 frozen author-input architecture design"
+    },
+    {
+      "path": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
+      "role": "machine-readable unordered SCENE_FIELD_AUTHOR_PACKET_V1 schema"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
+      "role": "Phase398 architecture design freeze and audit receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "role": "frozen Phase398 NS02 writer-visible scene-field packet; final audit PASS"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+      "role": "Phase398 NS02 first-failure, repair and final packet-freeze receipt"
+    },
+    {
+      "path": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+      "role": "active Phase399 single isolated NS02 A1 validation contract"
+    },
+    {
+      "path": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+      "role": "frozen writer-visible Phase399 A1 entry; only file permitted to fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase399 A1 writer-entry freeze and isolation PASS receipt"
+    },
+    {
+      "path": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "verbatim Phase399 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "immutable Phase399 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+      "role": "Phase399 A1 storage, source-fidelity, output-contract, dialogue and anti-storyboard settlement"
+    },
+    {
+      "path": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+      "role": "active Phase400 output-generation causal redesign contract"
+    },
+    {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "role": "Phase400 failure-versus-human-positive output-surface contrast profile"
+    },
+    {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "role": "Phase400 causal diagnosis and selected successor writer-execution architecture"
+    },
+    {
+      "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+      "role": "frozen Phase400 successor writer-execution schema; architecture audit PASS"
+    },
+    {
+      "path": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+      "role": "Phase400 architecture freeze and audit receipt; no prose transfer claim"
+    },
+    {
+      "path": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+      "role": "active Phase401 single local-passage prospective validation contract"
+    },
+    {
+      "path": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+      "role": "frozen Phase401 writer-visible Lin Qiao local-view projection"
+    },
+    {
+      "path": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+      "role": "frozen Phase401 single A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase401 readiness receipt with first-audit block, repair and final PASS"
+    },
+    {
+      "path": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "role": "verbatim Phase401 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "role": "immutable Phase401 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+      "role": "Phase401 causal validation settlement with partial reduction signal and required gate blockers"
+    },
+    {
+      "path": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
+      "role": "active Phase402 residual causal redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase402 residual causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json",
+      "role": "Phase402 minimal architecture schema"
+    },
+    {
+      "path": "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase402 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json",
+      "role": "Phase402 architecture-ready PASS receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+      "role": "Phase402 frozen non-focal actor commitments A1"
+    },
+    {
+      "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+      "role": "Phase402 frozen deferred-attribution writer view A1"
+    },
+    {
+      "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+      "role": "Phase402 frozen single A1 runner"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase402 A1 readiness PASS receipt"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+      "role": "immutable Phase402 A1 candidate authorized for actual-human review"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+      "role": "Phase402 post-generation hidden-gate settlement; all required gates clear"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+      "role": "Phase402 actual-human verbatim rejection; authoritative literary verdict"
+    },
+    {
+      "path": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+      "role": "active Phase403 reader-drive redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase403 reader-drive causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+      "role": "Phase403 live-vector selective-salience architecture schema"
+    },
+    {
+      "path": "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase403 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
+      "role": "Phase403 architecture-ready PASS receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "role": "frozen Phase403 live-vector selective-salience writer-visible view"
+    },
+    {
+      "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+      "role": "frozen Phase403 single A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase403 single A1 fresh-writer readiness PASS receipt"
+    },
+    {
+      "path": "state/inbox/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "role": "verbatim Phase403 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "role": "immutable Phase403 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+      "role": "Phase403 hidden-gate settlement with output-contract BLOCK"
+    },
+    {
+      "path": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
+      "role": "active Phase404 output-boundary redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase404 output-contract causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE404_PROSE_BODY_ONLY_RESPONSE_SCHEMA_V1.json",
+      "role": "Phase404 prose-body-only response schema"
+    },
+    {
+      "path": "state/tasks/PHASE404_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase404 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json",
+      "role": "Phase404 architecture-ready PASS receipt"
+    },
+    {
+      "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+      "role": "frozen Phase404 prose-body-only A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase404 A1 readiness receipt with first-audit BLOCK, repair and final PASS"
+    },
+    {
+      "path": "state/inbox/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "role": "verbatim Phase404 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "role": "immutable Phase404 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
+      "role": "Phase404 output-boundary settlement; output contract CLEAR but other required hidden gates BLOCK"
+    }
+  ],
+  "incomplete": [
+    "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
+    "Phase402 actual-human literary review of immutable A1 is pending",
+    "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
+    "Phase408 batch3 L/M/O were all rejected by the actual human as not worth reading. Current fast-webnovel research identified the missing unit as opening event-engine density/agency/payoff rather than further static premise refinement. No opening-engine candidates have yet been generated."
+  ],
+  "blocked": [
+    "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
+    "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
+    "PHASE397_A4_NOT_AUTHORIZED",
+    "PHASE402_BEST_OF_N_FORBIDDEN",
+    "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE402_A2_NOT_AUTHORIZED",
+    "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
+    "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
+    "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
+    "PHASE408_PROSE_FORBIDDEN_UNTIL_OPENING_ENGINE_CARD_SURVIVES_HUMAN_REVIEW"
+  ],
+  "do_not_reopen": [
+    "Modify or locally patch frozen Phase397 A3",
+    "Deliver Phase397 A3 to actual-human review despite anti-storyboard precheck block",
+    "Generate Phase397 A4 without a separate explicit Phase397 authorization",
+    "Create Phase398 before Phase397 is separately settled",
+    "Retry Phase397 A4 under the same silent-scene-to-renderer architecture",
+    "Treat additional anti-storyboard prompt wording as a materially new mechanism",
+    "Modify the frozen Phase398 NS02 packet after its PASS receipt; future changes require a new version/task",
+    "Run a fresh writer from Phase398 without a separately authorized successor task",
+    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof",
+    "Repair or delete the final three non-prose lines from frozen Phase399 A1",
+    "Locally patch frozen Phase399 A1 dialogue or paragraph rhythm",
+    "Automatically retry Phase399 A1 or create A2",
+    "Deliver Phase399 A1 to actual-human review despite blocker settlement",
+    "Create Phase400 without separate explicit authorization",
+    "Reopen Phase399 or retry its A1",
+    "Create Phase399 A2",
+    "Modify frozen Phase399 A1 or frozen Phase398 NS02",
+    "Use paragraph-length or question-count quotas as the Phase400 primary repair",
+    "Expose Phase377/399 evaluator labels or blocker thresholds to a future writer",
+    "Generate Phase400 prose or create Phase401 automatically",
+    "Treat Phase400 architecture-design PASS as proof of prose quality or mechanical-dialogue repair",
+    "Run a prose pilot from Phase400 without a separately authorized successor task",
+    "Create Phase401 automatically",
+    "Expose coordinator-only non-focal private state, terminal checklist, or evaluator diagnostics to a future prose writer",
+    "Repair or clean frozen Phase401 A1",
+    "Retry Phase401 A1 automatically",
+    "Create Phase401 A2 or a second local window automatically",
+    "Enter actual-human review for blocked Phase401 A1",
+    "Treat the Phase401 directional reduction as proof that the architecture solved mechanical dialogue or AI smell",
+    "Create Phase402 without separate explicit authorization",
+    "Override Phase402 actual-human rejection with model gate results",
+    "Retry Phase402 A1 automatically",
+    "Create Phase402 A2 or second window automatically",
+    "Treat lighter AI smell as literary acceptance",
+    "Create Phase403 without separate explicit authorization",
+    "Delete or repair the Phase403 title-like label or three editorial suggestion lines in the frozen A1",
+    "Retry Phase403 A1 automatically",
+    "Create Phase403 A2 or a second window automatically",
+    "Enter actual-human review for blocked Phase403 A1",
+    "Treat hidden reader-drive gate success as actual-human reader-drive validation",
+    "Create Phase404 without separate explicit authorization",
+    "Modify or repair frozen Phase404 A1",
+    "Retry Phase404 A1 automatically",
+    "Create Phase404 A2 or second window automatically",
+    "Enter actual-human review for blocked Phase404 A1",
+    "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
+    "Create Phase405 without separate explicit authorization",
+    "Retry Phase405 A1, create Phase405 A2/second window, or human-review the blocked Phase405 candidate.",
+    "Treat the Phase405 single-run targeted stability signal as statistically proven cross-run stability.",
+    "Create Phase406 without separate explicit authorization.",
+    "Correct 吴岚 to 吴兰 inside frozen Phase406 A1 or treat corrected text as the same attempt.",
+    "Retry Phase406 A1, create Phase406 A2/second window, or human-review the blocked Phase406 candidate.",
+    "Create Phase407 without separate explicit authorization.",
+    "Treat Phase407 hidden-gate CLEAR as literary acceptance.",
+    "Retry or locally rewrite frozen Phase407 A1.",
+    "Create Phase408 without separate explicit authorization."
+  ],
+  "phase397_settlement": {
+    "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
+    "receipt": "state/review_receipts/PHASE397_ARCHITECTURE_SETTLEMENT_AFTER_A3_V1.json",
+    "A1_actual_human": "REJECTED",
+    "A2_actual_human": "REJECTED_LOW_IMMERSION_HEAVY_AI_LOW_FORWARD_DESIRE",
+    "A3": "PREHUMAN_ANTI_STORYBOARD_BLOCK",
+    "dialogue_surface_control": "SUPPORTED_BOUNDED_ONLY",
+    "narrative_transportation_transfer": "NOT_SUPPORTED",
+    "low_ai_prose_transfer": "NOT_SUPPORTED",
+    "forward_desire_transfer": "NOT_SUPPORTED",
+    "A4_authorized": false,
+    "phase398_created": true,
+    "accepted_checkpoint_advance": false,
+    "phase398_task_id": "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+    "phase398_transition_note": "Phase398 was later created after explicit user continuation authorization; Phase397 remains closed and its accepted-checkpoint status is unchanged."
+  },
+  "completed": [
+    "Phase397 closed as negative transfer result after A3 pre-human anti-storyboard block; no A4 authorized",
+    "Phase397 settlement preserves bounded dialogue-surface control while rejecting narrative-transportation transfer",
+    "Phase398 successor architecture task created after explicit user continuation authorization",
+    "Phase398 SCENE_FIELD_AUTHOR_PACKET_V1 design and schema frozen/audited; story-specific packet build is next and prose remains unauthorized",
+    "Phase398 NS02 scene-field author packet created as a genuinely new old-photo-studio story",
+    "Phase398 NS02 first packet audit blocked five writer-visible experiment-history leaks and preserved the failure",
+    "Phase398 NS02 packet repaired by removing prior-story/evaluator metadata from writer-visible context",
+    "Phase398 NS02 final immutable audit PASS: no sequence fields, no numeric sequence keys, no writer-visible experiment leakage",
+    "Phase398 architecture and NS02 packet-build task closed without prose generation",
+    "Phase399 single-A1 validation task created after explicit user authorization",
+    "Phase399 writer-visible entry frozen from immutable NS02 scene-field packet projection",
+    "Phase399 writer-entry isolation audit PASS; no historical diagnostic leakage",
+    "Phase399 exactly one isolated NS02 A1 fresh-writer run executed; no retry occurred",
+    "Phase399 A1 writer output stored verbatim to inbox and frozen output with only GitHub terminal-LF normalization",
+    "Phase399 A1 hard source locks CLEAR",
+    "Phase399 A1 deterministic dialogue BLOCK: 21 of 43 dialogue runs triggered structural blocker",
+    "Phase399 A1 semantic mechanical-dialogue BLOCK",
+    "Phase399 A1 anti-storyboard/immersion BLOCK: 631 of 658 paragraphs are one sentence or less",
+    "Phase399 A1 writer-output contract BLOCK: three non-prose editorial suggestion lines preserved verbatim",
+    "Phase399 A1 rejected whole and single-attempt budget exhausted without actual-human delivery",
+    "Phase400 successor task created after explicit user authorization",
+    "Phase400 output-surface contrast profile completed; paragraph shortness rejected as primary separator",
+    "Phase400 causal diagnosis selected FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "Phase400 successor execution schema FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 committed and audited PASS",
+    "Phase400 architecture-ready receipt committed with no prose-transfer claim",
+    "Phase400 closed as architecture-design complete without fiction generation or Phase401 creation",
+    "Phase401 successor validation task created after explicit user authorization",
+    "Phase401 Lin Qiao local-view projection built from immutable NS02",
+    "Phase401 first readiness audit blocked coordinator control metadata leakage and repair was applied",
+    "Phase401 repaired local-view and runner final readiness audit PASS",
+    "Phase401 exactly one isolated Lin Qiao local-horizon A1 executed; no retry or parallel candidate",
+    "Phase401 A1 stored and frozen verbatim with only GitHub terminal-LF normalization",
+    "Phase401 source fidelity CLEAR under focal-opacity constraints",
+    "Phase401 deterministic dialogue trigger ratio reduced from Phase399 21/43 to 2/12 but remained BLOCK",
+    "Phase401 semantic mechanical dialogue remained BLOCK",
+    "Phase401 hidden global-optimization diagnostic remained BLOCK",
+    "Phase401 output contract failed due title-like label and three editorial suggestion lines",
+    "Phase401 candidate rejected whole without actual-human review; attempt budget exhausted",
+    "Phase402 successor task created after explicit user authorization",
+    "Phase402 residual causal diagnosis completed",
+    "Phase402 ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema frozen",
+    "Phase402 single-A1 validation contract frozen as non-task artifact",
+    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase402 non-focal actor commitments frozen and audit-safe",
+    "Phase402 deferred-attribution focal view frozen with one raw uninterpreted memory fragment",
+    "Phase402 A1 runner frozen with hidden-diagnostic leakage zero",
+    "Phase402 A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase402 exactly one isolated A1 executed; no retry or parallel candidate",
+    "Phase402 A1 stored and frozen verbatim with GitHub terminal-LF normalization only",
+    "Phase402 source fidelity CLEAR",
+    "Phase402 writer output contract CLEAR",
+    "Phase402 deterministic dialogue CLEAR: 0/10 blocked runs",
+    "Phase402 semantic mechanical dialogue CLEAR",
+    "Phase402 hidden global-optimization diagnostic NO_BLOCK",
+    "Phase402 response-ownership residual NO_BLOCK",
+    "Phase402 interpretation-liquidity residual NO_BLOCK",
+    "Phase402 A1 authorized for actual-human literary review without model quality claim",
+    "Phase402 actual-human review completed and persisted verbatim",
+    "Phase402 human verdict: no immersion, general/low emotion, no suspense, no forward desire",
+    "Phase402 human verdict: AI smell materially lighter than prior attempts",
+    "Phase402 earliest boredom point located at display-cabinet description; human reason: introduction feels very slow and boring",
+    "Phase402 closed as human-rejected despite all required hidden gates CLEAR",
+    "Phase403 successor task created after explicit user authorization",
+    "Phase403 actual-human Phase402 rejection preserved as authoritative causal evidence",
+    "Phase403 reader-drive causal diagnosis completed",
+    "Phase403 LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 schema frozen",
+    "Phase403 single-A1 validation contract frozen as same-task non-task artifact",
+    "Phase403 reader-drive architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase403 live-vector/selective-salience writer-visible view frozen and audited",
+    "Phase403 single A1 runner frozen with exact embedded projection",
+    "Phase403 A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase403 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase403 A1 stored and frozen verbatim including title-like label and three editorial suggestion lines",
+    "Phase403 source fidelity CLEAR",
+    "Phase403 deterministic dialogue CLEAR",
+    "Phase403 semantic mechanical dialogue CLEAR",
+    "Phase403 hidden global optimization NO_BLOCK",
+    "Phase403 response-ownership residual NO_BLOCK",
+    "Phase403 interpretation-liquidity residual NO_BLOCK",
+    "Phase403 reader-drive entry-state CLEAR",
+    "Phase403 neutral-salience flooding NO_BLOCK",
+    "Phase403 focal personal-cost visibility CLEAR",
+    "Phase403 live open-outcome visibility CLEAR",
+    "Phase403 writer-output contract BLOCK; candidate rejected whole and human review not authorized",
+    "Phase404 successor task created after explicit user authorization",
+    "Phase404 output-contract causal diagnosis completed with Phase402 clean counterexample",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 schema frozen",
+    "Phase404 single-A1 validation contract frozen as same-task non-task artifact",
+    "Phase404 output-boundary architecture audit PASS; exactly one A1 runner preparation allowed",
+    "Phase404 frozen runner built with unchanged Phase403 payload",
+    "Phase404 first readiness audit blocked artifact-label term and repaired wrapper",
+    "Phase404 final A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase404 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase404 A1 stored and frozen verbatim",
+    "Phase404 writer-output contract CLEAR: no leading label, no trailing editorial material, no second section",
+    "Phase404 source fidelity CLEAR",
+    "Phase404 deterministic dialogue CLEAR",
+    "Phase404 semantic mechanical dialogue BLOCK on a procedural shared-agenda chain",
+    "Phase404 hidden global optimization BLOCK due recurring inference-closure cadence",
+    "Phase404 response-ownership residual BLOCK",
+    "Phase404 reader-drive entry state CLEAR",
+    "Phase404 neutral-salience flooding NO_BLOCK",
+    "Phase404 focal personal-cost visibility CLEAR",
+    "Phase404 live open-outcome visibility CLEAR",
+    "Phase404 candidate rejected whole; human review not authorized"
+  ],
+  "phase398_state": {
+    "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
+    "task_contract": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+    "design_doc": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+    "schema": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
+    "design_ready_receipt": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
+    "target_representation": "SCENE_FIELD_AUTHOR_PACKET_V1",
+    "ns02_packet": {
+      "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+      "immutable_commit": "51e9ae1bde9a2873e7f0933dc58ae87ddfb197f7",
+      "audit_receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+      "first_audit": "BLOCK_WRITER_VISIBLE_EXPERIMENT_LEAKAGE",
+      "final_audit": "PASS"
+    },
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase398_settlement": {
+    "status": "CLOSED_NS02_SCENE_FIELD_PACKET_AUDITED_AND_FROZEN_NO_PROSE",
+    "receipt": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+    "packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "packet_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "first_audit": "BLOCK_WRITER_VISIBLE_EXPERIMENT_LEAKAGE",
+    "repair_applied": true,
+    "final_audit": "PASS",
+    "writer_visible_sequence_leakage": false,
+    "writer_visible_experiment_leakage": false,
+    "fresh_writer_authorized": false,
+    "prose_generation_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase399_state": {
+    "status": "CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+    "source_packet": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+    "source_packet_sha256": "f2bfb9982ba28562fdf264a0df215722c7d53b6ea00bb7b5f9a80e099c5159f3",
+    "writer_entry": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+    "writer_entry_sha256": "6431a2785359e70c71196cd2dde4a461419c6427174654e654da44d53612f26a",
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "inbox": {
+      "path": "state/inbox/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "sha256": "27ddbd103b77f04142f53b89cc336b6956452e48acb11be8a234c9af12f92ffe"
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "sha256": "27ddbd103b77f04142f53b89cc336b6956452e48acb11be8a234c9af12f92ffe"
+    },
+    "writer_chat_sha256": "bebdd2aaa7de4ead828706b432bf65803b0b30c2b76283f1226b415de4a15d0d",
+    "source_fidelity": "CLEAR_HARD_LOCKS",
+    "writer_output_contract": "BLOCK",
+    "deterministic_dialogue": "BLOCK",
+    "semantic_dialogue": "BLOCK",
+    "anti_storyboard_immersion": "BLOCK",
+    "post_generation_receipt": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+    "candidate_rejected_whole": true,
+    "actual_human_review_performed": false,
+    "user_delivery_authorized": false,
+    "drive_upload_authorized": false,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "phase400_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase400_state": {
+    "status": "CLOSED_ARCHITECTURE_DESIGN_READY_NO_PROSE_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+    "contrast_profile": {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "sha256": "050bc50c8d3dcd2f1eef3250a4f0da0eb1e5a797cedd273320625cb0348b8a32",
+      "status": "COMPLETE"
+    },
+    "causal_diagnosis": {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "sha256": "aca3f709bd9b4411661eb2fdf0c795a9ecec77c29334c9e33b3c46fc413f272a",
+      "status": "COMPLETE"
+    },
+    "successor_execution_schema": {
+      "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+      "sha256": "5798b5585edf75157ee6d74445e061503988cf1de4438212055485b556e09aaa",
+      "schema_id": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+      "audit": "PASS"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+      "status": "READY_ARCHITECTURE_ONLY_NO_PROSE"
+    },
+    "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "prose_transfer_tested": false,
+    "mechanical_dialogue_solved_claim": false,
+    "ai_smell_reduced_claim": false,
+    "narrative_transportation_improved_claim": false,
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "phase401_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase400_settlement": {
+    "status": "CLOSED_ARCHITECTURE_READY_NO_PROSE_TRANSFER_CLAIM",
+    "receipt": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+    "selected_architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "contrast_result": "PARAGRAPH_SHORTNESS_NOT_PRIMARY_SEPARATOR_DIALOGUE_GEOMETRY_IS_STRONG_SEPARATOR",
+    "writer_visibility_partitioned": true,
+    "non_focal_private_state_hidden": true,
+    "terminal_world_state_hidden": true,
+    "whole_scene_completion_removed": true,
+    "local_horizon_only": true,
+    "evaluator_firewall_intact": true,
+    "prose_generated": false,
+    "prospective_prose_test_performed": false,
+    "phase401_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase401_state": {
+    "status": "CLOSED_A1_BLOCKED_ATTEMPT_EXHAUSTED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+    "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "local_view": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+    "local_view_sha256": "93fd581e41090a70ccd06da7b102781094ae3dc37821e8ec640aaee5b70918a6",
+    "writer_entry": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+    "writer_entry_sha256": "978e8fef970cc5756ad02b7104d4cac8cf234954f7a1ef6b0e6adeff8d6b7eb6",
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "inbox": {
+      "path": "state/inbox/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b"
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "sha256": "7d55e56f356aa7ba41a14054f5a73155c07b441e9ea2f267872cdd36b93dc94b"
+    },
+    "writer_chat_sha256": "8991c4d5a9d48bba1ad740252123dc1233e27af65fe15a235cf0d0cdaee0705e",
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "BLOCK",
+    "deterministic_dialogue": "BLOCK",
+    "deterministic_phase399_baseline": "21/43",
+    "deterministic_phase401": "2/12",
+    "semantic_dialogue": "BLOCK",
+    "hidden_global_optimization": "BLOCK",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "causal_validation": "PARTIAL_DIRECTIONAL_REDUCTION_NOT_VALIDATED",
+    "settlement_receipt": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "candidate_rejected_whole": true,
+    "actual_human_review_performed": false,
+    "user_delivery_authorized": false,
+    "best_of_n_used": false,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window_authorized": false,
+    "phase402_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase401_settlement": {
+    "status": "CLOSED_PARTIAL_DIRECTIONAL_IMPROVEMENT_NOT_VALIDATED",
+    "receipt": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "architecture": "FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1",
+    "deterministic_blocked_run_ratio_phase399": 0.4884,
+    "deterministic_blocked_run_ratio_phase401": 0.1667,
+    "deterministic_ratio_absolute_change": -0.3217,
+    "semantic_dialogue_still_blocked": true,
+    "hidden_global_optimization_still_blocked": true,
+    "output_contract_still_blocked": true,
+    "architecture_globally_validated": false,
+    "prose_quality_claim": false,
+    "actual_human_review_performed": false,
+    "phase402_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase402_state": {
+    "status": "CLOSED_ACTUAL_HUMAN_REJECTED_AI_SMELL_IMPROVED_LOW_IMMERSION_NO_FORWARD_DESIRE",
+    "task_contract": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
+    "residual_diagnosis": {
+      "path": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json",
+      "schema_id": "ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN_PENDING_A1_INPUT_READINESS"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "actor_commitments": {
+      "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+      "sha256": "8ef062b37c154ce789eddc1247c81f4e291c03455bf4fcafe87711a4e5dfe469",
+      "status": "FROZEN_PASS"
+    },
+    "local_view": {
+      "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+      "sha256": "b9fcad69ef1c725f8beed932839aa4cbcd4d7d679f178a7e8f6e386ffdbfa742",
+      "status": "FROZEN_PASS"
+    },
+    "writer_entry": {
+      "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+      "sha256": "1eecd9f588268882e67b49bc67209d79c9989c204b9469475d96b73c82be185e",
+      "status": "FROZEN_PASS"
+    },
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "phase403_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "user_delivery_authorized": true,
+    "candidate_inbox": {
+      "path": "state/inbox/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+      "sha256": "0a14dd066694dc65bcffad7c1f46c922fed59f923eb14e6763c04f287f72d564"
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+      "sha256": "0a14dd066694dc65bcffad7c1f46c922fed59f923eb14e6763c04f287f72d564"
+    },
+    "writer_chat_sha256": "91551c82b68d09879405d4ce8ff8df845460d2c1056e223ce1207ef747e51fe7",
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "actual_human_review_authorized": true,
+    "actual_human_review_performed": true,
+    "settlement_receipt": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+    "actual_human_review_result": "REJECT",
+    "human_review_receipt": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "literary_acceptance": false,
+    "immersion": "FAIL",
+    "emotion": "GENERAL_LOW",
+    "ai_smell": "MUCH_LIGHTER_THAN_BEFORE",
+    "suspense": "ABSENT",
+    "desire_to_continue": false,
+    "first_stop_quote": "玻璃后面还插着几张褪色的样片，边角已经翘起来。下层柜门里堆着空相框和一卷背景布。她拉开柜门检查了一遍，没有看见文件。",
+    "first_stop_reason": "因为一整个介绍真的很慢。感觉很无聊",
+    "hidden_gates": "CLEAR",
+    "automatic_second_window_authorized": false
+  },
+  "phase402_settlement": {
+    "status": "CLOSED_HUMAN_REJECTED_AFTER_HIDDEN_GATES_CLEAR",
+    "hidden_gates": "CLEAR",
+    "human_review": "REJECT",
+    "ai_smell_direction": "POSITIVE_SIGNAL",
+    "immersion_transfer": "FAIL",
+    "suspense_transfer": "FAIL",
+    "forward_desire": "FAIL",
+    "emotion": "INSUFFICIENT",
+    "architecture_globally_validated": false,
+    "phase403_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "human_review_receipt": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json"
+  },
+  "phase403_state": {
+    "status": "CLOSED_A1_BLOCKED_OUTPUT_CONTRACT_ATTEMPT_EXHAUSTED_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+      "schema_id": "LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+      "status": "FROZEN_PASS"
+    },
+    "writer_entry": {
+      "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+      "sha256": "4dd178c3323767dc92dee254bd6c15d0f307e5c3c1f38dbac025fed13c228b9e",
+      "status": "FROZEN_PASS"
+    },
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "phase404_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "user_delivery_authorized": false,
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "writer_chat_chars": 2153,
+    "writer_chat_sha256": "7ccb2b47c7a45adee4d0f4a01a823ca4f66cbb8d1d1c195f59a492d9e0bc44e1",
+    "inbox": {
+      "path": "state/inbox/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "BLOCK",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "CLEAR",
+    "live_open_outcome_visibility": "CLEAR",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "actual_human_review_performed": false
+  },
+  "phase403_settlement": {
+    "status": "CLOSED_HIDDEN_READER_DRIVE_SIGNAL_POSITIVE_OUTPUT_CONTRACT_BLOCK",
+    "receipt": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+    "hidden_reader_drive_gates": "CLEAR_OR_NO_BLOCK",
+    "writer_output_contract": "BLOCK",
+    "actual_human_review_performed": false,
+    "architecture_human_validated": false,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "second_window_authorized": false,
+    "phase404_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase404_state": {
+    "status": "CLOSED_A1_BLOCKED_OTHER_HIDDEN_GATES_OUTPUT_BOUNDARY_FIXED_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "response_schema": {
+      "path": "state/author_packets/PHASE404_PROSE_BODY_ONLY_RESPONSE_SCHEMA_V1.json",
+      "schema_id": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE404_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "controlled_writer_view": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+      "reuse_without_modification": true
+    },
+    "writer_entry": {
+      "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+      "sha256": "a70fdef75ddd535c16b32fa30e8599816713e2df1598e989bac5c196546b80d8",
+      "status": "FROZEN_PASS"
+    },
+    "prose_generation_authorized": true,
+    "fresh_writer_authorized": true,
+    "phase405_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "controlled_payload": {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "sha256": "d81f5bb3fe35e392a81830589d6a7f256951027cfa0e1a58b469773e53602db7",
+      "status": "FROZEN_CONTROL"
+    },
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "candidate_stored": false,
+    "candidate_frozen": false,
+    "user_delivery_authorized": false,
+    "architecture": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "writer_chat_chars": 2433,
+    "writer_chat_sha256": "ad9f17db95be0bd523d2c5677212fe969f7a1033774d7e61fb047e6ae2d71a98",
+    "inbox": {
+      "path": "state/inbox/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "BLOCK",
+    "hidden_global_optimization": "BLOCK",
+    "response_ownership_residual": "BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK_WITH_SINGLE_LOCATED_CLOSURE",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "CLEAR",
+    "live_open_outcome_visibility": "CLEAR",
+    "paragraph_shortness": "DIAGNOSTIC_ONLY",
+    "output_boundary_hypothesis": "SUPPORTED_SINGLE_RUN",
+    "actual_human_review_performed": false,
+    "automatic_second_window_authorized": false
+  },
+  "phase404_settlement": {
+    "status": "CLOSED_OUTPUT_BOUNDARY_FIXED_OTHER_HIDDEN_GATES_REGRESSED",
+    "receipt": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
+    "output_contract": "CLEAR",
+    "output_boundary_signal": "POSITIVE_SINGLE_RUN",
+    "semantic_dialogue": "BLOCK",
+    "hidden_global_optimization": "BLOCK",
+    "response_ownership_residual": "BLOCK",
+    "actual_human_review_performed": false,
+    "architecture_human_validated": false,
+    "phase405_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase405_state": {
+    "status": "CLOSED_A1_BLOCKED_PERSONAL_COST_VISIBILITY_TARGET_STABILITY_SIGNAL_POSITIVE_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE405_CROSS_RUN_STABILITY_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE405_CAUSAL_OWNERSHIP_COMPILED_WRITER_SCHEMA_V1.json",
+      "schema_id": "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE405_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE405_STABILITY_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "phase404_response_transaction_changed": false,
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "actual_human_review_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE405_NS02_LINQIAO_COMPILED_CAUSAL_VIEW_A1.json",
+      "status": "FROZEN_PASS"
+    },
+    "writer_entry": {
+      "path": "delivery/phase405/RUN_NS02_LINQIAO_CAUSAL_OWNERSHIP_A1.txt",
+      "status": "FROZEN_PASS"
+    },
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE405_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "inbox": {
+      "path": "state/inbox/PHASE405_NS02_CAUSAL_OWNERSHIP_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE405_NS02_CAUSAL_OWNERSHIP_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE405_NS02_A1_POST_GENERATION_STABILITY_SETTLEMENT_V1.json",
+    "writer_chat_chars": 1201,
+    "writer_chat_sha256": "fe761a34553eebf18cc190fa511b4e8eb7a92d6930c3ad0cb6bb75dc294deff4",
+    "source_fidelity": "CLEAR",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "BLOCK",
+    "live_open_outcome_visibility": "CLEAR",
+    "bounded_next_fresh_run_stability_signal": "POSITIVE_FOR_TARGETED_THREE_FAMILIES",
+    "actual_human_review_performed": false,
+    "phase406_authorized": false
+  },
+  "phase405_settlement": {
+    "status": "CLOSED_REQUIRED_GATE_BLOCK",
+    "receipt": "state/review_receipts/PHASE405_NS02_A1_POST_GENERATION_STABILITY_SETTLEMENT_V1.json",
+    "targeted_stability_signal": "POSITIVE_SINGLE_NEXT_FRESH_RUN",
+    "semantic_dialogue": "CLEAR",
+    "response_ownership_residual": "NO_BLOCK",
+    "hidden_global_optimization": "NO_BLOCK",
+    "focal_personal_cost_visibility": "BLOCK",
+    "actual_human_review_performed": false,
+    "architecture_globally_validated": false,
+    "phase406_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase406_state": {
+    "status": "CLOSED_A1_BLOCKED_SOURCE_IDENTITY_PERSONAL_COST_SIGNAL_POSITIVE_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE406_PERSONAL_COST_VISIBILITY_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE406_FOCAL_COST_CARRIER_SCHEMA_V1.json",
+      "schema_id": "FOCAL_COST_CARRIER_EVENT_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE406_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE406_COST_CARRIER_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "phase404_response_transaction": "PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1",
+    "phase404_response_transaction_changed": false,
+    "inherited_phase405_targeted_stability_signal": "BOUNDED_POSITIVE_SINGLE_RUN",
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "actual_human_review_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE406_NS02_LINQIAO_COST_CARRIER_VIEW_A1.json",
+      "status": "FROZEN_PASS"
+    },
+    "writer_entry": {
+      "path": "delivery/phase406/RUN_NS02_LINQIAO_COST_CARRIER_A1.txt",
+      "status": "FROZEN_PASS"
+    },
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE406_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "inbox": {
+      "path": "state/inbox/PHASE406_NS02_COST_CARRIER_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE406_NS02_COST_CARRIER_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json",
+    "writer_chat_chars": 870,
+    "writer_chat_sha256": "d79b84ded4a08fead12d453b31aab0c6f31bb201f138a54efea119078cf80a74",
+    "source_fidelity": "BLOCK_IDENTITY",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "CLEAR",
+    "live_open_outcome_visibility": "CLEAR",
+    "bounded_cost_carrier_signal": "POSITIVE_SINGLE_RUN",
+    "actual_human_review_performed": false,
+    "phase407_authorized": false
+  },
+  "phase406_settlement": {
+    "status": "CLOSED_REQUIRED_GATE_BLOCK",
+    "receipt": "state/review_receipts/PHASE406_NS02_A1_POST_GENERATION_COST_CARRIER_SETTLEMENT_V1.json",
+    "focal_personal_cost_visibility": "CLEAR",
+    "targeted_anti_regression_signal": "POSITIVE_SINGLE_RUN",
+    "source_fidelity": "BLOCK_IDENTITY",
+    "actual_human_review_performed": false,
+    "architecture_globally_validated": false,
+    "phase407_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase407_state": {
+    "status": "CLOSED_ACTUAL_HUMAN_REJECTED_NO_SUCCESSOR_AUTHORIZED",
+    "task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE407_HARD_IDENTITY_CAUSAL_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "architecture_schema": {
+      "path": "state/author_packets/PHASE407_HARD_IDENTITY_LITERAL_SCHEMA_V1.json",
+      "schema_id": "HARD_IDENTITY_LITERAL_BINDING_V1",
+      "status": "COMPLETE"
+    },
+    "validation_contract": {
+      "path": "state/tasks/PHASE407_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE407_IDENTITY_ARCHITECTURE_READY_V1.json",
+      "status": "PASS"
+    },
+    "inherited_phase406_cost_carrier": "UNCHANGED",
+    "inherited_phase405_targeted_families": "PRESERVE_REQUIRED",
+    "phase404_response_transaction": "UNCHANGED",
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "attempt": "A1",
+    "attempt_budget": 1,
+    "best_of_n": false,
+    "parallel_candidates": 1,
+    "automatic_retry_authorized": false,
+    "A2_authorized": false,
+    "automatic_second_window": false,
+    "actual_human_review_authorized": false,
+    "accepted_checkpoint_advance": false,
+    "writer_visible_projection": {
+      "path": "state/author_packets/PHASE407_NS02_LINQIAO_HARD_IDENTITY_VIEW_A1.json",
+      "status": "FROZEN_PASS"
+    },
+    "writer_entry": {
+      "path": "delivery/phase407/RUN_NS02_LINQIAO_HARD_IDENTITY_A1.txt",
+      "status": "FROZEN_PASS"
+    },
+    "readiness_receipt": {
+      "path": "state/review_receipts/PHASE407_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "status": "PASS"
+    },
+    "attempts_used": 1,
+    "attempt_exhausted": true,
+    "candidate_stored": true,
+    "candidate_frozen": true,
+    "inbox": {
+      "path": "state/inbox/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "frozen": {
+      "path": "state/frozen_outputs/PHASE407_NS02_HARD_IDENTITY_CANDIDATE_A1.txt",
+      "exact_writer_output": true
+    },
+    "post_generation_settlement": "state/review_receipts/PHASE407_NS02_A1_POST_GENERATION_IDENTITY_SETTLEMENT_V1.json",
+    "writer_chat_chars": 963,
+    "writer_chat_sha256": "180dbb61d571186c5c3b84edaad291519477cbc84dc8b08c127520056dbee844",
+    "source_fidelity": "CLEAR",
+    "hard_identity_literal_fidelity": "CLEAR",
+    "writer_output_contract": "CLEAR",
+    "deterministic_dialogue": "CLEAR",
+    "semantic_dialogue": "CLEAR",
+    "hidden_global_optimization": "NO_BLOCK",
+    "response_ownership_residual": "NO_BLOCK",
+    "interpretation_liquidity_residual": "NO_BLOCK",
+    "reader_drive_entry_state": "CLEAR",
+    "neutral_salience_flooding": "NO_BLOCK",
+    "focal_personal_cost_visibility": "CLEAR",
+    "live_open_outcome_visibility": "CLEAR",
+    "actual_human_review_performed": true,
+    "phase408_authorized": false,
+    "actual_human_review_receipt": "state/review_receipts/PHASE407_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "actual_human_result": {
+      "overall": "REJECT",
+      "immersion": "FAIL_COMPLETE",
+      "emotion": "FAIL_NONE",
+      "suspense": "FAIL_NONE",
+      "ai_smell": "NOT_EXPLICITLY_RATED",
+      "premise_hypothesis": "USER_SUSPECTS_TOPIC_OR_SCENE_PROBLEM"
+    }
+  },
+  "phase407_settlement": {
+    "status": "CLOSED_ACTUAL_HUMAN_REJECTED",
+    "hidden_gates": "ALL_CLEAR_OR_NO_BLOCK",
+    "hard_identity_literal_fidelity": "CLEAR",
+    "focal_personal_cost_visibility": "CLEAR",
+    "human_review": "REJECT",
+    "human_receipt": "state/review_receipts/PHASE407_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+    "phase408_authorized": false,
+    "accepted_checkpoint_advance": false
+  },
+  "phase408_state": {
+    "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH2",
+    "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
+    "diagnosis": {
+      "path": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "premise_pack": {
+      "path": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
+      "status": "FROZEN"
+    },
+    "selection_contract": {
+      "path": "state/tasks/PHASE408_PREMISE_SELECTION_CONTRACT_V1.json",
+      "status": "FROZEN"
+    },
+    "architecture_ready_receipt": {
+      "path": "state/review_receipts/PHASE408_PREMISE_ENGINE_READY_V1.json",
+      "status": "PASS"
+    },
+    "prose_generation_authorized": false,
+    "fresh_writer_authorized": false,
+    "human_premise_review_authorized": true,
+    "accepted_checkpoint_advance": false,
+    "premise_audit": {
+      "path": "state/calibration/PHASE408_PREMISE_AUDIT_V1.json",
+      "status": "COMPLETE_MAJORITY_FAIL"
+    },
+    "original_premise_pack": {
+      "path": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
+      "status": "ALL_WITHDRAWN_FROM_SELECTION"
+    },
+    "retained_candidates": [
+      "RJ-OE408-F"
+    ],
+    "rejected_candidates": [
+      "P408-A",
+      "P408-B",
+      "P408-D",
+      "P408-F"
+    ],
+    "new_generation_contract": {
+      "path": "state/tasks/PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1.json",
+      "status": "EXECUTED_BATCH2"
+    },
+    "phase409_authorized": false,
+    "strict_original_audit": {
+      "path": "state/calibration/PHASE408_PREMISE_AUDIT_V2_STRICT_V1.json",
+      "status": "COMPLETE_ALL_FAIL"
+    },
+    "rejected_original_candidates": [
+      "P408-A",
+      "P408-B",
+      "P408-C",
+      "P408-D",
+      "P408-E",
+      "P408-F"
+    ],
+    "batch2_internal_audit": {
+      "path": "state/calibration/PHASE408_PREMISE_BATCH2_INTERNAL_AUDIT_V1.json",
+      "status": "COMPLETE"
+    },
+    "batch2_survivor_pack": {
+      "path": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V2.json",
+      "status": "WITHDRAWN_NO_SURVIVORS"
+    },
+    "batch2_issue_template_audit": {
+      "path": "state/calibration/PHASE408_BATCH2_ISSUE_TEMPLATE_AUDIT_V1.json",
+      "status": "COMPLETE_ALL_FAIL"
+    },
+    "rejected_batch2_candidates": [
+      "P408-G",
+      "P408-H",
+      "P408-I",
+      "P408-J"
+    ],
+    "character_specific_premise_contract": {
+      "path": "state/tasks/PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2.json",
+      "status": "EXECUTED_BATCH3"
+    },
+    "batch3_internal_audit": {
+      "path": "state/calibration/PHASE408_BATCH3_CHARACTER_SPECIFIC_INTERNAL_AUDIT_V1.json",
+      "status": "COMPLETE"
+    },
+    "batch3_survivor_pack": {
+      "path": "state/calibration/PHASE408_PREMISE_SURVIVOR_PACK_V3.json",
+      "status": "READY_FOR_HUMAN_SELECTION"
+    },
+    "rejected_batch3_candidates": [
+      "P408-N"
+    ],
+    "batch3_actual_human_review": {
+      "path": "state/review_receipts/PHASE408_BATCH3_ACTUAL_HUMAN_REJECTION_V1.json",
+      "status": "REJECT_ALL"
+    },
+    "current_fast_webnovel_research": {
+      "path": "state/calibration/PHASE408_CURRENT_FAST_WEBNOVEL_OPENING_RESEARCH_V1.json",
+      "status": "COMPLETE"
+    },
+    "opening_event_engine_contract": {
+      "path": "state/tasks/PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1.json",
+      "status": "EXECUTED_BATCH1"
+    },
+    "batch3_minimal_reviewer_attack": {
+      "path": "state/calibration/PHASE408_BATCH3_MINIMAL_REVIEWER_ATTACK_V1.json",
+      "status": "COMPLETE_ALL_FAIL"
+    },
+    "opening_engine_batch1_internal_audit": {
+      "path": "state/calibration/PHASE408_OPENING_ENGINE_BATCH1_INTERNAL_AUDIT_V1.json",
+      "status": "COMPLETE"
+    },
+    "opening_engine_survivor_pack": {
+      "path": "state/calibration/PHASE408_OPENING_ENGINE_SURVIVOR_PACK_V1.json",
+      "status": "READY_FOR_HUMAN_SELECTION"
+    },
+    "opening_engine_selection_contract": {
+      "path": "state/tasks/PHASE408_OPENING_ENGINE_SELECTION_CONTRACT_V1.json",
+      "status": "ACTIVE"
+    },
+    "rejected_opening_engine_candidates": [
+      "OE408-D"
+    ],
+    "actual_human_opening_engine_batch1_receipt": {
+      "path": "state/review_receipts/PHASE408_OPENING_ENGINE_BATCH1_ACTUAL_HUMAN_REJECTION_V1.json",
+      "status": "REJECT_ALL_NO_DESIRE"
+    },
+    "event_engine_vs_reader_desire_diagnosis": {
+      "path": "state/calibration/PHASE408_EVENT_ENGINE_VS_READER_DESIRE_DIAGNOSIS_V1.json",
+      "status": "COMPLETE"
+    },
+    "protagonist_reader_magnet_contract": {
+      "path": "state/tasks/PHASE408_PROTAGONIST_READER_MAGNET_CONTRACT_V1.json",
+      "status": "EXECUTED_BATCH1"
+    },
+    "protagonist_reader_magnet_batch1_audit": {
+      "path": "state/calibration/PHASE408_PROTAGONIST_READER_MAGNET_BATCH1_AUDIT_V1.json",
+      "status": "COMPLETE"
+    },
+    "protagonist_reader_magnet_survivor_pack": {
+      "path": "state/calibration/PHASE408_PROTAGONIST_MAGNET_SURVIVOR_PACK_V2.json",
+      "status": "ZERO_SURVIVORS"
+    },
+    "recovery_status": "PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED",
+    "rejected_magnet_candidates": [
+      "PRM408-D"
+    ],
+    "protagonist_magnet_anti_overexplained_audit": {
+      "path": "state/calibration/PHASE408_PROTAGONIST_MAGNET_ANTI_OVEREXPLAINED_PSYCHOLOGY_AUDIT_V1.json",
+      "status": "COMPLETE_ZERO_SURVIVORS"
+    },
+    "protagonist_behavioral_magnet_v2_contract": {
+      "path": "state/tasks/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_CONTRACT.json",
+      "status": "EXECUTED_BATCH1"
+    },
+    "protagonist_behavioral_magnet_v2_batch1_audit": {
+      "path": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_BATCH1_AUDIT.json",
+      "status": "COMPLETE"
+    },
+    "protagonist_behavioral_magnet_v2_survivor_pack": {
+      "path": "state/calibration/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_SURVIVOR_PACK.json",
+      "status": "READY_FOR_HUMAN_REVIEW"
+    },
+    "rejected_behavioral_magnet_candidates": [
+      "PBM408-D"
+    ],
+    "actual_human_behavioral_magnet_v2_receipt": {
+      "path": "state/review_receipts/PHASE408_PROTAGONIST_BEHAVIORAL_MAGNET_V2_ACTUAL_HUMAN_REVIEW_V1.json",
+      "status": "ONE_HUMAN_POSITIVE_SURVIVOR"
+    },
+    "downgraded_nonpositive_candidates": [
+      "PBM408-A",
+      "PBM408-B"
+    ],
+    "rojun_protagonist_bound_opening_event_contract": {
+      "path": "state/tasks/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_CONTRACT_V1.json",
+      "status": "EXECUTED_BATCH1"
+    },
+    "rojun_protagonist_bound_opening_event_batch1_audit": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH1_AUDIT_V1.json",
+      "status": "COMPLETE_ONE_SURVIVOR"
+    },
+    "rojun_protagonist_bound_opening_event_survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_SURVIVOR_PACK_V1.json",
+      "status": "READY_FOR_HUMAN_REVIEW"
+    },
+    "rejected_rojun_opening_event_candidates": [
+      "RJ-OE408-A",
+      "RJ-OE408-C",
+      "RJ-OE408-D",
+      "RJ-OE408-B",
+      "RJ-OE408-E",
+      "RJ-OE408-G",
+      "RJ-OE408-H"
+    ],
+    "actual_human_rojun_opening_event_batch1_verdict": {
+      "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+      "status": "REJECT_CANDIDATE_CLOSED",
+      "candidate": "RJ-OE408-B",
+      "human_gate_pending": false
+    },
+    "rojun_protagonist_bound_opening_event_batch2_task": {
+      "path": "tasks/2026-09-28-phase408-rojun-opening-event-batch2-after-human-reject-01.json",
+      "status": "COMPLETED_ONE_SURVIVOR_STOP_AT_ACTUAL_HUMAN_GATE"
+    },
+    "rojun_protagonist_bound_opening_event_batch2_audit": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_AUDIT_V1.json",
+      "status": "COMPLETE_ONE_SURVIVOR"
+    },
+    "rojun_protagonist_bound_opening_event_batch2_survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_SURVIVOR_PACK_V1.json",
+      "status": "ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW",
+      "candidate": "RJ-OE408-F"
+    },
+    "rojun_protagonist_bound_opening_event_batch2_ready_receipt": {
+      "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_READY_V1.json",
+      "status": "PASS_ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW_NO_PROSE"
+    },
+    "rojun_protagonist_bound_opening_event_batch2_review_card": {
+      "path": "delivery/phase408/RJ-OE408-F_HUMAN_REVIEW_CARD.md",
+      "status": "HUMAN_GATE_PENDING",
+      "candidate": "RJ-OE408-F"
+    },
+    "rj_oe408_b_human_gate_pending": false,
+    "current_human_gate": {
+      "candidate": "RJ-OE408-F",
+      "state": "PENDING",
+      "allowed_answers": [
+        "CONTINUE",
+        "REJECT"
+      ]
+    }
+  }
+}

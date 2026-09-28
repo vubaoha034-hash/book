@@ -1,0 +1,91 @@
+{
+  "schema_version": "novel-phase408-rojun-opening-event-batch2-task/v1",
+  "task_id": "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
+  "project_id": "novel-distillation",
+  "branch": "main",
+  "created_from_head": "ecc0b86c75c28735ad2758b427991557ff9855d9",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "chat_start_confirmation": {
+    "status": "CONFIRMED",
+    "observed_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6ab9b6f1-0e1c-83ea-beb4-2a5197ea6bad",
+    "project_breadcrumb_observed": "小说。",
+    "conversation_path_observed": true,
+    "active_processing_observed": true,
+    "active_processing_evidence": [
+      "sidebar status=处理中",
+      "composer button=停止"
+    ]
+  },
+  "authority": {
+    "expected_head": "ecc0b86c75c28735ad2758b427991557ff9855d9",
+    "frozen_contract_blob": "89c04b2225b07f786c68fd4bb0a16ca2ff511a95",
+    "frozen_batch1_audit_blob": "af734bb78f83263faa81f1cce68cbab0113013de",
+    "frozen_batch1_survivor_blob": "8b8106857cc915b271196e6bf5a56f5d0f1df3b1",
+    "frozen_batch1_ready_blob": "2c6e97028326774873a9f99bf400e914d61e5330",
+    "frozen_checkpoint114_blob": "d97650f25eee4c564c695fc94b9b1690196a3678",
+    "actual_human_reject": {
+      "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+      "blob": "76f48ac9f8b7d41115cceb037a2297b2ba40d2e7",
+      "verdict": "REJECT",
+      "user_verbatim": "《不能拿别人替自己脱罪》这种完全不想看一点感觉都没。"
+    }
+  },
+  "authorization": "User explicitly authorized one independent Phase408 candidate task after RJ-OE408-B rejection; this does not authorize Phase409.",
+  "scope": "Generate at most four new 罗钧 protagonist-bound opening-event engines, run six attacks, retain at most one survivor, create one human review card if and only if a survivor exists, then stop at actual-human gate.",
+  "generated_candidate_count": 4,
+  "candidate_ids": [
+    "RJ-OE408-E",
+    "RJ-OE408-F",
+    "RJ-OE408-G",
+    "RJ-OE408-H"
+  ],
+  "attack_set": [
+    "SWAP_PROTAGONIST",
+    "HUMAN_MESSINESS",
+    "AUTHOR_THESIS_DEPENDENCY",
+    "CONTINUATION_VALUE",
+    "IMMEDIATE_FELT_PULL",
+    "DECISION_PUZZLE_DEPENDENCY"
+  ],
+  "result": "ONE_SURVIVOR_STOP_AT_ACTUAL_HUMAN_GATE",
+  "survivor_count": 1,
+  "survivor": "RJ-OE408-F",
+  "artifacts": {
+    "audit": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_AUDIT_V1.json",
+      "git_blob": "31f87cef8c41a8175546b3b885bb009ff8d7df11"
+    },
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_SURVIVOR_PACK_V1.json",
+      "git_blob": "c5c88856bd4e13bba3444796c265916e2b9dbd54"
+    },
+    "review_card": {
+      "path": "delivery/phase408/RJ-OE408-F_HUMAN_REVIEW_CARD.md",
+      "git_blob": "c86900e01ea59f50fb4dfae6dea1d875c87af800"
+    },
+    "ready_receipt": {
+      "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_READY_V1.json",
+      "git_blob": "39e11d80a75adb7267e9defa771fd4f19afb5cdf"
+    }
+  },
+  "rj_oe408_b_human_gate_pending": false,
+  "current_human_gate": {
+    "candidate": "RJ-OE408-F",
+    "state": "PENDING",
+    "allowed_answers": [
+      "CONTINUE",
+      "REJECT"
+    ]
+  },
+  "prose_generated": false,
+  "phase409_entered": false,
+  "batch3_generated": false,
+  "status": "COMPLETED_ONE_SURVIVOR_STOP_AT_ACTUAL_HUMAN_GATE",
+  "next_legal_action": "WAIT_FOR_ACTUAL_HUMAN_CONTINUE_OR_REJECT_FOR_RJ_OE408_F_ONLY"
+}

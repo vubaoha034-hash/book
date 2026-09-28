@@ -1,0 +1,1127 @@
+{
+  "schema_version": "upcp-latest-checkpoint/v1",
+  "project_id": "novel-distillation",
+  "sequence": 115,
+  "recorded_at": "2026-09-28T00:38:00Z",
+  "task_model": "SINGLE_TASK",
+  "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
+  "highest_accepted_phase_ordinal": 320,
+  "active_task_ids": [
+    "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
+  ],
+  "current_focus": "Phase408 remains the sole active phase. RJ-OE408-B is closed by actual-human REJECT (“这种完全不想看一点感觉都没。”), so Batch1 HUMAN_GATE is no longer pending. The explicitly authorized Batch2 generated four new 罗钧-only opening-event engines and ran SWAP_PROTAGONIST / HUMAN_MESSINESS / AUTHOR_THESIS_DEPENDENCY / CONTINUATION_VALUE / IMMEDIATE_FELT_PULL / DECISION_PUZZLE_DEPENDENCY attacks. RJ-OE408-F is the sole machine survivor. No prose; no Phase409.",
+  "completed": [
+    "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
+    "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
+    "Phase374 activation-overconstraint diagnosis completed; RX direct generation OFF and passive validation ON",
+    "Phase375 passive validation executed on immutable Phase373 B baseline",
+    "Exactly one located defect selected: redundant author-summary sentence after the reader model was already explicit",
+    "Exactly one minimal repair produced; no new clue, mystery, countdown, motive withholding, or candidate stacking",
+    "Phase375 X/Y blind comparison pack produced and sealed mapping persisted",
+    "Phase320 remains highest accepted promotion checkpoint; GN-VDNA-01 remains DEFAULT OFF",
+    "Phase375 actual-human blind review completed",
+    "Phase375 X/Y mapping revealed after verdict: X=untouched baseline, Y=single-defect repair",
+    "Human judgment: near tie; forced preference Y",
+    "Phase375 passive-validator result classified WEAK_POSITIVE, not TRANSFER_SUPPORTED",
+    "No span growth authorized from Phase375",
+    "Phase376 replication task created",
+    "Phase320 remains highest accepted promotion checkpoint",
+    "Phase376 fresh natural short-fiction baseline created and frozen before passive validation",
+    "Phase376 passive RX validation executed only after baseline freeze",
+    "Exactly one located defect selected: redundant author inference immediately before concrete reveal",
+    "Exactly one deletion-only repair produced; all unrelated prose and story facts preserved",
+    "Phase376 X/Y blind comparison pack produced with mapping sealed",
+    "Phase376 human-review artifact stored as real text/plain in Drive folder 小说蒸馏_真人验收",
+    "Phase376 Attempt1 invalidated before human review for blinding contamination; no replication evidence counted",
+    "Phase376 Attempt2 fresh natural baseline created and frozen before passive validation",
+    "Phase376 Attempt2 passive validation executed only after baseline freeze",
+    "Exactly one minimal repair produced in Attempt2; repair detail sealed until verdict",
+    "Phase376 Attempt2 clean X/Y blind comparison pack produced with mapping sealed",
+    "Phase376 Attempt2 human-review artifact stored as real text/plain in Drive folder 小说蒸馏_真人验收",
+    "Phase376 Attempt2 actual-human blind review completed",
+    "Phase376 Attempt2 mapping revealed after verdict: X=single-defect repair, Y=untouched baseline",
+    "Human preferred Y baseline on multiple judgments",
+    "Both Phase376 Attempt2 versions judged heavy AI smell",
+    "Neither Phase376 Attempt2 version produced a skim/stop point",
+    "Phase375 weak-positive passive-validator signal failed clean replication",
+    "One-sentence deletion repair loop removed as primary repair path",
+    "Phase377 AI-smell root-cause contrastive audit task created",
+    "Phase377 re-opened Phase363 human-positive prose and Phase364 human-rejected long prose from private Drive",
+    "Phase377 re-read representative prose surface from all three verified source novels",
+    "Phase377 created a 10-entry contrastive AI-smell evidence matrix",
+    "Seven AI-smell signatures accepted as evidence-supported or supported amplifiers",
+    "Short-sentence ban rejected as simple AI-smell rule",
+    "Explanation ban rejected as simple AI-smell rule",
+    "Concrete-object reduction rejected as simple AI-smell rule",
+    "AI-F01 GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY accepted as primary open failure family",
+    "rules/ai-smell-global-optimization-diagnostic-v1.md added",
+    "Phase377 audit accepted as evidence; repair method remains unproven",
+    "Phase378 fixed social-realism story facts packet frozen",
+    "Phase378 R1/R2 fresh generator invocations created with sealed roles",
+    "R1/R2 invocation files stored as real text/plain in Drive folder 小说蒸馏_新聊天执行",
+    "Phase378 R1 and R2 executed in two genuinely separate fresh generator chats",
+    "Both Phase378 generated outputs fetched as text/plain and frozen by SHA-256 before human review",
+    "Separate post-generation Phase377 evaluator completed and sealed before human review",
+    "Phase378 A/B order derived deterministically from frozen output hashes rather than evaluator preference",
+    "Phase378 actual-human blind-review pack stored in Drive folder 小说蒸馏_真人验收",
+    "Phase378 actual-human blind review completed",
+    "Phase378 mapping revealed after verdict: A=R1=PROCESS, B=R2=CONTROL",
+    "Phase378 CONTROL won all six comparative human judgments",
+    "Phase378 PROCESS judged very AI-heavy and messy enough to create skim/stop urge",
+    "Phase378 CONTROL still has some AI smell; no AI-free claim authorized",
+    "Phase378 sealed model evaluator prediction failed against actual-human direction",
+    "Phase379 target-reader AI-smell contrastive matrix completed",
+    "Phase379 discriminator recalibration report completed",
+    "rules/target-reader-ai-smell-discriminator-v1.md completed",
+    "Phase379 diagnostic recalibration accepted; generation repair remains unproven",
+    "Generic Phase379 PROCESS backfire task superseded by the more specific completed recalibration task",
+    "Phase378 actual-human blind verdict completed: B/R2/CONTROL wins all six comparisons",
+    "Phase378 PROCESS/R1 rejected: A judged very AI-heavy and messy",
+    "Phase378 sealed pre-human evaluator direction was false positive",
+    "Phase379 target-reader AI-smell discriminator recalibration completed and accepted diagnostic-only",
+    "Phase379 added AS-F01 functionally exact dialogue adjacency ladder as high-priority target-reader candidate",
+    "Phase380 fixed neutral story facts and two equivalent fresh generator invocation files created",
+    "Phase380 R1/R2 invocation files stored as text/plain in Drive folder 小说蒸馏_新聊天执行",
+    "Current stale pending-human fields for Phase375/376 reconciled to existing settlements",
+    "Current AI-smell fields reconciled to Phase378 human evidence and Phase379 diagnostic status",
+    "One real ledger reconciliation event appended; no missing history fabricated",
+    "Phase380 prospective one-pair exit budget registered before generation",
+    "Conditional bounded prose-delivery task draft prepared without authorizing prose",
+    "Phase380 both returned text/plain output files verified and raw-byte frozen",
+    "Phase380 post-generation directional prediction and deterministic mapping sealed in private evidence archive before human review",
+    "Phase380 anonymous reader pack delivered with original prose bytes unchanged and remote SHA-256 readback verified",
+    "Phase380 private evidence and reader pack durably saved; no raw prose or directional answer key published in Git",
+    "Phase380 actual-human six-item anonymous review received and preserved without dimension conflation",
+    "Phase380 sealed prediction and mapping verified against pre-human Git hashes, then unsealed: A=R1; B=R2; predicted A; one directional hit",
+    "Phase380 single-pair campaign closed; no additional calibration or quality promotion",
+    "Phase381 minimal private story contract formed from verified Phase370 source, activated under current user continuation instruction; no old prose changed",
+    "Phase381 one bounded scene delivered unchanged after initial drafting, with durable files and exact Drive readback; structural checks do not claim literary acceptance",
+    "Phase381 actual-human early-stop rejection recorded against exact frozen scene; Chat/inline preference preserved; no local rewrite or false mode-switch claim",
+    "Phase384 three new source files ingested with integrity constraints",
+    "Phase385 conservative Fanren sampling index and second-pass cross-book distillation completed",
+    "Phase385 human pilot was readable but actual human reported AI smell became heavier; prose transfer not accepted",
+    "Unsupported suspense-positive sentence attributed to the user is invalidated as human evidence",
+    "Phase386 authoring/evaluator information firewall frozen with no fiction generated",
+    "Phase387 minimal author packet frozen",
+    "Phase387 single-file fresh writer execution entry frozen",
+    "Phase387 one-run isolation contract activated",
+    "Phase387 fresh blind writer output frozen unchanged",
+    "Phase387 actual-human overall rejection recorded against frozen output",
+    "Phase388 comparative root-cause diagnosis completed with no fiction generated",
+    "Phase389 rich story/character context packet frozen and audited without diagnostic leakage",
+    "Phase390 scene-specific rich context packet frozen and leakage-audited",
+    "Phase390 single-file fresh writer entry frozen",
+    "Phase390 fresh blind writer output frozen unchanged",
+    "Phase390 actual-human heavy-AI mechanical-dialogue rejection recorded",
+    "Phase391 dialogue identity/interchangeability diagnosis completed with no fiction generated",
+    "Phase392 facts-only character context frozen and audited without diagnostic leakage",
+    "Phase393 facts-only scene packet frozen and leakage-audited",
+    "Phase393 single-file fresh writer entry frozen",
+    "Phase393 fresh blind writer output frozen unchanged",
+    "Phase393 actual-human rejection recorded: AI smell lighter than Phase390 but still heavy; mechanical Q&A remains clear blocker",
+    "Phase394 positive-anchor plus post-freeze dialogue-blocker pipeline implemented and regression-verified",
+    "Phase395 hidden-candidate writer entry frozen without diagnostic priming",
+    "Phase395 A1 frozen and rejected whole by deterministic+semantic dialogue gates",
+    "Phase395 A2 hidden fresh-writer inputs frozen without blocker feedback",
+    "Phase395 A2 frozen and rejected whole by deterministic+semantic dialogue gates",
+    "Phase395 A3 hidden fresh-writer inputs frozen without blocker feedback",
+    "Phase395 A3 frozen and rejected whole; A1/A2/A3 all blocked before user delivery",
+    "Phase395 direct facts-to-full-prose generation architecture rejected",
+    "Phase396 no-dialogue scene trace frozen",
+    "Phase396 hidden renderer A1 entry frozen",
+    "Phase396 A1 frozen unchanged",
+    "Phase396 A1 deterministic dialogue gate CLEAR",
+    "Phase396 A1 semantic dialogue gate CLEAR",
+    "Phase396 actual-human verdict: bounded overall pass, light AI smell, no mechanical dialogue",
+    "Phase396 silent-scene-simulation -> prose-render pipeline supported for dialogue-surface control",
+    "Phase397 A3 Opera Neon output stored in repository inbox; GitHub Web terminal-LF normalization recorded explicitly",
+    "Phase397 A3 frozen output created and raw bytes verified identical to repository inbox",
+    "Phase397 A3 source-fidelity gate CLEAR",
+    "Phase397 A3 deterministic dialogue gate CLEAR",
+    "Phase397 A3 semantic mechanical-dialogue gate CLEAR",
+    "Phase397 A3 anti-storyboard / immersion precheck BLOCK; candidate rejected before actual-human delivery",
+    "Phase397 A3 stored and frozen; source fidelity and both dialogue gates CLEAR, anti-storyboard / immersion precheck BLOCK before human delivery",
+    "Phase397 architecture settlement closed the transfer test as NOT_SUPPORTED_FOR_NARRATIVE_TRANSPORTATION; no A4 or Phase398 authorized",
+    "Phase398 successor architecture task created after explicit user continuation authorization",
+    "Phase398 SCENE_FIELD_AUTHOR_PACKET_V1 design document and unordered machine-readable schema committed",
+    "Phase398 architecture design audit READY_DESIGN_ONLY_NO_PROSE; no prose transfer claim",
+    "Phase398 control state now authorizes only one NS02 story-specific scene-field packet build/audit/freeze",
+    "Phase398 NS02 scene-field author packet created as a genuinely new old-photo-studio story",
+    "Phase398 NS02 first packet audit BLOCKED five writer-visible experiment-history leaks",
+    "Phase398 NS02 packet repaired before freeze by removing prior-story/evaluator metadata from writer-visible context",
+    "Phase398 NS02 final immutable packet audit PASS with no sequence leakage and no writer-visible experiment leakage",
+    "Phase398 architecture and NS02 packet-build task closed without prose generation",
+    "Phase399 single-A1 validation task created after explicit user authorization",
+    "Phase399 writer-visible entry frozen from immutable NS02 scene-field packet projection",
+    "Phase399 writer-entry isolation audit PASS with no historical diagnostic leakage",
+    "Phase399 control state bound for exactly one isolated A1 execution",
+    "Phase399 exactly one isolated NS02 A1 fresh-writer run executed; no retry occurred",
+    "Phase399 A1 stored verbatim to inbox and frozen output; repository copies are byte-identical",
+    "Phase399 A1 hard source locks CLEAR",
+    "Phase399 A1 deterministic dialogue BLOCK: 21 of 43 dialogue runs triggered",
+    "Phase399 A1 semantic mechanical-dialogue BLOCK",
+    "Phase399 A1 anti-storyboard/immersion BLOCK: 631 of 658 paragraphs one sentence or less",
+    "Phase399 A1 writer-output contract BLOCK from three non-prose editorial suggestion lines",
+    "Phase399 A1 rejected whole; attempt budget 1/1 exhausted without actual-human delivery",
+    "Phase400 successor task created after explicit user authorization",
+    "Phase400 output-surface contrast profile completed: Phase399 21/43 dialogue runs blocked versus Phase370 0/14",
+    "Phase400 causal diagnosis rejected paragraph-length quotas as primary repair",
+    "Phase400 selected FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 as the successor architecture",
+    "Phase400 successor execution schema FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 committed and audited PASS",
+    "Phase400 architecture-ready receipt committed with no prose-transfer claim",
+    "Phase400 closed as architecture-design complete without fiction generation or Phase401 creation",
+    "Phase401 successor validation task created after explicit authorization",
+    "Phase401 Lin Qiao local-view projection built from immutable NS02 world model",
+    "Phase401 first readiness audit blocked coordinator-only control metadata leakage",
+    "Phase401 repaired local-view and runner; final readiness audit PASS",
+    "Phase401 control state authorized exactly one isolated local-passage A1",
+    "Phase401 exactly one isolated Lin Qiao focal/local-horizon A1 executed; no best-of-N or retry",
+    "Phase401 A1 stored and frozen verbatim with GitHub terminal-LF normalization only",
+    "Phase401 source fidelity CLEAR under focal-opacity constraints",
+    "Phase401 deterministic dialogue trigger ratio reduced from Phase399 21/43 to Phase401 2/12 but remained BLOCK",
+    "Phase401 semantic mechanical dialogue remained BLOCK",
+    "Phase401 hidden global-optimization diagnostic remained BLOCK",
+    "Phase401 writer-output contract BLOCK from title-like label plus three editorial suggestion lines",
+    "Phase401 rejected whole without actual-human review; single attempt exhausted",
+    "Phase402 successor task created after explicit authorization",
+    "Phase402 residual causal diagnosis completed",
+    "Phase402 ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_WRITER_V1 schema frozen",
+    "Phase402 single-A1 validation contract frozen as non-task artifact",
+    "Phase402 minimal architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase402 non-focal actor commitments frozen",
+    "Phase402 deferred-attribution local view frozen",
+    "Phase402 single A1 runner frozen",
+    "Phase402 A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase402 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase402 A1 stored and frozen verbatim; inbox and frozen are byte-identical",
+    "Phase402 source fidelity CLEAR",
+    "Phase402 writer-output contract CLEAR",
+    "Phase402 deterministic dialogue CLEAR: 0 blocked runs",
+    "Phase402 semantic mechanical dialogue CLEAR",
+    "Phase402 hidden global-optimization diagnostic NO_BLOCK",
+    "Phase402 response-ownership residual NO_BLOCK",
+    "Phase402 interpretation-liquidity residual NO_BLOCK",
+    "Phase402 required hidden gates CLEAR; actual-human review authorized",
+    "Phase402 actual-human literary review completed",
+    "Phase402 actual-human verdict persisted verbatim",
+    "Phase402 human verdict: immersion FAIL",
+    "Phase402 human verdict: emotion general/low",
+    "Phase402 human verdict: AI smell much lighter than prior attempts",
+    "Phase402 human verdict: suspense absent",
+    "Phase402 human verdict: no desire to continue",
+    "Phase402 earliest boredom point located at display-cabinet description; introduction reported slow and boring",
+    "Phase402 closed as human-rejected despite all required hidden gates CLEAR",
+    "Phase403 successor task created after explicit user authorization",
+    "Phase403 actual-human Phase402 rejection preserved as authoritative evidence",
+    "Phase403 reader-drive causal diagnosis completed",
+    "Phase403 LIVE_VECTOR_SELECTIVE_SALIENCE_WRITER_V1 schema frozen",
+    "Phase403 single-A1 validation contract frozen as same-task non-task artifact",
+    "Phase403 reader-drive architecture audit PASS; exactly one A1 preparation allowed",
+    "Phase403 live-vector/selective-salience writer-visible view frozen and audited",
+    "Phase403 single A1 runner frozen with exact embedded projection",
+    "Phase403 A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase403 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase403 A1 stored and frozen verbatim including title-like label and three editorial suggestion lines",
+    "Phase403 source fidelity CLEAR",
+    "Phase403 deterministic dialogue CLEAR",
+    "Phase403 semantic mechanical dialogue CLEAR",
+    "Phase403 hidden global optimization NO_BLOCK",
+    "Phase403 response-ownership residual NO_BLOCK",
+    "Phase403 interpretation-liquidity residual NO_BLOCK",
+    "Phase403 reader-drive entry-state CLEAR",
+    "Phase403 neutral-salience flooding NO_BLOCK",
+    "Phase403 focal personal-cost visibility CLEAR",
+    "Phase403 live open-outcome visibility CLEAR",
+    "Phase403 writer-output contract BLOCK; candidate rejected whole and human review not authorized",
+    "Phase404 successor task created after explicit user authorization",
+    "Phase404 output-contract causal diagnosis completed with Phase402 clean counterexample",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 schema frozen",
+    "Phase404 single-A1 validation contract frozen as same-task non-task artifact",
+    "Phase404 output-boundary architecture audit PASS; exactly one A1 runner preparation allowed",
+    "Phase404 frozen runner built with unchanged Phase403 payload",
+    "Phase404 first readiness audit blocked artifact-label term and repaired wrapper",
+    "Phase404 final A1 readiness audit PASS; exactly one isolated A1 authorized",
+    "Phase404 exactly one isolated A1 executed; no retry, best-of-N, A2, second window or parallel candidate",
+    "Phase404 A1 stored and frozen verbatim",
+    "Phase404 writer-output contract CLEAR: no leading label, no trailing editorial material, no second section",
+    "Phase404 source fidelity CLEAR",
+    "Phase404 deterministic dialogue CLEAR",
+    "Phase404 semantic mechanical dialogue BLOCK on a procedural shared-agenda chain",
+    "Phase404 hidden global optimization BLOCK due recurring inference-closure cadence",
+    "Phase404 response-ownership residual BLOCK",
+    "Phase404 reader-drive entry state CLEAR",
+    "Phase404 neutral-salience flooding NO_BLOCK",
+    "Phase404 focal personal-cost visibility CLEAR",
+    "Phase404 live open-outcome visibility CLEAR",
+    "Phase404 candidate rejected whole; actual-human review not authorized",
+    "Phase405 explicit successor authorization received after Phase404 checkpoint 90 close.",
+    "Phase405 cross-run Phase402/403/404 causal comparison completed without generating prose.",
+    "Coordinator-state leakage is not supported by current evidence; random sampling is plausible but treated as an exposure of latent mechanism instability, not as grounds for retry.",
+    "CAUSAL_OWNERSHIP_COMPILED_WRITER_V1 selected: abstract live-vector semantics become coordinator-only and information-bearing non-focal events become pre-owned causal event cards.",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 remains frozen and unchanged.",
+    "Phase405 single-A1 validation contract frozen: one candidate, no best-of-N, no retry, no A2, no second window, no human review before all required hidden gates clear.",
+    "Phase405 compiled writer-visible packet removes abstract live-vector summaries while preserving concrete current state and source locks.",
+    "Phase405 non-focal information-bearing behavior is pre-owned by causal event cards anchored to each actor's own task/environment state.",
+    "Phase405 runner reuses the Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 text verbatim.",
+    "Phase405 readiness/guard audit passed; one isolated A1 authorized.",
+    "Phase405 exactly one fresh-writer A1 executed; no retry, A2, best-of-N or second window.",
+    "Phase405 raw writer output persisted and frozen verbatim.",
+    "Phase405 output contract remained CLEAR under the unchanged Phase404 response transaction.",
+    "Phase405 semantic mechanical dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK.",
+    "Phase405 focal personal-cost visibility BLOCK: the factual leave-town stake did not survive into reader-visible prose.",
+    "Phase405 closed without actual-human literary review and without Phase406 authorization.",
+    "Phase406 explicit successor authorization received after Phase405 checkpoint 93 close.",
+    "Phase406 minimal diagnosis located static-fact-without-causal-carrier as the residual personal-cost visibility failure.",
+    "FOCAL_COST_CARRIER_EVENT_V1 selected; abstract live-vector summaries remain hidden.",
+    "Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 remains unchanged.",
+    "Phase406 single-A1 validation contract frozen; no retry, A2, second window or best-of-N.",
+    "Phase406 compiled one source-grounded focal cost-carrier event tied to observable dawn/time progression.",
+    "Phase406 readiness confirms abstract live-vector summaries remain hidden and no unsupported external deadline was added.",
+    "Phase406 runner reuses Phase404 PROSE_BODY_ONLY_RESPONSE_TRANSACTION_V1 verbatim.",
+    "Phase406 readiness/guard audit passed; one isolated A1 authorized.",
+    "Phase406 exactly one fresh-writer A1 executed; no retry, A2, best-of-N or second window.",
+    "Phase406 focal personal-cost visibility CLEAR via dawn/time trigger plus factual departure thought.",
+    "Phase406 semantic mechanical dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK.",
+    "Phase406 output contract remained CLEAR under unchanged Phase404 response transaction.",
+    "Phase406 source fidelity BLOCK: 吴兰 was emitted as 吴岚 twice; raw output frozen unchanged.",
+    "Phase406 closed without actual-human literary review and without Phase407 authorization.",
+    "Phase407 explicit successor authorization received after Phase406 checkpoint 96 close.",
+    "Phase407 diagnosis distinguishes hard identity literal fidelity from ordinary language generation.",
+    "HARD_IDENTITY_LITERAL_BINDING_V1 selected; ordinary prose remains generative.",
+    "Phase406 focal cost-carrier and prior anti-regression controls frozen unchanged.",
+    "Phase407 single-A1 validation contract frozen; no retry, A2, second window or best-of-N.",
+    "Phase407 canonical identity literals frozen: 林乔 / 林国忠 / 吴兰 / 许雯.",
+    "Phase407 semantic character fields now reference identity IDs instead of requiring romanized-to-Chinese name reconstruction.",
+    "Phase407 readiness/guard audit passed; exactly one isolated A1 authorized.",
+    "Phase407 exactly one fresh-writer A1 executed; no retry, A2, best-of-N or second window.",
+    "Phase407 hard identity literal fidelity CLEAR: 林乔 / 林国忠 / 吴兰 emitted canonically.",
+    "Phase407 focal personal-cost visibility remained CLEAR without abstract live-vector summaries.",
+    "Phase407 semantic dialogue CLEAR, response ownership NO_BLOCK, hidden global optimization NO_BLOCK, interpretation liquidity NO_BLOCK.",
+    "Phase407 all required hidden gates CLEAR; immutable A1 authorized for actual-human literary review.",
+    "Phase407 actual-human review received and preserved verbatim.",
+    "Phase407 actual-human verdict: complete immersion failure, no emotion, no suspense, very poor overall attraction.",
+    "Phase407 human hypothesis recorded: current topic/scene may itself be the problem; this is not yet treated as sole proven cause.",
+    "Phase407 closed; no retry, rewrite or Phase408 authorized.",
+    "Phase408 explicit successor authorization received after Phase407 checkpoint 100 close.",
+    "Phase408 contrastive diagnosis supports premise/scene-engine weakness as the primary next diagnostic target, without claiming topic alone is the sole cause.",
+    "Phase370 positive evidence contrasted against Phase407: consequence magnitude, active unknown, adversarial agency, irreversibility and revaluation cadence identified as engine-level differences.",
+    "Phase408 premise-only choice pack frozen; no fiction prose generated.",
+    "Phase408-PREMISE-AUDIT completed without new candidates or prose.",
+    "A/B/D/F failed reveal-removal engine audit; C/E passed and are retained.",
+    "Majority failure detected; A-F human selection suspended rather than forcing a choice.",
+    "PHASE408_NEW_PREMISE_GENERATION_CONTRACT_V1 frozen: secrets may amplify but may not constitute the story engine.",
+    "Phase408 strict audit V2 withdrew all original A-F from human selection.",
+    "Phase408 batch2 generated five premise candidates under the frozen anti-overcorrection contract; no prose generated.",
+    "Phase408 batch2 internal audit rejected K for simple-solution/business-procedure risk.",
+    "Phase408 batch2 survivors G/H/I/J passed remove-twist, active WANT conflict, irreversible COST, relationship emotion and natural-behavior gates.",
+    "Phase408 G/H/I/J issue-template audit completed without new premise generation.",
+    "G/H/I/J all withdrawn from human selection: each remains too generic, issue-led, or vulnerable to routine solution/logistics framing.",
+    "PHASE408_CHARACTER_SPECIFIC_PREMISE_CONTRACT_V2 frozen: future premises must be driven by specific shared history and irreversible behavior, not social-topic positions.",
+    "Phase408 batch3 generated four character-specific premises under the frozen checkpoint-104 contract; no prose generated.",
+    "Phase408 batch3 internal audit rejected N for unnatural public-performance pressure/simple-action failure.",
+    "Phase408 L/M/O passed remove-issue/twist, specific shared-history, irreversible act, behavior-driven reader pull, simple-action attack, no-high-concept and natural-behavior gates.",
+    "Phase408 batch3 actual-human reject-all recorded verbatim.",
+    "Current 2026 fast-webnovel rankings and real first chapters researched; official Fanqie writer guidance consulted.",
+    "Phase408 root correction: static premise/logline validation is insufficient; opening event-engine is the next unit of design.",
+    "PHASE408_OPENING_EVENT_ENGINE_CONTRACT_V1 frozen with no prose authorization.",
+    "Phase408 batch3 minimal reviewer attack completed after existing human rejection; L/M/O all fail strict checkpoint104 gates.",
+    "L failed because a truthful dedication rewrite dissolves the binary and the clipping archive functions as an emotional-proof device.",
+    "M failed because the stage decision is avoidable and the sole-songwriter-credit label condition is institutionally dubious without additional rights structure.",
+    "O failed strict SIMPLE-ACTION because 陈志 can naturally refuse/deflect and return the answer to 胡强, leaving no truly forced binary.",
+    "Phase408 reconciled checkpoint106 -> checkpoint107 ordering without rollback.",
+    "Phase408 opening-event-engine contract confirmed as current legal successor.",
+    "Phase408 opening-engine batch1 generated four cards and internally audited them without prose.",
+    "OE408-D rejected for weak causally-derived next-action hook; OE408-A/B/C survive.",
+    "Phase408 actual-human opening-engine batch1 review recorded: A/B/C have plausible flavor but zero continuation desire.",
+    "Phase408 diagnosis separates event propulsion from reader attachment; more events alone are not the next repair.",
+    "Phase408 next diagnostic target set to protagonist reader-magnet / long-range desire promise; no new engine batch or prose authorized.",
+    "Phase408 protagonist-magnet recovery settled as PREVIOUS_INTERNAL_DRAFT_NOT_PERSISTED; no claim of restoring nonexistent prior cards.",
+    "Phase408 generated exactly one new batch of four protagonist magnet cards under checkpoint109.",
+    "Phase408 PRM408-D rejected for SWAP-PROTAGONIST and 50-CHAPTER-REPETITION failure.",
+    "Phase408 PRM408-A/B/C passed REMOVE-PROFESSION, SWAP-PROTAGONIST and 50-CHAPTER-REPETITION attacks.",
+    "Phase408 checkpoint110 protagonist magnet anti-overexplained-psychology audit completed.",
+    "程砚 failed anti-symmetry/human-messiness/50-chapter diagnosis repetition despite partial origin-removal survival.",
+    "顾岚 failed anti-symmetry/human-messiness/50-chapter diagnosis repetition despite partial origin-removal survival.",
+    "韩照 failed anti-symmetry/human-messiness/50-chapter diagnosis repetition despite partial origin-removal survival.",
+    "Phase408 protagonist magnet survivor count is now zero; no human selection authorized.",
+    "Phase408 PROTAGONIST_BEHAVIORAL_MAGNET_V2 batch1 generated four behavior-only cards without biography origins.",
+    "PBM408-D 许南 rejected for protagonist-swappability, cosmetic exception and 50-chapter repetition.",
+    "PBM408-A 江衡, PBM408-B 闻雪 and PBM408-C 罗钧 passed REMOVE-BIOGRAPHY / SWAP-PROTAGONIST / HUMAN_MESSINESS / 50-CHAPTER-REPETITION.",
+    "Phase408 actual-human behavioral magnet review recorded verbatim: 江衡一般, 闻雪一般, 罗钧想看.",
+    "Phase408 罗钧 becomes the sole human-positive protagonist-magnet survivor; 江衡/闻雪 are not retained as positive survivors.",
+    "Phase408 checkpoint113 read-back confirmed 罗钧 sole human-positive protagonist survivor and 江衡/闻雪 nonpositive.",
+    "Phase408 generated four 罗钧-bound opening-event candidates under a restricted no-prose successor.",
+    "RJ-OE408-A rejected for author-thesis dependency; RJ-OE408-C rejected for weak continuation value; RJ-OE408-D rejected for protagonist-swappability.",
+    "RJ-OE408-B passed all four reviewer attacks and is the sole survivor.",
+    "RJ-OE408-B actual-human REJECT recorded and candidate closed; Batch1 human gate is not pending.",
+    "Phase408 Batch2 generated exactly four new candidates: RJ-OE408-E/F/G/H; no Batch1 candidate was rewritten or reused.",
+    "RJ-OE408-E rejected for AUTHOR_THESIS_DEPENDENCY; RJ-OE408-G rejected for SWAP_PROTAGONIST and CONTINUATION_VALUE; RJ-OE408-H rejected for AUTHOR_THESIS_DEPENDENCY and CONTINUATION_VALUE.",
+    "RJ-OE408-F passed all six attacks and is the sole Batch2 survivor ready for actual-human review."
+  ],
+  "incomplete": [
+    "AI-smell repair method remains UNPROVEN",
+    "AI-F01 remains OPEN_BLOCKING_FAILURE",
+    "No RX candidate has TRANSFER_SUPPORTED status",
+    "No bounded span-growth survival test is authorized",
+    "Stable long-form scale transfer remains UNPROVEN",
+    "Current full YMGQ manuscript remains actual-human rejected",
+    "No full-manuscript reconstruction is authorized",
+    "Final freeze remains blocked",
+    "Reliable AI-smell evaluator remains unproven",
+    "Stable low-AI generation process remains unproven",
+    "Target-reader AI-smell evaluator remains DIAGNOSTIC ONLY",
+    "Generation repair remains UNPROVEN",
+    "Historical event-by-event coverage between ledger entry18 and logical checkpoint32 remains PARTIAL; current snapshot reconciled by event19",
+    "Legacy validate_skill.py fails existing V3 name/schema expectations on current V4.2 baseline; separate packaging maintenance issue",
+    "Current scene emotional engagement/early retention failed; requested Chat-based reauthoring has not yet produced a successor candidate",
+    "Authoring/evaluator isolation firewall not yet frozen",
+    "Stable low-AI prose generation remains unproven",
+    "Phase387 rejection subdimensions are not fully localized from human feedback",
+    "Root cause of why the fresh blind candidate still fails acceptance remains open",
+    "Rich story/character context packet has not yet been built or audited",
+    "Phase388 root-cause hypotheses remain prospectively unvalidated",
+    "Phase388/389 input-context hypothesis remains prospectively unvalidated",
+    "Root cause of character-voice collapse despite rich context remains open",
+    "Facts-only character context redesign has not yet been built or audited",
+    "Phase391 root-cause hypothesis remains prospectively unvalidated",
+    "Phase393 facts-only fresh blind pilot has not been created or run",
+    "Phase391 input-representation hypothesis remains prospectively unvalidated",
+    "Deeper exact-adjacency generation bias remains unexplained and uncorrected",
+    "Pipeline effectiveness remains prospectively unvalidated on a new candidate",
+    "Forward desire / suspense / novelty remain unresolved",
+    "Phase397 A3 human review has not yet been performed",
+    "Narrative transportation remains unresolved",
+    "AI smell remains heavy on Phase397 A2",
+    "Forward desire remains unresolved despite suspense",
+    "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery"
+  ],
+  "blocked": [
+    "AI_SMELL_REPAIR_METHOD_UNPROVEN",
+    "AI_F01_GLOBAL_AUTHORIAL_OPTIMIZATION_REGULARITY_OPEN",
+    "SPAN_GROWTH_BLOCKED",
+    "CURRENT_FULL_MANUSCRIPT_ACTUAL_HUMAN_REJECTED",
+    "FULL_REWRITE_BLOCKED",
+    "FINAL_FREEZE_BLOCKED",
+    "PHASE381_HUMAN_AESTHETIC_REJECTION_LOCAL_PATCH_AND_EXPANSION_STOPPED",
+    "YMGQ_FICTION_BLOCKED_DURING_PHASE386_PROCESS_REPAIR",
+    "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE387_GENERATION",
+    "NEXT_YMGQ_CANDIDATE_BLOCKED_PENDING_POST_PHASE387_ROOT_CAUSE_DIAGNOSIS",
+    "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE390_GENERATION",
+    "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DIALOGUE_VOICE_ROOT_CAUSE_DIAGNOSIS",
+    "NEXT_YMGQ_PROSE_BLOCKED_UNTIL_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN",
+    "CURRENT_DIAGNOSTIC_CHAT_BLOCKED_FROM_PHASE393_GENERATION",
+    "NEXT_YMGQ_PROSE_BLOCKED_PENDING_DEEP_ADJACENCY_GENERATION_DIAGNOSIS",
+    "USER_DELIVERY_OF_NEW_YMGQ_PROSE_REQUIRES_POST_FREEZE_DIALOGUE_GATE",
+    "PHASE395_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
+    "PHASE395_A2_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
+    "PHASE395_A3_USER_PROSE_DELIVERY_BLOCKED_UNTIL_BOTH_DIALOGUE_GATES_CLEAR",
+    "DIRECT_FACTS_TO_FULL_PROSE_YMGQ_GENERATION_BLOCKED",
+    "REUSE_OF_YMGQ_FOR_NEXT_PROSE_TRANSFER_TEST_BLOCKED_BY_HUMAN_NOVELTY_REQUEST",
+    "CURRENT_COORDINATOR_CHAT_BLOCKED_FROM_PHASE397_A3_GENERATION",
+    "PHASE397_A3_USER_DELIVERY_BLOCKED_UNTIL_SOURCE_FIDELITY_AND_DIALOGUE_GATES_CLEAR",
+    "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
+    "PHASE397_A3_DRIVE_UPLOAD_BLOCKED",
+    "PHASE397_A4_NOT_AUTHORIZED",
+    "PHASE397_CLOSED_TRANSFER_NOT_SUPPORTED_NO_SUCCESSOR_AUTHORIZED",
+    "PHASE402_BEST_OF_N_FORBIDDEN",
+    "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
+    "PHASE402_A2_NOT_AUTHORIZED",
+    "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
+    "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
+    "PHASE409_NOT_AUTHORIZED_PENDING_RJ_OE408_F_ACTUAL_HUMAN_VERDICT"
+  ],
+  "do_not_reopen": [
+    "Treat Phase377 root-cause audit as repair success",
+    "Generate Phase378 R1 or R2 inside the Phase377 chat that has seen the taxonomy",
+    "Reveal Phase378 R1/R2 role mapping before both outputs are frozen and human verdict is complete",
+    "Use short sentences, explanation, or concrete-object counts as simple AI-smell bans",
+    "Use one-sentence deletion loops as the primary AI-smell solution",
+    "Equate no skim or desire to continue with low AI smell",
+    "Another immediate long pilot or full-manuscript rewrite",
+    "Accepted Phase320 checkpoint or GN-VDNA-01 semantics",
+    "Treat Phase376 X repair as successful despite human baseline win",
+    "Treat Phase375 weak repair preference as repeatable evidence",
+    "Equate no skim with low AI smell",
+    "Directly activate RX-C01 through RX-C08 as stacked prose-construction targets",
+    "Use Phase376 Attempt1 as replication evidence",
+    "Reveal Phase376 Attempt2 repair detail or X/Y mapping before actual-human verdict",
+    "Repair more than the one selected defect in Phase376 Attempt2",
+    "Treat Phase375 weak preference as decisive transfer proof",
+    "Scale Phase375 or Phase376 before clean replication verdict",
+    "Reveal Phase376 X/Y mapping before actual-human verdict",
+    "Repair more than the one selected defect in Phase376",
+    "Treat Phase375 weak Y preference as decisive transfer proof",
+    "Scale Phase375 or Phase376 before replication verdict",
+    "Scale Phase375 repair before replication",
+    "Claim Phase372 source extraction proves writing transfer",
+    "Reveal Phase375 X/Y mapping before actual-human verdict",
+    "Repair more than the one selected defect in this Phase375 iteration",
+    "Treat Phase373 B/CONTROL win as a Phase372 candidate success",
+    "Claim source reading alone proves writing learning",
+    "Claim book/global Novel DNA validation proves prose quality",
+    "Claim YMGQ improvement as evidence of GN-VDNA-01 success",
+    "Repeat Phase380 generators or add calibration pairs automatically after its closed one-pair settlement",
+    "Treat Phase380 single prediction hit as reliable evaluator or generation repair proof",
+    "Replace Phase380 B overall/continuation/clarity preference with A merely because A has lighter AI smell",
+    "Treat Phase381 structural checks or later emotional paragraphs as overriding the actual early stop",
+    "Continue or line-patch rejected Phase381 prose merely because one nominal repair allowance remains",
+    "Claim the user-requested Chat interface mode was switched without actual capability/evidence",
+    "Treat the unsupported suspense-positive sentence as actual-human evidence",
+    "Expose Phase385 reader-engine beats or Phase377 AI-smell taxonomy directly to the prose generator",
+    "Use the current diagnostic-aware chat as a clean Phase387 blind writer",
+    "Leak evaluator diagnostics back into the writer before initial draft freeze",
+    "Generate Phase387 candidate in this diagnostic-aware chat",
+    "Let the fresh Phase387 writer read any repository file except delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "Produce multiple Phase387 candidates or repair the first output before human review",
+    "Treat Phase387 relative improvement as a quality pass",
+    "Declare Astra the default novel-writing model from one rejected pilot",
+    "Generate another Phase387 candidate under the same task",
+    "Treat Phase388 coordinator root-cause hypotheses as direct human quotes",
+    "Respond to Phase387 rejection by exposing Phase388 diagnosis labels to the next prose writer",
+    "Use a thin premise-only author packet again",
+    "Expose Phase388 root-cause labels or prior human failure answer keys to the Phase390 blind writer",
+    "Treat Phase389 rich context packet acceptance as prose quality evidence",
+    "Generate Phase390 candidate in this diagnostic-aware chat",
+    "Let the Phase390 writer read any repository file except delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "Generate multiple Phase390 candidates or repair the first before human review",
+    "Treat Phase390 rich-context packet as sufficient because the prose is more lived-in",
+    "Use alternating short-turn dialogue as character voice",
+    "Generate another Phase390 candidate under the same task",
+    "Feed Phase391 dialogue diagnosis labels directly to a future prose writer",
+    "Use catchphrases/dialect/slang as a shortcut for character voice",
+    "Treat more declarative personality traits as a voice solution",
+    "Reintroduce declarative personality labels into the Phase393 writer packet",
+    "Expose Phase391 diagnosis labels or mechanical-dialogue answer keys to the Phase393 blind writer",
+    "Treat Phase392 packet acceptance as prose quality proof",
+    "Generate Phase393 candidate in this diagnostic-aware chat",
+    "Let the Phase393 writer read any repository file except delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt",
+    "Reintroduce personality labels or Phase391 diagnostics into the Phase393 writer context",
+    "Generate multiple Phase393 candidates or repair the first before human review",
+    "Treat Phase393 lighter AI smell as acceptance",
+    "Treat facts-only context as sufficient repair",
+    "Generate another Phase393 candidate under the same task",
+    "Expose dialogue blocker rules or thresholds to the prose writer",
+    "Locally patch a candidate after dialogue blocker failure",
+    "Treat structural CLEAR as literary PASS",
+    "Show Phase395 inbox candidate to user before deterministic and semantic gates clear",
+    "Expose Phase394 blocker rules to Phase395 writer",
+    "Locally patch a blocked Phase395 candidate",
+    "Show or repair rejected Phase395 A1 prose",
+    "Reveal A1 blocker findings to the A2 writer",
+    "Show or repair rejected Phase395 A2 prose",
+    "Reveal A2 blocker findings to the A3 writer",
+    "Continue Phase395 with A4/A5 retries",
+    "Return any rejected A1/A2/A3 prose to user",
+    "Return to direct story-facts -> full prose generation",
+    "Show Phase396 renderer output before dialogue gates clear",
+    "Edit or repair Phase396 A1 before actual-human verdict",
+    "Treat gate CLEAR as literary acceptance",
+    "Treat Phase396 dialogue-surface success as propulsion success",
+    "Use another YMGQ bridge/crossing scene for the next prose test",
+    "Modify or locally patch frozen Phase397 A3",
+    "Deliver Phase397 A3 to actual-human review despite anti-storyboard precheck block",
+    "Generate Phase397 A4 without a separate explicit Phase397 authorization",
+    "Create Phase398 before Phase397 is separately settled",
+    "Retry Phase397 A3 or generate A4 under the same silent-scene-to-renderer architecture",
+    "Create Phase398 without a separately authorized successor task using a materially different author-input representation or authoring architecture",
+    "Generate Phase398 prose before NS02 scene-field packet is built, audited and frozen",
+    "Expose evaluator diagnoses, anti-storyboard metrics or AI-smell labels inside the Phase398 writer-visible scene-field packet",
+    "Convert SCENE_FIELD_AUTHOR_PACKET_V1 back into an ordered event trace, reveal sequence, paragraph plan or beat list",
+    "Modify the frozen Phase398 NS02 packet after its PASS receipt; future changes require a new version/task",
+    "Run a fresh writer from Phase398 without a separately authorized successor task",
+    "Treat Phase398 packet-audit PASS as prose-quality or transfer proof",
+    "Run a second Phase399 A1 automatically if the single fresh-writer result is blocked or rejected",
+    "Create Phase399 A2 without separate explicit authorization",
+    "Modify the frozen Phase398 NS02 packet or Phase399 writer entry after readiness freeze",
+    "Deliver Phase399 A1 to the user before source fidelity, dialogue and anti-storyboard/immersion gates all CLEAR",
+    "Repair or delete the final three non-prose lines from frozen Phase399 A1",
+    "Locally patch frozen Phase399 A1 dialogue or paragraph rhythm",
+    "Automatically retry Phase399 A1 or create A2",
+    "Deliver Phase399 A1 to actual-human review despite blocker settlement",
+    "Create Phase400 without separate explicit authorization",
+    "Reopen Phase399 or retry its A1",
+    "Create Phase399 A2",
+    "Modify frozen Phase399 A1 or frozen Phase398 NS02",
+    "Use paragraph-length or question-count quotas as the Phase400 primary repair",
+    "Expose Phase377/399 evaluator labels or blocker thresholds to a future writer",
+    "Generate Phase400 prose or create Phase401 automatically",
+    "Treat Phase400 architecture-design PASS as proof of prose quality or mechanical-dialogue repair",
+    "Run a prose pilot from Phase400 without a separately authorized successor task",
+    "Create Phase401 automatically",
+    "Expose coordinator-only non-focal private state, terminal checklist, or evaluator diagnostics to a future prose writer",
+    "Modify frozen Phase398 NS02, Phase399 A1, or Phase400 architecture evidence",
+    "Create parallel Phase401 prose candidates or best-of-N",
+    "Retry Phase401 A1 automatically",
+    "Create Phase401 A2 or a second local window automatically",
+    "Enter actual-human literary review before all required hidden gates clear",
+    "Repair or clean frozen Phase401 A1",
+    "Create Phase401 A2 or second local window automatically",
+    "Enter actual-human review for blocked Phase401 A1",
+    "Treat Phase401 deterministic reduction as proof that FOCAL_OPAQUE_LOCAL_HORIZON_WRITER_V1 solved mechanical dialogue, AI smell or immersion",
+    "Create Phase402 without separate explicit authorization",
+    "Modify Phase399/400/401 frozen evidence",
+    "Repair or retry Phase401 A1",
+    "Turn Phase402 residual repair into paragraph-length or question-count quotas",
+    "Generate Phase402 prose before readiness PASS",
+    "Create best-of-N, parallel candidates, A2 or second window automatically",
+    "Create Phase403 without separate explicit authorization",
+    "Run a second Phase402 A1, retry, best-of-N, A2, second window or parallel candidate",
+    "Modify Phase402 inbox/frozen A1 before or after human review",
+    "Replace actual-human literary judgment with model literary judgment",
+    "Create Phase403 or any successor before the Phase402 human response is persisted verbatim",
+    "Override Phase402 actual-human rejection with hidden gate results",
+    "Retry Phase402 A1 automatically",
+    "Create Phase402 A2 or second window automatically",
+    "Treat lighter AI smell as literary acceptance",
+    "Modify frozen Phase402 A1",
+    "Modify Phase399/400/401/402 frozen evidence",
+    "Retry or repair Phase402 A1",
+    "Use paragraph length, question count, AI-smell or mechanical-dialogue rules as the Phase403 primary repair",
+    "Create best-of-N, parallel candidates, A2 or a second window automatically",
+    "Create Phase404 automatically",
+    "Delete or repair the Phase403 title-like label or three editorial suggestion lines in frozen A1",
+    "Retry Phase403 A1 automatically",
+    "Create Phase403 A2 or second window automatically",
+    "Enter actual-human review for blocked Phase403 A1",
+    "Treat hidden reader-drive gate success as actual-human reader-drive validation",
+    "Create Phase404 without separate explicit authorization",
+    "Modify Phase403 literary payload for Phase404",
+    "Repair or trim Phase403 frozen A1",
+    "Use best-of-N, retry, A2, parallel candidates or a second window",
+    "Enter human review before Phase404 required hidden gates clear",
+    "Create Phase405 automatically",
+    "Modify or repair frozen Phase404 A1",
+    "Retry Phase404 A1 automatically",
+    "Create Phase404 A2 or second window automatically",
+    "Enter actual-human review for blocked Phase404 A1",
+    "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
+    "Create Phase405 without separate explicit authorization"
+  ],
+  "next_required_action": "Present only RJ-OE408-F for actual-human protagonist-bound opening-event review. Allowed human answers: CONTINUE / REJECT. STOP_AT_ACTUAL_HUMAN_GATE. No prose; no Phase409.",
+  "source_state_refs": [
+    {
+      "path": "state/project_state.json",
+      "role": "current authoritative Phase381 state"
+    },
+    {
+      "path": "state/tasks/PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1.json",
+      "role": "closed Phase380 contract; design and acceptance terms preserved"
+    },
+    {
+      "path": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
+      "role": "prospective one-pair campaign exit budget"
+    },
+    {
+      "path": "state/review_receipts/PHASE378_ACTUAL_HUMAN_BLIND_REVIEW_H1_V1.json",
+      "role": "historical settled human result, not active task"
+    },
+    {
+      "path": "docs/PHASE379_TARGET_READER_AI_SMELL_DISCRIMINATOR_RECALIBRATION_V1.md",
+      "role": "completed diagnostic basis"
+    },
+    {
+      "path": "state/continuity/STATE_LEDGER.jsonl",
+      "role": "24 physical events; older event-by-event coverage remains partial"
+    },
+    {
+      "path": "docs/NOVEL_DELIVERY_RECOVERY_PLAN_20260910.md",
+      "role": "bounded delivery plan"
+    },
+    {
+      "path": "state/tasks/NOVEL_BOUNDED_DELIVERY_FOLLOWUP_DRAFT_V1.json",
+      "role": "historical proposal now activated through the scoped Phase381 native task"
+    },
+    {
+      "path": "state/review_receipts/PHASE380_OUTPUTS_FROZEN_PREDICTION_SEALED_PENDING_HUMAN_V1.json",
+      "role": "immutable pre-human freeze and seal receipt; superseded in current status by final human settlement"
+    },
+    {
+      "path": "state/review_receipts/PHASE380_ACTUAL_HUMAN_BLIND_REVIEW_H1_SETTLEMENT_V1.json",
+      "role": "actual-human Phase380 verdict, verified unseal, and final campaign settlement"
+    },
+    {
+      "path": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
+      "role": "closed Phase381 candidate contract with actual-human rejection"
+    },
+    {
+      "path": "state/review_receipts/PHASE381_BOUNDED_SCENE_DELIVERED_PENDING_HUMAN_V1.json",
+      "role": "immutable pre-human delivery receipt; final reader result is rejection"
+    },
+    {
+      "path": "state/review_receipts/PHASE381_ACTUAL_HUMAN_EARLY_STOP_REJECTION_H1_V1.json",
+      "role": "actual-human early-stop rejection and requested Chat handoff preference"
+    },
+    {
+      "path": "state/tasks/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+      "role": "current scoped Phase386 process-repair contract"
+    },
+    {
+      "path": "state/review_receipts/PHASE385_UNSUPPORTED_SUSPENSE_HUMAN_QUOTE_INVALIDATION_V1.json",
+      "role": "human-evidence attribution correction for Phase385"
+    },
+    {
+      "path": "docs/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.md",
+      "role": "frozen Phase386 authoring/evaluator isolation design"
+    },
+    {
+      "path": "state/review_receipts/PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1.json",
+      "role": "accepted Phase386 process-repair settlement"
+    },
+    {
+      "path": "state/tasks/PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1.json",
+      "role": "current native Phase387 contract"
+    },
+    {
+      "path": "state/author_packets/PHASE387_YMGQ_MINIMAL_AUTHOR_PACKET_V1.json",
+      "role": "frozen minimal author packet"
+    },
+    {
+      "path": "delivery/phase387/RUN_FRESH_BLIND_WRITER_V1.txt",
+      "role": "only file permitted to fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE387_FRESH_WRITER_READY_V1.json",
+      "role": "frozen-input readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+      "role": "completed Phase388 diagnostic contract"
+    },
+    {
+      "path": "docs/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.md",
+      "role": "Phase388 comparative root-cause report"
+    },
+    {
+      "path": "state/review_receipts/PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1.json",
+      "role": "Phase388 diagnostic settlement"
+    },
+    {
+      "path": "state/tasks/PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1.json",
+      "role": "completed Phase389 rich-context contract"
+    },
+    {
+      "path": "state/author_packets/PHASE389_YMGQ_RICH_STORY_CONTEXT_V1.json",
+      "role": "frozen writer-visible rich story context"
+    },
+    {
+      "path": "docs/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.md",
+      "role": "Phase389 provenance and diagnostic-leakage audit"
+    },
+    {
+      "path": "state/review_receipts/PHASE389_RICH_STORY_CONTEXT_AUDIT_V1.json",
+      "role": "Phase389 accepted rich-context settlement"
+    },
+    {
+      "path": "state/tasks/PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1.json",
+      "role": "current Phase390 fresh-blind contract"
+    },
+    {
+      "path": "state/author_packets/PHASE390_YMGQ_SCENE_PACKET_V1.json",
+      "role": "frozen scene-specific rich context"
+    },
+    {
+      "path": "delivery/phase390/RUN_FRESH_BLIND_WRITER_V1.txt",
+      "role": "only file permitted to Phase390 fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE390_FRESH_WRITER_READY_V1.json",
+      "role": "Phase390 frozen-input readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+      "role": "completed Phase391 diagnostic contract"
+    },
+    {
+      "path": "docs/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.md",
+      "role": "Phase391 dialogue identity and adjacency report"
+    },
+    {
+      "path": "state/review_receipts/PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1.json",
+      "role": "Phase391 diagnostic settlement"
+    },
+    {
+      "path": "state/tasks/PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1.json",
+      "role": "completed Phase392 facts-only context contract"
+    },
+    {
+      "path": "state/author_packets/PHASE392_YMGQ_FACTS_ONLY_CHARACTER_CONTEXT_V1.json",
+      "role": "frozen writer-visible facts-only character context"
+    },
+    {
+      "path": "docs/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.md",
+      "role": "Phase392 facts-only context audit"
+    },
+    {
+      "path": "state/review_receipts/PHASE392_FACTS_ONLY_CONTEXT_AUDIT_V1.json",
+      "role": "Phase392 accepted context settlement"
+    },
+    {
+      "path": "state/tasks/PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1.json",
+      "role": "current Phase393 fresh-blind contract"
+    },
+    {
+      "path": "state/author_packets/PHASE393_YMGQ_SCENE_PACKET_V1.json",
+      "role": "frozen facts-only scene context"
+    },
+    {
+      "path": "delivery/phase393/RUN_FRESH_BLIND_WRITER_V1.txt",
+      "role": "only file permitted to Phase393 fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE393_FRESH_WRITER_READY_V1.json",
+      "role": "Phase393 frozen-input readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1.json",
+      "role": "completed Phase394 pipeline task"
+    },
+    {
+      "path": "state/review_receipts/PHASE394_PIPELINE_REPAIR_V1.json",
+      "role": "Phase394 pipeline settlement"
+    },
+    {
+      "path": "state/positive_anchors/PHASE394_YMGQ_HUMAN_POSITIVE_PROSE_ANCHOR_V1.txt",
+      "role": "writer-visible human-positive in-project prose anchor"
+    },
+    {
+      "path": "rules/dialogue-mechanical-blocker-v1.md",
+      "role": "writer-hidden post-freeze delivery blocker"
+    },
+    {
+      "path": "scripts/check_dialogue_adjacency.py",
+      "role": "deterministic structural tripwire"
+    },
+    {
+      "path": "state/tasks/PHASE395_GATED_FRESH_WRITER_TO_REPO_V1.json",
+      "role": "current hidden gated writer contract"
+    },
+    {
+      "path": "delivery/phase395/RUN_FRESH_WRITER_TO_REPO_A1.txt",
+      "role": "fresh writer A1 single execution entry"
+    },
+    {
+      "path": "state/inbox/PHASE395_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "hidden candidate inbox"
+    },
+    {
+      "path": "state/review_receipts/PHASE395_A1_READY_V1.json",
+      "role": "Phase395 A1 readiness receipt"
+    },
+    {
+      "path": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
+      "role": "current Phase396 architecture contract"
+    },
+    {
+      "path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
+      "role": "frozen no-dialogue event substrate"
+    },
+    {
+      "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+      "role": "fresh hidden prose renderer entry"
+    },
+    {
+      "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+      "role": "hidden renderer inbox"
+    },
+    {
+      "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
+      "role": "current Phase397 contract after A3 pre-human block"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE397_NS01_RENDERER_CANDIDATE_A3.txt",
+      "role": "immutable Phase397 A3 frozen prose"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_SOURCE_FIDELITY_CLEAR_V1.json",
+      "role": "A3 source-fidelity CLEAR receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_DIALOGUE_GATE_CLEAR_V1.json",
+      "role": "A3 deterministic and semantic dialogue CLEAR receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE397_NS01_A3_ANTI_STORYBOARD_BLOCK_V1.json",
+      "role": "A3 pre-human anti-storyboard BLOCK and whole-candidate rejection"
+    },
+    {
+      "path": "state/tasks/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.json",
+      "role": "active Phase398 author-input architecture redesign contract; prose generation remains unauthorized"
+    },
+    {
+      "path": "docs/PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1.md",
+      "role": "Phase398 author-input representation redesign"
+    },
+    {
+      "path": "state/author_packets/PHASE398_SCENE_FIELD_AUTHOR_PACKET_SCHEMA_V1.json",
+      "role": "unordered SCENE_FIELD_AUTHOR_PACKET_V1 schema"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_ARCHITECTURE_DESIGN_READY_V1.json",
+      "role": "Phase398 architecture design freeze and audit receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE398_NS02_SCENE_FIELD_AUTHOR_PACKET_V1.json",
+      "role": "frozen Phase398 NS02 writer-visible scene-field packet; final immutable audit PASS"
+    },
+    {
+      "path": "state/review_receipts/PHASE398_NS02_SCENE_FIELD_PACKET_READY_V1.json",
+      "role": "Phase398 NS02 first-audit BLOCK, repair, final PASS and freeze receipt"
+    },
+    {
+      "path": "state/tasks/PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1.json",
+      "role": "active Phase399 single isolated NS02 A1 validation contract"
+    },
+    {
+      "path": "delivery/phase399/RUN_NS02_SCENE_FIELD_FRESH_WRITER_A1.txt",
+      "role": "frozen writer-visible A1 entry; only file permitted to fresh writer"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase399 A1 writer-entry freeze and isolation PASS receipt"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE399_NS02_FRESH_WRITER_CANDIDATE_A1.txt",
+      "role": "immutable Phase399 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE399_NS02_A1_POST_GENERATION_GATE_SETTLEMENT_V1.json",
+      "role": "Phase399 A1 storage, source-fidelity, output-contract, dialogue and anti-storyboard settlement"
+    },
+    {
+      "path": "state/tasks/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1.json",
+      "role": "active Phase400 output-generation causal redesign contract"
+    },
+    {
+      "path": "state/calibration/PHASE400_OUTPUT_SURFACE_CONTRAST_PROFILE_V1.json",
+      "role": "Phase400 failure-versus-human-positive output-surface contrast profile"
+    },
+    {
+      "path": "docs/PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_DIAGNOSIS_V1.md",
+      "role": "Phase400 causal diagnosis and selected successor architecture"
+    },
+    {
+      "path": "state/author_packets/PHASE400_SUCCESSOR_WRITER_EXECUTION_SCHEMA_V1.json",
+      "role": "frozen Phase400 successor writer-execution schema; architecture audit PASS"
+    },
+    {
+      "path": "state/review_receipts/PHASE400_OUTPUT_GENERATION_ARCHITECTURE_READY_V1.json",
+      "role": "Phase400 architecture freeze and audit receipt; no prose-transfer claim"
+    },
+    {
+      "path": "state/tasks/PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1.json",
+      "role": "active Phase401 single local-passage prospective validation contract"
+    },
+    {
+      "path": "state/author_packets/PHASE401_NS02_LINQIAO_LOCAL_VIEW_A1.json",
+      "role": "frozen Phase401 Lin Qiao writer-visible local projection"
+    },
+    {
+      "path": "delivery/phase401/RUN_NS02_LINQIAO_LOCAL_HORIZON_A1.txt",
+      "role": "frozen Phase401 A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE401_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase401 readiness receipt with repaired final PASS"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE401_NS02_LOCAL_HORIZON_CANDIDATE_A1.txt",
+      "role": "immutable Phase401 local-horizon A1; whole-candidate rejected after hidden gates"
+    },
+    {
+      "path": "state/review_receipts/PHASE401_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+      "role": "Phase401 causal validation settlement preserving partial directional improvement and remaining blockers"
+    },
+    {
+      "path": "state/tasks/PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1.json",
+      "role": "active Phase402 residual causal redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE402_RESIDUAL_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase402 residual causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE402_ACTOR_COMMITMENT_DEFERRED_ATTRIBUTION_SCHEMA_V1.json",
+      "role": "Phase402 minimal architecture schema"
+    },
+    {
+      "path": "state/tasks/PHASE402_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase402 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_MINIMAL_ARCHITECTURE_READY_V1.json",
+      "role": "Phase402 architecture-ready PASS receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE402_NS02_NON_FOCAL_ACTOR_COMMITMENTS_A1.json",
+      "role": "frozen Phase402 non-focal actor commitments"
+    },
+    {
+      "path": "state/author_packets/PHASE402_NS02_LINQIAO_DEFERRED_ATTRIBUTION_VIEW_A1.json",
+      "role": "frozen Phase402 deferred-attribution writer-visible local view"
+    },
+    {
+      "path": "delivery/phase402/RUN_NS02_LINQIAO_ACTOR_COMMITMENT_A1.txt",
+      "role": "frozen Phase402 single A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase402 A1 readiness PASS receipt"
+    },
+    {
+      "path": "state/inbox/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+      "role": "verbatim Phase402 A1 inbox candidate"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE402_NS02_ACTOR_COMMITMENT_CANDIDATE_A1.txt",
+      "role": "immutable Phase402 A1 frozen candidate; actual-human rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_POST_GENERATION_CAUSAL_SETTLEMENT_V1.json",
+      "role": "Phase402 hidden-gates CLEAR settlement preceding human review"
+    },
+    {
+      "path": "state/review_receipts/PHASE402_NS02_A1_ACTUAL_HUMAN_REJECTION_V1.json",
+      "role": "authoritative Phase402 actual-human verbatim rejection"
+    },
+    {
+      "path": "state/tasks/PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1.json",
+      "role": "active Phase403 reader-drive redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE403_READER_DRIVE_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase403 reader-drive causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE403_LIVE_VECTOR_SELECTIVE_SALIENCE_SCHEMA_V1.json",
+      "role": "Phase403 live-vector selective-salience architecture schema"
+    },
+    {
+      "path": "state/tasks/PHASE403_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase403 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_READER_DRIVE_ARCHITECTURE_READY_V1.json",
+      "role": "Phase403 architecture-ready PASS receipt"
+    },
+    {
+      "path": "state/author_packets/PHASE403_NS02_LINQIAO_LIVE_VECTOR_VIEW_A1.json",
+      "role": "frozen Phase403 live-vector selective-salience writer-visible view"
+    },
+    {
+      "path": "delivery/phase403/RUN_NS02_LINQIAO_LIVE_VECTOR_A1.txt",
+      "role": "frozen Phase403 single A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase403 single A1 fresh-writer readiness PASS receipt"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE403_NS02_LIVE_VECTOR_CANDIDATE_A1.txt",
+      "role": "immutable Phase403 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE403_NS02_A1_POST_GENERATION_READER_DRIVE_SETTLEMENT_V1.json",
+      "role": "Phase403 hidden-gate settlement with output-contract BLOCK"
+    },
+    {
+      "path": "state/tasks/PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1.json",
+      "role": "active Phase404 output-boundary redesign task"
+    },
+    {
+      "path": "state/calibration/PHASE404_OUTPUT_CONTRACT_CAUSAL_DIAGNOSIS_V1.json",
+      "role": "Phase404 output-contract causal diagnosis"
+    },
+    {
+      "path": "state/author_packets/PHASE404_PROSE_BODY_ONLY_RESPONSE_SCHEMA_V1.json",
+      "role": "Phase404 prose-body-only response schema"
+    },
+    {
+      "path": "state/tasks/PHASE404_SINGLE_A1_VALIDATION_CONTRACT_V1.json",
+      "role": "Phase404 single-A1 validation contract; not a second task"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_OUTPUT_BOUNDARY_ARCHITECTURE_READY_V1.json",
+      "role": "Phase404 architecture-ready PASS receipt"
+    },
+    {
+      "path": "delivery/phase404/RUN_NS02_LINQIAO_PROSE_BODY_ONLY_A1.txt",
+      "role": "frozen Phase404 prose-body-only A1 writer entry"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_NS02_A1_FRESH_WRITER_READY_V1.json",
+      "role": "Phase404 A1 readiness PASS receipt"
+    },
+    {
+      "path": "state/frozen_outputs/PHASE404_NS02_PROSE_BODY_ONLY_CANDIDATE_A1.txt",
+      "role": "immutable Phase404 A1 frozen candidate; whole-candidate rejected"
+    },
+    {
+      "path": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
+      "role": "Phase404 output-boundary settlement; output contract CLEAR but other required hidden gates BLOCK"
+    },
+    {
+      "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+      "role": "actual-human RJ-OE408-B rejection; Batch1 human gate closed"
+    },
+    {
+      "path": "tasks/2026-09-28-phase408-rojun-opening-event-batch2-after-human-reject-01.json",
+      "role": "Phase408 Batch2 explicitly authorized one-shot candidate task record"
+    },
+    {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_AUDIT_V1.json",
+      "role": "Phase408 Batch2 six-attack audit"
+    },
+    {
+      "path": "state/calibration/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_SURVIVOR_PACK_V1.json",
+      "role": "Phase408 Batch2 sole-survivor pack"
+    },
+    {
+      "path": "delivery/phase408/RJ-OE408-F_HUMAN_REVIEW_CARD.md",
+      "role": "RJ-OE408-F actual-human event review card; not prose"
+    },
+    {
+      "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_READY_V1.json",
+      "role": "Phase408 Batch2 human-gate readiness receipt"
+    }
+  ],
+  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH2",
+  "physical_ledger_entry_count": 54,
+  "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+  "last_completed_task_id": "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
+  "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
+  "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
+  "action_guard": {
+    "project_state_sha256": "6f44032a916f919346c0a4f144d60676ba5900d85a93da8c7ece26309d07b5f8",
+    "closed_task_ids": [
+      "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+      "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
+      "PHASE381_BOUNDED_SCENE_DELIVERY_V1",
+      "PHASE385_CROSS_BOOK_READER_ENGINE_DISTILLATION_V1",
+      "PHASE386_AUTHORING_EVALUATOR_ISOLATION_FIREWALL_V1",
+      "PHASE387_FRESH_BLIND_AUTHORING_PILOT_V1",
+      "PHASE388_POST_REJECTION_COMPARATIVE_ROOT_CAUSE_DIAGNOSIS_V1",
+      "PHASE389_RICH_STORY_CONTEXT_WITHOUT_DIAGNOSTIC_LEAKAGE_V1",
+      "PHASE390_RICH_CONTEXT_FRESH_BLIND_PILOT_V1",
+      "PHASE391_DIALOGUE_IDENTITY_AND_ADJACENCY_DIAGNOSIS_V1",
+      "PHASE392_FACTS_ONLY_CHARACTER_CONTEXT_REDESIGN_V1",
+      "PHASE393_FACTS_ONLY_FRESH_BLIND_PILOT_V1",
+      "PHASE394_HUMAN_POSITIVE_ANCHOR_AND_DIALOGUE_BLOCKER_PIPELINE_V1",
+      "PHASE395_GATED_FRESH_WRITER_TO_REPO_V1",
+      "PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1",
+      "PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1",
+      "PHASE398_AUTHOR_INPUT_REPRESENTATION_REDESIGN_V1",
+      "PHASE399_NS02_SCENE_FIELD_FRESH_WRITER_VALIDATION_V1",
+      "PHASE400_OUTPUT_GENERATION_HABIT_CAUSAL_REDESIGN_V1",
+      "PHASE401_FOCAL_OPAQUE_LOCAL_HORIZON_PROSPECTIVE_VALIDATION_V1",
+      "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
+      "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
+      "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
+      "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01"
+    ],
+    "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
+    "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
+  },
+  "active_task_contract": null,
+  "last_completed_task_contract": "tasks/2026-09-28-phase408-rojun-opening-event-batch2-after-human-reject-01.json",
+  "next_action": "Present only RJ-OE408-F for actual-human protagonist-bound opening-event review. Allowed human answers: CONTINUE / REJECT. STOP_AT_ACTUAL_HUMAN_GATE. No prose; no Phase409."
+}

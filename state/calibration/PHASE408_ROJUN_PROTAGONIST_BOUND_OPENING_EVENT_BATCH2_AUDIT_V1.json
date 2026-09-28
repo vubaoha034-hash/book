@@ -1,0 +1,137 @@
+{
+  "schema_version": "novel-phase408-rojun-opening-event-batch2-audit/v1",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_AUDIT_V1",
+  "source_head": "ecc0b86c75c28735ad2758b427991557ff9855d9",
+  "authority": {
+    "contract_blob": "89c04b2225b07f786c68fd4bb0a16ca2ff511a95",
+    "batch1_audit_blob": "af734bb78f83263faa81f1cce68cbab0113013de",
+    "batch1_survivor_pack_blob": "8b8106857cc915b271196e6bf5a56f5d0f1df3b1",
+    "batch1_ready_receipt_blob": "2c6e97028326774873a9f99bf400e914d61e5330",
+    "checkpoint114_blob": "d97650f25eee4c564c695fc94b9b1690196a3678",
+    "actual_human_reject_path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+    "actual_human_reject_blob": "76f48ac9f8b7d41115cceb037a2297b2ba40d2e7"
+  },
+  "rejection_informed_negative_constraint": {
+    "candidate": "RJ-OE408-B",
+    "verdict": "REJECT",
+    "user_verbatim": "《不能拿别人替自己脱罪》这种完全不想看一点感觉都没。",
+    "interpretation": [
+      "The failure is not title/copy failure.",
+      "Privacy-vs-self-exoneration became an author-designed decision puzzle before 罗钧 created immediate felt pull.",
+      "Understanding why a choice is difficult is not evidence that the reader wants to keep watching 罗钧."
+    ]
+  },
+  "generated_candidate_count": 4,
+  "candidates": [
+    {
+      "id": "RJ-OE408-E",
+      "label": "迟到后的圆场",
+      "live_event": "罗钧答应参加一个熟人小聚，却真的把时间记错，晚到近四十分钟。替他张罗这场聚会的朋友先替他向其他人解释成“临时有事耽误了”；罗钧进门时正好听见。",
+      "first_choice": "他没有顺着朋友给的台阶，直接说明自己没有临时状况，就是把时间记错了。",
+      "immediate_consequence": "其他人只是笑着让他坐下，反而是替他圆场的朋友明显不高兴，觉得他把一件已经过去的小事重新弄尴尬。",
+      "revaluation": "当有人随口把“忘记”解释成“没把这顿饭放心上”时，罗钧立刻开始解释自己为什么会忘记，却又拒绝接受“不在乎”这个结论：事实上的错他认，别人替他概括出来的动机他不认。",
+      "next_choice_pressure": "朋友不再替他收场，只把话停住。罗钧下一步必须决定，是继续把自己解释清楚，还是停止作证，用接下来留在这里的行为承担这次难看的开局。",
+      "reader_center": "读者关心的不是迟到该不该道歉，而是罗钧会不会停止给自己辩护，真的承担自己刚刚弄出来的尴尬。"
+    },
+    {
+      "id": "RJ-OE408-F",
+      "label": "被熟人代替回答",
+      "live_event": "一场很普通的四人饭局里，罗钧的老朋友为了让他省事，连续替他回答几个关于吃什么、喝不喝、饭后还去不去下一处的随口问题；这些回答都符合罗钧过去的习惯，朋友也没有恶意。",
+      "first_choice": "前两次罗钧都默认；第三次朋友替他说“他肯定不去”时，罗钧却当场改口说自己去，并马上把自己加进后续安排。",
+      "immediate_consequence": "老朋友立刻问他是不是故意唱反调。罗钧没有把自己包装成突然改变兴趣，只承认这个决定里确实有一部分是因为被替他答得烦了。",
+      "revaluation": "他同时承认朋友原本判断得没错——进门前他确实不想去。于是他既不是被误解的受害者，也不是单纯坚持自主，而是亲手把自己推进了一个本来不想参加的安排。",
+      "next_choice_pressure": "饭局结束时，老朋友这次一句也不替他说，其他人直接等罗钧自己决定是否真的跟去。罗钧必须选择：把刚才那句带着赌气成分的“去”兑现，还是当众承认自己只是因为被说中了才临时改口。",
+      "reader_center": "读者已经知道他原本不想去，也知道朋友没有恶意；兴趣只在罗钧会不会为自己这个有点拧巴、又不够体面的选择继续买单。"
+    },
+    {
+      "id": "RJ-OE408-G",
+      "label": "借伞后反悔",
+      "live_event": "午饭散场时下着普通的雨，一个同行的人没带伞。罗钧把自己的伞递过去，说自己走有遮棚的那段路就行；所有人都看见了，这不是危险场面。",
+      "first_choice": "走出去没多远，他发现雨比自己想的烦，直接折回来把伞要回，但没有编任何理由，只改成提出两个人一起撑。",
+      "immediate_consequence": "对方先以为他开玩笑，确认他真要拿回去后又好气又好笑，旁边刚夸他大方的人也僵住。",
+      "revaluation": "罗钧没有把反悔包装成更合理的决定，承认自己刚才想得太漂亮，实际走几步就后悔。",
+      "next_choice_pressure": "对方被这一出弄得不想再共伞，准备自己走一小段去买伞。罗钧要决定是继续补救这个已经收回来的好意，还是接受自己刚才的反悔确实让人不舒服。",
+      "reader_center": "读者想看的不是谁更有道理，而是罗钧会怎样处理自己亲手制造的尴尬。"
+    },
+    {
+      "id": "RJ-OE408-H",
+      "label": "被转借的东西",
+      "live_event": "罗钧把一个自己暂时不用的小物件借给老朋友。见面时，他亲眼看见老朋友顺手又把它转借给现场另一个人，并解释说罗钧最近用不上；所有事实都摆在眼前，也没有损坏或损失。",
+      "first_choice": "罗钧走过去先把东西从第三个人手里拿回来，等第三个人直接问他能不能借时，他又亲手把同一个东西递给对方。",
+      "immediate_consequence": "第三个人摸不清状况，老朋友当场难堪，因为结果完全一样，却被罗钧用一个动作把“谁可以替他决定”硬生生拆开。",
+      "revaluation": "罗钧意识到自己的做法让朋友在别人面前下不来台，但他并不否认刚才就是故意这样做；同时他也不打算收回对第三个人的借用。",
+      "next_choice_pressure": "老朋友没有争辩，只把自己手里另一件罗钧寄放的东西也放回给他，准备以后不再替他处理任何事。罗钧必须决定要不要拦住这种“彻底不管”，还是接受自己把关系推到了比一件物品更僵的位置。",
+      "reader_center": "读者先被罗钧那个“拿回再亲手给出去”的行为抓住，接下来想看他是继续硬到底、解释，还是用别的动作把关系拉回来。"
+    }
+  ],
+  "attacks": [
+    {
+      "id": "RJ-OE408-E",
+      "SWAP_PROTAGONIST": "PASS_WITH_CAUTION：承认事实错误却抗拒别人替自己定义动机，符合罗钧已有的解释冲动；但很多防御性较强的主角也能成立。",
+      "HUMAN_MESSINESS": "PASS：他不是高尚认错模板；他一边认错，一边把社交修复再次弄坏。",
+      "AUTHOR_THESIS_DEPENDENCY": "FAIL：事件几乎正面复现了“对重要的人会过度解释、想把自己说明白”的既有特征，像为了展示人物卡而搭出的实验。",
+      "CONTINUATION_VALUE": "PARTIAL：现场有行为压力，但后续很容易继续变成‘他还要解释多久’的单一重复。",
+      "IMMEDIATE_FELT_PULL": "PASS：听见朋友替自己圆场却主动拆台，会让读者立即想看他接下来还会不会继续把场面弄坏。",
+      "DECISION_PUZZLE_DEPENDENCY": "PASS：拿掉‘迟到到底该怎么处理才正确’的命题，罗钧自己拆掉台阶的行为仍然有吸引力。",
+      "verdict": "FAIL_AUTHOR_THESIS_DEPENDENCY"
+    },
+    {
+      "id": "RJ-OE408-F",
+      "SWAP_PROTAGONIST": "PASS：吸引力不只是‘不喜欢被代答’，而是罗钧先默认、随后因为被准确预测而临时改掉真实偏好，还承认自己带着赌气；换成一般独立或嘴硬主角会失去这组不整齐的行为链。",
+      "HUMAN_MESSINESS": "PASS：朋友没有恶意、判断也没错；罗钧不是受害者，他为了夺回自己的选择感，主动制造了一个自己原本并不想要的后果。",
+      "AUTHOR_THESIS_DEPENDENCY": "PASS：饭局里熟人顺手替答是普通社交事件；它不是为了证明某个伦理观点，罗钧的磁力来自他现场反应本身。",
+      "CONTINUATION_VALUE": "PASS：局部冲突并未在‘他改口说去’时结束，反而产生新的行为债——他是否真的兑现这个带赌气成分的选择。",
+      "IMMEDIATE_FELT_PULL": "PASS：在解释任何人格主题之前，‘本来不想去，却因为朋友替自己说了不去而当场改口’已经会让普通读者具体地想看他下一步怎么收拾自己。",
+      "DECISION_PUZZLE_DEPENDENCY": "PASS：这里没有‘正确答案’；拿掉自主、边界或原则命题，罗钧这个略显幼稚、又坦白承认的反应仍然成立。",
+      "verdict": "PASS"
+    },
+    {
+      "id": "RJ-OE408-G",
+      "SWAP_PROTAGONIST": "FAIL：送伞后后悔再要回来虽然很人，但可由大量坦率、抠门、冲动或不装的人物承担，罗钧专属性不足。",
+      "HUMAN_MESSINESS": "PASS：他直接撤回刚刚的体面举动，也不编理由，明显不整齐。",
+      "AUTHOR_THESIS_DEPENDENCY": "PASS：事件本身自然，不需要人物主题说明才能成立。",
+      "CONTINUATION_VALUE": "FAIL：最有力的点就是‘把伞要回来’这一拍；之后主要剩尴尬修复，难以维持对罗钧下一次选择的持续兴趣。",
+      "IMMEDIATE_FELT_PULL": "PASS：撤回刚送出去的伞具有即时的人物吸引力。",
+      "DECISION_PUZZLE_DEPENDENCY": "PASS：不存在道德两难作为主要发动机。",
+      "verdict": "FAIL_SWAP_PROTAGONIST_AND_CONTINUATION_VALUE"
+    },
+    {
+      "id": "RJ-OE408-H",
+      "SWAP_PROTAGONIST": "PASS_WITH_CAUTION：‘先拿回，再由自己借出’有较强个人行为纹理，但仍可移植给强调控制权的其他主角。",
+      "HUMAN_MESSINESS": "PASS：他明知会让朋友难堪，仍做了这个动作，同时又把东西借给同一个第三人，既不高尚也不整齐。",
+      "AUTHOR_THESIS_DEPENDENCY": "FAIL_WITH_CAUTION：这个动作太完整地演示了‘你不能替我决定’的命题；一旦读者读懂动作，事件容易显出作者专门设计示例的痕迹。",
+      "CONTINUATION_VALUE": "FAIL：最鲜明的人物信息已经在‘拿回再给出’中一次性结算，后续压力很容易降成解释边界或修复关系，而不是新的不可预测行为。",
+      "IMMEDIATE_FELT_PULL": "PASS：动作本身足以先抓住人，不靠解释。",
+      "DECISION_PUZZLE_DEPENDENCY": "PASS：没有依赖‘该不该转借’的正确答案才能产生吸引力。",
+      "verdict": "FAIL_AUTHOR_THESIS_DEPENDENCY_AND_CONTINUATION_VALUE"
+    }
+  ],
+  "machine_survivors": [
+    "RJ-OE408-F"
+  ],
+  "survivor_count": 1,
+  "rejected": [
+    "RJ-OE408-E",
+    "RJ-OE408-G",
+    "RJ-OE408-H"
+  ],
+  "survivor_selection_method": "ALL_SIX_ATTACKS_MUST_CLEAR; no numeric score or best-of-N ranking used.",
+  "constraints_preserved": {
+    "sole_protagonist": "罗钧",
+    "batch1_A_B_C_D_not_rewritten_or_reused": true,
+    "kitchen_crisis_not_used": true,
+    "escort_route_not_used": true,
+    "car_inspection_not_used": true,
+    "static_moral_tableau_not_used": true,
+    "no_hidden_truth": true,
+    "no_accident_death_disease_crime_extreme_humiliation_forced_betrayal_or_big_crisis": true,
+    "no_title_or_aphorism_rescue": true,
+    "reader_knows_material_facts": true,
+    "prose_generated": false,
+    "phase409_entered": false
+  },
+  "conclusion": "RJ-OE408-F is the sole machine survivor. Its pull begins with 罗钧 voluntarily changing a real preference because an old friend accurately answered for him, not with a moral proposition. The continuation pressure is behavioral debt: whether he will actually live with the choice he made partly out of irritation.",
+  "status": "COMPLETE_ONE_SURVIVOR_NO_PROSE"
+}
