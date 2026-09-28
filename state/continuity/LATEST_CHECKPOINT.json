@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 120,
-  "recorded_at": "2026-09-28T15:57:00+08:00",
+  "sequence": 121,
+  "recorded_at": "2026-09-28T16:58:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase409 is complete for RJ-OE408-I《第二套过去》: exactly one V3 Phase 1 Story Contract has been frozen and V3-G0 PASS. The contract supplies a testable mainline, ordinary want, active protagonist choices, persistent multi-axis opposition, concrete failure costs, a 30-day why-now, a true irreversible event, midpoint strategy failure, costly climax choice, core relationship and an ending that answers the opening. The source mystery resolves before climax, so the engine does not collapse into a puzzle. No prose, first chapter, scene plan or Phase410 execution occurred.",
+  "current_focus": "Phase410 / V3-G1 causal proof for RJ-OE408-I《第二套过去》 is complete and PASS. Fifteen non-prose causal units connect the Phase409 contract from dual-history manifestation through midpoint strategy failure, pre-climax truth recovery, costly current-identity liability assumption, anti-unification standing and ending payoff. All ordinary simple-exit attacks are concretely blocked by seeded permission/time/cost/evidence logic; open blocker count is zero. No prose, first chapter, complete scene, scene plan or Phase411 execution occurred.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -371,7 +371,12 @@
     "Phase409 froze exactly one 00-story-contract for RJ-OE408-I.",
     "V3-G0 story_contract PASS with all required evidence and no configured blocker.",
     "Source mystery resolves before climax; responsibility/institution/asset/relationship pressure continues afterward.",
-    "No prose, first chapter, scene, scene plan or Phase410 execution."
+    "No prose, first chapter, scene, scene plan or Phase410 execution.",
+    "Phase410 successor authorization consumed for V3-G1 causal proof only.",
+    "15-unit causal ledger frozen; Phase409 Story Contract remains unchanged.",
+    "V3-G1 PASS: all configured blockers false and open BLOCKER count 0.",
+    "Midpoint U06-U08 non-deletable; climax fully backtraceable to old strategy and its costs.",
+    "No prose, first chapter, scene plan or Phase411 execution."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -443,7 +448,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE410_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE411_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -612,7 +617,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I_ONLY. No prose and no Phase410 execution yet.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY. No prose and no Phase411 execution yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1153,16 +1158,28 @@
     {
       "path": "state/review_receipts/PHASE409_RJ_OE408_I_STORY_CONTRACT_V3_G0_PASS_V1.json",
       "role": "Phase409 V3-G0 Story Contract PASS receipt"
+    },
+    {
+      "path": "state/tasks/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_V1.json",
+      "role": "Phase410 RJ-OE408-I V3-G1 causal proof task"
+    },
+    {
+      "path": "delivery/phase410/01-causal-ledger.md",
+      "role": "Phase410 frozen 01-causal-ledger"
+    },
+    {
+      "path": "state/review_receipts/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS_V1.json",
+      "role": "Phase410 V3-G1 causal proof PASS receipt"
     }
   ],
-  "status": "PHASE409_RJ_OE408_I_STORY_CONTRACT_V3_G0_PASS__AWAITING_EXPLICIT_PHASE410_AUTHORIZATION",
+  "status": "PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS__AWAITING_EXPLICIT_PHASE411_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
+  "last_completed_task_id": "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "6ba929cbc8a0c2faaa4fcae0ceb299b6e592f344b050d76477019bc36ddbccfd",
+    "project_state_sha256": "a38c35a035985619fd2bf1424f12778f2dbe781660f45c6adea73c093b675983",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1191,14 +1208,15 @@
       "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
       "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
       "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
-      "PHASE409-RJ-OE408-I-STORY-CONTRACT-01"
+      "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
+      "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE409_RJ_OE408_I_STORY_CONTRACT_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I_ONLY. No prose and no Phase410 execution yet.",
+  "last_completed_task_contract": "state/tasks/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY. No prose and no Phase411 execution yet.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }

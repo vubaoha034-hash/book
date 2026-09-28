@@ -1,0 +1,232 @@
+{
+  "schema_version": "phase410-v3-g1-causal-proof-task/v1",
+  "task_id": "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
+  "project_id": "novel-distillation",
+  "phase": 410,
+  "branch": "main",
+  "source_head": "c98b89814fdc5f04b996cfbc3cbcdfce974d2d93",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "source_phase409_task": "state/tasks/PHASE409_RJ_OE408_I_STORY_CONTRACT_V1.json",
+    "source_phase409_g0_receipt": "state/review_receipts/PHASE409_RJ_OE408_I_STORY_CONTRACT_V3_G0_PASS_V1.json",
+    "source_story_contract_blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+    "authorized_successor": "PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I",
+    "phase411_authorized": false,
+    "prose_authorized": false,
+    "scene_plan_authorized": false
+  },
+  "frozen_core_preserved": {
+    "dual_histories_both_real": true,
+    "ordinary_want_apartment_transfer": true,
+    "thirty_day_window": true,
+    "core_relationship_xucheng": true,
+    "old_strategy_verify_before_commit": true,
+    "midpoint_truth_not_equal_responsibility": true,
+    "climax_current_identity_assumes_second_history_liability_with_real_loss": true,
+    "truth_before_climax": true,
+    "ending_no_single_true_past": true,
+    "story_contract_rewritten": false
+  },
+  "causal_unit_count": 15,
+  "causal_unit_ids": [
+    "CP410-U01",
+    "CP410-U02",
+    "CP410-U03",
+    "CP410-U04",
+    "CP410-U05",
+    "CP410-U06",
+    "CP410-U07",
+    "CP410-U08",
+    "CP410-U09",
+    "CP410-U10",
+    "CP410-U11",
+    "CP410-U12",
+    "CP410-U13",
+    "CP410-U14",
+    "CP410-U15"
+  ],
+  "v3_g1_result": "PASS",
+  "open_blocker_count": 0,
+  "simple_solution_attack_count": 13,
+  "simple_solution_attacks": [
+    {
+      "id": "SSA-01",
+      "action": "报警",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "可登记身份异常或诈骗嫌疑，但不暂停已生效的合同/产权/共同责任，也不能裁定哪条身份链可执行；独立托管与纸本证据仍需另行处理。",
+      "established_by": [
+        "U01",
+        "U02"
+      ]
+    },
+    {
+      "id": "SSA-02",
+      "action": "直接公开全部证据",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "公开不产生合同/产权/身份映射的暂停权限；还会暴露许澄及其他人的私人材料，并帮助项目方识别分散证据位置。公开可增加监督，但不能替代保全令和责任主体资格。",
+      "established_by": [
+        "U09",
+        "U10"
+      ]
+    },
+    {
+      "id": "SSA-03",
+      "action": "把证据交给媒体/平台",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "媒体/平台没有终止执行映射或债务追偿的权限；舆论不能替代具体的跨链利害关系和审理程序。",
+      "established_by": [
+        "U09"
+      ]
+    },
+    {
+      "id": "SSA-04",
+      "action": "找律师/行政复议/司法冻结",
+      "result": "BLOCKED_AS_COMPLETE_SOLUTION",
+      "reason": "专业程序能保存证据、暂停具体处分、争取短期映射保全，因此被实际使用；但它不能自动分配双历史责任，也不能在罗钧否认第二链现实利害关系时赋予长期跨链保护资格。全面冻结还会转移成本给许澄。",
+      "established_by": [
+        "U03",
+        "U04",
+        "U06",
+        "U11"
+      ]
+    },
+    {
+      "id": "SSA-05",
+      "action": "拒绝签字/拒绝认领",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "拒绝只能让罗钧一侧责任继续处于争议，既不会解除30天映射流程，也不会阻止债权方追索身份无争议的许澄；到期后第二链仍可能被降为非执行记录。",
+      "established_by": [
+        "U02",
+        "U06",
+        "U11"
+      ]
+    },
+    {
+      "id": "SSA-06",
+      "action": "离城/失联/逃避",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "冲突绑定的是同一法定身份、账户、产权和合同，不依赖人在当地；缺席只会让默认程序继续、许澄更先被执行。",
+      "established_by": [
+        "U01",
+        "U02"
+      ]
+    },
+    {
+      "id": "SSA-07",
+      "action": "让许澄单独处理",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "许澄能保护自己的合同与资产，却不能代表当前罗钧建立他在第二身份链上的可执行利害关系，也不能替他阻止银行/产权/身份系统降格他的第二链记录。",
+      "established_by": [
+        "U07",
+        "U12"
+      ]
+    },
+    {
+      "id": "SSA-08",
+      "action": "先保住房产，三十天后再处理",
+      "result": "BLOCKED_AS_SIMPLE_EXIT",
+      "reason": "房产资金和产权转移在U01起已因同一身份的冲突义务被暂停；不可逆过户不能在责任归属未定时先行放行。三十天后若归一完成，第二链还会失去执行地位。",
+      "established_by": [
+        "U01",
+        "U04"
+      ]
+    },
+    {
+      "id": "SSA-09",
+      "action": "直接让机构判两套记录并存",
+      "result": "BLOCKED_AS_COMPLETE_SOLUTION",
+      "reason": "证据可以双轨保全，但同一唯一身份的交易执行层不能同时结算互斥产权、信用和债务，否则会出现双重处分/重复履行。只有进入专门审理/保全状态后才能保留双轨争议，而不是永久双执行。",
+      "established_by": [
+        "U08",
+        "U14"
+      ]
+    },
+    {
+      "id": "SSA-10",
+      "action": "直接证明连续性项目存在就结束",
+      "result": "BLOCKED_AS_COMPLETE_SOLUTION",
+      "reason": "来源证明能说明项目责任，却不会自动分配罗钧/许澄当前债务、恢复房产交易或赋予罗钧第二链主体资格；U10后仍有U11-U14的现实责任链。",
+      "established_by": [
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U14"
+      ]
+    },
+    {
+      "id": "SSA-11",
+      "action": "许澄为什么不自己解决",
+      "result": "BLOCKED_AS_SUBSTITUTION",
+      "reason": "她有自己的权利与程序能动性，并实际独立保全证据/主张权利；但她没有权限替罗钧承认当前身份与第二链的连接，也不能替他承担/放弃其个人资产与身份后果。",
+      "established_by": [
+        "U07",
+        "U12",
+        "U14"
+      ]
+    },
+    {
+      "id": "SSA-12",
+      "action": "连续性项目立刻删除所有证据",
+      "result": "BLOCKED_AS_VILLAIN_SHORTCUT",
+      "reason": "项目控制的是部分权威映射与归档权限，不是所有物理现实。纸本、离线备份、第三方托管和人脑记忆分散存在；强行全面删除会留下更多审计痕迹。项目的有效手段是把第二链标为非执行/异常，而不是神奇抹掉一切。",
+      "established_by": [
+        "U05",
+        "U09",
+        "U10",
+        "U14"
+      ]
+    },
+    {
+      "id": "SSA-13",
+      "action": "罗钧为什么必须亲自承担责任才获得阻止归一的主体资格",
+      "result": "SUPPORTED_CAUSALLY",
+      "reason": "早在U03即建立：长期跨链保护要求申请人在两条链上都有当前可执行利害关系。罗钧在第一链已有资产/身份利益，但他持续否认第二链义务；许澄不能替他制造该连接。U12通过认领一项已独立验证的共同责任建立第二链现实利害关系，U13让该利益真实可执行并付出资产/信用代价，因此U14的长期保全不是临时发明资格。",
+      "established_by": [
+        "U03",
+        "U08",
+        "U11",
+        "U12",
+        "U13",
+        "U14"
+      ]
+    }
+  ],
+  "midpoint_non_deletable": true,
+  "climax_backtrace": [
+    "U12-U13 current-identity assumption + actual asset/credit loss",
+    "U11 low-cost legal preservation buys time but cannot create standing",
+    "U10 source truth resolved but present responsibility unresolved",
+    "U08 facts sufficiently true but responsibility unallocated; old strategy fails",
+    "U06-U07 verify-first freeze actively harms Xu Cheng and breaks relationship",
+    "U03 verify-first/commit-later strategy formalized with standing limitation",
+    "U01-U02 irreversible dual-history consequence + independent evidence + maturing joint liability"
+  ],
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "complete_scene_generated": false,
+    "scene_plan_generated": false,
+    "phase411_entered": false,
+    "visual_generated": false,
+    "project_rule_added": false,
+    "phase409_story_contract_rewritten": false,
+    "phase408_candidate_regenerated": false
+  },
+  "outputs": {
+    "causal_ledger_path": "delivery/phase410/01-causal-ledger.md",
+    "v3_g1_receipt_path": "state/review_receipts/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS_V1.json"
+  },
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "reason": "Current branch still has no materialized STATE_LEDGER path; checkpoint records physical ledger as partially reconciled. No missing physical history is fabricated."
+  },
+  "status": "COMPLETED_V3_G1_PASS_STOP_BEFORE_PHASE411",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY"
+}
