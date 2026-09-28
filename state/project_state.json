@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-28T00:38:00Z",
+  "updated_at": "2026-09-28T02:09:00Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,7 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1",
+  "active_task": null,
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -608,7 +608,8 @@
     "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
     "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
     "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
-    "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1"
+    "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
+    "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -858,11 +859,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Deliver only RJ-OE408-B for actual-human protagonist-bound opening-event review. No prose; no Phase409.",
-  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH1",
-  "active_task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
-  "last_completed_task_id": "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
-  "last_completed_task_contract": "state/tasks/PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1.json",
+  "next_required_action": "Wait for unified-command review of research quality; only a later explicit authorization may create a new Phase408 candidate task. No prose; no Phase409; no Batch3.",
+  "status": "PHASE408_HOT_NOVEL_THEME_ENGINE_SCAN_COMPLETE__AWAITING_UNIFIED_COMMAND_REVIEW",
+  "active_task_contract": null,
+  "last_completed_task_id": "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
+  "last_completed_task_contract": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1111,13 +1112,29 @@
     {
       "path": "state/review_receipts/PHASE404_NS02_A1_POST_GENERATION_OUTPUT_BOUNDARY_SETTLEMENT_V1.json",
       "role": "Phase404 output-boundary settlement; output contract CLEAR but other required hidden gates BLOCK"
+    },
+    {
+      "path": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+      "role": "Phase408 current-hot-novel theme-engine scan task and boundary record"
+    },
+    {
+      "path": "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
+      "role": "23-work cross-platform current theme/opening-engine calibration and READER_ATTENTION_WORTHINESS_V1"
+    },
+    {
+      "path": "docs/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SYNTHESIS_V1.md",
+      "role": "human-readable synthesis of current hot-novel engine research"
+    },
+    {
+      "path": "state/review_receipts/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1.json",
+      "role": "research readiness receipt awaiting unified-command quality review"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase408 batch3 L/M/O were all rejected by the actual human as not worth reading. Current fast-webnovel research identified the missing unit as opening event-engine density/agency/payoff rather than further static premise refinement. No opening-engine candidates have yet been generated."
+    "Phase408 remains open only for future explicitly authorized candidate work. Current hot-novel theme/engine research is complete; no new candidate, prose, Batch3, or Phase409 is authorized while unified-command research-quality review is pending."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1310,7 +1327,9 @@
     "Phase404 neutral-salience flooding NO_BLOCK",
     "Phase404 focal personal-cost visibility CLEAR",
     "Phase404 live open-outcome visibility CLEAR",
-    "Phase404 candidate rejected whole; human review not authorized"
+    "Phase404 candidate rejected whole; human review not authorized",
+    "Phase408 current-hot-novel theme/engine scan completed from 23 current official-platform samples across Qidian, Fanqie, JJWXC and Qimao.",
+    "READER_ATTENTION_WORTHINESS_V1 defined as a mandatory pre-candidate gate; RJ-OE408-B and RJ-OE408-F both regress to BLOCK before character-specificity."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -2038,7 +2057,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase408_state": {
-    "status": "HUMAN_REJECTED_BATCH2_RESEARCH_REQUIRED_BEFORE_BATCH3",
+    "status": "HOT_NOVEL_THEME_ENGINE_SCAN_COMPLETE_AWAITING_UNIFIED_COMMAND_REVIEW",
     "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
@@ -2253,7 +2272,7 @@
     },
     "rojun_protagonist_bound_opening_event_batch2_review_card": {
       "path": "delivery/phase408/RJ-OE408-F_HUMAN_REVIEW_CARD.md",
-      "status": "HUMAN_GATE_PENDING",
+      "status": "HUMAN_REJECTED_CLOSED",
       "candidate": "RJ-OE408-F"
     },
     "rj_oe408_b_human_gate_pending": false,
@@ -2264,6 +2283,31 @@
       "user_verbatim": "小说哪个。不会。我会觉得这种破事值得吗？还有我希望你看所有现在最火的小说。 我觉得你现在的主题就很一般",
       "receipt_path": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json"
     },
-    "next_action": "CURRENT_HOT_NOVEL_THEME_AND_OPENING_ENGINE_RESEARCH_BEFORE_ANY_BATCH3_OR_NEW_PHASE408_CANDIDATE"
+    "next_action": "WAIT_FOR_UNIFIED_COMMAND_RESEARCH_QUALITY_REVIEW_BEFORE_ANY_NEW_PHASE408_CANDIDATE_TASK",
+    "batch3_started": false,
+    "new_phase408_candidate_count": 0,
+    "current_hot_novel_theme_engine_scan": {
+      "task_path": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+      "calibration_path": "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
+      "synthesis_path": "docs/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SYNTHESIS_V1.md",
+      "ready_receipt_path": "state/review_receipts/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1.json",
+      "status": "COMPLETE_READY_FOR_UNIFIED_COMMAND_REVIEW",
+      "capture_date": "2026-09-28",
+      "platforms": [
+        "番茄小说",
+        "起点中文网",
+        "晋江文学城",
+        "七猫中文网"
+      ],
+      "sample_count": 23,
+      "strong_engine_family_count": 8
+    },
+    "reader_attention_worthiness_gate": {
+      "id": "READER_ATTENTION_WORTHINESS_V1",
+      "status": "DEFINED_AND_FROZEN_AS_RESEARCH_CONCLUSION",
+      "applies_before": "ANY_NEW_PHASE408_CANDIDATE_GENERATION_AND_BEFORE_CHARACTER_SPECIFICITY",
+      "b_regression": "BLOCK_BEFORE_CHARACTER_SPECIFICITY",
+      "f_regression": "BLOCK_BEFORE_CHARACTER_SPECIFICITY"
+    }
   }
 }
