@@ -1,0 +1,95 @@
+{
+  "schema_version": "phase411-v3-g2-emotion-debt-payoff-task/v1",
+  "task_id": "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
+  "project_id": "novel-distillation",
+  "phase": 411,
+  "branch": "main",
+  "source_head": "92303356cacfe2dcb2d68f3c8192eda0a4a4e7ae",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "source_phase409_story_contract": "delivery/phase409/00-story-contract.md",
+    "source_phase410_causal_ledger": "delivery/phase410/01-causal-ledger.md",
+    "source_phase410_g1_receipt": "state/review_receipts/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS_V1.json",
+    "authorized_successor": "PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I",
+    "phase412_authorized": false,
+    "prose_authorized": false,
+    "scene_plan_authorized": false
+  },
+  "frozen_material_preserved": {
+    "phase409_story_contract_rewritten": false,
+    "phase410_causal_proof_rewritten": false,
+    "dual_histories_both_real": true,
+    "apartment_want": true,
+    "xucheng_core_relationship": true,
+    "verify_before_commit_strategy": true,
+    "midpoint_freeze_harms_xucheng_then_truth_not_equal_responsibility": true,
+    "truth_before_climax": true,
+    "climax_current_identity_liability_with_real_loss": true,
+    "ending_new_relation_rules_not_old_relation_restoration": true
+  },
+  "debt_line_count": 3,
+  "primary_debt_count": 1,
+  "primary_debt_id": "ED411-A",
+  "primary_emotion_debt": "罗钧明知全面冻结会把现实执行压力优先转给许澄，仍用她的损失购买自己的查证时间；读者等待他是否会在不恢复记忆、不确认旧情的前提下，用自己的资产、信用和身份把这笔成本真正接回去。",
+  "debt_creator": "罗钧（制度提供传导结构，但 U06 主动选择实际制造主债）",
+  "reader_expected_return": "读者会等待罗钧在不恢复记忆、不确认旧情、也不把许澄当‘值得同情所以帮一下’的前提下，是否愿意把自己主动转嫁出去的现实成本接回到自己身上，让许澄不再是唯一承担者。",
+  "escalation": [
+    "U06：罗钧主动全面冻结自己一侧执行，明知成本会转向许澄。",
+    "U07：追偿/资产限制真正落到许澄，她停止提供便利并转入中立保全，关系从合作证人变成独立当事人。",
+    "U08：罗钧成功证明第二过去真实，却仍拒绝认领责任；许澄关于‘你查清也不会替我承担’的判断被现实印证，程序优势反而变成情绪欠债加码。",
+    "U10：许澄被从‘可能造假者’的位置事实性洗清，但项目真相仍不能替她卸掉到期责任，因此真相奖励不结清主债。",
+    "U11：短期法律保全只能保护证据；许澄现实追偿继续，罗钧原生活也开始同步失血，读者看到成本终于不再只落在她一侧。"
+  ],
+  "partial_return": {
+    "type": "PARTIAL_RETURN",
+    "location": "U07 + U08",
+    "return": "许澄不再被动配合。她把自己的证据转入中立保全、停止给罗钧便利，只通过正式程序回应；随后 U08 又让第二过去获得阶段性真实性认可，不再被当场当作诈骗删除。",
+    "why_real": "这不是罗钧道歉，也不是许澄被安慰。关系权力发生真实变化：罗钧失去免费获取她信息/便利的选择权，许澄取得独立保护自己证据与诉求的行动位置；同时她的历史主张获得最低制度保全。",
+    "why_not_full": "她仍在承担追偿与资产损失，罗钧仍未把共同责任接回自己；主债‘谁承担今天的代价’没有被偿还。"
+  },
+  "final_return": {
+    "location": "U12 → U13 → U14",
+    "return": "罗钧以当前身份正式认领已独立验证的第二过去共同责任，让该责任对自己真正可执行；U13 使公寓资金进入责任池、过户失败、信用/身份公开绑定第二链，许澄不再是唯一可追偿人；U14 再用这个真实利害关系阻断单方归一。",
+    "why_payoff": "罗钧最终支付的正是他此前为了避免承担而转嫁给许澄的同类现实成本。偿还不是‘我相信你’或‘对不起’，而是谁的钱、信用、身份与法律位置真正承担后果发生了改变。"
+  },
+  "material_state_change": [
+    "谁承担代价：从许澄优先/近乎单独承担 → 罗钧与许澄共同成为当前可执行责任主体。",
+    "关系状态：从许澄提供便利、罗钧决定何时承诺 → 许澄保留独立主体性，罗钧必须用当前行为承担，双方才重新合作。",
+    "选择权：许澄不再需要等待罗钧是否承认旧记忆才能保护自己的权利。",
+    "资产/身份：罗钧的公寓资金、信用和身份位置不可逆进入第二链现实后果。",
+    "权力：罗钧因真实承担获得反归一主体资格，但这项权力来自代价而非道德表态。"
+  ],
+  "unresolved_aftershock": "三年情感缺口不被偿还；许澄不会因为罗钧承担责任就恢复旧关系或替他补回记忆中的人。两人只能建立基于今天明示承诺的新合作规则。许澄已经遭受的部分资产/信用损失也不会被一句承担动作自动抹平。",
+  "xucheng_agency": "PASS_FROM_FROZEN_EVIDENCE_U06_U07_U12_U14_U15",
+  "v3_g2_result": "PASS",
+  "open_blocker_count": 0,
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "complete_scene_generated": false,
+    "scene_plan_generated": false,
+    "phase412_entered": false,
+    "visual_generated": false,
+    "project_rule_added": false,
+    "phase409_story_contract_rewritten": false,
+    "phase410_causal_proof_rewritten": false,
+    "theme_or_candidate_regenerated": false,
+    "second_ledger_generated": false
+  },
+  "outputs": {
+    "emotion_payoff_ledger_path": "delivery/phase411/02-emotion-payoff-ledger.md",
+    "v3_g2_receipt_path": "state/review_receipts/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1.json"
+  },
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "reason": "Current branch still has no materialized STATE_LEDGER path; checkpoint records physical ledger as partially reconciled. No missing physical history is fabricated."
+  },
+  "status": "COMPLETED_V3_G2_PASS_STOP_BEFORE_PHASE412",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY"
+}

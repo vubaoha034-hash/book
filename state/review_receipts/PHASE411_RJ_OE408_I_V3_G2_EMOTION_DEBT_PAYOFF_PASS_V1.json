@@ -1,0 +1,347 @@
+{
+  "schema_version": "phase411-v3-g2-emotion-debt-payoff-review/v1",
+  "receipt_id": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1",
+  "task_id": "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
+  "project_id": "novel-distillation",
+  "phase": 411,
+  "candidate": "RJ-OE408-I",
+  "source_story_contract": {
+    "path": "delivery/phase409/00-story-contract.md",
+    "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+    "rewritten": false
+  },
+  "source_causal_ledger": {
+    "path": "delivery/phase410/01-causal-ledger.md",
+    "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+    "rewritten": false
+  },
+  "emotion_payoff_ledger": {
+    "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+    "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+    "debt_line_count": 3,
+    "primary_debt_id": "ED411-A"
+  },
+  "gate_id": "V3-G2",
+  "gate_name": "emotion_debt_and_payoff",
+  "result": "PASS",
+  "required_evidence": {
+    "primary_emotion_debt": {
+      "result": "PASS",
+      "evidence": "罗钧明知全面冻结会把现实执行压力优先转给许澄，仍用她的损失购买自己的查证时间；读者等待他是否会在不恢复记忆、不确认旧情的前提下，用自己的资产、信用和身份把这笔成本真正接回去。"
+    },
+    "debt_creator": {
+      "result": "PASS",
+      "evidence": "罗钧（制度提供传导结构，但 U06 主动选择实际制造主债）"
+    },
+    "reader_expected_return": {
+      "result": "PASS",
+      "evidence": "读者会等待罗钧在不恢复记忆、不确认旧情、也不把许澄当‘值得同情所以帮一下’的前提下，是否愿意把自己主动转嫁出去的现实成本接回到自己身上，让许澄不再是唯一承担者。"
+    },
+    "escalation": {
+      "result": "PASS",
+      "evidence": [
+        "U06：罗钧主动全面冻结自己一侧执行，明知成本会转向许澄。",
+        "U07：追偿/资产限制真正落到许澄，她停止提供便利并转入中立保全，关系从合作证人变成独立当事人。",
+        "U08：罗钧成功证明第二过去真实，却仍拒绝认领责任；许澄关于‘你查清也不会替我承担’的判断被现实印证，程序优势反而变成情绪欠债加码。",
+        "U10：许澄被从‘可能造假者’的位置事实性洗清，但项目真相仍不能替她卸掉到期责任，因此真相奖励不结清主债。",
+        "U11：短期法律保全只能保护证据；许澄现实追偿继续，罗钧原生活也开始同步失血，读者看到成本终于不再只落在她一侧。"
+      ]
+    },
+    "partial_return_or_intentional_delay": {
+      "result": "PASS",
+      "evidence": {
+        "type": "PARTIAL_RETURN",
+        "location": "U07 + U08",
+        "return": "许澄不再被动配合。她把自己的证据转入中立保全、停止给罗钧便利，只通过正式程序回应；随后 U08 又让第二过去获得阶段性真实性认可，不再被当场当作诈骗删除。",
+        "why_real": "这不是罗钧道歉，也不是许澄被安慰。关系权力发生真实变化：罗钧失去免费获取她信息/便利的选择权，许澄取得独立保护自己证据与诉求的行动位置；同时她的历史主张获得最低制度保全。",
+        "why_not_full": "她仍在承担追偿与资产损失，罗钧仍未把共同责任接回自己；主债‘谁承担今天的代价’没有被偿还。"
+      }
+    },
+    "final_return": {
+      "result": "PASS",
+      "evidence": {
+        "location": "U12 → U13 → U14",
+        "return": "罗钧以当前身份正式认领已独立验证的第二过去共同责任，让该责任对自己真正可执行；U13 使公寓资金进入责任池、过户失败、信用/身份公开绑定第二链，许澄不再是唯一可追偿人；U14 再用这个真实利害关系阻断单方归一。",
+        "why_payoff": "罗钧最终支付的正是他此前为了避免承担而转嫁给许澄的同类现实成本。偿还不是‘我相信你’或‘对不起’，而是谁的钱、信用、身份与法律位置真正承担后果发生了改变。"
+      }
+    },
+    "material_state_change": {
+      "result": "PASS",
+      "evidence": [
+        "谁承担代价：从许澄优先/近乎单独承担 → 罗钧与许澄共同成为当前可执行责任主体。",
+        "关系状态：从许澄提供便利、罗钧决定何时承诺 → 许澄保留独立主体性，罗钧必须用当前行为承担，双方才重新合作。",
+        "选择权：许澄不再需要等待罗钧是否承认旧记忆才能保护自己的权利。",
+        "资产/身份：罗钧的公寓资金、信用和身份位置不可逆进入第二链现实后果。",
+        "权力：罗钧因真实承担获得反归一主体资格，但这项权力来自代价而非道德表态。"
+      ]
+    }
+  },
+  "blockers": {
+    "primary_debt_has_no_payoff": false,
+    "payoff_is_only_reaction_or_narration": false,
+    "payoff_requires_no_prior_pressure_or_cost": false
+  },
+  "additional_attacks": {
+    "xucheng_passive_victim": false,
+    "project_exposure_used_as_final_payoff": false,
+    "responsibility_acknowledgment_only_verbal": false,
+    "apology_or_forgiveness_substitutes_for_state_change": false,
+    "truth_reveal_miscounted_as_primary_payoff": false,
+    "climax_auto_repairs_three_year_gap": false,
+    "old_relationship_restored": false,
+    "repeated_pressure_without_partial_return": false
+  },
+  "payoff_rhythm": [
+    {
+      "step": "压迫",
+      "refs": [
+        "U02",
+        "U06"
+      ],
+      "function": "读者先看到许澄因为罗钧拒绝认领而处在优先执行位置，随后罗钧主动全面冻结，把风险正式推向她。"
+    },
+    {
+      "step": "尝试",
+      "refs": [
+        "U03",
+        "U05"
+      ],
+      "function": "罗钧试图通过独立、多源查证找到无需承担责任的唯一事实；这既符合他的旧策略，也让读者暂时理解他的克制。"
+    },
+    {
+      "step": "小失败 / 带代价的小成功",
+      "refs": [
+        "U04",
+        "U05"
+      ],
+      "function": "他成功排除简单伪造，但公寓窗口和资产功能开始受损；信息有进展，现实问题变重。"
+    },
+    {
+      "step": "压力升级",
+      "refs": [
+        "U06",
+        "U07"
+      ],
+      "function": "罗钧主动全面冻结后，许澄实际被追偿并中断合作；关系债从‘不被相信’升级为‘替他承担现实成本’。"
+    },
+    {
+      "step": "部分偿还",
+      "refs": [
+        "U07",
+        "U08"
+      ],
+      "function": "许澄主动退出免费合作、转入中立保全，拿回选择权；第二过去获得最低真实性保全。她不再只能等罗钧决定，但主债尚未偿还。"
+    },
+    {
+      "step": "更难选择",
+      "refs": [
+        "U10",
+        "U11"
+      ],
+      "function": "真相已揭、低成本法律工具也用过，许澄仍被执行、罗钧原生活也失血；‘再查一点’不再是合理拖延。"
+    },
+    {
+      "step": "最终兑现",
+      "refs": [
+        "U12",
+        "U13",
+        "U14"
+      ],
+      "function": "罗钧把第二链责任变成对自己真实可执行的义务，支付公寓/资产/信用代价，许澄不再独担；该承担同时成为阻断归一的现实主体资格。"
+    },
+    {
+      "step": "余波",
+      "refs": [
+        "U15"
+      ],
+      "function": "旧三年关系不恢复，公寓不回来，更多责任仍需审理；两人只建立基于今天明示承诺的新合作规则。"
+    }
+  ],
+  "primary_debt": {
+    "debt_id": "ED411-A",
+    "title": "许澄替罗钧承担了他为了‘先查清’而转嫁出去的现实代价",
+    "primary": true,
+    "first_occurrence": "Phase410 U06（债务形成）→ U07（现实伤害落地）；U02 已提前建立许澄会成为优先可执行对象。",
+    "reader_pressure": "罗钧明知全面冻结会保护自己一侧、却让身份无争议的许澄成为优先追偿对象，仍选择冻结以换取查证时间。许澄因此被限制/追偿，还失去原本愿意提供的合作便利；她承受的不是‘被误会’，而是罗钧主动策略产生的钱、信用与选择权损失。",
+    "debt_creator": "罗钧。制度结构决定成本如何落地，但把这套结构真正启动并继续维持的是他在 U06 的主动冻结选择。",
+    "creator_knows_or_not": "KNOWS_MATERIAL_RISK：U06 前已建立许澄会成为优先现实承受者，且许澄明确反对全面冻结；罗钧未必知道全部损失规模，但知道方向与主要风险。",
+    "why_protagonist_cannot_or_will_not_counter_or_leave": "他不是‘不能反击’，而是不愿提前承担第二过去责任，因为一旦认领就会让公寓资金、资产和干净身份进入责任池；旧策略要求他在事实唯一前不承诺。离开/失联也不能解除责任，只会让许澄更早承担。",
+    "reader_expected_return": "读者会等待罗钧在不恢复记忆、不确认旧情、也不把许澄当‘值得同情所以帮一下’的前提下，是否愿意把自己主动转嫁出去的现实成本接回到自己身上，让许澄不再是唯一承担者。",
+    "escalation": [
+      "U06：罗钧主动全面冻结自己一侧执行，明知成本会转向许澄。",
+      "U07：追偿/资产限制真正落到许澄，她停止提供便利并转入中立保全，关系从合作证人变成独立当事人。",
+      "U08：罗钧成功证明第二过去真实，却仍拒绝认领责任；许澄关于‘你查清也不会替我承担’的判断被现实印证，程序优势反而变成情绪欠债加码。",
+      "U10：许澄被从‘可能造假者’的位置事实性洗清，但项目真相仍不能替她卸掉到期责任，因此真相奖励不结清主债。",
+      "U11：短期法律保全只能保护证据；许澄现实追偿继续，罗钧原生活也开始同步失血，读者看到成本终于不再只落在她一侧。"
+    ],
+    "partial_return_or_intentional_delay": {
+      "type": "PARTIAL_RETURN",
+      "location": "U07 + U08",
+      "return": "许澄不再被动配合。她把自己的证据转入中立保全、停止给罗钧便利，只通过正式程序回应；随后 U08 又让第二过去获得阶段性真实性认可，不再被当场当作诈骗删除。",
+      "why_real": "这不是罗钧道歉，也不是许澄被安慰。关系权力发生真实变化：罗钧失去免费获取她信息/便利的选择权，许澄取得独立保护自己证据与诉求的行动位置；同时她的历史主张获得最低制度保全。",
+      "why_not_full": "她仍在承担追偿与资产损失，罗钧仍未把共同责任接回自己；主债‘谁承担今天的代价’没有被偿还。"
+    },
+    "final_return": {
+      "location": "U12 → U13 → U14",
+      "return": "罗钧以当前身份正式认领已独立验证的第二过去共同责任，让该责任对自己真正可执行；U13 使公寓资金进入责任池、过户失败、信用/身份公开绑定第二链，许澄不再是唯一可追偿人；U14 再用这个真实利害关系阻断单方归一。",
+      "why_payoff": "罗钧最终支付的正是他此前为了避免承担而转嫁给许澄的同类现实成本。偿还不是‘我相信你’或‘对不起’，而是谁的钱、信用、身份与法律位置真正承担后果发生了改变。"
+    },
+    "payoff_cost": "失去小公寓过户与稳定生活计划；争议资金进入共同责任池；信用和干净身份受损；永久失去‘第二过去与当前自己无关’的撤退位置。",
+    "material_state_change": [
+      "谁承担代价：从许澄优先/近乎单独承担 → 罗钧与许澄共同成为当前可执行责任主体。",
+      "关系状态：从许澄提供便利、罗钧决定何时承诺 → 许澄保留独立主体性，罗钧必须用当前行为承担，双方才重新合作。",
+      "选择权：许澄不再需要等待罗钧是否承认旧记忆才能保护自己的权利。",
+      "资产/身份：罗钧的公寓资金、信用和身份位置不可逆进入第二链现实后果。",
+      "权力：罗钧因真实承担获得反归一主体资格，但这项权力来自代价而非道德表态。"
+    ],
+    "unresolved_aftershock": "三年情感缺口不被偿还；许澄不会因为罗钧承担责任就恢复旧关系或替他补回记忆中的人。两人只能建立基于今天明示承诺的新合作规则。许澄已经遭受的部分资产/信用损失也不会被一句承担动作自动抹平。",
+    "evidence_refs": [
+      "Phase410 U02",
+      "Phase410 U06",
+      "Phase410 U07",
+      "Phase410 U08",
+      "Phase410 U10",
+      "Phase410 U11",
+      "Phase410 U12",
+      "Phase410 U13",
+      "Phase410 U14",
+      "Phase409 核心关系/高潮/结局字段"
+    ]
+  },
+  "secondary_debts": [
+    {
+      "debt_id": "ED411-B",
+      "title": "罗钧为了保住‘干净身份’，不断亲手损耗自己最想得到的稳定生活",
+      "primary": false,
+      "first_occurrence": "Phase410 U01：第二过去使公寓过户中止；U03-U04 之后，罗钧选择的‘先查清后承担’把临时损失变成持续自我债。",
+      "reader_pressure": "罗钧真正想要的是固定下来、拥有自己的小公寓；但他为了维护‘责任必须等事实唯一后再认领’的干净身份，不断选择冻结、延后和不认领，反而让公寓期限、资金自由与信用逐步流失。",
+      "debt_creator": "罗钧自己的旧策略与双历史制度压力共同制造；其中可归责的情绪部分主要来自罗钧持续主动选择‘先保护干净身份，再谈责任’。",
+      "creator_knows_or_not": "PARTIALLY_KNOWS：U04 起他知道冻结正在消耗公寓交易窗口；U06 后仍继续加深策略。",
+      "why_protagonist_cannot_or_will_not_counter_or_leave": "他可以更早承担责任，但那正意味着放弃干净身份并冒着把第二过去永久写进当前生活的风险；他不愿在证据未充分时承担这种不可逆代价。",
+      "reader_expected_return": "读者等待他最终是否会看清：真正的稳定不是把所有异常隔绝在外，而是在无法获得唯一过去时仍能对今天的选择负责；这个回报必须通过他主动放弃公寓/干净身份而发生，而不是靠‘想通了’。",
+      "escalation": [
+        "U01：过户第一次被中止。",
+        "U04：大额资金与信用功能受限，卖方给出最终期限。",
+        "U06：为保住不认领位置，他选择更彻底冻结，继续牺牲时间。",
+        "U08：查证胜利不能恢复公寓，也不能分配责任，旧策略的自我伤害暴露。",
+        "U11：最后宽限消失，原稳定计划进入实际失血。"
+      ],
+      "partial_return_or_intentional_delay": {
+        "type": "INTENTIONAL_DELAY_WITH_REAL_SMALL_RETURN",
+        "location": "U08 / U10",
+        "return": "罗钧先获得两次‘认知型但不结清’的回报：U08 终于确认自己调查不是白费——第二过去真实；U10 又查清连续性项目来源。它们收回了‘我是不是在被一群人骗’的恐惧，却故意不恢复公寓、不释放资金。",
+        "why_real": "信息状态真实改变，罗钧不再需要把全部精力花在证明许澄是否造假；但因为 V3-G2 明确不把真相本身当最终 payoff，这些只作为小回报/方向释放。",
+        "why_not_full": "普通欲望‘生活固定下来’反而越来越远，真正偿还必须等他用主动选择重新定义什么是可接受的稳定。"
+      },
+      "final_return": {
+        "location": "U12-U15",
+        "return": "罗钧主动选择承担第二责任并让资产代价真正生效，明确放弃以‘干净身份+公寓过户’作为唯一稳定形式；U15 他保持认领、不撤回，并以可持续处理现实责任的主体位置继续生活。",
+        "why_payoff": "他没有得到原来的公寓，所以这不是传统愿望实现；偿还的是‘被旧策略绑架的选择权’：他终于能主动决定自己愿意为什么付代价，而不是等待唯一真相替他做决定。"
+      },
+      "payoff_cost": "公寓、资金自由、信用和回归原轨的可能真实失去。",
+      "material_state_change": [
+        "选择权：从‘只有查清唯一事实后才能行动’ → ‘在事实并存时仍可主动承担当前责任’。",
+        "利益/资产：公寓过户和部分资产自由真实失去。",
+        "身份：从干净/单链受害者位置 → 双链当前责任主体。",
+        "主角底线：不再把‘没有记忆’当作自动免责条件，但仍保留不承认虚构动机/旧情的边界。"
+      ],
+      "unresolved_aftershock": "他没有获得最初想要的那种物理稳定；经济与信用后果仍将持续。结局只给行动主体性，不把损失包装成‘其实更幸福所以不亏’。",
+      "evidence_refs": [
+        "Phase410 U01",
+        "U03",
+        "U04",
+        "U06",
+        "U08",
+        "U10",
+        "U11",
+        "U12",
+        "U13",
+        "U15",
+        "Phase409 主角普通欲望/当前错误认知/主角失去什么"
+      ]
+    },
+    {
+      "debt_id": "ED411-C",
+      "title": "第二套历史的当事人被制度与连续性项目剥夺‘其真实后果可以被主张’的资格",
+      "primary": false,
+      "first_occurrence": "Phase410 U01-U02 建立第二链被视为争议/异常；U09-U10 确认有预定归一和连续性项目主动推动单一化。",
+      "reader_pressure": "这些人的合同、记忆、付款、关系和损失都真实发生过，却可能因为项目选择了一条归档版本而被整体降成‘非执行记录’，甚至反向承担欺诈/虚假申报风险。读者被压的不是抽象真相，而是‘真实发生过的生活是否有资格被现实承认并逐项审理’。",
+      "debt_creator": "连续性项目是主动制造与再次单一化的主要债务制造者；普通执行系统的单链限制扩大了后果，但不是万能反派。",
+      "creator_knows_or_not": "PROJECT_KNOWS：U09-U10 已证明项目存在预定归一作业，目标是避免双历史责任暴露；它知道第二链有分散残余证据。",
+      "why_protagonist_cannot_or_will_not_counter_or_leave": "罗钧早期只主张第一链利益，缺乏替自己第二链请求长期保护的现实主体资格；许澄可以保护自己的权利，却不能代替全部人或替罗钧建立身份连接。",
+      "reader_expected_return": "读者等待的不是项目方‘被打脸’，而是项目失去单方面宣布一整套真实历史无效的权力，使第二历史当事人的证据与权利进入可主张、可审理状态。",
+      "escalation": [
+        "U08：两套历史真实性获得阶段性认可，但第二链仍只能有限保全、不能正常执行。",
+        "U09：发现30天终点存在主动的连续性清理/归一作业。",
+        "U10：真相证明项目曾制造历史覆盖并正推动再次单一化。",
+        "U11：即使项目问题明确，普通短期保全仍不足以长期保护第二链。",
+        "U13：罗钧用真实责任把自己连接到第二链，形成可被归一直接损害的现实利益。"
+      ],
+      "partial_return_or_intentional_delay": {
+        "type": "PARTIAL_RETURN",
+        "location": "U08 + U10",
+        "return": "U08 使第二链不再被当场作为诈骗删除，进入有限证据保全；U10 又把项目来源与预定归一证明出来，使当事人从‘可疑异常申报者’转为被历史覆盖影响的现实当事人。",
+        "why_real": "证据存续权与当事人的程序位置发生变化；不是众人震惊或反派脸色变化。",
+        "why_not_full": "项目的单方归一权限仍未被切断，债务/资产也仍未被逐项审理。"
+      },
+      "final_return": {
+        "location": "U14",
+        "return": "罗钧以已付代价取得的双链现实主体资格，与许澄各自的权利主张并列申请跨链保全；预定归一被阻断，项目方失去单方面把第二链标成无效的能力，两套历史进入独立责任审理。",
+        "why_payoff": "最终改变的是权力归属与权利状态：从项目单方映射 → 独立保全/审理；不是‘项目曝光’本身。"
+      },
+      "payoff_cost": "需要罗钧先在 U12-U13 承担一项真实第二链义务并失去资产/信用；许澄此前也已承担追偿与资产限制，回报不是无成本正义。",
+      "material_state_change": [
+        "权力：项目方失去单方归一第二链的权限效果。",
+        "身份/权利：第二链从可能被降格为异常记录 → 获得被保全、被主张、被逐项审理的状态。",
+        "谁被看见：许澄及其他当事人的经历被从‘可疑材料’转成现实权利争议。",
+        "选择权：各当事人可独立主张，不再必须依附罗钧是否承认旧记忆。"
+      ],
+      "unresolved_aftershock": "保全不是全员胜诉。每项私人主张、债务与资产仍须独立审理；两套历史并存会继续制造责任冲突。作品故意不提供一个可以自动解决所有人的统一答案。",
+      "evidence_refs": [
+        "Phase410 U01",
+        "U02",
+        "U08",
+        "U09",
+        "U10",
+        "U11",
+        "U13",
+        "U14",
+        "Phase409 持续阻力/失败损失/结局字段"
+      ]
+    }
+  ],
+  "xucheng_agency": {
+    "result": "PASS",
+    "evidence": [
+      "U06: actively opposes comprehensive freeze before 罗钧 chooses it.",
+      "U07: moves evidence into neutral preservation, stops convenience, responds only through formal procedure.",
+      "U07-U08: her withdrawal changes 罗钧's information cost and relationship power.",
+      "U12: does not make 罗钧's liability choice for him.",
+      "U14: advances her own rights claim in parallel rather than as his dependent.",
+      "U15: does not restore old relationship; accepts only present-tense explicit rules."
+    ]
+  },
+  "open_blocker_count": 0,
+  "quality_scope": {
+    "emotion_debt_and_payoff_passed": true,
+    "prose_quality_passed": false,
+    "chapter_quality_passed": false,
+    "full_story_quality_passed": false,
+    "phase412_authorized": false
+  },
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "complete_scene_generated": false,
+    "scene_plan_generated": false,
+    "phase412_entered": false,
+    "visual_generated": false,
+    "project_rule_added": false,
+    "phase409_story_contract_rewritten": false,
+    "phase410_causal_proof_rewritten": false,
+    "theme_or_candidate_regenerated": false,
+    "second_ledger_generated": false
+  },
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY",
+  "status": "PASS_V3_G2_STOP_BEFORE_PHASE412"
+}

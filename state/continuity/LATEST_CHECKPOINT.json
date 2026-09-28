@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 121,
+  "sequence": 122,
   "recorded_at": "2026-09-28T16:58:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase410 / V3-G1 causal proof for RJ-OE408-I《第二套过去》 is complete and PASS. Fifteen non-prose causal units connect the Phase409 contract from dual-history manifestation through midpoint strategy failure, pre-climax truth recovery, costly current-identity liability assumption, anti-unification standing and ending payoff. All ordinary simple-exit attacks are concretely blocked by seeded permission/time/cost/evidence logic; open blocker count is zero. No prose, first chapter, complete scene, scene plan or Phase411 execution occurred.",
+  "current_focus": "Phase411 / V3-G2 emotion debt and payoff for RJ-OE408-I《第二套过去》 is complete and PASS. Three interlocking debt lines are frozen with ED411-A as the sole primary debt: 罗钧 knowingly uses 许澄's execution exposure to buy investigation time, so the reader waits for him to assume that same real-world cost without recovered memory or restored old love. U07-U08 provide a real partial return through 许澄's procedural agency and limited history preservation; U12-U14 provide final return through the exact Phase410 climax, where 罗钧's assets/credit/identity change and 许澄 ceases to be the sole bearer. Open blocker count is zero. No prose, first chapter, complete scene, scene plan or Phase412 execution occurred.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -376,7 +376,12 @@
     "15-unit causal ledger frozen; Phase409 Story Contract remains unchanged.",
     "V3-G1 PASS: all configured blockers false and open BLOCKER count 0.",
     "Midpoint U06-U08 non-deletable; climax fully backtraceable to old strategy and its costs.",
-    "No prose, first chapter, scene plan or Phase411 execution."
+    "No prose, first chapter, scene plan or Phase411 execution.",
+    "Phase411 successor authorization consumed for V3-G2 emotion debt/payoff only.",
+    "3 debt lines frozen; exactly 1 primary debt (ED411-A).",
+    "V3-G2 PASS: primary debt, creator, expected return, escalation, partial return, final return and material state change are all evidenced from frozen Phase409/410 materials.",
+    "许澄 agency PASS from U06/U07/U12/U14/U15; she is not merely evidence storage or a passive victim.",
+    "Final return equals the Phase410 climax causal chain and carries real asset/credit/identity cost; no prose or Phase412 execution."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -448,7 +453,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE411_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE412_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -617,7 +622,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY. No prose and no Phase411 execution yet.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY. No prose and no Phase412 execution yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1170,16 +1175,28 @@
     {
       "path": "state/review_receipts/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS_V1.json",
       "role": "Phase410 V3-G1 causal proof PASS receipt"
+    },
+    {
+      "path": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
+      "role": "Phase411 RJ-OE408-I V3-G2 emotion debt/payoff task"
+    },
+    {
+      "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+      "role": "Phase411 frozen 02-emotion-payoff-ledger"
+    },
+    {
+      "path": "state/review_receipts/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1.json",
+      "role": "Phase411 V3-G2 emotion debt/payoff PASS receipt"
     }
   ],
-  "status": "PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS__AWAITING_EXPLICIT_PHASE411_AUTHORIZATION",
+  "status": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS__AWAITING_EXPLICIT_PHASE412_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
+  "last_completed_task_id": "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "a38c35a035985619fd2bf1424f12778f2dbe781660f45c6adea73c093b675983",
+    "project_state_sha256": "8323cfb3c8b121e78c051b028477cc380bf451bbd6bab8ddfea60fb755e29c3e",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1209,14 +1226,15 @@
       "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
       "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
       "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
-      "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01"
+      "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
+      "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY. No prose and no Phase411 execution yet.",
+  "last_completed_task_contract": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY. No prose and no Phase412 execution yet.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }

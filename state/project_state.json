@@ -177,19 +177,19 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS_AWAITING_PHASE411_G2_AUTHORIZATION_NO_PROSE",
+    "YMGQ_writing_pause_reason": "PHASE411_RJ_OE408_I_V3_G2_PASS_AWAITING_PHASE412_G3_AUTHORIZATION_NO_PROSE",
     "current_writing_authorization_scope": {
-      "kind": "PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_COMPLETE_NO_PROSE",
+      "kind": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_COMPLETE_NO_PROSE",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
       "human_review_authorized": false,
-      "phase411_authorized": false,
-      "next_unique_serial_unit": "PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I",
+      "phase412_authorized": false,
+      "next_unique_serial_unit": "PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I",
       "successor_requires_separate_explicit_authorization": true,
-      "task_contract": "state/tasks/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_V1.json"
+      "task_contract": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -613,7 +613,8 @@
     "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
     "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
     "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
-    "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01"
+    "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
+    "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -863,11 +864,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY. No prose and no Phase411 execution yet.",
-  "status": "PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS__AWAITING_EXPLICIT_PHASE411_AUTHORIZATION",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY. No prose and no Phase412 execution yet.",
+  "status": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS__AWAITING_EXPLICIT_PHASE412_AUTHORIZATION",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
-  "last_completed_task_contract": "state/tasks/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_V1.json",
+  "last_completed_task_id": "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
+  "last_completed_task_contract": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1184,13 +1185,25 @@
     {
       "path": "state/review_receipts/PHASE410_RJ_OE408_I_V3_G1_CAUSAL_PROOF_PASS_V1.json",
       "role": "Phase410 V3-G1 causal proof PASS receipt"
+    },
+    {
+      "path": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
+      "role": "Phase411 RJ-OE408-I V3-G2 emotion debt/payoff task"
+    },
+    {
+      "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+      "role": "Phase411 frozen 02-emotion-payoff-ledger"
+    },
+    {
+      "path": "state/review_receipts/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1.json",
+      "role": "Phase411 V3-G2 emotion debt/payoff PASS receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase411 V3-G2 emotion debt and payoff for RJ-OE408-I has not been authorized or executed."
+    "Phase412 V3-G3 hate and empathy evidence for RJ-OE408-I has not been authorized or executed."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1202,7 +1215,7 @@
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
     "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
-    "PHASE411_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE412_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1404,7 +1417,12 @@
     "Phase410 causal ledger frozen with 15 causal units; no prose or scene plan generated.",
     "All required simple-solution attacks have concrete permission/time/cost/evidence blockers; open V3-G1 BLOCKER count is zero.",
     "Midpoint U06-U08 is non-deletable: verify-first actively harms 许澄 and authenticity success still fails to allocate responsibility.",
-    "Climax assumption can be backtraced to seeded standing conditions, midpoint failure and earlier freeze harm; source truth is recovered before climax and pressure continues afterward."
+    "Climax assumption can be backtraced to seeded standing conditions, midpoint failure and earlier freeze harm; source truth is recovered before climax and pressure continues afterward.",
+    "Phase411 explicitly authorized for RJ-OE408-I V3-G2 emotion debt/payoff only.",
+    "Three interlocking debt lines frozen with exactly one primary debt; no prose or scene plan generated.",
+    "Primary debt: 罗钧 knowingly uses 许澄's exposure to buy investigation time, and final return requires him to take that real cost onto his own assets/credit/identity.",
+    "Partial return exists before climax: 许澄 withdraws convenience, moves evidence into neutral preservation and regains procedural choice; second-history evidence also receives limited preservation.",
+    "Final return is the Phase410 U12-U14 causal climax itself, not a parallel emotional scene; open V3-G2 BLOCKER count is zero."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -2470,7 +2488,7 @@
     "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I_ONLY"
   },
   "phase410_state": {
-    "status": "V3_G1_CAUSAL_PROOF_PASS_AWAITING_EXPLICIT_PHASE411_AUTHORIZATION",
+    "status": "V3_G1_CAUSAL_PROOF_PASS_HANDOFF_TO_PHASE411_COMPLETE",
     "candidate": "RJ-OE408-I",
     "source_story_contract": {
       "path": "delivery/phase409/00-story-contract.md",
@@ -2503,10 +2521,58 @@
       "phase": 411,
       "gate": "V3-G2",
       "kind": "EMOTION_DEBT_AND_PAYOFF",
+      "authorized": true,
+      "executed": true,
+      "prose": false
+    },
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY"
+  },
+  "phase411_state": {
+    "status": "V3_G2_EMOTION_DEBT_PAYOFF_PASS_AWAITING_EXPLICIT_PHASE412_AUTHORIZATION",
+    "candidate": "RJ-OE408-I",
+    "source_story_contract": {
+      "path": "delivery/phase409/00-story-contract.md",
+      "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "source_causal_ledger": {
+      "path": "delivery/phase410/01-causal-ledger.md",
+      "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "task_contract": {
+      "path": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
+      "status": "COMPLETED_PASS"
+    },
+    "emotion_payoff_ledger": {
+      "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+      "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+      "status": "FROZEN_PASS_V3_G2",
+      "debt_line_count": 3,
+      "primary_debt_id": "ED411-A"
+    },
+    "v3_g2_receipt": {
+      "path": "state/review_receipts/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1.json",
+      "blob": "1b1b32645b6d1515937b87a7c1454990d5965507",
+      "status": "PASS"
+    },
+    "primary_emotion_debt": "罗钧明知全面冻结会把现实执行压力优先转给许澄，仍用她的损失购买自己的查证时间；读者等待他是否会在不恢复记忆、不确认旧情的前提下，用自己的资产、信用和身份把这笔成本真正接回去。",
+    "xucheng_agency": "PASS",
+    "open_blocker_count": 0,
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "scene_plan_generated": false,
+    "phase412_entered": false,
+    "accepted_checkpoint_advance": false,
+    "next_unique_serial_unit": {
+      "id": "PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I",
+      "phase": 412,
+      "gate": "V3-G3",
+      "kind": "HATE_AND_EMPATHY",
       "authorized": false,
       "executed": false,
       "prose": false
     },
-    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY"
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY"
   }
 }
