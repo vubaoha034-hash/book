@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 119,
+  "sequence": 120,
   "recorded_at": "2026-09-28T15:57:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase408 RJ-OE408-I《第二套过去》received actual-human direction PASS: exact quote “小说想看。”. The HUMAN_DIRECTION_GATE is closed. This establishes that the core is worth continued development, not that prose quality has passed. The next unique serial unit is Phase409 Story Contract for RJ-OE408-I, which requires separate explicit successor authorization and has not been executed.",
+  "current_focus": "Phase409 is complete for RJ-OE408-I《第二套过去》: exactly one V3 Phase 1 Story Contract has been frozen and V3-G0 PASS. The contract supplies a testable mainline, ordinary want, active protagonist choices, persistent multi-axis opposition, concrete failure costs, a 30-day why-now, a true irreversible event, midpoint strategy failure, costly climax choice, core relationship and an ending that answers the opening. The source mystery resolves before climax, so the engine does not collapse into a puzzle. No prose, first chapter, scene plan or Phase410 execution occurred.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -366,7 +366,12 @@
     "RJ-OE408-I actual-human quote preserved exactly: 小说想看。",
     "RJ-OE408-I settled HUMAN_CONTINUE / HUMAN_DIRECTION_PASS; current human direction gate closed.",
     "No prose-quality claim inferred from direction pass.",
-    "Next unique serial unit: Phase409 Story Contract for RJ-OE408-I; separate explicit successor authorization required; not executed."
+    "Next unique serial unit: Phase409 Story Contract for RJ-OE408-I; separate explicit successor authorization required; not executed.",
+    "Phase409 explicit successor authorization consumed for RJ-OE408-I Story Contract only.",
+    "Phase409 froze exactly one 00-story-contract for RJ-OE408-I.",
+    "V3-G0 story_contract PASS with all required evidence and no configured blocker.",
+    "Source mystery resolves before climax; responsibility/institution/asset/relationship pressure continues afterward.",
+    "No prose, first chapter, scene, scene plan or Phase410 execution."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -438,7 +443,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE409_STORY_CONTRACT_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE410_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -607,7 +612,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I_ONLY. Do not execute Phase409 and do not generate prose.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I_ONLY. No prose and no Phase410 execution yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1136,16 +1141,28 @@
     {
       "path": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
       "role": "RJ-OE408-I actual-human CONTINUE receipt"
+    },
+    {
+      "path": "state/tasks/PHASE409_RJ_OE408_I_STORY_CONTRACT_V1.json",
+      "role": "Phase409 RJ-OE408-I Story Contract task"
+    },
+    {
+      "path": "delivery/phase409/00-story-contract.md",
+      "role": "Phase409 frozen 00-story-contract"
+    },
+    {
+      "path": "state/review_receipts/PHASE409_RJ_OE408_I_STORY_CONTRACT_V3_G0_PASS_V1.json",
+      "role": "Phase409 V3-G0 Story Contract PASS receipt"
     }
   ],
-  "status": "PHASE408_RJ_OE408_I_HUMAN_DIRECTION_PASS__AWAITING_EXPLICIT_PHASE409_STORY_CONTRACT_AUTHORIZATION",
+  "status": "PHASE409_RJ_OE408_I_STORY_CONTRACT_V3_G0_PASS__AWAITING_EXPLICIT_PHASE410_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
+  "last_completed_task_id": "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "8649ff88ca6373e41ccb2a0ae780428fceb185a00fbcab6d1723edff19adbfc5",
+    "project_state_sha256": "6ba929cbc8a0c2faaa4fcae0ceb299b6e592f344b050d76477019bc36ddbccfd",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1173,14 +1190,15 @@
       "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
       "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
       "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
-      "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01"
+      "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
+      "PHASE409-RJ-OE408-I-STORY-CONTRACT-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "tasks/2026-09-28-rj-oe408-i-human-direction-continue-01.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I_ONLY. Do not execute Phase409 and do not generate prose.",
+  "last_completed_task_contract": "state/tasks/PHASE409_RJ_OE408_I_STORY_CONTRACT_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I_ONLY. No prose and no Phase410 execution yet.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }

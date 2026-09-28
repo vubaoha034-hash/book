@@ -1,0 +1,80 @@
+{
+  "schema_version": "phase409-story-contract-task/v1",
+  "task_id": "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
+  "project_id": "novel-distillation",
+  "phase": 409,
+  "branch": "main",
+  "source_head": "ad7b77793960674ee43d2fb6ab875304d1f61236",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "exact_human_quote": "小说想看。",
+    "phase408_gate": "CLOSED_CONTINUE",
+    "source_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
+    "authorized_successor": "PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I",
+    "prose_authorized": false,
+    "phase410_authorized": false,
+    "scene_plan_authorized": false
+  },
+  "frozen_core": {
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "statement": "罗钧原本完整的三年人生没有消失，但世界同时多出一套“他也活过的三年”：有照片、合同、纸本物、机构记录，也有人真心记得和他一起经历过那些事。两套过去互相冲突，却都在今天产生现实后果。",
+    "modified": false
+  },
+  "objective": "Transform the human-approved Phase408 core into exactly one executable V3 Phase 1 Story Contract and evaluate V3-G0. No prose, chapter, scene plan, visual, new rule, hot-novel research, candidate regeneration or Phase410.",
+  "output_contract": {
+    "story_contract_path": "delivery/phase409/00-story-contract.md",
+    "v3_g0_receipt_path": "state/review_receipts/PHASE409_RJ_OE408_I_STORY_CONTRACT_V3_G0_PASS_V1.json",
+    "second_contract_forbidden": true,
+    "reroll_forbidden": true,
+    "best_of_n_forbidden": true,
+    "auto_rewrite_forbidden": true
+  },
+  "story_contract_result": "PASS_V3_G0",
+  "reader_promise": "罗钧原本完整的三年没有消失，世界却又多出一套同样真实的三年；陌生人带着他亲手签过的合同、共同债务和只有亲历者才知道的记忆找上门，而他每查清一段过去，就会多出一项必须在今天处理的现实后果，直到他不得不为一段自己毫无记忆的人生主动付出代价。",
+  "one_sentence_mainline": "在三十天的身份一致性冻结期内，罗钧必须与第二套过去中曾与他共同承担责任的许澄合作，建立两套历史都不能被一刀抹掉的证据与责任链，阻止一项强制归一程序把第二套过去整体判成无效并把现实债务全部压给许澄；若失败，他会失去现有生活的资产与信用，许澄也将独自承担本该由两人共同承担的后果。",
+  "protagonist_ordinary_want": "在月底完成一套自己攒了多年首付的小公寓过户，结束长期租住和临时状态，让生活第一次真正固定下来。",
+  "persistent_opposition": [
+    "两套都能独立验证的过去持续产生互相冲突的身份、关系、合同、债务与公共记录。",
+    "银行、产权、行政与合同系统只能暂时冻结同一身份的冲突记录，无法无限期同时执行两套互斥状态。",
+    "三年前制造并压制第二套历史的“连续性项目”正推动再次单一化，以避免其责任被公开。",
+    "许澄以及其他第二套过去中的现实当事人不能接受“先等真相”无限拖延，因为他们的资产、信用和承诺正在按现实时间到期。",
+    "罗钧自己的证据优先策略会不断制造新的延误与关系损伤。"
+  ],
+  "specific_failure_cost": [
+    "他原本月底完成的小公寓过户被永久取消，已投入的定金与多年积蓄进入争议资产处置，失去他最想获得的稳定生活。",
+    "他的主要账户与信用状态继续冻结，原生活中的工作、租住与正常交易能力受到实质限制。",
+    "第二套过去中的共同责任被全部推给许澄，使她成为唯一可追偿人，并失去继续维持现有生活与工作的资产空间。",
+    "第二套历史若被整体判为无效，其中其他当事人的真实承诺与权利会被归类成无法主张的异常记录，部分人还会被反向视为欺诈或虚假申报者。",
+    "制造双历史的连续性项目完成清理后，能证明两套过去都真实发生过的关键证据链被永久切断。"
+  ],
+  "why_now": "记录冲突被正式识别后只有三十天临时冻结期；到期后各机构必须采用一条可执行的单一身份链。第二套过去里罗钧与许澄共同承担的一项连带责任会在冻结期内先到期，而罗钧原本的小公寓也在同一窗口完成过户。拖延不是等待，拖延会让债务先落到许澄、让他的原生活先失去资产，并让连续性项目在证据公开前完成归一。",
+  "first_irreversible_event": "一夜之间，罗钧的个人设备、机构记录和一批陌生人的记忆里同时出现一套与他原记忆并行的三年历史；原来的三年证据没有被覆盖。当天，他的小公寓过户因第二套过去中的共同责任记录被中止，许澄带着独立纸本合同、共同账户记录和只有当事人知道的生活细节找到他——第二套过去第一次直接改变了他今天能不能拥有自己的生活。",
+  "climax_choice": "为了阻止第二套历史被整体归一删除，罗钧必须以自己的现有身份正式认领并承担一项第二套过去中的连带责任，使自己成为有资格要求保全两套记录、阻止单方清理的现实责任主体；或者继续坚持“我不记得，所以这不是我的责任”，保住原生活的资产和干净身份，让许澄独自承受并让第二套过去失去可执行地位。",
+  "climax_cost": "一旦正式承担这项责任，他为公寓准备的资金与相关资产会立即进入争议责任池，过户失效；他的身份也会公开与第二套过去绑定，无法再退回“我只是异常记录的受害者”这一干净位置。这个选择同时损失钱、稳定生活、社会信用和回到原轨的可能。",
+  "ending_payoff": "结局不让罗钧选出“唯一真的过去”，也不靠恢复记忆把问题抹平。连续性项目被公开，两套历史的证据被保全并进入独立审理；罗钧主动承担一项关键的第二过去责任，阻止许澄成为唯一承担者，也因此失去原本想保住的稳定生活。开头提出的“双重过去如何落到现实”被回答为：过去可以并存，责任不能靠记忆自动归零，只能由当前仍存在的后果、证据与当事人的主动承诺重新划定。",
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "scene_generated": false,
+    "scene_plan_generated": false,
+    "phase410_entered": false,
+    "visual_generated": false,
+    "rule_added": false,
+    "hot_novel_research_repeated": false,
+    "phase408_candidate_regenerated": false,
+    "second_contract_generated": false
+  },
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "reason": "Current HEAD exposes logical project_state/LATEST_CHECKPOINT continuity but no materialized STATE_LEDGER path; physical ledger history is explicitly marked partially reconciled. No missing ledger event is fabricated."
+  },
+  "status": "COMPLETED_STORY_CONTRACT_PASS_V3_G0_STOP_BEFORE_PHASE410",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE410_V3_G1_CAUSAL_PROOF_FOR_RJ_OE408_I_ONLY"
+}
