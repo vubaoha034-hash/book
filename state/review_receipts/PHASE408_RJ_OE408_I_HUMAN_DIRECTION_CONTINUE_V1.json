@@ -1,0 +1,45 @@
+{
+  "schema_version": "phase408-rj-oe408-i-human-direction-continue-receipt/v1",
+  "receipt_id": "PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1",
+  "task_id": "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "candidate": "RJ-OE408-I",
+  "source_review_card": {
+    "path": "delivery/phase408/RJ-OE408-I_HUMAN_REVIEW_CARD.md",
+    "blob": "4025a0c605112c140d6a17ce9aed5a995975ab5a"
+  },
+  "source_ready_receipt": {
+    "path": "state/review_receipts/PHASE408_ROJUN_THEME_ENGINE_BATCH3_READY_V1.json",
+    "blob": "50d2a892e04318c22cf3b32cb97b74b38dbd1e67"
+  },
+  "actual_human": {
+    "exact_quote": "小说想看。",
+    "verdict": "HUMAN_CONTINUE",
+    "settlement": "HUMAN_DIRECTION_PASS"
+  },
+  "gate": {
+    "before": "PENDING",
+    "after": "CLOSED_CONTINUE",
+    "pending": false
+  },
+  "accepted_meaning": "RJ-OE408-I core is worth continued development.",
+  "explicitly_not_claimed": [
+    "prose quality passed",
+    "chapter quality passed",
+    "full story quality passed",
+    "Phase409 executed",
+    "prose authorized"
+  ],
+  "next_unique_serial_unit": "PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I",
+  "successor_authorization": {
+    "required": true,
+    "granted_by_this_settlement": false,
+    "reason": "Current instruction authorizes gate settlement only and explicitly forbids crossing stages; repository phase-transition history requires separate explicit successor authorization."
+  },
+  "prose_generated": false,
+  "phase409_entered": false,
+  "batch4_started": false,
+  "status": "HUMAN_DIRECTION_PASS_RECORDED_GATE_CLOSED",
+  "next_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I_ONLY. Do not execute Phase409 and do not generate prose."
+}

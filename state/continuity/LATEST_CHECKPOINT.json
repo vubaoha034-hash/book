@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 118,
-  "recorded_at": "2026-09-28T10:37:00+08:00",
+  "sequence": 119,
+  "recorded_at": "2026-09-28T15:57:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase408 theme/opening-engine Batch3 is complete after the current-hot-novel scan: 3 raw candidates generated with READER_ATTENTION_WORTHINESS_V1 before protagonist binding. K failed non-adaptation; J failed continuation/decision-puzzle attack; RJ-OE408-I is the sole survivor awaiting actual-human 30-minute attention review. B/F remain pre-character BLOCK. No prose; no Phase409.",
+  "current_focus": "Phase408 RJ-OE408-I《第二套过去》received actual-human direction PASS: exact quote “小说想看。”. The HUMAN_DIRECTION_GATE is closed. This establishes that the core is worth continued development, not that prose quality has passed. The next unique serial unit is Phase409 Story Contract for RJ-OE408-I, which requires separate explicit successor authorization and has not been executed.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -362,7 +362,11 @@
     "Phase408 Batch3 generated 3 raw theme/opening-engine candidates with RAW front gate before protagonist binding.",
     "RJ-OE408-K rejected at ORIGINALITY/NON-ADAPTATION; RJ-OE408-J rejected at reviewer attack.",
     "RJ-OE408-I is sole survivor ready for actual-human 30-minute attention review.",
-    "B/F regression remains BLOCK_BEFORE_CHARACTER_SPECIFICITY; no prose; no Phase409; no Batch4."
+    "B/F regression remains BLOCK_BEFORE_CHARACTER_SPECIFICITY; no prose; no Phase409; no Batch4.",
+    "RJ-OE408-I actual-human quote preserved exactly: 小说想看。",
+    "RJ-OE408-I settled HUMAN_CONTINUE / HUMAN_DIRECTION_PASS; current human direction gate closed.",
+    "No prose-quality claim inferred from direction pass.",
+    "Next unique serial unit: Phase409 Story Contract for RJ-OE408-I; separate explicit successor authorization required; not executed."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -434,7 +438,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE409_NOT_AUTHORIZED_PENDING_RJ_OE408_F_ACTUAL_HUMAN_VERDICT"
+    "PHASE409_STORY_CONTRACT_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -603,7 +607,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "Present only RJ-OE408-I minimal human review card and wait for actual-human natural-language answer to: “这个核心，你愿不愿意把接下来30分钟交给它？” No prose; no Phase409; no Batch4.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I_ONLY. Do not execute Phase409 and do not generate prose.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1124,16 +1128,24 @@
     {
       "path": "state/review_receipts/PHASE408_ROJUN_THEME_ENGINE_BATCH3_READY_V1.json",
       "role": "Phase408 theme-engine Batch3 ready receipt"
+    },
+    {
+      "path": "tasks/2026-09-28-rj-oe408-i-human-direction-continue-01.json",
+      "role": "RJ-OE408-I actual-human direction settlement task"
+    },
+    {
+      "path": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
+      "role": "RJ-OE408-I actual-human CONTINUE receipt"
     }
   ],
-  "status": "PHASE408_THEME_ENGINE_BATCH3_ONE_SURVIVOR__AWAITING_ACTUAL_HUMAN_REVIEW",
+  "status": "PHASE408_RJ_OE408_I_HUMAN_DIRECTION_PASS__AWAITING_EXPLICIT_PHASE409_STORY_CONTRACT_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
+  "last_completed_task_id": "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "a9cc7e7a9032aaf5b7396c2aacb03beb56543a40a51fccfb485670cef26ba584",
+    "project_state_sha256": "8649ff88ca6373e41ccb2a0ae780428fceb185a00fbcab6d1723edff19adbfc5",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1160,19 +1172,15 @@
       "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
       "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
       "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
-      "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01"
+      "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
+      "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "tasks/2026-09-28-phase408-rojun-theme-engine-batch3-after-hot-scan-01.json",
-  "next_action": "WAIT_FOR_ACTUAL_HUMAN_NATURAL_LANGUAGE_VERDICT_ON_RJ_OE408_I_ONLY. No prose; no Phase409; no Batch4.",
-  "human_verdict_receipt": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json",
-  "current_human_gate": {
-    "candidate": "RJ-OE408-I",
-    "state": "PENDING",
-    "question": "这个核心，你愿不愿意把接下来30分钟交给它？",
-    "natural_language_answer_allowed": true
-  }
+  "last_completed_task_contract": "tasks/2026-09-28-rj-oe408-i-human-direction-continue-01.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I_ONLY. Do not execute Phase409 and do not generate prose.",
+  "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
+  "current_human_gate": null
 }

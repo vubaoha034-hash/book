@@ -1,0 +1,47 @@
+{
+  "schema_version": "phase408-rj-oe408-i-human-direction-continue-task/v1",
+  "task_id": "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "branch": "main",
+  "source_head": "4836bb9df95ce306a3018e24077bde85998a7d87",
+  "candidate": "RJ-OE408-I",
+  "review_type": "ACTUAL_HUMAN_DIRECTION_REVIEW",
+  "exact_human_quote": "小说想看。",
+  "settlement": "HUMAN_CONTINUE",
+  "equivalent": "HUMAN_DIRECTION_PASS",
+  "human_direction_gate_before": "PENDING",
+  "human_direction_gate_after": "CLOSED_CONTINUE",
+  "core_content_modified": false,
+  "conclusion_scope": {
+    "core_worth_continued_development": true,
+    "prose_quality_passed": false,
+    "chapter_quality_passed": false,
+    "full_story_quality_passed": false
+  },
+  "transition_determination": {
+    "next_unique_serial_unit": "PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I",
+    "semantic_scope": "Phase409：基于已冻结的 RJ-OE408-I《第二套过去》核心，完成 V3 Phase 1 Story Contract（故事契约）：一句话读者承诺、一句话主线、主角普通欲望、持续阻力、失败具体损失、为什么必须现在、核心关系、不可逆事件、高潮选择、结局兑现；不写正文。",
+    "evidence": [
+      "RJ-OE408-I current artifact is THEME_AND_OPENING_ENGINE_ONLY_NO_PROSE.",
+      "V3 pipeline places Story Contract before causal/emotion ledgers, scene planning and prose.",
+      "No Phase409 artifact exists in the current repository tree.",
+      "Existing repository phase transitions require separate explicit successor authorization; Phase408 itself was created only after explicit successor authorization."
+    ],
+    "separate_successor_authorization_required": true,
+    "successor_authorized_by_this_human_continue": false,
+    "phase409_entered": false,
+    "successor_executed": false
+  },
+  "forced_boundaries": {
+    "prose_generated": false,
+    "visual_generated": false,
+    "batch4_started": false,
+    "candidate_regenerated": false,
+    "hot_scan_repeated": false,
+    "new_rule_added": false,
+    "phase409_entered": false
+  },
+  "status": "HUMAN_DIRECTION_PASS_GATE_CLOSED_STOP_BEFORE_PHASE409",
+  "next_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE409_STORY_CONTRACT_FOR_RJ_OE408_I_ONLY. Do not execute Phase409 and do not generate prose."
+}
