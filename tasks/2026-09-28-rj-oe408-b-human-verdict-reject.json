@@ -1,0 +1,17 @@
+{
+  "schema_version": "novel-rj-oe408-b-human-verdict/v1",
+  "task_id": "RJ-OE408-B-HUMAN-VERDICT-20260928",
+  "project_id": "novel-distillation",
+  "candidate": "RJ-OE408-B",
+  "review_type": "ACTUAL_HUMAN_REVIEW",
+  "verdict": "REJECT",
+  "user_verbatim": "《不能拿别人替自己脱罪》这种完全不想看一点感觉都没。",
+  "source_review_card": "delivery/phase408/RJ-OE408-B_HUMAN_REVIEW_CARD.md",
+  "source_gate_task": "tasks/2026-09-27-rj-oe408-b-human-review-packet-materialization.json",
+  "reject_condition_applied": "Actual-human REJECT closes this candidate; no automatic replacement is allowed in this task.",
+  "candidate_closed": true,
+  "phase409_entered": false,
+  "prose_generated": false,
+  "replacement_candidate_generated": false,
+  "next_legal_action": "STOP_RJ_OE408_B. A separate new Phase408 candidate task requires later explicit authorization; no automatic substitute."
+}
