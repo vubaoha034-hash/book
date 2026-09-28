@@ -1,15 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 115,
-  "recorded_at": "2026-09-28T00:38:00Z",
+  "sequence": 116,
+  "recorded_at": "2026-09-28T08:55:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
-  "active_task_ids": [
-    "PHASE408_PREMISE_SCENE_ENGINE_RESET_V1"
-  ],
-  "current_focus": "Phase408 remains the sole active phase. RJ-OE408-B is closed by actual-human REJECT (“这种完全不想看一点感觉都没。”), so Batch1 HUMAN_GATE is no longer pending. The explicitly authorized Batch2 generated four new 罗钧-only opening-event engines and ran SWAP_PROTAGONIST / HUMAN_MESSINESS / AUTHOR_THESIS_DEPENDENCY / CONTINUATION_VALUE / IMMEDIATE_FELT_PULL / DECISION_PUZZLE_DEPENDENCY attacks. RJ-OE408-F is the sole machine survivor. No prose; no Phase409.",
+  "active_task_ids": [],
+  "current_focus": "Phase408 Batch2 sole survivor RJ-OE408-F is now closed by actual-human REJECT. User's reason is theme/event-scale failure: the social irritation feels like '这种破事' and is not worth sustained reader attention. User explicitly requests research across currently hottest novels because current themes feel generic.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -1084,10 +1082,10 @@
       "role": "Phase408 Batch2 human-gate readiness receipt"
     }
   ],
-  "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH2",
+  "status": "PHASE408_BATCH2_HUMAN_REJECTED__HOT_NOVEL_THEME_ENGINE_RESEARCH_REQUIRED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
+  "last_completed_task_id": "RJ-OE408-F-HUMAN-VERDICT-20260928",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
@@ -1123,5 +1121,6 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "tasks/2026-09-28-phase408-rojun-opening-event-batch2-after-human-reject-01.json",
-  "next_action": "Present only RJ-OE408-F for actual-human protagonist-bound opening-event review. Allowed human answers: CONTINUE / REJECT. STOP_AT_ACTUAL_HUMAN_GATE. No prose; no Phase409."
+  "next_action": "Run a current, multi-platform hot-novel theme/opening-engine scan before any Batch3 or new Phase408 candidate. No prose; no Phase409; no automatic substitute candidate.",
+  "human_verdict_receipt": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json"
 }
