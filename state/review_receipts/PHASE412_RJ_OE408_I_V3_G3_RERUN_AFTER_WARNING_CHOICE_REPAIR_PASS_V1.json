@@ -1,0 +1,88 @@
+{
+  "schema_version": "phase412-v3-g3-rerun-after-warning-choice-repair/v1",
+  "receipt_id": "PHASE412_RJ_OE408_I_V3_G3_RERUN_AFTER_WARNING_CHOICE_REPAIR_PASS_V1",
+  "task_id": "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01",
+  "project_id": "novel-distillation",
+  "phase": 412,
+  "candidate": "RJ-OE408-I",
+  "prior_fail_receipt": {
+    "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_FAIL_V1.json",
+    "blob": "c96b74a882729101be70c6e67078b202f5ffd64a",
+    "historical_result_preserved": true
+  },
+  "source_story_contract": {
+    "path": "delivery/phase409/00-story-contract.md",
+    "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+    "modified": false
+  },
+  "source_causal_ledger": {
+    "path": "delivery/phase410/01-causal-ledger.md",
+    "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+    "modified": false
+  },
+  "repair_addendum": {
+    "path": "delivery/phase410/01-causal-ledger-warning-choice-addendum.md",
+    "blob": "fd0cb0499b2249befcc57ded8c27193e6938f63b"
+  },
+  "source_emotion_ledger": {
+    "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+    "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+    "modified": false
+  },
+  "gate_id": "V3-G3",
+  "gate_name": "hate_and_empathy",
+  "result": "PASS",
+  "protagonist": {
+    "ordinary_want": "PASS_FROM_PRIOR_AUDIT",
+    "human_flaw_or_error": "PASS_FROM_PRIOR_AUDIT",
+    "costly_choice": "PASS_FROM_PRIOR_AUDIT",
+    "specific_loss_or_risk": "PASS_FROM_PRIOR_AUDIT"
+  },
+  "harm_doer": {
+    "identity": "连续性项目（institutional harm-doer, bounded to mapping/unification function only）",
+    "non_harmful_option_existed": {
+      "result": "PASS",
+      "evidence": "原 U14 已列‘要求项目方自愿撤销清理’为现实选项；U08/U11/U14 已建立独立保全/审理是较少伤害路径。"
+    },
+    "active_harm": {
+      "result": "PASS",
+      "evidence": "原 Phase409 + U09-U10 已冻结预定清理/归一及项目方继续推动单一化。"
+    },
+    "benefit_or_control_gained": {
+      "result": "PASS",
+      "evidence": "仅限恢复单一可执行身份映射控制 + 避免双历史责任冲突/暴露。"
+    },
+    "warning_ignored_or_blame_shifted": {
+      "result": "PASS_BY_CONTINUED_HARM_AFTER_WARNING",
+      "warning": "U10 已把‘双历史确有真实因果、连续性项目与预定归一存在’的必要证据提交独立审理/保全；U11 随后针对该具体归一作业取得短期证据/映射状态保全。这个针对同一作业的正式 hold 本身就是 warning/claim：该归一作业正在被真实性/项目来源争议正式挑战，当前不得按原计划直接执行。",
+      "reached_decision_side": "U09 已把拥有映射权限、控制该预定归一作业的一侧识别为连续性项目方；U11 则明确该具体作业被短期暂停，并在 hold 到期后‘恢复归一流程’。要让同一作业从 scheduled → held → resume，控制/执行该作业的一侧必须消费该作业的正式 hold 状态。这里证明的是‘收到/知悉该具体保全 claim’，不是推断它阅读了全部底层证据。",
+      "choice_after_warning": "U11 原字段已经冻结：短期保全只有有限小时/天数；若罗钧不改变主体资格，保全结束后‘恢复归一流程’。因此该具体作业在 warning/hold 后没有被项目侧撤销，而是保持为等待 hold 到期后恢复的预定单方归一。",
+      "chronology": [
+        "U08：真实性证据进入有限双轨保全；",
+        "U09：从既有保全回函中的归档作业标识识别预定归一及其项目映射权限；",
+        "U10：项目来源与双历史真实因果被提交独立审理/保全；",
+        "U11：针对该具体归一作业取得短期映射状态 hold——warning 已到达作业控制侧；",
+        "U11 后半：hold 到期即恢复同一归一流程——继续行为发生在 warning 之后；",
+        "U12-U14：罗钧取得真实双链主体资格后，才把短期 hold 升级为能真正阻断单方归一的跨链保全。"
+      ],
+      "no_blame_shift_claimed": true
+    },
+    "consequence_corresponds_to_harm": {
+      "result": "PASS",
+      "evidence": "U14 与伤害方式一一对应：项目伤害来自‘单方维持/恢复归一作业的映射控制’，最终后果就是该单方控制被正式保全/独立审理切断，预定归一被阻断；不是抓人、破产或社会性死亡。"
+    }
+  },
+  "constraints": {
+    "xucheng_agency_preserved": true,
+    "rojun_u06_responsibility_not_externalized": true,
+    "no_new_villain_character": true,
+    "no_new_backstory": true,
+    "no_new_harm_behavior": true,
+    "no_new_story_fact": true
+  },
+  "open_blocker_count": 0,
+  "prose_generated": false,
+  "phase413_entered": false,
+  "status": "PASS_V3_G3_AFTER_TARGETED_PHASE410_REPAIR",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE413_CHARACTER_AND_CONTINUITY_STATE_FOR_RJ_OE408_I_ONLY"
+}

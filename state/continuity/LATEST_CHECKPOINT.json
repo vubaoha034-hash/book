@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 123,
+  "sequence": 124,
   "recorded_at": "2026-09-28T18:40:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase412 / V3-G3 Hate & Empathy for RJ-OE408-I《第二套过去》 executed once and FAILS fail-closed. 罗钧 protagonist empathy is supported and 许澄 agency remains intact. The institutional harm-doer candidate '连续性项目' has frozen evidence for a lower-harm alternative, active unification harm, control/benefit and a corresponding U14 consequence, but there is no frozen causal evidence that the project decision-maker received/knew a concrete authenticity/preservation/rights warning and nevertheless continued or escalated unification, nor a frozen blame-shift/denial act. Therefore harm_doer identity is NOT_PROVEN, open blocker count = 1, and Phase413 is blocked. No upstream artifact was modified.",
+  "current_focus": "Targeted Phase410 repair closed the sole Phase412 V3-G3 blocker without adding story facts or rewriting the original 15 causal units. U09 already linked preservation replies to the scheduled archive job by job identifier; U10 submitted the project-source evidence to independent review/preservation; U11 placed that specific unification job under a short mapping-state hold and already stated the same unification resumes when the hold expires. Therefore the formal hold is a warning/claim that necessarily reaches the job-control side, and maintaining the job as resume-ready after that hold is a choice after warning. Repaired V3-G1 integrity PASS; V3-G3 rerun PASS; open blocker count 0. No prose or Phase413 execution.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -386,7 +386,11 @@
     "Continuous-project harm-doer candidate fails warning_ignored_or_blame_shifted only; no missing evidence was inferred.",
     "V3-G3 FAIL with open BLOCKER count 1.",
     "Phase409 Story Contract, Phase410 causal proof and Phase411 emotion ledger remain unchanged.",
-    "No prose, first chapter, scene plan or Phase413 execution."
+    "No prose, first chapter, scene plan or Phase413 execution.",
+    "Targeted Phase410 warning/choice addendum frozen; original Phase410 ledger unchanged.",
+    "WARNING_REACHED_DECISION_SIDE PASS and CHOICE_AFTER_WARNING PASS with zero new story facts.",
+    "Phase410 repaired V3-G1 integrity PASS.",
+    "Phase412 V3-G3 rerun PASS; historical FAIL preserved, open blocker count now 0."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -458,8 +462,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE412_V3_G3_HARM_DOER_WARNING_IGNORED_OR_BLAME_SHIFTED_BLOCK",
-    "PHASE413_NOT_AUTHORIZED_AND_BLOCKED_BY_V3_G3_FAIL"
+    "PHASE413_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -628,7 +631,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413. Do not generate prose or enter Phase413.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE413_CHARACTER_AND_CONTINUITY_STATE_FOR_RJ_OE408_I_ONLY. No prose and no Phase413 execution yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1205,16 +1208,32 @@
     {
       "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_FAIL_V1.json",
       "role": "Phase412 V3-G3 FAIL receipt"
+    },
+    {
+      "path": "state/tasks/PHASE410_RJ_OE408_I_HARM_DOER_WARNING_CHOICE_REPAIR_V1.json",
+      "role": "Targeted Phase410 harm-doer warning/choice repair task"
+    },
+    {
+      "path": "delivery/phase410/01-causal-ledger-warning-choice-addendum.md",
+      "role": "Phase410 warning-choice causal addendum"
+    },
+    {
+      "path": "state/review_receipts/PHASE410_RJ_OE408_I_WARNING_CHOICE_REPAIR_V3_G1_INTEGRITY_PASS_V1.json",
+      "role": "Repaired Phase410 V3-G1 integrity PASS receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_RERUN_AFTER_WARNING_CHOICE_REPAIR_PASS_V1.json",
+      "role": "Phase412 V3-G3 rerun PASS receipt"
     }
   ],
-  "status": "PHASE412_RJ_OE408_I_V3_G3_FAIL_HARM_DOER_WARNING_EVIDENCE_MISSING__STOP_NO_PHASE413",
+  "status": "PHASE412_RJ_OE408_I_V3_G3_PASS_AFTER_TARGETED_PHASE410_WARNING_CHOICE_REPAIR__AWAITING_EXPLICIT_PHASE413_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01",
+  "last_completed_task_id": "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "7a52e3156900e0a9ce40c0a0d47e77a94d11d4a3e8270b12dba7ae25fd6f49e0",
+    "project_state_sha256": "5a5555464232c89fe81ddb391848ab3a1163904639fc200f6aeba757a2d1c378",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1246,14 +1265,15 @@
       "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
       "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
       "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
-      "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01"
+      "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01",
+      "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413. Do not generate prose or enter Phase413.",
+  "last_completed_task_contract": "state/tasks/PHASE410_RJ_OE408_I_HARM_DOER_WARNING_CHOICE_REPAIR_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE413_CHARACTER_AND_CONTINUITY_STATE_FOR_RJ_OE408_I_ONLY. No prose and no Phase413 execution yet.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }

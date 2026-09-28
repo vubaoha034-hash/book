@@ -1,0 +1,35 @@
+{
+  "schema_version": "phase410-warning-choice-repair-v3-g1-integrity/v1",
+  "receipt_id": "PHASE410_RJ_OE408_I_WARNING_CHOICE_REPAIR_V3_G1_INTEGRITY_PASS_V1",
+  "task_id": "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01",
+  "project_id": "novel-distillation",
+  "phase": 410,
+  "original_causal_ledger": {
+    "path": "delivery/phase410/01-causal-ledger.md",
+    "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+    "modified": false,
+    "unit_count": 15
+  },
+  "addendum": {
+    "path": "delivery/phase410/01-causal-ledger-warning-choice-addendum.md",
+    "blob": "fd0cb0499b2249befcc57ded8c27193e6938f63b"
+  },
+  "integrity_result": "PASS",
+  "checks": {
+    "original_15_units_unchanged": true,
+    "simple_solution_blockers_preserved": true,
+    "midpoint_non_deletable_preserved": true,
+    "climax_backtrace_preserved": true,
+    "phase411_emotion_chain_preserved": true,
+    "xucheng_agency_preserved": true,
+    "rojun_u06_primary_debt_responsibility_preserved": true,
+    "new_story_fact_count": 0,
+    "new_rule_count": 0,
+    "warning_reached_decision_side": "PASS",
+    "choice_after_warning": "PASS"
+  },
+  "open_v3_g1_blocker_count": 0,
+  "prose_generated": false,
+  "phase413_entered": false,
+  "status": "PASS_TARGETED_REPAIR_INTEGRITY"
+}
