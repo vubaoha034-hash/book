@@ -1,0 +1,49 @@
+{
+  "schema_version": "phase408-current-hot-novel-theme-engine-scan-ready/v1",
+  "receipt_id": "PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1",
+  "task_id": "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "capture_date": "2026-09-28",
+  "status": "READY_FOR_UNIFIED_COMMAND_RESEARCH_QUALITY_REVIEW",
+  "machine_settlement": {
+    "current_traceable_cross_platform_sample": "PASS",
+    "platform_count": 4,
+    "sample_count": 23,
+    "male_and_female_frequency_coverage": "PASS",
+    "explains_reader_attention_worth": "PASS",
+    "strong_engine_family_count": 8,
+    "reader_attention_worthiness_gate": "DEFINED_V1",
+    "b_regression": "BLOCK_BEFORE_CHARACTER_SPECIFICITY",
+    "f_regression": "BLOCK_BEFORE_CHARACTER_SPECIFICITY",
+    "copyright_boundary": "PASS_ABSTRACT_MECHANISMS_ONLY",
+    "new_phase408_candidate_count": 0,
+    "prose_generated": false,
+    "phase409_entered": false,
+    "batch3_started": false
+  },
+  "source_quality": {
+    "core_sample_platform_official_only": true,
+    "secondary_aggregator_used_for_core_sample": false,
+    "capture_date_recorded": true,
+    "source_url_recorded_per_sample": true,
+    "currentness_evidence_recorded_per_sample": true
+  },
+  "output_refs": [
+    {
+      "path": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+      "blob": "2313e021c17b3d238897c0689e4d4b1ad701356c"
+    },
+    {
+      "path": "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
+      "blob": "1f1b6865159133213e5f3cf9d1c56d9ee861d737"
+    },
+    {
+      "path": "docs/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SYNTHESIS_V1.md",
+      "blob": "3f1b536035eb5f7202f27932b46388236243485c"
+    }
+  ],
+  "human_quality_authority": "UNIFIED_COMMAND_REVIEW_REQUIRED_BEFORE_ANY_NEW_PHASE408_CANDIDATE_TASK",
+  "forced_stop_boundary": "RESEARCH_ONLY_STOP_NO_CANDIDATE_NO_PROSE_NO_PHASE409_NO_BATCH3",
+  "next_legal_action": "WAIT_FOR_UNIFIED_COMMAND_RESEARCH_QUALITY_REVIEW_BEFORE_ANY_NEW_PHASE408_CANDIDATE_TASK"
+}
