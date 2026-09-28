@@ -1,0 +1,768 @@
+{
+  "schema_version": "phase408-current-hot-novel-theme-engine-scan/v1",
+  "calibration_id": "PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "capture_date": "2026-09-28",
+  "time_basis": "2026-09-28 当前公开状态；只把本日/本期可验证官方榜单作为当前性依据。",
+  "research_limitations": [
+    "本研究没有逐章读完任何作品，只使用公开榜单、作品简介和可合法读取的官方作品页样本。",
+    "榜单会日内/日间变化，因此 rank_or_heat_context 是 capture_date 对应快照，不声明为永久名次。",
+    "不声称覆盖‘全网所有小说’，本次是跨四个平台的23部头部/高热样本。",
+    "所有机制均为抽象总结，不复制原文剧情句子，不模仿在世作者可识别文风。"
+  ],
+  "sources": [
+    {
+      "platform": "起点中文网",
+      "source_level": "A_PLATFORM_OFFICIAL",
+      "capture_date": "2026-09-28",
+      "url": "https://www.qidian.com/rank/yuepiao/",
+      "currentness": "页面标题与正文明确为2026年9月月票榜；实时渲染可见前20与最新更新时间。"
+    },
+    {
+      "platform": "番茄小说",
+      "source_level": "A_PLATFORM_OFFICIAL",
+      "capture_date": "2026-09-28",
+      "url": "https://fanqienovel.com/rank",
+      "currentness": "官网排行榜实时抓取；作品显示当前在读；相关官方榜页说明统计截点至09-27 24:00。"
+    },
+    {
+      "platform": "晋江文学城",
+      "source_level": "A_PLATFORM_OFFICIAL",
+      "capture_date": "2026-09-28",
+      "url": "https://static.jjwxc.net/topten.php?orderstr=5",
+      "currentness": "官方月榜实时抓取；配合官方作品页核对当日连载与更新时间。"
+    },
+    {
+      "platform": "七猫中文网",
+      "source_level": "A_PLATFORM_OFFICIAL",
+      "capture_date": "2026-09-28",
+      "url": "https://www.qimao.com/paihang/boy/hot/date/",
+      "currentness": "官方男频大热日榜明确标注‘基于昨日书籍热度排行’。"
+    },
+    {
+      "platform": "七猫中文网",
+      "source_level": "A_PLATFORM_OFFICIAL",
+      "capture_date": "2026-09-28",
+      "url": "https://www.qimao.com/paihang/girl/hot/date/",
+      "currentness": "官方女频大热日榜明确标注‘基于昨日书籍热度排行’。"
+    }
+  ],
+  "sample_count": 23,
+  "samples": [
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #1",
+      "title": "夜无疆",
+      "genre": "玄幻·东方玄幻",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1040765595/"
+      },
+      "currentness_evidence": "官方月票榜页面标题明确为2026年9月；抓取时列第1，作品最新更新显示2026-09-27。",
+      "one_sentence_reader_promise": "在太阳永久不再升起的世界里，读者要追看人物如何适应新规则、扩展生存边界并逼近黑暗世界的真相。",
+      "core_setting": "一个全局、不可逆的自然规则被改写：正常昼夜秩序失效，世界进入长期异常状态。",
+      "opening_engine": "第一层承诺不是一次人际摩擦，而是世界底层规则已改变，所有生活与力量关系都必须重新计算。",
+      "sustained_reading_driver": "生存适应、能力成长、未知区域探索、阵营冲突与世界真相可并行推进。",
+      "escalation_space": "个人生存→群体秩序→区域/文明风险→世界规则真相。",
+      "why_reader_attention_is_worth_spending": "核心问题不会在一次选择后结束；每一次解决都会暴露更大的环境、规则或敌手。",
+      "what_would_make_a_low_stakes_imitation_fail": "把永久黑暗降格成一次停电、一次受困或一次尴尬，就失去持续规则压力。",
+      "reusable_abstract_pattern": "用一个不可逆的全局规则变化，使日常行为、资源、权力和未知同时产生新问题。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #2",
+      "title": "玄鉴仙族",
+      "genre": "仙侠·修真文明",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1035420986/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第2；作品页/榜单显示2026-09-27仍在更新。",
+      "one_sentence_reader_promise": "一个不再是普通人的存在嵌入修仙家族，读者追看它如何影响一代又一代人的命运、资源和权力版图。",
+      "core_setting": "主角死亡后以残魂依附破损铜镜进入修仙世界，叙事天然连接器物秘密、家族传承与代际扩张。",
+      "opening_engine": "身份不可逆转为非普通人形态，并立即落入一个可长期繁衍的家族/地域结构。",
+      "sustained_reading_driver": "家族成员更替、传承、资源、势力关系、修行成长与器物秘密共同提供长线局面。",
+      "escalation_space": "小村/家庭→宗族→地方势力→更大修真秩序。",
+      "why_reader_attention_is_worth_spending": "发动机不依赖单个角色的一次困境，甚至能跨人物代际继续制造局面。",
+      "what_would_make_a_low_stakes_imitation_fail": "只有一个奇怪道具或一次附身，却没有传承、资源、势力与代际结构，便只剩设定噱头。",
+      "reusable_abstract_pattern": "让主角身份与一个能持续扩张的集体结构绑定，使时间、传承和利益自动生成新冲突。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #3",
+      "title": "武道！",
+      "genre": "玄幻·高武世界",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1049534879/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第3；榜单显示最新更新2026-09-28 08:48。",
+      "one_sentence_reader_promise": "穿入殖民统治下、黑帮警权与超凡武道并存的城市，读者追看一个人如何在多重权力夹缝中变强并改变位置。",
+      "core_setting": "殖民城市、社团、赌场、探长、拳馆与超凡暗流同时存在，社会系统和力量系统重叠。",
+      "opening_engine": "人物不是遇到一个坏人，而是进入一张已经运行的城市权力网，任何选择都可能触发不同阵营。",
+      "sustained_reading_driver": "武道成长、帮派利益、警权、殖民秩序、城市资源和身份升级可以持续交叉。",
+      "escalation_space": "街区/拳馆→帮派与警权→城市权力→更大政治与超凡秩序。",
+      "why_reader_attention_is_worth_spending": "同一个人物目标会被多个系统同时定价，天然产生不同类型压力。",
+      "what_would_make_a_low_stakes_imitation_fail": "只保留一次拳馆争执或熟人冒犯，而没有阵营、利益、制度与成长网络，就没有小说性。",
+      "reusable_abstract_pattern": "把角色放进多系统叠加的高摩擦社会，让成长、资源和制度彼此牵动。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #4",
+      "title": "1984：从川菜馆开始",
+      "genre": "都市·都市生活",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1044818845/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第4；榜单显示2026-09-28仍有更新。",
+      "one_sentence_reader_promise": "一个懂美食的人回到物资紧张的1984年，接手濒临破产的川菜馆，读者追看他怎样把手艺转成生意、关系和生活的增长。",
+      "core_setting": "时间回退+稀缺年代+负债/失败经营资产，低物理危险但资源约束非常明确。",
+      "opening_engine": "主角一开始就接手一个会继续亏损的现实系统：店、供应、现金流、顾客和口碑都要求行动。",
+      "sustained_reading_driver": "食材供应、菜品创新、顾客反馈、现金流、竞争、家庭与社区关系持续产生不同局面。",
+      "escalation_space": "救活一家店→形成口碑→稳定供应链→扩大经营与社会关系。",
+      "why_reader_attention_is_worth_spending": "它证明‘大事件’不是必须；只要资源系统会持续反应，日常题材同样能有强发动机。",
+      "what_would_make_a_low_stakes_imitation_fail": "只写做一道菜让人惊艳，而没有供应、成本、顾客、竞争和经营后果，发动机立即熄火。",
+      "reusable_abstract_pattern": "给日常技能配一个持续记账的资源/经营系统，使每次成功都带来下一层经营问题。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #5",
+      "title": "没钱修什么仙？",
+      "genre": "仙侠·修真文明",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1042256511/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第5；榜单显示2026-09-27仍在更新。",
+      "one_sentence_reader_promise": "修行不再只是天赋竞争，资源与金钱成为上升门槛，读者追看人物如何在被定价的修仙秩序里获得力量与报偿。",
+      "core_setting": "把修仙成长与稀缺资源、经济门槛直接绑定，让力量体系同时成为利益体系。",
+      "opening_engine": "个人受辱/复仇欲望被更大的结构问题接管：想变强必须持续解决资源获得与分配。",
+      "sustained_reading_driver": "资源获取、修炼投入、阶层位置、债务/交易、对手和复仇目标可持续联动。",
+      "escalation_space": "个人缺钱→资源竞争→阶层跃迁→规则与利益集团冲突。",
+      "why_reader_attention_is_worth_spending": "成长每一步都有现实成本，获得力量不会自动结束问题。",
+      "what_would_make_a_low_stakes_imitation_fail": "只写一次没钱的窘迫或借钱尴尬，而没有长期资源规则，就只是生活小插曲。",
+      "reusable_abstract_pattern": "把能力成长变成持续付费/争夺资源的经济系统，让‘变强’和‘利益’同一化。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #7",
+      "title": "廓晋",
+      "genre": "历史·两晋隋唐",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1047881102/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第7；榜单显示2026-09-28 00:48更新。",
+      "one_sentence_reader_promise": "身处东晋十六国乱局，读者追看人物如何把北伐、士族政治和重建秩序从愿望变成持续行动。",
+      "core_setting": "历史大乱局提供战争、门阀、朝堂、治理与合法性多重系统。",
+      "opening_engine": "人物进入一个已经失衡且不可用一句话修复的国家级局势，并拥有明确长程目标。",
+      "sustained_reading_driver": "军事行动、政治博弈、后勤资源、联盟、治理与社会结构交替施压。",
+      "escalation_space": "个人立足→军政位置→战役→政权/秩序重塑。",
+      "why_reader_attention_is_worth_spending": "任何局部胜利都只会把人物推入更大的责任与敌对网络。",
+      "what_would_make_a_low_stakes_imitation_fail": "把历史背景当布景，只剩一次朝堂口角或名誉争执，未来空间就会骤降。",
+      "reusable_abstract_pattern": "用无法快速修复的时代结构承载人物目标，让胜利自动扩大责任、敌手与版图。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #8",
+      "title": "请勿高考时渡劫",
+      "genre": "都市·都市异能",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/",
+        "detail_url": "https://www.qidian.com/book/1049898328/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第8；榜单显示2026-09-27仍在更新。",
+      "one_sentence_reader_promise": "现代社会表面正常，古老妖魔修士却深度嵌入科技与制度，读者追看熟悉日常不断被隐藏超凡规则重新解释。",
+      "core_setting": "现代制度与隐藏超凡生态共存，二者的错位本身就是持续产梗与冲突的机制。",
+      "opening_engine": "高考等极熟悉场景与渡劫等超凡规则直接碰撞，一屏内即可展示‘这个世界哪里不对’。",
+      "sustained_reading_driver": "隐藏身份、现代机构、超凡规则、事件调查与日常制度碰撞可无限换场景但不换发动机。",
+      "escalation_space": "校园/日常异常→城市隐秘生态→组织/规则→更大超凡秩序。",
+      "why_reader_attention_is_worth_spending": "读者得到的是一套可持续重写现实的规则，不是一次怪事。",
+      "what_would_make_a_low_stakes_imitation_fail": "只做一次反差笑话，后续世界又恢复普通，设定就没有生产力。",
+      "reusable_abstract_pattern": "让两个成熟系统长期重叠并互相误读，以规则冲突持续产出新场景。"
+    },
+    {
+      "platform": "起点中文网",
+      "rank_or_heat_context": "2026年9月官方月票榜 #14",
+      "title": "异度旅社",
+      "genre": "科幻·时空穿梭",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qidian.com/rank/yuepiao/"
+      },
+      "currentness_evidence": "官方2026年9月月票榜抓取时列第14；榜单显示2026-09-28 07:30更新。",
+      "one_sentence_reader_promise": "一扇门把熟悉现实接到未知世界，读者追看每次跨过边界会遇到什么新规则，以及这些异常最终如何连成更大的真相。",
+      "core_setting": "可反复穿越的边界/门把日常世界与多个未知规则空间连接。",
+      "opening_engine": "一次开门即可完成不可逆认知变化：熟悉现实不再是全部世界。",
+      "sustained_reading_driver": "新地点、新规则、新实体、跨世界关系和总谜团形成揭示链。",
+      "escalation_space": "单次异常→多世界探索→规则关联→总体真相。",
+      "why_reader_attention_is_worth_spending": "它承诺的不只是第一个奇观，而是一个可不断打开的新世界序列。",
+      "what_would_make_a_low_stakes_imitation_fail": "只出现一次神秘房间且没有后续规则链、连接关系或总体谜团，就会退化为短篇梗。",
+      "reusable_abstract_pattern": "建立可重复触发的‘阈限装置’，每次触发都增加世界规则与总谜团的信息。"
+    },
+    {
+      "platform": "番茄小说",
+      "rank_or_heat_context": "番茄小说官网当前排行榜默认页抓取 #1；在读约23.3万",
+      "title": "惹金枝",
+      "genre": "古代/权谋向言情",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://fanqienovel.com/rank"
+      },
+      "currentness_evidence": "2026-09-28实时抓取番茄小说官网排行榜；该页列第1并显示当前在读数据。",
+      "one_sentence_reader_promise": "被当成灾星且早已‘死去’的人，在家族蒙受叛国大罪后重新出现，读者追看她如何让身份、真相和权力同时翻盘。",
+      "core_setting": "社会身份被抹除/死亡记录与家族政治灾难叠加，回归本身即改变局势。",
+      "opening_engine": "先制造‘此人已死’的认知，再把家族推入国家级污名，随后让被抹除者重新进入棋局。",
+      "sustained_reading_driver": "隐藏身份、家族罪名、政治真相、名誉重建、权力反击与关系重组。",
+      "escalation_space": "个人生存秘密→家族翻案→政治对手→更大权力结构。",
+      "why_reader_attention_is_worth_spending": "读者从一开始就知道存在一个比社交误会更大的未结算历史账。",
+      "what_would_make_a_low_stakes_imitation_fail": "如果只是‘别人误会她性格不好’，一句澄清即可结束，就没有身份与权力的后续账。",
+      "reusable_abstract_pattern": "让主角的存在本身成为被压住的证据，并把个人回归连接到更大的集体罪名或权力真相。"
+    },
+    {
+      "platform": "番茄小说",
+      "rank_or_heat_context": "番茄小说官网当前排行榜默认页抓取 #2；在读约21.1万",
+      "title": "穿乱世，疯癫公主她靠抢劫建国了",
+      "genre": "乱世争霸/大女主",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://fanqienovel.com/rank"
+      },
+      "currentness_evidence": "2026-09-28实时抓取番茄小说官网排行榜；该页列第2并显示当前在读数据。",
+      "one_sentence_reader_promise": "亡国公主从被押送的猎物反转为夺资源、收兵、攻城并重建秩序的人，读者追看生存如何一步步升级成建国。",
+      "core_setting": "乱世、亡国身份、外敌入侵与资源匮乏，使个人求生天然连接军队、领地和治理。",
+      "opening_engine": "开局就是不可接受的强制命运，主角用主动暴力脱离押送并立即获得第一批资源/行动自由。",
+      "sustained_reading_driver": "粮食、金钱、人力、军队、城市、敌对势力和治理问题形成明确扩张闭环。",
+      "escalation_space": "逃生→夺资源→招兵→守地/攻城→建制与治国。",
+      "why_reader_attention_is_worth_spending": "每次成功都会增加资产、责任、敌人和地图，而不是把冲突清零。",
+      "what_would_make_a_low_stakes_imitation_fail": "只复制‘开局反杀’但没有资源积累、组织成长和领地扩张，爽点很快耗尽。",
+      "reusable_abstract_pattern": "把逃离困境设计成获得第一份可积累资源，让资源自然推动组织与版图扩大。"
+    },
+    {
+      "platform": "番茄小说",
+      "rank_or_heat_context": "番茄小说官网当前排行榜默认页抓取 #3；在读约19.4万",
+      "title": "重回清冷权臣年少时，被亲哭！",
+      "genre": "重生/古代言情",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://fanqienovel.com/rank"
+      },
+      "currentness_evidence": "2026-09-28实时抓取番茄小说官网排行榜；该页列第3并显示当前在读数据。",
+      "one_sentence_reader_promise": "女主死后得知自己只是既定故事里的亡妻，又回到关系起点，读者追看她如何改变已知悲剧与外来‘攻略’干扰。",
+      "core_setting": "死亡后的信息优势+回到年少+元叙事外部干预，命运不再是单一路径。",
+      "opening_engine": "先给出终局死亡和未来被替代的强烈信息，再瞬间把人物送回可改变一切的起点。",
+      "sustained_reading_driver": "未来知识、关系改写、攻略者干预、权力成长与命运偏差持续产生新选择。",
+      "escalation_space": "修正个人关系→对抗外部干预→改变人物成长→改写既定结局。",
+      "why_reader_attention_is_worth_spending": "读者同时持有‘原结局’与‘新路径’两张地图，天然期待偏差扩大。",
+      "what_would_make_a_low_stakes_imitation_fail": "如果重生只用来重新表白或修一件小遗憾，没有可持续被改写的未来结构，发动机很弱。",
+      "reusable_abstract_pattern": "先展示一个不可接受的终局，再回到早期节点，让每个新决定都能与已知未来产生差分。"
+    },
+    {
+      "platform": "番茄小说",
+      "rank_or_heat_context": "番茄小说官网当前排行榜默认页抓取 #4；在读约18.6万",
+      "title": "攀高枝",
+      "genre": "古代言情/身份与阶层",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://fanqienovel.com/rank"
+      },
+      "currentness_evidence": "2026-09-28实时抓取番茄小说官网排行榜；该页列第4并显示当前在读数据。",
+      "one_sentence_reader_promise": "一个拥有顶级社会资本的男人与一个想跨阶层的女人被迫共享同一具身体，读者追看两套价值与资源如何共同改变她的社会位置。",
+      "core_setting": "共享身体/意识+极端阶层差异+明确上升欲望，关系结构无法轻易解除。",
+      "opening_engine": "高位者失去自己的身体控制并进入低位者人生，双方必须合作又无法完全同利。",
+      "sustained_reading_driver": "身体控制、秘密暴露、阶层规则、婚恋交易、社会爬升与双方关系持续互相影响。",
+      "escalation_space": "个人生存/协作→社交位置→婚姻与家族→更高权力网络。",
+      "why_reader_attention_is_worth_spending": "‘两个人共用一个人生’本身就是长期约束，每个社会选择都能同时触发两套利益。",
+      "what_would_make_a_low_stakes_imitation_fail": "如果高位角色只在耳边给一次建议、随时能消失，就只剩外挂提示而非持续关系结构。",
+      "reusable_abstract_pattern": "把两个利益并不完全一致的人锁进不可轻易解除的共同载体，让每个行动同时改变关系与外部位置。"
+    },
+    {
+      "platform": "番茄小说",
+      "rank_or_heat_context": "番茄小说官网当前排行榜默认页抓取 #5；在读约18.4万",
+      "title": "何不同舟渡",
+      "genre": "乱世谍战/古言",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://fanqienovel.com/rank"
+      },
+      "currentness_evidence": "2026-09-28实时抓取番茄小说官网排行榜；该页列第5并显示当前在读数据。",
+      "one_sentence_reader_promise": "乱世小贼误触一个身份可疑的强权人物，从求生被卷入训练、谍战和国家冲突，读者追看她长出能力并拆开对方真实立场。",
+      "core_setting": "乱世生存、危险强关系、间谍身份谜团和战争局势相互绑定。",
+      "opening_engine": "一个低阶角色的小偷行为直接碰到高危险人物，局部犯罪瞬间连上身份谜团与战争机器。",
+      "sustained_reading_driver": "追逃、控制与反控制、技能成长、谍报、阵营忠诚、战争与身份真相。",
+      "escalation_space": "逃命→被控制/训练→任务与谍报→阵营/国家选择。",
+      "why_reader_attention_is_worth_spending": "第一次遭遇不是一桩纠纷的终点，而是通往更大身份和战争真相的入口。",
+      "what_would_make_a_low_stakes_imitation_fail": "只写‘偷错人被抓’然后道歉赔钱，事件就不会打开更大的持续结构。",
+      "reusable_abstract_pattern": "让一个微小行为撞上隐藏的大结构，使角色因接触错误对象而进入更高层级的冲突网络。"
+    },
+    {
+      "platform": "番茄小说",
+      "rank_or_heat_context": "番茄官网当前分类榜 #1；页面统计截点为09-27 24:00；在读约119.1万",
+      "title": "系统想害我，我选择上交国家",
+      "genre": "都市脑洞/系统",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://fanqienovel.com/rank/1_2_262"
+      },
+      "currentness_evidence": "2026-09-28检索到番茄官方分类榜页面，页面说明统计至09-27 24:00；该作列第1并显示约119.1万在读。",
+      "one_sentence_reader_promise": "当外挂不是帮助而是主动致命，主角把私人危机交给国家机构，读者追看‘个人对系统’如何升级成组织化反制与规则博弈。",
+      "core_setting": "敌对系统+国家机构介入，把常见个人外挂结构反转为可研究、可协作、可对抗的制度问题。",
+      "opening_engine": "主角没有按常规独自完成系统任务，而是用‘上交’改变参与者数量与冲突尺度。",
+      "sustained_reading_driver": "系统新任务、机构研究、信息保密、规则漏洞、资源调配和外部风险持续互相作用。",
+      "escalation_space": "个人求生→小组研究→机构对抗→更大的系统来源/社会后果。",
+      "why_reader_attention_is_worth_spending": "第一次反常选择直接改写故事结构，而不是只展示人物性格。",
+      "what_would_make_a_low_stakes_imitation_fail": "如果上交之后系统问题立刻被解决，只剩一次机智反应，就没有长期博弈。",
+      "reusable_abstract_pattern": "把常见单人机制改造成多方制度化博弈，使一个选择永久改变问题的参与者和资源规模。"
+    },
+    {
+      "platform": "晋江文学城",
+      "rank_or_heat_context": "2026-09-28官方月榜抓取 #1",
+      "title": "高冷太子的克星",
+      "genre": "架空历史·爱情",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://static.jjwxc.net/topten.php?orderstr=5",
+        "detail_url": "https://www.jjwxc.net/onebook.php?novelid=11014721"
+      },
+      "currentness_evidence": "2026-09-28抓取晋江官方月榜时列第1；作品为2026-09新连载。",
+      "one_sentence_reader_promise": "亡国/征服余波中的高位婚姻把私人情感与政治身份绑在一起，读者追看两人的关系如何在不对等权力和旧国身份下持续变化。",
+      "core_setting": "征服后的政权关系+高低权力差+婚姻/亲密关系，私人选择有制度后果。",
+      "opening_engine": "关系从一开始就不是普通相亲，而是发生在政权胜负之后的身份重排中。",
+      "sustained_reading_driver": "婚姻承诺、旧国身份、宫廷位置、权力边界、情感变化与公开评价。",
+      "escalation_space": "私人相处→婚姻身份→宫廷/家族→政治忠诚与权力。",
+      "why_reader_attention_is_worth_spending": "关系问题无法靠一次说清解决，因为双方身份与制度仍持续存在。",
+      "what_would_make_a_low_stakes_imitation_fail": "去掉政权、身份和长期婚姻后只剩‘高冷男追娇气女’，未来压力种类会明显减少。",
+      "reusable_abstract_pattern": "让亲密关系同时承担一个不能随时退出的社会/制度身份，关系升级就会自动产生外部后果。"
+    },
+    {
+      "platform": "晋江文学城",
+      "rank_or_heat_context": "2026-09-28官方月榜抓取 #2",
+      "title": "今晚还听么",
+      "genre": "现代言情",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://static.jjwxc.net/topten.php?orderstr=5",
+        "detail_url": "https://m.jjwxc.net/book2/10892570"
+      },
+      "currentness_evidence": "2026-09-28抓取晋江官方月榜时列第2；作品当月持续连载。",
+      "one_sentence_reader_promise": "一个匿名直播收听习惯逐渐变成双向注意，读者追看‘陌生人仪式’如何升级成身份揭露、现实接触和关系承诺。",
+      "core_setting": "重复发生的匿名线上仪式+主播/观众不对称可见性，形成可持续关系结构。",
+      "opening_engine": "不是一次聊天，而是建立‘每晚会不会来’的可重复行为回路，并让一方开始注意另一方的缺席。",
+      "sustained_reading_driver": "重复仪式、关注升级、身份信息逐步揭露、线上线下转换、职业/公开边界和情感承诺。",
+      "escalation_space": "单向注意→双向识别→身份揭露→现实关系→公开/职业后果。",
+      "why_reader_attention_is_worth_spending": "它说明物理事件可以很小；关键是关系状态每轮都可累积并产生下一阶段。",
+      "what_would_make_a_low_stakes_imitation_fail": "只有一次暧昧对话或一次被回复，没有可重复仪式、信息差和关系状态累积，就只是小甜点。",
+      "reusable_abstract_pattern": "用重复性仪式作为关系状态机，每次互动改变关注、信息或承诺等级。"
+    },
+    {
+      "platform": "晋江文学城",
+      "rank_or_heat_context": "2026-09-28官方月榜抓取 #3",
+      "title": "缠珑",
+      "genre": "架空历史·爱情",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://static.jjwxc.net/topten.php?orderstr=5",
+        "detail_url": "https://www.jjwxc.net/onebook.php?novelid=10723613"
+      },
+      "currentness_evidence": "2026-09-28抓取晋江官方月榜时列第3；官方作品页最新章节更新到2026-09-28。",
+      "one_sentence_reader_promise": "一个身处宫廷秩序的女人原有婚姻安排被最高权力者介入，读者追看私人意愿、效忠、身份和权力如何长期缠绕。",
+      "core_setting": "宫廷等级、既有婚姻关系与君主权力形成不能对等退出的三角结构。",
+      "opening_engine": "高位者不是单纯吃醋，而是能用制度身份改变她的婚姻与职业路径。",
+      "sustained_reading_driver": "婚姻选择、职责忠诚、君臣边界、宫廷派系、权力变化与情感承诺。",
+      "escalation_space": "私人拒绝/接受→职业与婚姻身份→宫廷权力→忠诚与公共后果。",
+      "why_reader_attention_is_worth_spending": "关系冲突有制度杠杆，所以每次靠近或拒绝都会改变现实位置。",
+      "what_would_make_a_low_stakes_imitation_fail": "若只是普通熟人代替她回答或一句占有欲，没有权力、婚姻、职责的持续后果，就会退化为社交摩擦。",
+      "reusable_abstract_pattern": "给关系中的一方配置真实制度杠杆，同时保留另一方不可被抹掉的长期目标，形成持续不平衡。"
+    },
+    {
+      "platform": "晋江文学城",
+      "rank_or_heat_context": "2026-09-28官方月榜抓取 #4",
+      "title": "末世农庄",
+      "genre": "未来/末世",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://static.jjwxc.net/topten.php?orderstr=5",
+        "detail_url": "https://www.jjwxc.net/onebook.php?novelid=6367804"
+      },
+      "currentness_evidence": "2026-09-28抓取晋江官方月榜时列第4；作品为当期连载。",
+      "one_sentence_reader_promise": "在末世里拿到有条件的合成/制作能力，读者追看一座偏远农庄如何通过资源、制作和收容一步步长成安全据点甚至城市。",
+      "core_setting": "末世稀缺环境+受材料约束的制作机制+可扩张基地。",
+      "opening_engine": "生存危机和生产工具同时出现，但工具不是无限答案，仍需要持续寻找材料与解决依赖。",
+      "sustained_reading_driver": "采集、合成、生产、招募、保护、交易、防御和基地扩建形成闭环。",
+      "escalation_space": "个人活命→农庄稳定→人口/生产扩张→城市级秩序。",
+      "why_reader_attention_is_worth_spending": "每个资源解法都会制造新的需求、人口与防御问题，天然长出下一阶段。",
+      "what_would_make_a_low_stakes_imitation_fail": "若金手指无限供给、没有材料/人口/安全约束，所有压力都会被一次性抹平。",
+      "reusable_abstract_pattern": "给强能力附加真实依赖，让能力越成功，基地规模和下一层责任越大。"
+    },
+    {
+      "platform": "七猫中文网",
+      "rank_or_heat_context": "男频大热榜日榜（基于昨日热度）#1；124.3万热度",
+      "title": "盖世神医",
+      "genre": "都市·都市高武",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qimao.com/paihang/boy/hot/date/"
+      },
+      "currentness_evidence": "七猫官方页面标注‘基于昨日书籍热度排行’；2026-09-28抓取时蝉联第1，最新更新2026-09-27 22:47。",
+      "one_sentence_reader_promise": "掌握救命与致命能力的人进入权势与财富高度集中的都市冲突，读者追看他的专业能力如何不断兑换成影响力与更强对手。",
+      "core_setting": "医疗/武力稀缺能力可以直接改变生命结果，因此天然连接有资源、有敌人的高价值人物。",
+      "opening_engine": "主角的能力一开始就具有不可忽视的现实杠杆，不需要靠口角证明自己重要。",
+      "sustained_reading_driver": "高价值病例、权力网络、敌对势力、能力成长与人情债不断带来新案件。",
+      "escalation_space": "单个病人/敌人→家族与组织→更大权力网络→更高层能力对抗。",
+      "why_reader_attention_is_worth_spending": "每个事件都可能新增资源、债务、盟友和敌人，案例可换而主发动机不变。",
+      "what_would_make_a_low_stakes_imitation_fail": "只写一次打脸病人家属或一次嘴仗，没有后续病例/势力/能力升级，就只剩套路片段。",
+      "reusable_abstract_pattern": "让稀缺能力直接作用于高价值后果，并通过案例不断把角色连接进更大的关系与利益网。"
+    },
+    {
+      "platform": "七猫中文网",
+      "rank_or_heat_context": "男频大热榜日榜 #2；63.6万热度",
+      "title": "逍遥四公子",
+      "genre": "历史·架空历史",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qimao.com/paihang/boy/hot/date/"
+      },
+      "currentness_evidence": "七猫官方大热日榜基于昨日热度；2026-09-28抓取时列第2，最新更新2026-09-28 07:02。",
+      "one_sentence_reader_promise": "一个只想挣钱享乐的穿越者不断被能力和局势推上更大的历史舞台，读者追看个人小目标怎样演变成军政责任与名望。",
+      "core_setting": "现代知识/个人欲望与帝国战争政治错位，人物越成功越难保持最初的低责任生活。",
+      "opening_engine": "个人目标与时代结构从一开始方向不一致，成功本身就是把他卷深的机制。",
+      "sustained_reading_driver": "赚钱、声望、官位、战争、朝堂、盟友与敌人持续扩大角色责任。",
+      "escalation_space": "个人发财→地方名望→军事行动→国家级政治与战争。",
+      "why_reader_attention_is_worth_spending": "发动机把‘得到想要的’转化为‘承担更多’，天然避免一次成功就结束。",
+      "what_would_make_a_low_stakes_imitation_fail": "只写一次靠现代知识赚快钱，而后没有身份、责任与敌人扩张，故事会停在单点爽感。",
+      "reusable_abstract_pattern": "设计一个与时代需求冲突的私人愿望，让每次成功都把角色推向更大的公共责任。"
+    },
+    {
+      "platform": "七猫中文网",
+      "rank_or_heat_context": "男频大热榜日榜 #5；43.0万热度",
+      "title": "葬神棺",
+      "genre": "玄幻奇幻·东方玄幻",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qimao.com/paihang/boy/hot/date/"
+      },
+      "currentness_evidence": "七猫官方大热日榜基于昨日热度；2026-09-28抓取时列第5，最新更新2026-09-27 19:37。",
+      "one_sentence_reader_promise": "被埋入绝境的少年与具有宇宙级来历的神棺融合，读者追看死亡处境如何变成新身份、力量与更大宇宙秘密。",
+      "core_setting": "濒死/被埋的不可逆绝境+高层级神器融合+神器自身历史谜团。",
+      "opening_engine": "最坏现实结果与最大潜在能力在同一事件中发生，立刻翻转角色身份但留下规则未知。",
+      "sustained_reading_driver": "能力成长、神器规则、追杀/敌手、宇宙历史与更高层势力持续升级。",
+      "escalation_space": "个人复仇/生存→地域强敌→诸界势力→神器与宇宙真相。",
+      "why_reader_attention_is_worth_spending": "开场同时给出即时翻盘和远端谜团，既有眼前回报也有长线问题。",
+      "what_would_make_a_low_stakes_imitation_fail": "若神器只是无代价强武器、没有规则、来历和升级对手，很快变成重复碾压。",
+      "reusable_abstract_pattern": "把绝境反转成新身份，同时让反转来源本身成为需要长期解开的高阶谜团。"
+    },
+    {
+      "platform": "七猫中文网",
+      "rank_or_heat_context": "女频大热榜日榜 #1；185.3万热度",
+      "title": "封总，太太想跟你离婚很久了",
+      "genre": "现代言情·总裁豪门",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qimao.com/paihang/girl/hot/date/"
+      },
+      "currentness_evidence": "七猫官方女频大热日榜基于昨日热度；2026-09-28抓取时蝉联第1，最新更新2026-09-28 00:33。",
+      "one_sentence_reader_promise": "长期冷却的婚姻里，女主真正撤回情感、家庭角色并重启事业后，读者追看旧秩序怎样因为她的退出而持续失衡。",
+      "core_setting": "七年婚姻、伴侣转移感情、孩子/家庭绑定、离婚程序与事业身份共同构成难以一刀切断的关系系统。",
+      "opening_engine": "关键动作不是争吵，而是主角停止继续扮演旧角色，并把退出落实到婚姻、抚养与职业选择。",
+      "sustained_reading_driver": "离婚进程、家庭/孩子、事业跃迁、前伴侣反应、新关系与社会身份变化。",
+      "escalation_space": "情感退出→家庭结构变化→职业/财富反转→旧关系与新关系的公开重排。",
+      "why_reader_attention_is_worth_spending": "‘离开’不是一场表态，而是持续改写多个现实系统，关系每一步都有后果。",
+      "what_would_make_a_low_stakes_imitation_fail": "如果只是一次冷战、一句‘我要离婚’随后马上和好，就没有真正的不可逆角色变化。",
+      "reusable_abstract_pattern": "让关系转折落地为多个现实角色的撤回/重建，使情绪决定持续改变家庭、资源与身份。"
+    },
+    {
+      "platform": "七猫中文网",
+      "rank_or_heat_context": "女频大热榜日榜 #2；79.8万热度",
+      "title": "皇叔借点功德，王妃把符画猛了",
+      "genre": "古代言情·宫闱宅斗/玄学",
+      "public_source": {
+        "source_level": "A_PLATFORM_OFFICIAL",
+        "capture_date": "2026-09-28",
+        "rank_url": "https://www.qimao.com/paihang/girl/hot/date/"
+      },
+      "currentness_evidence": "七猫官方女频大热日榜基于昨日热度；2026-09-28抓取时列第2，最新更新2026-09-27 23:27。",
+      "one_sentence_reader_promise": "遭家族背叛的女主与一个将死的高位者形成互相需要的联盟：她能救命，他能提供权力与特殊资源，读者追看交易婚姻、玄学案件和复仇如何彼此放大。",
+      "core_setting": "生存/治疗互补+高位保护+玄学功德资源+家族与宫廷敌对。",
+      "opening_engine": "两个人各自有无法单独解决的问题，结合后不是问题消失，而是开启更大的权力和超自然事件网络。",
+      "sustained_reading_driver": "治疗与功德、玄学案件、家族清算、宫廷关系、婚姻承诺和新敌人。",
+      "escalation_space": "个人脱困→家族利益→案件/玄学规则→宫廷权力与长期关系。",
+      "why_reader_attention_is_worth_spending": "联盟同时改变资源、身份和敌我结构，后续局面不是同一种吵架的重复。",
+      "what_would_make_a_low_stakes_imitation_fail": "若高位者只负责一次撑腰、女主只完成一次打脸，互补结构就无法持续产出剧情。",
+      "reusable_abstract_pattern": "给双方各自不可替代的资源与缺口，让合作关系成为持续交换、升级和冲突的发动机。"
+    }
+  ],
+  "strong_engine_families": [
+    {
+      "id": "ENGINE-01",
+      "name": "不可逆世界规则 / 高概念秩序改写",
+      "definition": "一个基础规则永久改变，角色不能靠解释或离场恢复旧世界。",
+      "why_it_generates": "规则变化会同时改写生存、资源、制度、认知和敌我关系，因此每个普通行为都能长出新后果。",
+      "sample_titles": [
+        "夜无疆",
+        "请勿高考时渡劫",
+        "末世农庄",
+        "异度旅社"
+      ]
+    },
+    {
+      "id": "ENGINE-02",
+      "name": "不可逆身份 / 命运转位",
+      "definition": "人物身份、时间线、身体、社会记录或生命状态发生难以回退的变化。",
+      "why_it_generates": "新身份会持续与旧关系、旧责任和外部制度碰撞，而非只提供一次反转。",
+      "sample_titles": [
+        "玄鉴仙族",
+        "重回清冷权臣年少时，被亲哭！",
+        "攀高枝",
+        "葬神棺"
+      ]
+    },
+    {
+      "id": "ENGINE-03",
+      "name": "生存—资源—建设 / 成长闭环",
+      "definition": "角色必须持续获得、转换和配置稀缺资源，成功会扩大资产与责任。",
+      "why_it_generates": "资源不是一次道具，而是可记账系统；解决一层短缺会制造更高层供应、人口、防御或现金流问题。",
+      "sample_titles": [
+        "1984：从川菜馆开始",
+        "穿乱世，疯癫公主她靠抢劫建国了",
+        "末世农庄",
+        "没钱修什么仙？"
+      ]
+    },
+    {
+      "id": "ENGINE-04",
+      "name": "强制度 / 阶层 / 利益网络",
+      "definition": "人物行动被国家、家族、殖民秩序、宫廷、阶层、婚姻或职业制度持续定价。",
+      "why_it_generates": "同一目标会触发多个拥有真实资源和惩罚能力的主体，冲突类型天然多样。",
+      "sample_titles": [
+        "武道！",
+        "廓晋",
+        "缠珑",
+        "皇叔借点功德，王妃把符画猛了"
+      ]
+    },
+    {
+      "id": "ENGINE-05",
+      "name": "谜团 / 秘密 / 规则揭示链",
+      "definition": "开场给出无法一次解释完的身份、世界或历史异常，后续每次回答都打开更深问题。",
+      "why_it_generates": "信息本身具备层级，读者不仅等‘答案’，还等答案改变角色对世界的行动方式。",
+      "sample_titles": [
+        "异度旅社",
+        "惹金枝",
+        "何不同舟渡",
+        "葬神棺"
+      ]
+    },
+    {
+      "id": "ENGINE-06",
+      "name": "持续升级的关系结构",
+      "definition": "关系不是一次好感或口角，而是有重复接触、不能轻易退出、身份差、共同资源或承诺状态可累积。",
+      "why_it_generates": "每轮互动都能改变信息、承诺、权力、公开性或现实角色，因此小场面也能产生长线推进。",
+      "sample_titles": [
+        "今晚还听么",
+        "缠珑",
+        "攀高枝",
+        "封总，太太想跟你离婚很久了"
+      ]
+    },
+    {
+      "id": "ENGINE-07",
+      "name": "战争 / 竞争 / 晋升 / 领地扩张",
+      "definition": "角色拥有可见的外部进度轴，成功会带来更强对手、更大地图和更高责任。",
+      "why_it_generates": "升级不是重复打赢，而是参与者、资源、责任和空间同步扩大。",
+      "sample_titles": [
+        "廓晋",
+        "穿乱世，疯癫公主她靠抢劫建国了",
+        "逍遥四公子",
+        "武道！"
+      ]
+    },
+    {
+      "id": "ENGINE-08",
+      "name": "强制机制 / 敌对系统 / 互相需要的契约",
+      "definition": "角色被一个不能忽略的机制、系统或互惠缺口绑定，必须持续交易、反制或寻找漏洞。",
+      "why_it_generates": "约束不会因一次漂亮选择消失，反而会不断改变资源分配和参与者结构。",
+      "sample_titles": [
+        "系统想害我，我选择上交国家",
+        "皇叔借点功德，王妃把符画猛了",
+        "没钱修什么仙？",
+        "高冷太子的克星"
+      ]
+    }
+  ],
+  "cross_sample_findings": {
+    "first_reader_promises": [
+      "世界已经发生不可逆改变，我必须知道新规则会把人带到哪里。",
+      "主角的人生/身份已经无法退回原位，我要看他/她如何重建位置。",
+      "存在清晰可积累的进度轴：资源、能力、事业、组织、领地或关系承诺。",
+      "有一个无法一次说完的谜团/秘密，答案会继续改变行动。",
+      "人物被锁进长期关系、制度或利益网络，解决一次争执不会解除结构。",
+      "当前胜利会扩大责任、敌人、地图或代价，而不是把故事清零。"
+    ],
+    "durable_setting_test": "强设定的关键不是名词新，而是它是否持续改变未来场景的资源、规则、关系或信息。",
+    "opening_first_screen_reason": "头部样本通常在简介/开局就展示‘不可回退的变化’或‘可持续运转的结构’，读者能预感到第二场、第五场、第五十场仍有不同问题。",
+    "character_but_not_novel_weakness": [
+      "只有人物反应独特，没有外部结构改变。",
+      "只有一次隐私/体面/自证/边界选择，做完即结算。",
+      "只有精巧伦理题，没有资源、制度、长期关系或谜团余波。",
+      "冲突可被一句解释、离开、拉黑或道歉低成本消除。",
+      "后续所谓升级只是把同一尴尬换人、换场所、加大音量。",
+      "‘很真实、很拧巴’只能增强人物纹理，不能替代小说发动机。"
+    ],
+    "key_correction": "THEME_AND_EVENT_SCALE 不是要求宏大战争；它要求‘未来状态空间足够大’。经营与恋爱也能很强，只要资源/关系/身份会累积并持续改变现实。",
+    "prior_system_failure": "此前 Phase408 过早进入‘这个人物下一步会怎么选’与 protagonist-specificity 审查，缺少 reader-attention economics 的前置证明。微型伦理/社交事件因为逻辑清楚、容易体现人物差异，反而在机器门中占便宜，却没有证明值得持续阅读。"
+  },
+  "reader_attention_worthiness": {
+    "gate_id": "READER_ATTENTION_WORTHINESS_V1",
+    "phase": 408,
+    "placement": "任何新 Phase408 candidate 生成之前；早于 protagonist-specificity、角色独特性、微选择攻击审查。",
+    "purpose": "先证明‘这个故事核心值得读者把未来30分钟交出来’，再证明‘只有这个人物会这样做’。",
+    "pass_rule": "RAW-01 至 RAW-06 全部 PASS 且无 HARD_BLOCK；人物特异性不得补偿任一失败。",
+    "requirements": [
+      {
+        "id": "RAW-01",
+        "name": "THIRTY_MINUTE_EXCHANGE",
+        "question": "只看一句核心，为什么读者愿意把接下来30分钟交给它？",
+        "pass": "必须明确承诺一个会持续变化的价值：世界/命运/资源/关系/谜团/长期目标至少之一；不能只回答‘想看他怎么选’。"
+      },
+      {
+        "id": "RAW-02",
+        "name": "DE_NAMED_ENGINE_DURABILITY",
+        "question": "去掉角色名字、口头禅和个性标签后，主题本身是否仍能持续产出局面？",
+        "pass": "去名后仍存在可反复触发的规则、关系、资源、制度、谜团或长期目标；否则 BLOCK。"
+      },
+      {
+        "id": "RAW-03",
+        "name": "PRESSURE_DIVERSITY_5",
+        "question": "核心冲突是否能自然长出至少5种结构不同的压力？",
+        "pass": "至少5类不同压力，如生存、资源、身份、制度、关系、信息、时间、法律/职业、敌对势力、责任、领地等；同一种社交尴尬换场景不重复计数。"
+      },
+      {
+        "id": "RAW-04",
+        "name": "DURABLE_STRUCTURAL_ANCHOR",
+        "question": "是否有至少一个会持续约束后续行动的结构锚？",
+        "pass": "至少命中并真正约束多场：不可逆变化、持续关系结构、世界规则、利益/资源系统、谜团/揭示链、长期欲望/使命、强制契约之一。"
+      },
+      {
+        "id": "RAW-05",
+        "name": "ESCALATION_AXES",
+        "question": "成功或失败后，故事能沿哪些不同轴升级？",
+        "pass": "至少3个升级轴可用：后果、空间、敌手、信息、责任、资源、关系承诺、社会位置/权力等；不能只有‘下一次更尴尬/更生气’。"
+      },
+      {
+        "id": "RAW-06",
+        "name": "POST_OPENING_RESIDUE",
+        "question": "第一场核心事件解决后，仍然剩下什么结构性问题？",
+        "pass": "即使当场选择完成，主要发动机仍继续运行，并且下一场不是靠重复同一摩擦硬续。"
+      }
+    ],
+    "hard_blocks": [
+      {
+        "id": "RAW-HB-01",
+        "trigger": "只是一个小尴尬、一次口角、一次体面选择或一次熟人越界，且没有立即打开更大的持续结构。",
+        "verdict": "BLOCK"
+      },
+      {
+        "id": "RAW-HB-02",
+        "trigger": "核心是一次伦理 decision puzzle；做出一个选择后主要问题基本结算。",
+        "verdict": "BLOCK"
+      },
+      {
+        "id": "RAW-HB-03",
+        "trigger": "一句解释、道歉、离开、拉黑、拒绝或澄清即可低成本解除核心冲突，且解除后没有重要余波。",
+        "verdict": "BLOCK"
+      },
+      {
+        "id": "RAW-HB-04",
+        "trigger": "唯一卖点是‘人物很拧巴/很真实/反应很特别’，外部世界与关系结构没有因此改变。",
+        "verdict": "BLOCK"
+      },
+      {
+        "id": "RAW-HB-05",
+        "trigger": "只能列出同一种社交压力的不同包装，无法达到5类结构不同压力。",
+        "verdict": "BLOCK"
+      }
+    ],
+    "non_requirements": [
+      "不要求一定有死亡、战争、末日或宏大世界观。",
+      "日常、经营、恋爱可以 PASS，但必须有会累积的资源/关系/身份/职业/公开性等结构。",
+      "高概念不是目的；持续产生不同局面的结构才是目的。"
+    ],
+    "regression": {
+      "RJ-OE408-B": {
+        "known_failure": "隐私 vs 自证；逻辑完整但像伦理选择题。",
+        "checks": {
+          "RAW-01": "FAIL：核心承诺主要是‘他会不会拿别人隐私替自己脱罪’，不足以交换30分钟。",
+          "RAW-02": "FAIL：去掉罗钧后只剩通用伦理题，没有持续场景生成器。",
+          "RAW-03": "FAIL：压力集中于隐私、名誉、自证，无法自然长出5类结构不同压力。",
+          "RAW-04": "FAIL：没有不可逆变化、持久关系结构、世界规则、资源系统或揭示链。",
+          "RAW-05": "FAIL：升级主要只能把同一伦理压力做得更难。",
+          "RAW-06": "FAIL：做出是否自证的选择后，主要发动机即结算。"
+        },
+        "hard_block": [
+          "RAW-HB-02",
+          "RAW-HB-03",
+          "RAW-HB-04"
+        ],
+        "verdict": "BLOCK_BEFORE_CHARACTER_SPECIFICITY"
+      },
+      "RJ-OE408-F": {
+        "known_failure": "被熟人代替回答；人物反应可以有特异性，但事件规模与未来空间太小。",
+        "checks": {
+          "RAW-01": "FAIL：读者得到的是一次边界/面子摩擦，不足以形成长期阅读承诺。",
+          "RAW-02": "FAIL：去名后只是常见熟人越界情境。",
+          "RAW-03": "FAIL：后续大多仍是边界、尴尬、名誉同类压力。",
+          "RAW-04": "FAIL：没有把越界行为连接到不可逆身份、持续关系契约、利益系统或长期谜团。",
+          "RAW-05": "FAIL：缺少多个独立升级轴。",
+          "RAW-06": "FAIL：当场纠正、拒绝或离开即可基本解除问题。"
+        },
+        "hard_block": [
+          "RAW-HB-01",
+          "RAW-HB-03",
+          "RAW-HB-04",
+          "RAW-HB-05"
+        ],
+        "verdict": "BLOCK_BEFORE_CHARACTER_SPECIFICITY"
+      }
+    }
+  },
+  "forced_boundary_audit": {
+    "new_phase408_candidate_count": 0,
+    "prose_generated": false,
+    "phase409_entered": false,
+    "batch3_started": false,
+    "hot_novel_adaptation_generated": false,
+    "best_of_n_generated": false
+  },
+  "conclusion": "先做 READER_ATTENTION_WORTHINESS，再做角色特异性。未来候选若不能证明长期局面、压力多样性和结构余波，即使人物行为再独特也应前置 BLOCK。"
+}
