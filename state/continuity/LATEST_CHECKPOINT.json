@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 124,
+  "sequence": 125,
   "recorded_at": "2026-09-28T18:40:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Targeted Phase410 repair closed the sole Phase412 V3-G3 blocker without adding story facts or rewriting the original 15 causal units. U09 already linked preservation replies to the scheduled archive job by job identifier; U10 submitted the project-source evidence to independent review/preservation; U11 placed that specific unification job under a short mapping-state hold and already stated the same unification resumes when the hold expires. Therefore the formal hold is a warning/claim that necessarily reaches the job-control side, and maintaining the job as resume-ready after that hold is a choice after warning. Repaired V3-G1 integrity PASS; V3-G3 rerun PASS; open blocker count 0. No prose or Phase413 execution.",
+  "current_focus": "Phase413 character and continuity state for RJ-OE408-I《第二套过去》 is complete and PASS. The state base freezes 罗钧, 许澄 and the bounded continuity-project action side; relationship states across opening/U06-U07/U08/U12-U14/U15; knowledge acquisition boundaries; relative 30-day timeline; asset/evidence states; and eight already-established institutional rules. Confirmed contradiction count is 0. Four high-risk ambiguities and three explanation gaps remain intentionally unfrozen but nonblocking, and are explicitly constrained for any future scene plan. No character uses unknown information, no critical object lacks a source, no rule is added after crisis, and five key choice tests remain character-consistent. No scene plan or prose was generated.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -390,7 +390,12 @@
     "Targeted Phase410 warning/choice addendum frozen; original Phase410 ledger unchanged.",
     "WARNING_REACHED_DECISION_SIDE PASS and CHOICE_AFTER_WARNING PASS with zero new story facts.",
     "Phase410 repaired V3-G1 integrity PASS.",
-    "Phase412 V3-G3 rerun PASS; historical FAIL preserved, open blocker count now 0."
+    "Phase412 V3-G3 rerun PASS; historical FAIL preserved, open blocker count now 0.",
+    "Phase413 character/continuity state frozen and audited PASS.",
+    "Confirmed contradiction count 0; high-risk ambiguity count 4; explanation gap count 3.",
+    "Knowledge/timeline/object/rule integrity blockers all false; spatial logic N/A before scene plan.",
+    "U03/U06/U07/U12/U14 pressure tests passed without character-stupidity dependency.",
+    "No scene plan, first chapter, complete scene or prose generated."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -462,7 +467,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE413_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE414_SCENE_PLAN_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -631,7 +636,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE413_CHARACTER_AND_CONTINUITY_STATE_FOR_RJ_OE408_I_ONLY. No prose and no Phase413 execution yet.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE414_SCENE_PLAN_FOR_RJ_OE408_I_ONLY. No scene plan and no prose yet.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1224,16 +1229,28 @@
     {
       "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_RERUN_AFTER_WARNING_CHOICE_REPAIR_PASS_V1.json",
       "role": "Phase412 V3-G3 rerun PASS receipt"
+    },
+    {
+      "path": "state/tasks/PHASE413_RJ_OE408_I_CHARACTER_CONTINUITY_STATE_V1.json",
+      "role": "Phase413 RJ-OE408-I character/continuity task"
+    },
+    {
+      "path": "delivery/phase413/04-character-and-continuity-state.md",
+      "role": "Phase413 frozen 04-character-and-continuity-state"
+    },
+    {
+      "path": "state/review_receipts/PHASE413_RJ_OE408_I_CHARACTER_CONTINUITY_STATE_PASS_V1.json",
+      "role": "Phase413 character/continuity PASS receipt"
     }
   ],
-  "status": "PHASE412_RJ_OE408_I_V3_G3_PASS_AFTER_TARGETED_PHASE410_WARNING_CHOICE_REPAIR__AWAITING_EXPLICIT_PHASE413_AUTHORIZATION",
+  "status": "PHASE413_RJ_OE408_I_CHARACTER_CONTINUITY_STATE_PASS__AWAITING_EXPLICIT_PHASE414_SCENE_PLAN_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01",
+  "last_completed_task_id": "PHASE413-RJ-OE408-I-CHARACTER-CONTINUITY-STATE-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "5a5555464232c89fe81ddb391848ab3a1163904639fc200f6aeba757a2d1c378",
+    "project_state_sha256": "4121eb52609d0b9b35e7639b1d914df159b172231c7ce4f800c449d90f1ff2b6",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1266,14 +1283,15 @@
       "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
       "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
       "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01",
-      "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01"
+      "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01",
+      "PHASE413-RJ-OE408-I-CHARACTER-CONTINUITY-STATE-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE410_RJ_OE408_I_HARM_DOER_WARNING_CHOICE_REPAIR_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE413_CHARACTER_AND_CONTINUITY_STATE_FOR_RJ_OE408_I_ONLY. No prose and no Phase413 execution yet.",
+  "last_completed_task_contract": "state/tasks/PHASE413_RJ_OE408_I_CHARACTER_CONTINUITY_STATE_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE414_SCENE_PLAN_FOR_RJ_OE408_I_ONLY. No scene plan and no prose yet.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }
