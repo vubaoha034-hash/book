@@ -2038,7 +2038,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase408_state": {
-    "status": "ACTIVE_AWAITING_ACTUAL_HUMAN_ROJUN_BOUND_OPENING_EVENT_REVIEW_BATCH2",
+    "status": "HUMAN_REJECTED_BATCH2_RESEARCH_REQUIRED_BEFORE_BATCH3",
     "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
@@ -2068,9 +2068,7 @@
       "path": "state/calibration/PHASE408_PREMISE_KERNEL_CHOICE_PACK_V1.json",
       "status": "ALL_WITHDRAWN_FROM_SELECTION"
     },
-    "retained_candidates": [
-      "RJ-OE408-F"
-    ],
+    "retained_candidates": [],
     "rejected_candidates": [
       "P408-A",
       "P408-B",
@@ -2259,13 +2257,13 @@
       "candidate": "RJ-OE408-F"
     },
     "rj_oe408_b_human_gate_pending": false,
-    "current_human_gate": {
+    "current_human_gate": null,
+    "latest_human_verdict": {
       "candidate": "RJ-OE408-F",
-      "state": "PENDING",
-      "allowed_answers": [
-        "CONTINUE",
-        "REJECT"
-      ]
-    }
+      "verdict": "REJECT",
+      "user_verbatim": "小说哪个。不会。我会觉得这种破事值得吗？还有我希望你看所有现在最火的小说。 我觉得你现在的主题就很一般",
+      "receipt_path": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json"
+    },
+    "next_action": "CURRENT_HOT_NOVEL_THEME_AND_OPENING_ENGINE_RESEARCH_BEFORE_ANY_BATCH3_OR_NEW_PHASE408_CANDIDATE"
   }
 }
