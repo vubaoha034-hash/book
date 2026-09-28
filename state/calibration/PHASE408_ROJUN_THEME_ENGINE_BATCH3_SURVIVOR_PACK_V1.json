@@ -1,0 +1,56 @@
+{
+  "schema_version": "phase408-rojun-theme-engine-batch3-survivor-pack/v1",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_ROJUN_THEME_ENGINE_BATCH3_SURVIVOR_PACK_V1",
+  "mode": "THEME_AND_OPENING_ENGINE_ONLY_NO_PROSE",
+  "survivor_count": 1,
+  "survivor": {
+    "candidate_id": "RJ-OE408-I",
+    "one_sentence_reader_promise": "罗钧醒来后，原本完整的三年人生没有消失，世界却同时多出一套同样有照片、合同、熟人记忆和现实后果的“三年人生”；两套过去都在今天生效，他必须在它们不断撞进现实之前弄清第二套人生从哪里来。",
+    "theme": "当现实同时保存两套互相冲突的过去，身份、责任与关系不再由单一记忆决定。",
+    "durable_engine": "第二套过去会持续通过人、纸本物、账户、合同、旧承诺和机构记录进入今天；每确认一块既产生新的现实后果，也推进‘为什么两套过去能同时存在’的揭示链，而原本那套过去同样保留完整证据。",
+    "opening_irreversible_event": "一夜之间，罗钧的个人设备、机构记录和一批陌生人的记忆里同时出现一套与他原记忆并行的三年历史；原来的三年证据没有被覆盖。当天，来自第二套过去的人已经按既有关系和义务找上门。",
+    "five_pressure_types": [
+      "身份：两套过去同时定义他今天是谁",
+      "信息/谜团：第二套过去如何产生、谁知道两套都存在",
+      "关系：陌生人把他当熟人、合作者、亏欠者，现有关系也会被冲撞",
+      "制度/法律：合同、账户、资格与纸面记录可能同时要求履行",
+      "资源：资产、债务、共同物品与权限归属发生冲突",
+      "时间/责任：第二套过去留下的承诺会到期，拖延会把代价传给第三方",
+      "公开性/声誉：持有不同过去的人可以公开互相矛盾的证据"
+    ],
+    "three_escalation_axes": [
+      "信息轴：从个人异常到两套历史的来源、范围与规则",
+      "后果/资源轴：从一项义务到资产、债务、资格与第三方损失",
+      "社会范围/责任轴：从一对一关系冲突扩大到机构、公开身份与更多受影响者"
+    ],
+    "post_opening_residue": "即使第一位找上门的人被妥善处理，第二套过去仍存在于大量独立人证、物证和制度记录中；下一场可以从关系转为合同、再转为身份或揭示，而不是重复同一种误会。",
+    "why_30_minutes": "读者同时得到近端与远端回报：近端要看第二套过去第一批现实后果怎样撞进今天；远端要追两套完整过去为何能并存、它会怎样重写罗钧现有的人际与制度位置。吸引力不依赖‘罗钧该怎么选才对’。",
+    "originality_distance": {
+      "nearest_scanned_engine_family": [
+        "ENGINE-02 不可逆身份/命运转位",
+        "ENGINE-05 谜团/秘密/规则揭示链"
+      ],
+      "mechanism_shared_only": "只共享‘身份变化会留下长期后果’与‘答案分层揭示’这两个抽象机制。",
+      "distinctive_new_structure": "不是重生、回到过去、共享身体、系统、神器或跨界；原过去完整保留，同时新增一套同样可验证、会产生法律/关系后果的并行过去，冲突全部发生在今天。",
+      "why_not_hot_novel_reskin": "23个已扫描样本中没有‘同一人物两套互斥公共过去同时保真并同时生效’这一结构；未复制任何具体世界规则、角色关系、装置或剧情链。",
+      "verdict": "PASS"
+    },
+    "Rojun_binding": {
+      "why_rojun_is_specifically_exposed_to_this_engine": "罗钧既有的吸引力来自：被重要的人误解时会不断解释，同时会把事实、动机和他人的尊严分开处理。这个发动机不靠这些特征成立，但会让它们第一次遇到真正无法靠解释解决的局面——事实本身同时支持两套历史。",
+      "what_rojun_wants_before_opening": "只想办完一项到期的个人手续，让自己现有生活按原安排继续；他没有主动寻找冒险、神秘或新责任。",
+      "first_irreversible_choice_or_event": "不可逆事件先于他的选择发生：第二套三年过去被现实共同承认，同时原过去没有消失；第一批后果当天到达。",
+      "why_simpler_exit_does_not_close_engine": "否认、离开、注销一个账户、报警或解释最多处理一个局部；它们无法同时消除独立人证、纸本物、机构记录、现实义务与原过去的并存，也不能解释异常来源。",
+      "what_part_of_engine_would_exist_even_if_rojun_were_removed": "任何被‘第二套过去’命中的人都会面对两套现实历史并存、义务生效和来源谜团；发动机独立成立。",
+      "what_only_Rojun_makes_sharper": "罗钧会把‘我愿意处理现实后果’和‘我承认那段过去就是我’拆开；他又容易在重要关系里过度说明自己，于是当说明无法裁决事实时，他的行动会更不整齐、更有代价，而不是把异常简单当成失忆处理。"
+    }
+  },
+  "human_gate": "PENDING",
+  "human_question": "这个核心，你愿不愿意把接下来30分钟交给它？",
+  "natural_language_answer_allowed": true,
+  "prose_generation_authorized": false,
+  "phase409_authorized": false,
+  "accepted_checkpoint_advance": false,
+  "status": "ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW"
+}

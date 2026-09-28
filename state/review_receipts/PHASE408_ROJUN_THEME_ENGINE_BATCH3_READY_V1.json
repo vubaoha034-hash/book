@@ -1,0 +1,49 @@
+{
+  "schema_version": "phase408-rojun-theme-engine-batch3-ready/v1",
+  "receipt_id": "PHASE408_ROJUN_THEME_ENGINE_BATCH3_READY_V1",
+  "task_id": "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "source_head": "88cfa8ed9623ee2232d921f9a34f450b4ed98c00",
+  "status": "PASS_ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW_NO_PROSE",
+  "checks": {
+    "hot_scan_unified_command_quality_pass": true,
+    "raw_gate_precedes_character_binding": true,
+    "raw_candidate_count": 3,
+    "survivor_count": 1,
+    "sole_survivor": "RJ-OE408-I",
+    "B_still_blocked_before_character_specificity": true,
+    "F_still_blocked_before_character_specificity": true,
+    "source_novel_plot_copied": false,
+    "identifiable_style_imitation": false,
+    "prose_generated": false,
+    "phase409_entered": false,
+    "human_verdict_not_inferred": true,
+    "next_batch_auto_started": false
+  },
+  "artifacts": {
+    "task": {
+      "path": "tasks/2026-09-28-phase408-rojun-theme-engine-batch3-after-hot-scan-01.json",
+      "git_blob": "625b83ce249ac724122c05c2214bb06f972d867b"
+    },
+    "audit": {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_AUDIT_V1.json",
+      "git_blob": "020056006cf6694c4f977efad66ff64358afb1ab"
+    },
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_SURVIVOR_PACK_V1.json",
+      "git_blob": "0482a631c294e84006192e8b411c7ac7145ee7e7"
+    },
+    "review_card": {
+      "path": "delivery/phase408/RJ-OE408-I_HUMAN_REVIEW_CARD.md",
+      "git_blob": "4025a0c605112c140d6a17ce9aed5a995975ab5a"
+    }
+  },
+  "human_gate": {
+    "candidate": "RJ-OE408-I",
+    "question": "这个核心，你愿不愿意把接下来30分钟交给它？",
+    "natural_language_answer_allowed": true,
+    "state": "PENDING"
+  },
+  "next_action": "Present only the minimal RJ-OE408-I human review card and wait for actual-human natural-language judgment. No prose; no Phase409; no Batch4."
+}

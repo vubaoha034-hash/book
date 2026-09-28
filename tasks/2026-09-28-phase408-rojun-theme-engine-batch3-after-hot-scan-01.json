@@ -1,0 +1,81 @@
+{
+  "schema_version": "phase408-rojun-theme-engine-batch3-task/v1",
+  "task_id": "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "branch": "main",
+  "created_from_head": "88cfa8ed9623ee2232d921f9a34f450b4ed98c00",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "chat_start_confirmation": {
+    "status": "CHAT_DISPATCH_SEND_CONFIRMED_DIRECT_CURRENT_CONVERSATION",
+    "project_context_observed": "小说",
+    "direct_task_receipt_and_active_response_observed": true,
+    "exact_browser_url_verification": "UNAVAILABLE_BROWSER_CONNECTOR_NOT_CONNECTED",
+    "note": "The task is executing directly inside the current 小说 project chat; auxiliary Opera URL verification was unavailable and was not used as a substitute execution surface."
+  },
+  "authorization": {
+    "unified_command_hot_scan_quality_verdict": "PASS",
+    "new_independent_phase408_candidate_task_authorized": true,
+    "phase409_authorized": false,
+    "prose_authorized": false,
+    "second_batch_or_retry_authorized": false
+  },
+  "objective": "Generate at most four new Phase408 罗钧 theme/opening-engine candidates using READER_ATTENTION_WORTHINESS_V1 before protagonist binding; run originality, binding and reviewer attacks; retain at most one survivor; stop at actual-human 30-minute attention gate.",
+  "raw_candidate_count": 3,
+  "candidate_ids": [
+    "RJ-OE408-I",
+    "RJ-OE408-J",
+    "RJ-OE408-K"
+  ],
+  "raw_gate_results": {
+    "RJ-OE408-I": "PASS_ALL_RAW",
+    "RJ-OE408-J": "PASS_ALL_RAW",
+    "RJ-OE408-K": "PASS_ALL_RAW"
+  },
+  "downstream_results": {
+    "RJ-OE408-I": "SURVIVOR_AFTER_B_C_D",
+    "RJ-OE408-J": "REJECTED_D_CONTINUATION_VALUE_AND_DECISION_PUZZLE_DEPENDENCY",
+    "RJ-OE408-K": "REJECTED_B_SOURCE_DERIVATION_DISTANCE"
+  },
+  "survivor_count": 1,
+  "survivor_id": "RJ-OE408-I",
+  "survivor_core": "罗钧醒来后，原本完整的三年人生没有消失，世界却同时多出一套同样有照片、合同、熟人记忆和现实后果的“三年人生”；两套过去都在今天生效，他必须在它们不断撞进现实之前弄清第二套人生从哪里来。",
+  "artifacts": {
+    "audit": {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_AUDIT_V1.json",
+      "git_blob": "020056006cf6694c4f977efad66ff64358afb1ab"
+    },
+    "survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_SURVIVOR_PACK_V1.json",
+      "git_blob": "0482a631c294e84006192e8b411c7ac7145ee7e7"
+    },
+    "review_card": {
+      "path": "delivery/phase408/RJ-OE408-I_HUMAN_REVIEW_CARD.md",
+      "git_blob": "4025a0c605112c140d6a17ce9aed5a995975ab5a"
+    }
+  },
+  "B_F_still_blocked": true,
+  "human_gate": {
+    "candidate": "RJ-OE408-I",
+    "state": "PENDING",
+    "question": "这个核心，你愿不愿意把接下来30分钟交给它？",
+    "natural_language_answer_allowed": true,
+    "human_verdict_not_inferred": true
+  },
+  "forced_boundaries": {
+    "prose_generated": false,
+    "phase409_entered": false,
+    "next_batch_auto_started": false,
+    "source_novel_plot_copied": false,
+    "identifiable_style_imitation": false,
+    "visual_generated": false
+  },
+  "status": "COMPLETED_ONE_SURVIVOR_STOP_AT_ACTUAL_HUMAN_GATE",
+  "next_legal_action": "WAIT_FOR_ACTUAL_HUMAN_NATURAL_LANGUAGE_VERDICT_ON_RJ_OE408_I_ONLY"
+}

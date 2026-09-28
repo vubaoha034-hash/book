@@ -1,0 +1,255 @@
+{
+  "schema_version": "phase408-rojun-theme-engine-batch3-audit/v1",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "artifact_id": "PHASE408_ROJUN_THEME_ENGINE_BATCH3_AUDIT_V1",
+  "task_id": "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
+  "source_head": "88cfa8ed9623ee2232d921f9a34f450b4ed98c00",
+  "authority": {
+    "hot_scan_synthesis": {
+      "path": "docs/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SYNTHESIS_V1.md",
+      "blob": "3f1b536035eb5f7202f27932b46388236243485c"
+    },
+    "hot_scan_calibration": {
+      "path": "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
+      "blob": "1f1b6865159133213e5f3cf9d1c56d9ee861d737"
+    },
+    "hot_scan_ready": {
+      "path": "state/review_receipts/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1.json",
+      "blob": "d7dde81de7d95919a51436652e9754e1b7725c86"
+    },
+    "frozen_rojun_contract_blob": "89c04b2225b07f786c68fd4bb0a16ca2ff511a95",
+    "note_on_missing_tree_paths": "The two contract paths requested by the dispatcher are referenced by current state but absent from the current tree. The frozen Rojun contract was read by its authoritative blob SHA; the older opening-event-engine path had no current-tree object and supplied no additional permission.",
+    "human_reject_B": {
+      "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+      "blob": "76f48ac9f8b7d41115cceb037a2297b2ba40d2e7",
+      "verdict": "REJECT"
+    },
+    "human_reject_F": {
+      "path": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json",
+      "blob": "03a6a41ae1751ee0743097522b1bbd4067982e5c",
+      "verdict": "REJECT"
+    }
+  },
+  "generation_policy": {
+    "max_raw": 4,
+    "actual_raw": 3,
+    "candidate_ids": [
+      "RJ-OE408-I",
+      "RJ-OE408-J",
+      "RJ-OE408-K"
+    ],
+    "L_generated": false,
+    "raw_before_protagonist_binding": true,
+    "max_survivor": 1,
+    "no_reroll": true,
+    "no_best_of_n_repair": true,
+    "no_second_batch": true,
+    "hot_novel_reskin_forbidden": true
+  },
+  "B_F_regression": {
+    "RJ-OE408-B": "BLOCK_BEFORE_CHARACTER_SPECIFICITY",
+    "RJ-OE408-F": "BLOCK_BEFORE_CHARACTER_SPECIFICITY",
+    "unchanged": true
+  },
+  "candidates": [
+    {
+      "candidate_id": "RJ-OE408-I",
+      "working_label": "第二套过去",
+      "one_sentence_reader_promise": "罗钧醒来后，原本完整的三年人生没有消失，世界却同时多出一套同样有照片、合同、熟人记忆和现实后果的“三年人生”；两套过去都在今天生效，他必须在它们不断撞进现实之前弄清第二套人生从哪里来。",
+      "theme": "当现实同时保存两套互相冲突的过去，身份、责任与关系不再由单一记忆决定。",
+      "durable_engine": "第二套过去会持续通过人、纸本物、账户、合同、旧承诺和机构记录进入今天；每确认一块既产生新的现实后果，也推进‘为什么两套过去能同时存在’的揭示链，而原本那套过去同样保留完整证据。",
+      "opening_irreversible_event": "一夜之间，罗钧的个人设备、机构记录和一批陌生人的记忆里同时出现一套与他原记忆并行的三年历史；原来的三年证据没有被覆盖。当天，来自第二套过去的人已经按既有关系和义务找上门。",
+      "five_pressure_types": [
+        "身份：两套过去同时定义他今天是谁",
+        "信息/谜团：第二套过去如何产生、谁知道两套都存在",
+        "关系：陌生人把他当熟人、合作者、亏欠者，现有关系也会被冲撞",
+        "制度/法律：合同、账户、资格与纸面记录可能同时要求履行",
+        "资源：资产、债务、共同物品与权限归属发生冲突",
+        "时间/责任：第二套过去留下的承诺会到期，拖延会把代价传给第三方",
+        "公开性/声誉：持有不同过去的人可以公开互相矛盾的证据"
+      ],
+      "three_escalation_axes": [
+        "信息轴：从个人异常到两套历史的来源、范围与规则",
+        "后果/资源轴：从一项义务到资产、债务、资格与第三方损失",
+        "社会范围/责任轴：从一对一关系冲突扩大到机构、公开身份与更多受影响者"
+      ],
+      "post_opening_residue": "即使第一位找上门的人被妥善处理，第二套过去仍存在于大量独立人证、物证和制度记录中；下一场可以从关系转为合同、再转为身份或揭示，而不是重复同一种误会。",
+      "why_30_minutes": "读者同时得到近端与远端回报：近端要看第二套过去第一批现实后果怎样撞进今天；远端要追两套完整过去为何能并存、它会怎样重写罗钧现有的人际与制度位置。吸引力不依赖‘罗钧该怎么选才对’。",
+      "RAW": {
+        "RAW-01_THIRTY_MINUTE_EXCHANGE": "PASS：核心承诺是两套同时生效的过去持续进入现实，并带来身份、关系、制度与谜团变化。",
+        "RAW-02_DE_NAMED_ENGINE_DURABILITY": "PASS：去掉罗钧姓名、职业和性格后，‘一个人同时拥有两套互相冲突且都被现实验证的过去’仍可持续产出局面。",
+        "RAW-03_PRESSURE_DIVERSITY_5": "PASS：自然支持身份、信息、关系、制度、资源、时间/责任、公开性至少7类压力。",
+        "RAW-04_DURABLE_STRUCTURAL_ANCHOR": "PASS：不可逆身份/历史异常 + 谜团揭示链 + 持续关系/制度后果共同构成结构锚。",
+        "RAW-05_ESCALATION_AXES": "PASS：可沿信息、后果/资源、社会范围/责任至少3轴升级。",
+        "RAW-06_POST_OPENING_RESIDUE": "PASS：处理一项义务不会消除第二套过去，也不会回答其来源。",
+        "hard_block": "NONE",
+        "verdict": "PASS_ALL_RAW"
+      },
+      "originality_distance": {
+        "nearest_scanned_engine_family": [
+          "ENGINE-02 不可逆身份/命运转位",
+          "ENGINE-05 谜团/秘密/规则揭示链"
+        ],
+        "mechanism_shared_only": "只共享‘身份变化会留下长期后果’与‘答案分层揭示’这两个抽象机制。",
+        "distinctive_new_structure": "不是重生、回到过去、共享身体、系统、神器或跨界；原过去完整保留，同时新增一套同样可验证、会产生法律/关系后果的并行过去，冲突全部发生在今天。",
+        "why_not_hot_novel_reskin": "23个已扫描样本中没有‘同一人物两套互斥公共过去同时保真并同时生效’这一结构；未复制任何具体世界规则、角色关系、装置或剧情链。",
+        "verdict": "PASS"
+      },
+      "Rojun_binding": {
+        "why_rojun_is_specifically_exposed_to_this_engine": "罗钧既有的吸引力来自：被重要的人误解时会不断解释，同时会把事实、动机和他人的尊严分开处理。这个发动机不靠这些特征成立，但会让它们第一次遇到真正无法靠解释解决的局面——事实本身同时支持两套历史。",
+        "what_rojun_wants_before_opening": "只想办完一项到期的个人手续，让自己现有生活按原安排继续；他没有主动寻找冒险、神秘或新责任。",
+        "first_irreversible_choice_or_event": "不可逆事件先于他的选择发生：第二套三年过去被现实共同承认，同时原过去没有消失；第一批后果当天到达。",
+        "why_simpler_exit_does_not_close_engine": "否认、离开、注销一个账户、报警或解释最多处理一个局部；它们无法同时消除独立人证、纸本物、机构记录、现实义务与原过去的并存，也不能解释异常来源。",
+        "what_part_of_engine_would_exist_even_if_rojun_were_removed": "任何被‘第二套过去’命中的人都会面对两套现实历史并存、义务生效和来源谜团；发动机独立成立。",
+        "what_only_Rojun_makes_sharper": "罗钧会把‘我愿意处理现实后果’和‘我承认那段过去就是我’拆开；他又容易在重要关系里过度说明自己，于是当说明无法裁决事实时，他的行动会更不整齐、更有代价，而不是把异常简单当成失忆处理。"
+      },
+      "attack_results": {
+        "1_READER_ATTENTION_WORTH": "PASS：第一层就是‘你多出了一套全世界都能证明的人生’，无需先理解人格论文；后续同时有现实后果与来源谜团。",
+        "2_THEME_EVENT_SCALE": "PASS：规模来自未来状态空间，不是表面爆炸半径；关系、合同、身份、资源、机构和揭示可分别推进。",
+        "3_SWAP_PROTAGONIST": "PASS：换掉罗钧后主题仍成立；这证明它不是人物小怪癖题，罗钧只让矛盾更尖。",
+        "4_HUMAN_MESSINESS": "PASS_WITH_CAUTION：设定只有一个核心异常，没有为凑5类压力另加五套系统；不同压力由现实既有结构自然长出。",
+        "5_IMMEDIATE_FELT_PULL": "PASS：两套同时为真的个人过去本身就有直觉冲突，不需要先解释主题。",
+        "6_CONTINUATION_VALUE": "PASS：第二场可以是关系来索取，第五场可以是制度/资源冲突，之后再进入来源揭示；不依赖同一摩擦复读。",
+        "7_DECISION_PUZZLE_DEPENDENCY": "PASS：去掉‘该承担还是该拒绝’的正确答案，双重过去为何存在、现实后果如何叠加仍然成立。",
+        "8_ENGINE_OVERDESIGN": "PASS：核心承诺可一句话说清——‘你的原过去没消失，但世界又多出一套同样真实的过去。’",
+        "9_LOW_STAKES_COLLAPSE": "PASS：拿掉宏大包装后仍是不可逆身份/历史结构冲突，不会退回边界、体面、误会或伦理题。",
+        "10_SOURCE_DERIVATION_DISTANCE": "PASS：只使用扫描所得抽象机制；不存在可识别的具体热门作品换皮。",
+        "verdict": "PASS"
+      },
+      "final_disposition": "SURVIVOR_PENDING_ACTUAL_HUMAN_REVIEW"
+    },
+    {
+      "candidate_id": "RJ-OE408-J",
+      "working_label": "明天的账单",
+      "one_sentence_reader_promise": "每天清晨，所有人都会收到自己24小时后的真实收支结算单，金额必然准确但原因未知；市场、工作和关系开始围绕可见结果重组，而罗钧第一天的清单里出现一笔他从未答应过的陌生人转账。",
+      "theme": "当结果比原因更早公开，人会怎样重新安排风险、信任与欲望。",
+      "durable_engine": "未来24小时收支结果每天刷新，个人选择、机构规则、市场价格、借贷与关系都会围绕结果预测持续变化。",
+      "opening_irreversible_event": "第一批‘明日结算单’在同一清晨出现在所有人的真实账户界面，并在24小时后被证实金额完全吻合；从第二天起社会已经开始围绕它改变交易和规则。",
+      "five_pressure_types": [
+        "资源/金钱：未来收支提前可见",
+        "时间：只有24小时窗口",
+        "信息：知道结果但不知道原因",
+        "制度/市场：银行、公司、商家开始据此定价",
+        "关系/信任：转账对象与共同支出会提前暴露结果",
+        "法律/责任：赔偿、欠款、税费等结果可能先出现",
+        "权力：掌握解释能力或提前资源的人获得优势"
+      ],
+      "three_escalation_axes": [
+        "资源规模：金额与可调度资本扩大",
+        "制度适应：从个人应对到机构、市场与规则变化",
+        "信息复杂度：从单笔结果到多主体互相影响的结果网络"
+      ],
+      "post_opening_residue": "解释或完成第一天的一笔转账后，第二天仍会出现新的结算；社会规则与他人行为也已经因可见未来改变。",
+      "why_30_minutes": "读者会想看‘可见结果、不可见原因’如何改造个人行为与社会结构，而不只是罗钧的一次选择。",
+      "RAW": {
+        "RAW-01_THIRTY_MINUTE_EXCHANGE": "PASS：持续变化的是资源、制度、关系和信息，而非一次局部选择。",
+        "RAW-02_DE_NAMED_ENGINE_DURABILITY": "PASS：去名后世界规则仍能长期产出局面。",
+        "RAW-03_PRESSURE_DIVERSITY_5": "PASS：资源、时间、信息、制度、关系、法律、权力至少7类。",
+        "RAW-04_DURABLE_STRUCTURAL_ANCHOR": "PASS：每日刷新且会被制度吸收的世界规则构成持续锚。",
+        "RAW-05_ESCALATION_AXES": "PASS：资源规模、制度适应、信息网络至少3轴。",
+        "RAW-06_POST_OPENING_RESIDUE": "PASS：第一天解释完也不会关闭次日规则。",
+        "hard_block": "NONE",
+        "verdict": "PASS_ALL_RAW"
+      },
+      "originality_distance": {
+        "nearest_scanned_engine_family": [
+          "ENGINE-01 不可逆世界规则/高概念秩序改写",
+          "ENGINE-03 生存—资源—建设/成长闭环",
+          "ENGINE-05 谜团/规则揭示链"
+        ],
+        "mechanism_shared_only": "只共享‘规则持续改变资源/制度’和‘信息不一次给完’的抽象机制。",
+        "distinctive_new_structure": "不是金钱修行、经营店铺、系统任务或上交机构；核心是‘未来结算结果公共可见、原因仍未知’对现实市场和关系的重构。",
+        "why_not_hot_novel_reskin": "扫描样本中没有以‘未来24小时真实结算单’作为持续社会规则的具体结构。",
+        "verdict": "PASS"
+      },
+      "Rojun_binding": {
+        "why_rojun_is_specifically_exposed_to_this_engine": "罗钧习惯把事实和动机分开，也不喜欢别人因为一个结果替他定义动机；‘结果已被世界确认、原因尚未发生’会持续刺激这一点。",
+        "what_rojun_wants_before_opening": "按原计划完成普通一天，不新增债务与承诺。",
+        "first_irreversible_choice_or_event": "全球第一批明日结算单出现并在24小时后被事实验证，社会对其可信度发生不可逆变化。",
+        "why_simpler_exit_does_not_close_engine": "不看账单或不参与某一笔交易也无法让全社会取消对未来结算的定价与决策。",
+        "what_part_of_engine_would_exist_even_if_rojun_were_removed": "整个未来结算规则与制度重组独立存在。",
+        "what_only_Rojun_makes_sharper": "他会拒绝‘你最后付了钱，所以你本来就想付’这类结果倒推动机，并可能为了把事实说清而做出额外、并不划算的行动。"
+      },
+      "attack_results": {
+        "1_READER_ATTENTION_WORTH": "PASS：一条简单规则足以让读者预见个人和社会层面的长期变化。",
+        "2_THEME_EVENT_SCALE": "PASS：不是一笔钱的大，而是规则持续改写所有交易与关系。",
+        "3_SWAP_PROTAGONIST": "PASS：换主角后发动机仍成立。",
+        "4_HUMAN_MESSINESS": "PASS_WITH_CAUTION：规则简单，但很容易把人物写成预测优化器，需要大量非理性与关系摩擦才能保持人味。",
+        "5_IMMEDIATE_FELT_PULL": "PASS：‘明天的钱今天就知道结果’无需解释即可产生好奇。",
+        "6_CONTINUATION_VALUE": "FAIL：最自然的单元会反复变成‘看见结果→猜原因/尝试规避→结果兑现’，即使金额和人物变化，底层动作高度重复。",
+        "7_DECISION_PUZZLE_DEPENDENCY": "FAIL：主要吸引力很大程度依赖‘这笔结果到底怎么发生、能不能躲开’的预测解题；去掉这一层，情感与人物驱动力明显变薄。",
+        "8_ENGINE_OVERDESIGN": "PASS：核心规则一句话可讲清，不是多系统堆叠。",
+        "9_LOW_STAKES_COLLAPSE": "PASS：去掉大金额后仍是持续世界规则，不退化为社交边界题。",
+        "10_SOURCE_DERIVATION_DISTANCE": "PASS：与本轮23个样本只共享抽象发动机类别。",
+        "verdict": "FAIL_CONTINUATION_VALUE_AND_DECISION_PUZZLE_DEPENDENCY"
+      },
+      "final_disposition": "REJECTED_AT_D"
+    },
+    {
+      "candidate_id": "RJ-OE408-K",
+      "working_label": "共同失败资产",
+      "one_sentence_reader_promise": "31个互不相识的人突然被依法确认共同拥有一座停摆多年的地下商业街，30天内若不能形成可执行方案，资产与债务将一并被处置；他们必须在未知共有原因、既有债权和外部收购者之间决定让它重新运转还是解体。",
+      "theme": "被共同资产绑定的陌生人如何在利益、治理与未知历史之间形成联盟和冲突。",
+      "durable_engine": "不可分割的共同资产、到期债务、治理权、现金流、商户/债权人和外部收购持续记账，成功或失败都会改变参与者利益。",
+      "opening_irreversible_event": "城市更新程序触发旧产权重新核验，31人的共同产权同时生效；在产权争议结清前任何个人都不能单独转让，处置倒计时已经开始。",
+      "five_pressure_types": [
+        "资源/现金流",
+        "制度/法律与产权",
+        "关系/群体治理",
+        "信息/共有来源",
+        "外部竞争/收购",
+        "时间/处置期限",
+        "责任/债务分配"
+      ],
+      "three_escalation_axes": [
+        "资源轴：维护成本、债务与经营规模",
+        "权力轴：共有人联盟、表决与外部收购力量",
+        "信息轴：产权形成原因、历史债权与隐藏约束"
+      ],
+      "post_opening_residue": "第一次共有人会议即使形成方案，资产、债务、现金流与外部利益方仍会持续产生新问题。",
+      "why_30_minutes": "共同资产与倒计时能自然制造资源、制度、关系和信息变化，不依赖罗钧的一次选择。",
+      "RAW": {
+        "RAW-01_THIRTY_MINUTE_EXCHANGE": "PASS：资产、债务、治理与未知共有原因提供持续变化。",
+        "RAW-02_DE_NAMED_ENGINE_DURABILITY": "PASS：去掉人物名后共同资产结构仍运转。",
+        "RAW-03_PRESSURE_DIVERSITY_5": "PASS：资源、制度、关系、信息、竞争、时间、责任至少7类。",
+        "RAW-04_DURABLE_STRUCTURAL_ANCHOR": "PASS：不可分割共同产权 + 债务/资源系统 + 期限构成结构锚。",
+        "RAW-05_ESCALATION_AXES": "PASS：资源、权力、信息至少3轴。",
+        "RAW-06_POST_OPENING_RESIDUE": "PASS：第一场会议解决不了资产持续运转问题。",
+        "hard_block": "NONE",
+        "verdict": "PASS_ALL_RAW"
+      },
+      "originality_distance": {
+        "nearest_scanned_engine_family": [
+          "ENGINE-03 生存—资源—建设/成长闭环",
+          "ENGINE-04 强制度/阶层/利益网络"
+        ],
+        "mechanism_shared_only": "表面上是多人共同治理，但核心仍高度依赖‘接手失败资产→处理现金流/债务→吸引使用者→对抗竞争→把资产做活’的连续链。",
+        "distinctive_new_structure": "多人分散产权和共同治理本可形成差异。",
+        "why_not_hot_novel_reskin": "FAIL：尽管把单一经营者改成31名共有人，具体阅读承诺仍过度接近本轮已扫描的‘失败经营资产被重新盘活、资源持续记账’结构；差异主要是参与者数量与资产类型，源派生距离不足。",
+        "verdict": "FAIL_SOURCE_DERIVATION_DISTANCE"
+      },
+      "Rojun_binding": null,
+      "attack_results": null,
+      "final_disposition": "REJECTED_AT_B_NON_ADAPTATION"
+    }
+  ],
+  "survivor_count": 1,
+  "survivor_id": "RJ-OE408-I",
+  "rejected": [
+    "RJ-OE408-J",
+    "RJ-OE408-K"
+  ],
+  "survivor_selection_method": "Sequential fail-closed gates: A READER_ATTENTION_WORTHINESS -> B ORIGINALITY/NON-ADAPTATION -> C PROTAGONIST_BINDING -> D 10-item reviewer attack. No score, ranking, repair, reroll or replacement.",
+  "forced_boundaries": {
+    "prose_generated": false,
+    "phase409_entered": false,
+    "human_verdict_not_inferred": true,
+    "next_batch_auto_started": false,
+    "source_novel_plot_copied": false,
+    "identifiable_style_imitation": false,
+    "visual_generated": false
+  },
+  "conclusion": "RJ-OE408-I survives because its core promise remains structurally interesting before 罗钧 is attached: two mutually incompatible but independently verifiable pasts coexist and keep producing different present-day consequences. 罗钧 only sharpens how facts, motives and responsibility are separated. J is rejected for prediction-puzzle repetition; K is rejected at non-adaptation for insufficient distance from a scanned failed-asset operating structure.",
+  "status": "BATCH3_ONE_SURVIVOR_STOP_AT_ACTUAL_HUMAN_GATE"
+}

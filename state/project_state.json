@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-28T02:09:00Z",
+  "updated_at": "2026-09-28T02:37:00Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -609,7 +609,8 @@
     "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
     "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
     "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
-    "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01"
+    "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
+    "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -859,11 +860,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Wait for unified-command review of research quality; only a later explicit authorization may create a new Phase408 candidate task. No prose; no Phase409; no Batch3.",
-  "status": "PHASE408_HOT_NOVEL_THEME_ENGINE_SCAN_COMPLETE__AWAITING_UNIFIED_COMMAND_REVIEW",
+  "next_required_action": "WAIT_FOR_ACTUAL_HUMAN_NATURAL_LANGUAGE_VERDICT_ON_RJ_OE408_I_ONLY. No prose; no Phase409; no Batch4.",
+  "status": "PHASE408_THEME_ENGINE_BATCH3_ONE_SURVIVOR_AWAITING_ACTUAL_HUMAN_REVIEW",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
-  "last_completed_task_contract": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+  "last_completed_task_id": "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
+  "last_completed_task_contract": "tasks/2026-09-28-phase408-rojun-theme-engine-batch3-after-hot-scan-01.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1128,6 +1129,26 @@
     {
       "path": "state/review_receipts/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1.json",
       "role": "research readiness receipt awaiting unified-command quality review"
+    },
+    {
+      "path": "tasks/2026-09-28-phase408-rojun-theme-engine-batch3-after-hot-scan-01.json",
+      "role": "Phase408 theme-engine Batch3 task record"
+    },
+    {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_AUDIT_V1.json",
+      "role": "Phase408 theme-engine Batch3 audit"
+    },
+    {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_SURVIVOR_PACK_V1.json",
+      "role": "Phase408 theme-engine Batch3 survivor pack"
+    },
+    {
+      "path": "delivery/phase408/RJ-OE408-I_HUMAN_REVIEW_CARD.md",
+      "role": "RJ-OE408-I actual-human review card"
+    },
+    {
+      "path": "state/review_receipts/PHASE408_ROJUN_THEME_ENGINE_BATCH3_READY_V1.json",
+      "role": "Phase408 theme-engine Batch3 ready receipt"
     }
   ],
   "incomplete": [
@@ -1329,7 +1350,12 @@
     "Phase404 live open-outcome visibility CLEAR",
     "Phase404 candidate rejected whole; human review not authorized",
     "Phase408 current-hot-novel theme/engine scan completed from 23 current official-platform samples across Qidian, Fanqie, JJWXC and Qimao.",
-    "READER_ATTENTION_WORTHINESS_V1 defined as a mandatory pre-candidate gate; RJ-OE408-B and RJ-OE408-F both regress to BLOCK before character-specificity."
+    "READER_ATTENTION_WORTHINESS_V1 defined as a mandatory pre-candidate gate; RJ-OE408-B and RJ-OE408-F both regress to BLOCK before character-specificity.",
+    "Phase408 theme/opening-engine Batch3 generated exactly three raw candidates after hot-novel research; RAW gate ran before protagonist binding.",
+    "RJ-OE408-K rejected at originality/non-adaptation for insufficient distance from scanned failed-asset operating structure.",
+    "RJ-OE408-J rejected at reviewer attack for continuation repetition and decision-puzzle dependency.",
+    "RJ-OE408-I is the sole Batch3 survivor; minimal human review card prepared. No prose and no Phase409.",
+    "RJ-OE408-B and RJ-OE408-F remain BLOCK_BEFORE_CHARACTER_SPECIFICITY under READER_ATTENTION_WORTHINESS_V1."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -2057,7 +2083,7 @@
     "accepted_checkpoint_advance": false
   },
   "phase408_state": {
-    "status": "HOT_NOVEL_THEME_ENGINE_SCAN_COMPLETE_AWAITING_UNIFIED_COMMAND_REVIEW",
+    "status": "THEME_ENGINE_BATCH3_ONE_SURVIVOR_AWAITING_ACTUAL_HUMAN_REVIEW",
     "task_contract": "state/tasks/PHASE408_PREMISE_SCENE_ENGINE_RESET_V1.json",
     "diagnosis": {
       "path": "state/calibration/PHASE408_PREMISE_SCENE_ENGINE_DIAGNOSIS_V1.json",
@@ -2245,7 +2271,9 @@
       "RJ-OE408-B",
       "RJ-OE408-E",
       "RJ-OE408-G",
-      "RJ-OE408-H"
+      "RJ-OE408-H",
+      "RJ-OE408-J",
+      "RJ-OE408-K"
     ],
     "actual_human_rojun_opening_event_batch1_verdict": {
       "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
@@ -2276,16 +2304,21 @@
       "candidate": "RJ-OE408-F"
     },
     "rj_oe408_b_human_gate_pending": false,
-    "current_human_gate": null,
+    "current_human_gate": {
+      "candidate": "RJ-OE408-I",
+      "state": "PENDING",
+      "question": "这个核心，你愿不愿意把接下来30分钟交给它？",
+      "natural_language_answer_allowed": true
+    },
     "latest_human_verdict": {
       "candidate": "RJ-OE408-F",
       "verdict": "REJECT",
       "user_verbatim": "小说哪个。不会。我会觉得这种破事值得吗？还有我希望你看所有现在最火的小说。 我觉得你现在的主题就很一般",
       "receipt_path": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json"
     },
-    "next_action": "WAIT_FOR_UNIFIED_COMMAND_RESEARCH_QUALITY_REVIEW_BEFORE_ANY_NEW_PHASE408_CANDIDATE_TASK",
-    "batch3_started": false,
-    "new_phase408_candidate_count": 0,
+    "next_action": "WAIT_FOR_ACTUAL_HUMAN_NATURAL_LANGUAGE_VERDICT_ON_RJ_OE408_I_ONLY",
+    "batch3_started": true,
+    "new_phase408_candidate_count": 3,
     "current_hot_novel_theme_engine_scan": {
       "task_path": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
       "calibration_path": "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
@@ -2308,6 +2341,38 @@
       "applies_before": "ANY_NEW_PHASE408_CANDIDATE_GENERATION_AND_BEFORE_CHARACTER_SPECIFICITY",
       "b_regression": "BLOCK_BEFORE_CHARACTER_SPECIFICITY",
       "f_regression": "BLOCK_BEFORE_CHARACTER_SPECIFICITY"
-    }
+    },
+    "theme_engine_batch3_task": {
+      "path": "tasks/2026-09-28-phase408-rojun-theme-engine-batch3-after-hot-scan-01.json",
+      "status": "COMPLETED_ONE_SURVIVOR_STOP_AT_ACTUAL_HUMAN_GATE"
+    },
+    "theme_engine_batch3_audit": {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_AUDIT_V1.json",
+      "status": "COMPLETE_ONE_SURVIVOR"
+    },
+    "theme_engine_batch3_survivor_pack": {
+      "path": "state/calibration/PHASE408_ROJUN_THEME_ENGINE_BATCH3_SURVIVOR_PACK_V1.json",
+      "status": "ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW",
+      "candidate": "RJ-OE408-I"
+    },
+    "theme_engine_batch3_ready_receipt": {
+      "path": "state/review_receipts/PHASE408_ROJUN_THEME_ENGINE_BATCH3_READY_V1.json",
+      "status": "PASS_ONE_SURVIVOR_READY_FOR_ACTUAL_HUMAN_REVIEW_NO_PROSE"
+    },
+    "theme_engine_batch3_review_card": {
+      "path": "delivery/phase408/RJ-OE408-I_HUMAN_REVIEW_CARD.md",
+      "status": "PENDING_ACTUAL_HUMAN_REVIEW",
+      "candidate": "RJ-OE408-I"
+    },
+    "theme_engine_batch3_raw_gate_results": {
+      "RJ-OE408-I": "PASS_ALL_RAW",
+      "RJ-OE408-J": "PASS_ALL_RAW",
+      "RJ-OE408-K": "PASS_ALL_RAW"
+    },
+    "theme_engine_batch3_rejected": [
+      "RJ-OE408-J",
+      "RJ-OE408-K"
+    ],
+    "theme_engine_batch3_survivor": "RJ-OE408-I"
   }
 }
