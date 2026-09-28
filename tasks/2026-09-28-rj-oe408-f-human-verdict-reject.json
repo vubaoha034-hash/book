@@ -1,0 +1,25 @@
+{
+  "schema_version": "novel-rj-oe408-f-human-verdict/v1",
+  "task_id": "RJ-OE408-F-HUMAN-VERDICT-20260928",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "candidate": "RJ-OE408-F",
+  "working_label": "被熟人代替回答",
+  "review_type": "ACTUAL_HUMAN_REVIEW",
+  "verdict": "REJECT",
+  "user_verbatim": "小说哪个。不会。我会觉得这种破事值得吗？还有我希望你看所有现在最火的小说。 我觉得你现在的主题就很一般",
+  "rejection_diagnosis": {
+    "primary": "THEME_AND_EVENT_SCALE_FAIL",
+    "findings": [
+      "The issue is not merely prose wording or a weak title.",
+      "The opening centers on a low-consequence social irritation whose next choice does not feel important enough to spend reader attention on.",
+      "A machine-readable character-specific behavioral kink is not sufficient if the underlying topic/event promise feels trivial.",
+      "The user explicitly asks to recalibrate against currently hottest novels before generating another opening theme."
+    ]
+  },
+  "candidate_closed": true,
+  "phase409_entered": false,
+  "prose_generated": false,
+  "automatic_batch3_allowed": false,
+  "next_legal_action": "CURRENT_HOT_NOVEL_THEME_AND_OPENING_ENGINE_RESEARCH_BEFORE_ANY_BATCH3_OR_NEW_PHASE408_CANDIDATE"
+}
