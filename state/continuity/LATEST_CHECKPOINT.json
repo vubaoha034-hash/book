@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 122,
-  "recorded_at": "2026-09-28T16:58:00+08:00",
+  "sequence": 123,
+  "recorded_at": "2026-09-28T18:40:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase411 / V3-G2 emotion debt and payoff for RJ-OE408-I《第二套过去》 is complete and PASS. Three interlocking debt lines are frozen with ED411-A as the sole primary debt: 罗钧 knowingly uses 许澄's execution exposure to buy investigation time, so the reader waits for him to assume that same real-world cost without recovered memory or restored old love. U07-U08 provide a real partial return through 许澄's procedural agency and limited history preservation; U12-U14 provide final return through the exact Phase410 climax, where 罗钧's assets/credit/identity change and 许澄 ceases to be the sole bearer. Open blocker count is zero. No prose, first chapter, complete scene, scene plan or Phase412 execution occurred.",
+  "current_focus": "Phase412 / V3-G3 Hate & Empathy for RJ-OE408-I《第二套过去》 executed once and FAILS fail-closed. 罗钧 protagonist empathy is supported and 许澄 agency remains intact. The institutional harm-doer candidate '连续性项目' has frozen evidence for a lower-harm alternative, active unification harm, control/benefit and a corresponding U14 consequence, but there is no frozen causal evidence that the project decision-maker received/knew a concrete authenticity/preservation/rights warning and nevertheless continued or escalated unification, nor a frozen blame-shift/denial act. Therefore harm_doer identity is NOT_PROVEN, open blocker count = 1, and Phase413 is blocked. No upstream artifact was modified.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -381,7 +381,12 @@
     "3 debt lines frozen; exactly 1 primary debt (ED411-A).",
     "V3-G2 PASS: primary debt, creator, expected return, escalation, partial return, final return and material state change are all evidenced from frozen Phase409/410 materials.",
     "许澄 agency PASS from U06/U07/U12/U14/U15; she is not merely evidence storage or a passive victim.",
-    "Final return equals the Phase410 climax causal chain and carries real asset/credit/identity cost; no prose or Phase412 execution."
+    "Final return equals the Phase410 climax causal chain and carries real asset/credit/identity cost; no prose or Phase412 execution.",
+    "Phase412 V3-G3 executed exactly once; protagonist empathy PASS, 许澄 agency PASS.",
+    "Continuous-project harm-doer candidate fails warning_ignored_or_blame_shifted only; no missing evidence was inferred.",
+    "V3-G3 FAIL with open BLOCKER count 1.",
+    "Phase409 Story Contract, Phase410 causal proof and Phase411 emotion ledger remain unchanged.",
+    "No prose, first chapter, scene plan or Phase413 execution."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -453,7 +458,8 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
-    "PHASE412_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE412_V3_G3_HARM_DOER_WARNING_IGNORED_OR_BLAME_SHIFTED_BLOCK",
+    "PHASE413_NOT_AUTHORIZED_AND_BLOCKED_BY_V3_G3_FAIL"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -622,7 +628,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY. No prose and no Phase412 execution yet.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413. Do not generate prose or enter Phase413.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1187,16 +1193,28 @@
     {
       "path": "state/review_receipts/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1.json",
       "role": "Phase411 V3-G2 emotion debt/payoff PASS receipt"
+    },
+    {
+      "path": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json",
+      "role": "Phase412 RJ-OE408-I V3-G3 hate/empathy task"
+    },
+    {
+      "path": "delivery/phase412/03-hate-empathy-evidence.md",
+      "role": "Phase412 frozen 03-hate-empathy-evidence FAIL artifact"
+    },
+    {
+      "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_FAIL_V1.json",
+      "role": "Phase412 V3-G3 FAIL receipt"
     }
   ],
-  "status": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS__AWAITING_EXPLICIT_PHASE412_AUTHORIZATION",
+  "status": "PHASE412_RJ_OE408_I_V3_G3_FAIL_HARM_DOER_WARNING_EVIDENCE_MISSING__STOP_NO_PHASE413",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
+  "last_completed_task_id": "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "8323cfb3c8b121e78c051b028477cc380bf451bbd6bab8ddfea60fb755e29c3e",
+    "project_state_sha256": "7a52e3156900e0a9ce40c0a0d47e77a94d11d4a3e8270b12dba7ae25fd6f49e0",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1227,14 +1245,15 @@
       "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
       "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
       "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
-      "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01"
+      "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
+      "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY. No prose and no Phase412 execution yet.",
+  "last_completed_task_contract": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413. Do not generate prose or enter Phase413.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }

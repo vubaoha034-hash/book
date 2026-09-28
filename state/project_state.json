@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-28T08:58:00Z",
+  "updated_at": "2026-09-28T10:40:00Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,19 +177,19 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE411_RJ_OE408_I_V3_G2_PASS_AWAITING_PHASE412_G3_AUTHORIZATION_NO_PROSE",
+    "YMGQ_writing_pause_reason": "PHASE412_RJ_OE408_I_V3_G3_FAIL_WARNING_EVIDENCE_MISSING_NO_PROSE_NO_PHASE413",
     "current_writing_authorization_scope": {
-      "kind": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_COMPLETE_NO_PROSE",
+      "kind": "PHASE412_RJ_OE408_I_V3_G3_FAIL_STOP",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
       "human_review_authorized": false,
-      "phase412_authorized": false,
-      "next_unique_serial_unit": "PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I",
+      "phase413_authorized": false,
+      "next_unique_serial_unit": "PHASE410_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_FOR_RJ_OE408_I",
       "successor_requires_separate_explicit_authorization": true,
-      "task_contract": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json"
+      "task_contract": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -614,7 +614,8 @@
     "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
     "PHASE409-RJ-OE408-I-STORY-CONTRACT-01",
     "PHASE410-RJ-OE408-I-V3-G1-CAUSAL-PROOF-01",
-    "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01"
+    "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
+    "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -864,11 +865,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY. No prose and no Phase412 execution yet.",
-  "status": "PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS__AWAITING_EXPLICIT_PHASE412_AUTHORIZATION",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413. Do not generate prose or enter Phase413.",
+  "status": "PHASE412_RJ_OE408_I_V3_G3_FAIL_HARM_DOER_WARNING_EVIDENCE_MISSING__STOP_NO_PHASE413",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE411-RJ-OE408-I-V3-G2-EMOTION-DEBT-PAYOFF-01",
-  "last_completed_task_contract": "state/tasks/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_V1.json",
+  "last_completed_task_id": "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01",
+  "last_completed_task_contract": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1197,13 +1198,25 @@
     {
       "path": "state/review_receipts/PHASE411_RJ_OE408_I_V3_G2_EMOTION_DEBT_PAYOFF_PASS_V1.json",
       "role": "Phase411 V3-G2 emotion debt/payoff PASS receipt"
+    },
+    {
+      "path": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json",
+      "role": "Phase412 RJ-OE408-I V3-G3 hate/empathy task"
+    },
+    {
+      "path": "delivery/phase412/03-hate-empathy-evidence.md",
+      "role": "Phase412 frozen 03-hate-empathy-evidence FAIL artifact"
+    },
+    {
+      "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_FAIL_V1.json",
+      "role": "Phase412 V3-G3 FAIL receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase412 V3-G3 hate and empathy evidence for RJ-OE408-I has not been authorized or executed."
+    "V3-G3 harm-doer warning_ignored_or_blame_shifted evidence remains missing; Phase413 is blocked."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1215,7 +1228,8 @@
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
     "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
-    "PHASE412_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE412_V3_G3_HARM_DOER_WARNING_IGNORED_OR_BLAME_SHIFTED_BLOCK",
+    "PHASE413_NOT_AUTHORIZED_AND_BLOCKED_BY_V3_G3_FAIL"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1422,7 +1436,12 @@
     "Three interlocking debt lines frozen with exactly one primary debt; no prose or scene plan generated.",
     "Primary debt: 罗钧 knowingly uses 许澄's exposure to buy investigation time, and final return requires him to take that real cost onto his own assets/credit/identity.",
     "Partial return exists before climax: 许澄 withdraws convenience, moves evidence into neutral preservation and regains procedural choice; second-history evidence also receives limited preservation.",
-    "Final return is the Phase410 U12-U14 causal climax itself, not a parallel emotional scene; open V3-G2 BLOCKER count is zero."
+    "Final return is the Phase410 U12-U14 causal climax itself, not a parallel emotional scene; open V3-G2 BLOCKER count is zero.",
+    "Phase412 V3-G3 executed once under explicit authorization; no prose and no Phase413.",
+    "RJ-OE408-I protagonist empathy evidence PASS: ordinary want, harmful flaw/error, understandable reason, costly active choice and specific loss are all frozen-supported.",
+    "许澄 agency remains PASS and no new backstory or passive-victim repair was introduced.",
+    "Continuous-project harm-doer candidate passes non-harmful option, active harm, control/benefit and corresponding consequence checks, but fails warning_ignored_or_blame_shifted due missing frozen knowledge-after-warning sequence.",
+    "Phase412 V3-G3 FAIL with exactly one open BLOCKER; no automatic repair of Phase409/410/411."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -2528,7 +2547,7 @@
     "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE411_V3_G2_EMOTION_DEBT_AND_PAYOFF_FOR_RJ_OE408_I_ONLY"
   },
   "phase411_state": {
-    "status": "V3_G2_EMOTION_DEBT_PAYOFF_PASS_AWAITING_EXPLICIT_PHASE412_AUTHORIZATION",
+    "status": "V3_G2_PASS_HANDOFF_TO_PHASE412_COMPLETE",
     "candidate": "RJ-OE408-I",
     "source_story_contract": {
       "path": "delivery/phase409/00-story-contract.md",
@@ -2569,10 +2588,63 @@
       "phase": 412,
       "gate": "V3-G3",
       "kind": "HATE_AND_EMPATHY",
+      "authorized": true,
+      "executed": true,
+      "prose": false
+    },
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY"
+  },
+  "phase412_state": {
+    "status": "V3_G3_FAIL_HARM_DOER_WARNING_EVIDENCE_MISSING_STOP_NO_PHASE413",
+    "candidate": "RJ-OE408-I",
+    "source_story_contract": {
+      "path": "delivery/phase409/00-story-contract.md",
+      "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "source_causal_ledger": {
+      "path": "delivery/phase410/01-causal-ledger.md",
+      "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "source_emotion_ledger": {
+      "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+      "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "task_contract": {
+      "path": "state/tasks/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_V1.json",
+      "status": "COMPLETED_FAIL"
+    },
+    "hate_empathy_evidence": {
+      "path": "delivery/phase412/03-hate-empathy-evidence.md",
+      "blob": "36d3166f595b2cef15869b102755d0391b240057",
+      "status": "FROZEN_FAIL_V3_G3"
+    },
+    "v3_g3_receipt": {
+      "path": "state/review_receipts/PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_FAIL_V1.json",
+      "blob": "c96b74a882729101be70c6e67078b202f5ffd64a",
+      "status": "FAIL"
+    },
+    "protagonist_empathy": "PASS",
+    "harm_doer_identity": "NOT_PROVEN",
+    "xucheng_agency": "PASS",
+    "open_blocker_count": 1,
+    "blocker_id": "V3_G3_HARM_DOER_WARNING_IGNORED_OR_BLAME_SHIFTED_MISSING",
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "scene_plan_generated": false,
+    "phase413_entered": false,
+    "accepted_checkpoint_advance": false,
+    "next_unique_serial_unit": {
+      "id": "PHASE410_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_FOR_RJ_OE408_I",
+      "phase": 410,
+      "kind": "TARGETED_CAUSAL_REPAIR",
+      "target": "harm_doer_warning_ignored_or_blame_shifted",
       "authorized": false,
       "executed": false,
       "prose": false
     },
-    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE412_V3_G3_HATE_AND_EMPATHY_FOR_RJ_OE408_I_ONLY"
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413"
   }
 }

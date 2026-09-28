@@ -1,0 +1,158 @@
+{
+  "schema_version": "phase412-v3-g3-hate-empathy-review/v1",
+  "receipt_id": "PHASE412_RJ_OE408_I_V3_G3_HATE_EMPATHY_FAIL_V1",
+  "task_id": "PHASE412-RJ-OE408-I-V3-G3-HATE-EMPATHY-01",
+  "project_id": "novel-distillation",
+  "phase": 412,
+  "candidate": "RJ-OE408-I",
+  "source_story_contract": {
+    "path": "delivery/phase409/00-story-contract.md",
+    "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+    "rewritten": false
+  },
+  "source_causal_ledger": {
+    "path": "delivery/phase410/01-causal-ledger.md",
+    "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+    "rewritten": false
+  },
+  "source_emotion_ledger": {
+    "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+    "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+    "rewritten": false
+  },
+  "hate_empathy_evidence": {
+    "path": "delivery/phase412/03-hate-empathy-evidence.md",
+    "blob": "36d3166f595b2cef15869b102755d0391b240057"
+  },
+  "gate_id": "V3-G3",
+  "gate_name": "hate_and_empathy",
+  "result": "FAIL",
+  "protagonist": {
+    "ordinary_want": {
+      "result": "PASS",
+      "evidence": "完成自己攒了多年首付的小公寓过户，结束长期租住与临时状态，让生活第一次固定下来。"
+    },
+    "human_flaw_or_error": {
+      "result": "PASS",
+      "evidence": "罗钧把‘我是否承担责任’与‘事实是否已经唯一、完全查清’绑定。U06 时他已经知道全面冻结会把共同责任的执行压力优先转向许澄，许澄也明确反对，他仍选择冻结来保护自己的查证空间。"
+    },
+    "costly_choice": {
+      "result": "PASS",
+      "evidence": "U12-U13：罗钧主动以当前身份认领一项已独立验证的第二过去共同责任，并让认领正式进入执行记录；不是机构代签、许澄替他决定或一句口头承认。"
+    },
+    "specific_loss_or_risk": {
+      "result": "PASS",
+      "evidence": "公寓资金进入共同责任池、过户失败；资产自由和信用受损；当前身份公开绑定第二链；永久失去‘我只是异常记录受害者、第二过去与我无关’的干净撤退位置。"
+    }
+  },
+  "harm_doer": {
+    "identity": "NOT_PROVEN",
+    "candidate": "连续性项目",
+    "non_harmful_option_existed": {
+      "result": "PASS",
+      "evidence": "Phase410 U08/U11/U14 已建立：证据可以双轨保全并进入独立审理；普通保全虽不能永久解决责任，但‘不在30天终点直接把第二链降为非执行记录，而是维持证据/映射状态进入审理’是现有制度逻辑中已存在的较少伤害路径。",
+      "refs": [
+        "Phase410 §0 条件1-3",
+        "U08",
+        "U11",
+        "U14"
+      ]
+    },
+    "active_harm": {
+      "result": "PASS",
+      "evidence": "Phase409 持续阻力与真答案、Phase410 U09-U10 均冻结：连续性项目存在预定的连续性清理/归一作业，当前故障后仍推动再次单一化；其效果是让第二链失去执行资格，真实合同、资产、责任与权利可能被整体降格。",
+      "refs": [
+        "Phase409 持续阻力",
+        "Phase409 真答案",
+        "U09",
+        "U10"
+      ]
+    },
+    "benefit_or_control_gained": {
+      "result": "PASS",
+      "evidence": "冻结材料只支持两类目的，不扩写为赚钱/升职/私人阴谋：恢复单一可执行身份映射的控制；避免双历史造成的项目责任暴露。U10 明确‘项目方的利益是避免双历史造成的责任暴露’。",
+      "refs": [
+        "Phase409 持续阻力/真答案",
+        "U09",
+        "U10"
+      ]
+    },
+    "warning_ignored_or_blame_shifted": {
+      "result": "FAIL_MISSING_FROZEN_EVIDENCE",
+      "evidence_present": [
+        "U05/U08：多源独立证据足以证明第二过去不是简单伪造，并获得有限证据保全。",
+        "U07：许澄将证据转入中立保全并作为独立当事人通过正式程序回应。",
+        "U09-U10：项目存在预定归一、且项目正在推动再次单一化；项目知道第二链存在分散残余证据。"
+      ],
+      "missing": "没有冻结事实明确证明：连续性项目/具有归一决定权的项目方已经收到、知悉或被正式送达上述真实性证据、保全请求或受影响当事人的权利主张之后，仍选择继续执行/加码归一；也没有冻结的推责、否认、倒打一耙行为。",
+      "why_inference_not_allowed": "‘项目知道有残余证据’、‘项目正在推动归一’、‘当事人已提出保全/主张’三件事分别成立，并不等于同一项目决策主体已收到该提醒且明知后仍继续。V3-G3 要求‘受害者或他人已经提醒；他推责、否认或继续加码’，必须有顺序和知情连接，不能用模型补全。",
+      "prohibited_repairs": [
+        "新增内部会议",
+        "新增员工提醒",
+        "新增许澄邮件",
+        "新增负责人威胁/甩锅",
+        "新增舆论声明",
+        "新增假调查报告"
+      ]
+    },
+    "consequence_corresponds_to_harm": {
+      "result": "PASS_IF_HARM_DOER_WERE_PROVEN",
+      "evidence": "U14 的后果严格对应伤害方式：项目以单方身份映射/归一权制造伤害，最终失去单方把第二链标成无效的能力，双历史进入独立保全/审理。不是抓捕、破产或泛报应。",
+      "refs": [
+        "U14",
+        "Phase411 ED411-C final_return"
+      ]
+    }
+  },
+  "blockers": [
+    {
+      "id": "V3_G3_HARM_DOER_WARNING_IGNORED_OR_BLAME_SHIFTED_MISSING",
+      "severity": "BLOCKER",
+      "open": true,
+      "evidence_gap": "没有冻结事实明确证明：连续性项目/具有归一决定权的项目方已经收到、知悉或被正式送达上述真实性证据、保全请求或受影响当事人的权利主张之后，仍选择继续执行/加码归一；也没有冻结的推责、否认、倒打一耙行为。"
+    }
+  ],
+  "xucheng_agency": {
+    "result": "PASS",
+    "evidence_refs": [
+      "U06",
+      "U07",
+      "U14",
+      "U15",
+      "Phase411 §4"
+    ]
+  },
+  "choice_table_count": 5,
+  "on_fail": "redesign_character_choice_not_backstory",
+  "repair_boundary": {
+    "automatic_repair": false,
+    "phase409_modified": false,
+    "phase410_modified": false,
+    "phase411_modified": false,
+    "phase413_entered": false
+  },
+  "open_blocker_count": 1,
+  "quality_scope": {
+    "protagonist_empathy_supported": true,
+    "harm_doer_hate_evidence_supported": false,
+    "v3_g3_passed": false,
+    "prose_quality_passed": false,
+    "phase413_authorized": false
+  },
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "complete_scene_generated": false,
+    "scene_plan_generated": false,
+    "phase413_entered": false,
+    "visual_generated": false,
+    "project_rule_added": false,
+    "phase409_story_contract_rewritten": false,
+    "phase410_causal_proof_rewritten": false,
+    "phase411_emotion_ledger_rewritten": false,
+    "new_villain_behavior_invented": false,
+    "second_version_generated": false
+  },
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_REOPEN_PHASE410_FOR_TARGETED_HARM_DOER_WARNING_CHOICE_EVIDENCE_REPAIR_THEN_RERUN_V3_G3_NO_PROSE_NO_PHASE413",
+  "status": "FAIL_V3_G3_STOP_NO_PHASE413"
+}
