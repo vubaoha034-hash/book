@@ -1,0 +1,59 @@
+{
+  "schema_version": "phase408-current-hot-novel-theme-engine-scan-task/v1",
+  "task_id": "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
+  "project_id": "novel-distillation",
+  "phase": 408,
+  "execution_surface": "CHAT",
+  "thinking_effort": "EXTREME_HIGH",
+  "started_from_head": "ba75796985a6f8b597009a6b1fee10a15fc7e374",
+  "capture_date": "2026-09-28",
+  "objective": "研究当前公开头部小说的主题、核心设定、开场发动机与持续阅读驱动力，并冻结 READER_ATTENTION_WORTHINESS 前置门；不生成任何新候选。",
+  "authoritative_human_feedback": "小说哪个。不会。我会觉得这种破事值得吗？还有我希望你看所有现在最火的小说。 我觉得你现在的主题就很一般",
+  "diagnosed_root_cause": "THEME_AND_EVENT_SCALE_FAIL",
+  "chat_dispatch_confirmation": {
+    "project_conversation_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6ab9cc68-eae4-83ea-b4cf-5cbfaa8a6365",
+    "project_conversation_path_confirmed": true,
+    "active_processing_observed": true,
+    "observed_ui_state": "处理中",
+    "confirmation_status": "CHAT_DISPATCH_SEND_CONFIRMED"
+  },
+  "source_policy": {
+    "priority": "平台官方榜单与官方作品页优先",
+    "core_sample_secondary_aggregator_used": false,
+    "copyright_boundary": "仅依据公开榜单、简介和可合法读取的作品页做抽象机制分析；不复制长段文本，不模仿作者可识别文风。"
+  },
+  "coverage": {
+    "platforms": [
+      "番茄小说",
+      "起点中文网",
+      "晋江文学城",
+      "七猫中文网"
+    ],
+    "sample_count": 23,
+    "male_and_female_frequency_coverage": true
+  },
+  "required_outputs": [
+    "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+    "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
+    "docs/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SYNTHESIS_V1.md",
+    "state/review_receipts/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1.json"
+  ],
+  "forced_boundaries": {
+    "new_phase408_candidate_count": 0,
+    "prose_generated": false,
+    "phase409_entered": false,
+    "batch3_started": false,
+    "best_of_n": false,
+    "hot_novel_to_rojun_adaptation": false
+  },
+  "result": {
+    "status": "COMPLETE_RESEARCH_READY_FOR_UNIFIED_COMMAND_REVIEW",
+    "strong_engine_family_count": 8,
+    "reader_attention_worthiness_gate": "DEFINED_V1",
+    "regression": {
+      "RJ-OE408-B": "BLOCK",
+      "RJ-OE408-F": "BLOCK"
+    },
+    "next_legal_action": "WAIT_FOR_UNIFIED_COMMAND_RESEARCH_QUALITY_REVIEW_BEFORE_ANY_NEW_PHASE408_CANDIDATE_TASK"
+  }
+}
