@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 116,
-  "recorded_at": "2026-09-28T08:55:00+08:00",
+  "sequence": 117,
+  "recorded_at": "2026-09-28T10:09:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase408 Batch2 sole survivor RJ-OE408-F is now closed by actual-human REJECT. User's reason is theme/event-scale failure: the social irritation feels like '这种破事' and is not worth sustained reader attention. User explicitly requests research across currently hottest novels because current themes feel generic.",
+  "current_focus": "Phase408 current hot-novel theme/opening-engine research is complete: 23 current official-platform samples across Qidian, Fanqie, JJWXC and Qimao; eight strong engine families abstracted; READER_ATTENTION_WORTHINESS_V1 defined. RJ-OE408-B and RJ-OE408-F both regress to pre-character BLOCK. No candidate or prose was generated.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -354,7 +354,11 @@
     "RJ-OE408-B actual-human REJECT recorded and candidate closed; Batch1 human gate is not pending.",
     "Phase408 Batch2 generated exactly four new candidates: RJ-OE408-E/F/G/H; no Batch1 candidate was rewritten or reused.",
     "RJ-OE408-E rejected for AUTHOR_THESIS_DEPENDENCY; RJ-OE408-G rejected for SWAP_PROTAGONIST and CONTINUATION_VALUE; RJ-OE408-H rejected for AUTHOR_THESIS_DEPENDENCY and CONTINUATION_VALUE.",
-    "RJ-OE408-F passed all six attacks and is the sole Batch2 survivor ready for actual-human review."
+    "RJ-OE408-F passed all six attacks and is the sole Batch2 survivor ready for actual-human review.",
+    "Phase408 current-hot-novel theme/engine scan completed with 23 current official-platform samples across four platforms.",
+    "Eight strong engine families abstracted without copying protected prose or imitating author style.",
+    "READER_ATTENTION_WORTHINESS_V1 defined as mandatory pre-candidate gate; B and F both BLOCK before character-specificity.",
+    "Research boundary held: candidate count 0; prose false; Phase409 false; Batch3 false."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -595,7 +599,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "Present only RJ-OE408-F for actual-human protagonist-bound opening-event review. Allowed human answers: CONTINUE / REJECT. STOP_AT_ACTUAL_HUMAN_GATE. No prose; no Phase409.",
+  "next_required_action": "Wait for unified-command review of research quality; only a later explicit authorization may create a new Phase408 candidate task. No prose; no Phase409; no Batch3.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1080,16 +1084,32 @@
     {
       "path": "state/review_receipts/PHASE408_ROJUN_PROTAGONIST_BOUND_OPENING_EVENT_BATCH2_READY_V1.json",
       "role": "Phase408 Batch2 human-gate readiness receipt"
+    },
+    {
+      "path": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+      "role": "Phase408 current-hot-novel theme-engine scan task record"
+    },
+    {
+      "path": "state/calibration/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_V1.json",
+      "role": "Phase408 current hot-novel theme/engine calibration with READER_ATTENTION_WORTHINESS_V1"
+    },
+    {
+      "path": "docs/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SYNTHESIS_V1.md",
+      "role": "Phase408 human-readable research synthesis"
+    },
+    {
+      "path": "state/review_receipts/PHASE408_CURRENT_HOT_NOVEL_THEME_ENGINE_SCAN_READY_V1.json",
+      "role": "Phase408 research ready-for-review receipt"
     }
   ],
-  "status": "PHASE408_BATCH2_HUMAN_REJECTED__HOT_NOVEL_THEME_ENGINE_RESEARCH_REQUIRED",
+  "status": "PHASE408_HOT_NOVEL_THEME_ENGINE_SCAN_COMPLETE__AWAITING_UNIFIED_COMMAND_REVIEW",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "RJ-OE408-F-HUMAN-VERDICT-20260928",
+  "last_completed_task_id": "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "6f44032a916f919346c0a4f144d60676ba5900d85a93da8c7ece26309d07b5f8",
+    "project_state_sha256": "6103dc597b0a8cf7eee7272f345c0fc67527c03acce740f8700390583d439a46",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1114,13 +1134,14 @@
       "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
       "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
       "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
-      "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01"
+      "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
+      "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "tasks/2026-09-28-phase408-rojun-opening-event-batch2-after-human-reject-01.json",
-  "next_action": "Run a current, multi-platform hot-novel theme/opening-engine scan before any Batch3 or new Phase408 candidate. No prose; no Phase409; no automatic substitute candidate.",
+  "last_completed_task_contract": "tasks/2026-09-28-phase408-current-hot-novel-theme-engine-scan-01.json",
+  "next_action": "Wait for unified-command review of research quality; only a later explicit authorization may create a new Phase408 candidate task. No prose; no Phase409; no Batch3.",
   "human_verdict_receipt": "tasks/2026-09-28-rj-oe408-f-human-verdict-reject.json"
 }
