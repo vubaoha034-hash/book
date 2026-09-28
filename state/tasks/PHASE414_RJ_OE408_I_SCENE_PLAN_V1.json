@@ -1,0 +1,179 @@
+{
+  "schema_version": "phase414-scene-plan-task/v1",
+  "task_id": "PHASE414-RJ-OE408-I-SCENE-PLAN-01",
+  "project_id": "novel-distillation",
+  "phase": 414,
+  "branch": "main",
+  "source_head": "d14836c5eeadf22f8e84dabdf0b4b70d5d6aa94b",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "source_phase413_receipt": "state/review_receipts/PHASE413_RJ_OE408_I_CHARACTER_CONTINUITY_STATE_PASS_V1.json",
+    "authorized_successor": "PHASE414_SCENE_PLAN_FOR_RJ_OE408_I",
+    "draft_authorized": false,
+    "phase415_authorized": false,
+    "prose_authorized": false
+  },
+  "frozen_upstream": {
+    "phase409_story_contract": {
+      "path": "delivery/phase409/00-story-contract.md",
+      "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+      "modified": false
+    },
+    "phase410_causal_ledger": {
+      "path": "delivery/phase410/01-causal-ledger.md",
+      "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+      "modified": false
+    },
+    "phase410_warning_addendum": {
+      "path": "delivery/phase410/01-causal-ledger-warning-choice-addendum.md",
+      "blob": "fd0cb0499b2249befcc57ded8c27193e6938f63b",
+      "modified": false
+    },
+    "phase411_emotion_ledger": {
+      "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+      "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+      "modified": false
+    },
+    "phase412_hate_empathy_artifact": {
+      "path": "delivery/phase412/03-hate-empathy-evidence.md",
+      "blob": "36d3166f595b2cef15869b102755d0391b240057",
+      "modified": false
+    },
+    "phase413_character_continuity": {
+      "path": "delivery/phase413/04-character-and-continuity-state.md",
+      "blob": "082b50ed66237efb0a4829580a695f65f2145434",
+      "modified": false
+    }
+  },
+  "result": "PASS",
+  "scene_count": 10,
+  "compression_map": [
+    {
+      "scene_id": "SP414-S01",
+      "causal_map": [
+        "U01"
+      ]
+    },
+    {
+      "scene_id": "SP414-S02",
+      "causal_map": [
+        "U02",
+        "U03"
+      ]
+    },
+    {
+      "scene_id": "SP414-S03",
+      "causal_map": [
+        "U04",
+        "U05"
+      ]
+    },
+    {
+      "scene_id": "SP414-S04",
+      "causal_map": [
+        "U06",
+        "U07"
+      ]
+    },
+    {
+      "scene_id": "SP414-S05",
+      "causal_map": [
+        "U08"
+      ]
+    },
+    {
+      "scene_id": "SP414-S06",
+      "causal_map": [
+        "U09",
+        "U10"
+      ]
+    },
+    {
+      "scene_id": "SP414-S07",
+      "causal_map": [
+        "U11"
+      ]
+    },
+    {
+      "scene_id": "SP414-S08",
+      "causal_map": [
+        "U12",
+        "U13"
+      ]
+    },
+    {
+      "scene_id": "SP414-S09",
+      "causal_map": [
+        "U14"
+      ]
+    },
+    {
+      "scene_id": "SP414-S10",
+      "causal_map": [
+        "U15"
+      ]
+    }
+  ],
+  "scene_ids": [
+    "SP414-S01",
+    "SP414-S02",
+    "SP414-S03",
+    "SP414-S04",
+    "SP414-S05",
+    "SP414-S06",
+    "SP414-S07",
+    "SP414-S08",
+    "SP414-S09",
+    "SP414-S10"
+  ],
+  "audit": {
+    "scene_count": 10,
+    "causal_unit_count": 15,
+    "one_to_one_mapping": false,
+    "repeated_pressure_scenes": false,
+    "transition_only_scenes": false,
+    "rule_exposition_scenes": false,
+    "evidence_catalog_scenes": false,
+    "pure_information_without_choice": false,
+    "relationship_reset_too_fast": false,
+    "protagonist_stupidity": false,
+    "xucheng_toolized": false,
+    "primary_debt_paid_before_climax": false,
+    "climax_cost_only_verbal": false,
+    "ending_overcompensates": false,
+    "continuity_violation": false,
+    "unknown_information_use": false,
+    "new_rule_added": false,
+    "new_story_fact_required": false,
+    "high_risk_ambiguities_respected": 4,
+    "explanation_gaps_respected": 3,
+    "opening_retention_precheck_only": true,
+    "v3_g4_claimed": false
+  },
+  "opening_scene": "小公寓过户现场被来自第二套过去的现实责任记录直接阻断，罗钧不得不登记身份冲突，30天窗口当天启动。",
+  "midpoint_irreversible_turn": "S05：罗钧终于证明两套过去都真实，却被制度明确告知真实性无法分配当前责任；他的‘先查清再承担’策略第一次在事实层面彻底失效。",
+  "climax_scene": "S08：在短期hold即将失效、许澄仍被追偿时，罗钧以当前身份主动认领已验证的第二过去共同责任，让公寓资金、信用和干净身份真实成为代价。",
+  "ending_scene": "S10：归一虽被阻断，但公寓不回来、责任仍需审理、旧三年关系不恢复；罗钧与许澄只建立基于今天明示承诺的新合作规则。",
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "complete_scene_generated": false,
+    "draft_entered": false,
+    "phase415_entered": false,
+    "visual_generated": false,
+    "rule_added": false,
+    "upstream_rewritten": false
+  },
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "reason": "No materialized STATE_LEDGER path exists at current branch; continuity snapshot remains logical/partial. No missing physical ledger history fabricated."
+  },
+  "status": "COMPLETED_PHASE414_SCENE_PLAN_PASS_STOP_BEFORE_DRAFT",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE415_DRAFT_FOR_RJ_OE408_I_ONLY"
+}

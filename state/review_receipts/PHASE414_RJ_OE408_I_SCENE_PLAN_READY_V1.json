@@ -1,0 +1,147 @@
+{
+  "schema_version": "phase414-scene-plan-review/v1",
+  "receipt_id": "PHASE414_RJ_OE408_I_SCENE_PLAN_READY_V1",
+  "task_id": "PHASE414-RJ-OE408-I-SCENE-PLAN-01",
+  "project_id": "novel-distillation",
+  "phase": 414,
+  "candidate": "RJ-OE408-I",
+  "scene_plan": {
+    "path": "delivery/phase414/05-scene-plan.md",
+    "blob": "decfa4159b9428633d5d20f1b8e4c17f0f43750a",
+    "scene_count": 10
+  },
+  "result": "PASS",
+  "compression": {
+    "causal_unit_count": 15,
+    "scene_count": 10,
+    "one_to_one_mapping": false,
+    "map": [
+      {
+        "scene_id": "SP414-S01",
+        "causal_map": [
+          "U01"
+        ]
+      },
+      {
+        "scene_id": "SP414-S02",
+        "causal_map": [
+          "U02",
+          "U03"
+        ]
+      },
+      {
+        "scene_id": "SP414-S03",
+        "causal_map": [
+          "U04",
+          "U05"
+        ]
+      },
+      {
+        "scene_id": "SP414-S04",
+        "causal_map": [
+          "U06",
+          "U07"
+        ]
+      },
+      {
+        "scene_id": "SP414-S05",
+        "causal_map": [
+          "U08"
+        ]
+      },
+      {
+        "scene_id": "SP414-S06",
+        "causal_map": [
+          "U09",
+          "U10"
+        ]
+      },
+      {
+        "scene_id": "SP414-S07",
+        "causal_map": [
+          "U11"
+        ]
+      },
+      {
+        "scene_id": "SP414-S08",
+        "causal_map": [
+          "U12",
+          "U13"
+        ]
+      },
+      {
+        "scene_id": "SP414-S09",
+        "causal_map": [
+          "U14"
+        ]
+      },
+      {
+        "scene_id": "SP414-S10",
+        "causal_map": [
+          "U15"
+        ]
+      }
+    ]
+  },
+  "structural_checks": {
+    "opening_direct_real_consequence": true,
+    "midpoint_old_strategy_irreversibly_fails": true,
+    "source_truth_before_climax": true,
+    "post_truth_engine_is_responsibility_assets_standing_relationship": true,
+    "climax_driven_by_rojun_active_liability_assumption": true,
+    "climax_cost_materialized_in_plan": true,
+    "u14_uses_seeded_standing_not_new_rule": true,
+    "ending_does_not_restore_old_relationship": true,
+    "ending_does_not_compensate_apartment_loss": true
+  },
+  "audit": {
+    "scene_count": 10,
+    "causal_unit_count": 15,
+    "one_to_one_mapping": false,
+    "repeated_pressure_scenes": false,
+    "transition_only_scenes": false,
+    "rule_exposition_scenes": false,
+    "evidence_catalog_scenes": false,
+    "pure_information_without_choice": false,
+    "relationship_reset_too_fast": false,
+    "protagonist_stupidity": false,
+    "xucheng_toolized": false,
+    "primary_debt_paid_before_climax": false,
+    "climax_cost_only_verbal": false,
+    "ending_overcompensates": false,
+    "continuity_violation": false,
+    "unknown_information_use": false,
+    "new_rule_added": false,
+    "new_story_fact_required": false,
+    "high_risk_ambiguities_respected": 4,
+    "explanation_gaps_respected": 3,
+    "opening_retention_precheck_only": true,
+    "v3_g4_claimed": false
+  },
+  "blockers": {
+    "continuity": false,
+    "character_choice": false,
+    "knowledge_state": false,
+    "rule_integrity": false,
+    "repetition": false
+  },
+  "quality_scope": {
+    "scene_plan_passed": true,
+    "opening_retention_v3_g4_passed": false,
+    "draft_passed": false,
+    "prose_quality_passed": false
+  },
+  "forced_boundaries": {
+    "prose_generated": false,
+    "first_chapter_generated": false,
+    "complete_scene_generated": false,
+    "draft_entered": false,
+    "phase415_entered": false,
+    "visual_generated": false,
+    "rule_added": false,
+    "upstream_rewritten": false
+  },
+  "open_blocker_count": 0,
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE415_DRAFT_FOR_RJ_OE408_I_ONLY",
+  "status": "PASS_SCENE_PLAN_READY_STOP_BEFORE_DRAFT"
+}
