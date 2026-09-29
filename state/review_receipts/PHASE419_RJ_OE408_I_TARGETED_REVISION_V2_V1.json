@@ -1,0 +1,86 @@
+{
+  "schema_version": "phase419-targeted-revision-v2-receipt/v1",
+  "receipt_id": "PHASE419_RJ_OE408_I_TARGETED_REVISION_V2_V1",
+  "task_id": "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
+  "project_id": "novel-distillation",
+  "phase": 419,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "f91d44c2a0106bd59b05ad45c7e30f9cc0eeffbc",
+  "source_draft_v1": {
+    "path": "delivery/phase415/06-draft.md",
+    "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "preserved_unchanged": true
+  },
+  "task_contract": {
+    "path": "state/tasks/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2.json",
+    "blob": "bb882b4bfc64de48e3d8d6109ecb50bb12c8a145"
+  },
+  "output_draft_v2": {
+    "path": "delivery/phase419/06-draft-v2.md",
+    "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8",
+    "version": "V2",
+    "version_count": 1
+  },
+  "revision_ledger": {
+    "path": "delivery/phase419/revision-ledger-v1.md",
+    "blob": "3a8e13663dfe1aeb208ff1e22c5787266a143a80"
+  },
+  "repairs": {
+    "R1": {
+      "result": "PASS",
+      "evidence": "Chapter 2 now visibly establishes ordinary preservation ≠ long-term anti-unification qualification and distinguishes first-chain conflict damage from second-chain executable interest; Chapter 7 no longer relies on hidden retroactive first disclosure."
+    },
+    "R2": {
+      "result": "PASS",
+      "evidence": "Chapter 7 now visibly shows the specific job received formal objection/hold, was not withdrawn, and remained recoverable/resume-ready."
+    },
+    "R3": {
+      "result": "PASS",
+      "evidence": "Chapter 6 now blocks full public/media release through no execution-stopping authority plus privacy/evidence-location cost, without creating a media subplot."
+    },
+    "R4": {
+      "result": "PASS",
+      "evidence": "Chapter 2 now blocks police/reporting as a complete exit because it does not stop the due responsibility or decide property/identity validity, without creating a police subplot."
+    },
+    "R5": {
+      "result": "PASS",
+      "evidence": "Chapters 3/5/6 verification and explanation were compressed while seller deadline, transfer/credit restrictions, multi-source authenticity, neutral preservation, limited-preservation≠responsibility, archive job identifier and project-source truth all remain."
+    }
+  },
+  "minimal_readback": {
+    "required_nodes_all_present": true,
+    "protected_chapters_exactly_unchanged": [
+      "一",
+      "四",
+      "八",
+      "九",
+      "十"
+    ],
+    "must_protect_pass": true
+  },
+  "counts": {
+    "draft_v2_count": 1,
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "second_revision_version_count": 0
+  },
+  "boundaries": {
+    "candidate_comparison": false,
+    "story_contract_modified": false,
+    "causal_ledger_modified": false,
+    "scene_plan_modified": false,
+    "phase420_entered": false,
+    "full_aesthetic_rewrite": false,
+    "full_ai_rewrite": false
+  },
+  "machine_revision_not_actual_human_literary_acceptance": true,
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "physical_ledger_entry_count": 54,
+    "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+    "reason": "No materialized physical STATE_LEDGER path exists; physical history was not fabricated."
+  },
+  "status": "PASS_EXACTLY_ONE_TARGETED_DRAFT_V2_DURABLE_STOP_BEFORE_PHASE420",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE420; Draft V2 remains frozen pending successor review."
+}
