@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 130,
-  "recorded_at": "2026-09-29T10:05:00+08:00",
+  "sequence": 131,
+  "recorded_at": "2026-09-29T11:08:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase418 logic/continuity/causality/emotion-payoff review completed once for RJ-OE408-I《第二套过去》 Draft V1. Frozen result: confirmed contradictions=0, BLOCKER=0, MAJOR=1, MINOR=4. The MAJOR is Chapter 7 retroactive disclosure of the current-executable-interest condition: frozen U03/S02 required early seeding, but Draft first makes it explicit at the climax threshold and then claims Luo Jun had been told earlier. Character knowledge violations=0 confirmed; timeline/asset/responsibility state violations=0 confirmed; primary emotion debt payoff=CLEAR. Continuity-project warning→choice chronology is functionally present but prose agency is MINOR-incomplete because the harm can read as automatic system behavior. Phase417 middle-density issue is MINOR execution/retention, not causal break. Draft remains unchanged; no revision or Phase419 entered.",
+  "current_focus": "Phase419 targeted revision completed once for RJ-OE408-I《第二套过去》. Exactly one complete Draft V2 was created from frozen Draft V1. R1 restored the already-frozen long-term anti-unification standing rule early in Chapter 2 and removed Chapter 7's hidden retroactive first-disclosure defect; R2 made the existing project warning→choice→resume-ready sequence visible; R3/R4 materialized the already-frozen public/media and police/reporting non-solution constraints; R5 compressed repeated verification/explanation in Chapters 3/5/6 while preserving all required state nodes. Minimal read-back PASS: Chapters 1/4/8/9/10 are exactly unchanged from V1; must-protect items preserved. New core story facts=0; new world rules=0; Draft V1 blob unchanged. No Phase420 entered and no second revision version generated.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -422,7 +422,14 @@
     "Phase418 character knowledge violations=0 confirmed and timeline/asset/responsibility state violations=0 confirmed.",
     "Phase418 primary emotion debt payoff=CLEAR; Chapter 4 informed harmful choice, Chapter 8 material cost return, Chapter 10 unresolved losses/relationship gap all survive.",
     "Phase418 harm-doer warning/choice=MINOR at prose level: scheduled→held→resume-ready chronology exists, but decision-side agency/lower-harm choice is not sufficiently visible.",
-    "Draft V1 blob remains ab260053f52ba22249cbf76309f5cfdc5b37e795; no revision and no Phase419 execution."
+    "Draft V1 blob remains ab260053f52ba22249cbf76309f5cfdc5b37e795; no revision and no Phase419 execution.",
+    "Phase419 targeted revision executed exactly once from frozen RJ-OE408-I Draft V1 to exactly one complete Draft V2.",
+    "Phase419 R1 PASS: decisive long-term anti-unification qualification is now visibly seeded in Chapter 2 from frozen R5/U03/S02, and Chapter 7 no longer relies on hidden retroactive first disclosure.",
+    "Phase419 R2 PASS: existing continuity-project warning→choice→resume-ready job-state sequence is visible without new villain/mechanism.",
+    "Phase419 R3/R4 PASS: public/media and police/reporting low-cost exits are blocked using only frozen constraints, with no new subplots.",
+    "Phase419 R5 PASS: Chapters 3/5/6 explanation was compressed while all required asset/credit/preservation/job/source-truth nodes remain.",
+    "Phase419 minimal read-back confirms Chapters 1/4/8/9/10 exactly unchanged vs V1; must-protect preserved.",
+    "Phase419 new core story fact count=0; new world rule count=0; Draft V1 remains unchanged; no second revision version and no Phase420 execution."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -662,7 +669,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE419_OR_REVISION; Draft V1 remains frozen.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE420; Draft V2 remains frozen pending successor review.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1327,16 +1334,32 @@
     {
       "path": "state/review_receipts/PHASE418_RJ_OE408_I_LOGIC_CONTINUITY_PAYOFF_REVIEW_V1.json",
       "role": "Phase418 review settlement receipt"
+    },
+    {
+      "path": "state/tasks/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2.json",
+      "role": "Phase419 RJ-OE408-I targeted single-V2 revision task"
+    },
+    {
+      "path": "delivery/phase419/06-draft-v2.md",
+      "role": "Phase419 complete targeted Draft V2"
+    },
+    {
+      "path": "delivery/phase419/revision-ledger-v1.md",
+      "role": "Phase419 targeted revision ledger and minimal read-back"
+    },
+    {
+      "path": "state/review_receipts/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2_V1.json",
+      "role": "Phase419 targeted V2 settlement receipt"
     }
   ],
-  "status": "PHASE418_RJ_OE408_I_LOGIC_CONTINUITY_PAYOFF_REVIEW_COMPLETE_1_MAJOR_4_MINOR__AWAITING_SEPARATE_PHASE419_OR_REVISION_AUTHORIZATION",
+  "status": "PHASE419_RJ_OE408_I_TARGETED_REVISION_V2_COMPLETE_EXACTLY_ONE__AWAITING_SEPARATE_PHASE420_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01",
+  "last_completed_task_id": "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "d3e801f4b22ea9c5283e2021c3f508da91bf87d4c8b1e80b36ff96c615bd75ba",
+    "project_state_sha256": "f87f776abbdc8bfa0a1742b0d4adb84c4b87e9a3a45672c4986a72b4540d7b37",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1375,14 +1398,15 @@
       "PHASE415-RJ-OE408-I-DRAFT-V1-01",
       "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
       "PHASE417-RJ-OE408-I-READER-EVIDENCE-PANEL-V1-01",
-      "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01"
+      "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01",
+      "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE418_RJ_OE408_I_LOGIC_CONTINUITY_PAYOFF_REVIEW_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE419_OR_REVISION; Draft V1 remains frozen.",
+  "last_completed_task_contract": "state/tasks/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE420; Draft V2 remains frozen pending successor review.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }
