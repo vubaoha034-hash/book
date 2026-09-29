@@ -56,6 +56,37 @@
       "S04→S08 primary emotion-debt causal echo"
     ]
   },
-  "status": "AUTHORIZED_IN_EXECUTION_TARGETED_SINGLE_V2_ONLY",
-  "next_action": "CREATE_EXACTLY_ONE_COMPLETE_DRAFT_V2_THEN_MINIMAL_READBACK_AND_STOP_BEFORE_PHASE420"
+  "status": "COMPLETE_EXACTLY_ONE_TARGETED_DRAFT_V2_STOP_BEFORE_PHASE420",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE420; Draft V2 is frozen pending successor review.",
+  "result": {
+    "status": "COMPLETE",
+    "draft_v2_count": 1,
+    "draft_v2": {
+      "path": "delivery/phase419/06-draft-v2.md",
+      "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8"
+    },
+    "revision_ledger": {
+      "path": "delivery/phase419/revision-ledger-v1.md",
+      "blob": "3a8e13663dfe1aeb208ff1e22c5787266a143a80"
+    },
+    "repairs": {
+      "R1": "PASS",
+      "R2": "PASS",
+      "R3": "PASS",
+      "R4": "PASS",
+      "R5": "PASS"
+    },
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "v1_preserved": true,
+    "v1_blob_after_revision": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "protected_chapters_exactly_unchanged": [
+      "一",
+      "四",
+      "八",
+      "九",
+      "十"
+    ],
+    "phase420_entered": false
+  }
 }
