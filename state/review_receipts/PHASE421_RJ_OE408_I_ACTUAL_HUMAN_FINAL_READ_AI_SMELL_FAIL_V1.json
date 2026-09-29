@@ -1,0 +1,39 @@
+{
+  "schema_version": "phase421-rj-oe408-i-actual-human-final-read-ai-smell-fail/v1",
+  "receipt_id": "PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1",
+  "project_id": "novel-distillation",
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_final": {
+    "path": "delivery/phase421/final.md",
+    "draft_version": "V3",
+    "source_head": "cfd44190a368910357d1113f827027e24b3cbad5"
+  },
+  "review_type": "ACTUAL_HUMAN_FINAL_READ",
+  "recorded_date": "2026-09-29",
+  "exact_human_quote": "小说的题材没问题，有想看的。但是ai味道严重到根本不想看。为什么调整了那么久的ai味道，现在又回到最开始了。你这是在做什么？",
+  "verdict": "TOPIC_DIRECTION_PASS_PROSE_AI_SMELL_SEVERE_FAIL",
+  "topic_direction_accepted": true,
+  "desire_to_read_premise": true,
+  "prose_quality_accepted": false,
+  "ai_smell": "FAIL_SEVERE_ENOUGH_TO_STOP_READING",
+  "final_quality_accepted": false,
+  "scope_binding": {
+    "applies_to": "RJ-OE408-I Phase421 final V3 prose delivery",
+    "does_not_reject": "core topic/premise/reader engine",
+    "does_not_authorize": "topic reset or replacement candidate"
+  },
+  "supersedes_machine_implications": [
+    "Phase420 local de-AI pass cannot be treated as human-quality success.",
+    "Phase421 blocker_count=0 cannot be treated as prose/taste acceptance.",
+    "Earlier machine assessment that AI risk was only localized is overridden by actual-human severe full-draft rejection."
+  ],
+  "root_cause_evidence": [
+    "Phase420 explicitly limited itself to exactly one minimal line-edit pass.",
+    "Phase420 changed only 10 local edit blocks across chapters 5/6/7/9/10, leaving chapters 1/2/3/4/8 untouched.",
+    "Phase420 declared personal aesthetic confidence MEDIUM-LOW and admitted no sufficient actual-human positive full-prose style sample.",
+    "Phase417 already identified procedural/explanatory/AI-smell risks; Phase420 treated them as local patterns rather than manuscript-level voice/rhythm failure.",
+    "Phase421 preserved Draft V3 unchanged and performed machine final review, not actual-human prose acceptance."
+  ],
+  "next_legal_action": "OPEN_ONE_SEPARATE_FULL_MANUSCRIPT_PROSE_REAUTHORING_TASK_PRESERVING_STORY_ENGINE_AND_FACTS; rewrite prose voice/rhythm/dialogue/exposition at manuscript scale, exactly one V4, no topic reset, no new core facts, then return the opening + representative middle + ending excerpt to actual-human review before any final freeze."
+}
