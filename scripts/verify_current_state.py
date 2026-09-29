@@ -15,6 +15,8 @@ def verify(root: Path) -> dict:
     receipt_path = root / receipt_rel
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
     expected_hash = hashlib.sha256(project_path.read_bytes()).hexdigest()
+    trial = project["phase422_state"].get("opening_trial", {})
+    trial_path = root / trial.get("path", "")
     checks = {
         "same_project": project["project_id"] == checkpoint["project_id"] == receipt["project_id"],
         "same_status": project["status"] == checkpoint["status"] == receipt["status"],
@@ -29,6 +31,9 @@ def verify(root: Path) -> dict:
         "no_active_successor": checkpoint["active_task_ids"] == [],
         "positive_scope_not_upgraded": project["phase363_prose_anchor"]["mechanism_only_scale_proven_sufficient"] is False and project["phase370_settlement"]["ai_smell_direction_vs_phase369"] == "SAME",
         "repair_basis_mirror": project["phase422_state"].get("repair_basis") == checkpoint["phase422_state"].get("repair_basis"),
+        "trial_mirror": trial == checkpoint["phase422_state"].get("opening_trial"),
+        "trial_blob": trial_path.is_file() and trial.get("blob") == subprocess.check_output(["git", "hash-object", str(trial_path)], text=True).strip(),
+        "trial_not_human_pass": trial.get("human_style_verdict") == "PENDING" and project.get("opening_trial_human_gate") == checkpoint.get("opening_trial_human_gate") == "PENDING_ACTUAL_HUMAN_READING",
     }
     failed = [name for name, passed in checks.items() if not passed]
     if failed:

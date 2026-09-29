@@ -884,7 +884,7 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "PREPARE_ONE_BOUNDED_OPENING_SCENE_CANDIDATE_PHASE363_SCENE_ENGINE_PHASE370_CLARITY_ONLY_NO_FULL_V5",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_OPENING_SCENE_TRIAL_NO_FULL_V5",
   "status": "V4 真人文风严重不通过；不再等待同一稿审核",
   "active_task_contract": null,
   "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
@@ -3346,7 +3346,7 @@
     "new_core_story_fact_count": 0,
     "new_world_rule_count": 0,
     "final_pass": false,
-    "next_action": "PREPARE_ONE_BOUNDED_OPENING_SCENE_CANDIDATE_PHASE363_SCENE_ENGINE_PHASE370_CLARITY_ONLY_NO_FULL_V5",
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_OPENING_SCENE_TRIAL_NO_FULL_V5",
     "actual_human_style_verdict": "FAIL_SEVERE_AI_SMELL",
     "same_v4_resubmission_allowed": false,
     "automatic_v5_allowed": false,
@@ -3356,7 +3356,16 @@
       "path": "state/diagnoses/PHASE422_V4_REPAIR_BASIS_CORRECTION_20260929.md",
       "blob": "8e03dd42930f9cf663b15381766785d13760793b",
       "scope": "SCENE_ENGINE_AND_CLARITY_ONLY_NOT_FULL_MANUSCRIPT_STYLE_PASS"
+    },
+    "opening_trial": {
+      "path": "delivery/phase422/07-opening-scene-trial-after-v4.md",
+      "blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
+      "scope": "ONE_OPENING_SCENE_ONLY_NOT_FULL_V5",
+      "human_style_verdict": "PENDING",
+      "version_count": 1,
+      "new_core_story_fact_count": 0
     }
   },
-  "next_action": "PREPARE_ONE_BOUNDED_OPENING_SCENE_CANDIDATE_PHASE363_SCENE_ENGINE_PHASE370_CLARITY_ONLY_NO_FULL_V5"
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_OPENING_SCENE_TRIAL_NO_FULL_V5",
+  "opening_trial_human_gate": "PENDING_ACTUAL_HUMAN_READING"
 }
