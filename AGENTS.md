@@ -1,5 +1,7 @@
 # AGENTS.md
 
+For any new chat or task continuation, start at `START_HERE.md` and run its current-state check before using historical phase instructions.
+
 ## Highest-priority execution-surface routing
 
 This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.
