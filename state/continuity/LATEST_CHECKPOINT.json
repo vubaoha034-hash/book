@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 134,
-  "recorded_at": "2026-09-29T11:48:00+08:00",
+  "sequence": 135,
+  "recorded_at": "2026-09-29T18:30:00+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase422 completed exactly one full-manuscript prose reauthoring V4 for RJ-OE408-I《第二套过去》 after actual-human severe AI-smell failure of Phase421 Final V3. Topic/premise/reader engine and frozen story facts/causal structure/ending were preserved. V4 is not a FINAL PASS; actual-human style acceptance is pending.",
+  "current_focus": "Phase422 V4 actual-human severe AI-smell rejection settled. The topic/premise remains approved; same V4 is closed. Compare the Phase370 human-positive original to the V4 failure and scope one bounded repair action; do not auto-generate V5.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -440,7 +440,8 @@
     "Phase421 found blocker_count=0, confirmed_new_contradiction_count=0, major_reopened_count=0.",
     "Phase421 same-story, climax causality, primary emotion debt, harm-doer choice, character knowledge, timeline/asset/responsibility continuity, revision-chain conflict, deslop safety and must-protect all PASS.",
     "Phase421 final delivery frozen at delivery/phase421/final.md; Git blob c5ea838495d3eddfe79c6b894a461f9c7c99e4bb exactly matches Phase420 Draft V3; no V4 generated.",
-    "Phase421 machine verdict READY_FOR_ACTUAL_HUMAN_FINAL_READ; actual-human acceptance remains pending 刘先生 reading."
+    "Phase421 machine verdict READY_FOR_ACTUAL_HUMAN_FINAL_READ; actual-human acceptance remains pending 刘先生 reading.",
+    "Phase422 V4 actual-human severe AI-smell rejection recorded; topic preserved, same V4 resubmission closed."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -477,7 +478,8 @@
     "Narrative transportation remains unresolved",
     "AI smell remains heavy on Phase397 A2",
     "Forward desire remains unresolved despite suspense",
-    "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery"
+    "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
+    "Bounded next repair action has not been selected or executed; no V5 manuscript exists."
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -511,7 +513,10 @@
     "PHASE402_AUTOMATIC_RETRY_FORBIDDEN",
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
-    "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES"
+    "PHASE402_HUMAN_REVIEW_BLOCKED_PENDING_GATES",
+    "PHASE422_V4_HUMAN_SEVERE_AI_SMELL_REJECTED",
+    "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
+    "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -680,7 +685,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE",
+  "next_required_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1429,18 +1434,18 @@
     },
     {
       "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-      "role": "Phase422 V4 durable receipt; no machine final acceptance",
-      "blob": "c45534a0fc91cfd7dab4bbf484b4672609d8ab62"
+      "role": "Phase422 V4 actual-human severe AI-smell rejection; same V4 closed, no automatic V5",
+      "blob": "a605fd25adb97b361fb833be8d3866bb69e2fcad"
     }
   ],
-  "status": "V4 等刘先生真人文风审核",
+  "status": "V4 真人文风严重不通过；不再等待同一稿审核",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "f36d4b0f1c514fee94b49c448a0c1370c514a1bf0ac46addb768a4b074128263",
+    "project_state_sha256": "9f6ce28d160a0d3e2e486e2894e2ebca30cc3cf1ef1a83a195431c9f6dad055a",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1489,11 +1494,11 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-  "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE",
-  "human_verdict_receipt": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json",
-  "current_human_gate": null,
+  "next_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
+  "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+  "current_human_gate": "SETTLED_FAIL_SEVERE_AI_SMELL",
   "phase422_state": {
-    "status": "V4 等刘先生真人文风审核",
+    "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
     "title": "第二套过去",
     "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
@@ -1522,7 +1527,7 @@
     },
     "receipt": {
       "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-      "blob": "c45534a0fc91cfd7dab4bbf484b4672609d8ab62"
+      "blob": "a605fd25adb97b361fb833be8d3866bb69e2fcad"
     },
     "story_fact_drift": false,
     "causal_structure_drift": false,
@@ -1530,6 +1535,11 @@
     "new_core_story_fact_count": 0,
     "new_world_rule_count": 0,
     "final_pass": false,
-    "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+    "next_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
+    "actual_human_style_verdict": "FAIL_SEVERE_AI_SMELL",
+    "same_v4_resubmission_allowed": false,
+    "automatic_v5_allowed": false,
+    "topic_premise_acceptance_preserved": true,
+    "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json"
   }
 }

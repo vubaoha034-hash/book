@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T15:12:00+08:00",
+  "updated_at": "2026-09-29T18:30:00+00:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -884,8 +884,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE",
-  "status": "V4 等刘先生真人文风审核",
+  "next_required_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
+  "status": "V4 真人文风严重不通过；不再等待同一稿审核",
   "active_task_contract": null,
   "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
   "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
@@ -1333,7 +1333,10 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
-    "PHASE406_A1_SOURCE_IDENTITY_BLOCK"
+    "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
+    "PHASE422_V4_HUMAN_SEVERE_AI_SMELL_REJECTED",
+    "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
+    "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -3303,9 +3306,9 @@
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
   "current_human_gate": null,
-  "human_verdict_receipt": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json",
+  "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
   "phase422_state": {
-    "status": "V4 等刘先生真人文风审核",
+    "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
     "title": "第二套过去",
     "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
@@ -3334,7 +3337,7 @@
     },
     "receipt": {
       "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-      "blob": "c45534a0fc91cfd7dab4bbf484b4672609d8ab62"
+      "blob": "a605fd25adb97b361fb833be8d3866bb69e2fcad"
     },
     "story_fact_drift": false,
     "causal_structure_drift": false,
@@ -3342,7 +3345,12 @@
     "new_core_story_fact_count": 0,
     "new_world_rule_count": 0,
     "final_pass": false,
-    "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+    "next_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
+    "actual_human_style_verdict": "FAIL_SEVERE_AI_SMELL",
+    "same_v4_resubmission_allowed": false,
+    "automatic_v5_allowed": false,
+    "topic_premise_acceptance_preserved": true,
+    "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json"
   },
-  "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+  "next_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5"
 }
