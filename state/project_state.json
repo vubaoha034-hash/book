@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T11:27:00+08:00",
+  "updated_at": "2026-09-29T11:48:00+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -223,7 +223,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 132,
+    "logical_latest_checkpoint_sequence": 133,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -633,7 +633,8 @@
     "PHASE417-RJ-OE408-I-READER-EVIDENCE-PANEL-V1-01",
     "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01",
     "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
-    "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01"
+    "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
+    "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -883,11 +884,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "PHASE421 final review is the unique successor under continuing authorization; execute only in a separate successor task. Do not claim actual-human literary acceptance unless actual human feedback exists.",
-  "status": "PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3_COMPLETE_EXACTLY_ONE__STOP_BEFORE_PHASE421",
+  "next_required_action": "Bring delivery/phase421/final.md back to unified command for 刘先生 actual-human final reading. Do not generate V4 or re-enter revision unless a later human verdict explicitly authorizes a successor.",
+  "status": "PHASE421_RJ_OE408_I_FINAL_REVIEW_COMPLETE_READY_FOR_ACTUAL_HUMAN_FINAL_READ",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
-  "last_completed_task_contract": "state/tasks/PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3.json",
+  "last_completed_task_id": "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
+  "last_completed_task_contract": "state/tasks/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1292,6 +1293,26 @@
     {
       "path": "state/review_receipts/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
       "role": "Phase416 cold-read isolation and CONTINUE_READING settlement receipt"
+    },
+    {
+      "path": "state/tasks/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+      "role": "Phase421 RJ-OE408-I final review and delivery task contract",
+      "blob": "c95922f99c88d7964c688d40652395b7b862e2fc"
+    },
+    {
+      "path": "delivery/phase421/final-review-v1.md",
+      "role": "Phase421 final machine review",
+      "blob": "9ee5ad37aaa2edf664b2b19e0a0ca2d0315ef905"
+    },
+    {
+      "path": "delivery/phase421/final.md",
+      "role": "Phase421 final delivery exactly identical to Draft V3",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb"
+    },
+    {
+      "path": "state/review_receipts/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+      "role": "Phase421 final review and delivery receipt",
+      "blob": "fc7455bcb397e807ddaf768bd60d98cf70dda62a"
     }
   ],
   "incomplete": [
@@ -1550,7 +1571,11 @@
     "Exactly one complete Draft V3 created; edited only Chapters 5/6/7/9/10, with Chapters 1/2/3/4/8 unchanged.",
     "Phase420 must-protect read-back PASS; new core story facts=0, new world rules=0, structure changed=false, Draft V2 preserved.",
     "Phase420 personal aesthetic confidence=MEDIUM-LOW because no sufficient actual-human positive full-prose style sample exists; actual-human literary acceptance not claimed.",
-    "Phase420 stopped before Phase421."
+    "Phase420 stopped before Phase421.",
+    "Phase421 final machine review executed once on frozen RJ-OE408-I Draft V3.",
+    "Phase421 blocker_count=0, confirmed_new_contradiction_count=0, major_reopened_count=0; same-story, climax causality, primary emotion debt, continuity, harm-doer choice and deslop safety all PASS.",
+    "Phase421 final delivery frozen at delivery/phase421/final.md with blob c5ea838495d3eddfe79c6b894a461f9c7c99e4bb, exactly identical to Draft V3; no V4 generated.",
+    "Phase421 verdict is READY_FOR_ACTUAL_HUMAN_FINAL_READ only; actual-human literary acceptance remains reserved to 刘先生."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3213,8 +3238,64 @@
       "id": "PHASE421_FINAL_REVIEW",
       "phase": 421,
       "authorized_by_continuing_authorization": true,
-      "executed": false
+      "executed": true
     },
-    "next_action": "Execute Phase421 final review only as a separate successor task; do not enter Phase421 inside Phase420."
+    "next_action": "Phase421 was executed as a separate successor task; see phase421_state. No V4 exists."
+  },
+  "phase421_state": {
+    "status": "FINAL_REVIEW_COMPLETE_READY_FOR_ACTUAL_HUMAN_FINAL_READ",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "source_head": "2dbb98a484ea55407483e1685fee55666be042d0",
+    "task_contract": {
+      "path": "state/tasks/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+      "blob": "c95922f99c88d7964c688d40652395b7b862e2fc",
+      "status": "COMPLETED"
+    },
+    "source_draft_v3": {
+      "path": "delivery/phase420/06-draft-v3.md",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+      "version": "V3",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "final_review": {
+      "path": "delivery/phase421/final-review-v1.md",
+      "blob": "9ee5ad37aaa2edf664b2b19e0a0ca2d0315ef905",
+      "status": "PASS"
+    },
+    "final_delivery": {
+      "path": "delivery/phase421/final.md",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+      "content_identical_to_draft_v3": true,
+      "status": "FROZEN_FOR_HUMAN_READ"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+      "blob": "fc7455bcb397e807ddaf768bd60d98cf70dda62a",
+      "status": "PASS_FINAL_V3_FROZEN_READY_FOR_ACTUAL_HUMAN_FINAL_READ"
+    },
+    "blocker_count": 0,
+    "confirmed_new_contradiction_count": 0,
+    "major_reopened_count": 0,
+    "same_story_check": "PASS",
+    "climax_causality": "PASS",
+    "primary_emotion_debt": "PASS",
+    "harm_doer_choice": "PASS",
+    "character_knowledge": "PASS",
+    "timeline_asset_responsibility_continuity": "PASS",
+    "revision_chain_conflict": "PASS_NONE_CONFIRMED",
+    "deslop_safety": "PASS",
+    "residual_reader_risks": [
+      "高概念起源机制仍少一层解释，但不构成当前 Story Contract 矛盾。",
+      "Chapter 5-7 制度信息仍偏冷，可能造成部分读者降速，但不再构成结构阻塞。",
+      "30天窗口相对顺序闭合，但具体日历可视度有限。"
+    ],
+    "must_protect": "PASS",
+    "structure_changed_by_phase420": false,
+    "final_draft_version": "V3",
+    "v4_generated": false,
+    "machine_review_not_human_acceptance": true,
+    "accepted_checkpoint_advance": false,
+    "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   }
 }
