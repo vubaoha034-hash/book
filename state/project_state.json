@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T18:30:00+00:00",
+  "updated_at": "2026-09-29T12:05:32+00:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -884,7 +884,7 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
+  "next_required_action": "PREPARE_ONE_BOUNDED_OPENING_SCENE_CANDIDATE_PHASE363_SCENE_ENGINE_PHASE370_CLARITY_ONLY_NO_FULL_V5",
   "status": "V4 真人文风严重不通过；不再等待同一稿审核",
   "active_task_contract": null,
   "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
@@ -1582,7 +1582,8 @@
     "Phase421 final machine review executed once on frozen RJ-OE408-I Draft V3.",
     "Phase421 blocker_count=0, confirmed_new_contradiction_count=0, major_reopened_count=0; same-story, climax causality, primary emotion debt, continuity, harm-doer choice and deslop safety all PASS.",
     "Phase421 final delivery frozen at delivery/phase421/final.md with blob c5ea838495d3eddfe79c6b894a461f9c7c99e4bb, exactly identical to Draft V3; no V4 generated.",
-    "Phase421 verdict is READY_FOR_ACTUAL_HUMAN_FINAL_READ only; actual-human literary acceptance remains reserved to 刘先生."
+    "Phase421 verdict is READY_FOR_ACTUAL_HUMAN_FINAL_READ only; actual-human literary acceptance remains reserved to 刘先生.",
+    "Phase422 V4 failure basis corrected: Phase363 scene mechanism positive; Phase370 clarity-only, AI smell unchanged; bounded opening trial scoped, no full V5"
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3345,12 +3346,17 @@
     "new_core_story_fact_count": 0,
     "new_world_rule_count": 0,
     "final_pass": false,
-    "next_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5",
+    "next_action": "PREPARE_ONE_BOUNDED_OPENING_SCENE_CANDIDATE_PHASE363_SCENE_ENGINE_PHASE370_CLARITY_ONLY_NO_FULL_V5",
     "actual_human_style_verdict": "FAIL_SEVERE_AI_SMELL",
     "same_v4_resubmission_allowed": false,
     "automatic_v5_allowed": false,
     "topic_premise_acceptance_preserved": true,
-    "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json"
+    "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+    "repair_basis": {
+      "path": "state/diagnoses/PHASE422_V4_REPAIR_BASIS_CORRECTION_20260929.md",
+      "blob": "8e03dd42930f9cf663b15381766785d13760793b",
+      "scope": "SCENE_ENGINE_AND_CLARITY_ONLY_NOT_FULL_MANUSCRIPT_STYLE_PASS"
+    }
   },
-  "next_action": "COMPARE_PHASE370_HUMAN_POSITIVE_PROSE_WITH_PHASE422_V4_FAILURE_AND_DEFINE_ONE_BOUNDED_REPAIR_ACTION_NO_AUTO_V5"
+  "next_action": "PREPARE_ONE_BOUNDED_OPENING_SCENE_CANDIDATE_PHASE363_SCENE_ENGINE_PHASE370_CLARITY_ONLY_NO_FULL_V5"
 }

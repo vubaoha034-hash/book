@@ -27,6 +27,8 @@ def verify(root: Path) -> dict:
         "not_final": project["phase422_state"]["final_pass"] is False and checkpoint["phase422_state"]["final_pass"] is False,
         "receipt_blob": project["phase422_state"]["receipt"]["blob"] == checkpoint["phase422_state"]["receipt"]["blob"] == subprocess.check_output(["git", "hash-object", str(receipt_path)], text=True).strip(),
         "no_active_successor": checkpoint["active_task_ids"] == [],
+        "positive_scope_not_upgraded": project["phase363_prose_anchor"]["mechanism_only_scale_proven_sufficient"] is False and project["phase370_settlement"]["ai_smell_direction_vs_phase369"] == "SAME",
+        "repair_basis_mirror": project["phase422_state"].get("repair_basis") == checkpoint["phase422_state"].get("repair_basis"),
     }
     failed = [name for name, passed in checks.items() if not passed]
     if failed:
