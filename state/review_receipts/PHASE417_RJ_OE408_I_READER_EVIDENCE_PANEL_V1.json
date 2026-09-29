@@ -1,0 +1,79 @@
+{
+  "schema_version": "phase417-reader-evidence-panel-v1-receipt/v1",
+  "receipt_id": "PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1",
+  "task_id": "PHASE417-RJ-OE408-I-READER-EVIDENCE-PANEL-V1-01",
+  "project_id": "novel-distillation",
+  "phase": 417,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "fa79b546b80fa239bcef61c5f98c094dde7b1d32",
+  "source_draft": {
+    "path": "delivery/phase415/06-draft.md",
+    "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "version": "V1",
+    "status": "FROZEN_UNCHANGED"
+  },
+  "task_contract": {
+    "path": "state/tasks/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+    "blob": "e0721996c2e086fe96e2fd3771c5f7139e9d7543"
+  },
+  "report": {
+    "path": "delivery/phase417/reader-evidence-panel-v1.md",
+    "blob": "9b621d8fb7e4a33ff225ea28a6cd7c8781a66bbd"
+  },
+  "isolation": {
+    "status": "PASS",
+    "reader_context_label": "独立读者上下文",
+    "lenses_are_simulated_reader_views": true,
+    "verdict_frozen_before_project_state_read": true,
+    "phase409_414_content_read_before_freeze": false,
+    "phase416_report_read_before_freeze": false,
+    "old_review_read_before_freeze": false,
+    "author_explanation_read_before_freeze": false,
+    "draft_read_complete": true,
+    "draft_read_order": "FORWARD_CHAPTER_1_TO_10"
+  },
+  "frozen_summary": {
+    "phone_immersion": {
+      "first_skim": "第三章多源核验总结段",
+      "stop_point": null,
+      "highest_stop_risk": "第六章中部统一归档/可执行映射连续说明"
+    },
+    "type_commitment": {
+      "maximum_issue": "核心起源层未回答“两套都真实的三年最初如何产生”；关键揭示偏制度说明。"
+    },
+    "character_emotion": {
+      "maximum_issue": "S04主动错误可信，但第五至第六章情绪余波被流程压薄；许澄能动性强。"
+    },
+    "logic_skeptic": {
+      "maximum_issue": "第七章“当前可执行利益”决定性规则以后置回溯方式出现，影响高潮因果可信度。"
+    },
+    "shared_attention_failures": [
+      "第三至第六章制度信息连续增密，出现阅读降速。",
+      "第七章关键规则后置，同时伤害类型公平性、逻辑可信度与人物牺牲自然感。"
+    ],
+    "high_impact_single_point": "第七章“这条条件他不是第一次听见。最早做核验时，专业意见就告诉过他。”",
+    "must_protect_strengths": [
+      "房产过户受阻→同证件号双历史→许澄来电的连续开场升级",
+      "许澄的独立能动性与关系边界",
+      "S04明知伤人仍冻结与S08认领责任并付出房产/资金/信用代价的因果回声",
+      "真相揭开后仍由现实责任继续驱动",
+      "结尾保留不可逆损失"
+    ],
+    "first_revision_priority": "先修第七章决定性规则的公平披露与因果可信度，再处理中段制度重复与解释腔。",
+    "fatal_full_draft_issue": false,
+    "ai_smell_or_explanation_risk": "LOCATED_RISK_NOT_GLOBAL_AI_VERDICT",
+    "continue_after_full_read": "YES"
+  },
+  "draft_modified": false,
+  "revision_entered": false,
+  "phase418_entered": false,
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "physical_ledger_entry_count": 54,
+    "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+    "reason": "No materialized physical STATE_LEDGER path exists; physical history was not fabricated."
+  },
+  "status": "PASS_READER_EVIDENCE_FROZEN_DURABLE_STOP_BEFORE_REVISION_AND_PHASE418",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE418; Draft V1 remains frozen and no revision is authorized."
+}
