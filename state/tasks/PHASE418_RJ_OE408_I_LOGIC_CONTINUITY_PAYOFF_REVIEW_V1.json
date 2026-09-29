@@ -1,0 +1,183 @@
+{
+  "schema_version": "phase418-logic-continuity-payoff-review-v1-task/v1",
+  "task_id": "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01",
+  "project_id": "novel-distillation",
+  "phase": 418,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "branch": "main",
+  "source_head": "b2af79b953e3a879b7c13e170a308e8ac8350419",
+  "source_draft": {
+    "path": "delivery/phase415/06-draft.md",
+    "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "version": "V1",
+    "status": "FROZEN_UNCHANGED"
+  },
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "source": "ACTUAL_USER_EXPLICIT_AUTHORIZATION_CURRENT_CHAT",
+    "scope": "PHASE418_LOGIC_CONTINUITY_CAUSAL_EMOTION_PAYOFF_REVIEW_OF_DRAFT_V1_ONLY",
+    "draft_modification": false,
+    "second_draft": false,
+    "revision": false,
+    "phase419": false,
+    "new_story_core_fact": false,
+    "new_world_rule": false,
+    "rescue_mechanism": false,
+    "aesthetic_rewrite": false,
+    "ai_rewrite": false
+  },
+  "review_result": {
+    "confirmed_contradiction_count": 0,
+    "blocker_count": 0,
+    "major_count": 1,
+    "minor_count": 4,
+    "chapter7_decisive_rule": {
+      "verdict": "MAJOR",
+      "first_explicit_draft_location": "Chapter 7: “你必须证明这条被归一的身份链，会直接损害你现在可执行的权利或者义务。”",
+      "retroactive_claim": "Chapter 7: “这条条件他不是第一次听见。最早做核验时，专业意见就告诉过他。”",
+      "frozen_expected_seed": "Phase410 U03 / Phase414 S02 require the distinction between ordinary preservation and long-term anti-unification standing to be known early.",
+      "finding": "Draft Chapters 1-6 do not visibly establish that long-term protection requires a current executable interest in the second chain. Chapter 2 establishes only that Xu Cheng will be the executable party if Luo Jun freezes his side; Chapter 5 shows limited preservation without explaining the standing rule. The rule is therefore first visible at the threshold of S08.",
+      "why_major_not_blocker": "The rule is stated before the S08 choice and is consistent with frozen R5, so the climax is not using a wholly absent resource after the fact. However, it is retroactively disclosed despite the frozen plan requiring early seeding, and S08/S09 fairness depends on it."
+    },
+    "issues": [
+      {
+        "id": "P418-MAJ-01",
+        "level": "MAJOR",
+        "category": "CAUSAL_RULE_DISCLOSURE",
+        "location": "Chapter 7, long-term anti-unification qualification exchange",
+        "finding": "Current-executable-interest requirement is retroactively disclosed rather than visibly seeded in Chapter 2 as frozen by U03/S02.",
+        "impact": "Makes Luo Jun's S08 sacrifice feel partly forced by a late rule and weakens S09 qualification fairness."
+      },
+      {
+        "id": "P418-MIN-01",
+        "level": "MINOR",
+        "category": "SIMPLE_SOLUTION_TEXTUAL_CLOSURE",
+        "location": "Chapters 1-3",
+        "finding": "Draft never explicitly tests why reporting suspected identity fraud to police cannot pause the contract/identity execution conflict.",
+        "impact": "Not a credible complete escape once multi-source evidence is established, but the frozen blocker exists only upstream, not in prose."
+      },
+      {
+        "id": "P418-MIN-02",
+        "level": "MINOR",
+        "category": "SIMPLE_SOLUTION_TEXTUAL_CLOSURE",
+        "location": "Chapters 6-7",
+        "finding": "Draft does not explicitly close the option of publicly releasing all evidence / media pressure after project source is found.",
+        "impact": "Publicity has no demonstrated authority to stop mapping, but the privacy/permission/no-formal-effect blockers frozen upstream are not materialized in prose."
+      },
+      {
+        "id": "P418-MIN-03",
+        "level": "MINOR",
+        "category": "HARM_DOER_CHOICE_VISIBILITY",
+        "location": "Chapters 6-7",
+        "finding": "scheduled → held → resume condition is present, but prose emphasizes “一套仍在运行的作业逻辑” and does not clearly expose the project decision side's lower-harm option or its post-warning choice to keep the job resume-ready.",
+        "impact": "Functional warning/choice chronology survives, but the institutional harm-doer reads more like an automatic system than a choosing actor."
+      },
+      {
+        "id": "P418-MIN-04",
+        "level": "MINOR",
+        "category": "MIDDLE_CAUSAL_REDUNDANCY_EXPLANATION_LOAD",
+        "location": "Chapters 3-6",
+        "finding": "Chapter 2 already independently verifies third-party storage and a payment link; Chapter 3 repeats proof-of-authenticity with three sources, and Chapters 5-6 then carry multiple rule/state explanations. Whole scenes remain causally necessary, but some informational work is duplicated.",
+        "impact": "Supports Phase417's attention-loss finding without proving a removable whole scene or a continuity break."
+      }
+    ],
+    "simple_solution_verdicts": {
+      "只报警": "MINOR_GAP — not explicitly blocked in Draft; not shown capable of resolving identity/contract execution after multi-source verification.",
+      "直接公开所有证据": "MINOR_GAP — not explicitly blocked; no prose-level privacy/no-authority explanation.",
+      "只找律师/申请保全": "MAJOR_SHARED_WITH_CHAPTER7 — Draft tries professional advice and short hold, but the reason it cannot become long-term protection depends on the late standing rule.",
+      "只冻结第二链": "CLEAR — Chapter 3 says doing so would prejudge which chain is the disputed one.",
+      "不认领任何责任、等30天结束": "CLEAR — Chapter 7 states the hold ends and original mapping resumes; Xu Cheng remains executable and the property deadline expires.",
+      "直接让许澄先承担，自己以后再补偿": "CLEAR — Chapters 4-5 show actual asset/credit harm, loss of cooperation, and continued execution; this is not low-cost and does not stop unification.",
+      "证明连续性项目违法后直接结束": "CLEAR — Chapters 6-7 explicitly separate project truth from private responsibility and show the unification job remains active.",
+      "让两套历史永久双轨并行": "CLEAR — Chapter 5 states evidence may be preserved but mutually conflicting property/credit/debt states cannot be executed indefinitely in parallel.",
+      "象征性认领但不承担实际成本": "CLEAR — Chapter 8 makes recognition executable and immediately changes funds/credit/property status."
+    },
+    "character_knowledge": {
+      "confirmed_violations": 0,
+      "verdict": "CLEAR_WITH_RETROACTIVE_DISCLOSURE_DEFECT",
+      "notes": [
+        "Luo Jun learns the 30-day window in Chapter 1, second-history credibility through Chapters 2-3, project source in Chapter 6, and short-hold resume condition in Chapter 7.",
+        "The only material defect is not that Luo Jun acts on information he cannot have, but that Chapter 7 retroactively says he had received the standing condition earlier although the reader never saw that acquisition.",
+        "Xu Cheng's knowledge of the second history, due responsibility, freeze risk, project-source update, and later status changes is consistent with her direct experience/formal participation. No confirmed use of forbidden project truth before Chapter 6."
+      ]
+    },
+    "timeline_state": {
+      "confirmed_violations": 0,
+      "verdict": "CLEAR",
+      "notes": [
+        "30-day window exact day count is not continuously displayed, but relative order remains consistent with frozen Phase413/414 boundaries.",
+        "Apartment: executable target → paused → seller final deadline → deadline invalid → transaction terminated.",
+        "Funds/credit: dispute restrictions → continued restrictions → recognition sends disputed funds into responsibility disposition and credit update.",
+        "Xu Cheng: executable/limited after Luo Jun freeze → neutral preservation and formal-only cooperation → shared execution after recognition → restrictions not fully restored in aftermath.",
+        "Common responsibility: disputed for Luo Jun / executable for Xu Cheng → executable for both after recognition → independent review without automatic cancellation.",
+        "Unification job: scheduled/active → short hold → resume condition → unilateral mapping suspended by cross-chain preservation.",
+        "Paper agreement, payment chain, preservation materials and job identifier have traceable sources; no rescue object appears from nowhere."
+      ]
+    },
+    "primary_emotion_debt": {
+      "verdict": "CLEAR",
+      "findings": [
+        "Chapter 4 makes Luo Jun knowingly choose the freeze after professional warning, Xu Cheng's direct objection, and an unambiguous confirmation notice.",
+        "Xu Cheng suffers asset/execution restrictions and withdraws free assistance by moving materials to neutral preservation.",
+        "Chapter 8 makes Luo Jun take back the same class of cost through executable responsibility, funds, credit and identity exposure rather than apology alone.",
+        "Chapter 10 preserves Xu Cheng's prior losses and relationship gap; the old relationship does not automatically resume.",
+        "No premature payoff empties the climax."
+      ]
+    },
+    "harm_doer_warning_choice": {
+      "verdict": "MINOR",
+      "functional_sequence_present": true,
+      "agency_visibility_complete": false,
+      "finding": "Chapter 6 submits project-source evidence and Chapter 7 applies a hold to the specific scheduled job, after which the job is described as resuming when the hold ends. This preserves the frozen scheduled→held→resume-ready chronology, but the prose does not make the lower-harm alternative / decision-side non-withdrawal legible enough; it risks reading as an automatic system."
+    },
+    "phase417_cross_validation": {
+      "middle_density": "NOT_PURE_TASTE — factual contributor exists (Chapter 2/3 verification overlap plus Chapters 5/6 rule-state explanation), but no whole middle scene is causally removable. Classified MINOR execution/retention issue, not causal break.",
+      "chapter7_late_rule": "ACTUAL_CAUSAL_DISCLOSURE_GAP — MAJOR, not merely expression.",
+      "origin_of_two_real_histories": "NOT_A_CONFIRMED_CONTRACT_CONTRADICTION — Draft answers the frozen source-level truth (both histories had real consequences; execution later retained one; recovery fault resurfaced the other; continuity project drives re-unification). The technical mechanism that initially produced two lived histories was explicitly left unfrozen. It remains a type-promise residual/continuation hook, not a Phase418 logic violation.",
+      "ai_explanation_risk": "Only logic-linked risk retained: repeated exclusion/summarization language sometimes substitutes for showing rule-state transitions, especially Chapters 5/7/9. No aesthetic rewrite is authorized."
+    },
+    "scene_chain": {
+      "S01→S02": "CLEAR",
+      "S02→S03": "CLEAR_WITH_MISSING_R5_SEED — evidence pressure drives further verification, but planned long-term-standing knowledge is absent.",
+      "S03→S04": "CLEAR — multi-source credibility + seller/bank restrictions + due common responsibility force a freeze-or-assume-cost choice.",
+      "S04→S05": "CLEAR — Xu Cheng's restrictions and withdrawal of convenience force formal independent review.",
+      "S05→S06": "CLEAR — limited preservation and the shared archive-job identifier redirect investigation from life evidence to who is closing a history.",
+      "S06→S07": "CLEAR — source truth does not end responsibility; active scheduled unification requires an emergency hold.",
+      "S07→S08": "MAJOR_DISCLOSURE_RISK — short hold, seller loss and continued Xu execution create pressure, but decisive standing condition is first visible here.",
+      "S08→S09": "CLEAR — executable recognition creates the second-chain interest used for cross-chain preservation.",
+      "S09→S10": "CLEAR — unilateral mapping suspension changes power while preserving unresolved private responsibility and losses.",
+      "removable_middle_scene": "NO_FULL_SCENE. Chapter 3 contains compressible duplicated verification, but removing it wholesale loses seller final deadline, bank/credit restrictions and formal multi-source credibility; S04/S05/S06/S07 are necessary."
+    },
+    "revision_priorities": [
+      "1. Fix the Chapter 7 decisive-rule fairness defect by restoring the frozen early causal distinction before the climax: why identity-conflict damage to first-chain assets is not the same as a current executable interest in the second chain, and why recognition changes standing. Do not invent a new rule.",
+      "2. Make the existing harm-doer warning→choice sequence legible at prose level: the specific job is challenged/held, a lower-harm withdrawal path exists in frozen causality, and the project side keeps it resume-ready. Do not add a new villain or mechanism.",
+      "3. Materialize why public release/media pressure cannot replace formal preservation/standing once the project is identified.",
+      "4. Materialize why police/identity-fraud reporting cannot by itself pause or adjudicate the already-live contract/asset/identity execution conflict.",
+      "5. Reduce duplicated verification/rule explanation in Chapters 3-6 while preserving every required state transition, especially seller deadline, asset restrictions, limited preservation, job identifier and project-source reveal."
+    ],
+    "must_protect": [
+      "Chapter 1's concrete asset hook: property transfer blocked by the impossible second history.",
+      "Chapter 4's fully informed harmful choice and Xu Cheng's independent neutral-preservation response.",
+      "Chapter 5-6 engine shift from authenticity to responsibility and then from life evidence to who is closing a history.",
+      "Chapter 8 material payoff: executable responsibility, funds/credit/identity cost, no restored memory and no apology-as-payment substitute.",
+      "Chapters 9-10 preserve independent claims, unresolved responsibility, lost property, continuing credit/asset effects and no automatic relationship renewal."
+    ],
+    "machine_review_not_human_literary_acceptance": true
+  },
+  "draft_modified": false,
+  "revision_entered": false,
+  "phase419_entered": false,
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "reason": "Existing continuity state confirms no materialized physical STATE_LEDGER path. Physical history must not be fabricated; only logical checkpoint may advance."
+  },
+  "status": "COMPLETE_LOGIC_CONTINUITY_PAYOFF_REVIEW_STOP_BEFORE_REVISION_AND_PHASE419",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE419_OR_REVISION; Draft V1 remains frozen."
+}
