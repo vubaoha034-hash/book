@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T01:17:00Z",
+  "updated_at": "2026-09-29T01:39:00Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,19 +177,21 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE415_DRAFT_V1_FROZEN_UNREVIEWED_AWAITING_PHASE416_OPENING_COLD_READ_AUTHORIZATION",
+    "YMGQ_writing_pause_reason": "PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_CONTINUE_READING_COMPLETE_AWAITING_SEPARATE_PHASE417_AUTHORIZATION",
     "current_writing_authorization_scope": {
-      "kind": "PHASE415_DRAFT_V1_COMPLETE_NO_REVIEW_NO_REVISION",
+      "kind": "PHASE416_OPENING_COLD_READ_V3_G4_COMPLETE_NO_REVISION",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
       "fresh_writer_authorized": false,
       "prose_generation_authorized": false,
       "human_review_authorized": false,
-      "phase416_authorized": false,
-      "next_unique_serial_unit": "PHASE416_OPENING_COLD_READ_V3_G4_FOR_RJ_OE408_I_DRAFT_V1",
+      "phase416_authorized": true,
+      "phase416_executed": true,
+      "phase417_authorized": false,
+      "next_unique_serial_unit": "PHASE417_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
       "successor_requires_separate_explicit_authorization": true,
-      "task_contract": "state/tasks/PHASE415_RJ_OE408_I_DRAFT_V1.json"
+      "task_contract": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json"
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -214,7 +216,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 115,
+    "logical_latest_checkpoint_sequence": 128,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -619,7 +621,8 @@
     "PHASE410-RJ-OE408-I-HARM-DOER-WARNING-CHOICE-REPAIR-01",
     "PHASE413-RJ-OE408-I-CHARACTER-CONTINUITY-STATE-01",
     "PHASE414-RJ-OE408-I-SCENE-PLAN-01",
-    "PHASE415-RJ-OE408-I-DRAFT-V1-01"
+    "PHASE415-RJ-OE408-I-DRAFT-V1-01",
+    "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -869,11 +872,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE416_OPENING_COLD_READ_V3_G4_FOR_RJ_OE408_I_DRAFT_V1_ONLY. Draft V1 is frozen; do not revise before separate review authorization.",
-  "status": "PHASE415_RJ_OE408_I_DRAFT_V1_COMPLETE__AWAITING_EXPLICIT_PHASE416_OPENING_COLD_READ_V3_G4_AUTHORIZATION",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized.",
+  "status": "PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_COMPLETE_CONTINUE_READING__AWAITING_SEPARATE_PHASE417_AUTHORIZATION",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE415-RJ-OE408-I-DRAFT-V1-01",
-  "last_completed_task_contract": "state/tasks/PHASE415_RJ_OE408_I_DRAFT_V1.json",
+  "last_completed_task_id": "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
+  "last_completed_task_contract": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1266,13 +1269,24 @@
     {
       "path": "state/review_receipts/PHASE415_RJ_OE408_I_DRAFT_V1_EXECUTION_CONTINUITY_V1.json",
       "role": "Phase415 Draft V1 execution/continuity receipt"
+    },
+    {
+      "path": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
+      "role": "Phase416 RJ-OE408-I true opening cold-read / V3-G4 task"
+    },
+    {
+      "path": "delivery/phase416/opening-cold-read-v3-g4.md",
+      "role": "Phase416 frozen human-readable opening cold-read / V3-G4 report"
+    },
+    {
+      "path": "state/review_receipts/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
+      "role": "Phase416 cold-read isolation and CONTINUE_READING settlement receipt"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
-    "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase416 opening cold read / V3-G4 for RJ-OE408-I Draft V1 has not been authorized or executed."
+    "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1283,8 +1297,7 @@
     "PHASE402_A2_NOT_AUTHORIZED",
     "PHASE402_SECOND_WINDOW_NOT_AUTHORIZED",
     "PHASE405_A1_FOCAL_PERSONAL_COST_VISIBILITY_BLOCK",
-    "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
-    "PHASE416_OPENING_COLD_READ_V3_G4_NOT_AUTHORIZED_REQUIRES_SEPARATE_EXPLICIT_SUCCESSOR_AUTHORIZATION"
+    "PHASE406_A1_SOURCE_IDENTITY_BLOCK"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -1516,7 +1529,11 @@
     "Exactly one complete Draft V1 written from frozen 10-scene plan and persisted at delivery/phase415/06-draft.md.",
     "Minimum fact/continuity read-back confirms S01-S10 coverage; S04 active harmful freeze choice; S05 old-strategy failure; S08 material liability cost; S09 external anti-unification state change; S10 irreversible loss/relationship boundary.",
     "No new core story rule or rescue mechanism intentionally added; Phase409-414 upstream artifacts not rewritten.",
-    "Opening cold read / V3-G4, literary review, revision and Phase416 were not run."
+    "Opening cold read / V3-G4, literary review, revision and Phase416 were not run.",
+    "Phase416 true opening cold read / V3-G4 explicitly authorized and executed once for RJ-OE408-I《第二套过去》 Draft V1 first scene only.",
+    "Cold-read isolation PASS: verdict frozen before any project-state / continuity / Phase415 settlement read; no later Draft prose or Phase409-414 content used.",
+    "V3-G4 verdict = CONTINUE_READING; no skim point, mind-wander point, stop point or fatal issue located.",
+    "Draft V1 remained frozen and unchanged; no replacement opening, second draft, revision or Phase417 execution."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -2828,7 +2845,7 @@
     "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE415_DRAFT_FOR_RJ_OE408_I_ONLY"
   },
   "phase415_state": {
-    "status": "DRAFT_V1_COMPLETE_AWAITING_EXPLICIT_PHASE416_OPENING_COLD_READ_V3_G4_AUTHORIZATION",
+    "status": "DRAFT_V1_COMPLETE_PHASE416_COLD_READ_V3_G4_EXECUTED_NO_REVISION",
     "candidate": "RJ-OE408-I",
     "task_contract": {
       "path": "state/tasks/PHASE415_RJ_OE408_I_DRAFT_V1.json",
@@ -2859,20 +2876,63 @@
       "S10"
     ],
     "prose_generated": true,
-    "opening_cold_read_run": false,
-    "v3_g4_run": false,
+    "opening_cold_read_run": true,
+    "v3_g4_run": true,
     "literary_review_run": false,
     "human_literary_verdict": null,
-    "phase416_entered": false,
+    "phase416_entered": true,
     "accepted_checkpoint_advance": false,
     "next_unique_serial_unit": {
       "id": "PHASE416_OPENING_COLD_READ_V3_G4_FOR_RJ_OE408_I_DRAFT_V1",
       "phase": 416,
       "kind": "OPENING_COLD_READ_V3_G4",
-      "authorized": false,
-      "executed": false,
+      "authorized": true,
+      "executed": true,
       "prose_revision": false
     },
-    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE416_OPENING_COLD_READ_V3_G4_FOR_RJ_OE408_I_DRAFT_V1_ONLY"
+    "next_action": "PHASE416 completed; see phase416_state. No revision or Phase417 authorized."
+  },
+  "phase416_state": {
+    "status": "OPENING_COLD_READ_V3_G4_COMPLETE_CONTINUE_READING_STOP_BEFORE_REVISION",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "task_contract": {
+      "path": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
+      "blob": "69882e62cc9191630d1e6752034fd75f97a81358",
+      "status": "COMPLETED"
+    },
+    "draft": {
+      "path": "delivery/phase415/06-draft.md",
+      "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+      "version": "V1",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "report": {
+      "path": "delivery/phase416/opening-cold-read-v3-g4.md",
+      "blob": "dfbf00ccbeb1355176f9804e3c957e4b07caceee",
+      "status": "FROZEN"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
+      "blob": "3dfb287389eea8cd1030a811f09ae64246b8db22",
+      "status": "PASS_CONTINUE_READING"
+    },
+    "cold_read_isolation": "PASS",
+    "overall_result": "CONTINUE_READING",
+    "first_skim_point": null,
+    "first_mind_wander_point": null,
+    "stop_point": null,
+    "fatal_issue": null,
+    "draft_modified": false,
+    "revision_entered": false,
+    "phase417_entered": false,
+    "accepted_checkpoint_advance": false,
+    "next_unique_serial_unit": {
+      "id": "PHASE417_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "phase": 417,
+      "authorized": false,
+      "executed": false
+    },
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized."
   }
 }
