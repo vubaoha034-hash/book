@@ -1,0 +1,110 @@
+{
+  "schema_version": "phase420-rj-oe408-i-aesthetic-deslop-v3/v1",
+  "task_id": "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
+  "project_id": "novel-distillation",
+  "phase": 420,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "ff987034e5fb276549e949984cd2494d4cab2751",
+  "source_draft_v2": {
+    "path": "delivery/phase419/06-draft-v2.md",
+    "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8",
+    "preserved_unchanged": true
+  },
+  "scope": "Exactly one personal-aesthetic / anti-AI minimal line-edit pass from Draft V2 to Draft V3.",
+  "authorization_basis": {
+    "current_instruction": "PHASE420 explicit task authorization",
+    "continuing_authorization": "以后不用问我授权与否。我都授权。只要你一直去完成优化就行",
+    "actual_human_literary_quality_may_not_be_substituted": true
+  },
+  "required_sources": [
+    {
+      "path": "workflows/07-novel-master-pipeline-v3.md",
+      "blob": "7509825dd6a24c05034f1347332218aabaed9edd"
+    },
+    {
+      "path": "modules/aesthetic-fingerprint.md",
+      "blob": "e1130ae80d45fe81ed04f89929b852d54653be85"
+    },
+    {
+      "path": "modules/line-editor-deslop.md",
+      "blob": "4f0b2258ccf4010631ed908f267e5971573f7c0f"
+    },
+    {
+      "path": "delivery/phase419/06-draft-v2.md",
+      "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8"
+    },
+    {
+      "path": "delivery/phase419/revision-ledger-v1.md",
+      "blob": "3a8e13663dfe1aeb208ff1e22c5787266a143a80"
+    },
+    {
+      "path": "delivery/phase417/reader-evidence-panel-v1.md",
+      "blob": "9b621d8fb7e4a33ff225ea28a6cd7c8781a66bbd"
+    },
+    {
+      "path": "delivery/phase418/logic-continuity-payoff-review-v1.md",
+      "blob": "a14f548bdcad34a5db8512951cd5118e0a17ccd4"
+    },
+    {
+      "path": "state/review_receipts/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2_V1.json",
+      "blob": "39eabb790d1c554f4a6e1b2413853608f7c833cc"
+    },
+    {
+      "path": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
+      "blob": "9c4d7d7766311c5c1e7802ee039b9a77422d93b9"
+    },
+    {
+      "path": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+      "blob": "76f48ac9f8b7d41115cceb037a2297b2ba40d2e7"
+    }
+  ],
+  "pattern_first": {
+    "identified_pattern_count": 3,
+    "patterns": [
+      {
+        "id": "P1",
+        "name": "排除式归纳与三连否定反复",
+        "typical_locations": [
+          "Chapter 6 幕后负责人段",
+          "Chapter 7 ‘不是一回事’四连",
+          "Chapter 9 撤销/恢复三连",
+          "Chapter 10 关系与结尾排除式总结"
+        ],
+        "treatment": "删除或合并重复排除句，保留事实状态，不建立词语黑名单。"
+      },
+      {
+        "id": "P2",
+        "name": "匿名制度角色过度精准播报",
+        "typical_locations": [
+          "Chapter 5 有限保全问答",
+          "Chapter 6 来源真相审查问答"
+        ],
+        "treatment": "缩短匿名角色的完整规则讲解，把已有材料能推出的部分判断还给罗钧；Chapter 7 决定性资格规则因因果公平性而保留清晰。"
+      },
+      {
+        "id": "P3",
+        "name": "动作/状态已成立后追加作者式解释或意义尾巴",
+        "typical_locations": [
+          "Chapter 7 重复解释第二章已建立规则",
+          "Chapter 9 场尾‘不是因为/是因为’",
+          "Chapter 10 末段解释性收束"
+        ],
+        "treatment": "压缩为状态、选择或更短的余波，不新增人物心理或事件。"
+      }
+    ]
+  },
+  "boundaries": {
+    "exactly_one_draft_v3": true,
+    "no_second_v3": true,
+    "structural_rewrite": false,
+    "story_contract_changed": false,
+    "causal_ledger_changed": false,
+    "scene_plan_changed": false,
+    "phase421_entered": false,
+    "new_core_story_fact_allowed": false,
+    "new_world_rule_allowed": false,
+    "generic_humanizer_full_rewrite": false
+  },
+  "status": "EXECUTED_ONCE_PENDING_ATOMIC_PERSISTENCE"
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "phase420-aesthetic-fingerprint-card/v1",
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "must_preserve": [
+    "第一章房产过户被第二过去拦下的具体生活钩子与结尾‘你现在是不认识。’",
+    "第二章已提前建立的长期反归一资格区别",
+    "罗钧明知许澄会受损仍主动冻结，以及许澄转入中立保全并停止免费协助",
+    "第五至六章从真实性问题切到责任与项目来源的发动机转移",
+    "第六至七章 scheduled → held → resume-ready 的选择性",
+    "第八章资金/信用/身份真实代价",
+    "第九至十章房产、钱、信用、责任、记忆与旧关系均不回滚",
+    "结尾关系不自动复原；今天之后的共同责任需要重新说、重新签"
+  ],
+  "current_preference_evidence": [
+    {
+      "source": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
+      "evidence": "小说想看。",
+      "meaning": "只证明 RJ-OE408-I 核心方向值得继续，不证明正文文风通过。"
+    },
+    {
+      "source": "current Phase420 instruction",
+      "evidence": "不要流水账、不要解释感重、不要 AI 腔、不要机械重复同一意思。",
+      "meaning": "本轮可执行的审美基线；不等于用户正向成篇文风样本。"
+    }
+  ],
+  "cautious_use": [
+    "制度术语：需要因果清楚时保留，避免连续多轮定义式问答。",
+    "短句与断行：只留在选择落点、损失刷新和真正需要停顿的位置。",
+    "‘不是/没有’对照：单次有功能可保留，连续排除式归纳谨慎使用。",
+    "章末抽象收束：只有文本动作无法自行落下时才使用。"
+  ],
+  "explicit_reject": [
+    {
+      "source": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json",
+      "evidence": "《不能拿别人替自己脱罪》这种完全不想看一点感觉都没。",
+      "applied_as": "不要把小说写成作者设计题、命题辩论或要求读者选择立场；不机械迁移原句措辞。"
+    },
+    "通用 Humanizer 式全文改写、故意病句、错别字、随机口语、人人同一种嘴硬/停顿/递东西。",
+    "动作或对白已经完成表达后，再追加同义心理解释与主题总结。"
+  ],
+  "character_dialogue_differences": {
+    "罗钧": "偏核验、拆分事实与责任、会追问边界；在承压时仍倾向把问题拆成可操作项。",
+    "许澄": "边界清楚，不靠旧关系索取信任；话更少，关键处直接指出现实代价与合作条件。",
+    "匿名工作人员/审查者": "只承担必要程序边界，不应连续替作者把因果、主题、谜底整套讲完。"
+  },
+  "paragraph_end_habits": [
+    "优先以状态变化、未回应、选择或现实后果落段。",
+    "避免连续使用‘不是X/不是Y/只是Z’与‘没有A/没有B/没有C’作为封口。",
+    "避免动作已经说明关系后再追加作者式意义说明。"
+  ],
+  "sample_evidence": [
+    {
+      "type": "actual_human_positive_direction_only",
+      "source": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json"
+    },
+    {
+      "type": "actual_human_negative_direction",
+      "source": "tasks/2026-09-28-rj-oe408-b-human-verdict-reject.json"
+    },
+    {
+      "type": "simulated_reader_diagnostic_not_personal_style_sample",
+      "source": "delivery/phase417/reader-evidence-panel-v1.md"
+    }
+  ],
+  "confidence": "MEDIUM-LOW",
+  "limitation": "没有足够的用户明确认可的成篇文风正样本；本卡只能做个人审美边界与负向校准，不能宣称已经学会、复刻或模拟用户个人声音。"
+}

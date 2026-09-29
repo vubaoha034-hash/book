@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T03:08:00Z",
+  "updated_at": "2026-09-29T11:27:00+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -223,7 +223,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 128,
+    "logical_latest_checkpoint_sequence": 132,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -629,7 +629,11 @@
     "PHASE413-RJ-OE408-I-CHARACTER-CONTINUITY-STATE-01",
     "PHASE414-RJ-OE408-I-SCENE-PLAN-01",
     "PHASE415-RJ-OE408-I-DRAFT-V1-01",
-    "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01"
+    "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
+    "PHASE417-RJ-OE408-I-READER-EVIDENCE-PANEL-V1-01",
+    "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01",
+    "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
+    "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -879,11 +883,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized.",
-  "status": "PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_COMPLETE_CONTINUE_READING__AWAITING_SEPARATE_PHASE417_AUTHORIZATION",
+  "next_required_action": "PHASE421 final review is the unique successor under continuing authorization; execute only in a separate successor task. Do not claim actual-human literary acceptance unless actual human feedback exists.",
+  "status": "PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3_COMPLETE_EXACTLY_ONE__STOP_BEFORE_PHASE421",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
-  "last_completed_task_contract": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
+  "last_completed_task_id": "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
+  "last_completed_task_contract": "state/tasks/PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1540,7 +1544,13 @@
     "Phase416 true opening cold read / V3-G4 explicitly authorized and executed once for RJ-OE408-I《第二套过去》 Draft V1 first scene only.",
     "Cold-read isolation PASS: verdict frozen before any project-state / continuity / Phase415 settlement read; no later Draft prose or Phase409-414 content used.",
     "V3-G4 verdict = CONTINUE_READING; no skim point, mind-wander point, stop point or fatal issue located.",
-    "Draft V1 remained frozen and unchanged; no replacement opening, second draft, revision or Phase417 execution."
+    "Draft V1 remained frozen and unchanged; no replacement opening, second draft, revision or Phase417 execution.",
+    "Phase420 explicit successor task executed exactly once on frozen RJ-OE408-I Draft V2.",
+    "Phase420 Pattern-first diagnosis identified exactly 3 repeated prose habits; no full Humanizer rewrite was performed.",
+    "Exactly one complete Draft V3 created; edited only Chapters 5/6/7/9/10, with Chapters 1/2/3/4/8 unchanged.",
+    "Phase420 must-protect read-back PASS; new core story facts=0, new world rules=0, structure changed=false, Draft V2 preserved.",
+    "Phase420 personal aesthetic confidence=MEDIUM-LOW because no sufficient actual-human positive full-prose style sample exists; actual-human literary acceptance not claimed.",
+    "Phase420 stopped before Phase421."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3137,5 +3147,74 @@
       "executed": false
     },
     "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE420; Draft V2 remains frozen pending successor review."
+  },
+  "phase420_state": {
+    "status": "AESTHETIC_DESLOP_V3_COMPLETE_EXACTLY_ONE_STOP_BEFORE_PHASE421",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "source_draft_v2": {
+      "path": "delivery/phase419/06-draft-v2.md",
+      "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "task_contract": {
+      "path": "state/tasks/PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3.json",
+      "blob": "c9dfd9fcca46ab1eddaf264ac56d28ce2f9ddf9f",
+      "status": "COMPLETED"
+    },
+    "draft_v3": {
+      "path": "delivery/phase420/06-draft-v3.md",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+      "version": "V3",
+      "version_count": 1,
+      "status": "FROZEN_AESTHETIC_DESLOP"
+    },
+    "line_edit_report": {
+      "path": "delivery/phase420/aesthetic-line-edit-report-v1.md",
+      "blob": "07a43fe6f359b258f0df290bc18e3458d947de76",
+      "status": "FROZEN"
+    },
+    "aesthetic_fingerprint": {
+      "path": "delivery/phase420/aesthetic-fingerprint-card-v1.json",
+      "blob": "64f586a178010a33ceaf7b077cb6f1940341236a",
+      "confidence": "MEDIUM-LOW",
+      "status": "FROZEN_TEMPORARY_CARD"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3_V1.json",
+      "blob": "1d93df824b0112d690a17ec742c251acd209fb34",
+      "status": "PASS_EXACTLY_ONE_AESTHETIC_DESLOP_DRAFT_V3"
+    },
+    "identified_pattern_count": 3,
+    "personal_aesthetic_confidence": "MEDIUM-LOW",
+    "changed_chapters": [
+      "五",
+      "六",
+      "七",
+      "九",
+      "十"
+    ],
+    "unchanged_chapters": [
+      "一",
+      "二",
+      "三",
+      "四",
+      "八"
+    ],
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "structure_changed": false,
+    "v2_preserved": true,
+    "must_protect_pass": true,
+    "structure_stage_blocker": "none",
+    "machine_edit_not_actual_human_literary_acceptance": true,
+    "phase421_entered": false,
+    "next_unique_serial_unit": {
+      "id": "PHASE421_FINAL_REVIEW",
+      "phase": 421,
+      "authorized_by_continuing_authorization": true,
+      "executed": false
+    },
+    "next_action": "Execute Phase421 final review only as a separate successor task; do not enter Phase421 inside Phase420."
   }
 }

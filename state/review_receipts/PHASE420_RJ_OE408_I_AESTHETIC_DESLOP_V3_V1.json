@@ -1,0 +1,72 @@
+{
+  "schema_version": "phase420-rj-oe408-i-aesthetic-deslop-v3-receipt/v1",
+  "receipt_id": "PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3_V1",
+  "task_id": "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
+  "project_id": "novel-distillation",
+  "phase": 420,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "ff987034e5fb276549e949984cd2494d4cab2751",
+  "source_draft_v2": {
+    "path": "delivery/phase419/06-draft-v2.md",
+    "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8",
+    "preserved_unchanged": true
+  },
+  "task_contract": {
+    "path": "state/tasks/PHASE420_RJ_OE408_I_AESTHETIC_DESLOP_V3.json",
+    "blob": "c9dfd9fcca46ab1eddaf264ac56d28ce2f9ddf9f"
+  },
+  "output_draft_v3": {
+    "path": "delivery/phase420/06-draft-v3.md",
+    "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+    "version": "V3",
+    "version_count": 1
+  },
+  "line_edit_report": {
+    "path": "delivery/phase420/aesthetic-line-edit-report-v1.md",
+    "blob": "07a43fe6f359b258f0df290bc18e3458d947de76"
+  },
+  "aesthetic_fingerprint": {
+    "path": "delivery/phase420/aesthetic-fingerprint-card-v1.json",
+    "blob": "64f586a178010a33ceaf7b077cb6f1940341236a",
+    "confidence": "MEDIUM-LOW"
+  },
+  "pattern_first": {
+    "identified_pattern_count": 3,
+    "patterns": [
+      "排除式归纳与三连否定反复",
+      "匿名制度角色过度精准播报",
+      "动作/状态已成立后追加作者式解释或意义尾巴"
+    ]
+  },
+  "modification_scope": {
+    "changed_chapters": [
+      "五",
+      "六",
+      "七",
+      "九",
+      "十"
+    ],
+    "unchanged_chapters": [
+      "一",
+      "二",
+      "三",
+      "四",
+      "八"
+    ],
+    "approximate_edit_blocks": 10
+  },
+  "counts": {
+    "draft_v3_count": 1,
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0
+  },
+  "must_protect_pass": true,
+  "structure_changed": false,
+  "v2_preserved": true,
+  "phase421_entered": false,
+  "structure_stage_blocker": "none",
+  "actual_human_literary_quality_replaced": false,
+  "status": "PASS_EXACTLY_ONE_AESTHETIC_DESLOP_DRAFT_V3_DURABLE_STOP_BEFORE_PHASE421",
+  "next_unique_legal_action": "PHASE421 final review is the unique successor. Continuing authorization means no new authorization wait is required, but Phase420 does not enter or execute Phase421."
+}
