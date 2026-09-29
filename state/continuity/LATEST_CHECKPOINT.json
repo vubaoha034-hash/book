@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 128,
-  "recorded_at": "2026-09-29T09:39:00+08:00",
+  "sequence": 129,
+  "recorded_at": "2026-09-29T09:51:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase416 true cold read / V3-G4 completed once for RJ-OE408-I《第二套过去》 Draft V1 first scene under isolation. Frozen verdict: CONTINUE_READING. Scene goal, direct obstacle, escalating identity anomaly and Xu Cheng end-hook all hold; no skim, mind-wander, stop point or fatal issue located. Maximum risk is institutional terminology becoming more salient than concrete personal stakes. Draft V1 was not modified; no revision or Phase417 entered.",
+  "current_focus": "Phase417 Reader Evidence Panel completed once for RJ-OE408-I《第二套过去》 Draft V1 under reader-evidence isolation. reader_context=独立读者上下文; A-D are explicitly 模拟读者镜头, not independent humans. Full Draft V1 was read forward from Chapter 1 through Chapter 10 before any persistence-state read. Frozen evidence: first mobile skim at Chapter 3 repeated multi-source verification; no definite stop point, highest drop risk in Chapter 6 institutional explanation; highest-impact single issue is Chapter 7 retroactive disclosure of the current-executable-interest rule that drives the climax; no fatal full-draft issue; localized AI/explanation/programmatic risk exists; continue_after_full_read=YES. Draft unchanged; no revision or Phase418 entered.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -409,7 +409,13 @@
     "Phase416 true cold read / V3-G4 executed once for RJ-OE408-I Draft V1 first scene only.",
     "Cold-read isolation PASS and verdict frozen before persistence-state reads.",
     "V3-G4 verdict CONTINUE_READING; no skim, mind-wander, stop point or fatal issue.",
-    "Draft unchanged; no revision and no Phase417 execution."
+    "Draft unchanged; no revision and no Phase417 execution.",
+    "Phase417 Reader Evidence Panel executed once for RJ-OE408-I Draft V1 after full forward read.",
+    "Reader context truthfully labeled 独立读者上下文; all four A-D perspectives labeled 模拟读者镜头, not four independent readers.",
+    "Frozen reader evidence: mobile first skim at Chapter 3 repeated verification; no definite stop point; highest drop risk at Chapter 6 institutional explanation.",
+    "Frozen high-impact single point: Chapter 7 retroactive disclosure that the decisive current-executable-interest condition had allegedly been told to Luo Jun earlier, though the reader had not received it.",
+    "Frozen full-draft verdict: fatal_full_draft_issue=false; localized AI/explanation/programmatic risk exists; continue_after_full_read=YES.",
+    "Draft V1 blob remains ab260053f52ba22249cbf76309f5cfdc5b37e795; no revision and no Phase418 execution."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -649,7 +655,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized.",
+  "next_required_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE418; Draft V1 remains frozen and no revision is authorized.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1290,16 +1296,28 @@
     {
       "path": "state/review_receipts/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
       "role": "Phase416 cold-read settlement receipt"
+    },
+    {
+      "path": "state/tasks/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+      "role": "Phase417 RJ-OE408-I Reader Evidence Panel task"
+    },
+    {
+      "path": "delivery/phase417/reader-evidence-panel-v1.md",
+      "role": "Phase417 frozen full-draft reader evidence report"
+    },
+    {
+      "path": "state/review_receipts/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+      "role": "Phase417 reader evidence settlement receipt"
     }
   ],
-  "status": "PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_COMPLETE_CONTINUE_READING__AWAITING_SEPARATE_PHASE417_AUTHORIZATION",
+  "status": "PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_COMPLETE_YES_CONTINUE__AWAITING_SEPARATE_PHASE418_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
+  "last_completed_task_id": "PHASE417-RJ-OE408-I-READER-EVIDENCE-PANEL-V1-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "9326e7c9ec81492a5ed19a89102eb97dbe3bc317eab4a07c851921a98bd55dbe",
+    "project_state_sha256": "aadd6663dbe0df3b1a9c0b4896d1caa7fd7cf4a047b30eb8954376bed08c7ee0",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1336,14 +1354,15 @@
       "PHASE413-RJ-OE408-I-CHARACTER-CONTINUITY-STATE-01",
       "PHASE414-RJ-OE408-I-SCENE-PLAN-01",
       "PHASE415-RJ-OE408-I-DRAFT-V1-01",
-      "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01"
+      "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
+      "PHASE417-RJ-OE408-I-READER-EVIDENCE-PANEL-V1-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
-  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized.",
+  "last_completed_task_contract": "state/tasks/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+  "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE418; Draft V1 remains frozen and no revision is authorized.",
   "human_verdict_receipt": "state/review_receipts/PHASE408_RJ_OE408_I_HUMAN_DIRECTION_CONTINUE_V1.json",
   "current_human_gate": null
 }
