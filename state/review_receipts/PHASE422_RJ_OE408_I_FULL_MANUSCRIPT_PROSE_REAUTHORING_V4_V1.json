@@ -7,32 +7,11 @@
   "candidate": "RJ-OE408-I",
   "title": "第二套过去",
   "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
-  "source_v3": {
-    "path": "delivery/phase421/final.md",
-    "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb"
-  },
-  "task_contract": {
-    "path": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-    "blob": "db3db4102b4211b6306fbb67e329a67342d8c023"
-  },
-  "draft_v4": {
-    "path": "delivery/phase422/06-draft-v4.md",
-    "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3",
-    "version": "V4",
-    "count": 1
-  },
-  "reauthoring_note": {
-    "path": "delivery/phase422/reauthoring-note-v1.md",
-    "blob": "e298efec153db1fc9eb6d25f4a6c1a99282d5e73"
-  },
-  "human_review_excerpts": {
-    "path": "delivery/phase422/human-style-review-excerpts-v1.md",
-    "blob": "e2042585fc385b30deb2b323c91a226e188cd7d1",
-    "opening": "Chapter 1",
-    "middle": "Chapter 6",
-    "ending": "Chapter 10",
-    "verbatim_from_v4": true
-  },
+  "source_v3": {"path": "delivery/phase421/final.md", "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb"},
+  "task_contract": {"path": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json", "blob": "db3db4102b4211b6306fbb67e329a67342d8c023"},
+  "draft_v4": {"path": "delivery/phase422/06-draft-v4.md", "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3", "version": "V4", "count": 1},
+  "reauthoring_note": {"path": "delivery/phase422/reauthoring-note-v1.md", "blob": "e298efec153db1fc9eb6d25f4a6c1a99282d5e73"},
+  "human_review_excerpts": {"path": "delivery/phase422/human-style-review-excerpts-v1.md", "blob": "e2042585fc385b30deb2b323c91a226e188cd7d1", "opening": "Chapter 1", "middle": "Chapter 6", "ending": "Chapter 10", "verbatim_from_v4": true},
   "manuscript_level_changes": [
     "Reauthored all ten chapters rather than patching selected lines.",
     "Moved institutional exposition into documents, pressure, inference and partial answers instead of interface-like rule recitation.",
@@ -40,22 +19,39 @@
     "Removed repeated exclusion-summary formulas and narrator meaning tails where scene evidence already carries meaning.",
     "Varied paragraph and sentence rhythm without deliberate errors, random fragments or generic humanizer noise."
   ],
-  "preservation": {
-    "topic_premise_reader_engine": true,
-    "story_fact_drift": false,
-    "causal_structure_drift": false,
-    "character_relationship_drift": false,
-    "scene_additions": 0,
-    "new_core_story_facts": 0,
-    "new_world_rules": 0,
-    "climax_result_unchanged": true,
-    "ending_facts_unchanged": true
-  },
-  "contradiction_check": {
-    "new_contradiction_found": false
-  },
+  "preservation": {"topic_premise_reader_engine": true, "story_fact_drift": false, "causal_structure_drift": false, "character_relationship_drift": false, "scene_additions": 0, "new_core_story_facts": 0, "new_world_rules": 0, "climax_result_unchanged": true, "ending_facts_unchanged": true},
+  "contradiction_check": {"new_contradiction_found": false},
   "machine_final_pass_claimed": false,
-  "actual_human_style_review_required": true,
-  "status": "V4 等刘先生真人文风审核",
-  "next_unique_legal_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+  "actual_human_style_review_required": false,
+  "status": "V4 真人文风严重不通过；不再等待同一稿审核",
+  "next_unique_legal_action": "停止重复送审V4及自动全文V5；统一指挥核对已有人审成功原文与本次失败呈现，解除不必要的表达限制后再制定一个有界生产动作；不得把题材重置或机器自评当作解决。",
+  "actual_human_style_verdict_20260929": {
+    "verdict": "FAIL_SEVERE_AI_SMELL",
+    "human_exact_quote": "小说的ai味道严重的简直没办法看。我无法理解为什么我们做了那么久的消除。。。明明前面做的很好了。最后又是一坨屎一样的给我。",
+    "source": "统一指挥当前聊天最新用户消息：以‘3 我并不喜欢那张图片’起首，编号4的小说反馈",
+    "source_chat_url": null,
+    "verified_head_before_feedback": "b3117e56e71633a28084d9d8019c37f13b939882",
+    "scope": "RJ-OE408-I《第二套过去》Phase422 Draft V4及本聊天展示的V4开头/中段/结尾；否决文风与可读性，不否决此前获准的题材",
+    "topic_premise_acceptance_preserved": true,
+    "final_quality_accepted": false,
+    "prior_pending_status_superseded": "V4 等刘先生真人文风审核",
+    "old_decision": "b3117e56e71633a28084d9d8019c37f13b939882:state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+    "same_v4_must_not_be_requested_for_review_again": true,
+    "automatic_v5_or_final_freeze_authorized_by_this_feedback": false,
+    "new_text_generated_in_feedback_settlement": false,
+    "historical_calibration_checked": {
+      "ref": "novel-distill-v1",
+      "artifact": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+      "artifact_blob": "7be11d5d669250b77292c5181e4f2b9c2251d0c8",
+      "human_receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+      "human_receipt_blob": "bfa33e4724fec985af2da685ca89f5cad8040015",
+      "scope_limit": "局部修复成功与愿意继续阅读，不是长篇迁移成功。Phase422已引用它，不能声称此前完全没有读取历史校准。"
+    },
+    "coordinator_findings": [
+      "本聊天可见的多次浏览器派发把完整任务拆成多条消息/多会话，不能凭处理中判定完整且唯一启动；暂停本轮新增派发。",
+      "保留题材、核心事实、因果与结局不等于必须冻结所有表达顺序和场景呈现；不得再把不改坏事实冒充文风改善。",
+      "本条只结算明确反馈，不新增Gate、validator或全文改写。"
+    ],
+    "continuity_sync_status": "本次先更新既有回执；LATEST_CHECKPOINT及project_state尚未同步，不宣称新聊天完整恢复测试通过"
+  }
 }
