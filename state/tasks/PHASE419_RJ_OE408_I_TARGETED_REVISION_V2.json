@@ -1,0 +1,61 @@
+{
+  "schema_version": "phase419-targeted-revision-v2-task/v1",
+  "task_id": "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
+  "project_id": "novel-distillation",
+  "phase": 419,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "branch": "main",
+  "source_head": "f91d44c2a0106bd59b05ad45c7e30f9cc0eeffbc",
+  "source_draft": {
+    "path": "delivery/phase415/06-draft.md",
+    "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "version": "V1",
+    "preserved": true
+  },
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "source": "ACTUAL_USER_EXPLICIT_AUTHORIZATION_CURRENT_CHAT",
+    "scope": "ONE_TARGETED_REVISION_FROM_DRAFT_V1_TO_EXACTLY_ONE_COMPLETE_DRAFT_V2",
+    "draft_v2_count_authorized": 1,
+    "second_revision_version": false,
+    "candidate_comparison": false,
+    "phase420": false,
+    "full_aesthetic_rewrite": false,
+    "full_ai_rewrite": false,
+    "story_contract_change": false,
+    "causal_ledger_change": false,
+    "scene_plan_change": false,
+    "structural_overhaul": false
+  },
+  "required_repairs": {
+    "R1": "Restore already-frozen R5/U03/S02 rule early in Chapter 2 and remove Chapter 7 retroactive first-disclosure defect.",
+    "R2": "Make existing project warning→choice→resume-ready sequence visible using only frozen job-state evidence.",
+    "R3": "Materialize frozen public/media non-solution constraints without a new subplot.",
+    "R4": "Materialize frozen police/reporting non-solution constraints without a police subplot.",
+    "R5": "Compress duplicated verification/explanation in Chapters 3-6 while preserving all required state nodes."
+  },
+  "invariants": {
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "v1_must_remain_unchanged": true,
+    "must_protect": [
+      "Chapter 1 property-transfer hook",
+      "Chapter 1 ending: 你现在是不认识",
+      "Chapter 4 informed harmful freeze choice",
+      "Xu Cheng neutral preservation and independent agency",
+      "Chapter 5-6 engine shift authenticity→responsibility→unification-source truth",
+      "Chapter 8 executable responsibility and material asset/credit/identity cost",
+      "Chapter 9-10 no restoration of property/money/credit/memory/old relationship",
+      "S04→S08 primary emotion-debt causal echo"
+    ]
+  },
+  "status": "AUTHORIZED_IN_EXECUTION_TARGETED_SINGLE_V2_ONLY",
+  "next_action": "CREATE_EXACTLY_ONE_COMPLETE_DRAFT_V2_THEN_MINIMAL_READBACK_AND_STOP_BEFORE_PHASE420"
+}
