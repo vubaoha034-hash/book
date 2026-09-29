@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T02:05:00Z",
+  "updated_at": "2026-09-29T03:08:00Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,9 +177,9 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE418_RJ_OE408_I_LOGIC_CONTINUITY_PAYOFF_REVIEW_COMPLETE_1_MAJOR_4_MINOR_AWAITING_SEPARATE_PHASE419_OR_REVISION_AUTHORIZATION",
+    "YMGQ_writing_pause_reason": "PHASE419_RJ_OE408_I_TARGETED_REVISION_V2_COMPLETE_AWAITING_SEPARATE_PHASE420_AUTHORIZATION",
     "current_writing_authorization_scope": {
-      "kind": "PHASE418_LOGIC_CONTINUITY_PAYOFF_REVIEW_COMPLETE_NO_REVISION",
+      "kind": "PHASE419_TARGETED_REVISION_V2_COMPLETE_STOP_BEFORE_PHASE420",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
@@ -189,14 +189,16 @@
       "phase416_authorized": true,
       "phase416_executed": true,
       "phase417_authorized": true,
-      "next_unique_serial_unit": "PHASE419_OR_REVISION_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "next_unique_serial_unit": "PHASE420_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
       "successor_requires_separate_explicit_authorization": true,
-      "task_contract": "state/tasks/PHASE418_RJ_OE408_I_LOGIC_CONTINUITY_PAYOFF_REVIEW_V1.json",
+      "task_contract": "state/tasks/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2.json",
       "phase417_executed": true,
       "phase418_authorized": true,
       "phase418_executed": true,
-      "phase419_authorized": false,
-      "revision_authorized": false
+      "phase419_authorized": true,
+      "revision_authorized": false,
+      "phase419_executed": true,
+      "phase420_authorized": false
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -3065,14 +3067,75 @@
     "machine_review_not_actual_human_literary_acceptance": true,
     "draft_modified": false,
     "revision_entered": false,
-    "phase419_entered": false,
+    "phase419_entered": true,
     "accepted_checkpoint_advance": false,
     "next_unique_serial_unit": {
-      "id": "PHASE419_OR_REVISION_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "id": "PHASE419_TARGETED_REVISION_V2_FOR_RJ_OE408_I",
       "phase": 419,
+      "kind": "TARGETED_REVISION_V2",
+      "authorized": true,
+      "executed": true
+    },
+    "next_action": "Phase419 completed; see phase419_state. Draft V2 frozen; Phase420 not authorized."
+  },
+  "phase419_state": {
+    "status": "TARGETED_REVISION_V2_COMPLETE_EXACTLY_ONE_STOP_BEFORE_PHASE420",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "task_contract": {
+      "path": "state/tasks/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2.json",
+      "blob": "bb882b4bfc64de48e3d8d6109ecb50bb12c8a145",
+      "status": "COMPLETED"
+    },
+    "source_draft_v1": {
+      "path": "delivery/phase415/06-draft.md",
+      "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "draft_v2": {
+      "path": "delivery/phase419/06-draft-v2.md",
+      "blob": "8f4793b212eca703f5ed54da9d6f825dd4bd99c8",
+      "version": "V2",
+      "version_count": 1,
+      "status": "FROZEN_TARGETED_REVISION"
+    },
+    "revision_ledger": {
+      "path": "delivery/phase419/revision-ledger-v1.md",
+      "blob": "3a8e13663dfe1aeb208ff1e22c5787266a143a80",
+      "status": "FROZEN"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE419_RJ_OE408_I_TARGETED_REVISION_V2_V1.json",
+      "blob": "39eabb790d1c554f4a6e1b2413853608f7c833cc",
+      "status": "PASS_EXACTLY_ONE_TARGETED_DRAFT_V2"
+    },
+    "repairs": {
+      "R1": "PASS",
+      "R2": "PASS",
+      "R3": "PASS",
+      "R4": "PASS",
+      "R5": "PASS"
+    },
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "v1_preserved": true,
+    "protected_chapters_exactly_unchanged": [
+      "一",
+      "四",
+      "八",
+      "九",
+      "十"
+    ],
+    "must_protect_pass": true,
+    "machine_revision_not_actual_human_literary_acceptance": true,
+    "phase420_entered": false,
+    "accepted_checkpoint_advance": false,
+    "next_unique_serial_unit": {
+      "id": "PHASE420_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "phase": 420,
       "authorized": false,
       "executed": false
     },
-    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE419_OR_REVISION; Draft V1 remains frozen."
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE420; Draft V2 remains frozen pending successor review."
   }
 }
