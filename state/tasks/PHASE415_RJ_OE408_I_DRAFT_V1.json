@@ -1,0 +1,101 @@
+{
+  "schema_version": "phase415-draft-v1-task/v1",
+  "task_id": "PHASE415-RJ-OE408-I-DRAFT-V1-01",
+  "project_id": "novel-distillation",
+  "phase": 415,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "branch": "main",
+  "source_head": "e124f492d2138f08e9a1f083b9e7ec957c03f3da",
+  "execution_surface": {
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "work_used": false,
+    "codex_used": false,
+    "web_search_used": false
+  },
+  "authorization": {
+    "source_phase414_receipt": "state/review_receipts/PHASE414_RJ_OE408_I_SCENE_PLAN_READY_V1.json",
+    "authorized_successor": "PHASE415_DRAFT_FOR_RJ_OE408_I",
+    "draft_versions_authorized": 1,
+    "opening_cold_read_authorized": false,
+    "v3_g4_authorized": false,
+    "phase416_authorized": false
+  },
+  "frozen_upstream": {
+    "phase409_story_contract": {
+      "path": "delivery/phase409/00-story-contract.md",
+      "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+      "modified": false
+    },
+    "phase410_causal_ledger": {
+      "path": "delivery/phase410/01-causal-ledger.md",
+      "blob": "8d4fbef7c2f8f6dc78dea192cca503d251d68b4b",
+      "modified": false
+    },
+    "phase410_warning_addendum": {
+      "path": "delivery/phase410/01-causal-ledger-warning-choice-addendum.md",
+      "blob": "fd0cb0499b2249befcc57ded8c27193e6938f63b",
+      "modified": false
+    },
+    "phase411_emotion_ledger": {
+      "path": "delivery/phase411/02-emotion-payoff-ledger.md",
+      "blob": "54d1997a8c107dc7fea9b9c4d21600bf965e35fd",
+      "modified": false
+    },
+    "phase413_character_continuity": {
+      "path": "delivery/phase413/04-character-and-continuity-state.md",
+      "blob": "082b50ed66237efb0a4829580a695f65f2145434",
+      "modified": false
+    },
+    "phase414_scene_plan": {
+      "path": "delivery/phase414/05-scene-plan.md",
+      "blob": "decfa4159b9428633d5d20f1b8e4c17f0f43750a",
+      "modified": false
+    }
+  },
+  "result": "COMPLETE",
+  "draft_version_count": 1,
+  "scene_coverage": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10"
+  ],
+  "minimum_prewrite_assertions": {
+    "version_count": 1,
+    "scene_coverage": true,
+    "opening_first_pressure": true,
+    "s04_active_error": true,
+    "s05_strategy_failure": true,
+    "s08_material_cost": true,
+    "s09_external_change": true,
+    "s10_irreversible_loss": true
+  },
+  "literary_review_performed": false,
+  "opening_cold_read_performed": false,
+  "v3_g4_performed": false,
+  "continuity_readback_scope": "MINIMUM_FACT_STATE_ONLY_NOT_LITERARY_REVIEW",
+  "forced_boundaries": {
+    "second_draft_generated": false,
+    "candidate_comparison_generated": false,
+    "opening_cold_read_run": false,
+    "v3_g4_run": false,
+    "phase416_entered": false,
+    "visual_generated": false,
+    "rule_added": false,
+    "upstream_rewritten": false
+  },
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "reason": "No materialized STATE_LEDGER path exists at current branch; continuity snapshot remains logical/partial. No physical history fabricated."
+  },
+  "status": "COMPLETED_EXACTLY_ONE_DRAFT_V1_STOP_BEFORE_REVIEW",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE416_OPENING_COLD_READ_V3_G4_FOR_RJ_OE408_I_DRAFT_V1_ONLY"
+}

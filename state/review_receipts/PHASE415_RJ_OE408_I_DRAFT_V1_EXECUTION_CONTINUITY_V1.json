@@ -1,0 +1,58 @@
+{
+  "schema_version": "phase415-draft-v1-execution-continuity/v1",
+  "receipt_id": "PHASE415_RJ_OE408_I_DRAFT_V1_EXECUTION_CONTINUITY_V1",
+  "task_id": "PHASE415-RJ-OE408-I-DRAFT-V1-01",
+  "project_id": "novel-distillation",
+  "phase": 415,
+  "candidate": "RJ-OE408-I",
+  "draft": {
+    "path": "delivery/phase415/06-draft.md",
+    "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "version": "V1",
+    "version_count": 1
+  },
+  "result": "COMPLETE",
+  "scene_coverage": {
+    "planned_scene_count": 10,
+    "covered": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10"
+    ],
+    "missing": []
+  },
+  "minimum_continuity_readback": {
+    "opening_first_pressure": "PASS_PRESENT",
+    "s04_active_error": "PASS_PRESENT",
+    "s05_old_strategy_failure": "PASS_PRESENT",
+    "s08_active_assumption_and_material_cost": "PASS_PRESENT",
+    "s09_external_state_change": "PASS_PRESENT",
+    "s10_irreversible_loss_preserved": "PASS_PRESENT",
+    "new_core_fact_or_rule_added": false,
+    "obvious_frozen_state_violation_found": false
+  },
+  "explicitly_not_run": {
+    "opening_cold_read": true,
+    "v3_g4": true,
+    "literary_quality_review": true,
+    "second_draft": true,
+    "revision": true
+  },
+  "quality_scope": {
+    "draft_exists": true,
+    "draft_quality_passed": false,
+    "opening_retention_passed": false,
+    "human_literary_verdict_exists": false
+  },
+  "open_execution_blocker_count": 0,
+  "phase416_entered": false,
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE416_OPENING_COLD_READ_V3_G4_FOR_RJ_OE408_I_DRAFT_V1_ONLY",
+  "status": "DRAFT_V1_STORED_STOP_BEFORE_ANY_REVIEW"
+}
