@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T01:39:00Z",
+  "updated_at": "2026-09-29T01:51:00Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -177,9 +177,9 @@
     "full_manuscript_rewrite_authorized": false,
     "final_freeze_authorized": false,
     "YMGQ_writing_paused": true,
-    "YMGQ_writing_pause_reason": "PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_CONTINUE_READING_COMPLETE_AWAITING_SEPARATE_PHASE417_AUTHORIZATION",
+    "YMGQ_writing_pause_reason": "PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_COMPLETE_YES_CONTINUE_AWAITING_SEPARATE_PHASE418_AUTHORIZATION",
     "current_writing_authorization_scope": {
-      "kind": "PHASE416_OPENING_COLD_READ_V3_G4_COMPLETE_NO_REVISION",
+      "kind": "PHASE417_READER_EVIDENCE_PANEL_COMPLETE_NO_REVISION",
       "current_chat_allowed": true,
       "user_visible_output": true,
       "long_form": false,
@@ -188,10 +188,12 @@
       "human_review_authorized": false,
       "phase416_authorized": true,
       "phase416_executed": true,
-      "phase417_authorized": false,
-      "next_unique_serial_unit": "PHASE417_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "phase417_authorized": true,
+      "next_unique_serial_unit": "PHASE418_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
       "successor_requires_separate_explicit_authorization": true,
-      "task_contract": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json"
+      "task_contract": "state/tasks/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+      "phase417_executed": true,
+      "phase418_authorized": false
     },
     "latest_reviewed_candidate_receipt": "state/review_receipts/PHASE397_A2_ACTUAL_HUMAN_REJECTION_V1.json",
     "latest_prior_human_positive_reference": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
@@ -2845,7 +2847,7 @@
     "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_TO_CREATE_PHASE415_DRAFT_FOR_RJ_OE408_I_ONLY"
   },
   "phase415_state": {
-    "status": "DRAFT_V1_COMPLETE_PHASE416_COLD_READ_V3_G4_EXECUTED_NO_REVISION",
+    "status": "DRAFT_V1_COMPLETE_PHASE416_COLD_READ_AND_PHASE417_READER_EVIDENCE_EXECUTED_NO_REVISION",
     "candidate": "RJ-OE408-I",
     "task_contract": {
       "path": "state/tasks/PHASE415_RJ_OE408_I_DRAFT_V1.json",
@@ -2890,7 +2892,9 @@
       "executed": true,
       "prose_revision": false
     },
-    "next_action": "PHASE416 completed; see phase416_state. No revision or Phase417 authorized."
+    "next_action": "Phase417 reader evidence panel completed; see phase417_state. Draft V1 remains frozen; no revision or Phase418 authorized.",
+    "reader_evidence_panel_run": true,
+    "phase417_entered": true
   },
   "phase416_state": {
     "status": "OPENING_COLD_READ_V3_G4_COMPLETE_CONTINUE_READING_STOP_BEFORE_REVISION",
@@ -2925,14 +2929,76 @@
     "fatal_issue": null,
     "draft_modified": false,
     "revision_entered": false,
-    "phase417_entered": false,
+    "phase417_entered": true,
     "accepted_checkpoint_advance": false,
     "next_unique_serial_unit": {
-      "id": "PHASE417_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "id": "PHASE417_READER_EVIDENCE_PANEL_FOR_RJ_OE408_I_DRAFT_V1",
       "phase": 417,
+      "kind": "READER_EVIDENCE_PANEL",
+      "authorized": true,
+      "executed": true,
+      "prose_revision": false
+    },
+    "next_action": "Phase417 completed; see phase417_state. Draft V1 remains frozen; no revision or Phase418 authorized."
+  },
+  "phase417_state": {
+    "status": "READER_EVIDENCE_PANEL_COMPLETE_YES_CONTINUE_STOP_BEFORE_REVISION_AND_PHASE418",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "task_contract": {
+      "path": "state/tasks/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+      "blob": "e0721996c2e086fe96e2fd3771c5f7139e9d7543",
+      "status": "COMPLETED"
+    },
+    "draft": {
+      "path": "delivery/phase415/06-draft.md",
+      "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+      "version": "V1",
+      "status": "FROZEN_UNCHANGED"
+    },
+    "report": {
+      "path": "delivery/phase417/reader-evidence-panel-v1.md",
+      "blob": "9b621d8fb7e4a33ff225ea28a6cd7c8781a66bbd",
+      "status": "FROZEN"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE417_RJ_OE408_I_READER_EVIDENCE_PANEL_V1.json",
+      "blob": "8288362c84a36791bfdfe6533a54b99a1a8f5b15",
+      "status": "PASS_READER_EVIDENCE_FROZEN"
+    },
+    "reader_context_label": "独立读者上下文",
+    "lens_labels": {
+      "A": "模拟读者镜头",
+      "B": "模拟读者镜头",
+      "C": "模拟读者镜头",
+      "D": "模拟读者镜头"
+    },
+    "shared_attention_failures": [
+      "第三至第六章制度信息连续增密，多个镜头出现阅读降速。",
+      "第七章当前可执行利益条件以后置回溯方式出现，同时伤害类型公平性、逻辑可信度和人物牺牲自然感。"
+    ],
+    "high_impact_single_point": "第七章“这条条件他不是第一次听见。最早做核验时，专业意见就告诉过他。”",
+    "must_protect_strengths": [
+      "第一章房产过户受阻→同证件号双历史→许澄来电的连续升级",
+      "许澄的真实能动性与关系边界",
+      "S04明知伤人仍冻结与S08认领责任并付出现实代价的因果回声",
+      "真相揭开后现实责任继续驱动",
+      "结尾保留房产/资金/信用/关系/记忆的不可逆损失"
+    ],
+    "first_revision_priority": "先修第七章决定性规则的公平披露与因果可信度，再处理中段制度重复与解释腔。",
+    "fatal_full_draft_issue": false,
+    "ai_smell_or_explanation_risk": "LOCATED_RISK_NOT_GLOBAL_AI_VERDICT",
+    "continue_after_full_read": "YES",
+    "draft_modified": false,
+    "revision_entered": false,
+    "phase418_entered": false,
+    "accepted_checkpoint_advance": false,
+    "next_unique_serial_unit": {
+      "id": "PHASE418_NOT_CREATED_AWAITING_SEPARATE_EXPLICIT_AUTHORIZATION",
+      "phase": 418,
       "authorized": false,
       "executed": false
     },
-    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized."
+    "next_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE418; Draft V1 remains frozen and no revision is authorized."
   }
 }
