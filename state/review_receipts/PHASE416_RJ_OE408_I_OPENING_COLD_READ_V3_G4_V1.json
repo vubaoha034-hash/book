@@ -1,0 +1,79 @@
+{
+  "schema_version": "phase416-opening-cold-read-v3-g4-receipt/v1",
+  "receipt_id": "PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1",
+  "task_id": "PHASE416-RJ-OE408-I-OPENING-COLD-READ-V3-G4-01",
+  "project_id": "novel-distillation",
+  "phase": 416,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "a65db56a7b2ccf71321d5064d71a5aa6fcfd9c3d",
+  "source_draft": {
+    "path": "delivery/phase415/06-draft.md",
+    "blob": "ab260053f52ba22249cbf76309f5cfdc5b37e795",
+    "version": "V1",
+    "status": "FROZEN_UNCHANGED"
+  },
+  "task_contract": {
+    "path": "state/tasks/PHASE416_RJ_OE408_I_OPENING_COLD_READ_V3_G4_V1.json",
+    "blob": "69882e62cc9191630d1e6752034fd75f97a81358"
+  },
+  "report": {
+    "path": "delivery/phase416/opening-cold-read-v3-g4.md",
+    "blob": "dfbf00ccbeb1355176f9804e3c957e4b07caceee"
+  },
+  "isolation": {
+    "status": "PASS",
+    "verdict_frozen_before_project_state_read": true,
+    "later_draft_read": false,
+    "phase409_414_content_read": false,
+    "old_review_read": false,
+    "author_explanation_or_later_truth_read": false
+  },
+  "verdict": {
+    "overall_result": "CONTINUE_READING",
+    "first_30_60_reaction": {
+      "immediately_known": "罗钧在房产过户窗口遭遇的不是读卡故障，而是身份层面的异常阻断；当前目标是完成过户。",
+      "clear_question": "为什么同一身份会触发足以暂停产权转移的冲突记录？",
+      "concrete_anomaly_or_pressure": true,
+      "generic_first_sentence": false,
+      "attention": "上升"
+    },
+    "first_150_300_dilemma": {
+      "established": true,
+      "pressure_bearer": "罗钧",
+      "immediate_goal": "完成今天的产权过户，让已付款并结清贷款的房子正式归到自己名下。",
+      "obstacle": "系统显示同一身份存在正在核验的责任记录冲突，产权转移被暂停。",
+      "why_cannot_leave": "问题直接锁住当前交易和房屋取得；即使暂时离开大厅，核心目标也不会自行恢复。",
+      "continue_for_answer": "这条冲突记录究竟从哪里来，为什么与他的真实身份、证件号和过去轨迹同时成立？"
+    },
+    "first_scene_result": {
+      "established": true,
+      "scene_goal": "办完过户。",
+      "resistance_hits_goal": true,
+      "state_change": "从疑似机器故障，升级为同证件号的第二套责任/生活记录，再升级为共同责任人许澄主动来电。",
+      "new_specific_question": "许澄为什么知道他刚被停办，并且为什么说“你现在是不认识”？",
+      "degraded_into_exposition": false
+    },
+    "strongest_attention_gain": "结尾许澄说“你现在是不认识。”——它把静态身份异常变成了主动的人际关系问题，并直接制造下一页压力。",
+    "first_skim_point": null,
+    "first_mind_wander_point": null,
+    "stop_point": null,
+    "fatal_issue_if_any": null,
+    "unique_highest_priority_revision_direction": "若后续授权修订，最高优先级只应控制开头前段制度术语的抽象度与密度，确保读者始终先抓住“房子今天过不了户、身份出现不可能的第二套记录”这一具体困境；不要用新增解释稀释当前推进。",
+    "protect_if_revising": "必须保护“过户受阻 → 同身份不可能的双轨过去 → 许澄主动来电并说‘你现在是不认识’”的连续升级，以及罗钧始终有明确现实目标和现实损失这一点。"
+  },
+  "v3_g4": "CONTINUE_READING",
+  "draft_modified": false,
+  "revision_entered": false,
+  "phase417_entered": false,
+  "replacement_opening_generated": false,
+  "second_draft_generated": false,
+  "ledger_update": {
+    "status": "NOT_PERFORMED",
+    "physical_ledger_entry_count": 54,
+    "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
+    "reason": "No materialized STATE_LEDGER path exists at current branch; logical checkpoint advanced without fabricating physical history."
+  },
+  "status": "PASS_CONTINUE_READING_DURABLE_STOP_BEFORE_REVISION",
+  "next_unique_legal_action": "WAIT_FOR_SEPARATE_EXPLICIT_AUTHORIZATION_BEFORE_CREATING_OR_ENTERING_PHASE417; Draft V1 remains frozen and no revision is authorized."
+}
