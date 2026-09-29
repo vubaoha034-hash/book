@@ -1,0 +1,62 @@
+{
+  "schema_version": "phase422-rj-oe408-i-full-manuscript-prose-reauthoring-v4/v1",
+  "task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
+  "project_id": "novel-distillation",
+  "phase": 422,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
+  "human_authority": {
+    "exact_quote": "小说的题材没问题，有想看的。但是ai味道严重到根本不想看。为什么调整了那么久的ai味道，现在又回到最开始了。你这是在做什么？",
+    "topic_premise_reader_engine": "PASS_PRESERVE",
+    "phase421_v3_prose": "FAIL_SEVERE",
+    "machine_pass_cannot_override": true
+  },
+  "source_draft": {
+    "path": "delivery/phase421/final.md",
+    "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+    "version": "V3"
+  },
+  "scope": {
+    "exactly_one_v4": true,
+    "full_manuscript_prose_reauthoring": true,
+    "no_second_candidate": true,
+    "no_v5": true,
+    "no_best_of_n": true,
+    "no_topic_reset": true,
+    "no_core_fact_change": true,
+    "no_world_rule_change": true,
+    "no_character_relationship_change": true,
+    "no_scene_change": true,
+    "no_causal_structure_change": true,
+    "no_ending_fact_change": true,
+    "no_new_gate_rule_validator": true
+  },
+  "calibration": {
+    "phase363_receipt": {
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+      "ref": "novel-distill-v1",
+      "blob": "67e589933ad5b2467301d7a37122cf9b81f7d989"
+    },
+    "phase370_artifact": {
+      "path": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+      "ref": "novel-distill-v1",
+      "blob": "7be11d5d669250b77292c5181e4f2b9c2251d0c8"
+    },
+    "phase370_human_receipt": {
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE370_ACTUAL_HUMAN_REVIEW_H4_V1.json",
+      "ref": "novel-distill-v1",
+      "blob": "bfa33e4724fec985af2da685ca89f5cad8040015"
+    },
+    "phase373_control_signal": "B_CONTROL was actual-human best/least-AI-like; do not stack extra writing mechanisms"
+  },
+  "required_output": [
+    "delivery/phase422/06-draft-v4.md",
+    "delivery/phase422/reauthoring-note-v1.md",
+    "delivery/phase422/human-style-review-excerpts-v1.md",
+    "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+    "state/project_state.json",
+    "state/continuity/LATEST_CHECKPOINT.json"
+  ],
+  "next_unique_legal_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+}

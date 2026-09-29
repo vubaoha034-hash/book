@@ -884,11 +884,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "Start one full-manuscript prose reauthoring successor for RJ-OE408-I: preserve topic/premise/story facts and causal structure; rewrite prose voice/rhythm/dialogue/exposition at manuscript scale; exactly one V4; no topic reset; return representative excerpts to unified command for actual-human style review before any final freeze.",
-  "status": "PHASE421_ACTUAL_HUMAN_TOPIC_PASS_PROSE_AI_SMELL_SEVERE_FAIL_REAUTHORING_REQUIRED",
+  "next_required_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE",
+  "status": "V4 等刘先生真人文风审核",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
-  "last_completed_task_contract": "state/tasks/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+  "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
+  "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -3303,5 +3303,46 @@
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
   "current_human_gate": null,
-  "human_verdict_receipt": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json"
+  "human_verdict_receipt": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json",
+  "phase422_state": {
+    "status": "V4 等刘先生真人文风审核",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
+    "source_v3": {
+      "path": "delivery/phase421/final.md",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb"
+    },
+    "task_contract": {
+      "path": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "blob": "db3db4102b4211b6306fbb67e329a67342d8c023",
+      "status": "COMPLETED"
+    },
+    "draft_v4": {
+      "path": "delivery/phase422/06-draft-v4.md",
+      "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3",
+      "version": "V4",
+      "count": 1
+    },
+    "reauthoring_note": {
+      "path": "delivery/phase422/reauthoring-note-v1.md",
+      "blob": "e298efec153db1fc9eb6d25f4a6c1a99282d5e73"
+    },
+    "human_style_review_excerpts": {
+      "path": "delivery/phase422/human-style-review-excerpts-v1.md",
+      "blob": "e2042585fc385b30deb2b323c91a226e188cd7d1"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "blob": "c45534a0fc91cfd7dab4bbf484b4672609d8ab62"
+    },
+    "story_fact_drift": false,
+    "causal_structure_drift": false,
+    "ending_fact_drift": false,
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "final_pass": false,
+    "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+  },
+  "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
 }

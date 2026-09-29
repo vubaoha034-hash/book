@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 133,
+  "sequence": 134,
   "recorded_at": "2026-09-29T11:48:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase421 completed the final machine review of RJ-OE408-I《第二套过去》 Draft V3. blocker_count=0, confirmed_new_contradiction_count=0, major_reopened_count=0. Same-story, climax causality, primary emotion debt, harm-doer choice, character knowledge, timeline/asset/responsibility continuity, revision-chain conflict and deslop safety all PASS. final.md is Git-blob-identical to Draft V3 (c5ea838495d3eddfe79c6b894a461f9c7c99e4bb). No V4 was generated. Machine verdict is READY_FOR_ACTUAL_HUMAN_FINAL_READ only; actual-human literary acceptance remains reserved to 刘先生.",
+  "current_focus": "Phase422 completed exactly one full-manuscript prose reauthoring V4 for RJ-OE408-I《第二套过去》 after actual-human severe AI-smell failure of Phase421 Final V3. Topic/premise/reader engine and frozen story facts/causal structure/ending were preserved. V4 is not a FINAL PASS; actual-human style acceptance is pending.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -680,7 +680,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "OPEN_ONE_FULL_MANUSCRIPT_PROSE_REAUTHORING_SUCCESSOR_FOR_RJ_OE408_I; preserve topic/premise/story facts/causal structure; exactly one V4; rewrite manuscript-level prose voice/rhythm/dialogue/exposition; no topic reset; must return opening + representative middle + ending excerpt to unified command for actual-human style review before final freeze.",
+  "next_required_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1406,12 +1406,37 @@
       "path": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json",
       "role": "actual-human final-read severe AI-smell failure receipt",
       "blob": null
+    },
+    {
+      "path": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "role": "Phase422 full-manuscript prose reauthoring task",
+      "blob": "db3db4102b4211b6306fbb67e329a67342d8c023"
+    },
+    {
+      "path": "delivery/phase422/06-draft-v4.md",
+      "role": "Phase422 exactly-one complete Draft V4",
+      "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3"
+    },
+    {
+      "path": "delivery/phase422/reauthoring-note-v1.md",
+      "role": "Phase422 minimal reauthoring note",
+      "blob": "e298efec153db1fc9eb6d25f4a6c1a99282d5e73"
+    },
+    {
+      "path": "delivery/phase422/human-style-review-excerpts-v1.md",
+      "role": "opening/middle/ending verbatim V4 excerpts for actual-human style review",
+      "blob": "e2042585fc385b30deb2b323c91a226e188cd7d1"
+    },
+    {
+      "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "role": "Phase422 V4 durable receipt; no machine final acceptance",
+      "blob": "c45534a0fc91cfd7dab4bbf484b4672609d8ab62"
     }
   ],
-  "status": "PHASE421_ACTUAL_HUMAN_TOPIC_PASS_PROSE_AI_SMELL_SEVERE_FAIL_REAUTHORING_REQUIRED",
+  "status": "V4 等刘先生真人文风审核",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
+  "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
@@ -1463,8 +1488,48 @@
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
-  "next_action": "ACTUAL_HUMAN_FINAL_READ: return delivery/phase421/final.md to unified command for 刘先生. Machine final review is complete; no successor revision is authorized by Phase421 itself.",
+  "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+  "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE",
   "human_verdict_receipt": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json",
-  "current_human_gate": null
+  "current_human_gate": null,
+  "phase422_state": {
+    "status": "V4 等刘先生真人文风审核",
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
+    "source_v3": {
+      "path": "delivery/phase421/final.md",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb"
+    },
+    "task_contract": {
+      "path": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "blob": "db3db4102b4211b6306fbb67e329a67342d8c023",
+      "status": "COMPLETED"
+    },
+    "draft_v4": {
+      "path": "delivery/phase422/06-draft-v4.md",
+      "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3",
+      "version": "V4",
+      "count": 1
+    },
+    "reauthoring_note": {
+      "path": "delivery/phase422/reauthoring-note-v1.md",
+      "blob": "e298efec153db1fc9eb6d25f4a6c1a99282d5e73"
+    },
+    "human_style_review_excerpts": {
+      "path": "delivery/phase422/human-style-review-excerpts-v1.md",
+      "blob": "e2042585fc385b30deb2b323c91a226e188cd7d1"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "blob": "c45534a0fc91cfd7dab4bbf484b4672609d8ab62"
+    },
+    "story_fact_drift": false,
+    "causal_structure_drift": false,
+    "ending_fact_drift": false,
+    "new_core_story_fact_count": 0,
+    "new_world_rule_count": 0,
+    "final_pass": false,
+    "next_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+  }
 }

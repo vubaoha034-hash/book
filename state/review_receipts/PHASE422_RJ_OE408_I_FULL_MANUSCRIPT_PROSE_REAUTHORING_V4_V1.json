@@ -1,0 +1,61 @@
+{
+  "schema_version": "phase422-rj-oe408-i-full-manuscript-prose-reauthoring-v4-receipt/v1",
+  "receipt_id": "PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1",
+  "task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
+  "project_id": "novel-distillation",
+  "phase": 422,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "source_head": "d9aa1cff540ed9fa3d9406cdd71a382542da45db",
+  "source_v3": {
+    "path": "delivery/phase421/final.md",
+    "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb"
+  },
+  "task_contract": {
+    "path": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+    "blob": "db3db4102b4211b6306fbb67e329a67342d8c023"
+  },
+  "draft_v4": {
+    "path": "delivery/phase422/06-draft-v4.md",
+    "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3",
+    "version": "V4",
+    "count": 1
+  },
+  "reauthoring_note": {
+    "path": "delivery/phase422/reauthoring-note-v1.md",
+    "blob": "e298efec153db1fc9eb6d25f4a6c1a99282d5e73"
+  },
+  "human_review_excerpts": {
+    "path": "delivery/phase422/human-style-review-excerpts-v1.md",
+    "blob": "e2042585fc385b30deb2b323c91a226e188cd7d1",
+    "opening": "Chapter 1",
+    "middle": "Chapter 6",
+    "ending": "Chapter 10",
+    "verbatim_from_v4": true
+  },
+  "manuscript_level_changes": [
+    "Reauthored all ten chapters rather than patching selected lines.",
+    "Moved institutional exposition into documents, pressure, inference and partial answers instead of interface-like rule recitation.",
+    "Broke symmetric Q/A cadence with interruption, evasion, delayed response and unequal conversational goals.",
+    "Removed repeated exclusion-summary formulas and narrator meaning tails where scene evidence already carries meaning.",
+    "Varied paragraph and sentence rhythm without deliberate errors, random fragments or generic humanizer noise."
+  ],
+  "preservation": {
+    "topic_premise_reader_engine": true,
+    "story_fact_drift": false,
+    "causal_structure_drift": false,
+    "character_relationship_drift": false,
+    "scene_additions": 0,
+    "new_core_story_facts": 0,
+    "new_world_rules": 0,
+    "climax_result_unchanged": true,
+    "ending_facts_unchanged": true
+  },
+  "contradiction_check": {
+    "new_contradiction_found": false
+  },
+  "machine_final_pass_claimed": false,
+  "actual_human_style_review_required": true,
+  "status": "V4 等刘先生真人文风审核",
+  "next_unique_legal_action": "RETURN_OPENING_MIDDLE_ENDING_EXCERPTS_TO_UNIFIED_COMMAND_FOR_ACTUAL_HUMAN_STYLE_REVIEW_BEFORE_ANY_FINAL_FREEZE"
+}
