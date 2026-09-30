@@ -12,8 +12,12 @@ Phase423 已完成一次真实正文对照诊断，durable receipt 为 `state/re
 
 Phase424 / `SP414-S02-V1` / blob `6200d891b1585ed9d333e325080227ad78a91e05` 已被刘先生真人明确否决为严重 AI 味回退；题材/核心 premise 未被否决，同一场景原样重投关闭。
 
-Phase425 已从真实历史较好 prose 证据回退修复：直接读取 Phase396 候选原文及真人回执、Phase363 真人正向回执与其在 Phase396 renderer 中保留的两段实际正向 prose 参照，产出 exactly 1 个修复场景 `delivery/phase425/09-sp414-s02-best-known-prose-rollback-repair-v1.md`，版本 `SP414-S02-REPAIR-V1`，blob `f285de3da19bbbd4f33c0343020b664f29d618e6`。durable task/receipt 为 `state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json`，blob `98940d7bf2716d5647c929c87505bd1e28bdcff6`。只执行了一次与 Phase424 + 历史较好 prose anchor 的明显回退筛查；机器筛查不构成文学质量 PASS。
+Phase425 修复场景已完成真人阅读并被否决；核心题材未被否决。当前失败范围锁定为：继续阅读欲不足、机械式问答仍存在、人物之间没有形成足够的情感推进。Phase425 不得原样重投。
 
-唯一下一动作：`RETURN_EXACT_ONE_REPAIRED_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING`。在刘先生真人阅读前，不得生成第二版本、第二场景、best-of-N 或全文 V5。
+Phase426 已完成 exactly 1 个 SP414-S02 无对白情感事件因果轨迹，原件为 `state/simulations/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_TRACE_V1.json`，blob `284e4143307273d128a47964d3451f892cbf2c54`；combined task/receipt 为 `state/review_receipts/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_CAUSALITY_V1.json`，blob `2224c37b9332f54c8f5c9f24c5ed91aff6e1090a`。轨迹包含四次真实动作后果变化；遮掉制度/证据名词后关系变化仍成立；没有生成正文、对白、第二轨迹或全文 V5。结构结论为 `READY_FOR_CLEAN_PROSE_RENDER`。
 
-本入口只定位当前事实。它不代表小说质量通过，也不代替真人审美验收。
+下一写作任务必须是独立 clean writer。写作者只能接触固定事实最小投影、必要人物状态最小投影、冻结的 Phase426 event trace，以及 Phase363/396 真人正向成文锚点的 prose 内容本身；不得读取 Phase422/423/424/425 失败诊断、用户失败反馈、去 AI 清单、validator/gate 答案或本轮根因分析。正文必须先冻结，之后评审端才可重新读取诊断。
+
+唯一下一动作：`OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE`。不得在当前 Phase426 继续写正文、生成第二候选、best-of-N 或全文 V5。
+
+本入口只定位当前事实。它不代表下一份正文已经通过，也不代替真人阅读。
