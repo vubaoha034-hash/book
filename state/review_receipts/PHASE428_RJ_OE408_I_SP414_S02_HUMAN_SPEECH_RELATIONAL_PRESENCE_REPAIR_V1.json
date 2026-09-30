@@ -1,0 +1,103 @@
+{
+  "schema_version": "phase428-rj-oe408-i-sp414-s02-human-speech-relational-presence-repair/v1",
+  "project_id": "novel-distillation",
+  "work": "第二套过去",
+  "candidate": "RJ-OE408-I",
+  "phase": 428,
+  "scene_id": "SP414-S02",
+  "task_id": "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
+  "mode": "BOUNDED_SINGLE_SCENE_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR",
+  "starting_head": "c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+  "expected_checkpoint_sequence": 147,
+  "human_feedback_binding": {
+    "exact_quote": "小说改进了一问一答。但是还是跟机器人说话一样",
+    "bound_phase427_artifact": {
+      "path": "delivery/phase427/10-sp414-s02-clean-prose-render-v1.md",
+      "blob": "46731e3cd8869b5cfc5c30023068ea7566f6c33d"
+    },
+    "preserved_partial_gain": "一问一答改进",
+    "unresolved_target": "人物说话与关系在场仍像机器人",
+    "phase427_overall_pass": false,
+    "full_v5_authorized": false
+  },
+  "required_inputs": [
+    {
+      "ref": "main@c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "43468be4a3cd50c94c4fbc034246b9e6df98a29b",
+      "sequence": 147
+    },
+    {
+      "ref": "main@c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+      "path": "state/project_state.json",
+      "blob": "dace59c2555d7f9aadefb1a5b6e529b9b038db80"
+    },
+    {
+      "ref": "main@c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+      "path": "state/review_receipts/PHASE427_RJ_OE408_I_SP414_S02_CLEAN_PROSE_RENDER_V1.json",
+      "blob": "00031df6fa078aad77577f27ff42d26872c0c0d0"
+    },
+    {
+      "ref": "main@c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+      "path": "delivery/phase427/10-sp414-s02-clean-prose-render-v1.md",
+      "blob": "46731e3cd8869b5cfc5c30023068ea7566f6c33d"
+    },
+    {
+      "ref": "main@c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+      "path": "state/simulations/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_TRACE_V1.json",
+      "blob": "284e4143307273d128a47964d3451f892cbf2c54"
+    },
+    {
+      "ref": "novel-distill-v1",
+      "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+      "blob": "fafe06be8416de0024bae0e9b85063e5275b35d0",
+      "used_scope": "Phase363 preserved positive-prose excerpts only; no sentence/event copying"
+    },
+    {
+      "ref": "novel-distill-v1",
+      "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+      "blob": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb",
+      "used_scope": "human-positive prose surface reference only; no sentence/event copying"
+    }
+  ],
+  "output": {
+    "path": "delivery/phase428/11-sp414-s02-human-speech-relational-presence-repair-v1.md",
+    "blob": "771b6d1423364b9930b1ab8ffb69414b9b974827",
+    "version": "SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-V1",
+    "count": 1
+  },
+  "repair_scope": {
+    "same_scene": true,
+    "second_scene_added": false,
+    "second_version_added": false,
+    "best_of_n_used": false,
+    "full_v5_generated": false,
+    "new_rule_or_gate_or_validator_added": false,
+    "major_new_story_fact_added": false,
+    "new_character_added": false,
+    "new_world_rule_added": false,
+    "luojun_joint_responsibility_claimed": false,
+    "xucheng_requests_memory_or_old_intimacy_restoration": false,
+    "terminal_relationship": "有限合作的两个独立当事人；旧关系不恢复"
+  },
+  "preservation_checks": {
+    "phase426_event_sequence_preserved": true,
+    "private_material_control_remains_with_xucheng": true,
+    "independent_external_verification_paths_remain": true,
+    "fact_preservation_succeeds": true,
+    "broader_protection_blocked_without_joint_responsibility": true,
+    "xucheng_withdraws_further_private_convenience": true,
+    "luojun_continues_via_existing_external_paths": true,
+    "question_answer_partial_gain_preserved": true,
+    "Q&A_regression": false,
+    "consecutive_high_efficiency_QA_reintroduced": false
+  },
+  "literary_status": {
+    "machine_final_literary_pass": false,
+    "actual_human_reading_required": true,
+    "current_status": "EXACTLY_ONE_REPAIR_DELIVERED_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
+    "note": "本轮只确认范围/因果/已知Q&A局部进步未回退；机器不得把修复动作本身冒充真人文学PASS。"
+  },
+  "next_action": "RETURN_EXACT_ONE_PHASE428_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "stop": true
+}
