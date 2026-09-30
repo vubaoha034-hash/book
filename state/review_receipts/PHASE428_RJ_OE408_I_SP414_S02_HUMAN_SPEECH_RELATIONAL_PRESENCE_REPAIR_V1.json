@@ -94,10 +94,37 @@
   },
   "literary_status": {
     "machine_final_literary_pass": false,
-    "actual_human_reading_required": true,
-    "current_status": "EXACTLY_ONE_REPAIR_DELIVERED_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
-    "note": "本轮只确认范围/因果/已知Q&A局部进步未回退；机器不得把修复动作本身冒充真人文学PASS。"
+    "actual_human_reading_required": false,
+    "current_status": "ACTUAL_HUMAN_REJECTED_SEVERE_AI_SMELL_REMAINS",
+    "note": "本轮只确认范围/因果/已知Q&A局部进步未回退；机器不得把修复动作本身冒充真人文学PASS。",
+    "actual_human_overall_pass": false
   },
-  "next_action": "RETURN_EXACT_ONE_PHASE428_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-  "stop": true
+  "next_action": "OPEN_ONE_PHASE429_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN",
+  "stop": true,
+  "phase428_actual_human_review": {
+    "recorded_at": "2026-09-30T18:28:00+08:00",
+    "reviewer": "刘先生",
+    "source": "UNIFIED_COMMAND_CURRENT_CHAT",
+    "exact_quote": "小说ai味道又是重的要死。为什么",
+    "bound_artifact": {
+      "phase": 428,
+      "scene_id": "SP414-S02",
+      "version": "SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-V1",
+      "path": "delivery/phase428/11-sp414-s02-human-speech-relational-presence-repair-v1.md",
+      "blob": "771b6d1423364b9930b1ab8ffb69414b9b974827"
+    },
+    "verdict": "REJECT_SEVERE_AI_SMELL_REMAINS",
+    "overall_pass": false,
+    "preserved_prior_gain": {
+      "source_phase": 427,
+      "question_answer_pattern_improved": true,
+      "must_not_regress": true
+    },
+    "scope_boundary": [
+      "Phase428唯一SP414-S02正文真人整体否决，严重AI味仍在。",
+      "Phase427已取得的一问一答减少属于明确局部进步，继续保留，不得回退。",
+      "本结论不否定《第二套过去》题材或双历史核心设定。",
+      "本结论不授权全文V5。"
+    ]
+  }
 }
