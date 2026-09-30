@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 148,
-  "recorded_at": "2026-09-30T18:07:00+08:00",
+  "sequence": 149,
+  "recorded_at": "2026-09-30T18:28:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase428 已对同一 SP414-S02 交付 exactly 1 个“人物说话/关系在场”修复版本；Phase427 的一问一答局部进步明确保留，Q&A regression=false。机器不宣称最终文学PASS，当前只等待刘先生对这一唯一正文实际阅读。",
+  "current_focus": "Phase428 真人整体否决：严重AI味仍在，Phase427 的一问一答减少继续保留。Phase429 已停止对白层修补，完成 exactly 1 条 SP414-S02 事件层私人利害重设计：共同生活残留被实际分割，双方通过承担与放弃改变关系；结构结论为 READY_FOR_CLEAN_PROSE_RENDER_FROM_EVENT_LEVEL_REDESIGN。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -451,7 +451,9 @@
     "Phase426 exactly-one no-dialogue emotional-event causal trace frozen; four causal relationship/permission changes survive removal of dialogue and institutional nouns; verdict READY_FOR_CLEAN_PROSE_RENDER.",
     "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
     "Phase427 actual-human reading completed: Q&A pattern improved, but speech still feels robotic; partial gain preserved, overall candidate rejected.",
-    "Phase428 exactly one SP414-S02 human-speech/relational-presence repair delivered; Phase427 Q&A partial gain preserved with Q&A regression=false; final literary quality remains pending actual Liu Xiansheng reading"
+    "Phase428 exactly one SP414-S02 human-speech/relational-presence repair delivered; Phase427 Q&A partial gain preserved with Q&A regression=false; final literary quality remains pending actual Liu Xiansheng reading",
+    "Phase428 actual-human verdict recorded: unique SP414-S02 repair rejected for severe AI smell; Phase427 Q&A reduction preserved; topic not rejected; no full V5 authorization.",
+    "Phase429 exactly-one no-prose/no-dialogue event-level human-stakes redesign completed: 8 steps, 4 causal changes, real private cost; verdict READY_FOR_CLEAN_PROSE_RENDER_FROM_EVENT_LEVEL_REDESIGN."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -490,7 +492,8 @@
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
     "Bounded next repair action has not been selected or executed; no V5 manuscript exists.",
-    "Phase426 separate clean writer render not started; no prose generated in Phase426."
+    "Phase426 separate clean writer render not started; no prose generated in Phase426.",
+    "Phase429 event structure is ready, but no new prose has been rendered or human-approved from this redesign."
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -696,7 +699,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "OPEN_ONE_PHASE428_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR",
+  "next_required_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_PHASE429_EVENT_REDESIGN",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1487,16 +1490,31 @@
       "path": "state/review_receipts/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_CAUSALITY_V1.json",
       "role": "Phase426 combined task/receipt and clean-writer isolation contract",
       "blob": "2224c37b9332f54c8f5c9f24c5ed91aff6e1090a"
+    },
+    {
+      "path": "state/review_receipts/PHASE428_RJ_OE408_I_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR_V1.json",
+      "role": "Phase428 actual-human severe-AI-smell rejection receipt",
+      "blob": "a55d1a01814d4de5afca3b142d94b128f1aad24f"
+    },
+    {
+      "path": "state/simulations/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
+      "role": "Phase429 exactly-one event-level human-stakes redesign trace",
+      "blob": "a7fb0578f8c2f141663084e6cade62d113d1270a"
+    },
+    {
+      "path": "state/review_receipts/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
+      "role": "Phase429 combined task/receipt",
+      "blob": "54f5845ec6153cfd01fbe9d4dc3e25d6a186b1dd"
     }
   ],
-  "status": "PHASE428_EXACTLY_ONE_REPAIR_DELIVERED_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
+  "status": "PHASE429_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_READY_FOR_CLEAN_PROSE_RENDER",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
+  "last_completed_task_id": "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "9b30a70616d786a01c0fa029d79210f76dc9391ce402273c0230ceb140c4e597",
+    "project_state_sha256": "e646470b01cbdab44fe2b6a72945e860a004859404e1a3ee489a812bce776561",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1543,16 +1561,18 @@
       "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
       "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
       "PHASE426-RJ-OE408-I-SP414-S02-NO-DIALOGUE-EMOTIONAL-EVENT-CAUSALITY-01",
-      "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01"
+      "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
+      "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
+      "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/review_receipts/PHASE427_RJ_OE408_I_SP414_S02_CLEAN_PROSE_RENDER_V1.json",
-  "next_action": "RETURN_EXACT_ONE_PHASE428_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-  "human_verdict_receipt": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
-  "current_human_gate": "AWAIT_LIU_XIANSHENG_ACTUAL_READING_PHASE427_SP414_S02",
+  "last_completed_task_contract": "state/review_receipts/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
+  "next_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_PHASE429_EVENT_REDESIGN",
+  "human_verdict_receipt": "state/review_receipts/PHASE428_RJ_OE408_I_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR_V1.json",
+  "current_human_gate": "PHASE429_STRUCTURE_READY_NO_PROSE_HUMAN_GATE_YET",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -1688,11 +1708,13 @@
     }
   },
   "latest_human_review": {
-    "recorded_date": "2026-09-30",
-    "bound_phase": 425,
-    "bound_version": "SP414-S02-REPAIR-V1",
-    "bound_blob": "f285de3da19bbbd4f33c0343020b664f29d618e6",
-    "verdict": "REJECT_NO_CONTINUE_DESIRE_AI_PING_PONG_DIALOGUE_NO_EMOTIONAL_PROPULSION",
+    "recorded_at": "2026-09-30T18:28:00+08:00",
+    "bound_phase": 428,
+    "bound_version": "SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-V1",
+    "bound_blob": "771b6d1423364b9930b1ab8ffb69414b9b974827",
+    "exact_quote": "小说ai味道又是重的要死。为什么",
+    "verdict": "REJECT_SEVERE_AI_SMELL_REMAINS",
+    "question_answer_partial_gain_from_phase427_preserved": true,
     "topic_rejection": false,
     "full_v5_authorized": false
   },
@@ -1794,5 +1816,58 @@
     "question_answer_pattern_improved": true,
     "robotic_speech_remains": true
   },
-  "stop": true
+  "stop": true,
+  "phase428_state": {
+    "status": "ACTUAL_HUMAN_REJECTED_SEVERE_AI_SMELL_REMAINS_CLOSED_BY_PHASE429_EVENT_REDESIGN",
+    "task_id": "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
+    "scene": {
+      "path": "delivery/phase428/11-sp414-s02-human-speech-relational-presence-repair-v1.md",
+      "blob": "771b6d1423364b9930b1ab8ffb69414b9b974827",
+      "version": "SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-V1",
+      "count": 1
+    },
+    "combined_task_receipt": {
+      "path": "state/review_receipts/PHASE428_RJ_OE408_I_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR_V1.json",
+      "blob": "a55d1a01814d4de5afca3b142d94b128f1aad24f"
+    },
+    "human_quality_verdict": "REJECT_SEVERE_AI_SMELL_REMAINS",
+    "human_feedback_exact": "小说ai味道又是重的要死。为什么",
+    "preserved_phase427_partial_gain": "一问一答减少",
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "next_action": "CLOSED_BY_PHASE429_EVENT_LEVEL_HUMAN_STAKES_REDESIGN"
+  },
+  "phase429_state": {
+    "status": "COMPLETED_READY_FOR_SEPARATE_CLEAN_PROSE_RENDER",
+    "task_id": "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01",
+    "starting_head": "133fa3ebe383852bbd0c1dc73bca2f4ae6c4fe7e",
+    "expected_checkpoint_sequence": 148,
+    "verdict": "READY_FOR_CLEAN_PROSE_RENDER_FROM_EVENT_LEVEL_REDESIGN",
+    "trace": {
+      "path": "state/simulations/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
+      "blob": "a7fb0578f8c2f141663084e6cade62d113d1270a",
+      "count": 1,
+      "event_step_count": 8
+    },
+    "combined_task_receipt": {
+      "path": "state/review_receipts/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
+      "blob": "54f5845ec6153cfd01fbe9d4dc3e25d6a186b1dd"
+    },
+    "prose_generated": false,
+    "dialogue_generated": false,
+    "second_solution": false,
+    "best_of_n": false,
+    "machine_literary_pass": false,
+    "human_literary_pass": false,
+    "clean_writer_firewall": {
+      "separate_context_required": true,
+      "phase427_428_failed_prose_visible": false,
+      "phase428_human_feedback_visible": false,
+      "anti_ai_checklists_visible": false,
+      "validator_gate_answers_visible": false,
+      "positive_phase363_396_prose_anchors_allowed": true
+    },
+    "next_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_PHASE429_EVENT_REDESIGN",
+    "stop": true
+  }
 }
