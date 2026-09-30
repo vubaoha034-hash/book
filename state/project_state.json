@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-30T18:02:59+08:00",
+  "updated_at": "2026-09-30T18:07:00+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -3599,5 +3599,46 @@
     "human_feedback_exact": "小说改进了一问一答。但是还是跟机器人说话一样",
     "question_answer_pattern_improved": true,
     "robotic_speech_remains": true
+  },
+  "phase428_state": {
+    "status": "EXACTLY_ONE_REPAIR_DELIVERED_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
+    "task_id": "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
+    "starting_head": "c0ef7ccedfacc2a91afec2afcb439d8ca49d0694",
+    "source_phase427": {
+      "path": "delivery/phase427/10-sp414-s02-clean-prose-render-v1.md",
+      "blob": "46731e3cd8869b5cfc5c30023068ea7566f6c33d",
+      "human_feedback_exact": "小说改进了一问一答。但是还是跟机器人说话一样"
+    },
+    "frozen_phase426_trace": {
+      "path": "state/simulations/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_TRACE_V1.json",
+      "blob": "284e4143307273d128a47964d3451f892cbf2c54"
+    },
+    "scene": {
+      "path": "delivery/phase428/11-sp414-s02-human-speech-relational-presence-repair-v1.md",
+      "blob": "771b6d1423364b9930b1ab8ffb69414b9b974827",
+      "version": "SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-V1",
+      "count": 1
+    },
+    "combined_task_receipt": {
+      "path": "state/review_receipts/PHASE428_RJ_OE408_I_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR_V1.json",
+      "blob": "34a569d8d8483d6742a74af025ca37a0aa0158ba"
+    },
+    "preserved_partial_progress": {
+      "question_answer_pattern_improved": true,
+      "Q&A_regression": false,
+      "consecutive_high_efficiency_QA_reintroduced": false
+    },
+    "scope": {
+      "full_v5_authorized": false,
+      "second_scene_authorized": false,
+      "second_version_authorized": false,
+      "best_of_n_used": false,
+      "new_rule_gate_validator_added": false
+    },
+    "machine_final_literary_pass": false,
+    "actual_human_reading_required": true,
+    "human_quality_verdict": "PENDING_ACTUAL_READING",
+    "next_action": "RETURN_EXACT_ONE_PHASE428_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+    "stop": true
   }
 }
