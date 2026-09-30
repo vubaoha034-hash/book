@@ -3361,13 +3361,16 @@
       "path": "delivery/phase422/07-opening-scene-trial-after-v4.md",
       "blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
       "scope": "ONE_OPENING_SCENE_ONLY_NOT_FULL_V5",
-      "human_style_verdict": "PENDING",
+      "human_style_verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
       "version_count": 1,
-      "new_core_story_fact_count": 0
+      "new_core_story_fact_count": 0,
+      "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
+      "human_verdict_event_key": "actual_human_opening_trial_verdict_20260930",
+      "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_OPENING_SCENE_TRIAL_NO_FULL_V5",
-  "opening_trial_human_gate": "PENDING_ACTUAL_HUMAN_READING",
+  "next_action": "STOP_CURRENT_OPENING_TRIAL. Before any new prose, compare against previously human-accepted emotionally alive dialogue/scene spans and identify the concrete regression that removed emotional subtext; only then define one bounded successor. No full V5 and no second trial automatically.",
+  "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
   "current_focus": "The single post-V4 opening scene trial was actually read and rejected: dialogue feels emotionless and robotic, repeating a failure pattern the project had already corrected many times. Do not continue this prose route or expand to full V5.",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",

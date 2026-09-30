@@ -1,7 +1,7 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 137,
+  "sequence": 138,
   "recorded_at": "2026-09-29T12:05:32+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -1446,7 +1446,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "b7b31604e234d7fb04dea84d0bafdb8d8af77f92f72564d433cb7d2749d21cfe",
+    "project_state_sha256": "482ffa1b340a2aad078b211d355c7184cc9b7aac2c9640791bb54a42ab439fcc",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1495,7 +1495,7 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_OPENING_SCENE_TRIAL_NO_FULL_V5",
+  "next_action": "STOP_CURRENT_OPENING_TRIAL. Before any new prose, compare against previously human-accepted emotionally alive dialogue/scene spans and identify the concrete regression that removed emotional subtext; only then define one bounded successor. No full V5 and no second trial automatically.",
   "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
   "current_human_gate": "SETTLED_FAIL_SEVERE_AI_SMELL",
   "phase422_state": {
@@ -1551,12 +1551,15 @@
       "path": "delivery/phase422/07-opening-scene-trial-after-v4.md",
       "blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
       "scope": "ONE_OPENING_SCENE_ONLY_NOT_FULL_V5",
-      "human_style_verdict": "PENDING",
+      "human_style_verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
       "version_count": 1,
-      "new_core_story_fact_count": 0
+      "new_core_story_fact_count": 0,
+      "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
+      "human_verdict_event_key": "actual_human_opening_trial_verdict_20260930",
+      "final_quality_accepted": false
     }
   },
-  "opening_trial_human_gate": "PENDING_ACTUAL_HUMAN_READING",
+  "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
