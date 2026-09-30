@@ -1,0 +1,131 @@
+{
+  "schema_version": "phase425-best-known-prose-rollback-sp414-s02-repair/v1",
+  "receipt_id": "PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1",
+  "task_id": "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
+  "project_id": "novel-distillation",
+  "phase": 425,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "mode": "CHAT_EXTREME_HIGH",
+  "starting_head": "c856e68ba6afe8690f62eb9126dffeb163cca1a2",
+  "execution_boundary": {
+    "web_search_used": false,
+    "codex_used": false,
+    "work_mode_used": false,
+    "new_scene_count": 1,
+    "second_version_generated": false,
+    "best_of_n_used": false,
+    "full_v5_generated": false,
+    "new_rule_gate_validator_created": false
+  },
+  "authoritative_human_rejection": {
+    "phase": 424,
+    "version": "SP414-S02-V1",
+    "blob": "6200d891b1585ed9d333e325080227ad78a91e05",
+    "exact_quote": "这小说ai味道简直没办法看。明明已经解决了。为什么又是这么恶心的味道出来了。",
+    "verdict": "REJECT_SEVERE_AI_SMELL_REGRESSION",
+    "topic_rejection": false
+  },
+  "sources_actually_read": [
+    {
+      "role": "rejected_phase424_scene",
+      "ref": "main@c856e68ba6afe8690f62eb9126dffeb163cca1a2",
+      "path": "delivery/phase424/08-sp414-s02-first-xucheng-relational-pressure-scene-v1.md",
+      "blob": "6200d891b1585ed9d333e325080227ad78a91e05"
+    },
+    {
+      "role": "phase422_repair_basis",
+      "ref": "main@c856e68ba6afe8690f62eb9126dffeb163cca1a2",
+      "path": "state/diagnoses/PHASE422_V4_REPAIR_BASIS_CORRECTION_20260929.md",
+      "blob": "8e03dd42930f9cf663b15381766785d13760793b"
+    },
+    {
+      "role": "phase423_regression_diagnosis",
+      "ref": "main@c856e68ba6afe8690f62eb9126dffeb163cca1a2",
+      "path": "state/review_receipts/PHASE423_RJ_OE408_I_EMOTIONAL_PROSE_REGRESSION_DIAGNOSIS_V1.json",
+      "blob": "7b7d45a7329d9b9293d2fc9729d32770676fdbc0"
+    },
+    {
+      "role": "frozen_scene_plan",
+      "ref": "main@c856e68ba6afe8690f62eb9126dffeb163cca1a2",
+      "path": "delivery/phase414/05-scene-plan.md",
+      "blob": "decfa4159b9428633d5d20f1b8e4c17f0f43750a",
+      "section": "SP414-S02"
+    },
+    {
+      "role": "phase396_human_positive_candidate_original",
+      "ref": "novel-distill-v1",
+      "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+      "blob": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb"
+    },
+    {
+      "role": "phase396_actual_human_receipt",
+      "ref": "novel-distill-v1",
+      "path": "state/review_receipts/PHASE396_ACTUAL_HUMAN_VERDICT_H1_V1.json",
+      "blob": "9d064793c59f6712a18b7022c94e4a8bd6d2e52d",
+      "bounded_human_result": {
+        "overall": "可以",
+        "ai_smell": "轻微",
+        "mechanical_dialogue": "没有",
+        "desire_to_continue": "没有"
+      }
+    },
+    {
+      "role": "phase363_actual_human_receipt",
+      "ref": "novel-distill-v1",
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+      "blob": "67e589933ad5b2467301d7a37122cf9b81f7d989"
+    },
+    {
+      "role": "phase363_positive_prose_excerpts_preserved_as_phase396_renderer_anchor",
+      "ref": "novel-distill-v1",
+      "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+      "blob": "fafe06be8416de0024bae0e9b85063e5275b35d0",
+      "note": "真实文件明确标注两段为本项目此前获得实际真人明显正向反馈的成文参照；人物分别对应 Phase363 Round3 的楚十三与霍九翁目标。未凭摘要伪造 standalone fusion pack 路径。"
+    }
+  ],
+  "prose_behavior_losses_observed_in_phase424_vs_better_anchors": [
+    "Phase424 把双方边界写成连续、对称、语义完整的立场辩论；历史较好样本允许人物先行动、拒绝或处理眼前压力，再决定说多少。",
+    "Phase424 以原件托管/付款链/第三方留存三项清单和随后解释为阅读主体；历史较好样本先让行动后果改变权限、距离或下一步，再让信息露出。",
+    "Phase424 多数动作只是给对白配状态；较好样本中的动作会真的改变谁控制关键物、谁继续配合、谁承担下一步。",
+    "Phase424 常在动作或对白后由叙述补意义；较好样本保留读者自行判断关系变化的空间。"
+  ],
+  "repair_output": {
+    "path": "delivery/phase425/09-sp414-s02-best-known-prose-rollback-repair-v1.md",
+    "blob": "f285de3da19bbbd4f33c0343020b664f29d618e6",
+    "version": "SP414-S02-REPAIR-V1",
+    "scene": "SP414-S02",
+    "count": 1
+  },
+  "frozen_fact_continuity": {
+    "topic_core_changed": false,
+    "dual_history_core_changed": false,
+    "ending_changed": false,
+    "causal_ledger_changed": false,
+    "relationship_endpoint_changed": false,
+    "major_new_plot_or_character_or_danger_or_world_rule_added": false,
+    "actual_choice_preserved": "罗钧只核验与许澄控制范围分离的证据，保全记录并拒绝责任认领；许澄只提供有限核验路径，不无限期充当证据源。",
+    "immediate_consequence_preserved": "独立托管/付款/第三方生活证据相互吻合；共同责任早于30天窗口终点到期；普通证据保全不自动建立更长期的当前利害资格。",
+    "relationship_change_preserved": "从防御性核验者/陌生主张者进入有限合作的两个独立当事人；旧亲密不恢复，责任边界仍冲突。"
+  },
+  "single_obvious_regression_screen": {
+    "comparison_targets": [
+      "Phase424 SP414-S02-V1",
+      "Phase396 human-bounded positive prose",
+      "Phase363 human-positive prose mechanism/excerpts"
+    ],
+    "screen_count": 1,
+    "findings": [
+      "未再以连续高效率问答承担整场推进；对白被材料控制、独立核验、离开与有限补充等行为打断并改变。",
+      "制度信息压缩为行动遇到的具体结果；未把三项证据类别或规则清单作为阅读主体。",
+      "关键动作具有后果：许澄不交文件袋、只留索引；罗钧独立调取；许澄限定后续协助；罗钧只提交证据保全且继续拒绝认领。",
+      "未在场末用作者总结解释关系已变化；最终行为只显示罗钧接受了许澄允许的有限核验路径。",
+      "未复制 Phase363/396 的人物、事件、句子或危险表层。"
+    ],
+    "verdict": "CLEAR_OF_OBVIOUS_REPEAT_REGRESSION_ONLY",
+    "human_quality_pass": false,
+    "claim_user_will_like_it": false
+  },
+  "next_required_action": "RETURN_EXACT_ONE_REPAIRED_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "stop_after_human_gate": true
+}
