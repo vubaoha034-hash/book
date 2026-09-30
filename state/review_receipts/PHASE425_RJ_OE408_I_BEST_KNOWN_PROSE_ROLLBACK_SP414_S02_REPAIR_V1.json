@@ -126,7 +126,7 @@
     "human_quality_pass": false,
     "claim_user_will_like_it": false
   },
-  "next_required_action": "DO_NOT_REWRITE_BY_MORE_DIALOGUE_TUNING. NEXT SUCCESSOR MUST REBUILD THE SCENE FROM EMOTIONAL_EVENT_CAUSALITY / EMBODIED_RELATIONSHIP_CHANGE FIRST, THEN RENDER PROSE; EXACTLY ONE CANDIDATE, NO FULL_V5, NO BEST_OF_N.",
+  "next_required_action": "OPEN_ONE_PHASE426_NO_DIALOGUE_EMOTIONAL_EVENT_CAUSALITY_TRACE_FOR_SP414_S02; NO_PROSE_IN_PHASE426. AFTER TRACE FREEZE, USE A SEPARATE CLEAN_WRITER SUCCESSOR WITH HUMAN_POSITIVE_PROSE_ANCHORS AND NO_DIAGNOSTIC_PRIMING.",
   "stop_after_human_gate": true,
   "human_review": {
     "recorded_date": "2026-09-30",
@@ -151,5 +151,30 @@
       "不得原样重投 Phase425。"
     ]
   },
-  "final_human_quality_status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTION"
+  "final_human_quality_status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTION",
+  "root_cause_validation_20260930": {
+    "validation_type": "DURABLE_ROOT_CAUSE_VERIFICATION_NO_NEW_PROSE",
+    "verified_findings": [
+      "Phase363 actual-human result materially improved and accepted for scale; its accepted prose engine explicitly says question-answer interview cadence is not default.",
+      "Phase396 actual-human result says AI smell light and mechanical dialogue none; forward desire failed for boredom/novelty reasons, and accepted_checkpoint_advance remained false.",
+      "Phase394/395 had already established positive-anchor + post-freeze dialogue blocker and hidden-candidate writer input without diagnostic priming.",
+      "Phase424 generation directly depended on the Phase423 regression diagnosis contract.",
+      "Phase425 writer context again consumed rejected Phase424 prose, Phase422/423 diagnosis, and explicit anti-regression instructions together with positive anchors.",
+      "Current highest accepted phase remains 320, so later human-positive prose capabilities were preserved as evidence but not promoted into a non-regression production baseline."
+    ],
+    "root_cause": "HUMAN_POSITIVE_PROSE_ARTIFACTS_WERE_PRESERVED_BUT_THEIR_CAPABILITIES_WERE_NOT_PROMOTED_AS_NON_REGRESSION_BASELINES; DIMENSION_COUPLED_PROMOTION_DISCARDED_RESOLVED_MECHANICAL_DIALOGUE WHEN OTHER DIMENSIONS_FAILED; LATER WRITER_TASKS_BYPASSED_DIAGNOSTIC_FIREWALL_AND_REEXPOSED_FAILURE_LABELS/ANTI_FAILURE_INSTRUCTIONS.",
+    "coordinator_contribution": "Unified-command tasking in Phase424/425 amplified the regression by exposing diagnosis and anti-AI instructions directly to the writer context instead of preserving writer/evaluator separation.",
+    "not_claimed": [
+      "Phase396 was not a globally validated prose solution.",
+      "Phase363/396 are not final perfect style baselines.",
+      "The core topic of 第二套过去 is not rejected."
+    ],
+    "required_next_architecture": [
+      "First build a no-dialogue emotional-event causal trace for SP414-S02.",
+      "Freeze that trace before prose.",
+      "Then use a separate clean writer that sees only frozen facts/event trace plus actual human-positive prose anchors, not failure diagnoses or anti-AI checklists.",
+      "Only after prose freeze may an evaluator see mechanical-dialogue/AI-smell/emotion/forward-desire diagnostics.",
+      "Track mechanical dialogue, AI smell, emotion, and forward desire as separate dimensions; failure in one must not erase proven gains in another."
+    ]
+  }
 }
