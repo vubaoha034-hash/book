@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 143,
+  "sequence": 144,
   "recorded_at": "2026-09-30T15:52:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "刘先生明确指出 Phase425 仍是持续的一问一答式AI对话，『没有继续读欲』且『没有任何情感』。Phase425 的 best-known prose rollback 没有恢复成功；当前不能再靠调台词/删解释做局部修补，必须先重建场景的情感事件因果与关系变化，再渲染成文。",
+  "current_focus": "已验证根因：Phase363/396 好稿与真人反馈都仍在，但未晋升为后续不得退化的生产基线；Phase396机械对白已解决却因继续读欲失败而整体未晋级；Phase394/395建立过的干净写作者/写后评审隔离在Phase424/425被绕开。下一步必须先做无对白情感事件因果轨迹，不直接写正文。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -692,7 +692,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "OPEN_ONE_PHASE426_EMOTIONAL_EVENT_CAUSALITY_REBUILD_FOR_SP414_S02_BEFORE_PROSE_RENDER",
+  "next_required_action": "OPEN_ONE_PHASE426_NO_DIALOGUE_EMOTIONAL_EVENT_CAUSALITY_TRACE_FOR_SP414_S02",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1475,7 +1475,7 @@
       "blob": "98940d7bf2716d5647c929c87505bd1e28bdcff6"
     }
   ],
-  "status": "Phase425 SP414-S02-REPAIR-V1 human rejected: no continue desire, persistent AI ping-pong dialogue, no emotional propulsion",
+  "status": "Phase425 human rejection root cause verified; positive prose survived as artifacts but not as non-regression production baseline; diagnostic firewall was bypassed",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
@@ -1708,5 +1708,15 @@
     "second_version_authorized": false,
     "best_of_n_used": false,
     "next_action": "RETURN_EXACT_ONE_REPAIRED_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
+  },
+  "root_cause_validation": {
+    "recorded_date": "2026-09-30",
+    "result": "VERIFIED",
+    "positive_artifacts_preserved": true,
+    "inheritance_chain_broken": true,
+    "dimension_coupled_promotion_bug": true,
+    "diagnostic_firewall_bypassed": true,
+    "coordinator_tasking_amplified_regression": true,
+    "no_new_prose_generated": true
   }
 }
