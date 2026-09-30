@@ -1,0 +1,70 @@
+{
+  "schema_version": "phase430-sp414-s02-clean-writer-render/v1",
+  "project_id": "novel-distillation",
+  "work": "第二套过去",
+  "candidate": "RJ-OE408-I",
+  "phase": 430,
+  "task_id": "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
+  "scene_id": "SP414-S02",
+  "starting_head": "e156f00e7b993fa4b6fe33c54460c27d09e9703f",
+  "expected_checkpoint_sequence": 149,
+  "input_boundary": {
+    "writer_visible_inputs": [
+      {
+        "ref": "main",
+        "path": "state/simulations/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
+        "blob": "a7fb0578f8c2f141663084e6cade62d113d1270a",
+        "used_scope": [
+          "fixed_story_facts",
+          "scene_level_minor_fact",
+          "necessary_character_state",
+          "event_sequence",
+          "clean_writer_boundary"
+        ]
+      },
+      {
+        "ref": "novel-distill-v1",
+        "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+        "blob": "fafe06be8416de0024bae0e9b85063e5275b35d0",
+        "used_scope": "positive prose excerpt only; non-prose material excluded from writer-visible rendering basis"
+      },
+      {
+        "ref": "novel-distill-v1",
+        "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+        "blob": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb",
+        "used_scope": "prose surface only"
+      }
+    ],
+    "forbidden_phase427_prose_or_receipt_used": false,
+    "forbidden_phase428_prose_or_receipt_used": false,
+    "forbidden_phase429_combined_receipt_used": false,
+    "failure_feedback_used": false,
+    "anti_ai_or_validator_material_used": false
+  },
+  "output": {
+    "path": "delivery/phase430/12-sp414-s02-clean-event-render-v1.md",
+    "blob": "869c9781238ff8f63f6fb0c1339f16676b705cba",
+    "count": 1
+  },
+  "preservation": {
+    "fixed_story_facts_preserved": true,
+    "event_sequence_step_count": 8,
+    "all_event_steps_rendered": true,
+    "event_order_preserved": true,
+    "scene_level_minor_fact_boundary_preserved": true,
+    "old_relationship_restored": false,
+    "luojun_recovers_second_past_memory": false,
+    "luojun_accepts_shared_responsibility_in_scene": false,
+    "xucheng_demands_memory_or_old_intimacy_restoration": false,
+    "independent_verification_remains_separate_from_xucheng_private_life": true
+  },
+  "second_version_count": 0,
+  "second_scene_count": 0,
+  "major_new_story_fact_count": 0,
+  "new_world_rule_count": 0,
+  "full_v5_generated": false,
+  "literary_quality_self_evaluation_performed": false,
+  "human_literary_quality_claim": false,
+  "next_action": "RETURN_EXACT_ONE_PHASE430_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "stop": true
+}
