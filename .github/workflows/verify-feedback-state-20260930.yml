@@ -1,0 +1,70 @@
+name: Verify scoped novel feedback repair (no deployment)
+
+on:
+  push:
+    branches: [verify/novel-feedback-state-20260930-01]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: novel-feedback-state-20260930-01
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      SOURCE_HEAD: 9c6079d16be04f54f636f1cac47b56c892053226
+    steps:
+      - name: Check out probe branch without retained credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Verify actual frozen repository, then test proposed repair locally
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/feedback-verification"
+          ROOT="$RUNNER_TEMP/novel-source"
+          PROBE="$GITHUB_WORKSPACE/operations/feedback_state_probe_20260930"
+          mkdir -p "$OUT"
+          git worktree add --detach "$ROOT" "$SOURCE_HEAD"
+          test "$(git -C "$ROOT" rev-parse HEAD)" = "$SOURCE_HEAD"
+          set +e
+          python "$ROOT/scripts/verify_current_state.py" --root "$ROOT" > "$OUT/before.txt" 2>&1
+          BEFORE=$?
+          set -e
+          cat "$OUT/before.txt"
+          test "$BEFORE" -ne 0
+          grep -q CURRENT_STATE_DRIFT "$OUT/before.txt"
+          (cd "$PROBE" && python -m unittest -v test_feedback_state) 2>&1 | tee "$OUT/unit-tests.txt"
+          python "$PROBE/prepare_patch.py" "$ROOT" | tee "$OUT/dry-run.json"
+          python "$PROBE/prepare_patch.py" "$ROOT" --apply | tee "$OUT/applied-in-temporary-checkout.json"
+          python "$ROOT/scripts/verify_current_state.py" --root "$ROOT" | tee "$OUT/after.json"
+          (cd "$ROOT" && python scripts/validate_skill.py) 2>&1 | tee "$OUT/native-validation.txt"
+          export ROOT OUT
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          root=Path(os.environ['ROOT']); out=Path(os.environ['OUT'])
+          changed=set(subprocess.check_output(['git','-C',str(root),'diff','--name-only'],text=True).splitlines())
+          expected={'state/project_state.json','state/continuity/LATEST_CHECKPOINT.json','scripts/verify_current_state.py'}
+          if changed != expected: raise RuntimeError('WRITE_SCOPE_MISMATCH: '+repr(changed))
+          diff=subprocess.check_output(['git','-C',str(root),'diff','--binary'])
+          (out/'candidate.patch').write_bytes(diff)
+          report={'task_id':'NOVEL-FEEDBACK-STATE-REAL-VERIFY-20260930-01','source_head':os.environ['SOURCE_HEAD'],'actual_repository_verified':True,'changed_files':sorted(changed),'all_other_tracked_files_unchanged':True,'main_modified':False,'deployed':False,'literary_quality_tested':False,'status':'PASS_REAL_REPOSITORY_REPAIR_VERIFICATION'}
+          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(report,ensure_ascii=False))
+          PY
+      - name: Preserve real logs and candidate diff, even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: novel-feedback-real-verification
+          path: ${{ runner.temp }}/feedback-verification
+          if-no-files-found: error
+          retention-days: 7
