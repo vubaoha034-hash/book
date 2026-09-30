@@ -61,9 +61,33 @@
     "second_version_added": false,
     "verdict": "PASS"
   },
-  "human_quality_verdict": "PENDING_LIU_XIANSHENG_ACTUAL_READING",
-  "state_after": "PHASE427_SINGLE_SCENE_CLEAN_RENDER_FROZEN_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
+  "human_quality_verdict": "REJECT_ROBOTIC_SPEECH_WITH_PARTIAL_QA_IMPROVEMENT",
+  "state_after": "PHASE427_HUMAN_REJECTED_ROBOTIC_SPEECH_QA_PARTIAL_GAIN_PRESERVED",
   "active_task_ids": [],
-  "next_action": "RETURN_EXACT_ONE_PHASE427_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-  "stop": true
+  "next_action": "OPEN_ONE_PHASE428_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR",
+  "stop": true,
+  "human_review": {
+    "recorded_at": "2026-09-30T18:02:59+08:00",
+    "reviewer": "刘先生",
+    "source": "UNIFIED_COMMAND_CURRENT_CHAT",
+    "exact_quote": "小说改进了一问一答。但是还是跟机器人说话一样",
+    "bound_artifact": {
+      "phase": 427,
+      "scene_id": "SP414-S02",
+      "version": "SP414-S02-CLEAN-PROSE-RENDER-V1",
+      "path": "delivery/phase427/10-sp414-s02-clean-prose-render-v1.md",
+      "blob": "46731e3cd8869b5cfc5c30023068ea7566f6c33d"
+    },
+    "verdict": "PARTIAL_IMPROVEMENT_QA_REDUCED_BUT_REJECT_ROBOTIC_SPEECH",
+    "partial_progress": {
+      "question_answer_pattern_improved": true,
+      "robotic_speech_remains": true
+    },
+    "scope_boundary": [
+      "本结论只绑定Phase427唯一SP414-S02 clean render正文。",
+      "『改进了一问一答』是明确局部进步，必须保留，不能回退成旧式连续问答。",
+      "『还是跟机器人说话一样』表示人物语言/互动仍缺真人感，Phase427整体质量未通过。",
+      "本结论不否定《第二套过去》题材核心，不授权全文V5，不允许把局部进步升级为最终PASS。"
+    ]
+  }
 }
