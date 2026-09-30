@@ -7,7 +7,7 @@
   "candidate": "RJ-OE408-I",
   "title": "第二套过去",
   "starting_head": "37e6403feb8e748ca1f364013121c849f73e6c76",
-  "status": "COMPLETED_AWAITING_ACTUAL_HUMAN_READING_NOT_MACHINE_QUALITY_PASS",
+  "status": "HUMAN_REJECTED_SEVERE_AI_SMELL_REGRESSION",
   "execution_boundary": {
     "mode": "CHAT",
     "web_search_used": false,
@@ -51,7 +51,29 @@
     "no_A_surface_mechanism_copy": true
   },
   "machine_final_quality_pass": false,
-  "quality_status": "PENDING_LIU_XIANSHENG_ACTUAL_READING",
-  "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-  "stop": true
+  "quality_status": "HUMAN_REJECTED_SEVERE_AI_SMELL_REGRESSION",
+  "next_action": "OPEN_ONE_PHASE425_BEST_KNOWN_PROSE_ROLLBACK_AND_SP414_S02_REPAIR_TASK; compare Phase424 against durable human-better anchors, identify the concrete lost prose behaviors, then deliver exactly one repaired SP414-S02 scene; no new rule system, no full V5, no best-of-N.",
+  "stop": true,
+  "human_review": {
+    "recorded_date": "2026-09-30",
+    "reviewer": "刘先生",
+    "bound_artifact": {
+      "phase": 424,
+      "task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
+      "version": "SP414-S02-V1",
+      "blob": "6200d891b1585ed9d333e325080227ad78a91e05"
+    },
+    "exact_quote": "这小说ai味道简直没办法看。明明已经解决了。为什么又是这么恶心的味道出来了。",
+    "verdict": "REJECT_SEVERE_AI_SMELL_REGRESSION",
+    "overall_scene_accepted": false,
+    "prose_style_accepted": false,
+    "ai_smell": "SEVERE_UNREADABLE_TO_HUMAN",
+    "regression_claim_by_human": true,
+    "scope_boundary": [
+      "本结论针对 Phase424 / SP414-S02-V1 的实际阅读体验与AI味道。",
+      "不把本次文风否决自动扩大为《第二套过去》题材/核心设定否决。",
+      "不得把机器结构检查通过解释为真人文风通过。",
+      "不得原样重投 Phase424，也不得在未查明已解决能力为何丢失前直接扩写全文V5。"
+    ]
+  }
 }
