@@ -1,8 +1,9 @@
-name: Verify scoped novel feedback repair (no deployment)
+name: Stage exact verified novel feedback patch
 
 on:
   push:
     branches: [verify/novel-feedback-state-20260930-01]
+    paths: [.github/workflows/verify-feedback-state-20260930.yml]
 
 permissions:
   contents: read
@@ -12,59 +13,80 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  verify:
+  stage:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write
     env:
       PYTHONDONTWRITEBYTECODE: '1'
       SOURCE_HEAD: 9c6079d16be04f54f636f1cac47b56c892053226
+      EXPECTED_PATCH_SHA256: 44ca3bca7a1803a5a3a42886b18c231eb7d8528748407efa0e85ba7417e4ec15
+      CANDIDATE_REF: stage/novel-feedback-state-20260930-01
     steps:
-      - name: Check out probe branch without retained credentials
+      - name: Check out verified preparation code without retained credentials
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 2
+          fetch-depth: 0
           persist-credentials: false
-      - name: Verify actual frozen repository, then test proposed repair locally
+      - name: Form an exact three-file candidate; do not write main
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          OUT="$RUNNER_TEMP/feedback-verification"
-          ROOT="$RUNNER_TEMP/novel-source"
+          test "$GITHUB_REPOSITORY" = vubaoha034-hash/book
+          OUT="$RUNNER_TEMP/publication-stage"
+          ROOT="$RUNNER_TEMP/novel-publication"
           PROBE="$GITHUB_WORKSPACE/operations/feedback_state_probe_20260930"
+          export OUT ROOT
           mkdir -p "$OUT"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_HEAD"
+          test -z "$(git ls-remote origin "refs/heads/$CANDIDATE_REF")"
           git worktree add --detach "$ROOT" "$SOURCE_HEAD"
-          test "$(git -C "$ROOT" rev-parse HEAD)" = "$SOURCE_HEAD"
-          set +e
-          python "$ROOT/scripts/verify_current_state.py" --root "$ROOT" > "$OUT/before.txt" 2>&1
-          BEFORE=$?
-          set -e
-          cat "$OUT/before.txt"
-          test "$BEFORE" -ne 0
-          grep -q CURRENT_STATE_DRIFT "$OUT/before.txt"
-          (cd "$PROBE" && python -m unittest -v test_feedback_state) 2>&1 | tee "$OUT/unit-tests.txt"
-          python "$PROBE/prepare_patch.py" "$ROOT" | tee "$OUT/dry-run.json"
-          python "$PROBE/prepare_patch.py" "$ROOT" --apply | tee "$OUT/applied-in-temporary-checkout.json"
-          python "$ROOT/scripts/verify_current_state.py" --root "$ROOT" | tee "$OUT/after.json"
-          (cd "$ROOT" && python scripts/validate_skill.py) 2>&1 | tee "$OUT/native-validation.txt"
-          export ROOT OUT
+          python "$PROBE/prepare_patch.py" "$ROOT" --apply | tee "$OUT/prepared.json"
+          python "$ROOT/scripts/verify_current_state.py" --root "$ROOT" | tee "$OUT/state-check.json"
           python - <<'PY'
-          import json, os, subprocess
+          import hashlib,json,os,subprocess
           from pathlib import Path
           root=Path(os.environ['ROOT']); out=Path(os.environ['OUT'])
-          changed=set(subprocess.check_output(['git','-C',str(root),'diff','--name-only'],text=True).splitlines())
-          expected={'state/project_state.json','state/continuity/LATEST_CHECKPOINT.json','scripts/verify_current_state.py'}
-          if changed != expected: raise RuntimeError('WRITE_SCOPE_MISMATCH: '+repr(changed))
-          diff=subprocess.check_output(['git','-C',str(root),'diff','--binary'])
-          (out/'candidate.patch').write_bytes(diff)
-          report={'task_id':'NOVEL-FEEDBACK-STATE-REAL-VERIFY-20260930-01','source_head':os.environ['SOURCE_HEAD'],'actual_repository_verified':True,'changed_files':sorted(changed),'all_other_tracked_files_unchanged':True,'main_modified':False,'deployed':False,'literary_quality_tested':False,'status':'PASS_REAL_REPOSITORY_REPAIR_VERIFICATION'}
-          (out/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          names=set(subprocess.check_output(['git','-C',str(root),'diff','--name-only'],text=True).splitlines())
+          allowed={'scripts/verify_current_state.py','state/project_state.json','state/continuity/LATEST_CHECKPOINT.json'}
+          assert names==allowed, ('WRITE_SCOPE_MISMATCH', names)
+          patch=subprocess.check_output(['git','-C',str(root),'-c','core.abbrev=7','diff','--binary','--no-ext-diff'])
+          digest=hashlib.sha256(patch).hexdigest()
+          assert digest==os.environ['EXPECTED_PATCH_SHA256'], ('VERIFIED_PATCH_MISMATCH',digest)
+          (out/'candidate.patch').write_bytes(patch)
+          print('EXACT_VERIFIED_PATCH_MATCH: '+digest)
+          PY
+          git -C "$ROOT" add -- scripts/verify_current_state.py state/project_state.json state/continuity/LATEST_CHECKPOINT.json
+          git -C "$ROOT" -c user.name='Unified Command' -c user.email='vubaoha034-hash@users.noreply.github.com' commit -m 'fix: publish verified novel feedback-state repair without changing prose' -m 'Scope: exactly three state/validator files. Reuses successful real-repository verification run 36663665602 and exact patch SHA256 44ca3bca7a1803a5a3a42886b18c231eb7d8528748407efa0e85ba7417e4ec15. Preserves all original manuscripts and historical human verdicts. Engineering state repair only; no literary-quality acceptance and no new prose authorization.'
+          COMMIT="$(git -C "$ROOT" rev-parse HEAD)"
+          export COMMIT
+          test "$(git -C "$ROOT" rev-parse HEAD^)" = "$SOURCE_HEAD"
+          test -z "$(git -C "$ROOT" status --porcelain)"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_HEAD"
+          AUTH="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          echo "::add-mask::$AUTH"
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH" push --porcelain origin "$COMMIT:refs/heads/$CANDIDATE_REF"
+          unset AUTH GH_TOKEN
+          test "$(git ls-remote origin "refs/heads/$CANDIDATE_REF" | cut -f1)" = "$COMMIT"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_HEAD"
+          python - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          root=Path(os.environ['ROOT']); out=Path(os.environ['OUT'])
+          def git(*args):return subprocess.check_output(['git','-C',str(root),*args],text=True).strip()
+          files=['scripts/verify_current_state.py','state/project_state.json','state/continuity/LATEST_CHECKPOINT.json']
+          report={'task_id':'NOVEL-FEEDBACK-STATE-PUBLISH-20260930-01','stage':'candidate_ready','source_head':os.environ['SOURCE_HEAD'],'candidate_head':os.environ['COMMIT'],'candidate_ref':os.environ['CANDIDATE_REF'],'candidate_tree':git('rev-parse','HEAD^{tree}'),'exact_verified_patch_sha256':os.environ['EXPECTED_PATCH_SHA256'],'changed_files':files,'blobs':{p:git('rev-parse','HEAD:'+p) for p in files},'other_tracked_files_unchanged':True,'main_modified':False,'literary_quality_tested':False,'new_prose_authorized':False}
+          (out/'stage-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
           print(json.dumps(report,ensure_ascii=False))
           PY
-      - name: Preserve real logs and candidate diff, even on failure
+      - name: Preserve publication candidate evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: novel-feedback-real-verification
-          path: ${{ runner.temp }}/feedback-verification
+          name: novel-feedback-publication-stage
+          path: ${{ runner.temp }}/publication-stage
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 30
