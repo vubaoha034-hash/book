@@ -1,0 +1,160 @@
+{
+  "schema_version": "phase426-no-dialogue-emotional-event-causality-task-receipt/v1",
+  "record_kind": "COMBINED_TASK_RECEIPT",
+  "task_id": "PHASE426-RJ-OE408-I-SP414-S02-NO-DIALOGUE-EMOTIONAL-EVENT-CAUSALITY-01",
+  "project_id": "novel-distillation",
+  "phase": 426,
+  "candidate": "RJ-OE408-I",
+  "work": "第二套过去",
+  "starting_head": "273e770dfccb473468210b09c9c6263d01328110",
+  "mode": "CHAT_EXTREME_HIGH",
+  "execution_boundary": {
+    "web_search_used": false,
+    "codex_used": false,
+    "work_mode_used": false,
+    "prose_generated": false,
+    "dialogue_generated": false,
+    "trace_count": 1,
+    "second_trace_generated": false,
+    "best_of_n_used": false,
+    "full_v5_touched": false,
+    "new_rule_gate_validator_created": false
+  },
+  "authoritative_precondition": {
+    "phase425_human_verdict": "REJECT_NO_CONTINUE_DESIRE_AI_PING_PONG_DIALOGUE_NO_EMOTIONAL_PROPULSION",
+    "topic_core_rejected": false,
+    "required_architecture": "NO_DIALOGUE_EVENT_CAUSALITY_BEFORE_ANY_NEW_PROSE"
+  },
+  "sources_actually_read": [
+    {
+      "role": "latest_checkpoint",
+      "ref": "main@273e770dfccb473468210b09c9c6263d01328110",
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "941760d0da4646bd9a922777e23100df52c6fffc"
+    },
+    {
+      "role": "phase425_receipt_with_human_rejection_and_verified_root_cause",
+      "ref": "main@273e770dfccb473468210b09c9c6263d01328110",
+      "path": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
+      "blob": "93edbb0a6949f0609eab11e5257a7e100d603e7f"
+    },
+    {
+      "role": "frozen_scene_plan",
+      "ref": "main@273e770dfccb473468210b09c9c6263d01328110",
+      "path": "delivery/phase414/05-scene-plan.md",
+      "blob": "decfa4159b9428633d5d20f1b8e4c17f0f43750a",
+      "section": "SP414-S02"
+    },
+    {
+      "role": "frozen_character_and_continuity_state",
+      "ref": "main@273e770dfccb473468210b09c9c6263d01328110",
+      "path": "delivery/phase413/04-character-and-continuity-state.md",
+      "blob": "082b50ed66237efb0a4829580a695f65f2145434"
+    },
+    {
+      "role": "phase396_silent_scene_pipeline_contract",
+      "ref": "novel-distill-v1",
+      "path": "state/tasks/PHASE396_SILENT_SCENE_SIMULATION_TO_PROSE_PIPELINE_V1.json",
+      "blob": "d23794ec95083361c3fe451d77a1fb7626ed52f5"
+    },
+    {
+      "role": "phase396_silent_scene_trace_reference",
+      "ref": "novel-distill-v1",
+      "path": "state/simulations/PHASE396_YMGQ_SILENT_SCENE_TRACE_A1.json",
+      "blob": "c76c95c6a877c946aba8a544359dc129988874e6"
+    },
+    {
+      "role": "phase396_clean_renderer_path_and_positive_prose_anchor_container",
+      "ref": "novel-distill-v1",
+      "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+      "blob": "fafe06be8416de0024bae0e9b85063e5275b35d0"
+    },
+    {
+      "role": "phase396_actual_human_receipt",
+      "ref": "novel-distill-v1",
+      "path": "state/review_receipts/PHASE396_ACTUAL_HUMAN_VERDICT_H1_V1.json",
+      "blob": "9d064793c59f6712a18b7022c94e4a8bd6d2e52d",
+      "bounded_result": {
+        "mechanical_dialogue": "RESOLVED_ON_CANDIDATE",
+        "ai_smell": "LIGHT",
+        "forward_desire": "FAIL",
+        "global_solution_claimed": false
+      }
+    },
+    {
+      "role": "phase363_actual_human_positive_prose_engine_receipt",
+      "ref": "novel-distill-v1",
+      "path": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
+      "blob": "67e589933ad5b2467301d7a37122cf9b81f7d989",
+      "bounded_result": {
+        "direction": "MATERIAL_IMPROVEMENT_ACCEPTED_FOR_SCALE",
+        "question_answer_interview_cadence_default": false,
+        "final_freeze": false,
+        "architecture_promotion": false
+      }
+    }
+  ],
+  "output": {
+    "verdict": "READY_FOR_CLEAN_PROSE_RENDER",
+    "trace": {
+      "path": "state/simulations/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_TRACE_V1.json",
+      "blob": "284e4143307273d128a47964d3451f892cbf2c54",
+      "count": 1
+    }
+  },
+  "structural_basis": [
+    "双方各自的压力与保护对象均被绑定到会改变对方权限或成本的可观察行动。",
+    "轨迹包含四个明确因果变化，超过最低三次要求。",
+    "关系推进由材料控制权、核验便利、私人协助范围和现实承担边界的连续变化产生，不依赖对白解释。",
+    "遮掉制度与证据名词后，仍能看到一方试图取得全部控制、另一方拒绝、第一方承担变慢成本、第二方有限开放、第一方自保选择仍未接走对方负担、第二方撤回便利、第一方接受边界并继续独立行动的关系链。",
+    "轨迹不依赖追杀、事故、疾病、新关键人物或其他重大外部事件。"
+  ],
+  "continuity_result": {
+    "core_premise_changed": false,
+    "dual_history_changed": false,
+    "ending_changed": false,
+    "relationship_endpoint_changed": false,
+    "new_major_story_fact_added": false,
+    "new_world_rule_added": false,
+    "xucheng_demands_memory_or_old_intimacy": false,
+    "luojun_assumes_joint_responsibility_early": false,
+    "independent_verification_path_preserved": true,
+    "due_pressure_inside_30_day_window_preserved": true,
+    "verification_not_equal_assumption_preserved": true,
+    "xucheng_not_infinite_evidence_source_preserved": true
+  },
+  "authenticity_test_result": {
+    "masked_institution_and_evidence_nouns": "PASS",
+    "no_dialogue": "PASS",
+    "direct_speech_count": 0,
+    "paraphrased_speech_count": 0,
+    "handoff_check_leave_only": "FALSE",
+    "structurally_underpowered": false
+  },
+  "clean_writer_successor_contract": {
+    "writer_must_be_separate_context": true,
+    "allowed_writer_visible_material": [
+      "固定故事事实的最小投影",
+      "罗钧与许澄必要人物状态的最小投影",
+      "Phase426 已冻结 event trace",
+      "Phase363 真人正向成文锚点的 prose 内容本身",
+      "Phase396 真人正向 prose 候选与其保存的历史正向成文锚点内容本身"
+    ],
+    "forbidden_writer_visible_material": [
+      "Phase422 失败稿与失败诊断",
+      "Phase423 回退诊断",
+      "Phase424 失败场景、任务与回执",
+      "Phase425 失败场景、任务与回执",
+      "用户关于 AI 味、一问一答、无情感、无继续读欲的反馈",
+      "anti-AI checklist、去 AI 规则、line-editor 清单",
+      "任何 validator 或 gate 的答案",
+      "Phase426 的结构判定过程、失败根因分析与 coordinator 诊断"
+    ],
+    "evaluator_order": "PROSE_FREEZE_FIRST_EVALUATOR_DIAGNOSTICS_AFTER",
+    "prose_attempt_count_allowed": 1,
+    "second_candidate_allowed": false,
+    "best_of_n_allowed": false
+  },
+  "next_required_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE",
+  "stop": true
+}
