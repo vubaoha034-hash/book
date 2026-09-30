@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 147,
-  "recorded_at": "2026-09-30T18:02:59+08:00",
+  "sequence": 148,
+  "recorded_at": "2026-09-30T18:07:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase427真人阅读已完成：一问一答模式有明确改善，但人物说话仍像机器人。局部进步保留，Phase427整体不通过。下一唯一动作是对同一SP414-S02做一次有界的人物说话/关系在场修复，不扩全文。",
+  "current_focus": "Phase428 已对同一 SP414-S02 交付 exactly 1 个“人物说话/关系在场”修复版本；Phase427 的一问一答局部进步明确保留，Q&A regression=false。机器不宣称最终文学PASS，当前只等待刘先生对这一唯一正文实际阅读。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -450,7 +450,8 @@
     "Phase425 actual-human verdict: repaired SP414-S02 rejected; dialogue remains AI ping-pong, continue desire absent, emotional propulsion absent.",
     "Phase426 exactly-one no-dialogue emotional-event causal trace frozen; four causal relationship/permission changes survive removal of dialogue and institutional nouns; verdict READY_FOR_CLEAN_PROSE_RENDER.",
     "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
-    "Phase427 actual-human reading completed: Q&A pattern improved, but speech still feels robotic; partial gain preserved, overall candidate rejected."
+    "Phase427 actual-human reading completed: Q&A pattern improved, but speech still feels robotic; partial gain preserved, overall candidate rejected.",
+    "Phase428 exactly one SP414-S02 human-speech/relational-presence repair delivered; Phase427 Q&A partial gain preserved with Q&A regression=false; final literary quality remains pending actual Liu Xiansheng reading"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1488,7 +1489,7 @@
       "blob": "2224c37b9332f54c8f5c9f24c5ed91aff6e1090a"
     }
   ],
-  "status": "PHASE427_ACTUAL_HUMAN_REJECTED_ROBOTIC_SPEECH_QA_PARTIAL_GAIN_PRESERVED",
+  "status": "PHASE428_EXACTLY_ONE_REPAIR_DELIVERED_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
@@ -1549,7 +1550,7 @@
   },
   "active_task_contract": null,
   "last_completed_task_contract": "state/review_receipts/PHASE427_RJ_OE408_I_SP414_S02_CLEAN_PROSE_RENDER_V1.json",
-  "next_action": "OPEN_ONE_PHASE428_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR",
+  "next_action": "RETURN_EXACT_ONE_PHASE428_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
   "human_verdict_receipt": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
   "current_human_gate": "AWAIT_LIU_XIANSHENG_ACTUAL_READING_PHASE427_SP414_S02",
   "phase422_state": {
@@ -1792,5 +1793,6 @@
     "human_feedback_exact": "小说改进了一问一答。但是还是跟机器人说话一样",
     "question_answer_pattern_improved": true,
     "robotic_speech_remains": true
-  }
+  },
+  "stop": true
 }
