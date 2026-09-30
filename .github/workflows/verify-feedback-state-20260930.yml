@@ -1,4 +1,4 @@
-name: Stage exact verified novel feedback patch
+name: Verify published novel feedback-state repair
 
 on:
   push:
@@ -13,80 +13,69 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  stage:
+  verify_published:
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    permissions:
-      contents: write
     env:
       PYTHONDONTWRITEBYTECODE: '1'
       SOURCE_HEAD: 9c6079d16be04f54f636f1cac47b56c892053226
+      DEPLOYED_HEAD: 4e22965e31629d2960b5c955b6ac6ff585c44e73
       EXPECTED_PATCH_SHA256: 44ca3bca7a1803a5a3a42886b18c231eb7d8528748407efa0e85ba7417e4ec15
-      CANDIDATE_REF: stage/novel-feedback-state-20260930-01
     steps:
-      - name: Check out verified preparation code without retained credentials
+      - name: Read actual published commit without retained credentials
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          fetch-depth: 0
+          ref: 4e22965e31629d2960b5c955b6ac6ff585c44e73
+          fetch-depth: 2
           persist-credentials: false
-      - name: Form an exact three-file candidate; do not write main
+      - name: Verify publication identity, current state and unchanged source artifacts
         shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           test "$GITHUB_REPOSITORY" = vubaoha034-hash/book
-          OUT="$RUNNER_TEMP/publication-stage"
-          ROOT="$RUNNER_TEMP/novel-publication"
-          PROBE="$GITHUB_WORKSPACE/operations/feedback_state_probe_20260930"
-          export OUT ROOT
+          OUT="$RUNNER_TEMP/published-verification"
+          export OUT
           mkdir -p "$OUT"
-          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_HEAD"
-          test -z "$(git ls-remote origin "refs/heads/$CANDIDATE_REF")"
-          git worktree add --detach "$ROOT" "$SOURCE_HEAD"
-          python "$PROBE/prepare_patch.py" "$ROOT" --apply | tee "$OUT/prepared.json"
-          python "$ROOT/scripts/verify_current_state.py" --root "$ROOT" | tee "$OUT/state-check.json"
+          test "$(git rev-parse HEAD)" = "$DEPLOYED_HEAD"
+          test "$(git rev-parse HEAD^)" = "$SOURCE_HEAD"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$DEPLOYED_HEAD"
+          python scripts/verify_current_state.py --root "$GITHUB_WORKSPACE" | tee "$OUT/published-state-check.json"
+          python scripts/validate_skill.py | tee "$OUT/native-structure-check.txt"
           python - <<'PY'
           import hashlib,json,os,subprocess
           from pathlib import Path
-          root=Path(os.environ['ROOT']); out=Path(os.environ['OUT'])
-          names=set(subprocess.check_output(['git','-C',str(root),'diff','--name-only'],text=True).splitlines())
-          allowed={'scripts/verify_current_state.py','state/project_state.json','state/continuity/LATEST_CHECKPOINT.json'}
-          assert names==allowed, ('WRITE_SCOPE_MISMATCH', names)
-          patch=subprocess.check_output(['git','-C',str(root),'-c','core.abbrev=7','diff','--binary','--no-ext-diff'])
+          root=Path(os.environ['GITHUB_WORKSPACE']); out=Path(os.environ['OUT'])
+          base=os.environ['SOURCE_HEAD']; deployed=os.environ['DEPLOYED_HEAD']
+          def git(*args):return subprocess.check_output(['git',*args],text=True).strip()
+          names=set(git('diff','--name-only',base,deployed).splitlines())
+          expected={'scripts/verify_current_state.py','state/project_state.json','state/continuity/LATEST_CHECKPOINT.json'}
+          assert names==expected, ('WRITE_SCOPE_MISMATCH',names)
+          patch=subprocess.check_output(['git','-c','core.abbrev=7','diff','--binary','--no-ext-diff',base,deployed])
           digest=hashlib.sha256(patch).hexdigest()
-          assert digest==os.environ['EXPECTED_PATCH_SHA256'], ('VERIFIED_PATCH_MISMATCH',digest)
-          (out/'candidate.patch').write_bytes(patch)
-          print('EXACT_VERIFIED_PATCH_MATCH: '+digest)
-          PY
-          git -C "$ROOT" add -- scripts/verify_current_state.py state/project_state.json state/continuity/LATEST_CHECKPOINT.json
-          git -C "$ROOT" -c user.name='Unified Command' -c user.email='vubaoha034-hash@users.noreply.github.com' commit -m 'fix: publish verified novel feedback-state repair without changing prose' -m 'Scope: exactly three state/validator files. Reuses successful real-repository verification run 36663665602 and exact patch SHA256 44ca3bca7a1803a5a3a42886b18c231eb7d8528748407efa0e85ba7417e4ec15. Preserves all original manuscripts and historical human verdicts. Engineering state repair only; no literary-quality acceptance and no new prose authorization.'
-          COMMIT="$(git -C "$ROOT" rev-parse HEAD)"
-          export COMMIT
-          test "$(git -C "$ROOT" rev-parse HEAD^)" = "$SOURCE_HEAD"
-          test -z "$(git -C "$ROOT" status --porcelain)"
-          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_HEAD"
-          AUTH="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
-          echo "::add-mask::$AUTH"
-          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $AUTH" push --porcelain origin "$COMMIT:refs/heads/$CANDIDATE_REF"
-          unset AUTH GH_TOKEN
-          test "$(git ls-remote origin "refs/heads/$CANDIDATE_REF" | cut -f1)" = "$COMMIT"
-          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_HEAD"
-          python - <<'PY'
-          import json,os,subprocess
-          from pathlib import Path
-          root=Path(os.environ['ROOT']); out=Path(os.environ['OUT'])
-          def git(*args):return subprocess.check_output(['git','-C',str(root),*args],text=True).strip()
-          files=['scripts/verify_current_state.py','state/project_state.json','state/continuity/LATEST_CHECKPOINT.json']
-          report={'task_id':'NOVEL-FEEDBACK-STATE-PUBLISH-20260930-01','stage':'candidate_ready','source_head':os.environ['SOURCE_HEAD'],'candidate_head':os.environ['COMMIT'],'candidate_ref':os.environ['CANDIDATE_REF'],'candidate_tree':git('rev-parse','HEAD^{tree}'),'exact_verified_patch_sha256':os.environ['EXPECTED_PATCH_SHA256'],'changed_files':files,'blobs':{p:git('rev-parse','HEAD:'+p) for p in files},'other_tracked_files_unchanged':True,'main_modified':False,'literary_quality_tested':False,'new_prose_authorized':False}
-          (out/'stage-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+          assert digest==os.environ['EXPECTED_PATCH_SHA256'], ('PUBLISHED_PATCH_MISMATCH',digest)
+          (out/'published.patch').write_bytes(patch)
+          protected=['delivery/phase421/final.md','delivery/phase422/06-draft-v4.md','delivery/phase422/07-opening-scene-trial-after-v4.md','state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json','START_HERE.md','AGENTS.md']
+          original_blobs={p:git('rev-parse',base+':'+p) for p in protected}
+          deployed_blobs={p:git('rev-parse',deployed+':'+p) for p in protected}
+          assert original_blobs==deployed_blobs, 'PROTECTED_ARTIFACT_CHANGED'
+          project=json.loads((root/'state/project_state.json').read_text())
+          cp=json.loads((root/'state/continuity/LATEST_CHECKPOINT.json').read_text())
+          check=json.loads((out/'published-state-check.json').read_text())
+          assert check['checks_passed']==23 and check['sequence']==138
+          assert check['literary_quality_tested'] is False and check['new_prose_authorized'] is False
+          assert not git('status','--porcelain'), 'VERIFICATION_MODIFIED_WORKTREE'
+          assert git('ls-remote','origin','refs/heads/main').split()[0]==deployed, 'MAIN_MOVED_DURING_VERIFICATION'
+          report={'task_id':'NOVEL-FEEDBACK-STATE-PUBLISH-20260930-01','status':'PASS_PUBLISHED_EXACT_THREE_FILE_PATCH','deployed':True,'repository':'vubaoha034-hash/book','branch':'main','previous_head':base,'published_head':deployed,'source_commit_count':1,'verified_patch_sha256':digest,'changed_files':sorted(names),'published_blobs':{p:git('rev-parse',deployed+':'+p) for p in sorted(names)},'protected_artifact_blobs':deployed_blobs,'all_other_tracked_files_unchanged':True,'state_checks_passed':check['checks_passed'],'checkpoint_sequence':cp['sequence'],'current_trial_verdict':project['phase422_state']['opening_trial']['human_style_verdict'],'current_human_gate':project['opening_trial_human_gate'],'next_action':check['next_action'],'new_prose_authorized':False,'literary_quality_tested':False,'verification_permissions':'contents:read','verification_writes_to_repository':False,'prior_real_verification_run':36663665602,'publication_stage_run':36664506268}
+          (out/'publication-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
           print(json.dumps(report,ensure_ascii=False))
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
+              summary.write('## 小说反馈状态修复已发布并读回通过\n\n主分支：`'+deployed+'`。正式变更恰好3个文件、1个提交。已测试补丁逐字一致；23项当前状态检查通过；原有正文与历史人审回执未改。\n\n此结果仅证明本次反馈状态修复，不证明文学质量提高、全局防退步完成或授权新稿。\n')
           PY
-      - name: Preserve publication candidate evidence
+      - name: Preserve publication readback receipt
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: novel-feedback-publication-stage
-          path: ${{ runner.temp }}/publication-stage
+          name: novel-feedback-published-verification
+          path: ${{ runner.temp }}/published-verification
           if-no-files-found: error
           retention-days: 30
