@@ -7,7 +7,7 @@
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase422 V4 remains human rejected. One new opening scene trial is frozen for actual human reading; Phase363 scene mechanism and Phase370 clarity-only basis do not imply full V5 or quality pass.",
+  "current_focus": "The single post-V4 opening scene trial was actually read and rejected: dialogue feels emotionless and robotic, repeating a failure pattern the project had already corrected many times. Do not continue this prose route or expand to full V5.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -686,7 +686,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_OPENING_SCENE_TRIAL_NO_FULL_V5",
+  "next_required_action": "STOP_CURRENT_OPENING_TRIAL. Before any new prose, compare against previously human-accepted emotionally alive dialogue/scene spans and identify the concrete regression that removed emotional subtext; only then define one bounded successor. No full V5 and no second trial automatically.",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1439,7 +1439,7 @@
       "blob": "a605fd25adb97b361fb833be8d3866bb69e2fcad"
     }
   ],
-  "status": "V4 真人文风严重不通过；不再等待同一稿审核",
+  "status": "Phase422 V4 and post-V4 opening trial both human rejected; topic preserved, current prose route failed",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
@@ -1556,5 +1556,15 @@
       "new_core_story_fact_count": 0
     }
   },
-  "opening_trial_human_gate": "PENDING_ACTUAL_HUMAN_READING"
+  "opening_trial_human_gate": "PENDING_ACTUAL_HUMAN_READING",
+  "actual_human_opening_trial_verdict_20260930": {
+    "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
+    "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
+    "artifact": "delivery/phase422/07-opening-scene-trial-after-v4.md",
+    "artifact_blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
+    "topic_premise_preserved": true,
+    "final_quality_accepted": false,
+    "same_trial_must_not_be_resubmitted": true,
+    "automatic_full_v5_authorized": false
+  }
 }
