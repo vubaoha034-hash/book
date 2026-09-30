@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 140,
+  "sequence": 141,
   "recorded_at": "2026-09-30T13:49:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "Phase424 produced exactly one SP414-S02 relational-pressure scene. Return this exact candidate to 刘先生 for actual reading; no second scene/version, no best-of-N, and no full V5.",
+  "current_focus": "刘先生明确判定 Phase424 / SP414-S02-V1『AI味道简直没办法看』，并指出此前已经解决过却再次回退。当前重点不是继续扩写，而是恢复已存在的较好 prose 能力并修复同一场景，禁止把题材本身误判为被否决。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -444,7 +444,8 @@
     "Phase422 V4 actual-human severe AI-smell rejection recorded; topic preserved, same V4 resubmission closed.",
     "Phase422 V4 failure basis corrected: Phase363 scene mechanism positive; Phase370 clarity-only, AI smell unchanged; bounded opening trial scoped, no full V5",
     "Phase423 completed one real-text A/B regression diagnosis and defined exactly one bounded SP414-S02 writing successor; no prose generated and no full V5 authorized.",
-    "Phase424 completed exactly one SP414-S02 scene with bounded independent-verification/limited-cooperation state change; machine did not issue final quality PASS."
+    "Phase424 completed exactly one SP414-S02 scene with bounded independent-verification/limited-cooperation state change; machine did not issue final quality PASS.",
+    "Phase424 actual-human verdict: SP414-S02-V1 rejected for severe AI-smell regression; prior improvement is considered lost/regressed; same scene must not be resubmitted unchanged."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -688,7 +689,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "next_required_action": "OPEN_ONE_PHASE425_BEST_KNOWN_PROSE_ROLLBACK_AND_SP414_S02_REPAIR_TASK",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1461,7 +1462,7 @@
       "blob": "8b14c2402b9fa4b7b58a15272ff75960ac0b0c79"
     }
   ],
-  "status": "Phase424 exactly-one SP414-S02 scene completed; awaiting 刘先生 actual reading; no machine final quality PASS",
+  "status": "Phase424 SP414-S02-V1 human rejected for severe AI-smell regression; exact scene closed; no machine quality pass",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
@@ -1645,5 +1646,15 @@
     "machine_final_quality_pass": false,
     "human_reading_required": true,
     "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
+  },
+  "latest_human_review": {
+    "recorded_date": "2026-09-30",
+    "bound_phase": 424,
+    "bound_version": "SP414-S02-V1",
+    "bound_blob": "6200d891b1585ed9d333e325080227ad78a91e05",
+    "exact_quote": "这小说ai味道简直没办法看。明明已经解决了。为什么又是这么恶心的味道出来了。",
+    "verdict": "REJECT_SEVERE_AI_SMELL_REGRESSION",
+    "topic_rejection": false,
+    "full_v5_authorized": false
   }
 }
