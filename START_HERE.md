@@ -10,6 +10,8 @@ Phase423 已完成一次真实正文对照诊断，durable receipt 为 `state/re
 
 本轮定位的具体回退是：B 重新把人物变成谜题/制度信息接口——对白主要顺序确认事实，动作多为信息承载或情绪伴奏，人物各自要保住的利益与边界很少互相卡住，因此关系、行动权限与风险没有随着每个节拍被持续改写；A 的局部有效处来自目标冲突、由压力触发的后果性动作、人物不完全配合以及信息先通过行为后果暴露，而不是来自追杀、箭、刀、木牌等表面高强度元素。
 
-唯一下一动作：下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。 该 successor 只测试罗钧/许澄从“陌生主张者 ↔ 防御性被追索者”变成“有限合作但责任边界冲突仍在”的场景能力；不得写全文 V5，不得自动扩写。
+Phase424 已完成 exactly 1 个 SP414-S02 单场景候选，原件为 `delivery/phase424/08-sp414-s02-first-xucheng-relational-pressure-scene-v1.md`，版本 `SP414-S02-V1`；durable task 为 `state/tasks/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json`，执行回执为 `state/review_receipts/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json`。本轮没有第二场景、第二版本、best-of-N 或全文 V5，也没有机器最终文学质量 PASS。该候选现在只等待刘先生真人阅读。
+
+唯一下一动作：`RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING`。在真人回执前，不得生成第二候选、第二场景或全文 V5。
 
 本入口只定位当前事实。它不代表小说质量通过，也不代替真人审美验收。

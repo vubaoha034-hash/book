@@ -1,0 +1,57 @@
+{
+  "schema_version": "phase424-rj-oe408-i-first-xucheng-relational-pressure-scene-receipt/v1",
+  "receipt_id": "PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1",
+  "task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
+  "project_id": "novel-distillation",
+  "phase": 424,
+  "candidate": "RJ-OE408-I",
+  "title": "第二套过去",
+  "starting_head": "37e6403feb8e748ca1f364013121c849f73e6c76",
+  "status": "COMPLETED_AWAITING_ACTUAL_HUMAN_READING_NOT_MACHINE_QUALITY_PASS",
+  "execution_boundary": {
+    "mode": "CHAT",
+    "web_search_used": false,
+    "codex_used": false,
+    "work_mode_used": false,
+    "scene_count": 1,
+    "version_count": 1,
+    "second_scene_generated": false,
+    "second_version_generated": false,
+    "best_of_n_used": false,
+    "full_v5_generated": false
+  },
+  "frozen_sources": {
+    "phase414_scene_plan": "delivery/phase414/05-scene-plan.md#SP414-S02",
+    "phase423_regression_diagnosis": "state/review_receipts/PHASE423_RJ_OE408_I_EMOTIONAL_PROSE_REGRESSION_DIAGNOSIS_V1.json",
+    "phase413_character_state": "delivery/phase413/04-character-and-continuity-state.md"
+  },
+  "output": {
+    "path": "delivery/phase424/08-sp414-s02-first-xucheng-relational-pressure-scene-v1.md",
+    "version": "SP414-S02-V1",
+    "blob": "6200d891b1585ed9d333e325080227ad78a91e05",
+    "count": 1
+  },
+  "durable_task": {
+    "path": "state/tasks/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+    "blob": "0d3ed32d993d74421138bca51542f5c5de171d62",
+    "count": 1
+  },
+  "bounded_checks": {
+    "required_relationship_change_embedded_by_choices_not_summary": true,
+    "luojun_independent_verification_path_obtained": true,
+    "luojun_still_refuses_responsibility_recognition": true,
+    "xucheng_cooperation_limited_and_bounded": true,
+    "xucheng_does_not_request_memory_or_old_intimacy": true,
+    "no_second_scene": true,
+    "no_second_version": true,
+    "no_new_core_story_fact": true,
+    "no_new_world_rule": true,
+    "no_new_character": true,
+    "no_external_high_intensity_danger": true,
+    "no_A_surface_mechanism_copy": true
+  },
+  "machine_final_quality_pass": false,
+  "quality_status": "PENDING_LIU_XIANSHENG_ACTUAL_READING",
+  "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "stop": true
+}

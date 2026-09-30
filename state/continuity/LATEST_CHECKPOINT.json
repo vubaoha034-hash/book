@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 139,
-  "recorded_at": "2026-09-30T13:05:00+08:00",
+  "sequence": 140,
+  "recorded_at": "2026-09-30T13:49:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "The regression is now localized: the failed opening makes characters function as information interfaces, while the positive local reference advances through conflicting interests, consequential actions and relationship-state changes. Restore those capabilities in exactly one SP414-S02 scene.",
+  "current_focus": "Phase424 produced exactly one SP414-S02 relational-pressure scene. Return this exact candidate to 刘先生 for actual reading; no second scene/version, no best-of-N, and no full V5.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -443,7 +443,8 @@
     "Phase421 machine verdict READY_FOR_ACTUAL_HUMAN_FINAL_READ; actual-human acceptance remains pending 刘先生 reading.",
     "Phase422 V4 actual-human severe AI-smell rejection recorded; topic preserved, same V4 resubmission closed.",
     "Phase422 V4 failure basis corrected: Phase363 scene mechanism positive; Phase370 clarity-only, AI smell unchanged; bounded opening trial scoped, no full V5",
-    "Phase423 completed one real-text A/B regression diagnosis and defined exactly one bounded SP414-S02 writing successor; no prose generated and no full V5 authorized."
+    "Phase423 completed one real-text A/B regression diagnosis and defined exactly one bounded SP414-S02 writing successor; no prose generated and no full V5 authorized.",
+    "Phase424 completed exactly one SP414-S02 scene with bounded independent-verification/limited-cooperation state change; machine did not issue final quality PASS."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -687,7 +688,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。",
+  "next_required_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1443,16 +1444,31 @@
       "path": "state/review_receipts/PHASE423_RJ_OE408_I_EMOTIONAL_PROSE_REGRESSION_DIAGNOSIS_V1.json",
       "role": "Phase423 emotional-prose regression diagnosis/receipt with exactly one bounded SP414-S02 successor contract",
       "blob": "7b7d45a7329d9b9293d2fc9729d32770676fdbc0"
+    },
+    {
+      "path": "delivery/phase424/08-sp414-s02-first-xucheng-relational-pressure-scene-v1.md",
+      "role": "Phase424 exactly-one SP414-S02 prose candidate awaiting actual-human reading",
+      "blob": "6200d891b1585ed9d333e325080227ad78a91e05"
+    },
+    {
+      "path": "state/tasks/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+      "role": "Phase424 bounded single-scene task record",
+      "blob": "0d3ed32d993d74421138bca51542f5c5de171d62"
+    },
+    {
+      "path": "state/review_receipts/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+      "role": "Phase424 execution receipt; human quality verdict pending",
+      "blob": "8b14c2402b9fa4b7b58a15272ff75960ac0b0c79"
     }
   ],
-  "status": "Phase423 emotional-prose regression diagnosis completed from exact A/B texts; one SP414-S02 successor defined; no prose generated",
+  "status": "Phase424 exactly-one SP414-S02 scene completed; awaiting 刘先生 actual reading; no machine final quality PASS",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
+  "last_completed_task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "a39215b7b31e214a0fc7a814103b497bacf9cb53ba2437998fe2a47422828875",
+    "project_state_sha256": "154ca09d262fbb459140c84e36d3e971f018b168b9bda48aa56393c0985ef6cb",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1495,16 +1511,17 @@
       "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
       "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
       "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
-      "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01"
+      "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
+      "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-  "next_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。",
+  "last_completed_task_contract": "state/tasks/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+  "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
   "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
-  "current_human_gate": "SETTLED_FAIL_SEVERE_AI_SMELL",
+  "current_human_gate": "AWAITING_ACTUAL_HUMAN_SP414_S02_SCENE_READING",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -1606,5 +1623,27 @@
     "full_v5_authorized": false,
     "second_trial_authorized": false,
     "next_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。"
+  },
+  "phase424_state": {
+    "status": "COMPLETED_SINGLE_SCENE_AWAITING_ACTUAL_HUMAN_READING",
+    "task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
+    "starting_head": "37e6403feb8e748ca1f364013121c849f73e6c76",
+    "scene": {
+      "path": "delivery/phase424/08-sp414-s02-first-xucheng-relational-pressure-scene-v1.md",
+      "blob": "6200d891b1585ed9d333e325080227ad78a91e05",
+      "version": "SP414-S02-V1",
+      "count": 1
+    },
+    "task_record": {
+      "path": "state/tasks/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+      "blob": "0d3ed32d993d74421138bca51542f5c5de171d62"
+    },
+    "receipt": {
+      "path": "state/review_receipts/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+      "blob": "8b14c2402b9fa4b7b58a15272ff75960ac0b0c79"
+    },
+    "machine_final_quality_pass": false,
+    "human_reading_required": true,
+    "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
   }
 }
