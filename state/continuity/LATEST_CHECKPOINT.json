@@ -1,13 +1,13 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 145,
-  "recorded_at": "2026-09-30T17:03:00+08:00",
+  "sequence": 146,
+  "recorded_at": "2026-09-30T17:48:00+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [],
-  "current_focus": "SP414-S02 now has one frozen action-consequence relationship trace with four causal changes. The only legal successor is one separate clean writer render from minimal positive inputs; failed prose diagnoses remain outside writer context.",
+  "current_focus": "Phase427 SP414-S02 exactly-one clean prose render is frozen. No machine literary acceptance is asserted; the next and only action is Liu Xiansheng actual reading of this one scene.",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -448,7 +448,8 @@
     "Phase424 actual-human verdict: SP414-S02-V1 rejected for severe AI-smell regression; prior improvement is considered lost/regressed; same scene must not be resubmitted unchanged.",
     "Phase425 completed exactly one repaired SP414-S02 from real historical better-prose anchors; machine screen found no obvious repeat regression, but actual-human literary verdict is pending.",
     "Phase425 actual-human verdict: repaired SP414-S02 rejected; dialogue remains AI ping-pong, continue desire absent, emotional propulsion absent.",
-    "Phase426 exactly-one no-dialogue emotional-event causal trace frozen; four causal relationship/permission changes survive removal of dialogue and institutional nouns; verdict READY_FOR_CLEAN_PROSE_RENDER."
+    "Phase426 exactly-one no-dialogue emotional-event causal trace frozen; four causal relationship/permission changes survive removal of dialogue and institutional nouns; verdict READY_FOR_CLEAN_PROSE_RENDER.",
+    "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -693,7 +694,7 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization"
   ],
-  "next_required_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE",
+  "next_required_action": "RETURN_EXACT_ONE_PHASE427_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1486,10 +1487,10 @@
       "blob": "2224c37b9332f54c8f5c9f24c5ed91aff6e1090a"
     }
   ],
-  "status": "Phase426 exactly-one no-dialogue emotional-event causal trace frozen; structural verdict READY_FOR_CLEAN_PROSE_RENDER; no prose generated.",
+  "status": "Phase427单场景clean render已冻结，等待刘先生真人阅读",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE426-RJ-OE408-I-SP414-S02-NO-DIALOGUE-EMOTIONAL-EVENT-CAUSALITY-01",
+  "last_completed_task_id": "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
@@ -1539,16 +1540,17 @@
       "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
       "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
       "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
-      "PHASE426-RJ-OE408-I-SP414-S02-NO-DIALOGUE-EMOTIONAL-EVENT-CAUSALITY-01"
+      "PHASE426-RJ-OE408-I-SP414-S02-NO-DIALOGUE-EMOTIONAL-EVENT-CAUSALITY-01",
+      "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": null,
-  "last_completed_task_contract": "state/review_receipts/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_CAUSALITY_V1.json",
-  "next_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE",
+  "last_completed_task_contract": "state/review_receipts/PHASE427_RJ_OE408_I_SP414_S02_CLEAN_PROSE_RENDER_V1.json",
+  "next_action": "RETURN_EXACT_ONE_PHASE427_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
   "human_verdict_receipt": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
-  "current_human_gate": "NONE_PHASE426_TRACE_COMPLETE_CLEAN_WRITER_NOT_STARTED",
+  "current_human_gate": "AWAIT_LIU_XIANSHENG_ACTUAL_READING_PHASE427_SP414_S02",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -1764,5 +1766,27 @@
     "full_v5_authorized": false,
     "second_trace_authorized": false,
     "next_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE"
+  },
+  "phase427_state": {
+    "status": "FROZEN_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
+    "task_id": "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
+    "starting_head": "bddbedcf4d496ac5ab774f4bef19020ef1479149",
+    "scene": {
+      "path": "delivery/phase427/10-sp414-s02-clean-prose-render-v1.md",
+      "blob": "46731e3cd8869b5cfc5c30023068ea7566f6c33d",
+      "version": "SP414-S02-CLEAN-PROSE-RENDER-V1",
+      "count": 1
+    },
+    "combined_task_receipt": {
+      "path": "state/review_receipts/PHASE427_RJ_OE408_I_SP414_S02_CLEAN_PROSE_RENDER_V1.json",
+      "blob": "00031df6fa078aad77577f27ff42d26872c0c0d0"
+    },
+    "minimal_fact_scope_check": "PASS_ONCE",
+    "actual_human_reading_required": true,
+    "human_quality_verdict": "PENDING",
+    "full_v5_authorized": false,
+    "second_scene_authorized": false,
+    "second_version_authorized": false,
+    "next_action": "RETURN_EXACT_ONE_PHASE427_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
   }
 }

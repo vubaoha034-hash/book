@@ -1,0 +1,69 @@
+{
+  "schema_version": "phase427-rj-oe408-i-sp414-s02-clean-prose-render/v1",
+  "project_id": "novel-distillation",
+  "work": "第二套过去",
+  "candidate": "RJ-OE408-I",
+  "phase": 427,
+  "scene_id": "SP414-S02",
+  "task_id": "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
+  "mode": "SEPARATE_CLEAN_WRITER_PROSE_RENDER",
+  "starting_head": "bddbedcf4d496ac5ab774f4bef19020ef1479149",
+  "writer_inputs": [
+    {
+      "ref": "main@bddbedcf4d496ac5ab774f4bef19020ef1479149",
+      "path": "state/simulations/PHASE426_RJ_OE408_I_SP414_S02_NO_DIALOGUE_EMOTIONAL_EVENT_TRACE_V1.json",
+      "blob": "284e4143307273d128a47964d3451f892cbf2c54",
+      "used_sections": [
+        "fixed_story_facts",
+        "protected_positions",
+        "event_sequence",
+        "prohibited_in_render",
+        "clean_writer_boundary"
+      ]
+    },
+    {
+      "ref": "novel-distill-v1",
+      "path": "delivery/phase396/RUN_PROSE_RENDERER_TO_REPO_A1.txt",
+      "blob": "fafe06be8416de0024bae0e9b85063e5275b35d0",
+      "used_scope": "only reference one and reference two below the positive-prose marker; stopped at the current-scene marker"
+    },
+    {
+      "ref": "novel-distill-v1",
+      "path": "state/inbox/PHASE396_PROSE_RENDERER_CANDIDATE_A1.txt",
+      "blob": "b4f35e439f5a4eca2d5f9de8857c8f8330bef1eb",
+      "used_scope": "positive prose anchor only"
+    }
+  ],
+  "isolation": {
+    "prose_render_completed_before_operational_state_sync": true,
+    "prose_render_used_other_novel_project_files": false,
+    "diagnostics_used": false,
+    "failed_drafts_used": false,
+    "validators_or_gates_used_for_rewrite": false,
+    "historical_user_failure_feedback_used": false,
+    "second_version_generated": false,
+    "post_render_operational_write_targets_read_for_lossless_sync_only": [
+      "state/project_state.json",
+      "state/continuity/LATEST_CHECKPOINT.json"
+    ]
+  },
+  "output": {
+    "path": "delivery/phase427/10-sp414-s02-clean-prose-render-v1.md",
+    "blob": "46731e3cd8869b5cfc5c30023068ea7566f6c33d",
+    "version_count": 1
+  },
+  "minimal_fact_scope_check": {
+    "performed_once": true,
+    "necessary_phase426_causal_actions_preserved": true,
+    "fixed_story_fact_contradiction_found": false,
+    "major_new_story_fact_added": false,
+    "second_scene_added": false,
+    "second_version_added": false,
+    "verdict": "PASS"
+  },
+  "human_quality_verdict": "PENDING_LIU_XIANSHENG_ACTUAL_READING",
+  "state_after": "PHASE427_SINGLE_SCENE_CLEAN_RENDER_FROZEN_AWAITING_LIU_XIANSHENG_ACTUAL_READING",
+  "active_task_ids": [],
+  "next_action": "RETURN_EXACT_ONE_PHASE427_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "stop": true
+}
