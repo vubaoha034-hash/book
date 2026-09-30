@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-30T13:49:00+08:00",
+  "updated_at": "2026-09-30T15:52:00+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -635,7 +635,8 @@
     "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
     "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
     "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
-    "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01"
+    "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
+    "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -885,11 +886,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-  "status": "Phase424 exactly-one SP414-S02 relational-pressure scene completed; awaiting 刘先生 actual reading; no machine final quality PASS",
+  "next_required_action": "RETURN_EXACT_ONE_REPAIRED_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "status": "Phase425 exactly-one repaired SP414-S02 completed from historical better-prose anchors; machine regression screen only; awaiting 刘先生 actual reading.",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
-  "last_completed_task_contract": "state/tasks/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
+  "last_completed_task_id": "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
+  "last_completed_task_contract": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1338,13 +1339,24 @@
       "path": "state/review_receipts/PHASE424_RJ_OE408_I_FIRST_XUCHENG_RELATIONAL_PRESSURE_SCENE_V1.json",
       "role": "Phase424 single-scene execution receipt; no machine final quality PASS",
       "blob": "8b14c2402b9fa4b7b58a15272ff75960ac0b0c79"
+    },
+    {
+      "path": "delivery/phase425/09-sp414-s02-best-known-prose-rollback-repair-v1.md",
+      "role": "Phase425 exactly-one repaired SP414-S02 candidate awaiting actual-human reading",
+      "blob": "f285de3da19bbbd4f33c0343020b664f29d618e6"
+    },
+    {
+      "path": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
+      "role": "Phase425 combined durable task/receipt with historical anchor reads and one machine regression screen",
+      "blob": "98940d7bf2716d5647c929c87505bd1e28bdcff6"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase424 SP414-S02 actual-human reading by 刘先生 remains pending; machine completion is not literary-quality acceptance."
+    "Phase424 SP414-S02 actual-human reading by 刘先生 remains pending; machine completion is not literary-quality acceptance.",
+    "Phase425 SP414-S02-REPAIR-V1 actual-human reading by 刘先生 remains pending."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1607,7 +1619,9 @@
     "Phase421 verdict is READY_FOR_ACTUAL_HUMAN_FINAL_READ only; actual-human literary acceptance remains reserved to 刘先生.",
     "Phase422 V4 failure basis corrected: Phase363 scene mechanism positive; Phase370 clarity-only, AI smell unchanged; bounded opening trial scoped, no full V5",
     "Phase423 completed one real-text A/B regression diagnosis: A local clarity/continue positive with AI smell unchanged; B human-rejected as emotionless robotic dialogue. Exactly one SP414-S02 successor defined; no new prose or V5.",
-    "Phase424 produced exactly one SP414-S02 scene from frozen Phase414/423 constraints; no second version, no full V5, and quality remains reserved to 刘先生 actual reading."
+    "Phase424 produced exactly one SP414-S02 scene from frozen Phase414/423 constraints; no second version, no full V5, and quality remains reserved to 刘先生 actual reading.",
+    "Phase424 actual-human verdict: SP414-S02-V1 rejected for severe AI-smell regression; topic/premise retained; exact scene closed.",
+    "Phase425 completed exactly one SP414-S02 repaired scene using real Phase396/Phase363 human-positive prose anchors; one machine obvious-regression screen only; no human quality pass claimed."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3330,7 +3344,7 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "AWAITING_ACTUAL_HUMAN_SP414_S02_SCENE_READING",
+  "current_human_gate": "AWAITING_ACTUAL_HUMAN_PHASE425_SP414_S02_REPAIR_READING",
   "human_verdict_receipt": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
@@ -3393,9 +3407,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "next_action": "RETURN_EXACT_ONE_REPAIRED_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "Exactly one SP414-S02 scene now exists as the bounded Phase424 candidate. Do not generate another scene/version or full V5; return this exact scene to 刘先生 for actual reading.",
+  "current_focus": "Phase424 SP414-S02-V1 was human-rejected for severe AI-smell regression. Phase425 now has exactly one repaired SP414-S02; only 刘先生 actual reading can judge whether the prose recovery succeeded.",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3437,7 +3451,7 @@
     "next_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。"
   },
   "phase424_state": {
-    "status": "COMPLETED_SINGLE_SCENE_AWAITING_ACTUAL_HUMAN_READING",
+    "status": "HUMAN_REJECTED_SEVERE_AI_SMELL_REGRESSION_CLOSED",
     "task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
     "starting_head": "37e6403feb8e748ca1f364013121c849f73e6c76",
     "scene": {
@@ -3459,7 +3473,55 @@
     "second_scene_authorized": false,
     "second_version_authorized": false,
     "machine_final_quality_pass": false,
+    "human_reading_required": false,
+    "next_action": "CLOSED_BY_PHASE425_REPAIR_SUCCESSOR",
+    "human_verdict": {
+      "recorded_date": "2026-09-30",
+      "bound_phase": 424,
+      "bound_version": "SP414-S02-V1",
+      "bound_blob": "6200d891b1585ed9d333e325080227ad78a91e05",
+      "exact_quote": "这小说ai味道简直没办法看。明明已经解决了。为什么又是这么恶心的味道出来了。",
+      "verdict": "REJECT_SEVERE_AI_SMELL_REGRESSION",
+      "topic_rejection": false,
+      "full_v5_authorized": false
+    }
+  },
+  "latest_human_review": {
+    "recorded_date": "2026-09-30",
+    "bound_phase": 424,
+    "bound_version": "SP414-S02-V1",
+    "bound_blob": "6200d891b1585ed9d333e325080227ad78a91e05",
+    "exact_quote": "这小说ai味道简直没办法看。明明已经解决了。为什么又是这么恶心的味道出来了。",
+    "verdict": "REJECT_SEVERE_AI_SMELL_REGRESSION",
+    "topic_rejection": false,
+    "full_v5_authorized": false
+  },
+  "phase425_state": {
+    "status": "COMPLETED_EXACTLY_ONE_REPAIRED_SCENE_AWAITING_ACTUAL_HUMAN_READING",
+    "task_id": "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
+    "starting_head": "c856e68ba6afe8690f62eb9126dffeb163cca1a2",
+    "scene": {
+      "path": "delivery/phase425/09-sp414-s02-best-known-prose-rollback-repair-v1.md",
+      "blob": "f285de3da19bbbd4f33c0343020b664f29d618e6",
+      "version": "SP414-S02-REPAIR-V1",
+      "count": 1
+    },
+    "combined_task_receipt": {
+      "path": "state/review_receipts/PHASE425_RJ_OE408_I_BEST_KNOWN_PROSE_ROLLBACK_SP414_S02_REPAIR_V1.json",
+      "blob": "98940d7bf2716d5647c929c87505bd1e28bdcff6"
+    },
+    "comparison_basis": [
+      "Phase424 rejected SP414-S02-V1",
+      "Phase396 bounded human-positive prose candidate + human receipt",
+      "Phase363 actual-human positive short-prose receipt + preserved positive excerpts"
+    ],
+    "machine_regression_screen": "CLEAR_OF_OBVIOUS_REPEAT_REGRESSION_ONLY",
+    "machine_final_quality_pass": false,
     "human_reading_required": true,
-    "next_action": "RETURN_EXACT_ONE_SP414_S02_SCENE_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
+    "full_v5_authorized": false,
+    "second_scene_authorized": false,
+    "second_version_authorized": false,
+    "best_of_n_used": false,
+    "next_action": "RETURN_EXACT_ONE_REPAIRED_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
   }
 }
