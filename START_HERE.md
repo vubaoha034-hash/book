@@ -4,6 +4,12 @@
 
 执行前运行 `python3 scripts/verify_current_state.py`。检查失败时先修复状态冲突，停止生成、送审或自动进入下一阶段。执行后在同一次变更中更新当前状态与检查点，回读远端文件和 HEAD。
 
-当前人审结论：`RJ-OE408-I《第二套过去》` Phase422 V4 的文风与可读性严重不通过；题材方向保留。同一 V4 不再送审，也没有自动全文 V5 的许可。已核对两种不同的人审范围：Phase363 认可短场景推进机制，未证明长篇迁移；Phase370 只通过局部动机清晰度，AI 味没有进一步改善。对照 V4 失败的依据见 `state/diagnoses/PHASE422_V4_REPAIR_BASIS_CORRECTION_20260929.md`。现有唯一新开头场景试写 `delivery/phase422/07-opening-scene-trial-after-v4.md` 已被刘先生真人否决：最新反馈为“又回到了那种没点情感的对话，彷佛两个机器人在说话；这些已经纠正了无数次了，最后又是这样”。该试写关闭，不再送审，不得扩成全文 V5。题材方向仍保留；任何后续正文必须先对照此前真人认可的有情感、有潜台词的场景原文，查清为何本次又退回功能性机器人对话，再定义一个有界 successor。
+当前人审结论：`RJ-OE408-I《第二套过去》` Phase422 V4 与唯一 post-V4 opening trial 均已真人否决；题材/核心 premise 保留，同一 V4 与该 opening trial 均关闭，仍无自动全文 V5 许可。
+
+Phase423 已完成一次真实正文对照诊断，durable receipt 为 `state/review_receipts/PHASE423_RJ_OE408_I_EMOTIONAL_PROSE_REGRESSION_DIAGNOSIS_V1.json`。实际正例 A 固定为 `novel-distill-v1:state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt` blob `7be11d5d669250b77292c5181e4f2b9c2251d0c8`；其真人范围仅为即时动机清晰 YES、剩余未知是 suspense、愿意继续 YES，且 AI smell=SAME，不是整部文风 PASS。失败原件 B 固定为 `delivery/phase422/07-opening-scene-trial-after-v4.md` blob `d0591031e85b790d04e9b6c84eadb59ac995b31f`，真人结论为 `FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE`。
+
+本轮定位的具体回退是：B 重新把人物变成谜题/制度信息接口——对白主要顺序确认事实，动作多为信息承载或情绪伴奏，人物各自要保住的利益与边界很少互相卡住，因此关系、行动权限与风险没有随着每个节拍被持续改写；A 的局部有效处来自目标冲突、由压力触发的后果性动作、人物不完全配合以及信息先通过行为后果暴露，而不是来自追杀、箭、刀、木牌等表面高强度元素。
+
+唯一下一动作：下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。 该 successor 只测试罗钧/许澄从“陌生主张者 ↔ 防御性被追索者”变成“有限合作但责任边界冲突仍在”的场景能力；不得写全文 V5，不得自动扩写。
 
 本入口只定位当前事实。它不代表小说质量通过，也不代替真人审美验收。

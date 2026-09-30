@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-29T12:05:32+00:00",
+  "updated_at": "2026-09-30T13:05:00+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -634,7 +634,8 @@
     "PHASE418-RJ-OE408-I-LOGIC-CONTINUITY-PAYOFF-REVIEW-V1-01",
     "PHASE419-RJ-OE408-I-TARGETED-REVISION-V2-01",
     "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
-    "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01"
+    "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
+    "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -884,10 +885,10 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "STOP_CURRENT_OPENING_TRIAL. Before any new prose, compare against previously human-accepted emotionally alive dialogue/scene spans and identify the concrete regression that removed emotional subtext; only then define one bounded successor. No full V5 and no second trial automatically.",
-  "status": "Phase422 V4 and post-V4 opening trial both human rejected; topic preserved, current prose route failed",
+  "next_required_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。",
+  "status": "Phase423 emotional-prose regression diagnosis completed from exact A/B texts; one SP414-S02 successor defined; no prose generated",
   "active_task_contract": null,
-  "last_completed_task_id": "PHASE422-RJ-OE408-I-FULL-MANUSCRIPT-PROSE-REAUTHORING-V4-01",
+  "last_completed_task_id": "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
   "last_completed_task_contract": "state/tasks/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
   "source_state_refs": [
     {
@@ -1317,6 +1318,11 @@
     {
       "path": "state/review_receipts/PHASE421_RJ_OE408_I_ACTUAL_HUMAN_FINAL_READ_AI_SMELL_FAIL_V1.json",
       "role": "Phase421 actual-human final-read severe AI-smell failure receipt"
+    },
+    {
+      "path": "state/review_receipts/PHASE423_RJ_OE408_I_EMOTIONAL_PROSE_REGRESSION_DIAGNOSIS_V1.json",
+      "role": "Phase423 emotional-prose regression diagnosis/receipt with exactly one bounded SP414-S02 successor contract",
+      "blob": "7b7d45a7329d9b9293d2fc9729d32770676fdbc0"
     }
   ],
   "incomplete": [
@@ -1583,7 +1589,8 @@
     "Phase421 blocker_count=0, confirmed_new_contradiction_count=0, major_reopened_count=0; same-story, climax causality, primary emotion debt, continuity, harm-doer choice and deslop safety all PASS.",
     "Phase421 final delivery frozen at delivery/phase421/final.md with blob c5ea838495d3eddfe79c6b894a461f9c7c99e4bb, exactly identical to Draft V3; no V4 generated.",
     "Phase421 verdict is READY_FOR_ACTUAL_HUMAN_FINAL_READ only; actual-human literary acceptance remains reserved to 刘先生.",
-    "Phase422 V4 failure basis corrected: Phase363 scene mechanism positive; Phase370 clarity-only, AI smell unchanged; bounded opening trial scoped, no full V5"
+    "Phase422 V4 failure basis corrected: Phase363 scene mechanism positive; Phase370 clarity-only, AI smell unchanged; bounded opening trial scoped, no full V5",
+    "Phase423 completed one real-text A/B regression diagnosis: A local clarity/continue positive with AI smell unchanged; B human-rejected as emotionless robotic dialogue. Exactly one SP414-S02 successor defined; no new prose or V5."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3369,9 +3376,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "STOP_CURRENT_OPENING_TRIAL. Before any new prose, compare against previously human-accepted emotionally alive dialogue/scene spans and identify the concrete regression that removed emotional subtext; only then define one bounded successor. No full V5 and no second trial automatically.",
+  "next_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "The single post-V4 opening scene trial was actually read and rejected: dialogue feels emotionless and robotic, repeating a failure pattern the project had already corrected many times. Do not continue this prose route or expand to full V5.",
+  "current_focus": "The regression is now localized: the failed opening makes characters function as information interfaces, while the positive local reference advances through conflicting interests, consequential actions and relationship-state changes. Restore those capabilities in exactly one SP414-S02 scene.",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3381,5 +3388,35 @@
     "final_quality_accepted": false,
     "same_trial_must_not_be_resubmitted": true,
     "automatic_full_v5_authorized": false
+  },
+  "phase423_state": {
+    "status": "COMPLETED_DIAGNOSIS_ONLY_SINGLE_SUCCESSOR_DEFINED_NO_PROSE",
+    "task_id": "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
+    "starting_head": "4e22965e31629d2960b5c955b6ac6ff585c44e73",
+    "diagnosis_receipt": {
+      "path": "state/review_receipts/PHASE423_RJ_OE408_I_EMOTIONAL_PROSE_REGRESSION_DIAGNOSIS_V1.json",
+      "blob": "7b7d45a7329d9b9293d2fc9729d32770676fdbc0"
+    },
+    "source_A": {
+      "branch": "novel-distill-v1",
+      "path": "state/calibration/PHASE370_B_MOTIVE_CLARITY_REPAIR_V1.txt",
+      "blob": "7be11d5d669250b77292c5181e4f2b9c2251d0c8",
+      "human_receipt_blob": "bfa33e4724fec985af2da685ca89f5cad8040015",
+      "scope": "LOCAL_MOTIVE_CLARITY_AND_CONTINUE_YES_AI_SMELL_SAME"
+    },
+    "source_B": {
+      "branch": "main",
+      "path": "delivery/phase422/07-opening-scene-trial-after-v4.md",
+      "blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
+      "human_verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE"
+    },
+    "regression_mechanism": "functional_information_exchange_replaced_interest_conflict_consequence_and_relationship_change",
+    "successor_task_id": "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
+    "successor_scene": "SP414-S02",
+    "successor_count": 1,
+    "prose_generated": false,
+    "full_v5_authorized": false,
+    "second_trial_authorized": false,
+    "next_action": "下一次检查任务仅启动 PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01：只生产 Phase414 已冻结的 SP414-S02 单场景；不是全文 V5，不启动第二场景、第二候选、best-of-N 或自动扩写。"
   }
 }
