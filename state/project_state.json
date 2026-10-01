@@ -611,7 +611,8 @@
     "daily_novel_reviewer": "OUTSIDE_PROJECT_EVIDENCE_AUDITOR",
     "routine_failed_draft_human_review_required": false,
     "external_review_authority_source": "ACTUAL_USER_INSTRUCTION_20261001_153540_HKT",
-    "external_review_scope": "助手发送、取回、核对证据并局部修订/复审；不把AI通过写成真人认可，不自动扩大到全文V5。"
+    "external_review_scope": "助手发送、取回、核对证据并局部修订/复审；不把AI通过写成真人认可，不自动扩大到全文V5。",
+    "review_callback": "REVIEWER_ACTIVE_SEND_VIA_OPERA_NEON"
   },
   "closed_task_ids": [
     "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -4269,6 +4270,23 @@
     "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
     "daily_review_requires_user": false,
     "milestone_human_feedback_scope": "阶段成稿或改变方向/审美的关键决定；AI不替代实际认可。",
-    "automatic_background_sync": false
+    "automatic_background_sync": false,
+    "callback_route": {
+      "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-01",
+      "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-01",
+      "protocol_path": "docs/NOVEL_ASYNC_CALLBACK_ADDENDUM_20261001.md",
+      "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
+      "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+      "status": "PREPARED_NOT_DISPATCHED",
+      "reviewer_sends_result": true,
+      "coordinator_polling": false,
+      "callback_received": false,
+      "coordinator_resumption_verified": false,
+      "mode": "CHAT",
+      "effort_label": "极高",
+      "automatic_background_sync": false,
+      "dispatch_message_sha256": "8b581b046606e23c14631b61c770df3db3231a2dfe738bffa9df996288669c94"
+    }
   }
 }
