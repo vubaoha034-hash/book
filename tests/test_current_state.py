@@ -180,6 +180,30 @@ class CurrentStateTests(unittest.TestCase):
         self.mutate_state(change)
         self.expect_block('STALE_MAINLINE_NEXT_ACTION')
 
+    def freeze_rejected_test(self, action):
+        receipt = self.make_test_receipt({'source':'ACTUAL_USER_FEEDBACK',
+            'wants_to_continue':False,'robotic_or_tiring':True,
+            'feedback':'不想看，剧情拖拉，两个人像机器人。'}, 'FAIL')
+        artifact = self.read(receipt)['artifact']
+        def change(state):
+            state['mainline_state'].update(current_step='STEP_03', completed_steps=['STEP_01','STEP_02'],
+                test_artifacts={'TEST_01':artifact}, test_results={'TEST_01':receipt}, new_prose_authorized_now=False)
+            state['next_action'] = state['next_required_action'] = action
+        self.mutate_state(change)
+
+    def test_rejected_test_moves_to_scoped_revision_without_authorizing_prose(self):
+        self.freeze_rejected_test('DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_TEST_01_FAILURE')
+        result = current.verify(self.root)
+        self.assertEqual(result['mainline']['outcomes']['TEST_01'], 'FAIL')
+        self.assertFalse(result['new_prose_authorized'])
+        self.assertEqual(result['mainline']['revision'], self.revision)
+        self.mutate_state(lambda state: state['mainline_state'].update(new_prose_authorized_now=True))
+        self.expect_block('PROSE_AUTHORIZATION_STEP_DRIFT')
+
+    def test_rejected_test_cannot_remain_awaiting_repeat_feedback(self):
+        self.freeze_rejected_test(self.steps[2]['await_action'])
+        self.expect_block('STALE_MAINLINE_NEXT_ACTION')
+
     def test_continuity_failure_requires_a_location(self):
         receipt = self.make_test_receipt({}, 'FAIL', {'verdict':'FAIL'})
         with self.assertRaisesRegex(ValueError, 'UNLOCATED_FACT_FAILURE'):

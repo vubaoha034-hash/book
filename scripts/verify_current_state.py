@@ -137,6 +137,12 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
     target_test = {2: 'TEST_01', 3: 'TEST_02'}.get(index)
     awaiting = target_test in frozen if target_test else False
     expected_action = steps[index].get('await_action') if awaiting else steps[index].get('action')
+    if target_test and outcomes.get(target_test) == 'FAIL':
+        # The locked change policy already requires a scoped revision after a
+        # recorded failure. Do not keep asking for feedback already received.
+        if 'RECORDED_FROZEN_TEST_FAILURE' not in task.get('change_policy', {}).get('allowed_revision_basis', []):
+            raise ValueError('FAILED_TEST_WITHOUT_REVISION_POLICY')
+        expected_action = 'DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_' + target_test + '_FAILURE'
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':
