@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 151,
-  "recorded_at": "2026-10-01T10:14:17+08:00",
+  "sequence": 152,
+  "recorded_at": "2026-10-01T11:15:19+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "唯一主线 V1 已锁定；保留原故事与证据，下一步补齐场景事实。两次正文测试尚未开始，未证明文风改善。",
+  "current_focus": "主线V1步骤1、2已完成：共同责任和生活安排已具体化，短写作输入已冻结；下一步只在新聊天生成一份第二场。正文测试尚未开始。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -456,7 +456,8 @@
     "Phase428 exactly one SP414-S02 human-speech/relational-presence repair delivered; Phase427 Q&A partial gain preserved with Q&A regression=false; final literary quality remains pending actual Liu Xiansheng reading",
     "Phase428 actual-human verdict recorded: unique SP414-S02 repair rejected for severe AI smell; Phase427 Q&A reduction preserved; topic not rejected; no full V5 authorization.",
     "Phase429 exactly-one no-prose/no-dialogue event-level human-stakes redesign completed: 8 steps, 4 causal changes, real private cost; verdict READY_FOR_CLEAN_PROSE_RENDER_FROM_EVENT_LEVEL_REDESIGN.",
-    "Phase430 exactly one SP414-S02 clean-writer event render completed from frozen Phase429 trace; awaiting actual-human reading"
+    "Phase430 exactly one SP414-S02 clean-writer event render completed from frozen Phase429 trace; awaiting actual-human reading",
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 STEP_01/STEP_02: scene facts and writer packet frozen; no fresh prose or human verdict."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -702,7 +703,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01",
+  "next_required_action": "RUN_ONE_FRESH_WRITER_TEST_01_THEN_ACTUAL_HUMAN_READING",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1532,16 +1533,41 @@
       "path": "state/review_receipts/NOVEL_MAINLINE_V1_STATE_VALIDATION_20261001.json",
       "role": "结构、状态与21项行为测试；不代表文学通过",
       "blob": "c141ea30c9309f3939defbb3810aae514f78e2af"
+    },
+    {
+      "path": "delivery/mainline-v1/test-01-scene-facts.json",
+      "blob": "09b34c51b226ebf00a6d54c776127fa9e4de6ad0",
+      "role": "当前主线TEST-01准备；仅writer_input进入独立写作上下文。"
+    },
+    {
+      "path": "delivery/mainline-v1/test-01-writer-input.md",
+      "blob": "cb5bcc42ef070810fd8b5af113d38df3417f36d5",
+      "role": "当前主线TEST-01准备；仅writer_input进入独立写作上下文。"
+    },
+    {
+      "path": "delivery/mainline-v1/START_TEST01_IN_NEW_CHAT.txt",
+      "blob": "5fc522ae84141e40684266155c7be130b2cb5dd0",
+      "role": "当前主线TEST-01准备；仅writer_input进入独立写作上下文。"
+    },
+    {
+      "path": "docs/NOVEL_MAINLINE_TEST01_SOURCE_READING_20261001.md",
+      "blob": "2fc5d3371c71fd6c1b3f252cbc87500cedda53e6",
+      "role": "当前主线TEST-01准备；仅writer_input进入独立写作上下文。"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_PREPARATION_20261001.json",
+      "blob": "23ae475203879df0fd623250794fe64a629fc0f3",
+      "role": "主线步骤1、2完成回执；未生成正文。"
     }
   ],
-  "status": "NOVEL_MAINLINE_V1_LOCKED_READY_FOR_STEP_01",
+  "status": "NOVEL_MAINLINE_V1_READY_FOR_FRESH_WRITER_TEST_01",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
+  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:STEP_01_AND_STEP_02",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "ac4ee2de9be69625ffe5aba638f664e0027ccde2bf87ff33806a6fb6d95dec78",
+    "project_state_sha256": "07fd90739e3838c909b986703e51da9410d031603dfba1581c3a0932fe615ee2",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1597,8 +1623,8 @@
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
-  "last_completed_task_contract": "state/review_receipts/PHASE430_RJ_OE408_I_SP414_S02_CLEAN_WRITER_RENDER_V1.json",
-  "next_action": "RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01",
+  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_TEST01_PREPARATION_20261001.json",
+  "next_action": "RUN_ONE_FRESH_WRITER_TEST_01_THEN_ACTUAL_HUMAN_READING",
   "human_verdict_receipt": "state/review_receipts/PHASE430_ROBOTIC_DIALOGUE_FEEDBACK_20261001.json",
   "current_human_gate": "TEST_01_NOT_STARTED",
   "phase422_state": {
@@ -1942,8 +1968,8 @@
   "mainline_state": {
     "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
     "revision": 1,
-    "status": "LOCKED_READY_FOR_STEP_01",
-    "current_step": "STEP_01",
+    "status": "READY_FOR_FRESH_WRITER_TEST_01",
+    "current_step": "STEP_03",
     "contract": {
       "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
       "blob": "d0e0edc5f6db796b461d7aeb3596c704473b594b"
@@ -1960,12 +1986,45 @@
     ],
     "test_results": {},
     "literary_quality_validated": false,
-    "new_prose_authorized_now": false,
+    "new_prose_authorized_now": true,
     "full_v5_authorized": false,
     "preserved_accepted_checkpoint_advance": false,
     "execution_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY",
-    "completed_steps": [],
-    "test_artifacts": {}
+    "completed_steps": [
+      "STEP_01",
+      "STEP_02"
+    ],
+    "test_artifacts": {},
+    "preparation": {
+      "scene_facts": {
+        "path": "delivery/mainline-v1/test-01-scene-facts.json",
+        "blob": "09b34c51b226ebf00a6d54c776127fa9e4de6ad0",
+        "sha256": "60a303c39320ae36105f48f59176f04902196df7dfe7db6b728bb5b435beae3a"
+      },
+      "writer_input": {
+        "path": "delivery/mainline-v1/test-01-writer-input.md",
+        "blob": "cb5bcc42ef070810fd8b5af113d38df3417f36d5",
+        "sha256": "098bea49758c5cfc1f548d4e2d3d09ea1beaa9a69523989a6300164213c63c55"
+      },
+      "writer_handoff": {
+        "path": "delivery/mainline-v1/START_TEST01_IN_NEW_CHAT.txt",
+        "blob": "5fc522ae84141e40684266155c7be130b2cb5dd0",
+        "sha256": "d673cb03462115849175f6189290144bb35e66370788f50932644b727d7f2bb7"
+      },
+      "source_reading": {
+        "path": "docs/NOVEL_MAINLINE_TEST01_SOURCE_READING_20261001.md",
+        "blob": "2fc5d3371c71fd6c1b3f252cbc87500cedda53e6",
+        "sha256": "5c2892d1b441afe3f9ccc56c20c945351276a0fc653018d572e617a279e37de5"
+      },
+      "receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_PREPARATION_20261001.json",
+        "blob": "23ae475203879df0fd623250794fe64a629fc0f3",
+        "sha256": "09423ebd032e34d70b2c3273f0a19e0bd217edb518552b88b3dc3405cd07f991"
+      },
+      "completed_at": "2026-10-01T11:15:19+08:00",
+      "matched_quiet_relationship_positive_sample": "NOT_ESTABLISHED",
+      "fresh_writer_output": "NOT_GENERATED"
+    }
   },
   "mainline_transition": {
     "source_head": "8857e8877ba275e4e909ac088acab06de90d0b0f",
@@ -1983,5 +2042,17 @@
       "path": "state/review_receipts/NOVEL_MAINLINE_V1_STATE_VALIDATION_20261001.json",
       "blob": "c141ea30c9309f3939defbb3810aae514f78e2af"
     }
+  },
+  "mainline_progress": {
+    "source_head": "262cea62d1667251c0e413149de268f25fb7c17a",
+    "previous_sequence": 151,
+    "current_sequence": 152,
+    "receipt": {
+      "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_PREPARATION_20261001.json",
+      "blob": "23ae475203879df0fd623250794fe64a629fc0f3",
+      "sha256": "09423ebd032e34d70b2c3273f0a19e0bd217edb518552b88b3dc3405cd07f991"
+    },
+    "method_revision_changed": false,
+    "actual_fiction_test_run": false
   }
 }

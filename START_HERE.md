@@ -8,7 +8,9 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化须先有对应冻结测试的实际失败记录；参见 `MAINLINE.md`。
 
-当前位置：主线锁定，步骤1尚未执行，TEST-01 和 TEST-02 均未开始。唯一下一动作：`RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01`。本次保存主线不代表已写出新场景或已改善文风。
+当前位置：检查点152，锁定主线V1的步骤1、2已完成，TEST-01 和 TEST-02 均未开始。唯一下一动作：`RUN_ONE_FRESH_WRITER_TEST_01_THEN_ACTUAL_HUMAN_READING`。本次完成事实和输入准备，不代表已写出新场景或已改善文风。
+
+当前独立写作输入：`delivery/mainline-v1/test-01-writer-input.md`，Git blob `cb5bcc42ef070810fd8b5af113d38df3417f36d5`。新聊天执行入口：`delivery/mainline-v1/START_TEST01_IN_NEW_CHAT.txt`。事实及原著研究由协调者核对，写作者只读该写作输入。`MAINLINE.md`中的初始位置描述保持为锁定当时的记录，实时进度以当前状态和检查点为准。
 
 《第二套过去》方向保留。Phase422 V4 与 opening trial 的原有真人否决继续有效；Phase428 的重 AI 味反馈保留；Phase430 的机器人式反复问答反馈已另存回执，来源覆盖为 PARTIAL，原聊天定位不可用，不扩张为题材否决。旧正文与执行回执不覆盖，不原样重投。
 

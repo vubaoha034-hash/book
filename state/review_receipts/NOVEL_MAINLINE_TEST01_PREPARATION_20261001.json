@@ -1,0 +1,115 @@
+{
+  "schema_version": "novel-mainline-preparation/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "method_revision": 1,
+  "recorded_at": "2026-10-01T11:15:19+08:00",
+  "source_head": "262cea62d1667251c0e413149de268f25fb7c17a",
+  "previous_checkpoint_sequence": 151,
+  "current_checkpoint_sequence": 152,
+  "progress_authority": {
+    "source": "ACTUAL_CURRENT_USER_REQUEST",
+    "instruction": "所有我们现在应该如何开始。",
+    "standing_scope": "在此前已授权并锁定的主线内继续事实与写作输入准备；不修改方法。"
+  },
+  "completed_steps": [
+    "STEP_01",
+    "STEP_02"
+  ],
+  "artifacts": {
+    "scene_facts": {
+      "path": "delivery/mainline-v1/test-01-scene-facts.json",
+      "blob": "09b34c51b226ebf00a6d54c776127fa9e4de6ad0",
+      "sha256": "60a303c39320ae36105f48f59176f04902196df7dfe7db6b728bb5b435beae3a"
+    },
+    "writer_input": {
+      "path": "delivery/mainline-v1/test-01-writer-input.md",
+      "blob": "cb5bcc42ef070810fd8b5af113d38df3417f36d5",
+      "sha256": "098bea49758c5cfc1f548d4e2d3d09ea1beaa9a69523989a6300164213c63c55"
+    },
+    "writer_handoff": {
+      "path": "delivery/mainline-v1/START_TEST01_IN_NEW_CHAT.txt",
+      "blob": "5fc522ae84141e40684266155c7be130b2cb5dd0",
+      "sha256": "d673cb03462115849175f6189290144bb35e66370788f50932644b727d7f2bb7"
+    },
+    "source_reading": {
+      "path": "docs/NOVEL_MAINLINE_TEST01_SOURCE_READING_20261001.md",
+      "blob": "2fc5d3371c71fd6c1b3f252cbc87500cedda53e6",
+      "sha256": "5c2892d1b441afe3f9ccc56c20c945351276a0fc653018d572e617a279e37de5"
+    }
+  },
+  "scene_choices": {
+    "responsibility": "旧摄影工作室设备分期；余额18.6万元，本期6.8万元，五天后到期。",
+    "xucheng_plan": "次日下午付1.2万元押金，租自己的小工作间。",
+    "personal_object": "不强制纪念物。",
+    "action_order": "留给写作者。"
+  },
+  "source_reading": {
+    "book": "BOOK-02_诛仙",
+    "current_raw_retrieval": "SUCCESS_VIA_DRIVE_RAW_STREAM",
+    "sha256": "9897950a0e606f12516544ee4c9405c40af7cb3964508280b752dffcb6bb6fd3",
+    "bytes": 4723970,
+    "actually_read_physical_line_ranges": [
+      [
+        381,
+        396
+      ],
+      [
+        465,
+        559
+      ],
+      [
+        862,
+        915
+      ]
+    ],
+    "full_book_reread": false,
+    "selected_personal_style_positive_count": 0,
+    "transfer_proven": false
+  },
+  "local_review": {
+    "kind": "COORDINATOR_SAME_CONTEXT",
+    "confirmed_conflict_with_locks": false,
+    "facts_amounts_deadlines_knowledge_relationship_and_future_asset_chain_checked": true,
+    "independent_review_claimed": false,
+    "literary_quality_pass": false
+  },
+  "writer_context": {
+    "packet_only": true,
+    "current_diagnostic_chat_may_write_as_clean_writer": false,
+    "new_context_execution": "NOT_RUN",
+    "reason": "本聊天已读旧稿和诊断；按已锁定输入隔离要求，只准备供新聊天使用的独立写作入口。"
+  },
+  "preserved": {
+    "mainline_plan_modified": false,
+    "task_contract_modified": false,
+    "initial_lock_modified": false,
+    "story_contract_and_prior_receipts_modified": false,
+    "research_checkpoint_advanced": false,
+    "private_or_copyrighted_source_text_committed": false
+  },
+  "prose_generated_count": 0,
+  "test_01_outcome": "NOT_STARTED",
+  "test_02_outcome": "NOT_STARTED",
+  "next_unique_action": "RUN_ONE_FRESH_WRITER_TEST_01_THEN_ACTUAL_HUMAN_READING",
+  "status": "PREPARATION_COMPLETE_READY_FOR_FRESH_WRITER_TEST_01",
+  "validation": {
+    "structure": {
+      "command": "python scripts/validate_skill.py",
+      "result": "PASS",
+      "files_checked": 28
+    },
+    "current_state": {
+      "command": "python scripts/verify_current_state.py",
+      "result": "PASS",
+      "checks_passed": 27,
+      "sequence": 152
+    },
+    "existing_behavior_tests": {
+      "command": "python -m unittest discover -s tests -v",
+      "result": "PASS",
+      "tests_run": 21
+    },
+    "literary_quality_tested": false
+  }
+}
