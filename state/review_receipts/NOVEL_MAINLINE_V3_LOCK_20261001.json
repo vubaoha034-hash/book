@@ -1,0 +1,55 @@
+{
+  "schema_version": "novel-mainline-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "revision": 3,
+  "recorded_at": "2026-10-01T13:08:29+08:00",
+  "source_head": "8d2c313e83b8d4e88abc5609ed417be8ed973c7b",
+  "previous_lock_blob": "bf6a9d903677bf1934af92f219d30fcb30fee4f4",
+  "basis": {
+    "type": "RECORDED_FROZEN_TEST_FAILURE",
+    "evidence_path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+    "evidence_blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08"
+  },
+  "changed_scope": [
+    "只补实本場人物状态中的关系期待、误解与私人情绪债，并在冻结后按实际文字复核相互影响"
+  ],
+  "old_and_new": {
+    "old": "双方利益进入输入，实际正文仍按核对问题接答；方法2被真人否决没有情绪、像僵尸。",
+    "new": "保留事实和篇幅；补实初次见面时自我保护与熟悉期待的冲突，由写作者选择具体回应，协调者随后定位证据。"
+  },
+  "character_state_basis": {
+    "source": {
+      "path": "delivery/phase413/04-character-and-continuity-state.md",
+      "blob": "082b50ed66237efb0a4829580a695f65f2145434",
+      "sha256": "bcf1030184136df7ef6ddea494d38e2ade60ddaca586b00e48ac164eb59c27bc"
+    },
+    "rojun": "开端不记得、保住公寓及自我解释权，认为先核验后责任才公平。",
+    "xucheng": "记得共同生活，有独立损失与主张，不要求伪装记忆，也不无限承担。",
+    "new_scene_interpretation": "熟悉期待受到陌生讨款者待遇的冲击；属本次编辑假设，不是新增固定历史。",
+    "fixed_dialogue_or_action_order": false
+  },
+  "task": {
+    "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V3.json",
+    "blob": "a6a58b5cfdfa25386db01f54d6fc4e334d9fc20a",
+    "sha256": "601da1dd396126473f4ed003ed8a5ed6a143a53a44c0613f060de11f39eeb6ab"
+  },
+  "plan": {
+    "path": "docs/NOVEL_MAINLINE_METHOD_V3_20261001.md",
+    "sha256": "803e8a860470e143921cd478917dec22ac5249ebd410dde0f5e5b28d3c10cd02"
+  },
+  "writer_packet": {
+    "path": "delivery/mainline-v3/test-01-short-writer-input.md",
+    "blob": "28287be2c6063c135cff7de46d6b61f15f0d87fd",
+    "sha256": "0a2148fa4d11de1ca62e1c83a55e8ddfd2e220d31bc1848118bb73ea51948cb3"
+  },
+  "preserved": {
+    "original_mainline_and_initial_lock": true,
+    "story_locks_unchanged": true,
+    "all_prior_inputs_and_prose_unchanged": true,
+    "human_verdicts_unchanged": true,
+    "accepted_research_checkpoint_advanced": false,
+    "automatic_full_v5": false
+  },
+  "effectiveness": "NOT_YET_TESTED"
+}
