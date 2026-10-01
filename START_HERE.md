@@ -8,11 +8,11 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化须先有对应冻结测试的实际失败记录；参见 `MAINLINE.md`。
 
-当前位置：检查点160，方法修订号仍为3。真人确认417字短段前两项问题减轻，但仍平、没有起伏；[局部进步及定位](docs/NOVEL_MAINLINE_METHOD03_PARTIAL_PROGRESS_AND_FLATNESS_20261001.md)与实际反馈 `state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_PARTIAL_20261001.json` 已保存。正式两题结果UNKNOWN，不能以局部进步判整体通过；未生成新稿或新方法锁。唯一下一动作仍为 `AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01`。这次进步必须保留，旧版失败证据不改。
+当前位置：检查点161，方法修订号4。方法3已有明确开头留存FAIL，回执 `state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json`；此前两项局部改善继续保留。当前计划 `docs/NOVEL_MAINLINE_METHOD_V4_20261001.md`、任务 `state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json`、锁 `state/review_receipts/NOVEL_MAINLINE_V4_LOCK_20261001.json` 已保存。唯一下一动作 `RUN_ONE_FRESH_WRITER_TEST_01_SHORT_TRIAL_THEN_ACTUAL_HUMAN_READING`；独立写作者只读 `delivery/mainline-v4/test-01-short-writer-input.md`。未生成新稿，不扩写或晋级。
 
 方法1已失败原稿：`delivery/mainline-v1/test-01-sp414-s02-a1.md`，Git blob `d3796f41e10f90c6197211213bd2f4b96f18d196`。原始冻结执行回执保留：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json`。方法1真人失败回执：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json`；主要失败定位与局部修订范围：`docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md`。本次写作者使用不继承历史的独立上下文，只带入 `delivery/mainline-v1/test-01-writer-input.md`；协调者核对事实，未改写输出。历史新聊天执行入口不再用于重投本测试。`MAINLINE.md`中的初始位置描述保持为锁定当时的记录，实时进度以当前状态和检查点为准。
 
-执行偏好已保存：已授权环节连续完成，不在例行步骤反复请求确认。用户本次明确要求几百字即可判断，下一次先做300–500字起始短段；未经请求不再内联整场长稿。短段通过只证明短段，不等于完整场景通过。方法3已绑定方法2实际 FAIL 并冻结新测试输入。短段通过后仍需同一场完整验证，才能进入不同压力的 TEST-02。
+执行偏好已保存：已授权环节连续完成，不在例行步骤反复请求确认。用户本次明确要求几百字即可判断，下一次先做300–500字起始短段；未经请求不再内联整场长稿。短段通过只证明短段，不等于完整场景通过。方法4已绑定方法3实际留存FAIL并冻结新测试输入。短段通过后仍需同一场完整验证，才能进入不同压力的 TEST-02。
 
 《第二套过去》方向保留。Phase422 V4 与 opening trial 的原有真人否决继续有效；Phase428 的重 AI 味反馈保留；Phase430 的机器人式反复问答反馈已另存回执，来源覆盖为 PARTIAL，原聊天定位不可用，不扩张为题材否决。旧正文与执行回执不覆盖，不原样重投。
 

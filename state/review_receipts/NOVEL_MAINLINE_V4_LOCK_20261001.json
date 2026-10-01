@@ -1,0 +1,56 @@
+{
+  "schema_version": "novel-mainline-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "revision": 4,
+  "recorded_at": "2026-10-01T15:22:01+08:00",
+  "source_head": "6f20ccf16a2889954029be787480919c6749242b",
+  "previous_lock_blob": "938e8abe7ed3d352c08125c8ef5febbc81866365",
+  "basis": {
+    "type": "RECORDED_FROZEN_TEST_FAILURE",
+    "evidence_path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+    "evidence_blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd"
+  },
+  "changed_scope": [
+    "只改变本场进入点与推进：相反打算直接相撞，并写到当下安排实际受影响；保留既有反应与机械问答减轻。"
+  ],
+  "old_and_new": {
+    "old": "先到场识别、摆材料，再协调延期；最终只迟疑，实际第一屏留存被否决。",
+    "new": "由作者选择已经发生利益与记忆落差的切入点，写出一个眼前安排受影响的位置，其他事实和终点不变。"
+  },
+  "task": {
+    "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
+    "blob": "16aa7810988f4dabe91fb6c448c9085acc3d204a",
+    "sha256": "aa0d52a988ff5140d3cce7edccdc64262ab9acb7d0d8007a77fddc8e3ef7698e"
+  },
+  "plan": {
+    "path": "docs/NOVEL_MAINLINE_METHOD_V4_20261001.md",
+    "sha256": "d7a072c8821c81bd3aa5da37e2c25c0eeb569da3a755619e79cba42a31719b42"
+  },
+  "writer_packet": {
+    "path": "delivery/mainline-v4/test-01-short-writer-input.md",
+    "blob": "9e7c22081fdaee106b0ca52f88e460a06ec17526",
+    "sha256": "d8570bcc5ef6ea3f60e97b20bdb7b6d899a8c51838ee2608fb8f80104b79f845"
+  },
+  "preserved": {
+    "all_prior_inputs_prose_feedback_locks_unchanged": true,
+    "story_locks_unchanged": true,
+    "method03_partial_improvements": {
+      "source": "ACTUAL_USER_FEEDBACK",
+      "exact_positive_phrase": "上两个问题确实下降了",
+      "interpreted_targets": [
+        "机械问答减轻",
+        "人物情绪反应缺失减轻"
+      ],
+      "mapping_basis": "当前线程前两项反馈；属于上下文解释，用户本条没有再次逐项命名。",
+      "scope": "CURRENT_SHORT_PARAGRAPH_ONLY",
+      "degree": "REDUCED_NOT_ELIMINATED",
+      "future_revision_must_preserve": true,
+      "whole_scene_or_personal_style_pass": false
+    },
+    "accepted_research_checkpoint_advanced": false,
+    "automatic_full_v5": false
+  },
+  "fixed_dialogue_or_action_order": false,
+  "effectiveness": "NOT_YET_TESTED"
+}
