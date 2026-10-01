@@ -1,4 +1,4 @@
-当前推进：[方法修订3](docs/NOVEL_MAINLINE_METHOD_V3_20261001.md)和[独立写作输入](delivery/mainline-v3/test-01-short-writer-input.md)已锁定，依据方法2实际否决补实双方初见的人物状态。[唯一417字短段](delivery/mainline-v3/test-01-sp414-s02-short-a1.md)已原样冻结，[阅读回执](state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_READING_20261001.json)为UNKNOWN，文学质量未验证。
+当前推进：[方法修订3](docs/NOVEL_MAINLINE_METHOD_V3_20261001.md)和[独立写作输入](delivery/mainline-v3/test-01-short-writer-input.md)已锁定，依据方法2实际否决补实双方初见的人物状态。[唯一417字短段](delivery/mainline-v3/test-01-sp414-s02-short-a1.md)已获局部进步反馈，但仍平、没有起伏；[实际反馈](state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_PARTIAL_20261001.json)和[问题定位](docs/NOVEL_MAINLINE_METHOD03_PARTIAL_PROGRESS_AND_FLATNESS_20261001.md)已保存，未判整体通过。
 
 # Novel Writing Master V3
 
@@ -21,7 +21,7 @@ V2 文件继续保留，旧调用方式仍可使用；新任务默认走 V3。
 
 主线与入口已保存不等于文风有效。真人阅读结果、结构检查、单场通过和长篇验证分别记录。
 
-2026-10-01：方法1 TEST-01 已被真人否决：不想读、拖拉、机器人问答。见 [原稿](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[实际失败回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json) 和 [主要失败定位](docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md)。[方法修订2](docs/NOVEL_MAINLINE_METHOD_V2_20261001.md)的[唯一短段](delivery/mainline-v2/test-01-sp414-s02-short-a1.md)也被真人否决：无情绪、僵尸对话。见 [实际反馈](state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json)和[两版对照](docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md)。原件全部保留。当前方法修订号3，唯一短段已冻结待实际阅读，完整场景和TEST-02不可执行。
+2026-10-01：方法1 TEST-01 已被真人否决：不想读、拖拉、机器人问答。见 [原稿](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[实际失败回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json) 和 [主要失败定位](docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md)。[方法修订2](docs/NOVEL_MAINLINE_METHOD_V2_20261001.md)的[唯一短段](delivery/mainline-v2/test-01-sp414-s02-short-a1.md)也被真人否决：无情绪、僵尸对话。见 [实际反馈](state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json)和[两版对照](docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md)。原件全部保留。当前方法修订号3，短段局部进步与起伏不足均已保存；未生成新稿或新方法锁，完整场景和TEST-02不可执行。
 
 ## V3 解决什么
 

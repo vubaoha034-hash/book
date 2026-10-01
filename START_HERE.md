@@ -8,7 +8,7 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化须先有对应冻结测试的实际失败记录；参见 `MAINLINE.md`。
 
-当前位置：检查点159，方法修订号3。唯一417字短段：`delivery/mainline-v3/test-01-sp414-s02-short-a1.md`；执行及阅读回执：`state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_READING_20261001.json`。唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01`。正文原样冻结，真人结果UNKNOWN；不生成第二稿，不扩写。当前计划：`docs/NOVEL_MAINLINE_METHOD_V3_20261001.md`；任务：`state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V3.json`；旧版失败证据完整保留。
+当前位置：检查点160，方法修订号仍为3。真人确认417字短段前两项问题减轻，但仍平、没有起伏；[局部进步及定位](docs/NOVEL_MAINLINE_METHOD03_PARTIAL_PROGRESS_AND_FLATNESS_20261001.md)与实际反馈 `state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_PARTIAL_20261001.json` 已保存。正式两题结果UNKNOWN，不能以局部进步判整体通过；未生成新稿或新方法锁。唯一下一动作仍为 `AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01`。这次进步必须保留，旧版失败证据不改。
 
 方法1已失败原稿：`delivery/mainline-v1/test-01-sp414-s02-a1.md`，Git blob `d3796f41e10f90c6197211213bd2f4b96f18d196`。原始冻结执行回执保留：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json`。方法1真人失败回执：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json`；主要失败定位与局部修订范围：`docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md`。本次写作者使用不继承历史的独立上下文，只带入 `delivery/mainline-v1/test-01-writer-input.md`；协调者核对事实，未改写输出。历史新聊天执行入口不再用于重投本测试。`MAINLINE.md`中的初始位置描述保持为锁定当时的记录，实时进度以当前状态和检查点为准。
 
