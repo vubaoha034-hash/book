@@ -1,10 +1,10 @@
 {
   "schema_version": "novel-async-callback-setup/v1",
   "project_id": "novel-distillation",
-  "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-01",
-  "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-01",
-  "status": "PREPARED_NOT_DISPATCHED",
-  "source_head": "e10f57bab2bf614f54ec657ca672aa81927a343a",
+  "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
+  "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
+  "status": "RECOVERED_PREPARED_NOT_DISPATCHED",
+  "source_head": "392b1a542707560fe3055569bd9b1774004e6856",
   "recorded_at": "2026-10-01T22:04:52+08:00",
   "authority": {
     "source": "ACTUAL_CURRENT_USER_INSTRUCTION",
@@ -14,7 +14,7 @@
   "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
   "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
   "protocol_path": "docs/NOVEL_ASYNC_CALLBACK_ADDENDUM_20261001.md",
-  "message_sha256": "8b581b046606e23c14631b61c770df3db3231a2dfe738bffa9df996288669c94",
+  "message_sha256": "3609201739ec24136a2b812de1fe8b1b61a2a9a0f2eeca3ffa9679bb711bd81d",
   "model_ui_observed": {
     "mode": "CHAT",
     "effort_label": "极高",
@@ -27,5 +27,21 @@
   "business_next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
   "writer_count": 1,
   "max_send_count": 1,
-  "attempt_id": "A1"
+  "attempt_id": "A2",
+  "invalid_attempts": [
+    {
+      "attempt_id": "A1",
+      "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-01",
+      "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-01",
+      "status": "DISPATCH_INVALID_PARTIAL_MESSAGES",
+      "observed_messages": [
+        "Opera Neon\n 任务ID：NOVEL-ASYNC-CALLBACK-SETUP-20261001-01",
+        "此消息证明本次主动消息送达；不证明后续每轮均已完成、不证明无人后台无限运行或小说质量通过。重复本回传ID只做无操作结算，不能重复生成。"
+      ],
+      "cause": "Standalone type_text delivered line breaks as submit; unsubmitted tail then cleared",
+      "callback_success_count": 0,
+      "correction": "Fresh attempt A2; entire fill, plugin attachment, complete readback then one Send click"
+    }
+  ],
+  "draft_exact_verified": true
 }

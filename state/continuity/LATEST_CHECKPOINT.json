@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 164,
-  "recorded_at": "2026-10-01T22:04:52+08:00",
+  "sequence": 165,
+  "recorded_at": "2026-10-01T22:11:09+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -469,7 +469,8 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_03 TEST_01: actual first-screen retention FAIL settled without erasing partial improvements.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04: one scoped scene-entry and local-plan-impact revision locked with exact writer packet; no new prose yet.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04 TEST_01: one isolated short trial frozen verbatim; scoped fact and same-context editorial checks recorded, actual-human result UNKNOWN; no expansion.",
-    "Novel reviewer active-callback protocol prepared from actual user instruction; initial dispatch and return still unverified"
+    "Novel reviewer active-callback protocol prepared from actual user instruction; initial dispatch and return still unverified",
+    "Partial A1 dispatch invalidated; own draft cleared; A2 complete message frozen and checked before sending"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1738,7 +1739,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "0c942b67c77ff4992f99678b195f677a0860b77b6316ae174efd4c451b9b3fe5",
+    "project_state_sha256": "53bdcb29e5751525cd3b34db4c5c24e8d3dcefaca38e10c297e9dd8ad545f98b",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2428,13 +2429,13 @@
     "milestone_human_feedback_scope": "阶段成稿或改变方向/审美的关键决定；AI不替代实际认可。",
     "automatic_background_sync": false,
     "callback_route": {
-      "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-01",
-      "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-01",
+      "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
+      "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
       "protocol_path": "docs/NOVEL_ASYNC_CALLBACK_ADDENDUM_20261001.md",
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "PREPARED_NOT_DISPATCHED",
+      "status": "RECOVERED_PREPARED_NOT_DISPATCHED",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -2442,7 +2443,10 @@
       "mode": "CHAT",
       "effort_label": "极高",
       "automatic_background_sync": false,
-      "dispatch_message_sha256": "8b581b046606e23c14631b61c770df3db3231a2dfe738bffa9df996288669c94"
+      "dispatch_message_sha256": "3609201739ec24136a2b812de1fe8b1b61a2a9a0f2eeca3ffa9679bb711bd81d",
+      "invalid_attempt_ids": [
+        "A1"
+      ]
     }
   }
 }

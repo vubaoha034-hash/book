@@ -4272,13 +4272,13 @@
     "milestone_human_feedback_scope": "阶段成稿或改变方向/审美的关键决定；AI不替代实际认可。",
     "automatic_background_sync": false,
     "callback_route": {
-      "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-01",
-      "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-01",
+      "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
+      "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
       "protocol_path": "docs/NOVEL_ASYNC_CALLBACK_ADDENDUM_20261001.md",
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "PREPARED_NOT_DISPATCHED",
+      "status": "RECOVERED_PREPARED_NOT_DISPATCHED",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -4286,7 +4286,10 @@
       "mode": "CHAT",
       "effort_label": "极高",
       "automatic_background_sync": false,
-      "dispatch_message_sha256": "8b581b046606e23c14631b61c770df3db3231a2dfe738bffa9df996288669c94"
+      "dispatch_message_sha256": "3609201739ec24136a2b812de1fe8b1b61a2a9a0f2eeca3ffa9679bb711bd81d",
+      "invalid_attempt_ids": [
+        "A1"
+      ]
     }
   }
 }
