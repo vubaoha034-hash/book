@@ -19,7 +19,7 @@ V2 文件继续保留，旧调用方式仍可使用；新任务默认走 V3。
 
 主线与入口已保存不等于文风有效。真人阅读结果、结构检查、单场通过和长篇验证分别记录。
 
-2026-10-01：TEST-01 已被真人否决：不想读、拖拉、机器人问答。见 [原稿](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[实际失败回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json) 和 [主要失败定位](docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md)。原稿和原执行记录保留；下一步只定义一次对应方法修订，后续先做300–500字短试读。当前未生成新稿，方法号仍为1，TEST-02不能执行。
+2026-10-01：TEST-01 已被真人否决：不想读、拖拉、机器人问答。见 [原稿](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[实际失败回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json) 和 [主要失败定位](docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md)。原稿和原执行记录保留；下一步只定义一次对应方法修订，后续先做300–500字短试读。[方法修订2](docs/NOVEL_MAINLINE_METHOD_V2_20261001.md)及[短写作输入](delivery/mainline-v2/test-01-short-writer-input.md)已锁定。短段尚未生成；短段与完整场景分别验收，TEST-02不能直接执行。
 
 ## V3 解决什么
 

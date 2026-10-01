@@ -1,0 +1,45 @@
+{
+  "schema_version": "novel-mainline-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "revision": 2,
+  "recorded_at": "2026-10-01T12:26:08+08:00",
+  "source_head": "3d5c7fc9954b5fab77530ff56f097e176202eed6",
+  "previous_lock_blob": "efb0717bdf2faa9bbc67b89898cbe11059c39214",
+  "basis": {
+    "type": "RECORDED_FROZEN_TEST_FAILURE",
+    "evidence_path": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
+    "evidence_blob": "35b294aab7f6e5ecfd3d459337a41c768584a6e1"
+  },
+  "changed_scope": [
+    "本场写作任务按人物当前利益和边界组织",
+    "先做300–500字起始短段，短段与完整场景验收分开"
+  ],
+  "old_and_new": {
+    "old": "完整场景先逐项呈现材料与核验，实际阅读仍因机器人问答和拖拉失败。",
+    "new": "背景事实保持；先检验人物交锋的起始短段，不要求短段覆盖整场资料和终点。"
+  },
+  "task": {
+    "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V2.json",
+    "blob": "de9c93caa9a7f730627ad71990263bdfc30aafa9",
+    "sha256": "b941e750ee502a680ad83bebfc88bee6e96055dce22f49bb3101b4969d04a9b6"
+  },
+  "plan": {
+    "path": "docs/NOVEL_MAINLINE_METHOD_V2_20261001.md",
+    "sha256": "f1bc9b628cb9621dbf971bce1aeb43c0c87350a63afe4566f7f38ffc31a39729"
+  },
+  "writer_packet": {
+    "path": "delivery/mainline-v2/test-01-short-writer-input.md",
+    "blob": "960dd7dcb1a16d514601c0920753860b959c3c71",
+    "sha256": "cba1c4096b13c3b8097aeada161328af58728b3d6fd9d72f033d14f09af12499"
+  },
+  "preserved": {
+    "original_mainline_and_initial_lock": true,
+    "story_locks_unchanged": true,
+    "failed_prose_unchanged": true,
+    "human_verdict_unchanged": true,
+    "accepted_research_checkpoint_advanced": false,
+    "automatic_full_v5": false
+  },
+  "effectiveness": "NOT_YET_TESTED"
+}

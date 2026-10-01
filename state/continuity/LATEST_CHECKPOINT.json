@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 154,
-  "recorded_at": "2026-10-01T12:16:55+08:00",
+  "sequence": 155,
+  "recorded_at": "2026-10-01T12:26:08+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "TEST-01实际真人否决已绑定原稿：不想读、拖拉、机器人问答。诊断已保存；先正式定义一次对应方法修订，下一短试读300–500字，尚未生成。",
+  "current_focus": "同一主线的方法2已绑定方法1实际失败并锁定；修订写作输入已冻结，下一步只生成300–500字起始短段。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -459,7 +459,8 @@
     "Phase430 exactly one SP414-S02 clean-writer event render completed from frozen Phase429 trace; awaiting actual-human reading",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 STEP_01/STEP_02: scene facts and writer packet frozen; no fresh prose or human verdict.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 STEP_03_RENDER_AND_FREEZE: one isolated SP414-S02 scene frozen verbatim, factual continuity CLEAR, actual-human reading pending; no method revision or second version.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1 TEST_01: actual-human rejection and located robotic-dialogue diagnosis settled; original prose frozen, method revision still 1, no new prose."
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 TEST_01: actual-human rejection and located robotic-dialogue diagnosis settled; original prose frozen, method revision still 1, no new prose.",
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_02: one scoped revision bound to actual TEST_01 failure and short writer packet frozen; no prose generated yet."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -497,7 +498,7 @@
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
     "Bounded next repair action has not been selected or executed; no V5 manuscript exists.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1: TEST-01已实际失败，诊断已完成，局部方法修订待正式锁定；下一短试读300–500字尚未生成，TEST-02不可执行。"
+    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法2短写作输入已锁定，短段尚未生成，完整场景及TEST-02均未通过。"
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -705,7 +706,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_TEST_01_FAILURE",
+  "next_required_action": "RUN_ONE_FRESH_WRITER_TEST_01_SHORT_TRIAL_THEN_ACTUAL_HUMAN_READING",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1583,16 +1584,40 @@
       "blob": "af1c24febac0b35cea0aedef83b8cf658e4c19c4",
       "sha256": "47b2c37560eadda84bc62115aabbe3592ffc25c80fc00e276c7e1e83df48a09b",
       "role": "一个主要编辑判断及对应局部修订范围；不是新方法锁或新正文。"
+    },
+    {
+      "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V2.json",
+      "blob": "de9c93caa9a7f730627ad71990263bdfc30aafa9",
+      "sha256": "b941e750ee502a680ad83bebfc88bee6e96055dce22f49bb3101b4969d04a9b6",
+      "role": "方法2准备及修订；原方法1原件保持。"
+    },
+    {
+      "path": "docs/NOVEL_MAINLINE_METHOD_V2_20261001.md",
+      "blob": "18ff5274fcbb4d11c7950fc593876c3c0459799f",
+      "sha256": "f1bc9b628cb9621dbf971bce1aeb43c0c87350a63afe4566f7f38ffc31a39729",
+      "role": "方法2准备及修订；原方法1原件保持。"
+    },
+    {
+      "path": "delivery/mainline-v2/test-01-short-writer-input.md",
+      "blob": "960dd7dcb1a16d514601c0920753860b959c3c71",
+      "sha256": "cba1c4096b13c3b8097aeada161328af58728b3d6fd9d72f033d14f09af12499",
+      "role": "方法2准备及修订；原方法1原件保持。"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V2_LOCK_20261001.json",
+      "blob": "bf6a9d903677bf1934af92f219d30fcb30fee4f4",
+      "sha256": "bb43f853824e51bf9fa338e8b26940d31c6d067c9d7c196b61dd8c915a72836b",
+      "role": "方法2准备及修订；原方法1原件保持。"
     }
   ],
-  "status": "NOVEL_MAINLINE_V1_TEST_01_ACTUAL_HUMAN_FAIL_AWAITING_SCOPED_REVISION",
+  "status": "NOVEL_MAINLINE_METHOD_02_READY_FOR_ISOLATED_SHORT_TRIAL",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:TEST_01_ACTUAL_HUMAN_FAIL_AND_DIAGNOSIS",
+  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:METHOD_02_AND_SHORT_PACKET_LOCKED",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "17f80bfa9af8107259f38f70fb9e825e99cf25874738b982ab6f9cdf41f92641",
+    "project_state_sha256": "ea6df418e7741a7394676daf76119f3c8a1375fd394cdfb59004773201188800",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1647,11 +1672,11 @@
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
-  "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
-  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
-  "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_TEST_01_FAILURE",
+  "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V2.json",
+  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_V2_LOCK_20261001.json",
+  "next_action": "RUN_ONE_FRESH_WRITER_TEST_01_SHORT_TRIAL_THEN_ACTUAL_HUMAN_READING",
   "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
-  "current_human_gate": "CLOSED_HUMAN_REJECTED_TEST_01",
+  "current_human_gate": "METHOD_02_TEST_01_NOT_STARTED",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -1995,28 +2020,30 @@
   },
   "mainline_state": {
     "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
-    "revision": 1,
-    "status": "TEST_01_FAILED_AWAITING_ONE_SCOPED_METHOD_REVISION",
+    "revision": 2,
+    "status": "READY_FOR_ISOLATED_SHORT_TRIAL",
     "current_step": "STEP_03",
     "contract": {
-      "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
-      "blob": "d0e0edc5f6db796b461d7aeb3596c704473b594b"
+      "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V2.json",
+      "blob": "de9c93caa9a7f730627ad71990263bdfc30aafa9"
     },
     "plan": {
-      "path": "MAINLINE.md",
-      "sha256": "06128d639947dde191b79d93a0ce5466b124473b10ee4888f4351d3ada189617"
+      "path": "docs/NOVEL_MAINLINE_METHOD_V2_20261001.md",
+      "sha256": "f1bc9b628cb9621dbf971bce1aeb43c0c87350a63afe4566f7f38ffc31a39729"
     },
     "lock_chain": [
       {
         "path": "state/review_receipts/NOVEL_MAINLINE_V1_LOCK_20261001.json",
         "blob": "efb0717bdf2faa9bbc67b89898cbe11059c39214"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V2_LOCK_20261001.json",
+        "blob": "bf6a9d903677bf1934af92f219d30fcb30fee4f4"
       }
     ],
-    "test_results": {
-      "TEST_01": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json"
-    },
+    "test_results": {},
     "literary_quality_validated": false,
-    "new_prose_authorized_now": false,
+    "new_prose_authorized_now": true,
     "full_v5_authorized": false,
     "preserved_accepted_checkpoint_advance": false,
     "execution_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY",
@@ -2024,12 +2051,7 @@
       "STEP_01",
       "STEP_02"
     ],
-    "test_artifacts": {
-      "TEST_01": {
-        "path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
-        "blob": "d3796f41e10f90c6197211213bd2f4b96f18d196"
-      }
-    },
+    "test_artifacts": {},
     "preparation": {
       "scene_facts": {
         "path": "delivery/mainline-v1/test-01-scene-facts.json",
@@ -2037,14 +2059,9 @@
         "sha256": "60a303c39320ae36105f48f59176f04902196df7dfe7db6b728bb5b435beae3a"
       },
       "writer_input": {
-        "path": "delivery/mainline-v1/test-01-writer-input.md",
-        "blob": "cb5bcc42ef070810fd8b5af113d38df3417f36d5",
-        "sha256": "098bea49758c5cfc1f548d4e2d3d09ea1beaa9a69523989a6300164213c63c55"
-      },
-      "writer_handoff": {
-        "path": "delivery/mainline-v1/START_TEST01_IN_NEW_CHAT.txt",
-        "blob": "5fc522ae84141e40684266155c7be130b2cb5dd0",
-        "sha256": "d673cb03462115849175f6189290144bb35e66370788f50932644b727d7f2bb7"
+        "path": "delivery/mainline-v2/test-01-short-writer-input.md",
+        "blob": "960dd7dcb1a16d514601c0920753860b959c3c71",
+        "sha256": "cba1c4096b13c3b8097aeada161328af58728b3d6fd9d72f033d14f09af12499"
       },
       "source_reading": {
         "path": "docs/NOVEL_MAINLINE_TEST01_SOURCE_READING_20261001.md",
@@ -2052,27 +2069,16 @@
         "sha256": "5c2892d1b441afe3f9ccc56c20c945351276a0fc653018d572e617a279e37de5"
       },
       "receipt": {
-        "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_PREPARATION_20261001.json",
-        "blob": "23ae475203879df0fd623250794fe64a629fc0f3",
-        "sha256": "09423ebd032e34d70b2c3273f0a19e0bd217edb518552b88b3dc3405cd07f991"
+        "path": "state/review_receipts/NOVEL_MAINLINE_V2_LOCK_20261001.json",
+        "blob": "bf6a9d903677bf1934af92f219d30fcb30fee4f4",
+        "sha256": "bb43f853824e51bf9fa338e8b26940d31c6d067c9d7c196b61dd8c915a72836b"
       },
-      "completed_at": "2026-10-01T11:15:19+08:00",
+      "completed_at": "2026-10-01T12:26:08+08:00",
       "matched_quiet_relationship_positive_sample": "NOT_ESTABLISHED",
-      "fresh_writer_output": "GENERATED_ONCE_FROZEN"
+      "fresh_writer_output": "NOT_GENERATED",
+      "method_revision": 2
     },
-    "execution": {
-      "test_id": "TEST_01",
-      "scene_id": "SP414-S02",
-      "generation_count": 1,
-      "writer_context": "ISOLATED_SUB_AGENT_FORK_NONE",
-      "receipt": {
-        "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json",
-        "blob": "24abdf127a332d32935ebbba0431b02f8df224a1",
-        "sha256": "17b4eb42e7540bdaf3eec791dbf971d71356e0e072517161d885cb47516407ba"
-      },
-      "literary_quality_validated": false
-    },
-    "failed_test": {
+    "previous_failed_test": {
       "test_id": "TEST_01",
       "method_revision": 1,
       "outcome": "FAIL",
@@ -2087,6 +2093,12 @@
         "sha256": "47b2c37560eadda84bc62115aabbe3592ffc25c80fc00e276c7e1e83df48a09b"
       },
       "new_revision_locked": false
+    },
+    "previous_test_artifacts": {
+      "TEST_01": {
+        "path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "blob": "d3796f41e10f90c6197211213bd2f4b96f18d196"
+      }
     }
   },
   "mainline_transition": {
@@ -2107,17 +2119,17 @@
     }
   },
   "mainline_progress": {
-    "source_head": "7c219ecdc38eb694a7a5c4e858d7ee7257a0b286",
-    "previous_sequence": 153,
-    "current_sequence": 154,
+    "source_head": "3d5c7fc9954b5fab77530ff56f097e176202eed6",
+    "previous_sequence": 154,
+    "current_sequence": 155,
     "receipt": {
-      "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
-      "blob": "35b294aab7f6e5ecfd3d459337a41c768584a6e1",
-      "sha256": "7360cd5006cd49c1edd94d2bec2ac1fe9726ee15671422ebbee77c562dda6999"
+      "path": "state/review_receipts/NOVEL_MAINLINE_V2_LOCK_20261001.json",
+      "blob": "bf6a9d903677bf1934af92f219d30fcb30fee4f4",
+      "sha256": "bb43f853824e51bf9fa338e8b26940d31c6d067c9d7c196b61dd8c915a72836b"
     },
-    "method_revision_changed": false,
-    "actual_fiction_test_run": true,
-    "actual_human_test_verdict_received": true
+    "method_revision_changed": true,
+    "actual_fiction_test_run": false,
+    "actual_human_test_verdict_received": false
   },
   "interaction_preferences": {
     "preferred_mode": "CHAT",

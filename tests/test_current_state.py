@@ -28,6 +28,11 @@ class CurrentStateTests(unittest.TestCase):
             self.copy(name)
         for ref in mainline['lock_chain']:
             self.copy(ref['path'])
+            basis = self.read(ref['path']).get('basis', {})
+            if basis.get('type') == 'RECORDED_FROZEN_TEST_FAILURE':
+                self.copy(basis['evidence_path'])
+                self.copy(self.read(basis['evidence_path'])['artifact']['path'])
+        self.plan_path = mainline['plan']['path']
         self.contract_path = mainline['contract']['path']
         self.previous_lock_blob = mainline['lock_chain'][-1]['blob']
         self.steps = self.read(self.contract_path)['execution_order']
@@ -73,7 +78,7 @@ class CurrentStateTests(unittest.TestCase):
         self.assertFalse(result['literary_quality_tested_by_this_script'])
 
     def test_unreviewed_mainline_edit_is_blocked(self):
-        with (self.root / 'MAINLINE.md').open('a', encoding='utf-8') as f:
+        with (self.root / self.plan_path).open('a', encoding='utf-8') as f:
             f.write('\nChange route immediately.\n')
         self.expect_block('LOCKED_MAINLINE_CONTENT_CHANGED')
 
@@ -132,6 +137,7 @@ class CurrentStateTests(unittest.TestCase):
             'task_id':self.task_id,'method_revision':self.revision,'test_id':'TEST_01',
             'artifact':{'path':artifact,'blob':current.git_blob(path.read_bytes())},
             'human_feedback':human,'fact_check':facts or {'verdict':'CLEAR'},'outcome':outcome,
+            'validation_scope':self.read(self.contract_path)['tests']['TEST_01'].get('validation_scope'),
         })
         return receipt
 
@@ -215,9 +221,9 @@ class CurrentStateTests(unittest.TestCase):
         task = self.read(self.contract_path)
         task.update(task_id='NOVEL-IMPROVEMENT-MAINLINE-V' + str(revision), revision=revision)
         self.write(task_path, task)
-        with (self.root / 'MAINLINE.md').open('a', encoding='utf-8') as f:
+        with (self.root / self.plan_path).open('a', encoding='utf-8') as f:
             f.write('\nSynthetic scoped method revision for guard verification.\n')
-        plan = {'path':'MAINLINE.md','sha256':hashlib.sha256((self.root / 'MAINLINE.md').read_bytes()).hexdigest()}
+        plan = {'path':self.plan_path,'sha256':hashlib.sha256((self.root / self.plan_path).read_bytes()).hexdigest()}
         task_ref = {'path':task_path,'blob':current.git_blob((self.root / task_path).read_bytes())}
         lock_path = 'state/review_receipts/test-v2-lock.json'
         self.write(lock_path, {
@@ -253,6 +259,35 @@ class CurrentStateTests(unittest.TestCase):
         self.assertEqual(current.test_outcome(self.root, receipt), 'PASS')
         result = current.verify(self.root)
         self.assertFalse(result['new_prose_authorized'])
+
+    def test_short_reading_pass_cannot_skip_full_scene_validation(self):
+        if 'TEST_01_FULL' not in self.read(self.contract_path)['tests']:
+            self.skipTest('Current method has no separate short-reading stage')
+        receipt = self.make_test_receipt({'source':'ACTUAL_USER_FEEDBACK','wants_to_continue':True,
+            'robotic_or_tiring':False,'feedback':'这几百字愿意继续读'}, 'PASS')
+        artifact = self.read(receipt)['artifact']
+        def change(state):
+            state['mainline_state'].update(current_step='STEP_05',
+                completed_steps=['STEP_01','STEP_02','STEP_03','STEP_04'],
+                test_artifacts={'TEST_01':artifact},test_results={'TEST_01':receipt},new_prose_authorized_now=True)
+            state['next_action'] = state['next_required_action'] = self.steps[4]['action']
+        self.mutate_state(change)
+        self.expect_block('TEST_02_WITHOUT_FULL_SCENE_PASS')
+
+    def test_short_reading_result_cannot_claim_full_scene_scope(self):
+        if 'TEST_01_FULL' not in self.read(self.contract_path)['tests']:
+            self.skipTest('Current method has no separate short-reading stage')
+        receipt = self.make_test_receipt({}, 'UNKNOWN')
+        artifact = self.read(receipt)['artifact']
+        r = self.read(receipt)
+        r['validation_scope'] = 'FULL_SCENE'
+        self.write(receipt, r)
+        def change(state):
+            state['mainline_state'].update(current_step='STEP_03',completed_steps=['STEP_01','STEP_02'],
+                test_artifacts={'TEST_01':artifact},test_results={'TEST_01':receipt},new_prose_authorized_now=False)
+            state['next_action'] = state['next_required_action'] = self.steps[2]['await_action']
+        self.mutate_state(change)
+        self.expect_block('TEST_READING_SCOPE_DRIFT')
 
 
 if __name__ == '__main__':

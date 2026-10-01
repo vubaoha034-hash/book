@@ -83,7 +83,7 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
                 if (git_blob(evidence) != basis.get('evidence_blob') or test_outcome(root, basis['evidence_path']) != 'FAIL' or
                     failed_test.get('task_id') != previous_lock.get('task_id') or
                     failed_test.get('method_revision') != previous_lock.get('revision') or
-                    failed_test.get('test_id') not in ('TEST_01', 'TEST_02')):
+                    failed_test.get('test_id') not in ('TEST_01', 'TEST_01_FULL', 'TEST_02')):
                     raise ValueError('REVISION_WITHOUT_FAILED_TEST')
             elif basis.get('type') == 'EXPLICIT_USER_SCOPE_CHANGE':
                 if basis.get('source') != 'ACTUAL_USER_INSTRUCTION' or not basis.get('instruction', '').strip():
@@ -121,20 +121,25 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
     if any(row['step_id'] not in completed for row in steps[:index]):
         raise ValueError('MAINLINE_STEP_SKIPPED')
     outcomes, frozen = {}, state.get('test_artifacts', {})
+    full_scene_stage = 'TEST_01_FULL' in task.get('tests', {})
+    valid_tests = ('TEST_01', 'TEST_01_FULL', 'TEST_02') if full_scene_stage else ('TEST_01', 'TEST_02')
     for test_id, artifact in frozen.items():
-        if test_id not in ('TEST_01', 'TEST_02') or not isinstance(artifact, dict):
+        if test_id not in valid_tests or not isinstance(artifact, dict):
             raise ValueError('INVALID_FROZEN_TEST_ARTIFACT')
         if git_blob(safe_file(root, artifact.get('path', '')).read_bytes()) != artifact.get('blob'):
             raise ValueError('FROZEN_TEST_ARTIFACT_CHANGED')
     for test_id, relative in state.get('test_results', {}).items():
         test = load(root, relative)
-        if (test_id not in ('TEST_01', 'TEST_02') or test.get('test_id') != test_id or
+        if (test_id not in valid_tests or test.get('test_id') != test_id or
             test.get('task_id') != task_id or test.get('method_revision') != state['revision']):
             raise ValueError('TEST_ID_BINDING_DRIFT')
         if test.get('artifact') != frozen.get(test_id):
             raise ValueError('TEST_RESULT_WITHOUT_FROZEN_ARTIFACT')
+        scope = task.get('tests', {}).get(test_id, {}).get('validation_scope')
+        if scope and test.get('validation_scope') != scope:
+            raise ValueError('TEST_READING_SCOPE_DRIFT')
         outcomes[test_id] = test_outcome(root, relative)
-    target_test = {2: 'TEST_01', 3: 'TEST_02'}.get(index)
+    target_test = steps[index].get('test_id') if full_scene_stage else {2: 'TEST_01', 3: 'TEST_02'}.get(index)
     awaiting = target_test in frozen if target_test else False
     expected_action = steps[index].get('await_action') if awaiting else steps[index].get('action')
     if target_test and outcomes.get(target_test) == 'FAIL':
@@ -147,7 +152,10 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':
         raise ValueError('TEST_02_WITHOUT_TEST_01_PASS')
-    if (index >= 4 or state.get('literary_quality_validated')) and outcomes.get('TEST_02') != 'PASS':
+    if full_scene_stage and index >= 4 and outcomes.get('TEST_01_FULL') != 'PASS':
+        raise ValueError('TEST_02_WITHOUT_FULL_SCENE_PASS')
+    expansion_index = 5 if full_scene_stage else 4
+    if (index >= expansion_index or state.get('literary_quality_validated')) and outcomes.get('TEST_02') != 'PASS':
         raise ValueError('EXPANSION_WITHOUT_REPLICATION_PASS')
     if state.get('full_v5_authorized') is not False or task.get('preserved', {}).get('full_manuscript_v5_authorized') is not False:
         raise ValueError('AUTOMATIC_FULL_V5_PROMOTION')
