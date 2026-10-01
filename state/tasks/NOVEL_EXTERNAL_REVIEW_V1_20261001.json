@@ -1,0 +1,72 @@
+{
+  "schema_version": "novel-external-review-task/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
+  "authority": {
+    "type": "EXPLICIT_USER_SCOPE_CHANGE",
+    "source": "ACTUAL_USER_INSTRUCTION",
+    "submitted_at": "2026-10-01T15:35:40+08:00",
+    "instruction": "到项目以外开启一个聊天专门负责审核你自己出的小说；用Opera Neon；返回评价；不希望一直由我审核；需要专业评审办法。",
+    "scope": "独立AI日常评审、助手取回反馈和按定位根因准备局部修订；保留旧真人结果、故事方向及全文V5边界。"
+  },
+  "review_route": {
+    "surface": "OPERA_NEON",
+    "chat_location": "OUTSIDE_PROJECT",
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH",
+    "write_authority": "COORDINATOR_ONLY",
+    "reviewer_may_write_repository": false,
+    "automatic_background_sync": false
+  },
+  "protocol": {
+    "path": "docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md",
+    "blob": "398c2e5d941bf5ed5a7c04617c14a9a9b52490a8",
+    "sha256": "52b876393bb6743b9e2c1fef91a66b4076dc6ea5a42e3992ab02eca56816e775"
+  },
+  "mainline": {
+    "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "method_revision": 4,
+    "artifact": {
+      "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+    },
+    "validation_scope": "FIRST_SCREEN",
+    "human_result_remains": "UNKNOWN",
+    "full_v5_authorized": false
+  },
+  "attempt": {
+    "attempt_id": "NOVEL-EXTERNAL-REVIEW-20261001-01",
+    "owner": "CURRENT_COORDINATOR_ONLY",
+    "status": "CLAIMED_READ_ONLY_REVIEW",
+    "expected_base_head": "3ee785fe088c3479644c1d955bbf53c225de1d3f",
+    "external_writer_count": 0,
+    "first_dispatch_task_id": "NOVEL-EXTERNAL-REVIEW-20261001-A",
+    "first_message_sha256": "fefccebc8c1d4de2d450af7bb1f274b005d08af0b451a54f255c9bb02f5ab621"
+  },
+  "external_verdicts": [
+    "EXTERNAL_PASS_PROVISIONAL",
+    "REVISE",
+    "BLOCKED",
+    "INSUFFICIENT"
+  ],
+  "human_source_never_replaced": true,
+  "repair_budget": {
+    "max_main_root_causes": 3,
+    "max_consecutive_local_revision_rounds": 2,
+    "best_of_n": false
+  },
+  "calibration": {
+    "known_negative_artifacts": [
+      {
+        "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad"
+      },
+      {
+        "path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+        "blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe"
+      }
+    ],
+    "known_matched_positive": "NOT_ESTABLISHED",
+    "claim_limit": "负例检出只证明这两份负例的识别，假阳性和个人口味一致性未知。"
+  }
+}

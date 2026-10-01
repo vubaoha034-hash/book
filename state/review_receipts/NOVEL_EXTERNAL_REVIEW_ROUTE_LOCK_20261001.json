@@ -1,0 +1,39 @@
+{
+  "schema_version": "novel-external-review-route-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
+  "revision": 1,
+  "basis": {
+    "type": "EXPLICIT_USER_SCOPE_CHANGE",
+    "source": "ACTUAL_USER_INSTRUCTION",
+    "submitted_at": "2026-10-01T15:35:40+08:00",
+    "instruction": "到项目以外开启一个聊天专门负责审核你自己出的小说；用Opera Neon；返回评价；不希望一直由我审核；需要专业评审办法。",
+    "scope": "独立AI日常评审、助手取回反馈和按定位根因准备局部修订；保留旧真人结果、故事方向及全文V5边界。"
+  },
+  "source_head": "3ee785fe088c3479644c1d955bbf53c225de1d3f",
+  "task": {
+    "path": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
+    "blob": "1b992fbcb27b6bff1924a5027e1e2ff47a7811c1",
+    "sha256": "6fa678b8ab9929b7cf0a36100db554759e82fa3832b52052bc61353ce150c731"
+  },
+  "protocol": {
+    "path": "docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md",
+    "blob": "398c2e5d941bf5ed5a7c04617c14a9a9b52490a8",
+    "sha256": "52b876393bb6743b9e2c1fef91a66b4076dc6ea5a42e3992ab02eca56816e775"
+  },
+  "changed_scope": [
+    "DAILY_REVIEWER_OUTSIDE_PROJECT",
+    "ASSISTANT_RETRIEVES_REPORT",
+    "EVIDENCE_BASED_LOCAL_REVISION_PREPARATION"
+  ],
+  "preserved": {
+    "initial_mainline_lock": "efb0717bdf2faa9bbc67b89898cbe11059c39214",
+    "method04_lock": "207009866a109415c13aac154f6f153a65d6c55d",
+    "method04_human_result": "UNKNOWN",
+    "story_direction": true,
+    "seven_fixed_facts": true,
+    "original_prose_and_receipts": true,
+    "full_v5_authorized": false
+  },
+  "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+}
