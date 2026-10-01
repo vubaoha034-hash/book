@@ -1,0 +1,28 @@
+{
+  "schema_version": "novel-external-review-send-recovery/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EXTERNAL-REVIEW-20261001-D",
+  "attempt_status": "DISPATCH_UNCONFIRMED_RETIRED",
+  "failure": "OPERA_PLUGIN_CONNECTION_TIMEOUT",
+  "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "observed_before_cleanup": {
+    "all_prior_complete_messages_unchanged": true,
+    "user_message_count": 3,
+    "fourth_message_present": false,
+    "composer_equal_to_frozen_D": true
+  },
+  "cleanup": {
+    "unsent_draft_cleared": true,
+    "user_message_count": 3,
+    "new_message_present": false
+  },
+  "next_attempt": {
+    "task_id": "NOVEL-EXTERNAL-REVIEW-20261001-D2",
+    "same_observed_conversation": true,
+    "new_full_message": true,
+    "no_leftover_sent": true,
+    "repository_write_authority": "CURRENT_COORDINATOR_ONLY"
+  },
+  "basis": "原始外审授权未改变。失败发送不记成功；已回读完整3条消息并清理未发送草稿后，用新的完整任务与ID继续同一只读评审。",
+  "expected_head": "0a8484d0859177af4bb118e177dc5f705c9a2e65"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "novel-external-review-calibration-failure/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
+  "source_head": "0a8484d0859177af4bb118e177dc5f705c9a2e65",
+  "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "reports": {
+    "A": {
+      "path": "delivery/external-review/20261001-coldread-a.json",
+      "blob": "84dfa4851003bf4d0950655397fa96380e131ff5",
+      "sha256": "90e85f927674cba880dc964a3142fac57a65d6dbd59b07296486f2e54f060eab"
+    },
+    "B": {
+      "path": "delivery/external-review/20261001-editorial-b.json",
+      "blob": "09680a8d3fd65259541885501dd19df041d4cb9f",
+      "sha256": "d4e2f25ab773ba5340e7dfcb28cbede7fcdc7d8e2608a3d204d4ae746ba5cd81"
+    },
+    "C": {
+      "path": "delivery/external-review/20261001-calibration-retest-c.json",
+      "blob": "a6e37c895e3fc2156edc511b969543a114f70765",
+      "sha256": "c93eddae78f240b0bad305836552efd5a5685d37fde8a7e137905f93b9c493d7"
+    }
+  },
+  "initial": {
+    "hits": 0,
+    "count": 2,
+    "tests": [
+      {
+        "sample_id": "S01",
+        "artifact": {
+          "path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+          "blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe"
+        },
+        "human_receipt": {
+          "path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+          "blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd",
+          "sha256": "13d317cb036d7aa9f5ea06942d80b964718e3bc7435bfc46e731cb5dec76f35c"
+        },
+        "reviewer_wants_to_continue": true,
+        "reviewer_robotic_or_tiring": false
+      },
+      {
+        "sample_id": "S03",
+        "artifact": {
+          "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+          "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad"
+        },
+        "human_receipt": {
+          "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+          "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+          "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
+        },
+        "reviewer_wants_to_continue": true,
+        "reviewer_robotic_or_tiring": false
+      }
+    ]
+  },
+  "unseen_retest": {
+    "hits": 0,
+    "count": 1,
+    "context": "SAME_EXTERNAL_CHAT_UNSEEN_TEXT_TEST_NOT_FRESH_READER",
+    "excerpt": {
+      "path": "delivery/external-review/20261001-unseen-excerpt-source.txt",
+      "blob": "27cceaae9792f5d26d4228e3eff730d03cef2b0d",
+      "sha256": "cc5b515bdaa633ba9e5b9412d92247f32d3b37c014b23216b1b5c9b758083394"
+    },
+    "path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+    "blob": "d3796f41e10f90c6197211213bd2f4b96f18d196",
+    "start_character": 490,
+    "end_character_exclusive": 986,
+    "feedback_receipt_path": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
+    "feedback_receipt_blob": "35b294aab7f6e5ecfd3d459337a41c768584a6e1",
+    "human_receipt": {
+      "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
+      "blob": "35b294aab7f6e5ecfd3d459337a41c768584a6e1",
+      "sha256": "7360cd5006cd49c1edd94d2bec2ac1fe9726ee15671422ebbee77c562dda6999"
+    },
+    "scope": "用户明确引用否决的机械问答块位于此原样摘录中；不声称用户另行评价过整份496字符摘录。",
+    "reviewer_wants_to_continue": true,
+    "reviewer_robotic_or_tiring": false,
+    "reviewer_editorial_verdict": "EXTERNAL_PASS_PROVISIONAL"
+  },
+  "verdict": "REVIEWER_USER_TASTE_ALIGNMENT_FAILED_ON_OBSERVED_NEGATIVES",
+  "action": "RETAIN_LOCATED_EDITORIAL_EVIDENCE_REMOVE_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION",
+  "original_reports_preserved": true,
+  "matched_positive_reference": "NOT_ESTABLISHED",
+  "claim_limit": "具体漏检证据，不是统计准确率；无正例，无法判断误杀好稿。"
+}
