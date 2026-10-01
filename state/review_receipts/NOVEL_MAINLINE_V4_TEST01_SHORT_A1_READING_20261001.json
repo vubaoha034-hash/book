@@ -1,0 +1,174 @@
+{
+  "schema_version": "novel-mainline-test/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "method_revision": 4,
+  "test_id": "TEST_01",
+  "scene_id": "SP414-S02",
+  "attempt": 1,
+  "validation_scope": "FIRST_SCREEN",
+  "recorded_at": "2026-10-01T15:29:41+08:00",
+  "source_head": "ee12146bc38ed441b9496b8622196a3831b16442",
+  "source_checkpoint_sequence": 161,
+  "outcome": "UNKNOWN",
+  "status": "FROZEN_SHORT_TRIAL_AWAITING_ACTUAL_HUMAN_READING",
+  "artifact": {
+    "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+    "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+  },
+  "artifact_sha256": "1bd435801f5c6c81698630ccd179eef7efc4caa3f215312d496f55110e4c7f9b",
+  "writer_input": {
+    "path": "delivery/mainline-v4/test-01-short-writer-input.md",
+    "blob": "9e7c22081fdaee106b0ca52f88e460a06ec17526",
+    "sha256": "d8570bcc5ef6ea3f60e97b20bdb7b6d899a8c51838ee2608fb8f80104b79f845"
+  },
+  "execution": {
+    "writer_context": "ISOLATED_SUB_AGENT_FORK_NONE",
+    "writer_agent": "/root/novel_method04_short_writer",
+    "input_scope": "冻结输入正文排除文件终止LF，另加不读取外部材料的执行边界；未继承診断、失败正文、历史或评审答案。",
+    "generation_count": 1,
+    "second_version_count": 0,
+    "coordinator_rewrite_count": 0,
+    "output_preserved_verbatim": true,
+    "file_normalization": "只添加文件终止换行；正文不改。",
+    "body_characters_excluding_whitespace": 404,
+    "file_characters": 425,
+    "full_scene_completed": false,
+    "independent_reader_review_performed": false,
+    "full_v5_generated": false,
+    "platform_chat_mode_change_verified": false
+  },
+  "human_feedback": {
+    "source": "AWAITING_USER_FEEDBACK",
+    "wants_to_continue": null,
+    "robotic_or_tiring": null,
+    "feedback": ""
+  },
+  "fact_check": {
+    "verdict": "CLEAR",
+    "review_type": "COORDINATOR_SAME_CONTEXT",
+    "literary_quality_pass": false,
+    "scope": "仅核对404字短段与原事实的连续性，不宣称完整核验、责任认领或质量通过。",
+    "located_evidence": [
+      {
+        "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 5,
+          "end": 11
+        },
+        "excerpt": "“窗口还没关。我总得问问房子。”\n\n她的目光落到文件袋上。他把袋口压紧：“我不认识你。我的首付——”\n\n“我没让你转钱。”她原来向他倾着的上身慢慢坐直，“也没让你装作认识我。”\n\n他想说材料已经收了，总不能连查清的时间都不给。",
+        "observation": "他仍希望争取房子、保护首付并把她视为陌生人；双方没有恢复记忆或旧亲密，也没有实际认领或付款。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 13,
+          "end": 15
+        },
+        "excerpt": "“我三点就得走，要赶客户的片子。”她看了眼表，“五天后有款到期。你今天不查，可以另外安排。但你不能说一句以后再谈，就让我一直等着。”\n\n罗钧跟着看表，还剩二十分钟。他本来打算把复本塞进文件袋最底下，回去再翻。攒首付的时候，他连今晚住进去以后先做什么都想过，没想过要给一个陌生女人留出时间。",
+        "observation": "本期款五天后到期符合背景；许澄保留独立业务和有限协助时间，未变成后续全面停止配合。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 17,
+          "end": 21
+        },
+        "excerpt": "他仍站着，问：“供应商叫什么？电话我自己找。”\n\n许澄把合同转过来，指了指封面，没替他念。\n\n大厅里有人叫号。他听完，叫的不是自己，便把椅子拉回来，坐下掏出手机。",
+        "observation": "他坚持自行寻找供应商联系方式，当前仅取信息并开始准备核验，没有声称独立来源已经吻合。"
+      }
+    ],
+    "new_minor_details": [
+      {
+        "detail": "她三点需离开赶客户的片子，见面此刻距三点二十分钟。",
+        "status": "NEW_SCENE_DETAIL_NOT_PRIOR_CANON_QUOTE",
+        "basis": "输入已给她独立后期业务和有限协助时间；普通工作时点的具体化，不新增重大灾难或世界规则。",
+        "implied_scene_time": "约14:40；小说内时间，不是当前对话时钟。",
+        "check": "与次日下午押金及五天后欠款互不冲突，不改两者期限。"
+      }
+    ],
+    "full_scene_requirements_not_yet_demonstrated": [
+      "供应商独立来源初步吻合",
+      "完整有限合作终点及保全安排"
+    ],
+    "confirmed_contradiction": false
+  },
+  "editorial_check_after_freeze": {
+    "review_type": "COORDINATOR_SAME_CONTEXT_NOT_INDEPENDENT_READER",
+    "verdict": "LOCATED_LOCAL_CHANGE_EFFECTIVENESS_UNKNOWN",
+    "first_screen": {
+      "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "lines": {
+        "start": 1,
+        "end": 9
+      },
+      "excerpt": "“材料我带走，等查清了再说。”罗钧把购房文件袋夹到腋下，椅脚在公共休息区的地砖上刮了一声。\n\n许澄叫了声“罗钧”，声音比电话里软。他以为她要拦，先看向大厅入口。\n\n“窗口还没关。我总得问问房子。”\n\n她的目光落到文件袋上。他把袋口压紧：“我不认识你。我的首付——”\n\n“我没让你转钱。”她原来向他倾着的上身慢慢坐直，“也没让你装作认识我。”",
+      "observation": "起始直接出现他带走材料、延后查证并要回大厅的行动；继而出现陌生感、首付戒备和她的反应。省去了到场识别过程。"
+    },
+    "plan_before": {
+      "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "lines": {
+        "start": 1,
+        "end": 1
+      },
+      "excerpt": "“材料我带走，等查清了再说。”罗钧把购房文件袋夹到腋下，椅脚在公共休息区的地砖上刮了一声。",
+      "observation": "他想带走材料，把查证推后，结束眼前交谈。"
+    },
+    "opposing_pressure": {
+      "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "lines": {
+        "start": 13,
+        "end": 15
+      },
+      "excerpt": "“我三点就得走，要赶客户的片子。”她看了眼表，“五天后有款到期。你今天不查，可以另外安排。但你不能说一句以后再谈，就让我一直等着。”\n\n罗钧跟着看表，还剩二十分钟。他本来打算把复本塞进文件袋最底下，回去再翻。攒首付的时候，他连今晚住进去以后先做什么都想过，没想过要给一个陌生女人留出时间。",
+      "observation": "她只剩有限工作时间可用于配合，不同意自动无限等待；他意识到自己原本会把复本搁到最底下。"
+    },
+    "response_and_action": {
+      "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "lines": {
+        "start": 17,
+        "end": 21
+      },
+      "excerpt": "他仍站着，问：“供应商叫什么？电话我自己找。”\n\n许澄把合同转过来，指了指封面，没替他念。\n\n大厅里有人叫号。他听完，叫的不是自己，便把椅子拉回来，坐下掏出手机。",
+      "observation": "他自行询问供应商信息，坐回去掏出手机；相比只迟疑，当前去大厅的安排改为先投入这次核验。"
+    },
+    "partial_progress_comparison": {
+      "reference": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+      "protected_targets": [
+        "机械问答减轻",
+        "人物情绪反应缺失减轻"
+      ],
+      "located_evidence": {
+        "artifact_path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 7,
+          "end": 13
+        },
+        "excerpt": "她的目光落到文件袋上。他把袋口压紧：“我不认识你。我的首付——”\n\n“我没让你转钱。”她原来向他倾着的上身慢慢坐直，“也没让你装作认识我。”\n\n他想说材料已经收了，总不能连查清的时间都不给。\n\n“我三点就得走，要赶客户的片子。”她看了眼表，“五天后有款到期。你今天不查，可以另外安排。但你不能说一句以后再谈，就让我一直等着。”",
+        "observation": "她先回应他对首付及陌生感的防卫，再从自身业务和等待边界发话；不只把这一轮变成材料说明。"
+      },
+      "actual_human_regression_verdict": "UNKNOWN",
+      "no_model_claim_of_preserved_literary_quality": true
+    },
+    "limitations": [
+      "首句仍以材料进入，另一套三年经历及记忆落差没有在此短段完整明确呈现；局部行动前置不能证明抓眼球已经成立。",
+      "坐回去和掏手机只证明当前安排出现变化，尚未支付责任或形成独立核验结果。",
+      "人物反应与原局部改善是否真正保留、是否更有起伏，仍需用户实际判断。"
+    ],
+    "prose_changed_by_review": false,
+    "actual_human_verdict": "UNKNOWN",
+    "method_effectiveness": "NOT_ESTABLISHED",
+    "same_context_check_cannot_promote_test": true
+  },
+  "repository_checks": {
+    "status": "PASSED",
+    "skill_structure_files_checked": 28,
+    "current_state_checks_passed": 27,
+    "checkpoint_sequence": 162,
+    "literary_quality_tested": false
+  },
+  "literary_quality_validated": false,
+  "short_pass_is_not_full_scene_pass": true,
+  "full_manuscript_v5_authorized": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01"
+}

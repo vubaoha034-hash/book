@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-01T15:22:01+08:00",
+  "updated_at": "2026-10-01T15:29:41+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -908,11 +908,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "RUN_ONE_FRESH_WRITER_TEST_01_SHORT_TRIAL_THEN_ACTUAL_HUMAN_READING",
-  "status": "NOVEL_MAINLINE_METHOD_04_READY_FOR_ISOLATED_SHORT_TRIAL",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
+  "status": "NOVEL_MAINLINE_METHOD_04_SHORT_TRIAL_AWAITING_ACTUAL_HUMAN_READING",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:METHOD_03_FAIL_AND_METHOD_04_PACKET_LOCKED",
-  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_V4_LOCK_20261001.json",
+  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:METHOD_04_SHORT_TRIAL_RENDER_AND_FREEZE",
+  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1592,13 +1592,24 @@
       "blob": "207009866a109415c13aac154f6f153a65d6c55d",
       "sha256": "8a685fdd0527bdd1051e0fafd437c9073059c4cb6678253b1675a48ce205afd5",
       "role": "方法3实际留存失败结算及方法4局部修订准备；旧件不改。"
+    },
+    {
+      "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683",
+      "role": "方法4唯一冻结短段，尚无真人反馈。"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json",
+      "blob": "f43226cdc8aa1fe94d12eca6d688dccec73e8063",
+      "sha256": "31e00f36f9a8d6d25e6e41decc1a5cc1fd7c289b6fdbc4a286710568027235ab",
+      "role": "方法4短段执行、事实及人物反应复核、待阅读回执。"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法3留存失败已结算，方法4短输入已锁定尚无正文；完整场景及TEST-02均未开始。"
+    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1881,7 +1892,8 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_03 TEST_01: one isolated short trial frozen verbatim; scoped fact and same-context editorial checks recorded, actual-human result UNKNOWN; no expansion.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_03 TEST_01: actual partial progress preserved and flatness located; no binary answers fabricated, no new prose, no method change.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_03 TEST_01: actual first-screen retention FAIL settled without erasing partial improvements.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04: one scoped scene-entry and local-plan-impact revision locked with exact writer packet; no new prose yet."
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04: one scoped scene-entry and local-plan-impact revision locked with exact writer packet; no new prose yet.",
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04 TEST_01: one isolated short trial frozen verbatim; scoped fact and same-context editorial checks recorded, actual-human result UNKNOWN; no expansion."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3604,7 +3616,7 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "METHOD_04_TEST_01_NOT_STARTED",
+  "current_human_gate": "AWAIT_ACTUAL_HUMAN_READING_OF_METHOD_04_SHORT_TRIAL",
   "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
@@ -3667,9 +3679,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "RUN_ONE_FRESH_WRITER_TEST_01_SHORT_TRIAL_THEN_ACTUAL_HUMAN_READING",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "方法3开头留存实际FAIL已结算，前次两项局部进步保留；方法4及唯一短写作输入已锁定，准备独立生成。",
+  "current_focus": "方法4唯一404字起始短段已独立生成并原样冻结；事实与人物反应分开复核，真人结果未知。完整场景及不同压力测试未开始。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3994,7 +4006,7 @@
   "mainline_state": {
     "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
     "revision": 4,
-    "status": "READY_FOR_ISOLATED_SHORT_TRIAL",
+    "status": "AWAITING_ACTUAL_HUMAN_READING_OF_METHOD_04_SHORT_TRIAL",
     "current_step": "STEP_03",
     "contract": {
       "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
@@ -4022,9 +4034,11 @@
         "blob": "207009866a109415c13aac154f6f153a65d6c55d"
       }
     ],
-    "test_results": {},
+    "test_results": {
+      "TEST_01": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json"
+    },
     "literary_quality_validated": false,
-    "new_prose_authorized_now": true,
+    "new_prose_authorized_now": false,
     "full_v5_authorized": false,
     "preserved_accepted_checkpoint_advance": false,
     "execution_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY",
@@ -4032,7 +4046,12 @@
       "STEP_01",
       "STEP_02"
     ],
-    "test_artifacts": {},
+    "test_artifacts": {
+      "TEST_01": {
+        "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+      }
+    },
     "preparation": {
       "scene_facts": {
         "path": "delivery/mainline-v1/test-01-scene-facts.json",
@@ -4056,7 +4075,7 @@
       },
       "completed_at": "2026-10-01T15:22:01+08:00",
       "matched_quiet_relationship_positive_sample": "NOT_ESTABLISHED",
-      "fresh_writer_output": "NOT_GENERATED",
+      "fresh_writer_output": "GENERATED_ONCE_FROZEN_SHORT_TRIAL",
       "method_revision": 4
     },
     "previous_failed_test": {
@@ -4168,6 +4187,18 @@
       "degree": "REDUCED_NOT_ELIMINATED",
       "future_revision_must_preserve": true,
       "whole_scene_or_personal_style_pass": false
+    },
+    "execution": {
+      "test_id": "TEST_01",
+      "validation_scope": "FIRST_SCREEN",
+      "generation_count": 1,
+      "writer_context": "ISOLATED_SUB_AGENT_FORK_NONE",
+      "receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json",
+        "blob": "f43226cdc8aa1fe94d12eca6d688dccec73e8063",
+        "sha256": "31e00f36f9a8d6d25e6e41decc1a5cc1fd7c289b6fdbc4a286710568027235ab"
+      },
+      "literary_quality_validated": false
     }
   },
   "mainline_transition": {
@@ -4187,32 +4218,16 @@
     }
   },
   "mainline_progress": {
-    "source_head": "6f20ccf16a2889954029be787480919c6749242b",
-    "previous_sequence": 160,
-    "current_sequence": 161,
+    "source_head": "ee12146bc38ed441b9496b8622196a3831b16442",
+    "previous_sequence": 161,
+    "current_sequence": 162,
     "receipt": {
-      "path": "state/review_receipts/NOVEL_MAINLINE_V4_LOCK_20261001.json",
-      "blob": "207009866a109415c13aac154f6f153a65d6c55d",
-      "sha256": "8a685fdd0527bdd1051e0fafd437c9073059c4cb6678253b1675a48ce205afd5"
+      "path": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json",
+      "blob": "f43226cdc8aa1fe94d12eca6d688dccec73e8063",
+      "sha256": "31e00f36f9a8d6d25e6e41decc1a5cc1fd7c289b6fdbc4a286710568027235ab"
     },
-    "failure_settlement_receipt": {
-      "path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
-      "blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd",
-      "sha256": "13d317cb036d7aa9f5ea06942d80b964718e3bc7435bfc46e731cb5dec76f35c"
-    },
-    "method_revision_changed": true,
-    "actual_fiction_test_run": false,
-    "actual_human_test_verdict_received": true,
-    "events": [
-      "METHOD_03_TEST_01_ACTUAL_FIRST_SCREEN_FAIL",
-      "METHOD_04_ONE_SCOPED_REVISION_AND_PACKET_LOCKED"
-    ],
-    "repository_checks": {
-      "status": "PASSED",
-      "skill_structure_files_checked": 28,
-      "current_state_checks_passed": 27,
-      "checkpoint_sequence": 161,
-      "literary_quality_tested": false
-    }
+    "method_revision_changed": false,
+    "actual_fiction_test_run": true,
+    "actual_human_test_verdict_received": false
   }
 }
