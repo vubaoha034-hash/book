@@ -1,0 +1,161 @@
+{
+  "schema_version": "novel-mainline-test/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "method_revision": 2,
+  "test_id": "TEST_01",
+  "scene_id": "SP414-S02",
+  "attempt": 1,
+  "validation_scope": "FIRST_SCREEN",
+  "recorded_at": "2026-10-01T12:42:15+08:00",
+  "source_head": "b56543573704069b69e3ae045b1bc1bc22dcb167",
+  "source_checkpoint_sequence": 156,
+  "outcome": "FAIL",
+  "status": "CLOSED_ACTUAL_HUMAN_REJECTED_SHORT_TRIAL",
+  "artifact": {
+    "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+    "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad"
+  },
+  "artifact_sha256": "2c54a547dc9832d53efb4cb9c1658f02f4d4ac5a7536cd79e1528c06ac93a5c6",
+  "writer_input": {
+    "path": "delivery/mainline-v2/test-01-short-writer-input.md",
+    "blob": "960dd7dcb1a16d514601c0920753860b959c3c71",
+    "sha256": "cba1c4096b13c3b8097aeada161328af58728b3d6fd9d72f033d14f09af12499"
+  },
+  "execution": {
+    "writer_context": "ISOLATED_SUB_AGENT_FORK_NONE",
+    "writer_agent": "/root/novel_method02_short_writer",
+    "input_scope": "冻结输入加仅写作、禁止外部读取的职责边界；未继承历史、失败正文、诊断或验收答案。",
+    "generation_count": 1,
+    "second_version_count": 0,
+    "coordinator_rewrite_count": 0,
+    "output_preserved_verbatim": true,
+    "file_normalization": "只添加文件终止换行；正文不改。",
+    "body_characters_excluding_whitespace": 431,
+    "file_characters": 462,
+    "full_scene_completed": false,
+    "independent_reader_review_performed": false,
+    "full_v5_generated": false
+  },
+  "human_feedback": {
+    "source": "ACTUAL_USER_FEEDBACK",
+    "wants_to_continue": null,
+    "robotic_or_tiring": true,
+    "feedback": "这个又完全没有任何情绪，感觉两个僵尸在互相对话。一点点反应都没有"
+  },
+  "fact_check": {
+    "verdict": "CLEAR",
+    "review_type": "COORDINATOR_SAME_CONTEXT",
+    "literary_quality_pass": false,
+    "scope": "仅核对起始短段未违反背景事实；不宣称已履行完整场景终点，也不判断人物语言是否已改善。",
+    "located_evidence": [
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 5,
+          "end": 5
+        },
+        "excerpt": "他摇头。她坐下，把文件夹放在两人之间的空位上。他看着她翻出几张纸，没有一处觉得熟悉。",
+        "observation": "罗钧未感到熟悉，没有恢复另一套过去的记忆。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 13,
+          "end": 19
+        },
+        "excerpt": "合同复本递过来，他没接。\n\n“看了这个，是不是就算我认了？”\n\n“你可以不认。”她把纸放在空位上，“但你得告诉我，准备什么时候查。”\n\n罗钧望着最上面那张签名页。名字是他的。光凭一个名字，能拿走他攒了这么多年的钱？",
+        "observation": "他拒接合同并担心责任和首付，尚未认领。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 21,
+          "end": 23
+        },
+        "excerpt": "“工作室不是已经关了吗？”\n\n“关了，设备款还在。六万八，五天后到期。”",
+        "observation": "工作室关闭没有取消设备款；本期6.8万元五天后到期。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 27,
+          "end": 31
+        },
+        "excerpt": "“我明天下午要交新工作间的押金。一万二，已经留出来了。如果要我先筹这笔款，我得今天就开始安排。”\n\n大厅里又叫了一个号。罗钧偏过头，看见有人拿着材料往里走。\n\n“你给我个时间。”许澄说，“今天能查什么，明天能查什么。我也有活要接。”",
+        "observation": "许澄独立工作安排及次日1.2万元押金受影响，要求具体核验时间，未无限期垫付。"
+      }
+    ],
+    "full_scene_requirements_not_yet_demonstrated": [
+      "独立留存来源的初步吻合",
+      "完整场景有限合作终点",
+      "保全记录及后续核验安排"
+    ],
+    "new_minor_detail": "第11行提及电话里已说过房子事项；冻结输入没有逐字列出完整电话，这是新增普通交谈细节，不当作旧原件证据。",
+    "confirmed_contradiction": false
+  },
+  "repository_checks": {
+    "status": "PASSED",
+    "structure_files_checked": 28,
+    "state_checks_passed": 27,
+    "checkpoint": 157,
+    "literary_quality_tested": false
+  },
+  "literary_quality_validated": false,
+  "short_pass_is_not_full_scene_pass": true,
+  "full_manuscript_v5_authorized": false,
+  "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_TEST_01_FAILURE",
+  "source_execution_receipt": {
+    "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_READING_20261001.json",
+    "blob": "6ce7e9e2b95fbfb071e66810aa46c478269e5838",
+    "sha256": "64a2a68d7046ca5a9f253080ae71efccaa7c4d7e7d6445b767185858e76e6de7"
+  },
+  "review": {
+    "recorded_at": "2026-10-01T12:42:15+08:00",
+    "feedback_submitted_at": "2026-10-01T12:37:05+08:00",
+    "bound_test_id": "TEST_01",
+    "bound_method_revision": 2,
+    "bound_version": "SP414-S02-SHORT-A1",
+    "bound_artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+    "bound_blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad",
+    "feedback_summary": "短段仍无情绪，像两个僵尸对话，缺少人物受到彼此影响的反应。",
+    "human_exact_feedback": "这个又完全没有任何情绪，感觉两个僵尸在互相对话。一点点反应都没有",
+    "verdict": "REJECT_ABSENT_EMOTIONAL_RESPONSE_AND_ZOMBIE_DIALOGUE",
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "coverage": "COMPLETE_CURRENT_MESSAGE",
+      "original_conversation_locator": "UNAVAILABLE",
+      "original_message_read_back_this_turn": true
+    },
+    "scope": "方法2唯一431字起始短段的人物反应与对话阅读体验；不推定用户否定题材或未生成的完整场景。",
+    "validation_scope": "FIRST_SCREEN",
+    "two_question_test_result": "FAIL_ONE_EXPLICIT_NEGATIVE_SUFFICIENT",
+    "human_quality_accepted": false,
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "same_artifact_resubmission_allowed": false
+  },
+  "diagnosis": {
+    "path": "docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md",
+    "blob": "ef05804d0823619576f038977426b33b02101d66",
+    "sha256": "64af6754075a59ef50ca7a2c9de437c38176a73093f8dc3d5a309696c2e1f50f"
+  },
+  "original_freeze_repository_checks": {
+    "status": "PASSED",
+    "structure_files_checked": 28,
+    "state_checks_passed": 27,
+    "checkpoint": 156,
+    "behavior_tests": {
+      "tests_passed": 25,
+      "scope": "METHOD_02_CODE_BEFORE_PROSE_GENERATION",
+      "code_changed_since_checks": false
+    },
+    "literary_quality_tested": false
+  },
+  "settlement": {
+    "new_prose_count": 0,
+    "prior_prose_edited": false,
+    "mainline_method_revision_changed": false,
+    "fact_clear_cannot_override_human_failure": true
+  }
+}

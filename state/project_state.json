@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-01T12:31:36+08:00",
+  "updated_at": "2026-10-01T12:42:15+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -908,11 +908,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
-  "status": "NOVEL_MAINLINE_METHOD_02_SHORT_TRIAL_AWAITING_ACTUAL_HUMAN_READING",
+  "next_required_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_TEST_01_FAILURE",
+  "status": "NOVEL_MAINLINE_METHOD_02_ACTUAL_HUMAN_EMOTIONAL_RESPONSE_FAIL",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V2.json",
-  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:METHOD_02_SHORT_TRIAL_RENDER_AND_FREEZE",
-  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_READING_20261001.json",
+  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:METHOD_02_SHORT_TRIAL_HUMAN_FAIL_AND_COMPARISON",
+  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1503,13 +1503,25 @@
       "blob": "6ce7e9e2b95fbfb071e66810aa46c478269e5838",
       "sha256": "64a2a68d7046ca5a9f253080ae71efccaa7c4d7e7d6445b767185858e76e6de7",
       "role": "方法2短段执行、范围事实核对及待阅读回执。"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+      "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+      "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2",
+      "role": "方法2短段实际真人否决，另一个阅读答案未补造。"
+    },
+    {
+      "path": "docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md",
+      "blob": "ef05804d0823619576f038977426b33b02101d66",
+      "sha256": "64af6754075a59ef50ca7a2c9de437c38176a73093f8dc3d5a309696c2e1f50f",
+      "role": "两版实际输入和正文对照；编辑判断不冒充已验证因果。"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法2唯一431字短段已冻结待阅读，完整场景及TEST-02均未开始，文学质量未验证。"
+    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法2起始短段已被真人否决，两版对照已完成；对应局部修订待锁定，没有新稿，完整场景与TEST-02均不可执行。"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1786,7 +1798,8 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1 STEP_03_RENDER_AND_FREEZE: one isolated SP414-S02 scene frozen verbatim, factual continuity CLEAR, actual-human reading pending; no method revision or second version.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 TEST_01: actual-human rejection and located robotic-dialogue diagnosis settled; original prose frozen, method revision still 1, no new prose.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_02: one scoped revision bound to actual TEST_01 failure and short writer packet frozen; no prose generated yet.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_02 TEST_01: exactly one isolated short trial frozen verbatim, scoped fact check CLEAR, actual-human result UNKNOWN; no expansion."
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_02 TEST_01: exactly one isolated short trial frozen verbatim, scoped fact check CLEAR, actual-human result UNKNOWN; no expansion.",
+    "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_02 TEST_01: actual-human emotional-response rejection and two-version text comparison settled; method stays 2, no new prose."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3509,8 +3522,8 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "AWAIT_ACTUAL_HUMAN_READING_OF_METHOD_02_SHORT_TRIAL",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
+  "current_human_gate": "CLOSED_HUMAN_REJECTED_METHOD_02_SHORT_TRIAL",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -3572,9 +3585,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
+  "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_TEST_01_FAILURE",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "方法2唯一431字起始短段已独立生成并冻结；只核对短段事实，等待实际阅读。完整场景和不同压力测试均未开始。",
+  "current_focus": "方法2短段实际失败：无情绪、僵尸对话。两版对照已完成，当前只定义一次针对人物反应的局部修订，不生成新稿。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3652,25 +3665,25 @@
     }
   },
   "latest_human_review": {
-    "recorded_at": "2026-10-01T12:16:55+08:00",
-    "feedback_submitted_at": "2026-10-01T12:09:14+08:00",
+    "recorded_at": "2026-10-01T12:42:15+08:00",
+    "feedback_submitted_at": "2026-10-01T12:37:05+08:00",
     "bound_test_id": "TEST_01",
-    "bound_method_revision": 1,
-    "bound_version": "SP414-S02-A1",
-    "bound_artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
-    "bound_blob": "d3796f41e10f90c6197211213bd2f4b96f18d196",
-    "feedback_summary": "不想看，剧情拖拉，AI味极其严重；逐句指出原件核验短问短答，认为两个人像机器人。",
-    "human_exact_feedback": "你不用写这么多，因为有几百个字看下就知道了。不想看，剧情拖拉。ai味道极其严重。\n\n“字像，说明不了什么。”\n“你可以去看原件。”\n“原件在哪儿？”\n“供应商那里。熠光摄影器材，城南展厅后面有财务办公室。这是我的复本。”   如这类一问一答，非常的难以接受。两个人像机器人在对话",
-    "verdict": "REJECT_SLOW_SCENE_AND_REPETITIVE_ROBOTIC_DIALOGUE",
+    "bound_method_revision": 2,
+    "bound_version": "SP414-S02-SHORT-A1",
+    "bound_artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+    "bound_blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad",
+    "feedback_summary": "短段仍无情绪，像两个僵尸对话，缺少人物受到彼此影响的反应。",
+    "human_exact_feedback": "这个又完全没有任何情绪，感觉两个僵尸在互相对话。一点点反应都没有",
+    "verdict": "REJECT_ABSENT_EMOTIONAL_RESPONSE_AND_ZOMBIE_DIALOGUE",
     "source": {
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
       "coverage": "COMPLETE_CURRENT_MESSAGE",
       "original_conversation_locator": "UNAVAILABLE",
       "original_message_read_back_this_turn": true
     },
-    "scope": "本次唯一冻结稿的实际阅读否决；用户称几百字即可判断，不推定读完全文，不扩大成题材否决。",
-    "reading_extent": "EARLY_HUNDREDS_OF_CHARACTERS_USER_REPORTED",
-    "two_question_test_result": "FAIL",
+    "scope": "方法2唯一431字起始短段的人物反应与对话阅读体验；不推定用户否定题材或未生成的完整场景。",
+    "validation_scope": "FIRST_SCREEN",
+    "two_question_test_result": "FAIL_ONE_EXPLICIT_NEGATIVE_SUFFICIENT",
     "human_quality_accepted": false,
     "topic_rejection": false,
     "full_v5_authorized": false,
@@ -3899,7 +3912,7 @@
   "mainline_state": {
     "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
     "revision": 2,
-    "status": "AWAITING_ACTUAL_HUMAN_READING_OF_METHOD_02_SHORT_TRIAL",
+    "status": "METHOD_02_SHORT_TRIAL_FAILED_AWAITING_SCOPED_REVISION",
     "current_step": "STEP_03",
     "contract": {
       "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V2.json",
@@ -3920,7 +3933,7 @@
       }
     ],
     "test_results": {
-      "TEST_01": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_READING_20261001.json"
+      "TEST_01": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json"
     },
     "literary_quality_validated": false,
     "new_prose_authorized_now": false,
@@ -3996,6 +4009,23 @@
         "sha256": "64a2a68d7046ca5a9f253080ae71efccaa7c4d7e7d6445b767185858e76e6de7"
       },
       "literary_quality_validated": false
+    },
+    "failed_test": {
+      "test_id": "TEST_01",
+      "method_revision": 2,
+      "validation_scope": "FIRST_SCREEN",
+      "outcome": "FAIL",
+      "receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+        "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
+      },
+      "diagnosis": {
+        "path": "docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md",
+        "blob": "ef05804d0823619576f038977426b33b02101d66",
+        "sha256": "64af6754075a59ef50ca7a2c9de437c38176a73093f8dc3d5a309696c2e1f50f"
+      },
+      "new_revision_locked": false
     }
   },
   "mainline_transition": {
@@ -4015,16 +4045,16 @@
     }
   },
   "mainline_progress": {
-    "source_head": "4aa692295d23673d4cebe8e6d8be3c881d17c044",
-    "previous_sequence": 155,
-    "current_sequence": 156,
+    "source_head": "b56543573704069b69e3ae045b1bc1bc22dcb167",
+    "previous_sequence": 156,
+    "current_sequence": 157,
     "receipt": {
-      "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_READING_20261001.json",
-      "blob": "6ce7e9e2b95fbfb071e66810aa46c478269e5838",
-      "sha256": "64a2a68d7046ca5a9f253080ae71efccaa7c4d7e7d6445b767185858e76e6de7"
+      "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+      "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+      "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
     },
     "method_revision_changed": false,
     "actual_fiction_test_run": true,
-    "actual_human_test_verdict_received": false
+    "actual_human_test_verdict_received": true
   }
 }
