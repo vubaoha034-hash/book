@@ -1,0 +1,250 @@
+{
+  "schema_version": "novel-mainline-test/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "method_revision": 1,
+  "test_id": "TEST_01",
+  "scene_id": "SP414-S02",
+  "attempt": 1,
+  "recorded_at": "2026-10-01T12:01:57+08:00",
+  "outcome": "UNKNOWN",
+  "status": "FROZEN_AWAITING_ACTUAL_HUMAN_READING",
+  "artifact": {
+    "path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+    "blob": "d3796f41e10f90c6197211213bd2f4b96f18d196"
+  },
+  "artifact_sha256": "a523071f77c7c3ecd272e0d885b0b2a49fb3ed380328d91255eaeaf6beb6c527",
+  "source_head": "df72fe9a957c5bc01378201f202da2fd3761faca",
+  "source_checkpoint_sequence": 152,
+  "writer_input": {
+    "path": "delivery/mainline-v1/test-01-writer-input.md",
+    "blob": "cb5bcc42ef070810fd8b5af113d38df3417f36d5",
+    "sha256": "098bea49758c5cfc1f548d4e2d3d09ea1beaa9a69523989a6300164213c63c55"
+  },
+  "scene_facts": {
+    "path": "delivery/mainline-v1/test-01-scene-facts.json",
+    "blob": "09b34c51b226ebf00a6d54c776127fa9e4de6ad0",
+    "sha256": "60a303c39320ae36105f48f59176f04902196df7dfe7db6b728bb5b435beae3a"
+  },
+  "execution": {
+    "writer_context": "ISOLATED_SUB_AGENT_FORK_NONE",
+    "writer_agent": "/root/novel_test01_isolated_writer",
+    "input_scope": "仅冻结写作输入；没有继承协调者历史、失败反馈、诊断、验收答案或外部材料。",
+    "diagnostic_input_loaded": false,
+    "generation_count": 1,
+    "second_version_count": 0,
+    "coordinator_rewrite_count": 0,
+    "output_preserved_verbatim": true,
+    "file_normalization": "正文内容不变；文件末尾增加一个换行。",
+    "actual_chat_mode_switch_verified": false,
+    "independent_reader_review_performed": false,
+    "full_v5_generated": false
+  },
+  "human_feedback": {
+    "source": "AWAITING_USER_FEEDBACK",
+    "wants_to_continue": null,
+    "robotic_or_tiring": null,
+    "feedback": ""
+  },
+  "fact_check": {
+    "verdict": "CLEAR",
+    "review_type": "COORDINATOR_SAME_CONTEXT",
+    "scope": "按冻结事实核对本场的人物、知识、金额、时间、责任与关系终点；未发现确定性矛盾。此结论不是独立冷读或文学通过。",
+    "literary_quality_pass": false,
+    "located_evidence": [
+      {
+        "check_id": "FIXED_01",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 27,
+          "end": 29
+        },
+        "excerpt": "罗钧抽出告知单。第二页确实列着另一当事人的通知情况。他早先只顾着看中止理由和三十天期限，没翻到那里。\n\n这回答并没让他轻松。她知道他的名字，知道他买房，知道他在这里，而他甚至不认识她的脸。",
+        "observation": "过户已中止，30天窗口仍处于早段，场景没有跨越到期日。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_02",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 179,
+          "end": 181
+        },
+        "excerpt": "至少，不能再只问她是不是打印了一叠假纸。\n\n可他仍不知道那个写下自己名字的人是谁。眼前这些数字，也没有让他想起一盏灯、一间工作室，或者一次付款。",
+        "observation": "数字吻合没有恢复第二过去的主观记忆，也未把签名人身份判明。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_03",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 71,
+          "end": 77
+        },
+        "excerpt": "“你说我们一起开的？”\n\n“嗯。”\n\n“开了三年？”\n\n“经营没满三年。前面还有找地方、装修，后来停业处理东西，也花了时间。”",
+        "observation": "许澄能回忆经营及前后处理经历；本场未替罗钧作出责任认领。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_04",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 137,
+          "end": 145
+        },
+        "excerpt": "罗钧照着合同抬头输入公司全名。在公开页面找到地址和联系电话，地址与复本上的一致。号码不一致。\n\n他把屏幕转给她。\n\n“这里是这个号。”\n\n“展厅前台。合同上是财务直线。”\n\n他拨了公开号码，开了免提。接电话的人问他要看什么器材，他说要核对一份旧协议。对方让他报公司名称，又转了一次。",
+        "observation": "罗钧自行找到公开联系方式，独立拨打供应商电话。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_04_RECORDS",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 165,
+          "end": 177
+        },
+        "excerpt": "罗钧又问最后一笔收款。财务人员报出日期和八千元的金额。许澄翻出一张收款回单，推到中间的座位上。\n\n日期一致，金额一致。对方随后说出的回单编号，也和纸上的相同。\n\n罗钧拿起回单，翻过来看了一眼，背面是空的。\n\n“可以先把你们留存的付款计划和这张收款记录发给我吗？”\n\n“可以提供核验用的副本。原件还是要现场看，里面有其他登记资料。您留个邮箱。”\n\n他报了自己的邮箱，请对方重复一遍。邮件过了两分钟到达。他点开附件，没有用许澄的手机，也没有扫描她给的任何码。\n\n表格的版式和她手里的不完全一样。右上角有供应商的归档日期，那张八千元回单上多了一栏经办人。他把两份材料来回看了几次。",
+        "observation": "供应商收款记录和独立邮件形成初步跨源吻合；未完成双历史真实性证明。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_05",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 241,
+          "end": 247
+        },
+        "excerpt": "“还有时间。”她看着他，“后天下午六点，我们再把查到的东西核一次。那时候离到期只剩几天，不能还是一句正在查。”\n\n罗钧在手机上建了备忘录。他打下明早九点的地址，又打下后天下午六点。\n\n“如果那时候还没查明呢？”\n\n“我会按我查到的情况处理自己的钱，走我需要走的程序。你继续提你的异议。我不会答应替两个人无限期垫着。”",
+        "observation": "复核在后天，仍早于五天后到期；许澄拒绝无限期替两人垫付。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_06",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 231,
+          "end": 237
+        },
+        "excerpt": "“你要我承认共同付款，我现在做不到。”\n\n“我知道。但你有争议，不等于我也从合同里消失了。”\n\n她把通知拿回去，放在合同上。\n\n“明天查完账，我要和供应商谈这一期有没有调整余地。我不会签成只有我一个人负责。你可以把你的异议说清楚，我也要把我的位置说清楚。”",
+        "observation": "核验和付款协商未变成罗钧提前认领责任。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FIXED_07",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 249,
+          "end": 255
+        },
+        "excerpt": "他盯着屏幕，最后加了一句：核验安排，未确认共同责任。\n\n把手机递过去时，他有些迟疑。许澄看完，没有删那一句，只补上了供应商查档时需要带的材料。\n\n“核验结果双方都留一份。”她说。\n\n他点头。",
+        "observation": "只形成有限核验合作，备注明确未确认共同责任，旧亲密关系未恢复。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "AMOUNTS_AND_CLOSURE",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 55,
+          "end": 67
+        },
+        "excerpt": "“还剩十八万六。五天后，这一笔六万八到期。”\n\n罗钧没说话，盯着“共同付款义务人”几个字。他原本要花的钱，每一笔都有去处。首付，税费，搬家费，留一点装修。他昨晚还把一张床加入了购物车，因为那间小公寓的卧室窄，床不能买得太宽。\n\n现在有人在一张他没见过的纸上，替他添了十八万六。\n\n“工作室不是停了吗？”他问。\n\n“停了。器材款没付完。”\n\n“器材呢？”\n\n“停业时的处置清单也在。我带了，但你今天可能看不完。”",
+        "observation": "剩余18.6万元、本期6.8万元五天后到期；停业没有消除设备欠款。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "OWN_LIFE_AND_ARITHMETIC",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 89,
+          "end": 101
+        },
+        "excerpt": "她的手机在电脑包旁边震动了一声。屏幕亮起，是一张修到一半的人像，下面有客户发来的消息。她点开看了，回了几个字。\n\n“你现在还做摄影？”\n\n“做后期。自己接。”\n\n她把手机扣下，重新翻出付款页。\n\n“我明天下午前要交一万二押金。一个小工作间，已经看好了。我不能一直在租的房子里做，最近接的几套产品图要校色，房间下午全是反光。”\n\n她顿了顿。\n\n“这笔钱是我留出来的。旧款如果全要我先筹，它也得填进去。填进去仍然差五万六。”",
+        "observation": "许澄独立做后期，新工作间押金1.2万元次日下午到期；6.8减1.2仍差5.6万元，不是给她设定全部资产。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "SEALING_LIMIT",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 221,
+          "end": 227
+        },
+        "excerpt": "“申请封存，先把两边记录留住。”\n\n许澄抽出她那份通知，翻到背面。\n\n“封存能留住材料。窗口以后，这套记录还能不能继续作为我的权利依据，是另一件事。通知上写了，还要核当前能行使的权利或者要履行的义务。我得问清楚，我查账、付款，还有以后该怎么主张权利，不能只拿到一个已收件的章。”\n\n罗钧拿过通知看。那段字很小，他早先在自己的告知单上也见过，却没读进去。",
+        "observation": "材料封存不自动保证窗口后的权利依据；本场没有用保全直接解决全部责任冲突。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "FUTURE_LOSS_NOT_PRETRIGGERED",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 267,
+          "end": 271
+        },
+        "excerpt": "自己的手机也亮了。房产经纪人问，卖方想知道他还要不要继续办，今天没完成的交割需要重新协商。\n\n他回：继续。身份冲突正在核验，请把卖方能接受的延期条件发给我。\n\n消息发出后，对方一直没有回复。",
+        "observation": "公寓仍在协商延期，没有提前写成交割不可逆失效。",
+        "verdict": "CLEAR"
+      },
+      {
+        "check_id": "NEXT_SCENE",
+        "artifact_path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "lines": {
+          "start": 287,
+          "end": 289
+        },
+        "excerpt": "他打开刚收到的核验邮件，把附件存好，又检查了明早的提醒。九点。地址是他自己从公开页面找到的。\n\n然后他拿起文件袋，回大厅找那个还没有撤掉的咨询号。",
+        "observation": "独立邮件已保存，次日上午九点核原件，当前返回大厅咨询。",
+        "verdict": "CLEAR"
+      }
+    ],
+    "simple_solution_check": {
+      "telephone_verification": "已实际使用独立电话核验，解决复本来源疑点，未解决身份和责任归属。",
+      "refusal_or_delay": "罗钧尚可拒绝认领，但过户受阻、五天后到期和许澄次日押金仍同时存在。",
+      "closure_and_equipment_disposal": "停业及处置清单存在，本场未临时变为足以清偿余额的解法。",
+      "located_lines": [
+        55,
+        63,
+        67,
+        145,
+        157,
+        181,
+        185,
+        225,
+        231,
+        247,
+        269
+      ],
+      "confirmed_costless_core_conflict_solution": false
+    }
+  },
+  "efficiency_instruction": {
+    "source": "ACTUAL_USER_INSTRUCTION",
+    "instruction": "好的，完成，并且我希望你提高速度，高效，我不希望每次都一问一答，应该更加高效。",
+    "applied_scope": "已授权的准备、一次独立写作、事实核对、冻结、保存及交付连续完成；不对例行步骤反复请求确认。真人阅读仍是进入TEST-02所需的质量证据。",
+    "mainline_method_revision_changed": false
+  },
+  "repository_checks": {
+    "status": "PASSED",
+    "checked_at": "2026-10-01T12:02:48+08:00",
+    "validate_skill": {
+      "command": "python scripts/validate_skill.py",
+      "exit_code": 0,
+      "files_checked": 28
+    },
+    "verify_current_state": {
+      "command": "python scripts/verify_current_state.py",
+      "exit_code": 0,
+      "checks_passed": 27,
+      "sequence": 153,
+      "test_01_outcome": "UNKNOWN"
+    },
+    "behavior_tests": {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_passed": 21
+    },
+    "literary_quality_tested": false
+  },
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
+  "full_manuscript_v5_authorized": false,
+  "literary_quality_validated": false
+}

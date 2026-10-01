@@ -19,7 +19,7 @@ V2 文件继续保留，旧调用方式仍可使用；新任务默认走 V3。
 
 主线与入口已保存不等于文风有效。真人阅读结果、结构检查、单场通过和长篇验证分别记录。
 
-2026-10-01：事实及输入准备已完成，下一步是单场独立写作。见 [新聊天执行入口](delivery/mainline-v1/START_TEST01_IN_NEW_CHAT.txt)、[冻结写作输入](delivery/mainline-v1/test-01-writer-input.md) 和 [本次原著阅读范围](docs/NOVEL_MAINLINE_TEST01_SOURCE_READING_20261001.md)。暂无新正文或真人通过结论。
+2026-10-01：TEST-01 唯一第二场已在独立上下文生成并冻结，事实核对未发现确定性矛盾，等待实际真人阅读。见 [冻结正文](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[执行与阅读回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json) 和 [本次原著阅读范围](docs/NOVEL_MAINLINE_TEST01_SOURCE_READING_20261001.md)。已授权环节连续执行；方法版本保持 V1，没有真人通过结论，TEST-02 尚未开始。
 
 ## V3 解决什么
 
