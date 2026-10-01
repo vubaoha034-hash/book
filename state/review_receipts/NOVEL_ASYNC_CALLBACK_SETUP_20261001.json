@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
   "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
-  "status": "RECOVERED_PREPARED_NOT_DISPATCHED",
+  "status": "BLOCKED_BROWSER_CONNECTION_COMPLETE_A2_NOT_SENT",
   "source_head": "392b1a542707560fe3055569bd9b1774004e6856",
   "recorded_at": "2026-10-01T22:04:52+08:00",
   "authority": {
@@ -43,5 +43,15 @@
       "correction": "Fresh attempt A2; entire fill, plugin attachment, complete readback then one Send click"
     }
   ],
-  "draft_exact_verified": true
+  "draft_exact_verified": true,
+  "explicit_send_click_count": 0,
+  "blocker": {
+    "observed_error": "Opera Neon MCP connection timeout on fill and one read retry",
+    "last_confirmed_complete_draft": "A2 frozen draft, not sent",
+    "partial_A1_not_valid_task": true,
+    "later_editor_state": "UNKNOWN_AFTER_TIMEOUT",
+    "dispatch_checker": "Prepare rejected duplicated task identifier in quoted callback template; corrected wording prepared, later fill unconfirmed",
+    "correction_pending": "Reconnect read-only, check actual messages/draft, clear only own residual if safe, refill corrected complete A2 task, freeze/check/one Send/readback",
+    "requires_user_transcription": false
+  }
 }
