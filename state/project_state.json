@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-01T15:29:41+08:00",
+  "updated_at": "2026-10-01T16:37:40+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -607,7 +607,11 @@
     "full_prose_inline_without_request": false,
     "short_trial_source": "ACTUAL_USER_2026_10_01_TEST_01_FAILURE",
     "short_trial_instruction": "你不用写这么多，因为有几百个字看下就知道了。不想看，剧情拖拉。ai味道极其严重。",
-    "short_trial_acceptance_scope": "FIRST_SCREEN_ONLY_NOT_FULL_SCENE_PASS"
+    "short_trial_acceptance_scope": "FIRST_SCREEN_ONLY_NOT_FULL_SCENE_PASS",
+    "daily_novel_reviewer": "OUTSIDE_PROJECT_EVIDENCE_AUDITOR",
+    "routine_failed_draft_human_review_required": false,
+    "external_review_authority_source": "ACTUAL_USER_INSTRUCTION_20261001_153540_HKT",
+    "external_review_scope": "助手发送、取回、核对证据并局部修订/复审；不把AI通过写成真人认可，不自动扩大到全文V5。"
   },
   "closed_task_ids": [
     "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -908,11 +912,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
-  "status": "NOVEL_MAINLINE_METHOD_04_SHORT_TRIAL_AWAITING_ACTUAL_HUMAN_READING",
+  "next_required_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
+  "status": "NOVEL_EXTERNAL_EVIDENCE_REVIEW_READY_FOR_SCOPED_REVISION",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1:METHOD_04_SHORT_TRIAL_RENDER_AND_FREEZE",
-  "last_completed_task_contract": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json",
+  "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
+  "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1623,7 +1627,8 @@
     "PHASE406_A1_SOURCE_IDENTITY_BLOCK",
     "PHASE422_V4_HUMAN_SEVERE_AI_SMELL_REJECTED",
     "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
-    "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED"
+    "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED",
+    "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -3616,7 +3621,7 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "AWAIT_ACTUAL_HUMAN_READING_OF_METHOD_04_SHORT_TRIAL",
+  "current_human_gate": "METHOD_04_HUMAN_RESULT_UNKNOWN_DAILY_EXTERNAL_EVIDENCE_AUDIT_ACTIVE",
   "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
@@ -3679,9 +3684,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01",
+  "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "方法4唯一404字起始短段已独立生成并原样冻结；事实与人物反应分开复核，真人结果未知。完整场景及不同压力测试未开始。",
+  "current_focus": "项目外独立证据审稿已完成；初始两份负例及未见旧问答片段均被AI漏放，已取消自动文学通关权。方法4仍为唯一冻结稿、真人UNKNOWN；只准备RC3局部修订，不生成新正文。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4006,7 +4011,7 @@
   "mainline_state": {
     "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
     "revision": 4,
-    "status": "AWAITING_ACTUAL_HUMAN_READING_OF_METHOD_04_SHORT_TRIAL",
+    "status": "METHOD_04_EXTERNAL_REVISE_HUMAN_RESULT_UNKNOWN",
     "current_step": "STEP_03",
     "contract": {
       "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
@@ -4218,16 +4223,52 @@
     }
   },
   "mainline_progress": {
-    "source_head": "ee12146bc38ed441b9496b8622196a3831b16442",
-    "previous_sequence": 161,
-    "current_sequence": 162,
+    "source_head": "f389278a5859eb9f615546fd5de492805350064a",
+    "previous_sequence": 162,
+    "current_sequence": 163,
     "receipt": {
-      "path": "state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json",
-      "blob": "f43226cdc8aa1fe94d12eca6d688dccec73e8063",
-      "sha256": "31e00f36f9a8d6d25e6e41decc1a5cc1fd7c289b6fdbc4a286710568027235ab"
+      "path": "state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json",
+      "blob": "8eb9cbb56c5873fe5c2df3183fee93392744cafd",
+      "sha256": "d1402fcb2106068f8eb1b27e3ad3d402524c80290f4c3ab50dac16a3fec0a889"
     },
     "method_revision_changed": false,
-    "actual_fiction_test_run": true,
-    "actual_human_test_verdict_received": false
+    "actual_fiction_test_run": false,
+    "actual_human_test_verdict_received": false,
+    "external_review_roundtrip_completed": true,
+    "reader_preference_calibration_pass": false,
+    "external_editing_evidence_received": true
+  },
+  "external_review_state": {
+    "schema_version": "novel-external-review-state/v1",
+    "project_id": "novel-distillation",
+    "active": true,
+    "status": "FIRST_REVIEW_ROUNDTRIP_COMPLETE_EVIDENCE_ONLY",
+    "receipt": {
+      "path": "state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json",
+      "blob": "8eb9cbb56c5873fe5c2df3183fee93392744cafd",
+      "sha256": "d1402fcb2106068f8eb1b27e3ad3d402524c80290f4c3ab50dac16a3fec0a889"
+    },
+    "protocol": {
+      "path": "docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md",
+      "blob": "398c2e5d941bf5ed5a7c04617c14a9a9b52490a8",
+      "sha256": "52b876393bb6743b9e2c1fef91a66b4076dc6ea5a42e3992ab02eca56816e775"
+    },
+    "route_lock": {
+      "path": "state/review_receipts/NOVEL_EXTERNAL_REVIEW_ROUTE_LOCK_20261001.json",
+      "blob": "bc42595c43f12a7b8399fb97378ff54648c897d1",
+      "sha256": "257fb239f4f9b8117a5fc6facf7ee3a922d07488f6850ead1c6a4747c2cd4eb6"
+    },
+    "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+    "reviewer_role": "EVIDENCE_AUDITOR",
+    "editorial_verdict": "REVISE",
+    "priority_issue_id": "RC3",
+    "user_taste_alignment": "NOT_VALIDATED",
+    "standalone_quality_gate_allowed": false,
+    "human_quality_result": "UNKNOWN",
+    "new_prose_authorized": false,
+    "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
+    "daily_review_requires_user": false,
+    "milestone_human_feedback_scope": "阶段成稿或改变方向/审美的关键决定；AI不替代实际认可。",
+    "automatic_background_sync": false
   }
 }

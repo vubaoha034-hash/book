@@ -1,4 +1,4 @@
-当前推进：[方法修订4](docs/NOVEL_MAINLINE_METHOD_V4_20261001.md)及[独立写作输入](delivery/mainline-v4/test-01-short-writer-input.md)已锁定，依据[方法3实际留存失败](state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json)改变场景进入点与当下安排的碰撞；此前局部进步保留。[唯一404字短段](delivery/mainline-v4/test-01-sp414-s02-short-a1.md)已原样冻结，[阅读回执](state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json)为UNKNOWN，文学质量未验证。
+当前推进：通过Opera Neon建立项目外[小说独立证据评审](https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd)，已取回实际报告并完成负例校准。见[专业评审协议](docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md)、[试运行与职责调整](docs/NOVEL_EXTERNAL_REVIEW_PILOT_RESULT_20261001.md)及[结果回执](state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json)。AI漏放两份已知失败稿和未见旧问答片段，已取消自动文学通关权。当前[方法4唯一404字稿](delivery/mainline-v4/test-01-sp414-s02-short-a1.md)保持冻结、真人UNKNOWN；下一步只准备RC3局部修订，用户不逐轮审常规失败稿。
 
 # Novel Writing Master V3
 
@@ -21,7 +21,7 @@ V2 文件继续保留，旧调用方式仍可使用；新任务默认走 V3。
 
 主线与入口已保存不等于文风有效。真人阅读结果、结构检查、单场通过和长篇验证分别记录。
 
-2026-10-01：方法1 TEST-01 已被真人否决：不想读、拖拉、机器人问答。见 [原稿](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[实际失败回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json) 和 [主要失败定位](docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md)。[方法修订2](docs/NOVEL_MAINLINE_METHOD_V2_20261001.md)的[唯一短段](delivery/mainline-v2/test-01-sp414-s02-short-a1.md)也被真人否决：无情绪、僵尸对话。见 [实际反馈](state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json)和[两版对照](docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md)。原件全部保留。方法3随后获得明确开头留存否决；当前修订号4，唯一短段已冻结待实际阅读，完整场景和TEST-02不可执行。
+2026-10-01：方法1 TEST-01 已被真人否决：不想读、拖拉、机器人问答。见 [原稿](delivery/mainline-v1/test-01-sp414-s02-a1.md)、[实际失败回执](state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json) 和 [主要失败定位](docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md)。[方法修订2](docs/NOVEL_MAINLINE_METHOD_V2_20261001.md)的[唯一短段](delivery/mainline-v2/test-01-sp414-s02-short-a1.md)也被真人否决：无情绪、僵尸对话。见 [实际反馈](state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json)和[两版对照](docs/NOVEL_MAINLINE_METHOD02_EMOTIONAL_RESPONSE_FAILURE_20261001.md)。原件全部保留。方法3随后获得明确开头留存否决；当前修订号4，唯一短段保持冻结，已完成外部证据审稿但真人结果UNKNOWN；当前只准备一次局部修订，完整场景和TEST-02不可执行。
 
 ## V3 解决什么
 

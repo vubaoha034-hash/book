@@ -39,6 +39,9 @@ class CurrentStateTests(unittest.TestCase):
         # Use a fresh STEP_01 fixture of the current locked method. The real
         # project may legitimately advance; CI must not freeze its live cursor.
         def fresh_fixture(state):
+            # The baseline fixtures test the human mainline route. External
+            # review is exercised separately against its real frozen protocol.
+            state.pop('external_review_state', None)
             state['mainline_state'].update(current_step='STEP_01', completed_steps=[],
                 test_artifacts={}, test_results={}, literary_quality_validated=False,
                 new_prose_authorized_now=False, full_v5_authorized=False)

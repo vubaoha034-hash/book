@@ -6,9 +6,9 @@
 
 执行前运行 `python scripts/verify_current_state.py`；失败时先核对状态冲突，停止生成、重投或晋级。执行后在同一次变更中同步状态、检查点及任务回执，回读远端 HEAD 与实际文件。
 
-唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化须先有对应冻结测试的实际失败记录；参见 `MAINLINE.md`。
+唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点162，方法修订号3。唯一404字短段：`delivery/mainline-v4/test-01-sp414-s02-short-a1.md`；执行及阅读回执：`state/review_receipts/NOVEL_MAINLINE_V4_TEST01_SHORT_A1_READING_20261001.json`。唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01`。正文原样冻结，真人结果UNKNOWN；不生成第二稿，不扩写。当前计划：`docs/NOVEL_MAINLINE_METHOD_V4_20261001.md`；任务：`state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json`；旧版失败证据完整保留。
+当前位置：检查点163，创作方法修订号4。唯一404字稿及旧真人UNKNOWN回执保持原样。项目外证据评审已经实际运行，协议：`docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md`；结果：`state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json`；试运行结论：`docs/NOVEL_EXTERNAL_REVIEW_PILOT_RESULT_20261001.md`。唯一下一动作：`DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW`。只围绕RC3准备一次局部输入/方法修订并另立锁，当前不生成第二稿、完整场景或全文V5；原计划、输入、锁及真人反馈不覆盖。
 
 方法1已失败原稿：`delivery/mainline-v1/test-01-sp414-s02-a1.md`，Git blob `d3796f41e10f90c6197211213bd2f4b96f18d196`。原始冻结执行回执保留：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json`。方法1真人失败回执：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json`；主要失败定位与局部修订范围：`docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md`。本次写作者使用不继承历史的独立上下文，只带入 `delivery/mainline-v1/test-01-writer-input.md`；协调者核对事实，未改写输出。历史新聊天执行入口不再用于重投本测试。`MAINLINE.md`中的初始位置描述保持为锁定当时的记录，实时进度以当前状态和检查点为准。
 
@@ -19,3 +19,5 @@
 写作者只读单独冻结的写作输入，不读本入口、失败反馈、诊断、验收答案或历史全部规则。通过一场只能证明一场；完整稿 V5、历史已关闭任务与自动晋级继续关闭。尚未取得真人反馈时保持 UNKNOWN。
 
 当前脚本验证主线与状态的一致性，保留旧稿拒绝边界。它不评判文学质量，也不构成平台级硬锁。
+
+日常审核分工已按用户要求改变：助手负责冻结版本、通过Opera Neon发送到项目外评审、读取原始报告、核对证据、局部修订与复审；用户不逐轮审失败稿。初始负例0/2、未见材料负例0/1均漏检，所以该评审已实际改为EVIDENCE_AUDITOR，不认证好看或个人文风；原AI赞扬不翻案，实际认可仍UNKNOWN。完整任务及私有浏览器快照不公开。不能声称有后台跨聊天自动推送。

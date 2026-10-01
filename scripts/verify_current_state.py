@@ -13,6 +13,8 @@ RECEIPT = 'state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUT
 EVENT = 'actual_human_opening_trial_verdict_20260930'
 ROOT_LOCK_PATH = 'state/review_receipts/NOVEL_MAINLINE_V1_LOCK_20261001.json'
 ROOT_LOCK_BLOB = 'efb0717bdf2faa9bbc67b89898cbe11059c39214'
+EXTERNAL_REVIEW_LOCK_PATH = 'state/review_receipts/NOVEL_EXTERNAL_REVIEW_ROUTE_LOCK_20261001.json'
+EXTERNAL_REVIEW_LOCK_BLOB = 'bc42595c43f12a7b8399fb97378ff54648c897d1'
 
 def git_blob(data: bytes) -> str:
     return hashlib.sha1(b'blob ' + str(len(data)).encode('ascii') + b'\0' + data).hexdigest()
@@ -28,6 +30,171 @@ def safe_file(root: Path, relative: str) -> Path:
 
 def load(root: Path, relative: str) -> dict:
     return json.loads(safe_file(root, relative).read_text(encoding='utf-8'))
+
+def bound_json(root: Path, ref: dict) -> dict:
+    data = safe_file(root, ref.get('path', '')).read_bytes()
+    if ref.get('blob') != git_blob(data) or ref.get('sha256') != hashlib.sha256(data).hexdigest():
+        raise ValueError('EXTERNAL_REVIEW_IDENTITY_DRIFT')
+    return json.loads(data)
+
+def external_review_action(root: Path, project: dict, cp: dict, target_test: str | None,
+                          outcomes: dict, frozen: dict, base_action: str) -> str:
+    """Route a located external diagnosis without inventing a human verdict.
+
+    This permits preparation of a bounded revision. It cannot authorize prose,
+    turn AI praise into a human pass, or promote a short excerpt to a full scene.
+    """
+    route = project.get('external_review_state')
+    if route is None and cp.get('external_review_state') is None:
+        return base_action
+    if not route or route != cp.get('external_review_state'):
+        raise ValueError('EXTERNAL_REVIEW_STATE_DRIFT')
+    if route.get('active') is not True:
+        return base_action
+    lock_data = safe_file(root, EXTERNAL_REVIEW_LOCK_PATH).read_bytes()
+    if git_blob(lock_data) != EXTERNAL_REVIEW_LOCK_BLOB:
+        raise ValueError('EXTERNAL_REVIEW_LOCK_CHANGED')
+    lock = json.loads(lock_data)
+    task = bound_json(root, lock.get('task', {}))
+    protocol_ref = lock.get('protocol', {})
+    protocol = safe_file(root, protocol_ref.get('path', '')).read_bytes()
+    if (git_blob(protocol) != protocol_ref.get('blob') or
+        hashlib.sha256(protocol).hexdigest() != protocol_ref.get('sha256') or
+        task.get('authority') != lock.get('basis') or
+        lock.get('basis', {}).get('type') != 'EXPLICIT_USER_SCOPE_CHANGE' or
+        lock.get('basis', {}).get('source') != 'ACTUAL_USER_INSTRUCTION' or
+        not lock.get('basis', {}).get('instruction', '').strip()):
+        raise ValueError('EXTERNAL_REVIEW_WITHOUT_BOUND_AUTHORITY')
+    receipt = bound_json(root, route.get('receipt', {}))
+    state = project.get('mainline_state', {})
+    binding = receipt.get('mainline_binding', {})
+    if (receipt.get('schema_version') != 'novel-external-review-receipt/v1' or
+        receipt.get('project_id') != project.get('project_id') or
+        receipt.get('task_id') != task.get('task_id') or
+        receipt.get('protocol') != protocol_ref or
+        binding.get('task_id') != state.get('task_id') or
+        binding.get('method_revision') != state.get('revision') or
+        binding.get('test_id') != target_test or
+        binding.get('artifact') != frozen.get(target_test) or
+        binding.get('validation_scope') != 'FIRST_SCREEN'):
+        raise ValueError('EXTERNAL_REVIEW_TARGET_DRIFT')
+    source = receipt.get('source', {})
+    import re
+    if (source.get('kind') != 'EXTERNAL_AI_CHAT' or source.get('actual_human') is not False or
+        source.get('surface') != 'OPERA_NEON' or
+        not re.fullmatch(r'https://chatgpt.com/c/[^/]+', source.get('conversation_url', '')) or
+        receipt.get('standalone_quality_gate_allowed') is not False or
+        receipt.get('human_quality_result') != 'UNKNOWN' or
+        route.get('new_prose_authorized') is not False):
+        raise ValueError('EXTERNAL_REVIEW_SCOPE_PROMOTION')
+    proofs = receipt.get('dispatch_proofs', [])
+    if (len(proofs) != 4 or len({p.get('task_id') for p in proofs}) != 4 or
+        any(p.get('verdict') != 'OBSERVED_SINGLE_COMPLETE_NEW_MESSAGE' or
+            p.get('conversation_url') != source['conversation_url'] or
+            not re.fullmatch(r'[0-9a-f]{64}', p.get('message_sha256', '')) for p in proofs)):
+        raise ValueError('EXTERNAL_REVIEW_DISPATCH_UNCONFIRMED')
+    reports = receipt.get('reports', {})
+    a, b, c, d = (bound_json(root, reports.get(key, {})) for key in ('A', 'B', 'C', 'D'))
+    if (a.get('review_context') != 'FRESH_EXTERNAL_CHAT_FIRST_READ' or
+        b.get('review_context') != 'SAME_EXTERNAL_REVIEWER_SECOND_STAGE' or
+        c.get('review_context') != 'SAME_EXTERNAL_CHAT_UNSEEN_TEXT_TEST' or
+        d.get('review_context') != 'SAME_EXTERNAL_REVIEWER_DIAGNOSTIC_STAGE'):
+        raise ValueError('EXTERNAL_REVIEW_INDEPENDENCE_MISREPRESENTED')
+    items = {item.get('sample_id'): item for item in a.get('items', [])}
+    samples = {s.get('sample_id'): s.get('artifact', {}) for s in receipt.get('blind_samples', [])}
+    if (len(samples) != 3 or set(samples) != set(items) or
+        samples.get('S02') != binding.get('artifact') or
+        b.get('target_sample_id') != 'S02' or
+        c.get('technical_errata', {}).get('target_sample_id') != 'S02' or
+        d.get('target_sample_id') != 'S02'):
+        raise ValueError('EXTERNAL_REVIEW_SAMPLE_BINDING_DRIFT')
+    for artifact in samples.values():
+        if git_blob(safe_file(root, artifact.get('path', '')).read_bytes()) != artifact.get('blob'):
+            raise ValueError('EXTERNAL_REVIEW_SAMPLE_BINDING_DRIFT')
+    calibration = receipt.get('calibration', {}).get('initial', {})
+    negatives = calibration.get('known_negatives', [])
+    if len(negatives) != 2 or len({n.get('sample_id') for n in negatives}) != 2:
+        raise ValueError('EXTERNAL_REVIEW_CALIBRATION_DRIFT')
+    hits = 0
+    for negative in negatives:
+        human_ref = negative.get('human_receipt', {})
+        human = bound_json(root, human_ref)
+        if (test_outcome(root, human_ref['path']) != 'FAIL' or
+            human.get('human_feedback', {}).get('source') != 'ACTUAL_USER_FEEDBACK' or
+            human.get('artifact') != samples.get(negative.get('sample_id'))):
+            raise ValueError('EXTERNAL_REVIEW_CALIBRATION_NOT_HUMAN_BOUND')
+        item = items.get(negative.get('sample_id'))
+        if not item:
+            raise ValueError('EXTERNAL_REVIEW_CALIBRATION_DRIFT')
+        hits += item.get('wants_to_continue') is False or item.get('robotic_or_tiring') is True
+    if (calibration.get('hits') != hits or calibration.get('count') != len(negatives) or
+        b.get('calibration', {}).get('known_negative_rejection_hits') != hits or
+        b.get('calibration', {}).get('known_negative_count') != len(negatives)):
+        raise ValueError('EXTERNAL_REVIEW_CALIBRATION_DRIFT')
+    retest = receipt.get('calibration', {}).get('unseen_retest', {})
+    original = safe_file(root, retest.get('source_artifact', {}).get('path', '')).read_bytes()
+    excerpt_ref = retest.get('excerpt', {})
+    excerpt = safe_file(root, excerpt_ref.get('path', '')).read_bytes()
+    original_text = original.decode('utf-8')
+    if (git_blob(original) != retest.get('source_artifact', {}).get('blob') or
+        git_blob(excerpt) != excerpt_ref.get('blob') or
+        hashlib.sha256(excerpt).hexdigest() != excerpt_ref.get('sha256') or
+        excerpt.decode('utf-8') != original_text[retest.get('start_character'):retest.get('end_character_exclusive')]):
+        raise ValueError('EXTERNAL_REVIEW_RETEST_SOURCE_DRIFT')
+    retest_human_ref = retest.get('human_receipt', {})
+    retest_human = bound_json(root, retest_human_ref)
+    if (test_outcome(root, retest_human_ref['path']) != 'FAIL' or
+        retest_human.get('artifact') != retest.get('source_artifact') or
+        retest_human.get('human_feedback', {}).get('source') != 'ACTUAL_USER_FEEDBACK'):
+        raise ValueError('EXTERNAL_REVIEW_CALIBRATION_NOT_HUMAN_BOUND')
+    unseen = c.get('unseen_review', {})
+    retest_hits = int(unseen.get('wants_to_continue') is False or unseen.get('robotic_or_tiring') is True)
+    if retest.get('hits') != retest_hits or retest.get('count') != 1:
+        raise ValueError('EXTERNAL_REVIEW_CALIBRATION_DRIFT')
+    admission = d.get('calibration_admission', {})
+    if (d.get('role') != 'EVIDENCE_AUDITOR' or
+        d.get('automatic_literary_quality_certification') is not False or
+        receipt.get('reviewer_role') != 'EVIDENCE_AUDITOR' or
+        admission.get('initial_hits') != hits or admission.get('initial_count') != len(negatives) or
+        admission.get('unseen_retest_hits') != retest_hits or admission.get('unseen_retest_count') != 1 or
+        admission.get('user_taste_alignment') != 'NOT_VALIDATED'):
+        raise ValueError('EXTERNAL_REVIEW_SCOPE_PROMOTION')
+    verdict = b.get('current_editorial_verdict')
+    if verdict != receipt.get('editorial_verdict') or verdict not in (
+            'EXTERNAL_PASS_PROVISIONAL', 'REVISE', 'BLOCKED', 'INSUFFICIENT'):
+        raise ValueError('EXTERNAL_REVIEW_VERDICT_DRIFT')
+    corrections = c.get('technical_errata', {}).get('root_cause_corrections', [])
+    roots = b.get('root_causes', [])
+    text = safe_file(root, binding['artifact']['path']).read_text(encoding='utf-8')
+    if (not roots or len(roots) > 3 or len(corrections) != len(roots) or
+        len({r.get('id') for r in corrections}) != len(corrections) or
+        {r.get('id') for r in roots} != {r.get('id') for r in corrections}):
+        raise ValueError('EXTERNAL_REVIEW_UNLOCATED_DIAGNOSIS')
+    for correction in corrections:
+        if (correction.get('severity') not in ('P0', 'P1', 'P2') or
+            not correction.get('quote') or correction['quote'] not in text):
+            raise ValueError('EXTERNAL_REVIEW_UNLOCATED_DIAGNOSIS')
+    priority = d.get('priority_issue', {})
+    if (priority.get('id') not in {r.get('id') for r in roots} or
+        not priority.get('quote') or priority['quote'] not in text or
+        not priority.get('retest_condition') or
+        priority != receipt.get('priority_issue') or
+        d.get('verdict') != receipt.get('active_evidence_verdict') or
+        d.get('verdict') not in ('REVISE', 'BLOCKED', 'NO_LOCATED_BLOCKERS', 'INSUFFICIENT')):
+        raise ValueError('EXTERNAL_REVIEW_UNLOCATED_DIAGNOSIS')
+    # A user's verdict always wins. A reviewer's positive label, especially after
+    # failed calibration, cannot open any human or full-manuscript gate.
+    if outcomes.get(target_test) in ('FAIL', 'PASS'):
+        expected = base_action
+    elif verdict in ('REVISE', 'BLOCKED'):
+        expected = 'DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW'
+    elif verdict == 'INSUFFICIENT':
+        expected = 'RESOLVE_LOCATED_EXTERNAL_REVIEW_EVIDENCE_GAP'
+    else:
+        expected = 'REPAIR_EXTERNAL_REVIEW_BEFORE_PROSE_RELEASE'
+    if receipt.get('next_action') != expected or route.get('next_action') != expected:
+        raise ValueError('EXTERNAL_REVIEW_NEXT_ACTION_DRIFT')
+    return expected
 
 def test_outcome(root: Path, relative: str) -> str:
     """Check evidence completeness; do not judge the prose or invent feedback."""
@@ -148,6 +315,8 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         if 'RECORDED_FROZEN_TEST_FAILURE' not in task.get('change_policy', {}).get('allowed_revision_basis', []):
             raise ValueError('FAILED_TEST_WITHOUT_REVISION_POLICY')
         expected_action = 'DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_' + target_test + '_FAILURE'
+    expected_action = external_review_action(root, project, cp, target_test,
+        outcomes, frozen, expected_action)
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

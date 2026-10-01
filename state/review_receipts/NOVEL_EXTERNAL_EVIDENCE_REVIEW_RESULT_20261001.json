@@ -1,0 +1,223 @@
+{
+  "schema_version": "novel-external-review-receipt/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
+  "status": "COMPLETE_REVIEW_ROUNDTRIP_EVIDENCE_ONLY",
+  "protocol": {
+    "path": "docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md",
+    "blob": "398c2e5d941bf5ed5a7c04617c14a9a9b52490a8",
+    "sha256": "52b876393bb6743b9e2c1fef91a66b4076dc6ea5a42e3992ab02eca56816e775"
+  },
+  "review_task": {
+    "path": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
+    "blob": "1b992fbcb27b6bff1924a5027e1e2ff47a7811c1",
+    "sha256": "6fa678b8ab9929b7cf0a36100db554759e82fa3832b52052bc61353ce150c731"
+  },
+  "route_lock": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_REVIEW_ROUTE_LOCK_20261001.json",
+    "blob": "bc42595c43f12a7b8399fb97378ff54648c897d1",
+    "sha256": "257fb239f4f9b8117a5fc6facf7ee3a922d07488f6850ead1c6a4747c2cd4eb6"
+  },
+  "calibration_failure": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_REVIEW_CALIBRATION_FAILURE_20261001.json",
+    "blob": "80b13d17a254bea99b8a14253e73662f3481eb25",
+    "sha256": "a16c26eba21b75e24848c2cef41f61ea2289e52cf67fa17b6c7b67f34f875446"
+  },
+  "mainline_binding": {
+    "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "method_revision": 4,
+    "test_id": "TEST_01",
+    "validation_scope": "FIRST_SCREEN",
+    "artifact": {
+      "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+    }
+  },
+  "source": {
+    "kind": "EXTERNAL_AI_CHAT",
+    "actual_human": false,
+    "surface": "OPERA_NEON",
+    "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+    "conversation_title": "小说独立证据评审",
+    "mode": "CHAT",
+    "thinking_effort": "EXTREME_HIGH_OBSERVED_PRE_DISPATCH",
+    "freshness": "A为新项目外上下文；B/C/D为同一外部上下文后续阶段；C只称未见材料测试。",
+    "account_memory_isolation_proven": false
+  },
+  "dispatch_proofs": [
+    {
+      "task_id": "NOVEL-EXTERNAL-REVIEW-20261001-A",
+      "message_sha256": "fefccebc8c1d4de2d450af7bb1f274b005d08af0b451a54f255c9bb02f5ab621",
+      "verdict": "OBSERVED_SINGLE_COMPLETE_NEW_MESSAGE",
+      "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "composer_after_send": "LF_ONLY",
+      "proof_scope": "ONE_OBSERVED_CONVERSATION_ONLY"
+    },
+    {
+      "task_id": "NOVEL-EXTERNAL-REVIEW-20261001-B",
+      "message_sha256": "73de231e2b9036717df64e17eba5f8e283030b0fad57cc84c0c8e0b894841bb3",
+      "verdict": "OBSERVED_SINGLE_COMPLETE_NEW_MESSAGE",
+      "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "composer_after_send": "LF_ONLY",
+      "proof_scope": "ONE_OBSERVED_CONVERSATION_ONLY"
+    },
+    {
+      "task_id": "NOVEL-EXTERNAL-REVIEW-20261001-C",
+      "message_sha256": "f1c8e761c1b165338829e02ac99a83d28a58b2f9a3382ccda2b5eeb78f88f256",
+      "verdict": "OBSERVED_SINGLE_COMPLETE_NEW_MESSAGE",
+      "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "composer_after_send": "LF_ONLY",
+      "proof_scope": "ONE_OBSERVED_CONVERSATION_ONLY"
+    },
+    {
+      "task_id": "NOVEL-EXTERNAL-REVIEW-20261001-D2",
+      "message_sha256": "8fbf16fd2a1bc54c44f3afdb366a42592ffd7a3bd2dee93a7d413715b18a9396",
+      "verdict": "OBSERVED_SINGLE_COMPLETE_NEW_MESSAGE",
+      "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "composer_after_send": "LF_ONLY",
+      "proof_scope": "ONE_OBSERVED_CONVERSATION_ONLY"
+    }
+  ],
+  "send_recovery": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_REVIEW_SEND_RECOVERY_20261001.json",
+    "blob": "4bc0d43667e835d5c35c0c5c0d8bdfa0742f9666",
+    "sha256": "cb1008c28d70914d5ea6b550e7e7792110cde1a606f3868eb922937fb9966f1b"
+  },
+  "unconfirmed_D_counted_as_success": false,
+  "reports": {
+    "A": {
+      "path": "delivery/external-review/20261001-coldread-a.json",
+      "blob": "84dfa4851003bf4d0950655397fa96380e131ff5",
+      "sha256": "90e85f927674cba880dc964a3142fac57a65d6dbd59b07296486f2e54f060eab"
+    },
+    "B": {
+      "path": "delivery/external-review/20261001-editorial-b.json",
+      "blob": "09680a8d3fd65259541885501dd19df041d4cb9f",
+      "sha256": "d4e2f25ab773ba5340e7dfcb28cbede7fcdc7d8e2608a3d204d4ae746ba5cd81"
+    },
+    "C": {
+      "path": "delivery/external-review/20261001-calibration-retest-c.json",
+      "blob": "a6e37c895e3fc2156edc511b969543a114f70765",
+      "sha256": "c93eddae78f240b0bad305836552efd5a5685d37fde8a7e137905f93b9c493d7"
+    },
+    "D": {
+      "path": "delivery/external-review/20261001-evidence-audit-d.json",
+      "sha256": "51394b29617749c7e58d8b45996bcc4fbc431719442d1fb6899b4402cfbf2510",
+      "blob": "097e8e649c59e332685acd2baa98fd98ca2c83aa"
+    }
+  },
+  "blind_samples": [
+    {
+      "sample_id": "S01",
+      "artifact": {
+        "path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+        "blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe"
+      }
+    },
+    {
+      "sample_id": "S02",
+      "artifact": {
+        "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+      }
+    },
+    {
+      "sample_id": "S03",
+      "artifact": {
+        "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad"
+      }
+    }
+  ],
+  "calibration": {
+    "initial": {
+      "hits": 0,
+      "count": 2,
+      "known_negatives": [
+        {
+          "sample_id": "S01",
+          "human_receipt": {
+            "path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+            "blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd",
+            "sha256": "13d317cb036d7aa9f5ea06942d80b964718e3bc7435bfc46e731cb5dec76f35c"
+          }
+        },
+        {
+          "sample_id": "S03",
+          "human_receipt": {
+            "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+            "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+            "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
+          }
+        }
+      ]
+    },
+    "unseen_retest": {
+      "hits": 0,
+      "count": 1,
+      "source_artifact": {
+        "path": "delivery/mainline-v1/test-01-sp414-s02-a1.md",
+        "blob": "d3796f41e10f90c6197211213bd2f4b96f18d196"
+      },
+      "excerpt": {
+        "path": "delivery/external-review/20261001-unseen-excerpt-source.txt",
+        "blob": "27cceaae9792f5d26d4228e3eff730d03cef2b0d",
+        "sha256": "cc5b515bdaa633ba9e5b9412d92247f32d3b37c014b23216b1b5c9b758083394"
+      },
+      "start_character": 490,
+      "end_character_exclusive": 986,
+      "human_receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json",
+        "blob": "35b294aab7f6e5ecfd3d459337a41c768584a6e1",
+        "sha256": "7360cd5006cd49c1edd94d2bec2ac1fe9726ee15671422ebbee77c562dda6999"
+      },
+      "context": "SAME_EXTERNAL_CHAT_UNSEEN_TEXT_TEST",
+      "scope": "原样摘录包含用户逐句引用拒绝的问答块，不宣称用户单独评价过该496字符摘录全部内容。"
+    },
+    "matched_positive_reference": "NOT_ESTABLISHED",
+    "user_taste_alignment": "NOT_VALIDATED",
+    "false_positive_rate": "UNKNOWN",
+    "claim_limit": "仅记录具体负例漏检；不估计总体准确率、误杀率或稳定写作效果。"
+  },
+  "reviewer_role": "EVIDENCE_AUDITOR",
+  "standalone_quality_gate_allowed": false,
+  "automatic_background_sync": false,
+  "editorial_verdict": "REVISE",
+  "active_evidence_verdict": "REVISE",
+  "priority_issue": {
+    "id": "RC3",
+    "severity": "P1",
+    "quote": "“我三点就得走，要赶客户的片子。”她看了眼表，“五天后有款到期。你今天不查，可以另外安排。但你不能说一句以后再谈，就让我一直等着。”",
+    "interpretation_not_fact_error": true,
+    "cause": "这是编辑判断，不是确定事实错误。双方当下打算是明确的：罗钧要先处理房子，正文有“窗口还没关。我总得问问房子。”；许澄需要限定自己的等待和协助时间，正文有“三点就得走”和“五天后有款到期”。实际后果也存在：罗钧最后“便把椅子拉回来，坐下掏出手机。”。问题在于，中段连续把工作安排、到期时间、查证安排交代出来后，对话的主要功能有滑向条件说明的风险。人物确实在互相施加影响，但文本目前还不能仅凭这些信息和最后坐下这一动作证明关系压力、情绪传递已经足够。",
+    "reading_effect_hypothesis": "可能出现一种阅读结果：读者能清楚复述双方的期限、立场和核验步骤，却主要在接收“接下来怎样查”的程序信息，而不是持续感到两个人的判断正在彼此改变。这个判断只能作为修改假设，不能冒充刘先生对S02的实际反馈，因为S02尚无真人结论。",
+    "revision_target": "局部处理这一段的信息—人物作用关系：保留三点、客户片子、五天到期和独立核验这些必要事实，但使必要信息出现后更明确地作用于罗钧的判断、优先顺序或两人的关系位置；目标不是增加争吵、灾难、额外损失或新世界规则，也不是要求他提前认责。",
+    "protect": [
+      "保留“我没让你转钱。”和“也没让你装作认识我。”所形成的双方立场冲突，不把许澄改成单纯催债者。",
+      "保留罗钧对房子、首付和陌生人的自我保护；核验不能变成承认第二过去或承担18.6万元责任。",
+      "保留“供应商叫什么？电话我自己找。”所体现的公开独立核验边界；许澄不能成为唯一证据来源。"
+    ],
+    "retest_condition": "只复验这一局部：逐项标出许澄说出时间和付款压力前后，罗钧的判断、说话目的或下一步安排发生了什么具体变化。如果修订后仍只能证明“他知道了更多条件，然后顺手开始查”，而无法指出信息如何改变人物之间的当场作用，则该P1问题仍未关闭。反之，只要变化可以在文本中直接观察到，就不要求必须表现为金钱损失、离开房产窗口、争吵或其他高强度事件。"
+  },
+  "human_quality_result": "UNKNOWN",
+  "literary_quality_validated": false,
+  "new_fiction_generated_this_review": false,
+  "coordinator_validation": {
+    "quote_corrections_verified_in_frozen_artifact": true,
+    "P0_opening_label_corrected_to_P1": true,
+    "unlocated_ai_praise_not_used_as_pass": true,
+    "editorial_diagnosis_is_hypothesis": true,
+    "writer_may_not_self_certify": true
+  },
+  "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
+  "next_scope": "只准备一个局部输入/方法修订并另立锁；信息段怎样改变当事人的判断与关系。当前不生成第二稿、完整场景或全文V5。",
+  "preserved": {
+    "initial_mainline_lock": "efb0717bdf2faa9bbc67b89898cbe11059c39214",
+    "method04_lock": "207009866a109415c13aac154f6f153a65d6c55d",
+    "old_prose_and_human_receipts": true,
+    "method03_partial_improvements": true,
+    "seven_fixed_facts": true,
+    "accepted_checkpoint_advance": false,
+    "full_v5_authorized": false
+  }
+}
