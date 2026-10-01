@@ -6,6 +6,14 @@ sources/books/*
 library/_extracted/*
 !library/_extracted/.gitkeep
 
+# Benchmark private data. Never publish source corpora, holdouts, generated runs,
+# cached source-derived artifacts, or local upstream checkouts from this public repo.
+benchmark/_private/
+benchmark/runs/
+benchmark/cache/
+benchmark/upstream_checkouts/
+benchmark/blind_packets/private/
+
 # Local caches
 __pycache__/
 *.pyc

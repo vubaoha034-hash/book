@@ -1,0 +1,79 @@
+{
+  "experiment_id": "EXP-YYYYMMDD-001",
+  "status": "planned",
+  "question": "What single change is being tested?",
+  "protocol": {
+    "type": "style_or_narrative",
+    "state_namespace": "",
+    "cross_protocol_artifact_reuse": false
+  },
+  "baseline": {
+    "system_id": "",
+    "upstream_repo": "",
+    "upstream_commit": "",
+    "local_patch": null
+  },
+  "variant": {
+    "system_id": "",
+    "single_major_change": "",
+    "changed_files_or_prompt_ids": []
+  },
+  "input_contract": {
+    "corpus_id": "",
+    "source_hash_manifest": "",
+    "visible_partition_id": "",
+    "hidden_partition_id": "",
+    "hidden_partition_type": "style_holdout_or_future_holdout",
+    "same_input_for_all_variants": true
+  },
+  "runtime_contract": {
+    "model": "",
+    "model_version_or_snapshot": "",
+    "temperature": null,
+    "max_output_tokens": null,
+    "context_budget": null,
+    "same_budget_for_all_variants": true,
+    "prompt_or_skill_version": ""
+  },
+  "cache_contract": {
+    "cache_version": "",
+    "cache_namespace": "",
+    "cache_keys_include": ["source_hash", "upstream_version", "prompt_version", "schema_version", "model_version", "protocol_state_namespace"],
+    "holdout_cache_isolated": true,
+    "cross_protocol_cache_reuse": false
+  },
+  "evaluation": {
+    "scoring_config": "benchmark/config/scoring.v1.json",
+    "blind_variant_labels": ["X", "Y"],
+    "automatic_metrics": [],
+    "independent_judges": [],
+    "human_blind_review": {
+      "enabled": false,
+      "reviewer_count": 0
+    },
+    "repetitions": 0
+  },
+  "results": {
+    "hard_gates": {},
+    "baseline_score": null,
+    "variant_score": null,
+    "score_delta": null,
+    "target_dimension_delta": null,
+    "protected_dimension_regressions": {},
+    "cost": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "wall_clock_seconds": null,
+      "failed_units": null,
+      "reruns": null
+    },
+    "decision": "pending",
+    "decision_reason": ""
+  },
+  "artifacts": {
+    "run_manifest": "",
+    "blind_packet": "",
+    "evaluation_report": "",
+    "failure_examples": []
+  }
+}
