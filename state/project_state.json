@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-09-30T19:10:00+08:00",
+  "updated_at": "2026-10-01T10:14:17+08:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -11,7 +11,12 @@
     "GN_VDNA_01_default_enabled": false,
     "accepted_checkpoint_advance": false
   },
-  "active_task": null,
+  "active_task": {
+    "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
+    "status": "ACTIVE_LOCKED",
+    "current_step": "STEP_01"
+  },
   "phase363_prose_anchor": {
     "receipt": "state/review_receipts/REAL_MANUSCRIPT_YMGQ_PHASE363_EMBODIED_DIALOGUE_FUSION_ROUND3_V1.json",
     "status": "HISTORICAL_ACTUAL_HUMAN_POSITIVE_SHORT_PROSE",
@@ -223,7 +228,7 @@
   "continuity_settlement": {
     "physical_STATE_LEDGER_sequence": 54,
     "physical_event_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-    "logical_latest_checkpoint_sequence": 133,
+    "logical_latest_checkpoint_sequence": 151,
     "claim_later_sequences_physically_appended": false,
     "current_snapshot_reconciled": true,
     "intervening_history_coverage": "PARTIAL_NOT_RECONSTRUCTED_PHASE397_RECONCILED_BY_DURABLE_TASK_AND_HUMAN_RECEIPTS",
@@ -890,9 +895,9 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "RETURN_EXACT_ONE_PHASE430_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-  "status": "PHASE430_CLEAN_WRITER_RENDER_READY_FOR_ACTUAL_HUMAN_READING",
-  "active_task_contract": null,
+  "next_required_action": "RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01",
+  "status": "NOVEL_MAINLINE_V1_LOCKED_READY_FOR_STEP_01",
+  "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
   "last_completed_task_id": "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
   "last_completed_task_contract": "state/review_receipts/PHASE430_RJ_OE408_I_SP414_S02_CLEAN_WRITER_RENDER_V1.json",
   "source_state_refs": [
@@ -1378,13 +1383,37 @@
       "path": "state/review_receipts/PHASE429_RJ_OE408_I_SP414_S02_EVENT_LEVEL_HUMAN_STAKES_REDESIGN_V1.json",
       "role": "Phase429 combined task/receipt; structural readiness only, not human literary pass",
       "blob": "54f5845ec6153cfd01fbe9d4dc3e25d6a186b1dd"
+    },
+    {
+      "path": "MAINLINE.md",
+      "role": "唯一锁定主线"
+    },
+    {
+      "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
+      "role": "当前唯一主线任务",
+      "blob": "d0e0edc5f6db796b461d7aeb3596c704473b594b"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V1_LOCK_20261001.json",
+      "role": "V1 锁定与旧路线替代回执",
+      "blob": "efb0717bdf2faa9bbc67b89898cbe11059c39214"
+    },
+    {
+      "path": "state/review_receipts/PHASE430_ROBOTIC_DIALOGUE_FEEDBACK_20261001.json",
+      "role": "Phase430 反复机器人问答负向反馈，来源覆盖 PARTIAL",
+      "blob": "d16c074d737c6a787efb229c3b4233602d87f3dd"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V1_STATE_VALIDATION_20261001.json",
+      "role": "结构、状态与21项行为测试；不代表文学通过",
+      "blob": "c141ea30c9309f3939defbb3810aae514f78e2af"
     }
   ],
   "incomplete": [
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "Phase430 SP414-S02 clean event render awaits actual-human reading; no literary acceptance is claimed."
+    "NOVEL-IMPROVEMENT-MAINLINE-V1: STEP_01 未执行，TEST-01/02 未开始，文学质量仍未验证。"
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1456,7 +1485,9 @@
     "Create Phase407 without separate explicit authorization.",
     "Treat Phase407 hidden-gate CLEAR as literary acceptance.",
     "Retry or locally rewrite frozen Phase407 A1.",
-    "Create Phase408 without separate explicit authorization."
+    "Create Phase408 without separate explicit authorization.",
+    "原样重投 Phase430 冻结正文",
+    "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
   "phase397_settlement": {
     "status": "CLOSED_TRANSFER_NOT_SUPPORTED_NO_A4",
@@ -3377,8 +3408,8 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "PHASE430_AWAIT_ACTUAL_HUMAN_READING",
-  "human_verdict_receipt": "state/review_receipts/PHASE428_RJ_OE408_I_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR_V1.json",
+  "current_human_gate": "TEST_01_NOT_STARTED",
+  "human_verdict_receipt": "state/review_receipts/PHASE430_ROBOTIC_DIALOGUE_FEEDBACK_20261001.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -3440,9 +3471,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "RETURN_EXACT_ONE_PHASE430_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
+  "next_action": "RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "Phase430 已按冻结的 SP414-S02 八步事件链完成 exactly 1 个 clean-writer 场景正文；结构事实保持，未生成第二版本，等待刘先生实际阅读。",
+  "current_focus": "唯一主线 V1 已锁定；保留原故事与证据，下一步补齐场景事实。两次正文测试尚未开始，未证明文风改善。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3520,15 +3551,26 @@
     }
   },
   "latest_human_review": {
-    "recorded_at": "2026-09-30T18:28:00+08:00",
-    "bound_phase": 428,
-    "bound_version": "SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-V1",
-    "bound_blob": "771b6d1423364b9930b1ab8ffb69414b9b974827",
-    "exact_quote": "小说ai味道又是重的要死。为什么",
-    "verdict": "REJECT_SEVERE_AI_SMELL_REMAINS",
-    "question_answer_partial_gain_from_phase427_preserved": true,
+    "recorded_at": "2026-10-01T10:14:17+08:00",
+    "bound_phase": 430,
+    "bound_version": "SP414-S02-CLEAN-EVENT-RENDER-V1",
+    "bound_artifact_path": "delivery/phase430/12-sp414-s02-clean-event-render-v1.md",
+    "bound_blob": "869c9781238ff8f63f6fb0c1339f16676b705cba",
+    "feedback_summary": "此前可见项目反馈指出反复出现的短问短答读起来累、像机器人。",
+    "verdict": "REJECT_REPETITIVE_ROBOTIC_DIALOGUE",
+    "source": {
+      "kind": "PROJECT_FEEDBACK_PRESERVED_IN_CONTEXT",
+      "coverage": "PARTIAL",
+      "original_conversation_locator": "UNAVAILABLE",
+      "original_feedback_timestamp": "UNKNOWN",
+      "original_message_read_back_this_turn": false
+    },
+    "scope": "当前场景中反复问答的阅读感；不推定题材、全部情节或其他版本均被否决。",
+    "two_question_test_result": "NOT_ESTABLISHED",
+    "human_quality_accepted": false,
     "topic_rejection": false,
-    "full_v5_authorized": false
+    "full_v5_authorized": false,
+    "same_artifact_resubmission_allowed": false
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -3593,7 +3635,9 @@
     "second_trace_authorized": false,
     "next_action": "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE"
   },
-  "active_task_ids": [],
+  "active_task_ids": [
+    "NOVEL-IMPROVEMENT-MAINLINE-V1"
+  ],
   "phase427_state": {
     "status": "ACTUAL_HUMAN_REJECTED_ROBOTIC_SPEECH_QA_PARTIAL_GAIN_PRESERVED",
     "task_id": "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
@@ -3717,7 +3761,7 @@
     "stop": true
   },
   "phase430_state": {
-    "status": "COMPLETED_READY_FOR_ACTUAL_HUMAN_READING",
+    "status": "CLOSED_NEGATIVE_DIALOGUE_FEEDBACK_SCOPE_PARTIAL",
     "task_id": "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
     "starting_head": "e156f00e7b993fa4b6fe33c54460c27d09e9703f",
     "expected_checkpoint_sequence": 149,
@@ -3739,7 +3783,57 @@
     "literary_quality_self_evaluation_performed": false,
     "human_literary_quality_claim": false,
     "full_v5_authorized": false,
-    "next_action": "RETURN_EXACT_ONE_PHASE430_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING",
-    "stop": true
+    "next_action": "CLOSED_USE_CURRENT_MAINLINE_ONLY",
+    "stop": true,
+    "later_feedback_receipt": {
+      "path": "state/review_receipts/PHASE430_ROBOTIC_DIALOGUE_FEEDBACK_20261001.json",
+      "blob": "d16c074d737c6a787efb229c3b4233602d87f3dd"
+    },
+    "later_feedback_source_coverage": "PARTIAL",
+    "same_artifact_resubmission_allowed": false
+  },
+  "mainline_state": {
+    "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "revision": 1,
+    "status": "LOCKED_READY_FOR_STEP_01",
+    "current_step": "STEP_01",
+    "contract": {
+      "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
+      "blob": "d0e0edc5f6db796b461d7aeb3596c704473b594b"
+    },
+    "plan": {
+      "path": "MAINLINE.md",
+      "sha256": "06128d639947dde191b79d93a0ce5466b124473b10ee4888f4351d3ada189617"
+    },
+    "lock_chain": [
+      {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V1_LOCK_20261001.json",
+        "blob": "efb0717bdf2faa9bbc67b89898cbe11059c39214"
+      }
+    ],
+    "test_results": {},
+    "literary_quality_validated": false,
+    "new_prose_authorized_now": false,
+    "full_v5_authorized": false,
+    "preserved_accepted_checkpoint_advance": false,
+    "execution_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY",
+    "completed_steps": [],
+    "test_artifacts": {}
+  },
+  "mainline_transition": {
+    "source_head": "8857e8877ba275e4e909ac088acab06de90d0b0f",
+    "previous_sequence": 150,
+    "current_sequence": 151,
+    "authorizer": "刘先生",
+    "scope": "未完成的执行路线变更，不回退接受检查点。",
+    "resolved_current_entries": [
+      "Phase430 SP414-S02 clean event render awaits actual-human reading; no literary acceptance is claimed."
+    ],
+    "legacy_history_coverage": "PARTIAL_NOT_RECONSTRUCTED",
+    "legacy_physical_ledger_appended": false,
+    "validation_receipt": {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V1_STATE_VALIDATION_20261001.json",
+      "blob": "c141ea30c9309f3939defbb3810aae514f78e2af"
+    }
   }
 }

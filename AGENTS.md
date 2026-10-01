@@ -2,6 +2,10 @@
 
 For any new chat or task continuation, start at `START_HERE.md` and run its current-state check before using historical phase instructions.
 
+## Locked current novel mainline
+
+For this project's current work, read `MAINLINE.md` and the task referenced by `state/project_state.json`. They define the single active improvement route. Preserve the original story and evidence; do not revive a historical phase or change the locked method without a recorded failed frozen test or an explicit scoped user change. Writer-only isolated contexts read their declared packet only; the coordinator settles state before and after that isolated run. The current mainline amends unfinished execution scope, not historical receipts or accepted research checkpoints.
+
 ## Highest-priority execution-surface routing
 
 This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.

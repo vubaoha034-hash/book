@@ -1,0 +1,45 @@
+{
+  "schema_version": "novel-mainline-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "revision": 1,
+  "recorded_at": "2026-10-01T10:14:17+08:00",
+  "source_head": "8857e8877ba275e4e909ac088acab06de90d0b0f",
+  "basis": {
+    "type": "USER_INITIAL_LOCK",
+    "source": "CURRENT_USER_REQUEST_20261001",
+    "authorizer": "刘先生"
+  },
+  "plan": {
+    "path": "MAINLINE.md",
+    "sha256": "06128d639947dde191b79d93a0ce5466b124473b10ee4888f4351d3ada189617"
+  },
+  "task": {
+    "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V1.json",
+    "blob": "d0e0edc5f6db796b461d7aeb3596c704473b594b",
+    "sha256": "68f81afb6d112838d420020f87154966672884d248c8b3b698727552aebbfb6e"
+  },
+  "historical_policy_restoration": {
+    "path": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
+    "source_commit": "9b26d9f201e80192e2aac233bce701e7386a0bc5",
+    "source_blob": "f69b4e6ce6213a0c0aa6399acb0e97d1d9ec1ed5",
+    "scope": "恢复当前 project.policy 已指向的既有政策，不改变接受检查点。"
+  },
+  "corrected_drift": [
+    "START_HERE 曾指向 Phase426",
+    "校验脚本错误要求当前人审永远指向 Phase422",
+    "检查点的项目状态哈希过期",
+    "Phase430 后续负向反馈未进入当前状态"
+  ],
+  "superseded_pending_routes": [
+    "OPEN_ONE_SEPARATE_CLEAN_WRITER_RENDER_FOR_FROZEN_PHASE426_TRACE",
+    "RETURN_EXACT_ONE_PHASE430_SP414_S02_TO_UNIFIED_COMMAND_FOR_LIU_XIANSHENG_ACTUAL_READING"
+  ],
+  "historical_receipts_and_prose_preserved": true,
+  "accepted_checkpoint_advance": false,
+  "new_fiction_output_count": 0,
+  "test_output_count": 0,
+  "literary_quality_validated": false,
+  "live_host_lock": false,
+  "persistence_verification": "必须在发布后回读提交与文件；本回执本身不声称发布已经成功。"
+}

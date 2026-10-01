@@ -13,6 +13,12 @@ V2 文件继续保留，旧调用方式仍可使用；新任务默认走 V3。
 
 原有的资料导入、技巧库和深度拆书能力继续保留；V3 主要重做新故事生产、审稿证据和去 AI 终审。
 
+## 当前项目唯一主线
+
+《第二套过去》当前按 [MAINLINE.md](MAINLINE.md) 执行：保留故事契约、因果与连续性证据，补齐具体生活事实，解除八步动作对新正文的硬约束，先测一场，再测不同压力类型。只有冻结测试的实际失败才修改对应方法；新聊天从 [START_HERE.md](START_HERE.md) 继续，不按旧阶段号重开。
+
+主线与入口已保存不等于文风有效。真人阅读结果、结构检查、单场通过和长篇验证分别记录。
+
 ## V3 解决什么
 
 - 逻辑表面通顺，实际一问就能解决。
@@ -107,6 +113,8 @@ Claude Code 可安装到 `~/.claude/skills/novel-writing-master`，GitHub Copilo
 
 ```bash
 python scripts/validate_skill.py
+python scripts/verify_current_state.py
+python -m unittest discover -s tests -p 'test_*.py'
 ```
 
 这个脚本只验证技能结构、V3 配置和关键交叉引用。它会明确说明：**结构验证通过不等于小说质量通过**。小说质量仍必须由具体文本证据证明。

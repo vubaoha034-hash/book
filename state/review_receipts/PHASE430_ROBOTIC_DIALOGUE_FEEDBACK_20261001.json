@@ -1,0 +1,28 @@
+{
+  "schema_version": "novel-project-human-feedback/v1",
+  "project_id": "novel-distillation",
+  "review": {
+    "recorded_at": "2026-10-01T10:14:17+08:00",
+    "bound_phase": 430,
+    "bound_version": "SP414-S02-CLEAN-EVENT-RENDER-V1",
+    "bound_artifact_path": "delivery/phase430/12-sp414-s02-clean-event-render-v1.md",
+    "bound_blob": "869c9781238ff8f63f6fb0c1339f16676b705cba",
+    "feedback_summary": "此前可见项目反馈指出反复出现的短问短答读起来累、像机器人。",
+    "verdict": "REJECT_REPETITIVE_ROBOTIC_DIALOGUE",
+    "source": {
+      "kind": "PROJECT_FEEDBACK_PRESERVED_IN_CONTEXT",
+      "coverage": "PARTIAL",
+      "original_conversation_locator": "UNAVAILABLE",
+      "original_feedback_timestamp": "UNKNOWN",
+      "original_message_read_back_this_turn": false
+    },
+    "scope": "当前场景中反复问答的阅读感；不推定题材、全部情节或其他版本均被否决。",
+    "two_question_test_result": "NOT_ESTABLISHED",
+    "human_quality_accepted": false,
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "same_artifact_resubmission_allowed": false
+  },
+  "prior_review_preserved_in": "state/review_receipts/PHASE428_RJ_OE408_I_SP414_S02_HUMAN_SPEECH_RELATIONAL_PRESENCE_REPAIR_V1.json",
+  "does_not_claim_new_test_run": true
+}

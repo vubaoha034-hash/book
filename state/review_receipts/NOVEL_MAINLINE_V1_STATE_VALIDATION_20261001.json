@@ -1,0 +1,30 @@
+{
+  "schema_version": "novel-mainline-state-validation/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "source_head": "8857e8877ba275e4e909ac088acab06de90d0b0f",
+  "recorded_at": "2026-10-01T10:26:22+08:00",
+  "observed_before": {
+    "structure": "PASS_28_REQUIRED_FILES",
+    "current_state": "FAIL_project_hash_v4_human_ref"
+  },
+  "observed_after": {
+    "structure": "PASS_28_REQUIRED_FILES",
+    "current_state": "PASS_27_CONSISTENCY_CHECKS",
+    "behavior_tests": "PASS_21_TESTS"
+  },
+  "test_commands": [
+    "python scripts/validate_skill.py",
+    "python scripts/verify_current_state.py",
+    "python -m unittest discover -s tests -p 'test_*.py'"
+  ],
+  "historical_frozen_files_verified_unchanged": 83,
+  "prior_policy_restored_exact_blob": "f69b4e6ce6213a0c0aa6399acb0e97d1d9ec1ed5",
+  "acceptance_checkpoint_preserved": 320,
+  "new_real_fiction_output_count": 0,
+  "actual_human_test_runs": 0,
+  "literary_quality_validated": false,
+  "platform_hard_lock_verified": false,
+  "coverage": "仅验证当前主线、状态、反馈身份和合作入口的锁定行为；不证明文学质量。",
+  "remote_persistence": "发布后还须回读提交及所有改动字节；此回执不代替回读。"
+}

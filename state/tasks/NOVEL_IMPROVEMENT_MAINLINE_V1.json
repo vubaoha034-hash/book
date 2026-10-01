@@ -1,0 +1,207 @@
+{
+  "schema_version": "novel-mainline-task/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "revision": 1,
+  "source_head": "8857e8877ba275e4e909ac088acab06de90d0b0f",
+  "created_at": "2026-10-01T10:14:17+08:00",
+  "goal": "建立让刘先生愿意继续、人物不像机器人、事实连续且能重复迁移的小说写作流程。",
+  "scope": "保留原有故事和已接受研究；修改当前写作输入，先以一场、再以不同压力类型验证。",
+  "plan_path": "MAINLINE.md",
+  "initial_lock_receipt": "state/review_receipts/NOVEL_MAINLINE_V1_LOCK_20261001.json",
+  "authority": {
+    "authorizer": "刘先生",
+    "source": "CURRENT_USER_REQUEST_20261001",
+    "instruction_summary": "明确保留、舍弃与优化，保存仓库，锁定主线，仅在测试无效后改进。",
+    "conversation_locator": "UNAVAILABLE"
+  },
+  "execution_order": [
+    {
+      "step_id": "STEP_01",
+      "action": "RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01",
+      "deliverable": "场景最小事实补充及局部连续性核对",
+      "dependencies": []
+    },
+    {
+      "step_id": "STEP_02",
+      "action": "FREEZE_MINIMAL_WRITER_PACKET_FOR_TEST_01",
+      "deliverable": "单独可读、无诊断和固定动作顺序的写作输入",
+      "dependencies": [
+        "STEP_01"
+      ]
+    },
+    {
+      "step_id": "STEP_03",
+      "action": "RUN_ONE_FRESH_WRITER_TEST_01_THEN_ACTUAL_HUMAN_READING",
+      "deliverable": "一份冻结的 SP414-S02 新场景及对应真人反馈",
+      "dependencies": [
+        "STEP_02"
+      ],
+      "await_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01"
+    },
+    {
+      "step_id": "STEP_04",
+      "action": "REPLICATE_SAME_METHOD_ON_DIFFERENT_PRESSURE_TEST_02",
+      "deliverable": "一份不同压力类型的冻结场景及对应真人反馈",
+      "dependencies": [
+        "TEST_01_PASS"
+      ],
+      "await_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_02"
+    },
+    {
+      "step_id": "STEP_05",
+      "action": "CONTINUE_BOUNDED_CONNECTED_SCENE_VALIDATION",
+      "deliverable": "有限连续场景与长段迁移证据",
+      "dependencies": [
+        "TEST_01_PASS",
+        "TEST_02_PASS"
+      ]
+    }
+  ],
+  "story_locks": {
+    "candidate": "RJ-OE408-I",
+    "title": "第二套过去",
+    "original_contract": "delivery/phase409/00-story-contract.md",
+    "character_state": "delivery/phase413/04-character-and-continuity-state.md",
+    "scene_plan": "delivery/phase414/05-scene-plan.md",
+    "scene_id": "SP414-S02",
+    "seven_fixed_facts": [
+      "场景发生在小公寓过户已中止之后，仍处于30天冲突窗口早段。",
+      "罗钧没有第二过去的主观记忆，不能被写成恢复记忆或默认旧关系成立。",
+      "许澄经历并记得第二过去中的共同生活与共同责任，但不能替罗钧认领责任。",
+      "许澄不是第二过去的唯一证据源，存在与她控制范围分离的独立核验路径。",
+      "共同责任早于30天窗口终点到期，许澄不接受无限期成为唯一现实承受者。",
+      "罗钧本场可以核验事实，但不能提前认领共同责任。",
+      "场景终点仍为有限合作的两个独立当事人；旧关系不恢复。"
+    ],
+    "ending": "新合作而非恢复旧关系，原生活目标及已发生损失不被无代价补回。"
+  },
+  "minimal_details": [
+    {
+      "item": "共同责任的合同或履行载体",
+      "source_permission": "Phase409 可以改变；Phase413 HRA-01 要求后续明确",
+      "limit": "只落实已有共同责任与到期压力，不添加新世界规则。"
+    },
+    {
+      "item": "许澄眼下被挤掉的具体生活安排",
+      "source_permission": "既有普通欲望、独立利益及共同责任压力",
+      "limit": "不以新增重大灾难替代原压力。"
+    },
+    {
+      "item": "若保留个人物品，明确内容和作用",
+      "source_permission": "新版本的场景级呈现选择",
+      "limit": "无选择后果可不用，不强制包、纸张或不打开的动作。"
+    }
+  ],
+  "writer_packet": {
+    "include": [
+      "当前七项固定事实",
+      "必要人物处境与当前生活压力",
+      "前场结尾",
+      "本场终点",
+      "审美基线",
+      "最多两份场景适配且范围明确的私有正例"
+    ],
+    "exclude": [
+      "八步动作硬序列",
+      "observable_binding",
+      "causal_changes/private_costs 的情绪自证",
+      "失败反馈与失败稿",
+      "诊断报告",
+      "评审或闸门答案",
+      "全部规则及技巧库"
+    ],
+    "fresh_context_required": true,
+    "current_diagnostic_context_may_claim_clean_writer": false,
+    "matched_quiet_relationship_positive_sample": "NOT_ESTABLISHED",
+    "private_samples_in_public_git": false,
+    "scene_action_order": "WRITER_CHOICE_WITHIN_FIXED_FACTS_AND_ENDPOINT"
+  },
+  "tests": {
+    "TEST_01": {
+      "scene_id": "SP414-S02",
+      "pressure": "都市人物关系与共同责任",
+      "max_output_count": 1
+    },
+    "TEST_02": {
+      "scene_id_preference": "SP414-S03",
+      "pressure": "查证与原生活资产后果",
+      "same_method_required": true,
+      "requires": "TEST_01_PASS",
+      "max_output_count": 1
+    },
+    "human_questions": [
+      "愿不愿意继续读？",
+      "人物互动是否仍像机器人、读着累？"
+    ],
+    "pass_requires": {
+      "wants_to_continue": true,
+      "robotic_or_tiring": false,
+      "unresolved_fact_contradiction": false
+    },
+    "unknown_is": "尚未阅读、回答不完整或版本绑定不清；不得记 PASS/FAIL。",
+    "evidence_contract": {
+      "schema_version": "novel-mainline-test/v1",
+      "required": [
+        "project_id",
+        "test_id",
+        "outcome",
+        "artifact",
+        "human_feedback",
+        "fact_check",
+        "task_id",
+        "method_revision"
+      ],
+      "artifact_fields": [
+        "path",
+        "blob"
+      ],
+      "human_feedback_fields": [
+        "source",
+        "wants_to_continue",
+        "robotic_or_tiring",
+        "feedback"
+      ],
+      "source_for_quality_pass": "ACTUAL_USER_FEEDBACK"
+    },
+    "one_scene_pass_is_not": "整篇文风、通用方法或稳定长篇迁移通过。"
+  },
+  "change_policy": {
+    "locked_parts": [
+      "目标",
+      "保留项",
+      "执行顺序",
+      "写作输入边界",
+      "验收办法"
+    ],
+    "ordinary_progress_changes_lock": false,
+    "allowed_revision_basis": [
+      "RECORDED_FROZEN_TEST_FAILURE",
+      "EXPLICIT_USER_SCOPE_CHANGE"
+    ],
+    "on_failed_test": [
+      "保存原稿与实际反馈",
+      "定位一个主要失败原因",
+      "只改对应环节",
+      "新增版本与修订回执，不覆盖初始锁",
+      "按同一验收条件复测"
+    ],
+    "not_revision_basis": [
+      "新 Skill 简介",
+      "模型分数",
+      "阶段号增加",
+      "暂时缺少反馈",
+      "继续"
+    ],
+    "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+  },
+  "preserved": {
+    "accepted_checkpoint_advance": false,
+    "historical_artifact_rewrite": false,
+    "full_manuscript_v5_authorized": false,
+    "best_of_n_authorized": false,
+    "Novel_DNA_default_off": true,
+    "RX_direct_generation_default_off": true
+  },
+  "scope_of_this_delivery": "主线文件、任务、入口和一致性校验；不包含新小说正文，也不代表方法有效。"
+}

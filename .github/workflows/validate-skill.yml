@@ -22,3 +22,9 @@ jobs:
 
       - name: Validate skill structure
         run: python scripts/validate_skill.py
+
+      - name: Verify current mainline and feedback scope
+        run: python scripts/verify_current_state.py
+
+      - name: Test mainline continuity checks
+        run: python -m unittest discover -s tests -p 'test_*.py'
