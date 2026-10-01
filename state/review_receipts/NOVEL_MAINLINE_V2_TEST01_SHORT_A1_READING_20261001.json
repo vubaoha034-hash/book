@@ -1,0 +1,113 @@
+{
+  "schema_version": "novel-mainline-test/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "method_revision": 2,
+  "test_id": "TEST_01",
+  "scene_id": "SP414-S02",
+  "attempt": 1,
+  "validation_scope": "FIRST_SCREEN",
+  "recorded_at": "2026-10-01T12:31:36+08:00",
+  "source_head": "4aa692295d23673d4cebe8e6d8be3c881d17c044",
+  "source_checkpoint_sequence": 155,
+  "outcome": "UNKNOWN",
+  "status": "FROZEN_SHORT_TRIAL_AWAITING_ACTUAL_HUMAN_READING",
+  "artifact": {
+    "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+    "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad"
+  },
+  "artifact_sha256": "2c54a547dc9832d53efb4cb9c1658f02f4d4ac5a7536cd79e1528c06ac93a5c6",
+  "writer_input": {
+    "path": "delivery/mainline-v2/test-01-short-writer-input.md",
+    "blob": "960dd7dcb1a16d514601c0920753860b959c3c71",
+    "sha256": "cba1c4096b13c3b8097aeada161328af58728b3d6fd9d72f033d14f09af12499"
+  },
+  "execution": {
+    "writer_context": "ISOLATED_SUB_AGENT_FORK_NONE",
+    "writer_agent": "/root/novel_method02_short_writer",
+    "input_scope": "冻结输入加仅写作、禁止外部读取的职责边界；未继承历史、失败正文、诊断或验收答案。",
+    "generation_count": 1,
+    "second_version_count": 0,
+    "coordinator_rewrite_count": 0,
+    "output_preserved_verbatim": true,
+    "file_normalization": "只添加文件终止换行；正文不改。",
+    "body_characters_excluding_whitespace": 431,
+    "file_characters": 462,
+    "full_scene_completed": false,
+    "independent_reader_review_performed": false,
+    "full_v5_generated": false
+  },
+  "human_feedback": {
+    "source": "AWAITING_USER_FEEDBACK",
+    "wants_to_continue": null,
+    "robotic_or_tiring": null,
+    "feedback": ""
+  },
+  "fact_check": {
+    "verdict": "CLEAR",
+    "review_type": "COORDINATOR_SAME_CONTEXT",
+    "literary_quality_pass": false,
+    "scope": "仅核对起始短段未违反背景事实；不宣称已履行完整场景终点，也不判断人物语言是否已改善。",
+    "located_evidence": [
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 5,
+          "end": 5
+        },
+        "excerpt": "他摇头。她坐下，把文件夹放在两人之间的空位上。他看着她翻出几张纸，没有一处觉得熟悉。",
+        "observation": "罗钧未感到熟悉，没有恢复另一套过去的记忆。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 13,
+          "end": 19
+        },
+        "excerpt": "合同复本递过来，他没接。\n\n“看了这个，是不是就算我认了？”\n\n“你可以不认。”她把纸放在空位上，“但你得告诉我，准备什么时候查。”\n\n罗钧望着最上面那张签名页。名字是他的。光凭一个名字，能拿走他攒了这么多年的钱？",
+        "observation": "他拒接合同并担心责任和首付，尚未认领。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 21,
+          "end": 23
+        },
+        "excerpt": "“工作室不是已经关了吗？”\n\n“关了，设备款还在。六万八，五天后到期。”",
+        "observation": "工作室关闭没有取消设备款；本期6.8万元五天后到期。"
+      },
+      {
+        "artifact_path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "lines": {
+          "start": 27,
+          "end": 31
+        },
+        "excerpt": "“我明天下午要交新工作间的押金。一万二，已经留出来了。如果要我先筹这笔款，我得今天就开始安排。”\n\n大厅里又叫了一个号。罗钧偏过头，看见有人拿着材料往里走。\n\n“你给我个时间。”许澄说，“今天能查什么，明天能查什么。我也有活要接。”",
+        "observation": "许澄独立工作安排及次日1.2万元押金受影响，要求具体核验时间，未无限期垫付。"
+      }
+    ],
+    "full_scene_requirements_not_yet_demonstrated": [
+      "独立留存来源的初步吻合",
+      "完整场景有限合作终点",
+      "保全记录及后续核验安排"
+    ],
+    "new_minor_detail": "第11行提及电话里已说过房子事项；冻结输入没有逐字列出完整电话，这是新增普通交谈细节，不当作旧原件证据。",
+    "confirmed_contradiction": false
+  },
+  "repository_checks": {
+    "status": "PASSED",
+    "structure_files_checked": 28,
+    "state_checks_passed": 27,
+    "checkpoint": 156,
+    "behavior_tests": {
+      "tests_passed": 25,
+      "scope": "METHOD_02_CODE_BEFORE_PROSE_GENERATION",
+      "code_changed_since_checks": false
+    },
+    "literary_quality_tested": false
+  },
+  "literary_quality_validated": false,
+  "short_pass_is_not_full_scene_pass": true,
+  "full_manuscript_v5_authorized": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_TEST_01"
+}
