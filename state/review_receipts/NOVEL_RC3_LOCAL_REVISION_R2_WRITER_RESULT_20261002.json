@@ -1,0 +1,66 @@
+{
+  "schema_version": "novel-scoped-writer-output-result/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+  "recorded_at": "2026-10-02T03:47:51+00:00",
+  "writer_conversation_url": "https://chatgpt.com/c/6abf28ac-4950-83e9-9343-daa6ea41f43f",
+  "execution_task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
+    "blob": "e54229ad048ead63267ed44898b1d6f1b74ec013",
+    "sha256": "092274f8b54a0033e611e1e67ef0b56a36990813daecbe0f83c13c60c8c8e4a7"
+  },
+  "execution_lock": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_LOCK_20261002.json",
+    "blob": "394c8590b11345bd5d709453027e3944ec55711a",
+    "sha256": "cffc6159423d37da7f12e40e9812f55659f72469f6f4f4561c9fc00fd4b89ab6"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+    "blob": "de0fa1483499835a2c567448fbb784a909213769",
+    "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+  },
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "source_kind": "ACTUAL_FRESH_CHAT_WRITER_OUTPUT",
+  "output_count": 1,
+  "coordinator_prose_edits": 0,
+  "technical_verdict": "OUTPUT_SCOPE_CONTRACT_SATISFIED",
+  "observations": {
+    "total_characters_excluding_whitespace": 448,
+    "protected_prefix_characters": 197,
+    "protected_prefix_exact": true,
+    "protected_paragraph_separators_exact": true,
+    "editable_interval_only": true,
+    "ends_at_start_of_independent_verification": true,
+    "no_verification_result_in_output": true,
+    "no_payment_or_liability_admission": true,
+    "no_memory_or_old_intimacy_restoration": true
+  },
+  "continuity_check": {
+    "verdict": "NO_DEFINITE_CORE_CONTRADICTION_LOCATED_WITH_ONE_REFERENCE_RISK",
+    "known_facts_checked": [
+      "三点离开和客户片子",
+      "剩二十分钟",
+      "五天付款期限",
+      "陌生关系和仍不认领",
+      "公开独立核验",
+      "未写核验结果或实际付款"
+    ],
+    "located_watch": [
+      {
+        "quote": "你自己找公开电话，别用我给的号码。",
+        "risk": "Phrase may presuppose an already-provided phone number; no prior handover is established in approved input. External reviewer must distinguish a caution from an added off-page act."
+      }
+    ]
+  },
+  "literary_verdict": "NOT_ASSESSED",
+  "human_result": "UNKNOWN",
+  "rc3_closed": false,
+  "used_prose_revision_rounds": 2,
+  "remaining_prose_revision_rounds": 0,
+  "third_candidate_authorized": false,
+  "private_native_output_sha256": "04daa07572a876039e548d8ed993e71c9fe22ae3e323c9a54ebbdd72308f15ad"
+}

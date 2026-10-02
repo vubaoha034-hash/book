@@ -8,7 +8,7 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点183。输出格式A3准备回传未定位阻断已核对处理一次，另立最后一轮任务 `state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json` 与执行锁；仅使用已批准A3输入，不读取R1失败正文或审稿。下一动作 `EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION`。此前R1格式失败原件与回执保留；共两轮，已用一轮，本次最多一份新输出。原方法4稿真人UNKNOWN、旧锁与全文关闭不变。
+当前位置：检查点185。最后R2独立输出完整448字，保护前197个原始字符及段落分隔逐字一致，唯一正文 `delivery/local-revision-rc3-r2/short-r2-a1.md` 已冻结；协调者未改正文。当前下一动作 `SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW`，外审只复验RC3与退步，已定位“别用我给的号码”可能预设未交代的号码交付，须区分提醒与新增事实。两轮额度已用尽，第三候选关闭。原方法4稿和当前稿真人UNKNOWN、旧锁及全文关闭不变。
 
 方法1已失败原稿：`delivery/mainline-v1/test-01-sp414-s02-a1.md`，Git blob `d3796f41e10f90c6197211213bd2f4b96f18d196`。原始冻结执行回执保留：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json`。方法1真人失败回执：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json`；主要失败定位与局部修订范围：`docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md`。本次写作者使用不继承历史的独立上下文，只带入 `delivery/mainline-v1/test-01-writer-input.md`；协调者核对事实，未改写输出。历史新聊天执行入口不再用于重投本测试。`MAINLINE.md`中的初始位置描述保持为锁定当时的记录，实时进度以当前状态和检查点为准。
 

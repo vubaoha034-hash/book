@@ -1,5 +1,6 @@
 """Verify one scoped writer cannot expand scope or bypass input review."""
 import copy
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -87,6 +88,32 @@ class ScopedLocalRevisionTests(unittest.TestCase):
             self.skipTest('Only relevant to the last bounded round')
         self.execution['used_prose_revision_rounds'] = 0
         with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_COUNT_DRIFT'):
+            self.run_gate()
+
+    def set_frozen_test_output(self, text):
+        path = self.task['output_path']
+        target = self.root / path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(text)
+        data = target.read_bytes()
+        self.execution.update(status='FROZEN_AWAITING_REVIEW_DISPATCH', writer_attempt_count=1,
+            generation_count=1, used_prose_revision_rounds=self.task['prose_revision_round'],
+            new_prose_authorized_now=False, next_action='SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW',
+            output={'path': path, 'blob': current.git_blob(data), 'sha256': hashlib.sha256(data).hexdigest()})
+
+    def test_scope_valid_output_only_opens_review(self):
+        self.set_frozen_test_output(self.original[:197] + '检查用占位文字，非小说正文。' * 10)
+        self.assertEqual(self.run_gate(), 'SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW')
+        self.assertFalse(self.execution['literary_acceptance'])
+
+    def test_modified_opening_is_rejected_even_with_new_hash(self):
+        self.set_frozen_test_output('改' + self.original[1:197] + '检查用占位文字，非小说正文。' * 10)
+        with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT'):
+            self.run_gate()
+
+    def test_overlong_output_is_rejected_even_with_new_hash(self):
+        self.set_frozen_test_output(self.original[:197] + '检查用占位文字，非小说正文。' * 30)
+        with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT'):
             self.run_gate()
 
 

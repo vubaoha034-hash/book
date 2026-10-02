@@ -1,0 +1,32 @@
+{
+  "schema_version": "novel-scoped-output-freeze/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+  "recorded_at": "2026-10-02T03:47:51+00:00",
+  "execution_task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
+    "blob": "e54229ad048ead63267ed44898b1d6f1b74ec013",
+    "sha256": "092274f8b54a0033e611e1e67ef0b56a36990813daecbe0f83c13c60c8c8e4a7"
+  },
+  "execution_lock": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_LOCK_20261002.json",
+    "blob": "394c8590b11345bd5d709453027e3944ec55711a",
+    "sha256": "cffc6159423d37da7f12e40e9812f55659f72469f6f4f4561c9fc00fd4b89ab6"
+  },
+  "writer_result": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_RESULT_20261002.json",
+    "blob": "e5c7a8bde6ecd28366041f4994597823b81525c9",
+    "sha256": "68f10d8379051970654984d8e20f7be880e6827bc4d1acf42350d6c0389fd13a"
+  },
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "total_characters_excluding_whitespace": 448,
+  "human_result": "UNKNOWN",
+  "literary_acceptance": false,
+  "coordinator_prose_edits": 0,
+  "used_prose_revision_rounds": 2,
+  "remaining_prose_revision_rounds": 0
+}
