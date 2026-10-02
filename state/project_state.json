@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
-  "status": "NOVEL_EXTERNAL_EVIDENCE_REVIEW_READY_FOR_SCOPED_REVISION",
+  "next_required_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+  "status": "NOVEL_RC3_PREPARATION_FROZEN_AWAITING_EXTERNAL_REVIEW",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3685,9 +3685,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW",
+  "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "项目外独立证据审稿已完成；初始两份负例及未见旧问答片段均被AI漏放，已取消自动文学通关权。方法4仍为唯一冻结稿、真人UNKNOWN；只准备RC3局部修订，不生成新正文。",
+  "current_focus": "已收到真实主动回传并接续；RC3唯一局部输入及范围锁已冻结，等待原外审检查准备方案。方法4原稿与真人UNKNOWN保留；未生成新正文。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4278,11 +4278,11 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "EXISTING_TAB_CALLBACK_RECOVERY_DISPATCHED",
+      "status": "ACTUAL_CALLBACK_RECEIVED_AND_COORDINATOR_RESUMED",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
-      "callback_received": false,
-      "coordinator_resumption_verified": false,
+      "callback_received": true,
+      "coordinator_resumption_verified": true,
       "mode": "CHAT",
       "effort_label": "极高",
       "automatic_background_sync": false,
@@ -4291,11 +4291,43 @@
         "A1"
       ],
       "dispatch_verified": false,
-      "blocker": "Only app mention display adds newline; frozen whole-string guard failed; no resend or consequential prose execution",
-      "next_trigger": "REVIEWER_ACTIVE_CALLBACK_IN_COORDINATOR_CHAT",
+      "blocker": null,
+      "next_trigger": "NEXT_RC3_PREPARATION_REVIEW_CALLBACK",
       "complete_body_delivered": true,
       "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
       "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed"
+    },
+    "scoped_revision_preparation": {
+      "status": "FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW",
+      "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-20261002",
+      "task": {
+        "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_20261002.json",
+        "blob": "5797587872c8dcdc9eb14f63975f2bf4bb960e2b",
+        "sha256": "b8418baa82b274da6b9e922531f859b2d74c5786ee792cc68eeca074af76a8c5"
+      },
+      "lock": {
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_LOCK_20261002.json",
+        "blob": "64ad8e103d07ea69665135c6cc598a8cc53cf89b",
+        "sha256": "db240635d4dcb53b2efbb6868f97e8981814100a1638fe9a8eb7d4a0eba7f68b"
+      },
+      "plan": {
+        "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md",
+        "blob": "a848c81455e45ac1cd48b788d8c5d5fdc34e622d",
+        "sha256": "857646d510ab86dd6c27d1de3e9fb957a03db3d6b772f4a55f2c3eb245374260"
+      },
+      "writer_packet": {
+        "path": "delivery/local-revision-rc3-r1/writer-input.md",
+        "blob": "d0af466d7da5cffc6df9d813279f5fcb2b414d45",
+        "sha256": "482a3d512aaf343226db14c478952753a929fadeda128d43f825548271832ffd"
+      },
+      "priority_issue_id": "RC3",
+      "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+      "new_prose_authorized": false,
+      "generation_count": 0,
+      "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
+      "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
+      "attempt_owner": "CURRENT_COORDINATOR_ONLY",
+      "dispatch_status": "PREPARED_NOT_SENT"
     }
   }
 }

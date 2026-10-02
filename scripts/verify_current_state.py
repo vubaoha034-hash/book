@@ -194,7 +194,57 @@ def external_review_action(root: Path, project: dict, cp: dict, target_test: str
         expected = 'REPAIR_EXTERNAL_REVIEW_BEFORE_PROSE_RELEASE'
     if receipt.get('next_action') != expected or route.get('next_action') != expected:
         raise ValueError('EXTERNAL_REVIEW_NEXT_ACTION_DRIFT')
-    return expected
+    return scoped_revision_preparation_action(root, project, route, frozen, target_test, expected)
+
+def scoped_revision_preparation_action(root: Path, project: dict, route: dict,
+                                      frozen: dict, target_test: str | None, expected: str) -> str:
+    """Follow a frozen input-preparation task without opening prose or human gates."""
+    preparation = route.get('scoped_revision_preparation')
+    if preparation is None:
+        return expected
+    if expected != 'DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW':
+        raise ValueError('SCOPED_PREPARATION_BASIS_SUPERSEDED')
+    lock = bound_json(root, preparation.get('lock', {}))
+    task = bound_json(root, preparation.get('task', {}))
+    packet = safe_file(root, task.get('writer_packet', {}).get('path', '')).read_bytes()
+    plan = safe_file(root, task.get('plan', {}).get('path', '')).read_bytes()
+    artifact = frozen.get(target_test)
+    original = safe_file(root, artifact.get('path', '')).read_text(encoding='utf-8')
+    prefix_end = original.index('“我三点就得走')
+    if (lock.get('schema_version') != 'novel-scoped-revision-preparation-lock/v1' or
+        task.get('schema_version') != 'novel-scoped-revision-preparation/v1' or
+        lock.get('project_id') != project.get('project_id') or task.get('project_id') != project.get('project_id') or
+        lock.get('task_id') != task.get('task_id') or task.get('task_id') != preparation.get('task_id') or
+        lock.get('task') != preparation.get('task') or lock.get('basis') != route.get('receipt') or
+        task.get('basis') != route.get('receipt') or lock.get('authority_route_lock') != route.get('route_lock') or
+        task.get('base_method_revision') != project['mainline_state']['revision'] or
+        task.get('mainline_task_id') != project['mainline_state']['task_id'] or
+        task.get('base_artifact') != artifact or lock.get('base_artifact') != artifact):
+        raise ValueError('SCOPED_PREPARATION_BINDING_DRIFT')
+    if (lock.get('writer_packet') != task.get('writer_packet') or lock.get('plan') != task.get('plan') or
+        task['writer_packet'].get('blob') != git_blob(packet) or
+        task['writer_packet'].get('sha256') != hashlib.sha256(packet).hexdigest() or
+        task['plan'].get('blob') != git_blob(plan) or task['plan'].get('sha256') != hashlib.sha256(plan).hexdigest() or
+        task.get('protected_prefix_characters') != prefix_end or
+        task.get('protected_prefix_sha256') != hashlib.sha256(original[:prefix_end].encode()).hexdigest() or
+        original not in packet.decode('utf-8')):
+        raise ValueError('SCOPED_PREPARATION_CONTENT_DRIFT')
+    if (task.get('new_prose_authorized_now') is not False or lock.get('new_prose_authorized') is not False or
+        preparation.get('new_prose_authorized') is not False or task.get('generation_count') != 0 or
+        task.get('used_prose_revision_rounds') != 0 or task.get('max_output_count') != 1 or
+        task.get('max_consecutive_prose_revision_rounds') != 2 or
+        task.get('writer_fresh_context_required') is not True or task.get('diagnostic_context_may_write') is not False or
+        task.get('writer_read_allowlist') != [task['writer_packet']['path']] or
+        task.get('human_result') != 'UNKNOWN' or task.get('full_scene_authorized') is not False or
+        task.get('full_v5_authorized') is not False):
+        raise ValueError('SCOPED_PREPARATION_SCOPE_PROMOTION')
+    action = 'AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION'
+    if (task.get('current_action') != action or preparation.get('next_action') != action or
+        preparation.get('status') != 'FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW' or
+        preparation.get('review_task_id') != task.get('review_task_id') or
+        preparation.get('review_callback_id') != task.get('review_callback_id')):
+        raise ValueError('SCOPED_PREPARATION_NEXT_ACTION_DRIFT')
+    return action
 
 def test_outcome(root: Path, relative: str) -> str:
     """Check evidence completeness; do not judge the prose or invent feedback."""

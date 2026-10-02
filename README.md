@@ -1,4 +1,4 @@
-当前推进：通过Opera Neon建立项目外[小说独立证据评审](https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd)，已取回实际报告并完成负例校准。见[专业评审协议](docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md)、[试运行与职责调整](docs/NOVEL_EXTERNAL_REVIEW_PILOT_RESULT_20261001.md)及[结果回执](state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json)。AI漏放两份已知失败稿和未见旧问答片段，已取消自动文学通关权。当前[方法4唯一404字稿](delivery/mainline-v4/test-01-sp414-s02-short-a1.md)保持冻结、真人UNKNOWN；下一步只准备RC3局部修订，用户不逐轮审常规失败稿。
+当前推进：Opera Neon外审已主动发回消息，协调者已收到并接续；首次发送、回传与接续验证成功。当前[RC3局部修订准备](docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md)和[唯一写作输入](delivery/local-revision-rc3-r1/writer-input.md)已冻结，等待原外审检查输入及修改范围。方法4的404字原稿与真人UNKNOWN保留；尚未写新正文。外审负责定位证据，已取消自动文学通关权，用户不逐轮审常规失败稿。实时下一步以[接管入口](START_HERE.md)及状态为准。
 
 # Novel Writing Master V3
 

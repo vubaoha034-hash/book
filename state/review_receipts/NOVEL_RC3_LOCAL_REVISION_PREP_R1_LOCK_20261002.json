@@ -1,0 +1,40 @@
+{
+  "schema_version": "novel-scoped-revision-preparation-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-20261002",
+  "recorded_at": "2026-10-02T09:55:12+08:00",
+  "source_head": "d75595b11153beef43ce91a7f378ea47ab07555b",
+  "basis": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json",
+    "blob": "8eb9cbb56c5873fe5c2df3183fee93392744cafd",
+    "sha256": "d1402fcb2106068f8eb1b27e3ad3d402524c80290f4c3ab50dac16a3fec0a889"
+  },
+  "authority_route_lock": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_REVIEW_ROUTE_LOCK_20261001.json",
+    "blob": "bc42595c43f12a7b8399fb97378ff54648c897d1",
+    "sha256": "257fb239f4f9b8117a5fc6facf7ee3a922d07488f6850ead1c6a4747c2cd4eb6"
+  },
+  "task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_20261002.json",
+    "blob": "5797587872c8dcdc9eb14f63975f2bf4bb960e2b",
+    "sha256": "b8418baa82b274da6b9e922531f859b2d74c5786ee792cc68eeca074af76a8c5"
+  },
+  "plan": {
+    "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md",
+    "blob": "a848c81455e45ac1cd48b788d8c5d5fdc34e622d",
+    "sha256": "857646d510ab86dd6c27d1de3e9fb957a03db3d6b772f4a55f2c3eb245374260"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input.md",
+    "blob": "d0af466d7da5cffc6df9d813279f5fcb2b414d45",
+    "sha256": "482a3d512aaf343226db14c478952753a929fadeda128d43f825548271832ffd"
+  },
+  "base_artifact": {
+    "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+    "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+  },
+  "preserves_method4_human_UNKNOWN": true,
+  "new_prose_authorized": false,
+  "revision_number_not_promoted": true,
+  "effectiveness": "NOT_TESTED"
+}
