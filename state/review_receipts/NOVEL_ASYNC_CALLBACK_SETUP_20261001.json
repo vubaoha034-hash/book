@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
   "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
-  "status": "BUSY_TARGET_RECOVERY_DISPATCHED_AWAITING_CALLBACK",
+  "status": "EXISTING_TAB_CALLBACK_RECOVERY_PREPARED",
   "source_head": "4b5a4586fe2c17c11dc25c7372fed68b6543a9a7",
   "recorded_at": "2026-10-02T08:45:21+08:00",
   "authority": {
@@ -112,6 +112,15 @@
       "reviewer_observation": "Prior callback not written/sent; target processing plus network error; plugin was used",
       "recovery": "Fresh fixed-target tab; at most one 30-second busy retry; coordinator ends promptly",
       "callback_received": false
+    },
+    {
+      "at": "2026-10-02T09:47:26+08:00",
+      "task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
+      "stage": "prepared",
+      "one_writer": true,
+      "prior_recovery_result": "Reviewer used Opera Neon; two fresh target tabs failed to load; send count 0",
+      "coordinator_reproduction": "Project URL and plain conversation URL both fail to load; existing page 12 still has loaded conversation and empty editor",
+      "action": "Short explicit plugin-return instruction; try existing loaded page, no new conversation or literature promotion"
     }
   ]
 }

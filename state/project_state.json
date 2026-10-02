@@ -4278,7 +4278,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "BUSY_TARGET_RECOVERY_DISPATCHED_AWAITING_CALLBACK",
+      "status": "EXISTING_TAB_CALLBACK_RECOVERY_PREPARED",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -4294,8 +4294,8 @@
       "blocker": "Only app mention display adds newline; frozen whole-string guard failed; no resend or consequential prose execution",
       "next_trigger": "REVIEWER_ACTIVE_CALLBACK_IN_COORDINATOR_CHAT",
       "complete_body_delivered": true,
-      "recovery_task_id": "NOVEL-CALLBACK-RECOVERY-20261002-01",
-      "last_reviewer_blocker": "Target busy plus network error; no callback send"
+      "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
+      "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed"
     }
   }
 }

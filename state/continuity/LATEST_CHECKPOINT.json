@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 170,
-  "recorded_at": "2026-10-02T09:01:59+08:00",
+  "sequence": 171,
+  "recorded_at": "2026-10-02T09:47:26+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -475,7 +475,8 @@
     "Recovered A2 prepare; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged",
     "Recovered A2 sent; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged",
     "Observed reviewer used plugin but stopped on busy/error target; bounded fresh-tab recovery prepare; no actual callback claimed",
-    "Observed reviewer used plugin but stopped on busy/error target; bounded fresh-tab recovery sent; no actual callback claimed"
+    "Observed reviewer used plugin but stopped on busy/error target; bounded fresh-tab recovery sent; no actual callback claimed",
+    "Plugin usage confirmed and target load failure reproduced; short existing-tab callback instruction prepared"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1744,7 +1745,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "8c20549339cc5bfee37eac1854da4571fe98cb35aec257b228d3c3fc8ea10ad7",
+    "project_state_sha256": "92cd418efb9fa7b93ac4c791e6f076b3a07ba1dda38f5e4f3f3afd5f9f4d68d2",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2440,7 +2441,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "BUSY_TARGET_RECOVERY_DISPATCHED_AWAITING_CALLBACK",
+      "status": "EXISTING_TAB_CALLBACK_RECOVERY_PREPARED",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -2456,8 +2457,8 @@
       "blocker": "Only app mention display adds newline; frozen whole-string guard failed; no resend or consequential prose execution",
       "next_trigger": "REVIEWER_ACTIVE_CALLBACK_IN_COORDINATOR_CHAT",
       "complete_body_delivered": true,
-      "recovery_task_id": "NOVEL-CALLBACK-RECOVERY-20261002-01",
-      "last_reviewer_blocker": "Target busy plus network error; no callback send"
+      "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
+      "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed"
     }
   }
 }
