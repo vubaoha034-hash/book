@@ -1,0 +1,144 @@
+{
+  "schema_version": "novel-scoped-preparation-review-receipt/v1",
+  "project_id": "novel-distillation",
+  "callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
+  "parent_review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
+  "recorded_at": "2026-10-02T02:30:26+00:00",
+  "source_head": "427aab4c095ba9ef443247322f4ca7ead34398db",
+  "source_kind": "EXTERNAL_AI_CHAT",
+  "source_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "target_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+  "reviewed_preparation": {
+    "status": "FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW",
+    "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-20261002",
+    "task": {
+      "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_20261002.json",
+      "blob": "5797587872c8dcdc9eb14f63975f2bf4bb960e2b",
+      "sha256": "b8418baa82b274da6b9e922531f859b2d74c5786ee792cc68eeca074af76a8c5"
+    },
+    "lock": {
+      "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_LOCK_20261002.json",
+      "blob": "64ad8e103d07ea69665135c6cc598a8cc53cf89b",
+      "sha256": "db240635d4dcb53b2efbb6868f97e8981814100a1638fe9a8eb7d4a0eba7f68b"
+    },
+    "plan": {
+      "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md",
+      "blob": "a848c81455e45ac1cd48b788d8c5d5fdc34e622d",
+      "sha256": "857646d510ab86dd6c27d1de3e9fb957a03db3d6b772f4a55f2c3eb245374260"
+    },
+    "writer_packet": {
+      "path": "delivery/local-revision-rc3-r1/writer-input.md",
+      "blob": "d0af466d7da5cffc6df9d813279f5fcb2b414d45",
+      "sha256": "482a3d512aaf343226db14c478952753a929fadeda128d43f825548271832ffd"
+    },
+    "priority_issue_id": "RC3",
+    "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+    "new_prose_authorized": false,
+    "generation_count": 0,
+    "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
+    "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
+    "attempt_owner": "CURRENT_COORDINATOR_ONLY",
+    "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+    "dispatch_message_sha256": "ef4cda00a6d218880575c58e2a59410babe2389e752e2bb8aa5348e9a5e2c45f",
+    "dispatch_attempt_id": "RC3-PREP-REVIEW-A1",
+    "send_click_count": 1,
+    "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227",
+    "complete_body_verified": true,
+    "strict_whole_string_guard_passed": false,
+    "app_label_only_difference": "App display adds newline after Opera Neon; remainder exactly equals frozen pre-send readback",
+    "sent_message_sha256": "3b13fbd00852430d1aaed1aa606f948a42e514f4c86339934cd40155393ca884",
+    "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+    "callback_received": false
+  },
+  "report": {
+    "schema_version": "novel-scoped-preparation-review/v1",
+    "project_id": "novel-distillation",
+    "review_context": "SAME_EXTERNAL_REVIEWER_PREPARATION_CHECK",
+    "target_task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-20261002",
+    "base_method_revision": 4,
+    "writer_packet_blob": "d0af466d7da5cffc6df9d813279f5fcb2b414d45",
+    "verdict": "REVISE",
+    "issues": [
+      {
+        "id": "PREP-01",
+        "severity": "P1",
+        "quote": "选择相反打算已经碰上的时刻进入，让这次交谈影响一个眼前安排；",
+        "problem": "把RC3正在复验的效果目标直接交给写作者，属于审稿答案泄漏，不是人物事实或修改范围约束。",
+        "protect": "保留300–500字、罗钧限知、局部修改区间，以及短段只到开始独立核验的边界。",
+        "retest_condition": "写作输入只提供既定事实、人物当前打算、修改区间和禁止越界项；不再直接要求产生“影响一个眼前安排”或同义审稿效果。"
+      },
+      {
+        "id": "PREP-02",
+        "severity": "P1",
+        "quote": "他把事情推后，不能当然要求她随时解释、安排和等待。",
+        "problem": "这句话把D报告对双方冲突机制的解释直接写进人物输入，预先告诉写作者RC3应如何成立。",
+        "protect": "保留三点离开、五天到期、协助时间有限、罗钧认为以后查也公平，以及公开独立核验不受许澄控制等事实。",
+        "retest_condition": "去除规范性和诊断性结论后，应仅凭具体期限、双方既定打算和协助边界，让写作者自行组织冲突及其后果。"
+      },
+      {
+        "id": "PREP-03",
+        "severity": "P2",
+        "quote": "被当成来碰首付的陌生讨款者会触及她的经历和尊严。",
+        "problem": "“触及她的经历和尊严”被冻结成确定心理因果，属于新增心理定性。当前材料能支持许澄反驳被当成讨款者，但不足以把“尊严受触及”定为唯一心理解释。",
+        "protect": "保留她记得共同生活、知道罗钧不记得、残留熟悉期待、不逼他假装记得，以及不愿独自吞下共同责任这些已给人物状态。",
+        "retest_condition": "写作输入应回到可验证的人物事实和已有立场；若继续保留“尊严”定性，需要有上游固定设定明确授权。"
+      }
+    ],
+    "protect": [
+      {
+        "quote": "从原稿“我三点就得走，要赶客户的片子。”所在段起，到短段结尾，可以重新写。此前的正文及段落分隔全部逐字保留，不另改开头。",
+        "why": "修改区间与D报告RC3及其紧邻反应对应，没有扩大成开头重写。"
+      },
+      {
+        "quote": "供应商另有合同和收款留存，可由罗钧自己找到的公开联系方式核验。",
+        "why": "公开独立核验路径被完整保留，许澄没有成为唯一证据控制者。"
+      },
+      {
+        "quote": "他可以查证，但不能恢复记忆、假装亲近或提前认领。",
+        "why": "没有强迫提前认责、恢复记忆或恢复旧亲密关系。"
+      }
+    ],
+    "scope_checks": {
+      "modification_interval": "CLEAR：从RC3原句所在段到段尾，足以覆盖信息密集段及紧邻行动后果，未扩大到已保护开头。",
+      "premature_liability_or_old_intimacy": "CLEAR：明确禁止提前认领、恢复记忆、假装亲近、正式追偿和旧关系恢复。",
+      "diagnostic_or_review_answer_leakage": "FAIL：写作输入直接包含RC3效果目标和冲突机制解释。",
+      "fixed_action_chain": "CLEAR：只限定短段终点为开始安排独立核验，心理、对白、动作和先后仍留给写作者决定。",
+      "protected_opening": "CLEAR：前半正文及段落分隔明确逐字保留。",
+      "independent_verification": "CLEAR：供应商公开联系方式、合同和收款留存仍是独立核验路径。",
+      "new_fact_risk": "FAIL：‘触及她的经历和尊严’把编辑推断固定为新增心理事实；其余金额、期限、工作安排和核验边界未定位到新增冲突。"
+    },
+    "claim_limits": [
+      "本轮只检查准备方案和写作输入；没有新正文，因此不能复验RC3是否真正关闭。",
+      "REVISE只表示写作输入存在诊断泄漏和一处新增心理定性，不等于方法4原稿已经被真人否决。",
+      "方法4唯一404字稿真人结果仍为UNKNOWN；校准漏检0/2及0/1保持不变。",
+      "即使准备修正后未定位阻断，也只能允许进入下一步写作，不能证明文学质量通过、个人审美校准成功或可以自动全文晋级。"
+    ]
+  },
+  "callback_received": true,
+  "processed_once": true,
+  "source_check": {
+    "exact_target_and_blob": true,
+    "all_issue_quotes_located": true,
+    "native_source_report_observed": true,
+    "incoming_callback_matches_identity_quotes_and_verdict": true,
+    "incoming_callback_report_is_abbreviated": true,
+    "actual_active_coordinator_invocation": true,
+    "reviewer_success_statement_observed": true,
+    "private_source_snapshot_sha256": "85d3aa4a7b8dbefa93ac48b2d355f2f4bfca1848f78ea9ae9b5f37a2755a4c60"
+  },
+  "coordinator_settlement": {
+    "PREP-01": "Remove effect instruction and synonymous current-arrangement goal elsewhere in packet",
+    "PREP-02": "Remove normative causal interpretation and synonymous wait-arrangement claim elsewhere in packet",
+    "PREP-03": {
+      "inherited_from_original_method4_input": true,
+      "decision": "Remove unnecessary dignity interpretation; upstream fact authorization not established; not classify original human result as FAIL"
+    },
+    "new_prose_generated": false,
+    "human_result": "UNKNOWN",
+    "literary_acceptance": false,
+    "calibration_misses": [
+      "0/2",
+      "0/1"
+    ]
+  }
+}

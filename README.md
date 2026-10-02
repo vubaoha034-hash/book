@@ -1,4 +1,4 @@
-当前推进：Opera Neon外审已主动发回消息，协调者已收到并接续；首次发送、回传与接续验证成功。当前[RC3局部修订准备](docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md)和[唯一写作输入](delivery/local-revision-rc3-r1/writer-input.md)已冻结，等待原外审检查输入及修改范围。方法4的404字原稿与真人UNKNOWN保留；尚未写新正文。外审负责定位证据，已取消自动文学通关权，用户不逐轮审常规失败稿。实时下一步以[接管入口](START_HERE.md)及状态为准。
+当前推进：准备审核主动回传REVISE已核对并处理一次；[RC3输入A2准备](docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_INPUT_A2_20261002.md)和[唯一写作输入](delivery/local-revision-rc3-r1/writer-input-a2.md)已冻结并另立锁，待原外审复检三项输入修正。原准备、输入和锁全部保留；方法4的404字稿真人UNKNOWN，未写新正文。实时下一步以[接管入口](START_HERE.md)及状态为准。
 
 # Novel Writing Master V3
 

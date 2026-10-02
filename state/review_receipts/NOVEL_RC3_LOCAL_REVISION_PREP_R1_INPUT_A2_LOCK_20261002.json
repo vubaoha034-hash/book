@@ -1,0 +1,50 @@
+{
+  "schema_version": "novel-scoped-revision-preparation-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-INPUT-A2-20261002",
+  "recorded_at": "2026-10-02T02:30:26+00:00",
+  "source_head": "427aab4c095ba9ef443247322f4ca7ead34398db",
+  "basis": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json",
+    "blob": "8eb9cbb56c5873fe5c2df3183fee93392744cafd",
+    "sha256": "d1402fcb2106068f8eb1b27e3ad3d402524c80290f4c3ab50dac16a3fec0a889"
+  },
+  "authority_route_lock": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_REVIEW_ROUTE_LOCK_20261001.json",
+    "blob": "bc42595c43f12a7b8399fb97378ff54648c897d1",
+    "sha256": "257fb239f4f9b8117a5fc6facf7ee3a922d07488f6850ead1c6a4747c2cd4eb6"
+  },
+  "task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_INPUT_A2_20261002.json",
+    "blob": "e4bd764edccea19eb6daa9e91547ecf28ddb822c",
+    "sha256": "b44f44a49a98283d9cb07b403f944b3044fb322f7d48457ea9c72f8debc0866c"
+  },
+  "plan": {
+    "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_INPUT_A2_20261002.md",
+    "blob": "357b4a7ef660821609de74d04f1abfc3f03c09cb",
+    "sha256": "022aec236db4d843e92cf9c4c1fc0db53910ce39b6e79bfb4ff461dd11ced11a"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+    "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+    "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+  },
+  "base_artifact": {
+    "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+    "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+  },
+  "preserves_method4_human_UNKNOWN": true,
+  "new_prose_authorized": false,
+  "revision_number_not_promoted": true,
+  "effectiveness": "NOT_TESTED",
+  "correction_basis": {
+    "path": "state/review_receipts/NOVEL_RC3_PREP_REVIEW_RESULT_20261002_01.json",
+    "blob": "ee99954f4ea91220fd1baaad5003165e1c2a0e1f",
+    "sha256": "e69ca14667a45fda8e6d8920d1504ae1e91c1b52979435dd1a30ea90906a7728"
+  },
+  "supersedes_lock": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_LOCK_20261002.json",
+    "blob": "64ad8e103d07ea69665135c6cc598a8cc53cf89b",
+    "sha256": "db240635d4dcb53b2efbb6868f97e8981814100a1638fe9a8eb7d4a0eba7f68b"
+  }
+}

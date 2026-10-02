@@ -914,7 +914,7 @@
     "accepted_checkpoint_advance": false
   },
   "next_required_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
-  "status": "NOVEL_RC3_PREPARATION_FROZEN_AWAITING_EXTERNAL_REVIEW",
+  "status": "NOVEL_RC3_PREPARATION_A2_FROZEN_AWAITING_EXTERNAL_REVIEW",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3687,7 +3687,7 @@
   },
   "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "已收到真实主动回传并接续；RC3唯一局部输入及范围锁已冻结，等待原外审检查准备方案。方法4原稿与真人UNKNOWN保留；未生成新正文。",
+  "current_focus": "准备审核真实回传REVISE已核对并处理一次；RC3输入A2删除效果指令、诊断解释与尊严定性，另立范围锁等待原外审复检。原稿真人UNKNOWN；未写新正文。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4299,45 +4299,94 @@
     },
     "scoped_revision_preparation": {
       "status": "FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW",
-      "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-20261002",
+      "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-INPUT-A2-20261002",
       "task": {
-        "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_20261002.json",
-        "blob": "5797587872c8dcdc9eb14f63975f2bf4bb960e2b",
-        "sha256": "b8418baa82b274da6b9e922531f859b2d74c5786ee792cc68eeca074af76a8c5"
+        "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_INPUT_A2_20261002.json",
+        "blob": "e4bd764edccea19eb6daa9e91547ecf28ddb822c",
+        "sha256": "b44f44a49a98283d9cb07b403f944b3044fb322f7d48457ea9c72f8debc0866c"
       },
       "lock": {
-        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_LOCK_20261002.json",
-        "blob": "64ad8e103d07ea69665135c6cc598a8cc53cf89b",
-        "sha256": "db240635d4dcb53b2efbb6868f97e8981814100a1638fe9a8eb7d4a0eba7f68b"
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_INPUT_A2_LOCK_20261002.json",
+        "blob": "6e529e9e81ec888ae819b44e8ba61c74152525e6",
+        "sha256": "4d6e4f368f516a10b524b9788d7c68289917a5977cc307694c1b3251c13cb5d4"
       },
       "plan": {
-        "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md",
-        "blob": "a848c81455e45ac1cd48b788d8c5d5fdc34e622d",
-        "sha256": "857646d510ab86dd6c27d1de3e9fb957a03db3d6b772f4a55f2c3eb245374260"
+        "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_INPUT_A2_20261002.md",
+        "blob": "357b4a7ef660821609de74d04f1abfc3f03c09cb",
+        "sha256": "022aec236db4d843e92cf9c4c1fc0db53910ce39b6e79bfb4ff461dd11ced11a"
       },
       "writer_packet": {
-        "path": "delivery/local-revision-rc3-r1/writer-input.md",
-        "blob": "d0af466d7da5cffc6df9d813279f5fcb2b414d45",
-        "sha256": "482a3d512aaf343226db14c478952753a929fadeda128d43f825548271832ffd"
+        "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+        "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+        "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+      },
+      "correction_basis": {
+        "path": "state/review_receipts/NOVEL_RC3_PREP_REVIEW_RESULT_20261002_01.json",
+        "blob": "ee99954f4ea91220fd1baaad5003165e1c2a0e1f",
+        "sha256": "e69ca14667a45fda8e6d8920d1504ae1e91c1b52979435dd1a30ea90906a7728"
       },
       "priority_issue_id": "RC3",
       "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
       "new_prose_authorized": false,
       "generation_count": 0,
-      "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
-      "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
+      "review_task_id": "NOVEL-RC3-PREP-RECHECK-20261002-02",
+      "review_callback_id": "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
-      "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
-      "dispatch_message_sha256": "ef4cda00a6d218880575c58e2a59410babe2389e752e2bb8aa5348e9a5e2c45f",
-      "dispatch_attempt_id": "RC3-PREP-REVIEW-A1",
-      "send_click_count": 1,
-      "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227",
-      "complete_body_verified": true,
-      "strict_whole_string_guard_passed": false,
-      "app_label_only_difference": "App display adds newline after Opera Neon; remainder exactly equals frozen pre-send readback",
-      "sent_message_sha256": "3b13fbd00852430d1aaed1aa606f948a42e514f4c86339934cd40155393ca884",
-      "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "dispatch_status": "PREPARED_NOT_SENT",
+      "input_revision": 2,
       "callback_received": false
-    }
+    },
+    "preparation_history": [
+      {
+        "status": "REVISE_INPUT_SUPERSEDED_BY_A2",
+        "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-20261002",
+        "task": {
+          "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_20261002.json",
+          "blob": "5797587872c8dcdc9eb14f63975f2bf4bb960e2b",
+          "sha256": "b8418baa82b274da6b9e922531f859b2d74c5786ee792cc68eeca074af76a8c5"
+        },
+        "lock": {
+          "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_LOCK_20261002.json",
+          "blob": "64ad8e103d07ea69665135c6cc598a8cc53cf89b",
+          "sha256": "db240635d4dcb53b2efbb6868f97e8981814100a1638fe9a8eb7d4a0eba7f68b"
+        },
+        "plan": {
+          "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_20261002.md",
+          "blob": "a848c81455e45ac1cd48b788d8c5d5fdc34e622d",
+          "sha256": "857646d510ab86dd6c27d1de3e9fb957a03db3d6b772f4a55f2c3eb245374260"
+        },
+        "writer_packet": {
+          "path": "delivery/local-revision-rc3-r1/writer-input.md",
+          "blob": "d0af466d7da5cffc6df9d813279f5fcb2b414d45",
+          "sha256": "482a3d512aaf343226db14c478952753a929fadeda128d43f825548271832ffd"
+        },
+        "priority_issue_id": "RC3",
+        "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+        "new_prose_authorized": false,
+        "generation_count": 0,
+        "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
+        "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
+        "attempt_owner": "CURRENT_COORDINATOR_ONLY",
+        "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+        "dispatch_message_sha256": "ef4cda00a6d218880575c58e2a59410babe2389e752e2bb8aa5348e9a5e2c45f",
+        "dispatch_attempt_id": "RC3-PREP-REVIEW-A1",
+        "send_click_count": 1,
+        "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227",
+        "complete_body_verified": true,
+        "strict_whole_string_guard_passed": false,
+        "app_label_only_difference": "App display adds newline after Opera Neon; remainder exactly equals frozen pre-send readback",
+        "sent_message_sha256": "3b13fbd00852430d1aaed1aa606f948a42e514f4c86339934cd40155393ca884",
+        "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+        "callback_received": true,
+        "review_result": {
+          "path": "state/review_receipts/NOVEL_RC3_PREP_REVIEW_RESULT_20261002_01.json",
+          "blob": "ee99954f4ea91220fd1baaad5003165e1c2a0e1f",
+          "sha256": "e69ca14667a45fda8e6d8920d1504ae1e91c1b52979435dd1a30ea90906a7728"
+        }
+      }
+    ],
+    "processed_preparation_callback_ids": [
+      "NOVEL-RC3-PREP-CALLBACK-20261002-01"
+    ]
   }
 }

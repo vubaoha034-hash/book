@@ -1,0 +1,68 @@
+{
+  "schema_version": "novel-scoped-revision-preparation/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-INPUT-A2-20261002",
+  "mainline_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "base_method_revision": 4,
+  "source_head": "427aab4c095ba9ef443247322f4ca7ead34398db",
+  "recorded_at": "2026-10-02T02:30:26+00:00",
+  "status": "FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW",
+  "basis": {
+    "path": "state/review_receipts/NOVEL_EXTERNAL_EVIDENCE_REVIEW_RESULT_20261001.json",
+    "blob": "8eb9cbb56c5873fe5c2df3183fee93392744cafd",
+    "sha256": "d1402fcb2106068f8eb1b27e3ad3d402524c80290f4c3ab50dac16a3fec0a889"
+  },
+  "priority_issue_id": "RC3",
+  "basis_kind": "EXPLICIT_EXTERNAL_REVIEW_ROUTE_AND_LOCATED_AI_DIAGNOSIS_NOT_HUMAN_FAIL",
+  "base_artifact": {
+    "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+    "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+  },
+  "protected_prefix_characters": 197,
+  "protected_prefix_sha256": "4118de6e79177af5a528dfaae2c415c3650aeb26df5c73ed42b31df7a2c9aa8f",
+  "editable_scope": "Single contiguous interval starting at the 三点 departure paragraph through excerpt ending; earlier prefix including paragraph breaks unchanged",
+  "plan": {
+    "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_INPUT_A2_20261002.md",
+    "blob": "357b4a7ef660821609de74d04f1abfc3f03c09cb",
+    "sha256": "022aec236db4d843e92cf9c4c1fc0db53910ce39b6e79bfb4ff461dd11ced11a"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+    "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+    "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+  },
+  "writer_read_allowlist": [
+    "delivery/local-revision-rc3-r1/writer-input-a2.md"
+  ],
+  "writer_fresh_context_required": true,
+  "diagnostic_context_may_write": false,
+  "generation_count": 0,
+  "max_output_count": 1,
+  "allowed_total_characters_excluding_whitespace": [
+    300,
+    500
+  ],
+  "max_consecutive_prose_revision_rounds": 2,
+  "used_prose_revision_rounds": 0,
+  "human_result": "UNKNOWN",
+  "full_scene_authorized": false,
+  "full_v5_authorized": false,
+  "new_prose_authorized_now": false,
+  "current_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+  "after_input_review": "Reconcile located scope evidence and authorize only one fresh-context bounded local writing run under a separate execution claim; no literary promotion",
+  "review_task_id": "NOVEL-RC3-PREP-RECHECK-20261002-02",
+  "review_callback_id": "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02",
+  "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+  "input_revision": 2,
+  "correction_basis": {
+    "path": "state/review_receipts/NOVEL_RC3_PREP_REVIEW_RESULT_20261002_01.json",
+    "blob": "ee99954f4ea91220fd1baaad5003165e1c2a0e1f",
+    "sha256": "e69ca14667a45fda8e6d8920d1504ae1e91c1b52979435dd1a30ea90906a7728"
+  },
+  "supersedes_preparation": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_20261002.json",
+    "blob": "5797587872c8dcdc9eb14f63975f2bf4bb960e2b",
+    "sha256": "b8418baa82b274da6b9e922531f859b2d74c5786ee792cc68eeca074af76a8c5"
+  }
+}

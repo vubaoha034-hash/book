@@ -238,6 +238,23 @@ def scoped_revision_preparation_action(root: Path, project: dict, route: dict,
         task.get('human_result') != 'UNKNOWN' or task.get('full_scene_authorized') is not False or
         task.get('full_v5_authorized') is not False):
         raise ValueError('SCOPED_PREPARATION_SCOPE_PROMOTION')
+    if task.get('correction_basis') is not None:
+        correction = bound_json(root, task['correction_basis'])
+        predecessor = bound_json(root, task.get('supersedes_preparation', {}))
+        report = correction.get('report', {})
+        predecessor_packet = safe_file(root, predecessor['writer_packet']['path']).read_text(encoding='utf-8')
+        callback_id = correction.get('callback_id')
+        if (lock.get('correction_basis') != task['correction_basis'] or
+            preparation.get('correction_basis') != task['correction_basis'] or
+            correction.get('schema_version') != 'novel-scoped-preparation-review-receipt/v1' or
+            correction.get('callback_received') is not True or correction.get('processed_once') is not True or
+            callback_id != predecessor.get('review_callback_id') or
+            route.get('processed_preparation_callback_ids', []).count(callback_id) != 1 or
+            report.get('verdict') != 'REVISE' or report.get('target_task_id') != predecessor.get('task_id') or
+            report.get('writer_packet_blob') != predecessor['writer_packet']['blob'] or
+            not report.get('issues') or
+            not all(issue.get('quote') and issue['quote'] in predecessor_packet for issue in report['issues'])):
+            raise ValueError('SCOPED_PREPARATION_CORRECTION_PROVENANCE_DRIFT')
     action = 'AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION'
     if (task.get('current_action') != action or preparation.get('next_action') != action or
         preparation.get('status') != 'FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW' or
