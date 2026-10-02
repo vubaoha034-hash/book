@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 173,
-  "recorded_at": "2026-10-02T09:55:12+08:00",
+  "sequence": 174,
+  "recorded_at": "2026-10-02T09:59:36+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -1747,7 +1747,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "6087c65cdca781fabb812f1a6a48368bdbd9a1a4e9be04a4bf530f081d312746",
+    "project_state_sha256": "35f6530ed5d0f508a49b0eb8e2e6b8963ad2a5b31659262ed846b53c0c543b05",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2492,7 +2492,11 @@
       "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
       "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
-      "dispatch_status": "PREPARED_NOT_SENT"
+      "dispatch_status": "READY_TO_SEND_ONCE",
+      "dispatch_message_sha256": "ef4cda00a6d218880575c58e2a59410babe2389e752e2bb8aa5348e9a5e2c45f",
+      "dispatch_attempt_id": "RC3-PREP-REVIEW-A1",
+      "send_click_count": 0,
+      "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227"
     }
   }
 }

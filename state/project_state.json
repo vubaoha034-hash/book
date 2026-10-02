@@ -4327,7 +4327,11 @@
       "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
       "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
-      "dispatch_status": "PREPARED_NOT_SENT"
+      "dispatch_status": "READY_TO_SEND_ONCE",
+      "dispatch_message_sha256": "ef4cda00a6d218880575c58e2a59410babe2389e752e2bb8aa5348e9a5e2c45f",
+      "dispatch_attempt_id": "RC3-PREP-REVIEW-A1",
+      "send_click_count": 0,
+      "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227"
     }
   }
 }
