@@ -1,0 +1,47 @@
+{
+  "schema_version": "novel-writer-output-contract-repair-preparation/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-WRITER-OUTPUT-CONTRACT-REPAIR-PREP-20261002",
+  "recorded_at": "2026-10-02T03:31:58+00:00",
+  "base_method_revision": 4,
+  "failed_execution": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
+    "blob": "cd02542dd94dd6533c1e8f56b4da4200da16ae3c",
+    "sha256": "1a65b4380156dfafcaee8255a1847e328fb7d291d5578377c2514cfb808aa4a3"
+  },
+  "failure_result": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_OUTPUT_BOUNDARY_FAIL_20261002.json",
+    "blob": "6362520d650ed75dff2b4d3524f66f083ab1373f",
+    "sha256": "4874f40b37c347e284474387646262e5b0b0e8757dc8a2f4a4ed7a024580f50b"
+  },
+  "previous_approved_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+    "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+    "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+    "blob": "de0fa1483499835a2c567448fbb784a909213769",
+    "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+  },
+  "writer_read_allowlist": [
+    "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md"
+  ],
+  "changed_scope": "Only explicitly count the unchanged protected opening in final 300–500 characters and return whole excerpt, not just editable suffix",
+  "protected_prefix_characters": 197,
+  "protected_prefix_sha256": "4118de6e79177af5a528dfaae2c415c3650aeb26df5c73ed42b31df7a2c9aa8f",
+  "editable_interval": "From 三点 departure paragraph to excerpt ending only",
+  "new_fact_added": false,
+  "diagnostic_effect_added": false,
+  "replacement_prose_added": false,
+  "used_prose_revision_rounds": 1,
+  "max_consecutive_prose_revision_rounds": 2,
+  "remaining_prose_revision_rounds": 1,
+  "new_prose_authorized_now": false,
+  "human_result": "UNKNOWN",
+  "full_v5_authorized": false,
+  "review_task_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-REVIEW-20261002-03",
+  "review_callback_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03",
+  "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0"
+}

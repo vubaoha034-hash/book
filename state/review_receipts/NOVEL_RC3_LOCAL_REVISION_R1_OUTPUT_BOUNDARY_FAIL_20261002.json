@@ -1,0 +1,49 @@
+{
+  "schema_version": "novel-scoped-writer-output-result/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-R1-WRITER-20261002",
+  "recorded_at": "2026-10-02T03:31:58+00:00",
+  "writer_conversation_url": "https://chatgpt.com/c/6abf24e8-64a4-83ea-82fd-45569f4da312",
+  "execution_task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
+    "blob": "cd02542dd94dd6533c1e8f56b4da4200da16ae3c",
+    "sha256": "1a65b4380156dfafcaee8255a1847e328fb7d291d5578377c2514cfb808aa4a3"
+  },
+  "execution_lock": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_LOCK_20261002.json",
+    "blob": "6e41d5782080237fccb90ac9885688608ec4edc5",
+    "sha256": "df358c340fe17c84db47b1c5875c8756605a095d918e3b1f051f3d46dd336f40"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+    "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+    "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+  },
+  "raw_output": {
+    "path": "delivery/local-revision-rc3-r1/writer-output-r1-raw.md",
+    "blob": "3e6a11f894fbca8f244c38ad37be992868c77f55",
+    "sha256": "b0e0fc6a7d9a1a1ed71707ce518f0a5f1ce9117881f80a688aeb59d8f598eeb5"
+  },
+  "source_kind": "ACTUAL_FRESH_CHAT_WRITER_OUTPUT",
+  "output_count": 1,
+  "coordinator_prose_edits": 0,
+  "technical_verdict": "FAIL_OUTPUT_CONTRACT",
+  "observations": {
+    "raw_characters_excluding_whitespace": 439,
+    "protected_prefix_characters": 197,
+    "protected_prefix_returned": false,
+    "raw_starts_with_editable_interval": true,
+    "deterministic_prefix_join_characters_excluding_whitespace": 624,
+    "joined_version_generated_or_saved_as_candidate": false,
+    "whole_deliverable_required_range": [
+      300,
+      500
+    ]
+  },
+  "literary_verdict": "NOT_ASSESSED",
+  "human_result": "UNKNOWN",
+  "rc3_closed": false,
+  "remaining_prose_revision_rounds": 1,
+  "review_needed": "Only output-contract clarification; no new effect target or diagnostic mechanism in writer input",
+  "private_native_output_sha256": "df324b69efabbdaf2ec1880bf608c29608911587e0ad35e6586e881853af42fd"
+}

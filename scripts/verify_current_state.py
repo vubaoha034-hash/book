@@ -302,11 +302,13 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
     actions = {'CLAIMED_READY_TO_DISPATCH': 'EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION',
                'DISPATCHED_AWAITING_WRITER_RESULT': 'AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT',
                'FROZEN_AWAITING_REVIEW_DISPATCH': 'SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW',
-               'FROZEN_AWAITING_EXTERNAL_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION'}
+               'FROZEN_AWAITING_EXTERNAL_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION',
+               'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_RC3_WRITER_OUTPUT_BOUNDARY_REPAIR'}
     if status not in actions or execution.get('next_action') != actions[status]:
         raise ValueError('SCOPED_LOCAL_EXECUTION_ACTION_DRIFT')
     frozen = status.startswith('FROZEN_')
-    if (execution.get('generation_count') != int(frozen) or execution.get('used_prose_revision_rounds') != int(frozen) or
+    produced = frozen or status == 'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW'
+    if (execution.get('generation_count') != int(produced) or execution.get('used_prose_revision_rounds') != int(produced) or
         execution.get('writer_attempt_count') != (0 if status == 'CLAIMED_READY_TO_DISPATCH' else 1) or
         execution.get('new_prose_authorized_now') is not (status == 'CLAIMED_READY_TO_DISPATCH')):
         raise ValueError('SCOPED_LOCAL_EXECUTION_COUNT_DRIFT')
@@ -318,6 +320,32 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
             output.get('sha256') != hashlib.sha256(data).hexdigest() or not text.startswith(original[:197]) or
             not 300 <= len(''.join(text.split())) <= 500):
             raise ValueError('SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT')
+    if status == 'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW':
+        result = bound_json(root, execution.get('writer_result', {}))
+        repair_route = execution.get('output_boundary_repair', {})
+        repair = bound_json(root, repair_route.get('task', {}))
+        repair_lock = bound_json(root, repair_route.get('lock', {}))
+        raw_ref = execution.get('raw_writer_output', {})
+        raw_bytes = safe_file(root, raw_ref.get('path', '')).read_bytes()
+        raw = raw_bytes.decode('utf-8')
+        repair_bytes = safe_file(root, repair['writer_packet']['path']).read_bytes()
+        if (raw_ref.get('blob') != git_blob(raw_bytes) or raw_ref.get('sha256') != hashlib.sha256(raw_bytes).hexdigest() or
+            result.get('technical_verdict') != 'FAIL_OUTPUT_CONTRACT' or result.get('raw_output') != raw_ref or
+            result.get('task_id') != task.get('task_id') or result.get('coordinator_prose_edits') != 0 or
+            result.get('human_result') != 'UNKNOWN' or result.get('rc3_closed') is not False or
+            raw.startswith(original[:197]) or not raw.startswith('“我三点就得走') or
+            len(''.join(raw.split())) != result['observations']['raw_characters_excluding_whitespace'] or
+            len(''.join((original[:197]+raw).split())) <= 500 or
+            repair.get('schema_version') != 'novel-writer-output-contract-repair-preparation/v1' or
+            repair_lock.get('task') != repair_route.get('task') or repair.get('failure_result') != execution.get('writer_result') or
+            repair.get('previous_approved_packet') != task.get('writer_packet') or
+            repair_lock.get('writer_packet') != repair.get('writer_packet') or
+            repair_route.get('writer_packet') != repair.get('writer_packet') or
+            repair['writer_packet'].get('blob') != git_blob(repair_bytes) or
+            repair['writer_packet'].get('sha256') != hashlib.sha256(repair_bytes).hexdigest() or
+            repair.get('remaining_prose_revision_rounds') != 1 or execution.get('remaining_prose_revision_rounds') != 1 or
+            repair.get('new_prose_authorized_now') is not False or repair_lock.get('new_prose_authorized') is not False):
+            raise ValueError('SCOPED_LOCAL_BOUNDARY_FAILURE_DRIFT')
     return actions[status]
 
 def test_outcome(root: Path, relative: str) -> str:

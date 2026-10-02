@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT",
-  "status": "NOVEL_RC3_R1_WRITER_DISPATCHED",
+  "next_required_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_WRITER_OUTPUT_BOUNDARY_REPAIR",
+  "status": "NOVEL_RC3_R1_OUTPUT_BOUNDARY_FAILED_REPAIR_PREPARED",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3685,9 +3685,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT",
+  "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_WRITER_OUTPUT_BOUNDARY_REPAIR",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "唯一独立聊天已完整收到批准输入，等待一份局部正文；写作发送一次，禁止重投或新候选。",
+  "current_focus": "独立写作者唯一输出439字但遗漏197字符保护开头，拼接后624字超限；原件冻结为输出范围失败，不修正文。仅澄清完整输出与全篇计数输入，等待原外审；已用一轮，剩一轮。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4406,7 +4406,7 @@
       "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02"
     ],
     "scoped_revision_execution": {
-      "status": "DISPATCHED_AWAITING_WRITER_RESULT",
+      "status": "BOUNDARY_FAILED_AWAITING_INPUT_REVIEW",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R1-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
@@ -4429,10 +4429,10 @@
         "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
       },
       "writer_attempt_count": 1,
-      "generation_count": 0,
-      "used_prose_revision_rounds": 0,
+      "generation_count": 1,
+      "used_prose_revision_rounds": 1,
       "new_prose_authorized_now": false,
-      "next_action": "AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT",
+      "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_WRITER_OUTPUT_BOUNDARY_REPAIR",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 22,
       "writer_initial_url": "https://chatgpt.com/",
@@ -4445,7 +4445,40 @@
       "writer_send_click_count": 1,
       "writer_dispatch_message_sha256": "19152934500e4a24e342633b2dec4efdbe36e7efd7bc2f80aeba3e76ac815b94",
       "writer_thinking_effort": "EXTREME_HIGH",
-      "writer_chat_mode_verified": true
+      "writer_chat_mode_verified": true,
+      "raw_writer_output": {
+        "path": "delivery/local-revision-rc3-r1/writer-output-r1-raw.md",
+        "blob": "3e6a11f894fbca8f244c38ad37be992868c77f55",
+        "sha256": "b0e0fc6a7d9a1a1ed71707ce518f0a5f1ce9117881f80a688aeb59d8f598eeb5"
+      },
+      "writer_result": {
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_OUTPUT_BOUNDARY_FAIL_20261002.json",
+        "blob": "6362520d650ed75dff2b4d3524f66f083ab1373f",
+        "sha256": "4874f40b37c347e284474387646262e5b0b0e8757dc8a2f4a4ed7a024580f50b"
+      },
+      "output_boundary_repair": {
+        "task_id": "NOVEL-RC3-WRITER-OUTPUT-CONTRACT-REPAIR-PREP-20261002",
+        "task": {
+          "path": "state/tasks/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_20261002.json",
+          "blob": "e63a99451f3ed05bf5fcecc5e3d7d32ea4bd4f39",
+          "sha256": "3298aeb3308e6e35e0e472a258ab5ed2bae83c922dd63ceca62f64aee285b832"
+        },
+        "lock": {
+          "path": "state/review_receipts/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_LOCK_20261002.json",
+          "blob": "8b6ff6e97c6a3e6577231d4375b63de50bdcf1d0",
+          "sha256": "9a01ae8aba9e5b851fd89941d61c832d5db9ff6842bebd0281aa6ac85f7e8023"
+        },
+        "writer_packet": {
+          "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+          "blob": "de0fa1483499835a2c567448fbb784a909213769",
+          "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+        },
+        "review_task_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-REVIEW-20261002-03",
+        "review_callback_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03",
+        "dispatch_status": "PREPARED_NOT_SENT",
+        "callback_received": false
+      },
+      "remaining_prose_revision_rounds": 1
     }
   }
 }

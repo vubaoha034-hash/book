@@ -1,0 +1,22 @@
+{
+  "schema_version": "novel-writer-output-contract-repair-preparation-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-WRITER-OUTPUT-CONTRACT-REPAIR-PREP-20261002",
+  "task": {
+    "path": "state/tasks/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_20261002.json",
+    "blob": "e63a99451f3ed05bf5fcecc5e3d7d32ea4bd4f39",
+    "sha256": "3298aeb3308e6e35e0e472a258ab5ed2bae83c922dd63ceca62f64aee285b832"
+  },
+  "failure_result": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_OUTPUT_BOUNDARY_FAIL_20261002.json",
+    "blob": "6362520d650ed75dff2b4d3524f66f083ab1373f",
+    "sha256": "4874f40b37c347e284474387646262e5b0b0e8757dc8a2f4a4ed7a024580f50b"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+    "blob": "de0fa1483499835a2c567448fbb784a909213769",
+    "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+  },
+  "remaining_prose_revision_rounds": 1,
+  "new_prose_authorized": false
+}
