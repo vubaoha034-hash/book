@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 176,
-  "recorded_at": "2026-10-02T02:30:26+00:00",
+  "sequence": 177,
+  "recorded_at": "2026-10-02T02:35:23+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -480,7 +480,8 @@
     "Plugin usage confirmed and target load failure reproduced; short existing-tab callback instruction dispatched",
     "Actual Opera Neon callback received and de-duplicated; coordinator resumed; one RC3 local preparation and isolated writer packet frozen, no new fiction",
     "RC3 preparation and complete writer input delivered as one message to existing Chat/极高 reviewer with Opera Neon; only app label display newline differs; awaiting actual preparation-review callback, no fiction",
-    "Processed actual RC3 preparation callback exactly once; preserved input A1 and locks, froze corrected isolated input A2 for external scope recheck; no new prose"
+    "Processed actual RC3 preparation callback exactly once; preserved input A1 and locks, froze corrected isolated input A2 for external scope recheck; no new prose",
+    "RC3 input A2 review delivered once with Opera Neon attached and 极高 effort; exact body read back and editor empty; end turn awaiting active callback"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1749,7 +1750,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "3b82d58b95661a1d32cdc377390491669701a27243b04e03eecb0d7594198639",
+    "project_state_sha256": "83214c6085a5a8ae4b9a9fca6753fd74f429da2c85b474c04ec589cefac71ab6",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2499,9 +2500,19 @@
       "review_task_id": "NOVEL-RC3-PREP-RECHECK-20261002-02",
       "review_callback_id": "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
-      "dispatch_status": "PREPARED_NOT_SENT",
+      "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
       "input_revision": 2,
-      "callback_received": false
+      "callback_received": false,
+      "dispatch_evidence": {
+        "path": "state/review_receipts/NOVEL_RC3_PREP_A2_DISPATCH_20261002.json",
+        "blob": "098cdeef33ab0b622e3d5760e07273917ad8cc97",
+        "sha256": "4e1a67fd55188ee35b1c9bde788f27ed5c6d9105fd24e75702ad26e7598fc417"
+      },
+      "send_click_count": 1,
+      "complete_body_verified": true,
+      "strict_whole_string_guard_passed": false,
+      "dispatch_message_sha256": "4ddda6e38176ebea1fe763dce07df33988290a63487edd4f9146b603f539dd88",
+      "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd"
     },
     "preparation_history": [
       {

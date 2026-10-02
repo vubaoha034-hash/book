@@ -4332,9 +4332,19 @@
       "review_task_id": "NOVEL-RC3-PREP-RECHECK-20261002-02",
       "review_callback_id": "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
-      "dispatch_status": "PREPARED_NOT_SENT",
+      "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
       "input_revision": 2,
-      "callback_received": false
+      "callback_received": false,
+      "dispatch_evidence": {
+        "path": "state/review_receipts/NOVEL_RC3_PREP_A2_DISPATCH_20261002.json",
+        "blob": "098cdeef33ab0b622e3d5760e07273917ad8cc97",
+        "sha256": "4e1a67fd55188ee35b1c9bde788f27ed5c6d9105fd24e75702ad26e7598fc417"
+      },
+      "send_click_count": 1,
+      "complete_body_verified": true,
+      "strict_whole_string_guard_passed": false,
+      "dispatch_message_sha256": "4ddda6e38176ebea1fe763dce07df33988290a63487edd4f9146b603f539dd88",
+      "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd"
     },
     "preparation_history": [
       {
