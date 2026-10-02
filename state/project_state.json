@@ -4278,7 +4278,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "EXISTING_TAB_CALLBACK_RECOVERY_PREPARED",
+      "status": "EXISTING_TAB_CALLBACK_RECOVERY_DISPATCHED",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
