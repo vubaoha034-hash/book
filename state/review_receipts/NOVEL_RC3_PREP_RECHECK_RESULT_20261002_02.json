@@ -1,0 +1,152 @@
+{
+  "schema_version": "novel-scoped-preparation-review-receipt/v1",
+  "project_id": "novel-distillation",
+  "callback_id": "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02",
+  "parent_review_task_id": "NOVEL-RC3-PREP-RECHECK-20261002-02",
+  "recorded_at": "2026-10-02T03:23:43+00:00",
+  "source_head": "780718dd97ef119f98913a5138711be5495191fd",
+  "source_kind": "EXTERNAL_AI_CHAT",
+  "source_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "target_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+  "reviewed_preparation": {
+    "status": "FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW",
+    "task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-INPUT-A2-20261002",
+    "task": {
+      "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_PREP_R1_INPUT_A2_20261002.json",
+      "blob": "e4bd764edccea19eb6daa9e91547ecf28ddb822c",
+      "sha256": "b44f44a49a98283d9cb07b403f944b3044fb322f7d48457ea9c72f8debc0866c"
+    },
+    "lock": {
+      "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_PREP_R1_INPUT_A2_LOCK_20261002.json",
+      "blob": "6e529e9e81ec888ae819b44e8ba61c74152525e6",
+      "sha256": "4d6e4f368f516a10b524b9788d7c68289917a5977cc307694c1b3251c13cb5d4"
+    },
+    "plan": {
+      "path": "docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_INPUT_A2_20261002.md",
+      "blob": "357b4a7ef660821609de74d04f1abfc3f03c09cb",
+      "sha256": "022aec236db4d843e92cf9c4c1fc0db53910ce39b6e79bfb4ff461dd11ced11a"
+    },
+    "writer_packet": {
+      "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+      "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+      "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+    },
+    "correction_basis": {
+      "path": "state/review_receipts/NOVEL_RC3_PREP_REVIEW_RESULT_20261002_01.json",
+      "blob": "ee99954f4ea91220fd1baaad5003165e1c2a0e1f",
+      "sha256": "e69ca14667a45fda8e6d8920d1504ae1e91c1b52979435dd1a30ea90906a7728"
+    },
+    "priority_issue_id": "RC3",
+    "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+    "new_prose_authorized": false,
+    "generation_count": 0,
+    "review_task_id": "NOVEL-RC3-PREP-RECHECK-20261002-02",
+    "review_callback_id": "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02",
+    "attempt_owner": "CURRENT_COORDINATOR_ONLY",
+    "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+    "input_revision": 2,
+    "callback_received": false,
+    "dispatch_evidence": {
+      "path": "state/review_receipts/NOVEL_RC3_PREP_A2_DISPATCH_20261002.json",
+      "blob": "098cdeef33ab0b622e3d5760e07273917ad8cc97",
+      "sha256": "4e1a67fd55188ee35b1c9bde788f27ed5c6d9105fd24e75702ad26e7598fc417"
+    },
+    "send_click_count": 1,
+    "complete_body_verified": true,
+    "strict_whole_string_guard_passed": false,
+    "dispatch_message_sha256": "4ddda6e38176ebea1fe763dce07df33988290a63487edd4f9146b603f539dd88",
+    "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd"
+  },
+  "report": {
+    "schema_version": "novel-scoped-preparation-review/v1",
+    "project_id": "novel-distillation",
+    "review_context": "SAME_EXTERNAL_REVIEWER_PREPARATION_CHECK",
+    "target_task_id": "NOVEL-RC3-LOCAL-REVISION-PREP-R1-INPUT-A2-20261002",
+    "base_method_revision": 4,
+    "writer_packet_blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+    "verdict": "NO_LOCATED_BLOCKERS",
+    "issues": [],
+    "protect": [
+      {
+        "quote": "从原稿“我三点就得走，要赶客户的片子。”所在段起，到短段结尾，可以重新写。此前的正文及段落分隔全部逐字保留，不另改开头。",
+        "why": "修改区间仍只覆盖RC3信息段及其紧邻反应，没有扩大到受保护开头。"
+      },
+      {
+        "quote": "供应商另有合同和收款留存，可由罗钧自己找到的公开联系方式核验。",
+        "why": "公开独立核验路径完整保留，许澄没有被写成证据控制者。"
+      },
+      {
+        "quote": "他可以查证，但不能恢复记忆、假装亲近或提前认领。",
+        "why": "提前认责、恢复记忆和恢复旧亲密仍被明确禁止。"
+      },
+      {
+        "quote": "具体心理、措辞、动作及先后由你选择。",
+        "why": "没有新增固定动作链，写作者仍保留实现自由。"
+      }
+    ],
+    "scope_checks": {
+      "prep_01_effect_requirement": {
+        "verdict": "CLEAR",
+        "reason": "A1中的“让这次交谈影响一个眼前安排”及“由此改变的当前安排”等效果要求均已删除。A2只限定局部范围和短段终点，没有要求写作者证明RC3已经成立。"
+      },
+      "prep_02_diagnostic_mechanism": {
+        "verdict": "CLEAR",
+        "reason": "“他把事情推后，不能当然要求她随时解释、安排和等待”以及“对方不愿由这个安排当然决定自己的等候时间”等诊断性解释均已删除。现有文字仅并列双方既有安排、期限和协助边界。"
+      },
+      "prep_03_psychological_label": {
+        "verdict": "CLEAR",
+        "reason": "“被当成来碰首付的陌生讨款者会触及她的经历和尊严”已从A2删除，没有同义的尊严受损定性残留。"
+      },
+      "modification_interval": {
+        "verdict": "CLEAR",
+        "reason": "仍从“三点离开”所在段起至结尾，可容纳RC3及紧邻行为后果，未扩大为开头重写。"
+      },
+      "protected_197_character_opening": {
+        "verdict": "CLEAR",
+        "reason": "当前底稿从“材料我带走，等查清了再说。”至“他想说材料已经收了，总不能连查清的时间都不给。”并含其后段落分隔，与此前方法4受保护前缀一致；未见改字、删句或段落移动。"
+      },
+      "fixed_facts": {
+        "verdict": "CLEAR",
+        "reason": "三点离开、剩二十分钟、五天到期、客户片子、18.6万元剩余设备款、6.8万元本期款、1.2万元新工作间押金、30天冲突窗口等均与本轮给定事实一致，未定位新增世界规则。"
+      },
+      "independent_verification": {
+        "verdict": "CLEAR",
+        "reason": "供应商合同和收款留存仍可通过罗钧自行找到的公开联系方式核验，不依赖许澄控制。"
+      },
+      "premature_liability_or_old_intimacy": {
+        "verdict": "CLEAR",
+        "reason": "A2继续明确禁止提前认领、恢复记忆、假装亲近、正式追偿和旧关系恢复；短段仅到开始安排独立核验且无核验结果。"
+      },
+      "diagnostic_leakage": {
+        "verdict": "CLEAR",
+        "reason": "未再定位到把前次RC3诊断、校准漏检、审稿答案或失败稿结论直接交给写作者的内容。"
+      }
+    },
+    "claim_limits": [
+      "本轮只复检准备输入A2，不评价或认证尚未生成的新正文。",
+      "NO_LOCATED_BLOCKERS只表示本轮未定位到准备层阻断，不证明RC3已关闭、正文好看、真人认可或文学质量通过。",
+      "原方法4的404字稿真人结果仍为UNKNOWN；校准漏检0/2及0/1保持不变。",
+      "“尊严”句在更早方法4输入中已存在；本轮只确认A2已删除，不将其误记为本轮首次新增事实。",
+      "事实与边界判断只覆盖本次A2及已提供固定设定，不扩展到完整场景或全书。"
+    ]
+  },
+  "callback_received": true,
+  "processed_once": true,
+  "source_check": {
+    "native_coordinator_message_captured": true,
+    "native_source_verdict_and_send_success_observed": true,
+    "full_report_source_coverage": "FULL_IN_NATIVE_COORDINATOR_CALLBACK_SOURCE_SUMMARY_CONFIRMED",
+    "all_protected_quotes_located": true,
+    "exact_target_and_blob": true,
+    "private_source_sha256": "2b1287a947515e3b23da89794b63bde42b523b49a136c348fc635f67d526c0b6",
+    "private_callback_sha256": "e35d59bb689960a045161ac461847f6660d40d559a17e3516f0e1279c2ce5303"
+  },
+  "coordinator_settlement": {
+    "input_review_outcome": "NO_LOCATED_BLOCKERS",
+    "rc3_closed": false,
+    "literary_acceptance": false,
+    "human_result": "UNKNOWN",
+    "new_prose_generated": false,
+    "next_scope": "One fresh-context local revision using exact approved A2 packet only"
+  }
+}

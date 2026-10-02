@@ -261,7 +261,62 @@ def scoped_revision_preparation_action(root: Path, project: dict, route: dict,
         preparation.get('review_task_id') != task.get('review_task_id') or
         preparation.get('review_callback_id') != task.get('review_callback_id')):
         raise ValueError('SCOPED_PREPARATION_NEXT_ACTION_DRIFT')
-    return action
+    execution = route.get('scoped_revision_execution')
+    if execution is None:
+        return action
+    return scoped_local_execution_action(root, project, route, preparation, execution, original)
+
+def scoped_local_execution_action(root: Path, project: dict, route: dict,
+                                  preparation: dict, execution: dict, original: str) -> str:
+    task = bound_json(root, execution.get('task', {}))
+    lock = bound_json(root, execution.get('lock', {}))
+    review = bound_json(root, task.get('input_review', {}))
+    report = review.get('report', {})
+    if (task.get('schema_version') != 'novel-scoped-local-revision-execution/v1' or
+        lock.get('schema_version') != 'novel-scoped-local-revision-execution-lock/v1' or
+        task.get('project_id') != project.get('project_id') or lock.get('project_id') != project.get('project_id') or
+        task.get('task_id') != execution.get('task_id') or lock.get('task_id') != task.get('task_id') or
+        lock.get('task') != execution.get('task') or task.get('approved_preparation') != preparation.get('task') or
+        task.get('preparation_lock') != preparation.get('lock') or
+        task.get('writer_packet') != preparation.get('writer_packet') or
+        lock.get('writer_packet') != task.get('writer_packet') or
+        lock.get('input_review') != task.get('input_review') or execution.get('input_review') != task.get('input_review') or
+        review.get('callback_received') is not True or review.get('processed_once') is not True or
+        route.get('processed_preparation_callback_ids', []).count(review.get('callback_id')) != 1 or
+        report.get('target_task_id') != preparation.get('task_id') or
+        report.get('writer_packet_blob') != task['writer_packet']['blob'] or
+        report.get('verdict') != 'NO_LOCATED_BLOCKERS' or report.get('issues') != []):
+        raise ValueError('SCOPED_LOCAL_EXECUTION_PROVENANCE_DRIFT')
+    if (task.get('base_method_revision') != 4 or task.get('max_output_count') != 1 or
+        task.get('writer_fresh_context_required') is not True or task.get('diagnostic_context_may_write') is not False or
+        task.get('writer_read_allowlist') != [task['writer_packet']['path']] or
+        task.get('max_writer_dispatches') != 1 or task.get('prose_revision_round') != 1 or
+        task.get('max_consecutive_prose_revision_rounds') != 2 or
+        task.get('full_scene_authorized') is not False or task.get('full_v5_authorized') is not False or
+        task.get('human_result') != 'UNKNOWN' or execution.get('human_result') != 'UNKNOWN' or
+        execution.get('literary_acceptance') is not False or execution.get('full_v5_authorized') is not False):
+        raise ValueError('SCOPED_LOCAL_EXECUTION_SCOPE_PROMOTION')
+    status = execution.get('status')
+    actions = {'CLAIMED_READY_TO_DISPATCH': 'EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION',
+               'DISPATCHED_AWAITING_WRITER_RESULT': 'AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT',
+               'FROZEN_AWAITING_REVIEW_DISPATCH': 'SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW',
+               'FROZEN_AWAITING_EXTERNAL_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION'}
+    if status not in actions or execution.get('next_action') != actions[status]:
+        raise ValueError('SCOPED_LOCAL_EXECUTION_ACTION_DRIFT')
+    frozen = status.startswith('FROZEN_')
+    if (execution.get('generation_count') != int(frozen) or execution.get('used_prose_revision_rounds') != int(frozen) or
+        execution.get('writer_attempt_count') != (0 if status == 'CLAIMED_READY_TO_DISPATCH' else 1) or
+        execution.get('new_prose_authorized_now') is not (status == 'CLAIMED_READY_TO_DISPATCH')):
+        raise ValueError('SCOPED_LOCAL_EXECUTION_COUNT_DRIFT')
+    if frozen:
+        output = execution.get('output', {})
+        data = safe_file(root, output.get('path', '')).read_bytes()
+        text = data.decode('utf-8')
+        if (output.get('path') != task.get('output_path') or output.get('blob') != git_blob(data) or
+            output.get('sha256') != hashlib.sha256(data).hexdigest() or not text.startswith(original[:197]) or
+            not 300 <= len(''.join(text.split())) <= 500):
+            raise ValueError('SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT')
+    return actions[status]
 
 def test_outcome(root: Path, relative: str) -> str:
     """Check evidence completeness; do not judge the prose or invent feedback."""

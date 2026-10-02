@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
-  "status": "NOVEL_RC3_PREPARATION_A2_FROZEN_AWAITING_EXTERNAL_REVIEW",
+  "next_required_action": "EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION",
+  "status": "NOVEL_RC3_R1_WRITER_CLAIMED",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3685,9 +3685,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_EXTERNAL_REVIEW_OF_RC3_REVISION_PREPARATION",
+  "next_action": "EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "准备审核真实回传REVISE已核对并处理一次；RC3输入A2删除效果指令、诊断解释与尊严定性，另立范围锁等待原外审复检。原稿真人UNKNOWN；未写新正文。",
+  "current_focus": "A2准备回传未定位阻断已处理一次；另立R1独立写作执行锁，仅使用批准输入改指定后半段，唯一300–500字输出；原稿及真人UNKNOWN保留。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4334,7 +4334,7 @@
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
       "input_revision": 2,
-      "callback_received": false,
+      "callback_received": true,
       "dispatch_evidence": {
         "path": "state/review_receipts/NOVEL_RC3_PREP_A2_DISPATCH_20261002.json",
         "blob": "098cdeef33ab0b622e3d5760e07273917ad8cc97",
@@ -4344,7 +4344,13 @@
       "complete_body_verified": true,
       "strict_whole_string_guard_passed": false,
       "dispatch_message_sha256": "4ddda6e38176ebea1fe763dce07df33988290a63487edd4f9146b603f539dd88",
-      "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd"
+      "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "review_result": {
+        "path": "state/review_receipts/NOVEL_RC3_PREP_RECHECK_RESULT_20261002_02.json",
+        "blob": "df6a9efe8c3fd44f75799d67117950165827916d",
+        "sha256": "fd5ac442922d99f953ea6dd142eb9108836c75f8351541ca7650b6232082b2d7"
+      },
+      "preparation_review_outcome": "NO_LOCATED_BLOCKERS"
     },
     "preparation_history": [
       {
@@ -4396,7 +4402,44 @@
       }
     ],
     "processed_preparation_callback_ids": [
-      "NOVEL-RC3-PREP-CALLBACK-20261002-01"
-    ]
+      "NOVEL-RC3-PREP-CALLBACK-20261002-01",
+      "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02"
+    ],
+    "scoped_revision_execution": {
+      "status": "CLAIMED_READY_TO_DISPATCH",
+      "task_id": "NOVEL-RC3-LOCAL-REVISION-R1-WRITER-20261002",
+      "task": {
+        "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
+        "blob": "cd02542dd94dd6533c1e8f56b4da4200da16ae3c",
+        "sha256": "1a65b4380156dfafcaee8255a1847e328fb7d291d5578377c2514cfb808aa4a3"
+      },
+      "lock": {
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_LOCK_20261002.json",
+        "blob": "6e41d5782080237fccb90ac9885688608ec4edc5",
+        "sha256": "df358c340fe17c84db47b1c5875c8756605a095d918e3b1f051f3d46dd336f40"
+      },
+      "input_review": {
+        "path": "state/review_receipts/NOVEL_RC3_PREP_RECHECK_RESULT_20261002_02.json",
+        "blob": "df6a9efe8c3fd44f75799d67117950165827916d",
+        "sha256": "fd5ac442922d99f953ea6dd142eb9108836c75f8351541ca7650b6232082b2d7"
+      },
+      "writer_packet": {
+        "path": "delivery/local-revision-rc3-r1/writer-input-a2.md",
+        "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
+        "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
+      },
+      "writer_attempt_count": 0,
+      "generation_count": 0,
+      "used_prose_revision_rounds": 0,
+      "new_prose_authorized_now": true,
+      "next_action": "EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION",
+      "attempt_owner": "CURRENT_COORDINATOR_ONLY",
+      "writer_page_id": 22,
+      "writer_initial_url": "https://chatgpt.com/",
+      "writer_isolation_coverage": "New nonproject conversation with no task history; explicit packet allowlist; account personalization may remain",
+      "human_result": "UNKNOWN",
+      "literary_acceptance": false,
+      "full_v5_authorized": false
+    }
   }
 }

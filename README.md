@@ -1,4 +1,4 @@
-当前推进：准备审核主动回传REVISE已核对并处理一次；[RC3输入A2准备](docs/NOVEL_RC3_LOCAL_REVISION_PREPARATION_R1_INPUT_A2_20261002.md)和[唯一写作输入](delivery/local-revision-rc3-r1/writer-input-a2.md)已冻结并另立锁，待原外审复检三项输入修正。原准备、输入和锁全部保留；方法4的404字稿真人UNKNOWN，未写新正文。实时下一步以[接管入口](START_HERE.md)及状态为准。
+当前推进：A2准备审核回传未定位阻断已核对；[唯一R1局部写作任务](state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json)已另立执行锁，下一步为独立聊天仅用批准输入写一份300–500字短段。只修改指定后半段，保护197字符开头，随后冻结送原外审。原稿真人UNKNOWN，准备通过不等于正文通过。实时状态见[接管入口](START_HERE.md)。
 
 # Novel Writing Master V3
 
