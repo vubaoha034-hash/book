@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 169,
-  "recorded_at": "2026-10-02T09:00:27+08:00",
+  "sequence": 170,
+  "recorded_at": "2026-10-02T09:01:59+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -474,7 +474,8 @@
     "Active callback user instruction and fixed target persisted; A1 invalidated; browser timeout blocked complete A2 dispatch, no callback or resumption claimed",
     "Recovered A2 prepare; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged",
     "Recovered A2 sent; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged",
-    "Observed reviewer used plugin but stopped on busy/error target; bounded fresh-tab recovery prepare; no actual callback claimed"
+    "Observed reviewer used plugin but stopped on busy/error target; bounded fresh-tab recovery prepare; no actual callback claimed",
+    "Observed reviewer used plugin but stopped on busy/error target; bounded fresh-tab recovery sent; no actual callback claimed"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1743,7 +1744,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "c5b27e07c4f2763d98a54c14b5f0773c2939277c7b483d2f43422c6b6d436ba8",
+    "project_state_sha256": "8c20549339cc5bfee37eac1854da4571fe98cb35aec257b228d3c3fc8ea10ad7",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2439,7 +2440,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "BUSY_TARGET_RECOVERY_PREPARED",
+      "status": "BUSY_TARGET_RECOVERY_DISPATCHED_AWAITING_CALLBACK",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
