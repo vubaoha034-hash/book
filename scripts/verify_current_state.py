@@ -274,25 +274,51 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
     lock = bound_json(root, execution.get('lock', {}))
     review = bound_json(root, task.get('input_review', {}))
     report = review.get('report', {})
+    revision_round = task.get('prose_revision_round')
+    approved_ref, preparation_lock_ref = preparation.get('task'), preparation.get('lock')
+    packet_ref, preparation_id = preparation.get('writer_packet'), preparation.get('task_id')
+    if revision_round == 2:
+        repair = bound_json(root, task.get('approved_preparation', {}))
+        repair_lock = bound_json(root, task.get('preparation_lock', {}))
+        previous = bound_json(root, task.get('previous_execution', {}))
+        previous_result = bound_json(root, task.get('previous_writer_result', {}))
+        history = [row for row in route.get('scoped_revision_execution_history', [])
+                   if row.get('task') == task.get('previous_execution')]
+        if (repair.get('schema_version') != 'novel-writer-output-contract-repair-preparation/v1' or
+            repair_lock.get('task') != task.get('approved_preparation') or
+            repair.get('failure_result') != task.get('previous_writer_result') or
+            previous.get('prose_revision_round') != 1 or previous_result.get('task_id') != previous.get('task_id') or
+            previous_result.get('technical_verdict') != 'FAIL_OUTPUT_CONTRACT' or
+            repair.get('remaining_prose_revision_rounds') != 1 or repair.get('used_prose_revision_rounds') != 1 or
+            lock.get('previous_execution') != task.get('previous_execution') or
+            lock.get('previous_writer_result') != task.get('previous_writer_result') or
+            len(history) != 1 or history[0].get('used_prose_revision_rounds') != 1 or
+            history[0].get('status') != 'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW'):
+            raise ValueError('SCOPED_LAST_ROUND_WITHOUT_BOUND_PARENT_FAILURE')
+        approved_ref, preparation_lock_ref = task['approved_preparation'], task['preparation_lock']
+        packet_ref, preparation_id = repair['writer_packet'], repair['task_id']
+    packet_bytes = safe_file(root, task['writer_packet']['path']).read_bytes()
     if (task.get('schema_version') != 'novel-scoped-local-revision-execution/v1' or
         lock.get('schema_version') != 'novel-scoped-local-revision-execution-lock/v1' or
         task.get('project_id') != project.get('project_id') or lock.get('project_id') != project.get('project_id') or
         task.get('task_id') != execution.get('task_id') or lock.get('task_id') != task.get('task_id') or
-        lock.get('task') != execution.get('task') or task.get('approved_preparation') != preparation.get('task') or
-        task.get('preparation_lock') != preparation.get('lock') or
-        task.get('writer_packet') != preparation.get('writer_packet') or
+        lock.get('task') != execution.get('task') or task.get('approved_preparation') != approved_ref or
+        task.get('preparation_lock') != preparation_lock_ref or
+        task.get('writer_packet') != packet_ref or execution.get('writer_packet') != packet_ref or
+        task['writer_packet'].get('blob') != git_blob(packet_bytes) or
+        task['writer_packet'].get('sha256') != hashlib.sha256(packet_bytes).hexdigest() or
         lock.get('writer_packet') != task.get('writer_packet') or
         lock.get('input_review') != task.get('input_review') or execution.get('input_review') != task.get('input_review') or
         review.get('callback_received') is not True or review.get('processed_once') is not True or
         route.get('processed_preparation_callback_ids', []).count(review.get('callback_id')) != 1 or
-        report.get('target_task_id') != preparation.get('task_id') or
+        report.get('target_task_id') != preparation_id or
         report.get('writer_packet_blob') != task['writer_packet']['blob'] or
         report.get('verdict') != 'NO_LOCATED_BLOCKERS' or report.get('issues') != []):
         raise ValueError('SCOPED_LOCAL_EXECUTION_PROVENANCE_DRIFT')
     if (task.get('base_method_revision') != 4 or task.get('max_output_count') != 1 or
         task.get('writer_fresh_context_required') is not True or task.get('diagnostic_context_may_write') is not False or
         task.get('writer_read_allowlist') != [task['writer_packet']['path']] or
-        task.get('max_writer_dispatches') != 1 or task.get('prose_revision_round') != 1 or
+        task.get('max_writer_dispatches') != 1 or revision_round not in (1, 2) or
         task.get('max_consecutive_prose_revision_rounds') != 2 or
         task.get('full_scene_authorized') is not False or task.get('full_v5_authorized') is not False or
         task.get('human_result') != 'UNKNOWN' or execution.get('human_result') != 'UNKNOWN' or
@@ -308,7 +334,7 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
         raise ValueError('SCOPED_LOCAL_EXECUTION_ACTION_DRIFT')
     frozen = status.startswith('FROZEN_')
     produced = frozen or status == 'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW'
-    if (execution.get('generation_count') != int(produced) or execution.get('used_prose_revision_rounds') != int(produced) or
+    if (execution.get('generation_count') != int(produced) or execution.get('used_prose_revision_rounds') != revision_round - 1 + int(produced) or
         execution.get('writer_attempt_count') != (0 if status == 'CLAIMED_READY_TO_DISPATCH' else 1) or
         execution.get('new_prose_authorized_now') is not (status == 'CLAIMED_READY_TO_DISPATCH')):
         raise ValueError('SCOPED_LOCAL_EXECUTION_COUNT_DRIFT')

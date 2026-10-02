@@ -1,0 +1,48 @@
+{
+  "schema_version": "novel-scoped-local-revision-execution-lock/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+  "recorded_at": "2026-10-02T03:41:37+00:00",
+  "task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
+    "blob": "e54229ad048ead63267ed44898b1d6f1b74ec013",
+    "sha256": "092274f8b54a0033e611e1e67ef0b56a36990813daecbe0f83c13c60c8c8e4a7"
+  },
+  "approved_preparation": {
+    "path": "state/tasks/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_20261002.json",
+    "blob": "e63a99451f3ed05bf5fcecc5e3d7d32ea4bd4f39",
+    "sha256": "3298aeb3308e6e35e0e472a258ab5ed2bae83c922dd63ceca62f64aee285b832"
+  },
+  "preparation_lock": {
+    "path": "state/review_receipts/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_LOCK_20261002.json",
+    "blob": "8b6ff6e97c6a3e6577231d4375b63de50bdcf1d0",
+    "sha256": "9a01ae8aba9e5b851fd89941d61c832d5db9ff6842bebd0281aa6ac85f7e8023"
+  },
+  "input_review": {
+    "path": "state/review_receipts/NOVEL_RC3_OUTPUT_CONTRACT_PREP_REVIEW_RESULT_20261002_03.json",
+    "blob": "18bd9218238aa5659316707e1143530d4cfe9130",
+    "sha256": "82a3e18aa8123edc26edeace83ee764f76f9dde0a685c774194d7fed5cc16546"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+    "blob": "de0fa1483499835a2c567448fbb784a909213769",
+    "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+  },
+  "base_artifact": {
+    "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+    "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+  },
+  "previous_execution": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
+    "blob": "cd02542dd94dd6533c1e8f56b4da4200da16ae3c",
+    "sha256": "1a65b4380156dfafcaee8255a1847e328fb7d291d5578377c2514cfb808aa4a3"
+  },
+  "previous_writer_result": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_OUTPUT_BOUNDARY_FAIL_20261002.json",
+    "blob": "6362520d650ed75dff2b4d3524f66f083ab1373f",
+    "sha256": "4874f40b37c347e284474387646262e5b0b0e8757dc8a2f4a4ed7a024580f50b"
+  },
+  "max_output_count": 1,
+  "full_v5_authorized": false,
+  "human_result": "UNKNOWN"
+}

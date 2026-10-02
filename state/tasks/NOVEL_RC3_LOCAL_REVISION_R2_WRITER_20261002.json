@@ -1,0 +1,69 @@
+{
+  "schema_version": "novel-scoped-local-revision-execution/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+  "mainline_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "base_method_revision": 4,
+  "recorded_at": "2026-10-02T03:41:37+00:00",
+  "source_head": "762062b3804d93cd00071b6e7c2e489d2257f626",
+  "approved_preparation": {
+    "path": "state/tasks/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_20261002.json",
+    "blob": "e63a99451f3ed05bf5fcecc5e3d7d32ea4bd4f39",
+    "sha256": "3298aeb3308e6e35e0e472a258ab5ed2bae83c922dd63ceca62f64aee285b832"
+  },
+  "preparation_lock": {
+    "path": "state/review_receipts/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_LOCK_20261002.json",
+    "blob": "8b6ff6e97c6a3e6577231d4375b63de50bdcf1d0",
+    "sha256": "9a01ae8aba9e5b851fd89941d61c832d5db9ff6842bebd0281aa6ac85f7e8023"
+  },
+  "input_review": {
+    "path": "state/review_receipts/NOVEL_RC3_OUTPUT_CONTRACT_PREP_REVIEW_RESULT_20261002_03.json",
+    "blob": "18bd9218238aa5659316707e1143530d4cfe9130",
+    "sha256": "82a3e18aa8123edc26edeace83ee764f76f9dde0a685c774194d7fed5cc16546"
+  },
+  "writer_packet": {
+    "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+    "blob": "de0fa1483499835a2c567448fbb784a909213769",
+    "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+  },
+  "writer_read_allowlist": [
+    "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md"
+  ],
+  "writer_fresh_context_required": true,
+  "diagnostic_context_may_write": false,
+  "execution_surface": "CHAT_EXTREME_HIGH_IN_NEW_NONPROJECT_CONVERSATION",
+  "base_artifact": {
+    "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+    "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683"
+  },
+  "protected_prefix_characters": 197,
+  "protected_prefix_sha256": "4118de6e79177af5a528dfaae2c415c3650aeb26df5c73ed42b31df7a2c9aa8f",
+  "editable_interval": "From 三点 departure paragraph to excerpt ending only",
+  "allowed_total_characters_excluding_whitespace": [
+    300,
+    500
+  ],
+  "max_output_count": 1,
+  "prose_revision_round": 2,
+  "max_consecutive_prose_revision_rounds": 2,
+  "new_prose_authorized": true,
+  "full_scene_authorized": false,
+  "full_v5_authorized": false,
+  "human_result": "UNKNOWN",
+  "output_path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+  "writer_attempt_owner": "CURRENT_COORDINATOR_ONLY",
+  "max_writer_dispatches": 1,
+  "generation_result_must_be_frozen_before_review": true,
+  "after_freeze": "SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW",
+  "previous_execution": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
+    "blob": "cd02542dd94dd6533c1e8f56b4da4200da16ae3c",
+    "sha256": "1a65b4380156dfafcaee8255a1847e328fb7d291d5578377c2514cfb808aa4a3"
+  },
+  "previous_writer_result": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_OUTPUT_BOUNDARY_FAIL_20261002.json",
+    "blob": "6362520d650ed75dff2b4d3524f66f083ab1373f",
+    "sha256": "4874f40b37c347e284474387646262e5b0b0e8757dc8a2f4a4ed7a024580f50b"
+  },
+  "remaining_generations_in_scope": 1
+}

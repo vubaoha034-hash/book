@@ -1,4 +1,4 @@
-当前推进：独立写作者返回唯一439字后半段，遗漏保护开头；拼接会超500字，已冻结为[输出范围失败](state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R1_OUTPUT_BOUNDARY_FAIL_20261002.json)，未由协调者改写。仅澄清“返回完整短段、字数包含保留开头”的[下一轮输入](delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md)，待原外审检查。正文已用1轮、剩1轮；原稿真人UNKNOWN，文学质量未通关。实时状态见[接管入口](START_HERE.md)。
+当前推进：完整输出格式澄清已获外审未定位阻断，[最后R2局部写作任务](state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json)已另立锁，仅允许一次独立写作，整段300–500字含保护开头。前次失败原件保留；不增加候选、不自动文学通关。实时状态见[接管入口](START_HERE.md)。
 
 # Novel Writing Master V3
 

@@ -1,0 +1,133 @@
+{
+  "schema_version": "novel-scoped-preparation-review-receipt/v1",
+  "project_id": "novel-distillation",
+  "callback_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03",
+  "parent_review_task_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-REVIEW-20261002-03",
+  "recorded_at": "2026-10-02T03:41:37+00:00",
+  "source_head": "762062b3804d93cd00071b6e7c2e489d2257f626",
+  "source_kind": "EXTERNAL_AI_CHAT",
+  "source_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+  "target_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+  "reviewed_preparation": {
+    "task_id": "NOVEL-RC3-WRITER-OUTPUT-CONTRACT-REPAIR-PREP-20261002",
+    "task": {
+      "path": "state/tasks/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_20261002.json",
+      "blob": "e63a99451f3ed05bf5fcecc5e3d7d32ea4bd4f39",
+      "sha256": "3298aeb3308e6e35e0e472a258ab5ed2bae83c922dd63ceca62f64aee285b832"
+    },
+    "lock": {
+      "path": "state/review_receipts/NOVEL_RC3_WRITER_OUTPUT_CONTRACT_REPAIR_PREP_LOCK_20261002.json",
+      "blob": "8b6ff6e97c6a3e6577231d4375b63de50bdcf1d0",
+      "sha256": "9a01ae8aba9e5b851fd89941d61c832d5db9ff6842bebd0281aa6ac85f7e8023"
+    },
+    "writer_packet": {
+      "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+      "blob": "de0fa1483499835a2c567448fbb784a909213769",
+      "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+    },
+    "review_task_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-REVIEW-20261002-03",
+    "review_callback_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03",
+    "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+    "callback_received": false,
+    "send_click_count": 1,
+    "complete_body_verified": true,
+    "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+    "plugin_attached": true,
+    "dispatch_message_sha256": "b1522302ead606c84a352a31e3380830711771c51e7e389a72669233a410aafc",
+    "sent_message_sha256": "2471dd8c894c62c0aed54a79c606a707be19d608d347944009f60cd9141d4f54",
+    "strict_whole_string_guard_passed": false,
+    "only_rendering_difference": "Opera Neon app label adds newline; complete body otherwise exact",
+    "transient_input_error": "First fill timed out; composer then observed empty; one bounded fill retry completed; no duplicate send"
+  },
+  "report": {
+    "schema_version": "novel-scoped-preparation-review/v1",
+    "project_id": "novel-distillation",
+    "review_context": "SAME_EXTERNAL_REVIEWER_PREPARATION_CHECK",
+    "target_task_id": "NOVEL-RC3-WRITER-OUTPUT-CONTRACT-REPAIR-PREP-20261002",
+    "base_method_revision": 4,
+    "writer_packet_blob": "de0fa1483499835a2c567448fbb784a909213769",
+    "verdict": "NO_LOCATED_BLOCKERS",
+    "issues": [],
+    "protect": [
+      {
+        "quote": "最终只返回一份完整的300–500字小说正文，贴近罗钧的限知视角。字数不计空白，且包含此前必须逐字保留的全部正文；不要只返回允许改写的后半段。",
+        "why": "这是对既有输出合同的计数范围和返回范围做明确化：300–500字指完整短段，包含必须逐字保留的前文；没有扩大场景内容或要求新增情节。"
+      },
+      {
+        "quote": "从原稿“我三点就得走，要赶客户的片子。”所在段起，到短段结尾，可以重新写。此前的正文及段落分隔全部逐字保留，不另改开头。",
+        "why": "局部修改区间和受保护开头保持不变，新增输出说明没有把可改写范围向前扩展。"
+      },
+      {
+        "quote": "供应商另有合同和收款留存，可由罗钧自己找到的公开联系方式核验。",
+        "why": "公开独立核验路径保持不变，许澄仍不是唯一证据来源。"
+      },
+      {
+        "quote": "他可以查证，但不能恢复记忆、假装亲近或提前认领。",
+        "why": "不提前认责、不恢复记忆和不恢复旧亲密的边界继续保留。"
+      }
+    ],
+    "scope_checks": {
+      "output_contract_clarification": {
+        "verdict": "CLEAR",
+        "reason": "新增文字只明确完整输出必须为300–500字、字数不计空白、且计入此前必须逐字保留的正文，并禁止只返回可改写后半段；属于既有返回格式和计数口径澄清。"
+      },
+      "story_scope_expansion": {
+        "verdict": "CLEAR",
+        "reason": "澄清没有要求写更多场景、更多事实或更远的故事终点；仍是不完成整场的局部短段。"
+      },
+      "modification_interval": {
+        "verdict": "CLEAR",
+        "reason": "可改写范围仍从“三点离开”所在段至结尾，受保护前文仍逐字保留。"
+      },
+      "protected_opening": {
+        "verdict": "CLEAR",
+        "reason": "原开头继续被明确规定为不可改写，新增输出合同反而要求最终成品必须把这部分完整带回。"
+      },
+      "fixed_facts": {
+        "verdict": "CLEAR",
+        "reason": "金额、期限、客户片子、30天冲突窗口、工作室状态等与A2保持一致，未定位新增世界规则。"
+      },
+      "independent_verification": {
+        "verdict": "CLEAR",
+        "reason": "供应商合同和收款留存仍可由罗钧通过公开联系方式独立核验。"
+      },
+      "premature_liability_or_old_intimacy": {
+        "verdict": "CLEAR",
+        "reason": "仍明确禁止提前认领、恢复记忆、假装亲近、正式追偿和旧关系恢复。"
+      },
+      "effect_diagnostic_action_leakage": {
+        "verdict": "CLEAR",
+        "reason": "未发现新增“必须产生某种人物效果”的要求、RC3诊断解释、审稿答案、固定动作链、原失败输出或替换正文。"
+      },
+      "output_failure_leakage": {
+        "verdict": "CLEAR",
+        "reason": "本次独立写作者的FAIL_OUTPUT_CONTRACT记录、439字输出和624字机械拼接结果均没有进入写作者输入。"
+      }
+    },
+    "claim_limits": [
+      "本轮只审核输出合同修复输入，不评价第一次独立写作产物的文学质量。",
+      "NO_LOCATED_BLOCKERS只表示未定位到准备层阻断，不能证明下一轮写作者一定遵守300–500字合同。",
+      "即使最后一轮输出合同满足，也仍需另行复验RC3及退步，不能据此宣布RC3关闭、正文好看或文学质量通过。",
+      "原方法4的404字稿真人结果仍为UNKNOWN；校准漏检0/2及0/1、证据审稿身份和禁止自动文学通关保持不变。",
+      "本审核不改变“第一轮正文已消耗、最多两轮只剩一轮”的流程记录，也不授权额外候选或重投原任务。"
+    ]
+  },
+  "callback_received": true,
+  "processed_once": true,
+  "source_check": {
+    "native_callback_body_captured": true,
+    "native_reviewer_verdict_and_actual_send_confirmed": true,
+    "exact_target_and_blob": true,
+    "protected_quotes_located": true,
+    "private_callback_sha256": "6332f1434ef798bfe03ae3a371f3856de54ab4f143e3209f6e65628b2a165a90",
+    "private_source_sha256": "54e53f97cc210540f44fa374ef35bcdc00a1b9d8f1eafcbb15a33c0c2824f32b"
+  },
+  "coordinator_settlement": {
+    "input_accepted_for_last_scoped_round_only": true,
+    "first_round_consumed": true,
+    "rc3_closed": false,
+    "literary_acceptance": false,
+    "human_result": "UNKNOWN",
+    "additional_candidates_authorized": false
+  }
+}

@@ -26,10 +26,18 @@ class ScopedLocalRevisionTests(unittest.TestCase):
             target = self.root / path
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes((REPO / path).read_bytes())
+        self.task = json.loads((REPO / self.execution['task']['path']).read_text())
+        for key in ('writer_packet', 'approved_preparation', 'preparation_lock', 'previous_execution', 'previous_writer_result'):
+            if key in self.task:
+                path = self.task[key]['path']
+                target = self.root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((REPO / path).read_bytes())
+        self.callback_id = json.loads((REPO / self.execution['input_review']['path']).read_text())['callback_id']
         artifact = self.project['mainline_state']['test_artifacts']['TEST_01']['path']
         self.original = (REPO / artifact).read_text()
         self.execution.update(status='CLAIMED_READY_TO_DISPATCH', writer_attempt_count=0,
-            generation_count=0, used_prose_revision_rounds=0, new_prose_authorized_now=True,
+            generation_count=0, used_prose_revision_rounds=self.task['prose_revision_round'] - 1, new_prose_authorized_now=True,
             next_action='EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION')
 
     def run_gate(self):
@@ -47,12 +55,12 @@ class ScopedLocalRevisionTests(unittest.TestCase):
             self.run_gate()
 
     def test_preparation_callback_must_be_processed_once(self):
-        self.route['processed_preparation_callback_ids'].append('NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02')
+        self.route['processed_preparation_callback_ids'].append(self.callback_id)
         with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_PROVENANCE_DRIFT'):
             self.run_gate()
 
     def test_writer_input_cannot_be_changed(self):
-        self.preparation['writer_packet'] = dict(self.preparation['writer_packet'], blob='wrong')
+        self.execution['writer_packet'] = dict(self.execution['writer_packet'], blob='wrong')
         with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_PROVENANCE_DRIFT'):
             self.run_gate()
 
@@ -65,6 +73,20 @@ class ScopedLocalRevisionTests(unittest.TestCase):
         path = self.root / self.execution['input_review']['path']
         path.write_bytes(path.read_bytes() + b' ')
         with self.assertRaisesRegex(ValueError, 'EXTERNAL_REVIEW_IDENTITY_DRIFT'):
+            self.run_gate()
+
+    def test_last_round_requires_retained_first_failure(self):
+        if self.task['prose_revision_round'] != 2:
+            self.skipTest('Only relevant to the last bounded round')
+        self.route['scoped_revision_execution_history'] = []
+        with self.assertRaisesRegex(ValueError, 'SCOPED_LAST_ROUND_WITHOUT_BOUND_PARENT_FAILURE'):
+            self.run_gate()
+
+    def test_last_round_cannot_reset_consumed_round_count(self):
+        if self.task['prose_revision_round'] != 2:
+            self.skipTest('Only relevant to the last bounded round')
+        self.execution['used_prose_revision_rounds'] = 0
+        with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_COUNT_DRIFT'):
             self.run_gate()
 
 
