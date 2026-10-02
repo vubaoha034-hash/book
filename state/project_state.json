@@ -4327,11 +4327,17 @@
       "review_task_id": "NOVEL-RC3-PREP-REVIEW-20261002-01",
       "review_callback_id": "NOVEL-RC3-PREP-CALLBACK-20261002-01",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
-      "dispatch_status": "READY_TO_SEND_ONCE",
+      "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
       "dispatch_message_sha256": "ef4cda00a6d218880575c58e2a59410babe2389e752e2bb8aa5348e9a5e2c45f",
       "dispatch_attempt_id": "RC3-PREP-REVIEW-A1",
-      "send_click_count": 0,
-      "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227"
+      "send_click_count": 1,
+      "expected_dispatch_source_head": "7f9be836fef66bf68e5eaff05390a13f5f4d2227",
+      "complete_body_verified": true,
+      "strict_whole_string_guard_passed": false,
+      "app_label_only_difference": "App display adds newline after Opera Neon; remainder exactly equals frozen pre-send readback",
+      "sent_message_sha256": "3b13fbd00852430d1aaed1aa606f948a42e514f4c86339934cd40155393ca884",
+      "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+      "callback_received": false
     }
   }
 }
