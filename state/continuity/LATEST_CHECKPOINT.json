@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 167,
-  "recorded_at": "2026-10-02T08:44:06+08:00",
+  "sequence": 168,
+  "recorded_at": "2026-10-02T08:45:21+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -472,7 +472,8 @@
     "Novel reviewer active-callback protocol prepared from actual user instruction; initial dispatch and return still unverified",
     "Partial A1 dispatch invalidated; own draft cleared; A2 complete message frozen and checked before sending",
     "Active callback user instruction and fixed target persisted; A1 invalidated; browser timeout blocked complete A2 dispatch, no callback or resumption claimed",
-    "Recovered A2 prepare; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged"
+    "Recovered A2 prepare; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged",
+    "Recovered A2 sent; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1741,7 +1742,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "19f42e9adeb8cac744b490796171abe75be02777023575779a79568800e4d358",
+    "project_state_sha256": "6832c9c78cefd83d2ab22d9b08aadabbb55ff3dab49e63b8db8b670e3fbaf65d",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2437,7 +2438,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "READY_TO_DISPATCH_RECOVERED_A2",
+      "status": "COMPLETE_BODY_DELIVERED_EXACT_PREFIX_MISMATCH_AWAITING_CALLBACK",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -2450,8 +2451,9 @@
         "A1"
       ],
       "dispatch_verified": false,
-      "blocker": null,
-      "next_trigger": "SEND_ONCE_AFTER_FRESH_DRAFT_READBACK"
+      "blocker": "Only app mention display adds newline; frozen whole-string guard failed; no resend or consequential prose execution",
+      "next_trigger": "REVIEWER_ACTIVE_CALLBACK_IN_COORDINATOR_CHAT",
+      "complete_body_delivered": true
     }
   }
 }

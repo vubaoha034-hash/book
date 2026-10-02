@@ -3,9 +3,9 @@
   "project_id": "novel-distillation",
   "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
   "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
-  "status": "READY_TO_DISPATCH_RECOVERED_A2",
-  "source_head": "c6d3e5702c3b32ba108e3ded7a90c6d961eec457",
-  "recorded_at": "2026-10-02T08:44:06+08:00",
+  "status": "COMPLETE_BODY_DELIVERED_EXACT_PREFIX_MISMATCH_AWAITING_CALLBACK",
+  "source_head": "4b5a4586fe2c17c11dc25c7372fed68b6543a9a7",
+  "recorded_at": "2026-10-02T08:45:21+08:00",
   "authority": {
     "source": "ACTUAL_CURRENT_USER_INSTRUCTION",
     "scope": "主动跨聊天回传，审核方聊天极强思考；用户不转述",
@@ -20,7 +20,7 @@
     "effort_label": "极高",
     "pro_selected": false
   },
-  "delivery_verified": false,
+  "delivery_verified": true,
   "callback_received": false,
   "coordinator_resumption_verified": false,
   "literary_quality_promoted": false,
@@ -44,12 +44,21 @@
     }
   ],
   "draft_exact_verified": true,
-  "explicit_send_click_count": 0,
+  "explicit_send_click_count": 1,
   "retry_history": [
     {
       "at": "2026-10-02T08:44:06+08:00",
       "stage": "prepare",
       "source_head": "c6d3e5702c3b32ba108e3ded7a90c6d961eec457",
+      "observed_draft_complete": true,
+      "fixed_reviewer_url_verified": true,
+      "plugin_attached": true,
+      "model_effort": "极高"
+    },
+    {
+      "at": "2026-10-02T08:45:21+08:00",
+      "stage": "sent",
+      "source_head": "4b5a4586fe2c17c11dc25c7372fed68b6543a9a7",
       "observed_draft_complete": true,
       "fixed_reviewer_url_verified": true,
       "plugin_attached": true,
@@ -67,5 +76,18 @@
       "requires_user_transcription": false
     }
   ],
-  "dispatch_guard": "Exact fixed existing reviewer adapter; original project/new-chat guard preserved; one task ID, full exact strings and inventory required"
+  "dispatch_guard": "Exact fixed existing reviewer adapter; original project/new-chat guard preserved; one task ID, full exact strings and inventory required",
+  "dispatch_proof": {
+    "verdict": "DISPATCH_UNCONFIRMED_EXACT_RENDERING_MISMATCH",
+    "reason": "App mention renders as Opera Neon plus newline after Send; body is byte-identical, exactly one new user message and empty editor",
+    "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
+    "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+    "full_body_verified": true,
+    "new_user_messages_count": 1,
+    "composer_text": "\n",
+    "plugin_prefix_before": "Opera Neon ",
+    "plugin_prefix_after": "Opera Neon\n ",
+    "callback_received": false
+  },
+  "strict_dispatch_verified": false
 }
