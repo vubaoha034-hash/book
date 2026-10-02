@@ -3,9 +3,9 @@
   "project_id": "novel-distillation",
   "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
   "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
-  "status": "BLOCKED_BROWSER_CONNECTION_COMPLETE_A2_NOT_SENT",
-  "source_head": "392b1a542707560fe3055569bd9b1774004e6856",
-  "recorded_at": "2026-10-01T22:04:52+08:00",
+  "status": "READY_TO_DISPATCH_RECOVERED_A2",
+  "source_head": "c6d3e5702c3b32ba108e3ded7a90c6d961eec457",
+  "recorded_at": "2026-10-02T08:44:06+08:00",
   "authority": {
     "source": "ACTUAL_CURRENT_USER_INSTRUCTION",
     "scope": "主动跨聊天回传，审核方聊天极强思考；用户不转述",
@@ -14,7 +14,7 @@
   "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
   "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
   "protocol_path": "docs/NOVEL_ASYNC_CALLBACK_ADDENDUM_20261001.md",
-  "message_sha256": "3609201739ec24136a2b812de1fe8b1b61a2a9a0f2eeca3ffa9679bb711bd81d",
+  "message_sha256": "239af3b9842ab71f174f85b65b7a9538d76b10857a966773dd9dc6f6954c15a6",
   "model_ui_observed": {
     "mode": "CHAT",
     "effort_label": "极高",
@@ -45,13 +45,27 @@
   ],
   "draft_exact_verified": true,
   "explicit_send_click_count": 0,
-  "blocker": {
-    "observed_error": "Opera Neon MCP connection timeout on fill and one read retry",
-    "last_confirmed_complete_draft": "A2 frozen draft, not sent",
-    "partial_A1_not_valid_task": true,
-    "later_editor_state": "UNKNOWN_AFTER_TIMEOUT",
-    "dispatch_checker": "Prepare rejected duplicated task identifier in quoted callback template; corrected wording prepared, later fill unconfirmed",
-    "correction_pending": "Reconnect read-only, check actual messages/draft, clear only own residual if safe, refill corrected complete A2 task, freeze/check/one Send/readback",
-    "requires_user_transcription": false
-  }
+  "retry_history": [
+    {
+      "at": "2026-10-02T08:44:06+08:00",
+      "stage": "prepare",
+      "source_head": "c6d3e5702c3b32ba108e3ded7a90c6d961eec457",
+      "observed_draft_complete": true,
+      "fixed_reviewer_url_verified": true,
+      "plugin_attached": true,
+      "model_effort": "极高"
+    }
+  ],
+  "resolved_blockers": [
+    {
+      "observed_error": "Opera Neon MCP connection timeout on fill and one read retry",
+      "last_confirmed_complete_draft": "A2 frozen draft, not sent",
+      "partial_A1_not_valid_task": true,
+      "later_editor_state": "UNKNOWN_AFTER_TIMEOUT",
+      "dispatch_checker": "Prepare rejected duplicated task identifier in quoted callback template; corrected wording prepared, later fill unconfirmed",
+      "correction_pending": "Reconnect read-only, check actual messages/draft, clear only own residual if safe, refill corrected complete A2 task, freeze/check/one Send/readback",
+      "requires_user_transcription": false
+    }
+  ],
+  "dispatch_guard": "Exact fixed existing reviewer adapter; original project/new-chat guard preserved; one task ID, full exact strings and inventory required"
 }

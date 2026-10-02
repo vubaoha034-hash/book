@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 166,
-  "recorded_at": "2026-10-01T22:14:47+08:00",
+  "sequence": 167,
+  "recorded_at": "2026-10-02T08:44:06+08:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -471,7 +471,8 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04 TEST_01: one isolated short trial frozen verbatim; scoped fact and same-context editorial checks recorded, actual-human result UNKNOWN; no expansion.",
     "Novel reviewer active-callback protocol prepared from actual user instruction; initial dispatch and return still unverified",
     "Partial A1 dispatch invalidated; own draft cleared; A2 complete message frozen and checked before sending",
-    "Active callback user instruction and fixed target persisted; A1 invalidated; browser timeout blocked complete A2 dispatch, no callback or resumption claimed"
+    "Active callback user instruction and fixed target persisted; A1 invalidated; browser timeout blocked complete A2 dispatch, no callback or resumption claimed",
+    "Recovered A2 prepare; exact whole-message dispatch, reviewer Chat/极高 and Opera Neon observed; callback not yet received; literary and business gates unchanged"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1740,7 +1741,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "6ff15b1237f318615e107d9b1b1e206b97f7e9f86ff20c0f99c9fa290588bf50",
+    "project_state_sha256": "19f42e9adeb8cac744b490796171abe75be02777023575779a79568800e4d358",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2436,7 +2437,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "BLOCKED_BROWSER_CONNECTION_COMPLETE_A2_NOT_SENT",
+      "status": "READY_TO_DISPATCH_RECOVERED_A2",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -2444,13 +2445,13 @@
       "mode": "CHAT",
       "effort_label": "极高",
       "automatic_background_sync": false,
-      "dispatch_message_sha256": "3609201739ec24136a2b812de1fe8b1b61a2a9a0f2eeca3ffa9679bb711bd81d",
+      "dispatch_message_sha256": "239af3b9842ab71f174f85b65b7a9538d76b10857a966773dd9dc6f6954c15a6",
       "invalid_attempt_ids": [
         "A1"
       ],
       "dispatch_verified": false,
-      "blocker": "Opera Neon connection timeout; complete A2 delivery unconfirmed",
-      "next_trigger": "NEXT_AUTHORIZED_ACTIVE_TURN_RECONNECT_READBACK_THEN_DISPATCH_ONCE"
+      "blocker": null,
+      "next_trigger": "SEND_ONCE_AFTER_FRESH_DRAFT_READBACK"
     }
   }
 }

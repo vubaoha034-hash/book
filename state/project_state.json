@@ -4278,7 +4278,7 @@
       "receipt_path": "state/review_receipts/NOVEL_ASYNC_CALLBACK_SETUP_20261001.json",
       "reviewer_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
       "coordinator_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "status": "BLOCKED_BROWSER_CONNECTION_COMPLETE_A2_NOT_SENT",
+      "status": "READY_TO_DISPATCH_RECOVERED_A2",
       "reviewer_sends_result": true,
       "coordinator_polling": false,
       "callback_received": false,
@@ -4286,13 +4286,13 @@
       "mode": "CHAT",
       "effort_label": "极高",
       "automatic_background_sync": false,
-      "dispatch_message_sha256": "3609201739ec24136a2b812de1fe8b1b61a2a9a0f2eeca3ffa9679bb711bd81d",
+      "dispatch_message_sha256": "239af3b9842ab71f174f85b65b7a9538d76b10857a966773dd9dc6f6954c15a6",
       "invalid_attempt_ids": [
         "A1"
       ],
       "dispatch_verified": false,
-      "blocker": "Opera Neon connection timeout; complete A2 delivery unconfirmed",
-      "next_trigger": "NEXT_AUTHORIZED_ACTIVE_TURN_RECONNECT_READBACK_THEN_DISPATCH_ONCE"
+      "blocker": null,
+      "next_trigger": "SEND_ONCE_AFTER_FRESH_DRAFT_READBACK"
     }
   }
 }
