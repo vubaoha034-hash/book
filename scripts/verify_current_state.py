@@ -332,6 +332,7 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
                'FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING': 'AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT',
                'FROZEN_REVIEW_SETTLED_AWAITING_FRESH_QUALITY_REVIEW': 'AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_CALLBACK',
                'FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK': 'AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK',
+               'FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING': 'AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT',
                'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_RC3_WRITER_OUTPUT_BOUNDARY_REPAIR'}
     if status not in actions or execution.get('next_action') != actions[status]:
         raise ValueError('SCOPED_LOCAL_EXECUTION_ACTION_DRIFT')
@@ -351,7 +352,8 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
             raise ValueError('SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT')
     if status in ('FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING',
                   'FROZEN_REVIEW_SETTLED_AWAITING_FRESH_QUALITY_REVIEW',
-                  'FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK'):
+                  'FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK',
+                  'FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING'):
         settled = bound_json(root, execution.get('review_result', {}))
         dispatch = bound_json(root, execution.get('review_dispatch_evidence', {}))
         prose_report = settled.get('report', {})
@@ -397,6 +399,7 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
             raise ValueError('SCOPED_PROSE_REVIEW_SCOPE_PROMOTION')
         quality = route.get('fresh_external_quality_review')
         if quality:
+            ready = status == 'FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING'
             correction = bound_json(root, quality.get('route_correction', {}))
             if (correction.get('project_id') != project.get('project_id') or
                 correction.get('source') != 'ACTUAL_USER_ROUTE_CORRECTION' or
@@ -407,17 +410,19 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
                 quality.get('output') != execution.get('output') or
                 quality.get('conversation_url') == source.get('conversation_url') or
                 quality.get('human_result') != 'UNKNOWN' or
-                quality.get('internal_deliverability') != 'PENDING' or
-                quality.get('direct_user_reading_authorized_now') is not False or
-                execution.get('final_user_reading_authorized_now') is not False):
+                quality.get('internal_deliverability') != ('INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING' if ready else 'PENDING') or
+                quality.get('direct_user_reading_authorized_now') is not ready or
+                execution.get('final_user_reading_authorized_now') is not ready):
                 raise ValueError('FRESH_QUALITY_REVIEW_ROUTE_DRIFT')
             if (status not in ('FROZEN_REVIEW_SETTLED_AWAITING_FRESH_QUALITY_REVIEW',
-                               'FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK') or
+                               'FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK',
+                               'FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING') or
                 quality.get('next_action') != actions[status]):
                 raise ValueError('FRESH_QUALITY_REVIEW_BYPASSED')
             if status == 'FROZEN_REVIEW_SETTLED_AWAITING_FRESH_QUALITY_REVIEW' and quality.get('callback_received') is not False:
                 raise ValueError('FRESH_QUALITY_REVIEW_CALLBACK_STATE_DRIFT')
-            if status == 'FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK':
+            if status in ('FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK',
+                          'FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING'):
                 quality_result = bound_json(root, quality.get('result', {}))
                 if (quality.get('callback_received') is not True or
                     quality_result.get('callback_id') != quality.get('callback_id') or
@@ -431,8 +436,34 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
                     not quality_result.get('unresolved_review_fact_errors') or
                     quality_result.get('human_result') != 'UNKNOWN' or
                     quality_result.get('literary_acceptance') is not False or
-                    quality.get('fact_recheck', {}).get('callback_received') is not False):
+                    quality.get('fact_recheck', {}).get('callback_received') is not ready):
                     raise ValueError('FRESH_QUALITY_REVIEW_SETTLEMENT_DRIFT')
+                if ready:
+                    recheck_route = quality['fact_recheck']
+                    recheck = bound_json(root, recheck_route.get('result', {}))
+                    recheck_dispatch = bound_json(root, recheck_route.get('dispatch_evidence', {}))
+                    if (recheck.get('schema_version') != 'novel-quality-fact-recheck-receipt/v1' or
+                        recheck.get('project_id') != project.get('project_id') or
+                        recheck.get('callback_id') != recheck_route.get('callback_id') or
+                        route.get('processed_quality_fact_callback_ids', []).count(recheck.get('callback_id')) != 1 or
+                        recheck.get('review_task_id') != recheck_route.get('task_id') or
+                        recheck.get('parent_review_task_id') != quality.get('task_id') or
+                        recheck.get('reviewer_conversation_url') != quality.get('conversation_url') or
+                        recheck.get('output') != execution.get('output') or
+                        recheck.get('original_quality_result') != quality.get('result') or
+                        recheck.get('dispatch_evidence') != recheck_route.get('dispatch_evidence') or
+                        recheck_dispatch.get('task_id') != recheck_route.get('task_id') or
+                        recheck_dispatch.get('output') != execution.get('output') or
+                        recheck_dispatch.get('send_click_count') != 1 or
+                        recheck.get('processed_once') is not True or
+                        recheck.get('report', {}).get('verdict') != 'EXTERNAL_PASS_READY_FOR_FINAL_USER_READING' or
+                        recheck.get('coordinator_validation', {}).get('timing_erratum_resolved') is not True or
+                        recheck.get('unresolved_blockers') != [] or
+                        quality.get('unresolved_review_fact_errors') != [] or
+                        recheck.get('human_result') != 'UNKNOWN' or recheck.get('literary_acceptance') is not False or
+                        recheck.get('coordinator_prose_edits') != 0 or
+                        recheck.get('internal_deliverability') != quality.get('internal_deliverability')):
+                        raise ValueError('FRESH_QUALITY_FACT_RECHECK_RELEASE_DRIFT')
         elif status == 'FROZEN_REVIEW_SETTLED_AWAITING_FRESH_QUALITY_REVIEW':
             raise ValueError('FRESH_QUALITY_REVIEW_ROUTE_MISSING')
     if status == 'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW':

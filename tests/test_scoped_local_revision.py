@@ -130,6 +130,13 @@ class ScopedLocalRevisionTests(unittest.TestCase):
                 target = self.root / path
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes((REPO / path).read_bytes())
+        for key in ('result', 'dispatch_evidence'):
+            recheck = quality.get('fact_recheck', {})
+            if key in recheck:
+                path = recheck[key]['path']
+                target = self.root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((REPO / path).read_bytes())
 
     def change_settled_receipt(self, mutate):
         path = self.root / self.execution['review_result']['path']
@@ -142,7 +149,7 @@ class ScopedLocalRevisionTests(unittest.TestCase):
 
     def test_located_external_closure_keeps_human_and_full_scene_closed(self):
         self.set_settled_review()
-        self.assertEqual(self.run_gate(), 'AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK')
+        self.assertEqual(self.run_gate(), 'AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT')
         self.assertEqual(self.execution['human_result'], 'UNKNOWN')
         self.assertFalse(self.execution['new_prose_authorized_now'])
         self.assertEqual(self.execution['remaining_prose_revision_rounds'], 0)
@@ -174,7 +181,10 @@ class ScopedLocalRevisionTests(unittest.TestCase):
     def test_prior_direct_user_reading_route_cannot_bypass_new_quality_review(self):
         self.set_settled_review()
         self.execution.update(status='FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING',
-            next_action='AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT')
+            next_action='AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT',
+            final_user_reading_authorized_now=False)
+        self.route['fresh_external_quality_review'].update(internal_deliverability='PENDING',
+            direct_user_reading_authorized_now=False)
         with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_REVIEW_BYPASSED'):
             self.run_gate()
 
@@ -187,8 +197,41 @@ class ScopedLocalRevisionTests(unittest.TestCase):
 
     def test_external_pass_cannot_open_user_reading_with_fact_recheck_pending(self):
         self.set_settled_review()
-        self.route['fresh_external_quality_review']['direct_user_reading_authorized_now'] = True
+        quality = self.route['fresh_external_quality_review']
+        self.execution.update(status='FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK',
+            next_action='AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK',
+            final_user_reading_authorized_now=False)
+        quality.update(internal_deliverability='PENDING',
+            next_action=self.execution['next_action'], direct_user_reading_authorized_now=True)
         with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_REVIEW_ROUTE_DRIFT'):
+            self.run_gate()
+
+    def change_fact_receipt(self, mutate):
+        recheck = self.route['fresh_external_quality_review']['fact_recheck']
+        path = self.root / recheck['result']['path']
+        receipt = json.loads(path.read_text())
+        mutate(receipt)
+        path.write_text(json.dumps(receipt, ensure_ascii=False))
+        data = path.read_bytes()
+        recheck['result'].update(blob=current.git_blob(data), sha256=hashlib.sha256(data).hexdigest())
+
+    def test_fact_recheck_callback_cannot_be_processed_twice(self):
+        self.set_settled_review()
+        recheck = self.route['fresh_external_quality_review']['fact_recheck']
+        self.route['processed_quality_fact_callback_ids'].append(recheck['callback_id'])
+        with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_FACT_RECHECK_RELEASE_DRIFT'):
+            self.run_gate()
+
+    def test_fact_recheck_fail_cannot_release_final_reading(self):
+        self.set_settled_review()
+        self.change_fact_receipt(lambda receipt: receipt['report'].update(verdict='EXTERNAL_FAIL_NEEDS_PROJECT_REVISION'))
+        with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_FACT_RECHECK_RELEASE_DRIFT'):
+            self.run_gate()
+
+    def test_internal_delivery_pass_is_not_human_pass(self):
+        self.set_settled_review()
+        self.change_fact_receipt(lambda receipt: receipt.update(human_result='PASS'))
+        with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_FACT_RECHECK_RELEASE_DRIFT'):
             self.run_gate()
 
 

@@ -1,0 +1,76 @@
+{
+  "schema_version": "novel-quality-fact-recheck-receipt/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-02T08:24:27+00:00",
+  "source_head": "1cc604139e99a178d0c5863546177e0164b38baa",
+  "callback_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-CALLBACK-20261002-06",
+  "review_task_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-20261002-06",
+  "parent_review_task_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
+  "reviewer_conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "original_quality_result": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_EXTERNAL_QUALITY_RESULT_20261002_05.json",
+    "blob": "538e7328503e10aa9f5d2fd7b35dab6a1c053d34",
+    "sha256": "609e4246202a20a1d66502bc814ee1f4e227c0057bb461dbebf93c6dd3cdee37"
+  },
+  "dispatch_evidence": {
+    "path": "state/review_receipts/NOVEL_R2_QUALITY_TIME_FACT_RECHECK_DISPATCH_20261002.json",
+    "blob": "f732f9923b741165637496ff933ee0460a0e3ac7",
+    "sha256": "7ceb51fe6ce53b9c86ca596f5cb38c438e351038992908ad9234d0aac5168f03"
+  },
+  "source": {
+    "kind": "UNIFIED_COORDINATOR_FORWARDED_EXTERNAL_RESULT",
+    "forwarded_in_current_user_message": true,
+    "review_context": "SAME_NEW_REVIEWER_FACT_CORRECTION_NOT_A_SECOND_BLIND_READ",
+    "native_report_readback_this_turn": "UNAVAILABLE_BROWSER_CONNECTION_TIMED_OUT_AND_SOURCE_TAB_NOT_LISTED",
+    "coverage": "FORWARDED_RESULT_AND_FROZEN_PROVENANCE_VERIFIED_NATIVE_RECHECK_TEXT_NOT_REREAD",
+    "automatic_delivery": "PLATFORM_SAFETY_BLOCK_REPORTED_BY_UNIFIED_COORDINATOR",
+    "actual_platform_rejection_reason": "NOT_DIRECTLY_OBSERVED_BY_THIS_COORDINATOR",
+    "bypass_or_repeat_send_attempts": 0
+  },
+  "processed_once": true,
+  "report": {
+    "verdict": "EXTERNAL_PASS_READY_FOR_FINAL_USER_READING",
+    "corrected_time_reading": [
+      "“还剩二十分钟”正确归属：距许澄三点离开还剩二十分钟。",
+      "正文只说明大厅窗口仍开，没有给出大厅窗口关闭时间。",
+      "撤回原报告中“大厅窗口只剩二十分钟”的说法。",
+      "不能由这二十分钟推定公寓会立即失去。",
+      "“三年”不作为从这448字盲读直接获得的时长证据。"
+    ],
+    "effect_on_original_verdict": {
+      "original_pass_stands": true,
+      "reason": "修正时间归属后，张力不再依赖“大堂窗口20分钟倒计时”；但核心人物处境仍成立——罗钧想处理房子，许澄三点必须离开，五天后的款项不会自动停止；罗钧从想结束谈话转为索要供应商全名、自己查公开信息，是可信的小幅行为变化，同时仍未认责、未恢复记忆、未迅速相信许澄。"
+    },
+    "nonblocking_risks": [
+      "“五天后那笔款……”一句信息密度较高，略有集中交代条件的编排感；",
+      "“可查证不等于认账。”略命题式；",
+      "结尾文件袋意象解释较完整，后文若频繁同类解释可能累积作者解释感。"
+    ],
+    "claim_limits": "这是同一审核方对原冷读报告的一处事实更正，不是第二次独立冷读；PASS只表示该448字达到值得送最终读者判断的阶段门槛，不等于刘先生真人认可，也不等于整章/整书通过。"
+  },
+  "coordinator_validation": {
+    "task_and_callback_match_frozen_dispatch": true,
+    "output_blob_and_sha256_match": true,
+    "timing_erratum_resolved": true,
+    "corrected_timing_matches_approved_writer_packet": true,
+    "supports_original_pass_without_invented_window_deadline": true,
+    "no_confirmed_prose_fact_contradiction": true,
+    "original_RC1_RC2_taste_hypotheses": "Do not erase old 404-character diagnosis; fresh 448-character quality review supports internal delivery only, no independent claim of universal closure",
+    "literary_quality_proved_by_machine_tests": false
+  },
+  "unresolved_blockers": [],
+  "nonblocking_continuity_watch": "别用我给的号码仍为语言歧义，不虚构已经交付号码、不改原文。",
+  "internal_deliverability": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+  "human_result": "UNKNOWN",
+  "literary_acceptance": false,
+  "coordinator_prose_edits": 0,
+  "full_scene_authorized": false,
+  "full_v5_authorized": false,
+  "third_candidate_authorized_now": false,
+  "resend_or_recheck_requested_again": false
+}
