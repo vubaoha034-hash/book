@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 191,
-  "recorded_at": "2026-10-02T08:24:27+00:00",
+  "sequence": 192,
+  "recorded_at": "2026-10-02T13:30:55+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "448字原稿已完成新聊天冷读及同一审核方时间事实更正，原PASS维持；统一指挥代回传已按版本和事实核对、只处理一次。内部可交付通过，送刘先生最终阅读，真人仍UNKNOWN；轻微表达风险和号码歧义保留，不扩写。",
+  "current_focus": "448字稿收到实际真人情绪与首屏留存FAIL，外审PASS历史保留但可交付状态撤销；单上下文诊断及项目外编辑任务已准备，Opera Neon会话终止导致尚未派发，待恢复后只发送一次。旧稿、旧锁及两轮额度不动，原404字真人UNKNOWN，不扩写。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -495,7 +495,8 @@
     "Corrected coordinator misroute to direct user reading; bound actual launched fresh external quality review of identical 448-character output; preserve RC3 local closure and old budget, await callback without prose edits or duplicate dispatch",
     "Settled fresh quality callback once, preserved original external PASS and nonblocking risks; held internal release only for located reviewer window-deadline misreading, not a prose contradiction; prepare one same-reviewer factual recheck",
     "Delivered one bounded timing-fact recheck to the same fresh quality reviewer, actual Opera Neon attached and extreme-high chat verified; full body sent once, empty composer verified; no prose changes, no polling",
-    "Settled forwarded timing-fact recheck once without repeated review or automatic-send bypass; corrected Xu departure deadline and maintained external PASS, marked internal deliverability only, human UNKNOWN; unchanged 448-character excerpt ready for final user reading"
+    "Settled forwarded timing-fact recheck once without repeated review or automatic-send bypass; corrected Xu departure deadline and maintained external PASS, marked internal deliverability only, human UNKNOWN; unchanged 448-character excerpt ready for final user reading",
+    "Bound actual user emotion/first-screen rejection to frozen R2 448-character output; superseded internal delivery while preserving AI reports and RC3 evidence; prepared new diagnostic task, zero dispatches because Opera Neon returned Session terminated twice"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -571,7 +572,8 @@
     "PHASE422_V4_HUMAN_SEVERE_AI_SMELL_REJECTED",
     "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
     "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED",
-    "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED"
+    "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED",
+    "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07: Opera Neon Session terminated; complete task prepared, not dispatched"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -742,7 +744,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT",
+  "next_required_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1757,14 +1759,14 @@
       "role": "方法4短段执行、事实及人物反应复核、待阅读回执。"
     }
   ],
-  "status": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+  "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PREPARED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "2d470387cc4ab2e28a5fafc50be14172060bd2fa09469230d7f726bb3fb2df31",
+    "project_state_sha256": "596b7b3d94e63951ebe21895fcf5a5a42387b12d4c46e84ccc75019c5b9e3648",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1821,9 +1823,9 @@
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
-  "next_action": "AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
-  "current_human_gate": "METHOD_04_HUMAN_RESULT_UNKNOWN_DAILY_EXTERNAL_EVIDENCE_AUDIT_ACTIVE",
+  "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+  "current_human_gate": "CURRENT_R2_HUMAN_FAIL_ORIGINAL_METHOD4_HUMAN_UNKNOWN",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -1959,29 +1961,30 @@
     }
   },
   "latest_human_review": {
-    "recorded_at": "2026-10-01T15:22:01+08:00",
-    "feedback_submitted_at": "2026-10-01T15:14:00+08:00",
-    "bound_test_id": "TEST_01",
-    "bound_method_revision": 3,
-    "bound_version": "SP414-S02-SHORT-A1",
-    "bound_artifact_path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
-    "bound_blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe",
-    "feedback_summary": "开头没有抓住注意力、因此很难继续读；用户确认人物反应未明显改变打算的定位，授权继续。前次两项局部改善保留。",
-    "human_exact_feedback": "1 .这个不抓眼球。。真的。我觉得一开始就没抓住我的眼球。所以接着就很难看下去。  2  人物有了反应，但谈话没有让谁的打算发生明显变化。  这个确实。。接着下一步",
-    "verdict": "REJECT_FIRST_SCREEN_RETENTION_WITH_PLAN_CHANGE_DIAGNOSIS_CONFIRMED",
+    "recorded_at": "2026-10-02T13:30:55+00:00",
+    "feedback_submitted_at": "2026-10-02T21:22:09+08:00",
+    "bound_test_id": "RC3_LOCAL_R2",
+    "bound_method_revision": 4,
+    "bound_version": "SHORT-R2-A1-448",
+    "bound_artifact_path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "bound_blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "feedback_summary": "当前448字稿实际读者明确否决情绪和第一眼继续阅读欲望；不是题材否决，也未单独评价人物是否像机器人。",
+    "human_exact_feedback": "依旧是毫无情绪，一点看下去的欲望都没。根本不是那种第一眼就想看下去的感觉",
+    "verdict": "REJECT_EMOTION_AND_FIRST_SCREEN_RETENTION",
     "source": {
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
       "coverage": "COMPLETE_CURRENT_MESSAGE",
-      "original_conversation_locator": "UNAVAILABLE",
+      "original_conversation_locator": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
       "original_message_read_back_this_turn": true
     },
-    "scope": "方法3唯一417字短段的第一屏留存和后续推进；不否定题材，不抹掉局部进步。",
-    "validation_scope": "FIRST_SCREEN",
+    "scope": "仅当前448字冻结短段的情绪和第一屏留存；精确停止句未给出。",
+    "validation_scope": "FIRST_SCREEN_AND_EXCERPT_EMOTION",
     "two_question_test_result": "FAIL_ONE_EXPLICIT_NEGATIVE_SUFFICIENT",
     "human_quality_accepted": false,
     "topic_rejection": false,
     "full_v5_authorized": false,
-    "same_artifact_resubmission_allowed": false
+    "same_artifact_resubmission_allowed": false,
+    "robotic_interaction_verdict": "UNKNOWN"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -2474,7 +2477,7 @@
       ],
       "dispatch_verified": false,
       "blocker": null,
-      "next_trigger": "ACTUAL_LIU_FINAL_READING_OF_UNCHANGED_448_CHARACTER_EXCERPT",
+      "next_trigger": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
       "complete_body_delivered": true,
       "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
       "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed",
@@ -2603,7 +2606,7 @@
       "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03"
     ],
     "scoped_revision_execution": {
-      "status": "FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING",
+      "status": "FROZEN_HUMAN_REJECTED_AWAITING_EMOTION_RETENTION_DIAGNOSIS",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
@@ -2629,12 +2632,12 @@
       "generation_count": 1,
       "used_prose_revision_rounds": 2,
       "new_prose_authorized_now": false,
-      "next_action": "AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT",
+      "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 33,
       "writer_initial_url": "https://chatgpt.com/",
       "writer_isolation_coverage": "New nonproject Chat; exact approved A3 packet only, no prior failed output or review; account personalization may remain",
-      "human_result": "UNKNOWN",
+      "human_result": "FAIL",
       "literary_acceptance": false,
       "full_v5_authorized": false,
       "prose_revision_round": 2,
@@ -2684,19 +2687,24 @@
         "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
         "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
       },
-      "final_user_reading_authorized_now": true,
+      "final_user_reading_authorized_now": false,
       "quality_route_correction": {
         "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
         "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
         "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
       },
-      "internal_deliverability": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+      "internal_deliverability": "REJECTED_BY_ACTUAL_HUMAN_READING",
       "prior_version_unclosed_diagnostic_scope": {
         "ids": [
           "RC1",
           "RC2"
         ],
         "scope": "Original 404-character version hypotheses; retained, no retroactive certification"
+      },
+      "human_verdict": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+        "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+        "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
       }
     },
     "scoped_revision_execution_history": [
@@ -2830,12 +2838,12 @@
         "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
         "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
       },
-      "status": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+      "status": "EXTERNAL_PASS_SUPERSEDED_BY_ACTUAL_HUMAN_RETENTION_FAIL",
       "callback_received": true,
-      "internal_deliverability": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
-      "human_result": "UNKNOWN",
-      "direct_user_reading_authorized_now": true,
-      "next_action": "AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT",
+      "internal_deliverability": "REJECTED_BY_ACTUAL_HUMAN_READING",
+      "human_result": "FAIL",
+      "direct_user_reading_authorized_now": false,
+      "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
       "on_fail": "SETTLE_LOCATED_FAIL_AND_PREPARE_NEW_BOUNDED_DELIVERABILITY_REVISION_TASK_BEFORE_WRITING_AND_FRESH_EXTERNAL_RECHECK",
       "on_pass": "VERIFY_RESULT_AND_FROZEN_OUTPUT_PERSIST_INTERNAL_DELIVERABILITY_THEN_FINAL_USER_READING",
       "old_RC3_revision_budget_does_not_replace_quality_gate": true,
@@ -2879,7 +2887,13 @@
         "RC1_RC2": "New first-read quality review located no blocking opening or interaction failure in this 448-character version; coordinator accepts only internal final-reading threshold, not universal closure of original-version hypotheses",
         "QUALITY_TIME_01": "Resolved by forwarded same-reviewer factual correction; invented hall-window deadline withdrawn",
         "nonblocking_risks_retained": true,
-        "no_higher_priority_actual_human_verdict_for_this_output": true
+        "no_higher_priority_actual_human_verdict_for_this_output": false,
+        "human_RETENTION_EMOTION": "FAIL; exact stopping position UNKNOWN; previous AI deliverability is superseded, RC3 causal evidence retained"
+      },
+      "human_verdict": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+        "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+        "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
       }
     },
     "processed_quality_callback_ids": [
@@ -2887,6 +2901,33 @@
     ],
     "processed_quality_fact_callback_ids": [
       "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-CALLBACK-20261002-06"
-    ]
+    ],
+    "actual_human_reading": {
+      "receipt": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+        "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+        "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+      },
+      "outcome": "FAIL",
+      "scope": "FIRST_SCREEN_AND_EXCERPT_EMOTION",
+      "processed_once": true
+    },
+    "emotion_retention_preparation": {
+      "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+      "task": {
+        "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+        "blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110",
+        "sha256": "ec4b9ddb96d6a9e6a1e677c2d4af4e749c75534459951f8e102ee3c709be8c30"
+      },
+      "plan": {
+        "path": "docs/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.md",
+        "blob": "cc96cf35d8ff6600bbd583f3a329199347abdcba",
+        "sha256": "5ddc2e21eb967d40a99353365b0b4fa7cca79d1cdaaee5bb5f2629067e484383"
+      },
+      "status": "PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED",
+      "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+      "new_prose_authorized_now": false,
+      "callback_received": false
+    }
   }
 }

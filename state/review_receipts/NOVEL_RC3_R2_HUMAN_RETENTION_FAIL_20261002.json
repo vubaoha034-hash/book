@@ -1,0 +1,238 @@
+{
+  "schema_version": "novel-scoped-human-reading-receipt/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+  "event_id": "NOVEL-RC3-R2-HUMAN-RETENTION-FAIL-20261002",
+  "source_head": "b632dd2106b990882ccbd355ba92c2fad69df6da",
+  "source_checkpoint_sequence": 191,
+  "recorded_at": "2026-10-02T13:30:55+00:00",
+  "outcome": "FAIL",
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "execution_task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
+    "blob": "e54229ad048ead63267ed44898b1d6f1b74ec013",
+    "sha256": "092274f8b54a0033e611e1e67ef0b56a36990813daecbe0f83c13c60c8c8e4a7"
+  },
+  "review": {
+    "recorded_at": "2026-10-02T13:30:55+00:00",
+    "feedback_submitted_at": "2026-10-02T21:22:09+08:00",
+    "bound_test_id": "RC3_LOCAL_R2",
+    "bound_method_revision": 4,
+    "bound_version": "SHORT-R2-A1-448",
+    "bound_artifact_path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "bound_blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "feedback_summary": "当前448字稿实际读者明确否决情绪和第一眼继续阅读欲望；不是题材否决，也未单独评价人物是否像机器人。",
+    "human_exact_feedback": "依旧是毫无情绪，一点看下去的欲望都没。根本不是那种第一眼就想看下去的感觉",
+    "verdict": "REJECT_EMOTION_AND_FIRST_SCREEN_RETENTION",
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "coverage": "COMPLETE_CURRENT_MESSAGE",
+      "original_conversation_locator": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+      "original_message_read_back_this_turn": true
+    },
+    "scope": "仅当前448字冻结短段的情绪和第一屏留存；精确停止句未给出。",
+    "validation_scope": "FIRST_SCREEN_AND_EXCERPT_EMOTION",
+    "two_question_test_result": "FAIL_ONE_EXPLICIT_NEGATIVE_SUFFICIENT",
+    "human_quality_accepted": false,
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "same_artifact_resubmission_allowed": false,
+    "robotic_interaction_verdict": "UNKNOWN"
+  },
+  "processed_once": true,
+  "prior_stage_snapshot": {
+    "scoped_revision_execution": {
+      "status": "FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING",
+      "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+      "task": {
+        "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
+        "blob": "e54229ad048ead63267ed44898b1d6f1b74ec013",
+        "sha256": "092274f8b54a0033e611e1e67ef0b56a36990813daecbe0f83c13c60c8c8e4a7"
+      },
+      "lock": {
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_LOCK_20261002.json",
+        "blob": "394c8590b11345bd5d709453027e3944ec55711a",
+        "sha256": "cffc6159423d37da7f12e40e9812f55659f72469f6f4f4561c9fc00fd4b89ab6"
+      },
+      "input_review": {
+        "path": "state/review_receipts/NOVEL_RC3_OUTPUT_CONTRACT_PREP_REVIEW_RESULT_20261002_03.json",
+        "blob": "18bd9218238aa5659316707e1143530d4cfe9130",
+        "sha256": "82a3e18aa8123edc26edeace83ee764f76f9dde0a685c774194d7fed5cc16546"
+      },
+      "writer_packet": {
+        "path": "delivery/local-revision-rc3-r1/writer-input-a3-output-contract.md",
+        "blob": "de0fa1483499835a2c567448fbb784a909213769",
+        "sha256": "1d020f2cf09602eb5d89b93fc3968ed99220801ab9e7318184162df518e6f8e0"
+      },
+      "writer_attempt_count": 1,
+      "generation_count": 1,
+      "used_prose_revision_rounds": 2,
+      "new_prose_authorized_now": false,
+      "next_action": "AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT",
+      "attempt_owner": "CURRENT_COORDINATOR_ONLY",
+      "writer_page_id": 33,
+      "writer_initial_url": "https://chatgpt.com/",
+      "writer_isolation_coverage": "New nonproject Chat; exact approved A3 packet only, no prior failed output or review; account personalization may remain",
+      "human_result": "UNKNOWN",
+      "literary_acceptance": false,
+      "full_v5_authorized": false,
+      "prose_revision_round": 2,
+      "remaining_prose_revision_rounds": 0,
+      "writer_conversation_url": "https://chatgpt.com/c/6abf28ac-4950-83e9-9343-daa6ea41f43f",
+      "dispatch_complete_body_verified": true,
+      "writer_send_click_count": 1,
+      "writer_dispatch_message_sha256": "904c1b8d79763841691bb3aba5564c8bc60de04c3bf1ad28f65f4a4708a96d0c",
+      "writer_thinking_effort": "EXTREME_HIGH",
+      "writer_chat_mode_verified": true,
+      "output": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "writer_result": {
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_RESULT_20261002.json",
+        "blob": "e5c7a8bde6ecd28366041f4994597823b81525c9",
+        "sha256": "68f10d8379051970654984d8e20f7be880e6827bc4d1acf42350d6c0389fd13a"
+      },
+      "output_freeze": {
+        "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_OUTPUT_FREEZE_20261002.json",
+        "blob": "ae0edc4c24f7a85f4936cbe7146ee640549dbafd",
+        "sha256": "af462f42602896c45e76bbe6a15c353622ef531cd48e4d1af99e2c18f15a849a"
+      },
+      "review_task_id": "NOVEL-RC3-R2-PROSE-REVIEW-20261002-04",
+      "review_callback_id": "NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04",
+      "review_dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+      "callback_received": true,
+      "review_dispatch_evidence": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_DISPATCH_20261002.json",
+        "blob": "615531868689cec755b63a4a2bdcd12874786cc6",
+        "sha256": "66c625b5aaa7d500f8de3a3d7f2435a83af56d9997d87997e5f3f5d3347dd3f2"
+      },
+      "review_send_click_count": 1,
+      "review_result": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_RESULT_20261002_04.json",
+        "blob": "cb62b07cd1c3d20d0ca99d516189fdaf4bce1c8d",
+        "sha256": "c800b48184181d8ceed0d1f78728a0daab17e490e2e21fa79e63c86954851fe3"
+      },
+      "review_outcome": "NO_LOCATED_BLOCKERS",
+      "rc3_external_evidence_status": "CLOSED_BY_LOCATED_TEXT",
+      "supplier_number_phrase": "LANGUAGE_AMBIGUITY_PENDING",
+      "remaining_diagnostic_scope": [],
+      "milestone_artifact": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "final_user_reading_authorized_now": true,
+      "quality_route_correction": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
+        "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
+        "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
+      },
+      "internal_deliverability": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+      "prior_version_unclosed_diagnostic_scope": {
+        "ids": [
+          "RC1",
+          "RC2"
+        ],
+        "scope": "Original 404-character version hypotheses; retained, no retroactive certification"
+      }
+    },
+    "fresh_external_quality_review": {
+      "task_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
+      "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+      "output": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "reviewer_role": "FRESH_EXTERNAL_QUALITY_REVIEWER",
+      "context": "NEW_NONPROJECT_FIRST_READ_ONLY_PROSE",
+      "route_correction": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
+        "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
+        "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
+      },
+      "status": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+      "callback_received": true,
+      "internal_deliverability": "INTERNAL_REVIEW_PASS_READY_FOR_LIU_FINAL_READING",
+      "human_result": "UNKNOWN",
+      "direct_user_reading_authorized_now": true,
+      "next_action": "AWAIT_LIU_FINAL_READING_OF_INTERNAL_REVIEW_PASSED_448_CHARACTER_EXCERPT",
+      "on_fail": "SETTLE_LOCATED_FAIL_AND_PREPARE_NEW_BOUNDED_DELIVERABILITY_REVISION_TASK_BEFORE_WRITING_AND_FRESH_EXTERNAL_RECHECK",
+      "on_pass": "VERIFY_RESULT_AND_FROZEN_OUTPUT_PERSIST_INTERNAL_DELIVERABILITY_THEN_FINAL_USER_READING",
+      "old_RC3_revision_budget_does_not_replace_quality_gate": true,
+      "callback_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-CALLBACK-20261002-05",
+      "result": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_EXTERNAL_QUALITY_RESULT_20261002_05.json",
+        "blob": "538e7328503e10aa9f5d2fd7b35dab6a1c053d34",
+        "sha256": "609e4246202a20a1d66502bc814ee1f4e227c0057bb461dbebf93c6dd3cdee37"
+      },
+      "external_verdict": "EXTERNAL_PASS_READY_FOR_FINAL_USER_READING",
+      "fact_recheck": {
+        "task_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-20261002-06",
+        "callback_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-CALLBACK-20261002-06",
+        "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+        "review_context": "SAME_NEW_REVIEWER_FACT_CORRECTION_NOT_A_SECOND_BLIND_READ",
+        "scope": "Only correct deadline attribution and decide whether original deliverability verdict stands, no prose changes",
+        "dispatch_status": "ACTUAL_COMPLETE_SINGLE_MESSAGE_DELIVERED",
+        "send_click_count": 1,
+        "callback_received": true,
+        "dispatch_evidence": {
+          "path": "state/review_receipts/NOVEL_R2_QUALITY_TIME_FACT_RECHECK_DISPATCH_20261002.json",
+          "blob": "f732f9923b741165637496ff933ee0460a0e3ac7",
+          "sha256": "7ceb51fe6ce53b9c86ca596f5cb38c438e351038992908ad9234d0aac5168f03"
+        },
+        "result": {
+          "path": "state/review_receipts/NOVEL_R2_QUALITY_TIME_FACT_RECHECK_RESULT_20261002_06.json",
+          "blob": "5a30dbff51971002e08567c5cf7ba2dc1b32433a",
+          "sha256": "6218f033903dd6bb1390f099d2c1e25a4097c7be9856eb396246a7e176de5c5b"
+        },
+        "status": "FACT_CORRECTION_SETTLED_ORIGINAL_PASS_MAINTAINED",
+        "transport": "UNIFIED_COORDINATOR_RELAY_AFTER_REPORTED_PLATFORM_SAFETY_BLOCK"
+      },
+      "unresolved_review_fact_errors": [],
+      "nonblocking_risks": [
+        "“五天后那笔款……”一句信息密度较高，略有集中交代条件的编排感；",
+        "“可查证不等于认账。”略命题式；",
+        "结尾文件袋意象解释较完整，后文若频繁同类解释可能累积作者解释感。",
+        "别用我给的号码仍有连续性歧义"
+      ],
+      "current_output_issue_reconciliation": {
+        "RC1_RC2": "New first-read quality review located no blocking opening or interaction failure in this 448-character version; coordinator accepts only internal final-reading threshold, not universal closure of original-version hypotheses",
+        "QUALITY_TIME_01": "Resolved by forwarded same-reviewer factual correction; invented hall-window deadline withdrawn",
+        "nonblocking_risks_retained": true,
+        "no_higher_priority_actual_human_verdict_for_this_output": true
+      }
+    }
+  },
+  "external_quality_result": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_EXTERNAL_QUALITY_RESULT_20261002_05.json",
+    "blob": "538e7328503e10aa9f5d2fd7b35dab6a1c053d34",
+    "sha256": "609e4246202a20a1d66502bc814ee1f4e227c0057bb461dbebf93c6dd3cdee37"
+  },
+  "external_fact_recheck": {
+    "path": "state/review_receipts/NOVEL_R2_QUALITY_TIME_FACT_RECHECK_RESULT_20261002_06.json",
+    "blob": "5a30dbff51971002e08567c5cf7ba2dc1b32433a",
+    "sha256": "6218f033903dd6bb1390f099d2c1e25a4097c7be9856eb396246a7e176de5c5b"
+  },
+  "evidence_reconciliation": {
+    "external_AI_PASS_preserved_as_historical": true,
+    "actual_human_overrides_current_deliverability": true,
+    "original_method4_404_human_result": "UNKNOWN",
+    "RC3_located_causal_change_not_erased": true,
+    "RC3_closure_does_not_prove_emotion_or_retention": true,
+    "opening_protected_for_old_task_only": true,
+    "same_output_paired_external_PASS_human_retention_FAIL": true,
+    "one_pair_does_not_estimate_general_accuracy": true,
+    "original_negative_calibration_0_of_2_and_0_of_1_unchanged": true
+  },
+  "coordinator_prose_edits": 0,
+  "full_scene_authorized": false,
+  "full_v5_authorized": false,
+  "third_candidate_under_old_task_authorized": false
+}

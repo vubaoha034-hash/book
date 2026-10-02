@@ -1,0 +1,49 @@
+{
+  "schema_version": "novel-scoped-diagnostic-preparation/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+  "recorded_at": "2026-10-02T13:30:55+00:00",
+  "source_head": "b632dd2106b990882ccbd355ba92c2fad69df6da",
+  "basis": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+    "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+    "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+  },
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "plan": {
+    "path": "docs/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.md",
+    "blob": "cc96cf35d8ff6600bbd583f3a329199347abdcba",
+    "sha256": "5ddc2e21eb967d40a99353365b0b4fa7cca79d1cdaaee5bb5f2629067e484383"
+  },
+  "reviewer_packet": {
+    "path": "delivery/r2-emotion-retention-diagnosis/reviewer-input.md",
+    "blob": "d166df7c68b2925715e13ee4b8b2e88a1da3a666",
+    "sha256": "eec172d54339c3171a6296500eb6727e67c8c41c66b9f8aea6c896b8374ccff6"
+  },
+  "status": "PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED",
+  "required_surface": "CHAT",
+  "required_thinking_effort": "EXTREME_HIGH",
+  "review_context": "FRESH_OUTSIDE_PROJECT_EDITOR_WITH_HUMAN_FAILURE_KNOWN_NOT_BLIND",
+  "max_dispatches": 1,
+  "send_click_count": 0,
+  "dispatch_attempt_count": 0,
+  "connection_read_attempts": 2,
+  "observed_connection_error": "McpServerError: Session terminated",
+  "reviewer_conversation_url": null,
+  "callback_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-CALLBACK-20261002-07",
+  "callback_received": false,
+  "new_prose_authorized_now": false,
+  "generation_count": 0,
+  "full_scene_authorized": false,
+  "full_v5_authorized": false,
+  "old_RC3_budget_remaining": 0,
+  "old_task_not_reopened": true,
+  "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+  "writer_answer_leakage_protection": "Diagnosis packet is only for editor; future fresh writer receives separately prepared fixed facts and permitted scope without this report or failure prose.",
+  "complete_dispatch_message_sha256": "cf7882b0f411561384a5bcf80c1e3c1e885cc72c4da4c1adb12a64d09ce6a61e",
+  "complete_dispatch_message_storage": "PRIVATE_COORDINATOR_WORKSPACE"
+}

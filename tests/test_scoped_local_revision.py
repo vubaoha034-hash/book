@@ -20,6 +20,9 @@ class ScopedLocalRevisionTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.project = json.loads((REPO / 'state/project_state.json').read_text())
         self.route = self.project['external_review_state']
+        if self.route['scoped_revision_execution']['status'] == 'FROZEN_HUMAN_REJECTED_AWAITING_EMOTION_RETENTION_DIAGNOSIS':
+            human = json.loads((REPO / self.route['actual_human_reading']['receipt']['path']).read_text())
+            self.route.update(copy.deepcopy(human['prior_stage_snapshot']))
         self.preparation = self.route['scoped_revision_preparation']
         self.execution = copy.deepcopy(self.route['scoped_revision_execution'])
         for key in ('task', 'lock', 'input_review'):
@@ -44,6 +47,38 @@ class ScopedLocalRevisionTests(unittest.TestCase):
     def run_gate(self):
         return current.scoped_local_execution_action(self.root, self.project, self.route,
             self.preparation, self.execution, self.original)
+
+    def human_failure_gate(self, mutate=None):
+        project = json.loads((REPO / 'state/project_state.json').read_text())
+        route = project['external_review_state']
+        if 'actual_human_reading' not in route:
+            self.skipTest('Actual scoped human rejection not recorded yet')
+        if mutate:
+            mutate(route)
+        return current.scoped_local_execution_action(REPO, project, route,
+            route['scoped_revision_preparation'], route['scoped_revision_execution'], self.original)
+
+    def test_actual_human_rejection_routes_to_diagnosis_without_prose(self):
+        self.assertEqual(self.human_failure_gate(),
+            'RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK')
+
+    def test_AI_pass_cannot_release_human_rejected_output_again(self):
+        def release(route):
+            route['fresh_external_quality_review']['direct_user_reading_authorized_now'] = True
+        with self.assertRaisesRegex(ValueError, 'SCOPED_ACTUAL_HUMAN_REJECTION_DRIFT'):
+            self.human_failure_gate(release)
+
+    def test_human_failure_cannot_reset_old_revision_budget(self):
+        def reset(route):
+            route['scoped_revision_execution']['remaining_prose_revision_rounds'] = 1
+        with self.assertRaisesRegex(ValueError, 'SCOPED_ACTUAL_HUMAN_REJECTION_DRIFT'):
+            self.human_failure_gate(reset)
+
+    def test_human_failure_cannot_open_new_prose_without_task(self):
+        def authorize(route):
+            route['scoped_revision_execution']['new_prose_authorized_now'] = True
+        with self.assertRaisesRegex(ValueError, 'SCOPED_ACTUAL_HUMAN_REJECTION_DRIFT'):
+            self.human_failure_gate(authorize)
 
     def test_clear_input_allows_one_scoped_run_only(self):
         self.assertEqual(self.run_gate(), 'EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION')

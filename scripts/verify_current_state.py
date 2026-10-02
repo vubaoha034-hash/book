@@ -270,6 +270,8 @@ def scoped_revision_preparation_action(root: Path, project: dict, route: dict,
 
 def scoped_local_execution_action(root: Path, project: dict, route: dict,
                                   preparation: dict, execution: dict, original: str) -> str:
+    if execution.get('status') == 'FROZEN_HUMAN_REJECTED_AWAITING_EMOTION_RETENTION_DIAGNOSIS':
+        return scoped_human_rejection_action(root, project, route, preparation, execution, original)
     task = bound_json(root, execution.get('task', {}))
     lock = bound_json(root, execution.get('lock', {}))
     review = bound_json(root, task.get('input_review', {}))
@@ -493,6 +495,75 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
             repair.get('new_prose_authorized_now') is not False or repair_lock.get('new_prose_authorized') is not False):
             raise ValueError('SCOPED_LOCAL_BOUNDARY_FAILURE_DRIFT')
     return actions[status]
+
+def scoped_human_rejection_action(root: Path, project: dict, route: dict,
+                                 preparation: dict, execution: dict, original: str) -> str:
+    """Preserve the verified AI stage while binding a later actual human FAIL."""
+    human = route.get('actual_human_reading', {})
+    receipt = bound_json(root, human.get('receipt', {}))
+    prior = receipt.get('prior_stage_snapshot', {})
+    prior_execution = prior.get('scoped_revision_execution', {})
+    prior_quality = prior.get('fresh_external_quality_review', {})
+    if prior_execution.get('status') != 'FROZEN_INTERNAL_REVIEW_PASS_AWAITING_FINAL_READING':
+        raise ValueError('HUMAN_REJECTION_PRIOR_STAGE_DRIFT')
+    historical_route = dict(route, scoped_revision_execution=prior_execution,
+                            fresh_external_quality_review=prior_quality)
+    scoped_local_execution_action(root, project, historical_route, preparation, prior_execution, original)
+    review = receipt.get('review', {})
+    preparation_route = route.get('emotion_retention_preparation', {})
+    task = bound_json(root, preparation_route.get('task', {}))
+    packet = safe_file(root, task.get('reviewer_packet', {}).get('path', '')).read_bytes()
+    plan = safe_file(root, task.get('plan', {}).get('path', '')).read_bytes()
+    quality = route.get('fresh_external_quality_review', {})
+    action = 'RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK'
+    if (receipt.get('schema_version') != 'novel-scoped-human-reading-receipt/v1' or
+        receipt.get('project_id') != project.get('project_id') or receipt.get('outcome') != 'FAIL' or
+        receipt.get('processed_once') is not True or human.get('outcome') != 'FAIL' or
+        execution.get('human_verdict') != human.get('receipt') or
+        project.get('human_verdict_receipt') != human.get('receipt', {}).get('path') or
+        project.get('latest_human_review') != review or
+        review.get('source', {}).get('kind') != 'ACTUAL_CURRENT_USER_MESSAGE' or
+        not review.get('human_exact_feedback') or review.get('human_quality_accepted') is not False or
+        review.get('same_artifact_resubmission_allowed') is not False or
+        review.get('bound_blob') != execution.get('output', {}).get('blob') or
+        review.get('bound_artifact_path') != execution.get('output', {}).get('path') or
+        receipt.get('output') != execution.get('output') or
+        receipt.get('execution_task') != execution.get('task') or
+        receipt.get('coordinator_prose_edits') != 0 or
+        execution.get('human_result') != 'FAIL' or execution.get('literary_acceptance') is not False or
+        execution.get('new_prose_authorized_now') is not False or
+        execution.get('final_user_reading_authorized_now') is not False or
+        execution.get('internal_deliverability') != 'REJECTED_BY_ACTUAL_HUMAN_READING' or
+        execution.get('full_v5_authorized') is not False or
+        any(execution.get(k) != prior_execution.get(k) for k in
+            ('task', 'lock', 'writer_packet', 'output', 'output_freeze', 'review_result',
+             'writer_attempt_count', 'generation_count', 'used_prose_revision_rounds', 'remaining_prose_revision_rounds')) or
+        quality.get('human_result') != 'FAIL' or quality.get('direct_user_reading_authorized_now') is not False or
+        quality.get('internal_deliverability') != 'REJECTED_BY_ACTUAL_HUMAN_READING' or
+        quality.get('human_verdict') != human.get('receipt') or
+        any(quality.get(k) != prior_quality.get(k) for k in
+            ('task_id', 'conversation_url', 'output', 'result', 'fact_recheck', 'external_verdict'))):
+        raise ValueError('SCOPED_ACTUAL_HUMAN_REJECTION_DRIFT')
+    if (task.get('schema_version') != 'novel-scoped-diagnostic-preparation/v1' or
+        task.get('project_id') != project.get('project_id') or
+        task.get('task_id') != preparation_route.get('task_id') or
+        task.get('basis') != human.get('receipt') or task.get('output') != execution.get('output') or
+        task.get('plan') != preparation_route.get('plan') or
+        task.get('reviewer_packet', {}).get('blob') != git_blob(packet) or
+        task.get('reviewer_packet', {}).get('sha256') != hashlib.sha256(packet).hexdigest() or
+        task.get('plan', {}).get('blob') != git_blob(plan) or
+        task.get('plan', {}).get('sha256') != hashlib.sha256(plan).hexdigest() or
+        task.get('required_surface') != 'CHAT' or task.get('required_thinking_effort') != 'EXTREME_HIGH' or
+        task.get('send_click_count') != 0 or task.get('dispatch_attempt_count') != 0 or
+        task.get('generation_count') != 0 or task.get('new_prose_authorized_now') is not False or
+        task.get('old_RC3_budget_remaining') != 0 or task.get('old_task_not_reopened') is not True or
+        task.get('full_scene_authorized') is not False or task.get('full_v5_authorized') is not False or
+        task.get('callback_received') is not False or preparation_route.get('callback_received') is not False or
+        task.get('status') != 'PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED' or
+        execution.get('next_action') != action or quality.get('next_action') != action or
+        task.get('next_action') != action or preparation_route.get('next_action') != action):
+        raise ValueError('HUMAN_FAIL_DIAGNOSTIC_PREPARATION_DRIFT')
+    return action
 
 def test_outcome(root: Path, relative: str) -> str:
     """Check evidence completeness; do not judge the prose or invent feedback."""
