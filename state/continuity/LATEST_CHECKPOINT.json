@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 187,
-  "recorded_at": "2026-10-02T04:50:09+00:00",
+  "sequence": 189,
+  "recorded_at": "2026-10-02T07:58:32+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "唯一448字稿外审回传已核对并处理一次，RC3只在本短段取得文本证据关闭；号码表述保留歧义，RC1/RC2未被本轮认证关闭。两轮用尽，交付阶段成稿，实际阅读结果UNKNOWN；不扩成整场或全文。",
+  "current_focus": "新聊天冷读PASS回传已核对并处理一次，但审核把许澄离开前20分钟误当大厅窗口期限；原审核方只复核纠正该事实后PASS是否维持。448字原文不变，内部可交付仍待定，真人UNKNOWN。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -491,7 +491,9 @@
     "Last R2 writer sent once to fresh nonproject Chat at extreme-high effort; approved packet exact readback, no failed prose or diagnostic priming",
     "Frozen actual final R2 448-character whole excerpt; exact 197-character opening and boundaries verified, no coordinator prose edits; two rounds consumed, one phone-reference risk recorded for external review",
     "Delivered one frozen 448-character R2 prose review task with attached Opera Neon and explicit active callback; whole authored body verified, only app-label newline rendering differs; end turn without polling reviewer",
-    "Settled unique R2 prose callback once, located RC3 before/after evidence; retained number-language ambiguity and unclosed RC1/RC2, human UNKNOWN, zero further prose rounds; staged frozen excerpt for milestone reading"
+    "Settled unique R2 prose callback once, located RC3 before/after evidence; retained number-language ambiguity and unclosed RC1/RC2, human UNKNOWN, zero further prose rounds; staged frozen excerpt for milestone reading",
+    "Corrected coordinator misroute to direct user reading; bound actual launched fresh external quality review of identical 448-character output; preserve RC3 local closure and old budget, await callback without prose edits or duplicate dispatch",
+    "Settled fresh quality callback once, preserved original external PASS and nonblocking risks; held internal release only for located reviewer window-deadline misreading, not a prose contradiction; prepare one same-reviewer factual recheck"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -738,7 +740,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+  "next_required_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1753,14 +1755,14 @@
       "role": "方法4短段执行、事实及人物反应复核、待阅读回执。"
     }
   ],
-  "status": "NOVEL_RC3_R2_REVIEW_SETTLED_MILESTONE_READING_UNKNOWN",
+  "status": "NOVEL_R2_EXTERNAL_QUALITY_PASS_PENDING_FACT_RECHECK",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "f612627b50280f3003ddf643804d9074686a4fe5d325e476f6353dd337fd7e5b",
+    "project_state_sha256": "a2af0fa000e5cb420e45011914a0658eb6856dcada019ccd4eb8ed877140dcee",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1817,7 +1819,7 @@
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
-  "next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+  "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
   "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
   "current_human_gate": "METHOD_04_HUMAN_RESULT_UNKNOWN_DAILY_EXTERNAL_EVIDENCE_AUDIT_ACTIVE",
   "phase422_state": {
@@ -2470,7 +2472,7 @@
       ],
       "dispatch_verified": false,
       "blocker": null,
-      "next_trigger": "ACTUAL_MILESTONE_READING_OR_EXPLICIT_SCOPED_USER_STEERING",
+      "next_trigger": "FRESH_EXTERNAL_QUALITY_REVIEW_RESULT_FOR_NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
       "complete_body_delivered": true,
       "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
       "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed",
@@ -2593,7 +2595,7 @@
       "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03"
     ],
     "scoped_revision_execution": {
-      "status": "FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING",
+      "status": "FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
@@ -2619,7 +2621,7 @@
       "generation_count": 1,
       "used_prose_revision_rounds": 2,
       "new_prose_authorized_now": false,
-      "next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+      "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 33,
       "writer_initial_url": "https://chatgpt.com/",
@@ -2676,6 +2678,12 @@
         "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
         "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
         "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "final_user_reading_authorized_now": false,
+      "quality_route_correction": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
+        "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
+        "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
       }
     },
     "scoped_revision_execution_history": [
@@ -2793,6 +2801,51 @@
       "RC2": {
         "status": "NOT_CLOSED_BY_THIS_RETEST"
       }
-    }
+    },
+    "fresh_external_quality_review": {
+      "task_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
+      "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+      "output": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "reviewer_role": "FRESH_EXTERNAL_QUALITY_REVIEWER",
+      "context": "NEW_NONPROJECT_FIRST_READ_ONLY_PROSE",
+      "route_correction": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
+        "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
+        "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
+      },
+      "status": "CALLBACK_RECEIVED_FACT_RECHECK_PREPARED",
+      "callback_received": true,
+      "internal_deliverability": "PENDING",
+      "human_result": "UNKNOWN",
+      "direct_user_reading_authorized_now": false,
+      "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
+      "on_fail": "SETTLE_LOCATED_FAIL_AND_PREPARE_NEW_BOUNDED_DELIVERABILITY_REVISION_TASK_BEFORE_WRITING_AND_FRESH_EXTERNAL_RECHECK",
+      "on_pass": "VERIFY_RESULT_AND_FROZEN_OUTPUT_PERSIST_INTERNAL_DELIVERABILITY_THEN_FINAL_USER_READING",
+      "old_RC3_revision_budget_does_not_replace_quality_gate": true,
+      "callback_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-CALLBACK-20261002-05",
+      "result": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_EXTERNAL_QUALITY_RESULT_20261002_05.json",
+        "blob": "538e7328503e10aa9f5d2fd7b35dab6a1c053d34",
+        "sha256": "609e4246202a20a1d66502bc814ee1f4e227c0057bb461dbebf93c6dd3cdee37"
+      },
+      "external_verdict": "EXTERNAL_PASS_READY_FOR_FINAL_USER_READING",
+      "fact_recheck": {
+        "task_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-20261002-06",
+        "callback_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-CALLBACK-20261002-06",
+        "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+        "review_context": "SAME_NEW_REVIEWER_FACT_CORRECTION_NOT_A_SECOND_BLIND_READ",
+        "scope": "Only correct deadline attribution and decide whether original deliverability verdict stands, no prose changes",
+        "dispatch_status": "PREPARED_NOT_SENT",
+        "send_click_count": 0,
+        "callback_received": false
+      }
+    },
+    "processed_quality_callback_ids": [
+      "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-CALLBACK-20261002-05"
+    ]
   }
 }

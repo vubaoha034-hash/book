@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-02T04:50:09+00:00",
+  "updated_at": "2026-10-02T07:58:32+00:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
-  "status": "NOVEL_RC3_R2_REVIEW_SETTLED_MILESTONE_READING_UNKNOWN",
+  "next_required_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
+  "status": "NOVEL_R2_EXTERNAL_QUALITY_PASS_PENDING_FACT_RECHECK",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3685,9 +3685,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+  "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "唯一448字稿外审回传已核对并处理一次，RC3只在本短段取得文本证据关闭；号码表述保留歧义，RC1/RC2未被本轮认证关闭。两轮用尽，交付阶段成稿，实际阅读结果UNKNOWN；不扩成整场或全文。",
+  "current_focus": "新聊天冷读PASS回传已核对并处理一次，但审核把许澄离开前20分钟误当大厅窗口期限；原审核方只复核纠正该事实后PASS是否维持。448字原文不变，内部可交付仍待定，真人UNKNOWN。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4292,7 +4292,7 @@
       ],
       "dispatch_verified": false,
       "blocker": null,
-      "next_trigger": "ACTUAL_MILESTONE_READING_OR_EXPLICIT_SCOPED_USER_STEERING",
+      "next_trigger": "FRESH_EXTERNAL_QUALITY_REVIEW_RESULT_FOR_NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
       "complete_body_delivered": true,
       "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
       "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed",
@@ -4415,7 +4415,7 @@
       "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03"
     ],
     "scoped_revision_execution": {
-      "status": "FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING",
+      "status": "FROZEN_QUALITY_PASS_PENDING_FACT_RECHECK",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
@@ -4441,7 +4441,7 @@
       "generation_count": 1,
       "used_prose_revision_rounds": 2,
       "new_prose_authorized_now": false,
-      "next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+      "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 33,
       "writer_initial_url": "https://chatgpt.com/",
@@ -4498,6 +4498,12 @@
         "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
         "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
         "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "final_user_reading_authorized_now": false,
+      "quality_route_correction": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
+        "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
+        "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
       }
     },
     "scoped_revision_execution_history": [
@@ -4615,6 +4621,51 @@
       "RC2": {
         "status": "NOT_CLOSED_BY_THIS_RETEST"
       }
-    }
+    },
+    "fresh_external_quality_review": {
+      "task_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
+      "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+      "output": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "reviewer_role": "FRESH_EXTERNAL_QUALITY_REVIEWER",
+      "context": "NEW_NONPROJECT_FIRST_READ_ONLY_PROSE",
+      "route_correction": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_QUALITY_ROUTE_CORRECTION_20261002.json",
+        "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
+        "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
+      },
+      "status": "CALLBACK_RECEIVED_FACT_RECHECK_PREPARED",
+      "callback_received": true,
+      "internal_deliverability": "PENDING",
+      "human_result": "UNKNOWN",
+      "direct_user_reading_authorized_now": false,
+      "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK",
+      "on_fail": "SETTLE_LOCATED_FAIL_AND_PREPARE_NEW_BOUNDED_DELIVERABILITY_REVISION_TASK_BEFORE_WRITING_AND_FRESH_EXTERNAL_RECHECK",
+      "on_pass": "VERIFY_RESULT_AND_FROZEN_OUTPUT_PERSIST_INTERNAL_DELIVERABILITY_THEN_FINAL_USER_READING",
+      "old_RC3_revision_budget_does_not_replace_quality_gate": true,
+      "callback_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-CALLBACK-20261002-05",
+      "result": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_EXTERNAL_QUALITY_RESULT_20261002_05.json",
+        "blob": "538e7328503e10aa9f5d2fd7b35dab6a1c053d34",
+        "sha256": "609e4246202a20a1d66502bc814ee1f4e227c0057bb461dbebf93c6dd3cdee37"
+      },
+      "external_verdict": "EXTERNAL_PASS_READY_FOR_FINAL_USER_READING",
+      "fact_recheck": {
+        "task_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-20261002-06",
+        "callback_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-CALLBACK-20261002-06",
+        "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+        "review_context": "SAME_NEW_REVIEWER_FACT_CORRECTION_NOT_A_SECOND_BLIND_READ",
+        "scope": "Only correct deadline attribution and decide whether original deliverability verdict stands, no prose changes",
+        "dispatch_status": "PREPARED_NOT_SENT",
+        "send_click_count": 0,
+        "callback_received": false
+      }
+    },
+    "processed_quality_callback_ids": [
+      "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-CALLBACK-20261002-05"
+    ]
   }
 }

@@ -8,7 +8,7 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点187。唯一完整448字 `delivery/local-revision-rc3-r2/short-r2-a1.md` 已完成局部复验；回传 NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04 来源、目标任务及正文blob均核对并只处理一次。外审的RC3文本证据关闭仅作用于本短段的判断和时间分配变化，不能证明好看、真人认可或整场通过；RC1/RC2未被本轮关闭。号码句保留连续性歧义，不虚构既成号码交付、不擅改冻结稿。两轮用尽，下一动作 `AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT`：交付这份阶段成稿，真人仍UNKNOWN，不再生成第三候选、整场或全文。实际回传已到达；本轮原先因协调会话忙而暂缓，审核方收到“传回去”后成功发送，故无人介入的全程自动送达尚未证实。
+当前位置：检查点189。448字冻结稿（blob f0545b15cf01dd6de83e105003e3af34b22cf4db）不变。新聊天 `NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05` 的PASS回传已与原始YAML报告核对、只处理一次；但报告把“距许澄三点离开二十分钟”误读成“大厅窗口只剩二十分钟”，将未给定的窗口期限作为主要张力依据。原始PASS意见留存，内部可交付暂不升格，下一动作 `AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK`：原审核方只核对纠正这个事实后是否维持PASS，不改正文、不生成第三稿。本轮先撤销误路由，再结算新回传，保留两份回执。若复核维持PASS且无阻断，项目核对落盘后才能最终送刘先生；若FAIL，项目合法另开有界修订任务再外审，旧RC3预算不构成将未达标稿交用户的理由。真人UNKNOWN、整场/全文关闭。
 
 方法1已失败原稿：`delivery/mainline-v1/test-01-sp414-s02-a1.md`，Git blob `d3796f41e10f90c6197211213bd2f4b96f18d196`。原始冻结执行回执保留：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_READING_20261001.json`。方法1真人失败回执：`state/review_receipts/NOVEL_MAINLINE_TEST01_A1_HUMAN_FAIL_20261001.json`；主要失败定位与局部修订范围：`docs/NOVEL_MAINLINE_TEST01_A1_FAILURE_DIAGNOSIS_20261001.md`。本次写作者使用不继承历史的独立上下文，只带入 `delivery/mainline-v1/test-01-writer-input.md`；协调者核对事实，未改写输出。历史新聊天执行入口不再用于重投本测试。`MAINLINE.md`中的初始位置描述保持为锁定当时的记录，实时进度以当前状态和检查点为准。
 

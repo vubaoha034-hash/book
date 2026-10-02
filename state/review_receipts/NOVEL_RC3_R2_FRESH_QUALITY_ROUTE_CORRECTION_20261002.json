@@ -1,0 +1,48 @@
+{
+  "schema_version": "novel-external-review-route-correction/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-02T07:54:36+00:00",
+  "source": "ACTUAL_USER_ROUTE_CORRECTION",
+  "source_head": "a2ad350294a0d715236267055502e9f354e60a9f",
+  "instruction": "日常成品先由项目外新聊天独立审核，结果回传项目后由项目处理、修正及必要复核，达到内部可交付标准才送刘先生最终阅读。本轮只修路由并等待已启动外审，不改正文、不生成第三稿。FAIL时协调端合法新开有界修订任务，不因旧RC3两轮耗尽而把未达标稿交用户；PASS须项目核对落盘后才能最终送审，AI PASS不等于真人喜欢。",
+  "existing_protocol": {
+    "path": "docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md",
+    "blob": "398c2e5d941bf5ed5a7c04617c14a9a9b52490a8",
+    "sha256": "52b876393bb6743b9e2c1fef91a66b4076dc6ea5a42e3992ab02eca56816e775"
+  },
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "preserved_local_review_result": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_RESULT_20261002_04.json",
+    "blob": "cb62b07cd1c3d20d0ca99d516189fdaf4bce1c8d",
+    "sha256": "c800b48184181d8ceed0d1f78728a0daab17e490e2e21fa79e63c86954851fe3"
+  },
+  "previous_next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+  "previous_route_classification": "COORDINATOR_MISROUTING_NOT_USER_SCOPE_CHANGE",
+  "fresh_quality_review_task_id": "NOVEL-RC3-R2-FRESH-EXTERNAL-QUALITY-REVIEW-20261002-05",
+  "reviewer_conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+  "launch_evidence": {
+    "kind": "ACTUAL_NATIVE_NEW_USER_MESSAGE_READBACK",
+    "observed_task_message_count": 1,
+    "task_message_sha256": "94be584e76bcb24a6445f96a1373ea80fc57d77cb0fbfb0e848cea2958ddf9d2",
+    "frozen_output_exact": true,
+    "composer_empty": true,
+    "dispatcher": "UNIFIED_COORDINATOR_EXISTING_LAUNCH",
+    "resend_count_this_task": 0,
+    "callback_delivery_not_yet_verified": true
+  },
+  "next_action": "AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_CALLBACK",
+  "callback_received": false,
+  "internal_deliverability": "PENDING",
+  "human_result": "UNKNOWN",
+  "direct_user_reading_authorized_now": false,
+  "new_prose_authorized_now": false,
+  "prose_modified": false,
+  "revision_budget_scope": "Previous RC3 two-round budget remains consumed; a later quality FAIL may ground a new bounded revision task with a separate lock, no automatic re-use or writing now",
+  "on_fail": "SETTLE_LOCATED_FAIL_AND_PREPARE_NEW_BOUNDED_DELIVERABILITY_REVISION_TASK_BEFORE_WRITING_AND_FRESH_EXTERNAL_RECHECK",
+  "on_pass": "VERIFY_RESULT_AND_FROZEN_OUTPUT_PERSIST_INTERNAL_DELIVERABILITY_THEN_FINAL_USER_READING",
+  "private_launch_evidence_sha256": "84c0283ddffa6807bf85e027ae48bf4c361aedaad7457eee559b47ec38c27e4a"
+}

@@ -123,6 +123,13 @@ class ScopedLocalRevisionTests(unittest.TestCase):
             target = self.root / path
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes((REPO / path).read_bytes())
+        quality = self.route.get('fresh_external_quality_review', {})
+        for key in ('route_correction', 'result'):
+            if key in quality:
+                path = quality[key]['path']
+                target = self.root / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes((REPO / path).read_bytes())
 
     def change_settled_receipt(self, mutate):
         path = self.root / self.execution['review_result']['path']
@@ -135,7 +142,7 @@ class ScopedLocalRevisionTests(unittest.TestCase):
 
     def test_located_external_closure_keeps_human_and_full_scene_closed(self):
         self.set_settled_review()
-        self.assertEqual(self.run_gate(), 'AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT')
+        self.assertEqual(self.run_gate(), 'AWAIT_FRESH_EXTERNAL_QUALITY_REVIEW_FACT_RECHECK_CALLBACK')
         self.assertEqual(self.execution['human_result'], 'UNKNOWN')
         self.assertFalse(self.execution['new_prose_authorized_now'])
         self.assertEqual(self.execution['remaining_prose_revision_rounds'], 0)
@@ -162,6 +169,26 @@ class ScopedLocalRevisionTests(unittest.TestCase):
         self.set_settled_review()
         self.change_settled_receipt(lambda receipt: receipt.update(human_result='PASS'))
         with self.assertRaisesRegex(ValueError, 'SCOPED_PROSE_REVIEW_SCOPE_PROMOTION'):
+            self.run_gate()
+
+    def test_prior_direct_user_reading_route_cannot_bypass_new_quality_review(self):
+        self.set_settled_review()
+        self.execution.update(status='FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING',
+            next_action='AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT')
+        with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_REVIEW_BYPASSED'):
+            self.run_gate()
+
+    def test_repeated_quality_callback_is_rejected(self):
+        self.set_settled_review()
+        quality = self.route['fresh_external_quality_review']
+        self.route['processed_quality_callback_ids'].append(quality['callback_id'])
+        with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_REVIEW_SETTLEMENT_DRIFT'):
+            self.run_gate()
+
+    def test_external_pass_cannot_open_user_reading_with_fact_recheck_pending(self):
+        self.set_settled_review()
+        self.route['fresh_external_quality_review']['direct_user_reading_authorized_now'] = True
+        with self.assertRaisesRegex(ValueError, 'FRESH_QUALITY_REVIEW_ROUTE_DRIFT'):
             self.run_gate()
 
 
