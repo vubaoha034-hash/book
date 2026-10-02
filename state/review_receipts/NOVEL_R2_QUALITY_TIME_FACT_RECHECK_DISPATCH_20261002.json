@@ -1,0 +1,32 @@
+{
+  "schema_version": "novel-quality-fact-recheck-dispatch/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-02T08:02:19+00:00",
+  "source_head": "b96317f3c1d609b5a04b48853c2c5d3b18354046",
+  "task_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-20261002-06",
+  "callback_id": "NOVEL-RC3-R2-QUALITY-TIME-FACT-RECHECK-CALLBACK-20261002-06",
+  "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "quality_result": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_FRESH_EXTERNAL_QUALITY_RESULT_20261002_05.json",
+    "blob": "538e7328503e10aa9f5d2fd7b35dab6a1c053d34",
+    "sha256": "609e4246202a20a1d66502bc814ee1f4e227c0057bb461dbebf93c6dd3cdee37"
+  },
+  "scope": "Only correct deadline attribution and decide whether original deliverability verdict stands, no prose changes",
+  "send_click_count": 1,
+  "observed_new_user_message_count": 1,
+  "whole_authored_body_verified": true,
+  "app_label_newline_rendering_only": true,
+  "composer_empty": true,
+  "opera_neon_attached": true,
+  "chat_extreme_high_observed": true,
+  "draft_sha256": "0fe57dfdce24abe32bab005f527ea5b69f9184e5d6b7e1d96035e9b1ee116116",
+  "posted_sha256": "7f2473df4b8c171efdf68a233ca53a386667ee2e84eb0af0ae1c9cad4dadf98d",
+  "human_result": "UNKNOWN",
+  "new_prose_authorized_now": false,
+  "callback_received": false
+}

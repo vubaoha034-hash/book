@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 189,
-  "recorded_at": "2026-10-02T07:58:32+00:00",
+  "sequence": 190,
+  "recorded_at": "2026-10-02T08:02:19+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -493,7 +493,8 @@
     "Delivered one frozen 448-character R2 prose review task with attached Opera Neon and explicit active callback; whole authored body verified, only app-label newline rendering differs; end turn without polling reviewer",
     "Settled unique R2 prose callback once, located RC3 before/after evidence; retained number-language ambiguity and unclosed RC1/RC2, human UNKNOWN, zero further prose rounds; staged frozen excerpt for milestone reading",
     "Corrected coordinator misroute to direct user reading; bound actual launched fresh external quality review of identical 448-character output; preserve RC3 local closure and old budget, await callback without prose edits or duplicate dispatch",
-    "Settled fresh quality callback once, preserved original external PASS and nonblocking risks; held internal release only for located reviewer window-deadline misreading, not a prose contradiction; prepare one same-reviewer factual recheck"
+    "Settled fresh quality callback once, preserved original external PASS and nonblocking risks; held internal release only for located reviewer window-deadline misreading, not a prose contradiction; prepare one same-reviewer factual recheck",
+    "Delivered one bounded timing-fact recheck to the same fresh quality reviewer, actual Opera Neon attached and extreme-high chat verified; full body sent once, empty composer verified; no prose changes, no polling"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1762,7 +1763,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "a2af0fa000e5cb420e45011914a0658eb6856dcada019ccd4eb8ed877140dcee",
+    "project_state_sha256": "61c6138f2e461a81955c56e7aee1fc3ae5d1e8dd69ccebbc3d0ba75669d1ee30",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2817,7 +2818,7 @@
         "blob": "b70fc21b7e8e5703362ca92763462fbf3cb731d3",
         "sha256": "c1fdcf1c527ec1eab4d8b131d879839dfb5948dfae2c69f0669cae3d4c477116"
       },
-      "status": "CALLBACK_RECEIVED_FACT_RECHECK_PREPARED",
+      "status": "FACT_RECHECK_DISPATCHED_AWAITING_CALLBACK",
       "callback_received": true,
       "internal_deliverability": "PENDING",
       "human_result": "UNKNOWN",
@@ -2839,9 +2840,14 @@
         "conversation_url": "https://chatgpt.com/c/6abf6228-6990-83e9-9322-48ff403f255f",
         "review_context": "SAME_NEW_REVIEWER_FACT_CORRECTION_NOT_A_SECOND_BLIND_READ",
         "scope": "Only correct deadline attribution and decide whether original deliverability verdict stands, no prose changes",
-        "dispatch_status": "PREPARED_NOT_SENT",
-        "send_click_count": 0,
-        "callback_received": false
+        "dispatch_status": "ACTUAL_COMPLETE_SINGLE_MESSAGE_DELIVERED",
+        "send_click_count": 1,
+        "callback_received": false,
+        "dispatch_evidence": {
+          "path": "state/review_receipts/NOVEL_R2_QUALITY_TIME_FACT_RECHECK_DISPATCH_20261002.json",
+          "blob": "f732f9923b741165637496ff933ee0460a0e3ac7",
+          "sha256": "7ceb51fe6ce53b9c86ca596f5cb38c438e351038992908ad9234d0aac5168f03"
+        }
       }
     },
     "processed_quality_callback_ids": [
