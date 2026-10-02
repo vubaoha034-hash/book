@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 179,
-  "recorded_at": "2026-10-02T03:27:51+00:00",
+  "sequence": 180,
+  "recorded_at": "2026-10-02T03:28:47+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "A2准备回传未定位阻断已处理一次；另立R1独立写作执行锁，仅使用批准输入改指定后半段，唯一300–500字输出；原稿及真人UNKNOWN保留。",
+  "current_focus": "唯一独立聊天已完整收到批准输入，等待一份局部正文；写作发送一次，禁止重投或新候选。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -483,7 +483,8 @@
     "Processed actual RC3 preparation callback exactly once; preserved input A1 and locks, froze corrected isolated input A2 for external scope recheck; no new prose",
     "RC3 input A2 review delivered once with Opera Neon attached and 极高 effort; exact body read back and editor empty; end turn awaiting active callback",
     "Actual A2 preparation callback settled once; one scoped fresh Chat writer claimed under a separate immutable execution lock; no literary promotion",
-    "Fixed inherited external-review fixtures and higher-priority human/reviewer-repair precedence; 49 continuity/authority tests passed, plus 28-file structure and 27 current-state checks"
+    "Fixed inherited external-review fixtures and higher-priority human/reviewer-repair precedence; 49 continuity/authority tests passed, plus 28-file structure and 27 current-state checks",
+    "Approved A2 packet dispatched once into a new nonproject Chat with extreme-high thinking; exact whole message and empty editor verified; single writer attempt consumed"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -730,7 +731,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION",
+  "next_required_action": "AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1745,14 +1746,14 @@
       "role": "方法4短段执行、事实及人物反应复核、待阅读回执。"
     }
   ],
-  "status": "NOVEL_RC3_R1_WRITER_CLAIMED",
+  "status": "NOVEL_RC3_R1_WRITER_DISPATCHED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "4290779ef77ace61e4b3bee1d1fdca50e781bf515e5957ad3e4e8bde2cfe336e",
+    "project_state_sha256": "23f11f5a4a76b8d28bc021661dbeee82ccffcc65405e73db10e910327e5b64ba",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1809,7 +1810,7 @@
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
-  "next_action": "EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION",
+  "next_action": "AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT",
   "human_verdict_receipt": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
   "current_human_gate": "METHOD_04_HUMAN_RESULT_UNKNOWN_DAILY_EXTERNAL_EVIDENCE_AUDIT_ACTIVE",
   "phase422_state": {
@@ -2576,7 +2577,7 @@
       "NOVEL-RC3-PREP-RECHECK-CALLBACK-20261002-02"
     ],
     "scoped_revision_execution": {
-      "status": "CLAIMED_READY_TO_DISPATCH",
+      "status": "DISPATCHED_AWAITING_WRITER_RESULT",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R1-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R1_WRITER_20261002.json",
@@ -2598,18 +2599,24 @@
         "blob": "02554e670f916200b59ad34a2867c7c51dbd3c0f",
         "sha256": "e0e5543d9f9692bfd417843cbf8b80e8577ea92308895bcc8a76c0876a6b8f0f"
       },
-      "writer_attempt_count": 0,
+      "writer_attempt_count": 1,
       "generation_count": 0,
       "used_prose_revision_rounds": 0,
-      "new_prose_authorized_now": true,
-      "next_action": "EXECUTE_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION",
+      "new_prose_authorized_now": false,
+      "next_action": "AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 22,
       "writer_initial_url": "https://chatgpt.com/",
       "writer_isolation_coverage": "New nonproject conversation with no task history; explicit packet allowlist; account personalization may remain",
       "human_result": "UNKNOWN",
       "literary_acceptance": false,
-      "full_v5_authorized": false
+      "full_v5_authorized": false,
+      "writer_conversation_url": "https://chatgpt.com/c/6abf24e8-64a4-83ea-82fd-45569f4da312",
+      "dispatch_complete_body_verified": true,
+      "writer_send_click_count": 1,
+      "writer_dispatch_message_sha256": "19152934500e4a24e342633b2dec4efdbe36e7efd7bc2f80aeba3e76ac815b94",
+      "writer_thinking_effort": "EXTREME_HIGH",
+      "writer_chat_mode_verified": true
     }
   }
 }
