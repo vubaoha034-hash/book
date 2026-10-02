@@ -329,6 +329,7 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
                'DISPATCHED_AWAITING_WRITER_RESULT': 'AWAIT_ONE_FRESH_CONTEXT_RC3_LOCAL_REVISION_RESULT',
                'FROZEN_AWAITING_REVIEW_DISPATCH': 'SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW',
                'FROZEN_AWAITING_EXTERNAL_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION',
+               'FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING': 'AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT',
                'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW': 'AWAIT_EXTERNAL_REVIEW_OF_RC3_WRITER_OUTPUT_BOUNDARY_REPAIR'}
     if status not in actions or execution.get('next_action') != actions[status]:
         raise ValueError('SCOPED_LOCAL_EXECUTION_ACTION_DRIFT')
@@ -346,6 +347,50 @@ def scoped_local_execution_action(root: Path, project: dict, route: dict,
             output.get('sha256') != hashlib.sha256(data).hexdigest() or not text.startswith(original[:197]) or
             not 300 <= len(''.join(text.split())) <= 500):
             raise ValueError('SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT')
+    if status == 'FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING':
+        settled = bound_json(root, execution.get('review_result', {}))
+        dispatch = bound_json(root, execution.get('review_dispatch_evidence', {}))
+        prose_report = settled.get('report', {})
+        source = settled.get('source', {})
+        retest = prose_report.get('rc3_retest', {})
+        if (settled.get('schema_version') != 'novel-scoped-prose-review-receipt/v1' or
+            settled.get('project_id') != project.get('project_id') or
+            settled.get('callback_id') != execution.get('review_callback_id') or
+            settled.get('parent_review_task_id') != execution.get('review_task_id') or
+            settled.get('output') != execution.get('output') or
+            settled.get('execution_task') != execution.get('task') or
+            settled.get('output_freeze') != execution.get('output_freeze') or
+            settled.get('dispatch_evidence') != execution.get('review_dispatch_evidence') or
+            settled.get('callback_received') is not True or settled.get('processed_once') is not True or
+            execution.get('callback_received') is not True or
+            route.get('processed_prose_callback_ids', []).count(settled.get('callback_id')) != 1 or
+            dispatch.get('review_task_id') != execution.get('review_task_id') or
+            dispatch.get('expected_callback_id') != settled.get('callback_id') or
+            dispatch.get('output') != execution.get('output') or
+            dispatch.get('observed_new_user_message_count') != 1 or
+            dispatch.get('send_click_count') != 1 or dispatch.get('complete_authored_body_verified') is not True or
+            source.get('kind') != 'EXTERNAL_AI_CHAT' or source.get('actual_human') is not False or
+            source.get('conversation_url') != dispatch.get('reviewer_conversation_url') or
+            prose_report.get('schema_version') != 'novel-scoped-local-revision-review/v1' or
+            prose_report.get('review_context') != 'SAME_EXTERNAL_REVIEWER_SCOPED_PROSE_RETEST' or
+            prose_report.get('project_id') != project.get('project_id') or
+            prose_report.get('target_task_id') != task.get('task_id') or
+            prose_report.get('base_method_revision') != 4 or
+            prose_report.get('output_blob') != execution['output']['blob'] or
+            prose_report.get('verdict') != 'NO_LOCATED_BLOCKERS' or retest.get('status') != 'CLOSED_BY_LOCATED_TEXT'):
+            raise ValueError('SCOPED_PROSE_REVIEW_BINDING_DRIFT')
+        quotes = retest.get('before', []) + retest.get('after', [])
+        quotes += [row.get('quote') for row in prose_report.get('protect', []) + prose_report.get('issues', [])]
+        if (not retest.get('before') or not retest.get('after') or
+            not retest.get('mechanism') or not retest.get('evidence_boundary') or
+            any(not quote or quote not in text for quote in quotes)):
+            raise ValueError('SCOPED_PROSE_REVIEW_UNLOCATED_EVIDENCE')
+        if (settled.get('human_result') != 'UNKNOWN' or settled.get('literary_acceptance') is not False or
+            settled.get('full_scene_authorized') is not False or settled.get('third_candidate_authorized') is not False or
+            settled.get('remaining_prose_revision_rounds') != 0 or execution.get('remaining_prose_revision_rounds') != 0 or
+            execution.get('rc3_external_evidence_status') != 'CLOSED_BY_LOCATED_TEXT' or
+            settled.get('other_diagnostic_issues_closed') != []):
+            raise ValueError('SCOPED_PROSE_REVIEW_SCOPE_PROMOTION')
     if status == 'BOUNDARY_FAILED_AWAITING_INPUT_REVIEW':
         result = bound_json(root, execution.get('writer_result', {}))
         repair_route = execution.get('output_boundary_repair', {})

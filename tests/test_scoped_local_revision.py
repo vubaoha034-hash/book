@@ -116,6 +116,54 @@ class ScopedLocalRevisionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'SCOPED_LOCAL_EXECUTION_OUTPUT_DRIFT'):
             self.run_gate()
 
+    def set_settled_review(self):
+        self.execution = copy.deepcopy(self.route['scoped_revision_execution'])
+        for key in ('output', 'review_result', 'review_dispatch_evidence'):
+            path = self.execution[key]['path']
+            target = self.root / path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes((REPO / path).read_bytes())
+
+    def change_settled_receipt(self, mutate):
+        path = self.root / self.execution['review_result']['path']
+        receipt = json.loads(path.read_text())
+        mutate(receipt)
+        path.write_text(json.dumps(receipt, ensure_ascii=False))
+        data = path.read_bytes()
+        self.execution['review_result'].update(blob=current.git_blob(data),
+            sha256=hashlib.sha256(data).hexdigest())
+
+    def test_located_external_closure_keeps_human_and_full_scene_closed(self):
+        self.set_settled_review()
+        self.assertEqual(self.run_gate(), 'AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT')
+        self.assertEqual(self.execution['human_result'], 'UNKNOWN')
+        self.assertFalse(self.execution['new_prose_authorized_now'])
+        self.assertEqual(self.execution['remaining_prose_revision_rounds'], 0)
+
+    def test_repeated_prose_callback_is_rejected(self):
+        self.set_settled_review()
+        self.route['processed_prose_callback_ids'].append(self.execution['review_callback_id'])
+        with self.assertRaisesRegex(ValueError, 'SCOPED_PROSE_REVIEW_BINDING_DRIFT'):
+            self.run_gate()
+
+    def test_review_for_another_output_is_rejected_even_with_new_hash(self):
+        self.set_settled_review()
+        self.change_settled_receipt(lambda receipt: receipt['report'].update(output_blob='wrong'))
+        with self.assertRaisesRegex(ValueError, 'SCOPED_PROSE_REVIEW_BINDING_DRIFT'):
+            self.run_gate()
+
+    def test_unlocated_review_quote_cannot_close_rc3(self):
+        self.set_settled_review()
+        self.change_settled_receipt(lambda receipt: receipt['report']['rc3_retest']['after'].append('不存在于正文的引文'))
+        with self.assertRaisesRegex(ValueError, 'SCOPED_PROSE_REVIEW_UNLOCATED_EVIDENCE'):
+            self.run_gate()
+
+    def test_evidence_closure_cannot_promote_human_acceptance(self):
+        self.set_settled_review()
+        self.change_settled_receipt(lambda receipt: receipt.update(human_result='PASS'))
+        with self.assertRaisesRegex(ValueError, 'SCOPED_PROSE_REVIEW_SCOPE_PROMOTION'):
+            self.run_gate()
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-02T03:54:44+00:00",
+  "updated_at": "2026-10-02T04:50:09+00:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION",
-  "status": "NOVEL_RC3_R2_FROZEN_PROSE_DELIVERED_AWAITING_ASYNC_REVIEW",
+  "next_required_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
+  "status": "NOVEL_RC3_R2_REVIEW_SETTLED_MILESTONE_READING_UNKNOWN",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3685,9 +3685,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION",
+  "next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "唯一448字稿已实际送原外审，Opera Neon已附并明确主动回传；完整正文消息和空输入框已核对。两轮用尽，等待回传触发有限结算，不生成第三候选、不自动文学通关。",
+  "current_focus": "唯一448字稿外审回传已核对并处理一次，RC3只在本短段取得文本证据关闭；号码表述保留歧义，RC1/RC2未被本轮认证关闭。两轮用尽，交付阶段成稿，实际阅读结果UNKNOWN；不扩成整场或全文。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4292,10 +4292,18 @@
       ],
       "dispatch_verified": false,
       "blocker": null,
-      "next_trigger": "NEXT_RC3_PREPARATION_REVIEW_CALLBACK",
+      "next_trigger": "ACTUAL_MILESTONE_READING_OR_EXPLICIT_SCOPED_USER_STEERING",
       "complete_body_delivered": true,
       "recovery_task_id": "NOVEL-PLUGIN-RETURN-20261002-02",
-      "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed"
+      "last_reviewer_blocker": "Fresh target pages cannot load conversation; plugin authorization and usage confirmed",
+      "last_callback_id": "NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04",
+      "last_callback_receipt": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_RESULT_20261002_04.json",
+        "blob": "cb62b07cd1c3d20d0ca99d516189fdaf4bce1c8d",
+        "sha256": "c800b48184181d8ceed0d1f78728a0daab17e490e2e21fa79e63c86954851fe3"
+      },
+      "last_round_actual_delivery": true,
+      "last_round_unattended_delivery": "NOT_PROVEN_USER_RETRIGGER_OBSERVED"
     },
     "scoped_revision_preparation": {
       "status": "FROZEN_AWAITING_EXTERNAL_INPUT_REVIEW",
@@ -4407,7 +4415,7 @@
       "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03"
     ],
     "scoped_revision_execution": {
-      "status": "FROZEN_AWAITING_EXTERNAL_REVIEW",
+      "status": "FROZEN_REVIEW_SETTLED_AWAITING_MILESTONE_READING",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
@@ -4433,7 +4441,7 @@
       "generation_count": 1,
       "used_prose_revision_rounds": 2,
       "new_prose_authorized_now": false,
-      "next_action": "AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION",
+      "next_action": "AWAIT_MILESTONE_HUMAN_READING_OF_FROZEN_RC3_SHORT_EXCERPT",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 33,
       "writer_initial_url": "https://chatgpt.com/",
@@ -4467,13 +4475,30 @@
       "review_task_id": "NOVEL-RC3-R2-PROSE-REVIEW-20261002-04",
       "review_callback_id": "NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04",
       "review_dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
-      "callback_received": false,
+      "callback_received": true,
       "review_dispatch_evidence": {
         "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_DISPATCH_20261002.json",
         "blob": "615531868689cec755b63a4a2bdcd12874786cc6",
         "sha256": "66c625b5aaa7d500f8de3a3d7f2435a83af56d9997d87997e5f3f5d3347dd3f2"
       },
-      "review_send_click_count": 1
+      "review_send_click_count": 1,
+      "review_result": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_RESULT_20261002_04.json",
+        "blob": "cb62b07cd1c3d20d0ca99d516189fdaf4bce1c8d",
+        "sha256": "c800b48184181d8ceed0d1f78728a0daab17e490e2e21fa79e63c86954851fe3"
+      },
+      "review_outcome": "NO_LOCATED_BLOCKERS",
+      "rc3_external_evidence_status": "CLOSED_BY_LOCATED_TEXT",
+      "supplier_number_phrase": "LANGUAGE_AMBIGUITY_PENDING",
+      "remaining_diagnostic_scope": [
+        "RC1",
+        "RC2"
+      ],
+      "milestone_artifact": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      }
     },
     "scoped_revision_execution_history": [
       {
@@ -4566,6 +4591,30 @@
         },
         "remaining_prose_revision_rounds": 1
       }
-    ]
+    ],
+    "processed_prose_callback_ids": [
+      "NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04"
+    ],
+    "scoped_issue_settlement": {
+      "RC3": {
+        "status": "CLOSED_BY_LOCATED_TEXT",
+        "scope": "R2_448_CHARACTER_EXCERPT_ONLY",
+        "receipt": {
+          "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_RESULT_20261002_04.json",
+          "blob": "cb62b07cd1c3d20d0ca99d516189fdaf4bce1c8d",
+          "sha256": "c800b48184181d8ceed0d1f78728a0daab17e490e2e21fa79e63c86954851fe3"
+        }
+      },
+      "R2-CONTINUITY-01": {
+        "status": "LANGUAGE_AMBIGUITY_PENDING",
+        "confirmed_fact_conflict": false
+      },
+      "RC1": {
+        "status": "NOT_CLOSED_BY_THIS_RETEST"
+      },
+      "RC2": {
+        "status": "NOT_CLOSED_BY_THIS_RETEST"
+      }
+    }
   }
 }

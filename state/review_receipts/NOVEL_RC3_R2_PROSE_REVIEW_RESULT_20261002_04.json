@@ -1,0 +1,167 @@
+{
+  "schema_version": "novel-scoped-prose-review-receipt/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-02T04:50:09+00:00",
+  "source_head": "9c297e09755332bf554ac6080044174e50cddbc0",
+  "callback_id": "NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04",
+  "parent_review_task_id": "NOVEL-RC3-R2-PROSE-REVIEW-20261002-04",
+  "execution_task": {
+    "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
+    "blob": "e54229ad048ead63267ed44898b1d6f1b74ec013",
+    "sha256": "092274f8b54a0033e611e1e67ef0b56a36990813daecbe0f83c13c60c8c8e4a7"
+  },
+  "output": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "output_freeze": {
+    "path": "state/review_receipts/NOVEL_RC3_LOCAL_REVISION_R2_OUTPUT_FREEZE_20261002.json",
+    "blob": "ae0edc4c24f7a85f4936cbe7146ee640549dbafd",
+    "sha256": "af462f42602896c45e76bbe6a15c353622ef531cd48e4d1af99e2c18f15a849a"
+  },
+  "dispatch_evidence": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_DISPATCH_20261002.json",
+    "blob": "615531868689cec755b63a4a2bdcd12874786cc6",
+    "sha256": "66c625b5aaa7d500f8de3a3d7f2435a83af56d9997d87997e5f3f5d3347dd3f2"
+  },
+  "source": {
+    "kind": "EXTERNAL_AI_CHAT",
+    "surface": "OPERA_NEON",
+    "actual_human": false,
+    "conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+    "coordinator_conversation_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+    "review_context": "SAME_EXTERNAL_REVIEWER_SCOPED_PROSE_RETEST",
+    "role": "EVIDENCE_AUDITOR",
+    "source_and_native_report_equal": true,
+    "native_callback_occurrences": 1
+  },
+  "callback_received": true,
+  "processed_once": true,
+  "report": {
+    "schema_version": "novel-scoped-local-revision-review/v1",
+    "project_id": "novel-distillation",
+    "review_context": "SAME_EXTERNAL_REVIEWER_SCOPED_PROSE_RETEST",
+    "target_task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
+    "base_method_revision": 4,
+    "output_blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "verdict": "NO_LOCATED_BLOCKERS",
+    "rc3_retest": {
+      "status": "CLOSED_BY_LOCATED_TEXT",
+      "before": [
+        "“材料我带走，等查清了再说。”",
+        "“窗口还没关。我总得问问房子。”",
+        "他想说材料已经收了，总不能连查清的时间都不给。"
+      ],
+      "after": [
+        "那二十分钟本来该留给大厅里的房子，不该留给一个陌生女人和一段他毫无印象的过去。",
+        "可查证不等于认账。",
+        "“供应商全名给我。”",
+        "罗钧坐下来，掏出手机，照着合同上的公司名一个字一个字输进搜索框。"
+      ],
+      "mechanism": "时间和付款压力进入前，罗钧的明确方案是带走材料、以后自行查，同时优先回大厅处理房子；他还把要求查清时间视为对方应当给予自己的合理空间。许澄说出三点离开、五天后付款不会暂停，并明确否定把“以后再说”视作已经处理后，罗钧没有认责，但重新处理了“查证”和“认账”的关系。他明确意识到剩余二十分钟原本属于房子，却仍将这段时间投入当场独立核验，并从泛泛的以后查转为索要供应商全名、现场搜索公开信息。这是眼前时间分配和判断框架的可观察变化，不只是新增知道了一个期限以后顺手拿手机。",
+      "evidence_boundary": "这里能够关闭的是D报告定义的RC3局部问题：对方的信息已经实际改变罗钧本段内的判断和当前安排。证据不支持更大的结论：他没有承认18.6万元责任，没有放弃房子，没有相信第二过去，也没有形成完整场景中的长期合作或关系恢复。因此CLOSED_BY_LOCATED_TEXT不等于文学质量、人物关系整体或真人审美通过。"
+    },
+    "issues": [
+      {
+        "id": "R2-CONTINUITY-01",
+        "severity": "P2",
+        "quote": "别用我给的号码。",
+        "problem": "这句话存在轻度连续性歧义。当前448字正文和批准输入没有展示许澄已经把某个供应商号码交给罗钧，因此“我给的号码”可能让读者推定此前发生过一次未展示的号码交付。但它也可以理解为一般性提醒，即不要使用由她提供的联系方式。现有证据不足以把它定为确定事实矛盾，更不能据此推断许澄实际控制了核验路径。",
+        "protect": "同一句中的“你自己找公开电话”应保护；它明确强化了公开独立核验，不依赖许澄提供的联系方式。",
+        "retest_condition": "后续连续性核对只需确认实际完整场景此前是否存在供应商号码交付。若不存在，应继续把这里记录为未交代行动的语言歧义，而不是反推发生过该行动或升级为设定矛盾。"
+      }
+    ],
+    "protect": [
+      {
+        "quote": "“我三点得走，客户的片子还等着。”",
+        "why": "许澄自己的工作安排仍然独立存在，没有为了推动罗钧而被改成单纯催债功能。"
+      },
+      {
+        "quote": "可查证不等于认账。",
+        "why": "它把本轮行为变化与提前认责明确分开，使罗钧能够改变眼前安排而不突破既定责任边界。"
+      },
+      {
+        "quote": "“供应商全名给我。”",
+        "why": "罗钧的说话目的由“以后自己查”转为立即启动独立核验，构成RC3因果链中的可观察节点。"
+      },
+      {
+        "quote": "购房文件袋还压在他手肘下，像只要不松开，今天原本属于他的事就还没被挤走。",
+        "why": "现场核验没有抹掉他对房子和首付的原有保护目标；变化不是突然接受另一套人生，而是在两个当前事项之间产生挤压。"
+      }
+    ],
+    "scope_checks": {
+      "protected_opening": {
+        "verdict": "CLEAR",
+        "reason": "本轮给出的受保护前段与方法4对应部分一致，修改仍从三点离开段开始。"
+      },
+      "output_contract": {
+        "verdict": "CLEAR",
+        "reason": "冻结正文为448字，并按任务记录包含受保护前197个原始字符及段落分隔，位于300–500字完整短段范围内。"
+      },
+      "facts_and_character_knowledge": {
+        "verdict": "CLEAR",
+        "reason": "三点离开、剩二十分钟、五天付款期限、客户片子、房子优先级和无第二过去记忆均与固定事实一致。正文没有声称已得到核验结果，也没有新增付款事实。"
+      },
+      "independent_verification": {
+        "verdict": "CLEAR",
+        "reason": "“你自己找公开电话”以及罗钧直接按公司名搜索，明确维持供应商公开独立核验路径；未发现许澄阻断或控制供应商。"
+      },
+      "xu_cheng_life_and_restraint": {
+        "verdict": "CLEAR",
+        "reason": "许澄仍有三点后的客户工作，只要求罗钧不要把无限延期当成已经处理；她没有要求他假装认识、立即付款或放弃自行核验。"
+      },
+      "luo_jun_self_protection": {
+        "verdict": "CLEAR",
+        "reason": "“可查证不等于认账”以及购房文件袋仍被他压在手肘下，都显示其房屋、首付和责任边界没有因现场核验而消失。"
+      },
+      "premature_liability_memory_or_intimacy": {
+        "verdict": "CLEAR",
+        "reason": "短段没有认领设备债务、恢复记忆、恢复旧亲密、正式追偿或付款。"
+      },
+      "scene_endpoint": {
+        "verdict": "CLEAR",
+        "reason": "正文止于输入供应商公司名开始公开搜索，没有出现核验结果，符合短段只到安排独立核验的边界。"
+      },
+      "supplier_number_phrase": {
+        "verdict": "PENDING",
+        "reason": "“别用我给的号码”可被理解为一般提醒，也可被理解为存在未展示的既成号码交付；现有材料不足以确定是哪一种，因此不列为确定矛盾。"
+      }
+    },
+    "claim_limits": [
+      "本轮只复验冻结R2正文的RC3及局部退步，不进行自动文学质量通关。",
+      "CLOSED_BY_LOCATED_TEXT只表示D报告所定义的RC3在当前448字中已有可定位证据，不等于整场结构、情绪强度、对白自然度或全书质量通过。",
+      "NO_LOCATED_BLOCKERS表示本轮未发现需要阻断该冻结稿的确定局部问题；不等于刘先生会喜欢，也不等于可以把AI意见当真人反馈。",
+      "原方法4稿和当前R2稿的真人结果仍为UNKNOWN；校准漏检0/2及0/1保持不变。",
+      "两次正文额度已经用完；本报告不建议第三候选，也不扩大修改区间。",
+      "“别用我给的号码”只被记录为待核连续性歧义，不据此虚构此前发生过号码交付，也不将其误报为确定事实冲突。"
+    ]
+  },
+  "coordinator_validation": {
+    "all_quotes_located_in_frozen_output": true,
+    "count_excluding_whitespace": 448,
+    "rc3_local_evidence_supported": true,
+    "reason": "从带走材料以后查，变为将原用于房子的眼前时间投入独立查询；查证与认账仍分离。只支持当前短段内的判断和时间分配变化，不支持长期关系或文学审美结论。",
+    "supplier_number_phrase": "LANGUAGE_AMBIGUITY_PENDING",
+    "number_handover_found_in_approved_input_or_protected_opening": false,
+    "number_handover_in_current_complete_scene": "UNKNOWN_CURRENT_COMPLETE_SCENE_NOT_GENERATED",
+    "historical_diagnostics_RC1_RC2": "NOT_CLOSED_BY_THIS_SCOPED_REPORT"
+  },
+  "other_diagnostic_issues_closed": [],
+  "human_result": "UNKNOWN",
+  "literary_acceptance": false,
+  "full_scene_authorized": false,
+  "third_candidate_authorized": false,
+  "used_prose_revision_rounds": 2,
+  "remaining_prose_revision_rounds": 0,
+  "coordinator_prose_edits": 0,
+  "callback_transport_observation": {
+    "actual_delivery_verified": true,
+    "initial_busy_target_attempt": "WAITED_30_SECONDS_ONCE_THEN_DEFERRED",
+    "reviewer_received_user_retrigger": "传回去",
+    "unattended_end_to_end_delivery": "NOT_PROVEN_FOR_THIS_ROUND",
+    "future_every_round_delivery_verified": false
+  },
+  "private_native_evidence_sha256": "cb7a48b460c6045790b0993478a74a3514df2f9512f170b1d999793c11d52d7f",
+  "private_source_evidence_sha256": "d812fe140cffd6ac4dfe5f7340f4f4d41186cabe8c0a60e46eb904f31b99bd0c"
+}
