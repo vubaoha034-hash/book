@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 181,
-  "recorded_at": "2026-10-02T03:31:58+00:00",
+  "sequence": 182,
+  "recorded_at": "2026-10-02T03:36:34+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -485,7 +485,8 @@
     "Actual A2 preparation callback settled once; one scoped fresh Chat writer claimed under a separate immutable execution lock; no literary promotion",
     "Fixed inherited external-review fixtures and higher-priority human/reviewer-repair precedence; 49 continuity/authority tests passed, plus 28-file structure and 27 current-state checks",
     "Approved A2 packet dispatched once into a new nonproject Chat with extreme-high thinking; exact whole message and empty editor verified; single writer attempt consumed",
-    "Frozen actual 439-character writer suffix without coordinator edits; full-prefix/whole-length contract failed; prepared only output-format clarification for external review, one of two prose rounds consumed"
+    "Frozen actual 439-character writer suffix without coordinator edits; full-prefix/whole-length contract failed; prepared only output-format clarification for external review, one of two prose rounds consumed",
+    "Output-contract-only A3 preparation sent once to original external Chat with Opera Neon attached; complete body read back, empty composer; end turn for active callback"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -1754,7 +1755,7 @@
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "dfc3235195fb857a3f6ed95feef935a247dcc621066e49672db730c07ea89feb",
+    "project_state_sha256": "34eb93fc4f5fbd65cababf107dfa3d4c05fb2d06f8b6c5cdc9e92f12292924c1",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -2647,8 +2648,17 @@
         },
         "review_task_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-REVIEW-20261002-03",
         "review_callback_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03",
-        "dispatch_status": "PREPARED_NOT_SENT",
-        "callback_received": false
+        "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+        "callback_received": false,
+        "send_click_count": 1,
+        "complete_body_verified": true,
+        "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+        "plugin_attached": true,
+        "dispatch_message_sha256": "b1522302ead606c84a352a31e3380830711771c51e7e389a72669233a410aafc",
+        "sent_message_sha256": "2471dd8c894c62c0aed54a79c606a707be19d608d347944009f60cd9141d4f54",
+        "strict_whole_string_guard_passed": false,
+        "only_rendering_difference": "Opera Neon app label adds newline; complete body otherwise exact",
+        "transient_input_error": "First fill timed out; composer then observed empty; one bounded fill retry completed; no duplicate send"
       },
       "remaining_prose_revision_rounds": 1
     }

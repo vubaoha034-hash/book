@@ -4475,8 +4475,17 @@
         },
         "review_task_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-REVIEW-20261002-03",
         "review_callback_id": "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03",
-        "dispatch_status": "PREPARED_NOT_SENT",
-        "callback_received": false
+        "dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+        "callback_received": false,
+        "send_click_count": 1,
+        "complete_body_verified": true,
+        "reviewer_conversation_url": "https://chatgpt.com/c/6abe1199-4834-83ea-a039-95704f9392dd",
+        "plugin_attached": true,
+        "dispatch_message_sha256": "b1522302ead606c84a352a31e3380830711771c51e7e389a72669233a410aafc",
+        "sent_message_sha256": "2471dd8c894c62c0aed54a79c606a707be19d608d347944009f60cd9141d4f54",
+        "strict_whole_string_guard_passed": false,
+        "only_rendering_difference": "Opera Neon app label adds newline; complete body otherwise exact",
+        "transient_input_error": "First fill timed out; composer then observed empty; one bounded fill retry completed; no duplicate send"
       },
       "remaining_prose_revision_rounds": 1
     }
