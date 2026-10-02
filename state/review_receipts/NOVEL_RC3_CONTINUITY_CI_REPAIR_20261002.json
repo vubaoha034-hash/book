@@ -1,0 +1,11 @@
+{
+  "schema_version": "novel-control-repair/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-02T03:27:51+00:00",
+  "affected_ci_job": 110691579767,
+  "observed_failure": "Three unit tests failed: missing inherited scoped fixture and lower-priority prep rejecting higher-priority human FAIL/reviewer repair",
+  "correction": "Isolate original-route fixtures; return higher-priority action before scoped branch; add scoped single-output and evidence-boundary tests",
+  "tests_passed": 49,
+  "fiction_modified": false,
+  "human_quality_promoted": false
+}

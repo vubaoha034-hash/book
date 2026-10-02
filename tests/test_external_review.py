@@ -20,7 +20,11 @@ class ExternalReviewBoundaryTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         project = json.loads((REPO / 'state/project_state.json').read_text(encoding='utf-8'))
         self.project = copy.deepcopy(project)
-        self.cp = {'external_review_state': copy.deepcopy(project['external_review_state'])}
+        # These fixtures exercise the original external-review route alone.
+        # Scoped descendants have their own evidence and separate tests.
+        self.project['external_review_state'].pop('scoped_revision_preparation', None)
+        self.project['external_review_state'].pop('scoped_revision_execution', None)
+        self.cp = {'external_review_state': copy.deepcopy(self.project['external_review_state'])}
         self.receipt_path = project['external_review_state']['receipt']['path']
         self.receipt = json.loads((REPO / self.receipt_path).read_text(encoding='utf-8'))
         lock = json.loads((REPO / current.EXTERNAL_REVIEW_LOCK_PATH).read_text(encoding='utf-8'))
@@ -153,6 +157,14 @@ class ExternalReviewBoundaryTests(unittest.TestCase):
         self.assertEqual(self.run_gate(), next_action)
         self.assertFalse(self.receipt['standalone_quality_gate_allowed'])
         self.assertFalse(self.project['external_review_state']['new_prose_authorized'])
+
+    def test_pending_preparation_cannot_veto_human_rejection(self):
+        self.project['external_review_state']['scoped_revision_preparation'] = {'status': 'PENDING'}
+        self.test_user_rejection_has_priority_over_external_route()
+
+    def test_pending_preparation_cannot_veto_reviewer_repair(self):
+        self.project['external_review_state']['scoped_revision_preparation'] = {'status': 'PENDING'}
+        self.test_model_praise_cannot_release_prose_after_failed_calibration()
 
     def test_existing_route_lock_cannot_be_replaced(self):
         path = self.root / current.EXTERNAL_REVIEW_LOCK_PATH

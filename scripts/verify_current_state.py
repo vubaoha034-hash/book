@@ -203,7 +203,9 @@ def scoped_revision_preparation_action(root: Path, project: dict, route: dict,
     if preparation is None:
         return expected
     if expected != 'DEFINE_ONE_SCOPED_METHOD_REVISION_FROM_EXTERNAL_REVIEW':
-        raise ValueError('SCOPED_PREPARATION_BASIS_SUPERSEDED')
+        # A human rejection or reviewer repair supersedes pending preparation.
+        # Do not let the lower-priority scoped branch veto that action.
+        return expected
     lock = bound_json(root, preparation.get('lock', {}))
     task = bound_json(root, preparation.get('task', {}))
     packet = safe_file(root, task.get('writer_packet', {}).get('path', '')).read_bytes()

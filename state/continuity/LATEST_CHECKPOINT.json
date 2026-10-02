@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 178,
-  "recorded_at": "2026-10-02T03:23:43+00:00",
+  "sequence": 179,
+  "recorded_at": "2026-10-02T03:27:51+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -482,7 +482,8 @@
     "RC3 preparation and complete writer input delivered as one message to existing Chat/极高 reviewer with Opera Neon; only app label display newline differs; awaiting actual preparation-review callback, no fiction",
     "Processed actual RC3 preparation callback exactly once; preserved input A1 and locks, froze corrected isolated input A2 for external scope recheck; no new prose",
     "RC3 input A2 review delivered once with Opera Neon attached and 极高 effort; exact body read back and editor empty; end turn awaiting active callback",
-    "Actual A2 preparation callback settled once; one scoped fresh Chat writer claimed under a separate immutable execution lock; no literary promotion"
+    "Actual A2 preparation callback settled once; one scoped fresh Chat writer claimed under a separate immutable execution lock; no literary promotion",
+    "Fixed inherited external-review fixtures and higher-priority human/reviewer-repair precedence; 49 continuity/authority tests passed, plus 28-file structure and 27 current-state checks"
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
