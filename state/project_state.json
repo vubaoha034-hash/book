@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-01T16:37:40+08:00",
+  "updated_at": "2026-10-02T03:54:44+00:00",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW",
-  "status": "NOVEL_RC3_R2_UNIQUE_448_CHARACTER_OUTPUT_FROZEN",
+  "next_required_action": "AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION",
+  "status": "NOVEL_RC3_R2_FROZEN_PROSE_DELIVERED_AWAITING_ASYNC_REVIEW",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -3685,9 +3685,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW",
+  "next_action": "AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "最后R2实际完整448字已冻结，保护197字符与段落分隔逐字一致；协调者未改正文。两轮用尽，发送原外审复验RC3及号码引语风险，不自动文学通关。",
+  "current_focus": "唯一448字稿已实际送原外审，Opera Neon已附并明确主动回传；完整正文消息和空输入框已核对。两轮用尽，等待回传触发有限结算，不生成第三候选、不自动文学通关。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -4407,7 +4407,7 @@
       "NOVEL-RC3-OUTPUT-CONTRACT-PREP-CALLBACK-20261002-03"
     ],
     "scoped_revision_execution": {
-      "status": "FROZEN_AWAITING_REVIEW_DISPATCH",
+      "status": "FROZEN_AWAITING_EXTERNAL_REVIEW",
       "task_id": "NOVEL-RC3-LOCAL-REVISION-R2-WRITER-20261002",
       "task": {
         "path": "state/tasks/NOVEL_RC3_LOCAL_REVISION_R2_WRITER_20261002.json",
@@ -4433,7 +4433,7 @@
       "generation_count": 1,
       "used_prose_revision_rounds": 2,
       "new_prose_authorized_now": false,
-      "next_action": "SEND_ONE_FROZEN_RC3_LOCAL_REVISION_FOR_EXTERNAL_REVIEW",
+      "next_action": "AWAIT_EXTERNAL_REVIEW_OF_ONE_FROZEN_RC3_LOCAL_REVISION",
       "attempt_owner": "CURRENT_COORDINATOR_ONLY",
       "writer_page_id": 33,
       "writer_initial_url": "https://chatgpt.com/",
@@ -4466,8 +4466,14 @@
       },
       "review_task_id": "NOVEL-RC3-R2-PROSE-REVIEW-20261002-04",
       "review_callback_id": "NOVEL-RC3-R2-PROSE-CALLBACK-20261002-04",
-      "review_dispatch_status": "PREPARED_NOT_SENT",
-      "callback_received": false
+      "review_dispatch_status": "FULL_BODY_DELIVERED_APP_LABEL_RENDERING_DIFF_AWAITING_CALLBACK",
+      "callback_received": false,
+      "review_dispatch_evidence": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_PROSE_REVIEW_DISPATCH_20261002.json",
+        "blob": "615531868689cec755b63a4a2bdcd12874786cc6",
+        "sha256": "66c625b5aaa7d500f8de3a3d7f2435a83af56d9997d87997e5f3f5d3347dd3f2"
+      },
+      "review_send_click_count": 1
     },
     "scoped_revision_execution_history": [
       {

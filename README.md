@@ -1,4 +1,4 @@
-当前推进：最后一轮独立写作者已交回[唯一完整448字短段](delivery/local-revision-rc3-r2/short-r2-a1.md)，保护开头逐字一致，已冻结且协调者未修改正文。两轮额度用尽；待原外审复验RC3和事实退步，不生成第三候选。原稿与当前稿真人UNKNOWN，文学质量未通关。实时状态见[接管入口](START_HERE.md)。
+当前推进：[唯一完整448字短段](delivery/local-revision-rc3-r2/short-r2-a1.md)已冻结并实际送原外审，Opera Neon已附，等待主动回传复验RC3和退步。两轮用尽，不生成第三候选；原稿与当前稿真人UNKNOWN，文学质量未通关。实时状态见[接管入口](START_HERE.md)。
 
 # Novel Writing Master V3
 
