@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "NOVEL-ASYNC-CALLBACK-SETUP-20261001-02",
   "callback_id": "NOVEL-ASYNC-CALLBACK-ACK-20261001-02",
-  "status": "COMPLETE_BODY_DELIVERED_EXACT_PREFIX_MISMATCH_AWAITING_CALLBACK",
+  "status": "BUSY_TARGET_RECOVERY_PREPARED",
   "source_head": "4b5a4586fe2c17c11dc25c7372fed68b6543a9a7",
   "recorded_at": "2026-10-02T08:45:21+08:00",
   "authority": {
@@ -89,5 +89,18 @@
     "plugin_prefix_after": "Opera Neon\n ",
     "callback_received": false
   },
-  "strict_dispatch_verified": false
+  "strict_dispatch_verified": false,
+  "transport_events": [
+    {
+      "at": "2026-10-02T09:00:27+08:00",
+      "task_id": "NOVEL-CALLBACK-RECOVERY-20261002-01",
+      "stage": "prepare",
+      "source_head": "9a2fc1d73b7af1ccc48965a47d9fa056ca4af3bb",
+      "one_writer": true,
+      "message_sha256": "8ee5627bf6b1db37446e159eeb1b1b2c8d819493a0865a2fb10c10c722ecaed2",
+      "reviewer_observation": "Prior callback not written/sent; target processing plus network error; plugin was used",
+      "recovery": "Fresh fixed-target tab; at most one 30-second busy retry; coordinator ends promptly",
+      "callback_received": false
+    }
+  ]
 }
