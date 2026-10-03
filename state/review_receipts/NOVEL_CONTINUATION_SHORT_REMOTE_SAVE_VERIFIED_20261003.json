@@ -1,0 +1,300 @@
+{
+  "schema_version": "native-one-continuation-remote-save/v1",
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "source_head": "bfa925c353aef6d6b5a63b6e42833b02f7e3583d",
+  "recorded_at": "2026-10-03T15:37:56Z",
+  "status": "IMPLEMENTATION_ACTUAL_REMOTE_BYTES_HISTORY_AND_HUMAN_UNKNOWN_GATE_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "implementation_commit": "c2f31a1fab31b30f815fc421ae27298d76cdc447",
+  "implementation_proof": {
+    "status": "REMOTE_CONTINUATION_BYTES_HISTORY_AND_HUMAN_UNKNOWN_GATE_VERIFIED",
+    "remote_head": "c2f31a1fab31b30f815fc421ae27298d76cdc447",
+    "source_head": "bfa925c353aef6d6b5a63b6e42833b02f7e3583d",
+    "checkpoint": 204,
+    "whole_worktree_files": 571,
+    "protected_source_file_count": 523,
+    "current_state": {
+      "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+      "sequence": 204,
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
+      "checks_passed": 27,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "literary_quality_tested_by_this_script": false,
+      "new_prose_authorized": false,
+      "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+    },
+    "human_quality_result": "UNKNOWN",
+    "full_scene_or_TEST01_promoted": false,
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "58597f6656a204e0d180cdaaeff7f752eac3ba3d",
+        "sha256": "1360ba6c43b619844d8a7b33674c00f6a8c154fc721bb2872fb2db6f032917b1"
+      },
+      {
+        "path": "README.md",
+        "blob": "9527b3875f2f3f1afcaacc343108b878ce94a050",
+        "sha256": "e5cecb4aed0fa0ca6fce443618fca7b1e840a125b5a94c7340fbd159950b36c8"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "acde6f6db3d3458c2da9d8d4cb95853527026c72",
+        "sha256": "5e8855a892f7196a13e9f741f2f99144f5dbd82c2a5de3d60002e4ba7568a282"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "fa3b16a9fcbaaac23ef5fa84095b36a312b04ed2",
+        "sha256": "e512daf5566a270b53614d189014e0f0c6bf1e89eb7d07d069d19026e8a1899c"
+      },
+      {
+        "path": "config/novel-continuation-short-20261003.json",
+        "blob": "0c617d24706f34a3a78e1499fc87be3b777bd34a",
+        "sha256": "9f4ae1b835462eef32f8caaeb829de50d340484f206cdf4d3976c8d9af5f2c28"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/continuation-a1.md",
+        "blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+        "sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/editor-policy.txt",
+        "blob": "3f2db4319bec475df417ffcf03174d31955f704e",
+        "sha256": "0ab674c046c9ebdbf5bac3e8ff5378be556ff6e814610cacf59f7df765b387d2"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/editor.packet.json",
+        "blob": "5fd999e4838f0389f934be6e9674441582dd8bd8",
+        "sha256": "d1ee8095bf31cd27fc0cdde88fac93209af5b5511d48f170fee0585a8f27905f"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/facts-policy.txt",
+        "blob": "3a972d5a67eeb94a25820c754136bb6fabb0bea2",
+        "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/facts.packet.json",
+        "blob": "419ebe7df5accbdb8675270b5aa262a228fd2d1b",
+        "sha256": "78ea2b8dddc382388024972e35a405f2aed1c5377bb3abe8f3f250317e606881"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/reader-policy.txt",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/reader.packet.json",
+        "blob": "cec0ad56814bdc5442edd5d7de1febf9c118fdfa",
+        "sha256": "77a3d8c440b72e652293f8bcceb809f685343554357c970dcc6ee3ce925ff650"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/reading-copy.md",
+        "blob": "9319ad8ca164d35ead2bb028dce5d49c780f5863",
+        "sha256": "6395cd57b134541c568195520c7e2d1e7f4b38cc9fce15e22cf0644d808f8b5e"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/writer-input.json",
+        "blob": "0fb4232f10d9e739cd66fe963bb2cdfb21027072",
+        "sha256": "96daca156c05ea415ec97c0a76526712c5470333082ae15181822ecba4263707"
+      },
+      {
+        "path": "delivery/continuation-short-20261003/writer-policy.txt",
+        "blob": "110a12094590def1a96836b32ae70c06c0484d64",
+        "sha256": "920043b28469a861c15556e4055c2fc9b851c2433fe0b69483627e2af1f9155c"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+        "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+        "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+      },
+      {
+        "path": "docs/NOVEL_SAME_SCENE_CONTINUATION_RESULT_20261003.md",
+        "blob": "792d4f231e8d38a6bd85c183604dfb1aaa5a989e",
+        "sha256": "2893ef90d005bb0e891453c8c8edd42148b6114ca695639b569f4b132ab56f48"
+      },
+      {
+        "path": "scripts/novel_continuation_trial.py",
+        "blob": "8406b54db014c0a96cd3eac570e6d16daaa1e24a",
+        "sha256": "309d29806e37882b1e6d3019c463f11701340b5c6747a45d71c97d08efe92135"
+      },
+      {
+        "path": "scripts/verify_continuation_trial.py",
+        "blob": "507b59f6809c33b464c6768417c76f8602a9ea59",
+        "sha256": "dc4e8266d2081cdc337d92ae2bf9d8d7c08f369131c408420f8b30683c3ffb31"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "0d5a0337ba1cdd7b7c3bdf2314cd83dc12a0d420",
+        "sha256": "e59a5b648251cbd04062a93bb7dcc2493225ba0e24b19d379cee69e5b4ec5a83"
+      },
+      {
+        "path": "scripts/verify_hook_trial.py",
+        "blob": "d850cf4f214eb43187d6bd3242eacf8b56da39bb",
+        "sha256": "26808f56c28d32a7e5b11f2ca4c54887e5b09ffc346fcf339c36095fcbba948d"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "c68ab76136bf08d0e4b0007aa632903e4fef8a21",
+        "sha256": "a36eb0a07719893cd2f13589461f9a835f116751ef0def47ed6be07acf45089d"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "e4bf433a18a2ab855a093f2592628a48ae6a9e13",
+        "sha256": "dc87c9eaf3474b0291823c688cfeebfd27beb50c31d5a96c35dfe636153141ae"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_AUTHORIZATION_20261003.json",
+        "blob": "e3fde95224b42b15f0a9ecd43d90d3cd0a2fcdfa",
+        "sha256": "c999955170636f77213f86fb2464e0e7316b322f9ed715298768fe1168805074"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_RESULT_20261003.json",
+        "blob": "4ad342fc805e76f6388ba9eb81adfed59cfc9870",
+        "sha256": "36e821b1c7c30074278cc141595f66db7394cb01ea14571066bc7a6a162464db"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_VALIDATION_20261003.json",
+        "blob": "44c86043e24fe06158936be36f93fdb341c47c91",
+        "sha256": "b00e02e6a858b48273137cac01da707ab82c793aff8274f09aabed972fa13990"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/coordinator-report-limitations.json",
+        "blob": "e94c637f601d421cbc878e3655b366c24122fdda",
+        "sha256": "92f96b6c591fd22bf623c764fd097a5de298bae7a67a49ca07734fd380983f3e"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/coordinator-settlement.json",
+        "blob": "e8ebf2089ac27ebcd4ca99c42738ca251cac5f9b",
+        "sha256": "9d5d8cef32373c58939d6b710e75733f9c20a7fe5cd1bb5ff67a545236005435"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/editor.attempt.json",
+        "blob": "6c8a30193800ab9e2df2038c87ef5e06dcf5afd4",
+        "sha256": "afb0a70e985ccc89e877d3e8a17f6bc0f39f88abc09bf3dbd852f29e727487a9"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/editor.evidence.json",
+        "blob": "98b67fd4e675960d5dfe3608830101e105ab3f7f",
+        "sha256": "aaa9d57a3a0b9a06d2899f3fb417631a97413f3701bc6450d06704c044095442"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/editor.raw.txt",
+        "blob": "aadd8bcb3e90bbe6c75874e8d51cfeab167fe5ef",
+        "sha256": "ee65b3ef6dee58056fdee1304a76a077f99d7d3463f61344c38f0937639b46ff"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/editor.runtime.json",
+        "blob": "e22577a1fc272d4123baa28ff4cd2d2c7653e245",
+        "sha256": "d63719d86bf53d880a774b771ba4a12cb19ff9646b0acf00d3816a81c92e77e8"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/facts.attempt.json",
+        "blob": "a63dcab2d82a05c04fb8a2ffdcbff3f2dfaf462d",
+        "sha256": "2907db1389f39a51b04798e79af2cf4df1aaa4236159036f5d9bb3412a15a1ac"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/facts.evidence.json",
+        "blob": "d5447da5f5fc8850ceeb76183433d0fa786e5e4c",
+        "sha256": "984f457acb00b5cd383fb5048b4be0a11145711bd05aef52ed3f1fde096255b3"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/facts.raw.txt",
+        "blob": "bf94d35e6f7613af1b4f372fb0757eedbfb7ab55",
+        "sha256": "7f059b3563961b879adff4f2024836e61137450e12d3739732946453f42379b5"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/facts.runtime.json",
+        "blob": "406244d9295eefda1dede09372e31760bb34d8d2",
+        "sha256": "9e720d58298b9f746a83cbfa1fc4c2b39eb91c873e43bc3317b2f3a5e3541808"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/pending-human-review.json",
+        "blob": "87552d00cef2022cf5e17450be26267f4fa7e742",
+        "sha256": "9109694597af8282fb0574d9befc06efdfe65da3b51cb875e88fcfb4f090eea3"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/reader.attempt.json",
+        "blob": "41002c88158bdf85e66f82211fc638f5d18b9efd",
+        "sha256": "3ef95c05b72559d8c1104c650ed156bd6a0ab1b8d123349170868c70f8a1fc98"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/reader.evidence.json",
+        "blob": "ee99db61ac5abd950a4f609c40b14e74eb65b73c",
+        "sha256": "d1701c06acc4677ef6fe27b3064dd928864ce4f657bf3ddf9c876f4378871f4a"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/reader.raw.txt",
+        "blob": "6b01b563d05ba95cef52c2d1a241786aa49902cc",
+        "sha256": "f08b4bbfbfaad4821ae00a6cbe4b1c9117a1c6b198fc623ab132cd53b38b9171"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/reader.runtime.json",
+        "blob": "a65af2710e98e4dd7f17ae6680f167f742b3c00e",
+        "sha256": "7a31c8103ff7309a64e2ab06e93209b61379c7fee9ff86abeb463dcf25ba659e"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/writer.attempt.json",
+        "blob": "1b21d1da3569d2794f73e9d7436f3d592e255e05",
+        "sha256": "5ef7246eb31a40b76a17d95f419cb0375866fc285b843228fd9c761270ead1c9"
+      },
+      {
+        "path": "state/reviews/continuation-short-20261003/writer.runtime.json",
+        "blob": "265cec288c331db9335017f96f15f2a31dc26e0e",
+        "sha256": "0411c2cbfc23cb280d8971658121b2e153766b7bb4961430e617d4041bcd85ad"
+      },
+      {
+        "path": "state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json",
+        "blob": "4fd120b38fe275163f934edd86934d987abba577",
+        "sha256": "2cd0bc0ec3ee8d3928534e3d8482947a5afbdde3c0a88ef6bcccb1b1c9bad130"
+      },
+      {
+        "path": "tests/test_continuation_trial.py",
+        "blob": "af2b90d5a579b51a11d9b4b13df168753319914b",
+        "sha256": "47615736fc4f5a5db98ba63dbf2a8c61ed554755b5d959558ca0efbcd351ee92"
+      },
+      {
+        "path": "tests/test_current_state.py",
+        "blob": "cb876a004b46d414747a58ea6d2d58ede24dc005",
+        "sha256": "70f9a4d8fa71435c06daac072fde69bb7a3683eb3779ecbc4f0138c37628e226"
+      },
+      {
+        "path": "tests/test_hook_trial.py",
+        "blob": "fefc572bb90e008e0e4d28f0c4fba051f9b4b879",
+        "sha256": "f73ce47a08c6be4e04b4592c8c4cfe78fe39fa2300a07a29290d4ef0674bd695"
+      },
+      {
+        "path": "tests/test_hook_trial_human_feedback.py",
+        "blob": "a141716d251770361f15ea5b536322d46d0eb275",
+        "sha256": "4334236355610356cecd725ad09890bfca321a320d00f3f147c4f23db0681846"
+      },
+      {
+        "path": "tests/test_hook_trial_qualified_short.py",
+        "blob": "6350e177a375a487a02729a2d8db1ce1d1ab495c",
+        "sha256": "dc376114225b503ee26e12f481edc1df5f400bb4d378cc34e71bd31e7503bf9e"
+      }
+    ]
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_VALIDATION_20261003.json",
+    "blob": "44c86043e24fe06158936be36f93fdb341c47c91",
+    "sha256": "b00e02e6a858b48273137cac01da707ab82c793aff8274f09aabed972fa13990"
+  },
+  "result": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_RESULT_20261003.json",
+    "blob": "4ad342fc805e76f6388ba9eb81adfed59cfc9870",
+    "sha256": "36e821b1c7c30074278cc141595f66db7394cb01ea14571066bc7a6a162464db"
+  },
+  "human_quality_result": "UNKNOWN",
+  "model_calls_during_readback": 0,
+  "generation_count_during_readback": 0,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
