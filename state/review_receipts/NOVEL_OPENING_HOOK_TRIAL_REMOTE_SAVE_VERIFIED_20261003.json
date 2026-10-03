@@ -1,0 +1,463 @@
+{
+  "schema_version": "native-hook-trial-remote-save/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "recorded_at": "2026-10-03T13:43:17Z",
+  "status": "IMPLEMENTATION_REMOTE_MAIN_BYTES_HISTORY_AND_ACTUAL_HUMAN_GATE_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "implementation_commit": "7ac9be426f019d601871e84a1ac704703ce16f4a",
+  "implementation_proof": {
+    "status": "REMOTE_HOOK_BYTES_HISTORY_AND_ACTUAL_HUMAN_GATE_VERIFIED",
+    "remote_head": "7ac9be426f019d601871e84a1ac704703ce16f4a",
+    "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+    "checkpoint": 201,
+    "checked_count": 78,
+    "files": [
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_AUTHORIZATION_20261003.json",
+        "blob": "86b77d1be685777ae266008291f3f5d3d9532798",
+        "sha256": "bc6ea854d8f7f51f7abf27e8491e81a9532b688dd5db9f67f84ababc2080b8c9"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+        "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+        "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json",
+        "blob": "f108423a9f6e82fb18712e32dec2966cccabf69b",
+        "sha256": "f9409fb84519f7de033d18736d2b0bff256ec17b94a74a12066481ff5ea1027c"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/short-a1.md",
+        "blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+        "sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.json",
+        "blob": "c7c535e23a374aa83fcde1cd17ef83c17b69012a",
+        "sha256": "5d8cf6465177931d6d01e420923c7a4a345a75f9158407a9c18b23b42f5ef81d"
+      },
+      {
+        "path": "config/novel-hook-trial-20261003.json",
+        "blob": "78e0715274e6ae5c0c835325cbf54236f3d20950",
+        "sha256": "ac2db5fb62a9c05572543e8484a36668b6500fc69dfa30a17cd6b1899a29005e"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/diagnosis.packet.json",
+        "blob": "c21a2dc623883265e24059afcff7e419b45ae8d9",
+        "sha256": "712fd17904e9db9ae30e882534bf189c7a3315b3d48905eae72a721a1c2058ac"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/diagnosis-policy.txt",
+        "blob": "c991cfb3d58849db8644144c1d0436143f5bb37b",
+        "sha256": "d0498d2858857fc8cd0378d90ccb60dddd3ef53fde1d542f05103084f27797f8"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/writer-input.json",
+        "blob": "3590482eab16e175fbaed6b7d8045fd0b630d0a6",
+        "sha256": "26e39a4cc99284deb393374dace267926fe76c5cdf5b5a35ce68bd9d4ccb6867"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/writer-policy.txt",
+        "blob": "110a12094590def1a96836b32ae70c06c0484d64",
+        "sha256": "920043b28469a861c15556e4055c2fc9b851c2433fe0b69483627e2af1f9155c"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/facts.packet.json",
+        "blob": "4bd0eec5df578159af19997a61926d9f6b27f571",
+        "sha256": "fd28d9732bf41dc148c4ca3d2f232e7e018f73f132036c799976c08111d88e36"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/facts-policy.txt",
+        "blob": "3a972d5a67eeb94a25820c754136bb6fabb0bea2",
+        "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/editor.packet.json",
+        "blob": "52b50ecc233a18c89cfdfd4b238d643c44da1f4c",
+        "sha256": "0b00433de86e803c9150e526e2d828a6650b29c111e115d3e18905d4d685b30d"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/editor-policy.txt",
+        "blob": "3f2db4319bec475df417ffcf03174d31955f704e",
+        "sha256": "0ab674c046c9ebdbf5bac3e8ff5378be556ff6e814610cacf59f7df765b387d2"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/reader.packet.json",
+        "blob": "d759e06bbd22a84e1d3a87109ddd1f2a1324be92",
+        "sha256": "68ea0b0fdc3850f8d08d970ff33a68f6d3af8defe837ad6377ad169d31df7e18"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/reader-policy.txt",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRANSPORT_RECOVERY_20261003.json",
+        "blob": "aa26e6e86437f2a7c553f18b15da6c47413447d1",
+        "sha256": "02f054c5a8b17e17e3425f0ab2c49faa0428aba24cf9c58d19808148a1156318"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/diagnosis.runtime.json",
+        "blob": "a196dc89182ea5c0c02ea7b0d7293c5ec48336fe",
+        "sha256": "e87ddee56e983ce54d5899c018ce7b5c9ec17f97a094e3c11e3fe3331bab166d"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/diagnosis.attempt.json",
+        "blob": "62c2522d4e55bacb96f365b062536ac05ffa0711",
+        "sha256": "f5acdb40ab9217a60ea080520069f9a374daf5e7b5d74b0adcc31e97bba96180"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/short-a1.md",
+        "blob": "163aa56e6db8aa8bb37ca6d86cb0fb3028ce1177",
+        "sha256": "250101c3cbbe99066d4517c3080145e2829d143485f4bfb9859b68161260a772"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+        "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+        "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+      },
+      {
+        "path": "config/novel-hook-repair-20261003.json",
+        "blob": "e1677f63aa5a51f5c5c41edddf3cd335ed14a3bf",
+        "sha256": "bfd49cc01a863d770f2b3b8ac6df98376517278b531fb28a7a2d5a4e4a75bb39"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/fact-wording-repair-plan.json",
+        "blob": "53c342eff37fc426404daa068b9789f283f5cff2",
+        "sha256": "ab16fb524ad68091561e80e3d67755b2480a2697010722e941d094a86bd597a8"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/facts.raw.txt",
+        "blob": "5e2aa8b3ef22f4b67416838d7c7fe074691a1505",
+        "sha256": "2260b2c9253427102c830ff88907f01cd14756300d64d8b0afae5ff4e303eb31"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/repair-writer-input.json",
+        "blob": "27565ca0614a5179cbeac500e6ada417e180299c",
+        "sha256": "bb50fc18adecda00ab651589b3b2f1aed83a1fd80f6bc64399601ecbe4095601"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/repair-writer-policy.txt",
+        "blob": "819edd35a641210f784df77bdccbb74b2560c010",
+        "sha256": "18106c28147046530f4e465286de5630719c5ba84f8996307d53192ed03aa717"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/repair-facts.packet.json",
+        "blob": "dbf6f00039dab7d8c5c2a2049d97fe986e61834e",
+        "sha256": "2e2e039853c76c4cd01478ad6fe5f1222cec1550608bc6ead975c31fd6c66974"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/repair/writer.runtime.json",
+        "blob": "939e86ad81423f4f5a24f4bc69755819319b82fa",
+        "sha256": "ec93475e95e8f2569019a1dc86157b09603de31ea1636cb62a1727254e829e41"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/repair/facts.runtime.json",
+        "blob": "cc80fd64761e1445bbafc689098fd9d07b9db3fa",
+        "sha256": "8f30da2c35235ff6218254056de847403fd4b41948a93f033a29d7e9d2a7d7d1"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/repair/facts.raw.txt",
+        "blob": "5f4044cae0aba7c93333f90a3b77f5aaca70d953",
+        "sha256": "e2f9bf1112ab4215d6fe8c6dde9046415614b03e23bbc4d82b37c893a87c2275"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/repair/facts.evidence.json",
+        "blob": "c989f5a754a1a1a7c2882690639c9ace39e322b3",
+        "sha256": "a144d054c5d9468f1a254ace1941843c7266db57bb63383b49dabab0b379e503"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/coordinator-settlement.json",
+        "blob": "77f3dec5a8aabe6a8056d77f565f2785eb9a4742",
+        "sha256": "ea99a8997f332f405f4a4218f1a04477b02059c21cb2520a1397e96c1cbb6a2e"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/pending-human-review.json",
+        "blob": "52c2a432e1848db44420fb294de2fe57c926e6dc",
+        "sha256": "d3445c6d13acbe1194464be0e3b15881c9e0c706ada2f5b1dd5dbeb0a369ffee"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.runtime.json",
+        "blob": "262c9eef5f3a5bf5a078b36f8b2cb393f7679e58",
+        "sha256": "11586a6205f33ac49a620aacd356326caf32c441b514a5ef14d54040cc601a29"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.raw.txt",
+        "blob": "46d9bcc483dc7f5b56e207c8a660a1edbb66e1ca",
+        "sha256": "9ae9a3ec8024384b49e2a62e79eb491fc288d68387f30aead546473611895dcd"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/facts.runtime.json",
+        "blob": "6d5d32017167a9108b14d4d8146517e2de7c28c9",
+        "sha256": "17e1a07145581fdd6fe9e5ebcb7bb12a81a114d51df82029cd80259aca35ae7a"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/editor.runtime.json",
+        "blob": "803517c038d5503f480fdec0a3ceb0c0bdfc1e39",
+        "sha256": "16d03addc44389a648574b03ec6cae4a53950d3822879b6df3f226f1a4630d01"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/editor.raw.txt",
+        "blob": "d6d0e9532b265573a42d1fa4eb2bd2c876465d12",
+        "sha256": "d5f215ab0eaa9eb2dd417ab5f5704c3ee95f579dd70672aa6b0902103c7d806f"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/reader.runtime.json",
+        "blob": "7ab75c670057dc83275cdd89ff42f327fb8a2f1c",
+        "sha256": "8d6e14de33d44ae210167fb844fd1561225118b1ac645379b111476b26224cab"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/reader.raw.txt",
+        "blob": "3aea49ae7dbcec6bb7dbbaf15e9411d0b1f5548f",
+        "sha256": "0d1e7f77dcee37d87f1e03ea5bed3af91214764c16b606d762fc3f228b19cc84"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/writer.runtime.json",
+        "blob": "185e2436a72934eb011f8de2f397a7eabdc1ae46",
+        "sha256": "0a8667d04dea4d9eab87657cea82046dacc981397ed9e84145900e912e7803ae"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.evidence.json",
+        "blob": "fb1a202ba8d6d000500154d39fc5362dc9b00fb4",
+        "sha256": "199efec8be17637ff9379ae54c29daf905efa171c5103b7896efe29602a7c574"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/facts.evidence.json",
+        "blob": "b6baef85e93cd4a259bf2f96e822d46f682cae90",
+        "sha256": "cb923f4ded2fd72df8f115812d68c90639aa184dc7ce49f58424a7ab04609441"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/editor.evidence.json",
+        "blob": "ae5c134cb3adfd94f0a39f3d712980c5d53fce24",
+        "sha256": "fef2aa99d4078beae53c31742ef40272bdcea6407e9a4a1c87862f62ecb7e329"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/reader.evidence.json",
+        "blob": "85fa4d29694cf2c828818aff152f18f00cab11d3",
+        "sha256": "27aba7d39335f4a58817c7a06097152038d0c085469a8a2a04f68e4718d3e7e3"
+      },
+      {
+        "path": "docs/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.md",
+        "blob": "50f6f408ba681fe2ed59fbc6a689b21bbfb93b2b",
+        "sha256": "3f23a5d1303200e2dbd42f1caaab6b4e4b4aae2406764793945399a83d83b3e6"
+      },
+      {
+        "path": "state/tasks/NOVEL_OPENING_HOOK_TRIAL_AFTER_RETENTION_FAIL_20261003.json",
+        "blob": "1b83bd210ddab54d9c4e9dd9bd4c6a4508d1a63f",
+        "sha256": "92af8f2a61cc58ccfb58470b8460acd16e742aa1ec09007f47e529620a53a1da"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.json",
+        "blob": "3b85d274bd2efa737d050bc208c6e75dc0430354",
+        "sha256": "20ff5449c88d3063d800bbb9fa647ca8311bc6ab28a3018df2c2ba090b13c969"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "39976a6f8da8c51822cdbbdf715ba727cf13007a",
+        "sha256": "34790524d3f3480a73cad1ef2fe077da99066c81af9473e9ef149ba87dcbd5ff"
+      },
+      {
+        "path": "README.md",
+        "blob": "17c9b95ba4a4f8ee2f01b1ea569168cb83981a2a",
+        "sha256": "f09a60ea31aa8ddb79ffcd85cbfd3d654f51de90fd83caeca2775cb2df434969"
+      },
+      {
+        "path": "AGENTS.md",
+        "blob": "d14460e869f85f2e65ddee7e5dfebde6e54874b3",
+        "sha256": "7a979f557742c1e28506f041f5e7150beb92681a43cbc6cb690230ce61dfa644"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "58a580b9228b5b98ee3c33c873cef9328191b3e8",
+        "sha256": "6727fea7a9c92b7491f151821124823f7c00d8efd83066048426b03807889570"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "ff1d6040fb7305184a39b6533a9ac315171d404e",
+        "sha256": "76458bf15ae43dc5c3ac89ab0b4dce2df1c06ef9bd3e5b7d3e73ead9975104c8"
+      },
+      {
+        "path": "scripts/verify_review_publication.py",
+        "blob": "0e7aae67c3f688c9852ccbca1fd73c09f0e5d407",
+        "sha256": "91f2eec1ec638a127d89a1dd8bdc5dbe42e1416a7ed1c857631ae21280fdfb11"
+      },
+      {
+        "path": "tests/test_current_state.py",
+        "blob": "e7ae37fed23c7207e82a37ba5da0c0792f4f1a57",
+        "sha256": "07d05467002db103f56ae41c9f576338ae096d3e7a2d104a39530940a7c8e945"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "6b5c60389b0d5ef240c259b872f49fe019730ae0",
+        "sha256": "a92fa516f6e56c6defc236e641c8450a921394ccf55239d51d0ff67f02efb795"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "fa44fa83d92d67d250d74f868bb6aa30f4726eee",
+        "sha256": "7814278d3e6880fa2bfb89eaaad5d721fb108f8c4ba53992380b055bf7bbdf26"
+      },
+      {
+        "path": "scripts/verify_autonomous_opening.py",
+        "blob": "200a102382f38f5046eceef4e7f5071298cc1a8f",
+        "sha256": "7c05be63e66e2fc4b90ad20830799e154fa2326ea69becf8eca2aa6ee82d2795"
+      },
+      {
+        "path": "scripts/verify_two_role_review.py",
+        "blob": "56717c80c16f23689be7f67317e2e550fb018c23",
+        "sha256": "f7f247dd6c6f908cde67e36da44b766be5476cce593cf259ec58e9453bcc51ea"
+      },
+      {
+        "path": "scripts/verify_prose_repair.py",
+        "blob": "eda07cb05b3493846c6916d3f8fda2bb6e99f57e",
+        "sha256": "77f7f2b01a27c16795a322971ccafd015341deb602df865c4028219b80a8b1a9"
+      },
+      {
+        "path": "tests/test_prose_repair.py",
+        "blob": "25950fac2175f129f4738093562506c10210ba20",
+        "sha256": "1b2531b6794d327bd14b4a0038cbdf2de7fd67cd739001eb6908e0ccd345f805"
+      },
+      {
+        "path": "scripts/novel_hook_trial.py",
+        "blob": "940dc7232d030511ea075ddee787db68c2299124",
+        "sha256": "a77ef72bb10181639f53ac87391421a47f55c1f99b474c6ba3afc9953cb0954e"
+      },
+      {
+        "path": "scripts/verify_hook_trial.py",
+        "blob": "67cbb2f79e7cd0943d9fc6f388172f83bd168547",
+        "sha256": "be9805f4788eb2292e47b9896ef899863238a334f51d1301dad7dfd8c00947b1"
+      },
+      {
+        "path": "tests/test_hook_trial.py",
+        "blob": "016bbc9f53956f3252abac393c53916a45ce392c",
+        "sha256": "16d00060be4f56ad5ca0e1ec9ebadad96a91687da43ce2c939888d2743d4178c"
+      },
+      {
+        "path": "state/learning/hook-trial-20261003/sources.json",
+        "blob": "f97f64925dc604539b2e33b5baa45a02f81644c8",
+        "sha256": "81858aa59614d4d8b35de4ad4628b5bcb8fc80006cabdb4da70e3574a41fd9b6"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_VALIDATION_20261003.json",
+        "blob": "64c6eecbc2490cf7ded3c1f31e22262e9b252c31",
+        "sha256": "c5c644c8cbb7ade45e35901b0e1c8bff14a2a634196949df84a902d31affa661"
+      },
+      {
+        "path": "delivery/hook-trial-20261003/input-change-record.json",
+        "blob": "58477d3d5bb4edadcf50d03a85d73fab1cfcad5c",
+        "sha256": "534d480f8d66e7e526e7eb04c55e83e38224ed84ed6d6427c5cb821c971033c5"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/writer-input.json",
+        "blob": "ae201221b4569a1130a2f25ff64a93a737ad2a54",
+        "sha256": "fd7b05230c6d116fd7ee5b7a42291ae9aa2873b86499481ff5eece7f78d8ccac"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/diagnosis-settlement.json",
+        "blob": "3ccd13c499f5a375601e00e81c98f9714df81116",
+        "sha256": "5a54993878a4577a66a93c1fe26b8cc8ab92178f813c0cdb91507483a2041ad7"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/repair/writer.attempt.json",
+        "blob": "43761dc0bade3b57ed81228c5690a3aa828a4182",
+        "sha256": "4d06636a1bea3337261afc8553d482dcf41719c574e4981983aeb84b47110855"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/repair/facts.attempt.json",
+        "blob": "3e0bf80706db12eb04063d0e3fd08e87141008d9",
+        "sha256": "e99ddda9eff5a8847892bf470a3b5b6a462209e4e50a9b18a83b9d5961776852"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/writer.attempt.json",
+        "blob": "c763e13063ef66539a9c15c78239de38dd4b0d50",
+        "sha256": "1cf4f60781795bfa8cf26049b899f9b3b7569ea4af2e889dea45eff7c36722cb"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/facts.attempt.json",
+        "blob": "15d1375f45ace3eae1402703e25860a6335ca0b4",
+        "sha256": "1257b823961c62bd108a16c8cb50a833f6c332f3b055642fbfb6055514c9af5b"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/editor.attempt.json",
+        "blob": "97fed65436d7f0ed44b8019e12f217df249761c2",
+        "sha256": "cc89c341ec516381e9ccd2cc4a07ac41159698e752b0c6fd6741fe947bb348fd"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/reader.attempt.json",
+        "blob": "f3b141d536d5d70d529527448aac35222c72e389",
+        "sha256": "7aea49837ca170fcca588f0b69ddc07b073f8758fed414008aa12bbc84d71e71"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.attempt.json",
+        "blob": "ac17fde8bb6eedb5eaf51dd8d1cf4fc9a118d2ac",
+        "sha256": "62de925a8350fc0e129ef29a4b935976d2d35598428e9298c63845e07e536ce8"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/initial-human-receipt.json",
+        "blob": "fc6254e6a1dd0cb6dabd8da550876e8aca7810a1",
+        "sha256": "4782475301aa7659b039c99343f6b44fd7fbbd46d859ded453cf60e52fed2110"
+      },
+      {
+        "path": "state/reviews/hook-trial-20261003/metadata-normalization.json",
+        "blob": "d00ffefc54b250ad361938318e36b40defc25176",
+        "sha256": "c78329be35fd8a9d68acf66a211937cdf2a843800bd61dc11ff475c4790f1501"
+      }
+    ],
+    "protected_source_file_count": 450,
+    "all_prior_prose_reports_receipts_and_locks_unchanged": true,
+    "current_state": {
+      "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+      "sequence": 201,
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT",
+      "checks_passed": 27,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "literary_quality_tested_by_this_script": false,
+      "new_prose_authorized": false,
+      "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+    },
+    "human_quality_result": "UNKNOWN",
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_VALIDATION_20261003.json",
+    "blob": "64c6eecbc2490cf7ded3c1f31e22262e9b252c31",
+    "sha256": "c5c644c8cbb7ade45e35901b0e1c8bff14a2a634196949df84a902d31affa661"
+  },
+  "result": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.json",
+    "blob": "3b85d274bd2efa737d050bc208c6e75dc0430354",
+    "sha256": "20ff5449c88d3063d800bbb9fa647ca8311bc6ab28a3018df2c2ba090b13c969"
+  },
+  "final_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 1,
+  "visible_candidate_count": 1,
+  "actual_independent_review_calls": 5,
+  "actual_all_model_calls": 8,
+  "successful_model_calls": 7,
+  "editor_and_reader_scope": "INITIAL_400_CHARACTER_BODY_ONLY_FINAL_SINGLE_CHARACTER_FACT_REPAIR_NOT_REASSESSED",
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_quality_result": "UNKNOWN",
+  "previous_375_human_result": "FAIL",
+  "previous_375_AI_smell": "RELATIVELY_LIGHTER_NOT_FULL_PASS",
+  "literary_quality_validated": false,
+  "intermediate_user_authorization_required": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT",
+  "this_receipt_saved_after_actual_implementation_readback": true,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
