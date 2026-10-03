@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-02T13:30:55+00:00",
+  "updated_at": "2026-10-03T01:07:50.720Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -913,8 +913,8 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
-  "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PREPARED",
+  "next_required_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
+  "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PRE_SEND_BLOCKED",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
@@ -1614,7 +1614,8 @@
     "Phase397 A3 was blocked before actual-human review; no actual-human literary verdict exists for A3",
     "Phase402 actual-human literary review of immutable A1 is pending",
     "Phase407 hidden gates all cleared, but actual-human literary review decisively rejected the scene for no immersion, no emotion and no suspense; premise/scene versus prose execution remains to be diagnosed.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。"
+    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。",
+    "R2 emotion-retention external diagnosis not run: pre-send exact composer comparison failed; no reviewer /c/ URL, no callback and no new prose authorization."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -1629,7 +1630,8 @@
     "PHASE422_V4_HUMAN_SEVERE_AI_SMELL_REJECTED",
     "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
     "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED",
-    "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED"
+    "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED",
+    "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07: pre-send exact composer mismatch; send_click_count=0; external review not started; same-task retry forbidden"
   ],
   "do_not_reopen": [
     "Modify or locally patch frozen Phase397 A3",
@@ -3685,7 +3687,7 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+  "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
   "current_focus": "448字稿收到实际真人情绪与首屏留存FAIL，外审PASS历史保留但可交付状态撤销；单上下文诊断及项目外编辑任务已准备，Opera Neon会话终止导致尚未派发，待恢复后只发送一次。旧稿、旧锁及两轮额度不动，原404字真人UNKNOWN，不扩写。",
   "actual_human_opening_trial_verdict_20260930": {
@@ -4740,10 +4742,22 @@
         "blob": "cc96cf35d8ff6600bbd583f3a329199347abdcba",
         "sha256": "5ddc2e21eb967d40a99353365b0b4fa7cca79d1cdaaee5bb5f2629067e484383"
       },
-      "status": "PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED",
-      "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+      "status": "DISPATCH_BLOCKED_PRE_SEND_EXACT_COMPOSER_MISMATCH_NO_SEND_NO_RETRY",
+      "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
       "new_prose_authorized_now": false,
-      "callback_received": false
+      "callback_received": false,
+      "dispatch_blocker": {
+        "path": "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+        "blob": "f332f942b9adf31d5beca23f435b3318c37b9761",
+        "sha256": "34c411c70be7fc6d8e03ccd7da1cffe0458b1a30405a35b6f23060174ac9653b"
+      },
+      "external_review_started": false,
+      "reviewer_conversation_url": null,
+      "send_click_count": 0,
+      "composer_fill_count": 1,
+      "same_task_retry_allowed": false,
+      "historical_session_terminated_is_current": false,
+      "blocked_at": "2026-10-03T01:07:50.720Z"
     }
   }
 }
