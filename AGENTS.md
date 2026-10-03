@@ -6,6 +6,8 @@ For any new chat or task continuation, start at `START_HERE.md` and run its curr
 
 For this project's current work, read `MAINLINE.md` and the task referenced by `state/project_state.json`. They define the single active improvement route. Preserve the original story and evidence; do not revive a historical phase or change the locked method without a recorded failed frozen test or an explicit scoped user change. Writer-only isolated contexts read their declared packet only; the coordinator settles state before and after that isolated run. The current mainline amends unfinished execution scope, not historical receipts or accepted research checkpoints.
 
+检查点199：刘先生明确要求连续完成直到实际人工审核，常规中间环节不再询问授权。已完成唯一390字新开头与不同上下文的AI编辑、匿名AI读者及事实审查，原报告/证据/状态已保存。实际Sol / Max经运行核对；主写1、内部修订0，新稿真人UNKNOWN。接续[当前结果](docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md)及[执行方式](modules/autonomous-to-human-review.md)，交付这份正文后收实际阅读反馈；AI赞成不晋级质量门。旧稿、197字保护、旧额度0、方法4、故事目标、既有真人FAIL和404未知保持。读取不重跑，不继续生成或扩到完整场景/V5。
+
 ## Highest-priority execution-surface routing
 
 Current scoped override (2026-10-03): task
@@ -20,9 +22,9 @@ claiming an old callback. Cold screening failed its limited calibration and
 cannot certify literary quality or the user's taste. This override supplies no
 new prose budget, no V5, and no release of the old 197-character protection.
 
-Current checkpoint196 continuation: after the completed reentry/fact preparation, the user approved its concrete proposal and required direct completion. One fresh writer generated the only 395-character new opening short; a different fresh context returned FACT_CLEAR, with evidence settled by the coordinator. Read `docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md` and its native authorization/task/result. The single new budget is spent. New-version opening organization was authorized; old artifacts, locks, exhausted RC3 budget and human rejections remain intact. Next: actual human reading of this frozen short. No automatic A2, full scene, TEST-02, V5 or new life facts. FACT_CLEAR cannot become a human PASS.
+Historical checkpoint196 continuation: after the completed reentry/fact preparation, the user approved its concrete proposal and required direct completion. One fresh writer generated the only 395-character new opening short; a different fresh context returned FACT_CLEAR, with evidence settled by the coordinator. Read `docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md` and its native authorization/task/result. The single new budget is spent. New-version opening organization was authorized; old artifacts, locks, exhausted RC3 budget and human rejections remain intact. Next: actual human reading of this frozen short. No automatic A2, full scene, TEST-02, V5 or new life facts. FACT_CLEAR cannot become a human PASS.
 
-当前检查点197：395字稿实际真人FAIL已另存，前一检查点的UNKNOWN仅为历史快照。已按用户要求主动学习专业资料并完成一次独立已知失败后的情绪/互动诊断。读取 [学习与适用边界](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)、[根因与原始证据](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)及当前任务。复用 [人物反应与节奏](modules/emotion-reaction-and-pacing.md)作当前阶段参考，不把教程、失败标签和诊断塞入写作者上下文；未来只取三条简短正向原则。当前无新写作预算，不自动续写，旧锁和方法4保持。读取不重跑模型，原一次诊断已消费；未读完整视频/书籍，不宣称已学会或验证文风。
+历史检查点197：395字稿实际真人FAIL已另存，前一检查点的UNKNOWN仅为历史快照。已按用户要求主动学习专业资料并完成一次独立已知失败后的情绪/互动诊断。读取 [学习与适用边界](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)、[根因与原始证据](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)及当前任务。复用 [人物反应与节奏](modules/emotion-reaction-and-pacing.md)作当前阶段参考，不把教程、失败标签和诊断塞入写作者上下文；未来只取三条简短正向原则。当前无新写作预算，不自动续写，旧锁和方法4保持。读取不重跑模型，原一次诊断已消费；未读完整视频/书籍，不宣称已学会或验证文风。
 
 
 检查点198已按刘先生新要求接入两个实际独立AI角色：编辑读取必要事实和已知失败，匿名读者只看正文；原报告互不传递。实际Sol/Max已核对。编辑REVISE、AI读者YES与真人不想继续的FAIL不一致，不能晋级质量门。见[当前结果](docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md)及[调用方式](modules/two-role-opening-review.md)。取用固定提交的story-review/reader-sim，未安装整套规则。已推进一份既有姓名错位入口和冻结输入准备；当前预算零，后续写作者只读prepared_input.writer_packet。新版本开头重排须新的一次范围和预算，旧稿/197字保护和旧额度不变。读取不重跑，原评审各一次已消费。

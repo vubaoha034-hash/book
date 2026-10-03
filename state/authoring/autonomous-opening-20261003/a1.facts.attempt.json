@@ -1,0 +1,13 @@
+{
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "stage": "a1",
+  "role": "facts",
+  "job_id": "FACTS199A1",
+  "packet": {
+    "path": "delivery/autonomous-opening-20261003/a1.facts.packet.json",
+    "blob": "fc2c0a5e6c23a8bad6855baf4c9ec50ee4f4e0c6",
+    "sha256": "b29ef0a1757bc5e610bf96ede14a7e6b56df76f7a994576e2cc0b2ae0b72cfd9"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T10:28:38Z"
+}

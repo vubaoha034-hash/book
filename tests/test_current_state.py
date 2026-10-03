@@ -50,6 +50,7 @@ class CurrentStateTests(unittest.TestCase):
             state.pop('r2_entry_short_trial', None)
             state.pop('emotion_pacing_learning', None)
             state.pop('two_role_opening_review', None)
+            state.pop('autonomous_opening_to_human', None)
             state['mainline_state'].update(current_step='STEP_01', completed_steps=[],
                 test_artifacts={}, test_results={}, literary_quality_validated=False,
                 new_prose_authorized_now=False, full_v5_authorized=False)

@@ -118,7 +118,7 @@ def check_runtime(root, route, manifest, role, packet):
     return runtime
 
 
-def two_role_action(root, project, checkpoint, historical_action):
+def two_role_action(root, project, checkpoint, historical_action, successor_authorization=None):
     if historical_action != OLD: raise ValueError('TWO_ROLE_CANNOT_SKIP_HISTORICAL_GATES')
     validate_authorization(root,project,checkpoint)
     route = project['two_role_opening_review']
@@ -242,6 +242,14 @@ def two_role_action(root, project, checkpoint, historical_action):
                 value.get('current_human_gate') != 'CURRENT_395_HUMAN_EMOTION_AI_SMELL_INTERACTION_AND_RETENTION_FAIL_OLD_448_FAIL_404_UNKNOWN'):
             raise ValueError('TWO_ROLE_LIVE_CURSOR_DRIFT')
     entry = (root/'START_HERE.md').read_text(encoding='utf-8')
-    if checkpoint.get('sequence') != 198 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or '当前位置：检查点198。' not in entry:
+    successor_entry = False
+    if successor_authorization is not None:
+        successor = bound(root,successor_authorization)
+        successor_entry = (successor_authorization.get('path') == 'state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json' and
+            successor.get('source_checkpoint') == 198 and successor.get('source') == 'ACTUAL_CURRENT_USER_MESSAGE' and
+            successor.get('intermediate_user_authorization_required') is False and successor.get('authorized_primary_generation_budget') == 1 and
+            successor.get('old_RC3_remaining_rounds') == 0 and successor.get('old_197_character_protection_released') is False and
+            '当前位置：检查点199。' in entry)
+    if checkpoint.get('sequence') != 198 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点198。' not in entry and not successor_entry):
         raise ValueError('TWO_ROLE_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

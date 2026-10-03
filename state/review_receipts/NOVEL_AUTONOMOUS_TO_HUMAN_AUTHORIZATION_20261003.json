@@ -1,0 +1,46 @@
+{
+  "schema_version": "native-autonomous-to-human-authorization/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "source_head": "0e38c4fa02e4bddd0dba96711241bd678d92da68",
+  "source_checkpoint": 198,
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "exact_user_instruction": "你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。",
+  "intermediate_user_authorization_required": false,
+  "scope": "EXISTING_MAINLINE_ONE_PREPARED_300_500_CHAR_OPENING_THROUGH_INDEPENDENT_REVIEW_TO_ACTUAL_HUMAN_READING",
+  "authorized_proposal": {
+    "path": "state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json",
+    "blob": "2db4ed1faf43a8a69dd9d3258e58ffe4d7fe2fab",
+    "sha256": "337357e4b5228069230e5b65d5cf9c3d6d05b0625571b4428260c543db334fcf"
+  },
+  "prepared_input": {
+    "path": "delivery/two-role-opening-20261003/prepared-opening-input.json",
+    "blob": "d546ee14a6e0ca484611de7ab5ff2d6e662de21a",
+    "sha256": "fa2f314f4403e08e3ddf814f5af55d19aac1c65aaa67f88ec31cb6bb4cba4e1b"
+  },
+  "previous_review_result": {
+    "path": "state/review_receipts/NOVEL_TWO_ROLE_REVIEW_RESULT_20261003.json",
+    "blob": "5bd5d660a669830b7a15b66c4869e658206c7ec2",
+    "sha256": "3a2a70b89a807fda1ad3bf97d1b1c1c05c3c2c66ac148b67817f5630099ba385"
+  },
+  "previous_human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+    "blob": "0e7ff35eaf896a97a9b7fbf55b79820267fdfad0",
+    "sha256": "6d2e797968a5d76a97f11ef546022953987b1485c06c898905c443b3f0c8215e"
+  },
+  "authorized_primary_generation_budget": 1,
+  "authorized_maximum_internal_repairs": 1,
+  "internal_repair_limit_is_coordinator_selected_bound": true,
+  "repair_trigger": "ONE_VERIFIED_FACT_CONFLICT_LENGTH_FORMAT_OR_HIGH_IMPACT_EDITORIAL_ISSUE_NOT_READER_VOTE",
+  "new_version_opening_reorganization_authorized": true,
+  "old_artifacts_and_locks_must_remain_byte_identical": true,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "multiple_visible_candidates_allowed": false,
+  "background_tasks_authorized": false,
+  "goal_or_world_or_ending_change_authorized": false,
+  "human_quality_supplied_by_authorization": false,
+  "continuation_preference": "常规准备、独立写作、审核、必要范围内修订及原生保存直接推进；只在实际真人阅读门交付。未来同主线有界环节不重复请求中间授权，仍另存具体任务和证据。"
+}

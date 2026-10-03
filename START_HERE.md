@@ -17,17 +17,23 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点198。本轮 `NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01` 按刘先生新要求完成两个独立AI上下文：专业编辑为已知失败后的局部诊断，匿名普通读者仅看正文。实际均为GPT-6.1 Sol / Max，分别约10.2/4.5分钟；报告互不传递。编辑REVISE，AI读者YES与刘先生明确没有续读欲望不一致，保留为诊断漏检，不能认证好看或口味。20处引文记录已定位，原报告未改；当前395字真人FAIL，不原样重投。
+当前位置：检查点199。本轮 `NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01` 已依据刘先生“你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。”连续完成一个已准备的新开头：一次独立主写、390字，三个其他独立上下文编辑/匿名读者/事实审核，实际Sol / Max已核对。报告直接回收，31条引用及9项冻结事实核对，原正文和报告未改写；内部修订0。新稿真人结果UNKNOWN，所有既有真人FAIL、404未知、旧197字保护、旧RC3额度0和方法4保留。常规中间准备与保存不重复索要授权。
+
+接续先读[当前原生任务](state/tasks/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_20261003.json)、[最新执行授权](state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json)、[真实结果与限制](docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md)、[逐项结算](state/authoring/autonomous-opening-20261003/coordinator-settlement.json)和[待真人记录](state/authoring/autonomous-opening-20261003/pending-human-review.json)。交付[这一份390字稿](delivery/autonomous-opening-20261003/a1.md)，先展示正文，再收愿不愿继续和人物情绪/说话感受。AI赞成不提前写成人工通过。
+
+当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING`。下一项是实际人工阅读，无需再次问中间写作授权；[连续执行方式](modules/autonomous-to-human-review.md)与[机器偏好](rules/autonomy-until-human-review.json)已保存。读取结果和状态校验不调用模型，原四次run均已消费一次锁；未来有界同主线环节仍保存新具体任务，不重跑旧运行或循环寻求赞成。此权限不授权改变故事目标/世界/结局、新生活事实、V5、多个可见候选或后台任务，也不提供人工质量判决。
+
+上一检查点198：本轮 `NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01` 按刘先生新要求完成两个独立AI上下文：专业编辑为已知失败后的局部诊断，匿名普通读者仅看正文。实际均为GPT-6.1 Sol / Max，分别约10.2/4.5分钟；报告互不传递。编辑REVISE，AI读者YES与刘先生明确没有续读欲望不一致，保留为诊断漏检，不能认证好看或口味。20处引文记录已定位，原报告未改；当前395字真人FAIL，不原样重投。
 
 接续读[新任务](state/tasks/NOVEL_TWO_ROLE_OPENING_REVIEW_20261003.json)、[真实留存补充](state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json)、[两份评审及范围结果](docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md)、[编辑原报告](state/reviews/two-role-opening-20261003/editor.raw.txt)、[AI读者原报告](state/reviews/two-role-opening-20261003/reader.raw.txt)和[逐项结算](state/reviews/two-role-opening-20261003/coordinator-settlement.json)。已取用固定提交的story-review与reader-sim，读者反应与编辑诊断分开；[来源及实际阅读范围](state/learning/two-role-opening-20261003/sources.json)、[可执行方式与限制](modules/two-role-opening-review.md)。读取这些文件和校验不调用模型，原两次run均已消费。
 
-当前唯一下一动作：`AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT`。审核后已完成[一个入口与输入](delivery/two-role-opening-20261003/prepared-opening-input.json)：从现有合同姓名被罗钧看到的时刻进入，同一第二场、无新生活事实；[唯一短稿提案](state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json)拟一份300—500字。新预算当前0，评审完成不自动授权写作；以后仅发writer_packet字段，不发报告、失败标签或答案。旧RC3额度0、旧197字原稿不解锁、V5与后台任务不授权。原404未知、旧448原否决范围、方法4与故事目标保留。当前认可的连续前场正文未建立，精确停止句仍未知。
+当时唯一下一动作：`AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT`。审核后已完成[一个入口与输入](delivery/two-role-opening-20261003/prepared-opening-input.json)：从现有合同姓名被罗钧看到的时刻进入，同一第二场、无新生活事实；[唯一短稿提案](state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json)拟一份300—500字。新预算当前0，评审完成不自动授权写作；以后仅发writer_packet字段，不发报告、失败标签或答案。旧RC3额度0、旧197字原稿不解锁、V5与后台任务不授权。原404未知、旧448原否决范围、方法4与故事目标保留。当前认可的连续前场正文未建立，精确停止句仍未知。
 
 上一检查点197：本轮 `NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01` 已保存刘先生对395字稿的实际否决：AI味重、情绪平、互动像机器人。已主动阅读专业作者课程实录、网文作者访谈、官方讲座笔记、书籍公开引言和固定提交的场景/文字技能，完成一次独立GPT-6.1 Sol / Max的已知失败后诊断、8处引文及3个窗口引文核对、方法与精简创作原则准备。方法4、原故事与全部旧锁/额度保持；本轮没有新正文。
 
 接续先读[完整真人反馈](state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json)、[学习授权](state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_AUTHORIZATION_20261003.json)、[原生任务](state/tasks/NOVEL_EMOTION_PACING_LEARNING_20261003.json)、[专业学习及实际阅读范围](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)、[两个根因与结果](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)、[原始诊断](state/reviews/emotion-learning-20261003/diagnosis.raw.txt)、[协调者结算](state/reviews/emotion-learning-20261003/coordinator-settlement.json)及[结果回执](state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_RESULT_20261003.json)。可复用[人物反应与节奏](modules/emotion-reaction-and-pacing.md)供本阶段参考，未来写作者只取[三条原则](delivery/emotion-learning-20261003/craft-capsule.json)和冻结事实，不加载失败分析或审核答案。
 
-当前唯一下一动作：`AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL`。[唯一具体后续提案](state/tasks/NOVEL_EMOTION_REACTION_ONE_SHORT_PROPOSAL_20261003.json)为同一场的一份300—500字短段，处理私人冲击怎样改变回应及当前信息节拍；提案预算未授权，当前0。395字真实FAIL、旧448字原有FAIL、原404字UNKNOWN分别保留，精确停止句和继续欲望直接答复不补造。资料阅读与AI解释均不能证明质量改善；没有新正文、替换句、旧额度恢复、旧197字解锁、V5或后台任务。
+当时唯一下一动作：`AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL`。[唯一具体后续提案](state/tasks/NOVEL_EMOTION_REACTION_ONE_SHORT_PROPOSAL_20261003.json)为同一场的一份300—500字短段，处理私人冲击怎样改变回应及当前信息节拍；提案预算未授权，当前0。395字真实FAIL、旧448字原有FAIL、原404字UNKNOWN分别保留，精确停止句和继续欲望直接答复不补造。资料阅读与AI解释均不能证明质量改善；没有新正文、替换句、旧额度恢复、旧197字解锁、V5或后台任务。
 
 上一检查点196：`NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01` 当时完成[唯一395字正文](delivery/r2-entry-trial-20261003/short-a1.md)、不同上下文事实审查与协调者核对；FACT_CLEAR和真人UNKNOWN是当时的冻结快照，不改写。见[原结果](docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md)。当时唯一动作 `AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1` 已由本次实际反馈结清，当前不再等首次判决，也不原样重投。新一次预算已用尽；旧稿、原报告、运行记录与[远端保存回执](state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_REMOTE_SAVE_VERIFIED_20261003.json)原样保留。
 
@@ -49,4 +55,4 @@
 
 当前脚本验证主线与状态的一致性，保留旧稿拒绝边界。它不评判文学质量，也不构成平台级硬锁。
 
-本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。当前不执行旧浏览器派发，也不启动新写作或自动复审。
+本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新已授权短稿见检查点199。

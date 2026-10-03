@@ -1,0 +1,162 @@
+{
+  "job_id": "FACTS199A1",
+  "work_kind": "FACT_AUDIT",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "A51",
+      "original_sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6",
+      "scope": "SECOND_SCENE_OPENING_EXCERPT",
+      "verdict": "FACT_CLEAR",
+      "reading_expectations": {
+        "first_30_60": "TEXT_FACT：第1—3行交代多年首付、原定当晚入住及不记得合同，与冻结事实相容。本工种只核对事实，不评第一屏吸引力。",
+        "first_150_300": "TEXT_FACT：金额与期限由许澄说明后进入罗钧的判断；个人工作间押金与独自筹款风险随后交代，未预设他开口前已知这些信息。",
+        "ending": "TEXT_FACT：第17—19行止于自行搜索供应商公开渠道，没有核验结果、认账、付款或关系恢复。不据此判断真人续读意愿。"
+      },
+      "findings": [
+        {
+          "id": "F01",
+          "basis": "TEXT_FACT",
+          "quote": "首付是他攒了多年的，今晚本该住进那间小公寓。",
+          "line": 1,
+          "explanation": "冻结来源：previous_scene、setting。多年首付与当晚原定入住一致；“本该”表达原计划，没有把已中止的过户写成完成。",
+          "reading_impact": "事实理解仍是购房计划受阻，而非已经取得房屋。",
+          "minimum_scope": "无需事实修订；保留原计划与当前状态的区别。",
+          "recheck": "确认正文没有把原定入住升级为已经过户或已经入住。"
+        },
+        {
+          "id": "F02",
+          "basis": "TEXT_FACT",
+          "quote": "那张纸里的事他一件都不记得，数额却让他不敢只丢下一句不认识。",
+          "line": 11,
+          "explanation": "冻结来源：rojun_memory_and_responsibility、viewpoint_and_knowledge。明确没有第二过去的主观记忆；因金额而留下处理问题，不等于默认合同责任或旧关系成立。",
+          "reading_impact": "区分受到现实压力与承认陌生责任，未出现记忆恢复。",
+          "minimum_scope": "保持无主观记忆与尚未认账的边界。",
+          "recheck": "复验时将关注、停留、查证与认账分别核对，不互相代替。"
+        },
+        {
+          "id": "F03",
+          "basis": "TEXT_FACT",
+          "quote": "许澄伸向他袖口的手缩了回去。",
+          "line": 5,
+          "explanation": "冻结来源：xucheng_private_state、viewpoint_and_knowledge。此处是可观察动作；她知道他不记得，由同一行实际台词说明。正文没有直接进入她的内心，也没有把罗钧的猜测写成她承认的事实。",
+          "reading_impact": "罗钧能接触到的仍是动作和话语，未越过限知视角。",
+          "minimum_scope": "保留可观察层，不要求补写她未说出的私人想法。",
+          "recheck": "确认对许澄心理的确定陈述仍有台词或其他已授权的知情依据。"
+        },
+        {
+          "id": "F04",
+          "basis": "TEXT_FACT",
+          "quote": "工作室的设备款还剩十八万六，这期六万八，五天后到期，停业并没取消协议。",
+          "line": 7,
+          "explanation": "冻结来源：shared_obligation、obligation_information_visibility。余额18.6万元、本期6.8万元、五天到期及停业不取消协议均一致；余额与本期额分列，没有相加，也没有把本期额写成全部责任或首付。信息先由许澄说明，再进入罗钧的期限比较。",
+          "reading_impact": "设备款到期早于30天窗口终点；三十天没有被误写为这笔款项的到期日。",
+          "minimum_scope": "保持金额层级、期限和停业后的责任状态，不扩展设备处置历史。",
+          "recheck": "逐项核对18.6万元、6.8万元、五天，以及本期款属于余额的金额语义。"
+        },
+        {
+          "id": "F05",
+          "basis": "TEXT_FACT",
+          "quote": "我明天下午前要交一万二的工作间押金，继续接后期。",
+          "line": 9,
+          "explanation": "冻结来源：xucheng_own_life。押金1.2万元、明天下午前支付及继续后期业务均一致；正文没有把新工作间写成双方重新共同创业。",
+          "reading_impact": "该安排属于许澄当前的个人工作计划，而非旧工作室恢复。",
+          "minimum_scope": "保持个人业务、押金用途和支付期限，不扩大为共同安排。",
+          "recheck": "确认1.2万元仍是工作间押金，不被当作额外闲钱或足以结清6.8万元的资金。"
+        },
+        {
+          "id": "F06",
+          "basis": "TEXT_FACT",
+          "quote": "那钱不是闲钱。要我独自筹款，押金也会被挤掉。",
+          "line": 9,
+          "explanation": "冻结来源：xucheng_own_life.money_scope、pressure、own_interest。明确预算已有用途，并以独自筹款为条件说明挤占风险；没有预写她已经取消租房、转账，也没有断言她的总资产。",
+          "reading_impact": "目前成立的是预算风险与承受边界，不是已经发生的付款或租房取消。",
+          "minimum_scope": "保留条件风险，不新增未经授权的资产或付款事实。",
+          "recheck": "确认条件句没有被解释或改写成已经发生、必然发生的生活结果。"
+        },
+        {
+          "id": "F07",
+          "basis": "TEXT_FACT",
+          "quote": "供应商有合同和收款留存，你可以自己联系。",
+          "line": 15,
+          "explanation": "冻结来源：shared_obligation.independent_verification、existing_locks。证据留存方是供应商，并允许罗钧自行联系；第17行选择自行寻找公开电话，不依赖许澄的设备或自建查询页。",
+          "reading_impact": "许澄不是唯一证据源，但存在核验路径不等于已经核验成功。",
+          "minimum_scope": "保持独立留存与独立联系方式，不要求本段提前给出结果。",
+          "recheck": "确认核验渠道仍与许澄控制范围分离，且没有把查证准备当成验证结论。"
+        },
+        {
+          "id": "F08",
+          "basis": "TEXT_FACT",
+          "quote": "我三点要走，剩下二十分钟能配合，客户的片子还等着。",
+          "line": 15,
+          "explanation": "冻结来源：known_time_boundary、xucheng_own_life.own_interest。三点离开、剩余二十分钟协助及客户工作均一致；二十分钟明确归属于她的协助时段，没有被写成购房窗口期限。",
+          "reading_impact": "时间限制来自她的工作安排，不支持房屋二十分钟后失效或当天必然失效的结论。",
+          "minimum_scope": "保持协助期限与购房期限分离。",
+          "recheck": "确认所有二十分钟相关表述仍指有限协助，不增加未经确认的过户截止时间。"
+        },
+        {
+          "id": "F09",
+          "basis": "TEXT_FACT",
+          "quote": "他打开搜索栏，照着抬头输入供应商名称。",
+          "line": 19,
+          "explanation": "冻结来源：short_span_endpoint、existing_locks。结尾仅开始自行查证；第17行明确“查，不是认账”。未出现核验结果、责任认领、付款或旧关系恢复。",
+          "reading_impact": "终点仍是有限配合下的查证起步，不是问题已经解决。",
+          "minimum_scope": "保留当前行动层级，不把输入名称升级为核验完成。",
+          "recheck": "确认段尾仍无核验结果、认账、付款及关系恢复。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "我不记得这份合同。",
+          "line": 3,
+          "reason": "TEXT_FACT：明确维护罗钧无主观记忆的冻结边界。"
+        },
+        {
+          "quote": "许澄伸向他袖口的手缩了回去。",
+          "line": 5,
+          "reason": "TEXT_FACT：通过可观察动作呈现许澄，没有直接泄露其内心。"
+        },
+        {
+          "quote": "这期六万八，五天后到期，停业并没取消协议。",
+          "line": 7,
+          "reason": "TEXT_FACT：保留本期金额、到期压力及停业不消灭设备款责任。"
+        },
+        {
+          "quote": "那钱不是闲钱。",
+          "line": 9,
+          "reason": "TEXT_FACT：明确押金已有用途，不把个人预算写成额外可用资金。"
+        },
+        {
+          "quote": "剩下二十分钟能配合",
+          "line": 15,
+          "reason": "TEXT_FACT：协助有明确边界，未要求许澄无限提供时间。"
+        },
+        {
+          "quote": "我自己找公开电话，现在查。查，不是认账。",
+          "line": 17,
+          "reason": "TEXT_FACT：同时保护独立核验与核验不等于认账。"
+        }
+      ],
+      "minimal_change_targets": [],
+      "recheck_conditions": [
+        "EDITOR_HYPOTHESIS：复验仍只对照提交正文与冻结事实，不将未展示内容判为矛盾。",
+        "EDITOR_HYPOTHESIS：重点重查金额层级、五天与三十天的区别、个人押金用途，以及二十分钟的归属。",
+        "EDITOR_HYPOTHESIS：分别确认查证准备、核验结果、认账和付款，不允许前一层动作自动证明后一层事实。",
+        "TEXT_FACT：FACT_CLEAR仅表示本摘录未发现确定矛盾，不表示好看或真人接受。"
+      ],
+      "unknowns": [
+        "TEXT_FACT／未展示：公共休息区的明确名称、第一次电话后的进入顺序没有在摘录中复述；大厅与桌沿的描写不与冻结地点冲突。",
+        "TEXT_FACT／未确认：此前材料的具体归属与交接顺序，冻结事实未确定，正文也未补定。",
+        "EDITOR_HYPOTHESIS／疑点未定：第9行“我不能无限期替你垫着”可能带延续性语感，但不足以确认既往实际垫付；冻结事实未提供垫付史，不列为确定矛盾，也不要求补写。",
+        "TEXT_FACT／未展示：旧设备具体处置过程没有交代；正文未将处置或退货抵扣写成结清办法。"
+      ]
+    }
+  ],
+  "unknowns": [
+    "TEXT_FACT：前后完整正文未提交；本报告不覆盖摘录外内容。"
+  ]
+}

@@ -18,7 +18,15 @@ class TwoRoleTests(unittest.TestCase):
         self.project=json.loads((REPO/'state/project_state.json').read_bytes())
         self.checkpoint=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
         self.route=self.project['two_role_opening_review'];self.seen=set()
+        for v in (self.project,self.checkpoint):
+            v.pop('autonomous_opening_to_human',None)
+            v.update(last_completed_task_id=gate.TASK,last_completed_task_contract=self.route['task']['path'],
+                next_action=gate.NEXT,next_required_action=gate.NEXT,
+                current_human_gate='CURRENT_395_HUMAN_EMOTION_AI_SMELL_INTERACTION_AND_RETENTION_FAIL_OLD_448_FAIL_404_UNKNOWN')
+        self.checkpoint.update(sequence=198,stop=True)
         self.copy('START_HERE.md');self.copy_refs(self.route)
+        entry=self.root/'START_HERE.md'
+        entry.write_bytes(('当前位置：检查点198。\n'+entry.read_text(encoding='utf-8')).encode())
         for key in ('emotion_pacing_learning','r2_entry_short_trial','r2_reentry_fact_preparation'):
             self.copy_refs(self.project[key])
         for role in ('reader','editor'):self.copy(gate.runner.DIRECTORY+f'/{role}.attempt.json')

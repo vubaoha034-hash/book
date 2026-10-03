@@ -1,0 +1,26 @@
+{
+  "schema_version": "native-pending-human-reading/v1",
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "artifact": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "outcome": "UNKNOWN",
+  "human_feedback": {},
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "accepted": false,
+  "delivery_scope": "ONE_390_CHARACTER_SECOND_SCENE_OPENING",
+  "presentation": "BODY_BEFORE_AI_VERDICTS",
+  "questions": [
+    "愿不愿意继续读？",
+    "人物的情绪和说话仍像机器人吗？"
+  ],
+  "execution_permission_already_recorded": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "remaining_primary_generation_budget": 0,
+  "after_human_reply": "直接绑定这份稿件记录实际反馈，按已授权主线做下一有界步骤；不用再次请求常规中间授权，不代替真人认可或扩到V5。"
+}

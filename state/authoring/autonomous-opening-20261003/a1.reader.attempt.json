@@ -1,0 +1,13 @@
+{
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "stage": "a1",
+  "role": "reader",
+  "job_id": "READER199A1",
+  "packet": {
+    "path": "delivery/autonomous-opening-20261003/a1.reader.packet.json",
+    "blob": "872469e50888253d320381fe7cdd1ba091dc1242",
+    "sha256": "05bef9f45bc834b2e11c213c92debd83378b25b9ad1e50c6f929477fb00b9caf"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T10:28:41Z"
+}

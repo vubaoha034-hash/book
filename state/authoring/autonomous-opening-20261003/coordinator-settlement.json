@@ -1,0 +1,689 @@
+{
+  "schema_version": "native-autonomous-opening-settlement/v1",
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "source_head": "0e38c4fa02e4bddd0dba96711241bd678d92da68",
+  "recorded_at": "2026-10-03T10:52:58Z",
+  "status": "ALL_FINAL_REPORTS_EVIDENCE_AND_FACTS_SETTLED_AWAIT_HUMAN",
+  "final_artifact": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "raw_body_rewritten": false,
+  "raw_reports_rewritten": false,
+  "human_quality_result": "UNKNOWN",
+  "AI_quality_certification": false,
+  "fact_conflicts_unresolved": [],
+  "reader_vote_triggers_more_generation": false,
+  "final_reader_reaction": "YES",
+  "final_editor_verdict": "EDITORIAL_CLEAR",
+  "final_fact_verdict": "FACT_CLEAR",
+  "report_dispositions": [
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F01",
+      "basis": "TEXT_FACT",
+      "quote": "首付是他攒了多年的，今晚本该住进那间小公寓。",
+      "line": 1,
+      "scope_checked": true,
+      "coordinator_reason": "原定入住与多年首付来自冻结事实；本该不是过户或入住已经完成。",
+      "fact_bindings": [
+        {
+          "context_field": "previous_scene",
+          "value": "罗钧攒了多年首付，本来今天完成小公寓过户，晚上住进去。同一身份突然多出他毫无记忆的另一套三年经历，过户中止，30天冲突窗口刚开始。前场许澄来电问过户是否停了；他问是否认识，她说：“你现在是不认识。”"
+        },
+        {
+          "context_field": "primary_private_stake",
+          "value": "罗钧攒了多年首付，本来今天完成小公寓过户，晚上住进去。"
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F02",
+      "basis": "TEXT_FACT",
+      "quote": "那张纸里的事他一件都不记得，数额却让他不敢只丢下一句不认识。",
+      "line": 11,
+      "scope_checked": true,
+      "coordinator_reason": "没有第二过去记忆仍明确；被金额迫使停留、查证不等于认领责任。",
+      "fact_bindings": [
+        {
+          "context_field": "rojun_memory_and_responsibility",
+          "value": "罗钧没有第二过去的主观记忆，不能被写成恢复记忆或默认旧关系成立。"
+        },
+        {
+          "context_field": "viewpoint_and_knowledge",
+          "value": {
+            "pov": "贴近罗钧的限知视角。",
+            "rojun_at_entry": "他知道过户中止和30天冲突窗口，仍怀疑诈骗或记录污染；他想拿到房子，也怕被迫接下陌生责任。",
+            "xucheng_at_entry": "她知道自己经历的三年和协议到期。",
+            "rojun_access_to_her_private_state": "只能来自他可观察的声音、姿态、她实际说出的内容和他自己的判断；不能直接知道她心里所想，不能把猜测写成她承认的事实。",
+            "obligation_information_visibility": "许澄和合同掌握金额、期限及工作间安排；罗钧只在听到她说明或看到相应材料后知道，不预设开口前已知全部数额。",
+            "mutual_unknown": "双方不知道另一套过去的来源。"
+          }
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F03",
+      "basis": "TEXT_FACT",
+      "quote": "许澄伸向他袖口的手缩了回去。",
+      "line": 5,
+      "scope_checked": true,
+      "coordinator_reason": "袖口动作是可观察的当下呈现，未补生活史；她知道他不记得由实际台词支持，动作的情感解释仍属编辑假设。",
+      "fact_bindings": [
+        {
+          "context_field": "xucheng_private_state",
+          "value": "许澄记得共同生活、经营摄影工作室和签设备款协议的三年。她明知他不记得，见到熟悉的人仍残留熟悉期待，被当成来碰首付的陌生讨款者会触及她的经历和尊严。"
+        },
+        {
+          "context_field": "viewpoint_and_knowledge",
+          "value": {
+            "pov": "贴近罗钧的限知视角。",
+            "rojun_at_entry": "他知道过户中止和30天冲突窗口，仍怀疑诈骗或记录污染；他想拿到房子，也怕被迫接下陌生责任。",
+            "xucheng_at_entry": "她知道自己经历的三年和协议到期。",
+            "rojun_access_to_her_private_state": "只能来自他可观察的声音、姿态、她实际说出的内容和他自己的判断；不能直接知道她心里所想，不能把猜测写成她承认的事实。",
+            "obligation_information_visibility": "许澄和合同掌握金额、期限及工作间安排；罗钧只在听到她说明或看到相应材料后知道，不预设开口前已知全部数额。",
+            "mutual_unknown": "双方不知道另一套过去的来源。"
+          }
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F04",
+      "basis": "TEXT_FACT",
+      "quote": "工作室的设备款还剩十八万六，这期六万八，五天后到期，停业并没取消协议。",
+      "line": 7,
+      "scope_checked": true,
+      "coordinator_reason": "18.6万是余额，6.8万是其中本期款，五天到期；信息由许澄先说出，停业不取消协议。",
+      "fact_bindings": [
+        {
+          "context_field": "shared_obligation",
+          "value": {
+            "carrier": "第二过去中，两人为共同经营的小型摄影工作室购置灯具及摄影设备所签的分期付款协议。工作室后来已停止经营。",
+            "persons_named": [
+              "罗钧",
+              "许澄"
+            ],
+            "remaining_balance_yuan": 186000,
+            "current_due_installment_yuan": 68000,
+            "current_due_offset_days_from_scene": 5,
+            "amount_semantics": "6.8万元是本期到期款，包含在剩余18.6万元中；不是全部责任，也不是首付金额。",
+            "independent_verification": "设备供应商自己的合同及收款留存可核验。罗钧可通过独立公开联系方式或过户告知单的核验路径联系留存方，核验不依赖许澄的设备或自建查询页。",
+            "not_resolved_by_closure": "工作室停业不等于已履行或取消设备款。旧设备处置及退货抵扣不能在本场被临时写成足以结清余额的办法；具体处置历史不在本场展开。"
+          }
+        },
+        {
+          "context_field": "viewpoint_and_knowledge",
+          "value": {
+            "pov": "贴近罗钧的限知视角。",
+            "rojun_at_entry": "他知道过户中止和30天冲突窗口，仍怀疑诈骗或记录污染；他想拿到房子，也怕被迫接下陌生责任。",
+            "xucheng_at_entry": "她知道自己经历的三年和协议到期。",
+            "rojun_access_to_her_private_state": "只能来自他可观察的声音、姿态、她实际说出的内容和他自己的判断；不能直接知道她心里所想，不能把猜测写成她承认的事实。",
+            "obligation_information_visibility": "许澄和合同掌握金额、期限及工作间安排；罗钧只在听到她说明或看到相应材料后知道，不预设开口前已知全部数额。",
+            "mutual_unknown": "双方不知道另一套过去的来源。"
+          }
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F05",
+      "basis": "TEXT_FACT",
+      "quote": "我明天下午前要交一万二的工作间押金，继续接后期。",
+      "line": 9,
+      "scope_checked": true,
+      "coordinator_reason": "明天下午前、1.2万押金和后期业务绑定她的个人工作计划，没有重启双方创业。",
+      "fact_bindings": [
+        {
+          "context_field": "xucheng_own_life",
+          "value": {
+            "present_work": "目前独立接摄影后期工作，打算租一个小工作间继续自己的业务。新工作间只属于她当前的安排，不能被写成与罗钧重新共同创业。",
+            "ordinary_plan": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+            "money_scope": "这1.2万元已留作新工作间押金，不是额外闲钱，也不足以结清本期6.8万元。她是否还有其他资产，本场不擅自下总资产结论。",
+            "pressure": "若旧责任要她先独自筹款，押金预算也会被占用，新工作间安排就会落空。这里只确认风险与她的边界，不预写她一定取消租房、转账或做某个动作。",
+            "own_interest": "她希望继续挣钱、维持自己现在的生活；配合核验有边界，不能无限拿她的时间、钱和信用给对方等待。"
+          }
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F06",
+      "basis": "TEXT_FACT",
+      "quote": "那钱不是闲钱。要我独自筹款，押金也会被挤掉。",
+      "line": 9,
+      "scope_checked": true,
+      "coordinator_reason": "独自筹款挤掉押金是条件风险，不是已经转账或取消租房。无限期替你垫着不单独证明既往垫付，垫付史保持UNKNOWN。",
+      "fact_bindings": [
+        {
+          "context_field": "xucheng_own_life",
+          "value": {
+            "present_work": "目前独立接摄影后期工作，打算租一个小工作间继续自己的业务。新工作间只属于她当前的安排，不能被写成与罗钧重新共同创业。",
+            "ordinary_plan": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+            "money_scope": "这1.2万元已留作新工作间押金，不是额外闲钱，也不足以结清本期6.8万元。她是否还有其他资产，本场不擅自下总资产结论。",
+            "pressure": "若旧责任要她先独自筹款，押金预算也会被占用，新工作间安排就会落空。这里只确认风险与她的边界，不预写她一定取消租房、转账或做某个动作。",
+            "own_interest": "她希望继续挣钱、维持自己现在的生活；配合核验有边界，不能无限拿她的时间、钱和信用给对方等待。"
+          }
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F07",
+      "basis": "TEXT_FACT",
+      "quote": "供应商有合同和收款留存，你可以自己联系。",
+      "line": 15,
+      "scope_checked": true,
+      "coordinator_reason": "供应商留存与自行寻找公开电话是既有独立查证路径，未给核验成功结论。",
+      "fact_bindings": [
+        {
+          "context_field": "shared_obligation",
+          "value": {
+            "carrier": "第二过去中，两人为共同经营的小型摄影工作室购置灯具及摄影设备所签的分期付款协议。工作室后来已停止经营。",
+            "persons_named": [
+              "罗钧",
+              "许澄"
+            ],
+            "remaining_balance_yuan": 186000,
+            "current_due_installment_yuan": 68000,
+            "current_due_offset_days_from_scene": 5,
+            "amount_semantics": "6.8万元是本期到期款，包含在剩余18.6万元中；不是全部责任，也不是首付金额。",
+            "independent_verification": "设备供应商自己的合同及收款留存可核验。罗钧可通过独立公开联系方式或过户告知单的核验路径联系留存方，核验不依赖许澄的设备或自建查询页。",
+            "not_resolved_by_closure": "工作室停业不等于已履行或取消设备款。旧设备处置及退货抵扣不能在本场被临时写成足以结清余额的办法；具体处置历史不在本场展开。"
+          }
+        },
+        {
+          "context_field": "existing_locks",
+          "value": [
+            "场景发生在小公寓过户已中止之后，仍处于30天冲突窗口早段。",
+            "罗钧没有第二过去的主观记忆，不能被写成恢复记忆或默认旧关系成立。",
+            "许澄经历并记得第二过去中的共同生活与共同责任，但不能替罗钧认领责任。",
+            "许澄不是第二过去的唯一证据源，存在与她控制范围分离的独立核验路径。",
+            "共同责任早于30天窗口终点到期，许澄不接受无限期成为唯一现实承受者。",
+            "罗钧本场可以核验事实，但不能提前认领共同责任。",
+            "场景终点仍为有限合作的两个独立当事人；旧关系不恢复。"
+          ]
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F08",
+      "basis": "TEXT_FACT",
+      "quote": "我三点要走，剩下二十分钟能配合，客户的片子还等着。",
+      "line": 15,
+      "scope_checked": true,
+      "coordinator_reason": "三点和二十分钟只绑定她的有限协助和工作；没有增加房产失效期限。",
+      "fact_bindings": [
+        {
+          "context_field": "known_time_boundary",
+          "value": {
+            "xucheng_leaves_at": "本次许澄三点要走，客户的片子等着她处理。",
+            "remaining_assistance": "已有交谈中确认离三点还有二十分钟；这是她的有限协助时段。",
+            "property_transfer_deadline": "没有确认购房窗口二十分钟后关闭或当天必然失效。"
+          }
+        },
+        {
+          "context_field": "xucheng_own_life",
+          "value": {
+            "present_work": "目前独立接摄影后期工作，打算租一个小工作间继续自己的业务。新工作间只属于她当前的安排，不能被写成与罗钧重新共同创业。",
+            "ordinary_plan": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+            "money_scope": "这1.2万元已留作新工作间押金，不是额外闲钱，也不足以结清本期6.8万元。她是否还有其他资产，本场不擅自下总资产结论。",
+            "pressure": "若旧责任要她先独自筹款，押金预算也会被占用，新工作间安排就会落空。这里只确认风险与她的边界，不预写她一定取消租房、转账或做某个动作。",
+            "own_interest": "她希望继续挣钱、维持自己现在的生活；配合核验有边界，不能无限拿她的时间、钱和信用给对方等待。"
+          }
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    },
+    {
+      "stage": "a1",
+      "role": "facts",
+      "id": "F09",
+      "basis": "TEXT_FACT",
+      "quote": "他打开搜索栏，照着抬头输入供应商名称。",
+      "line": 19,
+      "scope_checked": true,
+      "coordinator_reason": "结尾只打开搜索栏输入名称；未拨通、查获结果、认账、付款或关系恢复。抬头可见细节不确立此前材料交接史。",
+      "fact_bindings": [
+        {
+          "context_field": "current_short_span_boundary",
+          "value": "短段停在罗钧决定现在开始用自行找到的公开渠道查证、许澄仅给当下有限配合；尚无核验结果、认账、付款或关系恢复。"
+        },
+        {
+          "context_field": "material_boundary",
+          "value": "合同复本可供两人查看，供应商留存不依赖许澄；此前材料的具体归属与交接顺序未确认。"
+        }
+      ],
+      "disposition": "ACCEPT_FACT_FINDING_NO_REWRITE"
+    }
+  ],
+  "editor_window_quote_checks": [
+    {
+      "stage": "a1",
+      "window": "first_30_60",
+      "quote": "罗钧盯住两个姓名中自己的那一个，脚尖仍朝着大厅。首付是他攒了多年的，今晚本该住进那间小公寓。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "interpretation": "AI_EDITOR_HYPOTHESIS_NOT_HUMAN_TRACE",
+      "explanation": "眼前两个姓名牵出的责任会怎样威胁他的入住计划，他是否愿意留下处理。"
+    },
+    {
+      "stage": "a1",
+      "window": "first_150_300",
+      "quote": "她点着金额往下说：工作室的设备款还剩十八万六，这期六万八，五天后到期，停业并没取消协议。罗钧原想把纸推远，手却停在桌沿。五天，比那三十天短得多。",
+      "reported_line": 7,
+      "actual_line": 7,
+      "start_character_0_based": 106,
+      "interpretation": "AI_EDITOR_HYPOTHESIS_NOT_HUMAN_TRACE",
+      "explanation": "五天的到期压力将如何改变罗钧眼下的选择；他能否不认账而先查证。"
+    },
+    {
+      "stage": "a1",
+      "window": "ending",
+      "quote": "许澄没收起合同。他打开搜索栏，照着抬头输入供应商名称。",
+      "reported_line": 19,
+      "actual_line": 19,
+      "start_character_0_based": 381,
+      "interpretation": "AI_EDITOR_HYPOTHESIS_NOT_HUMAN_TRACE",
+      "explanation": "独立渠道将查到什么，有限合作能否继续，而不是双方已经承认旧关系或责任。"
+    }
+  ],
+  "text_fact_checks": [
+    {
+      "dimension": "ORIGINAL_PROPERTY_PLAN",
+      "quote": "首付是他攒了多年的，今晚本该住进那间小公寓。",
+      "line": 1,
+      "disposition": "CLEAR",
+      "interpretation": "原定入住与多年首付来自冻结事实；本该不是过户或入住已经完成。",
+      "fact_bindings": [
+        {
+          "context_field": "previous_scene",
+          "value": "罗钧攒了多年首付，本来今天完成小公寓过户，晚上住进去。同一身份突然多出他毫无记忆的另一套三年经历，过户中止，30天冲突窗口刚开始。前场许澄来电问过户是否停了；他问是否认识，她说：“你现在是不认识。”"
+        },
+        {
+          "context_field": "primary_private_stake",
+          "value": "罗钧攒了多年首付，本来今天完成小公寓过户，晚上住进去。"
+        }
+      ]
+    },
+    {
+      "dimension": "NO_SUBJECTIVE_MEMORY_OR_ACKNOWLEDGEMENT",
+      "quote": "那张纸里的事他一件都不记得，数额却让他不敢只丢下一句不认识。",
+      "line": 11,
+      "disposition": "CLEAR",
+      "interpretation": "没有第二过去记忆仍明确；被金额迫使停留、查证不等于认领责任。",
+      "fact_bindings": [
+        {
+          "context_field": "rojun_memory_and_responsibility",
+          "value": "罗钧没有第二过去的主观记忆，不能被写成恢复记忆或默认旧关系成立。"
+        },
+        {
+          "context_field": "viewpoint_and_knowledge",
+          "value": {
+            "pov": "贴近罗钧的限知视角。",
+            "rojun_at_entry": "他知道过户中止和30天冲突窗口，仍怀疑诈骗或记录污染；他想拿到房子，也怕被迫接下陌生责任。",
+            "xucheng_at_entry": "她知道自己经历的三年和协议到期。",
+            "rojun_access_to_her_private_state": "只能来自他可观察的声音、姿态、她实际说出的内容和他自己的判断；不能直接知道她心里所想，不能把猜测写成她承认的事实。",
+            "obligation_information_visibility": "许澄和合同掌握金额、期限及工作间安排；罗钧只在听到她说明或看到相应材料后知道，不预设开口前已知全部数额。",
+            "mutual_unknown": "双方不知道另一套过去的来源。"
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "LIMITED_VIEWPOINT",
+      "quote": "许澄伸向他袖口的手缩了回去。",
+      "line": 5,
+      "disposition": "CLEAR",
+      "interpretation": "袖口动作是可观察的当下呈现，未补生活史；她知道他不记得由实际台词支持，动作的情感解释仍属编辑假设。",
+      "fact_bindings": [
+        {
+          "context_field": "xucheng_private_state",
+          "value": "许澄记得共同生活、经营摄影工作室和签设备款协议的三年。她明知他不记得，见到熟悉的人仍残留熟悉期待，被当成来碰首付的陌生讨款者会触及她的经历和尊严。"
+        },
+        {
+          "context_field": "viewpoint_and_knowledge",
+          "value": {
+            "pov": "贴近罗钧的限知视角。",
+            "rojun_at_entry": "他知道过户中止和30天冲突窗口，仍怀疑诈骗或记录污染；他想拿到房子，也怕被迫接下陌生责任。",
+            "xucheng_at_entry": "她知道自己经历的三年和协议到期。",
+            "rojun_access_to_her_private_state": "只能来自他可观察的声音、姿态、她实际说出的内容和他自己的判断；不能直接知道她心里所想，不能把猜测写成她承认的事实。",
+            "obligation_information_visibility": "许澄和合同掌握金额、期限及工作间安排；罗钧只在听到她说明或看到相应材料后知道，不预设开口前已知全部数额。",
+            "mutual_unknown": "双方不知道另一套过去的来源。"
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "AMOUNTS_DUE_DATE_AND_VISIBILITY",
+      "quote": "工作室的设备款还剩十八万六，这期六万八，五天后到期，停业并没取消协议。",
+      "line": 7,
+      "disposition": "CLEAR",
+      "interpretation": "18.6万是余额，6.8万是其中本期款，五天到期；信息由许澄先说出，停业不取消协议。",
+      "fact_bindings": [
+        {
+          "context_field": "shared_obligation",
+          "value": {
+            "carrier": "第二过去中，两人为共同经营的小型摄影工作室购置灯具及摄影设备所签的分期付款协议。工作室后来已停止经营。",
+            "persons_named": [
+              "罗钧",
+              "许澄"
+            ],
+            "remaining_balance_yuan": 186000,
+            "current_due_installment_yuan": 68000,
+            "current_due_offset_days_from_scene": 5,
+            "amount_semantics": "6.8万元是本期到期款，包含在剩余18.6万元中；不是全部责任，也不是首付金额。",
+            "independent_verification": "设备供应商自己的合同及收款留存可核验。罗钧可通过独立公开联系方式或过户告知单的核验路径联系留存方，核验不依赖许澄的设备或自建查询页。",
+            "not_resolved_by_closure": "工作室停业不等于已履行或取消设备款。旧设备处置及退货抵扣不能在本场被临时写成足以结清余额的办法；具体处置历史不在本场展开。"
+          }
+        },
+        {
+          "context_field": "viewpoint_and_knowledge",
+          "value": {
+            "pov": "贴近罗钧的限知视角。",
+            "rojun_at_entry": "他知道过户中止和30天冲突窗口，仍怀疑诈骗或记录污染；他想拿到房子，也怕被迫接下陌生责任。",
+            "xucheng_at_entry": "她知道自己经历的三年和协议到期。",
+            "rojun_access_to_her_private_state": "只能来自他可观察的声音、姿态、她实际说出的内容和他自己的判断；不能直接知道她心里所想，不能把猜测写成她承认的事实。",
+            "obligation_information_visibility": "许澄和合同掌握金额、期限及工作间安排；罗钧只在听到她说明或看到相应材料后知道，不预设开口前已知全部数额。",
+            "mutual_unknown": "双方不知道另一套过去的来源。"
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "HER_INDEPENDENT_WORK_PLAN",
+      "quote": "我明天下午前要交一万二的工作间押金，继续接后期。",
+      "line": 9,
+      "disposition": "CLEAR",
+      "interpretation": "明天下午前、1.2万押金和后期业务绑定她的个人工作计划，没有重启双方创业。",
+      "fact_bindings": [
+        {
+          "context_field": "xucheng_own_life",
+          "value": {
+            "present_work": "目前独立接摄影后期工作，打算租一个小工作间继续自己的业务。新工作间只属于她当前的安排，不能被写成与罗钧重新共同创业。",
+            "ordinary_plan": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+            "money_scope": "这1.2万元已留作新工作间押金，不是额外闲钱，也不足以结清本期6.8万元。她是否还有其他资产，本场不擅自下总资产结论。",
+            "pressure": "若旧责任要她先独自筹款，押金预算也会被占用，新工作间安排就会落空。这里只确认风险与她的边界，不预写她一定取消租房、转账或做某个动作。",
+            "own_interest": "她希望继续挣钱、维持自己现在的生活；配合核验有边界，不能无限拿她的时间、钱和信用给对方等待。"
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "CONDITIONAL_BUDGET_RISK",
+      "quote": "那钱不是闲钱。要我独自筹款，押金也会被挤掉。",
+      "line": 9,
+      "disposition": "CLEAR",
+      "interpretation": "独自筹款挤掉押金是条件风险，不是已经转账或取消租房。无限期替你垫着不单独证明既往垫付，垫付史保持UNKNOWN。",
+      "fact_bindings": [
+        {
+          "context_field": "xucheng_own_life",
+          "value": {
+            "present_work": "目前独立接摄影后期工作，打算租一个小工作间继续自己的业务。新工作间只属于她当前的安排，不能被写成与罗钧重新共同创业。",
+            "ordinary_plan": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+            "money_scope": "这1.2万元已留作新工作间押金，不是额外闲钱，也不足以结清本期6.8万元。她是否还有其他资产，本场不擅自下总资产结论。",
+            "pressure": "若旧责任要她先独自筹款，押金预算也会被占用，新工作间安排就会落空。这里只确认风险与她的边界，不预写她一定取消租房、转账或做某个动作。",
+            "own_interest": "她希望继续挣钱、维持自己现在的生活；配合核验有边界，不能无限拿她的时间、钱和信用给对方等待。"
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "INDEPENDENT_VERIFICATION_SOURCE",
+      "quote": "供应商有合同和收款留存，你可以自己联系。",
+      "line": 15,
+      "disposition": "CLEAR",
+      "interpretation": "供应商留存与自行寻找公开电话是既有独立查证路径，未给核验成功结论。",
+      "fact_bindings": [
+        {
+          "context_field": "shared_obligation",
+          "value": {
+            "carrier": "第二过去中，两人为共同经营的小型摄影工作室购置灯具及摄影设备所签的分期付款协议。工作室后来已停止经营。",
+            "persons_named": [
+              "罗钧",
+              "许澄"
+            ],
+            "remaining_balance_yuan": 186000,
+            "current_due_installment_yuan": 68000,
+            "current_due_offset_days_from_scene": 5,
+            "amount_semantics": "6.8万元是本期到期款，包含在剩余18.6万元中；不是全部责任，也不是首付金额。",
+            "independent_verification": "设备供应商自己的合同及收款留存可核验。罗钧可通过独立公开联系方式或过户告知单的核验路径联系留存方，核验不依赖许澄的设备或自建查询页。",
+            "not_resolved_by_closure": "工作室停业不等于已履行或取消设备款。旧设备处置及退货抵扣不能在本场被临时写成足以结清余额的办法；具体处置历史不在本场展开。"
+          }
+        },
+        {
+          "context_field": "existing_locks",
+          "value": [
+            "场景发生在小公寓过户已中止之后，仍处于30天冲突窗口早段。",
+            "罗钧没有第二过去的主观记忆，不能被写成恢复记忆或默认旧关系成立。",
+            "许澄经历并记得第二过去中的共同生活与共同责任，但不能替罗钧认领责任。",
+            "许澄不是第二过去的唯一证据源，存在与她控制范围分离的独立核验路径。",
+            "共同责任早于30天窗口终点到期，许澄不接受无限期成为唯一现实承受者。",
+            "罗钧本场可以核验事实，但不能提前认领共同责任。",
+            "场景终点仍为有限合作的两个独立当事人；旧关系不恢复。"
+          ]
+        }
+      ]
+    },
+    {
+      "dimension": "ASSISTANCE_TIME_NOT_PROPERTY_DEADLINE",
+      "quote": "我三点要走，剩下二十分钟能配合，客户的片子还等着。",
+      "line": 15,
+      "disposition": "CLEAR",
+      "interpretation": "三点和二十分钟只绑定她的有限协助和工作；没有增加房产失效期限。",
+      "fact_bindings": [
+        {
+          "context_field": "known_time_boundary",
+          "value": {
+            "xucheng_leaves_at": "本次许澄三点要走，客户的片子等着她处理。",
+            "remaining_assistance": "已有交谈中确认离三点还有二十分钟；这是她的有限协助时段。",
+            "property_transfer_deadline": "没有确认购房窗口二十分钟后关闭或当天必然失效。"
+          }
+        },
+        {
+          "context_field": "xucheng_own_life",
+          "value": {
+            "present_work": "目前独立接摄影后期工作，打算租一个小工作间继续自己的业务。新工作间只属于她当前的安排，不能被写成与罗钧重新共同创业。",
+            "ordinary_plan": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+            "money_scope": "这1.2万元已留作新工作间押金，不是额外闲钱，也不足以结清本期6.8万元。她是否还有其他资产，本场不擅自下总资产结论。",
+            "pressure": "若旧责任要她先独自筹款，押金预算也会被占用，新工作间安排就会落空。这里只确认风险与她的边界，不预写她一定取消租房、转账或做某个动作。",
+            "own_interest": "她希望继续挣钱、维持自己现在的生活；配合核验有边界，不能无限拿她的时间、钱和信用给对方等待。"
+          }
+        }
+      ]
+    },
+    {
+      "dimension": "UNRESOLVED_SHORT_ENDPOINT",
+      "quote": "他打开搜索栏，照着抬头输入供应商名称。",
+      "line": 19,
+      "disposition": "CLEAR",
+      "interpretation": "结尾只打开搜索栏输入名称；未拨通、查获结果、认账、付款或关系恢复。抬头可见细节不确立此前材料交接史。",
+      "fact_bindings": [
+        {
+          "context_field": "current_short_span_boundary",
+          "value": "短段停在罗钧决定现在开始用自行找到的公开渠道查证、许澄仅给当下有限配合；尚无核验结果、认账、付款或关系恢复。"
+        },
+        {
+          "context_field": "material_boundary",
+          "value": "合同复本可供两人查看，供应商留存不依赖许澄；此前材料的具体归属与交接顺序未确认。"
+        }
+      ]
+    }
+  ],
+  "report_references": {
+    "facts": {
+      "raw": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.raw.txt",
+        "blob": "44e4a9b3a81f4f29aac272832e69263fdad859b6",
+        "sha256": "a4997549a9eb502d4a89cf0d7f9a250a02aeb503008d12287c28bfbd6e8bfaf9"
+      },
+      "evidence": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.evidence.json",
+        "blob": "adf12508ad095e873189418f4a44f2e1b7569ed5",
+        "sha256": "cee4cc6a0af26275ccdc564ad80e742db51ba1f843b645614774085b135f5986"
+      }
+    },
+    "editor": {
+      "raw": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.raw.txt",
+        "blob": "c313480e286e4562f9009527fb045426f277613a",
+        "sha256": "da68734cf490da6865c99c242270a5342198ab26392b7d2a9f629863f390a41e"
+      },
+      "evidence": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.evidence.json",
+        "blob": "05000309121b01540d803e11d8b8e88a157d3231",
+        "sha256": "366b290aaf187d2e05b0d30a298b8f9c616f0b4c9b5736bbc52f819e6bc62782"
+      }
+    },
+    "reader": {
+      "raw": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.raw.txt",
+        "blob": "31b7aca2b8dd45b5a1424a49aef2abf41927215c",
+        "sha256": "bd2b35ddd54ead6151ee1c5c889c6b1fd969c48fbc3eae8c1dd2a99d2b8fdf0d"
+      },
+      "evidence": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.evidence.json",
+        "blob": "f4d833495478457ff6671164eff76e0153c49b62",
+        "sha256": "8a84f2ff5c6c1f5f68a1b757d6ffce336a552a3945ed615b43d77e20ae9bb665"
+      }
+    }
+  },
+  "protected_evidence": {
+    "facts": [
+      {
+        "quote": "我不记得这份合同。",
+        "line": 3,
+        "reason": "TEXT_FACT：明确维护罗钧无主观记忆的冻结边界。"
+      },
+      {
+        "quote": "许澄伸向他袖口的手缩了回去。",
+        "line": 5,
+        "reason": "TEXT_FACT：通过可观察动作呈现许澄，没有直接泄露其内心。"
+      },
+      {
+        "quote": "这期六万八，五天后到期，停业并没取消协议。",
+        "line": 7,
+        "reason": "TEXT_FACT：保留本期金额、到期压力及停业不消灭设备款责任。"
+      },
+      {
+        "quote": "那钱不是闲钱。",
+        "line": 9,
+        "reason": "TEXT_FACT：明确押金已有用途，不把个人预算写成额外可用资金。"
+      },
+      {
+        "quote": "剩下二十分钟能配合",
+        "line": 15,
+        "reason": "TEXT_FACT：协助有明确边界，未要求许澄无限提供时间。"
+      },
+      {
+        "quote": "我自己找公开电话，现在查。查，不是认账。",
+        "line": 17,
+        "reason": "TEXT_FACT：同时保护独立核验与核验不等于认账。"
+      }
+    ],
+    "editor": [
+      {
+        "quote": "许澄伸向他袖口的手缩了回去。“我知道你不记得。可别把我当成来骗钱的。”",
+        "line": 5,
+        "reason": "熟悉动作的撤回与尊严受触动相互支撑；无需直接进入她的内心，也不把她简化为讨款者。"
+      },
+      {
+        "quote": "“我明天下午前要交一万二的工作间押金，继续接后期。”许澄压平纸角，“那钱不是闲钱。要我独自筹款，押金也会被挤掉。我不能无限期替你垫着。”",
+        "line": 9,
+        "reason": "把她的边界落实到自己的工作安排和预算风险，未预写取消租房或实际垫款。"
+      },
+      {
+        "quote": "“供应商有合同和收款留存，你可以自己联系。我三点要走，剩下二十分钟能配合，客户的片子还等着。”",
+        "line": 15,
+        "reason": "核验路径与她的有限协助同时出现；二十分钟约束的是她的时间，不被混成购房截止时间。"
+      },
+      {
+        "quote": "罗钧摸出手机：“我自己找公开电话，现在查。查，不是认账。”",
+        "line": 17,
+        "reason": "他从回避转向主动核验，但仍保有对陌生责任的抵抗，人物变化没有越过本段终点。"
+      }
+    ],
+    "reader": [
+      {
+        "quote": "首付是他攒了多年的，今晚本该住进那间小公寓。",
+        "line": 1,
+        "reason": "即使不知道此前发生了什么，我也能在意他可能失去这个已经很近的生活计划。"
+      },
+      {
+        "quote": "查，不是认账。",
+        "line": 17,
+        "reason": "让我理解他求证时仍在保护自己的立场，也是我愿意继续看核查结果的直接依据。"
+      }
+    ]
+  },
+  "reader_reactions_classification": "AI_READER_HYPOTHESES_NOT_ACTUAL_HUMAN_FEEDBACK",
+  "reported_unknowns": {
+    "facts": [
+      "TEXT_FACT：前后完整正文未提交；本报告不覆盖摘录外内容。",
+      "TEXT_FACT／未展示：公共休息区的明确名称、第一次电话后的进入顺序没有在摘录中复述；大厅与桌沿的描写不与冻结地点冲突。",
+      "TEXT_FACT／未确认：此前材料的具体归属与交接顺序，冻结事实未确定，正文也未补定。",
+      "EDITOR_HYPOTHESIS／疑点未定：第9行“我不能无限期替你垫着”可能带延续性语感，但不足以确认既往实际垫付；冻结事实未提供垫付史，不列为确定矛盾，也不要求补写。",
+      "TEXT_FACT／未展示：旧设备具体处置过程没有交代；正文未将处置或退货抵扣写成结清办法。"
+    ],
+    "editor": [
+      "当前没有真人阅读结果，本次结论为新稿的局部编辑判断，不是真人验收。",
+      "当前没有真人阅读结果；EDITORIAL_CLEAR仅表示本摘录未发现高影响阻塞。",
+      "前场正文、供应商核验结果及后续场景未展示，不据此判断完整场景或全书成败。"
+    ],
+    "reader": [
+      "这不是实际人群试验，只是此AI在假定阅读条件下的一次反应，不能代表真人读者或普遍读者结论。",
+      "没有前一场、完整第二场或后文，不知道两个姓名及“那三十天”此前是否已经说明。",
+      "摘录尚未给出核验结果，无法判断许澄的说法是否属实，也无法判断罗钧不记得的原因。",
+      "材料足以支持我对这一摘录的续读意愿，不足以判断完整场景或全书能否持续吸引我。"
+    ]
+  },
+  "coordinator_unknowns": [
+    "既往垫付史UNKNOWN；读者提问不是事实，含延续语感的边界台词不单独证明已发生付款。",
+    "当前已认可的连续前场正文NOT_ESTABLISHED；三十天指代依赖此前信息，不能以本段证明全书首屏成立。",
+    "没有完整场景、供应商查证结果或关系结局；不将本段结论扩大。",
+    "390字新稿的实际人工情绪、文风和续读意愿UNKNOWN；精确停止句UNKNOWN_NOT_PROVIDED。"
+  ],
+  "repair_count": 0,
+  "repair_reason": "NO_VERIFIED_FACT_CONFLICT_OR_HIGH_IMPACT_EDITORIAL_BLOCKER; no additional calls to seek approval",
+  "ability_limits": {
+    "historical_blind_calibration_missed": {
+      "missed": 2,
+      "negative_samples": 2
+    },
+    "held_out_missed": {
+      "missed": 1,
+      "negative_samples": 1
+    },
+    "prior_395_post_failure_reader_disagreement": true,
+    "same_scope_positive_examples": 0,
+    "false_positive_rate": "NOT_ESTIMABLE",
+    "overall_accuracy": "NOT_ESTIMABLE",
+    "personal_taste_certification_allowed": false
+  },
+  "original_404_human_result": "UNKNOWN",
+  "old_448_human_result": "FAIL",
+  "prior_395_human_result": "FAIL",
+  "old_197_character_protection_released": false,
+  "old_RC3_remaining_rounds": 0,
+  "formal_mainline_method_revision": 4
+}

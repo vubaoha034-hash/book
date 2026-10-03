@@ -642,6 +642,14 @@ def test_outcome(root: Path, relative: str) -> str:
     return expected
 
 def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
+    autonomous_module, autonomous_authorization = None, None
+    role_project, role_cp = project, cp
+    if 'autonomous_opening_to_human' in project or 'autonomous_opening_to_human' in cp:
+        spec = importlib.util.spec_from_file_location('autonomous_opening_state',
+            Path(__file__).with_name('verify_autonomous_opening.py'))
+        autonomous_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(autonomous_module)
+        role_project, role_cp, autonomous_authorization = autonomous_module.historical_two_role_view(root, project, cp)
     role_module, role_authorization = None, None
     learning_project, learning_cp = project, cp
     if 'two_role_opening_review' in project or 'two_role_opening_review' in cp:
@@ -651,7 +659,7 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         spec.loader.exec_module(role_module)
         # Validate the actual new user request and append-only human supplement
         # before selecting checkpoint197's immutable historical view.
-        learning_project, learning_cp, role_authorization = role_module.historical_learning_view(root, project, cp)
+        learning_project, learning_cp, role_authorization = role_module.historical_learning_view(root, role_project, role_cp)
     learning_module, learning_authorization = None, None
     if 'emotion_pacing_learning' in project or 'emotion_pacing_learning' in cp:
         spec = importlib.util.spec_from_file_location('emotion_learning_state',
@@ -785,7 +793,10 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         expected_action = learning_module.learning_action(root, learning_project, learning_cp, expected_action,
             successor_authorization=role_authorization)
     if role_module is not None:
-        expected_action = role_module.two_role_action(root, project, cp, expected_action)
+        expected_action = role_module.two_role_action(root, role_project, role_cp, expected_action,
+            successor_authorization=autonomous_authorization)
+    if autonomous_module is not None:
+        expected_action = autonomous_module.autonomous_action(root, project, cp, expected_action)
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

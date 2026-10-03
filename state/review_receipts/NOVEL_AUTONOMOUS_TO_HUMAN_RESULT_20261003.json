@@ -1,0 +1,140 @@
+{
+  "schema_version": "native-autonomous-opening-result/v1",
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "source_head": "0e38c4fa02e4bddd0dba96711241bd678d92da68",
+  "recorded_at": "2026-10-03T10:52:58Z",
+  "status": "ONE_FINAL_FROZEN_SHORT_AND_INDEPENDENT_REVIEWS_SETTLED_AWAIT_HUMAN",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "manifest": {
+    "path": "config/novel-autonomous-opening-20261003.json",
+    "blob": "9549c8a065b19f36df04a475f6d7efaf4095a407",
+    "sha256": "aad9e30cbc0d3797a5f77e72f9b767f4e7ec4737a42ea0af7842d3266cd155e2"
+  },
+  "autonomy_policy": {
+    "path": "rules/autonomy-until-human-review.json",
+    "blob": "758e663172853c35db482455bd5d2c7b38cb579b",
+    "sha256": "7ea6154e2cec87be63c68e3fa548a477548457e80abc230cd5b42a8e2ebc47c0"
+  },
+  "primary_artifact": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "primary_runtime": {
+    "path": "state/authoring/autonomous-opening-20261003/a1.writer.runtime.json",
+    "blob": "7157e683356c8d13b5f5da3eaa3a81ba613f8481",
+    "sha256": "7b7e4325147fd37eac1d21c4146b5454dbd6f2a7462ba0d3ef6a873443868e57"
+  },
+  "stages": [
+    {
+      "stage": "a1",
+      "artifact": {
+        "path": "delivery/autonomous-opening-20261003/a1.md",
+        "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+        "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+      },
+      "review_manifest": {
+        "path": "delivery/autonomous-opening-20261003/a1.review-manifest.json",
+        "blob": "5886fc8b4823b0a802b9b8c50d14253b458f7851",
+        "sha256": "76bbf828e6dbeca88d5e16ea9e030d800b9985ee44de95253c536a499b282f2e"
+      },
+      "facts_runtime": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.runtime.json",
+        "blob": "b7749661039064d912b362e9338c344a55b210e4",
+        "sha256": "34bc1ba02928372535105075ad24eb37d66fb7c7580349e02ac0955ebb56386e"
+      },
+      "facts_raw": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.raw.txt",
+        "blob": "44e4a9b3a81f4f29aac272832e69263fdad859b6",
+        "sha256": "a4997549a9eb502d4a89cf0d7f9a250a02aeb503008d12287c28bfbd6e8bfaf9"
+      },
+      "facts_evidence": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.evidence.json",
+        "blob": "adf12508ad095e873189418f4a44f2e1b7569ed5",
+        "sha256": "cee4cc6a0af26275ccdc564ad80e742db51ba1f843b645614774085b135f5986"
+      },
+      "editor_runtime": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.runtime.json",
+        "blob": "55e0b4e3b0d901dd1f2ea01eed331229877b5506",
+        "sha256": "a22d163385931f9461b2b77ab6c65eb35e99617d44284341c8539fe3a67c0c8d"
+      },
+      "editor_raw": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.raw.txt",
+        "blob": "c313480e286e4562f9009527fb045426f277613a",
+        "sha256": "da68734cf490da6865c99c242270a5342198ab26392b7d2a9f629863f390a41e"
+      },
+      "editor_evidence": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.evidence.json",
+        "blob": "05000309121b01540d803e11d8b8e88a157d3231",
+        "sha256": "366b290aaf187d2e05b0d30a298b8f9c616f0b4c9b5736bbc52f819e6bc62782"
+      },
+      "reader_runtime": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.runtime.json",
+        "blob": "eaae69816cf6e4cd4c3d249b9770b90aa20d6882",
+        "sha256": "380d3fdb8cf8accad8ac7b1c0e5a2c7b739540da1d95ac4561984b76e964e4fb"
+      },
+      "reader_raw": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.raw.txt",
+        "blob": "31b7aca2b8dd45b5a1424a49aef2abf41927215c",
+        "sha256": "bd2b35ddd54ead6151ee1c5c889c6b1fd969c48fbc3eae8c1dd2a99d2b8fdf0d"
+      },
+      "reader_evidence": {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.evidence.json",
+        "blob": "f4d833495478457ff6671164eff76e0153c49b62",
+        "sha256": "8a84f2ff5c6c1f5f68a1b757d6ffce336a552a3945ed615b43d77e20ae9bb665"
+      }
+    }
+  ],
+  "final_artifact": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "settlement": {
+    "path": "state/authoring/autonomous-opening-20261003/coordinator-settlement.json",
+    "blob": "e9554b0b87d8dbc3d139b678ce31e1b1d37d5335",
+    "sha256": "7bbea3d5756a008cedad3d93952a7058ca38ce3d4cfa7ba64a785baa29ef4cce"
+  },
+  "pending_human_review": {
+    "path": "state/authoring/autonomous-opening-20261003/pending-human-review.json",
+    "blob": "f64ebd3777b284664c14d1668af3e446437acf43",
+    "sha256": "691968ecf7e75aceae0c5da4a541113e88bde789e23294d43d9825958cfd32c7"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md",
+    "blob": "512084bca54c4f88031ce112b50e0d314d766249",
+    "sha256": "2967c40814c6d4d890ae6748de64321bc90beba018266955b61b859854b161f3"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 0,
+  "total_generation_count": 1,
+  "remaining_primary_generation_budget": 0,
+  "visible_candidate_count": 1,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "human_quality_result": "UNKNOWN",
+  "literary_quality_validated": false,
+  "original_404_human_result": "UNKNOWN",
+  "prior_395_human_result": "FAIL",
+  "old_448_human_result": "FAIL",
+  "formal_mainline_method_revision": 4,
+  "intermediate_user_authorization_required": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING",
+  "actual_model_calls": 4,
+  "isolated_review_calls": 3,
+  "quote_records_checked": 31,
+  "position_corrections": 0,
+  "elapsed_seconds_by_role": {
+    "writer": 213.989,
+    "facts": 348.223,
+    "editor": 154.164,
+    "reader": 216.954
+  },
+  "old_browser_comparable_elapsed_seconds": "UNKNOWN"
+}

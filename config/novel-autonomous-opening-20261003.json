@@ -1,0 +1,60 @@
+{
+  "schema_version": "native-autonomous-opening-run/v1",
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "source_head": "0e38c4fa02e4bddd0dba96711241bd678d92da68",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "prepared_input": {
+    "path": "delivery/two-role-opening-20261003/prepared-opening-input.json",
+    "blob": "d546ee14a6e0ca484611de7ab5ff2d6e662de21a",
+    "sha256": "fa2f314f4403e08e3ddf814f5af55d19aac1c65aaa67f88ec31cb6bb4cba4e1b"
+  },
+  "authorized_proposal": {
+    "path": "state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json",
+    "blob": "2db4ed1faf43a8a69dd9d3258e58ffe4d7fe2fab",
+    "sha256": "337357e4b5228069230e5b65d5cf9c3d6d05b0625571b4428260c543db334fcf"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "primary_writer_limit": 1,
+  "evidenced_repair_limit": 1,
+  "review_calls_per_stage": {
+    "facts": 1,
+    "editor": 1,
+    "reader": 1
+  },
+  "writer_input": {
+    "path": "delivery/autonomous-opening-20261003/a1.writer-input.json",
+    "blob": "b9199c905859515a4d1a50585ba52d21e7702421",
+    "sha256": "7d29b5e50c7e70aa9633ee498ab0146ae16692d5df1368859caf3d5b4122491f"
+  },
+  "writer_policy": {
+    "path": "delivery/autonomous-opening-20261003/writer-policy.txt",
+    "blob": "03c1ade87887f397620c92ced04ded6531094dc4",
+    "sha256": "793100c1b050873bdcc7c3a21fd5ce329fc3452d17c31b9693036d64b61af4c7"
+  },
+  "result_directory": "state/authoring/autonomous-opening-20261003",
+  "delivery_directory": "delivery/autonomous-opening-20261003",
+  "review_policies": {
+    "facts": {
+      "kind": "BUILT_IN_FROZEN_PROTOCOL",
+      "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+    },
+    "editor": {
+      "path": "modules/review-roles/new-draft-editor-policy.md",
+      "blob": "caccb3339443164e5d365bd92c352d0040dec348",
+      "sha256": "86c4afd213f3306db8b124901f74498a3db8b0e2102f336bb9f6cc6adbb73039"
+    },
+    "reader": {
+      "path": "modules/review-roles/reader-policy.md",
+      "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+      "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+    }
+  },
+  "human_quality_result": "UNKNOWN",
+  "standalone_AI_quality_gate_allowed": false,
+  "automatic_verdict_retries": false
+}

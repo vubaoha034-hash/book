@@ -108,6 +108,35 @@ TWO_ROLE_NEW_FILES = (
     TWO_ROLE_PREFIX+'REMOTE_SAVE_VERIFIED_20261003.json')
 TWO_ROLE_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
     'scripts/verify_emotion_learning.py','tests/test_emotion_learning.py','tests/test_one_short_trial.py')
+AUTONOMOUS_SOURCE = '0e38c4fa02e4bddd0dba96711241bd678d92da68'
+AUTONOMOUS_PREFIX = 'state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_'
+AUTONOMOUS_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
+    'scripts/codex_review.py','scripts/verify_emotion_learning.py',
+    'scripts/verify_two_role_review.py','tests/test_two_role_review.py')
+AUTONOMOUS_NEW_FILES = (
+    'config/novel-autonomous-opening-20261003.json',
+    'rules/autonomy-until-human-review.json',
+    'modules/autonomous-to-human-review.md',
+    'modules/review-roles/new-draft-editor-policy.md',
+    'scripts/novel_autonomous_opening.py','scripts/verify_autonomous_opening.py',
+    'tests/test_autonomous_opening.py',
+    'docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md',
+    'state/tasks/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_20261003.json',
+    AUTONOMOUS_PREFIX+'AUTHORIZATION_20261003.json',
+    AUTONOMOUS_PREFIX+'RESULT_20261003.json',
+    AUTONOMOUS_PREFIX+'VALIDATION_20261003.json',
+    AUTONOMOUS_PREFIX+'REMOTE_SAVE_VERIFIED_20261003.json',
+    'state/authoring/autonomous-opening-20261003/coordinator-settlement.json',
+    'state/authoring/autonomous-opening-20261003/pending-human-review.json',
+    'delivery/autonomous-opening-20261003/a1.md',
+    'delivery/autonomous-opening-20261003/a1.writer-input.json',
+    'delivery/autonomous-opening-20261003/writer-policy.txt',
+    'delivery/autonomous-opening-20261003/a1.review-manifest.json',
+    *(f'delivery/autonomous-opening-20261003/a1.{role}.packet.json' for role in ('facts','editor','reader')),
+    *(f'state/authoring/autonomous-opening-20261003/a1.{role}.{suffix}'
+      for role in ('writer','facts','editor','reader') for suffix in ('attempt.json','runtime.json')),
+    *(f'state/authoring/autonomous-opening-20261003/a1.{role}.{suffix}'
+      for role in ('facts','editor','reader') for suffix in ('raw.txt','evidence.json')))
 
 
 def git(*args):
@@ -492,6 +521,67 @@ def verify_two_roles(expected):
         'current_state':state_result,'model_calls_during_readback':0,'generation_count_during_readback':0}
 
 
+def verify_autonomous(expected):
+    """Actual CP199 readback; never infer human acceptance or run a model."""
+    remote=git('ls-remote','origin','refs/heads/main').decode().split()[0]
+    if remote!=expected:raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch','origin','main')
+    if git('rev-parse','origin/main').decode().strip()!=remote:raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive=zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',remote)))
+    base=zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',AUTONOMOUS_SOURCE)))
+    old={p for p in base.namelist() if not p.endswith('/')};new={p for p in archive.namelist() if not p.endswith('/')}
+    if new-old-set(AUTONOMOUS_NEW_FILES) or old-new:raise ValueError('AUTONOMOUS_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected=old-set(AUTONOMOUS_MUTABLE_FILES)
+    for path in protected:
+        if archive.read(path)!=base.read(path):raise ValueError('AUTONOMOUS_HISTORICAL_BYTES_CHANGED: '+path)
+    seen,checked=set(),[]
+
+    def inspect(path,reference=None):
+        local=(ROOT/path).resolve()
+        if not local.is_relative_to(ROOT.resolve()):raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        data=archive.read(path);digest=hashlib.sha256(data).hexdigest()
+        if data!=local.read_bytes():raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: '+path)
+        if reference and (reference.get('blob')!=blob(data) or reference.get('sha256')!=digest):
+            raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: '+path)
+        if path in seen:return
+        seen.add(path);checked.append({'path':path,'blob':blob(data),'sha256':digest})
+        if path in AUTONOMOUS_NEW_FILES and path.endswith('.json'):walk(json.loads(data))
+
+    def walk(value):
+        if isinstance(value,dict):
+            if all(k in value for k in ('path','blob','sha256')):inspect(value['path'],value)
+            for child in value.values():walk(child)
+        elif isinstance(value,list):
+            for child in value:walk(child)
+
+    project=json.loads(archive.read('state/project_state.json'));cp=json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route=project.get('autonomous_opening_to_human')
+    if (not route or route!=cp.get('autonomous_opening_to_human') or cp.get('sequence')!=199 or cp.get('stop') is not True or
+            route.get('primary_generation_count')!=1 or route.get('internal_repair_count')!=0 or
+            route.get('human_quality_result')!='UNKNOWN' or route.get('literary_quality_validated') is not False or
+            cp.get('action_guard',{}).get('project_state_sha256')!=hashlib.sha256(archive.read('state/project_state.json')).hexdigest()):
+        raise ValueError('REMOTE_AUTONOMOUS_STATE_OR_CHECKPOINT_DRIFT')
+    walk(route)
+    for path in (*AUTONOMOUS_MUTABLE_FILES,*AUTONOMOUS_NEW_FILES):
+        if path==AUTONOMOUS_PREFIX+'REMOTE_SAVE_VERIFIED_20261003.json' and path not in new:continue
+        inspect(path)
+    validation=json.loads(archive.read(AUTONOMOUS_PREFIX+'VALIDATION_20261003.json'))
+    if validation.get('status')!='AUTONOMOUS_TO_HUMAN_SCOPE_EVIDENCE_AND_HISTORY_VALIDATION_PASSED':
+        raise ValueError('REMOTE_AUTONOMOUS_VALIDATION_NOT_COMPLETED')
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('published_autonomous_state',ROOT/'scripts/verify_current_state.py')
+    current=importlib.util.module_from_spec(spec);spec.loader.exec_module(current)
+    state_result=current.verify(ROOT)
+    if state_result.get('sequence')!=199 or state_result.get('next_action')!='AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING':
+        raise ValueError('REMOTE_AUTONOMOUS_BUSINESS_GATE_NOT_CLOSED')
+    if git('ls-remote','origin','refs/heads/main').decode().split()[0]!=remote:raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status':'REMOTE_AUTONOMOUS_BYTES_HISTORY_AND_HUMAN_GATE_VERIFIED',
+        'remote_head':remote,'source_head':AUTONOMOUS_SOURCE,'checkpoint':199,'checked_count':len(checked),'files':checked,
+        'protected_source_file_count':len(protected),'all_prior_prose_locks_feedback_and_raw_reports_unchanged':True,
+        'current_state':state_result,'human_quality_result':'UNKNOWN',
+        'model_calls_during_readback':0,'generation_count_during_readback':0}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
@@ -500,9 +590,11 @@ if __name__ == '__main__':
     mode.add_argument('--short-trial', action='store_true', help='Verify checkpoint196 frozen short and preserve all checkpoint195 history')
     mode.add_argument('--emotion-learning', action='store_true', help='Verify checkpoint197 actual failure and learning; preserve checkpoint196 history')
     mode.add_argument('--two-roles', action='store_true', help='Verify checkpoint198 independent editor/reader reviews and preserve checkpoint197 history')
+    mode.add_argument('--autonomous-opening', action='store_true', help='Verify checkpoint199 final short, independent reviews and actual human UNKNOWN')
     args = parser.parse_args()
     try:
-        result = (verify_two_roles(args.expected_head) if args.two_roles else
+        result = (verify_autonomous(args.expected_head) if args.autonomous_opening else
+                  verify_two_roles(args.expected_head) if args.two_roles else
                   verify_emotion_learning(args.expected_head) if args.emotion_learning else
                   verify_short_trial(args.expected_head) if args.short_trial else
                   verify_preparation(args.expected_head) if args.preparation else verify(args.expected_head))

@@ -1,0 +1,77 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "罗钧盯住两个姓名中自己的那一个，脚尖仍朝着大厅。首付是他攒了多年的，今晚本该住进那间小公寓。",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "“我明天下午前要交一万二的工作间押金，继续接后期。”许澄压平纸角，“那钱不是闲钱。要我独自筹款，押金也会被挤掉。我不能无限期替你垫着。”",
+      "actual_line": 9,
+      "start_character_0_based": 180
+    },
+    {
+      "index": 2,
+      "quote": "罗钧摸出手机：“我自己找公开电话，现在查。查，不是认账。”\n\n许澄没收起合同。他打开搜索栏，照着抬头输入供应商名称。",
+      "actual_line": 17,
+      "start_character_0_based": 350
+    },
+    {
+      "index": 3,
+      "quote": "“我知道你不记得。可别把我当成来骗钱的。”",
+      "actual_line": 5,
+      "start_character_0_based": 83
+    },
+    {
+      "index": 4,
+      "quote": "她点着金额往下说：工作室的设备款还剩十八万六，这期六万八，五天后到期，停业并没取消协议。罗钧原想把纸推远，手却停在桌沿。五天，比那三十天短得多。",
+      "actual_line": 7,
+      "start_character_0_based": 106
+    },
+    {
+      "index": 5,
+      "quote": "要我独自筹款，押金也会被挤掉。我不能无限期替你垫着。",
+      "actual_line": 9,
+      "start_character_0_based": 221
+    },
+    {
+      "index": 6,
+      "quote": "罗钧摸出手机：“我自己找公开电话，现在查。查，不是认账。”",
+      "actual_line": 17,
+      "start_character_0_based": 350
+    },
+    {
+      "index": 7,
+      "quote": "首付是他攒了多年的，今晚本该住进那间小公寓。",
+      "actual_line": 1,
+      "start_character_0_based": 24
+    },
+    {
+      "index": 8,
+      "quote": "查，不是认账。",
+      "actual_line": 17,
+      "start_character_0_based": 371
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "stage": "a1",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/autonomous-opening-20261003/a1.reader.packet.json",
+    "blob": "872469e50888253d320381fe7cdd1ba091dc1242",
+    "sha256": "05bef9f45bc834b2e11c213c92debd83378b25b9ad1e50c6f929477fb00b9caf"
+  },
+  "raw_report": {
+    "path": "state/authoring/autonomous-opening-20261003/a1.reader.raw.txt",
+    "blob": "31b7aca2b8dd45b5a1424a49aef2abf41927215c",
+    "sha256": "bd2b35ddd54ead6151ee1c5c889c6b1fd969c48fbc3eae8c1dd2a99d2b8fdf0d"
+  }
+}

@@ -111,6 +111,7 @@ def validate_packet(packet):
     kind = packet['work_kind']
     common = {'packet_version', 'job_id', 'work_kind', 'medium', 'excerpt_position', 'samples'}
     extras = {'COLD_SCREEN': set(), 'FACT_AUDIT': {'facts'},
+              'EDITORIAL_REVIEW': {'facts', 'boundaries'},
               'POST_FAILURE_DIAGNOSIS': {'facts', 'human_feedback', 'boundaries', 'historical_material'}}
     if kind not in extras or set(packet) != common | extras[kind]:
         raise ValueError('CONTEXT_ALLOWLIST_VIOLATION')
@@ -535,6 +536,7 @@ def audit_report(packet, report, runtime):
         errors.append('REPORT_SAMPLE_SET_MISMATCH')
     allowed = {'COLD_SCREEN': {'PASS_PROVISIONAL', 'REVISE', 'INSUFFICIENT', 'BLOCKED'},
                'FACT_AUDIT': {'FACT_CLEAR', 'REVISE', 'INSUFFICIENT', 'BLOCKED'},
+               'EDITORIAL_REVIEW': {'EDITORIAL_CLEAR', 'REVISE', 'INSUFFICIENT', 'BLOCKED'},
                'POST_FAILURE_DIAGNOSIS': {'REVISE', 'INSUFFICIENT', 'BLOCKED'}}
     for result in results:
         sample = by_id.get(result.get('artifact_id'))

@@ -1,0 +1,18 @@
+{
+  "schema_version": "native-user-autonomy-until-human/v1",
+  "authority": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "policy": "刘先生只承担人工阅读与反馈；协调者负责范围明确的准备、执行、修订、独立评审、证据核对及原生保存。不得把每个步骤结束变成新的授权请求。",
+  "scope": "当前锁定主线内的有界步骤，以具体任务记录输出及内部修订上限。",
+  "human_gate": "新稿没有真实阅读反馈时保持UNKNOWN。编辑和AI读者不能替代真人验收。",
+  "limits": [
+    "旧额度不恢复、旧稿和旧197字保护不覆盖",
+    "不擅自改目标、题材、世界或结局",
+    "无多个并行候选、无V5、无后台任务",
+    "不重复调用同一评审直到得到想要的判决"
+  ],
+  "intermediate_user_authorization_required": false
+}

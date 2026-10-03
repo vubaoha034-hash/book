@@ -243,7 +243,7 @@ def learning_action(root, project, checkpoint, historical_action, successor_auth
         valid_new_entry = (successor_authorization.get('path') == 'state/review_receipts/NOVEL_TWO_ROLE_REVIEW_AUTHORIZATION_20261003.json' and
             successor.get('task_id') == 'NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01' and successor.get('source_checkpoint') == 197 and
             successor.get('generation_budget') == 0 and successor.get('new_prose_authorized') is False and
-            successor.get('maximum_new_review_calls') == 2 and '当前位置：检查点198。' in entry)
+            successor.get('maximum_new_review_calls') == 2 and ('当前位置：检查点198。' in entry or '检查点198：' in entry))
     if TASK not in entry or NEXT_ACTION not in entry or ('当前位置：检查点197。' not in entry and not valid_new_entry):
         raise ValueError('LEARNING_ENTRYPOINT_STALE')
     return NEXT_ACTION

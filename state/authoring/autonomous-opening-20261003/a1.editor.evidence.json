@@ -1,0 +1,67 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "A51",
+      "item_index": 0,
+      "quote": "许澄伸向他袖口的手缩了回去。“我知道你不记得。可别把我当成来骗钱的。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 69,
+      "end_character_exclusive": 104,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A51",
+      "item_index": 1,
+      "quote": "“我明天下午前要交一万二的工作间押金，继续接后期。”许澄压平纸角，“那钱不是闲钱。要我独自筹款，押金也会被挤掉。我不能无限期替你垫着。”",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 180,
+      "end_character_exclusive": 248,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A51",
+      "item_index": 2,
+      "quote": "“供应商有合同和收款留存，你可以自己联系。我三点要走，剩下二十分钟能配合，客户的片子还等着。”",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 301,
+      "end_character_exclusive": 348,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A51",
+      "item_index": 3,
+      "quote": "罗钧摸出手机：“我自己找公开电话，现在查。查，不是认账。”",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 350,
+      "end_character_exclusive": 379,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "stage": "a1",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/autonomous-opening-20261003/a1.editor.packet.json",
+    "blob": "dfd93bb26ae442c59f7cd46e17d44d6686c50f82",
+    "sha256": "cfb8c27d6719f4621e90b3bf36efe34d7157c706ea98a3cf260d33a98bca6136"
+  },
+  "raw_report": {
+    "path": "state/authoring/autonomous-opening-20261003/a1.editor.raw.txt",
+    "blob": "c313480e286e4562f9009527fb045426f277613a",
+    "sha256": "da68734cf490da6865c99c242270a5342198ab26392b7d2a9f629863f390a41e"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "stage": "a1",
+  "artifact": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "jobs": {
+    "facts": {
+      "packet": {
+        "path": "delivery/autonomous-opening-20261003/a1.facts.packet.json",
+        "blob": "fc2c0a5e6c23a8bad6855baf4c9ec50ee4f4e0c6",
+        "sha256": "b29ef0a1757bc5e610bf96ede14a7e6b56df76f7a994576e2cc0b2ae0b72cfd9"
+      },
+      "max_calls": 1
+    },
+    "editor": {
+      "packet": {
+        "path": "delivery/autonomous-opening-20261003/a1.editor.packet.json",
+        "blob": "dfd93bb26ae442c59f7cd46e17d44d6686c50f82",
+        "sha256": "cfb8c27d6719f4621e90b3bf36efe34d7157c706ea98a3cf260d33a98bca6136"
+      },
+      "max_calls": 1
+    },
+    "reader": {
+      "packet": {
+        "path": "delivery/autonomous-opening-20261003/a1.reader.packet.json",
+        "blob": "872469e50888253d320381fe7cdd1ba091dc1242",
+        "sha256": "05bef9f45bc834b2e11c213c92debd83378b25b9ad1e50c6f929477fb00b9caf"
+      },
+      "max_calls": 1
+    }
+  },
+  "known_human_label": "NOT_TRANSMITTED_CURRENT_RESULT_UNKNOWN"
+}
