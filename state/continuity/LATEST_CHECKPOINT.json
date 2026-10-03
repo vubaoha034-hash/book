@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 192,
-  "recorded_at": "2026-10-02T13:30:55+00:00",
+  "sequence": 193,
+  "recorded_at": "2026-10-03T01:07:50.720Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -534,7 +534,8 @@
     "Forward desire remains unresolved despite suspense",
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
     "Bounded next repair action has not been selected or executed; no V5 manuscript exists.",
-    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。"
+    "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。",
+    "R2 emotion-retention external diagnosis not run: pre-send exact composer comparison failed; no reviewer /c/ URL, no callback and no new prose authorization."
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -573,7 +574,7 @@
     "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
     "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED",
     "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED",
-    "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07: Opera Neon Session terminated; complete task prepared, not dispatched"
+    "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07: pre-send exact composer mismatch; send_click_count=0; external review not started; same-task retry forbidden"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -744,7 +745,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+  "next_required_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1759,14 +1760,14 @@
       "role": "方法4短段执行、事实及人物反应复核、待阅读回执。"
     }
   ],
-  "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PREPARED",
+  "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PRE_SEND_BLOCKED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
   "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "596b7b3d94e63951ebe21895fcf5a5a42387b12d4c46e84ccc75019c5b9e3648",
+    "project_state_sha256": "e9ecf9b13d4dfdb03a2a78347bea300f8eabba25760fc84981a6c6ce51275105",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1823,7 +1824,7 @@
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
   "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
-  "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+  "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
   "human_verdict_receipt": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
   "current_human_gate": "CURRENT_R2_HUMAN_FAIL_ORIGINAL_METHOD4_HUMAN_UNKNOWN",
   "phase422_state": {
@@ -2924,10 +2925,22 @@
         "blob": "cc96cf35d8ff6600bbd583f3a329199347abdcba",
         "sha256": "5ddc2e21eb967d40a99353365b0b4fa7cca79d1cdaaee5bb5f2629067e484383"
       },
-      "status": "PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED",
-      "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK",
+      "status": "DISPATCH_BLOCKED_PRE_SEND_EXACT_COMPOSER_MISMATCH_NO_SEND_NO_RETRY",
+      "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
       "new_prose_authorized_now": false,
-      "callback_received": false
+      "callback_received": false,
+      "dispatch_blocker": {
+        "path": "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+        "blob": "f332f942b9adf31d5beca23f435b3318c37b9761",
+        "sha256": "34c411c70be7fc6d8e03ccd7da1cffe0458b1a30405a35b6f23060174ac9653b"
+      },
+      "external_review_started": false,
+      "reviewer_conversation_url": null,
+      "send_click_count": 0,
+      "composer_fill_count": 1,
+      "same_task_retry_allowed": false,
+      "historical_session_terminated_is_current": false,
+      "blocked_at": "2026-10-03T01:07:50.720Z"
     }
   }
 }
