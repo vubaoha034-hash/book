@@ -1,0 +1,127 @@
+{
+  "schema_version": "native-two-role-opening-review-state/v1",
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "source_head": "f1283b8b4daaf3ded67a42de7784dca3f3e09603",
+  "source_checkpoint": 197,
+  "status": "TWO_INDEPENDENT_AI_REVIEWS_AND_ONE_OPENING_SCOPE_PREPARATION_COMPLETE_NO_PROSE",
+  "generation_budget": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "formal_mainline_method_revision": 4,
+  "human_quality_result": "FAIL",
+  "human_wants_to_continue": false,
+  "original_404_human_result": "UNKNOWN",
+  "old_448_human_emotion_retention": "FAIL",
+  "independent_AI_review_calls": 2,
+  "actual_human_reviewer_count": 0,
+  "standalone_quality_gate_allowed": false,
+  "next_action": "AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_TWO_ROLE_REVIEW_AUTHORIZATION_20261003.json",
+    "blob": "50cfee75022254fe218b9f9d05a8d99c578ee634",
+    "sha256": "b32397aaddab1ce94dc60b47e8f2074ee6c20133eef32f98bada6b8ea87c0c89"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+    "blob": "0e7ff35eaf896a97a9b7fbf55b79820267fdfad0",
+    "sha256": "6d2e797968a5d76a97f11ef546022953987b1485c06c898905c443b3f0c8215e"
+  },
+  "previous_human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+    "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+    "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+  },
+  "target": {
+    "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+  },
+  "manifest": {
+    "path": "config/novel-two-role-review-20261003.json",
+    "blob": "3689985ec65fd25887128b59ce56ffad27f1d133",
+    "sha256": "6080049a84d8f7fb43561b5880f4266eed86af85db8c3f788893efbc49b2ac54"
+  },
+  "sources": {
+    "path": "state/learning/two-role-opening-20261003/sources.json",
+    "blob": "fb881f7af0068317a145ea610511718e35a42681",
+    "sha256": "44dbb3abe5995e8d4b2dd3c8622c977402f4fd0fdb4f6b99eb70f8ec4698a2a2"
+  },
+  "settlement": {
+    "path": "state/reviews/two-role-opening-20261003/coordinator-settlement.json",
+    "blob": "9d9048fe9c04115054c0c77a73a991a62dc38e13",
+    "sha256": "3c538c90f5cbed77eb9477fcae2aa238111b24b5f4161de343afbc7201ed5958"
+  },
+  "prepared_input": {
+    "path": "delivery/two-role-opening-20261003/prepared-opening-input.json",
+    "blob": "d546ee14a6e0ca484611de7ab5ff2d6e662de21a",
+    "sha256": "fa2f314f4403e08e3ddf814f5af55d19aac1c65aaa67f88ec31cb6bb4cba4e1b"
+  },
+  "next_task_proposal": {
+    "path": "state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json",
+    "blob": "2db4ed1faf43a8a69dd9d3258e58ffe4d7fe2fab",
+    "sha256": "337357e4b5228069230e5b65d5cf9c3d6d05b0625571b4428260c543db334fcf"
+  },
+  "method_document": {
+    "path": "modules/two-role-opening-review.md",
+    "blob": "6eb37749afb159bbb3c0a3cc4db2efd69c2223ff",
+    "sha256": "dc98b1c6ab97c9e50308e3abdc52d6305dd73ff859dbfaa610ca73dc3149ce98"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md",
+    "blob": "c351dbbfbacfd3acdf04132759715db43437a857",
+    "sha256": "34c57fee21e9e81494b64de9c43509cac92d6bd394ac457a0961821e3a08ee88"
+  },
+  "previous_stage_immutable": true,
+  "supersedes_only_live_next_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false,
+  "reader_reaction": "YES",
+  "editor_verdict": "REVISE",
+  "reader_runtime": {
+    "path": "state/reviews/two-role-opening-20261003/reader.runtime.json",
+    "blob": "730e360dbc03084a6a3c840cb99d3b8eea1c6383",
+    "sha256": "61d33275a446874d36d35c1e3017e7ae0e11195608fbbfed152edea2aa85ffe3"
+  },
+  "reader_raw": {
+    "path": "state/reviews/two-role-opening-20261003/reader.raw.txt",
+    "blob": "c21984de521c9f59e84688a483f6b3030d7389d0",
+    "sha256": "13909118d124589c862db005ce90c6fc04e66902a6c0bdf6c554cf603dbe858c"
+  },
+  "reader_evidence": {
+    "path": "state/reviews/two-role-opening-20261003/reader.evidence.json",
+    "blob": "606e1a965614d66a2474160ed4be72ff5ba2e063",
+    "sha256": "51a184f989b343e5e4e53866cab982d052982dde6b64d115b3c2f36e47aac4ff"
+  },
+  "editor_runtime": {
+    "path": "state/reviews/two-role-opening-20261003/editor.runtime.json",
+    "blob": "823fba54589f2f06ac0d6a86f0ceac1a5613d169",
+    "sha256": "b4e5be0fceb40be9eaac4879b3ab20f805d06a89351581c9fa3a49b8f81b90c8"
+  },
+  "editor_raw": {
+    "path": "state/reviews/two-role-opening-20261003/editor.raw.txt",
+    "blob": "cc6bc13418f65b15bf23d1521f99bccadc3a0f9f",
+    "sha256": "6d4bb6a7affd372229f77b8e594790bdf530873505d3b3b7b190f733e8841a7f"
+  },
+  "editor_evidence": {
+    "path": "state/reviews/two-role-opening-20261003/editor.evidence.json",
+    "blob": "bbd3347595614f7c7294fae591b5b379eba07025",
+    "sha256": "7fba3271897d30b2e6820e362bd7ca156036ef3bb6bd3058ccfad6230338eb3c"
+  },
+  "project_id": "novel-distillation",
+  "bounded_task": true,
+  "read_material_only": true,
+  "coordinator_is_only_business_state_writer": true,
+  "required_outputs": [
+    "two_actual_isolated_AI_calls",
+    "raw_reports",
+    "quoted_evidence",
+    "fact_and_scope_settlement",
+    "one_prepared_opening_input",
+    "native_save_and_actual_remote_readback"
+  ],
+  "remote_verification": "SEPARATE_ACTUAL_READBACK_RECEIPT_AFTER_PUBLICATION"
+}

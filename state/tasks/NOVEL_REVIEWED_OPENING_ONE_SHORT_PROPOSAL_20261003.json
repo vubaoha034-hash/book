@@ -1,0 +1,35 @@
+{
+  "schema_version": "native-one-bounded-followup-proposal/v1",
+  "task_id": "NOVEL-REVIEWED-OPENING-ONE-SHORT-TRIAL-20261003-01",
+  "parent_task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "status": "PREPARED_NOT_AUTHORIZED",
+  "prepared_input": {
+    "path": "delivery/two-role-opening-20261003/prepared-opening-input.json",
+    "blob": "d546ee14a6e0ca484611de7ab5ff2d6e662de21a",
+    "sha256": "fa2f314f4403e08e3ddf814f5af55d19aac1c65aaa67f88ec31cb6bb4cba4e1b"
+  },
+  "proposed_generation_budget": 1,
+  "authorized_generation_budget": 0,
+  "generation_count": 0,
+  "automatic_activation": false,
+  "output_count": 1,
+  "minimum_non_whitespace_characters": 300,
+  "maximum_non_whitespace_characters": 500,
+  "new_version_opening_reorganization_requires_explicit_scope": true,
+  "old_artifacts_and_locks_must_remain_byte_identical": true,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_authorized": false,
+  "multiple_candidates_allowed": false,
+  "full_v5_authorized": false,
+  "new_prose_authorized": false,
+  "required_authorization": "新的一次300—500字第二场开頭短稿预算，以及仅对新版本入口/信息次序的重排范围；旧预算不恢复、旧197字原稿不改。",
+  "writer_isolation": "新写作者只读prepared_input.writer_packet，不读评审、反馈、旧稿、失败答案。",
+  "review_after_freeze": "不同的新编辑与匿名AI读者各一次，事实核验；AI不能替刘先生验收。",
+  "human_recheck_conditions": [
+    "第一屏是否形成想追的问题",
+    "私人反应是否改变下一句或选择",
+    "是否愿意继续读；停止句只收实际反馈"
+  ],
+  "review_completeness_does_not_authorize_writing": true
+}

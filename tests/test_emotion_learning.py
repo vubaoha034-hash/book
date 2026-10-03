@@ -24,6 +24,18 @@ class EmotionLearningTests(unittest.TestCase):
         self.copy_refs(self.route)
         self.copy_refs(self.project['r2_entry_short_trial'])
         self.copy(gate.runner.DIRECTORY + '/diagnosis.attempt.json')
+        # Test checkpoint197's immutable diagnosis and human UNKNOWN field in
+        # its own view; the later direct retention answer has separate tests.
+        human = self.read(self.route['human_feedback']['path'])
+        for value in (self.project, self.checkpoint):
+            value.pop('two_role_opening_review', None)
+            value.update(human_verdict_receipt=self.route['human_feedback']['path'], latest_human_review=human['review'],
+                last_completed_task_id=gate.TASK, last_completed_task_contract=self.route['task']['path'],
+                next_action=gate.NEXT_ACTION, next_required_action=gate.NEXT_ACTION,
+                current_human_gate='CURRENT_395_HUMAN_FAIL_OLD_448_FAIL_ORIGINAL_404_UNKNOWN')
+        self.checkpoint.update(sequence=197,stop=True)
+        entry = self.root / 'START_HERE.md'
+        entry.write_text('当前位置：检查点197。\n'+entry.read_text(encoding='utf-8'),encoding='utf-8')
 
     def copy(self, path):
         if path in self.seen or not (REPO / path).is_file(): return

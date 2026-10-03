@@ -1,0 +1,28 @@
+{
+  "schema_version": "native-two-role-review-authorization/v1",
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "source_head": "f1283b8b4daaf3ded67a42de7784dca3f3e09603",
+  "source_checkpoint": 197,
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "exact_user_instruction": "一，我需要多角色的介入。我不希望你自己做图而后自己审核。加入一个专业人士审核，还有一个普通观众是否愿意看，二，我知道skill里面专门有这类审核的skill，你可以直接照搬过来，或者你自己检查下，是否有用，把有用的拿过来。明白我的意思吗？而后有了审核就进行下一步。",
+  "retention_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+    "blob": "0e7ff35eaf896a97a9b7fbf55b79820267fdfad0",
+    "sha256": "6d2e797968a5d76a97f11ef546022953987b1485c06c898905c443b3f0c8215e"
+  },
+  "previous_learning_result": {
+    "path": "state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_RESULT_20261003.json",
+    "blob": "09f55684d6332b8aa99a41a865302166df7395ec",
+    "sha256": "732f7a4320e2dc90e2905f6387224c54c1247ebc1de5541cae88234753b39db5"
+  },
+  "maximum_new_review_calls": 2,
+  "generation_budget": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "authorized_next_work": "TWO_ACTUAL_ISOLATED_AI_ROLES_THEN_ONE_EVIDENCE_BASED_OPENING_SCOPE_AND_INPUT_PREPARATION",
+  "new_writing_budget_inferred_from_review_completion": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "automatic_background_tasks_authorized": false
+}

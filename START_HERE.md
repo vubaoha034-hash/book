@@ -17,7 +17,13 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点197。本轮 `NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01` 已保存刘先生对395字稿的实际否决：AI味重、情绪平、互动像机器人。已主动阅读专业作者课程实录、网文作者访谈、官方讲座笔记、书籍公开引言和固定提交的场景/文字技能，完成一次独立GPT-6.1 Sol / Max的已知失败后诊断、8处引文及3个窗口引文核对、方法与精简创作原则准备。方法4、原故事与全部旧锁/额度保持；本轮没有新正文。
+当前位置：检查点198。本轮 `NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01` 按刘先生新要求完成两个独立AI上下文：专业编辑为已知失败后的局部诊断，匿名普通读者仅看正文。实际均为GPT-6.1 Sol / Max，分别约10.2/4.5分钟；报告互不传递。编辑REVISE，AI读者YES与刘先生明确没有续读欲望不一致，保留为诊断漏检，不能认证好看或口味。20处引文记录已定位，原报告未改；当前395字真人FAIL，不原样重投。
+
+接续读[新任务](state/tasks/NOVEL_TWO_ROLE_OPENING_REVIEW_20261003.json)、[真实留存补充](state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json)、[两份评审及范围结果](docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md)、[编辑原报告](state/reviews/two-role-opening-20261003/editor.raw.txt)、[AI读者原报告](state/reviews/two-role-opening-20261003/reader.raw.txt)和[逐项结算](state/reviews/two-role-opening-20261003/coordinator-settlement.json)。已取用固定提交的story-review与reader-sim，读者反应与编辑诊断分开；[来源及实际阅读范围](state/learning/two-role-opening-20261003/sources.json)、[可执行方式与限制](modules/two-role-opening-review.md)。读取这些文件和校验不调用模型，原两次run均已消费。
+
+当前唯一下一动作：`AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT`。审核后已完成[一个入口与输入](delivery/two-role-opening-20261003/prepared-opening-input.json)：从现有合同姓名被罗钧看到的时刻进入，同一第二场、无新生活事实；[唯一短稿提案](state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json)拟一份300—500字。新预算当前0，评审完成不自动授权写作；以后仅发writer_packet字段，不发报告、失败标签或答案。旧RC3额度0、旧197字原稿不解锁、V5与后台任务不授权。原404未知、旧448原否决范围、方法4与故事目标保留。当前认可的连续前场正文未建立，精确停止句仍未知。
+
+上一检查点197：本轮 `NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01` 已保存刘先生对395字稿的实际否决：AI味重、情绪平、互动像机器人。已主动阅读专业作者课程实录、网文作者访谈、官方讲座笔记、书籍公开引言和固定提交的场景/文字技能，完成一次独立GPT-6.1 Sol / Max的已知失败后诊断、8处引文及3个窗口引文核对、方法与精简创作原则准备。方法4、原故事与全部旧锁/额度保持；本轮没有新正文。
 
 接续先读[完整真人反馈](state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json)、[学习授权](state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_AUTHORIZATION_20261003.json)、[原生任务](state/tasks/NOVEL_EMOTION_PACING_LEARNING_20261003.json)、[专业学习及实际阅读范围](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)、[两个根因与结果](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)、[原始诊断](state/reviews/emotion-learning-20261003/diagnosis.raw.txt)、[协调者结算](state/reviews/emotion-learning-20261003/coordinator-settlement.json)及[结果回执](state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_RESULT_20261003.json)。可复用[人物反应与节奏](modules/emotion-reaction-and-pacing.md)供本阶段参考，未来写作者只取[三条原则](delivery/emotion-learning-20261003/craft-capsule.json)和冻结事实，不加载失败分析或审核答案。
 

@@ -1,0 +1,58 @@
+{
+  "schema_version": "native-human-retention-supplement/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "source_head": "f1283b8b4daaf3ded67a42de7784dca3f3e09603",
+  "source_checkpoint": 197,
+  "output": {
+    "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+  },
+  "prior_human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+    "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+    "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+  },
+  "outcome": "FAIL",
+  "review": {
+    "recorded_at": "2026-10-03T08:17:39.766698+00:00",
+    "feedback_submitted_at": "UNKNOWN_MESSAGE_TIMESTAMP_NOT_PROVIDED",
+    "bound_test_id": "R2_ENTRY_SHORT_A1_NEW_BUDGET",
+    "bound_method_revision": 4,
+    "bound_version": "SHORT-ENTRY-A1-395",
+    "bound_artifact_path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "bound_blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "bound_sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa",
+    "feedback_summary": "刘先生继续明确指出当前395字开头没有继续阅读欲望；前次AI味、情绪和互动否决保留。",
+    "human_exact_feedback": "讲真的，我一直觉得这个开头非常难以让我有看下去的冲动，现在的快时代，一开始应该快速抓住要求，几百个字根本让我没有欲望，那说明问题就很大。",
+    "verdict": "REJECT_AI_SMELL_FLAT_EMOTION_AND_ROBOTIC_INTERACTION",
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "scope": "仅绑定395字新短段；不扩张到旧448字的新机器人判决、原404字结果或题材否决。",
+    "validation_scope": "SHORT_EXCERPT_EMOTION_STYLE_AND_INTERACTION",
+    "two_question_test_result": "FAIL_ROBOTIC_INTERACTION_NEGATIVE_SUFFICIENT",
+    "human_quality_accepted": false,
+    "same_artifact_resubmission_allowed": false,
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "robotic_interaction_verdict": "FAIL",
+    "emotion_verdict": "FAIL",
+    "ai_smell_verdict": "FAIL",
+    "wants_to_continue": false,
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "retention_verdict": "FAIL",
+    "carried_dimensions_source": {
+      "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+      "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+      "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+    },
+    "scope_note": "在当前395字稿及其反馈之后的直接补充；不是旧448/404字的新判决。"
+  },
+  "processed_once": true,
+  "new_generation_budget": 0,
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "prior_receipt_rewritten": false
+}

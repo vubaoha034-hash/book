@@ -1,0 +1,97 @@
+{
+  "schema_version": "native-two-role-skill-study/v1",
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "external_skill_repository": "https://github.com/haowjy/creative-writing-skills",
+  "external_skill_commit": "0d5bf7fd987554e05db7e05d569736e648297722",
+  "adopted_skills": [
+    "story-review",
+    "reader-sim"
+  ],
+  "skill_resources": [
+    {
+      "repository_path": "skills/story-review/SKILL.md",
+      "blob": "84af4da8a6a42e67e80e59439e51acd61d82624a",
+      "sha256": "33a57a6f00fa152611495b3b45943eec29244775c9fa6e4ca061d2440942e44b",
+      "read": true
+    },
+    {
+      "repository_path": "skills/story-review/resources/editorial-review.md",
+      "blob": "aaaefed418ac4fb899d2b9306c5723f65dd93cf5",
+      "sha256": "d731f237daa15d8df9513521bec5b7836d1f5393421018ca8d82a12511c66fbc",
+      "read": true
+    },
+    {
+      "repository_path": "skills/story-review/resources/developmental-edit.md",
+      "blob": "df9407cefc95b8c70cc89e33533739c2b8c12244",
+      "sha256": "b6317b7c8ef68943ab4ad10d3abfdc8ce5fbdbbfcfeb2ab3fe69c6733ed51667",
+      "read": true
+    },
+    {
+      "repository_path": "skills/story-review/resources/prose-critique.md",
+      "blob": "1e327668f84082e1a0a94dda89b291629480805e",
+      "sha256": "ccc2babbca0c60ee97976d4c9d63973e96a6b866666cedb42d869d104f6417ad",
+      "read": true
+    },
+    {
+      "repository_path": "skills/reader-sim/SKILL.md",
+      "blob": "ebfc96a18f7d8c0509c421d06f0725975bb8fd1a",
+      "sha256": "3c68115e7eb86e2614ebe821d158958881fcfa1acc953dc4998b514f363a7518",
+      "read": true
+    }
+  ],
+  "skill_application": {
+    "story-review": [
+      "主导问题与读者承诺先于行文润色",
+      "原文依据、局部范围、保护有效部分",
+      "不在局部摘录上判断全书结构"
+    ],
+    "reader-sim": [
+      "单一首次读者的关注和走神记录",
+      "直接报告愿不愿继续及持有的问题",
+      "感受不变成编辑方案，不冒充真人人群"
+    ]
+  },
+  "not_adopted": [
+    "技能中的全书结构判断需要完整稿，本轮没有",
+    "不执行外部分析脚本，不安装插件、钩子或后台任务",
+    "不把所有资源作为写作者规则，不生成替换句"
+  ],
+  "external_code_executed": false,
+  "external_skills_installed_globally": false,
+  "actual_audience_research": false,
+  "writing_transfer": "UNPROVEN",
+  "full_book_read": false,
+  "complete_video_watched": false,
+  "professional_opening_sources": [
+    {
+      "id": "O01",
+      "url": "https://writingexcuses.com/16-28-common-first-page-mistakes/",
+      "title": "Writing Excuses 16.28 Common First-Page Mistakes",
+      "access_level": "OFFICIAL_TRANSCRIPT_READ",
+      "read_locator": "官方文字实录实质内容：首次定位、无信息开头、对白语境、冲击之后的因果线索",
+      "own_note": "开头需要给读者可定位的信息与可追的问题；一条冲击句之后仍需因果推进。不是绝对禁止对白或要求每句刺激。",
+      "application_limit": "课程没有证明本稿该如何改，也没有证明手机中文小说的普遍阈值。"
+    },
+    {
+      "id": "O02",
+      "url": "https://writingexcuses.com/writing-excuses-10-14-how-much-of-the-beginning-needs-to-come-first/",
+      "title": "Writing Excuses 10.14 How Much of the Beginning Needs to Come First?",
+      "published_at": "2015-04-05",
+      "access_level": "OFFICIAL_TRANSCRIPT_READ",
+      "read_locator": "官方课程实录：读者承诺、人物动机与开端范围",
+      "own_note": "开端向读者承诺一种体验；第一屏和全篇前段不能混作同一窗口。",
+      "application_limit": "不执行课程里的多个500词开头练习，用户未授权多个候选。"
+    },
+    {
+      "id": "O03",
+      "url": "https://janefriedman.com/your-first-scene/",
+      "title": "Paula Munier: Your Novel’s First Scene: How to Start Right",
+      "published_at": "2016-11-28",
+      "page_update_at": "2025-02-18",
+      "access_level": "AUTHOR_PUBLIC_LICENSED_BOOK_EXCERPT_READ",
+      "read_locator": "公开书摘实质正文：第一场围绕核心故事问题，区分作者热身与读者当下需要",
+      "own_note": "作者需要知道的背景不等于第一场读者必须先听的背景；选择能引出核心故事问题的时刻。",
+      "application_limit": "只读公开书摘，未读整本A Writer’s Guide to Beginnings；不把页数建议当定律。"
+    }
+  ]
+}

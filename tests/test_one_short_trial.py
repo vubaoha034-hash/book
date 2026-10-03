@@ -24,6 +24,7 @@ class OneShortTrialTests(unittest.TestCase):
         # Test the immutable checkpoint196 stage in isolation from later tasks.
         for value in (self.project, self.checkpoint):
             value.pop('emotion_pacing_learning', None)
+            value.pop('two_role_opening_review', None)
             value.update(last_completed_task_id=gate.TASK,
                 last_completed_task_contract=self.route['task']['path'],
                 next_action=gate.NEXT_ACTION, next_required_action=gate.NEXT_ACTION)

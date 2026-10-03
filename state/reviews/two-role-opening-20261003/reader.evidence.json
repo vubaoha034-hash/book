@@ -1,0 +1,76 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "“罗钧。”许澄叫他，他的目光还在过户大厅的玻璃门上。\n“我得回去问问。那房子，我今晚本来要住进去的。”",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "她的指尖停在纸角。“我知道你不记得。可我过的那三年，不是编来骗你钱的。”\n他没接话。他想说找错人了，纸上却偏偏是他的名字。三十天的冲突窗口才开始，她却说五天。",
+      "actual_line": 5,
+      "start_character_0_based": 151
+    },
+    {
+      "index": 2,
+      "quote": "他把复本转正，在搜索栏里输入供应商的名字。",
+      "actual_line": 12,
+      "start_character_0_based": 385
+    },
+    {
+      "index": 3,
+      "quote": "几年的首付攒到今天，他不想耗在这儿。",
+      "actual_line": 2,
+      "start_character_0_based": 51
+    },
+    {
+      "index": 4,
+      "quote": "“我知道你不记得。可我过的那三年，不是编来骗你钱的。”",
+      "actual_line": 5,
+      "start_character_0_based": 160
+    },
+    {
+      "index": 5,
+      "quote": "三十天的冲突窗口才开始，她却说五天。\n“我现在接后期，明天下午前要付一万二押金，租自己的工作间。",
+      "actual_line": 6,
+      "start_character_0_based": 212
+    },
+    {
+      "index": 6,
+      "quote": "“我自己找他们公开的电话，现在问。问不等于认账。”他掏出手机。\n“我能配合到三点，就这二十分钟。客户的片子还等着。”",
+      "actual_line": 10,
+      "start_character_0_based": 326
+    },
+    {
+      "index": 7,
+      "quote": "“我知道你不记得。可我过的那三年，不是编来骗你钱的。”",
+      "actual_line": 5,
+      "start_character_0_based": 160
+    },
+    {
+      "index": 8,
+      "quote": "“我自己找他们公开的电话，现在问。问不等于认账。”",
+      "actual_line": 10,
+      "start_character_0_based": 326
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/two-role-opening-20261003/reader.packet.json",
+    "blob": "3d72cfb56acb877e8467dc2830d472b243a8810b",
+    "sha256": "6dce01fc5b7f9ecf01975c7cf38f020230b2d711bdc1fc6a73df71bc3d0fa2b1"
+  },
+  "raw_report": {
+    "path": "state/reviews/two-role-opening-20261003/reader.raw.txt",
+    "blob": "c21984de521c9f59e84688a483f6b3030d7389d0",
+    "sha256": "13909118d124589c862db005ce90c6fc04e66902a6c0bdf6c554cf603dbe858c"
+  }
+}

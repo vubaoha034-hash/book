@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 197,
-  "recorded_at": "2026-10-03T08:41:38Z",
+  "sequence": 198,
+  "recorded_at": "2026-10-03T09:46:37Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "新授权的一次独立写作已冻结唯一395字第二场起始短段；不同独立上下文事实审查FACT_CLEAR，11处引文与9项事实/范围已核对，实际均Sol/Max。新预算已用尽，真人结果UNKNOWN；唯一下一步实际阅读这份原文。原404字UNKNOWN、旧448字真人FAIL、旧RC3剩余0、旧197字保护及方法4保留，不自动续写。",
+  "current_focus": "已完成两个独立Sol/Max上下文：匿名AI读者YES与刘先生不想继续的实际FAIL不一致；编辑REVISE给两个根因。20处引文记录核对，已准备一个既有姓名错位入口和输入；预算0，不自动新正文。原404未知、旧448否决、RC3额度与197字保护保留。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -751,7 +751,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
+  "next_required_action": "AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1880,14 +1880,14 @@
       "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "R2_395_HUMAN_FAIL_PROFESSIONAL_STUDY_COMPLETE_NO_PROSE",
+  "status": "R2_395_HUMAN_FAIL_TWO_ROLE_REVIEWS_AND_OPENING_INPUT_PREPARED_NO_PROSE",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "last_completed_task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "8a70ce856a88bf0c9ec24677762857cb231dbf1818fed06965399352f8556cc9",
+    "project_state_sha256": "a2c434a08f67fdfe6d580ad691533869c63cbe3816b37a431a4a9084e7104181",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1941,16 +1941,17 @@
       "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
       "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
       "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
-      "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01"
+      "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+      "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_EMOTION_PACING_LEARNING_20261003.json",
-  "next_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
-  "current_human_gate": "CURRENT_395_HUMAN_FAIL_OLD_448_FAIL_ORIGINAL_404_UNKNOWN",
+  "last_completed_task_contract": "state/tasks/NOVEL_TWO_ROLE_OPENING_REVIEW_20261003.json",
+  "next_action": "AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+  "current_human_gate": "CURRENT_395_HUMAN_EMOTION_AI_SMELL_INTERACTION_AND_RETENTION_FAIL_OLD_448_FAIL_404_UNKNOWN",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -2094,13 +2095,11 @@
     "bound_artifact_path": "delivery/r2-entry-trial-20261003/short-a1.md",
     "bound_blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
     "bound_sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa",
-    "feedback_summary": "当前395字唯一新短段被刘先生明确否决：AI味重、情绪平、互动像机器人；惊讶和难过为人物真实反应的例子。另要求助手主动学习专业小说教程、书籍及课程，改进快节奏写法。",
-    "human_exact_feedback": "一，我不是很满意，ai味道很重。  二，情绪还是平。   比如我会惊讶，会难过等等对吧。这个就跟机器人一样。  三，我觉得现在应该有大量的小说写的教程，书籍，视频等等，你应该自己查找，自己看看如何才能提高小说的写作方法，特别是现在的小说追求快节奏。明白我的意思吗？不应该让我总在这里帮你出主意，网络上大量的专业性质的。",
+    "feedback_summary": "刘先生继续明确指出当前395字开头没有继续阅读欲望；前次AI味、情绪和互动否决保留。",
+    "human_exact_feedback": "讲真的，我一直觉得这个开头非常难以让我有看下去的冲动，现在的快时代，一开始应该快速抓住要求，几百个字根本让我没有欲望，那说明问题就很大。",
     "verdict": "REJECT_AI_SMELL_FLAT_EMOTION_AND_ROBOTIC_INTERACTION",
     "source": {
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
-      "coverage": "COMPLETE_CURRENT_MESSAGE",
-      "original_conversation_locator": "CURRENT_CODEX_THREAD_NO_STABLE_MESSAGE_URL",
       "message_observed_directly": true
     },
     "scope": "仅绑定395字新短段；不扩张到旧448字的新机器人判决、原404字结果或题材否决。",
@@ -2113,8 +2112,15 @@
     "robotic_interaction_verdict": "FAIL",
     "emotion_verdict": "FAIL",
     "ai_smell_verdict": "FAIL",
-    "wants_to_continue": "UNKNOWN_NOT_EXPLICITLY_ANSWERED",
-    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
+    "wants_to_continue": false,
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "retention_verdict": "FAIL",
+    "carried_dimensions_source": {
+      "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+      "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+      "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+    },
+    "scope_note": "在当前395字稿及其反馈之后的直接补充；不是旧448/404字的新判决。"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -3177,7 +3183,7 @@
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
   },
-  "updated_at": "2026-10-03T08:41:38Z",
+  "updated_at": "2026-10-03T09:46:37Z",
   "r2_entry_short_trial": {
     "schema_version": "native-one-short-trial-state/v1",
     "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
@@ -3385,5 +3391,129 @@
     "supersedes_only_live_next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
     "previous_stage_is_immutable_snapshot": true,
     "automatic_writer_dispatch": false
+  },
+  "two_role_opening_review": {
+    "schema_version": "native-two-role-opening-review-state/v1",
+    "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+    "source_head": "f1283b8b4daaf3ded67a42de7784dca3f3e09603",
+    "source_checkpoint": 197,
+    "status": "TWO_INDEPENDENT_AI_REVIEWS_AND_ONE_OPENING_SCOPE_PREPARATION_COMPLETE_NO_PROSE",
+    "generation_budget": 0,
+    "generation_count": 0,
+    "new_prose_authorized": false,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_v5_authorized": false,
+    "new_life_facts_authorized": false,
+    "formal_mainline_method_revision": 4,
+    "human_quality_result": "FAIL",
+    "human_wants_to_continue": false,
+    "original_404_human_result": "UNKNOWN",
+    "old_448_human_emotion_retention": "FAIL",
+    "independent_AI_review_calls": 2,
+    "actual_human_reviewer_count": 0,
+    "standalone_quality_gate_allowed": false,
+    "next_action": "AWAIT_ONE_NEW_BOUNDED_WRITING_BUDGET_FOR_REVIEWED_OPENING_REENTRY_INPUT",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_TWO_ROLE_REVIEW_AUTHORIZATION_20261003.json",
+      "blob": "50cfee75022254fe218b9f9d05a8d99c578ee634",
+      "sha256": "b32397aaddab1ce94dc60b47e8f2074ee6c20133eef32f98bada6b8ea87c0c89"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+      "blob": "0e7ff35eaf896a97a9b7fbf55b79820267fdfad0",
+      "sha256": "6d2e797968a5d76a97f11ef546022953987b1485c06c898905c443b3f0c8215e"
+    },
+    "previous_human_feedback": {
+      "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+      "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+      "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+    },
+    "target": {
+      "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+      "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+      "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+    },
+    "manifest": {
+      "path": "config/novel-two-role-review-20261003.json",
+      "blob": "3689985ec65fd25887128b59ce56ffad27f1d133",
+      "sha256": "6080049a84d8f7fb43561b5880f4266eed86af85db8c3f788893efbc49b2ac54"
+    },
+    "sources": {
+      "path": "state/learning/two-role-opening-20261003/sources.json",
+      "blob": "fb881f7af0068317a145ea610511718e35a42681",
+      "sha256": "44dbb3abe5995e8d4b2dd3c8622c977402f4fd0fdb4f6b99eb70f8ec4698a2a2"
+    },
+    "settlement": {
+      "path": "state/reviews/two-role-opening-20261003/coordinator-settlement.json",
+      "blob": "9d9048fe9c04115054c0c77a73a991a62dc38e13",
+      "sha256": "3c538c90f5cbed77eb9477fcae2aa238111b24b5f4161de343afbc7201ed5958"
+    },
+    "prepared_input": {
+      "path": "delivery/two-role-opening-20261003/prepared-opening-input.json",
+      "blob": "d546ee14a6e0ca484611de7ab5ff2d6e662de21a",
+      "sha256": "fa2f314f4403e08e3ddf814f5af55d19aac1c65aaa67f88ec31cb6bb4cba4e1b"
+    },
+    "next_task_proposal": {
+      "path": "state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json",
+      "blob": "2db4ed1faf43a8a69dd9d3258e58ffe4d7fe2fab",
+      "sha256": "337357e4b5228069230e5b65d5cf9c3d6d05b0625571b4428260c543db334fcf"
+    },
+    "method_document": {
+      "path": "modules/two-role-opening-review.md",
+      "blob": "6eb37749afb159bbb3c0a3cc4db2efd69c2223ff",
+      "sha256": "dc98b1c6ab97c9e50308e3abdc52d6305dd73ff859dbfaa610ca73dc3149ce98"
+    },
+    "result_document": {
+      "path": "docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md",
+      "blob": "c351dbbfbacfd3acdf04132759715db43437a857",
+      "sha256": "34c57fee21e9e81494b64de9c43509cac92d6bd394ac457a0961821e3a08ee88"
+    },
+    "previous_stage_immutable": true,
+    "supersedes_only_live_next_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "reader_reaction": "YES",
+    "editor_verdict": "REVISE",
+    "reader_runtime": {
+      "path": "state/reviews/two-role-opening-20261003/reader.runtime.json",
+      "blob": "730e360dbc03084a6a3c840cb99d3b8eea1c6383",
+      "sha256": "61d33275a446874d36d35c1e3017e7ae0e11195608fbbfed152edea2aa85ffe3"
+    },
+    "reader_raw": {
+      "path": "state/reviews/two-role-opening-20261003/reader.raw.txt",
+      "blob": "c21984de521c9f59e84688a483f6b3030d7389d0",
+      "sha256": "13909118d124589c862db005ce90c6fc04e66902a6c0bdf6c554cf603dbe858c"
+    },
+    "reader_evidence": {
+      "path": "state/reviews/two-role-opening-20261003/reader.evidence.json",
+      "blob": "606e1a965614d66a2474160ed4be72ff5ba2e063",
+      "sha256": "51a184f989b343e5e4e53866cab982d052982dde6b64d115b3c2f36e47aac4ff"
+    },
+    "editor_runtime": {
+      "path": "state/reviews/two-role-opening-20261003/editor.runtime.json",
+      "blob": "823fba54589f2f06ac0d6a86f0ceac1a5613d169",
+      "sha256": "b4e5be0fceb40be9eaac4879b3ab20f805d06a89351581c9fa3a49b8f81b90c8"
+    },
+    "editor_raw": {
+      "path": "state/reviews/two-role-opening-20261003/editor.raw.txt",
+      "blob": "cc6bc13418f65b15bf23d1521f99bccadc3a0f9f",
+      "sha256": "6d4bb6a7affd372229f77b8e594790bdf530873505d3b3b7b190f733e8841a7f"
+    },
+    "editor_evidence": {
+      "path": "state/reviews/two-role-opening-20261003/editor.evidence.json",
+      "blob": "bbd3347595614f7c7294fae591b5b379eba07025",
+      "sha256": "7fba3271897d30b2e6820e362bd7ca156036ef3bb6bd3058ccfad6230338eb3c"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_TWO_ROLE_OPENING_REVIEW_20261003.json",
+      "blob": "2a89215c27312cd1330fff952d94faca73ffa838",
+      "sha256": "afb2f5fdadf422c4a02a947c99a286c5cb0bfa190d2ea06fc8b63a188759a997"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_TWO_ROLE_REVIEW_RESULT_20261003.json",
+      "blob": "5bd5d660a669830b7a15b66c4869e658206c7ec2",
+      "sha256": "3a2a70b89a807fda1ad3bf97d1b1c1c05c3c2c66ac148b67817f5630099ba385"
+    }
   }
 }

@@ -32,6 +32,8 @@ V2 文件继续保留用于兼容；新任务默认执行 V3。
 
 当前检查点197：395字稿实际真人FAIL已另存，前一检查点的UNKNOWN仅为历史快照。已按用户要求主动学习专业资料并完成一次独立已知失败后的情绪/互动诊断。读取 [学习与适用边界](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)、[根因与原始证据](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)及当前任务。复用 [人物反应与节奏](modules/emotion-reaction-and-pacing.md)作当前阶段参考，不把教程、失败标签和诊断塞入写作者上下文；未来只取三条简短正向原则。当前无新写作预算，不自动续写，旧锁和方法4保持。读取不重跑模型，原一次诊断已消费；未读完整视频/书籍，不宣称已学会或验证文风。
 
+
+检查点198已按刘先生新要求接入两个实际独立AI角色：编辑读取必要事实和已知失败，匿名读者只看正文；原报告互不传递。实际Sol/Max已核对。编辑REVISE、AI读者YES与真人不想继续的FAIL不一致，不能晋级质量门。见[当前结果](docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md)及[调用方式](modules/two-role-opening-review.md)。取用固定提交的story-review/reader-sim，未安装整套规则。已推进一份既有姓名错位入口和冻结输入准备；当前预算零，后续写作者只读prepared_input.writer_packet。新版本开头重排须新的一次范围和预算，旧稿/197字保护和旧额度不变。读取不重跑，原评审各一次已消费。
 ## 核心纪律
 
 - 先证明故事成立，再写正文。

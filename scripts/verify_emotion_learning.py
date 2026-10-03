@@ -95,7 +95,7 @@ def validate_capsule(capsule):
         raise ValueError('LEARNING_WRITER_FAILURE_OR_ANSWER_LEAKAGE')
 
 
-def learning_action(root, project, checkpoint, historical_action):
+def learning_action(root, project, checkpoint, historical_action, successor_authorization=None):
     if historical_action != OLD_ACTION:
         raise ValueError('LEARNING_CANNOT_SKIP_HISTORICAL_GATES')
     validate_authorization(root, project, checkpoint)
@@ -237,6 +237,13 @@ def learning_action(root, project, checkpoint, historical_action):
     if checkpoint.get('sequence') != 197 or checkpoint.get('stop') is not True:
         raise ValueError('LEARNING_CHECKPOINT_OR_STOP_DRIFT')
     entry = (root / 'START_HERE.md').read_text(encoding='utf-8')
-    if TASK not in entry or NEXT_ACTION not in entry or '当前位置：检查点197。' not in entry:
+    valid_new_entry = False
+    if successor_authorization is not None:
+        successor = bound(root, successor_authorization)
+        valid_new_entry = (successor_authorization.get('path') == 'state/review_receipts/NOVEL_TWO_ROLE_REVIEW_AUTHORIZATION_20261003.json' and
+            successor.get('task_id') == 'NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01' and successor.get('source_checkpoint') == 197 and
+            successor.get('generation_budget') == 0 and successor.get('new_prose_authorized') is False and
+            successor.get('maximum_new_review_calls') == 2 and '当前位置：检查点198。' in entry)
+    if TASK not in entry or NEXT_ACTION not in entry or ('当前位置：检查点197。' not in entry and not valid_new_entry):
         raise ValueError('LEARNING_ENTRYPOINT_STALE')
     return NEXT_ACTION

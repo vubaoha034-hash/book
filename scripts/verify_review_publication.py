@@ -77,6 +77,37 @@ LEARNING_NEW_FILES = (
     LEARNING_PREFIX + 'REMOTE_SAVE_VERIFIED_20261003.json')
 LEARNING_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
     'scripts/verify_one_short_trial.py', 'tests/test_one_short_trial.py')
+TWO_ROLE_SOURCE = 'f1283b8b4daaf3ded67a42de7784dca3f3e09603'
+TWO_ROLE_PREFIX = 'state/review_receipts/NOVEL_TWO_ROLE_REVIEW_'
+TWO_ROLE_NEW_FILES = (
+    'config/novel-two-role-review-20261003.json',
+    'delivery/two-role-opening-20261003/reader.packet.json',
+    'delivery/two-role-opening-20261003/editor.packet.json',
+    'delivery/two-role-opening-20261003/prepared-opening-input.json',
+    'docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md',
+    'modules/review-roles/reader-policy.md', 'modules/review-roles/editor-policy.md',
+    'modules/two-role-opening-review.md',
+    'scripts/novel_two_role_review.py', 'scripts/verify_two_role_review.py',
+    'tests/test_two_role_review.py',
+    'state/learning/two-role-opening-20261003/sources.json',
+    'state/reviews/two-role-opening-20261003/reader.attempt.json',
+    'state/reviews/two-role-opening-20261003/reader.runtime.json',
+    'state/reviews/two-role-opening-20261003/reader.raw.txt',
+    'state/reviews/two-role-opening-20261003/reader.evidence.json',
+    'state/reviews/two-role-opening-20261003/editor.attempt.json',
+    'state/reviews/two-role-opening-20261003/editor.runtime.json',
+    'state/reviews/two-role-opening-20261003/editor.raw.txt',
+    'state/reviews/two-role-opening-20261003/editor.evidence.json',
+    'state/reviews/two-role-opening-20261003/coordinator-settlement.json',
+    'state/tasks/NOVEL_TWO_ROLE_OPENING_REVIEW_20261003.json',
+    'state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json',
+    'state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json',
+    TWO_ROLE_PREFIX+'AUTHORIZATION_20261003.json',
+    TWO_ROLE_PREFIX+'RESULT_20261003.json',
+    TWO_ROLE_PREFIX+'VALIDATION_20261003.json',
+    TWO_ROLE_PREFIX+'REMOTE_SAVE_VERIFIED_20261003.json')
+TWO_ROLE_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
+    'scripts/verify_emotion_learning.py','tests/test_emotion_learning.py','tests/test_one_short_trial.py')
 
 
 def git(*args):
@@ -396,6 +427,71 @@ def verify_emotion_learning(expected):
         'model_calls_during_readback': 0, 'generation_count_during_readback': 0}
 
 
+def verify_two_roles(expected):
+    """Actual remote bytes, current evidence graph and all prior frozen history."""
+    remote = git('ls-remote','origin','refs/heads/main').decode().split()[0]
+    if remote != expected: raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch','origin','main')
+    if git('rev-parse','origin/main').decode().strip() != remote: raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive = zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',remote)))
+    base = zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',TWO_ROLE_SOURCE)))
+    old = {p for p in base.namelist() if not p.endswith('/')}
+    new = {p for p in archive.namelist() if not p.endswith('/')}
+    if new-old-set(TWO_ROLE_NEW_FILES) or old-new:
+        raise ValueError('TWO_ROLE_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected = old-set(TWO_ROLE_MUTABLE_FILES)
+    for path in protected:
+        if archive.read(path) != base.read(path): raise ValueError('TWO_ROLE_HISTORICAL_BYTES_CHANGED: '+path)
+    seen,checked=set(),[]
+
+    def inspect(path,reference=None):
+        resolved=(ROOT/path).resolve()
+        if not resolved.is_relative_to(ROOT.resolve()): raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        data=archive.read(path)
+        if data != resolved.read_bytes(): raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: '+path)
+        digest=hashlib.sha256(data).hexdigest()
+        if reference and (reference.get('blob') != blob(data) or reference.get('sha256') != digest):
+            raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: '+path)
+        if path in seen:return
+        seen.add(path);checked.append({'path':path,'blob':blob(data),'sha256':digest})
+        # Existing receipts stay historical leaves, never rewritten to match
+        # today's mutable entrance/state. Follow only this task's new graph.
+        if path in TWO_ROLE_NEW_FILES and path.endswith('.json'):walk(json.loads(data))
+
+    def walk(value):
+        if isinstance(value,dict):
+            if all(k in value for k in ('path','blob','sha256')):inspect(value['path'],value)
+            for child in value.values():walk(child)
+        elif isinstance(value,list):
+            for child in value:walk(child)
+
+    project=json.loads(archive.read('state/project_state.json'))
+    cp=json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route=project.get('two_role_opening_review')
+    if (not route or route != cp.get('two_role_opening_review') or cp.get('sequence') != 198 or cp.get('stop') is not True or
+            route.get('generation_budget') != 0 or route.get('generation_count') != 0 or route.get('human_quality_result') != 'FAIL' or
+            cp.get('action_guard',{}).get('project_state_sha256') != hashlib.sha256(archive.read('state/project_state.json')).hexdigest()):
+        raise ValueError('REMOTE_TWO_ROLE_STATE_OR_CHECKPOINT_DRIFT')
+    walk(route)
+    for path in (*TWO_ROLE_MUTABLE_FILES,*TWO_ROLE_NEW_FILES):
+        if path == TWO_ROLE_NEW_FILES[-1] and path not in new:continue
+        inspect(path)
+    validation=json.loads(archive.read(TWO_ROLE_PREFIX+'VALIDATION_20261003.json'))
+    if validation.get('status') != 'TWO_ROLE_SCOPE_AND_EVIDENCE_VALIDATION_PASSED_NO_PROSE':
+        raise ValueError('REMOTE_TWO_ROLE_VALIDATION_NOT_COMPLETED')
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('published_two_role_state',ROOT/'scripts/verify_current_state.py')
+    current=importlib.util.module_from_spec(spec);spec.loader.exec_module(current)
+    state_result=current.verify(ROOT)
+    if state_result.get('sequence') != 198 or state_result.get('new_prose_authorized') is not False:
+        raise ValueError('REMOTE_TWO_ROLE_BUSINESS_GATE_NOT_CLOSED')
+    if git('ls-remote','origin','refs/heads/main').decode().split()[0] != remote:raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status':'REMOTE_TWO_ROLE_BYTES_HISTORY_AND_BUSINESS_GATES_VERIFIED',
+        'remote_head':remote,'source_head':TWO_ROLE_SOURCE,'checkpoint':198,'checked_count':len(checked),'files':checked,
+        'protected_source_file_count':len(protected),'all_prior_prose_locks_feedback_and_raw_reports_unchanged':True,
+        'current_state':state_result,'model_calls_during_readback':0,'generation_count_during_readback':0}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
@@ -403,9 +499,11 @@ if __name__ == '__main__':
     mode.add_argument('--preparation', action='store_true', help='Verify checkpoint195 preparation and preserve all checkpoint194 history')
     mode.add_argument('--short-trial', action='store_true', help='Verify checkpoint196 frozen short and preserve all checkpoint195 history')
     mode.add_argument('--emotion-learning', action='store_true', help='Verify checkpoint197 actual failure and learning; preserve checkpoint196 history')
+    mode.add_argument('--two-roles', action='store_true', help='Verify checkpoint198 independent editor/reader reviews and preserve checkpoint197 history')
     args = parser.parse_args()
     try:
-        result = (verify_emotion_learning(args.expected_head) if args.emotion_learning else
+        result = (verify_two_roles(args.expected_head) if args.two_roles else
+                  verify_emotion_learning(args.expected_head) if args.emotion_learning else
                   verify_short_trial(args.expected_head) if args.short_trial else
                   verify_preparation(args.expected_head) if args.preparation else verify(args.expected_head))
         print(json.dumps(result, ensure_ascii=False, indent=2))

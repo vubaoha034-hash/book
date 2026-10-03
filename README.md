@@ -1,5 +1,7 @@
 当前推进：检查点197。395字新短段已被刘先生明确否决：AI味重、情绪平、互动像机器人。已主动读取专业资料并完成一次独立Sol / Max的已知失败后诊断、证据核对及[人物反应与快节奏方法准备](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)。写作预算0，方法4与原故事/旧锁保留；未来一份短段的具体范围已准备，尚需新预算。学习不等于质量改善，原404字仍UNKNOWN。接续见[入口](START_HERE.md)和[结果](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)。
 
+检查点198已按刘先生新要求接入两个实际独立AI角色：编辑读取必要事实和已知失败，匿名读者只看正文；原报告互不传递。实际Sol/Max已核对。编辑REVISE、AI读者YES与真人不想继续的FAIL不一致，不能晋级质量门。见[当前结果](docs/NOVEL_TWO_ROLE_OPENING_REVIEW_RESULT_20261003.md)及[调用方式](modules/two-role-opening-review.md)。取用固定提交的story-review/reader-sim，未安装整套规则。已推进一份既有姓名错位入口和冻结输入准备；当前预算零，后续写作者只读prepared_input.writer_packet。新版本开头重排须新的一次范围和预算，旧稿/197字保护和旧额度不变。读取不重跑，原评审各一次已消费。
+
 # Novel Writing Master V3
 
 这是一个面向中文小说、公众号短篇、网文和短剧化故事的 Agent Skill。

@@ -1,0 +1,110 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "A08",
+      "item_index": 0,
+      "quote": "她将合同复本摊在休息区的桌上，指着两个名字：“工作室买灯和设备的分期。工作室停了，款没结清，还剩十八万六，其中六万八五天后到期。”",
+      "reported_line": 3,
+      "actual_line": 3,
+      "start_character_0_based": 70,
+      "end_character_exclusive": 135,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 1,
+      "quote": "她的指尖停在纸角。“我知道你不记得。可我过的那三年，不是编来骗你钱的。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 151,
+      "end_character_exclusive": 187,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 2,
+      "quote": "那房子，我今晚本来要住进去的。",
+      "reported_line": 2,
+      "actual_line": 2,
+      "start_character_0_based": 35,
+      "end_character_exclusive": 50,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 3,
+      "quote": "她的指尖停在纸角。“我知道你不记得。可我过的那三年，不是编来骗你钱的。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 151,
+      "end_character_exclusive": 187,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 4,
+      "quote": "纸上却偏偏是他的名字。三十天的冲突窗口才开始，她却说五天。",
+      "reported_line": 6,
+      "actual_line": 6,
+      "start_character_0_based": 201,
+      "end_character_exclusive": 230,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 5,
+      "quote": "租自己的工作间。如果得由我先筹，那笔押金也留不住。我不能一直垫着等你查。",
+      "reported_line": 7,
+      "actual_line": 7,
+      "start_character_0_based": 252,
+      "end_character_exclusive": 288,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 6,
+      "quote": "“我自己找他们公开的电话，现在问。问不等于认账。”他掏出手机。",
+      "reported_line": 10,
+      "actual_line": 10,
+      "start_character_0_based": 326,
+      "end_character_exclusive": 357,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A08",
+      "item_index": 7,
+      "quote": "“我能配合到三点，就这二十分钟。客户的片子还等着。”",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 358,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/two-role-opening-20261003/editor.packet.json",
+    "blob": "7a2ec08ba582e5f4607e59c2e8c0307867855006",
+    "sha256": "6fab56f7f0581c84cdae35e431837e8bcfc26f04adce23fff7cda66ed9636a9e"
+  },
+  "raw_report": {
+    "path": "state/reviews/two-role-opening-20261003/editor.raw.txt",
+    "blob": "cc6bc13418f65b15bf23d1521f99bccadc3a0f9f",
+    "sha256": "6d4bb6a7affd372229f77b8e594790bdf530873505d3b3b7b190f733e8841a7f"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "job_id": "R198",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/two-role-opening-20261003/reader.packet.json",
+    "blob": "3d72cfb56acb877e8467dc2830d472b243a8810b",
+    "sha256": "6dce01fc5b7f9ecf01975c7cf38f020230b2d711bdc1fc6a73df71bc3d0fa2b1"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T09:27:48Z"
+}

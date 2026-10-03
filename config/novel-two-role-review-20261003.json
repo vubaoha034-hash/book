@@ -1,0 +1,60 @@
+{
+  "schema_version": "native-two-role-review/v1",
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "source_head": "f1283b8b4daaf3ded67a42de7784dca3f3e09603",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_TWO_ROLE_REVIEW_AUTHORIZATION_20261003.json",
+    "blob": "50cfee75022254fe218b9f9d05a8d99c578ee634",
+    "sha256": "b32397aaddab1ce94dc60b47e8f2074ee6c20133eef32f98bada6b8ea87c0c89"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+    "blob": "0e7ff35eaf896a97a9b7fbf55b79820267fdfad0",
+    "sha256": "6d2e797968a5d76a97f11ef546022953987b1485c06c898905c443b3f0c8215e"
+  },
+  "artifact": {
+    "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+  },
+  "facts_source": {
+    "path": "delivery/r2-entry-trial-20261003/facts.packet.json",
+    "blob": "7b0dbe2a847c29a4f31a854823b141387692b85b",
+    "sha256": "fe386968cf04c395ac2bd03f4a9e7c30d056b7f727c730bc9bf9a9a1db5e442a"
+  },
+  "jobs": {
+    "reader": {
+      "packet": {
+        "path": "delivery/two-role-opening-20261003/reader.packet.json",
+        "blob": "3d72cfb56acb877e8467dc2830d472b243a8810b",
+        "sha256": "6dce01fc5b7f9ecf01975c7cf38f020230b2d711bdc1fc6a73df71bc3d0fa2b1"
+      },
+      "policy": {
+        "path": "modules/review-roles/reader-policy.md",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      "max_calls": 1
+    },
+    "editor": {
+      "packet": {
+        "path": "delivery/two-role-opening-20261003/editor.packet.json",
+        "blob": "7a2ec08ba582e5f4607e59c2e8c0307867855006",
+        "sha256": "6fab56f7f0581c84cdae35e431837e8bcfc26f04adce23fff7cda66ed9636a9e"
+      },
+      "policy": {
+        "path": "modules/review-roles/editor-policy.md",
+        "blob": "065f5f160a0725d759d459d22ce8b33f78e2a75e",
+        "sha256": "9cf507200e493fc0a8d3cbffd12bb0da9bd9f7c3486b5c403d784d410da6100b"
+      },
+      "max_calls": 1
+    }
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_budget": 0,
+  "blind_calibration_rerun": false,
+  "standalone_quality_gate_allowed": false,
+  "result_directory": "state/reviews/two-role-opening-20261003",
+  "roles_are_actual_humans": false
+}

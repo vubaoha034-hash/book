@@ -1,0 +1,12 @@
+{
+  "task_id": "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
+  "job_id": "E198",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/two-role-opening-20261003/editor.packet.json",
+    "blob": "7a2ec08ba582e5f4607e59c2e8c0307867855006",
+    "sha256": "6fab56f7f0581c84cdae35e431837e8bcfc26f04adce23fff7cda66ed9636a9e"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T09:27:50Z"
+}
