@@ -17,9 +17,15 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点202。任务 `NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01`。刘先生实际反馈“这个稍微好了一些。确实。”已绑定[同一401字交付稿](delivery/hook-trial-20261003/short-a1-fact-repaired.md)，见[原话回执](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)和[反馈任务](state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)。只记录相对改善，不推断改善维度、续读YES、情绪/互动PASS、精确停止句或全面认可；既有失败、原报告及检查点201的UNKNOWN快照保持原件。本次模型调用0、正文生成0。
+当前位置：检查点203。任务 `NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01`。刘先生对同一401字稿说“有一点想继续的想法。但是不多哈。”，随后说“比之前自然，已不明显”（两条重复只计一次实际反馈）。见[原话及限定范围](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)和[任务](state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)。两项短段阅读目标获局部正向反馈，但续读强度低；不改写原UNKNOWN或历史否决，不推为完整场景、TEST-01、题材/通用文风或模型筛查能力通过。最终401字事实审核绑定保持，400字AI读者报告不重绑。本次模型调用0、正文生成0。
 
-当前唯一下一动作：`AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT`。收同一短稿是否愿继续、人物互动是否仍机械的明确阅读反馈；没有新的写作预算、旧额度恢复或自动扩大。读取/校验不重跑模型，原有401字正文不改动。
+当前唯一下一动作：`PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION`。按既有连续执行授权，保留当前401字，准备并验证同一场接下来的唯一300—500字短段；另存新具体任务及有界预算。旧额度0、旧197字和世界人物结局保持，不因短段认可自动写整场、TEST-02或V5。
+
+本次[保存验证](state/review_receipts/NOVEL_HOOK_TRIAL_401_QUALIFIED_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_HOOK_TRIAL_401_QUALIFIED_REMOTE_SAVE_VERIFIED_20261003.json)分别保存，只证明限定反馈与文件保存，不证明整场或通用写作能力。
+
+上一检查点202：任务 `NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01`。刘先生实际反馈“这个稍微好了一些。确实。”已绑定[同一401字交付稿](delivery/hook-trial-20261003/short-a1-fact-repaired.md)，见[原话回执](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)和[反馈任务](state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)。只记录相对改善，不推断改善维度、续读YES、情绪/互动PASS、精确停止句或全面认可；既有失败、原报告及检查点201的UNKNOWN快照保持原件。本次模型调用0、正文生成0。
+
+当时唯一下一动作：`AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT`。收同一短稿是否愿继续、人物互动是否仍机械的明确阅读反馈；没有新的写作预算、旧额度恢复或自动扩大。读取/校验不重跑模型，原有401字正文不改动。
 
 本次[保存验证](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_REMOTE_SAVE_VERIFIED_20261003.json)分别记录；这些文件是反馈保存证据，不是文学通过证据。
 
@@ -73,4 +79,4 @@
 
 当前脚本验证主线与状态的一致性，保留旧稿拒绝边界。它不评判文学质量，也不构成平台级硬锁。
 
-本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新短稿见检查点201，检查点202记录相对改善，续读及互动判决仍UNKNOWN。
+本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新短稿见检查点201，检查点203记录少量续读意愿与互动更自然，只认可这401字，整场与迁移仍未通过。

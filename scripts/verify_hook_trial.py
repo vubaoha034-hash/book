@@ -17,8 +17,59 @@ HUMAN_TASK='NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01'
 HUMAN_EXACT='这个稍微好了一些。确实。'
 HUMAN_NEXT='AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT'
 HUMAN_RECEIPT='state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json'
+READING_SOURCE='9ba1ae731fb2b9a8a2879dbb332b11c4979bb33f'
+READING_TASK='NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01'
+READING_EXACT='有一点想继续的想法。但是不多哈。'
+READING_NEXT='PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION'
+INTERACTION_EXACT='比之前自然，已不明显'
+READING_RECEIPT='state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json'
 
-def human_feedback_view(root,project,cp):
+def reading_historical_view(root,project,cp):
+    feedback=project.get('hook_trial_human_feedback',{});record=feedback.get('reading_supplement')
+    if not record or feedback!=cp.get('hook_trial_human_feedback'):raise ValueError('HOOK_READING_FEEDBACK_STATE_DRIFT')
+    h=bound(root,record['receipt']);task=bound(root,record['task']);artifact=project['opening_hook_trial']['final_artifact']
+    if (record.get('source_head')!=READING_SOURCE or record.get('task_id')!=READING_TASK or record.get('next_action')!=READING_NEXT or
+        record['receipt'].get('path')!=READING_RECEIPT or h.get('task_id')!=READING_TASK or h.get('source_head')!=READING_SOURCE or
+        h.get('source_checkpoint')!=202 or h.get('human_exact_feedback')!=READING_EXACT or h.get('output')!=artifact or
+        h.get('outcome')!='SHORT_LIMITED_PASS' or h.get('prior_records_rewritten') is not False or h.get('prior_human_feedback')!=feedback['receipt'] or
+        h.get('fact_raw_report')!=project['opening_hook_trial']['repair']['fact_raw_report'] or
+        task.get('task_id')!=READING_TASK or task.get('receipt')!=record['receipt'] or task.get('status')!='COMPLETED_LIMITED_SHORT_FEEDBACK_AWAIT_BOUNDED_CONTINUATION_PREPARATION'):
+        raise ValueError('HOOK_READING_FEEDBACK_IDENTITY_DRIFT')
+    review=h.get('review',{})
+    if (review.get('source')!={'kind':'ACTUAL_CURRENT_USER_MESSAGE','message_observed_directly':True} or review.get('human_exact_feedback')!=READING_EXACT or
+        review.get('bound_artifact_path')!=artifact['path'] or review.get('bound_blob')!=artifact['blob'] or review.get('bound_sha256')!=artifact['sha256'] or
+        review.get('wants_to_continue') is not True or review.get('continuation_strength')!='LOW_EXPLICITLY_QUALIFIED' or
+        review.get('retention_verdict')!='WEAK_POSITIVE_NOT_FULL_ACCEPTANCE' or review.get('exact_stop_sentence')!='UNKNOWN_NOT_PROVIDED' or
+        review.get('interaction_exact_feedback')!=INTERACTION_EXACT or review.get('robotic_interaction_verdict')!='POSITIVE_NOT_MARKEDLY_ROBOTIC_IN_THIS_SHORT' or
+        review.get('interaction_source')!={'kind':'ACTUAL_CURRENT_USER_MESSAGES','identical_messages_observed':2,'independent_votes':1} or
+        any(review.get(k)!='UNKNOWN_NOT_DIRECTLY_ANSWERED' for k in ('suspense_verdict','ai_smell_verdict','emotion_verdict')) or
+        review.get('topic_rejection') is not False):raise ValueError('HOOK_WEAK_CONTINUATION_SCOPE_OR_STRENGTH_DRIFT')
+    for v in (record,h,task):
+        if (v.get('model_calls')!=0 or v.get('generation_count')!=0 or v.get('new_prose_authorized') is not False or
+            v.get('old_RC3_remaining_rounds')!=0 or v.get('old_197_character_protection_released') is not False or v.get('human_quality_result')!='SHORT_LIMITED_PASS_WITH_LOW_CONTINUATION_STRENGTH' or
+            v.get('full_scene_or_TEST01_promoted') is not False):
+            raise ValueError('HOOK_WEAK_CONTINUATION_CANNOT_PROMOTE_OR_GENERATE')
+    for v in (project,cp):
+        if (v.get('last_completed_task_id')!=READING_TASK or v.get('last_completed_task_contract')!=record['task']['path'] or
+            v.get('human_verdict_receipt')!=READING_RECEIPT or v.get('latest_human_review')!=review or v.get('next_action')!=READING_NEXT or
+            v.get('next_required_action')!=READING_NEXT or v.get('current_human_gate')!='HOOK_TRIAL_LOCAL_SHORT_PASS_WITH_LOW_CONTINUATION_STRENGTH_FULL_SCENE_UNTESTED'):
+            raise ValueError('HOOK_WEAK_CONTINUATION_LIVE_CURSOR_DRIFT')
+    entry=(root/'START_HERE.md').read_text(encoding='utf-8')
+    if cp.get('sequence')!=203 or cp.get('stop') is not True or READING_TASK not in entry or READING_NEXT not in entry or '当前位置：检查点203。' not in entry:
+        raise ValueError('HOOK_WEAK_CONTINUATION_ENTRY_DRIFT')
+    p,c=copy.deepcopy(project),copy.deepcopy(cp);prior=bound(root,feedback['receipt'])
+    for v in (p,c):
+        v['hook_trial_human_feedback'].pop('reading_supplement',None)
+        v.update(last_completed_task_id=HUMAN_TASK,last_completed_task_contract=feedback['task']['path'],human_verdict_receipt=HUMAN_RECEIPT,
+            latest_human_review=prior['review'],next_action=HUMAN_NEXT,next_required_action=HUMAN_NEXT,
+            current_human_gate='HOOK_TRIAL_PARTIAL_POSITIVE_CONTINUATION_AND_INTERACTION_UNKNOWN')
+    c.update(sequence=202,stop=True)
+    return p,c
+
+def human_feedback_view(root,project,cp,successor_reading_feedback=None):
+    if project.get('hook_trial_human_feedback',{}).get('reading_supplement') or cp.get('hook_trial_human_feedback',{}).get('reading_supplement'):
+        p,c=reading_historical_view(root,project,cp)
+        return human_feedback_view(root,p,c,successor_reading_feedback=project['hook_trial_human_feedback']['reading_supplement']['receipt'])
     feedback=project.get('hook_trial_human_feedback')
     if not feedback or feedback!=cp.get('hook_trial_human_feedback'):raise ValueError('HOOK_HUMAN_FEEDBACK_STATE_DRIFT')
     receipt=bound(root,feedback['receipt']);task=bound(root,feedback['task']);route=project['opening_hook_trial']
@@ -48,7 +99,13 @@ def human_feedback_view(root,project,cp):
             v.get('current_human_gate')!='HOOK_TRIAL_PARTIAL_POSITIVE_CONTINUATION_AND_INTERACTION_UNKNOWN'):
             raise ValueError('HOOK_PARTIAL_FEEDBACK_LIVE_CURSOR_DRIFT')
     entry=(root/'START_HERE.md').read_text(encoding='utf-8')
-    if cp.get('sequence')!=202 or cp.get('stop') is not True or HUMAN_TASK not in entry or HUMAN_NEXT not in entry or '当前位置：检查点202。' not in entry:
+    successor_entry=False
+    if successor_reading_feedback is not None:
+        h=bound(root,successor_reading_feedback)
+        successor_entry=(successor_reading_feedback.get('path')==READING_RECEIPT and h.get('source_head')==READING_SOURCE and
+            h.get('source_checkpoint')==202 and h.get('human_exact_feedback')==READING_EXACT and h.get('output')==route['final_artifact'] and
+            h.get('outcome')=='SHORT_LIMITED_PASS' and '当前位置：检查点203。' in entry and '上一检查点202：' in entry)
+    if cp.get('sequence')!=202 or cp.get('stop') is not True or HUMAN_TASK not in entry or HUMAN_NEXT not in entry or ('当前位置：检查点202。' not in entry and not successor_entry):
         raise ValueError('HOOK_PARTIAL_FEEDBACK_ENTRY_DRIFT')
     p,c=copy.deepcopy(project),copy.deepcopy(cp);old_human=bound(root,route['human_feedback'])
     for v in (p,c):
@@ -107,7 +164,7 @@ def hook_action(root,project,cp,historical_action,successor_human_feedback=None)
         p,c,receipt=human_feedback_view(root,project,cp)
         if hook_action(root,p,c,historical_action,successor_human_feedback=receipt)!=NEXT:
             raise ValueError('HOOK_PARTIAL_FEEDBACK_CANNOT_SKIP_PRIOR_GATE')
-        return HUMAN_NEXT
+        return READING_NEXT if project.get('hook_trial_human_feedback',{}).get('reading_supplement') else HUMAN_NEXT
     if historical_action!=OLD:raise ValueError('HOOK_CANNOT_SKIP_HISTORICAL_GATES')
     validate_failure(root,project,cp);route=project['opening_hook_trial'];result=bound(root,route['result']);m=bound(root,route['manifest'])
     task=bound(root,route['task'])
@@ -225,7 +282,8 @@ def hook_action(root,project,cp,historical_action,successor_human_feedback=None)
         h=bound(root,successor_human_feedback)
         successor_entry=(successor_human_feedback.get('path')==HUMAN_RECEIPT and h.get('source_head')==HUMAN_SOURCE and
             h.get('source_checkpoint')==201 and h.get('human_exact_feedback')==HUMAN_EXACT and h.get('output')==route['final_artifact'] and
-            h.get('outcome')=='UNKNOWN' and '当前位置：检查点202。' in entry and '上一检查点201：' in entry)
+            h.get('outcome')=='UNKNOWN' and ('当前位置：检查点202。' in entry or
+                ('当前位置：检查点203。' in entry and '上一检查点202：' in entry)) and '上一检查点201：' in entry)
     if cp.get('sequence')!=201 or cp.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点201。' not in entry and not successor_entry):
         raise ValueError('HOOK_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

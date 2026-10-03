@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-03T14:03:26Z",
+  "updated_at": "2026-10-03T14:36:54Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -689,7 +689,8 @@
     "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
     "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
     "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
-    "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01"
+    "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
+    "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -939,11 +940,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
-  "status": "HUMAN_PARTIAL_POSITIVE_READING_VERDICT_UNKNOWN",
+  "next_required_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
+  "status": "LOCAL_SHORT_TARGETS_POSITIVE_RETENTION_STRENGTH_LOW",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
-  "last_completed_task_contract": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+  "last_completed_task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
+  "last_completed_task_contract": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -3770,8 +3771,8 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "HOOK_TRIAL_PARTIAL_POSITIVE_CONTINUATION_AND_INTERACTION_UNKNOWN",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+  "current_human_gate": "HOOK_TRIAL_LOCAL_SHORT_PASS_WITH_LOW_CONTINUATION_STRENGTH_FULL_SCENE_UNTESTED",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -3833,9 +3834,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
+  "next_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "SAME_401_SHORT_AWAIT_EXPLICIT_READING_VERDICT",
+  "current_focus": "PRESERVE_401_OPENING_AND_PREPARE_ONE_BOUNDED_CONTINUATION",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3917,20 +3918,26 @@
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
       "message_observed_directly": true
     },
-    "human_exact_feedback": "这个稍微好了一些。确实。",
+    "human_exact_feedback": "有一点想继续的想法。但是不多哈。",
     "bound_artifact_path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
     "bound_blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
     "bound_sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9",
-    "relative_improvement": "SLIGHTLY_BETTER_UNSPECIFIED_DIMENSION",
-    "wants_to_continue": null,
-    "retention_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "wants_to_continue": true,
+    "continuation_strength": "LOW_EXPLICITLY_QUALIFIED",
+    "retention_verdict": "WEAK_POSITIVE_NOT_FULL_ACCEPTANCE",
+    "interaction_exact_feedback": "比之前自然，已不明显",
+    "robotic_interaction_verdict": "POSITIVE_NOT_MARKEDLY_ROBOTIC_IN_THIS_SHORT",
+    "interaction_source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGES",
+      "identical_messages_observed": 2,
+      "independent_votes": 1
+    },
     "suspense_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
-    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
     "topic_rejection": false,
-    "feedback_summary": "刘先生明确说401字稿稍微好了一些；未直接回答愿不愿继续、人物互动或哪项改善。保留相对正向反馈，质量门仍UNKNOWN。"
+    "feedback_summary": "401字有少量续读意愿，人物互动比之前自然、机械感已不明显；只认这一短段的两个阅读目标，续读强度低，不推为整场或稳定文风通过。"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -5844,6 +5851,28 @@
     "generation_count": 0,
     "new_prose_authorized": false,
     "old_RC3_remaining_rounds": 0,
-    "old_197_character_protection_released": false
+    "old_197_character_protection_released": false,
+    "reading_supplement": {
+      "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
+      "source_head": "9ba1ae731fb2b9a8a2879dbb332b11c4979bb33f",
+      "task": {
+        "path": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+        "blob": "c86f5bf93bb97cdd44b8edf68f3fe0fdaf3cd249",
+        "sha256": "fa651a4c7a919811732c4dc639f5cb9e0613b52204645ee15debd3a50f1c0265"
+      },
+      "receipt": {
+        "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+        "blob": "a7254e2b43bcbc0ce147ff00ebc1f357559b35af",
+        "sha256": "3faf9215434ec686136b5145bc0775e2a3ea4d719d5a63d75607f4fd429cdc6c"
+      },
+      "next_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
+      "model_calls": 0,
+      "generation_count": 0,
+      "new_prose_authorized": false,
+      "old_RC3_remaining_rounds": 0,
+      "old_197_character_protection_released": false,
+      "human_quality_result": "SHORT_LIMITED_PASS_WITH_LOW_CONTINUATION_STRENGTH",
+      "full_scene_or_TEST01_promoted": false
+    }
   }
 }

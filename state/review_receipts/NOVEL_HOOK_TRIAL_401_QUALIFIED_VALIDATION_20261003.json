@@ -1,0 +1,107 @@
+{
+  "schema_version": "native-human-qualified-short-feedback-validation/v1",
+  "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
+  "source_head": "9ba1ae731fb2b9a8a2879dbb332b11c4979bb33f",
+  "recorded_at": "2026-10-03T14:45:05Z",
+  "status": "QUALIFIED_SHORT_FEEDBACK_SCOPE_HISTORY_AND_STATE_VALIDATION_PASSED",
+  "current_state": {
+    "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+    "sequence": 203,
+    "next_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
+    "checks_passed": 27,
+    "mainline": {
+      "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+      "revision": 4,
+      "step": "STEP_03",
+      "outcomes": {
+        "TEST_01": "UNKNOWN"
+      }
+    },
+    "literary_quality_tested_by_this_script": false,
+    "new_prose_authorized": false,
+    "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+  },
+  "scoped_unittest": {
+    "command": "Scoped unittest discovery: test_hook_trial*.py, test_prose_repair.py, test_current_state.py",
+    "tests": 99,
+    "exit_code": 0,
+    "wall_seconds": 107.235,
+    "output_sha256": "df697d3453b19c9c8f036777200d6d1de8b93928814bda974e17b79187dbf765",
+    "output": "...................................................................................................\n----------------------------------------------------------------------\nRan 99 tests in 107.237s\n\nOK\n"
+  },
+  "whole_suite_rerun_this_turn": false,
+  "skill_structure": {
+    "status": "PASSED",
+    "files_checked": 28,
+    "literary_quality_test": false
+  },
+  "syntax_check": "PASSED",
+  "diff_whitespace_check": "PASSED",
+  "protected_source_file_count": 522,
+  "prior_body_reports_receipts_and_locks_byte_unchanged": true,
+  "human_quality_result": "SHORT_LIMITED_PASS_WITH_LOW_CONTINUATION_STRENGTH",
+  "relative_positive_feedback_recorded": true,
+  "continuation_strength": "LOW",
+  "full_scene_or_TEST01_promoted": false,
+  "model_calls": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "blob": "e86f2e2242423abd0e2ff2011e04a68c6920dc28",
+      "sha256": "c8f9a7f52686615ba61f59c64ab73511e61b9f76b84746a5208ed467e087d6ba"
+    },
+    {
+      "path": "README.md",
+      "blob": "4d4547d77b4954e9d409d4319b94dbc3f34c2da3",
+      "sha256": "d2f9b187570b9cf1139ac44af4df195bc2502a9c2bc81a54b7d425f8b97013d6"
+    },
+    {
+      "path": "SKILL.md",
+      "blob": "89e837fa49f08828dbbb321a9fa70908b17b35f7",
+      "sha256": "9ae472a33c051af38eb77607fbc06a6da34d3457fd87e2cd97dc474bec857252"
+    },
+    {
+      "path": "START_HERE.md",
+      "blob": "83cd489106ff85d2cea6a97f6f0723e75e771fa4",
+      "sha256": "0a2bb73e4369bf75e8821613581a9b110de3218ea95e37345a71fbdba308b2ee"
+    },
+    {
+      "path": "scripts/verify_hook_trial.py",
+      "blob": "62bc807e6b38ff586ceb21a066f373d50c833d5e",
+      "sha256": "bea203cbd73f42c9af71e2af41a44639a3afdd357a11bfa57be232bb7bf1a423"
+    },
+    {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "d6caf95fa2ed73df5bb741dba8665ac8ac5c208e",
+      "sha256": "c570b15330c01c520cdf8d9b947c039c36ab59b6fab0d2300f5b0b57626f7c8c"
+    },
+    {
+      "path": "state/project_state.json",
+      "blob": "678190bed58d3e3476314797789d96df510d95f3",
+      "sha256": "2807e16e1b7740a865fb809db38e812a1c7f20f66f4aa12a2a12fb60a4df5891"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+      "blob": "a7254e2b43bcbc0ce147ff00ebc1f357559b35af",
+      "sha256": "3faf9215434ec686136b5145bc0775e2a3ea4d719d5a63d75607f4fd429cdc6c"
+    },
+    {
+      "path": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+      "blob": "c86f5bf93bb97cdd44b8edf68f3fe0fdaf3cd249",
+      "sha256": "fa651a4c7a919811732c4dc639f5cb9e0613b52204645ee15debd3a50f1c0265"
+    },
+    {
+      "path": "tests/test_hook_trial_human_feedback.py",
+      "blob": "95d090ba04b192fb339e843cd514627c78863120",
+      "sha256": "5eb8f133332930a565f6d681b9e53f3099b5e7639b451764e2c52e26a663ad2f"
+    },
+    {
+      "path": "tests/test_hook_trial_qualified_short.py",
+      "blob": "b2e99f42088e25052633a6a8a1ca0b5585e943a2",
+      "sha256": "0815fb360e6036e72ff19d354f5b21ea754d094edf31ab21ac3fabb8e0db2f84"
+    }
+  ],
+  "remote_save_status": "NOT_YET_CONFIRMED_READBACK_REQUIRED"
+}

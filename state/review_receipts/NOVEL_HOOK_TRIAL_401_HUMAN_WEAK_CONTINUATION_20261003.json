@@ -1,0 +1,66 @@
+{
+  "schema_version": "native-human-qualified-short-feedback/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
+  "source_head": "9ba1ae731fb2b9a8a2879dbb332b11c4979bb33f",
+  "source_checkpoint": 202,
+  "recorded_at": "2026-10-03T14:36:54Z",
+  "human_exact_feedback": "有一点想继续的想法。但是不多哈。",
+  "output": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "outcome": "SHORT_LIMITED_PASS",
+  "review": {
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "human_exact_feedback": "有一点想继续的想法。但是不多哈。",
+    "bound_artifact_path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "bound_blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "bound_sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9",
+    "wants_to_continue": true,
+    "continuation_strength": "LOW_EXPLICITLY_QUALIFIED",
+    "retention_verdict": "WEAK_POSITIVE_NOT_FULL_ACCEPTANCE",
+    "interaction_exact_feedback": "比之前自然，已不明显",
+    "robotic_interaction_verdict": "POSITIVE_NOT_MARKEDLY_ROBOTIC_IN_THIS_SHORT",
+    "interaction_source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGES",
+      "identical_messages_observed": 2,
+      "independent_votes": 1
+    },
+    "suspense_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "topic_rejection": false,
+    "feedback_summary": "401字有少量续读意愿，人物互动比之前自然、机械感已不明显；只认这一短段的两个阅读目标，续读强度低，不推为整场或稳定文风通过。"
+  },
+  "prior_records_rewritten": false,
+  "prior_human_feedback": {
+    "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+    "blob": "52fcdab6e8bf568ed43e4511e2a46db3fce9013f",
+    "sha256": "809f87b200084f9e8b7227072d51d143b2a6c286ebbbc2d83b02f6930917ff3a"
+  },
+  "fact_raw_report": {
+    "path": "state/reviews/hook-trial-20261003/repair/facts.raw.txt",
+    "blob": "5f4044cae0aba7c93333f90a3b77f5aaca70d953",
+    "sha256": "e2f9bf1112ab4215d6fe8c6dde9046415614b03e23bbc4d82b37c893a87c2275"
+  },
+  "fact_evidence": {
+    "path": "state/reviews/hook-trial-20261003/repair/facts.evidence.json",
+    "blob": "c989f5a754a1a1a7c2882690639c9ace39e322b3",
+    "sha256": "a144d054c5d9468f1a254ace1941843c7266db57bb63383b49dabab0b379e503"
+  },
+  "AI_reader_version_is_400_not_401": "NOT_AN_EXACT_VERSION_BLIND_CALIBRATION_MATCH",
+  "next_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
+  "model_calls": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_quality_result": "SHORT_LIMITED_PASS_WITH_LOW_CONTINUATION_STRENGTH",
+  "full_scene_or_TEST01_promoted": false
+}

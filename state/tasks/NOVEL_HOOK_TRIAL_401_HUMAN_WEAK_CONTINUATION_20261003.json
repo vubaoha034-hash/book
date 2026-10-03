@@ -1,0 +1,31 @@
+{
+  "schema_version": "native-human-qualified-short-feedback-task/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
+  "source_head": "9ba1ae731fb2b9a8a2879dbb332b11c4979bb33f",
+  "source_checkpoint": 202,
+  "status": "COMPLETED_LIMITED_SHORT_FEEDBACK_AWAIT_BOUNDED_CONTINUATION_PREPARATION",
+  "receipt": {
+    "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+    "blob": "a7254e2b43bcbc0ce147ff00ebc1f357559b35af",
+    "sha256": "3faf9215434ec686136b5145bc0775e2a3ea4d719d5a63d75607f4fd429cdc6c"
+  },
+  "parent_task": {
+    "path": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+    "blob": "2f35f5e9976992388ec637ac4a588885fb7aec55",
+    "sha256": "250c0168fcf94b0d36451d63f6d2083aa3b179b63142b1651f9f8f977144418c"
+  },
+  "final_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "next_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
+  "model_calls": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_quality_result": "SHORT_LIMITED_PASS_WITH_LOW_CONTINUATION_STRENGTH",
+  "full_scene_or_TEST01_promoted": false
+}

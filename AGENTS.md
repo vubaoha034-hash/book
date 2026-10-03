@@ -14,6 +14,8 @@ For this project's current work, read `MAINLINE.md` and the task referenced by `
 
 检查点202：401字已有刘先生“这个稍微好了一些。确实。”的相对正向反馈，见[原话](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)。续读与人物互动仍未明确，质量UNKNOWN；只收同一版本的阅读判断，不改稿、不调用模型或自动晋级。
 
+检查点203：同一401字有少量续读意愿、互动更自然，见[真人原话](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)。只认可该短段两项目标，保留低强度限定；完整场景/TEST-01与迁移仍未通过。下一步按既有授权准备同场唯一300—500字接续，不改开头、旧稿/锁/额度或主线。
+
 ## Highest-priority execution-surface routing
 
 Current scoped override (2026-10-03): task
