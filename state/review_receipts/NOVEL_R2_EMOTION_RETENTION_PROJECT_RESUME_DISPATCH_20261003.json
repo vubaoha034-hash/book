@@ -1,0 +1,62 @@
+{
+  "schema_version": "novel-project-continuation-dispatch-receipt/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+  "attempt_id": "UNIFIED-CHECK-20261003-R2-DIAGNOSIS-CONTINUATION-01",
+  "recorded_at": "2026-10-03T00:56:36.950Z",
+  "source_head": "0a31cf18b1d7a330248e5c64ce59267273122ea1",
+  "source_checkpoint": 192,
+  "scope": "CONTINUE_EXISTING_PREPARED_DIAGNOSIS_ONLY_NO_PROSE_NO_MAINLINE_CHANGE",
+  "prepared_task": {
+    "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+    "blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110"
+  },
+  "dispatch_message_sha256": "0f4ebfaef544ae988a48d915bbd4831007fc9b4b629bed92085b732141046f1b",
+  "complete_message_storage": "PRIVATE_COORDINATOR_WORKSPACE",
+  "opening_status": "PREPARED_PROJECT_EXECUTOR_DISPATCH_NOT_SENT_YET",
+  "send_click_count": 0,
+  "max_dispatches": 1,
+  "project_executor_conversation_url": null,
+  "external_reviewer_conversation_url": null,
+  "observed_ui_settings": {
+    "surface": "CHAT",
+    "visible_model_choice": "最新",
+    "precise_model_id": "UNKNOWN_NOT_EXPOSED",
+    "effort": "极高",
+    "preferred_model": "GPT-6.1 Sol",
+    "preferred_effort": "Max",
+    "preferred_pair_available": false,
+    "actual_menu_models": [
+      "最新",
+      "GPT-5.6 Sol",
+      "GPT-5.5"
+    ],
+    "actual_effort_menu_max": "Pro_LOCKED",
+    "surface_changed": false
+  },
+  "native_preflight": {
+    "command": "python scripts/verify_current_state.py",
+    "result": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+    "checks_passed": 27,
+    "source_files_git_blob_verified": true,
+    "script_blob": "35d9d589e6ca5801dd5eda6b72f5bc4304af632b",
+    "project_state_blob": "1a4b16fca01288a29efff4d4cc38a239b73432ab",
+    "checkpoint_blob": "a27d4d9ff6c1036302279450586868acf77d280e",
+    "read_only": true,
+    "literary_quality_tested": false
+  },
+  "native_business_state_unchanged_by_coordinator": true,
+  "business_state_writer": "ONE_PROJECT_EXECUTOR_AFTER_OBSERVED_DISPATCH",
+  "dispatch_receipt_writer": "UNIFIED_COORDINATOR_ONLY",
+  "source_coverage": {
+    "status": "PARTIAL",
+    "native_authorities": "PINNED_CURRENT_HEAD",
+    "prior_pending_owner_chat": "ACTUAL_UI_READ_IDLE",
+    "all_account_chats": "UNKNOWN"
+  },
+  "new_prose_authorized": false,
+  "prose_generated": 0,
+  "old_RC3_remaining_rounds": 0,
+  "mainline_changed": false,
+  "next_action": "SEND_ONE_COMPLETE_PROJECT_CONTINUATION_MESSAGE_AND_VERIFY_ACTUAL_START"
+}
