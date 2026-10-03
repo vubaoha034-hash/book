@@ -1,0 +1,323 @@
+{
+  "schema_version": "native-autonomous-opening-remote-save/v1",
+  "task_id": "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
+  "recorded_at": "2026-10-03T11:04:03Z",
+  "status": "IMPLEMENTATION_REMOTE_MAIN_BYTES_HISTORY_AND_HUMAN_GATE_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "source_head": "0e38c4fa02e4bddd0dba96711241bd678d92da68",
+  "implementation_commit": "e2ee3dc553b1d2cb002ea828cc77fc01f3e1363f",
+  "implementation_proof": {
+    "status": "REMOTE_AUTONOMOUS_BYTES_HISTORY_AND_HUMAN_GATE_VERIFIED",
+    "remote_head": "e2ee3dc553b1d2cb002ea828cc77fc01f3e1363f",
+    "source_head": "0e38c4fa02e4bddd0dba96711241bd678d92da68",
+    "checkpoint": 199,
+    "checked_count": 53,
+    "files": [
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+        "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+        "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+      },
+      {
+        "path": "state/tasks/NOVEL_REVIEWED_OPENING_ONE_SHORT_PROPOSAL_20261003.json",
+        "blob": "2db4ed1faf43a8a69dd9d3258e58ffe4d7fe2fab",
+        "sha256": "337357e4b5228069230e5b65d5cf9c3d6d05b0625571b4428260c543db334fcf"
+      },
+      {
+        "path": "delivery/two-role-opening-20261003/prepared-opening-input.json",
+        "blob": "d546ee14a6e0ca484611de7ab5ff2d6e662de21a",
+        "sha256": "fa2f314f4403e08e3ddf814f5af55d19aac1c65aaa67f88ec31cb6bb4cba4e1b"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_TWO_ROLE_REVIEW_RESULT_20261003.json",
+        "blob": "5bd5d660a669830b7a15b66c4869e658206c7ec2",
+        "sha256": "3a2a70b89a807fda1ad3bf97d1b1c1c05c3c2c66ac148b67817f5630099ba385"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_RETENTION_SUPPLEMENT_20261003.json",
+        "blob": "0e7ff35eaf896a97a9b7fbf55b79820267fdfad0",
+        "sha256": "6d2e797968a5d76a97f11ef546022953987b1485c06c898905c443b3f0c8215e"
+      },
+      {
+        "path": "config/novel-autonomous-opening-20261003.json",
+        "blob": "9549c8a065b19f36df04a475f6d7efaf4095a407",
+        "sha256": "aad9e30cbc0d3797a5f77e72f9b767f4e7ec4737a42ea0af7842d3266cd155e2"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.writer-input.json",
+        "blob": "b9199c905859515a4d1a50585ba52d21e7702421",
+        "sha256": "7d29b5e50c7e70aa9633ee498ab0146ae16692d5df1368859caf3d5b4122491f"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/writer-policy.txt",
+        "blob": "03c1ade87887f397620c92ced04ded6531094dc4",
+        "sha256": "793100c1b050873bdcc7c3a21fd5ce329fc3452d17c31b9693036d64b61af4c7"
+      },
+      {
+        "path": "modules/review-roles/new-draft-editor-policy.md",
+        "blob": "caccb3339443164e5d365bd92c352d0040dec348",
+        "sha256": "86c4afd213f3306db8b124901f74498a3db8b0e2102f336bb9f6cc6adbb73039"
+      },
+      {
+        "path": "modules/review-roles/reader-policy.md",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      {
+        "path": "rules/autonomy-until-human-review.json",
+        "blob": "758e663172853c35db482455bd5d2c7b38cb579b",
+        "sha256": "7ea6154e2cec87be63c68e3fa548a477548457e80abc230cd5b42a8e2ebc47c0"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.md",
+        "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+        "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.writer.runtime.json",
+        "blob": "7157e683356c8d13b5f5da3eaa3a81ba613f8481",
+        "sha256": "7b7e4325147fd37eac1d21c4146b5454dbd6f2a7462ba0d3ef6a873443868e57"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.review-manifest.json",
+        "blob": "5886fc8b4823b0a802b9b8c50d14253b458f7851",
+        "sha256": "76bbf828e6dbeca88d5e16ea9e030d800b9985ee44de95253c536a499b282f2e"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.facts.packet.json",
+        "blob": "fc2c0a5e6c23a8bad6855baf4c9ec50ee4f4e0c6",
+        "sha256": "b29ef0a1757bc5e610bf96ede14a7e6b56df76f7a994576e2cc0b2ae0b72cfd9"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.editor.packet.json",
+        "blob": "dfd93bb26ae442c59f7cd46e17d44d6686c50f82",
+        "sha256": "cfb8c27d6719f4621e90b3bf36efe34d7157c706ea98a3cf260d33a98bca6136"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.reader.packet.json",
+        "blob": "872469e50888253d320381fe7cdd1ba091dc1242",
+        "sha256": "05bef9f45bc834b2e11c213c92debd83378b25b9ad1e50c6f929477fb00b9caf"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.runtime.json",
+        "blob": "b7749661039064d912b362e9338c344a55b210e4",
+        "sha256": "34bc1ba02928372535105075ad24eb37d66fb7c7580349e02ac0955ebb56386e"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.raw.txt",
+        "blob": "44e4a9b3a81f4f29aac272832e69263fdad859b6",
+        "sha256": "a4997549a9eb502d4a89cf0d7f9a250a02aeb503008d12287c28bfbd6e8bfaf9"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.evidence.json",
+        "blob": "adf12508ad095e873189418f4a44f2e1b7569ed5",
+        "sha256": "cee4cc6a0af26275ccdc564ad80e742db51ba1f843b645614774085b135f5986"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.runtime.json",
+        "blob": "55e0b4e3b0d901dd1f2ea01eed331229877b5506",
+        "sha256": "a22d163385931f9461b2b77ab6c65eb35e99617d44284341c8539fe3a67c0c8d"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.raw.txt",
+        "blob": "c313480e286e4562f9009527fb045426f277613a",
+        "sha256": "da68734cf490da6865c99c242270a5342198ab26392b7d2a9f629863f390a41e"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.evidence.json",
+        "blob": "05000309121b01540d803e11d8b8e88a157d3231",
+        "sha256": "366b290aaf187d2e05b0d30a298b8f9c616f0b4c9b5736bbc52f819e6bc62782"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.runtime.json",
+        "blob": "eaae69816cf6e4cd4c3d249b9770b90aa20d6882",
+        "sha256": "380d3fdb8cf8accad8ac7b1c0e5a2c7b739540da1d95ac4561984b76e964e4fb"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.raw.txt",
+        "blob": "31b7aca2b8dd45b5a1424a49aef2abf41927215c",
+        "sha256": "bd2b35ddd54ead6151ee1c5c889c6b1fd969c48fbc3eae8c1dd2a99d2b8fdf0d"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.evidence.json",
+        "blob": "f4d833495478457ff6671164eff76e0153c49b62",
+        "sha256": "8a84f2ff5c6c1f5f68a1b757d6ffce336a552a3945ed615b43d77e20ae9bb665"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/coordinator-settlement.json",
+        "blob": "e9554b0b87d8dbc3d139b678ce31e1b1d37d5335",
+        "sha256": "7bbea3d5756a008cedad3d93952a7058ca38ce3d4cfa7ba64a785baa29ef4cce"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/pending-human-review.json",
+        "blob": "f64ebd3777b284664c14d1668af3e446437acf43",
+        "sha256": "691968ecf7e75aceae0c5da4a541113e88bde789e23294d43d9825958cfd32c7"
+      },
+      {
+        "path": "docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md",
+        "blob": "512084bca54c4f88031ce112b50e0d314d766249",
+        "sha256": "2967c40814c6d4d890ae6748de64321bc90beba018266955b61b859854b161f3"
+      },
+      {
+        "path": "state/tasks/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_20261003.json",
+        "blob": "954041a688f248b66ce8720d44bda3fd69092422",
+        "sha256": "a2d70b0d862e1b05f1c168c8963ed45b6ceb26dac38ecc102b94622023389929"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_RESULT_20261003.json",
+        "blob": "517195de37c355452c1beaf2f795014368cdbea3",
+        "sha256": "c0903ff899995706379ae5acb9739154a00aa135b8fb96f69250d149004183e4"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "f1beecf106dfb16d1a71ccb2785570158e6c8357",
+        "sha256": "e808209327b6d6174c10406ff77149ceda70f6e53f9905d008e22d61606278fb"
+      },
+      {
+        "path": "README.md",
+        "blob": "c4fefa0723959ee9e66d5b73d57e76ffeaa98994",
+        "sha256": "8ec3678e2ca3c3dd5b241f0566706c9b10dacedd2d76b3bbd8fe855f99e83bc8"
+      },
+      {
+        "path": "AGENTS.md",
+        "blob": "cbd4d5d2d81b2c3d090b810daf97dc8ef64a5bf3",
+        "sha256": "bcc2d5165d2e39048f48aa4516c0544f3ae9d21b748c2a324f63189342d07f30"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "6b81ffbbbb0328f9e4e0c671ea0dc0b2c6ce9047",
+        "sha256": "f51c4c9bdbe1419d808290e25da683328997eadb1bda0e2b0acb8ab8f718e704"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "bf0135463870cb9b6aa530c81693ac57329bfd7c",
+        "sha256": "6885d718c050403aa73dc08076f0afea7d9a168c5e0896700dcae7d8b48fb5f8"
+      },
+      {
+        "path": "scripts/verify_review_publication.py",
+        "blob": "429472dfcede40b7466a5438ce84eddc7b665db8",
+        "sha256": "6bbd11fd996ba60149b7a0b28cc46cb5460f1ea34a514161a7bf54b01d74b4c8"
+      },
+      {
+        "path": "tests/test_current_state.py",
+        "blob": "3bc765cb4a2b6e9d81ca0369b50b34c1eedcc30e",
+        "sha256": "fd5927ecb02bbaf0e7c328d5c2b64ce511a37c6bc1c1527290cb58b7424957e9"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "27b91da33aa86911f7187a22aeace0ede49bbdbf",
+        "sha256": "720fce26d6dd81646d60df5d1692a643e6c97b90a5709e1dff920d857010af70"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "0863f2bf05746ccc4d362ae731b8b8e2b2d4c331",
+        "sha256": "4392df79ffb93f85f5fb9e5a84f7a1bb7005ef9fd2552dcd08cb0d9e579e44ee"
+      },
+      {
+        "path": "scripts/codex_review.py",
+        "blob": "d0675bad499e43bea2d8db44df65cac8b838faac",
+        "sha256": "50f75c2bd31bb8ec8a3b5a874124143ca2f2f56581dcddbb392fe9c656f55992"
+      },
+      {
+        "path": "scripts/verify_emotion_learning.py",
+        "blob": "193bd7c5cbd7d4610cfeccc926b58d9c4d107d91",
+        "sha256": "09aa1a8b981cac106bb55a29a38ead80d7455e3c7d7699be8d8efe8276eb73f5"
+      },
+      {
+        "path": "scripts/verify_two_role_review.py",
+        "blob": "bc2e5e3820d5e76a506e2e0bc0190aecfcb15a31",
+        "sha256": "330cc076b6d81ab04ea0a48682e13ae8285552759db46fb702457b3adb5d418f"
+      },
+      {
+        "path": "tests/test_two_role_review.py",
+        "blob": "601a1f9d90ac8ec0e9fd7a90856d290dc3f966c8",
+        "sha256": "cde9d768e4c00098e9604c72696976664668cb2f794dd2edb8e1e8489e81211e"
+      },
+      {
+        "path": "modules/autonomous-to-human-review.md",
+        "blob": "d013bb430b03fd503bafc88c421d7bb38a3dcdd3",
+        "sha256": "d27a61c3b61deeceaf68e2f216084f77b11a0e49f437ac8f6ac720c2e3cb6c48"
+      },
+      {
+        "path": "scripts/novel_autonomous_opening.py",
+        "blob": "025894d36eb61109308c40ea69966f8d14263089",
+        "sha256": "f086db962e285e064e807aaed88d2cc32f9b77e378f11b90418afc84cbd3647f"
+      },
+      {
+        "path": "scripts/verify_autonomous_opening.py",
+        "blob": "15cc7f585dd912edcaecb55235d87d88fcc6fd1c",
+        "sha256": "70e67e8fa8802f627c78744842cf6e597cdfac173f6ea9c24ef7ecd3931aee55"
+      },
+      {
+        "path": "tests/test_autonomous_opening.py",
+        "blob": "c94fdf4109e1c1a2f6ec322817faaa0e67269e71",
+        "sha256": "6c0f3e11181a522c5558b411986dbb72295c2ef6c577ae4faaa4936a1894e20c"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_VALIDATION_20261003.json",
+        "blob": "5d3c05aaa9e4dbd8a353050628f93dc54b4cab03",
+        "sha256": "1854b4caaf633684eb2998e666a2e66a02f4b0366a1b44dc33f1c6658cbf5a87"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.writer.attempt.json",
+        "blob": "8310d7a986d9fd32ba1faa3a553731d418e71e7f",
+        "sha256": "4f74ef54be36662e0cd53ace8635f8d9286ee581bc3ff45f3c03f244c0cf50b2"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.facts.attempt.json",
+        "blob": "4b18d83a0ee18d1d48cbfd69d2f8f8f89e6d4e34",
+        "sha256": "bf6073f42ca8fae8f5a2c818e7182ed35d8c30556b99fe3a407ee145e9841b63"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.editor.attempt.json",
+        "blob": "c100d7ce57ad6b7521094f5cdb3708a82a9b3037",
+        "sha256": "e2ef6db95b1a1ebce209f2e5cb2bcf9757bc1e372793a90f5a0244fec9148546"
+      },
+      {
+        "path": "state/authoring/autonomous-opening-20261003/a1.reader.attempt.json",
+        "blob": "abfb6bdb1ecb7cc0ea37c92a5e580d0970cc63b8",
+        "sha256": "dc88221d70b6a94335367d0e7b62923ae0eba4f2826abded64755a8d9aff0a78"
+      }
+    ],
+    "protected_source_file_count": 369,
+    "all_prior_prose_locks_feedback_and_raw_reports_unchanged": true,
+    "current_state": {
+      "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+      "sequence": 199,
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING",
+      "checks_passed": 27,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "literary_quality_tested_by_this_script": false,
+      "new_prose_authorized": false,
+      "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+    },
+    "human_quality_result": "UNKNOWN",
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_VALIDATION_20261003.json",
+    "blob": "5d3c05aaa9e4dbd8a353050628f93dc54b4cab03",
+    "sha256": "1854b4caaf633684eb2998e666a2e66a02f4b0366a1b44dc33f1c6658cbf5a87"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 0,
+  "actual_independent_review_calls": 3,
+  "actual_all_model_calls": 4,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_quality_result": "UNKNOWN",
+  "literary_quality_validated": false,
+  "intermediate_user_authorization_required": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING",
+  "this_receipt_saved_after_actual_implementation_readback": true,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
