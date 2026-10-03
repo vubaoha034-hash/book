@@ -1,0 +1,366 @@
+{
+  "schema_version": "novel-remote-save-readback/v1",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "recorded_at": "2026-10-03 04:29:23 UTC",
+  "status": "MAIN_IMPLEMENTATION_SAVED_AND_ACTUAL_BYTES_READ_BACK",
+  "source_head": "122739a8c6f0ffa47ee77726865c06f8cb2c566a",
+  "source_checkpoint": 193,
+  "saved_checkpoint": 194,
+  "local_implementation_commit": "b05a381e386243571c1ff82ae2d43a590c4bc594",
+  "native_implementation_commit": "fd61273fb4301fe73ce0e3c6184148154a06c3dc",
+  "readback_helper_fix_commit": "b9057a105598dbe13500e6bd9e445110d067ffc2",
+  "implementation_tree": "0d3e9da145ccb8230746f3e88b6962e2703867b1",
+  "terminal_push_attempt": {
+    "exit_code": 1,
+    "error": "error: failed to execute prompt script (exit code 1)\nfatal: could not read Username for 'https://github.com': No such file or directory",
+    "main_changed_by_failed_attempt": false
+  },
+  "authorized_fallback": "EXISTING_CONNECTED_GITHUB_NATIVE_GIT_DATA_AND_CONTENTS_APIS",
+  "publication_method": "CREATE_BLOBS_TREE_COMMIT_THEN_UPDATE_MAIN_FORCE_FALSE; SINGLE_HELPER_FIX_USES_CURRENT_BLOB_SHA",
+  "local_and_native_implementation_trees_identical": true,
+  "implementation_readback": {
+    "status": "REMOTE_MAIN_BYTES_AND_REFERENCES_VERIFIED",
+    "remote_head": "b9057a105598dbe13500e6bd9e445110d067ffc2",
+    "source_head": "122739a8c6f0ffa47ee77726865c06f8cb2c566a",
+    "checked_count": 62,
+    "files": [
+      {
+        "path": "state/review_receipts/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_RESULT_20261003.json",
+        "blob": "de6b6344e81f07a8564c0cdf05e1a9afa4182784",
+        "sha256": "919048be3493d2b64b5fcf7ecb61966e5a962248692b679d568400fc0f7192d3"
+      },
+      {
+        "path": "state/tasks/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_20261003.json",
+        "blob": "9e444a53de9a54fe8415e737a46c5b5d14d5b413",
+        "sha256": "413ee88fb16d73e3ffdc0320224fee4f8557ad846598f2848c2b6705344af4d4"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CODEX_REVIEW_EXECUTION_CHANGE_20261003.json",
+        "blob": "e8163d64ef489cd4bcb251c9a0265a6d5bacbe0c",
+        "sha256": "2fda93479135ece9b6003e197b634758e41940f405aa9a72ab9cc49567d48247"
+      },
+      {
+        "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+        "blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110",
+        "sha256": "ec4b9ddb96d6a9e6a1e677c2d4af4e749c75534459951f8e102ee3c709be8c30"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+        "blob": "f332f942b9adf31d5beca23f435b3318c37b9761",
+        "sha256": "34c411c70be7fc6d8e03ccd7da1cffe0458b1a30405a35b6f23060174ac9653b"
+      },
+      {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      {
+        "path": "config/codex-review-run-20261003.json",
+        "blob": "78997ee788a88c2404962df25f4ce3187d8a91aa",
+        "sha256": "026843ee1f6329487e0bcb7554f213d25c102942cb9dd5aea8d1d4f8251225e0"
+      },
+      {
+        "path": "delivery/codex-review-20261003/calibration.packet.json",
+        "blob": "e510ea1f8d379f42b0dc4edcdfa221ede8e7d5f7",
+        "sha256": "b3de2c73a1cf8d62631f560f097ad8e469d6d0d5ac3368d52b60877bf46efc70"
+      },
+      {
+        "path": "delivery/codex-review-20261003/validation.packet.json",
+        "blob": "51f711f43da8b175997802fee85528358c8f5362",
+        "sha256": "4ce1fb9bf5715e3ba808a8cd6cafb80c46ef035202fa1fd0039ea5c09fdb9878"
+      },
+      {
+        "path": "delivery/codex-review-20261003/facts.packet.json",
+        "blob": "fee787e55e1ef9484cf7172abaa3d7b4261da318",
+        "sha256": "7e17aea0485e9e762f58cef36671f795fa251dd764e270c789b9ba51ecc35700"
+      },
+      {
+        "path": "delivery/codex-review-20261003/diagnosis.packet.json",
+        "blob": "5a0177596cba4aaf6be5d15b33d2018951047a12",
+        "sha256": "fb8337033effe4d6d76c384ee83123a9380a51cf5ba1f327471f5163a7c1b59d"
+      },
+      {
+        "path": "delivery/r2-emotion-retention-diagnosis/reviewer-input.md",
+        "blob": "d166df7c68b2925715e13ee4b8b2e88a1da3a666",
+        "sha256": "eec172d54339c3171a6296500eb6727e67c8c41c66b9f8aea6c896b8374ccff6"
+      },
+      {
+        "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad",
+        "sha256": "2c54a547dc9832d53efb4cb9c1658f02f4d4ac5a7536cd79e1528c06ac93a5c6"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+        "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
+      },
+      {
+        "path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+        "blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe",
+        "sha256": "61876e5704a5dd930ecf9a4c1855811cc21e5836fdc03286086dcbb0890382dc"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd",
+        "sha256": "13d317cb036d7aa9f5ea06942d80b964718e3bc7435bfc46e731cb5dec76f35c"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+        "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+        "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.runtime.json",
+        "blob": "51af58dee05c03745b3906f81948fa869e4cf091",
+        "sha256": "eba74c0ef6bf8ea421705c90a6f86220b2bed3b0569f033af1a2b7f164628d02"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.raw.txt",
+        "blob": "03f74f4fa6060f50bbdbd89d95085dacd14a53e2",
+        "sha256": "0edbfad11ae3d70efe20b087735476f3fd3568398b96618597b5cab372b8d7b1"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.evidence.json",
+        "blob": "cdd86a7bf78d80305cd6ad2540004be8354a8303",
+        "sha256": "1d4f0ce9c215ba6f1dcf6059af05ad7adb32d2416505c434bb66a9280bfd241d"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.attempt.json",
+        "blob": "30f1263bfe7c3413a86e95bb201185412078c6c2",
+        "sha256": "cdb25518eed1dc124c8424fe7095f5d6a3736de93727431faa21cc89b5f9ded6"
+      },
+      {
+        "path": "state/reviews/codex-20261003/validation.runtime.json",
+        "blob": "fbc920c60e7a22836773b9bd842371aca3a8a179",
+        "sha256": "b6f69d19301c61426654636eb7a35f7750477937e92dfae9480c2b3b8b4860e3"
+      },
+      {
+        "path": "state/reviews/codex-20261003/validation.raw.txt",
+        "blob": "b5675eca1c19e73e4db5a273e142f8b67c1ec21c",
+        "sha256": "eb7e9fa378a0d6e93962fb16fe0a369819a619a838e47669067a27f3907f0e6f"
+      },
+      {
+        "path": "state/reviews/codex-20261003/validation.evidence.json",
+        "blob": "cf34cc8b64152ef64403dac5d021926c55551b25",
+        "sha256": "0b2de21942340b4c2e79d33d9d96d51e6039406826f21bd909855c51a596bb86"
+      },
+      {
+        "path": "state/reviews/codex-20261003/validation.attempt.json",
+        "blob": "61bfeae4e667b5d8aee2b77249e8dedfa84b077f",
+        "sha256": "ea815ec1116bddc173924d8780fc3311c9afa5938419ed06bfeead6f041e9445"
+      },
+      {
+        "path": "state/reviews/codex-20261003/facts.runtime.json",
+        "blob": "3b15408a56a21694c5f32c24947cc064ee4d0fec",
+        "sha256": "213c984d75988b8962a4a24a7e51bf4f5551c15108778aa4a16904c295a808c9"
+      },
+      {
+        "path": "state/reviews/codex-20261003/facts.raw.txt",
+        "blob": "2a4168d8d57b87e826b579d81c65adeb0db1dde0",
+        "sha256": "b605a45e17565aed4d59db2467f1d17035d24b1ca6e768d53637ddfa9b1294ef"
+      },
+      {
+        "path": "state/reviews/codex-20261003/facts.evidence.json",
+        "blob": "2b5da4637c5bce32c439d14d795d630ed41d051e",
+        "sha256": "d67fd419ccabe0fb62705fa49196dab6720dafa4cc6d68bafa16bb0aa26db58b"
+      },
+      {
+        "path": "state/reviews/codex-20261003/facts.attempt.json",
+        "blob": "0b11ecbfa63bf0b5e53280834db542fbe41a7cbe",
+        "sha256": "1f16d7191f4e6c08cfeda7b7d9dad30a024b7cd7c6e2d4b675c08c5eb627a023"
+      },
+      {
+        "path": "state/reviews/codex-20261003/diagnosis.runtime.json",
+        "blob": "b8f39d4352dceafe95d0d8bee23ae3e8c7dd0125",
+        "sha256": "0fb914935e2d5a432708c7025ba75afc4c52c05490d38fdf5b30d6e01db7f1d8"
+      },
+      {
+        "path": "state/reviews/codex-20261003/diagnosis.raw.txt",
+        "blob": "d3e1673e83bef86b88cea0d14827418c4dd31d05",
+        "sha256": "8cdcd390922d8ee21083fc0b7412455efc9be857b10a16efb88acb7d38f7fe02"
+      },
+      {
+        "path": "state/reviews/codex-20261003/diagnosis.evidence.json",
+        "blob": "38a878e94ff0c673f2c2afcd3587f36a90d62251",
+        "sha256": "53bbc3a360bd5a3dfadbe63465cf1ceb64c2bebfa01c3c7ccb7fb122130401de"
+      },
+      {
+        "path": "state/reviews/codex-20261003/diagnosis.attempt.json",
+        "blob": "d03c0361c325b3cd139370b42ffa581ffc64f979",
+        "sha256": "3d63b98f2b975bbb9f6d380e541947d2a49fea1b741c8f5a636bb99d26c0cf43"
+      },
+      {
+        "path": "state/reviews/codex-20261003/coordinator-settlement.json",
+        "blob": "7f89244b6c8f0fe836a659c3f2360552387d2977",
+        "sha256": "bda8c3acba5f9d1c6d0ea75c29ce636294ef5bf0a19aaa795c108f9648cdbcd0"
+      },
+      {
+        "path": "state/reviews/codex-20261003/facts.coordinator-settlement.json",
+        "blob": "f57cda50326d5b847d9ae4a6946edd72662d04c9",
+        "sha256": "75f60b17825b71ff94b79a0def34cde0545b02a5d498d5062ad4b5caa25f1c83"
+      },
+      {
+        "path": "docs/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_RESULT_20261003.md",
+        "blob": "21d0375e7b786d0b5e84f9108de6f33d3e094ac5",
+        "sha256": "9fdf2bcc3c3d1b666a60d3a81a52d8918804a9cff981d38b108844cf7b4802bc"
+      },
+      {
+        "path": "docs/NOVEL_CODEX_REVIEW_INTEGRATION_20261003.md",
+        "blob": "9511d8c7965876fe7651d55083e8c109b7886f08",
+        "sha256": "660bb4020ead578dd5a58cfdea8ac8cee0f2a31aeea12b66843a0c577523886f"
+      },
+      {
+        "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+        "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+        "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.reveal.json",
+        "blob": "acd552bde2b142b21bceee79da6108f195c93b59",
+        "sha256": "745041ababa5944f43c46a2b526598c851477ce3bfa42db5a843c64b9213a528"
+      },
+      {
+        "path": "state/reviews/codex-20261003/validation.reveal.json",
+        "blob": "2198b84964aae245d0417d54533b81b03ba2ac0f",
+        "sha256": "7e0c3c3c0a418fddff599195d6c7555b60bb59bfc66c4aac95b0b56790448489"
+      },
+      {
+        "path": "docs/NOVEL_REVIEW_PROFESSIONAL_LEARNING_20261003.md",
+        "blob": "b54b01909253adc48f985e364af0bad8ff77e81a",
+        "sha256": "9f6c832190806b5c17b9c65ae79818079c9969dab797813f1c2b1d2b08d51253"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.preflight01.runtime.json",
+        "blob": "20fc461b8d021a2c8dcf531f2f4fb56d83e4054b",
+        "sha256": "6a375781014bad8611b1db3b336abfcf2b1552dd6e2e73f2df89559f635f6ab1"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.transport01.runtime.json",
+        "blob": "a54fac763b2bb9d64c7a6aab90e4a87628e73c6c",
+        "sha256": "8d5296d02f9e2662628b9a1632a7b02f99e63fad6536e7e29b8041d259a6d735"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.transport02.runtime.json",
+        "blob": "2052992f802b7cdcfb728e42c6fc4767cbc26291",
+        "sha256": "99484860afbc0ae07006b1ef869f2d2d6eaf3fc2033a0dc256ba809a1bdc2d29"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.startup-repair.json",
+        "blob": "3ca74d3d4479887e3c849547d104c38418f7663d",
+        "sha256": "16daf694fea9edcd2d660268c034f1206bb3dbf541e4b53fee950ad66281a718"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.transport-repair.json",
+        "blob": "3b28781449f5ced22fc09081baa7ae84b06e3c16",
+        "sha256": "1819ae476b9924e2c1642220b900c3a1558b06696b2b99fe52c6cb745cc10dd9"
+      },
+      {
+        "path": "state/reviews/codex-20261003/calibration.host-network-repair.json",
+        "blob": "366c2c941caf49c9360f4f3b9c47fef64879dff5",
+        "sha256": "48cdb457bd844c0351738f60da3f2fbf59b641d7685e56f60d0133f3a13de304"
+      },
+      {
+        "path": "state/reviews/codex-20261003/account-preflight-host-network.json",
+        "blob": "15a38817fac8a6af54754f730ffc0aa4d48e4085",
+        "sha256": "841a2b98f1ce72bfff1cd0c0680f0d5aa0bd28ba3f0eaf732d4fc9e832d9b450"
+      },
+      {
+        "path": "state/reviews/codex-20261003/account-preflight.json",
+        "blob": "1750d06f4c0d8f5223a36891487dfa350e740fbe",
+        "sha256": "7030e2315c3c7f7709f382d096f180086ed6586f9a336d04acb64c107cca3519"
+      },
+      {
+        "path": "state/reviews/codex-20261003/transport-probe-default-env.json",
+        "blob": "10228b7338de88c9856bc6948f7ca88a5a81c481",
+        "sha256": "ab1c8f197eea4668db8b8ce5837a0012c25850a0b09f43534c673d12b3968828"
+      },
+      {
+        "path": ".gitattributes",
+        "blob": "4f41d3eec08affdc96dbd9430ad266bc5806bd7a",
+        "sha256": "ec13fe9008c1c4fdcc2732da07a6426fea91880d6c6d1d16a8c8a22bbbf72bd2"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "6707d563941b56a0ba2e7db31ca0bb790c1d6e5c",
+        "sha256": "1fc7ee61dbe1ba31eb6d512d8fcba94b6518ec6d6ebe3e676e0e22950ceb3f23"
+      },
+      {
+        "path": "AGENTS.md",
+        "blob": "00c4fe05569620a6a0d15d44f09069d09b8390f8",
+        "sha256": "3da5f0d9a738936d87ad1c665fc461a7d1b1b91fcc255cb8bceb74c50fbc169e"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "d242890c8b18a5c80c559ed6beed8cf9a96c9d5a",
+        "sha256": "bdb31d6dd14e4c6870a79d5701d595efcaffd62506053b5a62c4bbd9d5afc696"
+      },
+      {
+        "path": "README.md",
+        "blob": "5870dc2f95b07fbba368e9e999638f41cd46e865",
+        "sha256": "d64376e5298b6a987e5f19b93fd1eb04b8b6a1b6a17adfe6ad3545999cc5bc83"
+      },
+      {
+        "path": "scripts/codex_review.py",
+        "blob": "05ed4df177c9c2e9e431ad5e69153581e2fab7bd",
+        "sha256": "88b4dae23629d42a7c8d65310a729d2e6ae8b270c4356690080a9fae3b09476a"
+      },
+      {
+        "path": "scripts/verify_codex_review.py",
+        "blob": "c97c54a25d212d28edf5f47403e69d5b60e98376",
+        "sha256": "18013f763e594f634c7d18db3ef39864b96823c1f3b864ce15608d7f49ff2e89"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "d7bafb942df9e0cd9209cb71be6ce8deddd81c16",
+        "sha256": "13e032457a7cc7437e3cfe6fcd6bfe2219e8667c96a6760ef4aacadafba57b74"
+      },
+      {
+        "path": "scripts/verify_review_publication.py",
+        "blob": "298b6f264d823a62aac92c2c00d9f17ee2fb4df6",
+        "sha256": "5c7810b11f0a342bd6e1bebbb637b04a28d60f86b643b95e0e55d3367df82f79"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CODEX_REVIEW_VALIDATION_20261003.json",
+        "blob": "b1a683e8025283d22157599eff1de5f20cef0ea5",
+        "sha256": "9458fda302dcb1fbd79f17a039762905d5ba17cb6f749320965df96ce963d06d"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "4f239bf87e3042b51c8a2098a625f5898c0043fd",
+        "sha256": "668182e6e98d8d0a2cabf456878548ee3717ed771f703abe2ec55c3af4d26a67"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "9d744e4907515703c4408db8df2c58f65733a653",
+        "sha256": "eedb2aaa84cfaba677f437d8304182e76643375e0944e78ca37b9338a83b359a"
+      }
+    ],
+    "protected_originals_unchanged": [
+      "MAINLINE.md",
+      "delivery/local-revision-rc3-r2/short-r2-a1.md",
+      "delivery/r2-emotion-retention-diagnosis/reviewer-input.md",
+      "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+      "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+      "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+      "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
+      "state/review_receipts/NOVEL_MAINLINE_V4_LOCK_20261001.json"
+    ],
+    "model_calls": 0,
+    "generation_count": 0
+  },
+  "helper_repair_validation": {
+    "python_compile_exit_code": 0,
+    "actual_remote_readback_exit_code": 0
+  },
+  "proof_boundary": "This receipt records the implementation readback at b9057a1. The receipt is committed afterward; its own final commit is verified again after publication, not guessed here.",
+  "raw_reports_rewritten": false,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "prior_browser_callback_received": false,
+  "method_revision": 4,
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
+  "automatic_background_sync": false
+}
+
