@@ -1,0 +1,304 @@
+{
+  "schema_version": "native-new-story-short-remote-save/v1",
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+  "recorded_at": "2026-10-03T22:31:21Z",
+  "status": "IMPLEMENTATION_ACTUAL_REMOTE_BYTES_HISTORY_AND_HUMAN_UNKNOWN_GATE_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "implementation_commit": "717369ca21d0ebcfe4213682e658130c9d583b9c",
+  "implementation_proof": {
+    "status": "REMOTE_NEW_STORY_BYTES_HISTORY_AND_HUMAN_UNKNOWN_GATE_VERIFIED",
+    "remote_head": "717369ca21d0ebcfe4213682e658130c9d583b9c",
+    "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+    "checkpoint": 205,
+    "whole_worktree_files": 606,
+    "protected_source_file_count": 557,
+    "current_state": {
+      "sequence": 205,
+      "status": "NEW_STORY_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING",
+      "checks_passed": 39,
+      "historical_checks_passed": 27,
+      "protected_source_file_count": 557,
+      "new_prose_authorized": false,
+      "model_calls_during_validation": 0,
+      "generation_count_during_validation": 0,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "human_quality_result": "UNKNOWN",
+      "new_story_override_only": true
+    },
+    "human_quality_result": "UNKNOWN",
+    "full_scene_or_TEST01_promoted": false,
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "9ab1d560b1d6bfd55940e78df80467c8645a194d",
+        "sha256": "d2b342294993b384ecee140b25a868d27f7022a136b52af3199038e5795188cb"
+      },
+      {
+        "path": "README.md",
+        "blob": "9618bc303cab75b1022c55eeff3f287c305f3bb4",
+        "sha256": "8215968483e91ed5c0622628b8f575c70864d186b256e5635deacfee56ded3fe"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "14166b100cc243a560abe71ba5026865f1a51a66",
+        "sha256": "a26aa2697c1b272797370aa1cded924481f8579a4d82a0c0f86e8cb12fc56c65"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "3547c85abc1aa7b05ef2a383444a5b5a976e1cde",
+        "sha256": "f0607717802a0969b2fdee90ea85511f7d063ee938a0e98e48f32cafb3fbf0a3"
+      },
+      {
+        "path": "config/novel-new-story-20261004.json",
+        "blob": "566d076cceaeb87b8d3428d81c00af96e26b18b4",
+        "sha256": "fd475e81afeac7b6994b8a72818126eb3dc90df026095fd4ab6dac7cb2a27d80"
+      },
+      {
+        "path": "delivery/new-story-20261004/editor-packet.json",
+        "blob": "3b2ceaee4f0678d1e31d67ba3fc0220b580b1e04",
+        "sha256": "c19cdc86c187e2f25cf8b5797d87707b95f8f9c875aadf812c31fe8e2334c6c9"
+      },
+      {
+        "path": "delivery/new-story-20261004/editor-policy.txt",
+        "blob": "27940655e1af3c514520678a94325d907ebf4c60",
+        "sha256": "a89225292f05724f44e45129c5bcf7c916407cdd6c1e1a3c20d875b35a9a9a1f"
+      },
+      {
+        "path": "delivery/new-story-20261004/opening-a1.md",
+        "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+        "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+      },
+      {
+        "path": "delivery/new-story-20261004/reader-packet.json",
+        "blob": "47a8f3ecf608e1c03aec37c67ef16818696c0b84",
+        "sha256": "61b71c276e9389cd98bb0350119889f84a1ef7fe85a2968821b1ac38779f22bd"
+      },
+      {
+        "path": "delivery/new-story-20261004/reader-policy.txt",
+        "blob": "4dc049182ad16fc4c89430a0375d16ccec05303a",
+        "sha256": "e1357cfaf65a8424c64dafd557cc6358ce2892f5853b6516e7485498edf49696"
+      },
+      {
+        "path": "delivery/new-story-20261004/story-contract.json",
+        "blob": "35241bfe82fe327973484c9080e6ee2d4fe90625",
+        "sha256": "e9c54daca1b1f0195b258840ca9b1990cb5c2385ba202c19b6f974a4c3084979"
+      },
+      {
+        "path": "delivery/new-story-20261004/writer-input.json",
+        "blob": "3a1f7c4adbcf48b3982de2e4bdfcaca59bf3d60f",
+        "sha256": "7b317e8ee4d5d9a08f1281a43efef847c3c1b61ece7250bb8ad7db93943ee0a6"
+      },
+      {
+        "path": "delivery/new-story-20261004/writer-policy.txt",
+        "blob": "732708acb9921cce026939cc5d322e45167ddace",
+        "sha256": "b19ed0550a876ca4cbbb58dd34b6080fdebc4d776410a8ac185e21ae39ba32f8"
+      },
+      {
+        "path": "docs/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.md",
+        "blob": "c877e49ad826e8272628454bfb4c640a14e3946d",
+        "sha256": "a46224e64beab54e576e51b61dd8e4d5942b9eb059a8acbe132ea5de1c4dbad2"
+      },
+      {
+        "path": "scripts/codex_review.py",
+        "blob": "c49695237591fd21622e684805442cffaf8c9b92",
+        "sha256": "800e61b55969c4c50f8c4de76de69eff75841dbb859ae9e795a9c8d5cecd46ae"
+      },
+      {
+        "path": "scripts/frozen_history.py",
+        "blob": "ef018f99a03350c588fc89f02753d2c1df7acd4f",
+        "sha256": "996515e110eeb8afb67eae2350b9b4296c9838598b1c4048bded42f0cb3df2af"
+      },
+      {
+        "path": "scripts/novel_story_trial.py",
+        "blob": "06163530fb7603fb22e70d5f453f061406a615e7",
+        "sha256": "a1d23252eb76f4d9d3c259ebe621aeae5a3c988e1ac5946a634e991f62f4fb4c"
+      },
+      {
+        "path": "scripts/novel_two_role_review.py",
+        "blob": "cc595219de300b84d81a4116a87208694234c463",
+        "sha256": "48e2905b8a1b17ca27c22a23d3bff2131332acff22406d50bede9d167a078600"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "a68bc9e1d9262a36ee81eef850f375e466c45ce0",
+        "sha256": "e85d7b8581b44bb31fc426afe21f42413a791839caaec6cb432aaf5b15a983b6"
+      },
+      {
+        "path": "scripts/verify_story_trial.py",
+        "blob": "35e39fd1fdd01aa5ac4d44109dce21372d9e4a82",
+        "sha256": "dd07e8e676d1a0ee9ab9193868cc7f7613dd6af3f870d26ea246f9cdd05551cc"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "10c5cabbe9ee6860d0d8198c487c3b75d3ad81da",
+        "sha256": "4523f8d7b0e4db26bc80fdf84eae9faea7cc2c1731b171fbabb55793348682cd"
+      },
+      {
+        "path": "state/learning/new-story-20261004/psychology-research.raw.md",
+        "blob": "9014c4860032f62718b1ba0f036fcb047a1d0eb1",
+        "sha256": "279085f566226b01794e6330f2a69b6f7252ac82dc67d5461692a5623d05570b"
+      },
+      {
+        "path": "state/learning/new-story-20261004/sources.json",
+        "blob": "47e2b632c0f0eeac215669a3fe1c1bd29144e7a5",
+        "sha256": "67e255be3a6a69fce4f4fd9069d2ffd9a512e0f6a629b77015bebd5ffe9d2059"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "27d673da9716ffbb334c54e5d987b3b8777a2047",
+        "sha256": "d76841d31995cf330f905b639b9b85ae5793bf022296d896cf4606382bff91d4"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CONTINUATION_374_HUMAN_FAIL_20261004.json",
+        "blob": "6c6ae5355b487599a7d797807070b6a7663d9bd1",
+        "sha256": "cd6bfd56d94d1ed70a37ae5d3cd43adac81303fdf62289952a0cc02c62cafc21"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_NEW_STORY_LEARNING_SUPPLEMENT_20261004.json",
+        "blob": "472a1ffbffdb495be775985a48188c45d7897cfe",
+        "sha256": "403d026883c94080a364d42d4bfc71a1a0dc427991080dcd50e9f35e31d369fa"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_AUTHORIZATION_20261004.json",
+        "blob": "0a6ee4ba3da9713a8a7931bff840b899d48707c5",
+        "sha256": "8c0b40a676d5650be54f204890d84a151f06c5634a2546354a5c2b6b1dea8d62"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.json",
+        "blob": "a62c3b1ffc3194a961a43a696615963193587cbb",
+        "sha256": "ea72e7c8c8fd4e7a3afbb3ef209e1f109e25c75c7bdf7d60d5725d11bf447212"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_VALIDATION_20261004.json",
+        "blob": "4c6b5415d53d8648e900a24d613a8f17c83cd59d",
+        "sha256": "c124cf7addb2864cb187243aec3024567c38fa7636a4f82bc65a800f1d78f21f"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/coordinator-settlement.json",
+        "blob": "b880b6c1d1a33d3271795996e302839b1f8dae29",
+        "sha256": "be89cd6835580729a03252946effa517d965ed31f7db527a75aa12dc543638dd"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/editor.attempt.json",
+        "blob": "faf637cb35fe8aff682d810797011812a2b98082",
+        "sha256": "862c76e0063c8fd0048baf8486472fd5fa13c84981aabf9a4d7ab06a3073c08e"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/editor.evidence.json",
+        "blob": "850b3b077d83ecb53f6b7c1eabefeace0f8f635f",
+        "sha256": "a4e58d103a7abe4b0fcf09c837cc7d56b60451917f906b78c1391632a7c58a0f"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/editor.raw.txt",
+        "blob": "2e719ed8173b3e40eb05adfaf4cb75d010338985",
+        "sha256": "b998402d3884bffc16303bc0ab6a6992f2a8c8a7dcece28aa44ddaa56343ba11"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/editor.runtime.json",
+        "blob": "bacdda0fa26e8cdb4517e0e9936a6f74ca15a036",
+        "sha256": "ad4f36c22938238554e1250bac68ff14b5dffa0c42d4f4d3c7391da6ca217b7f"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/pending-human-review.json",
+        "blob": "945ef3db7bf193a4172bb7e6faa5639b1bdb79bd",
+        "sha256": "08828ea97b6ddd103022581ff097a33fd42920815c7d0cb8f7b1bdb0d4910e63"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/reader.attempt.json",
+        "blob": "f320664d163c003faa2d3c47e0ff6134e59f187b",
+        "sha256": "78ddff91da4b5b7c9d84e4114596de06a9186109f80f6fafd83b6d8faf1c7f84"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/reader.evidence.json",
+        "blob": "76b6e79ebdc0eb9636a4ffd9ad42d7442376ff71",
+        "sha256": "9b123e33ca4988a31c22a3b8b38ff5d75c4ae3315f595bb0213b070aa12d9b77"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/reader.raw.txt",
+        "blob": "c3a296e1dd362679c352fa2c7a12f9405a2e8dbc",
+        "sha256": "2bafd1c6fd59eb5f4480b40dac20c0da246b6e28c8ef1776bc770c698dc70f76"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/reader.runtime.json",
+        "blob": "512b0dd47670ea2fa0ff79bce5825139b4246256",
+        "sha256": "36177193726e4d67ec1b1419fcf73705b0d7613232e3f284371a89f80665f781"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/writer.attempt.json",
+        "blob": "bade79f3b2b55c193ebe470b7c80e135e56559d1",
+        "sha256": "ff6a1193dea41683a95ce1da80706e3db643dd7e9d8c6aa8c7a1b59743e3c879"
+      },
+      {
+        "path": "state/reviews/new-story-20261004/writer.runtime.json",
+        "blob": "f5bb1696b8bf4ccb7108542cca5515f3875e99ed",
+        "sha256": "553a1a74e9e01fe4691f7d1466e49d7e1f1f30abb21cbf48139436aad0ae54b9"
+      },
+      {
+        "path": "state/tasks/NOVEL_NEW_STORY_PSYCHOLOGY_OPENING_TRIAL_20261004.json",
+        "blob": "12121739e87612bc22c110fac08e31c2f125077e",
+        "sha256": "0ea553994a9066c2a8266b1ce6aa08fc3bf76c507193df0215b35176c1146b67"
+      },
+      {
+        "path": "tests/test_continuation_trial.py",
+        "blob": "b05496790f3fdf9dcdfb8b61c5432c308bf0c6ff",
+        "sha256": "1022ce4f62109a303bb9ef821a0177c30df1ccf1ff3563be20877706aa8ca982"
+      },
+      {
+        "path": "tests/test_current_state.py",
+        "blob": "9212712e0a2f4ef073afcbfce093a3b0a6343323",
+        "sha256": "d02378b135881c84413f182d9f28559ec0225d550ff81f315b7abc7d1733ab81"
+      },
+      {
+        "path": "tests/test_hook_trial.py",
+        "blob": "4d261bac211f5899af78c37b17b45367e4d0ff3c",
+        "sha256": "5055aab395b3119c09fc53914b3db6dbaf3e3254d43ec58285b58b2bb8ebcd82"
+      },
+      {
+        "path": "tests/test_hook_trial_human_feedback.py",
+        "blob": "0e7d96606d2e660af8d562bd7b8c81d97b443eac",
+        "sha256": "478c67cb642e1acf62197cfc21d722e250a50c59d9ec63d76b7b723ce160eb09"
+      },
+      {
+        "path": "tests/test_hook_trial_qualified_short.py",
+        "blob": "84672d2a9d8a755edbf136830d3852f1e4c1d2b2",
+        "sha256": "b8b35761d8f57d45b1ccd68e59ef420c22d9c46bdb004d932a2f4b74d1d5d086"
+      },
+      {
+        "path": "tests/test_prose_repair.py",
+        "blob": "15dcd6993570acc9652a413a84856a5012419123",
+        "sha256": "66fbcd090aae6c24d2aed49f3e1803ecd81d776c0318315d2d85c70961c35994"
+      },
+      {
+        "path": "tests/test_story_trial.py",
+        "blob": "6a85f586765ab1543a12f5ce994169cf04747699",
+        "sha256": "288447c4f23a9b81276ca7c2530a2b1e022903e38a6fe21050642f72bc751829"
+      }
+    ]
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_VALIDATION_20261004.json",
+    "blob": "4c6b5415d53d8648e900a24d613a8f17c83cd59d",
+    "sha256": "c124cf7addb2864cb187243aec3024567c38fa7636a4f82bc65a800f1d78f21f"
+  },
+  "result": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.json",
+    "blob": "a62c3b1ffc3194a961a43a696615963193587cbb",
+    "sha256": "ea72e7c8c8fd4e7a3afbb3ef209e1f109e25c75c7bdf7d60d5725d11bf447212"
+  },
+  "human_quality_result": "UNKNOWN",
+  "model_calls_during_readback": 0,
+  "generation_count_during_readback": 0,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
