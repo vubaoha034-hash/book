@@ -59,8 +59,14 @@ class ScopedLocalRevisionTests(unittest.TestCase):
             route['scoped_revision_preparation'], route['scoped_revision_execution'], self.original)
 
     def test_actual_human_rejection_routes_to_diagnosis_without_prose(self):
+        prep = self.project['external_review_state']['emotion_retention_preparation']
         self.assertEqual(self.human_failure_gate(),
-            'RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK')
+            'AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY')
+        self.assertEqual(prep['send_click_count'], 0)
+        self.assertEqual(prep['composer_fill_count'], 1)
+        self.assertFalse(prep['external_review_started'])
+        self.assertFalse(prep['same_task_retry_allowed'])
+        self.assertFalse(prep['new_prose_authorized_now'])
 
     def test_AI_pass_cannot_release_human_rejected_output_again(self):
         def release(route):
