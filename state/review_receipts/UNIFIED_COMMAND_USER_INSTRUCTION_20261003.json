@@ -1,0 +1,86 @@
+{
+  "schema_version": "project-user-instruction-amendment/v1",
+  "instruction_id": "UNIFIED-MODEL-PREFERENCE-AND-MAINLINE-PRESERVATION-20261003-01",
+  "project_id": "novel-distillation",
+  "source": {
+    "type": "CURRENT_EXPLICIT_USER_MESSAGE",
+    "project": "统一指挥",
+    "submitted_at": "2026-10-03T07:49:50+08:00",
+    "conversation_url": null,
+    "conversation_url_status": "NOT_OBSERVED",
+    "necessary_quotes": [
+      "尽量用  GPT  6.1 sol  max格式。因为这个工作的更稳定。好吧。所有项目都一样。",
+      "而后你作为一个审核者，不要轻易去改变我的项目的主线任务。除非我让你改变。"
+    ]
+  },
+  "recorded_at": "2026-10-03T00:01:11.912Z",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "source_head": "6bbf3eed739c6b828b90603fcb0fa278ee41702c",
+  "amendment_scope": [
+    "FUTURE_EXECUTION_MODEL_PREFERENCE",
+    "UNIFIED_COORDINATOR_MAINLINE_CHANGE_AUTHORITY"
+  ],
+  "execution_preference": {
+    "preferred_model_id": "gpt-6.1-sol",
+    "preferred_display_name": "GPT-6.1 Sol",
+    "preferred_reasoning_effort": "max",
+    "availability_policy": "PREFER_WHEN_AVAILABLE",
+    "override_older_model_and_effort_defaults": true,
+    "model_preference_alone_switches_chat_work": false,
+    "actual_model_and_effort_must_be_observed": true,
+    "unavailable_case": "如实记录实际设置与不可用原因；不宣称偏好已经成为运行配置。"
+  },
+  "coordinator_boundary": {
+    "role": "总审核员、总调度员",
+    "mainline_change_requires_explicit_user_instruction": true,
+    "reviewer_opinion_alone_authorizes_mainline_change": false,
+    "failed_test_alone_authorizes_coordinator_mainline_change": false,
+    "continue_existing_authorized_serial_steps": true,
+    "previously_authorized_bounded_native_revision_scope_preserved": true,
+    "scope_not_expanded": true
+  },
+  "preserved_current_focus": {
+    "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "latest_unit": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+    "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PREPARED",
+    "next_action": "RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK"
+  },
+  "source_authorities": [
+    {
+      "path": "MAINLINE.md",
+      "git_blob": "cc735f4238440da2149428a22f50a105b6507b6a"
+    },
+    {
+      "path": "state/project_state.json",
+      "git_blob": "1a4b16fca01288a29efff4d4cc38a239b73432ab"
+    },
+    {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "git_blob": "a27d4d9ff6c1036302279450586868acf77d280e"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+      "git_blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110"
+    }
+  ],
+  "validation": {
+    "original_entrypoint_recovered_exactly_after_removing_new_section": true,
+    "current_task_state_files_modified": false,
+    "mainline_contracts_modified": false,
+    "candidate_or_version_changed": false,
+    "artifact_generation_count": 0,
+    "chat_dispatch_count": 0,
+    "automation_resumed": false,
+    "gate_status_or_acceptance_promoted": false,
+    "required_native_business_validators": "NOT_RUN_NO_BUSINESS_EXECUTION_OR_NATIVE_STATE_TRANSITION_IN_THIS_INSTRUCTION_ONLY_CHANGE",
+    "full_historical_chat_coverage": "PARTIAL"
+  },
+  "runtime_rollout": {
+    "preference_instruction_persisted_when_commit_and_readback_succeed": true,
+    "all_five_live_model_switches_verified": false,
+    "automatic_platform_enforcement": false
+  },
+  "entrypoint": "START_HERE.md",
+  "settlement": "USER_INSTRUCTION_RECORDED_WITH_EXISTING_NATIVE_TASK_AND_NEXT_ACTION_PRESERVED"
+}
