@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/continuation-short-20261003/editor.packet.json",
+    "blob": "5fd999e4838f0389f934be6e9674441582dd8bd8",
+    "sha256": "d1ee8095bf31cd27fc0cdde88fac93209af5b5511d48f170fee0585a8f27905f"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T15:11:37Z"
+}

@@ -24,7 +24,19 @@ READING_NEXT='PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION'
 INTERACTION_EXACT='比之前自然，已不明显'
 READING_RECEIPT='state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json'
 
-def reading_historical_view(root,project,cp):
+def continuation_successor_entry(root,authorization,artifact):
+    if authorization is None:return False
+    a=bound(root,authorization);h=bound(root,a['opening_human_feedback'])
+    entry=(root/'START_HERE.md').read_text(encoding='utf-8')
+    return (authorization.get('path')=='state/review_receipts/NOVEL_CONTINUATION_SHORT_AUTHORIZATION_20261003.json' and
+        a.get('task_id')=='NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01' and
+        a.get('source_head')=='bfa925c353aef6d6b5a63b6e42833b02f7e3583d' and a.get('source_checkpoint')==203 and
+        a.get('source')=='STANDING_USER_AUTONOMY_FOR_ONE_BOUNDED_SAME_SCENE_CONTINUATION' and
+        a.get('previous_excerpt')==artifact and a['opening_human_feedback'].get('path')==READING_RECEIPT and
+        h.get('output')==artifact and h.get('human_exact_feedback')==READING_EXACT and h.get('outcome')=='SHORT_LIMITED_PASS' and
+        '当前位置：检查点204。' in entry and '上一检查点203：' in entry)
+
+def reading_historical_view(root,project,cp,successor_continuation_authorization=None):
     feedback=project.get('hook_trial_human_feedback',{});record=feedback.get('reading_supplement')
     if not record or feedback!=cp.get('hook_trial_human_feedback'):raise ValueError('HOOK_READING_FEEDBACK_STATE_DRIFT')
     h=bound(root,record['receipt']);task=bound(root,record['task']);artifact=project['opening_hook_trial']['final_artifact']
@@ -55,7 +67,7 @@ def reading_historical_view(root,project,cp):
             v.get('next_required_action')!=READING_NEXT or v.get('current_human_gate')!='HOOK_TRIAL_LOCAL_SHORT_PASS_WITH_LOW_CONTINUATION_STRENGTH_FULL_SCENE_UNTESTED'):
             raise ValueError('HOOK_WEAK_CONTINUATION_LIVE_CURSOR_DRIFT')
     entry=(root/'START_HERE.md').read_text(encoding='utf-8')
-    if cp.get('sequence')!=203 or cp.get('stop') is not True or READING_TASK not in entry or READING_NEXT not in entry or '当前位置：检查点203。' not in entry:
+    if cp.get('sequence')!=203 or cp.get('stop') is not True or READING_TASK not in entry or READING_NEXT not in entry or ('当前位置：检查点203。' not in entry and not continuation_successor_entry(root,successor_continuation_authorization,artifact)):
         raise ValueError('HOOK_WEAK_CONTINUATION_ENTRY_DRIFT')
     p,c=copy.deepcopy(project),copy.deepcopy(cp);prior=bound(root,feedback['receipt'])
     for v in (p,c):
@@ -66,10 +78,10 @@ def reading_historical_view(root,project,cp):
     c.update(sequence=202,stop=True)
     return p,c
 
-def human_feedback_view(root,project,cp,successor_reading_feedback=None):
+def human_feedback_view(root,project,cp,successor_reading_feedback=None,successor_continuation_authorization=None):
     if project.get('hook_trial_human_feedback',{}).get('reading_supplement') or cp.get('hook_trial_human_feedback',{}).get('reading_supplement'):
-        p,c=reading_historical_view(root,project,cp)
-        return human_feedback_view(root,p,c,successor_reading_feedback=project['hook_trial_human_feedback']['reading_supplement']['receipt'])
+        p,c=reading_historical_view(root,project,cp,successor_continuation_authorization)
+        return human_feedback_view(root,p,c,successor_reading_feedback=project['hook_trial_human_feedback']['reading_supplement']['receipt'],successor_continuation_authorization=successor_continuation_authorization)
     feedback=project.get('hook_trial_human_feedback')
     if not feedback or feedback!=cp.get('hook_trial_human_feedback'):raise ValueError('HOOK_HUMAN_FEEDBACK_STATE_DRIFT')
     receipt=bound(root,feedback['receipt']);task=bound(root,feedback['task']);route=project['opening_hook_trial']
@@ -104,7 +116,7 @@ def human_feedback_view(root,project,cp,successor_reading_feedback=None):
         h=bound(root,successor_reading_feedback)
         successor_entry=(successor_reading_feedback.get('path')==READING_RECEIPT and h.get('source_head')==READING_SOURCE and
             h.get('source_checkpoint')==202 and h.get('human_exact_feedback')==READING_EXACT and h.get('output')==route['final_artifact'] and
-            h.get('outcome')=='SHORT_LIMITED_PASS' and '当前位置：检查点203。' in entry and '上一检查点202：' in entry)
+            h.get('outcome')=='SHORT_LIMITED_PASS' and ('当前位置：检查点203。' in entry or continuation_successor_entry(root,successor_continuation_authorization,route['final_artifact'])) and '上一检查点202：' in entry)
     if cp.get('sequence')!=202 or cp.get('stop') is not True or HUMAN_TASK not in entry or HUMAN_NEXT not in entry or ('当前位置：检查点202。' not in entry and not successor_entry):
         raise ValueError('HOOK_PARTIAL_FEEDBACK_ENTRY_DRIFT')
     p,c=copy.deepcopy(project),copy.deepcopy(cp);old_human=bound(root,route['human_feedback'])
@@ -159,10 +171,10 @@ def runtime_check(root,ref,role,job):
     try:return common.runtime_check(root,ref,role,job)
     finally:common.runner=old_runner;common.TASK=old_task;runner.DIRECTORY=old_directory
 
-def hook_action(root,project,cp,historical_action,successor_human_feedback=None):
+def hook_action(root,project,cp,historical_action,successor_human_feedback=None,successor_continuation_authorization=None):
     if 'hook_trial_human_feedback' in project or 'hook_trial_human_feedback' in cp:
-        p,c,receipt=human_feedback_view(root,project,cp)
-        if hook_action(root,p,c,historical_action,successor_human_feedback=receipt)!=NEXT:
+        p,c,receipt=human_feedback_view(root,project,cp,successor_continuation_authorization=successor_continuation_authorization)
+        if hook_action(root,p,c,historical_action,successor_human_feedback=receipt,successor_continuation_authorization=successor_continuation_authorization)!=NEXT:
             raise ValueError('HOOK_PARTIAL_FEEDBACK_CANNOT_SKIP_PRIOR_GATE')
         return READING_NEXT if project.get('hook_trial_human_feedback',{}).get('reading_supplement') else HUMAN_NEXT
     if historical_action!=OLD:raise ValueError('HOOK_CANNOT_SKIP_HISTORICAL_GATES')
@@ -283,7 +295,8 @@ def hook_action(root,project,cp,historical_action,successor_human_feedback=None)
         successor_entry=(successor_human_feedback.get('path')==HUMAN_RECEIPT and h.get('source_head')==HUMAN_SOURCE and
             h.get('source_checkpoint')==201 and h.get('human_exact_feedback')==HUMAN_EXACT and h.get('output')==route['final_artifact'] and
             h.get('outcome')=='UNKNOWN' and ('当前位置：检查点202。' in entry or
-                ('当前位置：检查点203。' in entry and '上一检查点202：' in entry)) and '上一检查点201：' in entry)
+                ('当前位置：检查点203。' in entry and '上一检查点202：' in entry) or
+                (continuation_successor_entry(root,successor_continuation_authorization,route['final_artifact']) and '上一检查点202：' in entry)) and '上一检查点201：' in entry)
     if cp.get('sequence')!=201 or cp.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点201。' not in entry and not successor_entry):
         raise ValueError('HOOK_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

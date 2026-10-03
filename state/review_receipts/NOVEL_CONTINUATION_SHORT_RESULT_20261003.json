@@ -1,0 +1,137 @@
+{
+  "schema_version": "native-one-continuation-result/v1",
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "project_id": "novel-distillation",
+  "source_head": "bfa925c353aef6d6b5a63b6e42833b02f7e3583d",
+  "source_checkpoint": 203,
+  "status": "ONE_CONTINUATION_FROZEN_REVIEW_SETTLED_AWAIT_ACTUAL_HUMAN_READING",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_AUTHORIZATION_20261003.json",
+    "blob": "e3fde95224b42b15f0a9ecd43d90d3cd0a2fcdfa",
+    "sha256": "c999955170636f77213f86fb2464e0e7316b322f9ed715298768fe1168805074"
+  },
+  "manifest": {
+    "path": "config/novel-continuation-short-20261003.json",
+    "blob": "0c617d24706f34a3a78e1499fc87be3b777bd34a",
+    "sha256": "9f4ae1b835462eef32f8caaeb829de50d340484f206cdf4d3976c8d9af5f2c28"
+  },
+  "previous_excerpt": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "opening_human_feedback": {
+    "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+    "blob": "a7254e2b43bcbc0ce147ff00ebc1f357559b35af",
+    "sha256": "3faf9215434ec686136b5145bc0775e2a3ea4d719d5a63d75607f4fd429cdc6c"
+  },
+  "writer_input": {
+    "path": "delivery/continuation-short-20261003/writer-input.json",
+    "blob": "0fb4232f10d9e739cd66fe963bb2cdfb21027072",
+    "sha256": "96daca156c05ea415ec97c0a76526712c5470333082ae15181822ecba4263707"
+  },
+  "final_artifact": {
+    "path": "delivery/continuation-short-20261003/continuation-a1.md",
+    "blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+    "sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a"
+  },
+  "reading_copy": {
+    "path": "delivery/continuation-short-20261003/reading-copy.md",
+    "blob": "9319ad8ca164d35ead2bb028dce5d49c780f5863",
+    "sha256": "6395cd57b134541c568195520c7e2d1e7f4b38cc9fce15e22cf0644d808f8b5e"
+  },
+  "settlement": {
+    "path": "state/reviews/continuation-short-20261003/coordinator-settlement.json",
+    "blob": "e8ebf2089ac27ebcd4ca99c42738ca251cac5f9b",
+    "sha256": "9d5d8cef32373c58939d6b710e75733f9c20a7fe5cd1bb5ff67a545236005435"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/continuation-short-20261003/pending-human-review.json",
+    "blob": "87552d00cef2022cf5e17450be26267f4fa7e742",
+    "sha256": "9109694597af8282fb0574d9befc06efdfe65da3b51cb875e88fcfb4f090eea3"
+  },
+  "runtimes": {
+    "writer": {
+      "path": "state/reviews/continuation-short-20261003/writer.runtime.json",
+      "blob": "265cec288c331db9335017f96f15f2a31dc26e0e",
+      "sha256": "0411c2cbfc23cb280d8971658121b2e153766b7bb4961430e617d4041bcd85ad"
+    },
+    "facts": {
+      "path": "state/reviews/continuation-short-20261003/facts.runtime.json",
+      "blob": "406244d9295eefda1dede09372e31760bb34d8d2",
+      "sha256": "9e720d58298b9f746a83cbfa1fc4c2b39eb91c873e43bc3317b2f3a5e3541808"
+    },
+    "editor": {
+      "path": "state/reviews/continuation-short-20261003/editor.runtime.json",
+      "blob": "e22577a1fc272d4123baa28ff4cd2d2c7653e245",
+      "sha256": "d63719d86bf53d880a774b771ba4a12cb19ff9646b0acf00d3816a81c92e77e8"
+    },
+    "reader": {
+      "path": "state/reviews/continuation-short-20261003/reader.runtime.json",
+      "blob": "a65af2710e98e4dd7f17ae6680f167f742b3c00e",
+      "sha256": "7a31c8103ff7309a64e2ab06e93209b61379c7fee9ff86abeb463dcf25ba659e"
+    }
+  },
+  "raw_reports": {
+    "facts": {
+      "path": "state/reviews/continuation-short-20261003/facts.raw.txt",
+      "blob": "bf94d35e6f7613af1b4f372fb0757eedbfb7ab55",
+      "sha256": "7f059b3563961b879adff4f2024836e61137450e12d3739732946453f42379b5"
+    },
+    "editor": {
+      "path": "state/reviews/continuation-short-20261003/editor.raw.txt",
+      "blob": "aadd8bcb3e90bbe6c75874e8d51cfeab167fe5ef",
+      "sha256": "ee65b3ef6dee58056fdee1304a76a077f99d7d3463f61344c38f0937639b46ff"
+    },
+    "reader": {
+      "path": "state/reviews/continuation-short-20261003/reader.raw.txt",
+      "blob": "6b01b563d05ba95cef52c2d1a241786aa49902cc",
+      "sha256": "f08b4bbfbfaad4821ae00a6cbe4b1c9117a1c6b198fc623ab132cd53b38b9171"
+    }
+  },
+  "evidence": {
+    "facts": {
+      "path": "state/reviews/continuation-short-20261003/facts.evidence.json",
+      "blob": "d5447da5f5fc8850ceeb76183433d0fa786e5e4c",
+      "sha256": "984f457acb00b5cd383fb5048b4be0a11145711bd05aef52ed3f1fde096255b3"
+    },
+    "editor": {
+      "path": "state/reviews/continuation-short-20261003/editor.evidence.json",
+      "blob": "98b67fd4e675960d5dfe3608830101e105ab3f7f",
+      "sha256": "aaa9d57a3a0b9a06d2899f3fb417631a97413f3701bc6450d06704c044095442"
+    },
+    "reader": {
+      "path": "state/reviews/continuation-short-20261003/reader.evidence.json",
+      "blob": "ee99db61ac5abd950a4f609c40b14e74eb65b73c",
+      "sha256": "d1701c06acc4677ef6fe27b3064dd928864ce4f657bf3ddf9c876f4378871f4a"
+    }
+  },
+  "result_document": {
+    "path": "docs/NOVEL_SAME_SCENE_CONTINUATION_RESULT_20261003.md",
+    "blob": "792d4f231e8d38a6bd85c183604dfb1aaa5a989e",
+    "sha256": "2893ef90d005bb0e891453c8c8edd42148b6114ca695639b569f4b132ab56f48"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 0,
+  "visible_candidate_count": 1,
+  "actual_model_calls": 4,
+  "successful_model_calls": 4,
+  "remaining_new_generation_budget": 0,
+  "remaining_internal_repair_budget": 0,
+  "human_quality_result": "UNKNOWN",
+  "non_whitespace_characters": 374,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "full_scene_or_TEST01_promoted": false,
+  "literary_quality_validated": false,
+  "automatic_background_sync": false,
+  "automatic_writer_dispatch": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
+  "task": {
+    "path": "state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json",
+    "blob": "4fd120b38fe275163f934edd86934d987abba577",
+    "sha256": "2cd0bc0ec3ee8d3928534e3d8482947a5afbdde3c0a88ef6bcccb1b1c9bad130"
+  },
+  "unused_authorized_repair_closed_at_human_gate": 1
+}

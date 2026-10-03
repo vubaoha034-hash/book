@@ -1,0 +1,76 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "合同复本摊在公共休息区的矮桌上，罗钧从两个姓名里认出自己的名字，却没伸手。隔着玻璃门，他还能看见过户大厅的取号屏。",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "“工作室那笔设备款，这期六万八，五天后到期。”“你是要我拿首付来还？”“别说得像我专冲你的首付来的。”她压住纸角，“我明天下午前也得交一万二，自己租工作间的押金。那笔钱不能拿来垫设备款。”",
+      "actual_line": 1,
+      "start_character_0_based": 156
+    },
+    {
+      "index": 2,
+      "quote": "等待音响着，罗钧把复本拉近了一点。玻璃门那边有人起身，他跟着抬了下眼，脚仍朝着大厅。",
+      "actual_line": 3,
+      "start_character_0_based": 735
+    },
+    {
+      "index": 3,
+      "quote": "攒了多年的首付已经备好，今晚本该住进那间小公寓；偏偏身份下多出一段他全不记得的三年，手续停了，现在又有人拿合同等他。",
+      "actual_line": 1,
+      "start_character_0_based": 57
+    },
+    {
+      "index": 4,
+      "quote": "“名字对得上，不代表是我签的。我得先回去问房子。”",
+      "actual_line": 1,
+      "start_character_0_based": 115
+    },
+    {
+      "index": 5,
+      "quote": "她把卷起的纸角压平，才说：“我知道你不记得。不用每说一句，都先防着我。”",
+      "actual_line": 3,
+      "start_character_0_based": 578
+    },
+    {
+      "index": 6,
+      "quote": "至少这不是她交给他的号码。",
+      "actual_line": 3,
+      "start_character_0_based": 669
+    },
+    {
+      "index": 7,
+      "quote": "今晚本该住进那间小公寓；偏偏身份下多出一段他全不记得的三年",
+      "actual_line": 1,
+      "start_character_0_based": 69
+    },
+    {
+      "index": 8,
+      "quote": "我知道你不记得。不用每说一句，都先防着我。",
+      "actual_line": 3,
+      "start_character_0_based": 592
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/continuation-short-20261003/reader.packet.json",
+    "blob": "cec0ad56814bdc5442edd5d7de1febf9c118fdfa",
+    "sha256": "77a3d8c440b72e652293f8bcceb809f685343554357c970dcc6ee3ce925ff650"
+  },
+  "raw_report": {
+    "path": "state/reviews/continuation-short-20261003/reader.raw.txt",
+    "blob": "6b01b563d05ba95cef52c2d1a241786aa49902cc",
+    "sha256": "f08b4bbfbfaad4821ae00a6cbe4b1c9117a1c6b198fc623ab132cd53b38b9171"
+  }
+}

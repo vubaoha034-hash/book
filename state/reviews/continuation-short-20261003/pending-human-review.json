@@ -1,0 +1,27 @@
+{
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "artifact": {
+    "path": "delivery/continuation-short-20261003/continuation-a1.md",
+    "blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+    "sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a"
+  },
+  "reading_copy": {
+    "path": "delivery/continuation-short-20261003/reading-copy.md",
+    "blob": "9319ad8ca164d35ead2bb028dce5d49c780f5863",
+    "sha256": "6395cd57b134541c568195520c7e2d1e7f4b38cc9fce15e22cf0644d808f8b5e"
+  },
+  "previous_excerpt": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "outcome": "UNKNOWN",
+  "accepted": false,
+  "human_feedback": {},
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "questions": [
+    "接着读这段，还愿不愿继续？",
+    "人物说话是否仍然自然？"
+  ],
+  "full_scene_or_TEST01_promoted": false
+}

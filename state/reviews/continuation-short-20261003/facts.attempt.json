@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "role": "facts",
+  "packet": {
+    "path": "delivery/continuation-short-20261003/facts.packet.json",
+    "blob": "419ebe7df5accbdb8675270b5aa262a228fd2d1b",
+    "sha256": "78ea2b8dddc382388024972e35a405f2aed1c5377bb3abe8f3f250317e606881"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T15:11:41Z"
+}

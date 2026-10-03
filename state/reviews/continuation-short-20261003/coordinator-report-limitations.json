@@ -1,0 +1,36 @@
+{
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "raw_report": {
+    "path": "state/reviews/continuation-short-20261003/editor.raw.txt",
+    "blob": "aadd8bcb3e90bbe6c75874e8d51cfeab167fe5ef",
+    "sha256": "ee65b3ef6dee58056fdee1304a76a077f99d7d3463f61344c38f0937639b46ff"
+  },
+  "original_not_rewritten": true,
+  "kind": "WINDOW_COVERAGE_LIMITATION_NOT_QUOTE_CORRECTION",
+  "items": [
+    {
+      "window": "first_150_300",
+      "reported_quote": "罗钧低头，复本下方“剩余应付”那一栏写着十八万六。六万八只是这一期。他本想把纸推远一点，手却停在桌边。“我打电话，不等于我答应还。”",
+      "actual_start_0_based": 94,
+      "actual_end_exclusive": 160,
+      "nominal_window_0_based": [
+        149,
+        300
+      ],
+      "overlap_characters": 11,
+      "covers_entire_named_window": false,
+      "limitation": "引文在95—160字，仅少量覆盖150—300字窗口；正文定位正确，但不当作整个中段的完整证据。"
+    }
+  ],
+  "writer_policy_reuse_note": {
+    "policy": {
+      "path": "delivery/continuation-short-20261003/writer-policy.txt",
+      "blob": "110a12094590def1a96836b32ae70c06c0484d64",
+      "sha256": "920043b28469a861c15556e4055c2fc9b851c2433fe0b69483627e2af1f9155c"
+    },
+    "historical_label": "第二场开头正文",
+    "actual_packet_scope": "只写紧接已给上段之后的一份300—500字接续；输出新段正文，不重复或改写上段。仍是同一第二场局部摘录，至多开始独立核验，不给结果、认账、付款或恢复关系。",
+    "output_verified_as_continuation": true,
+    "action": "保留实际调用的原策略与包；此次输出未重复上段。未来新任务应直接使用接续标签，不回写本次已调用输入。"
+  }
+}

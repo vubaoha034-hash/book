@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/continuation-short-20261003/reader.packet.json",
+    "blob": "cec0ad56814bdc5442edd5d7de1febf9c118fdfa",
+    "sha256": "77a3d8c440b72e652293f8bcceb809f685343554357c970dcc6ee3ce925ff650"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T15:11:37Z"
+}

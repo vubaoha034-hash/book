@@ -54,6 +54,7 @@ class CurrentStateTests(unittest.TestCase):
             state.pop('opening_prose_repair', None)
             state.pop('opening_hook_trial', None)
             state.pop('hook_trial_human_feedback', None)
+            state.pop('continuation_short_trial', None)
             state['mainline_state'].update(current_step='STEP_01', completed_steps=[],
                 test_artifacts={}, test_results={}, literary_quality_validated=False,
                 new_prose_authorized_now=False, full_v5_authorized=False)

@@ -17,9 +17,15 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点203。任务 `NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01`。刘先生对同一401字稿说“有一点想继续的想法。但是不多哈。”，随后说“比之前自然，已不明显”（两条重复只计一次实际反馈）。见[原话及限定范围](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)和[任务](state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)。两项短段阅读目标获局部正向反馈，但续读强度低；不改写原UNKNOWN或历史否决，不推为完整场景、TEST-01、题材/通用文风或模型筛查能力通过。最终401字事实审核绑定保持，400字AI读者报告不重绑。本次模型调用0、正文生成0。
+当前位置：检查点204。任务 `NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01`。保留刘先生弱续读、互动自然的401字上段，已沿连续执行授权完成[唯一374字接续](delivery/continuation-short-20261003/continuation-a1.md)及三种不同独立上下文的审查；实际四次Sol / Max均核对，主写1、内部修订0，三审报告与30条定位记录已保存。FACT_CLEAR、EDITORIAL_CLEAR及匿名AI读者YES只作内部证据，新374字真人UNKNOWN，整场/TEST-01仍未通过。见[实际结果与能力限制](docs/NOVEL_SAME_SCENE_CONTINUATION_RESULT_20261003.md)、[任务](state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json)、[结算](state/reviews/continuation-short-20261003/coordinator-settlement.json)。401字不改，旧稿否决/锁/额度0/方法4与世界人物结局保持。
 
-当前唯一下一动作：`PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION`。按既有连续执行授权，保留当前401字，准备并验证同一场接下来的唯一300—500字短段；另存新具体任务及有界预算。旧额度0、旧197字和世界人物结局保持，不因短段认可自动写整场、TEST-02或V5。
+当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT`。只交这一个新短段并收刘先生的实际阅读感受；停在此人工门，不自动整场、TEST-02、V5、多个候选或后台任务。阅读副本为原401字加本374字的机械拼接。当前所有run一次锁已消费，读取结果和状态校验不调用模型；不复跑求赞成。窗口覆盖不足与策略旧标签另存原样来源及限制。
+
+本次[验证](state/review_receipts/NOVEL_CONTINUATION_SHORT_VALIDATION_20261003.json)及[原生远端回读](state/review_receipts/NOVEL_CONTINUATION_SHORT_REMOTE_SAVE_VERIFIED_20261003.json)分别记录实际检查与保存；保存不是文学认可。
+
+上一检查点203：任务 `NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01`。刘先生对同一401字稿说“有一点想继续的想法。但是不多哈。”，随后说“比之前自然，已不明显”（两条重复只计一次实际反馈）。见[原话及限定范围](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)和[任务](state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json)。两项短段阅读目标获局部正向反馈，但续读强度低；不改写原UNKNOWN或历史否决，不推为完整场景、TEST-01、题材/通用文风或模型筛查能力通过。最终401字事实审核绑定保持，400字AI读者报告不重绑。本次模型调用0、正文生成0。
+
+当时唯一下一动作：`PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION`。按既有连续执行授权，保留当前401字，准备并验证同一场接下来的唯一300—500字短段；另存新具体任务及有界预算。旧额度0、旧197字和世界人物结局保持，不因短段认可自动写整场、TEST-02或V5。
 
 本次[保存验证](state/review_receipts/NOVEL_HOOK_TRIAL_401_QUALIFIED_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_HOOK_TRIAL_401_QUALIFIED_REMOTE_SAVE_VERIFIED_20261003.json)分别保存，只证明限定反馈与文件保存，不证明整场或通用写作能力。
 

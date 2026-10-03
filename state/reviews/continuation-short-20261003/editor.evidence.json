@@ -1,0 +1,66 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "CN71",
+      "item_index": 0,
+      "quote": "“到三点。”许澄说，“不是等到你办完。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 27,
+      "end_character_exclusive": 47,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CN71",
+      "item_index": 1,
+      "quote": "罗钧低头，复本下方“剩余应付”那一栏写着十八万六。六万八只是这一期。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 94,
+      "end_character_exclusive": 128,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CN71",
+      "item_index": 2,
+      "quote": "许澄嘴唇动了一下，没立刻出声。她把卷起的纸角压平，才说：“我知道你不记得。不用每说一句，都先防着我。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 160,
+      "end_character_exclusive": 211,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CN71",
+      "item_index": 3,
+      "quote": "在公司公开页面上找到联系电话时，他把号码逐位看过，转进拨号界面。至少这不是她交给他的号码。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 234,
+      "end_character_exclusive": 279,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/continuation-short-20261003/editor.packet.json",
+    "blob": "5fd999e4838f0389f934be6e9674441582dd8bd8",
+    "sha256": "d1ee8095bf31cd27fc0cdde88fac93209af5b5511d48f170fee0585a8f27905f"
+  },
+  "raw_report": {
+    "path": "state/reviews/continuation-short-20261003/editor.raw.txt",
+    "blob": "aadd8bcb3e90bbe6c75874e8d51cfeab167fe5ef",
+    "sha256": "ee65b3ef6dee58056fdee1304a76a077f99d7d3463f61344c38f0937639b46ff"
+  }
+}

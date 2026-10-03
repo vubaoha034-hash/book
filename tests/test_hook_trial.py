@@ -13,9 +13,13 @@ class HookTrialTests(fixture.ProseRepairTests):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name);self.seen=set()
         self.project=json.loads((REPO/'state/project_state.json').read_bytes())
         self.cp=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
+        authorization=None
+        if 'continuation_short_trial' in self.project:
+            continuation=gate.module('hook_fixture_continuation','verify_continuation_trial.py')
+            self.project,self.cp,authorization=continuation.historical_hook_view(REPO,self.project,self.cp)
         self.route=self.project['opening_hook_trial']
         if 'hook_trial_human_feedback' in self.project:
-            self.project,self.cp,_=gate.human_feedback_view(REPO,self.project,self.cp)
+            self.project,self.cp,_=gate.human_feedback_view(REPO,self.project,self.cp,successor_continuation_authorization=authorization)
             self.route=self.project['opening_hook_trial']
         self.copy_refs(self.route);self.copy_refs(self.project['opening_prose_repair']);self.copy('START_HERE.md')
         entry=self.root/'START_HERE.md'

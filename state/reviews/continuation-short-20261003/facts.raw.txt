@@ -1,0 +1,156 @@
+{
+  "job_id": "F204",
+  "work_kind": "FACT_AUDIT",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "CN71",
+      "original_sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a",
+      "scope": "SECOND_SCENE_OPENING_EXCERPT",
+      "verdict": "FACT_CLEAR",
+      "reading_expectations": {
+        "first_30_60": {
+          "basis": "TEXT_FACT",
+          "quote": "“到三点。”许澄说，“不是等到你办完。”",
+          "line": 1,
+          "explanation": "事实理解边界：三点限定许澄的协助时间，不是购房窗口的截止时间。"
+        },
+        "first_150_300": {
+          "basis": "TEXT_FACT",
+          "quote": "我打电话，不等于我答应还。",
+          "line": 1,
+          "explanation": "正文区分启动核验与承认责任；随后选择公司公开联系方式。此处只核对信息和行动阶段，不评价吸引力。"
+        },
+        "ending": {
+          "basis": "TEXT_FACT",
+          "quote": "玻璃门那边有人起身，他跟着抬了下眼，脚仍朝着大厅。",
+          "line": 1,
+          "explanation": "通话仍处于等待阶段；末句没有写他实际进入大厅、恢复过户或获得核验结果。"
+        }
+      },
+      "findings": [
+        {
+          "id": "F01",
+          "basis": "TEXT_FACT",
+          "quote": "“到三点。”许澄说，“不是等到你办完。”",
+          "line": 1,
+          "explanation": "符合冻结事实known_time_boundary：许澄三点离开，协助有时限。正文没有把这一时限改成购房手续或设备款的截止时间。",
+          "reading_impact": "时间压力归属于许澄的有限协助，不能据此推导购房窗口即将关闭。",
+          "minimum_scope": "无需事实修订；保留时限的主体。",
+          "recheck": "确认三点仍只限定许澄的等待与协助。"
+        },
+        {
+          "id": "F02",
+          "basis": "TEXT_FACT",
+          "quote": "“剩余应付”那一栏写着十八万六。六万八只是这一期。",
+          "line": 1,
+          "explanation": "符合shared_obligation的金额及包含关系。依据previous_excerpt与current_moment，他此前已听到本期六万八，此处通过查看复本获得剩余十八万六，没有提前知道未输入的信息。五天到期及一万二押金未在新段复述，不构成矛盾。",
+          "reading_impact": "剩余余额与本期应付得到区分，没有把六万八当成全部责任或首付。",
+          "minimum_scope": "无需事实修订。",
+          "recheck": "确认六万八仍包含在十八万六中，余额知识仍来自材料读取。"
+        },
+        {
+          "id": "F03",
+          "basis": "TEXT_FACT",
+          "quote": "我打电话，不等于我答应还。",
+          "line": 1,
+          "explanation": "符合rojun_memory_and_responsibility及existing_locks：核验不等于认账。许澄随后说“我知道你不记得”，正文没有写罗钧恢复记忆、默认旧关系成立或承诺还款。",
+          "reading_impact": "有限合作与责任承认仍是两件事。",
+          "minimum_scope": "无需事实修订；保留核验与认账的区分。",
+          "recheck": "确认电话、免提和拉近复本均未被解释为接受共同责任。"
+        },
+        {
+          "id": "F04",
+          "basis": "TEXT_FACT",
+          "quote": "在公司公开页面上找到联系电话时",
+          "line": 1,
+          "explanation": "结合current_moment中已输入合同公司名，以及previous_excerpt指明供应商留存，这一动作符合shared_obligation.independent_verification。号码来自公司公开页面，而非许澄交付的号码或自建查询页；取得联系方式不等于已经证实合同。",
+          "reading_impact": "查证路径与许澄的控制范围分离，但尚无核验结论。",
+          "minimum_scope": "无需事实修订。",
+          "recheck": "确认联系对象仍沿合同公司名找到，公开联系方式不被替换为许澄控制的入口。"
+        },
+        {
+          "id": "F05",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "她还有片子要做，不是坐在这里专等他的人。",
+          "line": 1,
+          "explanation": "视角归属上，此句可读作罗钧承接前句所作的判断。其依据已由previous_excerpt中的客户工作、离开时限及个人工作间安排提供；不需要假定他能直接读取许澄内心。未发现确定的限知视角冲突。",
+          "reading_impact": "应区分已听到的日程与罗钧对她处境的理解，不把后者扩充为她未表达的心理事实。",
+          "minimum_scope": "无必需修订；若复核视角，只检查这一判断的归属。",
+          "recheck": "确认该判断仍依托她已经说出的信息，没有引入未表达的私人念头。"
+        },
+        {
+          "id": "F06",
+          "basis": "TEXT_FACT",
+          "quote": "随后拨出电话，开了免提。等待音响着",
+          "line": 1,
+          "explanation": "符合short_span_endpoint：仅开始独立查证。正文未展示接听、核验结果、付款或关系恢复，也未写工作人员连续解释规则。末尾的视线和脚部方向不构成场景已转入大厅的事实。",
+          "reading_impact": "事实进度停在拨号等待，不能提前视为问题已核实或解决。",
+          "minimum_scope": "无需事实修订；保留这一终点边界。",
+          "recheck": "确认本摘录仍止于查证开始，没有提前给出结果或履责动作。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "不是等到你办完。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留许澄有限协助的边界。"
+        },
+        {
+          "quote": "十八万六。六万八只是这一期。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留余额与本期金额的正确关系。"
+        },
+        {
+          "quote": "我打电话，不等于我答应还。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留罗钧未认领责任的状态。"
+        },
+        {
+          "quote": "至少这不是她交给他的号码。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留核验来源与许澄分离的区别，不将其升级为合同已经证真。"
+        },
+        {
+          "quote": "等待音响着",
+          "line": 1,
+          "reason": "TEXT_FACT：保留仅开始查证、尚未取得结果的短段终点。"
+        }
+      ],
+      "minimal_change_targets": [],
+      "recheck_conditions": [
+        {
+          "basis": "TEXT_FACT",
+          "condition": "金额、金额包含关系及罗钧获知信息的顺序保持不变。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "condition": "三点仍是许澄离开的时限，不成为购房窗口或设备款到期时刻。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "condition": "独立联系方式与许澄的控制范围保持分离，终点仍未越过查证开始。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "condition": "罗钧仍无第二过去的主观记忆，没有认账、付款或恢复旧关系。"
+        }
+      ],
+      "unknowns": [
+        {
+          "basis": "TEXT_FACT",
+          "item": "供应商是否接听、具体回复及罗钧获得何种核验信息均未展示；不能外推通话结果。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "item": "本段准确时刻及实际耗时未展示；购房手续另有何种截止时间仍未确认。"
+        }
+      ]
+    }
+  ],
+  "unknowns": []
+}

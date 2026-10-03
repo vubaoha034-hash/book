@@ -7,8 +7,14 @@ class QualifiedShortTests(unittest.TestCase):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name);self.seen=set()
         self.project=json.loads((REPO/'state/project_state.json').read_bytes());self.cp=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
+        if 'continuation_short_trial' in self.project:
+            continuation=g.module('qualified_fixture_continuation','verify_continuation_trial.py')
+            self.project,self.cp,_=continuation.historical_hook_view(REPO,self.project,self.cp)
         self.record=self.project['hook_trial_human_feedback']['reading_supplement']
         self.copy_refs(self.project['hook_trial_human_feedback']);self.copy_refs(self.project['opening_hook_trial']);self.copy_refs(self.project['opening_prose_repair']);self.copy('START_HERE.md')
+        entry=self.root/'START_HERE.md'
+        if '当前位置：检查点203。' not in entry.read_text(encoding='utf-8'):
+            entry.write_bytes(('当前位置：检查点203。\n'+entry.read_text(encoding='utf-8')).encode())
         for role in ('diagnosis','writer','facts','editor','reader'):self.copy(g.runner.DIRECTORY+f'/{role}.attempt.json')
         self.copy(g.runner.DIRECTORY+'/transport-recovery/diagnosis.attempt.json')
         for role in ('writer','facts'):self.copy(g.runner.DIRECTORY+f'/repair/{role}.attempt.json')

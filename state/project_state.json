@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-03T14:36:54Z",
+  "updated_at": "2026-10-03T15:25:59Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -690,7 +690,8 @@
     "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
     "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
     "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
-    "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01"
+    "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
+    "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -940,11 +941,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
-  "status": "LOCAL_SHORT_TARGETS_POSITIVE_RETENTION_STRENGTH_LOW",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
+  "status": "CONTINUATION_FROZEN_AWAIT_ACTUAL_HUMAN_READING",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
-  "last_completed_task_contract": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+  "last_completed_task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "last_completed_task_contract": "state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -1758,7 +1759,8 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。",
     "HISTORICAL_BROWSER_DIAGNOSIS_NOT_RUN_NO_CALLBACK_NO_RETRY; NEW_CODEX_TASK_COMPLETED_SEPARATELY",
     "Three post-failure editor hypotheses remain causally unvalidated; no new prose exists.",
-    "One new 300-500-character entry short trial and its opening scope remain NOT_AUTHORIZED; preparation effectiveness has not been tested."
+    "One new 300-500-character entry short trial and its opening scope remain NOT_AUTHORIZED; preparation effectiveness has not been tested.",
+    "Current 374-character continuation actual-human review UNKNOWN; no full-scene or TEST-01 promotion."
   ],
   "blocked": [
     "PHASE397_A3_PREHUMAN_ANTI_STORYBOARD_BLOCK",
@@ -2048,7 +2050,8 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04: one scoped scene-entry and local-plan-impact revision locked with exact writer packet; no new prose yet.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1 METHOD_04 TEST_01: one isolated short trial frozen verbatim; scoped fact and same-context editorial checks recorded, actual-human result UNKNOWN; no expansion.",
     "2026-10-03: new Codex integration task completed four fresh Sol/Max review sessions, frozen reports, 44 exact quote occurrence checks and bounded diagnosis; zero prose, no old browser retry/callback.",
-    "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01: one entry and one existing principal stake prepared; 12 quotes located; zero new life facts and zero prose; checkpoint195."
+    "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01: one entry and one existing principal stake prepared; 12 quotes located; zero new life facts and zero prose; checkpoint195.",
+    "NOVEL continuation: one fresh 374-character writer, three separate Sol/Max reviews, 30 located report quote records; no internal repair, human UNKNOWN."
   ],
   "phase398_state": {
     "status": "CLOSED_ARCHITECTURE_AND_NS02_PACKET_FROZEN_NO_PROSE",
@@ -3771,7 +3774,7 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "HOOK_TRIAL_LOCAL_SHORT_PASS_WITH_LOW_CONTINUATION_STRENGTH_FULL_SCENE_UNTESTED",
+  "current_human_gate": "CONTINUATION_SHORT_HUMAN_UNKNOWN_PREFIX_WEAK_POSITIVE_FULL_SCENE_UNTESTED",
   "human_verdict_receipt": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
@@ -3834,9 +3837,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "PREPARE_ONE_BOUNDED_300_500_CHAR_SAME_SCENE_CONTINUATION",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "PRESERVE_401_OPENING_AND_PREPARE_ONE_BOUNDED_CONTINUATION",
+  "current_focus": "ONE_374_CHARACTER_CONTINUATION_AT_ACTUAL_HUMAN_READING",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -5874,5 +5877,147 @@
       "human_quality_result": "SHORT_LIMITED_PASS_WITH_LOW_CONTINUATION_STRENGTH",
       "full_scene_or_TEST01_promoted": false
     }
+  },
+  "continuation_short_trial": {
+    "schema_version": "native-one-continuation-result/v1",
+    "task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+    "project_id": "novel-distillation",
+    "source_head": "bfa925c353aef6d6b5a63b6e42833b02f7e3583d",
+    "source_checkpoint": 203,
+    "status": "ONE_CONTINUATION_FROZEN_REVIEW_SETTLED_AWAIT_ACTUAL_HUMAN_READING",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_AUTHORIZATION_20261003.json",
+      "blob": "e3fde95224b42b15f0a9ecd43d90d3cd0a2fcdfa",
+      "sha256": "c999955170636f77213f86fb2464e0e7316b322f9ed715298768fe1168805074"
+    },
+    "manifest": {
+      "path": "config/novel-continuation-short-20261003.json",
+      "blob": "0c617d24706f34a3a78e1499fc87be3b777bd34a",
+      "sha256": "9f4ae1b835462eef32f8caaeb829de50d340484f206cdf4d3976c8d9af5f2c28"
+    },
+    "previous_excerpt": {
+      "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+      "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+      "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+    },
+    "opening_human_feedback": {
+      "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
+      "blob": "a7254e2b43bcbc0ce147ff00ebc1f357559b35af",
+      "sha256": "3faf9215434ec686136b5145bc0775e2a3ea4d719d5a63d75607f4fd429cdc6c"
+    },
+    "writer_input": {
+      "path": "delivery/continuation-short-20261003/writer-input.json",
+      "blob": "0fb4232f10d9e739cd66fe963bb2cdfb21027072",
+      "sha256": "96daca156c05ea415ec97c0a76526712c5470333082ae15181822ecba4263707"
+    },
+    "final_artifact": {
+      "path": "delivery/continuation-short-20261003/continuation-a1.md",
+      "blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+      "sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a"
+    },
+    "reading_copy": {
+      "path": "delivery/continuation-short-20261003/reading-copy.md",
+      "blob": "9319ad8ca164d35ead2bb028dce5d49c780f5863",
+      "sha256": "6395cd57b134541c568195520c7e2d1e7f4b38cc9fce15e22cf0644d808f8b5e"
+    },
+    "settlement": {
+      "path": "state/reviews/continuation-short-20261003/coordinator-settlement.json",
+      "blob": "e8ebf2089ac27ebcd4ca99c42738ca251cac5f9b",
+      "sha256": "9d5d8cef32373c58939d6b710e75733f9c20a7fe5cd1bb5ff67a545236005435"
+    },
+    "pending_human_review": {
+      "path": "state/reviews/continuation-short-20261003/pending-human-review.json",
+      "blob": "87552d00cef2022cf5e17450be26267f4fa7e742",
+      "sha256": "9109694597af8282fb0574d9befc06efdfe65da3b51cb875e88fcfb4f090eea3"
+    },
+    "runtimes": {
+      "writer": {
+        "path": "state/reviews/continuation-short-20261003/writer.runtime.json",
+        "blob": "265cec288c331db9335017f96f15f2a31dc26e0e",
+        "sha256": "0411c2cbfc23cb280d8971658121b2e153766b7bb4961430e617d4041bcd85ad"
+      },
+      "facts": {
+        "path": "state/reviews/continuation-short-20261003/facts.runtime.json",
+        "blob": "406244d9295eefda1dede09372e31760bb34d8d2",
+        "sha256": "9e720d58298b9f746a83cbfa1fc4c2b39eb91c873e43bc3317b2f3a5e3541808"
+      },
+      "editor": {
+        "path": "state/reviews/continuation-short-20261003/editor.runtime.json",
+        "blob": "e22577a1fc272d4123baa28ff4cd2d2c7653e245",
+        "sha256": "d63719d86bf53d880a774b771ba4a12cb19ff9646b0acf00d3816a81c92e77e8"
+      },
+      "reader": {
+        "path": "state/reviews/continuation-short-20261003/reader.runtime.json",
+        "blob": "a65af2710e98e4dd7f17ae6680f167f742b3c00e",
+        "sha256": "7a31c8103ff7309a64e2ab06e93209b61379c7fee9ff86abeb463dcf25ba659e"
+      }
+    },
+    "raw_reports": {
+      "facts": {
+        "path": "state/reviews/continuation-short-20261003/facts.raw.txt",
+        "blob": "bf94d35e6f7613af1b4f372fb0757eedbfb7ab55",
+        "sha256": "7f059b3563961b879adff4f2024836e61137450e12d3739732946453f42379b5"
+      },
+      "editor": {
+        "path": "state/reviews/continuation-short-20261003/editor.raw.txt",
+        "blob": "aadd8bcb3e90bbe6c75874e8d51cfeab167fe5ef",
+        "sha256": "ee65b3ef6dee58056fdee1304a76a077f99d7d3463f61344c38f0937639b46ff"
+      },
+      "reader": {
+        "path": "state/reviews/continuation-short-20261003/reader.raw.txt",
+        "blob": "6b01b563d05ba95cef52c2d1a241786aa49902cc",
+        "sha256": "f08b4bbfbfaad4821ae00a6cbe4b1c9117a1c6b198fc623ab132cd53b38b9171"
+      }
+    },
+    "evidence": {
+      "facts": {
+        "path": "state/reviews/continuation-short-20261003/facts.evidence.json",
+        "blob": "d5447da5f5fc8850ceeb76183433d0fa786e5e4c",
+        "sha256": "984f457acb00b5cd383fb5048b4be0a11145711bd05aef52ed3f1fde096255b3"
+      },
+      "editor": {
+        "path": "state/reviews/continuation-short-20261003/editor.evidence.json",
+        "blob": "98b67fd4e675960d5dfe3608830101e105ab3f7f",
+        "sha256": "aaa9d57a3a0b9a06d2899f3fb417631a97413f3701bc6450d06704c044095442"
+      },
+      "reader": {
+        "path": "state/reviews/continuation-short-20261003/reader.evidence.json",
+        "blob": "ee99db61ac5abd950a4f609c40b14e74eb65b73c",
+        "sha256": "d1701c06acc4677ef6fe27b3064dd928864ce4f657bf3ddf9c876f4378871f4a"
+      }
+    },
+    "result_document": {
+      "path": "docs/NOVEL_SAME_SCENE_CONTINUATION_RESULT_20261003.md",
+      "blob": "792d4f231e8d38a6bd85c183604dfb1aaa5a989e",
+      "sha256": "2893ef90d005bb0e891453c8c8edd42148b6114ca695639b569f4b132ab56f48"
+    },
+    "primary_generation_count": 1,
+    "internal_repair_count": 0,
+    "visible_candidate_count": 1,
+    "actual_model_calls": 4,
+    "successful_model_calls": 4,
+    "remaining_new_generation_budget": 0,
+    "remaining_internal_repair_budget": 0,
+    "human_quality_result": "UNKNOWN",
+    "non_whitespace_characters": 374,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_v5_authorized": false,
+    "full_scene_or_TEST01_promoted": false,
+    "literary_quality_validated": false,
+    "automatic_background_sync": false,
+    "automatic_writer_dispatch": false,
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
+    "task": {
+      "path": "state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json",
+      "blob": "4fd120b38fe275163f934edd86934d987abba577",
+      "sha256": "2cd0bc0ec3ee8d3928534e3d8482947a5afbdde3c0a88ef6bcccb1b1c9bad130"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_RESULT_20261003.json",
+      "blob": "4ad342fc805e76f6388ba9eb81adfed59cfc9870",
+      "sha256": "36e821b1c7c30074278cc141595f66db7394cb01ea14571066bc7a6a162464db"
+    },
+    "unused_authorized_repair_closed_at_human_gate": 1
   }
 }

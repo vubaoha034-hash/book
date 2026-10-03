@@ -644,6 +644,13 @@ def test_outcome(root: Path, relative: str) -> str:
 def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
     prose_module, prose_feedback = None, None
     live_project, live_cp = project, cp
+    continuation_module, continuation_authorization = None, None
+    if 'continuation_short_trial' in project or 'continuation_short_trial' in cp:
+        spec = importlib.util.spec_from_file_location('continuation_trial_state', Path(__file__).with_name('verify_continuation_trial.py'))
+        continuation_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(continuation_module)
+        project, cp, continuation_authorization = continuation_module.historical_hook_view(root, project, cp)
+    hook_project, hook_cp = project, cp
     hook_module, hook_feedback = None, None
     if 'opening_hook_trial' in project or 'opening_hook_trial' in cp:
         spec = importlib.util.spec_from_file_location('hook_trial_state', Path(__file__).with_name('verify_hook_trial.py'))
@@ -818,7 +825,11 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
             successor_human_feedback=hook_feedback)
         project, cp = prose_project, prose_cp
     if hook_module is not None:
-        expected_action = hook_module.hook_action(root, live_project, live_cp, expected_action)
+        expected_action = hook_module.hook_action(root, hook_project, hook_cp, expected_action,
+            successor_continuation_authorization=continuation_authorization)
+        project, cp = hook_project, hook_cp
+    if continuation_module is not None:
+        expected_action = continuation_module.continuation_action(root, live_project, live_cp, expected_action)
         project, cp = live_project, live_cp
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
