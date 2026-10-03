@@ -58,7 +58,7 @@
   "prose_generated": 0,
   "old_RC3_remaining_rounds": 0,
   "mainline_changed": false,
-  "next_action": "INSPECT_EXISTING_RUNNING_PROJECT_EXECUTOR_ON_NEXT_USER_TRIGGER_NO_DUPLICATE_DISPATCH",
+  "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
   "draft_integrity": {
     "status": "EXACT_COMPLETE_MESSAGE_AFTER_UNSENT_TERMINAL_NEWLINE_RECONCILIATION",
     "ui_fill_count": 1,
@@ -68,7 +68,7 @@
     "reconciled_before_send": true
   },
   "external_review_actual_start_verified": false,
-  "external_review_status": "NOT_YET_OBSERVED_PROJECT_EXECUTOR_IS_CONTINUING_PREPARED_TASK",
+  "external_review_status": "BLOCKED_PRE_SEND_EXACT_COMPOSER_MISMATCH_NO_EXTERNAL_REVIEW_STARTED",
   "dispatch_integrity": {
     "verdict": "OBSERVED_SINGLE_MESSAGE",
     "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
@@ -85,5 +85,25 @@
     "status_text": "ChatGPT 正在回应",
     "project_executor_initial_response_observed": true
   },
-  "native_business_state_settlement": "PROJECT_EXECUTOR_RESPONSIBILITY_NOT_CLAIMED_COMPLETE"
+  "native_business_state_settlement": "PROJECT_EXECUTOR_BLOCKER_SETTLED_AND_OBSERVED_BY_COORDINATOR",
+  "close_observation": {
+    "observed_at": "2026-10-03T01:24:39.572Z",
+    "project_executor_status": "STOP_BLOCKED",
+    "project_executor_complete": true,
+    "source_head": "9925a5cb91ab9db1281bac735718bef74b14075b",
+    "native_checkpoint_sequence": 193,
+    "native_status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PRE_SEND_BLOCKED",
+    "native_blocker": {
+      "path": "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+      "blob": "f332f942b9adf31d5beca23f435b3318c37b9761"
+    },
+    "external_send_click_count": 0,
+    "external_reviewer_conversation_url": null,
+    "external_review_actual_start_verified": false,
+    "callback_received": false,
+    "new_prose_authorized": false,
+    "mainline_changed": false,
+    "coordinator_modifies_business_state": false,
+    "opening_start_evidence_preserved": true
+  }
 }
