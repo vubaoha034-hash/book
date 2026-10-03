@@ -1,0 +1,48 @@
+{
+  "schema_version": "novel-session-receipt/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-03T02:27:04Z",
+  "recorded_at_basis": "USER_MESSAGE_SUBMISSION_TIME",
+  "source_head": "64620b2bcdf79041ea1d81a3a532f0359348e402",
+  "source_checkpoint": 193,
+  "session_locator": "UNKNOWN_NOT_EXPOSED",
+  "active_mainline_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+  "active_bounded_task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+  "user_instruction_summary": "接管小说最新任务；现有执行过慢，希望由Codex处理，并询问如何接入AI评测。",
+  "scope": "TAKEOVER_AND_REVIEW_INTEGRATION_DESIGN_ONLY",
+  "source_validation": {
+    "command": "python scripts/verify_current_state.py",
+    "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+    "checks_passed": 27,
+    "sequence": 193,
+    "literary_quality_tested": false
+  },
+  "preserved": {
+    "title": "第二套过去",
+    "method_revision": 4,
+    "human_rejected_artifact_blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "human_emotion_retention_result": "FAIL",
+    "old_RC3_remaining_revision_rounds": 0,
+    "new_prose_authorized": false,
+    "same_blocked_dispatch_retry_authorized_by_this_receipt": false,
+    "full_v5_authorized": false,
+    "historical_records_overwritten": false
+  },
+  "proposed_design": {
+    "coordinator": "One Codex coordinator owns repository writes and verifies review evidence",
+    "writer": "Fresh isolated context reads only the approved writer packet",
+    "reader_review": "Fresh isolated context initially receives only anonymous frozen prose and minimal reading context",
+    "fact_review": "Separate factual review receives prose and necessary locked story facts, without reader verdict",
+    "transport": "Prefer structured reviewer output returned directly to coordinator when supported; API is an alternative if separately configured",
+    "evidence_fields": ["task_id", "artifact_hash", "review_scope", "actual_model_setting", "verdict", "located_quotes", "root_cause", "protected_parts", "recheck_conditions"],
+    "calibration": "Use held-out known human-labelled failures and available scope-matched positives; freeze blind results before labels are disclosed. Existing missed negatives and absent matched positives prevent certification of personal-taste agreement",
+    "budget": "Preserve existing bounded authorization; do not reset exhausted budgets or loop until an AI returns PASS",
+    "acceptance": "AI screening and actual human literary acceptance remain distinct"
+  },
+  "implementation_status": "DESIGN_PREPARED_NOT_INSTALLED_NOT_RUNTIME_VERIFIED",
+  "review_dispatch_count": 0,
+  "generation_count": 0,
+  "business_state_changed": false,
+  "next_business_action_preserved": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
+  "source_coverage": "Current pinned authority bundle and native check complete; full historical chats and runtime integrations not audited"
+}
