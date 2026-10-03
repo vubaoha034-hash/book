@@ -1,0 +1,251 @@
+{
+  "schema_version": "native-local-clarity-repair-remote-save/v1",
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "source_head": "897e756b6248e24e29c10dbdf742f8274c1b3ba9",
+  "recorded_at": "2026-10-03T23:04:48Z",
+  "status": "IMPLEMENTATION_ACTUAL_REMOTE_BYTES_HISTORY_AND_HUMAN_UNKNOWN_GATE_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "implementation_commit": "c57d15c60b6c0806e87fe4f64a4bf864df00bf77",
+  "implementation_proof": {
+    "status": "REMOTE_CLARITY_BYTES_HISTORY_AND_HUMAN_UNKNOWN_GATE_VERIFIED",
+    "remote_head": "c57d15c60b6c0806e87fe4f64a4bf864df00bf77",
+    "source_head": "897e756b6248e24e29c10dbdf742f8274c1b3ba9",
+    "checkpoint": 206,
+    "whole_worktree_files": 637,
+    "protected_source_file_count": 599,
+    "current_state": {
+      "sequence": 206,
+      "status": "CLARITY_REPAIRED_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CLARITY_REPAIRED_SHORT",
+      "historical_checks_passed": 39,
+      "checks_passed": 50,
+      "protected_source_file_count": 599,
+      "new_prose_authorized": false,
+      "human_quality_result": "UNKNOWN",
+      "source_retention_result": "YES_ONLY_FOR_383",
+      "source_clarity_result": "FAIL",
+      "model_calls_during_validation": 0,
+      "generation_count_during_validation": 0,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "literary_quality_tested_by_this_script": false
+    },
+    "human_quality_result": "UNKNOWN",
+    "full_scene_or_TEST01_promoted": false,
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "3515600336ca5311dd4677fdd026d15c30e1d4af",
+        "sha256": "0132b239b27979d2ecb28472175347c3b5f1c8034cc57708c81f7d9a4e3bbc5c"
+      },
+      {
+        "path": "README.md",
+        "blob": "5d0dc26e52569be278ef57f5a83cb3bb3c928d52",
+        "sha256": "4f4701a635e4cf6e934e800b43b8e0f44ff99fc8859c90417bca646aef67f1ba"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "c7a0695b1dd62f1b51bae6d325a8a68b0a13a162",
+        "sha256": "c27e959b10ad6692cbb8f4c9088d62c63f077672c3afe9fc1ebd46b92490cd4c"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "4af8e5f0c1bb451f835cf5644cf1d583b563dbd8",
+        "sha256": "edf5fadc691974c9af6c92905e0b30c767a052f28576f78f90aa1ae4c903c358"
+      },
+      {
+        "path": "config/novel-clarity-repair-20261004.json",
+        "blob": "c75ff28670df0632bf2ee3af3ac311d9c8348c70",
+        "sha256": "ddc23e33f0600a0ea180c889ce26b444c697f070031c84492468ec2387be718e"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/editor-packet.json",
+        "blob": "8edb6fdd937e154f544f1ecbbf32879e563b1e72",
+        "sha256": "3cb192d18befbd51cd760ff1a228c1644c05b64ff3f5ed13dc75a39de911cb6e"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/editor-policy.txt",
+        "blob": "e8fb991447d48d00f9aded257ef00a5e9068ab38",
+        "sha256": "242ba601039727d0f793202a585e5c0851b09cfde4fc12b11ca118fab87259d6"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/opening-repaired.md",
+        "blob": "e8644506719ef54a404d66a4df59365767e564ad",
+        "sha256": "3c4cbdfbdbb90308213955191cb0accb69cf845512b64b4513afd5f434a0aec8"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/reader-packet.json",
+        "blob": "854ce0119abf87d4cf1167dacc6ac7f22a966057",
+        "sha256": "c160c625cd2a8b088b87916f25c0bed27d457ac4d9d529466caef1462f857756"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/reader-policy.txt",
+        "blob": "04d90f54de234f9994be0adb745e465d77ca298b",
+        "sha256": "9f446ef7e6191faca0d5a37dea17ae63c115b7f7d2a2552b931e20a542eea31e"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/writer-input.json",
+        "blob": "93bd2103dd538d7e3aabfa2a17208cee21a7a2ab",
+        "sha256": "0fb2f8f531476108b3809fa82d7a71f812b21d12023040adcaaef535bc108401"
+      },
+      {
+        "path": "delivery/clarity-repair-20261004/writer-policy.txt",
+        "blob": "80995eed1774842523f671df091dda487466e705",
+        "sha256": "8b77cfd719bb65236bb95982b4d7fe3d1490d7140f5952e7389471ba7c62a8ea"
+      },
+      {
+        "path": "docs/NOVEL_CLARITY_REPAIR_RESULT_20261004.md",
+        "blob": "dba4c2a5e7d96521afec129116c83ebf8a4490e0",
+        "sha256": "10c0484a15e13557a00cc346a380aff1e74395621f9ceb54761384da7781496f"
+      },
+      {
+        "path": "scripts/novel_clarity_repair.py",
+        "blob": "5ea7b8e6e50b351fe739e2ab63bfdbdfa1741d8e",
+        "sha256": "ffd41836ac1e13fec2771034069c8e1395f6c0dd4de6e6690abe9ae72cfc4752"
+      },
+      {
+        "path": "scripts/verify_clarity_repair.py",
+        "blob": "ee608d9fec27b31334c9e0353733f649e4d7945b",
+        "sha256": "f0215546580497d98d75566ee12b46e7d1a6e52c61068983538d208d9a45f4de"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "0651ed39694d3d6353ef4efaa917ef8c6e87ef39",
+        "sha256": "81c539e16882c4ea9d8740b3a29ce4ccd631801498925d2c5236475889cdbfc8"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "fb81507519dabddbc6b5d0b9dcd6a9344dace47d",
+        "sha256": "433259966bfbf0095e87218dd688cfaa064640c166f46870cf757862e9de46a7"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "1973be68aa3b3fc2ab5609a067ae83a4f057be30",
+        "sha256": "f3ac4fb9dcacb1812f5556f8434a7bbf6efcbd8ebd8d5883c1940f5668e18e1b"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CLARITY_REPAIR_AUTHORIZATION_20261004.json",
+        "blob": "2855feb52d7dbb7e9c30e7763f5bc52c8fc5401f",
+        "sha256": "61eb593b3882b66852cc4908dfa0f513f147ee501adeaae614065f1603b0852a"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CLARITY_REPAIR_RESULT_20261004.json",
+        "blob": "0842711c0e6e42af84ca760ede79b55df86df16b",
+        "sha256": "1d8d0cbf69414a78d449d5be412ae074c24add0bb30bad30338793be4f663a8b"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CLARITY_REPAIR_VALIDATION_20261004.json",
+        "blob": "bad0132e102c799184997fce68bd6a71eb7061e3",
+        "sha256": "54ddf440011ff87b1cf1d724280dfd7188820defe0542a39bc9aa0e3ac4f595a"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_NEW_STORY_383_HUMAN_INTEREST_CLARITY_FAIL_20261004.json",
+        "blob": "070c965f502a2c40fe4607467d84f3224f001c19",
+        "sha256": "8a2fe6e12539f0853e3cece063a0f516fb41d42d31247cd7d8f3afc9c5a256b7"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/coordinator-settlement.json",
+        "blob": "b0e98cd972c3be9fc2f0c19cff336874713ae94d",
+        "sha256": "ce0a2de6a79429f2dfe0d5bcd3dd310ccf2246a013e6ac95b7ab2b574301db46"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/editor.attempt.json",
+        "blob": "3500a2266d74a2836d6c02beb34d2cc83a7c37e3",
+        "sha256": "b0e211dddab9ce8fd94d8630ef7a4d27b1e715427a41b0ebf3cbb9d69a1ed047"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/editor.evidence.json",
+        "blob": "64d961cfc33ad1f13b77d1fad85082d646a2a8ee",
+        "sha256": "8a427a5e026b67da0f4de9b86c8d3dbf037f0a642295eb5432461f66f397a90c"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/editor.raw.txt",
+        "blob": "a966740abc0034efb55d49f70f4dc5b8078dd92a",
+        "sha256": "50ed097d2024f8408702ca2a6087ee5ef6a658fca2fdbd1e5b4dbf47badf852f"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/editor.runtime.json",
+        "blob": "2678231dcb706bda8e91a2e9b99096a930157c91",
+        "sha256": "686d5b63d03a48a369a60c05043592c3b96edcf597aa1edaec3c9956ac6adec2"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/pending-human-review.json",
+        "blob": "b766e9953e6cc221b49e9c003e2c8726c66a47cb",
+        "sha256": "75b8ed04dff03ae8b95cdce4ffa3380a4bc98ede23da1263bd39db093d4b1094"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/reader.attempt.json",
+        "blob": "f6e0860d4732f73449c870c63b80e60f073298e5",
+        "sha256": "e08a0fbf52d5bcdc622cf5b06cb4c17a3f98e601ffe9456c8309bbf34bc3fbfc"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/reader.evidence.json",
+        "blob": "4f081cbbe7fd29d987b5638afa19add42d6a85e2",
+        "sha256": "078d656e1b340c1fc5f62b249056081144b1d823bdbbfc3d18e6169fc76265c5"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/reader.raw.txt",
+        "blob": "1921a7f690051349e7e5efcf323fb2bca6c617d0",
+        "sha256": "afa00a889e608a0a77b62f6c79b793a7f391f80627c377cc7ad5548a5f5856eb"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/reader.runtime.json",
+        "blob": "42b578c0f908e0eae1ebd752182284ba8d380b40",
+        "sha256": "8735bb42a1556528bc33afd449d5e28eeb15b65c9bb7c79a1bd705aa2620cf9d"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/scope-diff.json",
+        "blob": "b0b4b7b2848dd97440c8702bde3c7acc46edad4a",
+        "sha256": "e30303fc916352a9e617711ef12d50b7215f23c20a4e09c85a0a4c9646269756"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/writer.attempt.json",
+        "blob": "6383ea5471fa11b914a93a69624052e5d6d8d4b5",
+        "sha256": "7a3a9d8973d50bb3f3185d82f41bd02430a2cedfac5de1160e73af1a599acd31"
+      },
+      {
+        "path": "state/reviews/clarity-repair-20261004/writer.runtime.json",
+        "blob": "5935e301d9fd7b7497a58ef6b21bb4cffdb7dba9",
+        "sha256": "7fcbe396841342eabb3b0b1d2ba8b78ae987d7f4da351495001ca0c9c82ef0bf"
+      },
+      {
+        "path": "state/tasks/NOVEL_NEW_STORY_CLARITY_REPAIR_20261004.json",
+        "blob": "5d2d3e0d00bb71511484942f8452ad0fc8c349f0",
+        "sha256": "29d2338dc04d931584ef2be013df1559127acd3a7f39691f97bb6a76c1a68b94"
+      },
+      {
+        "path": "tests/test_clarity_repair.py",
+        "blob": "3053e50cef082c0366971cb54ae71f8db88dda5d",
+        "sha256": "997342f2f36bad952cff723e2a730d210f9f61391fcf8fa56fa555e0230cd7a1"
+      },
+      {
+        "path": "tests/test_story_trial.py",
+        "blob": "fa060ce7c8a48fff475e5a66bf80730cbc9963fb",
+        "sha256": "91a7a775fbaa0ffe32452c789427cae6209ae22d42386c1cc63d521eee6398d0"
+      }
+    ]
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_CLARITY_REPAIR_VALIDATION_20261004.json",
+    "blob": "bad0132e102c799184997fce68bd6a71eb7061e3",
+    "sha256": "54ddf440011ff87b1cf1d724280dfd7188820defe0542a39bc9aa0e3ac4f595a"
+  },
+  "result": {
+    "path": "state/review_receipts/NOVEL_CLARITY_REPAIR_RESULT_20261004.json",
+    "blob": "0842711c0e6e42af84ca760ede79b55df86df16b",
+    "sha256": "1d8d0cbf69414a78d449d5be412ae074c24add0bb30bad30338793be4f663a8b"
+  },
+  "human_quality_result": "UNKNOWN",
+  "model_calls_during_readback": 0,
+  "generation_count_during_readback": 0,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
