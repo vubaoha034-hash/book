@@ -1,0 +1,137 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "A17",
+      "item_index": 0,
+      "quote": "昨晚他还在上面量过床的位置。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 43,
+      "end_character_exclusive": 57,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A17",
+      "item_index": 1,
+      "quote": "“你给我个时间。”许澄说，“今天能查什么，明天能查什么。我也有活要接。”",
+      "reported_line": 31,
+      "actual_line": 31,
+      "start_character_0_based": 425,
+      "end_character_exclusive": 461,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A17",
+      "item_index": 2,
+      "quote": "昨晚他还在上面量过床的位置。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 43,
+      "end_character_exclusive": 57,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A17",
+      "item_index": 3,
+      "quote": "看了这个，是不是就算我认了？",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 189,
+      "end_character_exclusive": 203,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "A17",
+      "item_index": 4,
+      "quote": "如果要我先筹这笔款，我得今天就开始安排。",
+      "reported_line": 27,
+      "actual_line": 27,
+      "start_character_0_based": 372,
+      "end_character_exclusive": 392,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "B29",
+      "item_index": 0,
+      "quote": "先把事情弄明白，总该是公平的。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 210,
+      "end_character_exclusive": 225,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "B29",
+      "item_index": 1,
+      "quote": "多久？我得知道那笔钱明天还能不能交出去。",
+      "reported_line": 27,
+      "actual_line": 27,
+      "start_character_0_based": 384,
+      "end_character_exclusive": 404,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "B29",
+      "item_index": 2,
+      "quote": "先把事情弄明白，总该是公平的。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 210,
+      "end_character_exclusive": 225,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "B29",
+      "item_index": 3,
+      "quote": "罗钧听到“押金”，先想到的仍是自己的首付。",
+      "reported_line": 23,
+      "actual_line": 23,
+      "start_character_0_based": 334,
+      "end_character_exclusive": 355,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "B29",
+      "item_index": 4,
+      "quote": "他看了一眼，没能立刻答她。",
+      "reported_line": 29,
+      "actual_line": 29,
+      "start_character_0_based": 432,
+      "end_character_exclusive": 445,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "checked_at": "2026-10-03T03:23:58Z",
+  "runtime": {
+    "path": "state/reviews/codex-20261003/calibration.runtime.json",
+    "blob": "51af58dee05c03745b3906f81948fa869e4cf091",
+    "sha256": "eba74c0ef6bf8ea421705c90a6f86220b2bed3b0569f033af1a2b7f164628d02"
+  },
+  "raw_report": {
+    "path": "state/reviews/codex-20261003/calibration.raw.txt",
+    "blob": "03f74f4fa6060f50bbdbd89d95085dacd14a53e2",
+    "sha256": "0edbfad11ae3d70efe20b087735476f3fd3568398b96618597b5cab372b8d7b1"
+  },
+  "packet": {
+    "path": "delivery/codex-review-20261003/calibration.packet.json",
+    "blob": "e510ea1f8d379f42b0dc4edcdfa221ede8e7d5f7",
+    "sha256": "b3de2c73a1cf8d62631f560f097ad8e469d6d0d5ac3368d52b60877bf46efc70"
+  }
+}

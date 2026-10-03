@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 193,
-  "recorded_at": "2026-10-03T01:07:50.720Z",
+  "sequence": 194,
+  "recorded_at": "2026-10-03T03:45:36Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "448字稿收到实际真人情绪与首屏留存FAIL，外审PASS历史保留但可交付状态撤销；单上下文诊断及项目外编辑任务已准备，Opera Neon会话终止导致尚未派发，待恢复后只发送一次。旧稿、旧锁及两轮额度不动，原404字真人UNKNOWN，不扩写。",
+  "current_focus": "本轮Codex独立评审接入、有限盲校准、事实核对与448字已知失败后的编辑诊断完成。校准漏检2/2、留出验证漏检1/1，不能认证好看；真人FAIL保留、原404字UNKNOWN。唯一下一步等待一个新的进入时刻与最小事实准备任务授权，不写新正文、不恢复旧额度或解除旧197字保护。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -496,7 +496,8 @@
     "Settled fresh quality callback once, preserved original external PASS and nonblocking risks; held internal release only for located reviewer window-deadline misreading, not a prose contradiction; prepare one same-reviewer factual recheck",
     "Delivered one bounded timing-fact recheck to the same fresh quality reviewer, actual Opera Neon attached and extreme-high chat verified; full body sent once, empty composer verified; no prose changes, no polling",
     "Settled forwarded timing-fact recheck once without repeated review or automatic-send bypass; corrected Xu departure deadline and maintained external PASS, marked internal deliverability only, human UNKNOWN; unchanged 448-character excerpt ready for final user reading",
-    "Bound actual user emotion/first-screen rejection to frozen R2 448-character output; superseded internal delivery while preserving AI reports and RC3 evidence; prepared new diagnostic task, zero dispatches because Opera Neon returned Session terminated twice"
+    "Bound actual user emotion/first-screen rejection to frozen R2 448-character output; superseded internal delivery while preserving AI reports and RC3 evidence; prepared new diagnostic task, zero dispatches because Opera Neon returned Session terminated twice",
+    "2026-10-03: new Codex integration task completed four fresh Sol/Max review sessions, frozen reports, 44 exact quote occurrence checks and bounded diagnosis; zero prose, no old browser retry/callback."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -535,7 +536,9 @@
     "No actual-human literary verdict exists for Phase397 A3 because pre-human anti-storyboard gate blocked delivery",
     "Bounded next repair action has not been selected or executed; no V5 manuscript exists.",
     "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。",
-    "R2 emotion-retention external diagnosis not run: pre-send exact composer comparison failed; no reviewer /c/ URL, no callback and no new prose authorization."
+    "HISTORICAL_BROWSER_DIAGNOSIS_NOT_RUN_NO_CALLBACK_NO_RETRY; NEW_CODEX_TASK_COMPLETED_SEPARATELY",
+    "Three post-failure editor hypotheses remain causally unvalidated; no new prose exists.",
+    "One bounded R2 reentry/fact preparation proposal exists but is NOT_AUTHORIZED."
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -574,7 +577,8 @@
     "PHASE422_SAME_V4_RESUBMISSION_BLOCKED",
     "AUTOMATIC_FULL_MANUSCRIPT_V5_BLOCKED",
     "EXTERNAL_AI_AUTOMATIC_LITERARY_QUALITY_CERTIFICATION_BLOCKED",
-    "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07: pre-send exact composer mismatch; send_click_count=0; external review not started; same-task retry forbidden"
+    "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07: pre-send exact composer mismatch; send_click_count=0; external review not started; same-task retry forbidden",
+    "CODEX_COLD_SCREEN_QUALITY_CERTIFICATION_BLOCKED_2_OF_2_CALIBRATION_AND_1_OF_1_VALIDATION_MISSES"
   ],
   "do_not_reopen": [
     "Treat Phase377 root-cause audit as repair success",
@@ -745,7 +749,7 @@
     "原样重投 Phase430 冻结正文",
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
   ],
-  "next_required_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
+  "next_required_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1758,16 +1762,46 @@
       "blob": "f43226cdc8aa1fe94d12eca6d688dccec73e8063",
       "sha256": "31e00f36f9a8d6d25e6e41decc1a5cc1fd7c289b6fdbc4a286710568027235ab",
       "role": "方法4短段执行、事实及人物反应复核、待阅读回执。"
+    },
+    {
+      "path": "state/tasks/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_20261003.json",
+      "blob": "9e444a53de9a54fe8415e737a46c5b5d14d5b413",
+      "sha256": "413ee88fb16d73e3ffdc0320224fee4f8557ad846598f2848c2b6705344af4d4",
+      "role": "本轮Codex协调/接入及独立诊断已完成任务"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_RESULT_20261003.json",
+      "blob": "de6b6344e81f07a8564c0cdf05e1a9afa4182784",
+      "sha256": "919048be3493d2b64b5fcf7ecb61966e5a962248692b679d568400fc0f7192d3",
+      "role": "当前独立评审实际结果与能力限制"
+    },
+    {
+      "path": "docs/NOVEL_CODEX_REVIEW_INTEGRATION_20261003.md",
+      "blob": "9511d8c7965876fe7651d55083e8c109b7886f08",
+      "sha256": "660bb4020ead578dd5a58cfdea8ac8cee0f2a31aeea12b66843a0c577523886f",
+      "role": "复用与读取结果/重新运行的区别"
+    },
+    {
+      "path": "docs/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_RESULT_20261003.md",
+      "blob": "21d0375e7b786d0b5e84f9108de6f33d3e094ac5",
+      "sha256": "9fdf2bcc3c3d1b666a60d3a81a52d8918804a9cff981d38b108844cf7b4802bc",
+      "role": "448字已知失败后的三个编辑假设"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+      "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+      "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a",
+      "role": "唯一后续提案，尚未授权"
     }
   ],
-  "status": "CURRENT_448_CHARACTER_HUMAN_EMOTION_RETENTION_FAIL_DIAGNOSIS_PRE_SEND_BLOCKED",
+  "status": "CODEX_REVIEW_AND_R2_DIAGNOSIS_COMPLETE_HUMAN_FAIL_AWAIT_BOUNDED_PREPARATION_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-EXTERNAL-REVIEW-20261001",
+  "last_completed_task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "e9ecf9b13d4dfdb03a2a78347bea300f8eabba25760fc84981a6c6ce51275105",
+    "project_state_sha256": "668182e6e98d8d0a2cabf456878548ee3717ed771f703abe2ec55c3af4d26a67",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1817,14 +1851,15 @@
       "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
       "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
       "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01",
-      "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01"
+      "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
+      "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_EXTERNAL_REVIEW_V1_20261001.json",
-  "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
+  "last_completed_task_contract": "state/tasks/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_20261003.json",
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
   "human_verdict_receipt": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
   "current_human_gate": "CURRENT_R2_HUMAN_FAIL_ORIGINAL_METHOD4_HUMAN_UNKNOWN",
   "phase422_state": {
@@ -2085,7 +2120,7 @@
     "question_answer_pattern_improved": true,
     "robotic_speech_remains": true
   },
-  "stop": false,
+  "stop": true,
   "phase428_state": {
     "status": "ACTUAL_HUMAN_REJECTED_SEVERE_AI_SMELL_REMAINS_CLOSED_BY_PHASE429_EVENT_REDESIGN",
     "task_id": "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
@@ -2423,7 +2458,18 @@
     "routine_failed_draft_human_review_required": false,
     "external_review_authority_source": "ACTUAL_USER_INSTRUCTION_20261001_153540_HKT",
     "external_review_scope": "助手发送、取回、核对证据并局部修订/复审；不把AI通过写成真人认可，不自动扩大到全文V5。",
-    "review_callback": "REVIEWER_ACTIVE_SEND_VIA_OPERA_NEON"
+    "review_callback": "REVIEWER_ACTIVE_SEND_VIA_OPERA_NEON",
+    "current_review_execution_override": {
+      "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+      "coordinator": "CODEX",
+      "collection": "DIRECT_STRUCTURED_REPORT_NO_BROWSER_CALLBACK",
+      "preferred_model": "gpt-6.1-sol",
+      "preferred_reasoning_effort": "max",
+      "review_runtime_verified": true,
+      "scope": "CURRENT_REVIEW_INTEGRATION_AND_DIAGNOSIS_ONLY",
+      "new_prose_authorized": false,
+      "source": "ACTUAL_USER_2026_10_03"
+    }
   },
   "external_review_state": {
     "schema_version": "novel-external-review-state/v1",
@@ -2942,5 +2988,48 @@
       "historical_session_terminated_is_current": false,
       "blocked_at": "2026-10-03T01:07:50.720Z"
     }
-  }
+  },
+  "codex_review_integration": {
+    "schema_version": "codex-review-integration-state/v1",
+    "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+    "status": "COMPLETE_REVIEW_INTEGRATION_AND_DIAGNOSIS_NO_PROSE",
+    "execution_change": {
+      "path": "state/review_receipts/NOVEL_CODEX_REVIEW_EXECUTION_CHANGE_20261003.json",
+      "blob": "e8163d64ef489cd4bcb251c9a0265a6d5bacbe0c",
+      "sha256": "2fda93479135ece9b6003e197b634758e41940f405aa9a72ab9cc49567d48247"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_20261003.json",
+      "blob": "9e444a53de9a54fe8415e737a46c5b5d14d5b413",
+      "sha256": "413ee88fb16d73e3ffdc0320224fee4f8557ad846598f2848c2b6705344af4d4"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_RESULT_20261003.json",
+      "blob": "de6b6344e81f07a8564c0cdf05e1a9afa4182784",
+      "sha256": "919048be3493d2b64b5fcf7ecb61966e5a962248692b679d568400fc0f7192d3"
+    },
+    "manifest": {
+      "path": "config/codex-review-run-20261003.json",
+      "blob": "78997ee788a88c2404962df25f4ce3187d8a91aa",
+      "sha256": "026843ee1f6329487e0bcb7554f213d25c102942cb9dd5aea8d1d4f8251225e0"
+    },
+    "next_task_proposal": {
+      "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+      "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+      "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a"
+    },
+    "new_prose_authorized_now": false,
+    "standalone_quality_gate_allowed": false,
+    "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
+    "supersedes_only_execution_next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY",
+    "historical_external_review_state_preserved": true,
+    "prior_browser_callback_received": false,
+    "current_human_emotion_retention": "FAIL",
+    "original_404_human_result": "UNKNOWN",
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_v5_authorized": false,
+    "automatic_background_sync": false
+  },
+  "legacy_ledger_facet": "SOURCE_HEAD_REFERENCED_LEDGER_FILE_UNAVAILABLE; LEGACY_COUNT_AND_HASH_NOT_REVERIFIED_OR_RECONSTRUCTED"
 }

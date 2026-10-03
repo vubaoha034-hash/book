@@ -1,0 +1,161 @@
+{
+  "job_id": "C61",
+  "work_kind": "COLD_SCREEN",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "A17",
+      "original_sha256": "2c54a547dc9832d53efb4cb9c1658f02f4d4ac5a7536cd79e1528c06ac93a5c6",
+      "scope": "SECOND_SCENE_OPENING_EXCERPT",
+      "verdict": "PASS_PROVISIONAL",
+      "reading_expectations": {
+        "first_30_60": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "attention_record": "先识别为办理房产手续的等待场景，随后注意落到昨晚量床位置的私人准备。",
+          "expectation": "此时期待房子的办理会遇到什么变化；具体的居住打算比手续本身更能维持我的注意。尚未形成债务方向的期待。"
+        },
+        "first_150_300": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "attention_record": "拒接合同后，注意转向查看是否等于承认；签名页、积蓄和设备款期限出现，使疑问从文件辨认转为查验与付款压力。",
+          "expectation": "希望知道名字为何出现在合同上，以及查验能否赶上期限。这里只形成问题，不把姓名相同视为债责已证实。"
+        },
+        "ending": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "attention_record": "注意停在许澄要求具体查验安排，而罗钧仍看向大厅的并置上。",
+          "expectation": "期待他给出或拒绝具体时间。段尾有待答事项，但时间要求此前已出现，续读增量主要来自新增的筹款期限，而非最后一句本身。"
+        }
+      },
+      "findings": [
+        {
+          "id": "A17-F1",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "昨晚他还在上面量过床的位置。",
+          "line": 1,
+          "explanation": "TEXT_FACT：正文展示了具体的居住准备；第19行又出现他对多年积蓄的担忧。EDITOR_HYPOTHESIS：这让合同争议可能触及已投入心思的私人生活，而不只是抽象欠款。",
+          "reading_impact": "支持暂时通过：我追看的对象是居住计划与钱款压力如何相遇，不仅是双方存在冲突。",
+          "minimum_scope": "保留这一私人准备及其与后续钱款担忧的联系；不要求增添生活事实。",
+          "recheck": "分窗复读时，能否仍记住他的居住打算，而不是只记住债务金额。"
+        },
+        {
+          "id": "A17-F2",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "“你给我个时间。”许澄说，“今天能查什么，明天能查什么。我也有活要接。”",
+          "line": 31,
+          "explanation": "TEXT_FACT：第17行已询问何时查验；第23、27行随后补入到期款与许澄明日押金安排。EDITOR_HYPOTHESIS：末句把要求细化为查验进度，但也存在再次收到同类信息的风险。",
+          "reading_impact": "我的潜在滑读风险在于把段尾归为再次催时间；这不是真人停止句。新增资金安排使它目前仍有可追问的后果。",
+          "minimum_scope": "仅复核末句相对第一次询问的增量；若增量成立，不强行增加冲突。",
+          "recheck": "遮去末句再恢复，检查它是否让待答问题更具体；若只是重复已理解的要求，再处理局部重复。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "昨晚他还在上面量过床的位置。",
+          "line": 1,
+          "reason": "EDITOR_HYPOTHESIS：以具体准备建立私人期待，避免房子只充当金额背景。"
+        },
+        {
+          "quote": "看了这个，是不是就算我认了？",
+          "line": 15,
+          "reason": "EDITOR_HYPOTHESIS：明确他拒接文件时担心的后果，不宜削成无理由的抵触动作。"
+        },
+        {
+          "quote": "如果要我先筹这笔款，我得今天就开始安排。",
+          "line": 27,
+          "reason": "EDITOR_HYPOTHESIS：给许澄自己的安排压力；保留条件表达，不把她改成单纯催款者。"
+        }
+      ],
+      "minimal_change_targets": [
+        "EDITOR_HYPOTHESIS：暂无必改项；仅在复验确认段尾重复时，处理时间要求的局部信息增量，不新增灾难、争吵或生活设定。"
+      ],
+      "recheck_conditions": [
+        "EDITOR_HYPOTHESIS：按同样三个窗口复读，分别记录居住期待、合同疑问、具体时间选择是否成立。",
+        "EDITOR_HYPOTHESIS：保留双方各自的生活安排，不以提高音量或强化情绪代替明确待答事项。"
+      ],
+      "unknowns": [
+        "TEXT_FACT：摘录未证实签名真伪、债务归属或房产手续当前结果；这些均为未知。",
+        "TEXT_FACT：人物关系及第一场已交代的信息未展示，不据此认定本段遗漏或矛盾。"
+      ]
+    },
+    {
+      "artifact_id": "B29",
+      "original_sha256": "61876e5704a5dd930ecf9a4c1855811cc21e5836fdc03286086dcbb0890382dc",
+      "scope": "SECOND_SCENE_OPENING_EXCERPT",
+      "verdict": "PASS_PROVISIONAL",
+      "reading_expectations": {
+        "first_30_60": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "attention_record": "先注意到拨号确认与许澄起身让位；此时尚不知道当场要谈什么。",
+          "expectation": "等待随后的小段给出见面议题。拨号动作不能单独证明两人陌生；作为第二场起始，这一短暂延后尚未构成我的离开理由。"
+        },
+        "first_150_300": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "attention_record": "注意转入先查清再谈钱的主张及其带来的松气，随后供应商核验路径和到期时间进入。",
+          "expectation": "原本看似可以成立的延期开始需要具体长度；期待他的公平判断如何应对对方的时间约束。"
+        },
+        "ending": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "attention_record": "注意落在已经转向大厅却未能立即回答的停顿上。",
+          "expectation": "期待他能否把笼统的需要时间变成具体承诺。兴趣来自自我安顿受到现实安排追问，不只是结尾留下了一个问句。"
+        }
+      },
+      "findings": [
+        {
+          "id": "B29-F1",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "先把事情弄明白，总该是公平的。",
+          "line": 13,
+          "explanation": "TEXT_FACT：这句紧接他的松气；后文许澄要求具体期限，第23行又显示他听见押金时先想到自己的首付。EDITOR_HYPOTHESIS：正文让合理的查验要求与偏向自身的注意同时存在，没有直接给人物定性。",
+          "reading_impact": "支持暂时通过：私人心理先获得短暂安顿，再被另一人的安排追问，形成了需要继续观察的认知变化。",
+          "minimum_scope": "保留这层自我判断及后续首付联想，不补入道德评语或更激烈的情绪。",
+          "recheck": "复读时能否辨认他从松气到无法立即答复的变化，而不是只看到催款对话。"
+        },
+        {
+          "id": "B29-F2",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "多久？我得知道那笔钱明天还能不能交出去。",
+          "line": 27,
+          "explanation": "TEXT_FACT：第21行同时提到五天后的到期款和明日下午的工作间押金；此处使用那笔钱。EDITOR_HYPOTHESIS：时间邻近使其倾向指向押金，但两项资金安排如何相互制约仍未完全明说。",
+          "reading_impact": "待答期限足以维持当前注意；局部风险是需要回看才能区分两项钱款，弱化段尾选择的直接性。这不是已知真人反应。",
+          "minimum_scope": "仅复核资金指代及时间关系；不得自行补出资金来源、债责或金额。",
+          "recheck": "仅凭本稿能否区分五天后的款与明日押金，并理解她为何需要查验期限；若可以，不扩写背景。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "先把事情弄明白，总该是公平的。",
+          "line": 13,
+          "reason": "EDITOR_HYPOTHESIS：保留人物对自身立场的安顿，为随后期限追问提供变化起点。"
+        },
+        {
+          "quote": "罗钧听到“押金”，先想到的仍是自己的首付。",
+          "line": 23,
+          "reason": "EDITOR_HYPOTHESIS：具体展示注意偏向，而非由叙述者替人物贴上自私标签。"
+        },
+        {
+          "quote": "他看了一眼，没能立刻答她。",
+          "line": 29,
+          "reason": "EDITOR_HYPOTHESIS：让时间要求产生可见的迟疑；无需改成争吵或彻底无法离开。"
+        }
+      ],
+      "minimal_change_targets": [
+        "EDITOR_HYPOTHESIS：暂无必改项；若资金关系复验失败，只处理现有指代与安排之间的连接，不为清楚而新增未经授权的事实。"
+      ],
+      "recheck_conditions": [
+        "EDITOR_HYPOTHESIS：前60字的动作是否能在随后窗口及时获得议题支撑，不要求第二场重新承担全书开篇说明。",
+        "EDITOR_HYPOTHESIS：段尾是否仍指向具体期限选择，而不只是泛泛等待下一句；保护松气、首付联想与迟疑的连续变化。"
+      ],
+      "unknowns": [
+        "TEXT_FACT：本稿未展示款项金额、债务形成过程及责任归属，不从其他稿补入。",
+        "TEXT_FACT：明日押金与到期款的资金来源、是否共用资金及实际支付方案未知。"
+      ]
+    }
+  ],
+  "unknowns": [
+    "TEXT_FACT：未提供真人阅读反馈、停读句或滚动记录；报告中的期待与滑读风险均为编辑假设。",
+    "TEXT_FACT：只展示第二场起始摘录，第一场和后续未展示；暂时通过不表示完整场景或后续兑现已通过。"
+  ]
+}

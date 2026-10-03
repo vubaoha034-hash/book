@@ -1,0 +1,45 @@
+{
+  "schema_version": "native-bounded-task-proposal/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-PROPOSED-20261003-01",
+  "parent_task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "created_at": "2026-10-03T03:44:15Z",
+  "status": "PROPOSED_NOT_AUTHORIZED",
+  "scope": "ONE_SECOND_SCENE_REENTRY_AND_MINIMAL_FACT_PREPARATION_ONLY",
+  "target": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "basis": {
+    "path": "state/reviews/codex-20261003/coordinator-settlement.json",
+    "blob": "7f89244b6c8f0fe836a659c3f2360552387d2977",
+    "sha256": "bda8c3acba5f9d1c6d0ea75c29ce636294ef5bf0a19aaa795c108f9648cdbcd0"
+  },
+  "proposed_work": [
+    "核对实际前场对多年首付、原本今晚入住的私人价值已经呈现了什么，未知不假设全书缺失。",
+    "只选择一个第二场进入时刻与一个主要私人利害的准备方案，不写候选正文。",
+    "优先采用现有冻结事实，并核对罗钧可以看到、听到或已经知道什么；仅列确有必要的生活事实缺口。",
+    "形成一份有界事实及入口准备包，列出前197字可能受影响的范围与下一次写作所需授权，准备后停止。"
+  ],
+  "authorization_needed_now": "刘先生明确授权这一个新的进入时刻与最小事实准备任务；尚未执行。",
+  "authorization_needed_before_any_prose": [
+    "明确新任务的具体正文范围及一次写作预算；旧两轮不得重置或续用。",
+    "如需改变开头或触及旧197字，明确许可范围并建立新的授权记录；旧稿和旧锁不改写。",
+    "如需新增生活事实，先明确具体内容、知情人物并取得授权；不能从编辑假设直接写成事实。"
+  ],
+  "new_prose_authorized": false,
+  "generation_count": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "automatic_activation": false,
+  "recheck_conditions": [
+    "入口与事实准备须绑定同一稿件；不将诊断或标签泄漏给未来独立写作者。",
+    "将来另获授权的正文复验继续分别看30—60字、150—300字和段尾；具体真人停止句仅按实际反馈记录。",
+    "事实一致、AI称赞与动作存在均不能代替真人情绪及留存接受。"
+  ],
+  "out_of_scope": [
+    "替换句、新稿、全文V5、多个候选、背景定时任务、旧任务重试、解除旧保护或恢复旧修订预算"
+  ]
+}

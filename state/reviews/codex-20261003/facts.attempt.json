@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "started_at": "2026-10-03T03:24:21Z",
+  "packet": {
+    "path": "delivery/codex-review-20261003/facts.packet.json",
+    "blob": "fee787e55e1ef9484cf7172abaa3d7b4261da318",
+    "sha256": "7e17aea0485e9e762f58cef36671f795fa251dd764e270c789b9ba51ecc35700"
+  },
+  "max_calls": 1,
+  "generation_count": 0
+}

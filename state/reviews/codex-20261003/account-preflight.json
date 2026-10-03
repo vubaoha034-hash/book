@@ -1,0 +1,6 @@
+{
+  "scope": "ACCOUNT_READ_ONLY_NO_MODEL_TURN",
+  "started_at": "2026-10-03T03:08:15Z",
+  "error": "CODEX_RPC_FAILED:account/read:{'code': -32603, 'message': 'workspace routing discovery failed'}",
+  "finished_at": "2026-10-03T03:08:16Z"
+}

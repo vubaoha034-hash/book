@@ -1,0 +1,126 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "Q47",
+      "item_index": 0,
+      "quote": "“材料我带走，等查清了再说。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "end_character_exclusive": 15,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 1,
+      "quote": "她原来向他倾着的上身慢慢坐直",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 143,
+      "end_character_exclusive": 157,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 2,
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 3,
+      "quote": "声音比电话里软",
+      "reported_line": 3,
+      "actual_line": 3,
+      "start_character_0_based": 57,
+      "end_character_exclusive": 64,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 4,
+      "quote": "她原来向他倾着的上身慢慢坐直",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 143,
+      "end_character_exclusive": 157,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 5,
+      "quote": "我三点得走，客户的片子还等着。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 198,
+      "end_character_exclusive": 213,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 6,
+      "quote": "可查证不等于认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 331,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 7,
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 8,
+      "quote": "购房文件袋还压在他手肘下",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 436,
+      "end_character_exclusive": 448,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "checked_at": "2026-10-03T03:39:28Z",
+  "runtime": {
+    "path": "state/reviews/codex-20261003/diagnosis.runtime.json",
+    "blob": "b8f39d4352dceafe95d0d8bee23ae3e8c7dd0125",
+    "sha256": "0fb914935e2d5a432708c7025ba75afc4c52c05490d38fdf5b30d6e01db7f1d8"
+  },
+  "raw_report": {
+    "path": "state/reviews/codex-20261003/diagnosis.raw.txt",
+    "blob": "d3e1673e83bef86b88cea0d14827418c4dd31d05",
+    "sha256": "8cdcd390922d8ee21083fc0b7412455efc9be857b10a16efb88acb7d38f7fe02"
+  },
+  "packet": {
+    "path": "delivery/codex-review-20261003/diagnosis.packet.json",
+    "blob": "5a0177596cba4aaf6be5d15b33d2018951047a12",
+    "sha256": "fb8337033effe4d6d76c384ee83123a9380a51cf5ba1f327471f5163a7c1b59d"
+  }
+}

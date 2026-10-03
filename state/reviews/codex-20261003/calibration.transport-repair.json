@@ -1,0 +1,16 @@
+{
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "recorded_at": "2026-10-03T02:58:31Z",
+  "prior_runtime": {
+    "path": "state/reviews/codex-20261003/calibration.transport01.runtime.json",
+    "blob": "a54fac763b2bb9d64c7a6aab90e4a87628e73c6c",
+    "sha256": "8d5296d02f9e2662628b9a1632a7b02f99e63fad6536e7e29b8041d259a6d735"
+  },
+  "cause": "Failed turn: workspace routing discovery failed; no agent output or verdict.",
+  "repair": "Preserve required host transport environment; remove parent thread/session IDs. Close server before temporary cleanup.",
+  "attempted_turns_so_far": 1,
+  "completed_reports_so_far": 0,
+  "same_prompt_and_packet": true,
+  "verdict_retry_allowed": false,
+  "old_browser_task_retried": false
+}

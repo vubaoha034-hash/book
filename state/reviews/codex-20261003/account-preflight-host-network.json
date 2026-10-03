@@ -1,0 +1,13 @@
+{
+  "scope": "UNSANDBOXED_HOST_ACCOUNT_READ_ONLY_NO_MODEL_TURN",
+  "started_at": "2026-10-03T03:10:29Z",
+  "account_response_shape": [
+    "account",
+    "requiresOpenaiAuth",
+    "workspaceRouting"
+  ],
+  "account_type": "chatgpt",
+  "plan_type": "prolite",
+  "requires_authentication": true,
+  "finished_at": "2026-10-03T03:10:31Z"
+}

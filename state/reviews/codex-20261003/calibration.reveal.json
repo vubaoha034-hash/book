@@ -1,0 +1,66 @@
+{
+  "schema_version": "codex-review-label-reveal/v1",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "revealed_at": "2026-10-03T03:24:13Z",
+  "frozen_raw_report": {
+    "path": "state/reviews/codex-20261003/calibration.raw.txt",
+    "blob": "03f74f4fa6060f50bbdbd89d95085dacd14a53e2",
+    "sha256": "0edbfad11ae3d70efe20b087735476f3fd3568398b96618597b5cab372b8d7b1"
+  },
+  "frozen_evidence": {
+    "path": "state/reviews/codex-20261003/calibration.evidence.json",
+    "blob": "cdd86a7bf78d80305cd6ad2540004be8354a8303",
+    "sha256": "1d4f0ce9c215ba6f1dcf6059af05ad7adb32d2416505c434bb66a9280bfd241d"
+  },
+  "samples": [
+    {
+      "artifact_id": "A17",
+      "artifact": {
+        "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad",
+        "sha256": "2c54a547dc9832d53efb4cb9c1658f02f4d4ac5a7536cd79e1528c06ac93a5c6"
+      },
+      "human_receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+        "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
+      },
+      "label": "FAIL",
+      "label_scope": "FIRST_SCREEN",
+      "frozen_AI_verdict": "PASS_PROVISIONAL",
+      "failure_detected": false,
+      "false_release": true,
+      "inconclusive": false
+    },
+    {
+      "artifact_id": "B29",
+      "artifact": {
+        "path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+        "blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe",
+        "sha256": "61876e5704a5dd930ecf9a4c1855811cc21e5836fdc03286086dcbb0890382dc"
+      },
+      "human_receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd",
+        "sha256": "13d317cb036d7aa9f5ea06942d80b964718e3bc7435bfc46e731cb5dec76f35c"
+      },
+      "label": "FAIL",
+      "label_scope": "FIRST_SCREEN",
+      "frozen_AI_verdict": "PASS_PROVISIONAL",
+      "failure_detected": false,
+      "false_release": true,
+      "inconclusive": false
+    }
+  ],
+  "count": 2,
+  "hits": 0,
+  "misses": 2,
+  "inconclusive": 0,
+  "false_positive_rate": "UNKNOWN_NO_SCOPE_MATCHED_POSITIVE",
+  "overall_accuracy": "NOT_ESTIMABLE_SMALL_NON_RANDOM_SAME_STORY_SAMPLE",
+  "personal_taste_certification": false,
+  "standalone_quality_gate_allowed": false,
+  "prompt_retuned_after_labels": false,
+  "reruns": 0,
+  "generation_count": 0
+}

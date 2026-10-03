@@ -1,0 +1,49 @@
+{
+  "schema_version": "novel-execution-route-change/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "source_head": "122739a8c6f0ffa47ee77726865c06f8cb2c566a",
+  "source_checkpoint": 193,
+  "recorded_at": "2026-10-03T02:48:00Z",
+  "recorded_at_basis": "COORDINATOR_RECORD_TIME_APPROXIMATE",
+  "authority": {
+    "source": "ACTUAL_CURRENT_USER_INSTRUCTION",
+    "authorizer": "刘先生",
+    "instruction": "将本轮协调执行和AI评测接入改由Codex承担；允许使用独立子代理或独立模型会话；完成校准、448字稿独立编辑诊断、验证和main远端保存后停止，不授权新正文或重置旧额度。"
+  },
+  "links": {
+    "route_request": "state/review_receipts/NOVEL_CODEX_REVIEW_ROUTE_REQUEST_20261003.json",
+    "prior_diagnosis_task": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+    "prior_pre_send_blocker": "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+    "base_protocol": "docs/NOVEL_EXTERNAL_REVIEW_PROTOCOL_V1_20261001.md"
+  },
+  "route": {
+    "coordinator": "CODEX_ONLY_BUSINESS_STATE_WRITER",
+    "preferred_transport": "FRESH_CODEX_MODEL_SESSION_STRUCTURED_REPORT_DIRECT_RETURN",
+    "preferred_model": "gpt-6.1-sol",
+    "preferred_reasoning_effort": "max",
+    "runtime_verified": false,
+    "reviewer_repository_write_permission": false,
+    "new_API_service_authorized": false,
+    "background_automation_authorized": false
+  },
+  "preserved": {
+    "mainline_task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "method_revision": 4,
+    "target_path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "target_blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "human_emotion_retention": "FAIL",
+    "human_stop_sentence": "UNKNOWN",
+    "human_robotic_dialogue": "UNKNOWN",
+    "original_404_human_result": "UNKNOWN",
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "historical_locks_changed": false,
+    "prior_blocked_task_retried": false,
+    "prior_callback_received_by_this_task": false,
+    "new_prose_authorized": false,
+    "full_v5_authorized": false,
+    "AI_can_overturn_human_rejection": false
+  },
+  "scope": "EXECUTION_ROUTE_AND_REVIEW_INTAKE_ONLY_NO_STORY_OR_METHOD_CHANGE"
+}

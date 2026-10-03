@@ -8,6 +8,18 @@ For this project's current work, read `MAINLINE.md` and the task referenced by `
 
 ## Highest-priority execution-surface routing
 
+Current scoped override (2026-10-03): task
+`NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01` explicitly authorizes
+Codex coordination and independent review sessions. Follow
+`docs/NOVEL_CODEX_REVIEW_INTEGRATION_20261003.md` and the live checkpoint. Prefer
+GPT-6.1 Sol / Max, verified from actual runtime settings. Only the coordinator
+writes business state; reviewers receive their assigned packet only, with no
+tools, repository access, inherited chat, or other reports. This supersedes the
+old browser transport for this round, without retrying its blocked task or
+claiming an old callback. Cold screening failed its limited calibration and
+cannot certify literary quality or the user's taste. This override supplies no
+new prose budget, no V5, and no release of the old 197-character protection.
+
 This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.
 
 - Default execution mode: `CHAT`.

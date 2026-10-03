@@ -135,7 +135,9 @@ class ScopedLocalRevisionTests(unittest.TestCase):
         path = self.task['output_path']
         target = self.root / path
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(text)
+        # The frozen gate intentionally compares raw UTF-8/LF bytes. Windows
+        # text-mode CRLF conversion must not alter this synthetic test source.
+        target.write_bytes(text.encode('utf-8'))
         data = target.read_bytes()
         self.execution.update(status='FROZEN_AWAITING_REVIEW_DISPATCH', writer_attempt_count=1,
             generation_count=1, used_prose_revision_rounds=self.task['prose_revision_round'],

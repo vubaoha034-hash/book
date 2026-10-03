@@ -1,0 +1,155 @@
+{
+  "job_id": "V83",
+  "work_kind": "COLD_SCREEN",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "Q47",
+      "original_sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade",
+      "scope": "SECOND_SCENE_OPENING_EXCERPT",
+      "verdict": "PASS_PROVISIONAL",
+      "reading_expectations": {
+        "first_30_60": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "position": "第1行至第3行起首，按正文字符、不计换行",
+          "anchor": {
+            "basis": "TEXT_FACT",
+            "quote": "罗钧把购房文件袋夹到腋下",
+            "line": 1
+          },
+          "attention_record": "先注意到暂缓处理的表态和收起购房文件袋的动作，暂按准备离席理解。待查事项此时未知，不能自行补成已成立的债务。",
+          "continuation_expectation": "他能否先走，以及待查事项为何会牵涉眼前的购房安排。首句提供的是行动入口，不是完整关系说明。"
+        },
+        "first_150_300": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "position": "读至150—300字；重点为第9—15行前部",
+          "anchor": {
+            "basis": "TEXT_FACT",
+            "quote": "五天后那笔款也不会停。",
+            "line": 13
+          },
+          "attention_record": "注意力由首付防御转向两种时间压力：许澄的离开时间与款项期限，以及罗钧剩余的二十分钟。第5行说话者归属是我的局部确认点，不是真人停止句。",
+          "continuation_expectation": "罗钧会不会让核查占用购房时间。款项性质仍未知，但当前选择已可追踪；不必先猜完整过去。"
+        },
+        "ending": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "position": "第19—25行；末段为第25行",
+          "anchor": {
+            "basis": "TEXT_FACT",
+            "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+            "line": 25
+          },
+          "attention_record": "注意力转向独立核查能得到什么；文件袋仍在手肘下，使购房目标没有随转向而消失。",
+          "continuation_expectation": "公开信息能否支持许澄的主张，以及核查会怎样占用剩余时间。续读期待落在具体检验上，而非仅等待双方继续争辩；尚未读成罗钧已经认账。"
+        }
+      },
+      "findings": [
+        {
+          "id": "Q47-F1",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "“窗口还没关。我总得问问房子。”",
+          "line": 5,
+          "explanation": "TEXT_FACT：本行没有独立的说话者标记，第3行末尾是罗钧看向大厅入口。EDITOR_HYPOTHESIS：紧邻动作支持将本句接给罗钧，但首次阅读仍有一次归属确认；尚不足据此判定开头失效。",
+          "reading_impact": "若暂接给许澄，购房诉求的归属会短暂偏移，影响随后对首付防御的理解。这是本评审识别出的局部风险，不能推定真人会误读或退出。",
+          "minimum_scope": "仅核查此句说话者是否需要显明；不按全书开篇标准补人物介绍，也不增加争执。",
+          "recheck": "只读至第9行，记录本句被归给谁；若出现稳定误归属，再处理这一处，不借第15行回填首读判断。"
+        },
+        {
+          "id": "Q47-F2",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "不该留给一个陌生女人和一段他毫无印象的过去。",
+          "line": 15,
+          "explanation": "TEXT_FACT：此处把二十分钟的原用途与陌生女人、无印象的过去并置；第17行随后区分查证与认账。EDITOR_HYPOTHESIS：私人情绪主要是原有安排被侵占的不满，而不只是抽象地不相信对方。",
+          "reading_impact": "转向查证因此仍带着抵抗，不等于突然信任。放行依据包括这个具体代价与心理边界，而不只是存在冲突或因果顺畅。",
+          "minimum_scope": "保留购房目的、时间被占用的感受和查证边界；无需升级哭喊或新增灾难。",
+          "recheck": "读完后检查能否区分他的当下损失感与尚未确认的历史责任；不能把‘毫无印象’直接解释成某种已确定的失忆原因。"
+        },
+        {
+          "id": "Q47-F3",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "你自己找公开电话，别用我给的号码。",
+          "line": 21,
+          "explanation": "TEXT_FACT：许澄提出使用公开电话；末段罗钧开始搜索合同上的公司名，尚未展示联络或核验结果。EDITOR_HYPOTHESIS：这一渠道安排让下一步成为可检验的行动，也保留罗钧对信息来源的控制。",
+          "reading_impact": "段尾虽停在普通搜索动作上，却留下明确的结果期待。文件袋继续承载未完成的原目标，避免查证线完全覆盖他的私人处境。",
+          "minimum_scope": "保留独立渠道和文件袋的段尾位置；不为制造悬念强行提前结果或添加突发事件。",
+          "recheck": "仅凭本摘录，能否概括下一步为自主寻找供应商公开信息，同时仍记得购房事务未完成，而不是只记得一段模糊的过去。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "罗钧把购房文件袋夹到腋下",
+          "line": 1,
+          "reason": "EDITOR_HYPOTHESIS：使原有事务在入口即可见，并与末段压住文件袋形成呼应。"
+        },
+        {
+          "quote": "她原来向他倾着的上身慢慢坐直",
+          "line": 9,
+          "reason": "EDITOR_HYPOTHESIS：姿态退回与言语划界并行，保留私人情绪，不必改成更激烈的外显反应。"
+        },
+        {
+          "quote": "可查证不等于认账。",
+          "line": 17,
+          "reason": "EDITOR_HYPOTHESIS：保护转向行动时的心理边界，避免把核查误读为接受全部主张。"
+        },
+        {
+          "quote": "购房文件袋还压在他手肘下",
+          "line": 25,
+          "reason": "EDITOR_HYPOTHESIS：结束时仍保存原目标与被挤占感，使续读同时牵挂两条事务。"
+        }
+      ],
+      "minimal_change_targets": [
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "finding_id": "Q47-F1",
+          "target": "仅在复验确认归属不稳定时，降低第5行说话者的识别成本；其余未见必须改动的依据。"
+        }
+      ],
+      "recheck_conditions": [
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "condition": "继续使用匿名正文与第二场起始摘录定位，分窗记录注意力，不以末段信息倒填前30—60字的理解。"
+        },
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "condition": "分别记录第5行说话者归属、二十分钟的原用途，以及段尾实际执行了什么；不要用笼统的‘有冲突’代替检验。"
+        },
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "condition": "PASS_PROVISIONAL仅表示本次自读形成了具体续读期待，不代表真人接受，也不保证未展示部分会兑现。"
+        }
+      ],
+      "unknowns": [
+        {
+          "basis": "TEXT_FACT",
+          "status": "UNKNOWN",
+          "item": "前场事实",
+          "explanation": "此前电话、材料的具体所指、款项性质及双方既往关系未提供；未展示不构成矛盾，也不能保证后文会补足。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "status": "UNKNOWN",
+          "item": "第5行实际说话者",
+          "explanation": "正文没有显式标记；本次倾向接给罗钧，但不能将这一推断当作已确认事实。"
+        }
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "basis": "TEXT_FACT",
+      "status": "UNKNOWN",
+      "item": "真人首读结果",
+      "explanation": "未提供真人阅读记录；报告中的注意力、回看点和续读期待属于评审自读或编辑假设。"
+    },
+    {
+      "basis": "TEXT_FACT",
+      "status": "UNKNOWN",
+      "item": "实际手机排版",
+      "explanation": "未提供字号、行宽或屏高；字符窗口不能等同于实机首屏测量。"
+    }
+  ]
+}

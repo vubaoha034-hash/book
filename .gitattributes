@@ -1,0 +1,3 @@
+# Frozen contracts, drafts and reports are identified by their exact bytes.
+# Prevent core.autocrlf from silently changing those bytes on Windows checkout.
+* -text

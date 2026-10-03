@@ -1,0 +1,86 @@
+{
+  "schema_version": "native-review-validation/v1",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "validated_at": "2026-10-03T03:54:28Z",
+  "source_head": "122739a8c6f0ffa47ee77726865c06f8cb2c566a",
+  "checkpoint": 194,
+  "current_state": {
+    "command": "python scripts/verify_current_state.py",
+    "exit_code": 0,
+    "checks_passed": 27,
+    "mainline_revision": 4,
+    "new_prose_authorized": false,
+    "literary_quality_tested": false
+  },
+  "skill_structure": {
+    "command": "python scripts/validate_skill.py",
+    "exit_code": 0,
+    "files_checked": 28
+  },
+  "unit_tests": {
+    "command": "python -X utf8 -m unittest discover -s tests -p 'test_*.py'",
+    "exit_code": 0,
+    "tests": 97,
+    "failures": 0,
+    "errors": 0,
+    "elapsed_seconds": 16.582,
+    "new_test_counts": {
+      "packet_and_adapter": 16,
+      "completed_integration_state": 12
+    }
+  },
+  "repeat_review_guard": {
+    "command": "python scripts/codex_review.py run diagnosis",
+    "exit_code": 1,
+    "expected": "ONE_CALL_ALREADY_CONSUMED_NO_RETRY",
+    "model_turns_dispatched_by_this_check": 0
+  },
+  "python_compile": {
+    "exit_code": 0,
+    "scripts": [
+      "scripts/codex_review.py",
+      "scripts/verify_codex_review.py",
+      "scripts/verify_review_publication.py"
+    ]
+  },
+  "git_diff_check": {
+    "exit_code": 0
+  },
+  "platform_fix": "旧范围测试夹具改为UTF-8原始字节写入，消除Windows CRLF转换导致的错误；正文197字与旧额度校验未改动。",
+  "checkout_byte_configuration": {
+    "path": ".gitattributes",
+    "blob": "4f41d3eec08affdc96dbd9430ad266bc5806bd7a",
+    "sha256": "ec13fe9008c1c4fdcc2732da07a6426fea91880d6c6d1d16a8c8a22bbbf72bd2"
+  },
+  "runtime_environment": {
+    "python": "3.11.15",
+    "codex_cli": "0.159.2",
+    "existing_login": "CHATGPT_NO_NEW_API_CREDENTIAL_OR_SERVICE"
+  },
+  "bindings": {
+    "state": {
+      "path": "state/project_state.json",
+      "blob": "4f239bf87e3042b51c8a2098a625f5898c0043fd",
+      "sha256": "668182e6e98d8d0a2cabf456878548ee3717ed771f703abe2ec55c3af4d26a67"
+    },
+    "checkpoint": {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "9d744e4907515703c4408db8df2c58f65733a653",
+      "sha256": "eedb2aaa84cfaba677f437d8304182e76643375e0944e78ca37b9338a83b359a"
+    },
+    "manifest": {
+      "path": "config/codex-review-run-20261003.json",
+      "blob": "78997ee788a88c2404962df25f4ce3187d8a91aa",
+      "sha256": "026843ee1f6329487e0bcb7554f213d25c102942cb9dd5aea8d1d4f8251225e0"
+    },
+    "coordinator_settlement": {
+      "path": "state/reviews/codex-20261003/coordinator-settlement.json",
+      "blob": "7f89244b6c8f0fe836a659c3f2360552387d2977",
+      "sha256": "bda8c3acba5f9d1c6d0ea75c29ce636294ef5bf0a19aaa795c108f9648cdbcd0"
+    }
+  },
+  "generation_count": 0,
+  "quality_pass_claim": false,
+  "raw_reports_rewritten": false,
+  "remote_readback_status": "REQUIRES_POST_PUSH_REMOTE_SAVE_RECEIPT"
+}

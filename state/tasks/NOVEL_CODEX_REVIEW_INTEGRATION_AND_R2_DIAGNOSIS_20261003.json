@@ -1,0 +1,173 @@
+{
+  "schema_version": "native-scoped-review-task/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "source_head": "122739a8c6f0ffa47ee77726865c06f8cb2c566a",
+  "source_checkpoint": 193,
+  "completed_at": "2026-10-03T03:44:15Z",
+  "status": "COMPLETE_REVIEW_INTEGRATION_AND_DIAGNOSIS_NO_PROSE",
+  "execution_change": {
+    "path": "state/review_receipts/NOVEL_CODEX_REVIEW_EXECUTION_CHANGE_20261003.json",
+    "blob": "e8163d64ef489cd4bcb251c9a0265a6d5bacbe0c",
+    "sha256": "2fda93479135ece9b6003e197b634758e41940f405aa9a72ab9cc49567d48247"
+  },
+  "existing_diagnosis_task": {
+    "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+    "blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110",
+    "sha256": "ec4b9ddb96d6a9e6a1e677c2d4af4e749c75534459951f8e102ee3c709be8c30"
+  },
+  "old_browser_block": {
+    "path": "state/review_receipts/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PRE_SEND_BLOCKED_20261003.json",
+    "blob": "f332f942b9adf31d5beca23f435b3318c37b9761",
+    "sha256": "34c411c70be7fc6d8e03ccd7da1cffe0458b1a30405a35b6f23060174ac9653b"
+  },
+  "target": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "manifest": {
+    "path": "config/codex-review-run-20261003.json",
+    "blob": "78997ee788a88c2404962df25f4ce3187d8a91aa",
+    "sha256": "026843ee1f6329487e0bcb7554f213d25c102942cb9dd5aea8d1d4f8251225e0"
+  },
+  "jobs": {
+    "calibration": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/calibration.runtime.json",
+        "blob": "51af58dee05c03745b3906f81948fa869e4cf091",
+        "sha256": "eba74c0ef6bf8ea421705c90a6f86220b2bed3b0569f033af1a2b7f164628d02"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/calibration.raw.txt",
+        "blob": "03f74f4fa6060f50bbdbd89d95085dacd14a53e2",
+        "sha256": "0edbfad11ae3d70efe20b087735476f3fd3568398b96618597b5cab372b8d7b1"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/calibration.evidence.json",
+        "blob": "cdd86a7bf78d80305cd6ad2540004be8354a8303",
+        "sha256": "1d4f0ce9c215ba6f1dcf6059af05ad7adb32d2416505c434bb66a9280bfd241d"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/calibration.packet.json",
+        "blob": "e510ea1f8d379f42b0dc4edcdfa221ede8e7d5f7",
+        "sha256": "b3de2c73a1cf8d62631f560f097ad8e469d6d0d5ac3368d52b60877bf46efc70"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/calibration.attempt.json",
+        "blob": "30f1263bfe7c3413a86e95bb201185412078c6c2",
+        "sha256": "cdb25518eed1dc124c8424fe7095f5d6a3736de93727431faa21cc89b5f9ded6"
+      }
+    },
+    "validation": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/validation.runtime.json",
+        "blob": "fbc920c60e7a22836773b9bd842371aca3a8a179",
+        "sha256": "b6f69d19301c61426654636eb7a35f7750477937e92dfae9480c2b3b8b4860e3"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/validation.raw.txt",
+        "blob": "b5675eca1c19e73e4db5a273e142f8b67c1ec21c",
+        "sha256": "eb7e9fa378a0d6e93962fb16fe0a369819a619a838e47669067a27f3907f0e6f"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/validation.evidence.json",
+        "blob": "cf34cc8b64152ef64403dac5d021926c55551b25",
+        "sha256": "0b2de21942340b4c2e79d33d9d96d51e6039406826f21bd909855c51a596bb86"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/validation.packet.json",
+        "blob": "51f711f43da8b175997802fee85528358c8f5362",
+        "sha256": "4ce1fb9bf5715e3ba808a8cd6cafb80c46ef035202fa1fd0039ea5c09fdb9878"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/validation.attempt.json",
+        "blob": "61bfeae4e667b5d8aee2b77249e8dedfa84b077f",
+        "sha256": "ea815ec1116bddc173924d8780fc3311c9afa5938419ed06bfeead6f041e9445"
+      }
+    },
+    "facts": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/facts.runtime.json",
+        "blob": "3b15408a56a21694c5f32c24947cc064ee4d0fec",
+        "sha256": "213c984d75988b8962a4a24a7e51bf4f5551c15108778aa4a16904c295a808c9"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/facts.raw.txt",
+        "blob": "2a4168d8d57b87e826b579d81c65adeb0db1dde0",
+        "sha256": "b605a45e17565aed4d59db2467f1d17035d24b1ca6e768d53637ddfa9b1294ef"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/facts.evidence.json",
+        "blob": "2b5da4637c5bce32c439d14d795d630ed41d051e",
+        "sha256": "d67fd419ccabe0fb62705fa49196dab6720dafa4cc6d68bafa16bb0aa26db58b"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/facts.packet.json",
+        "blob": "fee787e55e1ef9484cf7172abaa3d7b4261da318",
+        "sha256": "7e17aea0485e9e762f58cef36671f795fa251dd764e270c789b9ba51ecc35700"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/facts.attempt.json",
+        "blob": "0b11ecbfa63bf0b5e53280834db542fbe41a7cbe",
+        "sha256": "1f16d7191f4e6c08cfeda7b7d9dad30a024b7cd7c6e2d4b675c08c5eb627a023"
+      }
+    },
+    "diagnosis": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/diagnosis.runtime.json",
+        "blob": "b8f39d4352dceafe95d0d8bee23ae3e8c7dd0125",
+        "sha256": "0fb914935e2d5a432708c7025ba75afc4c52c05490d38fdf5b30d6e01db7f1d8"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/diagnosis.raw.txt",
+        "blob": "d3e1673e83bef86b88cea0d14827418c4dd31d05",
+        "sha256": "8cdcd390922d8ee21083fc0b7412455efc9be857b10a16efb88acb7d38f7fe02"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/diagnosis.evidence.json",
+        "blob": "38a878e94ff0c673f2c2afcd3587f36a90d62251",
+        "sha256": "53bbc3a360bd5a3dfadbe63465cf1ceb64c2bebfa01c3c7ccb7fb122130401de"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/diagnosis.packet.json",
+        "blob": "5a0177596cba4aaf6be5d15b33d2018951047a12",
+        "sha256": "fb8337033effe4d6d76c384ee83123a9380a51cf5ba1f327471f5163a7c1b59d"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/diagnosis.attempt.json",
+        "blob": "d03c0361c325b3cd139370b42ffa581ffc64f979",
+        "sha256": "3d63b98f2b975bbb9f6d380e541947d2a49fea1b741c8f5a636bb99d26c0cf43"
+      }
+    }
+  },
+  "coordinator_settlement": {
+    "path": "state/reviews/codex-20261003/coordinator-settlement.json",
+    "blob": "7f89244b6c8f0fe836a659c3f2360552387d2977",
+    "sha256": "bda8c3acba5f9d1c6d0ea75c29ce636294ef5bf0a19aaa795c108f9648cdbcd0"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_RESULT_20261003.md",
+    "blob": "21d0375e7b786d0b5e84f9108de6f33d3e094ac5",
+    "sha256": "9fdf2bcc3c3d1b666a60d3a81a52d8918804a9cff981d38b108844cf7b4802bc"
+  },
+  "protocol_addendum": {
+    "path": "docs/NOVEL_CODEX_REVIEW_INTEGRATION_20261003.md",
+    "blob": "9511d8c7965876fe7651d55083e8c109b7886f08",
+    "sha256": "660bb4020ead578dd5a58cfdea8ac8cee0f2a31aeea12b66843a0c577523886f"
+  },
+  "next_task_proposal": {
+    "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+    "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+    "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a"
+  },
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "automatic_background_sync": false,
+  "prior_browser_callback_received": false,
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
+  "stop_after_remote_save": true
+}

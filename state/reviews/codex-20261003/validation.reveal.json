@@ -1,0 +1,46 @@
+{
+  "schema_version": "codex-review-label-reveal/v1",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "revealed_at": "2026-10-03T03:33:13Z",
+  "frozen_raw_report": {
+    "path": "state/reviews/codex-20261003/validation.raw.txt",
+    "blob": "b5675eca1c19e73e4db5a273e142f8b67c1ec21c",
+    "sha256": "eb7e9fa378a0d6e93962fb16fe0a369819a619a838e47669067a27f3907f0e6f"
+  },
+  "frozen_evidence": {
+    "path": "state/reviews/codex-20261003/validation.evidence.json",
+    "blob": "cf34cc8b64152ef64403dac5d021926c55551b25",
+    "sha256": "0b2de21942340b4c2e79d33d9d96d51e6039406826f21bd909855c51a596bb86"
+  },
+  "samples": [
+    {
+      "artifact_id": "Q47",
+      "artifact": {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      "human_receipt": {
+        "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+        "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+        "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+      },
+      "label": "FAIL",
+      "frozen_AI_verdict": "PASS_PROVISIONAL",
+      "failure_detected": false,
+      "false_release": true,
+      "inconclusive": false
+    }
+  ],
+  "count": 1,
+  "hits": 0,
+  "misses": 1,
+  "inconclusive": 0,
+  "false_positive_rate": "UNKNOWN_NO_SCOPE_MATCHED_POSITIVE",
+  "overall_accuracy": "NOT_ESTIMABLE_SMALL_NON_RANDOM_SAME_STORY_SAMPLE",
+  "personal_taste_certification": false,
+  "standalone_quality_gate_allowed": false,
+  "prompt_retuned_after_labels": false,
+  "reruns": 0,
+  "generation_count": 0
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "codex-review-run/v1",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "source_head": "122739a8c6f0ffa47ee77726865c06f8cb2c566a",
+  "created_at": "2026-10-03T02:52:29Z",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "jobs": {
+    "calibration": {
+      "packet": {
+        "path": "delivery/codex-review-20261003/calibration.packet.json",
+        "blob": "e510ea1f8d379f42b0dc4edcdfa221ede8e7d5f7",
+        "sha256": "b3de2c73a1cf8d62631f560f097ad8e469d6d0d5ac3368d52b60877bf46efc70"
+      },
+      "max_calls": 1
+    },
+    "validation": {
+      "packet": {
+        "path": "delivery/codex-review-20261003/validation.packet.json",
+        "blob": "51f711f43da8b175997802fee85528358c8f5362",
+        "sha256": "4ce1fb9bf5715e3ba808a8cd6cafb80c46ef035202fa1fd0039ea5c09fdb9878"
+      },
+      "max_calls": 1
+    },
+    "facts": {
+      "packet": {
+        "path": "delivery/codex-review-20261003/facts.packet.json",
+        "blob": "fee787e55e1ef9484cf7172abaa3d7b4261da318",
+        "sha256": "7e17aea0485e9e762f58cef36671f795fa251dd764e270c789b9ba51ecc35700"
+      },
+      "max_calls": 1
+    },
+    "diagnosis": {
+      "packet": {
+        "path": "delivery/codex-review-20261003/diagnosis.packet.json",
+        "blob": "5a0177596cba4aaf6be5d15b33d2018951047a12",
+        "sha256": "fb8337033effe4d6d76c384ee83123a9380a51cf5ba1f327471f5163a7c1b59d"
+      },
+      "max_calls": 1
+    }
+  },
+  "calibration_labels_coordinator_only": [
+    {
+      "artifact_id": "A17",
+      "artifact": {
+        "path": "delivery/mainline-v2/test-01-sp414-s02-short-a1.md",
+        "blob": "82edfdf32c12f2a7f04622eb0c9e51af8fb73fad",
+        "sha256": "2c54a547dc9832d53efb4cb9c1658f02f4d4ac5a7536cd79e1528c06ac93a5c6"
+      },
+      "human_receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V2_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "5fa524fd78b7dab24fe8ec53bf72bee375695e08",
+        "sha256": "cd04628e5e7b0f3f5d591b65fba2c11f2bb056d514104e836ddd993bbad013e2"
+      },
+      "label": "FAIL",
+      "label_scope": "FIRST_SCREEN"
+    },
+    {
+      "artifact_id": "B29",
+      "artifact": {
+        "path": "delivery/mainline-v3/test-01-sp414-s02-short-a1.md",
+        "blob": "e0c871692f4747bd11f0ace8f5930ed1290a23fe",
+        "sha256": "61876e5704a5dd930ecf9a4c1855811cc21e5836fdc03286086dcbb0890382dc"
+      },
+      "human_receipt": {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V3_TEST01_SHORT_A1_HUMAN_FAIL_20261001.json",
+        "blob": "0a2e03ffdf4228fc5355fa96be797279f68d07fd",
+        "sha256": "13d317cb036d7aa9f5ea06942d80b964718e3bc7435bfc46e731cb5dec76f35c"
+      },
+      "label": "FAIL",
+      "label_scope": "FIRST_SCREEN"
+    }
+  ],
+  "validation_label_coordinator_only": {
+    "artifact_id": "Q47",
+    "artifact": {
+      "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+      "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+      "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+    },
+    "human_receipt": {
+      "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+      "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+      "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+    },
+    "label": "FAIL"
+  },
+  "scope_matched_positive": "NOT_ESTABLISHED",
+  "new_prose_authorized": false,
+  "generation_count": 0,
+  "old_remaining_rounds": 0,
+  "historical_input_verified": {
+    "path": "delivery/r2-emotion-retention-diagnosis/reviewer-input.md",
+    "blob": "d166df7c68b2925715e13ee4b8b2e88a1da3a666",
+    "sha256": "eec172d54339c3171a6296500eb6727e67c8c41c66b9f8aea6c896b8374ccff6"
+  }
+}

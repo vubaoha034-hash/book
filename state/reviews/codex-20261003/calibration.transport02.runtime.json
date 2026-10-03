@@ -1,0 +1,108 @@
+{
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "job_id": "C61",
+  "packet": {
+    "path": "delivery/codex-review-20261003/calibration.packet.json",
+    "blob": "e510ea1f8d379f42b0dc4edcdfa221ede8e7d5f7",
+    "sha256": "b3de2c73a1cf8d62631f560f097ad8e469d6d0d5ac3368d52b60877bf46efc70"
+  },
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "max",
+  "started_at": "2026-10-03T02:58:31Z",
+  "status": "BLOCKED",
+  "report_received": false,
+  "model_turn_dispatched": true,
+  "generation_count": 0,
+  "reviewer_repository_write_permission": false,
+  "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY",
+  "prompt_policy_sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095",
+  "model_catalog_entry": {
+    "id": "gpt-6.1-sol",
+    "model": "gpt-6.1-sol",
+    "upgrade": null,
+    "upgradeInfo": null,
+    "availabilityNux": {
+      "message": "Maximize usage with GPT-6.1 Sol. Try it on complex work for near-Astra performance at a lower cost."
+    },
+    "displayName": "GPT-6.1-Sol",
+    "description": "Latest workhorse model for coding and everyday work.",
+    "modelSpecialty": null,
+    "hidden": false,
+    "supportedReasoningEfforts": [
+      {
+        "reasoningEffort": "low",
+        "description": "Fast responses with lighter reasoning"
+      },
+      {
+        "reasoningEffort": "medium",
+        "description": "Balances speed and reasoning depth for everyday tasks"
+      },
+      {
+        "reasoningEffort": "high",
+        "description": "Greater reasoning depth for complex problems"
+      },
+      {
+        "reasoningEffort": "xhigh",
+        "description": "Extra high reasoning depth for complex problems"
+      },
+      {
+        "reasoningEffort": "max",
+        "description": "Maximum reasoning depth for the hardest problems"
+      },
+      {
+        "reasoningEffort": "ultra",
+        "description": "Maximum reasoning with automatic task delegation"
+      }
+    ],
+    "defaultReasoningEffort": "low",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "supportsPersonality": false,
+    "multiAgentVersion": "v2",
+    "additionalSpeedTiers": [
+      "fast"
+    ],
+    "serviceTiers": [
+      {
+        "id": "priority",
+        "name": "Fast",
+        "description": "2x speed, increased usage"
+      }
+    ],
+    "defaultServiceTier": null,
+    "availableAccessPrograms": null,
+    "isDefault": true
+  },
+  "resolved_thread_settings": {
+    "model": "gpt-6.1-sol",
+    "modelProvider": "openai",
+    "reasoningEffort": "max",
+    "approvalPolicy": "never",
+    "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+    },
+    "activePermissionProfile": null,
+    "instructionSources": [],
+    "runtimeWorkspaceRoots": []
+  },
+  "thread_id": "01a0ffb2-faf8-7d22-8a4a-5602cd8d9e28",
+  "submitted_payload_sha256": "5edeb7a64d8f8d195cbdee4806be3782cd1f71f5c27dcc6b1980a63610d45a96",
+  "turn_status": "failed",
+  "turn_error": {
+    "message": "workspace routing discovery failed",
+    "codexErrorInfo": "other",
+    "additionalDetails": null,
+    "misalignment": null
+  },
+  "completed_item_types": [
+    "userMessage"
+  ],
+  "tool_activity_detected": [],
+  "model_initiated_requests": [],
+  "error": "NO_SUCCESSFUL_REPORT_NO_PASS",
+  "finished_at": "2026-10-03T02:58:50Z",
+  "elapsed_seconds": 19.5
+}

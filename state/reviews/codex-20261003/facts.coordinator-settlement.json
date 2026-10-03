@@ -1,0 +1,66 @@
+{
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "settled_at": "2026-10-03T03:33:42Z",
+  "raw_report": {
+    "path": "state/reviews/codex-20261003/facts.raw.txt",
+    "blob": "2a4168d8d57b87e826b579d81c65adeb0db1dde0",
+    "sha256": "b605a45e17565aed4d59db2467f1d17035d24b1ca6e768d53637ddfa9b1294ef"
+  },
+  "evidence": {
+    "path": "state/reviews/codex-20261003/facts.evidence.json",
+    "blob": "2b5da4637c5bce32c439d14d795d630ed41d051e",
+    "sha256": "d67fd419ccabe0fb62705fa49196dab6720dafa4cc6d68bafa16bb0aa26db58b"
+  },
+  "status": "FACT_CLEAR_CONFIRMED_NO_LITERARY_ACCEPTANCE",
+  "findings": [
+    {
+      "id": "F1",
+      "disposition": "ACCEPT_AS_FROZEN_FACT_BOUNDARY",
+      "reason": "二十分钟对应许澄三点离开；窗口只明确仍开放，不是二十分钟截止。"
+    },
+    {
+      "id": "F2",
+      "disposition": "ACCEPT_AS_FROZEN_FACT_BOUNDARY",
+      "reason": "不要求即时转钱或假装相识，不等于免债或恢复关系。"
+    },
+    {
+      "id": "F3",
+      "disposition": "ACCEPT_AS_FROZEN_FACT_BOUNDARY",
+      "reason": "以后自行查证允许；后续协助未约定，不作全部退出判定。"
+    },
+    {
+      "id": "F4",
+      "disposition": "ACCEPT_AS_FROZEN_FACT_BOUNDARY",
+      "reason": "只到开始公开渠道核验，无结果、认账或付款。"
+    },
+    {
+      "id": "F5",
+      "disposition": "KEEP_UNKNOWN_NO_AUTOMATIC_REPAIR",
+      "reason": "文件袋、合同复本及材料交接顺序未被逐项冻结；疑点不是确定矛盾，不补交接动作。"
+    }
+  ],
+  "supplementary_quotes": [
+    {
+      "quote": "“材料我带走，等查清了再说。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "exact_quote_found": true
+    },
+    {
+      "quote": "“我三点得走，客户的片子还等着。”",
+      "reported_line": 13,
+      "actual_line": 13,
+      "exact_quote_found": true
+    },
+    {
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "exact_quote_found": true
+    }
+  ],
+  "all_quotes_checked": true,
+  "new_prose_authorized": false,
+  "raw_report_rewritten": false,
+  "note": "评审自述未核验哈希；哈希由协调适配器对本地原始字节计算并与冻结身份核对。"
+}

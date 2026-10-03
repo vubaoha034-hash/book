@@ -6,6 +6,7 @@ It does not change any file or infer a positive human verdict.
 from __future__ import annotations
 import argparse
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 
@@ -723,6 +724,14 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         expected_action = 'DEFINE_ONE_SCOPED_METHOD_REVISION_AFTER_' + target_test + '_FAILURE'
     expected_action = external_review_action(root, project, cp, target_test,
         outcomes, frozen, expected_action)
+    # The current explicit execution change follows all historical gates. It
+    # cannot replace or bypass the prior human rejection / exhausted budget.
+    if 'codex_review_integration' in project or 'codex_review_integration' in cp:
+        spec = importlib.util.spec_from_file_location('codex_review_state',
+            Path(__file__).with_name('verify_codex_review.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        expected_action = module.codex_review_action(root, project, cp, expected_action)
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

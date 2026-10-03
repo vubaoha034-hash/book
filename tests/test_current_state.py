@@ -42,6 +42,9 @@ class CurrentStateTests(unittest.TestCase):
             # The baseline fixtures test the human mainline route. External
             # review is exercised separately against its real frozen protocol.
             state.pop('external_review_state', None)
+            # Codex integration has its own corruption tests. These synthetic
+            # STEP_01 fixtures intentionally exercise only the locked mainline.
+            state.pop('codex_review_integration', None)
             state['mainline_state'].update(current_step='STEP_01', completed_steps=[],
                 test_artifacts={}, test_results={}, literary_quality_validated=False,
                 new_prose_authorized_now=False, full_v5_authorized=False)

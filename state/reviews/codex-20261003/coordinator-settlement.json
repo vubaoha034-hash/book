@@ -1,0 +1,802 @@
+{
+  "schema_version": "codex-review-coordinator-settlement/v1",
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "settled_at": "2026-10-03T03:44:15Z",
+  "jobs": {
+    "calibration": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/calibration.runtime.json",
+        "blob": "51af58dee05c03745b3906f81948fa869e4cf091",
+        "sha256": "eba74c0ef6bf8ea421705c90a6f86220b2bed3b0569f033af1a2b7f164628d02"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/calibration.raw.txt",
+        "blob": "03f74f4fa6060f50bbdbd89d95085dacd14a53e2",
+        "sha256": "0edbfad11ae3d70efe20b087735476f3fd3568398b96618597b5cab372b8d7b1"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/calibration.evidence.json",
+        "blob": "cdd86a7bf78d80305cd6ad2540004be8354a8303",
+        "sha256": "1d4f0ce9c215ba6f1dcf6059af05ad7adb32d2416505c434bb66a9280bfd241d"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/calibration.packet.json",
+        "blob": "e510ea1f8d379f42b0dc4edcdfa221ede8e7d5f7",
+        "sha256": "b3de2c73a1cf8d62631f560f097ad8e469d6d0d5ac3368d52b60877bf46efc70"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/calibration.attempt.json",
+        "blob": "30f1263bfe7c3413a86e95bb201185412078c6c2",
+        "sha256": "cdb25518eed1dc124c8424fe7095f5d6a3736de93727431faa21cc89b5f9ded6"
+      }
+    },
+    "validation": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/validation.runtime.json",
+        "blob": "fbc920c60e7a22836773b9bd842371aca3a8a179",
+        "sha256": "b6f69d19301c61426654636eb7a35f7750477937e92dfae9480c2b3b8b4860e3"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/validation.raw.txt",
+        "blob": "b5675eca1c19e73e4db5a273e142f8b67c1ec21c",
+        "sha256": "eb7e9fa378a0d6e93962fb16fe0a369819a619a838e47669067a27f3907f0e6f"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/validation.evidence.json",
+        "blob": "cf34cc8b64152ef64403dac5d021926c55551b25",
+        "sha256": "0b2de21942340b4c2e79d33d9d96d51e6039406826f21bd909855c51a596bb86"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/validation.packet.json",
+        "blob": "51f711f43da8b175997802fee85528358c8f5362",
+        "sha256": "4ce1fb9bf5715e3ba808a8cd6cafb80c46ef035202fa1fd0039ea5c09fdb9878"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/validation.attempt.json",
+        "blob": "61bfeae4e667b5d8aee2b77249e8dedfa84b077f",
+        "sha256": "ea815ec1116bddc173924d8780fc3311c9afa5938419ed06bfeead6f041e9445"
+      }
+    },
+    "facts": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/facts.runtime.json",
+        "blob": "3b15408a56a21694c5f32c24947cc064ee4d0fec",
+        "sha256": "213c984d75988b8962a4a24a7e51bf4f5551c15108778aa4a16904c295a808c9"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/facts.raw.txt",
+        "blob": "2a4168d8d57b87e826b579d81c65adeb0db1dde0",
+        "sha256": "b605a45e17565aed4d59db2467f1d17035d24b1ca6e768d53637ddfa9b1294ef"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/facts.evidence.json",
+        "blob": "2b5da4637c5bce32c439d14d795d630ed41d051e",
+        "sha256": "d67fd419ccabe0fb62705fa49196dab6720dafa4cc6d68bafa16bb0aa26db58b"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/facts.packet.json",
+        "blob": "fee787e55e1ef9484cf7172abaa3d7b4261da318",
+        "sha256": "7e17aea0485e9e762f58cef36671f795fa251dd764e270c789b9ba51ecc35700"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/facts.attempt.json",
+        "blob": "0b11ecbfa63bf0b5e53280834db542fbe41a7cbe",
+        "sha256": "1f16d7191f4e6c08cfeda7b7d9dad30a024b7cd7c6e2d4b675c08c5eb627a023"
+      }
+    },
+    "diagnosis": {
+      "runtime": {
+        "path": "state/reviews/codex-20261003/diagnosis.runtime.json",
+        "blob": "b8f39d4352dceafe95d0d8bee23ae3e8c7dd0125",
+        "sha256": "0fb914935e2d5a432708c7025ba75afc4c52c05490d38fdf5b30d6e01db7f1d8"
+      },
+      "raw_report": {
+        "path": "state/reviews/codex-20261003/diagnosis.raw.txt",
+        "blob": "d3e1673e83bef86b88cea0d14827418c4dd31d05",
+        "sha256": "8cdcd390922d8ee21083fc0b7412455efc9be857b10a16efb88acb7d38f7fe02"
+      },
+      "evidence": {
+        "path": "state/reviews/codex-20261003/diagnosis.evidence.json",
+        "blob": "38a878e94ff0c673f2c2afcd3587f36a90d62251",
+        "sha256": "53bbc3a360bd5a3dfadbe63465cf1ceb64c2bebfa01c3c7ccb7fb122130401de"
+      },
+      "packet": {
+        "path": "delivery/codex-review-20261003/diagnosis.packet.json",
+        "blob": "5a0177596cba4aaf6be5d15b33d2018951047a12",
+        "sha256": "fb8337033effe4d6d76c384ee83123a9380a51cf5ba1f327471f5163a7c1b59d"
+      },
+      "attempt": {
+        "path": "state/reviews/codex-20261003/diagnosis.attempt.json",
+        "blob": "d03c0361c325b3cd139370b42ffa581ffc64f979",
+        "sha256": "3d63b98f2b975bbb9f6d380e541947d2a49fea1b741c8f5a636bb99d26c0cf43"
+      }
+    }
+  },
+  "all_quotes_checked": true,
+  "explicit_quote_occurrences": 44,
+  "quote_locations": [
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "report_location": "results/A17/findings/0",
+      "quote": "昨晚他还在上面量过床的位置。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 43,
+      "end_character_exclusive": 57,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "report_location": "results/A17/findings/1",
+      "quote": "“你给我个时间。”许澄说，“今天能查什么，明天能查什么。我也有活要接。”",
+      "reported_line": 31,
+      "actual_line": 31,
+      "start_character_0_based": 425,
+      "end_character_exclusive": 461,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "report_location": "results/A17/protected_parts/0",
+      "quote": "昨晚他还在上面量过床的位置。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 43,
+      "end_character_exclusive": 57,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "report_location": "results/A17/protected_parts/1",
+      "quote": "看了这个，是不是就算我认了？",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 189,
+      "end_character_exclusive": 203,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "report_location": "results/A17/protected_parts/2",
+      "quote": "如果要我先筹这笔款，我得今天就开始安排。",
+      "reported_line": 27,
+      "actual_line": 27,
+      "start_character_0_based": 372,
+      "end_character_exclusive": 392,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "report_location": "results/B29/findings/0",
+      "quote": "先把事情弄明白，总该是公平的。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 210,
+      "end_character_exclusive": 225,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "report_location": "results/B29/findings/1",
+      "quote": "多久？我得知道那笔钱明天还能不能交出去。",
+      "reported_line": 27,
+      "actual_line": 27,
+      "start_character_0_based": 384,
+      "end_character_exclusive": 404,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "report_location": "results/B29/protected_parts/0",
+      "quote": "先把事情弄明白，总该是公平的。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 210,
+      "end_character_exclusive": 225,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "report_location": "results/B29/protected_parts/1",
+      "quote": "罗钧听到“押金”，先想到的仍是自己的首付。",
+      "reported_line": 23,
+      "actual_line": 23,
+      "start_character_0_based": 334,
+      "end_character_exclusive": 355,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "report_location": "results/B29/protected_parts/2",
+      "quote": "他看了一眼，没能立刻答她。",
+      "reported_line": 29,
+      "actual_line": 29,
+      "start_character_0_based": 432,
+      "end_character_exclusive": 445,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/first_30_60/anchor",
+      "quote": "罗钧把购房文件袋夹到腋下",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 15,
+      "end_character_exclusive": 27,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/first_150_300/anchor",
+      "quote": "五天后那笔款也不会停。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 222,
+      "end_character_exclusive": 233,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/ending/anchor",
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/0",
+      "quote": "“窗口还没关。我总得问问房子。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 82,
+      "end_character_exclusive": 98,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/1",
+      "quote": "不该留给一个陌生女人和一段他毫无印象的过去。",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 298,
+      "end_character_exclusive": 320,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/2",
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/0",
+      "quote": "罗钧把购房文件袋夹到腋下",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 15,
+      "end_character_exclusive": 27,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/1",
+      "quote": "她原来向他倾着的上身慢慢坐直",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 143,
+      "end_character_exclusive": 157,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/2",
+      "quote": "可查证不等于认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 331,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/3",
+      "quote": "购房文件袋还压在他手肘下",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 436,
+      "end_character_exclusive": 448,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/first_30_60",
+      "quote": "“材料我带走，等查清了再说。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "end_character_exclusive": 15,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/first_150_300",
+      "quote": "“我三点得走，客户的片子还等着。”",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 197,
+      "end_character_exclusive": 214,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/ending",
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/0",
+      "quote": "罗钧也看表，还剩二十分钟。",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 268,
+      "end_character_exclusive": 281,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/1",
+      "quote": "“我没让你转钱。”她原来向他倾着的上身慢慢坐直，“也没让你装作认识我。”",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 134,
+      "end_character_exclusive": 170,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/2",
+      "quote": "今天查不完，你以后可以自己查，但别把‘以后再说’当成已经处理了。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 233,
+      "end_character_exclusive": 265,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/3",
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/4",
+      "quote": "他想说材料已经收了，总不能连查清的时间都不给。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 172,
+      "end_character_exclusive": 195,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/0",
+      "quote": "可查证不等于认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 331,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/1",
+      "quote": "五天后那笔款也不会停。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 222,
+      "end_character_exclusive": 233,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/2",
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/3",
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/first_30_60/TEXT_FACT",
+      "quote": "“材料我带走，等查清了再说。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "end_character_exclusive": 15,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/first_150_300/TEXT_FACT",
+      "quote": "“我三点得走，客户的片子还等着。”",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 197,
+      "end_character_exclusive": 214,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/reading_expectations/ending/TEXT_FACT",
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/0",
+      "quote": "“材料我带走，等查清了再说。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "end_character_exclusive": 15,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/1",
+      "quote": "她原来向他倾着的上身慢慢坐直",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 143,
+      "end_character_exclusive": 157,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/findings/2",
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/0",
+      "quote": "声音比电话里软",
+      "reported_line": 3,
+      "actual_line": 3,
+      "start_character_0_based": 57,
+      "end_character_exclusive": 64,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/1",
+      "quote": "她原来向他倾着的上身慢慢坐直",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 143,
+      "end_character_exclusive": 157,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/2",
+      "quote": "我三点得走，客户的片子还等着。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 198,
+      "end_character_exclusive": 213,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/3",
+      "quote": "可查证不等于认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 331,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/4",
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "report_location": "results/Q47/protected_parts/5",
+      "quote": "购房文件袋还压在他手肘下",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 436,
+      "end_character_exclusive": 448,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "facts_and_scope_checked": true,
+  "findings": [
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "finding_id": "A17-F1",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "私人住房准备确在文本，不能由此断言刘先生会在乎；已知真人FAIL，放行漏检。"
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "A17",
+      "finding_id": "A17-F2",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "时间要求增量与可能重复是局部假设，不是真人停止句，不自动进入修订。"
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "finding_id": "B29-F1",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "公平自我判断与迟疑可定位；它们存在不能证明情绪或留存接受，放行漏检。"
+    },
+    {
+      "job": "calibration",
+      "artifact_id": "B29",
+      "finding_id": "B29-F2",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "资金指代是可复验疑点，不能自行补资金来源或借A17向B29补事实。"
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "finding_id": "Q47-F1",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "第5行无显式说话者标记；误归属仅是编辑可能性，不能升级为当前主要上游根因或真人判断。"
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "finding_id": "Q47-F2",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "原目标被占用的心理可定位；放行的阅读影响预测未符合真人FAIL。"
+    },
+    {
+      "job": "validation",
+      "artifact_id": "Q47",
+      "finding_id": "Q47-F3",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "公开渠道与搜索启动确定；续读动力是编辑假设，不能翻案。"
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "finding_id": "F1",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "二十分钟限定许澄当面协助，不是购房窗口截止；接受。"
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "finding_id": "F2",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "即时转钱、关系认领与共同责任分离；接受。"
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "finding_id": "F3",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "以后独立查证允许，后续协助未约定；接受，不扩大为全部退出。"
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "finding_id": "F4",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "只到开始核验，无结果、认账或付款；接受。"
+    },
+    {
+      "job": "facts",
+      "artifact_id": "Q47",
+      "finding_id": "F5",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "交接关系为未知项，不是确定矛盾；不自动补动作。"
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "finding_id": "D1",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "接受为进入时刻/注意力重心的待复验假设；未展示私人价值不等于前场缺失，退出节点描述须降格。"
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "finding_id": "D2",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "接受为呈现方式假设：许澄熟悉、罗钧陌生的不对称短暂显露；不能判为真人对白机械，也不能让罗钧知道未知内心。"
+    },
+    {
+      "job": "diagnosis",
+      "artifact_id": "Q47",
+      "finding_id": "D3",
+      "disposition": "ACCEPT_FACT_OR_BOUNDED_HYPOTHESIS_NO_AUTOMATIC_REVISION",
+      "settlement": "接受为第15—25行结束点假设；不等于毫无钩子，不提前核验结果或新增损失。"
+    }
+  ],
+  "corrections": [
+    {
+      "job": "diagnosis",
+      "location": "reading_expectations.first_30_60.TEXT_FACT.observation",
+      "type": "FACT_VS_INFERENCE_DOWNGRADE",
+      "original_claim": "摘录从谈话的退出或暂停节点进入",
+      "settlement": "正文明确提出带走材料及延后处理；已离席未明确写出。退出或暂停节点是进入时刻的编辑解释，不是已发生离席的正文事实。"
+    }
+  ],
+  "rejected_automatic_uses": [
+    "Use three PASS_PROVISIONAL results to overturn human FAIL",
+    "Turn speaker-attribution hypothesis into a human robotic-dialogue verdict",
+    "Fill unknown material handover or new private-life facts without authorization",
+    "Release old protection or treat diagnosis as a third RC3 prose round"
+  ],
+  "facts_settlement": {
+    "path": "state/reviews/codex-20261003/facts.coordinator-settlement.json",
+    "blob": "f57cda50326d5b847d9ae4a6946edd72662d04c9",
+    "sha256": "75f60b17825b71ff94b79a0def34cde0545b02a5d498d5062ad4b5caa25f1c83"
+  },
+  "diagnosis_label": "KNOWN_HUMAN_FAILURE_POST_FAILURE_DIAGNOSIS_NOT_BLIND",
+  "root_causes": [
+    {
+      "id": "D1",
+      "classification": "EDITOR_HYPOTHESIS_ENTRY_MOMENT_ATTENTION"
+    },
+    {
+      "id": "D2",
+      "classification": "EDITOR_HYPOTHESIS_PRESENTATION_EMOTION_ASYMMETRY"
+    },
+    {
+      "id": "D3",
+      "classification": "EDITOR_HYPOTHESIS_ENDING_PERSONAL_STAKES"
+    }
+  ],
+  "causal_effect_proven": false,
+  "human_exact_feedback": "依旧是毫无情绪，一点看下去的欲望都没。根本不是那种第一眼就想看下去的感觉",
+  "human_emotion_retention": "FAIL",
+  "human_exact_stop_sentence": "UNKNOWN",
+  "human_robotic_dialogue": "UNKNOWN",
+  "topic_rejected": false,
+  "original_404_human_result": "UNKNOWN",
+  "new_prose_authorized": false,
+  "generation_count": 0,
+  "raw_reports_rewritten": false,
+  "automatic_revision_authorized": false,
+  "standalone_quality_gate_allowed": false
+}

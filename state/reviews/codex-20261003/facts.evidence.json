@@ -1,0 +1,126 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "Q47",
+      "item_index": 0,
+      "quote": "罗钧也看表，还剩二十分钟。",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 268,
+      "end_character_exclusive": 281,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 1,
+      "quote": "“我没让你转钱。”她原来向他倾着的上身慢慢坐直，“也没让你装作认识我。”",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 134,
+      "end_character_exclusive": 170,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 2,
+      "quote": "今天查不完，你以后可以自己查，但别把‘以后再说’当成已经处理了。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 233,
+      "end_character_exclusive": 265,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 3,
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 4,
+      "quote": "他想说材料已经收了，总不能连查清的时间都不给。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 172,
+      "end_character_exclusive": 195,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 5,
+      "quote": "可查证不等于认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 331,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 6,
+      "quote": "五天后那笔款也不会停。",
+      "reported_line": 13,
+      "actual_line": 13,
+      "start_character_0_based": 222,
+      "end_character_exclusive": 233,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 7,
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 8,
+      "quote": "照着合同上的公司名一个字一个字输进搜索框。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 415,
+      "end_character_exclusive": 436,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "checked_at": "2026-10-03T03:29:51Z",
+  "runtime": {
+    "path": "state/reviews/codex-20261003/facts.runtime.json",
+    "blob": "3b15408a56a21694c5f32c24947cc064ee4d0fec",
+    "sha256": "213c984d75988b8962a4a24a7e51bf4f5551c15108778aa4a16904c295a808c9"
+  },
+  "raw_report": {
+    "path": "state/reviews/codex-20261003/facts.raw.txt",
+    "blob": "2a4168d8d57b87e826b579d81c65adeb0db1dde0",
+    "sha256": "b605a45e17565aed4d59db2467f1d17035d24b1ca6e768d53637ddfa9b1294ef"
+  },
+  "packet": {
+    "path": "delivery/codex-review-20261003/facts.packet.json",
+    "blob": "fee787e55e1ef9484cf7172abaa3d7b4261da318",
+    "sha256": "7e17aea0485e9e762f58cef36671f795fa251dd764e270c789b9ba51ecc35700"
+  }
+}

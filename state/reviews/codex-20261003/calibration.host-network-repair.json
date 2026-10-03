@@ -1,0 +1,21 @@
+{
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "recorded_at": "2026-10-03T03:11:33Z",
+  "prior_runtime": {
+    "path": "state/reviews/codex-20261003/calibration.transport02.runtime.json",
+    "blob": "2052992f802b7cdcfb728e42c6fc4767cbc26291",
+    "sha256": "99484860afbc0ae07006b1ef869f2d2d6eaf3fc2033a0dc256ba809a1bdc2d29"
+  },
+  "account_preflight": {
+    "path": "state/reviews/codex-20261003/account-preflight-host-network.json",
+    "blob": "15a38817fac8a6af54754f730ffc0aa4d48e4085",
+    "sha256": "841a2b98f1ce72bfff1cd0c0680f0d5aa0bd28ba3f0eaf732d4fc9e832d9b450"
+  },
+  "cause": "Default host shell network blocks account/workspace routing; approved host account/read succeeds.",
+  "repair": "Run coordinator transport with approved host network. Reviewer retains readOnly, networkAccess=false, no environments/tools/history.",
+  "attempted_turns_so_far": 2,
+  "completed_reports_so_far": 0,
+  "same_prompt_and_packet": true,
+  "verdict_retry_allowed": false,
+  "old_browser_task_retried": false
+}

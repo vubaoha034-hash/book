@@ -1,0 +1,104 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "Q47",
+      "item_index": 0,
+      "quote": "“窗口还没关。我总得问问房子。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 82,
+      "end_character_exclusive": 98,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 1,
+      "quote": "不该留给一个陌生女人和一段他毫无印象的过去。",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 298,
+      "end_character_exclusive": 320,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 2,
+      "quote": "你自己找公开电话，别用我给的号码。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 367,
+      "end_character_exclusive": 384,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 3,
+      "quote": "罗钧把购房文件袋夹到腋下",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 15,
+      "end_character_exclusive": 27,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 4,
+      "quote": "她原来向他倾着的上身慢慢坐直",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 143,
+      "end_character_exclusive": 157,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 5,
+      "quote": "可查证不等于认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 331,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "Q47",
+      "item_index": 6,
+      "quote": "购房文件袋还压在他手肘下",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 436,
+      "end_character_exclusive": 448,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "checked_at": "2026-10-03T03:33:09Z",
+  "runtime": {
+    "path": "state/reviews/codex-20261003/validation.runtime.json",
+    "blob": "fbc920c60e7a22836773b9bd842371aca3a8a179",
+    "sha256": "b6f69d19301c61426654636eb7a35f7750477937e92dfae9480c2b3b8b4860e3"
+  },
+  "raw_report": {
+    "path": "state/reviews/codex-20261003/validation.raw.txt",
+    "blob": "b5675eca1c19e73e4db5a273e142f8b67c1ec21c",
+    "sha256": "eb7e9fa378a0d6e93962fb16fe0a369819a619a838e47669067a27f3907f0e6f"
+  },
+  "packet": {
+    "path": "delivery/codex-review-20261003/validation.packet.json",
+    "blob": "51f711f43da8b175997802fee85528358c8f5362",
+    "sha256": "4ce1fb9bf5715e3ba808a8cd6cafb80c46ef035202fa1fd0039ea5c09fdb9878"
+  }
+}

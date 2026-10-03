@@ -1,0 +1,14 @@
+{
+  "task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "recorded_at": "2026-10-03T02:54:12Z",
+  "prior_runtime": {
+    "path": "state/reviews/codex-20261003/calibration.preflight01.runtime.json",
+    "blob": "20fc461b8d021a2c8dcf531f2f4fb56d83e4054b",
+    "sha256": "6a375781014bad8611b1db3b336abfcf2b1552dd6e2e73f2df89559f635f6ab1"
+  },
+  "cause": "User config has invalid node_repl MCP transport before initialization; no thread or model call existed.",
+  "repair": "Separate temporary configuration home, existing login only, no user config, MCP, plugins or history.",
+  "model_calls_consumed": 0,
+  "max_model_calls_unchanged": 1,
+  "old_browser_task_retried": false
+}
