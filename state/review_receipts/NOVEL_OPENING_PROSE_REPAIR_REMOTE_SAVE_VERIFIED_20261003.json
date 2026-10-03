@@ -1,0 +1,364 @@
+{
+  "schema_version": "native-prose-repair-remote-save/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "recorded_at": "2026-10-03T12:12:03Z",
+  "status": "IMPLEMENTATION_REMOTE_MAIN_BYTES_HISTORY_AND_ACTUAL_HUMAN_GATE_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "implementation_commit": "3347648d5842da245b6b9c449e8d3771fbfbd44f",
+  "implementation_proof": {
+    "status": "REMOTE_PROSE_BYTES_HISTORY_AND_ACTUAL_HUMAN_GATE_VERIFIED",
+    "remote_head": "3347648d5842da245b6b9c449e8d3771fbfbd44f",
+    "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+    "checkpoint": 200,
+    "checked_count": 61,
+    "files": [
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_AUTHORIZATION_20261003.json",
+        "blob": "1ef1e12b3f5283ac02991c6c95b42515fdbf178e",
+        "sha256": "8cb6cdc03cc3858000c130cfa0a38d81ce19a47252691c2bcd89370a7605e5d5"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+        "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+        "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json",
+        "blob": "0d40b44867356be456b1ba266940d52a143fcbbb",
+        "sha256": "e04d70ba3be9b35fbe87f3f5dd7664a46242da4dc44b338d29ca2e73d736ae09"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.md",
+        "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+        "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_RESULT_20261003.json",
+        "blob": "517195de37c355452c1beaf2f795014368cdbea3",
+        "sha256": "c0903ff899995706379ae5acb9739154a00aa135b8fb96f69250d149004183e4"
+      },
+      {
+        "path": "config/novel-prose-repair-20261003.json",
+        "blob": "70a32008291e5060e2b58bbc5a2eb8aabc01d93d",
+        "sha256": "b7a015211ce02b4c6cc14ef36c106fe6b6317dcc90061d07aff42e1a124808e3"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/diagnosis.packet.json",
+        "blob": "1b539c4cf0de0dc51c0578710a4bfd3897207a1b",
+        "sha256": "11fe1e97845202009a47bfc053cf64114b95642b4481d13d85ddd9bbeb217dd1"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/diagnosis-policy.txt",
+        "blob": "d1460d2e3a08a1bdd036e57da3d78ca22c6e4574",
+        "sha256": "d0317c6fda27b25a1faf533c5a93d7291268d116100b1cece4bb8cab9af68710"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/writer-input.json",
+        "blob": "ae201221b4569a1130a2f25ff64a93a737ad2a54",
+        "sha256": "fd7b05230c6d116fd7ee5b7a42291ae9aa2873b86499481ff5eece7f78d8ccac"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/writer-policy.txt",
+        "blob": "110a12094590def1a96836b32ae70c06c0484d64",
+        "sha256": "920043b28469a861c15556e4055c2fc9b851c2433fe0b69483627e2af1f9155c"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/facts.packet.json",
+        "blob": "f9d41dc9d2bb5c954046003b64fa589de8bb7fe6",
+        "sha256": "cb3ffcebb302fab3ecc01ce56e2b3ed97f58e3e76f43e3a02e9bdfb6a03ab311"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/facts-policy.txt",
+        "blob": "3a972d5a67eeb94a25820c754136bb6fabb0bea2",
+        "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/editor.packet.json",
+        "blob": "e761d850e8f7f7cf9db6687ea4f7daf137db3054",
+        "sha256": "5d4558a07020ecf130ce18a94270642e92576a576a1d99d1ed12b0f3d9c88af8"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/editor-policy.txt",
+        "blob": "fde828a8f024b1b75c2c6af8b93931651665855b",
+        "sha256": "5f18ba719b1bd940f9e4c6de76220485e8f4f313f590d767fa1deeba14c5151b"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/reader.packet.json",
+        "blob": "f64df99220f56e0798839f10ada1936132fd8eff",
+        "sha256": "917e651e0c6a4682f6881bbcd03690e6d26abb1dea3fbfc05c3e90f12ee9c1d3"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/reader-policy.txt",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/short-a1.md",
+        "blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+        "sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/coordinator-settlement.json",
+        "blob": "c1eff7275fdf06792943ca7638685819bfcb9957",
+        "sha256": "e47cb3e26c6ed5f1306037e23fdc41ddf1c7dd6d7bef31f29f4f091270bcd4cc"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/pending-human-review.json",
+        "blob": "661c4b3a3736e7b064deb8b6a1e66aac0deff8db",
+        "sha256": "faa6136ff0652919cbb348729f088ae3df14e1b447adf7822c0c8cec22e4d6ff"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/diagnosis.runtime.json",
+        "blob": "8ec7b4ba6cc155abe406b3c6500a4b195fa60e45",
+        "sha256": "afe5dfb2dab6209beb88c52d6bddf4e8f2618df01b514e3534a9ee09bd0a525e"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/diagnosis.raw.txt",
+        "blob": "fbe9907a00b08791ed2b1b4e1ca268b4b5c68a75",
+        "sha256": "c82f488b474b9754bccef5ad43490bdc86c9cae7de0d8119a748f8f3e91ddf7b"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/writer.runtime.json",
+        "blob": "81c94a9b12d01fbe5c41b701c62911734e9767d5",
+        "sha256": "91c2b4685f57a19003524edb094b4d240226ea79415deff5c9318f3b10ec4f4e"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/facts.runtime.json",
+        "blob": "4c8f18733b14134fdb34bd7b310774281fa8f51f",
+        "sha256": "8caf5c4f8579d1f02737c939bb792e6e4134837e878a4a3f7320b200cb0a06d3"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/facts.raw.txt",
+        "blob": "3d2c1120c6438955d1c0b230f48c55b4ed4622d9",
+        "sha256": "d31f903742266f70f00effbdeaf91b50039223b4cf4ca6f0060c890772d5a57a"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/editor.runtime.json",
+        "blob": "418cbe1169146b5faa84803d0f9487a09de4b41b",
+        "sha256": "af5b44c4d3a49551aac7b9954541b3f295eb1ab2a779752cdd43606a9cc30ca1"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/editor.raw.txt",
+        "blob": "07f5872486f1f9836437d35667132c4fb5d9c15b",
+        "sha256": "fe4b9a5f5dbd4bd7f3e7c1d3669101a54fa6103d09d2bda208f46f14bd64bf12"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/reader.runtime.json",
+        "blob": "2a4763e3d6c6894327e3b317e51bef6650ba26fe",
+        "sha256": "0d14034cdbc9ed46e2d05ec53c77944fc56c41fdd2489277fe6913110341995a"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/reader.raw.txt",
+        "blob": "11101ef1872fc3ea6c9f173825138360ca193ba5",
+        "sha256": "c85ed273bc4475591f85a7df040a3394cb1be45fedcb280789fa073a3aef6649"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/diagnosis.evidence.json",
+        "blob": "9f972873a6319e847d30b20697c3057e92c934a5",
+        "sha256": "a4ff9f5db8a8af979ab3e003c69d121b7b01eb9c17d3aca96e2a8427d1156a3f"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/facts.evidence.json",
+        "blob": "1fc0f4268a695380e4027f4e2590c081e4668e86",
+        "sha256": "c4a1772e0d30ec09c6f84f8d7f030a3eb21270ca2666db3e14d1f6dbedccad49"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/editor.evidence.json",
+        "blob": "76e636967f4925691ccb0067ac9a88f23663e114",
+        "sha256": "92e18b63a433fc7c95f7d285a195d261816c234abab74082d2df89d632faef44"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/reader.evidence.json",
+        "blob": "0b6c65d8b5a5db707eb8f40873c9e564f4dad908",
+        "sha256": "39fa7b97248b0ce6a43abd14cb61c327a60c69a1d17052bd9fdbe87b26b86610"
+      },
+      {
+        "path": "docs/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.md",
+        "blob": "63057b78e51cf9a9f79bbb6f09d3dde8d12241aa",
+        "sha256": "f8a822f456d2e5db33c56f4bd790756210e51aec2fffe3fff00dcbb39671c69e"
+      },
+      {
+        "path": "state/tasks/NOVEL_OPENING_PROSE_REPAIR_AFTER_HUMAN_FAIL_20261003.json",
+        "blob": "9eb80598e56dc5d31d8d7ce49f42e13aeecbff58",
+        "sha256": "e91dffcba71a1988684e994b1db9786e6aab212bba204c8c8bc2445f539d725f"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.json",
+        "blob": "c7c535e23a374aa83fcde1cd17ef83c17b69012a",
+        "sha256": "5d8cf6465177931d6d01e420923c7a4a345a75f9158407a9c18b23b42f5ef81d"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "611a812bbd364ec9624489d5472ab0c66dfebb85",
+        "sha256": "bb8739ff301b270910627d99b0cb806ee0bf8994c7d314cf9fa11632074adbe0"
+      },
+      {
+        "path": "README.md",
+        "blob": "a78ea895548d4102e070fee0630f1601786588a7",
+        "sha256": "805a99ad3fb21b257a2e6a495ea783c49b32925cc23f5502f48cd2fe2ff9b798"
+      },
+      {
+        "path": "AGENTS.md",
+        "blob": "7eb242452bd41e344e2717057e6f137f1b29b6ba",
+        "sha256": "ac582b92ce51279143f3bc3a56bc1a9d182f5de21a49632b5440076939c01ff0"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "286050a4f98c6adbfab8c7f27de110111a3a75fe",
+        "sha256": "b495575c2432adef56caf9a7682a8fd3a00ccd9585728638149ccce25b3abc61"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "c5da6c9d29ce110ac588d600eaceb246650b3f48",
+        "sha256": "f54e610ec11060673d6ea7be15567f66584bf8260e5588df61e798f52a3f57f1"
+      },
+      {
+        "path": "scripts/verify_review_publication.py",
+        "blob": "c4a8a0ec59639346adab3ed99d94deb2703671be",
+        "sha256": "aaf58991e37368ada34d5b171b72de68e4f33c78dfa1ed14d42c4e8f0f51d618"
+      },
+      {
+        "path": "tests/test_current_state.py",
+        "blob": "909d14364e639f822e467a58cadaf44e3a0affdc",
+        "sha256": "63360c95c8d28d6dcfa6f08bce7baaa32ed50e28c93fe8fd2e8b0cf044d0c1a8"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "41ff450935d331856faae477a6ae60761bc53a0f",
+        "sha256": "6a28589eac27feb2b909f0e74514fe78f1ff8346cae1ea00a96f53fa682d501c"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "97dff078d65f2e871890b1eedf30d91f04221861",
+        "sha256": "51841ef45981132a500de05d7a823021ac8a155136e2525754f9be5f9dc6e5f7"
+      },
+      {
+        "path": "scripts/verify_autonomous_opening.py",
+        "blob": "c1af61e535404bef3e6d847fa30b6a628214fc55",
+        "sha256": "11d6ef6533838b7dcec78afe427982e2ce6bfe29f9aeaa5af920c3d03a4f3963"
+      },
+      {
+        "path": "scripts/verify_two_role_review.py",
+        "blob": "371b0e6e27238332dbe42d4ceb57be3284266e94",
+        "sha256": "755ddb354718ff6ff8951a72249b381409f97c87fa90164849b8a77ca20d45aa"
+      },
+      {
+        "path": "tests/test_autonomous_opening.py",
+        "blob": "be4e33bb0ea28fd5bb97e6521020ca6dbad8864f",
+        "sha256": "0d15e5009b49cb6e880be59df8d63e919b9c181043422f77d5d0fef55be8f01d"
+      },
+      {
+        "path": "tests/test_two_role_review.py",
+        "blob": "7e4b6e5e44c2a214e5451fd5519912d35653f33e",
+        "sha256": "25a9fcfbeeceea5b9caa4e1f758c33eedd393d1588fbbd7a338118e55ca6ab1c"
+      },
+      {
+        "path": "scripts/novel_prose_repair.py",
+        "blob": "8db15bcd94b44547d185b9dcc3efd5f3ef62282d",
+        "sha256": "0aa7b23d2d66249ec58eb3d4349e2264508332449e3e2e9eae2b6284b16392c2"
+      },
+      {
+        "path": "scripts/verify_prose_repair.py",
+        "blob": "b2fa99de054454350ca06b2cf1c3ba96265cd42c",
+        "sha256": "f37bfe223c514a143deb5660d06d5e02919e5cab0cfe42391cd6898f1a8e19ed"
+      },
+      {
+        "path": "tests/test_prose_repair.py",
+        "blob": "a4aae8c865a96498e0bf7ec04f72df49fe35e4d1",
+        "sha256": "92d6b6d19b8df4eeb8f2a43b150dc24844df971290f7b243bdb86aed12edf094"
+      },
+      {
+        "path": "state/learning/prose-repair-20261003/sources.json",
+        "blob": "a77ddc7a956b1d51811fff20bf7d8ea2b728e77c",
+        "sha256": "69f5725252813c9cb6f48f71137842e24a54b6d1c0f4625a36ea367580b2855b"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_VALIDATION_20261003.json",
+        "blob": "826748945fbc7803de55ed124d6889600b3098e6",
+        "sha256": "965d8119424f52c39bb6581991c80b5acb54d6e5d0da0ce0e97da284171b5cfe"
+      },
+      {
+        "path": "delivery/prose-repair-20261003/input-change-record.json",
+        "blob": "15f913febf6378f6e2a666f1dd11bc420b777ff4",
+        "sha256": "32a3b419e0489cfb7f21082fd34eb355f5a985393cd9229b51e3d58488c929a0"
+      },
+      {
+        "path": "delivery/autonomous-opening-20261003/a1.writer-input.json",
+        "blob": "b9199c905859515a4d1a50585ba52d21e7702421",
+        "sha256": "7d29b5e50c7e70aa9633ee498ab0146ae16692d5df1368859caf3d5b4122491f"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/diagnosis-settlement.json",
+        "blob": "287afa566811ce975c1c4773fac9191f3dae7241",
+        "sha256": "a6f8c5487398eaa91e23a42591248d46a57107d03a0c50c1b73007466c05524c"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/diagnosis.attempt.json",
+        "blob": "45c29fcdd3cd66c2d85a9c353fb575952ca3233f",
+        "sha256": "4e17ba7849bdc5d93c1472da72b83daf195bb762c75c51088072415c1484880e"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/writer.attempt.json",
+        "blob": "87750a938300616eaddc4d111c9d626b0c5cc098",
+        "sha256": "8059efb7966f46bda1601400e2dc35f6337e370865bdccef01a02f00f09ad97b"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/facts.attempt.json",
+        "blob": "0bb63ccf34e226944035935a33809c4ff5578b4e",
+        "sha256": "75ce30a2b6db46a5977d94d3143a1b2ff9f849bb8df8a34cda19d6f2ec61ec3d"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/editor.attempt.json",
+        "blob": "75446272fb207317bd477e00da27568afe6025e1",
+        "sha256": "efbc5407d7b60350adf8bc18278d90ff022cafa70363d48d21ced0b5017611ba"
+      },
+      {
+        "path": "state/reviews/prose-repair-20261003/reader.attempt.json",
+        "blob": "bc12389c9961401f19740144ed4d8c3d3724396f",
+        "sha256": "7ea084b9e80d00559bb11a9d3a9e281b83af6e8a20481295c4eb78f424e2fb4e"
+      }
+    ],
+    "protected_source_file_count": 405,
+    "all_prior_prose_reports_receipts_and_locks_unchanged": true,
+    "current_state": {
+      "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+      "sequence": 200,
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING",
+      "checks_passed": 27,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "literary_quality_tested_by_this_script": false,
+      "new_prose_authorized": false,
+      "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+    },
+    "human_quality_result": "UNKNOWN",
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_VALIDATION_20261003.json",
+    "blob": "826748945fbc7803de55ed124d6889600b3098e6",
+    "sha256": "965d8119424f52c39bb6581991c80b5acb54d6e5d0da0ce0e97da284171b5cfe"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 0,
+  "actual_independent_review_calls": 4,
+  "actual_all_model_calls": 5,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_quality_result": "UNKNOWN",
+  "previous_390_human_result": "FAIL",
+  "literary_quality_validated": false,
+  "intermediate_user_authorization_required": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING",
+  "this_receipt_saved_after_actual_implementation_readback": true,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
