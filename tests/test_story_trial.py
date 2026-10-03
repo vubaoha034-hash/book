@@ -2,11 +2,15 @@
 import copy,hashlib,importlib.util,json,shutil,tempfile,unittest
 from pathlib import Path
 REPO=Path(__file__).resolve().parents[1]
+GIT_REPO=REPO
 s=importlib.util.spec_from_file_location('new_story_gate',REPO/'scripts/verify_story_trial.py');g=importlib.util.module_from_spec(s);s.loader.exec_module(g)
+# Keep CP205 corruption tests bound to that stage after a later human repair.
+_live=json.loads((REPO/'state/project_state.json').read_bytes())
+if _live.get('clarity_repair'):REPO=g.history.frozen_tree(REPO,_live['clarity_repair']['source_head'])
 class StoryTrialTests(unittest.TestCase):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name).resolve()
-        source=g.history.frozen_tree(REPO,g.SOURCE)
+        source=g.history.frozen_tree(GIT_REPO,g.SOURCE)
         for p in source.rglob('*'):
             if p.is_file() and '__pycache__' not in p.parts:
                 rel=p.relative_to(source);target=self.root/rel;target.parent.mkdir(parents=True,exist_ok=True)

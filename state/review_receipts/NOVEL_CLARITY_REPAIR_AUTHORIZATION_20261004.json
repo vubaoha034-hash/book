@@ -1,0 +1,56 @@
+{
+  "schema_version": "native-one-local-clarity-repair-authorization/v1",
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "source_head": "897e756b6248e24e29c10dbdf742f8274c1b3ba9",
+  "source_checkpoint": 205,
+  "authority": {
+    "source": "ACTUAL_CURRENT_USER_MESSAGE",
+    "exact_message": "有，但是你自己检查下，这整片文章写的多乱。我甚至不知道到底是谁在做什么。我拿起她搭在椅背上的外套，伸手牵她。妈端着汤过来：“他难得回来，你这就往外跑？”\n“明早要喝，怕店关了。”\n我替女儿套上外套，拉着她往门口走。弟弟也放下筷子，拿起了门边的车钥匙。比如这句，我看了半天都没看懂这是什么人在做什么。",
+    "message_observed_directly": true
+  },
+  "standing_autonomy": "你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。",
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_383_HUMAN_INTEREST_CLARITY_FAIL_20261004.json",
+    "blob": "070c965f502a2c40fe4607467d84f3224f001c19",
+    "sha256": "8a2fe6e12539f0853e3cece063a0f516fb41d42d31247cd7d8f3afc9c5a256b7"
+  },
+  "source_artifact": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "scope": "ONE_LOCAL_CLARITY_REPAIR_OF_SAME_NEW_STORY_SHORT_ONLY",
+  "repair_limit": 1,
+  "intermediate_confirmation_required": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_plot_or_life_facts_authorized": false,
+  "full_scene_or_V5_authorized": false,
+  "multiple_visible_candidates_authorized": false,
+  "background_tasks_authorized": false,
+  "target": "人物称谓、说话对象和脱离饭桌的动作连接；保留当前事件、亲情处境及孩子抓住舅舅的结尾阻碍。",
+  "protected_paragraph_indices_0_based": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "modifiable_paragraph_indices_0_based": [
+    0,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "paragraph_count": 13,
+  "length_range": [
+    300,
+    500
+  ],
+  "new_story_direction_accepted": false,
+  "full_short_quality_accepted": false
+}

@@ -1,0 +1,88 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "CL82",
+      "item_index": 0,
+      "quote": "他离家这些年，很少回消息，今天却提着橘子敲了门。我妈把排骨推到他面前，自己只顾看着他吃。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 42,
+      "end_character_exclusive": 86,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CL82",
+      "item_index": 1,
+      "quote": "女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 189,
+      "end_character_exclusive": 240,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CL82",
+      "item_index": 2,
+      "quote": "我拿起她搭在椅背上的外套。妈端着汤过来，对我说：“你弟弟难得回来，你这就往外跑？”",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 276,
+      "end_character_exclusive": 317,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CL82",
+      "item_index": 3,
+      "quote": "女儿从椅子上起来，我替她套上外套，再牵着她往门口走。弟弟也放下筷子，起身走到门边，拿起了车钥匙。",
+      "reported_line": 21,
+      "actual_line": 21,
+      "start_character_0_based": 338,
+      "end_character_exclusive": 386,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CL82",
+      "item_index": 4,
+      "quote": "他对我说：“我带她去，你吃饭。”",
+      "reported_line": 23,
+      "actual_line": 23,
+      "start_character_0_based": 388,
+      "end_character_exclusive": 404,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "CL82",
+      "item_index": 5,
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 406,
+      "end_character_exclusive": 441,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/clarity-repair-20261004/editor-packet.json",
+    "blob": "8edb6fdd937e154f544f1ecbbf32879e563b1e72",
+    "sha256": "3cb192d18befbd51cd760ff1a228c1644c05b64ff3f5ed13dc75a39de911cb6e"
+  },
+  "raw_report": {
+    "path": "state/reviews/clarity-repair-20261004/editor.raw.txt",
+    "blob": "a966740abc0034efb55d49f70f4dc5b8078dd92a",
+    "sha256": "50ed097d2024f8408702ca2a6087ee5ef6a658fca2fdbd1e5b4dbf47badf852f"
+  }
+}

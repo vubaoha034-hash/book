@@ -1,0 +1,117 @@
+{
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/clarity-repair-20261004/editor-packet.json",
+    "blob": "8edb6fdd937e154f544f1ecbbf32879e563b1e72",
+    "sha256": "3cb192d18befbd51cd760ff1a228c1644c05b64ff3f5ed13dc75a39de911cb6e"
+  },
+  "started_at": "2026-10-03T22:46:46Z",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "max",
+  "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+  "report_received": true,
+  "model_turn_dispatched": true,
+  "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY",
+  "repository_write_permission": false,
+  "generation_count": 0,
+  "prompt_policy_sha256": "242ba601039727d0f793202a585e5c0851b09cfde4fc12b11ca118fab87259d6",
+  "model_catalog_entry": {
+    "id": "gpt-6.1-sol",
+    "model": "gpt-6.1-sol",
+    "upgrade": null,
+    "upgradeInfo": null,
+    "availabilityNux": {
+      "message": "Maximize usage with GPT-6.1 Sol. Try it on complex work for near-Astra performance at a lower cost."
+    },
+    "displayName": "GPT-6.1-Sol",
+    "description": "Latest workhorse model for coding and everyday work.",
+    "modelSpecialty": null,
+    "hidden": false,
+    "supportedReasoningEfforts": [
+      {
+        "reasoningEffort": "low",
+        "description": "Fast responses with lighter reasoning"
+      },
+      {
+        "reasoningEffort": "medium",
+        "description": "Balances speed and reasoning depth for everyday tasks"
+      },
+      {
+        "reasoningEffort": "high",
+        "description": "Greater reasoning depth for complex problems"
+      },
+      {
+        "reasoningEffort": "xhigh",
+        "description": "Extra high reasoning depth for complex problems"
+      },
+      {
+        "reasoningEffort": "max",
+        "description": "Maximum reasoning depth for the hardest problems"
+      },
+      {
+        "reasoningEffort": "ultra",
+        "description": "Maximum reasoning with automatic task delegation"
+      }
+    ],
+    "defaultReasoningEffort": "low",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "supportsPersonality": false,
+    "multiAgentVersion": "v2",
+    "additionalSpeedTiers": [
+      "fast"
+    ],
+    "serviceTiers": [
+      {
+        "id": "priority",
+        "name": "Fast",
+        "description": "2x speed, increased usage"
+      }
+    ],
+    "defaultServiceTier": null,
+    "availableAccessPrograms": {
+      "cyber": [
+        "standard"
+      ]
+    },
+    "isDefault": true
+  },
+  "resolved_thread_settings": {
+    "model": "gpt-6.1-sol",
+    "modelProvider": "openai",
+    "reasoningEffort": "max",
+    "approvalPolicy": "never",
+    "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+    },
+    "instructionSources": [],
+    "runtimeWorkspaceRoots": []
+  },
+  "thread_id": "01a103f2-d352-7b80-885b-1472497ce783",
+  "submitted_payload_sha256": "278cb6fb63fa877a6732b36a08d1d1c0c600e18903bd5f37c195ce163e02d625",
+  "turn_status": "completed",
+  "completed_item_types": [
+    "userMessage",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "agentMessage"
+  ],
+  "tool_activity_detected": [],
+  "model_initiated_requests": [],
+  "raw_report": {
+    "path": "state/reviews/clarity-repair-20261004/editor.raw.txt",
+    "blob": "a966740abc0034efb55d49f70f4dc5b8078dd92a",
+    "sha256": "50ed097d2024f8408702ca2a6087ee5ef6a658fca2fdbd1e5b4dbf47badf852f"
+  },
+  "finished_at": "2026-10-03T22:49:42Z",
+  "elapsed_seconds": 176.351
+}

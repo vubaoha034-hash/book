@@ -1,0 +1,35 @@
+{
+  "schema_version": "native-new-story-qualified-feedback/v1",
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "source_head": "897e756b6248e24e29c10dbdf742f8274c1b3ba9",
+  "source_checkpoint": 205,
+  "recorded_at": "2026-10-03T22:41:31Z",
+  "output": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "human_exact_feedback": "有，但是你自己检查下，这整片文章写的多乱。我甚至不知道到底是谁在做什么。我拿起她搭在椅背上的外套，伸手牵她。妈端着汤过来：“他难得回来，你这就往外跑？”\n“明早要喝，怕店关了。”\n我替女儿套上外套，拉着她往门口走。弟弟也放下筷子，拿起了门边的车钥匙。比如这句，我看了半天都没看懂这是什么人在做什么。",
+  "outcome": "INTEREST_YES_CLARITY_FAIL",
+  "prior_records_rewritten": false,
+  "review": {
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "human_exact_feedback": "有，但是你自己检查下，这整片文章写的多乱。我甚至不知道到底是谁在做什么。我拿起她搭在椅背上的外套，伸手牵她。妈端着汤过来：“他难得回来，你这就往外跑？”\n“明早要喝，怕店关了。”\n我替女儿套上外套，拉着她往门口走。弟弟也放下筷子，拿起了门边的车钥匙。比如这句，我看了半天都没看懂这是什么人在做什么。",
+    "bound_artifact_path": "delivery/new-story-20261004/opening-a1.md",
+    "bound_blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "bound_sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61",
+    "wants_to_continue": true,
+    "retention_verdict": "YES_ONLY_FOR_THIS_383_SHORT",
+    "clarity_verdict": "FAIL_CANNOT_FOLLOW_ACTORS_AND_ACTIONS",
+    "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "human_located_passage": "原文第17—21行附近，穿外套/母亲问话/弟弟拿钥匙段；这是读不清的位置，不是停止句。",
+    "topic_rejection": false
+  }
+}

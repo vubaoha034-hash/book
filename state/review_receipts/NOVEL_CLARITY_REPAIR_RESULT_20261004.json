@@ -1,0 +1,111 @@
+{
+  "schema_version": "native-one-local-clarity-repair-result/v1",
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "source_head": "897e756b6248e24e29c10dbdf742f8274c1b3ba9",
+  "source_checkpoint": 205,
+  "recorded_at": "2026-10-03T22:57:19Z",
+  "primary_generation_count": 0,
+  "local_repair_count": 1,
+  "visible_candidate_count": 1,
+  "actual_model_calls": 3,
+  "successful_model_calls": 3,
+  "human_quality_result": "UNKNOWN",
+  "source_human_interest": true,
+  "source_human_clarity": "FAIL",
+  "remaining_repair_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_plot_or_life_facts_authorized": false,
+  "full_scene_or_TEST01_promoted": false,
+  "literary_quality_validated": false,
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CLARITY_REPAIRED_SHORT",
+  "status": "ONE_LOCAL_CLARITY_REPAIR_FROZEN_AWAIT_ACTUAL_HUMAN_READING",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_CLARITY_REPAIR_AUTHORIZATION_20261004.json",
+    "blob": "2855feb52d7dbb7e9c30e7763f5bc52c8fc5401f",
+    "sha256": "61eb593b3882b66852cc4908dfa0f513f147ee501adeaae614065f1603b0852a"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_383_HUMAN_INTEREST_CLARITY_FAIL_20261004.json",
+    "blob": "070c965f502a2c40fe4607467d84f3224f001c19",
+    "sha256": "8a2fe6e12539f0853e3cece063a0f516fb41d42d31247cd7d8f3afc9c5a256b7"
+  },
+  "manifest": {
+    "path": "config/novel-clarity-repair-20261004.json",
+    "blob": "c75ff28670df0632bf2ee3af3ac311d9c8348c70",
+    "sha256": "ddc23e33f0600a0ea180c889ce26b444c697f070031c84492468ec2387be718e"
+  },
+  "source_artifact": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "writer_input": {
+    "path": "delivery/clarity-repair-20261004/writer-input.json",
+    "blob": "93bd2103dd538d7e3aabfa2a17208cee21a7a2ab",
+    "sha256": "0fb2f8f531476108b3809fa82d7a71f812b21d12023040adcaaef535bc108401"
+  },
+  "final_artifact": {
+    "path": "delivery/clarity-repair-20261004/opening-repaired.md",
+    "blob": "e8644506719ef54a404d66a4df59365767e564ad",
+    "sha256": "3c4cbdfbdbb90308213955191cb0accb69cf845512b64b4513afd5f434a0aec8"
+  },
+  "settlement": {
+    "path": "state/reviews/clarity-repair-20261004/coordinator-settlement.json",
+    "blob": "b0e98cd972c3be9fc2f0c19cff336874713ae94d",
+    "sha256": "ce0a2de6a79429f2dfe0d5bcd3dd310ccf2246a013e6ac95b7ab2b574301db46"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/clarity-repair-20261004/pending-human-review.json",
+    "blob": "b766e9953e6cc221b49e9c003e2c8726c66a47cb",
+    "sha256": "75b8ed04dff03ae8b95cdce4ffa3380a4bc98ede23da1263bd39db093d4b1094"
+  },
+  "runtimes": {
+    "writer": {
+      "path": "state/reviews/clarity-repair-20261004/writer.runtime.json",
+      "blob": "5935e301d9fd7b7497a58ef6b21bb4cffdb7dba9",
+      "sha256": "7fcbe396841342eabb3b0b1d2ba8b78ae987d7f4da351495001ca0c9c82ef0bf"
+    },
+    "editor": {
+      "path": "state/reviews/clarity-repair-20261004/editor.runtime.json",
+      "blob": "2678231dcb706bda8e91a2e9b99096a930157c91",
+      "sha256": "686d5b63d03a48a369a60c05043592c3b96edcf597aa1edaec3c9956ac6adec2"
+    },
+    "reader": {
+      "path": "state/reviews/clarity-repair-20261004/reader.runtime.json",
+      "blob": "42b578c0f908e0eae1ebd752182284ba8d380b40",
+      "sha256": "8735bb42a1556528bc33afd449d5e28eeb15b65c9bb7c79a1bd705aa2620cf9d"
+    }
+  },
+  "raw_reports": {
+    "editor": {
+      "path": "state/reviews/clarity-repair-20261004/editor.raw.txt",
+      "blob": "a966740abc0034efb55d49f70f4dc5b8078dd92a",
+      "sha256": "50ed097d2024f8408702ca2a6087ee5ef6a658fca2fdbd1e5b4dbf47badf852f"
+    },
+    "reader": {
+      "path": "state/reviews/clarity-repair-20261004/reader.raw.txt",
+      "blob": "1921a7f690051349e7e5efcf323fb2bca6c617d0",
+      "sha256": "afa00a889e608a0a77b62f6c79b793a7f391f80627c377cc7ad5548a5f5856eb"
+    }
+  },
+  "evidence": {
+    "editor": {
+      "path": "state/reviews/clarity-repair-20261004/editor.evidence.json",
+      "blob": "64d961cfc33ad1f13b77d1fad85082d646a2a8ee",
+      "sha256": "8a427a5e026b67da0f4de9b86c8d3dbf037f0a642295eb5432461f66f397a90c"
+    },
+    "reader": {
+      "path": "state/reviews/clarity-repair-20261004/reader.evidence.json",
+      "blob": "4f081cbbe7fd29d987b5638afa19add42d6a85e2",
+      "sha256": "078d656e1b340c1fc5f62b249056081144b1d823bdbbfc3d18e6169fc76265c5"
+    }
+  },
+  "result_document": {
+    "path": "docs/NOVEL_CLARITY_REPAIR_RESULT_20261004.md",
+    "blob": "dba4c2a5e7d96521afec129116c83ebf8a4490e0",
+    "sha256": "10c0484a15e13557a00cc346a380aff1e74395621f9ceb54761384da7781496f"
+  }
+}

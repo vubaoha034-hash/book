@@ -1,0 +1,82 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "我刚给弟弟添满一碗饭，手机在桌上震起来。我八岁的女儿挪到她舅舅身边，叫他替她挑鱼刺。",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+      "actual_line": 11,
+      "start_character_0_based": 189
+    },
+    {
+      "index": 2,
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "actual_line": 25,
+      "start_character_0_based": 406
+    },
+    {
+      "index": 3,
+      "quote": "我八岁的女儿挪到她舅舅身边，叫他替她挑鱼刺。他离家这些年，很少回消息，今天却提着橘子敲了门。我妈把排骨推到他面前，自己只顾看着他吃。",
+      "actual_line": 1,
+      "start_character_0_based": 20
+    },
+    {
+      "index": 4,
+      "quote": "“我们正在追查你弟弟，刚在楼外看见他进了你们单元。现在有危险，别惊动他，先把孩子带出来。”",
+      "actual_line": 5,
+      "start_character_0_based": 116
+    },
+    {
+      "index": 5,
+      "quote": "我拿起她搭在椅背上的外套。妈端着汤过来，对我说：“你弟弟难得回来，你这就往外跑？”\n\n我对妈说：“明早要喝，怕店关了。”",
+      "actual_line": 17,
+      "start_character_0_based": 276
+    },
+    {
+      "index": 6,
+      "quote": "女儿从椅子上起来，我替她套上外套，再牵着她往门口走。弟弟也放下筷子，起身走到门边，拿起了车钥匙。\n\n他对我说：“我带她去，你吃饭。”",
+      "actual_line": 21,
+      "start_character_0_based": 338
+    },
+    {
+      "index": 7,
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "actual_line": 25,
+      "start_character_0_based": 406
+    },
+    {
+      "index": 8,
+      "quote": "女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。",
+      "actual_line": 11,
+      "start_character_0_based": 189
+    },
+    {
+      "index": 9,
+      "quote": "她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "actual_line": 25,
+      "start_character_0_based": 414
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/clarity-repair-20261004/reader-packet.json",
+    "blob": "854ce0119abf87d4cf1167dacc6ac7f22a966057",
+    "sha256": "c160c625cd2a8b088b87916f25c0bed27d457ac4d9d529466caef1462f857756"
+  },
+  "raw_report": {
+    "path": "state/reviews/clarity-repair-20261004/reader.raw.txt",
+    "blob": "1921a7f690051349e7e5efcf323fb2bca6c617d0",
+    "sha256": "afa00a889e608a0a77b62f6c79b793a7f391f80627c377cc7ad5548a5f5856eb"
+  }
+}

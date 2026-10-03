@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "role": "writer",
+  "packet": {
+    "path": "delivery/clarity-repair-20261004/writer-input.json",
+    "blob": "93bd2103dd538d7e3aabfa2a17208cee21a7a2ab",
+    "sha256": "0fb2f8f531476108b3809fa82d7a71f812b21d12023040adcaaef535bc108401"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T22:41:50Z"
+}

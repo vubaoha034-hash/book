@@ -1,0 +1,222 @@
+{
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "source_head": "897e756b6248e24e29c10dbdf742f8274c1b3ba9",
+  "final_artifact": {
+    "path": "delivery/clarity-repair-20261004/opening-repaired.md",
+    "blob": "e8644506719ef54a404d66a4df59365767e564ad",
+    "sha256": "3c4cbdfbdbb90308213955191cb0accb69cf845512b64b4513afd5f434a0aec8"
+  },
+  "source_artifact": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "raw_reports_rewritten": false,
+  "AI_quality_certification": false,
+  "coordinator_prose_edits": 0,
+  "reader_vote_triggers_more_generation": false,
+  "human_quality_result": "UNKNOWN",
+  "high_impact_unresolved": [],
+  "fact_conflicts_unresolved": [],
+  "finding_dispositions": [],
+  "clarity_checks": [
+    {
+      "quote": "我八岁的女儿挪到她舅舅身边，叫他替她挑鱼刺。",
+      "line": 1,
+      "actor": "女儿",
+      "object_or_listener": "弟弟，也是女儿的舅舅",
+      "reason": "用亲属称谓建立同一个人的两种关系，不引入第五个人。"
+    },
+    {
+      "quote": "我对女儿说：“走，陪妈妈下楼买酸奶。”",
+      "line": 13,
+      "actor": "叙述者我，孩子的妈妈",
+      "object_or_listener": "女儿",
+      "reason": "称呼妈妈与说话对象在正文中明确；不靠人物卡证明。"
+    },
+    {
+      "quote": "妈端着汤过来，对我说：“你弟弟难得回来，你这就往外跑？”",
+      "line": 17,
+      "actor": "我的母亲",
+      "object_or_listener": "叙述者我",
+      "reason": "母亲在劝自己的女儿留饭桌，不是女儿劝舅舅。"
+    },
+    {
+      "quote": "我对妈说：“明早要喝，怕店关了。”",
+      "line": 19,
+      "actor": "叙述者我",
+      "object_or_listener": "我的母亲",
+      "reason": "把这句回答接回母亲的问话；酸奶是此前已给出的离开借口。"
+    },
+    {
+      "quote": "女儿从椅子上起来，我替她套上外套，再牵着她往门口走。",
+      "line": 21,
+      "actor": "女儿先起身；叙述者给孩子穿衣后牵手",
+      "object_or_listener": "女儿",
+      "reason": "穿外套在牵手之前；没有把母亲当成动作对象。"
+    },
+    {
+      "quote": "弟弟也放下筷子，起身走到门边，拿起了车钥匙。",
+      "line": 21,
+      "actor": "弟弟",
+      "object_or_listener": "门边的车钥匙；所有权未交代",
+      "reason": "从饭桌起身并走到门边再拿钥匙，补足此前未交代的空间连接；不据此推定钥匙属于谁。"
+    },
+    {
+      "quote": "他对我说：“我带她去，你吃饭。”",
+      "line": 23,
+      "actor": "弟弟",
+      "object_or_listener": "叙述者我；她指女儿",
+      "reason": "上一句已锚定弟弟，说话对象是姐姐，提议带孩子出去。"
+    },
+    {
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "line": 25,
+      "actor": "弟弟伸手；女儿换手",
+      "object_or_listener": "弟弟的食指",
+      "reason": "延续前文妈妈牵着女儿，未写孩子已经跟舅舅离家；结尾阻碍逐字保留。"
+    }
+  ],
+  "coordinator_source_diagnosis": [
+    {
+      "quote": "八岁的女儿挪到他身边，叫他替她挑鱼刺。",
+      "line": 1,
+      "basis": "EDITOR_HYPOTHESIS",
+      "explanation": "虽然能推断他是弟弟，但正文未自然落下女儿与舅舅关系；我是谁要到后面“陪妈妈”才明确。"
+    },
+    {
+      "quote": "我拿起她搭在椅背上的外套，伸手牵她。妈端着汤过来：“他难得回来，你这就往外跑？”\n\n“明早要喝，怕店关了。”",
+      "line": 17,
+      "basis": "EDITOR_HYPOTHESIS",
+      "explanation": "人物焦点从女儿转到母亲，省略回答者与说话对象，依赖读者回找；不是凭字面代词自动判错，是真人报告理解失败后的定位假设。"
+    },
+    {
+      "quote": "我替女儿套上外套，拉着她往门口走。弟弟也放下筷子，拿起了门边的车钥匙。",
+      "line": 21,
+      "basis": "EDITOR_HYPOTHESIS",
+      "explanation": "穿衣与牵手先后、弟弟从桌边到门边的连接交代不足。没有明写移动不等于事实瞬移；影响是读者需要自己补动作。"
+    }
+  ],
+  "prior_review_miss": {
+    "dimension": "ACTOR_ACTION_CLARITY_NOT_RETENTION",
+    "source_artifact": {
+      "path": "delivery/new-story-20261004/opening-a1.md",
+      "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+      "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_NEW_STORY_383_HUMAN_INTEREST_CLARITY_FAIL_20261004.json",
+      "blob": "070c965f502a2c40fe4607467d84f3224f001c19",
+      "sha256": "8a2fe6e12539f0853e3cece063a0f516fb41d42d31247cd7d8f3afc9c5a256b7"
+    },
+    "prior_editor_raw": {
+      "path": "state/reviews/new-story-20261004/editor.raw.txt",
+      "blob": "2e719ed8173b3e40eb05adfaf4cb75d010338985",
+      "sha256": "b998402d3884bffc16303bc0ab6a6992f2a8c8a7dcece28aa44ddaa56343ba11"
+    },
+    "prior_reader_raw": {
+      "path": "state/reviews/new-story-20261004/reader.raw.txt",
+      "blob": "c3a296e1dd362679c352fa2c7a12f9405a2e8dbc",
+      "sha256": "2bafd1c6fd59eb5f4480b40dac20c0da246b6e28c8ef1776bc770c698dc70f76"
+    },
+    "prior_editor_verdict": "EDITORIAL_CLEAR",
+    "prior_reader_flow_claim": "阅读仍顺畅，注意力转向她的借口能否让家人接受。",
+    "disposition": "此前专业审查没有报出高影响清晰度问题；匿名AI读者说顺畅。与本次真人理解失败不一致。真人同时有续读欲望，不新增留存漏检计数，不擦除局部兴趣。",
+    "coordinator_hypothesis": "熟知冻结关系的编辑可能自动补足指代；冷读AI也做了补全。无法以一个案例证明原因或统计准确率。"
+  },
+  "scope_diff": {
+    "path": "state/reviews/clarity-repair-20261004/scope-diff.json",
+    "blob": "b0b4b7b2848dd97440c8702bde3c7acc46edad4a",
+    "sha256": "e30303fc916352a9e617711ef12d50b7215f23c20a4e09c85a0a4c9646269756"
+  },
+  "editor_window_quote_checks": [
+    {
+      "window": "first_30_60",
+      "quote": "我刚给弟弟添满一碗饭，手机在桌上震起来。我八岁的女儿挪到她舅舅身边，叫他替她挑鱼刺。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "non_whitespace_range_1_based": [
+        1,
+        42
+      ]
+    },
+    {
+      "window": "first_150_300",
+      "quote": "“我们正在追查你弟弟，刚在楼外看见他进了你们单元。现在有危险，别惊动他，先把孩子带出来。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 116,
+      "non_whitespace_range_1_based": [
+        113,
+        157
+      ]
+    },
+    {
+      "window": "ending",
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 406,
+      "non_whitespace_range_1_based": [
+        383,
+        417
+      ]
+    }
+  ],
+  "reader_window_quote_checks": [
+    {
+      "window": "first_30_60",
+      "quote": "我刚给弟弟添满一碗饭，手机在桌上震起来。我八岁的女儿挪到她舅舅身边，叫他替她挑鱼刺。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "non_whitespace_range_1_based": [
+        1,
+        42
+      ]
+    },
+    {
+      "window": "first_150_300",
+      "quote": "女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 189,
+      "non_whitespace_range_1_based": [
+        180,
+        230
+      ]
+    },
+    {
+      "window": "ending",
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 406,
+      "non_whitespace_range_1_based": [
+        383,
+        417
+      ]
+    }
+  ],
+  "report_verdicts": {
+    "editor": "EDITORIAL_CLEAR",
+    "reader": "YES"
+  },
+  "elapsed": {
+    "model_critical_path_seconds": 423.775,
+    "roles": {
+      "writer": 174.568,
+      "editor": 176.351,
+      "reader": 249.207
+    },
+    "total_user_wait_seconds": "UNKNOWN_NOT_FULLY_MEASURED"
+  },
+  "limitations": [
+    "本次有续读欲望只绑定原383字，不推出AI味/情绪/整篇通过。",
+    "新417字尚未经过真人阅读；清晰度是否解决仍未知。",
+    "AI理解了人物不证明所有读者能理解；未补课到“正确答案”的匿名读者仅返回一次反应。",
+    "目前只修指代与动作连接，没有改电话信息保留、情绪呈现或故事走向。",
+    "窗口标签不是引文所在字数的证明；编辑的150—300字窗口引文跨越窗口前界，不能证明覆盖整个窗口。另存实际行号与非空白字数坐标，原报告不改写。"
+  ]
+}

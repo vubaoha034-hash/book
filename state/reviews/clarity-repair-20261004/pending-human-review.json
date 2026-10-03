@@ -1,0 +1,13 @@
+{
+  "task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "artifact": {
+    "path": "delivery/clarity-repair-20261004/opening-repaired.md",
+    "blob": "e8644506719ef54a404d66a4df59365767e564ad",
+    "sha256": "3c4cbdfbdbb90308213955191cb0accb69cf845512b64b4513afd5f434a0aec8"
+  },
+  "outcome": "UNKNOWN",
+  "human_feedback": {},
+  "accepted": false,
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CLARITY_REPAIRED_SHORT"
+}
