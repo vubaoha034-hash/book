@@ -1,0 +1,223 @@
+{
+  "schema_version": "native-bounded-preparation-remote-save/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "recorded_at": "2026-10-03 05:13:50 UTC",
+  "status": "MAIN_PREPARATION_SAVED_AND_ACTUAL_BYTES_READ_BACK",
+  "source_head": "fcc71ed5425a9479bde55db6d560114fa4c793a0",
+  "source_checkpoint": 194,
+  "saved_checkpoint": 195,
+  "local_implementation_commit": "9442cbe0bdf445b3611dbcaed3613325bf4ea5f7",
+  "native_implementation_commit": "2d8c2022db44725ae905b942ed0071d09d1ab64a",
+  "implementation_tree": "3c3d246a4b0382789b09b96a52f4c3a8e16c7f2e",
+  "local_and_native_trees_identical": true,
+  "publication_method": "EXISTING_CONNECTED_GITHUB_GIT_DATA_APIS_UPDATE_MAIN_FORCE_FALSE; CONTENTS_API_CREATES_READBACK_RECEIPT",
+  "terminal_push_attempted_this_task": false,
+  "new_credentials_or_paid_service_added": false,
+  "implementation_readback": {
+    "status": "REMOTE_PREPARATION_BYTES_AND_HISTORY_VERIFIED",
+    "remote_head": "2d8c2022db44725ae905b942ed0071d09d1ab64a",
+    "source_head": "fcc71ed5425a9479bde55db6d560114fa4c793a0",
+    "checkpoint": 195,
+    "checked_count": 34,
+    "files": [
+      {
+        "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_AUTHORIZATION_20261003.json",
+        "blob": "956937bb31700e7544dc5f1ad26234a9659b0d0d",
+        "sha256": "998eb8f599b05c0cbe6fa40e79e9b3b9b5e1f704cd935f63b394b899452fe75e"
+      },
+      {
+        "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+        "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+        "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a"
+      },
+      {
+        "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+        "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+        "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+      },
+      {
+        "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
+        "blob": "16aa7810988f4dabe91fb6c448c9085acc3d204a",
+        "sha256": "aa0d52a988ff5140d3cce7edccdc64262ab9acb7d0d8007a77fddc8e3ef7698e"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+        "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+        "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+      },
+      {
+        "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_20261003.json",
+        "blob": "f1c822a9e0893adda60d95c111e2a017b8e6ce9a",
+        "sha256": "c7d845e745db84c5d1cd85db8cde4e612e28895decacb7985a9f0ef659fab3a2"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.json",
+        "blob": "7e2993f2757fcbdc0c801acfbc177ace3827ee6c",
+        "sha256": "e5affca6ce1d073073a55ec3bcc33ac0d3c08b225a9b1f5a5a92007b4e6f8e5d"
+      },
+      {
+        "path": "delivery/r2-reentry-facts-20261003/preparation-evidence.json",
+        "blob": "200193a704416d0da1996312d5a00de0f96434de",
+        "sha256": "52ea386deb58395c14af91a5d043942b845ef573224c88acbb5612af998097ff"
+      },
+      {
+        "path": "delivery/phase409/00-story-contract.md",
+        "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+        "sha256": "2b41211b4304db5e02de8df7859636a5d16ed464450293ce0e142fd90023ecf3"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_MAINLINE_V4_LOCK_20261001.json",
+        "blob": "207009866a109415c13aac154f6f153a65d6c55d",
+        "sha256": "8a685fdd0527bdd1051e0fafd437c9073059c4cb6678253b1675a48ce205afd5"
+      },
+      {
+        "path": "delivery/mainline-v1/test-01-scene-facts.json",
+        "blob": "09b34c51b226ebf00a6d54c776127fa9e4de6ad0",
+        "sha256": "60a303c39320ae36105f48f59176f04902196df7dfe7db6b728bb5b435beae3a"
+      },
+      {
+        "path": "delivery/mainline-v4/test-01-short-writer-input.md",
+        "blob": "9e7c22081fdaee106b0ca52f88e460a06ec17526",
+        "sha256": "d8570bcc5ef6ea3f60e97b20bdb7b6d899a8c51838ee2608fb8f80104b79f845"
+      },
+      {
+        "path": "delivery/phase421/final.md",
+        "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+        "sha256": "abc225414c5f199a8e296d57d5f06afcfde59d36021695e51cb0afbb70089046"
+      },
+      {
+        "path": "state/review_receipts/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+        "blob": "fc7455bcb397e807ddaf768bd60d98cf70dda62a",
+        "sha256": "ae0ff997139108561b87ebf3eabb46077c0bc836bbe191d09df1ea1e9d971839"
+      },
+      {
+        "path": "delivery/phase422/06-draft-v4.md",
+        "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3",
+        "sha256": "3e7a2e08e4a2de92358561a77bfff5c3e90b9738ab66d826215e65cc60f34b55"
+      },
+      {
+        "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+        "blob": "a605fd25adb97b361fb833be8d3866bb69e2fcad",
+        "sha256": "fb8304cca07921a57a0911e2290ac3a5302001056f3dc9ccc5ac6004c3b4542c"
+      },
+      {
+        "path": "delivery/phase422/07-opening-scene-trial-after-v4.md",
+        "blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
+        "sha256": "f33fdb072ad8b0168aa470432675d6f8b6f5bd65183980656669c90a6da8fa5f"
+      },
+      {
+        "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+        "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683",
+        "sha256": "1bd435801f5c6c81698630ccd179eef7efc4caa3f215312d496f55110e4c7f9b"
+      },
+      {
+        "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+        "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+        "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+      },
+      {
+        "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
+        "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
+        "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39"
+      },
+      {
+        "path": "docs/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.md",
+        "blob": "934667ef39d9797249bcd9614b021b5d1b1e2b1d",
+        "sha256": "b24fcf486397ee9fa22ce10cb810e794dc7fca716046fe3c5f38db902d5d4d3f"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_RESULT_20261003.json",
+        "blob": "de6b6344e81f07a8564c0cdf05e1a9afa4182784",
+        "sha256": "919048be3493d2b64b5fcf7ecb61966e5a962248692b679d568400fc0f7192d3"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "b68bfa2e9baaf34496263a28472e6827ef16de78",
+        "sha256": "a207a8d5eccc8c8769cec56d90071863b59b3f8a4d3e686d7e21ee407451b134"
+      },
+      {
+        "path": "README.md",
+        "blob": "1e4c96ae06cbee568ec162ed7df44fb1317e0d18",
+        "sha256": "04d4081e1263c42f3c57c0e6653003a62851a13efceb95e6190d289e994f7d65"
+      },
+      {
+        "path": "AGENTS.md",
+        "blob": "1653c16499845b91e05b365915c5353742846f36",
+        "sha256": "ffb2971695103db36fabf42c58a7fc5ccb0cae350bee3c05f549db927422d098"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "326e69de1e291e774396b580101aa569e57c78ca",
+        "sha256": "d838301d419d5b678bd5a723198d6d6a1324532502153adac49e1858ec743e33"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "02e548ce6433010d4484711a59ea10aa499ef5e0",
+        "sha256": "cc59ebd706bc1650165660e63337028882a860e4d5fdcf1d270ac8a8ef8def82"
+      },
+      {
+        "path": "scripts/verify_review_publication.py",
+        "blob": "d98f208425582d061c263e606069148b91b8efcf",
+        "sha256": "54869434347e05322429032e65d14b0d85aac75db6922985dfd7711dad29b0e9"
+      },
+      {
+        "path": "tests/test_current_state.py",
+        "blob": "83e915c05184efc538ab4076b29ae600dd97303c",
+        "sha256": "bce29de3779db5ef2e043a26a76d927c9bf3322996c5f38fa8233e3d16eebae1"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "19397b6d0c96feb33e0be8086d3400fb526c7211",
+        "sha256": "f775a197de409e95314c50c4ba82f0d17cc9949b5b05e139d9d0c984bfe3c6a9"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "bd8ef1ea6b1d1019ea7c796438d57bd365bccc1d",
+        "sha256": "a291fc7fce083bfe8b4d7b1d8b2c9a0491342649d7fb0a9e1062382bf2468e46"
+      },
+      {
+        "path": "scripts/verify_reentry_preparation.py",
+        "blob": "e141602e9daa4a1d4ef5c59f29513f162d6983c5",
+        "sha256": "6ec28f7bebe5b941017eee15ba5655222cc7948f21a372d20fb1ebc377cc040c"
+      },
+      {
+        "path": "tests/test_reentry_preparation.py",
+        "blob": "6b5ee0ded742f77d0f5c4c78174931ba6b2a8310",
+        "sha256": "228ac06e51b08293ab9fa530c410fd1275df4810eb95a240bd2f9373d41856c8"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_VALIDATION_20261003.json",
+        "blob": "ecb65f4d08e2f63d7e2f59eeaa1a6ec00b144876",
+        "sha256": "5790576069424d64f6758d03674ebf79f9f085e9d25a02bcb0a13db74ecc7823"
+      }
+    ],
+    "protected_source_file_count": 292,
+    "all_prior_prose_and_raw_reports_unchanged": true,
+    "model_calls": 0,
+    "generation_count": 0
+  },
+  "proof_boundary": "Implementation bytes and references were read from actual remote main at the native implementation commit above. This receipt is saved afterward; its own final commit must be fetched and read back separately, not guessed inside this file.",
+  "current_state_checks_passed": 27,
+  "unit_tests_passed": 111,
+  "located_quotes": 12,
+  "protected_old_prefix_sha256": "4118de6e79177af5a528dfaae2c415c3650aeb26df5c73ed42b31df7a2c9aa8f",
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "new_life_facts_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "method_revision": 4,
+  "method_revision_changed": false,
+  "review_model_calls_this_task": 0,
+  "independent_review_this_task": false,
+  "literary_effect_retested": false,
+  "old_raw_reports_rewritten": false,
+  "old_proposal_rewritten": false,
+  "prior_browser_callback_received": false,
+  "new_old_flow_elapsed_time_comparison": "UNKNOWN_NOT_MEASURED",
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false
+}
