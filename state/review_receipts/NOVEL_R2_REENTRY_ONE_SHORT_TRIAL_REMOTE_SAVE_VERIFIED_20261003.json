@@ -1,0 +1,218 @@
+{
+  "schema_version": "native-remote-save-verification/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "recorded_at": "2026-10-03T07:52:43.375635+00:00",
+  "status": "REMOTE_MAIN_IMPLEMENTATION_BYTES_HISTORY_AND_BUSINESS_GATES_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "source_head": "b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4",
+  "source_checkpoint": 195,
+  "saved_checkpoint": 196,
+  "verified_implementation_commit": "a098219ec7115a21ea6c90eb9ac44760359e349f",
+  "verified_implementation_tree": "e79f9ff565d9b46a0890f7ed4207e2b05749ea77",
+  "local_implementation_commit": "4e2c872b60167648d9eef363372b3f5d01131d02",
+  "same_native_and_local_tree_verified": true,
+  "publication_method": "NATIVE_GITHUB_GIT_OBJECTS_AND_NON_FORCE_MAIN_UPDATE",
+  "readback_method": "FRESH_LS_REMOTE_FETCH_PINNED_GIT_ARCHIVE_BYTES_AND_REFERENCES",
+  "remote_files_read_back": [
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_AUTHORIZATION_20261003.json",
+      "blob": "1c3da672bea55259d4ec22d58094b82e520a3a09",
+      "sha256": "05a4ee723d9cc48e1e1e47f966d282c94a026adf16d98c459ac085c7d187e223"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
+      "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
+      "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39"
+    },
+    {
+      "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+      "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+      "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+    },
+    {
+      "path": "config/novel-r2-entry-trial-20261003.json",
+      "blob": "062499935555fdb9f13d506786851241026a1b24",
+      "sha256": "7c6615ed9e0e5f57c5e4798f9c306e0efda0281ff11127fe07e4f5bf3c70876c"
+    },
+    {
+      "path": "delivery/r2-entry-trial-20261003/writer-input.json",
+      "blob": "afd0ed1526701f4b38cea5cec56483f2fcee2e20",
+      "sha256": "d14292ccc0b2a29d1d1b795974a8ffb1d6063fd0b5d19ae2048f167fd9a0e86a"
+    },
+    {
+      "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+      "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+      "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+    },
+    {
+      "path": "state/authoring/r2-entry-trial-20261003/writer.runtime.json",
+      "blob": "4c0011903b7228343350ab5be674d821005a7a8b",
+      "sha256": "5fd6e3a97c1d410b1fd3c5903114a7ed6c02a5c30d0fa0d2710ffd62e167bd38"
+    },
+    {
+      "path": "delivery/r2-entry-trial-20261003/facts.packet.json",
+      "blob": "7b0dbe2a847c29a4f31a854823b141387692b85b",
+      "sha256": "fe386968cf04c395ac2bd03f4a9e7c30d056b7f727c730bc9bf9a9a1db5e442a"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.runtime.json",
+      "blob": "836c90e72eeb8bf71859212f0841beb5b51f8877",
+      "sha256": "12e26d6b47822862ae1f5b6683a9e72a4dc33e09ff49f3167c80d89b3e0475dd"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.raw.txt",
+      "blob": "4ef46bd9415055ce7c9adacec68afbe6569c012b",
+      "sha256": "6adde614d8a9b138463db962a7c3d4f42ebe0cdc0de1bff2a6240678fbfb3a93"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.evidence.json",
+      "blob": "c5f02243c3a0eff1f0082c27cfd152a45ab4d69e",
+      "sha256": "6c6d485f0de60c3e95396651c184954d8738aac6c4928f7fce0b0e5e2b5af006"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/coordinator-settlement.json",
+      "blob": "6630fa3cb754ea705d29bbc10ec597cb18041fac",
+      "sha256": "9e1a3a131096654cd64ad31e4a7b76c5b026413c25f5934278a0ec8067f3b14b"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json",
+      "blob": "da8c76ca59ab984fd412eff20328c11eee57a28f",
+      "sha256": "86590432e7f79580b8a987e6a9a1e433f8ddd20ed1597c409f9fdf2b62f442ec"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.json",
+      "blob": "152dd90286e11243235597e268d350e54ad0927e",
+      "sha256": "f91f2c78ed778bd40ec593b81e5322e6f6ba0812cc9606163ca2f700e8cb1039"
+    },
+    {
+      "path": "docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md",
+      "blob": "aa356ad966fdaee7cfd0b28902288afd06d5a7d1",
+      "sha256": "be4f9bb40bb7b3f2b2d524fea11df022bc98cbd425543233631e94101429785d"
+    },
+    {
+      "path": "scripts/novel_one_short_trial.py",
+      "blob": "9a50fd5d7001160e9da7f7a3b7d4cc68853aedcd",
+      "sha256": "d6064ac19af99447f24bb1a2f12860ddf99d456b783a4b8739122ab06ba9b708"
+    },
+    {
+      "path": "START_HERE.md",
+      "blob": "db4668cb962d2b50451cf610989fe5678705b1f1",
+      "sha256": "12658c310e2e65400f36ea5adc3e3cf995614ea0451afd4d7e3762a7a6995064"
+    },
+    {
+      "path": "README.md",
+      "blob": "dee6e1b97515fdc7890b446e1ee508f0d0e16511",
+      "sha256": "fcb7d91a9bb474ea3ff96373066554b428398e0ab99cb4e15e67aa33787361ea"
+    },
+    {
+      "path": "AGENTS.md",
+      "blob": "38ec180a9d1e95796a62ea926fc44a0efbc6923f",
+      "sha256": "d2bb1ff18fa9726d515e1bbc3f31291bd4e099e2ecd2f42a40765f77df0d802c"
+    },
+    {
+      "path": "SKILL.md",
+      "blob": "52764c863253b2e9dc743747fecf34f26b0f7a69",
+      "sha256": "a82a6ac0e291c5061f74ce9513b97a06fc69db90aa24909bc93ac7f0f8ab0464"
+    },
+    {
+      "path": "scripts/verify_current_state.py",
+      "blob": "b93ec5dc45ff66cc126c6f4b98f81065c674ebdf",
+      "sha256": "184c77859f781fc6dd7313b3fa930e8edcd7dcc65513926b7562f7cff996a7d6"
+    },
+    {
+      "path": "scripts/verify_review_publication.py",
+      "blob": "2d49ea74bcd0109d0fed2d57f8ee5b959f79b323",
+      "sha256": "804cd426257416a2e7c93a567bc50752959a9aa8797ff65f98838cb4d932800a"
+    },
+    {
+      "path": "tests/test_current_state.py",
+      "blob": "620c7cb667c2038f7131388a3aa55d8ce605777f",
+      "sha256": "8a175e2fd334f8d9b6f4a35fcf025ebb9ee2fec08dff349b6204b4cbf791dd88"
+    },
+    {
+      "path": "state/project_state.json",
+      "blob": "60bafbad98b7fcaaa059e6dc514e69b9477c30e7",
+      "sha256": "b8ba017fba7cf4388871ee92675c3bd2b2fb109c6f9b41640fafb22d2bad10e5"
+    },
+    {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "f129a16ea0b947fc432c5a720e9de36c8c9f9185",
+      "sha256": "9617cecbcdbcab80d82e585a44ee0964e4d32aaf14531361b6d96643ae070e50"
+    },
+    {
+      "path": "scripts/verify_reentry_preparation.py",
+      "blob": "32e5cf67c2467f55872885cfa2ee49612e807512",
+      "sha256": "4d65de769e14def69f72bd89ad9ac86d0f93e2f03aafe4762bc99628081a1d4b"
+    },
+    {
+      "path": "tests/test_reentry_preparation.py",
+      "blob": "2a83ccb9a0701e80c1d72d4de845e48c74bc245a",
+      "sha256": "8ae445736bcd0d547f86ffd5c2fb6b68863b01014f0deeabe9259aba1bb4d4c8"
+    },
+    {
+      "path": "scripts/verify_one_short_trial.py",
+      "blob": "688ec2cdb778930969475b961a2731ed38bacc12",
+      "sha256": "34dd3d53baa37e17a3f750549c6d6920bfb7976f7daeb7ddf9d585cda312e4dd"
+    },
+    {
+      "path": "tests/test_one_short_trial.py",
+      "blob": "5564298bd52091b8bc1ed9502bd11fe2c3821069",
+      "sha256": "bb7c2eed2e5ef5d697936bcc2dd01021ced5d0e982065ea697bc2d871d77239f"
+    },
+    {
+      "path": "state/authoring/r2-entry-trial-20261003/writer.attempt.json",
+      "blob": "e3d06053c8e4650a50c7acd6b1821abba6683356",
+      "sha256": "a85a7896b6a31d83cb23efcb323e7cafa83c525ec1cf4338b489492da1a06bbd"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.attempt.json",
+      "blob": "0e1f428635bbaece0c0db6d8889ede135b17a2d8",
+      "sha256": "34a46c202979ed7c04e0cbbc4be5a590273b18cf75d9f28a6e9942f7f94f821c"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_VALIDATION_20261003.json",
+      "blob": "4a636340027ce925c6e12c2d664e68fc04a79121",
+      "sha256": "12c3a7d03380821afdc43c73a320df1e302e84765bc3fcc2f19d72365fda3aab"
+    }
+  ],
+  "checked_remote_file_count": 32,
+  "protected_source_file_count": 301,
+  "all_prior_prose_locks_and_raw_reports_unchanged": true,
+  "current_state": {
+    "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+    "sequence": 196,
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
+    "checks_passed": 27,
+    "mainline": {
+      "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+      "revision": 4,
+      "step": "STEP_03",
+      "outcomes": {
+        "TEST_01": "UNKNOWN"
+      }
+    },
+    "literary_quality_tested_by_this_script": false,
+    "new_prose_authorized": false,
+    "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+  },
+  "one_new_body_generation_count": 1,
+  "writer_model_calls": 1,
+  "independent_fact_review_model_calls": 1,
+  "model_calls_during_remote_readback": 0,
+  "generation_count_during_remote_readback": 0,
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning_effort": "max",
+  "human_quality_result": "UNKNOWN",
+  "old_448_human_emotion_retention": "FAIL",
+  "original_404_human_result": "UNKNOWN",
+  "remaining_new_generation_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_added": 0,
+  "full_v5_authorized": false,
+  "scope": "ONLY_THIS_SINGLE_AUTHORIZED_SHORT_AND_FACT_CHECK",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
+  "receipt_self_readback": "NOT_CLAIMED_INSIDE_THIS_RECORD; VERIFY_RECEIPT_BYTES_AFTER_PUBLICATION_AT_RETURNED_COMMIT"
+}
