@@ -1,0 +1,122 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "facts",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/facts.packet.json",
+    "blob": "4bd0eec5df578159af19997a61926d9f6b27f571",
+    "sha256": "fd28d9732bf41dc148c4ca3d2f232e7e018f73f132036c799976c08111d88e36"
+  },
+  "started_at": "2026-10-03T13:01:27Z",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "max",
+  "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+  "report_received": true,
+  "model_turn_dispatched": true,
+  "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY",
+  "repository_write_permission": false,
+  "generation_count": 0,
+  "prompt_policy_sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095",
+  "model_catalog_entry": {
+    "id": "gpt-6.1-sol",
+    "model": "gpt-6.1-sol",
+    "upgrade": null,
+    "upgradeInfo": null,
+    "availabilityNux": {
+      "message": "Maximize usage with GPT-6.1 Sol. Try it on complex work for near-Astra performance at a lower cost."
+    },
+    "displayName": "GPT-6.1-Sol",
+    "description": "Latest workhorse model for coding and everyday work.",
+    "modelSpecialty": null,
+    "hidden": false,
+    "supportedReasoningEfforts": [
+      {
+        "reasoningEffort": "low",
+        "description": "Fast responses with lighter reasoning"
+      },
+      {
+        "reasoningEffort": "medium",
+        "description": "Balances speed and reasoning depth for everyday tasks"
+      },
+      {
+        "reasoningEffort": "high",
+        "description": "Greater reasoning depth for complex problems"
+      },
+      {
+        "reasoningEffort": "xhigh",
+        "description": "Extra high reasoning depth for complex problems"
+      },
+      {
+        "reasoningEffort": "max",
+        "description": "Maximum reasoning depth for the hardest problems"
+      },
+      {
+        "reasoningEffort": "ultra",
+        "description": "Maximum reasoning with automatic task delegation"
+      }
+    ],
+    "defaultReasoningEffort": "low",
+    "inputModalities": [
+      "text",
+      "image"
+    ],
+    "supportsPersonality": false,
+    "multiAgentVersion": "v2",
+    "additionalSpeedTiers": [
+      "fast"
+    ],
+    "serviceTiers": [
+      {
+        "id": "priority",
+        "name": "Fast",
+        "description": "2x speed, increased usage"
+      }
+    ],
+    "defaultServiceTier": null,
+    "availableAccessPrograms": {
+      "cyber": [
+        "standard"
+      ]
+    },
+    "isDefault": true
+  },
+  "resolved_thread_settings": {
+    "model": "gpt-6.1-sol",
+    "modelProvider": "openai",
+    "reasoningEffort": "max",
+    "approvalPolicy": "never",
+    "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+    },
+    "instructionSources": [],
+    "runtimeWorkspaceRoots": []
+  },
+  "thread_id": "01a101da-f6ff-7a53-9fc1-8b85b325f5fb",
+  "submitted_payload_sha256": "51bcace6659054d39360023719942c0258d9710e103810ba51290ee862848394",
+  "turn_status": "completed",
+  "completed_item_types": [
+    "userMessage",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "reasoning",
+    "agentMessage"
+  ],
+  "tool_activity_detected": [],
+  "model_initiated_requests": [],
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/facts.raw.txt",
+    "blob": "5e2aa8b3ef22f4b67416838d7c7fe074691a1505",
+    "sha256": "2260b2c9253427102c830ff88907f01cd14756300d64d8b0afae5ff4e303eb31"
+  },
+  "finished_at": "2026-10-03T13:07:29Z",
+  "elapsed_seconds": 361.577
+}

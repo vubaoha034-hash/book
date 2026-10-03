@@ -1,0 +1,25 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "failed_runtime": {
+    "path": "state/reviews/hook-trial-20261003/diagnosis.runtime.json",
+    "blob": "a196dc89182ea5c0c02ea7b0d7293c5ec48336fe",
+    "sha256": "e87ddee56e983ce54d5899c018ce7b5c9ec17f97a094e3c11e3fe3331bab166d"
+  },
+  "failed_attempt": {
+    "path": "state/reviews/hook-trial-20261003/diagnosis.attempt.json",
+    "blob": "62c2522d4e55bacb96f365b062536ac05ffa0711",
+    "sha256": "f5acdb40ab9217a60ea080520069f9a374daf5e7b5d74b0adcc31e97bba96180"
+  },
+  "failure": "TURN_FAILED_NO_AGENT_MESSAGE_NO_REPORT",
+  "exact_provider_cause": "UNKNOWN_NOT_RETAINED_BY_PREVIOUS_ENGINE",
+  "environment_fact": "Current execution profile restricts network; provider transport requires network outside reviewer text sandbox.",
+  "recovery": "One separately logged call from approved provider transport environment; same packet and policy, fresh context.",
+  "runtime_approval_required": true,
+  "successful_report_limit": 1,
+  "transport_recovery_limit": 1,
+  "no_reading_verdict_received": true,
+  "no_prompt_tuning_or_quality_vote_retry": true,
+  "ordinary_usage_allowed_observed": true,
+  "account_window_used_percent_observed": 31,
+  "credits_or_reset_consumed": false
+}

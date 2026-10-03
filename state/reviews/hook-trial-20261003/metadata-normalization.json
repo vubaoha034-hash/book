@@ -1,0 +1,18 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "before": {
+    "path": "state/reviews/hook-trial-20261003/initial-human-receipt.json",
+    "blob": "fc6254e6a1dd0cb6dabd8da550876e8aca7810a1",
+    "sha256": "4782475301aa7659b039c99343f6b44fd7fbbd46d859ded453cf60e52fed2110"
+  },
+  "after": {
+    "path": "state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json",
+    "blob": "f108423a9f6e82fb18712e32dec2966cccabf69b",
+    "sha256": "f9409fb84519f7de033d18736d2b0bff256ec17b94a74a12066481ff5ea1027c"
+  },
+  "change": "Added required project_id and factual feedback_summary to new unpublished native receipt; refreshed dependent references.",
+  "exact_user_quote_and_artifact_identity_unchanged": true,
+  "all_model_packets_and_policies_unchanged": true,
+  "original_new_receipt_bytes_preserved": true,
+  "historical_receipts_and_model_reports_rewritten": false
+}

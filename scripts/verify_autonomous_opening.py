@@ -223,7 +223,8 @@ def autonomous_action(root,project,checkpoint,historical_action,successor_human_
         actual=bound(root,successor_human_feedback)
         successor_entry=(successor_human_feedback.get('path')=='state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json' and
             actual.get('source_checkpoint')==199 and actual.get('outcome')=='FAIL' and actual.get('output')==route['final_artifact'] and
-            actual.get('review',{}).get('source',{}).get('kind')=='ACTUAL_CURRENT_USER_MESSAGE' and '当前位置：检查点200。' in entry)
+            actual.get('review',{}).get('source',{}).get('kind')=='ACTUAL_CURRENT_USER_MESSAGE' and
+            ('当前位置：检查点200。' in entry or '上一检查点200：' in entry))
     if checkpoint.get('sequence')!=199 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点199。' not in entry and not successor_entry):
         raise ValueError('AUTONOMOUS_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

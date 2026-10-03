@@ -1,0 +1,98 @@
+{
+  "schema_version": "native-hook-trial-manifest/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_AUTHORIZATION_20261003.json",
+    "blob": "86b77d1be685777ae266008291f3f5d3d9532798",
+    "sha256": "bc6ea854d8f7f51f7abf27e8491e81a9532b688dd5db9f67f84ababc2080b8c9"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "quality_certification_allowed": false,
+  "jobs": {
+    "diagnosis": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/diagnosis.packet.json",
+        "blob": "c21a2dc623883265e24059afcff7e419b45ae8d9",
+        "sha256": "712fd17904e9db9ae30e882534bf189c7a3315b3d48905eae72a721a1c2058ac"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/diagnosis-policy.txt",
+        "blob": "c991cfb3d58849db8644144c1d0436143f5bb37b",
+        "sha256": "d0498d2858857fc8cd0378d90ccb60dddd3ef53fde1d542f05103084f27797f8"
+      },
+      "raw_path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.raw.txt",
+      "max_calls": 1
+    },
+    "writer": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/writer-input.json",
+        "blob": "3590482eab16e175fbaed6b7d8045fd0b630d0a6",
+        "sha256": "26e39a4cc99284deb393374dace267926fe76c5cdf5b5a35ce68bd9d4ccb6867"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/writer-policy.txt",
+        "blob": "110a12094590def1a96836b32ae70c06c0484d64",
+        "sha256": "920043b28469a861c15556e4055c2fc9b851c2433fe0b69483627e2af1f9155c"
+      },
+      "raw_path": "delivery/hook-trial-20261003/short-a1.md",
+      "max_calls": 1
+    },
+    "facts": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/facts.packet.json",
+        "blob": "4bd0eec5df578159af19997a61926d9f6b27f571",
+        "sha256": "fd28d9732bf41dc148c4ca3d2f232e7e018f73f132036c799976c08111d88e36"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/facts-policy.txt",
+        "blob": "3a972d5a67eeb94a25820c754136bb6fabb0bea2",
+        "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+      },
+      "raw_path": "state/reviews/hook-trial-20261003/facts.raw.txt",
+      "max_calls": 1
+    },
+    "editor": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/editor.packet.json",
+        "blob": "52b50ecc233a18c89cfdfd4b238d643c44da1f4c",
+        "sha256": "0b00433de86e803c9150e526e2d828a6650b29c111e115d3e18905d4d685b30d"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/editor-policy.txt",
+        "blob": "3f2db4319bec475df417ffcf03174d31955f704e",
+        "sha256": "0ab674c046c9ebdbf5bac3e8ff5378be556ff6e814610cacf59f7df765b387d2"
+      },
+      "raw_path": "state/reviews/hook-trial-20261003/editor.raw.txt",
+      "max_calls": 1
+    },
+    "reader": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/reader.packet.json",
+        "blob": "d759e06bbd22a84e1d3a87109ddd1f2a1324be92",
+        "sha256": "68ea0b0fdc3850f8d08d970ff33a68f6d3af8defe837ad6377ad169d31df7e18"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/reader-policy.txt",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      "raw_path": "state/reviews/hook-trial-20261003/reader.raw.txt",
+      "max_calls": 1
+    }
+  },
+  "transport_failure": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRANSPORT_RECOVERY_20261003.json",
+    "blob": "aa26e6e86437f2a7c553f18b15da6c47413447d1",
+    "sha256": "02f054c5a8b17e17e3425f0ab2c49faa0428aba24cf9c58d19808148a1156318"
+  },
+  "transport_recovery_limit": 1,
+  "writer_input": {
+    "path": "delivery/hook-trial-20261003/writer-input.json",
+    "blob": "3590482eab16e175fbaed6b7d8045fd0b630d0a6",
+    "sha256": "26e39a4cc99284deb393374dace267926fe76c5cdf5b5a35ce68bd9d4ccb6867"
+  }
+}

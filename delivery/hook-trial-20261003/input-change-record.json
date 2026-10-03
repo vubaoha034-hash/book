@@ -1,0 +1,29 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_input": {
+    "path": "delivery/prose-repair-20261003/writer-input.json",
+    "blob": "ae201221b4569a1130a2f25ff64a93a737ad2a54",
+    "sha256": "fd7b05230c6d116fd7ee5b7a42291ae9aa2873b86499481ff5eece7f78d8ccac"
+  },
+  "writer_input": {
+    "path": "delivery/hook-trial-20261003/writer-input.json",
+    "blob": "3590482eab16e175fbaed6b7d8045fd0b630d0a6",
+    "sha256": "26e39a4cc99284deb393374dace267926fe76c5cdf5b5a35ce68bd9d4ccb6867"
+  },
+  "all_fact_values_identical": true,
+  "entry_scene_unchanged": "SP414-S02",
+  "changed": "明确首次读者未先读前场；信息承诺和当前推进的三个简短正向原则。",
+  "diagnosis_settlement": {
+    "path": "state/reviews/hook-trial-20261003/diagnosis-settlement.json",
+    "blob": "3ccd13c499f5a375601e00e81c98f9714df81116",
+    "sha256": "5a54993878a4577a66a93c1fe26b8cc8ab92178f813c0cdb91507483a2041ad7"
+  },
+  "writer_excluded": [
+    "旧正文",
+    "实际反馈",
+    "诊断",
+    "其他审核",
+    "教程原文"
+  ],
+  "causal_effect_proven": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "native-pending-human-reading/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "outcome": "UNKNOWN",
+  "human_feedback": {},
+  "accepted": false,
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "presentation": "ONE_BODY_BEFORE_AI_VERDICTS",
+  "questions": [
+    "想不想继续读？",
+    "在追什么问题，语言是否仍自然？"
+  ],
+  "intermediate_user_authorization_required": false,
+  "stop_at_actual_human_reading": true
+}

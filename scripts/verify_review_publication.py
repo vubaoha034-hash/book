@@ -138,6 +138,33 @@ AUTONOMOUS_NEW_FILES = (
     *(f'state/authoring/autonomous-opening-20261003/a1.{role}.{suffix}'
       for role in ('facts','editor','reader') for suffix in ('raw.txt','evidence.json')))
 PROSE_SOURCE='df1e08a59373e9777bf478b85ebe0707c4dfdef0'
+HOOK_SOURCE='5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a'
+HOOK_PREFIX='state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_'
+HOOK_MUTABLE_FILES=PREPARATION_MUTABLE_FILES+(
+    'scripts/verify_autonomous_opening.py','scripts/verify_two_role_review.py','scripts/verify_prose_repair.py','tests/test_prose_repair.py')
+HOOK_NEW_FILES=(
+    'scripts/novel_hook_trial.py','scripts/verify_hook_trial.py','tests/test_hook_trial.py','config/novel-hook-trial-20261003.json',
+    'config/novel-hook-repair-20261003.json',
+    'state/learning/hook-trial-20261003/sources.json','docs/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.md',
+    'state/tasks/NOVEL_OPENING_HOOK_TRIAL_AFTER_RETENTION_FAIL_20261003.json',
+    'state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json',
+    'state/review_receipts/NOVEL_OPENING_HOOK_TRANSPORT_RECOVERY_20261003.json',
+    *(HOOK_PREFIX+k+'_20261003.json' for k in ('AUTHORIZATION','RESULT','VALIDATION','REMOTE_SAVE_VERIFIED')),
+    'delivery/hook-trial-20261003/short-a1.md','delivery/hook-trial-20261003/writer-input.json',
+    'delivery/hook-trial-20261003/input-change-record.json',
+    'delivery/hook-trial-20261003/short-a1-fact-repaired.md','delivery/hook-trial-20261003/repair-writer-input.json',
+    'delivery/hook-trial-20261003/repair-writer-policy.txt','delivery/hook-trial-20261003/repair-facts.packet.json',
+    'state/reviews/hook-trial-20261003/fact-wording-repair-plan.json',
+    *(f'state/reviews/hook-trial-20261003/repair/{r}.{s}' for r in ('writer','facts') for s in ('attempt.json','runtime.json')),
+    'state/reviews/hook-trial-20261003/repair/facts.raw.txt','state/reviews/hook-trial-20261003/repair/facts.evidence.json',
+    *(f'delivery/hook-trial-20261003/{r}-policy.txt' for r in ('diagnosis','writer','facts','editor','reader')),
+    *(f'delivery/hook-trial-20261003/{r}.packet.json' for r in ('diagnosis','facts','editor','reader')),
+    *(f'state/reviews/hook-trial-20261003/{r}.{s}' for r in ('diagnosis','writer','facts','editor','reader') for s in ('attempt.json','runtime.json')),
+    *(f'state/reviews/hook-trial-20261003/{r}.{s}' for r in ('facts','editor','reader') for s in ('raw.txt','evidence.json')),
+    *(f'state/reviews/hook-trial-20261003/transport-recovery/diagnosis.{s}' for s in ('attempt.json','runtime.json','raw.txt','evidence.json')),
+    'state/reviews/hook-trial-20261003/diagnosis-settlement.json','state/reviews/hook-trial-20261003/coordinator-settlement.json',
+    'state/reviews/hook-trial-20261003/initial-human-receipt.json','state/reviews/hook-trial-20261003/metadata-normalization.json',
+    'state/reviews/hook-trial-20261003/pending-human-review.json')
 PROSE_PREFIX='state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_'
 PROSE_MUTABLE_FILES=PREPARATION_MUTABLE_FILES+(
     'scripts/verify_autonomous_opening.py','scripts/verify_two_role_review.py',
@@ -656,6 +683,54 @@ def verify_prose_repair(expected):
         'model_calls_during_readback':0,'generation_count_during_readback':0}
 
 
+def verify_hook_trial(expected):
+    """Read actual CP201 bytes and preserve the complete CP200 snapshot."""
+    remote=git('ls-remote','origin','refs/heads/main').decode().split()[0]
+    if remote!=expected:raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch','origin','main')
+    if git('rev-parse','origin/main').decode().strip()!=remote:raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive=zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',remote)))
+    base=zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',HOOK_SOURCE)))
+    old={p for p in base.namelist() if not p.endswith('/')};new={p for p in archive.namelist() if not p.endswith('/')}
+    if new-old-set(HOOK_NEW_FILES) or old-new:raise ValueError('HOOK_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected=old-set(HOOK_MUTABLE_FILES)
+    for p in protected:
+        if archive.read(p)!=base.read(p):raise ValueError('HOOK_HISTORICAL_BYTES_CHANGED: '+p)
+    seen,checked=set(),[]
+    def inspect(path,reference=None):
+        local=(ROOT/path).resolve()
+        if not local.is_relative_to(ROOT.resolve()):raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        b=archive.read(path)
+        if b!=local.read_bytes():raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: '+path)
+        digest=hashlib.sha256(b).hexdigest()
+        if reference and (reference.get('blob')!=blob(b) or reference.get('sha256')!=digest):raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: '+path)
+        if path in seen:return
+        seen.add(path);checked.append({'path':path,'blob':blob(b),'sha256':digest})
+        if path in HOOK_NEW_FILES and path.endswith('.json'):walk(json.loads(b))
+    def walk(v):
+        if isinstance(v,dict):
+            if all(k in v for k in ('path','blob','sha256')):inspect(v['path'],v)
+            for c in v.values():walk(c)
+        elif isinstance(v,list):
+            for c in v:walk(c)
+    project=json.loads(archive.read('state/project_state.json'));cp=json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route=project.get('opening_hook_trial')
+    if not route or route!=cp.get('opening_hook_trial') or cp.get('sequence')!=201 or cp.get('stop') is not True or route.get('human_quality_result')!='UNKNOWN':raise ValueError('REMOTE_HOOK_STATE_DRIFT')
+    if cp.get('action_guard',{}).get('project_state_sha256')!=hashlib.sha256(archive.read('state/project_state.json')).hexdigest():raise ValueError('REMOTE_HOOK_PROJECT_HASH_DRIFT')
+    walk(route)
+    for path in (*HOOK_MUTABLE_FILES,*HOOK_NEW_FILES):
+        if path==HOOK_PREFIX+'REMOTE_SAVE_VERIFIED_20261003.json' and path not in new:continue
+        inspect(path)
+    if json.loads(archive.read(HOOK_PREFIX+'VALIDATION_20261003.json')).get('status')!='HOOK_TRIAL_SCOPE_EVIDENCE_AND_HISTORY_VALIDATION_PASSED':raise ValueError('REMOTE_HOOK_VALIDATION_NOT_COMPLETED')
+    import importlib.util
+    s=importlib.util.spec_from_file_location('published_hook_state',ROOT/'scripts/verify_current_state.py');current=importlib.util.module_from_spec(s);s.loader.exec_module(current)
+    state=current.verify(ROOT)
+    if state.get('sequence')!=201 or state.get('next_action')!='AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT':raise ValueError('REMOTE_HOOK_HUMAN_GATE_DRIFT')
+    if git('ls-remote','origin','refs/heads/main').decode().split()[0]!=remote:raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status':'REMOTE_HOOK_BYTES_HISTORY_AND_ACTUAL_HUMAN_GATE_VERIFIED','remote_head':remote,'source_head':HOOK_SOURCE,'checkpoint':201,
+        'checked_count':len(checked),'files':checked,'protected_source_file_count':len(protected),'all_prior_prose_reports_receipts_and_locks_unchanged':True,
+        'current_state':state,'human_quality_result':'UNKNOWN','model_calls_during_readback':0,'generation_count_during_readback':0}
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
@@ -666,9 +741,11 @@ if __name__ == '__main__':
     mode.add_argument('--two-roles', action='store_true', help='Verify checkpoint198 independent editor/reader reviews and preserve checkpoint197 history')
     mode.add_argument('--autonomous-opening', action='store_true', help='Verify checkpoint199 final short, independent reviews and actual human UNKNOWN')
     mode.add_argument('--prose-repair', action='store_true', help='Verify checkpoint200 actual prose rejection and new reviewed short')
+    mode.add_argument('--hook-trial', action='store_true', help='Verify checkpoint201 actual retention failure and one reviewed short')
     args = parser.parse_args()
     try:
-        result = (verify_prose_repair(args.expected_head) if args.prose_repair else
+        result = (verify_hook_trial(args.expected_head) if args.hook_trial else
+                  verify_prose_repair(args.expected_head) if args.prose_repair else
                   verify_autonomous(args.expected_head) if args.autonomous_opening else
                   verify_two_roles(args.expected_head) if args.two_roles else
                   verify_emotion_learning(args.expected_head) if args.emotion_learning else

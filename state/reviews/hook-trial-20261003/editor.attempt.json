@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/editor.packet.json",
+    "blob": "52b50ecc233a18c89cfdfd4b238d643c44da1f4c",
+    "sha256": "0b00433de86e803c9150e526e2d828a6650b29c111e115d3e18905d4d685b30d"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T13:01:25Z"
+}

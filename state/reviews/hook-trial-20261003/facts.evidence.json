@@ -1,0 +1,154 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "N61",
+      "item_index": 0,
+      "quote": "偏偏身份下多出一段他全不记得的三年，手续停了",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 81,
+      "end_character_exclusive": 103,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 1,
+      "quote": "这期六万八，五天后到期。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 166,
+      "end_character_exclusive": 178,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 2,
+      "quote": "我明天下午也得交一万二，自己租工作间的押金。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 214,
+      "end_character_exclusive": 236,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 3,
+      "quote": "眼下那语气却像在等一句他理应知道的回答。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 273,
+      "end_character_exclusive": 293,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 4,
+      "quote": "找供应商，他们有合同和收款记录。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 311,
+      "end_character_exclusive": 327,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 5,
+      "quote": "三点我得走，客户的片子还等着，剩下二十分钟。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 327,
+      "end_character_exclusive": 349,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 6,
+      "quote": "名字对得上，不代表是我签的。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 116,
+      "end_character_exclusive": 130,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 7,
+      "quote": "这期六万八，五天后到期。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 166,
+      "end_character_exclusive": 178,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 8,
+      "quote": "自己租工作间的押金。那笔钱不能拿来垫设备款。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 226,
+      "end_character_exclusive": 248,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 9,
+      "quote": "找供应商，他们有合同和收款记录。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 311,
+      "end_character_exclusive": 327,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 10,
+      "quote": "三点我得走，客户的片子还等着，剩下二十分钟。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 327,
+      "end_character_exclusive": 349,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 11,
+      "quote": "没按下搜索，也没收起手机。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 387,
+      "end_character_exclusive": 400,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "facts",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/facts.packet.json",
+    "blob": "4bd0eec5df578159af19997a61926d9f6b27f571",
+    "sha256": "fd28d9732bf41dc148c4ca3d2f232e7e018f73f132036c799976c08111d88e36"
+  },
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/facts.raw.txt",
+    "blob": "5e2aa8b3ef22f4b67416838d7c7fe074691a1505",
+    "sha256": "2260b2c9253427102c830ff88907f01cd14756300d64d8b0afae5ff4e303eb31"
+  }
+}

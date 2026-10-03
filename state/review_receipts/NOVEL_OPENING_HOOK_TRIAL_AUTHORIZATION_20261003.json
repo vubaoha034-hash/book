@@ -1,0 +1,39 @@
+{
+  "schema_version": "native-bounded-hook-trial-authorization/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "source_checkpoint": 200,
+  "source": "STANDING_USER_AUTONOMY_AND_ACTUAL_FROZEN_TEST_FAILURE",
+  "standing_user_authorization": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json",
+    "blob": "f108423a9f6e82fb18712e32dec2966cccabf69b",
+    "sha256": "f9409fb84519f7de033d18736d2b0bff256ec17b94a74a12066481ff5ea1027c"
+  },
+  "rejected_artifact": {
+    "path": "delivery/prose-repair-20261003/short-a1.md",
+    "blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+    "sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7"
+  },
+  "prior_result": {
+    "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.json",
+    "blob": "c7c535e23a374aa83fcde1cd17ef83c17b69012a",
+    "sha256": "5d8cf6465177931d6d01e420923c7a4a345a75f9158407a9c18b23b42f5ef81d"
+  },
+  "scope": "同一SP414-S02起始300—500字；已知失败后定位悬念承诺/信息输入问题，原冻结事实内组织唯一新短稿，三个独立上下文审核后交真人。",
+  "primary_writer_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "intermediate_user_authorization_required": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "multiple_visible_candidates_allowed": false,
+  "background_tasks_authorized": false,
+  "goal_or_world_or_ending_change_authorized": false,
+  "mainline_method_revision": 4
+}

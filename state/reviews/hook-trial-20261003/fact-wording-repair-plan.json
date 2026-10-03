@@ -1,0 +1,24 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "primary_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1.md",
+    "blob": "163aa56e6db8aa8bb37ca6d86cb0fb3028ce1177",
+    "sha256": "250101c3cbbe99066d4517c3080145e2829d143485f4bfb9859b68161260a772"
+  },
+  "issue": "Frozen deadline is before tomorrow afternoon; primary wording omits 前 and can be read as paying during afternoon.",
+  "frozen_fact_source": "xucheng_own_life.ordinary_plan",
+  "source_value": "明天下午前付1.2万元押金，订下已看好的小工作间。",
+  "raw_fact_finding": "F03",
+  "raw_fact_report": {
+    "path": "state/reviews/hook-trial-20261003/facts.raw.txt",
+    "blob": "5e2aa8b3ef22f4b67416838d7c7fe074691a1505",
+    "sha256": "2260b2c9253427102c830ff88907f01cd14756300d64d8b0afae5ff4e303eb31"
+  },
+  "coordinator_disposition": "AMOUNT_USE_CLEAR_TIME_EQUIVALENCE_OVERSTATED_SINGLE_CHARACTER_CLARIFICATION_REQUIRED",
+  "raw_reports_rewritten": false,
+  "internal_repair_limit": 1,
+  "quality_vote_did_not_trigger_repair": true,
+  "change_boundary": "Only insert 前 after 明天下午 in the unique deposit sentence; all other bytes unchanged.",
+  "primary_body_sha256": "250101c3cbbe99066d4517c3080145e2829d143485f4bfb9859b68161260a772",
+  "required_output_sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+}

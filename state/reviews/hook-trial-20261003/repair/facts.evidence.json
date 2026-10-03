@@ -1,0 +1,143 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "N62",
+      "item_index": 0,
+      "quote": "偏偏身份下多出一段他全不记得的三年，手续停了",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 81,
+      "end_character_exclusive": 103,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 1,
+      "quote": "工作室那笔设备款，这期六万八，五天后到期。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 157,
+      "end_character_exclusive": 178,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 2,
+      "quote": "我明天下午前也得交一万二，自己租工作间的押金。那笔钱不能拿来垫设备款。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 214,
+      "end_character_exclusive": 249,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 3,
+      "quote": "眼下那语气却像在等一句他理应知道的回答。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 274,
+      "end_character_exclusive": 294,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 4,
+      "quote": "找供应商，他们有合同和收款记录。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 312,
+      "end_character_exclusive": 328,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 5,
+      "quote": "三点我得走，客户的片子还等着，剩下二十分钟。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 328,
+      "end_character_exclusive": 350,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 6,
+      "quote": "名字对得上，不代表是我签的。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 116,
+      "end_character_exclusive": 130,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 7,
+      "quote": "这期六万八，五天后到期。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 166,
+      "end_character_exclusive": 178,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 8,
+      "quote": "自己租工作间的押金。那笔钱不能拿来垫设备款。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 227,
+      "end_character_exclusive": 249,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 9,
+      "quote": "眼下那语气却像在等一句他理应知道的回答。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 274,
+      "end_character_exclusive": 294,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N62",
+      "item_index": 10,
+      "quote": "他抬起头，没按下搜索，也没收起手机。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 383,
+      "end_character_exclusive": 401,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "facts",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/repair-facts.packet.json",
+    "blob": "dbf6f00039dab7d8c5c2a2049d97fe986e61834e",
+    "sha256": "2e2e039853c76c4cd01478ad6fe5f1222cec1550608bc6ead975c31fd6c66974"
+  },
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/repair/facts.raw.txt",
+    "blob": "5f4044cae0aba7c93333f90a3b77f5aaca70d953",
+    "sha256": "e2f9bf1112ab4215d6fe8c6dde9046415614b03e23bbc4d82b37c893a87c2275"
+  }
+}

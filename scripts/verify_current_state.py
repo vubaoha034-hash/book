@@ -644,6 +644,13 @@ def test_outcome(root: Path, relative: str) -> str:
 def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
     prose_module, prose_feedback = None, None
     live_project, live_cp = project, cp
+    hook_module, hook_feedback = None, None
+    if 'opening_hook_trial' in project or 'opening_hook_trial' in cp:
+        spec = importlib.util.spec_from_file_location('hook_trial_state', Path(__file__).with_name('verify_hook_trial.py'))
+        hook_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(hook_module)
+        project, cp, hook_feedback = hook_module.historical_prose_view(root, project, cp)
+    prose_project, prose_cp = project, cp
     if 'opening_prose_repair' in project or 'opening_prose_repair' in cp:
         spec = importlib.util.spec_from_file_location('prose_repair_state',
             Path(__file__).with_name('verify_prose_repair.py'))
@@ -807,7 +814,11 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         expected_action = autonomous_module.autonomous_action(root, project, cp, expected_action,
             successor_human_feedback=prose_feedback)
     if prose_module is not None:
-        expected_action = prose_module.prose_action(root, live_project, live_cp, expected_action)
+        expected_action = prose_module.prose_action(root, prose_project, prose_cp, expected_action,
+            successor_human_feedback=hook_feedback)
+        project, cp = prose_project, prose_cp
+    if hook_module is not None:
+        expected_action = hook_module.hook_action(root, live_project, live_cp, expected_action)
         project, cp = live_project, live_cp
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')

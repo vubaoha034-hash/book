@@ -1,0 +1,110 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "F60",
+      "item_index": 0,
+      "quote": "罗钧的名字紧挨着许澄的名字。他看了两遍，把复本往外推了一点。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "end_character_exclusive": 30,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 1,
+      "quote": "他只看着她的指尖，那个“我们”让他想立刻站起来。“我现在自己接后期，明天下午前要交一万二，租我自己的工作间。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 167,
+      "end_character_exclusive": 222,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 2,
+      "quote": "大厅的门又开了，他抬起头，输入到一半的名字留在屏幕上。“我先进去问一句，行不行？”他说着，却仍坐在她对面。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 375,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 3,
+      "quote": "话说得难听，他知道，却不敢改口，怕一软下来，就成了答应。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 58,
+      "end_character_exclusive": 86,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 4,
+      "quote": "许澄伸向纸角的手停住，慢慢收了回去。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 86,
+      "end_character_exclusive": 104,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 5,
+      "quote": "我现在自己接后期，明天下午前要交一万二，租我自己的工作间。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 192,
+      "end_character_exclusive": 221,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 6,
+      "quote": "还有二十分钟，三点我得走，客户的片子还等着。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 252,
+      "end_character_exclusive": 274,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F60",
+      "item_index": 7,
+      "quote": "他摸出手机，打开搜索页，照着合同输入供应商的名字。查一下并不是认账，他在心里把这句话说了一遍。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 275,
+      "end_character_exclusive": 322,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "diagnosis",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/diagnosis.packet.json",
+    "blob": "c21a2dc623883265e24059afcff7e419b45ae8d9",
+    "sha256": "712fd17904e9db9ae30e882534bf189c7a3315b3d48905eae72a721a1c2058ac"
+  },
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.raw.txt",
+    "blob": "46d9bcc483dc7f5b56e207c8a660a1edbb66e1ca",
+    "sha256": "9ae9a3ec8024384b49e2a62e79eb491fc288d68387f30aead546473611895dcd"
+  }
+}

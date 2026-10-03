@@ -1,0 +1,76 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "合同复本摊在公共休息区的矮桌上，罗钧从两个姓名里认出自己的名字，却没伸手。隔着玻璃门，他还能看见过户大厅的取号屏。",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "“工作室那笔设备款，这期六万八，五天后到期。”“你是要我拿首付来还？”“别说得像我专冲你的首付来的。”她压住纸角，“我明天下午也得交一万二，自己租工作间的押金。那笔钱不能拿来垫设备款。”",
+      "actual_line": 1,
+      "start_character_0_based": 156
+    },
+    {
+      "index": 2,
+      "quote": "罗钧拿出手机，在搜索框输入合同上的公司名。大厅里又响了一次叫号，他抬起头，没按下搜索，也没收起手机。",
+      "actual_line": 1,
+      "start_character_0_based": 350
+    },
+    {
+      "index": 3,
+      "quote": "偏偏身份下多出一段他全不记得的三年，手续停了，现在又有人拿合同等他。",
+      "actual_line": 1,
+      "start_character_0_based": 81
+    },
+    {
+      "index": 4,
+      "quote": "“名字对得上，不代表是我签的。我得先回去问房子。”",
+      "actual_line": 1,
+      "start_character_0_based": 115
+    },
+    {
+      "index": 5,
+      "quote": "“别说得像我专冲你的首付来的。”她压住纸角，“我明天下午也得交一万二，自己租工作间的押金。那笔钱不能拿来垫设备款。”",
+      "actual_line": 1,
+      "start_character_0_based": 191
+    },
+    {
+      "index": 6,
+      "quote": "电话里，她说他现在不认识她；眼下那语气却像在等一句他理应知道的回答。",
+      "actual_line": 1,
+      "start_character_0_based": 259
+    },
+    {
+      "index": 7,
+      "quote": "攒了多年的首付已经备好，今晚本该住进那间小公寓；",
+      "actual_line": 1,
+      "start_character_0_based": 57
+    },
+    {
+      "index": 8,
+      "quote": "电话里，她说他现在不认识她；眼下那语气却像在等一句他理应知道的回答。",
+      "actual_line": 1,
+      "start_character_0_based": 259
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/reader.packet.json",
+    "blob": "d759e06bbd22a84e1d3a87109ddd1f2a1324be92",
+    "sha256": "68ea0b0fdc3850f8d08d970ff33a68f6d3af8defe837ad6377ad169d31df7e18"
+  },
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/reader.raw.txt",
+    "blob": "3aea49ae7dbcec6bb7dbbaf15e9411d0b1f5548f",
+    "sha256": "0d1e7f77dcee37d87f1e03ea5bed3af91214764c16b606d762fc3f228b19cc84"
+  }
+}

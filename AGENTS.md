@@ -10,6 +10,8 @@ For this project's current work, read `MAINLINE.md` and the task referenced by `
 
 检查点200：390字实际真人文笔/AI味与续读FAIL已另存。沿用连续执行授权，一次独立语言诊断后只调整当前输入呈现，冻结唯一375字新稿，另三个独立AI审核与证据结算完成。实际Sol / Max核对；新稿真人UNKNOWN，旧任务原件不改，旧保护/额度及方法4保持。见[当前结果](docs/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.md)，下一步只交正文收实际阅读；常规中间不问授权，不循环求赞成或扩到V5。
 
+检查点201：375字实际留存/悬念FAIL与AI味相对改善已记录。已在同一冻结事实内完成一次新短稿及独立编辑、匿名AI读者和事实审核；新稿真人UNKNOWN。见[当前结果](docs/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.md)。只交这一份正文收实际阅读，旧稿/锁/额度/方法4保持；常规中间不问授权，不循环求赞成或扩到V5。
+
 ## Highest-priority execution-surface routing
 
 Current scoped override (2026-10-03): task

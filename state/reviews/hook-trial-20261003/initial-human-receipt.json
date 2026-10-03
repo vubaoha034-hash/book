@@ -1,0 +1,37 @@
+{
+  "schema_version": "native-actual-human-retention-feedback/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "source_checkpoint": 200,
+  "recorded_at": "2026-10-03T12:36:18+00:00",
+  "human_exact_feedback": "不想。  因为真的一点让人看下去的欲望都没有。毫无欲望，没有一点悬念让人觉得好看的。   ai味道这次变轻了很多。",
+  "output": {
+    "path": "delivery/prose-repair-20261003/short-a1.md",
+    "blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+    "sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7"
+  },
+  "outcome": "FAIL",
+  "review": {
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "human_exact_feedback": "不想。  因为真的一点让人看下去的欲望都没有。毫无欲望，没有一点悬念让人觉得好看的。   ai味道这次变轻了很多。",
+    "bound_artifact_path": "delivery/prose-repair-20261003/short-a1.md",
+    "bound_blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+    "bound_sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7",
+    "wants_to_continue": false,
+    "retention_verdict": "FAIL",
+    "suspense_feedback": "没有一点悬念让人觉得好看的",
+    "ai_smell_feedback": "ai味道这次变轻了很多",
+    "ai_smell_verdict": "RELATIVE_IMPROVEMENT_NOT_A_FULL_PASS",
+    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "topic_rejection": false
+  },
+  "prior_result_and_pending_record_rewritten": false,
+  "prior_AI_editor": "EDITORIAL_CLEAR",
+  "prior_AI_reader": "YES",
+  "quality_screen_missed_actual_failure": true
+}

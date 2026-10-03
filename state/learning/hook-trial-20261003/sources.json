@@ -1,0 +1,32 @@
+{
+  "schema_version": "scoped-hook-craft-reading/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "reused_skills": [
+    "SKILL.md",
+    "rules/pass-isolation.md",
+    "modules/opening-retention-reader.md",
+    "rules/suspense-reversal-payoff.md",
+    "rules/reader-trust-and-economy.md"
+  ],
+  "primary_sources": [
+    {
+      "title": "Brandon Sanderson 2025 Guide to Plot Lecture 2",
+      "url": "https://www.brandonsanderson.com/blogs/blog/brandon-sandersons-2025-guide-to-plot-lecture-2",
+      "actual_read": "官方课程笔记107—373行；未观看视频",
+      "adopted": "开头使读者知道故事提供的体验；信息/关系推进须改变期待。",
+      "limits": "通用英语科幻课程，不证明刘先生口味，不套用暴力开头。"
+    },
+    {
+      "title": "Writing Excuses Episode 4 Beginnings",
+      "url": "https://writingexcuses.com/writing-excuses-episode-4-beginnings/",
+      "actual_read": "官网节目摘要及所载笔记30—77行；未听音频",
+      "adopted": "开篇承诺应被后续兑现，不能为刺激另造一套钩子。",
+      "limits": "第一句重要程度与2025课程不同，不硬设字数反转。"
+    }
+  ],
+  "coordinator_inference": "当前375字缺少第二过去/无记忆的明确信号是待独立验证的假设，不是用户确认原因。",
+  "new_positive_examples_of_user_taste": 0,
+  "external_code_executed": false,
+  "full_book_or_video_read": false,
+  "writer_receives_source_text": false
+}

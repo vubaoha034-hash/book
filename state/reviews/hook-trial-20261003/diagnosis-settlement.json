@@ -1,0 +1,76 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "status": "THREE_UPSTREAM_HYPOTHESES_QUOTED_AND_SCOPED",
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.raw.txt",
+    "blob": "46d9bcc483dc7f5b56e207c8a660a1edbb66e1ca",
+    "sha256": "9ae9a3ec8024384b49e2a62e79eb491fc288d68387f30aead546473611895dcd"
+  },
+  "evidence": {
+    "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.evidence.json",
+    "blob": "fb1a202ba8d6d000500154d39fc5362dc9b00fb4",
+    "sha256": "199efec8be17637ff9379ae54c29daf905efa171c5103b7896efe29602a7c574"
+  },
+  "raw_report_rewritten": false,
+  "findings": [
+    {
+      "id": "H1_ENTRY_ANOMALY",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "罗钧的名字紧挨着许澄的名字。他看了两遍，把复本往外推了一点。",
+      "line": 1,
+      "scope_checked": true,
+      "coordinator_reason": "375字明确出现姓名/守首付/共同设备款，却没有明示无主观记忆的三年；档案具有该事实。接受首屏信息焦点假设，不称为已验证真人因果或全书设定失败。",
+      "disposition": "ACCEPT_BOUNDED_INFORMATION_PRESENTATION_HYPOTHESIS_NOT_HUMAN_CAUSE"
+    },
+    {
+      "id": "H2_PRIVATE_PRESSURE_PRESENTATION",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "他只看着她的指尖，那个“我们”让他想立刻站起来。“我现在自己接后期，明天下午前要交一万二，租我自己的工作间。”",
+      "line": 1,
+      "scope_checked": true,
+      "coordinator_reason": "我们触发他的想离开，但此后立即进入金额和时限。既有私人反应成立，不新增真人无情绪判决；调整信息组织，不删她的生活利益或强加冲突。",
+      "disposition": "ACCEPT_BOUNDED_INFORMATION_PRESENTATION_HYPOTHESIS_NOT_HUMAN_CAUSE"
+    },
+    {
+      "id": "H3_ENDING_DEFERRAL",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "大厅的门又开了，他抬起头，输入到一半的名字留在屏幕上。“我先进去问一句，行不行？”他说着，却仍坐在她对面。",
+      "line": 1,
+      "scope_checked": true,
+      "coordinator_reason": "门开/输入半截/仍坐着均存在，但没有新增线索或购房截止。接受段尾等待目标假设，不临时发明第三人或后果，不强制给核验结果。",
+      "disposition": "ACCEPT_BOUNDED_INFORMATION_PRESENTATION_HYPOTHESIS_NOT_HUMAN_CAUSE"
+    }
+  ],
+  "window_quote_checks": [
+    {
+      "window": "first_30_60",
+      "quote": "罗钧的名字紧挨着许澄的名字。他看了两遍，把复本往外推了一点。“我还得进去问房子的事。你要是来找首付，那钱我不能动。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "interpretation": "KNOWN_FAILURE_EDITOR_HYPOTHESIS_NOT_HUMAN_TRACE"
+    },
+    {
+      "window": "first_150_300",
+      "quote": "他只看着她的指尖，那个“我们”让他想立刻站起来。“我现在自己接后期，明天下午前要交一万二，租我自己的工作间。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 167,
+      "interpretation": "KNOWN_FAILURE_EDITOR_HYPOTHESIS_NOT_HUMAN_TRACE"
+    },
+    {
+      "window": "ending",
+      "quote": "大厅的门又开了，他抬起头，输入到一半的名字留在屏幕上。“我先进去问一句，行不行？”他说着，却仍坐在她对面。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 322,
+      "interpretation": "KNOWN_FAILURE_EDITOR_HYPOTHESIS_NOT_HUMAN_TRACE"
+    }
+  ],
+  "source_fact_check": "All facts are the previous frozen packet; missing display is not missing canon.",
+  "human_AI_smell_relative_improvement_preserved": true,
+  "human_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "formal_mainline_method_revision": 4,
+  "known_failure_not_blind_calibration": true,
+  "new_life_facts_authorized": false
+}

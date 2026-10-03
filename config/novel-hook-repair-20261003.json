@@ -1,0 +1,49 @@
+{
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_AUTHORIZATION_20261003.json",
+    "blob": "86b77d1be685777ae266008291f3f5d3d9532798",
+    "sha256": "bc6ea854d8f7f51f7abf27e8491e81a9532b688dd5db9f67f84ababc2080b8c9"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "quality_certification_allowed": false,
+  "repair_plan": {
+    "path": "state/reviews/hook-trial-20261003/fact-wording-repair-plan.json",
+    "blob": "53c342eff37fc426404daa068b9789f283f5cff2",
+    "sha256": "ab16fb524ad68091561e80e3d67755b2480a2697010722e941d094a86bd597a8"
+  },
+  "jobs": {
+    "writer": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/repair-writer-input.json",
+        "blob": "27565ca0614a5179cbeac500e6ada417e180299c",
+        "sha256": "bb50fc18adecda00ab651589b3b2f1aed83a1fd80f6bc64399601ecbe4095601"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/repair-writer-policy.txt",
+        "blob": "819edd35a641210f784df77bdccbb74b2560c010",
+        "sha256": "18106c28147046530f4e465286de5630719c5ba84f8996307d53192ed03aa717"
+      },
+      "raw_path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+      "max_calls": 1
+    },
+    "facts": {
+      "packet": {
+        "path": "delivery/hook-trial-20261003/repair-facts.packet.json",
+        "blob": "dbf6f00039dab7d8c5c2a2049d97fe986e61834e",
+        "sha256": "2e2e039853c76c4cd01478ad6fe5f1222cec1550608bc6ead975c31fd6c66974"
+      },
+      "policy": {
+        "path": "delivery/hook-trial-20261003/facts-policy.txt",
+        "blob": "3a972d5a67eeb94a25820c754136bb6fabb0bea2",
+        "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+      },
+      "raw_path": "state/reviews/hook-trial-20261003/repair/facts.raw.txt",
+      "max_calls": 1
+    }
+  }
+}

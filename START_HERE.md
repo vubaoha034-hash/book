@@ -17,11 +17,17 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点200。刘先生对390字稿实际否决：不愿继续，AI味从开头就很重，文笔特别别扭。已另存[原话及正确稿件绑定](state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json)，不编造精确停止句或新增情绪/机器人判决；前检查点199的UNKNOWN和AI报告保持原件。
+当前位置：检查点201。刘先生对375字实际否决续读/悬念，同时明确AI味轻了很多。[原话](state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json)保留相对改善，不扩大为文笔/互动通过或新情绪判决。原结果与旧否决不改。
+
+本轮 `NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01` 沿用连续执行授权，完成一次独立已知失败后悬念诊断、冻结事实内的单一新短稿、三个其他独立编辑/事实/匿名AI读者上下文，原报告与50条引文核对已保存。一次无报告的诊断传输失败与一次同材料环境恢复单独留痕；共8次调用、7次成功，实际Sol / Max核对；主写1、内部单字事实修订1。编辑/读者原报告绑定400字初稿；最终401字仅补期限前字并经新的事实审核，未重做质量投票。见[任务](state/tasks/NOVEL_OPENING_HOOK_TRIAL_AFTER_RETENTION_FAIL_20261003.json)、[当前结果](docs/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.md)、[唯一401字正文](delivery/hook-trial-20261003/short-a1-fact-repaired.md)、[结算](state/reviews/hook-trial-20261003/coordinator-settlement.json)。新稿真人UNKNOWN，AI赞成不能认证留存。
+
+当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT`。先交这一份正文，只收实际阅读感受。旧197字、旧RC3额度0、404未知、历次真人FAIL、方法4和人物世界结局保持；完整场景/V5仍关闭。常规中间不问授权，当前run均已消费，读取/audit/状态校验不重跑，不循环求通过，无后台任务。[验证](state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_REMOTE_SAVE_VERIFIED_20261003.json)。
+
+上一检查点200：刘先生对390字稿实际否决：不愿继续，AI味从开头就很重，文笔特别别扭。已另存[原话及正确稿件绑定](state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json)，不编造精确停止句或新增情绪/机器人判决；前检查点199的UNKNOWN和AI报告保持原件。
 
 本轮 `NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01` 沿用连续执行授权，完成一次独立已知失败后语言诊断、三项根因证据及范围核对、精简事实输入、一次独立写作的[唯一375字新稿](delivery/prose-repair-20261003/short-a1.md)，以及三个不同上下文的语言编辑、匿名AI读者、事实审查。[当前任务](state/tasks/NOVEL_OPENING_PROSE_REPAIR_AFTER_HUMAN_FAIL_20261003.json)、[实际结果及来源](docs/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.md)、[结算](state/reviews/prose-repair-20261003/coordinator-settlement.json)、[待真人记录](state/reviews/prose-repair-20261003/pending-human-review.json)。五次实际Sol / Max已核对，35条引文定位、9项事实核对，原正文和报告未改写；内部修订0。AI审核放过前稿的事实已记录，新稿真人UNKNOWN，不认证已经改好。
 
-当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING`。只交375字正文并收是否愿继续、开头和文笔是否仍别扭。常规中间步骤不再问授权；旧稿、旧197字保护、旧RC3额度0、旧真人FAIL、404未知、方法4及故事目标/世界/结局保持。完整场景和V5未授权。读取与校验不会调用模型，当前五次run已消费，不能重跑或循环求赞成。[验证](state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_VALIDATION_20261003.json)与[原生远端回读](state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_REMOTE_SAVE_VERIFIED_20261003.json)分别记录实际证据。
+当时唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING`。只交375字正文并收是否愿继续、开头和文笔是否仍别扭。常规中间步骤不再问授权；旧稿、旧197字保护、旧RC3额度0、旧真人FAIL、404未知、方法4及故事目标/世界/结局保持。完整场景和V5未授权。读取与校验不会调用模型，当前五次run已消费，不能重跑或循环求赞成。[验证](state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_VALIDATION_20261003.json)与[原生远端回读](state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_REMOTE_SAVE_VERIFIED_20261003.json)分别记录实际证据。
 
 上一检查点199：本轮 `NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01` 已依据刘先生“你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。”连续完成一个已准备的新开头：一次独立主写、390字，三个其他独立上下文编辑/匿名读者/事实审核，实际Sol / Max已核对。报告直接回收，31条引用及9项冻结事实核对，原正文和报告未改写；内部修订0。新稿真人结果UNKNOWN，所有既有真人FAIL、404未知、旧197字保护、旧RC3额度0和方法4保留。常规中间准备与保存不重复索要授权。
 

@@ -1,0 +1,184 @@
+{
+  "schema_version": "native-hook-trial-result/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "recorded_at": "2026-10-03T13:29:58Z",
+  "status": "ONE_HOOK_TRIAL_SHORT_AND_REPORTS_SETTLED_AWAIT_ACTUAL_HUMAN",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_AUTHORIZATION_20261003.json",
+    "blob": "86b77d1be685777ae266008291f3f5d3d9532798",
+    "sha256": "bc6ea854d8f7f51f7abf27e8491e81a9532b688dd5db9f67f84ababc2080b8c9"
+  },
+  "manifest": {
+    "path": "config/novel-hook-trial-20261003.json",
+    "blob": "78e0715274e6ae5c0c835325cbf54236f3d20950",
+    "sha256": "ac2db5fb62a9c05572543e8484a36668b6500fc69dfa30a17cd6b1899a29005e"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json",
+    "blob": "f108423a9f6e82fb18712e32dec2966cccabf69b",
+    "sha256": "f9409fb84519f7de033d18736d2b0bff256ec17b94a74a12066481ff5ea1027c"
+  },
+  "writer_input": {
+    "path": "delivery/hook-trial-20261003/writer-input.json",
+    "blob": "3590482eab16e175fbaed6b7d8045fd0b630d0a6",
+    "sha256": "26e39a4cc99284deb393374dace267926fe76c5cdf5b5a35ce68bd9d4ccb6867"
+  },
+  "initial_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1.md",
+    "blob": "163aa56e6db8aa8bb37ca6d86cb0fb3028ce1177",
+    "sha256": "250101c3cbbe99066d4517c3080145e2829d143485f4bfb9859b68161260a772"
+  },
+  "final_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "repair": {
+    "manifest": {
+      "path": "config/novel-hook-repair-20261003.json",
+      "blob": "e1677f63aa5a51f5c5c41edddf3cd335ed14a3bf",
+      "sha256": "bfd49cc01a863d770f2b3b8ac6df98376517278b531fb28a7a2d5a4e4a75bb39"
+    },
+    "runtimes": {
+      "writer": {
+        "path": "state/reviews/hook-trial-20261003/repair/writer.runtime.json",
+        "blob": "939e86ad81423f4f5a24f4bc69755819319b82fa",
+        "sha256": "ec93475e95e8f2569019a1dc86157b09603de31ea1636cb62a1727254e829e41"
+      },
+      "facts": {
+        "path": "state/reviews/hook-trial-20261003/repair/facts.runtime.json",
+        "blob": "cc80fd64761e1445bbafc689098fd9d07b9db3fa",
+        "sha256": "8f30da2c35235ff6218254056de847403fd4b41948a93f033a29d7e9d2a7d7d1"
+      }
+    },
+    "fact_raw_report": {
+      "path": "state/reviews/hook-trial-20261003/repair/facts.raw.txt",
+      "blob": "5f4044cae0aba7c93333f90a3b77f5aaca70d953",
+      "sha256": "e2f9bf1112ab4215d6fe8c6dde9046415614b03e23bbc4d82b37c893a87c2275"
+    },
+    "fact_evidence": {
+      "path": "state/reviews/hook-trial-20261003/repair/facts.evidence.json",
+      "blob": "c989f5a754a1a1a7c2882690639c9ace39e322b3",
+      "sha256": "a144d054c5d9468f1a254ace1941843c7266db57bb63383b49dabab0b379e503"
+    },
+    "editor_and_reader_scope": "INITIAL_400_CHARACTER_BODY_ONLY_FINAL_SINGLE_CHARACTER_FACT_REPAIR_NOT_REASSESSED"
+  },
+  "settlement": {
+    "path": "state/reviews/hook-trial-20261003/coordinator-settlement.json",
+    "blob": "77f3dec5a8aabe6a8056d77f565f2785eb9a4742",
+    "sha256": "ea99a8997f332f405f4a4218f1a04477b02059c21cb2520a1397e96c1cbb6a2e"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/hook-trial-20261003/pending-human-review.json",
+    "blob": "52c2a432e1848db44420fb294de2fe57c926e6dc",
+    "sha256": "d3445c6d13acbe1194464be0e3b15881c9e0c706ada2f5b1dd5dbeb0a369ffee"
+  },
+  "runtimes": {
+    "diagnosis": {
+      "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.runtime.json",
+      "blob": "262c9eef5f3a5bf5a078b36f8b2cb393f7679e58",
+      "sha256": "11586a6205f33ac49a620aacd356326caf32c441b514a5ef14d54040cc601a29"
+    },
+    "facts": {
+      "path": "state/reviews/hook-trial-20261003/facts.runtime.json",
+      "blob": "6d5d32017167a9108b14d4d8146517e2de7c28c9",
+      "sha256": "17e1a07145581fdd6fe9e5ebcb7bb12a81a114d51df82029cd80259aca35ae7a"
+    },
+    "editor": {
+      "path": "state/reviews/hook-trial-20261003/editor.runtime.json",
+      "blob": "803517c038d5503f480fdec0a3ceb0c0bdfc1e39",
+      "sha256": "16d03addc44389a648574b03ec6cae4a53950d3822879b6df3f226f1a4630d01"
+    },
+    "reader": {
+      "path": "state/reviews/hook-trial-20261003/reader.runtime.json",
+      "blob": "7ab75c670057dc83275cdd89ff42f327fb8a2f1c",
+      "sha256": "8d6e14de33d44ae210167fb844fd1561225118b1ac645379b111476b26224cab"
+    },
+    "writer": {
+      "path": "state/reviews/hook-trial-20261003/writer.runtime.json",
+      "blob": "185e2436a72934eb011f8de2f397a7eabdc1ae46",
+      "sha256": "0a8667d04dea4d9eab87657cea82046dacc981397ed9e84145900e912e7803ae"
+    }
+  },
+  "raw_reports": {
+    "diagnosis": {
+      "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.raw.txt",
+      "blob": "46d9bcc483dc7f5b56e207c8a660a1edbb66e1ca",
+      "sha256": "9ae9a3ec8024384b49e2a62e79eb491fc288d68387f30aead546473611895dcd"
+    },
+    "facts": {
+      "path": "state/reviews/hook-trial-20261003/facts.raw.txt",
+      "blob": "5e2aa8b3ef22f4b67416838d7c7fe074691a1505",
+      "sha256": "2260b2c9253427102c830ff88907f01cd14756300d64d8b0afae5ff4e303eb31"
+    },
+    "editor": {
+      "path": "state/reviews/hook-trial-20261003/editor.raw.txt",
+      "blob": "d6d0e9532b265573a42d1fa4eb2bd2c876465d12",
+      "sha256": "d5f215ab0eaa9eb2dd417ab5f5704c3ee95f579dd70672aa6b0902103c7d806f"
+    },
+    "reader": {
+      "path": "state/reviews/hook-trial-20261003/reader.raw.txt",
+      "blob": "3aea49ae7dbcec6bb7dbbaf15e9411d0b1f5548f",
+      "sha256": "0d1e7f77dcee37d87f1e03ea5bed3af91214764c16b606d762fc3f228b19cc84"
+    }
+  },
+  "evidence": {
+    "diagnosis": {
+      "path": "state/reviews/hook-trial-20261003/transport-recovery/diagnosis.evidence.json",
+      "blob": "fb1a202ba8d6d000500154d39fc5362dc9b00fb4",
+      "sha256": "199efec8be17637ff9379ae54c29daf905efa171c5103b7896efe29602a7c574"
+    },
+    "facts": {
+      "path": "state/reviews/hook-trial-20261003/facts.evidence.json",
+      "blob": "b6baef85e93cd4a259bf2f96e822d46f682cae90",
+      "sha256": "cb923f4ded2fd72df8f115812d68c90639aa184dc7ce49f58424a7ab04609441"
+    },
+    "editor": {
+      "path": "state/reviews/hook-trial-20261003/editor.evidence.json",
+      "blob": "ae5c134cb3adfd94f0a39f3d712980c5d53fce24",
+      "sha256": "fef2aa99d4078beae53c31742ef40272bdcea6407e9a4a1c87862f62ecb7e329"
+    },
+    "reader": {
+      "path": "state/reviews/hook-trial-20261003/reader.evidence.json",
+      "blob": "85fa4d29694cf2c828818aff152f18f00cab11d3",
+      "sha256": "27aba7d39335f4a58817c7a06097152038d0c085469a8a2a04f68e4718d3e7e3"
+    }
+  },
+  "result_document": {
+    "path": "docs/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.md",
+    "blob": "50f6f408ba681fe2ed59fbc6a689b21bbfb93b2b",
+    "sha256": "3f23a5d1303200e2dbd42f1caaab6b4e4b4aae2406764793945399a83d83b3e6"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 1,
+  "remaining_primary_generation_budget": 0,
+  "visible_candidate_count": 1,
+  "human_quality_result": "UNKNOWN",
+  "previous_375_human_result": "FAIL",
+  "previous_390_human_result": "FAIL",
+  "literary_quality_validated": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "formal_mainline_method_revision": 4,
+  "original_404_human_result": "UNKNOWN",
+  "old_448_human_result": "FAIL",
+  "intermediate_user_authorization_required": false,
+  "actual_model_calls": 8,
+  "successful_model_calls": 7,
+  "isolated_review_calls": 5,
+  "quote_records_checked": 50,
+  "elapsed_seconds_by_role": {
+    "diagnosis": 625.143,
+    "facts": 361.577,
+    "editor": 340.77,
+    "reader": 305.049,
+    "writer": 304.199,
+    "failed_diagnosis_transport": 19.547,
+    "writer_repair_stage": 30.344,
+    "facts_repair_stage": 388.502
+  },
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT"
+}

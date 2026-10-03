@@ -11,7 +11,15 @@ class ProseRepairTests(unittest.TestCase):
         self.project=json.loads((REPO/'state/project_state.json').read_bytes())
         self.cp=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
         self.route=self.project['opening_prose_repair']
+        human=json.loads((REPO/self.route['human_feedback']['path']).read_bytes())
+        for v in (self.project,self.cp):
+            v.pop('opening_hook_trial',None)
+            v.update(last_completed_task_id=gate.TASK,last_completed_task_contract=self.route['task']['path'],
+                next_action=gate.NEXT,next_required_action=gate.NEXT,human_verdict_receipt=self.route['human_feedback']['path'],
+                latest_human_review=human['review'],current_human_gate='PROSE_REPAIRED_NEW_SHORT_HUMAN_UNKNOWN_PRIOR_390_FAIL_OLD_FAILURES_PRESERVED')
+        self.cp.update(sequence=200,stop=True)
         self.copy_refs(self.route);self.copy_refs(self.project['autonomous_opening_to_human']);self.copy('START_HERE.md')
+        entry=self.root/'START_HERE.md';entry.write_bytes(('当前位置：检查点200。\n'+entry.read_text(encoding='utf-8')).encode())
         for role in ('diagnosis','writer','facts','editor','reader'):self.copy(gate.runner.DIRECTORY+f'/{role}.attempt.json')
     def copy(self,path):
         if path in self.seen or not (REPO/path).is_file():return

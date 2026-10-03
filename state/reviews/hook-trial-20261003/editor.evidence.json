@@ -1,0 +1,66 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "N61",
+      "item_index": 0,
+      "quote": "攒了多年的首付已经备好，今晚本该住进那间小公寓；偏偏身份下多出一段他全不记得的三年，手续停了，现在又有人拿合同等他。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 57,
+      "end_character_exclusive": 115,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 1,
+      "quote": "许澄原本朝他倾着身，听完坐直了。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 140,
+      "end_character_exclusive": 156,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 2,
+      "quote": "“别说得像我专冲你的首付来的。”她压住纸角，“我明天下午也得交一万二，自己租工作间的押金。那笔钱不能拿来垫设备款。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 191,
+      "end_character_exclusive": 249,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N61",
+      "item_index": 3,
+      "quote": "“找供应商，他们有合同和收款记录。三点我得走，客户的片子还等着，剩下二十分钟。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 310,
+      "end_character_exclusive": 350,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/hook-trial-20261003/editor.packet.json",
+    "blob": "52b50ecc233a18c89cfdfd4b238d643c44da1f4c",
+    "sha256": "0b00433de86e803c9150e526e2d828a6650b29c111e115d3e18905d4d685b30d"
+  },
+  "raw_report": {
+    "path": "state/reviews/hook-trial-20261003/editor.raw.txt",
+    "blob": "d6d0e9532b265573a42d1fa4eb2bd2c876465d12",
+    "sha256": "d5f215ab0eaa9eb2dd417ab5f5704c3ee95f579dd70672aa6b0902103c7d806f"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "native-bounded-hook-trial-task/v1",
+  "task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "source_head": "5b6e5cb1a23ecb0be1b9f6a92a18c935f4198a3a",
+  "project_id": "novel-distillation",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_AUTHORIZATION_20261003.json",
+    "blob": "86b77d1be685777ae266008291f3f5d3d9532798",
+    "sha256": "bc6ea854d8f7f51f7abf27e8491e81a9532b688dd5db9f67f84ababc2080b8c9"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json",
+    "blob": "f108423a9f6e82fb18712e32dec2966cccabf69b",
+    "sha256": "f9409fb84519f7de033d18736d2b0bff256ec17b94a74a12066481ff5ea1027c"
+  },
+  "status": "COMPLETED_ONE_SHORT_AND_REPORTS_SETTLED_AWAIT_ACTUAL_HUMAN",
+  "primary_writer_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "visible_candidate_count": 1,
+  "human_quality_result": "UNKNOWN",
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "intermediate_user_authorization_required": false,
+  "stop_condition": "ONE_FINAL_FROZEN_SHORT_AT_ACTUAL_HUMAN_READING",
+  "result": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.json",
+    "blob": "3b85d274bd2efa737d050bc208c6e75dc0430354",
+    "sha256": "20ff5449c88d3063d800bbb9fa647ca8311bc6ab28a3018df2c2ba090b13c969"
+  },
+  "final_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 1,
+  "remaining_primary_generation_budget": 0,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT"
+}

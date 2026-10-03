@@ -1,0 +1,132 @@
+{
+  "job_id": "F201",
+  "work_kind": "FACT_AUDIT",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "N61",
+      "original_sha256": "250101c3cbbe99066d4517c3080145e2829d143485f4bfb9859b68161260a772",
+      "scope": "SECOND_SCENE_OPENING_EXCERPT",
+      "verdict": "FACT_CLEAR",
+      "reading_expectations": {
+        "first_30_60": "不评：本任务仅核对事实，不作冷读期待判断。",
+        "first_150_300": "不评：本任务仅核对事实，不作第一屏吸引力判断。",
+        "ending": "不评续读期待；仅核对段尾行为是否越过冻结边界。"
+      },
+      "findings": [
+        {
+          "id": "F01",
+          "basis": "TEXT_FACT",
+          "quote": "偏偏身份下多出一段他全不记得的三年，手续停了",
+          "line": 1,
+          "explanation": "正文明确过户手续已经停止、罗钧没有那三年的记忆；开头另明确公共休息区及可见的过户大厅。冻结事实来源：setting、previous_scene、rojun_memory_and_responsibility。未发现地点、事件先后或记忆状态的确定矛盾。",
+          "reading_impact": "设备款交涉发生在过户中止之后；姓名匹配没有被等同于罗钧记得签署或已经认账。",
+          "minimum_scope": "无必改项；保持过户已中止、无主观记忆及责任待核验的边界。",
+          "recheck": "修订后不得出现恢复记忆、默认旧关系成立，或把本轮讨款改成过户中止的既定原因。"
+        },
+        {
+          "id": "F02",
+          "basis": "TEXT_FACT",
+          "quote": "这期六万八，五天后到期。",
+          "line": 1,
+          "explanation": "金额和期限由许澄在对话中提供，且明确限定为本期。冻结事实来源：shared_obligation.current_due_installment_yuan、current_due_offset_days_from_scene、amount_semantics。与本期68000元、五天后到期一致；剩余186000元未展示，不构成矛盾。",
+          "reading_impact": "本期到期款没有被写成全部余额或首付金额；罗钧的金额知识有现场输入来源。",
+          "minimum_scope": "无必改项；保留本期金额与总余额的区分。",
+          "recheck": "如增写余额，须保持本期68000元包含在剩余186000元中；不能把停业写成债务已取消。"
+        },
+        {
+          "id": "F03",
+          "basis": "TEXT_FACT",
+          "quote": "我明天下午也得交一万二，自己租工作间的押金。",
+          "line": 1,
+          "explanation": "正文给出许澄自己的工作间安排，并随后明确该笔钱不能垫设备款。冻结事实来源：xucheng_own_life.ordinary_plan、money_scope、pressure。金额、时间和用途相符；没有写成重新共同创业，也没有断言她已取消租赁或没有其他资产。",
+          "reading_impact": "当前押金预算与旧设备责任保持分离；她声明的资金边界不等于对其总资产的结论。",
+          "minimum_scope": "无必改项；仅保持押金专用、个人业务及风险尚未兑现的边界。",
+          "recheck": "不得把这12000元改写成闲钱、足以结清本期款，或已经确定被转走。"
+        },
+        {
+          "id": "F04",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "眼下那语气却像在等一句他理应知道的回答。",
+          "line": 1,
+          "explanation": "正文确定事实：该句以可听见的语气为线索，并使用“像”；前文还提供许澄坐直的可见动作。冻结事实来源：viewpoint_and_knowledge.rojun_access_to_her_private_state。编辑判断：可理解为罗钧的观察性推测，尚不足以判为直接读取许澄内心；她实际期待的回答并未由正文确认。",
+          "reading_impact": "该判断不应升级为罗钧已经知道她的私人情绪，或许澄已经承认某种期待。",
+          "minimum_scope": "无确定违规项；保留观察线索及推测限定。",
+          "recheck": "若改成对许澄内心的确定断言，须重新核对其信息来源和限知视角。"
+        },
+        {
+          "id": "F05",
+          "basis": "TEXT_FACT",
+          "quote": "找供应商，他们有合同和收款记录。",
+          "line": 1,
+          "explanation": "许澄指向供应商留存；罗钧随后用手机输入合同公司名，但没有提交搜索。冻结事实来源：shared_obligation.independent_verification、material_boundary、short_span_endpoint。正文未把许澄写成唯一证据源，也未给出核验结果、认账或付款。具体公开联系方式尚未展示。",
+          "reading_impact": "外部留存与许澄本人的陈述有所区分；输入搜索词只表示准备查证，不表示记录已经证实。",
+          "minimum_scope": "无必改项；保留独立核验入口和未完成核验的状态。",
+          "recheck": "如扩写本摘录，核验不得依赖许澄控制的设备或自建页面，也不得提前产生认账、付款或关系恢复。"
+        },
+        {
+          "id": "F06",
+          "basis": "TEXT_FACT",
+          "quote": "三点我得走，客户的片子还等着，剩下二十分钟。",
+          "line": 1,
+          "explanation": "三点离开、客户工作及剩余二十分钟均由许澄说明。冻结事实来源：known_time_boundary。正文没有把这二十分钟写成购房窗口关闭期限；段尾大厅叫号也没有明确宣布过户当天失效。",
+          "reading_impact": "时间限制属于许澄的有限协助，而非房产手续的已确认截止时间。",
+          "minimum_scope": "无必改项；保持两类时间边界分离。",
+          "recheck": "不得仅凭叫号或二十分钟倒计时，推出购房窗口届时关闭或当天必然失效。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "名字对得上，不代表是我签的。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留姓名匹配与本人认领责任之间的区分。"
+        },
+        {
+          "quote": "这期六万八，五天后到期。",
+          "line": 1,
+          "reason": "TEXT_FACT：准确承载本期金额及到期时间。"
+        },
+        {
+          "quote": "自己租工作间的押金。那笔钱不能拿来垫设备款。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留许澄个人安排和押金用途边界。"
+        },
+        {
+          "quote": "找供应商，他们有合同和收款记录。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留许澄之外的证据留存方。"
+        },
+        {
+          "quote": "三点我得走，客户的片子还等着，剩下二十分钟。",
+          "line": 1,
+          "reason": "TEXT_FACT：保留有现实工作约束的有限协助时段。"
+        },
+        {
+          "quote": "没按下搜索，也没收起手机。",
+          "line": 1,
+          "reason": "TEXT_FACT：段尾仍停在未解决的当下，没有核验结果或责任认领。"
+        }
+      ],
+      "minimal_change_targets": [],
+      "recheck_conditions": [
+        "FACT_CLEAR仅表示本摘录未发现确定矛盾，不表示所有冻结事实均已展示，也不评价文本质量或真人接受度。",
+        "如修订本摘录，复核金额层级、押金用途、独立核验路径与二十分钟的归属。",
+        "继续区分罗钧的观察性推测、许澄实际说出的内容和已经核验的事实。"
+      ],
+      "unknowns": [
+        "合同的另一个姓名及具体条款未逐字展示；不能据此认定与冻结的双方姓名冲突。",
+        "剩余186000元、工作室停业及30天窗口的具体长度未展示；属于未展示，不是确定矛盾。",
+        "供应商公开联系方式、搜索结果和实际核验过程未展示；不能确认核验已经完成。",
+        "许澄的总资产及是否实际动用押金未展示；不作推断。"
+      ]
+    }
+  ],
+  "unknowns": [
+    "合同材料此前的具体归属与交接顺序未由事实包确认。",
+    "完整场景及摘录之后的行为未提供，本报告不判断其是否完成完整场景终点。"
+  ]
+}

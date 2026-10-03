@@ -85,7 +85,7 @@ def runtime_check(root,reference,role,job):
     return r
 
 
-def prose_action(root,project,checkpoint,historical_action):
+def prose_action(root,project,checkpoint,historical_action,successor_human_feedback=None):
     if historical_action!=OLD:raise ValueError('PROSE_CANNOT_SKIP_HISTORICAL_GATES')
     validate_failure(root,project,checkpoint)
     route=project['opening_prose_repair'];manifest=bound(root,route['manifest']);result=bound(root,route['result'])
@@ -181,6 +181,13 @@ def prose_action(root,project,checkpoint,historical_action):
             v.get('current_human_gate')!='PROSE_REPAIRED_NEW_SHORT_HUMAN_UNKNOWN_PRIOR_390_FAIL_OLD_FAILURES_PRESERVED'):
             raise ValueError('PROSE_LIVE_CURSOR_OR_ACTUAL_FEEDBACK_DRIFT')
     entry=(root/'START_HERE.md').read_text(encoding='utf-8')
-    if checkpoint.get('sequence')!=200 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or '当前位置：检查点200。' not in entry:
+    successor_entry=False
+    if successor_human_feedback is not None:
+        h=bound(root,successor_human_feedback)
+        successor_entry=(successor_human_feedback.get('path')=='state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json' and
+            h.get('source_checkpoint')==200 and h.get('outcome')=='FAIL' and h.get('output')==route['final_artifact'] and
+            h.get('review',{}).get('source')=={'kind':'ACTUAL_CURRENT_USER_MESSAGE','message_observed_directly':True} and
+            '当前位置：检查点201。' in entry and '上一检查点200：' in entry)
+    if checkpoint.get('sequence')!=200 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点200。' not in entry and not successor_entry):
         raise ValueError('PROSE_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

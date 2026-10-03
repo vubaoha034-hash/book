@@ -250,7 +250,7 @@ def two_role_action(root, project, checkpoint, historical_action, successor_auth
             later.get('source_checkpoint') == 199 and later.get('outcome') == 'FAIL' and
             later.get('output') == project.get('autonomous_opening_to_human',{}).get('final_artifact') and
             later.get('review',{}).get('source') == {'kind':'ACTUAL_CURRENT_USER_MESSAGE','message_observed_directly':True} and
-            '当前位置：检查点200。' in entry and '上一检查点199：' in entry)
+            ('当前位置：检查点200。' in entry or '上一检查点200：' in entry) and '上一检查点199：' in entry)
     if successor_authorization is not None:
         successor = bound(root,successor_authorization)
         successor_entry = (successor_authorization.get('path') == 'state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json' and
