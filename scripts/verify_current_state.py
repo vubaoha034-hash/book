@@ -516,6 +516,7 @@ def scoped_human_rejection_action(root: Path, project: dict, route: dict,
     plan = safe_file(root, task.get('plan', {}).get('path', '')).read_bytes()
     quality = route.get('fresh_external_quality_review', {})
     action = 'RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK'
+    blocked_action = 'AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY'
     if (receipt.get('schema_version') != 'novel-scoped-human-reading-receipt/v1' or
         receipt.get('project_id') != project.get('project_id') or receipt.get('outcome') != 'FAIL' or
         receipt.get('processed_once') is not True or human.get('outcome') != 'FAIL' or
@@ -558,11 +559,47 @@ def scoped_human_rejection_action(root: Path, project: dict, route: dict,
         task.get('generation_count') != 0 or task.get('new_prose_authorized_now') is not False or
         task.get('old_RC3_budget_remaining') != 0 or task.get('old_task_not_reopened') is not True or
         task.get('full_scene_authorized') is not False or task.get('full_v5_authorized') is not False or
-        task.get('callback_received') is not False or preparation_route.get('callback_received') is not False or
+        task.get('callback_received') is not False or
         task.get('status') != 'PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED' or
         execution.get('next_action') != action or quality.get('next_action') != action or
-        task.get('next_action') != action or preparation_route.get('next_action') != action):
+        task.get('next_action') != action):
         raise ValueError('HUMAN_FAIL_DIAGNOSTIC_PREPARATION_DRIFT')
+    blocker_ref = preparation_route.get('dispatch_blocker')
+    if blocker_ref:
+        blocker = bound_json(root, blocker_ref)
+        dispatch = blocker.get('dispatch_message', {})
+        if (preparation_route.get('status') != 'DISPATCH_BLOCKED_PRE_SEND_EXACT_COMPOSER_MISMATCH_NO_SEND_NO_RETRY' or
+            preparation_route.get('next_action') != blocked_action or
+            preparation_route.get('callback_received') is not False or
+            preparation_route.get('new_prose_authorized_now') is not False or
+            preparation_route.get('external_review_started') is not False or
+            preparation_route.get('reviewer_conversation_url') is not None or
+            preparation_route.get('send_click_count') != 0 or
+            preparation_route.get('composer_fill_count') != 1 or
+            preparation_route.get('same_task_retry_allowed') is not False or
+            blocker.get('schema_version') != 'novel-external-diagnosis-pre-send-blocker-receipt/v1' or
+            blocker.get('project_id') != project.get('project_id') or
+            blocker.get('task_id') != task.get('task_id') or
+            blocker.get('callback_id') != task.get('callback_id') or
+            blocker.get('prepared_task') != preparation_route.get('task') or
+            blocker.get('reviewer_packet') != task.get('reviewer_packet') or
+            blocker.get('review_target') != task.get('output') or
+            blocker.get('outcome') != 'BLOCKED_PRE_SEND_EXACT_COMPOSER_MISMATCH' or
+            blocker.get('external_review_started') is not False or
+            blocker.get('callback_received') is not False or
+            blocker.get('reviewer_conversation_url') is not None or
+            blocker.get('retry_allowed_in_same_task') is not False or
+            blocker.get('new_prose_authorized') is not False or
+            dispatch.get('exact_match') is not False or
+            dispatch.get('fill_count') != 1 or dispatch.get('send_click_count') != 0 or
+            dispatch.get('dispatch_attempt_count') != 0 or
+            dispatch.get('expected_sha256') == dispatch.get('composer_actual_sha256')):
+            raise ValueError('HUMAN_FAIL_DIAGNOSTIC_PRE_SEND_BLOCKER_DRIFT')
+        return blocked_action
+    if (preparation_route.get('callback_received') is not False or
+        preparation_route.get('status') != 'PREPARED_DISPATCH_BLOCKED_OPERA_SESSION_TERMINATED' or
+        preparation_route.get('next_action') != action):
+        raise ValueError('HUMAN_FAIL_DIAGNOSTIC_PREPARATION_ROUTE_DRIFT')
     return action
 
 def test_outcome(root: Path, relative: str) -> str:
