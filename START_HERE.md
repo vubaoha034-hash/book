@@ -17,11 +17,17 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点201。刘先生对375字实际否决续读/悬念，同时明确AI味轻了很多。[原话](state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json)保留相对改善，不扩大为文笔/互动通过或新情绪判决。原结果与旧否决不改。
+当前位置：检查点202。任务 `NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01`。刘先生实际反馈“这个稍微好了一些。确实。”已绑定[同一401字交付稿](delivery/hook-trial-20261003/short-a1-fact-repaired.md)，见[原话回执](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)和[反馈任务](state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json)。只记录相对改善，不推断改善维度、续读YES、情绪/互动PASS、精确停止句或全面认可；既有失败、原报告及检查点201的UNKNOWN快照保持原件。本次模型调用0、正文生成0。
+
+当前唯一下一动作：`AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT`。收同一短稿是否愿继续、人物互动是否仍机械的明确阅读反馈；没有新的写作预算、旧额度恢复或自动扩大。读取/校验不重跑模型，原有401字正文不改动。
+
+本次[保存验证](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_REMOTE_SAVE_VERIFIED_20261003.json)分别记录；这些文件是反馈保存证据，不是文学通过证据。
+
+上一检查点201：刘先生对375字实际否决续读/悬念，同时明确AI味轻了很多。[原话](state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json)保留相对改善，不扩大为文笔/互动通过或新情绪判决。原结果与旧否决不改。
 
 本轮 `NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01` 沿用连续执行授权，完成一次独立已知失败后悬念诊断、冻结事实内的单一新短稿、三个其他独立编辑/事实/匿名AI读者上下文，原报告与50条引文核对已保存。一次无报告的诊断传输失败与一次同材料环境恢复单独留痕；共8次调用、7次成功，实际Sol / Max核对；主写1、内部单字事实修订1。编辑/读者原报告绑定400字初稿；最终401字仅补期限前字并经新的事实审核，未重做质量投票。见[任务](state/tasks/NOVEL_OPENING_HOOK_TRIAL_AFTER_RETENTION_FAIL_20261003.json)、[当前结果](docs/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.md)、[唯一401字正文](delivery/hook-trial-20261003/short-a1-fact-repaired.md)、[结算](state/reviews/hook-trial-20261003/coordinator-settlement.json)。新稿真人UNKNOWN，AI赞成不能认证留存。
 
-当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT`。先交这一份正文，只收实际阅读感受。旧197字、旧RC3额度0、404未知、历次真人FAIL、方法4和人物世界结局保持；完整场景/V5仍关闭。常规中间不问授权，当前run均已消费，读取/audit/状态校验不重跑，不循环求通过，无后台任务。[验证](state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_REMOTE_SAVE_VERIFIED_20261003.json)。
+当时唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT`。先交这一份正文，只收实际阅读感受。旧197字、旧RC3额度0、404未知、历次真人FAIL、方法4和人物世界结局保持；完整场景/V5仍关闭。常规中间不问授权，当前run均已消费，读取/audit/状态校验不重跑，不循环求通过，无后台任务。[验证](state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_VALIDATION_20261003.json)与[远端回读](state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_REMOTE_SAVE_VERIFIED_20261003.json)。
 
 上一检查点200：刘先生对390字稿实际否决：不愿继续，AI味从开头就很重，文笔特别别扭。已另存[原话及正确稿件绑定](state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json)，不编造精确停止句或新增情绪/机器人判决；前检查点199的UNKNOWN和AI报告保持原件。
 
@@ -67,4 +73,4 @@
 
 当前脚本验证主线与状态的一致性，保留旧稿拒绝边界。它不评判文学质量，也不构成平台级硬锁。
 
-本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新短稿见检查点200，真人UNKNOWN。
+本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新短稿见检查点201，检查点202记录相对改善，续读及互动判决仍UNKNOWN。

@@ -1,0 +1,48 @@
+{
+  "schema_version": "native-human-partial-feedback/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
+  "source_head": "6753868be721f38e38387286217419b7a423ea40",
+  "source_checkpoint": 201,
+  "recorded_at": "2026-10-03T14:03:26Z",
+  "human_exact_feedback": "这个稍微好了一些。确实。",
+  "output": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "outcome": "UNKNOWN",
+  "review": {
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "human_exact_feedback": "这个稍微好了一些。确实。",
+    "bound_artifact_path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "bound_blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "bound_sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9",
+    "relative_improvement": "SLIGHTLY_BETTER_UNSPECIFIED_DIMENSION",
+    "wants_to_continue": null,
+    "retention_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "suspense_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "topic_rejection": false,
+    "feedback_summary": "刘先生明确说401字稿稍微好了一些；未直接回答愿不愿继续、人物互动或哪项改善。保留相对正向反馈，质量门仍UNKNOWN。"
+  },
+  "prior_records_rewritten": false,
+  "prior_result": {
+    "path": "state/review_receipts/NOVEL_OPENING_HOOK_TRIAL_RESULT_20261003.json",
+    "blob": "3b85d274bd2efa737d050bc208c6e75dc0430354",
+    "sha256": "20ff5449c88d3063d800bbb9fa647ca8311bc6ab28a3018df2c2ba090b13c969"
+  },
+  "no_full_accepted_positive_calibration_sample_created": true,
+  "next_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
+  "model_calls": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false
+}

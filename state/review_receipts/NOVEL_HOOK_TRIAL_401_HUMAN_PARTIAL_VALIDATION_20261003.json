@@ -1,0 +1,115 @@
+{
+  "schema_version": "native-human-partial-feedback-validation/v1",
+  "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
+  "source_head": "6753868be721f38e38387286217419b7a423ea40",
+  "recorded_at": "2026-10-03T14:13:21Z",
+  "status": "PARTIAL_HUMAN_FEEDBACK_SCOPE_HISTORY_AND_STATE_VALIDATION_PASSED",
+  "current_state": {
+    "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+    "sequence": 202,
+    "next_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
+    "checks_passed": 27,
+    "mainline": {
+      "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+      "revision": 4,
+      "step": "STEP_03",
+      "outcomes": {
+        "TEST_01": "UNKNOWN"
+      }
+    },
+    "literary_quality_tested_by_this_script": false,
+    "new_prose_authorized": false,
+    "lock_coverage": "COOPERATING_PROJECT_ENTRYPOINTS_ONLY"
+  },
+  "scoped_unittest": {
+    "command": "Scoped unittest discovery: test_hook_trial*.py, test_prose_repair.py, test_current_state.py",
+    "tests": 90,
+    "exit_code": 0,
+    "wall_seconds": 76.234,
+    "output_sha256": "00415c8b5c50196c07a8afe651faeb6e726f0d1fb30e91e015f9ce0f0bfad443",
+    "output": "..........................................................................................\n----------------------------------------------------------------------\nRan 90 tests in 76.223s\n\nOK\n"
+  },
+  "whole_suite_rerun_this_turn": false,
+  "skill_structure": {
+    "status": "PASSED",
+    "files_checked": 28,
+    "literary_quality_test": false
+  },
+  "syntax_check": "PASSED",
+  "diff_whitespace_check": "PASSED",
+  "protected_source_file_count": 515,
+  "prior_body_reports_receipts_and_locks_byte_unchanged": true,
+  "human_quality_result": "UNKNOWN",
+  "relative_positive_feedback_recorded": true,
+  "model_calls": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "blob": "78440cebc83791424cefec0ded0684dd554e5003",
+      "sha256": "2a12e76b888dc4bad5f7d949993d537969d89bd8a47f031e49db74fe2a2a53d0"
+    },
+    {
+      "path": "README.md",
+      "blob": "bbf260ad4f328efcaac27084a9d3a9d7c78123a4",
+      "sha256": "17c9956807100ffc368f2bf5e45837b4cc0e633761c1a482854ade80f600f4ef"
+    },
+    {
+      "path": "SKILL.md",
+      "blob": "8f4e17a2c4ae83f983800d15ce76ce0298fa485e",
+      "sha256": "6c0cbeea361db7f9609bb69aec8ef0010d5fe7acc90ae6c81c1b08f097235afa"
+    },
+    {
+      "path": "START_HERE.md",
+      "blob": "f3d577cc2cd889aea2bb0cc1dcc785ce7548df2e",
+      "sha256": "68bdaa3436cbf161a73a6eb52c5c94dc66a0c26be7381dff1e54931831e1cb19"
+    },
+    {
+      "path": "scripts/verify_hook_trial.py",
+      "blob": "32155e5fe1ffd293b8acdca934df8c2b43a6ab3d",
+      "sha256": "be055810a8a355605c57e961be83a3adf71ca513d729c68861ac875d277cd33e"
+    },
+    {
+      "path": "scripts/verify_prose_repair.py",
+      "blob": "89a92b7b0e1ef509dbe1285cabd919d0275d6f78",
+      "sha256": "a1c4ce469b6f394a1bc37bd895141e0cbfb193ee31ede0e46b78cb8908e13d85"
+    },
+    {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "dca7b8a600ae6aafe49863f0259be5f6f8ce0c3f",
+      "sha256": "ff4c3806fac0f004ffacab0c7e8846c28f9f6be827a58f035c6b3a746b60f282"
+    },
+    {
+      "path": "state/project_state.json",
+      "blob": "3b21bab0a03582fac56c0c06c19f6d44865f86b3",
+      "sha256": "a8e99481e3c16fa0343102e92aa8293e9e4ff5df7889b4ac975d5c22476148ad"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+      "blob": "52fcdab6e8bf568ed43e4511e2a46db3fce9013f",
+      "sha256": "809f87b200084f9e8b7227072d51d143b2a6c286ebbbc2d83b02f6930917ff3a"
+    },
+    {
+      "path": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+      "blob": "2f35f5e9976992388ec637ac4a588885fb7aec55",
+      "sha256": "250c0168fcf94b0d36451d63f6d2083aa3b179b63142b1651f9f8f977144418c"
+    },
+    {
+      "path": "tests/test_current_state.py",
+      "blob": "678bed676655a27158e092e98a65bf401a988f52",
+      "sha256": "d12fa86170d718b7b9fa8b798446b5fa73cb3af156806226969e84d751ddfd48"
+    },
+    {
+      "path": "tests/test_hook_trial.py",
+      "blob": "261cc4e8059279466217c2b814c1889f88c45cb5",
+      "sha256": "7ab0b5ef6e1471795e0291eb5e51105edffcb1a64ae0d1d5aca0abea19d3731f"
+    },
+    {
+      "path": "tests/test_hook_trial_human_feedback.py",
+      "blob": "f6a4069fe9bf72f65c1b9235e1bfee1a22c19786",
+      "sha256": "9ad9b499125a4f1331f0ff8a16c0637d4c2e03c60a4884036a5af84b298675a6"
+    }
+  ],
+  "remote_save_status": "NOT_YET_CONFIRMED_READBACK_REQUIRED"
+}

@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 201,
-  "recorded_at": "2026-10-03T13:29:58Z",
+  "sequence": 202,
+  "recorded_at": "2026-10-03T14:03:26Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "ONE_HOOK_TRIAL_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+  "current_focus": "SAME_401_SHORT_AWAIT_EXPLICIT_READING_VERDICT",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -751,7 +751,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT",
+  "next_required_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1880,14 +1880,14 @@
       "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "HUMAN_375_RETENTION_FAIL_AND_AI_SMELL_IMPROVEMENT_RECORDED_AWAIT_NEW_HUMAN",
+  "status": "HUMAN_PARTIAL_POSITIVE_READING_VERDICT_UNKNOWN",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+  "last_completed_task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "a92fa516f6e56c6defc236e641c8450a921394ccf55239d51d0ff67f02efb795",
+    "project_state_sha256": "a8e99481e3c16fa0343102e92aa8293e9e4ff5df7889b4ac975d5c22476148ad",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1945,16 +1945,17 @@
       "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
       "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
       "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
-      "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01"
+      "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
+      "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_OPENING_HOOK_TRIAL_AFTER_RETENTION_FAIL_20261003.json",
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_HOOK_TRIAL_SHORT",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json",
-  "current_human_gate": "HOOK_TRIAL_HUMAN_UNKNOWN_PRIOR_375_RETENTION_FAIL_AI_SMELL_RELATIVELY_IMPROVED",
+  "last_completed_task_contract": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+  "next_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+  "current_human_gate": "HOOK_TRIAL_PARTIAL_POSITIVE_CONTINUATION_AND_INTERACTION_UNKNOWN",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -2094,20 +2095,20 @@
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
       "message_observed_directly": true
     },
-    "human_exact_feedback": "不想。  因为真的一点让人看下去的欲望都没有。毫无欲望，没有一点悬念让人觉得好看的。   ai味道这次变轻了很多。",
-    "bound_artifact_path": "delivery/prose-repair-20261003/short-a1.md",
-    "bound_blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
-    "bound_sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7",
-    "wants_to_continue": false,
-    "retention_verdict": "FAIL",
-    "suspense_feedback": "没有一点悬念让人觉得好看的",
-    "ai_smell_feedback": "ai味道这次变轻了很多",
-    "ai_smell_verdict": "RELATIVE_IMPROVEMENT_NOT_A_FULL_PASS",
+    "human_exact_feedback": "这个稍微好了一些。确实。",
+    "bound_artifact_path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "bound_blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "bound_sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9",
+    "relative_improvement": "SLIGHTLY_BETTER_UNSPECIFIED_DIMENSION",
+    "wants_to_continue": null,
+    "retention_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "suspense_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
     "topic_rejection": false,
-    "feedback_summary": "375字稿没有续读欲望、没有吸引人的悬念；AI味相对减轻很多，精确停止句未提供。"
+    "feedback_summary": "刘先生明确说401字稿稍微好了一些；未直接回答愿不愿继续、人物互动或哪项改善。保留相对正向反馈，质量门仍UNKNOWN。"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -3177,7 +3178,7 @@
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
   },
-  "updated_at": "2026-10-03T13:29:58Z",
+  "updated_at": "2026-10-03T14:03:26Z",
   "r2_entry_short_trial": {
     "schema_version": "native-one-short-trial-state/v1",
     "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
@@ -4009,5 +4010,26 @@
       "blob": "3b85d274bd2efa737d050bc208c6e75dc0430354",
       "sha256": "20ff5449c88d3063d800bbb9fa647ca8311bc6ab28a3018df2c2ba090b13c969"
     }
+  },
+  "hook_trial_human_feedback": {
+    "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
+    "source_head": "6753868be721f38e38387286217419b7a423ea40",
+    "task": {
+      "path": "state/tasks/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+      "blob": "2f35f5e9976992388ec637ac4a588885fb7aec55",
+      "sha256": "250c0168fcf94b0d36451d63f6d2083aa3b179b63142b1651f9f8f977144418c"
+    },
+    "receipt": {
+      "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+      "blob": "52fcdab6e8bf568ed43e4511e2a46db3fce9013f",
+      "sha256": "809f87b200084f9e8b7227072d51d143b2a6c286ebbbc2d83b02f6930917ff3a"
+    },
+    "next_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
+    "human_quality_result": "UNKNOWN",
+    "model_calls": 0,
+    "generation_count": 0,
+    "new_prose_authorized": false,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false
   }
 }

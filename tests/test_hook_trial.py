@@ -14,7 +14,13 @@ class HookTrialTests(fixture.ProseRepairTests):
         self.project=json.loads((REPO/'state/project_state.json').read_bytes())
         self.cp=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
         self.route=self.project['opening_hook_trial']
+        if 'hook_trial_human_feedback' in self.project:
+            self.project,self.cp,_=gate.human_feedback_view(REPO,self.project,self.cp)
+            self.route=self.project['opening_hook_trial']
         self.copy_refs(self.route);self.copy_refs(self.project['opening_prose_repair']);self.copy('START_HERE.md')
+        entry=self.root/'START_HERE.md'
+        if '当前位置：检查点201。' not in entry.read_text(encoding='utf-8'):
+            entry.write_bytes(('当前位置：检查点201。\n'+entry.read_text(encoding='utf-8')).encode())
         for role in ('diagnosis','writer','facts','editor','reader'):
             self.copy(gate.runner.DIRECTORY+f'/{role}.attempt.json')
         self.copy(gate.runner.DIRECTORY+'/transport-recovery/diagnosis.attempt.json')

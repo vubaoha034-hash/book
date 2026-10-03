@@ -187,7 +187,7 @@ def prose_action(root,project,checkpoint,historical_action,successor_human_feedb
         successor_entry=(successor_human_feedback.get('path')=='state/review_receipts/NOVEL_PROSE_REPAIR_375_HUMAN_RETENTION_FAIL_20261003.json' and
             h.get('source_checkpoint')==200 and h.get('outcome')=='FAIL' and h.get('output')==route['final_artifact'] and
             h.get('review',{}).get('source')=={'kind':'ACTUAL_CURRENT_USER_MESSAGE','message_observed_directly':True} and
-            '当前位置：检查点201。' in entry and '上一检查点200：' in entry)
+            ('当前位置：检查点201。' in entry or '上一检查点201：' in entry) and '上一检查点200：' in entry)
     if checkpoint.get('sequence')!=200 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点200。' not in entry and not successor_entry):
         raise ValueError('PROSE_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

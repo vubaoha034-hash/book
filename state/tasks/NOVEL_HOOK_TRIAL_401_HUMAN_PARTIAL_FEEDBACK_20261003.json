@@ -1,0 +1,31 @@
+{
+  "schema_version": "native-human-feedback-recording-task/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
+  "source_head": "6753868be721f38e38387286217419b7a423ea40",
+  "source_checkpoint": 201,
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "status": "COMPLETED_FEEDBACK_RECORDING_AWAIT_READING_VERDICT",
+  "receipt": {
+    "path": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_PARTIAL_FEEDBACK_20261003.json",
+    "blob": "52fcdab6e8bf568ed43e4511e2a46db3fce9013f",
+    "sha256": "809f87b200084f9e8b7227072d51d143b2a6c286ebbbc2d83b02f6930917ff3a"
+  },
+  "parent_task": {
+    "path": "state/tasks/NOVEL_OPENING_HOOK_TRIAL_AFTER_RETENTION_FAIL_20261003.json",
+    "blob": "1b83bd210ddab54d9c4e9dd9bd4c6a4508d1a63f",
+    "sha256": "92af8f2a61cc58ccfb58470b8460acd16e742aa1ec09007f47e529620a53a1da"
+  },
+  "final_artifact": {
+    "path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
+    "blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
+    "sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9"
+  },
+  "next_action": "AWAIT_HUMAN_CONTINUATION_AND_INTERACTION_VERDICT_FOR_SAME_401_SHORT",
+  "human_quality_result": "UNKNOWN",
+  "model_calls": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false
+}
