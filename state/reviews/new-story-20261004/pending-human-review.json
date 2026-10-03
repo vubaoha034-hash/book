@@ -1,0 +1,13 @@
+{
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "artifact": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "outcome": "UNKNOWN",
+  "human_feedback": {},
+  "accepted": false,
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING"
+}

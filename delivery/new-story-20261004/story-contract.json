@@ -1,0 +1,25 @@
+{
+  "schema_version": "new-story-short-contract/v1",
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "working_title": "回家吃饭",
+  "genre": "现实家庭悬疑",
+  "story_scope": "独立新故事试读，不属于《第二套过去》",
+  "reader_promise": "一个姐姐发现坐在家中饭桌边的弟弟被警方追捕；先保住母亲和女儿，再面对他究竟做过什么。",
+  "core_desire": "让女儿和母亲平安离开眼前危险，同时仍希望弟弟没有伤人。",
+  "conflict": "弟弟在家中，孩子靠近他；警方让姐姐不要惊动他。",
+  "causal_chain": [
+    "弟弟突然回家吃饭，家人把他当亲人接待。",
+    "调查警员确认他进了这个单元，联系姐姐要求她先带孩子出来。",
+    "姐姐的掩饰和离开安排与弟弟对她的熟悉发生碰撞。",
+    "她须在保护孩子与保全弟弟之间作出实际选择。"
+  ],
+  "ending_direction": "姐姐让女儿和母亲脱险，如实配合；弟弟被警方带走，不能以全是误会或骗局消除他的责任。只是规划，不写结局正文。",
+  "hidden_story_truth": "弟弟卷入伤人案件，有真实责任；回家是走投无路而想借家庭藏身。警方提醒有事实依据；不是诈骗电话、测试或超自然设定。",
+  "short_endpoint": "姐姐开始带孩子离开或弟弟发现异常，情况发生一项具体变化；不写救援完成、案情全解或结局。",
+  "authorized_outputs": 1,
+  "length_range": [
+    300,
+    500
+  ],
+  "human_quality_result": "UNKNOWN"
+}

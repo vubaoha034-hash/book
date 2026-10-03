@@ -1,3 +1,7 @@
+当前位置：检查点205。
+
+检查点205：任务 `NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01`。刘先生否决374字接续：不愿继续、AI味仍在但减轻；原401字少量续读/自然反馈保留。按本轮换故事及持续到人工审核授权，旧故事暂停、原件和规则保持；独立新故事《回家吃饭》唯一383字及两次隔离审查已完成。实际3次GPT-6.1 Sol / Max核对，主写1、内部修订0；新稿真人UNKNOWN，AIYES不认证好看。见[结果与实际学习](docs/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.md)、[原生任务](state/tasks/NOVEL_NEW_STORY_PSYCHOLOGY_OPENING_TRIAL_20261004.json)、[唯一正文](delivery/new-story-20261004/opening-a1.md)。当前run各一次已消费，读取/audit不重跑；历史27项门在固定CP204树上保留检查，新授权和证据另验。下一步只 `AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING`。完整场景/V5、多候选、旧额度恢复和后台未授权；无额外中间确认。
+
 # 小说项目接管入口
 
 <!-- UNIFIED_USER_INSTRUCTION_20261003 -->
@@ -17,7 +21,7 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点204。任务 `NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01`。保留刘先生弱续读、互动自然的401字上段，已沿连续执行授权完成[唯一374字接续](delivery/continuation-short-20261003/continuation-a1.md)及三种不同独立上下文的审查；实际四次Sol / Max均核对，主写1、内部修订0，三审报告与30条定位记录已保存。FACT_CLEAR、EDITORIAL_CLEAR及匿名AI读者YES只作内部证据，新374字真人UNKNOWN，整场/TEST-01仍未通过。见[实际结果与能力限制](docs/NOVEL_SAME_SCENE_CONTINUATION_RESULT_20261003.md)、[任务](state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json)、[结算](state/reviews/continuation-short-20261003/coordinator-settlement.json)。401字不改，旧稿否决/锁/额度0/方法4与世界人物结局保持。
+上一检查点204：任务 `NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01`。保留刘先生弱续读、互动自然的401字上段，已沿连续执行授权完成[唯一374字接续](delivery/continuation-short-20261003/continuation-a1.md)及三种不同独立上下文的审查；实际四次Sol / Max均核对，主写1、内部修订0，三审报告与30条定位记录已保存。FACT_CLEAR、EDITORIAL_CLEAR及匿名AI读者YES只作内部证据，新374字真人UNKNOWN，整场/TEST-01仍未通过。见[实际结果与能力限制](docs/NOVEL_SAME_SCENE_CONTINUATION_RESULT_20261003.md)、[任务](state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json)、[结算](state/reviews/continuation-short-20261003/coordinator-settlement.json)。401字不改，旧稿否决/锁/额度0/方法4与世界人物结局保持。
 
 当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT`。只交这一个新短段并收刘先生的实际阅读感受；停在此人工门，不自动整场、TEST-02、V5、多个候选或后台任务。阅读副本为原401字加本374字的机械拼接。当前所有run一次锁已消费，读取结果和状态校验不调用模型；不复跑求赞成。窗口覆盖不足与策略旧标签另存原样来源及限制。
 

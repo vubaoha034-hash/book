@@ -1,0 +1,38 @@
+{
+  "schema_version": "native-new-story-short-authorization/v1",
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "project_id": "novel-distillation",
+  "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+  "source_checkpoint": 204,
+  "authority": {
+    "source": "ACTUAL_CURRENT_USER_MESSAGE",
+    "exact_message": "一，真的没有读下去的欲望。   二，依旧有ai味道。只是更轻了。   三，实在不行你换个故事，能快速抓住要求的。  四，有大量的心理学研究，如何才能快速让人想看。你自己查下，这个结果花了这么久的时间。  对我来说非常不满意。",
+    "message_observed_directly": true
+  },
+  "standing_autonomy": "你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。",
+  "trigger": "Repeated actual retention failures including the just-delivered 374-character continuation satisfy the user conditional story-change instruction.",
+  "scope": "ONE_NEW_STORY_300_500_CHARACTER_OPENING_ONLY_OLD_STORY_PAUSED_PRESERVED",
+  "human_failure": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_374_HUMAN_FAIL_20261004.json",
+    "blob": "6c6ae5355b487599a7d797807070b6a7663d9bd1",
+    "sha256": "cd6bfd56d94d1ed70a37ae5d3cd43adac81303fdf62289952a0cc02c62cafc21"
+  },
+  "previous_trial": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_SHORT_RESULT_20261003.json",
+    "blob": "4ad342fc805e76f6388ba9eb81adfed59cfc9870",
+    "sha256": "36e821b1c7c30074278cc141595f66db7394cb01ea14571066bc7a6a162464db"
+  },
+  "primary_writer_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "old_story_retcon_authorized": false,
+  "full_scene_or_V5_authorized": false,
+  "multiple_visible_candidates_authorized": false,
+  "background_tasks_authorized": false,
+  "new_story_trial_subject_authorized": true,
+  "research_authorized": true,
+  "intermediate_confirmation_required": false,
+  "original_mainline_goal_preserved": "建立能重复写出让刘先生愿意继续、人物不像机器人、事实连续的小说流程。",
+  "old_story_status": "PAUSED_AFTER_RETENTION_FAILURE_NOT_TOPIC_DISPROVED"
+}

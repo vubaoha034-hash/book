@@ -12,6 +12,11 @@ current = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(current)
 
 
+# Historical corruption cases use pinned CP204 data; gates above stay current.
+_fixture_spec=importlib.util.spec_from_file_location('pinned_test_data',REPO/'scripts/frozen_history.py')
+_fixture_module=importlib.util.module_from_spec(_fixture_spec);_fixture_spec.loader.exec_module(_fixture_module)
+REPO=_fixture_module.historical_test_data(REPO)
+
 class CurrentStateTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()

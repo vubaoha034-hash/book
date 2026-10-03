@@ -515,7 +515,9 @@ def recover_host_network(key):
     print('PROVEN_HOST_NETWORK_REPAIR_RECORDED_NO_VERDICT_RERUN')
 
 
-def audit_report(packet, report, runtime):
+def audit_report(packet, report, runtime, expected_scope='SECOND_SCENE_OPENING_EXCERPT'):
+    if expected_scope not in ('SECOND_SCENE_OPENING_EXCERPT', 'NEW_STORY_OPENING_EXCERPT'):
+        raise ValueError('UNAUTHORIZED_REVIEW_SCOPE')
     validate_packet(packet)
     errors, quotes = [], []
     if not isinstance(report, dict):
@@ -545,7 +547,7 @@ def audit_report(packet, report, runtime):
         text = sample['text']
         if result.get('original_sha256') != sample['original_sha256']:
             errors.append('WRONG_ARTIFACT_HASH')
-        if result.get('scope') != 'SECOND_SCENE_OPENING_EXCERPT' or result.get('verdict') not in allowed[packet['work_kind']]:
+        if result.get('scope') != expected_scope or result.get('verdict') not in allowed[packet['work_kind']]:
             errors.append('VERDICT_OR_SCOPE_PROMOTION')
         required = ('reading_expectations', 'findings', 'protected_parts', 'minimal_change_targets', 'recheck_conditions', 'unknowns')
         result_fields = set(required) | {'artifact_id', 'original_sha256', 'scope', 'verdict'}

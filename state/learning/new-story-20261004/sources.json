@@ -1,0 +1,135 @@
+{
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+  "recorded_at": "2026-10-03T22:18:54Z",
+  "sources": [
+    {
+      "id": "P1",
+      "url": "https://libres.uncg.edu/ir/listing.aspx?id=2929",
+      "full_text": "https://www.researchgate.net/publication/7979583_What_Is_Interesting_Exploring_the_Appraisal_Structure_of_Interest",
+      "kind": "AUTHOR_MANUSCRIPT_EXPERIMENTS",
+      "read": "Research agent: experiments 2–4 and general discussion; coordinator: author manuscript accessible and university record. University PDF direct access failed; not claimed read.",
+      "finding": "Interest involves novelty/complexity and perceived ability to understand; not identical to enjoyment."
+    },
+    {
+      "id": "P2",
+      "url": "https://www.cmu.edu/dietrich/sds/docs/loewenstein/WickCandleLearning.pdf",
+      "kind": "PRIMARY_EXPERIMENTAL_PAPER",
+      "read": "Research agent: relevant methods, results and discussion of all three experiments. Coordinator: abstract and methods on opening pages.",
+      "finding": "Trivia curiosity relates to costly information seeking and later recall; not novel retention."
+    },
+    {
+      "id": "P3",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2015.00079/full",
+      "kind": "PRIMARY_THEORETICAL_REVIEW",
+      "read": "Key components, proposed model, future directions by both research agent and coordinator.",
+      "finding": "Future uncertain outcomes need emotional significance for suspense in this proposed model; no new experiment."
+    },
+    {
+      "id": "W1",
+      "url": "https://writingexcuses.com/21-08-setting-expectations/",
+      "kind": "AUTHOR_COURSE_TRANSCRIPT",
+      "read": "Opening promise and initial progression, transcript lines 30–115; no audio or entire course claimed.",
+      "finding": "A question or promise needs early progress, not merely a withheld answer."
+    },
+    {
+      "id": "W2",
+      "url": "https://writingexcuses.com/17-34-developing-subtext/",
+      "kind": "AUTHOR_COURSE_TRANSCRIPT",
+      "read": "Transcript text/context/subtext and inference from ordinary conversation, lines 64–115; no audio claimed.",
+      "finding": "What words mean depends on visible context and the speaker’s purpose."
+    },
+    {
+      "id": "W3",
+      "url": "https://www.qidianclub.com/threads/22/",
+      "kind": "COMMUNITY_MODERATOR_CRAFT_ADVICE_NOT_PSYCHOLOGY",
+      "read": "Opening economy, specific-information load and examples; lines 65–137.",
+      "finding": "Reduce optional exposition and move the story promise forward; claims about all web readers not adopted."
+    },
+    {
+      "id": "W4",
+      "url": "https://www.qidianclub.com/threads/36/",
+      "kind": "COMMUNITY_EDITOR_ADVICE_REPRINT_NOT_EXPERIMENT",
+      "read": "Opening actual scene versus location-only setup; lines 65–100. Publisher affiliation not independently established.",
+      "finding": "Begin with an ongoing situation and one understandable problem; no evidence of a universal bestseller formula."
+    },
+    {
+      "id": "N1",
+      "url": "https://www.jjwxc.net/onebook.php?novelid=4292425&chapterid=1",
+      "kind": "OFFICIAL_PUBLIC_NOVEL_EXAMPLE",
+      "read": "祈祷君《开端》2020-08-28 revised chapter 1, opening and first attempts to leave bus, lines 115–243. Not the whole book.",
+      "finding": "Everyday inconvenience becomes a concrete danger, then an attempted action meets another person’s reasonable refusal. Mechanism studied; no sentence/style/plot copy.",
+      "popularity_basis": "Official author listing shows publication/adaptation licensing and substantial accumulated collections. No claim of current trending rank or opening-caused popularity."
+    },
+    {
+      "id": "S1",
+      "url": "https://github.com/chaserr/novel-craft/blob/cd9d308d46b4d19286db03e1082f2e2c3064b1b2/skills/zh-novel-polish/SKILL.md",
+      "kind": "PUBLIC_SKILL_SELECTED_METHODS",
+      "read": "Eight prose symptoms, workflow, reminders and red lines read; pinned raw fetched through Python after web cache miss, SHA256 verified.",
+      "finding": "Applied only located review of explanatory emotion, character-as-message-carrier and templated endings. No full install or indiscriminate rewriting.",
+      "rejected": [
+        "Six-character modifier limit",
+        "Fixed maximum 的 count",
+        "Whole-book ending quotas",
+        "Automatic detection claims"
+      ],
+      "missing": "Its RTK.md and two finished accepted chapters do not exist for this new trial; used as local audit prompts, not a completed author-style calibration.",
+      "source_commit": "cd9d308d46b4d19286db03e1082f2e2c3064b1b2",
+      "source_sha256": "7562fcd1f36a968042a0cfc873d551cb02b21d6fe9998ac2e70423a3f3d10dc6",
+      "full_package_installed": false,
+      "application": "Only local audit cues, no automatic prose rewriting or completed author-style calibration."
+    },
+    {
+      "id": "S2",
+      "url": "https://github.com/renky1025/agent-skills/blob/main/de-ai-writing/SKILL.md",
+      "kind": "EVALUATED_NOT_ADOPTED",
+      "read": "Purpose, workflow, restrictions lines 0–79.",
+      "rejected": [
+        "Mandatory delete at least 20 percent",
+        "Voice confirmation for general articles",
+        "Seven-dimension scores as quality certification"
+      ],
+      "finding": "Generic article methods can replace one formulaic voice with another; not applied wholesale to fiction."
+    },
+    {
+      "id": "M1",
+      "url": "https://waquai.com/blog/writing/remove-ai-style.html",
+      "kind": "SEARCH_EXCERPT_ONLY_NOT_ADOPTED",
+      "read": "Search-returned excerpt only, not full tutorial.",
+      "rejected": [
+        "Signing-level quality implication",
+        "Stock physical symptoms",
+        "Commercial product promotion"
+      ],
+      "finding": "No use of paid service or signature-level guarantee."
+    },
+    {
+      "id": "M2",
+      "url": "https://www.penguinrandomhouse.ca/books/196906/gone-girl-by-gillian-flynn/9780307588371/excerpt",
+      "kind": "UNREAD_ACCESS_LIMITATION",
+      "read": "Publisher page returned only navigation; no actual novel excerpt obtained. Not used."
+    }
+  ],
+  "research_agent": {
+    "task_name": "/root/curiosity_research_20261004",
+    "history_fork": "none",
+    "requested_model": "gpt-6.1-sol",
+    "requested_reasoning_effort": "max",
+    "spawn_override_accepted": true,
+    "resolved_runtime_verified": false,
+    "repository_write_permission": false,
+    "raw_report": {
+      "path": "state/learning/new-story-20261004/psychology-research.raw.md",
+      "blob": "9014c4860032f62718b1ba0f036fcb047a1d0eb1",
+      "sha256": "279085f566226b01794e6330f2a69b6f7252ac82dc67d5461692a5623d05570b"
+    }
+  },
+  "inherited_skills": {
+    "path": "state/learning/two-role-opening-20261003/sources.json",
+    "blob": "fb881f7af0068317a145ea610511718e35a42681",
+    "sha256": "44dbb3abe5995e8d4b2dd3c8622c977402f4fd0fdb4f6b99eb70f8ec4698a2a2"
+  },
+  "no_population_retention_experiment": true,
+  "no_current_same_category_positive_human_example_for_new_story": true,
+  "quality_certification_allowed": false
+}

@@ -3,6 +3,11 @@ import copy,hashlib,importlib.util,json,tempfile,unittest
 from pathlib import Path
 REPO=Path(__file__).resolve().parents[1]
 s=importlib.util.spec_from_file_location('hook_feedback_gate',REPO/'scripts/verify_hook_trial.py');gate=importlib.util.module_from_spec(s);s.loader.exec_module(gate)
+# Historical corruption cases use pinned CP204 data; gates above stay current.
+_fixture_spec=importlib.util.spec_from_file_location('pinned_test_data',REPO/'scripts/frozen_history.py')
+_fixture_module=importlib.util.module_from_spec(_fixture_spec);_fixture_spec.loader.exec_module(_fixture_module)
+REPO=_fixture_module.historical_test_data(REPO)
+
 class HookHumanFeedbackTests(unittest.TestCase):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name);self.seen=set()

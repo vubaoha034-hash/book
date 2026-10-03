@@ -1,0 +1,215 @@
+{
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+  "final_artifact": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "report_verdicts": {
+    "editor": "EDITORIAL_CLEAR",
+    "reader": "YES"
+  },
+  "raw_reports_rewritten": false,
+  "human_quality_result": "UNKNOWN",
+  "AI_quality_certification": false,
+  "reader_vote_triggers_more_generation": false,
+  "coordinator_prose_edits": 0,
+  "high_impact_unresolved": [],
+  "fact_conflicts_unresolved": [],
+  "finding_dispositions": [],
+  "manual_fact_checks": [
+    {
+      "dimension": "setting",
+      "quote": "我刚给弟弟添满一碗饭，手机在桌上震起来。",
+      "line": 1,
+      "fact_source_field": "setting",
+      "source_value": "普通城市的家中，傍晚饭桌边。现实世界，没有超自然规则。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "家中当前饭桌，不是档案开场。"
+    },
+    {
+      "dimension": "narrator",
+      "quote": "八岁的女儿挪到他身边，叫他替她挑鱼刺。",
+      "line": 1,
+      "fact_source_field": "narrator",
+      "source_value": "成年姐姐。她的八岁女儿和母亲在家。第一人称只知道自己经历、看到和听到的事。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "第一人称姐姐的八岁女儿；年龄与关系一致。"
+    },
+    {
+      "dimension": "brother",
+      "quote": "他离家这些年，很少回消息，今天却提着橘子敲了门。",
+      "line": 1,
+      "fact_source_field": "brother",
+      "source_value": "弟弟曾离家多年、联系很少，今天突然回来吃饭。家人没有预先知道他涉案；母亲仍盼他回来。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "久离低联系与突然回家一致。"
+    },
+    {
+      "dimension": "current_event",
+      "quote": "刚在楼外看见他进了你们单元。",
+      "line": 5,
+      "fact_source_field": "current_event",
+      "source_value": "姐姐接到她认识的办案警员的电话：弟弟被追查，现在有危险，让她不要惊动弟弟，先把孩子带出家门。警员刚从楼外确认弟弟进了这个单元；来电身份无需反复查证。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "来源是楼外观察进入单元，没有声称警方知道室内动作。"
+    },
+    {
+      "dimension": "known_relationship",
+      "quote": "她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "line": 25,
+      "fact_source_field": "known_relationship",
+      "source_value": "孩子认得舅舅，并不害怕他。姐姐对弟弟既有亲情，也不能拿女儿的安全赌他没有危险。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "孩子认识舅舅且信任，并未无缘由恐惧。"
+    },
+    {
+      "dimension": "knowledge_boundary",
+      "quote": "我握住冰箱把手：“他怎么了？”",
+      "line": 7,
+      "fact_source_field": "knowledge_boundary",
+      "source_value": "来电有事实依据，具体案情姐姐还不知道。不要把危险解释成诈骗电话、警方测试或误会；不在开头公布全案。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "姐姐不知道全案，没有泄漏合同中的隐藏真相。"
+    },
+    {
+      "dimension": "endpoint",
+      "quote": "“我带她去，你吃饭。”",
+      "line": 23,
+      "fact_source_field": "endpoint",
+      "source_value": "她试着带孩子脱离弟弟身边；短段末尾发生一个让这个选择变难的具体进展。正文组织、心理、对白和动作由你决定。",
+      "disposition": "CLEAR",
+      "coordinator_reason": "保护孩子的尝试遭到具体阻碍，未给救援或破案结果。"
+    }
+  ],
+  "editor_window_quote_checks": [
+    {
+      "window": "first_30_60",
+      "quote": "我刚给弟弟添满一碗饭，手机在桌上震起来。八岁的女儿挪到他身边，叫他替她挑鱼刺。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "non_whitespace_characters_1_based": [
+        1,
+        39
+      ],
+      "qualification": "Quote located; window label is reviewer interpretation, not proof that quote spans the entire 150–300-character window."
+    },
+    {
+      "window": "first_150_300",
+      "quote": "“我们正在追查你弟弟，刚在楼外看见他进了你们单元。现在有危险，别惊动他，先把孩子带出来。”",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 112,
+      "non_whitespace_characters_1_based": [
+        109,
+        153
+      ],
+      "qualification": "Quote located; window label is reviewer interpretation, not proof that quote spans the entire 150–300-character window."
+    },
+    {
+      "window": "ending",
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 372,
+      "non_whitespace_characters_1_based": [
+        349,
+        383
+      ],
+      "qualification": "Quote located; window label is reviewer interpretation, not proof that quote spans the entire 150–300-character window."
+    }
+  ],
+  "reader_window_quote_checks": [
+    {
+      "window": "first_30_60",
+      "quote": "我刚给弟弟添满一碗饭，手机在桌上震起来。八岁的女儿挪到他身边，叫他替她挑鱼刺。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "non_whitespace_characters_1_based": [
+        1,
+        39
+      ],
+      "qualification": "Quote located; window label is reviewer interpretation, not proof that quote spans the entire 150–300-character window."
+    },
+    {
+      "window": "first_150_300",
+      "quote": "女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 185,
+      "non_whitespace_characters_1_based": [
+        176,
+        226
+      ],
+      "qualification": "Quote located; window label is reviewer interpretation, not proof that quote spans the entire 150–300-character window."
+    },
+    {
+      "window": "ending",
+      "quote": "他向女儿伸出手。她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 372,
+      "non_whitespace_characters_1_based": [
+        349,
+        383
+      ],
+      "qualification": "Quote located; window label is reviewer interpretation, not proof that quote spans the entire 150–300-character window."
+    }
+  ],
+  "craft_application_checks": [
+    {
+      "method": "S1:命名式情绪复述",
+      "quote": "我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+      "result": "PROTECT_WITH_LIMITATION",
+      "reason": "不是复述已经表达的身体动作：补充了刚才留宿意愿与当前保护决定。句式对称可能仍不合真人口味；不能凭禁词自动删。"
+    },
+    {
+      "method": "S1/W2:对白是否替作者传话",
+      "quote": "“明早要喝，怕店关了。”",
+      "result": "LOCAL_CHARACTER_PURPOSE_PRESENT",
+      "reason": "姐姐以日常理由掩护撤离，不说警员警告或说明故事规则。陈警官警告服务当前撤离，但“出来再说”信息保留可能显出作者安排。"
+    },
+    {
+      "method": "S1:结尾感悟套式",
+      "quote": "她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "result": "NO_PHILOSOPHICAL_SUMMARY",
+      "reason": "结尾让当前行动受阻，没有人生结论。是否想追仍未知。"
+    },
+    {
+      "method": "W3/W4/N1:首屏具体问题与行动",
+      "quote": "“走，陪妈妈下楼买酸奶。”",
+      "result": "ACTION_CHANGES_SITUATION_WITH_RISK",
+      "reason": "警告推动实际撤离，母亲/孩子/弟弟各按自己所知反应；前30–60字只有饭局和手机震动，危险尚未显现，快节奏需求仍须真人验证。"
+    }
+  ],
+  "limitations": [
+    "匿名AI读者YES不是刘先生的判断；历史漏检仍在。",
+    "本次一个专业AI上下文合并局部事实/情绪/语言审查，不是独立第三个事实专家。",
+    "专业编辑150–300字项引用实际主要在此前警告；只保证引文定位，另存精确字符窗口。",
+    "“出来再说”可能显得故意保留信息；两份报告不能排除真人AI味或首屏留存FAIL。",
+    "前30–60字无明确危险问题；未为了教程机械搬句或再调用直到YES。"
+  ],
+  "coordinator_exact_non_whitespace_windows": {
+    "first_30_60": "我刚给弟弟添满一碗饭，手机在桌上震起来。八岁的女儿挪到他身边，叫他替她挑鱼刺。他离家这些年，很少回消息，今天却提着橘子敲",
+    "first_150_300": "出来。”我握住冰箱把手：“他怎么了？”“出来再说。”女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。“走，陪妈妈下楼买酸奶。”她没动：“吃完再去。”我拿起她搭在椅背上的外套，伸手牵她。妈端着汤过来：“他难得回来，你这就往外跑？”“明早要喝，怕店关了"
+  },
+  "research_application_timing": {
+    "psychology_and_W1": "Applied to three writer principles before dispatch.",
+    "new_AI_style_skill_and_N1": "Read after generation; applied to located coordinator audit only. No claim they influenced already-written sentences."
+  },
+  "elapsed_comparison": {
+    "previous_four_model_call_critical_path_seconds": 862.267,
+    "current_three_model_call_critical_path_seconds": 397.911,
+    "writer_seconds": 180.931,
+    "editor_seconds": 163.369,
+    "reader_seconds": 216.98,
+    "excluded": "research, preparation, queueing overlap gaps, validation, native save; not total user wait",
+    "old_browser_end_to_end_seconds": "UNKNOWN_NOT_MEASURED",
+    "model_calls_reduced_from": 4,
+    "model_calls_current": 3
+  },
+  "exact_scope_difference_from_previous_reader": "Previous AI reader saw 775 characters; real rejection binds 374 newly delivered characters. Not added to exact-version calibration counts."
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "native-human-short-failure/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+  "source_checkpoint": 204,
+  "recorded_at": "2026-10-03T22:00:24Z",
+  "human_exact_feedback": "一，真的没有读下去的欲望。   二，依旧有ai味道。只是更轻了。   三，实在不行你换个故事，能快速抓住要求的。  四，有大量的心理学研究，如何才能快速让人想看。你自己查下，这个结果花了这么久的时间。  对我来说非常不满意。",
+  "output": {
+    "path": "delivery/continuation-short-20261003/continuation-a1.md",
+    "blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+    "sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a"
+  },
+  "outcome": "FAIL",
+  "review": {
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "human_exact_feedback": "一，真的没有读下去的欲望。   二，依旧有ai味道。只是更轻了。   三，实在不行你换个故事，能快速抓住要求的。  四，有大量的心理学研究，如何才能快速让人想看。你自己查下，这个结果花了这么久的时间。  对我来说非常不满意。",
+    "bound_artifact_path": "delivery/continuation-short-20261003/continuation-a1.md",
+    "bound_blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+    "bound_sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a",
+    "wants_to_continue": false,
+    "retention_verdict": "FAIL",
+    "ai_smell_verdict": "FAIL_STILL_PRESENT_BUT_LIGHTER",
+    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "topic_rejection": false,
+    "feedback_summary": "374字接续没有续读欲望，AI味仍在但减轻；对效果和耗时不满意。允许在当前反复失败后试一个新故事，要求主动学习心理学。"
+  },
+  "prior_records_rewritten": false,
+  "prior_pending_human_review": {
+    "path": "state/reviews/continuation-short-20261003/pending-human-review.json",
+    "blob": "87552d00cef2022cf5e17450be26267f4fa7e742",
+    "sha256": "9109694597af8282fb0574d9befc06efdfe65da3b51cb875e88fcfb4f090eea3"
+  },
+  "AI_reader_missed_exact_combined_reading_scope": "Reader reviewed 401+374=775 characters; human feedback directly binds newly delivered 374. Evidence of continuing diagnostic mismatch, not a new exact-version cold calibration count.",
+  "old_401_qualified_positive_not_erased": true,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false
+}

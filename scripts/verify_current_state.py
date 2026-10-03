@@ -851,6 +851,10 @@ def verify(root: Path) -> dict:
     project_path = safe_file(root, 'state/project_state.json')
     project = load(root, 'state/project_state.json')
     cp = load(root, 'state/continuity/LATEST_CHECKPOINT.json')
+    if project.get('story_replacement_trial') is not None or cp.get('story_replacement_trial') is not None:
+        spec = importlib.util.spec_from_file_location('current_story_trial_gate', Path(__file__).with_name('verify_story_trial.py'))
+        gate = importlib.util.module_from_spec(spec); spec.loader.exec_module(gate)
+        return gate.verify(root, project, cp)
     receipt_path = safe_file(root, RECEIPT)
     receipt = load(root, RECEIPT)
     phase = project.get('phase422_state', {})

@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/new-story-20261004/reader-packet.json",
+    "blob": "47a8f3ecf608e1c03aec37c67ef16818696c0b84",
+    "sha256": "61b71c276e9389cd98bb0350119889f84a1ef7fe85a2968821b1ac38779f22bd"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T22:08:10Z"
+}

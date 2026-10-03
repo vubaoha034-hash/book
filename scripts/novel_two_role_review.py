@@ -206,7 +206,9 @@ def run(role):
     if not runtime['report_received']: raise SystemExit(1)
 
 
-def audit_reader(packet, report, runtime):
+def audit_reader(packet, report, runtime, expected_scope='SECOND_SCENE_OPENING_EXCERPT'):
+    if expected_scope not in ('SECOND_SCENE_OPENING_EXCERPT', 'NEW_STORY_OPENING_EXCERPT'):
+        raise ValueError('UNAUTHORIZED_REVIEW_SCOPE')
     errors, located, corrections = [], [], []
     required = {'job_id','work_kind','runtime_context','artifact_id','original_sha256','scope','reader_profile',
         'wants_to_continue','reading_expectations','reactions','protected_parts','recheck_conditions','unknowns'}
@@ -214,7 +216,7 @@ def audit_reader(packet, report, runtime):
     sample = packet['samples'][0]
     if (report.get('job_id') != packet['job_id'] or report.get('work_kind') != 'COLD_SCREEN' or
             report.get('artifact_id') != sample['artifact_id'] or report.get('original_sha256') != sample['original_sha256'] or
-            report.get('scope') != 'SECOND_SCENE_OPENING_EXCERPT' or report.get('runtime_context') !=
+            report.get('scope') != expected_scope or report.get('runtime_context') !=
             {'model':'gpt-6.1-sol','reasoning_effort':'max','isolation':ISOLATION} or
             report.get('wants_to_continue') not in ('YES','NO','UNCERTAIN') or not report.get('reader_profile') or
             not report.get('unknowns') or set(report.get('reading_expectations',{})) != {'first_30_60','first_150_300','ending'}):

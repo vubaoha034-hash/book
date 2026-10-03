@@ -1,0 +1,13 @@
+{
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "exact_message": "现在应该有大量的去除ai味道的教程，也有大量爆款小说在网络上。你为什么自己搞不定的情况下自己搜索下？很多现成的你学习，应用呀。反反复复提交这样的结果，真的是浪费。",
+  "recorded_at": "2026-10-03T22:18:54Z",
+  "bound_previous_human_failure": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_374_HUMAN_FAIL_20261004.json",
+    "blob": "6c6ae5355b487599a7d797807070b6a7663d9bd1",
+    "sha256": "cd6bfd56d94d1ed70a37ae5d3cd43adac81303fdf62289952a0cc02c62cafc21"
+  },
+  "new_383_human_verdict": "UNKNOWN_NOT_YET_SHOWN",
+  "research_and_apply_authorized": true
+}

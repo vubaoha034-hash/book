@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 204,
-  "recorded_at": "2026-10-03T15:25:59Z",
+  "sequence": 205,
+  "recorded_at": "2026-10-03T22:18:54Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "ONE_374_CHARACTER_CONTINUATION_AT_ACTUAL_HUMAN_READING",
+  "current_focus": "旧故事374字真人FAIL；独立新故事383字试读待人工判断。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -753,7 +753,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1882,14 +1882,14 @@
       "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "CONTINUATION_FROZEN_AWAIT_ACTUAL_HUMAN_READING",
+  "status": "NEW_STORY_SHORT_AWAIT_ACTUAL_HUMAN_READING",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+  "last_completed_task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "dc87c9eaf3474b0291823c688cfeebfd27beb50c31d5a96c35dfe636153141ae",
+    "project_state_sha256": "d76841d31995cf330f905b639b9b85ae5793bf022296d896cf4606382bff91d4",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1914,7 +1914,9 @@
       "PHASE402_LOCAL_RESPONSE_OWNERSHIP_AND_DEFERRED_INTERPRETATION_REDESIGN_V1",
       "PHASE403_READER_DRIVE_SCENE_VELOCITY_REDESIGN_V1",
       "PHASE404_PROSE_BODY_ONLY_RESPONSE_BOUNDARY_V1",
-      "PHASE408-ROJUN-OPENING-EVENT-BATCH2-AFTER-HUMAN-REJECT-01",
+      "PHASE405_FRESH_RUN_MECHANISM_STABILITY_V1",
+      "PHASE406_FOCAL_PERSONAL_COST_CARRIER_V1",
+      "PHASE407_HARD_IDENTITY_LITERAL_PRESERVATION_V1",
       "PHASE408-CURRENT-HOT-NOVEL-THEME-ENGINE-SCAN-01",
       "PHASE408-ROJUN-THEME-ENGINE-BATCH3-AFTER-HOT-SCAN-01",
       "PHASE408-RJ-OE408-I-HUMAN-DIRECTION-CONTINUE-01",
@@ -1933,33 +1935,31 @@
       "PHASE420-RJ-OE408-I-AESTHETIC-DESLOP-V3-01",
       "PHASE421-RJ-OE408-I-FINAL-REVIEW-AND-DELIVERY-V1-01",
       "PHASE423-RJ-OE408-I-EMOTIONAL-PROSE-REGRESSION-DIAGNOSIS-01",
-      "PHASE424-RJ-OE408-I-FIRST-XUCHENG-RELATIONAL-PRESSURE-SCENE-01",
       "PHASE425-RJ-OE408-I-BEST-KNOWN-PROSE-ROLLBACK-SP414-S02-REPAIR-01",
       "PHASE426-RJ-OE408-I-SP414-S02-NO-DIALOGUE-EMOTIONAL-EVENT-CAUSALITY-01",
-      "PHASE427-RJ-OE408-I-SP414-S02-CLEAN-PROSE-RENDER-01",
       "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
       "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01",
       "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
       "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
       "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
       "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
-      "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
       "NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01",
       "NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01",
       "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
       "NOVEL-OPENING-HOOK-TRIAL-AFTER-RETENTION-FAIL-20261003-01",
       "NOVEL-HOOK-TRIAL-401-HUMAN-PARTIAL-FEEDBACK-20261003-01",
       "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
-      "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01"
+      "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
+      "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_SAME_SCENE_ONE_CONTINUATION_SHORT_20261003.json",
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CONTINUATION_SHORT",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_HOOK_TRIAL_401_HUMAN_WEAK_CONTINUATION_20261003.json",
-  "current_human_gate": "CONTINUATION_SHORT_HUMAN_UNKNOWN_PREFIX_WEAK_POSITIVE_FULL_SCENE_UNTESTED",
+  "last_completed_task_contract": "state/tasks/NOVEL_NEW_STORY_PSYCHOLOGY_OPENING_TRIAL_20261004.json",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_CONTINUATION_374_HUMAN_FAIL_20261004.json",
+  "current_human_gate": "NEW_STORY_SHORT_HUMAN_UNKNOWN_OLD_STORY_PAUSED_374_FAIL_PRESERVED",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -2099,26 +2099,18 @@
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
       "message_observed_directly": true
     },
-    "human_exact_feedback": "有一点想继续的想法。但是不多哈。",
-    "bound_artifact_path": "delivery/hook-trial-20261003/short-a1-fact-repaired.md",
-    "bound_blob": "adf0b9cf703f361db5545a82b6fcf7c3fb0fff38",
-    "bound_sha256": "38c768aa19195482896b3a0433d7cc2b1cc86aee120b8b93c984d48dfb4ff1c9",
-    "wants_to_continue": true,
-    "continuation_strength": "LOW_EXPLICITLY_QUALIFIED",
-    "retention_verdict": "WEAK_POSITIVE_NOT_FULL_ACCEPTANCE",
-    "interaction_exact_feedback": "比之前自然，已不明显",
-    "robotic_interaction_verdict": "POSITIVE_NOT_MARKEDLY_ROBOTIC_IN_THIS_SHORT",
-    "interaction_source": {
-      "kind": "ACTUAL_CURRENT_USER_MESSAGES",
-      "identical_messages_observed": 2,
-      "independent_votes": 1
-    },
-    "suspense_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
-    "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "human_exact_feedback": "一，真的没有读下去的欲望。   二，依旧有ai味道。只是更轻了。   三，实在不行你换个故事，能快速抓住要求的。  四，有大量的心理学研究，如何才能快速让人想看。你自己查下，这个结果花了这么久的时间。  对我来说非常不满意。",
+    "bound_artifact_path": "delivery/continuation-short-20261003/continuation-a1.md",
+    "bound_blob": "68077a49cd3704172956757f2158813a6e6c70c7",
+    "bound_sha256": "015d01baf64f3339ef84b728d900c33481aaf2390ae41ebb31a6c758b1fb667a",
+    "wants_to_continue": false,
+    "retention_verdict": "FAIL",
+    "ai_smell_verdict": "FAIL_STILL_PRESENT_BUT_LIGHTER",
+    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
     "topic_rejection": false,
-    "feedback_summary": "401字有少量续读意愿，人物互动比之前自然、机械感已不明显；只认这一短段的两个阅读目标，续读强度低，不推为整场或稳定文风通过。"
+    "feedback_summary": "374字接续没有续读欲望，AI味仍在但减轻；对效果和耗时不满意。允许在当前反复失败后试一个新故事，要求主动学习心理学。"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -3188,7 +3180,7 @@
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
   },
-  "updated_at": "2026-10-03T15:25:59Z",
+  "updated_at": "2026-10-03T22:18:54Z",
   "r2_entry_short_trial": {
     "schema_version": "native-one-short-trial-state/v1",
     "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
@@ -4205,5 +4197,141 @@
       "sha256": "36e821b1c7c30074278cc141595f66db7394cb01ea14571066bc7a6a162464db"
     },
     "unused_authorized_repair_closed_at_human_gate": 1
+  },
+  "story_replacement_trial": {
+    "schema_version": "native-new-story-short-result/v1",
+    "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+    "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+    "source_checkpoint": 204,
+    "recorded_at": "2026-10-03T22:18:54Z",
+    "primary_generation_count": 1,
+    "internal_repair_count": 0,
+    "visible_candidate_count": 1,
+    "actual_model_calls": 3,
+    "successful_model_calls": 3,
+    "research_agent_calls_separate": 1,
+    "old_story_status": "PAUSED_PRESERVED",
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "human_quality_result": "UNKNOWN",
+    "remaining_new_generation_budget": 0,
+    "remaining_internal_repair_budget": 0,
+    "full_scene_or_TEST01_promoted": false,
+    "literary_quality_validated": false,
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "status": "ONE_NEW_STORY_SHORT_FROZEN_REVIEW_SETTLED_AWAIT_ACTUAL_HUMAN_READING",
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_AUTHORIZATION_20261004.json",
+      "blob": "0a6ee4ba3da9713a8a7931bff840b899d48707c5",
+      "sha256": "8c0b40a676d5650be54f204890d84a151f06c5634a2546354a5c2b6b1dea8d62"
+    },
+    "human_failure": {
+      "path": "state/review_receipts/NOVEL_CONTINUATION_374_HUMAN_FAIL_20261004.json",
+      "blob": "6c6ae5355b487599a7d797807070b6a7663d9bd1",
+      "sha256": "cd6bfd56d94d1ed70a37ae5d3cd43adac81303fdf62289952a0cc02c62cafc21"
+    },
+    "learning_supplement": {
+      "path": "state/review_receipts/NOVEL_NEW_STORY_LEARNING_SUPPLEMENT_20261004.json",
+      "blob": "472a1ffbffdb495be775985a48188c45d7897cfe",
+      "sha256": "403d026883c94080a364d42d4bfc71a1a0dc427991080dcd50e9f35e31d369fa"
+    },
+    "manifest": {
+      "path": "config/novel-new-story-20261004.json",
+      "blob": "566d076cceaeb87b8d3428d81c00af96e26b18b4",
+      "sha256": "fd475e81afeac7b6994b8a72818126eb3dc90df026095fd4ab6dac7cb2a27d80"
+    },
+    "story_contract": {
+      "path": "delivery/new-story-20261004/story-contract.json",
+      "blob": "35241bfe82fe327973484c9080e6ee2d4fe90625",
+      "sha256": "e9c54daca1b1f0195b258840ca9b1990cb5c2385ba202c19b6f974a4c3084979"
+    },
+    "writer_input": {
+      "path": "delivery/new-story-20261004/writer-input.json",
+      "blob": "3a1f7c4adbcf48b3982de2e4bdfcaca59bf3d60f",
+      "sha256": "7b317e8ee4d5d9a08f1281a43efef847c3c1b61ece7250bb8ad7db93943ee0a6"
+    },
+    "final_artifact": {
+      "path": "delivery/new-story-20261004/opening-a1.md",
+      "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+      "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+    },
+    "settlement": {
+      "path": "state/reviews/new-story-20261004/coordinator-settlement.json",
+      "blob": "b880b6c1d1a33d3271795996e302839b1f8dae29",
+      "sha256": "be89cd6835580729a03252946effa517d965ed31f7db527a75aa12dc543638dd"
+    },
+    "pending_human_review": {
+      "path": "state/reviews/new-story-20261004/pending-human-review.json",
+      "blob": "945ef3db7bf193a4172bb7e6faa5639b1bdb79bd",
+      "sha256": "08828ea97b6ddd103022581ff097a33fd42920815c7d0cb8f7b1bdb0d4910e63"
+    },
+    "runtimes": {
+      "writer": {
+        "path": "state/reviews/new-story-20261004/writer.runtime.json",
+        "blob": "f5bb1696b8bf4ccb7108542cca5515f3875e99ed",
+        "sha256": "553a1a74e9e01fe4691f7d1466e49d7e1f1f30abb21cbf48139436aad0ae54b9"
+      },
+      "editor": {
+        "path": "state/reviews/new-story-20261004/editor.runtime.json",
+        "blob": "bacdda0fa26e8cdb4517e0e9936a6f74ca15a036",
+        "sha256": "ad4f36c22938238554e1250bac68ff14b5dffa0c42d4f4d3c7391da6ca217b7f"
+      },
+      "reader": {
+        "path": "state/reviews/new-story-20261004/reader.runtime.json",
+        "blob": "512b0dd47670ea2fa0ff79bce5825139b4246256",
+        "sha256": "36177193726e4d67ec1b1419fcf73705b0d7613232e3f284371a89f80665f781"
+      }
+    },
+    "raw_reports": {
+      "editor": {
+        "path": "state/reviews/new-story-20261004/editor.raw.txt",
+        "blob": "2e719ed8173b3e40eb05adfaf4cb75d010338985",
+        "sha256": "b998402d3884bffc16303bc0ab6a6992f2a8c8a7dcece28aa44ddaa56343ba11"
+      },
+      "reader": {
+        "path": "state/reviews/new-story-20261004/reader.raw.txt",
+        "blob": "c3a296e1dd362679c352fa2c7a12f9405a2e8dbc",
+        "sha256": "2bafd1c6fd59eb5f4480b40dac20c0da246b6e28c8ef1776bc770c698dc70f76"
+      }
+    },
+    "evidence": {
+      "editor": {
+        "path": "state/reviews/new-story-20261004/editor.evidence.json",
+        "blob": "850b3b077d83ecb53f6b7c1eabefeace0f8f635f",
+        "sha256": "a4e58d103a7abe4b0fcf09c837cc7d56b60451917f906b78c1391632a7c58a0f"
+      },
+      "reader": {
+        "path": "state/reviews/new-story-20261004/reader.evidence.json",
+        "blob": "76b6e79ebdc0eb9636a4ffd9ad42d7442376ff71",
+        "sha256": "9b123e33ca4988a31c22a3b8b38ff5d75c4ae3315f595bb0213b070aa12d9b77"
+      }
+    },
+    "research_sources": {
+      "path": "state/learning/new-story-20261004/sources.json",
+      "blob": "47e2b632c0f0eeac215669a3fe1c1bd29144e7a5",
+      "sha256": "67e255be3a6a69fce4f4fd9069d2ffd9a512e0f6a629b77015bebd5ffe9d2059"
+    },
+    "research_raw": {
+      "path": "state/learning/new-story-20261004/psychology-research.raw.md",
+      "blob": "9014c4860032f62718b1ba0f036fcb047a1d0eb1",
+      "sha256": "279085f566226b01794e6330f2a69b6f7252ac82dc67d5461692a5623d05570b"
+    },
+    "result_document": {
+      "path": "docs/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.md",
+      "blob": "c877e49ad826e8272628454bfb4c640a14e3946d",
+      "sha256": "a46224e64beab54e576e51b61dd8e4d5942b9eb059a8acbe132ea5de1c4dbad2"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.json",
+      "blob": "a62c3b1ffc3194a961a43a696615963193587cbb",
+      "sha256": "ea72e7c8c8fd4e7a3afbb3ef209e1f109e25c75c7bdf7d60d5725d11bf447212"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_NEW_STORY_PSYCHOLOGY_OPENING_TRIAL_20261004.json",
+      "blob": "12121739e87612bc22c110fac08e31c2f125077e",
+      "sha256": "0ea553994a9066c2a8266b1ce6aa08fc3bf76c507193df0215b35176c1146b67"
+    }
   }
 }

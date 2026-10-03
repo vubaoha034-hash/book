@@ -8,6 +8,11 @@ def module(name,path):
 gate=module('hook_test_gate','scripts/verify_hook_trial.py')
 fixture=module('hook_reusable_fixture','tests/test_prose_repair.py');fixture.gate=gate
 
+# Historical corruption cases use pinned CP204 data; gates above stay current.
+_fixture_spec=importlib.util.spec_from_file_location('pinned_test_data',REPO/'scripts/frozen_history.py')
+_fixture_module=importlib.util.module_from_spec(_fixture_spec);_fixture_spec.loader.exec_module(_fixture_module)
+REPO=_fixture_module.historical_test_data(REPO)
+
 class HookTrialTests(fixture.ProseRepairTests):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name);self.seen=set()

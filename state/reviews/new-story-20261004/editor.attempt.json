@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/new-story-20261004/editor-packet.json",
+    "blob": "3b2ceaee4f0678d1e31d67ba3fc0220b580b1e04",
+    "sha256": "c19cdc86c187e2f25cf8b5797d87707b95f8f9c875aadf812c31fe8e2334c6c9"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T22:08:13Z"
+}

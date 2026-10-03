@@ -1,0 +1,132 @@
+{
+  "schema_version": "native-new-story-short-task/v1",
+  "task_id": "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
+  "source_head": "d2283f009fc5527a8427e5b46199ddb54d69cc51",
+  "source_checkpoint": 204,
+  "recorded_at": "2026-10-03T22:18:54Z",
+  "primary_generation_count": 1,
+  "internal_repair_count": 0,
+  "visible_candidate_count": 1,
+  "actual_model_calls": 3,
+  "successful_model_calls": 3,
+  "research_agent_calls_separate": 1,
+  "old_story_status": "PAUSED_PRESERVED",
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_quality_result": "UNKNOWN",
+  "remaining_new_generation_budget": 0,
+  "remaining_internal_repair_budget": 0,
+  "full_scene_or_TEST01_promoted": false,
+  "literary_quality_validated": false,
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false,
+  "status": "ONE_NEW_STORY_SHORT_FROZEN_REVIEW_SETTLED_AWAIT_ACTUAL_HUMAN_READING",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_NEW_STORY_OPENING",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_AUTHORIZATION_20261004.json",
+    "blob": "0a6ee4ba3da9713a8a7931bff840b899d48707c5",
+    "sha256": "8c0b40a676d5650be54f204890d84a151f06c5634a2546354a5c2b6b1dea8d62"
+  },
+  "human_failure": {
+    "path": "state/review_receipts/NOVEL_CONTINUATION_374_HUMAN_FAIL_20261004.json",
+    "blob": "6c6ae5355b487599a7d797807070b6a7663d9bd1",
+    "sha256": "cd6bfd56d94d1ed70a37ae5d3cd43adac81303fdf62289952a0cc02c62cafc21"
+  },
+  "learning_supplement": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_LEARNING_SUPPLEMENT_20261004.json",
+    "blob": "472a1ffbffdb495be775985a48188c45d7897cfe",
+    "sha256": "403d026883c94080a364d42d4bfc71a1a0dc427991080dcd50e9f35e31d369fa"
+  },
+  "manifest": {
+    "path": "config/novel-new-story-20261004.json",
+    "blob": "566d076cceaeb87b8d3428d81c00af96e26b18b4",
+    "sha256": "fd475e81afeac7b6994b8a72818126eb3dc90df026095fd4ab6dac7cb2a27d80"
+  },
+  "story_contract": {
+    "path": "delivery/new-story-20261004/story-contract.json",
+    "blob": "35241bfe82fe327973484c9080e6ee2d4fe90625",
+    "sha256": "e9c54daca1b1f0195b258840ca9b1990cb5c2385ba202c19b6f974a4c3084979"
+  },
+  "writer_input": {
+    "path": "delivery/new-story-20261004/writer-input.json",
+    "blob": "3a1f7c4adbcf48b3982de2e4bdfcaca59bf3d60f",
+    "sha256": "7b317e8ee4d5d9a08f1281a43efef847c3c1b61ece7250bb8ad7db93943ee0a6"
+  },
+  "final_artifact": {
+    "path": "delivery/new-story-20261004/opening-a1.md",
+    "blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
+    "sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61"
+  },
+  "settlement": {
+    "path": "state/reviews/new-story-20261004/coordinator-settlement.json",
+    "blob": "b880b6c1d1a33d3271795996e302839b1f8dae29",
+    "sha256": "be89cd6835580729a03252946effa517d965ed31f7db527a75aa12dc543638dd"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/new-story-20261004/pending-human-review.json",
+    "blob": "945ef3db7bf193a4172bb7e6faa5639b1bdb79bd",
+    "sha256": "08828ea97b6ddd103022581ff097a33fd42920815c7d0cb8f7b1bdb0d4910e63"
+  },
+  "runtimes": {
+    "writer": {
+      "path": "state/reviews/new-story-20261004/writer.runtime.json",
+      "blob": "f5bb1696b8bf4ccb7108542cca5515f3875e99ed",
+      "sha256": "553a1a74e9e01fe4691f7d1466e49d7e1f1f30abb21cbf48139436aad0ae54b9"
+    },
+    "editor": {
+      "path": "state/reviews/new-story-20261004/editor.runtime.json",
+      "blob": "bacdda0fa26e8cdb4517e0e9936a6f74ca15a036",
+      "sha256": "ad4f36c22938238554e1250bac68ff14b5dffa0c42d4f4d3c7391da6ca217b7f"
+    },
+    "reader": {
+      "path": "state/reviews/new-story-20261004/reader.runtime.json",
+      "blob": "512b0dd47670ea2fa0ff79bce5825139b4246256",
+      "sha256": "36177193726e4d67ec1b1419fcf73705b0d7613232e3f284371a89f80665f781"
+    }
+  },
+  "raw_reports": {
+    "editor": {
+      "path": "state/reviews/new-story-20261004/editor.raw.txt",
+      "blob": "2e719ed8173b3e40eb05adfaf4cb75d010338985",
+      "sha256": "b998402d3884bffc16303bc0ab6a6992f2a8c8a7dcece28aa44ddaa56343ba11"
+    },
+    "reader": {
+      "path": "state/reviews/new-story-20261004/reader.raw.txt",
+      "blob": "c3a296e1dd362679c352fa2c7a12f9405a2e8dbc",
+      "sha256": "2bafd1c6fd59eb5f4480b40dac20c0da246b6e28c8ef1776bc770c698dc70f76"
+    }
+  },
+  "evidence": {
+    "editor": {
+      "path": "state/reviews/new-story-20261004/editor.evidence.json",
+      "blob": "850b3b077d83ecb53f6b7c1eabefeace0f8f635f",
+      "sha256": "a4e58d103a7abe4b0fcf09c837cc7d56b60451917f906b78c1391632a7c58a0f"
+    },
+    "reader": {
+      "path": "state/reviews/new-story-20261004/reader.evidence.json",
+      "blob": "76b6e79ebdc0eb9636a4ffd9ad42d7442376ff71",
+      "sha256": "9b123e33ca4988a31c22a3b8b38ff5d75c4ae3315f595bb0213b070aa12d9b77"
+    }
+  },
+  "research_sources": {
+    "path": "state/learning/new-story-20261004/sources.json",
+    "blob": "47e2b632c0f0eeac215669a3fe1c1bd29144e7a5",
+    "sha256": "67e255be3a6a69fce4f4fd9069d2ffd9a512e0f6a629b77015bebd5ffe9d2059"
+  },
+  "research_raw": {
+    "path": "state/learning/new-story-20261004/psychology-research.raw.md",
+    "blob": "9014c4860032f62718b1ba0f036fcb047a1d0eb1",
+    "sha256": "279085f566226b01794e6330f2a69b6f7252ac82dc67d5461692a5623d05570b"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.md",
+    "blob": "c877e49ad826e8272628454bfb4c640a14e3946d",
+    "sha256": "a46224e64beab54e576e51b61dd8e4d5942b9eb059a8acbe132ea5de1c4dbad2"
+  },
+  "project_id": "novel-distillation",
+  "result": {
+    "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_RESULT_20261004.json",
+    "blob": "a62c3b1ffc3194a961a43a696615963193587cbb",
+    "sha256": "ea72e7c8c8fd4e7a3afbb3ef209e1f109e25c75c7bdf7d60d5725d11bf447212"
+  }
+}
