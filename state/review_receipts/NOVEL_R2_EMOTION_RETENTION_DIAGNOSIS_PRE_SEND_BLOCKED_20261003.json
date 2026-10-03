@@ -1,0 +1,75 @@
+{
+  "schema_version": "novel-external-diagnosis-pre-send-blocker-receipt/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+  "callback_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-CALLBACK-20261002-07",
+  "recorded_at": "2026-10-03T01:07:50.720Z",
+  "observed_head_before_blocker_write": "1e702c4dd8f2d452d59c882a66f152927903d3a1",
+  "source_checkpoint": 192,
+  "scope": "PRE_SEND_EXACT_COMPOSER_VALIDATION_ONLY_NO_REVIEW_SENT_NO_PROSE_NO_MAINLINE_CHANGE",
+  "prepared_task": {
+    "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
+    "blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110",
+    "sha256": "ec4b9ddb96d6a9e6a1e677c2d4af4e749c75534459951f8e102ee3c709be8c30"
+  },
+  "reviewer_packet": {
+    "path": "delivery/r2-emotion-retention-diagnosis/reviewer-input.md",
+    "blob": "d166df7c68b2925715e13ee4b8b2e88a1da3a666",
+    "sha256": "eec172d54339c3171a6296500eb6727e67c8c41c66b9f8aea6c896b8374ccff6"
+  },
+  "review_target": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "external_chat_preflight": {
+    "outside_project": true,
+    "initial_url": "https://chatgpt.com/",
+    "surface": "CHAT",
+    "work_selected": false,
+    "visible_model_choice": "Latest",
+    "precise_model_id": "UNKNOWN_NOT_EXPOSED",
+    "visible_model_menu": [
+      "Latest",
+      "GPT-5.6 Sol",
+      "GPT-5.5"
+    ],
+    "preferred_model": "GPT-6.1 Sol",
+    "preferred_model_available": false,
+    "effort": "Pro",
+    "effort_item": "第5项，共5项",
+    "composer_initially_empty": true
+  },
+  "dispatch_message": {
+    "historical_private_message_sha256": "cf7882b0f411561384a5bcf80c1e3c1e885cc72c4da4c1adb12a64d09ce6a61e",
+    "historical_private_bytes_recovered": false,
+    "replacement_constructed_from_same_frozen_packet_and_boundary": true,
+    "expected_sha256": "947cff4a65eb6774d1df53b2cb14e47909ea291107a60217603bb5c585be7909",
+    "composer_actual_sha256": "439a41253361cf2423953c05645b339b665339b75f46ce13485b0caa40e18c57",
+    "expected_char_count": 2839,
+    "composer_actual_char_count": 2839,
+    "exact_match": false,
+    "first_difference_utf16_index": 2544,
+    "expected_char": "h",
+    "composer_actual_char": "\\n",
+    "observed_difference": "COMPOSER_INSERTED_EXTRA_LF_BEFORE_CALLBACK_URL_AND_DROPPED_TERMINAL_LF; SAME_CHARACTER_COUNT_BUT_NOT_EXACT",
+    "fill_count": 1,
+    "pre_send_validation_attempt_count": 1,
+    "send_click_count": 0,
+    "dispatch_attempt_count": 0
+  },
+  "reviewer_conversation_url": null,
+  "real_c_url_created": false,
+  "external_review_started": false,
+  "callback_received": false,
+  "external_diagnosis_result": null,
+  "outcome": "BLOCKED_PRE_SEND_EXACT_COMPOSER_MISMATCH",
+  "retry_allowed_in_same_task": false,
+  "split_resend_allowed": false,
+  "second_chat_allowed_for_same_task": false,
+  "new_prose_authorized": false,
+  "generation_count": 0,
+  "old_RC3_remaining_rounds": 0,
+  "mainline_changed": false,
+  "next_action": "AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY"
+}
