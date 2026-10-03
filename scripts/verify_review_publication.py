@@ -54,7 +54,7 @@ def verify(expected):
                 'state/tasks/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_20261003.json',
                 'state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json',
                 'state/review_receipts/NOVEL_CODEX_REVIEW_VALIDATION_20261003.json',
-                'state/review_receipts/NOVEL_CODEX_REVIEW_REMOTE_SAVE_VERIFIED_20261003.json')))
+                'state/review_receipts/NOVEL_CODEX_REVIEW_REMOTE_SAVE_VERIFIED_20261003.json'))
         if path.endswith('.json') and run_record:
             walk(json.loads(data))
 
