@@ -51,6 +51,32 @@ SHORT_TRIAL_NEW_FILES = (
     SHORT_TRIAL_PREFIX + 'REMOTE_SAVE_VERIFIED_20261003.json')
 SHORT_TRIAL_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
     'scripts/verify_reentry_preparation.py', 'tests/test_reentry_preparation.py')
+LEARNING_SOURCE = '7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde'
+LEARNING_PREFIX = 'state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_'
+LEARNING_NEW_FILES = (
+    'config/novel-emotion-learning-20261003.json',
+    'delivery/emotion-learning-20261003/diagnosis.packet.json',
+    'delivery/emotion-learning-20261003/craft-capsule.json',
+    'docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md',
+    'docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md',
+    'modules/emotion-reaction-and-pacing.md',
+    'scripts/novel_emotion_diagnosis.py', 'scripts/verify_emotion_learning.py',
+    'tests/test_emotion_learning.py',
+    'state/learning/emotion-pacing-20261003/sources.json',
+    'state/reviews/emotion-learning-20261003/diagnosis.attempt.json',
+    'state/reviews/emotion-learning-20261003/diagnosis.runtime.json',
+    'state/reviews/emotion-learning-20261003/diagnosis.raw.txt',
+    'state/reviews/emotion-learning-20261003/diagnosis.evidence.json',
+    'state/reviews/emotion-learning-20261003/coordinator-settlement.json',
+    'state/tasks/NOVEL_EMOTION_PACING_LEARNING_20261003.json',
+    'state/tasks/NOVEL_EMOTION_REACTION_ONE_SHORT_PROPOSAL_20261003.json',
+    'state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json',
+    LEARNING_PREFIX + 'AUTHORIZATION_20261003.json',
+    LEARNING_PREFIX + 'RESULT_20261003.json',
+    LEARNING_PREFIX + 'VALIDATION_20261003.json',
+    LEARNING_PREFIX + 'REMOTE_SAVE_VERIFIED_20261003.json')
+LEARNING_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
+    'scripts/verify_one_short_trial.py', 'tests/test_one_short_trial.py')
 
 
 def git(*args):
@@ -292,15 +318,95 @@ def verify_short_trial(expected):
             'model_calls_during_readback': 0, 'generation_count_during_readback': 0}
 
 
+def verify_emotion_learning(expected):
+    """Read checkpoint197 bytes and retain every prior frozen artifact."""
+    remote = git('ls-remote', 'origin', 'refs/heads/main').decode().split()[0]
+    if remote != expected:
+        raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch', 'origin', 'main')
+    if git('rev-parse', 'origin/main').decode().strip() != remote:
+        raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive = zipfile.ZipFile(io.BytesIO(git('archive', '--format=zip', remote)))
+    base = zipfile.ZipFile(io.BytesIO(git('archive', '--format=zip', LEARNING_SOURCE)))
+    old_files = {p for p in base.namelist() if not p.endswith('/')}
+    new_files = {p for p in archive.namelist() if not p.endswith('/')}
+    if new_files - old_files - set(LEARNING_NEW_FILES) or old_files - new_files:
+        raise ValueError('LEARNING_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected = old_files - set(LEARNING_MUTABLE_FILES)
+    for path in protected:
+        if archive.read(path) != base.read(path):
+            raise ValueError('LEARNING_HISTORICAL_BYTES_CHANGED: ' + path)
+    seen, checked = set(), []
+
+    def inspect(path, reference=None):
+        resolved = (ROOT / path).resolve()
+        if not resolved.is_relative_to(ROOT.resolve()):
+            raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        data = archive.read(path)
+        if data != resolved.read_bytes():
+            raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: ' + path)
+        digest = hashlib.sha256(data).hexdigest()
+        if reference and (reference.get('blob') != blob(data) or reference.get('sha256') != digest):
+            raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: ' + path)
+        if path in seen: return
+        seen.add(path)
+        checked.append({'path': path, 'blob': blob(data), 'sha256': digest})
+        # Prior receipts are immutable snapshots and leaves; their historical
+        # mutable-file hashes are not claims about checkpoint197.
+        if path in LEARNING_NEW_FILES and path.endswith('.json'):
+            walk(json.loads(data))
+
+    def walk(value):
+        if isinstance(value, dict):
+            if all(k in value for k in ('path', 'blob', 'sha256')):
+                inspect(value['path'], value)
+            for child in value.values(): walk(child)
+        elif isinstance(value, list):
+            for child in value: walk(child)
+
+    project = json.loads(archive.read('state/project_state.json'))
+    checkpoint = json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route = project.get('emotion_pacing_learning')
+    if (not route or route != checkpoint.get('emotion_pacing_learning') or
+            route.get('human_quality_result') != 'FAIL' or route.get('generation_count') != 0 or
+            route.get('generation_budget') != 0 or checkpoint.get('sequence') != 197 or
+            checkpoint.get('stop') is not True or checkpoint.get('action_guard', {}).get('project_state_sha256') !=
+            hashlib.sha256(archive.read('state/project_state.json')).hexdigest()):
+        raise ValueError('REMOTE_LEARNING_STATE_OR_CHECKPOINT_DRIFT')
+    walk(route)
+    for path in (*LEARNING_MUTABLE_FILES, *LEARNING_NEW_FILES):
+        if path == LEARNING_NEW_FILES[-1] and path not in new_files:
+            continue  # Actual readback proof precedes saving that receipt.
+        inspect(path)
+    validation = json.loads(archive.read(LEARNING_PREFIX + 'VALIDATION_20261003.json'))
+    if validation.get('status') != 'SCOPED_LEARNING_VALIDATION_PASSED_NO_PROSE':
+        raise ValueError('REMOTE_LEARNING_VALIDATION_NOT_COMPLETED')
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('published_learning_state', ROOT / 'scripts/verify_current_state.py')
+    current = importlib.util.module_from_spec(spec); spec.loader.exec_module(current)
+    state_result = current.verify(ROOT)
+    if state_result.get('sequence') != 197 or state_result.get('new_prose_authorized') is not False:
+        raise ValueError('REMOTE_LEARNING_BUSINESS_GATE_NOT_CLOSED')
+    if git('ls-remote', 'origin', 'refs/heads/main').decode().split()[0] != remote:
+        raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status': 'REMOTE_LEARNING_BYTES_HISTORY_AND_BUSINESS_GATES_VERIFIED',
+        'remote_head': remote, 'source_head': LEARNING_SOURCE, 'checkpoint': 197,
+        'checked_count': len(checked), 'files': checked, 'protected_source_file_count': len(protected),
+        'all_prior_prose_locks_and_raw_reports_unchanged': True, 'current_state': state_result,
+        'model_calls_during_readback': 0, 'generation_count_during_readback': 0}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--preparation', action='store_true', help='Verify checkpoint195 preparation and preserve all checkpoint194 history')
     mode.add_argument('--short-trial', action='store_true', help='Verify checkpoint196 frozen short and preserve all checkpoint195 history')
+    mode.add_argument('--emotion-learning', action='store_true', help='Verify checkpoint197 actual failure and learning; preserve checkpoint196 history')
     args = parser.parse_args()
     try:
-        result = (verify_short_trial(args.expected_head) if args.short_trial else
+        result = (verify_emotion_learning(args.expected_head) if args.emotion_learning else
+                  verify_short_trial(args.expected_head) if args.short_trial else
                   verify_preparation(args.expected_head) if args.preparation else verify(args.expected_head))
         print(json.dumps(result, ensure_ascii=False, indent=2))
     except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as exc:

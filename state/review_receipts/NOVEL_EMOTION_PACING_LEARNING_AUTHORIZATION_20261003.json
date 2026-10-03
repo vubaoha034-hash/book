@@ -1,0 +1,33 @@
+{
+  "schema_version": "native-scoped-learning-authority/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "source_head": "7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde",
+  "source_checkpoint": 196,
+  "recorded_at": "2026-10-03T08:17:39.766698+00:00",
+  "scope": "RECORD_395_HUMAN_FAILURE_READ_PROFESSIONAL_SOURCES_AND_IMPROVE_REUSABLE_EMOTION_REACTION_PACING_METHOD_NO_PROSE",
+  "authority": {
+    "source": "ACTUAL_CURRENT_USER_INSTRUCTION",
+    "exact_user_instruction": "一，我不是很满意，ai味道很重。  二，情绪还是平。   比如我会惊讶，会难过等等对吧。这个就跟机器人一样。  三，我觉得现在应该有大量的小说写的教程，书籍，视频等等，你应该自己查找，自己看看如何才能提高小说的写作方法，特别是现在的小说追求快节奏。明白我的意思吗？不应该让我总在这里帮你出主意，网络上大量的专业性质的。",
+    "interpretation": "助手自行检索并学习专业资料，落实当前失败诊断和有界方法改进、验证及既有main保存；不要求刘先生提供教程或设计提示词。"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+    "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+    "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+  },
+  "authorized_work_kinds": [
+    "PROFESSIONAL_SOURCE_STUDY",
+    "POST_FAILURE_DIAGNOSIS",
+    "METHOD_AND_CONTEXT_PREPARATION",
+    "NATIVE_SAVE_AND_VERIFICATION"
+  ],
+  "maximum_new_diagnostic_calls": 1,
+  "new_prose_authorized": false,
+  "generation_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "automatic_background_tasks_authorized": false
+}

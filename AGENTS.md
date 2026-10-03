@@ -22,6 +22,8 @@ new prose budget, no V5, and no release of the old 197-character protection.
 
 Current checkpoint196 continuation: after the completed reentry/fact preparation, the user approved its concrete proposal and required direct completion. One fresh writer generated the only 395-character new opening short; a different fresh context returned FACT_CLEAR, with evidence settled by the coordinator. Read `docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md` and its native authorization/task/result. The single new budget is spent. New-version opening organization was authorized; old artifacts, locks, exhausted RC3 budget and human rejections remain intact. Next: actual human reading of this frozen short. No automatic A2, full scene, TEST-02, V5 or new life facts. FACT_CLEAR cannot become a human PASS.
 
+当前检查点197：395字稿实际真人FAIL已另存，前一检查点的UNKNOWN仅为历史快照。已按用户要求主动学习专业资料并完成一次独立已知失败后的情绪/互动诊断。读取 [学习与适用边界](docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md)、[根因与原始证据](docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md)及当前任务。复用 [人物反应与节奏](modules/emotion-reaction-and-pacing.md)作当前阶段参考，不把教程、失败标签和诊断塞入写作者上下文；未来只取三条简短正向原则。当前无新写作预算，不自动续写，旧锁和方法4保持。读取不重跑模型，原一次诊断已消费；未读完整视频/书籍，不宣称已学会或验证文风。
+
 This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.
 
 - Default execution mode: `CHAT`.

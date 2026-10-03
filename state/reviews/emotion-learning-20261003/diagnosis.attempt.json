@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "job_id": "D197",
+  "packet": {
+    "path": "delivery/emotion-learning-20261003/diagnosis.packet.json",
+    "blob": "f6fc201a1113888315271d4fbe7db7e7371c34b6",
+    "sha256": "0a2a91f63c4aa8bc93f132f089d8d40cef39e195546efd44bba8a825a3ceb71c"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T08:26:33Z"
+}

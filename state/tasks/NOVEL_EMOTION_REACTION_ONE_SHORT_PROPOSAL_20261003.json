@@ -1,0 +1,47 @@
+{
+  "schema_version": "native-bounded-next-task-proposal/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EMOTION-REACTION-ONE-SHORT-TRIAL-PROPOSAL-20261003-01",
+  "parent_task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "source_head": "7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde",
+  "status": "PREPARED_NOT_AUTHORIZED",
+  "authorized_generation_budget": 0,
+  "proposed_generation_budget": 1,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "automatic_activation": false,
+  "minimum_non_whitespace_characters": 300,
+  "maximum_non_whitespace_characters": 500,
+  "output_count": 1,
+  "context": {
+    "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+    "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+    "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+  },
+  "craft_capsule": {
+    "path": "delivery/emotion-learning-20261003/craft-capsule.json",
+    "blob": "fd43ad52d1a1bce2ed310e3d20d895f49144c89c",
+    "sha256": "0c2cb96e1362a423ef71db67ca3bdbb021d7eb07794c4404ffcd3f77735308a6"
+  },
+  "proposed_change": {
+    "focus": "已有私人冲击改变人物理解、回应及选择；减少首屏并列解释，保留不认账与独立核验。",
+    "opening_reorganization_in_new_version": "PROPOSED_REQUIRES_NEW_EXPLICIT_SCOPE",
+    "new_life_fact_count": 0,
+    "replacement_sentences": [],
+    "mandatory_action_sequence": false,
+    "must_add_surprise_or_sadness_labels": false
+  },
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "multiple_candidates_allowed": false,
+  "formal_mainline_method_revision": 4,
+  "necessary_authorization": "明确授权此提案的一次新300—500字预算及新版本开头组织范围；不释放任何旧锁或旧预算。",
+  "recheck": [
+    "冻结唯一输出，独立事实核对视角、记忆、责任、材料和期限。",
+    "真人实际阅读确认情绪、AI味和互动；精确停止句只记实际提供的内容。"
+  ],
+  "quality_effectiveness": "UNPROVEN_UNTIL_ACTUAL_HUMAN_READING",
+  "hypothesized_emotions_are_not_new_canonical_facts": true
+}

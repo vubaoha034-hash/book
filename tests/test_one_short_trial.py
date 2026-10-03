@@ -21,8 +21,17 @@ class OneShortTrialTests(unittest.TestCase):
         self.project = json.loads((REPO / 'state/project_state.json').read_bytes())
         self.checkpoint = json.loads((REPO / 'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
         self.route = self.project['r2_entry_short_trial']
+        # Test the immutable checkpoint196 stage in isolation from later tasks.
+        for value in (self.project, self.checkpoint):
+            value.pop('emotion_pacing_learning', None)
+            value.update(last_completed_task_id=gate.TASK,
+                last_completed_task_contract=self.route['task']['path'],
+                next_action=gate.NEXT_ACTION, next_required_action=gate.NEXT_ACTION)
+        self.checkpoint.update(sequence=196, stop=True)
         self.seen = set()
         self.copy('START_HERE.md')
+        entry = self.root / 'START_HERE.md'
+        entry.write_text('当前位置：检查点196。\n' + entry.read_text(encoding='utf-8'), encoding='utf-8')
         self.copy_refs(self.route)
         for p in ('state/authoring/r2-entry-trial-20261003/writer.attempt.json',
                   'state/reviews/r2-entry-trial-20261003/facts.attempt.json'):

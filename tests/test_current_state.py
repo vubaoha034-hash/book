@@ -48,6 +48,7 @@ class CurrentStateTests(unittest.TestCase):
             # The later preparation authorization has separate corruption tests.
             state.pop('r2_reentry_fact_preparation', None)
             state.pop('r2_entry_short_trial', None)
+            state.pop('emotion_pacing_learning', None)
             state['mainline_state'].update(current_step='STEP_01', completed_steps=[],
                 test_artifacts={}, test_results={}, literary_quality_validated=False,
                 new_prose_authorized_now=False, full_v5_authorized=False)

@@ -1,8 +1,8 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 196,
-  "recorded_at": "2026-10-03T04:58:59+00:00",
+  "sequence": 197,
+  "recorded_at": "2026-10-03T08:41:38Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
@@ -751,7 +751,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
+  "next_required_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1880,14 +1880,14 @@
       "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "R2_ONE_NEW_SHORT_FACT_CLEAR_AWAIT_ACTUAL_HUMAN_READING",
+  "status": "R2_395_HUMAN_FAIL_PROFESSIONAL_STUDY_COMPLETE_NO_PROSE",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "last_completed_task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "b8ba017fba7cf4388871ee92675c3bd2b2fb109c6f9b41640fafb22d2bad10e5",
+    "project_state_sha256": "8a70ce856a88bf0c9ec24677762857cb231dbf1818fed06965399352f8556cc9",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1940,16 +1940,17 @@
       "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
       "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
       "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
-      "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01"
+      "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+      "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json",
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
-  "current_human_gate": "CURRENT_R2_HUMAN_FAIL_ORIGINAL_METHOD4_HUMAN_UNKNOWN",
+  "last_completed_task_contract": "state/tasks/NOVEL_EMOTION_PACING_LEARNING_20261003.json",
+  "next_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+  "current_human_gate": "CURRENT_395_HUMAN_FAIL_OLD_448_FAIL_ORIGINAL_404_UNKNOWN",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -2085,30 +2086,35 @@
     }
   },
   "latest_human_review": {
-    "recorded_at": "2026-10-02T13:30:55+00:00",
-    "feedback_submitted_at": "2026-10-02T21:22:09+08:00",
-    "bound_test_id": "RC3_LOCAL_R2",
+    "recorded_at": "2026-10-03T08:17:39.766698+00:00",
+    "feedback_submitted_at": "UNKNOWN_MESSAGE_TIMESTAMP_NOT_PROVIDED",
+    "bound_test_id": "R2_ENTRY_SHORT_A1_NEW_BUDGET",
     "bound_method_revision": 4,
-    "bound_version": "SHORT-R2-A1-448",
-    "bound_artifact_path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
-    "bound_blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
-    "feedback_summary": "当前448字稿实际读者明确否决情绪和第一眼继续阅读欲望；不是题材否决，也未单独评价人物是否像机器人。",
-    "human_exact_feedback": "依旧是毫无情绪，一点看下去的欲望都没。根本不是那种第一眼就想看下去的感觉",
-    "verdict": "REJECT_EMOTION_AND_FIRST_SCREEN_RETENTION",
+    "bound_version": "SHORT-ENTRY-A1-395",
+    "bound_artifact_path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "bound_blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "bound_sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa",
+    "feedback_summary": "当前395字唯一新短段被刘先生明确否决：AI味重、情绪平、互动像机器人；惊讶和难过为人物真实反应的例子。另要求助手主动学习专业小说教程、书籍及课程，改进快节奏写法。",
+    "human_exact_feedback": "一，我不是很满意，ai味道很重。  二，情绪还是平。   比如我会惊讶，会难过等等对吧。这个就跟机器人一样。  三，我觉得现在应该有大量的小说写的教程，书籍，视频等等，你应该自己查找，自己看看如何才能提高小说的写作方法，特别是现在的小说追求快节奏。明白我的意思吗？不应该让我总在这里帮你出主意，网络上大量的专业性质的。",
+    "verdict": "REJECT_AI_SMELL_FLAT_EMOTION_AND_ROBOTIC_INTERACTION",
     "source": {
       "kind": "ACTUAL_CURRENT_USER_MESSAGE",
       "coverage": "COMPLETE_CURRENT_MESSAGE",
-      "original_conversation_locator": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
-      "original_message_read_back_this_turn": true
+      "original_conversation_locator": "CURRENT_CODEX_THREAD_NO_STABLE_MESSAGE_URL",
+      "message_observed_directly": true
     },
-    "scope": "仅当前448字冻结短段的情绪和第一屏留存；精确停止句未给出。",
-    "validation_scope": "FIRST_SCREEN_AND_EXCERPT_EMOTION",
-    "two_question_test_result": "FAIL_ONE_EXPLICIT_NEGATIVE_SUFFICIENT",
+    "scope": "仅绑定395字新短段；不扩张到旧448字的新机器人判决、原404字结果或题材否决。",
+    "validation_scope": "SHORT_EXCERPT_EMOTION_STYLE_AND_INTERACTION",
+    "two_question_test_result": "FAIL_ROBOTIC_INTERACTION_NEGATIVE_SUFFICIENT",
     "human_quality_accepted": false,
+    "same_artifact_resubmission_allowed": false,
     "topic_rejection": false,
     "full_v5_authorized": false,
-    "same_artifact_resubmission_allowed": false,
-    "robotic_interaction_verdict": "UNKNOWN"
+    "robotic_interaction_verdict": "FAIL",
+    "emotion_verdict": "FAIL",
+    "ai_smell_verdict": "FAIL",
+    "wants_to_continue": "UNKNOWN_NOT_EXPLICITLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -3171,7 +3177,7 @@
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
   },
-  "updated_at": "2026-10-03T07:38:41.843813+00:00",
+  "updated_at": "2026-10-03T08:41:38Z",
   "r2_entry_short_trial": {
     "schema_version": "native-one-short-trial-state/v1",
     "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
@@ -3256,5 +3262,128 @@
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "automatic_writer_dispatch": false,
     "automatic_background_sync": false
+  },
+  "emotion_pacing_learning": {
+    "schema_version": "native-learning-state/v1",
+    "task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+    "source_head": "7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde",
+    "source_checkpoint": 196,
+    "scope": "RECORD_395_HUMAN_FAILURE_READ_PROFESSIONAL_SOURCES_AND_IMPROVE_REUSABLE_EMOTION_REACTION_PACING_METHOD_NO_PROSE",
+    "status": "PROFESSIONAL_STUDY_AND_DIAGNOSIS_COMPLETE_HUMAN_FAIL_PRESERVED_NO_PROSE",
+    "generation_budget": 0,
+    "generation_count": 0,
+    "new_prose_authorized": false,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_v5_authorized": false,
+    "new_life_facts_authorized": false,
+    "story_goal_changed": false,
+    "formal_mainline_method_revision": 4,
+    "human_quality_result": "FAIL",
+    "original_404_human_result": "UNKNOWN",
+    "old_448_human_emotion_retention": "FAIL",
+    "literary_quality_validated": false,
+    "writing_transfer": "UNPROVEN",
+    "independent_diagnostic_model_calls": 1,
+    "cold_screen_calls": 0,
+    "next_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_AUTHORIZATION_20261003.json",
+      "blob": "81a46ce4fa3e084f2ba8f5e2e18b580f75735b48",
+      "sha256": "63b2d3f960ee067bbaf55c4855f44e34e0600900c510911ce41dc957b25867e1"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+      "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+      "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+    },
+    "previous_human_feedback": {
+      "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+      "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+      "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+    },
+    "previous_short_result": {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.json",
+      "blob": "152dd90286e11243235597e268d350e54ad0927e",
+      "sha256": "f91f2c78ed778bd40ec593b81e5322e6f6ba0812cc9606163ca2f700e8cb1039"
+    },
+    "target": {
+      "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+      "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+      "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+    },
+    "manifest": {
+      "path": "config/novel-emotion-learning-20261003.json",
+      "blob": "75e9ccb4fc6389f12b46f43dafd576221d6d9d93",
+      "sha256": "6627e33f7a0a2229dbca24a1f5bd8f44200c649c97542ab6478ccb2162a2edc0"
+    },
+    "packet": {
+      "path": "delivery/emotion-learning-20261003/diagnosis.packet.json",
+      "blob": "f6fc201a1113888315271d4fbe7db7e7371c34b6",
+      "sha256": "0a2a91f63c4aa8bc93f132f089d8d40cef39e195546efd44bba8a825a3ceb71c"
+    },
+    "runtime": {
+      "path": "state/reviews/emotion-learning-20261003/diagnosis.runtime.json",
+      "blob": "f42e6d4d6e5863660a26dc8096d17fce1cab6c3b",
+      "sha256": "d1f3e0e2bb18ea213250c687291a8794fe30901ba33a201039d2b3fd5d85a43a"
+    },
+    "raw_report": {
+      "path": "state/reviews/emotion-learning-20261003/diagnosis.raw.txt",
+      "blob": "6e82d73a270ebf922f92c2cd8eea7f88e1076493",
+      "sha256": "1f83e90a150c04ef82aa483b1ca3536741d2ae0daaa4b6a090ed46f764797cbb"
+    },
+    "evidence": {
+      "path": "state/reviews/emotion-learning-20261003/diagnosis.evidence.json",
+      "blob": "3c972875fcd21c9305fb32b6aa8660f8fc306958",
+      "sha256": "2d7d8d22e675a8a31fa3457445899a838ac361801d3d194b512d0b4fce94045f"
+    },
+    "settlement": {
+      "path": "state/reviews/emotion-learning-20261003/coordinator-settlement.json",
+      "blob": "4df9e76ab06fd11fd71f63dd70ee009a4e6ec87b",
+      "sha256": "776f1a7b95bde4f4404693d5865e80fb4f236ad7b462ce1cf2670202c715138b"
+    },
+    "sources": {
+      "path": "state/learning/emotion-pacing-20261003/sources.json",
+      "blob": "4955d3f2b9a56e77afd5f0d3150f597a0d612094",
+      "sha256": "2f7db1dd70775e32c8d0dfba55dd90546511013c290160a9e1adfb22543fa256"
+    },
+    "method_document": {
+      "path": "modules/emotion-reaction-and-pacing.md",
+      "blob": "987f34445947899e05feb853eb3be8653227203c",
+      "sha256": "298f3ca051ae293760ed1506df270c12abe1bbe0e985c752a921f5819c282c5c"
+    },
+    "study_document": {
+      "path": "docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md",
+      "blob": "937b20e3cfabbd72c4ee1fbc10746aa5307b40d0",
+      "sha256": "181910134c87ebfa099ca2a7044e3e305b5957d2356a42daab284cc87f366e48"
+    },
+    "craft_capsule": {
+      "path": "delivery/emotion-learning-20261003/craft-capsule.json",
+      "blob": "fd43ad52d1a1bce2ed310e3d20d895f49144c89c",
+      "sha256": "0c2cb96e1362a423ef71db67ca3bdbb021d7eb07794c4404ffcd3f77735308a6"
+    },
+    "next_task_proposal": {
+      "path": "state/tasks/NOVEL_EMOTION_REACTION_ONE_SHORT_PROPOSAL_20261003.json",
+      "blob": "1bd75ab0b0f48c512af59318b484136f18cd2794",
+      "sha256": "896f7449e91fa2c1adf7e99c21e5d8d5163ec7a458a8fd1fe32be96e9f19483e"
+    },
+    "diagnosis_document": {
+      "path": "docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md",
+      "blob": "ff9b1b2876959142f0a84ffa552790c72949b92f",
+      "sha256": "a2d518493352cad13b48182289c695043ff30eff961dab32eaef500272466d8f"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_EMOTION_PACING_LEARNING_20261003.json",
+      "blob": "13c9e2d00ee7c790f9c696d50ff103304811f59b",
+      "sha256": "d2e6276cfad29b34751c83435a51ca546a24507944ec9fd7614e8f3797a83eb8"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_RESULT_20261003.json",
+      "blob": "09f55684d6332b8aa99a41a865302166df7395ec",
+      "sha256": "732f7a4320e2dc90e2905f6387224c54c1247ebc1de5541cae88234753b39db5"
+    },
+    "supersedes_only_live_next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
+    "previous_stage_is_immutable_snapshot": true,
+    "automatic_writer_dispatch": false
   }
 }

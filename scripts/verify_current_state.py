@@ -518,12 +518,23 @@ def scoped_human_rejection_action(root: Path, project: dict, route: dict,
     quality = route.get('fresh_external_quality_review', {})
     action = 'RESTORE_OPERA_NEON_AND_SEND_ONE_R2_EMOTION_RETENTION_DIAGNOSIS_TASK'
     blocked_action = 'AWAIT_NEW_UNIFIED_COMMAND_AFTER_R2_DIAGNOSIS_PRE_SEND_COMPOSER_MISMATCH_NO_RETRY'
+    # A newly bound human verdict supersedes only the live latest pointer.
+    # This older failure must still be checked against its immutable receipt.
+    historical_human_path = project.get('human_verdict_receipt')
+    historical_human_review = project.get('latest_human_review')
+    if project.get('emotion_pacing_learning'):
+        prior_ref = project['emotion_pacing_learning'].get('previous_human_feedback', {})
+        if prior_ref != human.get('receipt'):
+            raise ValueError('SCOPED_HISTORICAL_HUMAN_REFERENCE_DRIFT')
+        prior_human = bound_json(root, prior_ref)
+        historical_human_path = prior_ref['path']
+        historical_human_review = prior_human.get('review')
     if (receipt.get('schema_version') != 'novel-scoped-human-reading-receipt/v1' or
         receipt.get('project_id') != project.get('project_id') or receipt.get('outcome') != 'FAIL' or
         receipt.get('processed_once') is not True or human.get('outcome') != 'FAIL' or
         execution.get('human_verdict') != human.get('receipt') or
-        project.get('human_verdict_receipt') != human.get('receipt', {}).get('path') or
-        project.get('latest_human_review') != review or
+        historical_human_path != human.get('receipt', {}).get('path') or
+        historical_human_review != review or
         review.get('source', {}).get('kind') != 'ACTUAL_CURRENT_USER_MESSAGE' or
         not review.get('human_exact_feedback') or review.get('human_quality_accepted') is not False or
         review.get('same_artifact_resubmission_allowed') is not False or
@@ -631,6 +642,15 @@ def test_outcome(root: Path, relative: str) -> str:
     return expected
 
 def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
+    learning_module, learning_authorization = None, None
+    if 'emotion_pacing_learning' in project or 'emotion_pacing_learning' in cp:
+        spec = importlib.util.spec_from_file_location('emotion_learning_state',
+            Path(__file__).with_name('verify_emotion_learning.py'))
+        learning_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(learning_module)
+        # Validate actual current user feedback before selecting a historical
+        # view for any older gate; never trust a successor-present boolean.
+        learning_authorization = learning_module.validate_authorization(root, project, cp)
     state = project.get('mainline_state', {})
     if not state or state != cp.get('mainline_state'):
         raise ValueError('MAINLINE_STATE_DRIFT')
@@ -749,7 +769,10 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         expected_action = module.reentry_preparation_action(root, project, cp, expected_action,
             successor_authorization=successor_authorization)
     if successor_module is not None:
-        expected_action = successor_module.one_short_trial_action(root, project, cp, expected_action)
+        expected_action = successor_module.one_short_trial_action(root, project, cp, expected_action,
+            successor_authorization=learning_authorization)
+    if learning_module is not None:
+        expected_action = learning_module.learning_action(root, project, cp, expected_action)
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

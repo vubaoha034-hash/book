@@ -111,7 +111,7 @@ def runtime_check(root, reference, role, packet_ref, raw_ref, policy):
     return runtime
 
 
-def one_short_trial_action(root, project, checkpoint, historical_action):
+def one_short_trial_action(root, project, checkpoint, historical_action, successor_authorization=None):
     if historical_action != OLD_ACTION:
         raise ValueError('ONE_SHORT_CANNOT_SKIP_HISTORICAL_GATES')
     validate_authorization(root, project, checkpoint)
@@ -212,13 +212,30 @@ def one_short_trial_action(root, project, checkpoint, historical_action):
             receipt.get('human_exact_stop') != 'UNKNOWN' or
             receipt.get('literary_effect_relative_to_old_short') != 'UNTESTED'):
         raise ValueError('ONE_SHORT_EVIDENCE_COUNT_UNKNOWN_OR_HUMAN_DRIFT')
-    for value in (project, checkpoint):
-        if (value.get('last_completed_task_id') != TASK or value.get('last_completed_task_contract') != route['task']['path'] or
-                value.get('next_action') != NEXT_ACTION or value.get('next_required_action') != NEXT_ACTION):
-            raise ValueError('ONE_SHORT_LIVE_CURSOR_DRIFT')
-    if checkpoint.get('sequence') != 196 or checkpoint.get('stop') is not True:
-        raise ValueError('ONE_SHORT_CHECKPOINT_OR_STOP_DRIFT')
+    if successor_authorization is None:
+        for value in (project, checkpoint):
+            if (value.get('last_completed_task_id') != TASK or value.get('last_completed_task_contract') != route['task']['path'] or
+                    value.get('next_action') != NEXT_ACTION or value.get('next_required_action') != NEXT_ACTION):
+                raise ValueError('ONE_SHORT_LIVE_CURSOR_DRIFT')
+        if checkpoint.get('sequence') != 196 or checkpoint.get('stop') is not True:
+            raise ValueError('ONE_SHORT_CHECKPOINT_OR_STOP_DRIFT')
+    else:
+        # A distinct learning task records actual failure. The completed trial
+        # remains the then-UNKNOWN snapshot; no output or budget is rewritten.
+        successor = bound(root, successor_authorization)
+        human = bound(root, successor.get('human_feedback', {}))
+        if (successor.get('task_id') != 'NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01' or
+                successor.get('source_head') != '7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde' or
+                successor.get('source_checkpoint') != 196 or successor.get('generation_budget') != 0 or
+                successor.get('new_prose_authorized') is not False or
+                successor.get('authority', {}).get('source') != 'ACTUAL_CURRENT_USER_INSTRUCTION' or
+                successor.get('old_RC3_remaining_rounds') != 0 or
+                successor.get('old_197_character_protection_released') is not False or
+                human.get('outcome') != 'FAIL' or human.get('output') != route['artifact'] or
+                human.get('prior_snapshot_result') != route['result']):
+            raise ValueError('ONE_SHORT_SUCCESSOR_HUMAN_FAILURE_UNBOUND')
     entry = (root / 'START_HERE.md').read_text(encoding='utf-8')
-    if TASK not in entry or NEXT_ACTION not in entry or '当前位置：检查点196。' not in entry:
+    stamp = '当前位置：检查点196。' if successor_authorization is None else '检查点196：'
+    if TASK not in entry or NEXT_ACTION not in entry or stamp not in entry:
         raise ValueError('ONE_SHORT_ENTRYPOINT_STALE')
     return NEXT_ACTION

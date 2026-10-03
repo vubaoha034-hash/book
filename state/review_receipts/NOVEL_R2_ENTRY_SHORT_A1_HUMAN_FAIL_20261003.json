@@ -1,0 +1,56 @@
+{
+  "schema_version": "native-new-short-actual-human-feedback/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "source_head": "7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde",
+  "source_checkpoint": 196,
+  "output": {
+    "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+  },
+  "prior_snapshot_result": {
+    "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.json",
+    "blob": "152dd90286e11243235597e268d350e54ad0927e",
+    "sha256": "f91f2c78ed778bd40ec593b81e5322e6f6ba0812cc9606163ca2f700e8cb1039"
+  },
+  "processed_once": true,
+  "outcome": "FAIL",
+  "review": {
+    "recorded_at": "2026-10-03T08:17:39.766698+00:00",
+    "feedback_submitted_at": "UNKNOWN_MESSAGE_TIMESTAMP_NOT_PROVIDED",
+    "bound_test_id": "R2_ENTRY_SHORT_A1_NEW_BUDGET",
+    "bound_method_revision": 4,
+    "bound_version": "SHORT-ENTRY-A1-395",
+    "bound_artifact_path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "bound_blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "bound_sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa",
+    "feedback_summary": "当前395字唯一新短段被刘先生明确否决：AI味重、情绪平、互动像机器人；惊讶和难过为人物真实反应的例子。另要求助手主动学习专业小说教程、书籍及课程，改进快节奏写法。",
+    "human_exact_feedback": "一，我不是很满意，ai味道很重。  二，情绪还是平。   比如我会惊讶，会难过等等对吧。这个就跟机器人一样。  三，我觉得现在应该有大量的小说写的教程，书籍，视频等等，你应该自己查找，自己看看如何才能提高小说的写作方法，特别是现在的小说追求快节奏。明白我的意思吗？不应该让我总在这里帮你出主意，网络上大量的专业性质的。",
+    "verdict": "REJECT_AI_SMELL_FLAT_EMOTION_AND_ROBOTIC_INTERACTION",
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "coverage": "COMPLETE_CURRENT_MESSAGE",
+      "original_conversation_locator": "CURRENT_CODEX_THREAD_NO_STABLE_MESSAGE_URL",
+      "message_observed_directly": true
+    },
+    "scope": "仅绑定395字新短段；不扩张到旧448字的新机器人判决、原404字结果或题材否决。",
+    "validation_scope": "SHORT_EXCERPT_EMOTION_STYLE_AND_INTERACTION",
+    "two_question_test_result": "FAIL_ROBOTIC_INTERACTION_NEGATIVE_SUFFICIENT",
+    "human_quality_accepted": false,
+    "same_artifact_resubmission_allowed": false,
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "robotic_interaction_verdict": "FAIL",
+    "emotion_verdict": "FAIL",
+    "ai_smell_verdict": "FAIL",
+    "wants_to_continue": "UNKNOWN_NOT_EXPLICITLY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
+  },
+  "fact_verdict_preserved": "FACT_CLEAR_ONLY_NO_QUALITY_ACCEPTANCE",
+  "generation_count_this_feedback_record": 0,
+  "new_generation_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "human_feedback_overturnable_by_AI": false
+}

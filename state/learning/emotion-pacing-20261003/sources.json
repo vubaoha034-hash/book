@@ -1,0 +1,158 @@
+{
+  "schema_version": "native-professional-source-study/v1",
+  "task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "source_head": "7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde",
+  "read_at": "2026-10-03T08:32:24Z",
+  "collection_method": "ACTUAL_WEB_SOURCE_READING_AND_PINNED_GIT_SHOW",
+  "sources": [
+    {
+      "source_id": "S01",
+      "source_kind": "AUTHOR_COURSE",
+      "url": "https://writingexcuses.com/writing-excuses-9-19-showing-emotion/",
+      "published_at": "2014-05-04",
+      "access_level": "OFFICIAL_TRANSCRIPT",
+      "read_locator": "Transcript：内在动机、外在表达、受众差异和不同情绪段落",
+      "adopted": true,
+      "own_learning_note": "情绪的原因应可理解；身体动作和情绪词各有作用，多种情绪的变化能改变人物行动。",
+      "transfer_limit": "压抑情绪不是统一最佳写法；不把泪、手指或下颌作为必选模板。"
+    },
+    {
+      "source_id": "S02",
+      "source_kind": "AUTHOR_COURSE",
+      "url": "https://writingexcuses.com/writing-excuses-7-33-authentic-emotion/",
+      "published_at": "2012-08-12",
+      "access_level": "OFFICIAL_TRANSCRIPT",
+      "read_locator": "Transcript：注意与焦点、情绪起因、人物理解及转变",
+      "adopted": true,
+      "own_learning_note": "人物注意什么、怎样解释眼前事、停留多久，会使读者理解他的感受。",
+      "transfer_limit": "不能宣称AI亲历了情绪，也不从自己的经验编造人物新生活史。"
+    },
+    {
+      "source_id": "S03",
+      "source_kind": "AUTHOR_COURSE",
+      "url": "https://writingexcuses.com/writing-excuses-10-31-how-do-i-control-the-readers-sense-of-progress/",
+      "published_at": "2015-08-02",
+      "access_level": "OFFICIAL_TRANSCRIPT",
+      "read_locator": "Transcript：progress与things happening，人物对目标进展的感受",
+      "adopted": true,
+      "own_learning_note": "读者的进展感与当前承诺、目标、人物感知相关；事件和信息数量不等于速度。",
+      "transfer_limit": "不把几百字的诊断推广成全书结构判决或统一黄金公式。"
+    },
+    {
+      "source_id": "S04",
+      "source_kind": "AUTHOR_COURSE",
+      "url": "https://writingexcuses.com/writing-excuses-10-32-how-do-i-control-the-speed-of-the-story/",
+      "published_at": "2015-08-09",
+      "access_level": "OFFICIAL_TRANSCRIPT",
+      "read_locator": "Transcript：叙述/场景速度、断段、句长与单一节奏反复",
+      "adopted": true,
+      "own_learning_note": "略写过渡，展开有影响的时刻；句长与分段需要变化，一律短段会失去自然节奏。",
+      "transfer_limit": "不设一律短句、不许心理描写、每段必须钩子的机械规则。"
+    },
+    {
+      "source_id": "S05",
+      "source_kind": "AUTHOR_VIDEO_COURSE_NOTES",
+      "url": "https://www.brandonsanderson.com/blogs/blog/creating-proactive-relatable-and-capable-characters-brandon-sandersons-writing-lecture-5-2025",
+      "published_at": "2025-02-24",
+      "access_level": "OFFICIAL_LECTURE_NOTES_ONLY",
+      "read_locator": "正文笔记：proactivity / relatability / capability与motivation",
+      "adopted": true,
+      "own_learning_note": "可信的动机、选择和主动性帮助连接人物；过于顺利和能干也可能削弱连接。",
+      "transfer_limit": "只读官方文字笔记，未观看完整视频；不采用未验证的比例统计或复制作者风格。"
+    },
+    {
+      "source_id": "S06",
+      "source_kind": "PRIMARY_AUTHOR_INTERVIEW",
+      "url": "https://www.chinawriter.com.cn/n1/2025/0605/c404024-40494534.html",
+      "published_at": "2025-06-05",
+      "access_level": "PRIMARY_INTERVIEW_BODY",
+      "read_locator": "作者答复：人物代入弱化的创作失败经验；内心挣扎呈现；回家情绪",
+      "adopted": true,
+      "own_learning_note": "动作和选择有时不足以让读者理解内心挣扎；需要让人物的私人关联可见。",
+      "transfer_limit": "作者个人经验，不推出总体正确率，不改题材或要求爽文套式。"
+    },
+    {
+      "source_id": "S07",
+      "source_kind": "PRIMARY_AUTHOR_INTERVIEW",
+      "url": "https://image.chinawriter.com.cn/n1/2025/0107/c404024-40396807.html",
+      "published_at": "2025-01-07",
+      "access_level": "PRIMARY_INTERVIEW_BODY",
+      "read_locator": "作者答复：负面反馈、素材按故事需要筛选、人物碰撞",
+      "adopted": true,
+      "own_learning_note": "从实际负面反馈找具体问题；知识按故事需要筛选，情绪由人物碰撞产生。",
+      "transfer_limit": "不将来源知识当质量证明，不将新方法扩张为主线改写。"
+    },
+    {
+      "source_id": "S08",
+      "source_kind": "PUBLISHER_AND_LICENSED_BOOK_PREVIEW",
+      "url": "https://www.penguinrandomhouse.com/books/633863/the-emotional-craft-of-fiction-by-donald-maass/",
+      "published_at": "2016-12-30",
+      "access_level": "PUBLISHER_DESCRIPTION_AND_PUBLIC_INTRODUCTION_EXCERPT",
+      "read_locator": "出版社书目ISBN9781440348372；Everand公开Introduction开头",
+      "adopted": true,
+      "own_learning_note": "人物显露情绪、事情紧张、行文精致，都不保证读者感动；关注读者经历的情绪过程。",
+      "transfer_limit": "未读全书；没有登录付费、订阅或复制书中小说示例。",
+      "preview_url": "https://www.everand.com/book/769105995/The-Emotional-Craft-of-Fiction-How-to-Write-the-Story-Beneath-the-Surface"
+    },
+    {
+      "source_id": "S09",
+      "source_kind": "EXTERNAL_REFERENCE_SKILL",
+      "url": "https://github.com/haowjy/creative-writing-skills/blob/0d5bf7fd987554e05db7e05d569736e648297722/skills/creative-writing-craft/SKILL.md",
+      "published_at": "UNKNOWN_NOT_NEEDED_FOR_PINNED_COMMIT",
+      "access_level": "PINNED_SKILL_AND_TWO_RESOURCES",
+      "read_locator": "SKILL.md及resources/prose-writing.md、resources/scene-construction.md",
+      "adopted": true,
+      "own_learning_note": "心理距离可随压力变化；限知视角可有内心活动；对话的目的与潜台词、节奏变化有助于人物在场。",
+      "transfer_limit": "第三方技能参考，未认证顶级或对刘先生有效；不执行外部脚本、不安装钩子、不加载整套规则。",
+      "commit": "0d5bf7fd987554e05db7e05d569736e648297722",
+      "resources": [
+        {
+          "blob": "f8ebb651cb58eaf6d6e217831b1a0d20e03168e9",
+          "sha256": "78eb4bb789e3c98a4a837eaff4b0034d4102d2e8bd9c313ba081de8f00543f59",
+          "read": true,
+          "repository_path": "skills/creative-writing-craft/SKILL.md"
+        },
+        {
+          "blob": "ef514cd0d8bf2233c8fd2efb2e00ae47d35048f0",
+          "sha256": "a78943d1fd9ab8fec738728f91ce81eeb007bf095ff6c8b3c40745899aa5a2d5",
+          "read": true,
+          "repository_path": "skills/creative-writing-craft/resources/prose-writing.md"
+        },
+        {
+          "blob": "32a2ea1d207d7c1d7c230706168189ebfdc0ef21",
+          "sha256": "fce22dd09fb5df23bcbc09ea0a4429ab91915c5a9fc3fa9b4df5d0af77f0a3f8",
+          "read": true,
+          "repository_path": "skills/creative-writing-craft/resources/scene-construction.md"
+        }
+      ]
+    },
+    {
+      "source_id": "S10",
+      "source_kind": "OFFICIAL_PLATFORM_COURSE_INDEX",
+      "url": "https://fanqienovel.com/writer/zone/article/7624047712786202686",
+      "published_at": "2026-04-05",
+      "access_level": "INDEX_HEADINGS_ONLY",
+      "read_locator": "第十五期短故事作家课堂：开篇期待、重复情绪、人物逻辑目录",
+      "adopted": false,
+      "own_learning_note": "发现相关课程目录，但当前抓取未取得实质课程正文。",
+      "transfer_limit": "不宣称读完或用目录代替专业论证。"
+    },
+    {
+      "source_id": "S11",
+      "source_kind": "AUTHOR_TUTORIAL_UNREAD",
+      "url": "https://jimbutcher.livejournal.com/2880.html",
+      "published_at": "UNKNOWN",
+      "access_level": "UNAVAILABLE_NOT_READ",
+      "read_locator": "旧教程页面未取得正文",
+      "adopted": false,
+      "own_learning_note": "无可核对实质阅读。",
+      "transfer_limit": "不按记忆冒充已读，不采用为本轮来源。"
+    }
+  ],
+  "adopted_source_count": 9,
+  "full_book_read": false,
+  "complete_video_watched": false,
+  "raw_copyrighted_sources_in_public_git": false,
+  "writing_transfer": "UNPROVEN",
+  "automatic_learning": false
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": "native-learning-result/v1",
+  "project_id": "novel-distillation",
+  "recorded_at": "2026-10-03T08:41:38Z",
+  "task_id": "NOVEL-EMOTION-REACTION-AND-PACING-LEARNING-20261003-01",
+  "source_head": "7997b03fb3a0ec5eaf8e0e5b55f91cd651094fde",
+  "source_checkpoint": 196,
+  "scope": "RECORD_395_HUMAN_FAILURE_READ_PROFESSIONAL_SOURCES_AND_IMPROVE_REUSABLE_EMOTION_REACTION_PACING_METHOD_NO_PROSE",
+  "status": "PROFESSIONAL_STUDY_AND_DIAGNOSIS_COMPLETE_HUMAN_FAIL_PRESERVED_NO_PROSE",
+  "generation_budget": 0,
+  "generation_count": 0,
+  "new_prose_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "story_goal_changed": false,
+  "formal_mainline_method_revision": 4,
+  "human_quality_result": "FAIL",
+  "original_404_human_result": "UNKNOWN",
+  "old_448_human_emotion_retention": "FAIL",
+  "literary_quality_validated": false,
+  "writing_transfer": "UNPROVEN",
+  "independent_diagnostic_model_calls": 1,
+  "cold_screen_calls": 0,
+  "next_action": "AWAIT_NEW_EXPLICIT_BOUNDED_WRITING_BUDGET_FOR_PREPARED_EMOTION_REACTION_TRIAL",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_EMOTION_PACING_LEARNING_AUTHORIZATION_20261003.json",
+    "blob": "81a46ce4fa3e084f2ba8f5e2e18b580f75735b48",
+    "sha256": "63b2d3f960ee067bbaf55c4855f44e34e0600900c510911ce41dc957b25867e1"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_R2_ENTRY_SHORT_A1_HUMAN_FAIL_20261003.json",
+    "blob": "379237f19b743fe6facdb1f0cdd3a5985b79b5a6",
+    "sha256": "4dd25f029e3a52eac7e0aae89ae4f65e867005b10c473f917e8f50d750df9a44"
+  },
+  "previous_human_feedback": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+    "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+    "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+  },
+  "previous_short_result": {
+    "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.json",
+    "blob": "152dd90286e11243235597e268d350e54ad0927e",
+    "sha256": "f91f2c78ed778bd40ec593b81e5322e6f6ba0812cc9606163ca2f700e8cb1039"
+  },
+  "target": {
+    "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+  },
+  "manifest": {
+    "path": "config/novel-emotion-learning-20261003.json",
+    "blob": "75e9ccb4fc6389f12b46f43dafd576221d6d9d93",
+    "sha256": "6627e33f7a0a2229dbca24a1f5bd8f44200c649c97542ab6478ccb2162a2edc0"
+  },
+  "packet": {
+    "path": "delivery/emotion-learning-20261003/diagnosis.packet.json",
+    "blob": "f6fc201a1113888315271d4fbe7db7e7371c34b6",
+    "sha256": "0a2a91f63c4aa8bc93f132f089d8d40cef39e195546efd44bba8a825a3ceb71c"
+  },
+  "runtime": {
+    "path": "state/reviews/emotion-learning-20261003/diagnosis.runtime.json",
+    "blob": "f42e6d4d6e5863660a26dc8096d17fce1cab6c3b",
+    "sha256": "d1f3e0e2bb18ea213250c687291a8794fe30901ba33a201039d2b3fd5d85a43a"
+  },
+  "raw_report": {
+    "path": "state/reviews/emotion-learning-20261003/diagnosis.raw.txt",
+    "blob": "6e82d73a270ebf922f92c2cd8eea7f88e1076493",
+    "sha256": "1f83e90a150c04ef82aa483b1ca3536741d2ae0daaa4b6a090ed46f764797cbb"
+  },
+  "evidence": {
+    "path": "state/reviews/emotion-learning-20261003/diagnosis.evidence.json",
+    "blob": "3c972875fcd21c9305fb32b6aa8660f8fc306958",
+    "sha256": "2d7d8d22e675a8a31fa3457445899a838ac361801d3d194b512d0b4fce94045f"
+  },
+  "settlement": {
+    "path": "state/reviews/emotion-learning-20261003/coordinator-settlement.json",
+    "blob": "4df9e76ab06fd11fd71f63dd70ee009a4e6ec87b",
+    "sha256": "776f1a7b95bde4f4404693d5865e80fb4f236ad7b462ce1cf2670202c715138b"
+  },
+  "sources": {
+    "path": "state/learning/emotion-pacing-20261003/sources.json",
+    "blob": "4955d3f2b9a56e77afd5f0d3150f597a0d612094",
+    "sha256": "2f7db1dd70775e32c8d0dfba55dd90546511013c290160a9e1adfb22543fa256"
+  },
+  "method_document": {
+    "path": "modules/emotion-reaction-and-pacing.md",
+    "blob": "987f34445947899e05feb853eb3be8653227203c",
+    "sha256": "298f3ca051ae293760ed1506df270c12abe1bbe0e985c752a921f5819c282c5c"
+  },
+  "study_document": {
+    "path": "docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md",
+    "blob": "937b20e3cfabbd72c4ee1fbc10746aa5307b40d0",
+    "sha256": "181910134c87ebfa099ca2a7044e3e305b5957d2356a42daab284cc87f366e48"
+  },
+  "craft_capsule": {
+    "path": "delivery/emotion-learning-20261003/craft-capsule.json",
+    "blob": "fd43ad52d1a1bce2ed310e3d20d895f49144c89c",
+    "sha256": "0c2cb96e1362a423ef71db67ca3bdbb021d7eb07794c4404ffcd3f77735308a6"
+  },
+  "next_task_proposal": {
+    "path": "state/tasks/NOVEL_EMOTION_REACTION_ONE_SHORT_PROPOSAL_20261003.json",
+    "blob": "1bd75ab0b0f48c512af59318b484136f18cd2794",
+    "sha256": "896f7449e91fa2c1adf7e99c21e5d8d5163ec7a458a8fd1fe32be96e9f19483e"
+  },
+  "diagnosis_document": {
+    "path": "docs/NOVEL_EMOTION_REACTION_DIAGNOSIS_RESULT_20261003.md",
+    "blob": "ff9b1b2876959142f0a84ffa552790c72949b92f",
+    "sha256": "a2d518493352cad13b48182289c695043ff30eff961dab32eaef500272466d8f"
+  },
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning_effort": "max",
+  "known_failure_diagnosis": true,
+  "blind_read": false,
+  "located_report_quote_count": 8,
+  "coordinator_reading_window_quote_count": 3,
+  "root_count": 2,
+  "calibration_rerun": false,
+  "prior_cold_calibration_misses": "2/2",
+  "prior_heldout_misses": "1/1",
+  "false_positive_rate": "UNKNOWN_NO_SCOPE_MATCHED_POSITIVES",
+  "overall_accuracy": "NOT_ESTABLISHED",
+  "actual_diagnostic_elapsed_seconds": 583.526,
+  "total_task_elapsed_seconds": "UNKNOWN_NOT_FULLY_MEASURED",
+  "old_browser_comparable_elapsed_seconds": "UNKNOWN",
+  "old_browser_task_retried": false,
+  "automatic_background_tasks": false
+}
