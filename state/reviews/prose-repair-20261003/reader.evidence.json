@@ -1,0 +1,76 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "罗钧的名字紧挨着许澄的名字。他看了两遍，把复本往外推了一点。“我还得进去问房子的事。你要是来找首付，那钱我不能动。”",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "他只看着她的指尖，那个“我们”让他想立刻站起来。“我现在自己接后期，明天下午前要交一万二，租我自己的工作间。”",
+      "actual_line": 1,
+      "start_character_0_based": 167
+    },
+    {
+      "index": 2,
+      "quote": "大厅的门又开了，他抬起头，输入到一半的名字留在屏幕上。“我先进去问一句，行不行？”他说着，却仍坐在她对面。",
+      "actual_line": 1,
+      "start_character_0_based": 322
+    },
+    {
+      "index": 3,
+      "quote": "话说得难听，他知道，却不敢改口，怕一软下来，就成了答应。",
+      "actual_line": 1,
+      "start_character_0_based": 58
+    },
+    {
+      "index": 4,
+      "quote": "“我不是看你有首付才来的。灯和设备是我们一起买的。”她指着付款栏，“五天后到期的是这笔，六万八。你不信，可以自己找供应商查。”",
+      "actual_line": 1,
+      "start_character_0_based": 104
+    },
+    {
+      "index": 5,
+      "quote": "“不能让我先拿押金去垫，再等你慢慢想。还有二十分钟，三点我得走，客户的片子还等着。”",
+      "actual_line": 1,
+      "start_character_0_based": 233
+    },
+    {
+      "index": 6,
+      "quote": "“我先进去问一句，行不行？”他说着，却仍坐在她对面。",
+      "actual_line": 1,
+      "start_character_0_based": 349
+    },
+    {
+      "index": 7,
+      "quote": "他只看着她的指尖，那个“我们”让他想立刻站起来。",
+      "actual_line": 1,
+      "start_character_0_based": 167
+    },
+    {
+      "index": 8,
+      "quote": "“我先进去问一句，行不行？”他说着，却仍坐在她对面。",
+      "actual_line": 1,
+      "start_character_0_based": 349
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/prose-repair-20261003/reader.packet.json",
+    "blob": "f64df99220f56e0798839f10ada1936132fd8eff",
+    "sha256": "917e651e0c6a4682f6881bbcd03690e6d26abb1dea3fbfc05c3e90f12ee9c1d3"
+  },
+  "raw_report": {
+    "path": "state/reviews/prose-repair-20261003/reader.raw.txt",
+    "blob": "11101ef1872fc3ea6c9f173825138360ca193ba5",
+    "sha256": "c85ed273bc4475591f85a7df040a3394cb1be45fedcb280789fa073a3aef6649"
+  }
+}

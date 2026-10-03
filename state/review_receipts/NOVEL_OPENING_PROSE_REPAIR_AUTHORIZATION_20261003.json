@@ -1,0 +1,47 @@
+{
+  "schema_version": "native-prose-repair-authorization/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "source_checkpoint": 199,
+  "source": "STANDING_USER_AUTONOMY_AND_ACTUAL_FROZEN_TEST_FAILURE",
+  "standing_user_authorization": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json",
+    "blob": "0d40b44867356be456b1ba266940d52a143fcbbb",
+    "sha256": "e04d70ba3be9b35fbe87f3f5dd7664a46242da4dc44b338d29ca2e73d736ae09"
+  },
+  "rejected_artifact": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "prior_result": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_RESULT_20261003.json",
+    "blob": "517195de37c355452c1beaf2f795014368cdbea3",
+    "sha256": "c0903ff899995706379ae5acb9739154a00aa135b8fb96f69250d149004183e4"
+  },
+  "primary_writer_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "diagnostic_call_limit": 1,
+  "review_calls_per_artifact": {
+    "facts": 1,
+    "editor": 1,
+    "reader": 1
+  },
+  "intermediate_user_authorization_required": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "multiple_visible_candidates_allowed": false,
+  "background_tasks_authorized": false,
+  "goal_or_world_or_ending_change_authorized": false,
+  "scope": "同一第二场、原进入时刻、唯一300—500字新稿；只修当前叙述/对白呈现和短段信息安排，不添加剧情事实。",
+  "local_input_endpoint_may_be_relaxed": true,
+  "full_scene_endpoint_preserved": true,
+  "AI_editor_and_reader_from_previous_round": "MISSED_ACTUAL_HUMAN_PROSE_AND_RETENTION_FAIL_NOT_QUALITY_CERTIFIERS"
+}

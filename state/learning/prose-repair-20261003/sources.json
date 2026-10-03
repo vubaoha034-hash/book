@@ -1,0 +1,54 @@
+{
+  "schema_version": "native-prose-focus-study/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "skill_repository": "https://github.com/haowjy/creative-writing-skills",
+  "skill_commit": "0d5bf7fd987554e05db7e05d569736e648297722",
+  "resources_read": [
+    {"path": "skills/story-review/resources/prose-critique.md", "blob": "1e327668f84082e1a0a94dda89b291629480805e", "read": true},
+    {"path": "skills/story-review/resources/prose-critique/prose.md", "blob": "6683e59e21711b3eabfd826a76803fb97c10829d", "read": true},
+    {"path": "skills/story-review/resources/prose-critique/voice.md", "blob": "3f0958b20e54d03cfd2df6c3b43a99776bab4c0f", "read": true}
+  ],
+  "adoption": [
+    "实际默读句子，指出词序、搭配与句间衔接造成的具体阅读成本",
+    "对白是否说给眼前的人、叙述声音是否符合人物正在经历的事",
+    "动作与心理是否有当前处境的来由，不把补动作本身视为有情绪"
+  ],
+  "not_adopted": [
+    "不把英文资源的句长、开头词多样性当中文小说及刘先生口味的硬阈值",
+    "不执行外部分析代码、安装插件或添加庞大禁词/动作规则",
+    "资源中关于AI模式的研究解释没有在本中文样本上验证，不能作为AI来源判别器",
+    "voice资源中的动作示例与prose资源的套用身体信号提醒需按文本效果判断，不能机械照搬"
+  ],
+  "professional_primary_reading": [
+    {
+      "title": "老舍：我怎样学习语言",
+      "url": "https://zh.wikisource.org/w/index.php?title=我怎樣學習語言&oldid=2603834",
+      "access": "PRIMARY_AUTHOR_TEXT_READ",
+      "read_scope": "实质正文及原载说明，页面行112—137",
+      "own_inference": "话语应从人物的生活和当下情感生出；报告式清楚并不等于小说式表达，词汇点缀不能替代句子贯通。",
+      "limit": "是作家经验，不是现代网文速度或个人口味的实验；不照搬时代口语。"
+    },
+    {
+      "title": "老舍：我怎样写《骆驼祥子》",
+      "url": "https://zh.wikisource.org/zh-hans/我怎樣寫《駱駝祥子》",
+      "access": "PRIMARY_AUTHOR_TEXT_PART_READ",
+      "read_scope": "页面行111—132，人物处境与材料组织段；未宣称阅读全文或全书",
+      "own_inference": "外表姿态需要生活来由，事情围绕人物需要组织；技术功能不能夺走人物。",
+      "limit": "不据此增添当前人物未经授权的生活事实。"
+    },
+    {
+      "title": "《骆驼祥子》第十一章",
+      "url": "https://zh.wikisource.org/w/index.php?title=駱駝祥子/11&oldid=2579037",
+      "access": "PRIMARY_FICTION_CHAPTER_READ",
+      "read_scope": "本章正文页面行112—245；未读全书",
+      "own_inference": "金钱威胁经人物的惧怕、迟疑和说不出的念头进入叙述，信息与心理可以交替，不要求每句用动作证明。",
+      "limit": "高压勒索情境不等于本场两个正当当事人的关系，不移植情节、威胁、方言或文风，也不是刘先生同类认可正例。"
+    }
+  ],
+  "writer_receives": "仅三条自写正向原则；不发送教程、样本全文、失败反馈或评审答案",
+  "personal_taste_transfer_validated": false,
+  "external_code_executed": false,
+  "full_book_read": false,
+  "actual_read_aloud_audio_test": false
+}

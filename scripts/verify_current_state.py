@@ -642,6 +642,14 @@ def test_outcome(root: Path, relative: str) -> str:
     return expected
 
 def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
+    prose_module, prose_feedback = None, None
+    live_project, live_cp = project, cp
+    if 'opening_prose_repair' in project or 'opening_prose_repair' in cp:
+        spec = importlib.util.spec_from_file_location('prose_repair_state',
+            Path(__file__).with_name('verify_prose_repair.py'))
+        prose_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(prose_module)
+        project, cp, prose_feedback = prose_module.historical_autonomous_view(root, project, cp)
     autonomous_module, autonomous_authorization = None, None
     role_project, role_cp = project, cp
     if 'autonomous_opening_to_human' in project or 'autonomous_opening_to_human' in cp:
@@ -794,9 +802,13 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
             successor_authorization=role_authorization)
     if role_module is not None:
         expected_action = role_module.two_role_action(root, role_project, role_cp, expected_action,
-            successor_authorization=autonomous_authorization)
+            successor_authorization=autonomous_authorization, successor_human_feedback=prose_feedback)
     if autonomous_module is not None:
-        expected_action = autonomous_module.autonomous_action(root, project, cp, expected_action)
+        expected_action = autonomous_module.autonomous_action(root, project, cp, expected_action,
+            successor_human_feedback=prose_feedback)
+    if prose_module is not None:
+        expected_action = prose_module.prose_action(root, live_project, live_cp, expected_action)
+        project, cp = live_project, live_cp
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

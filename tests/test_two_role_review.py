@@ -18,9 +18,11 @@ class TwoRoleTests(unittest.TestCase):
         self.project=json.loads((REPO/'state/project_state.json').read_bytes())
         self.checkpoint=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
         self.route=self.project['two_role_opening_review'];self.seen=set()
+        human=json.loads((REPO/self.route['human_feedback']['path']).read_bytes())
         for v in (self.project,self.checkpoint):
             v.pop('autonomous_opening_to_human',None)
-            v.update(last_completed_task_id=gate.TASK,last_completed_task_contract=self.route['task']['path'],
+            v.update(human_verdict_receipt=self.route['human_feedback']['path'],latest_human_review=human['review'],
+                last_completed_task_id=gate.TASK,last_completed_task_contract=self.route['task']['path'],
                 next_action=gate.NEXT,next_required_action=gate.NEXT,
                 current_human_gate='CURRENT_395_HUMAN_EMOTION_AI_SMELL_INTERACTION_AND_RETENTION_FAIL_OLD_448_FAIL_404_UNKNOWN')
         self.checkpoint.update(sequence=198,stop=True)

@@ -1,0 +1,55 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "N53",
+      "item_index": 0,
+      "quote": "话说得难听，他知道，却不敢改口，怕一软下来，就成了答应。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 58,
+      "end_character_exclusive": 86,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N53",
+      "item_index": 1,
+      "quote": "“我不是看你有首付才来的。灯和设备是我们一起买的。”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 104,
+      "end_character_exclusive": 130,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "N53",
+      "item_index": 2,
+      "quote": "查一下并不是认账，他在心里把这句话说了一遍。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 300,
+      "end_character_exclusive": 322,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/prose-repair-20261003/editor.packet.json",
+    "blob": "e761d850e8f7f7cf9db6687ea4f7daf137db3054",
+    "sha256": "5d4558a07020ecf130ce18a94270642e92576a576a1d99d1ed12b0f3d9c88af8"
+  },
+  "raw_report": {
+    "path": "state/reviews/prose-repair-20261003/editor.raw.txt",
+    "blob": "07f5872486f1f9836437d35667132c4fb5d9c15b",
+    "sha256": "fe4b9a5f5dbd4bd7f3e7c1d3669101a54fa6103d09d2bda208f46f14bd64bf12"
+  }
+}

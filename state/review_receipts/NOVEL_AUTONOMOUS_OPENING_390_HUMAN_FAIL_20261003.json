@@ -1,0 +1,47 @@
+{
+  "schema_version": "native-human-prose-retention-rejection/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "source_checkpoint": 199,
+  "output": {
+    "path": "delivery/autonomous-opening-20261003/a1.md",
+    "blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6"
+  },
+  "outcome": "FAIL",
+  "human_exact_feedback": "不愿意，ai味道依旧很重。是那种开头开始就很重的。感觉写小说根本不会用这种文笔去写的感觉。感觉就特别特别别扭。",
+  "review": {
+    "recorded_at": "2026-10-03T11:24:37Z",
+    "feedback_submitted_at": "UNKNOWN_MESSAGE_TIMESTAMP_NOT_PROVIDED",
+    "bound_test_id": "AUTONOMOUS_OPENING_A1_390",
+    "bound_method_revision": 4,
+    "bound_version": "AUTONOMOUS-OPENING-A1-390",
+    "bound_artifact_path": "delivery/autonomous-opening-20261003/a1.md",
+    "bound_blob": "c8fa4d3335c16b377cdfb5b7689aa8d9f81fd57f",
+    "bound_sha256": "5f5c1b0ea42b0ef8ecc3a131c56f9b9a6e003cb98985783ffc37f8cfdb5d0fd6",
+    "feedback_summary": "刘先生明确不愿继续读；AI味从开头就很重，小说文笔特别别扭。",
+    "human_exact_feedback": "不愿意，ai味道依旧很重。是那种开头开始就很重的。感觉写小说根本不会用这种文笔去写的感觉。感觉就特别特别别扭。",
+    "verdict": "REJECT_HEAVY_AI_PROSE_FROM_OPENING_AND_RETENTION",
+    "source": {
+      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
+      "message_observed_directly": true
+    },
+    "scope": "仅绑定当前390字稿的文笔、AI味与续读FAIL，不新增精确停止句、情绪或机器人对白判决。",
+    "validation_scope": "SHORT_EXCERPT_PROSE_AND_RETENTION",
+    "human_quality_accepted": false,
+    "same_artifact_resubmission_allowed": false,
+    "topic_rejection": false,
+    "full_v5_authorized": false,
+    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "ai_smell_verdict": "FAIL",
+    "wants_to_continue": false,
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+    "retention_verdict": "FAIL",
+    "human_location_description": "开头开始就很重",
+    "opening_prose_verdict": "FAIL"
+  },
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "prior_result_and_pending_record_rewritten": false
+}

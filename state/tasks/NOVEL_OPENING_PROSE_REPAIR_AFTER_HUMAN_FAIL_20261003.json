@@ -1,0 +1,26 @@
+{
+  "schema_version": "native-bounded-prose-repair-task/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "project_id": "novel-distillation",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_AUTHORIZATION_20261003.json",
+    "blob": "1ef1e12b3f5283ac02991c6c95b42515fdbf178e",
+    "sha256": "8cb6cdc03cc3858000c130cfa0a38d81ce19a47252691c2bcd89370a7605e5d5"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json",
+    "blob": "0d40b44867356be456b1ba266940d52a143fcbbb",
+    "sha256": "e04d70ba3be9b35fbe87f3f5dd7664a46242da4dc44b338d29ca2e73d736ae09"
+  },
+  "status": "AUTHORIZED_DIAGNOSIS_ONE_SHORT_AND_SEPARATE_REVIEWS_TO_HUMAN",
+  "primary_writer_limit": 1,
+  "maximum_evidenced_repairs": 1,
+  "visible_candidate_count": 1,
+  "human_quality_result": "UNKNOWN",
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "intermediate_user_authorization_required": false,
+  "stop_condition": "ONE_FINAL_FROZEN_SHORT_AT_ACTUAL_HUMAN_READING"
+}

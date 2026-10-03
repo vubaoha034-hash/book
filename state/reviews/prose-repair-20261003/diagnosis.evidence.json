@@ -1,0 +1,121 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "F52",
+      "item_index": 0,
+      "quote": "罗钧盯住两个姓名中自己的那一个，脚尖仍朝着大厅。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 0,
+      "end_character_exclusive": 24,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 1,
+      "quote": "罗钧原想把纸推远，手却停在桌沿。五天，比那三十天短得多。",
+      "reported_line": 7,
+      "actual_line": 7,
+      "start_character_0_based": 150,
+      "end_character_exclusive": 178,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 2,
+      "quote": "那钱不是闲钱。要我独自筹款，押金也会被挤掉。我不能无限期替你垫着。",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 214,
+      "end_character_exclusive": 247,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 3,
+      "quote": "今晚本该住进那间小公寓。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 34,
+      "end_character_exclusive": 46,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 4,
+      "quote": "许澄伸向他袖口的手缩了回去。",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 69,
+      "end_character_exclusive": 83,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 5,
+      "quote": "要我独自筹款，押金也会被挤掉。",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 221,
+      "end_character_exclusive": 236,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 6,
+      "quote": "我三点要走，剩下二十分钟能配合，客户的片子还等着。",
+      "reported_line": 15,
+      "actual_line": 15,
+      "start_character_0_based": 322,
+      "end_character_exclusive": 347,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 7,
+      "quote": "查，不是认账。",
+      "reported_line": 17,
+      "actual_line": 17,
+      "start_character_0_based": 371,
+      "end_character_exclusive": 378,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "F52",
+      "item_index": 8,
+      "quote": "他打开搜索栏，照着抬头输入供应商名称。",
+      "reported_line": 19,
+      "actual_line": 19,
+      "start_character_0_based": 389,
+      "end_character_exclusive": 408,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "role": "diagnosis",
+  "packet": {
+    "path": "delivery/prose-repair-20261003/diagnosis.packet.json",
+    "blob": "1b539c4cf0de0dc51c0578710a4bfd3897207a1b",
+    "sha256": "11fe1e97845202009a47bfc053cf64114b95642b4481d13d85ddd9bbeb217dd1"
+  },
+  "raw_report": {
+    "path": "state/reviews/prose-repair-20261003/diagnosis.raw.txt",
+    "blob": "fbe9907a00b08791ed2b1b4e1ca268b4b5c68a75",
+    "sha256": "c82f488b474b9754bccef5ad43490bdc86c9cae7de0d8119a748f8f3e91ddf7b"
+  }
+}

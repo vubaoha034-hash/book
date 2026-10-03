@@ -137,6 +137,29 @@ AUTONOMOUS_NEW_FILES = (
       for role in ('writer','facts','editor','reader') for suffix in ('attempt.json','runtime.json')),
     *(f'state/authoring/autonomous-opening-20261003/a1.{role}.{suffix}'
       for role in ('facts','editor','reader') for suffix in ('raw.txt','evidence.json')))
+PROSE_SOURCE='df1e08a59373e9777bf478b85ebe0707c4dfdef0'
+PROSE_PREFIX='state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_'
+PROSE_MUTABLE_FILES=PREPARATION_MUTABLE_FILES+(
+    'scripts/verify_autonomous_opening.py','scripts/verify_two_role_review.py',
+    'tests/test_autonomous_opening.py','tests/test_two_role_review.py')
+PROSE_NEW_FILES=(
+    'scripts/novel_prose_repair.py','scripts/verify_prose_repair.py','tests/test_prose_repair.py',
+    'config/novel-prose-repair-20261003.json',
+    'state/learning/prose-repair-20261003/sources.json',
+    'docs/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.md',
+    'state/tasks/NOVEL_OPENING_PROSE_REPAIR_AFTER_HUMAN_FAIL_20261003.json',
+    'state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json',
+    *(PROSE_PREFIX+k+'_20261003.json' for k in ('AUTHORIZATION','RESULT','VALIDATION','REMOTE_SAVE_VERIFIED')),
+    'delivery/prose-repair-20261003/short-a1.md',
+    'delivery/prose-repair-20261003/writer-input.json',
+    'delivery/prose-repair-20261003/input-change-record.json',
+    *(f'delivery/prose-repair-20261003/{role}-policy.txt' for role in ('diagnosis','writer','facts','editor','reader')),
+    *(f'delivery/prose-repair-20261003/{role}.packet.json' for role in ('diagnosis','facts','editor','reader')),
+    *(f'state/reviews/prose-repair-20261003/{role}.{suffix}' for role in ('diagnosis','writer','facts','editor','reader') for suffix in ('attempt.json','runtime.json')),
+    *(f'state/reviews/prose-repair-20261003/{role}.{suffix}' for role in ('diagnosis','facts','editor','reader') for suffix in ('raw.txt','evidence.json')),
+    'state/reviews/prose-repair-20261003/diagnosis-settlement.json',
+    'state/reviews/prose-repair-20261003/coordinator-settlement.json',
+    'state/reviews/prose-repair-20261003/pending-human-review.json')
 
 
 def git(*args):
@@ -582,6 +605,57 @@ def verify_autonomous(expected):
         'model_calls_during_readback':0,'generation_count_during_readback':0}
 
 
+def verify_prose_repair(expected):
+    remote=git('ls-remote','origin','refs/heads/main').decode().split()[0]
+    if remote!=expected:raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch','origin','main')
+    if git('rev-parse','origin/main').decode().strip()!=remote:raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive=zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',remote)))
+    base=zipfile.ZipFile(io.BytesIO(git('archive','--format=zip',PROSE_SOURCE)))
+    old={p for p in base.namelist() if not p.endswith('/')};new={p for p in archive.namelist() if not p.endswith('/')}
+    if new-old-set(PROSE_NEW_FILES) or old-new:raise ValueError('PROSE_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected=old-set(PROSE_MUTABLE_FILES)
+    for path in protected:
+        if archive.read(path)!=base.read(path):raise ValueError('PROSE_HISTORICAL_BYTES_CHANGED: '+path)
+    seen,checked=set(),[]
+    def inspect(path,reference=None):
+        local=(ROOT/path).resolve()
+        if not local.is_relative_to(ROOT.resolve()):raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        b=archive.read(path)
+        if b!=local.read_bytes():raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: '+path)
+        digest=hashlib.sha256(b).hexdigest()
+        if reference and (reference.get('blob')!=blob(b) or reference.get('sha256')!=digest):raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: '+path)
+        if path in seen:return
+        seen.add(path);checked.append({'path':path,'blob':blob(b),'sha256':digest})
+        if path in PROSE_NEW_FILES and path.endswith('.json'):walk(json.loads(b))
+    def walk(v):
+        if isinstance(v,dict):
+            if all(k in v for k in ('path','blob','sha256')):inspect(v['path'],v)
+            for child in v.values():walk(child)
+        elif isinstance(v,list):
+            for child in v:walk(child)
+    project=json.loads(archive.read('state/project_state.json'));cp=json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route=project.get('opening_prose_repair')
+    if not route or route!=cp.get('opening_prose_repair') or cp.get('sequence')!=200 or cp.get('stop') is not True or route.get('human_quality_result')!='UNKNOWN':
+        raise ValueError('REMOTE_PROSE_STATE_DRIFT')
+    if cp.get('action_guard',{}).get('project_state_sha256')!=hashlib.sha256(archive.read('state/project_state.json')).hexdigest():raise ValueError('REMOTE_PROSE_PROJECT_HASH_DRIFT')
+    walk(route)
+    for path in (*PROSE_MUTABLE_FILES,*PROSE_NEW_FILES):
+        if path==PROSE_PREFIX+'REMOTE_SAVE_VERIFIED_20261003.json' and path not in new:continue
+        inspect(path)
+    if json.loads(archive.read(PROSE_PREFIX+'VALIDATION_20261003.json')).get('status')!='PROSE_REPAIR_SCOPE_EVIDENCE_AND_HISTORY_VALIDATION_PASSED':
+        raise ValueError('REMOTE_PROSE_VALIDATION_NOT_COMPLETED')
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('published_prose_state',ROOT/'scripts/verify_current_state.py')
+    current=importlib.util.module_from_spec(spec);spec.loader.exec_module(current);state=current.verify(ROOT)
+    if state.get('sequence')!=200 or state.get('next_action')!='AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING':raise ValueError('REMOTE_PROSE_HUMAN_GATE_DRIFT')
+    if git('ls-remote','origin','refs/heads/main').decode().split()[0]!=remote:raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status':'REMOTE_PROSE_BYTES_HISTORY_AND_ACTUAL_HUMAN_GATE_VERIFIED','remote_head':remote,'source_head':PROSE_SOURCE,
+        'checkpoint':200,'checked_count':len(checked),'files':checked,'protected_source_file_count':len(protected),
+        'all_prior_prose_reports_receipts_and_locks_unchanged':True,'current_state':state,'human_quality_result':'UNKNOWN',
+        'model_calls_during_readback':0,'generation_count_during_readback':0}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
@@ -591,9 +665,11 @@ if __name__ == '__main__':
     mode.add_argument('--emotion-learning', action='store_true', help='Verify checkpoint197 actual failure and learning; preserve checkpoint196 history')
     mode.add_argument('--two-roles', action='store_true', help='Verify checkpoint198 independent editor/reader reviews and preserve checkpoint197 history')
     mode.add_argument('--autonomous-opening', action='store_true', help='Verify checkpoint199 final short, independent reviews and actual human UNKNOWN')
+    mode.add_argument('--prose-repair', action='store_true', help='Verify checkpoint200 actual prose rejection and new reviewed short')
     args = parser.parse_args()
     try:
-        result = (verify_autonomous(args.expected_head) if args.autonomous_opening else
+        result = (verify_prose_repair(args.expected_head) if args.prose_repair else
+                  verify_autonomous(args.expected_head) if args.autonomous_opening else
                   verify_two_roles(args.expected_head) if args.two_roles else
                   verify_emotion_learning(args.expected_head) if args.emotion_learning else
                   verify_short_trial(args.expected_head) if args.short_trial else

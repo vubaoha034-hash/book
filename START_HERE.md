@@ -17,11 +17,17 @@
 
 唯一主线：`NOVEL-IMPROVEMENT-MAINLINE-V1`。保留原故事方向、契约和有效证据，停用冻结八步动作作为新写作者硬约束。方法变化依据冻结测试失败或用户明确范围变更；参见 `MAINLINE.md`。本次用户已明确授权项目外日常证据评审，见 `external_review_state`及其绑定协议/回执；不能把AI意见写成真人FAIL。
 
-当前位置：检查点199。本轮 `NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01` 已依据刘先生“你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。”连续完成一个已准备的新开头：一次独立主写、390字，三个其他独立上下文编辑/匿名读者/事实审核，实际Sol / Max已核对。报告直接回收，31条引用及9项冻结事实核对，原正文和报告未改写；内部修订0。新稿真人结果UNKNOWN，所有既有真人FAIL、404未知、旧197字保护、旧RC3额度0和方法4保留。常规中间准备与保存不重复索要授权。
+当前位置：检查点200。刘先生对390字稿实际否决：不愿继续，AI味从开头就很重，文笔特别别扭。已另存[原话及正确稿件绑定](state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json)，不编造精确停止句或新增情绪/机器人判决；前检查点199的UNKNOWN和AI报告保持原件。
 
-接续先读[当前原生任务](state/tasks/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_20261003.json)、[最新执行授权](state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json)、[真实结果与限制](docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md)、[逐项结算](state/authoring/autonomous-opening-20261003/coordinator-settlement.json)和[待真人记录](state/authoring/autonomous-opening-20261003/pending-human-review.json)。交付[这一份390字稿](delivery/autonomous-opening-20261003/a1.md)，先展示正文，再收愿不愿继续和人物情绪/说话感受。AI赞成不提前写成人工通过。
+本轮 `NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01` 沿用连续执行授权，完成一次独立已知失败后语言诊断、三项根因证据及范围核对、精简事实输入、一次独立写作的[唯一375字新稿](delivery/prose-repair-20261003/short-a1.md)，以及三个不同上下文的语言编辑、匿名AI读者、事实审查。[当前任务](state/tasks/NOVEL_OPENING_PROSE_REPAIR_AFTER_HUMAN_FAIL_20261003.json)、[实际结果及来源](docs/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.md)、[结算](state/reviews/prose-repair-20261003/coordinator-settlement.json)、[待真人记录](state/reviews/prose-repair-20261003/pending-human-review.json)。五次实际Sol / Max已核对，35条引文定位、9项事实核对，原正文和报告未改写；内部修订0。AI审核放过前稿的事实已记录，新稿真人UNKNOWN，不认证已经改好。
 
-当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING`。下一项是实际人工阅读，无需再次问中间写作授权；[连续执行方式](modules/autonomous-to-human-review.md)与[机器偏好](rules/autonomy-until-human-review.json)已保存。读取结果和状态校验不调用模型，原四次run均已消费一次锁；未来有界同主线环节仍保存新具体任务，不重跑旧运行或循环寻求赞成。此权限不授权改变故事目标/世界/结局、新生活事实、V5、多个可见候选或后台任务，也不提供人工质量判决。
+当前唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING`。只交375字正文并收是否愿继续、开头和文笔是否仍别扭。常规中间步骤不再问授权；旧稿、旧197字保护、旧RC3额度0、旧真人FAIL、404未知、方法4及故事目标/世界/结局保持。完整场景和V5未授权。读取与校验不会调用模型，当前五次run已消费，不能重跑或循环求赞成。[验证](state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_VALIDATION_20261003.json)与[原生远端回读](state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_REMOTE_SAVE_VERIFIED_20261003.json)分别记录实际证据。
+
+上一检查点199：本轮 `NOVEL-AUTONOMOUS-REVIEWED-OPENING-TO-HUMAN-20261003-01` 已依据刘先生“你能不能不要停，直到我人工审核的时候再给我看就行。其他时候不用我授权。”连续完成一个已准备的新开头：一次独立主写、390字，三个其他独立上下文编辑/匿名读者/事实审核，实际Sol / Max已核对。报告直接回收，31条引用及9项冻结事实核对，原正文和报告未改写；内部修订0。新稿真人结果UNKNOWN，所有既有真人FAIL、404未知、旧197字保护、旧RC3额度0和方法4保留。常规中间准备与保存不重复索要授权。
+
+当时的[原生任务](state/tasks/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_20261003.json)、[执行授权](state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json)、[结果与限制](docs/NOVEL_AUTONOMOUS_REVIEWED_OPENING_TO_HUMAN_RESULT_20261003.md)、[逐项结算](state/authoring/autonomous-opening-20261003/coordinator-settlement.json)和[待真人记录](state/authoring/autonomous-opening-20261003/pending-human-review.json)为历史快照。这份[390字稿](delivery/autonomous-opening-20261003/a1.md)已收到检查点200的实际否决，不原样重投；AI赞成不提前写成人工通过。
+
+当时唯一下一动作：`AWAIT_ACTUAL_HUMAN_READING_OF_ONE_REVIEWED_NEW_OPENING`。下一项是实际人工阅读，无需再次问中间写作授权；[连续执行方式](modules/autonomous-to-human-review.md)与[机器偏好](rules/autonomy-until-human-review.json)已保存。读取结果和状态校验不调用模型，原四次run均已消费一次锁；未来有界同主线环节仍保存新具体任务，不重跑旧运行或循环寻求赞成。此权限不授权改变故事目标/世界/结局、新生活事实、V5、多个可见候选或后台任务，也不提供人工质量判决。
 
 上一检查点198：本轮 `NOVEL-TWO-ROLE-OPENING-REVIEW-20261003-01` 按刘先生新要求完成两个独立AI上下文：专业编辑为已知失败后的局部诊断，匿名普通读者仅看正文。实际均为GPT-6.1 Sol / Max，分别约10.2/4.5分钟；报告互不传递。编辑REVISE，AI读者YES与刘先生明确没有续读欲望不一致，保留为诊断漏检，不能认证好看或口味。20处引文记录已定位，原报告未改；当前395字真人FAIL，不原样重投。
 
@@ -55,4 +61,4 @@
 
 当前脚本验证主线与状态的一致性，保留旧稿拒绝边界。它不评判文学质量，也不构成平台级硬锁。
 
-本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新已授权短稿见检查点199。
+本轮审核由Codex冻结材料、创建无工具无继承的独立评审上下文、直接回收结构报告、核对事实与范围并原生保存。历史Opera Neon协议、外审赞扬及漏检结果保留审计；新的 `codex_review_integration` 只替代本轮执行接入，不伪造旧任务回调或真人认可。检查点194接入任务当时不执行旧浏览器派发、写作或自动复审；最新短稿见检查点200，真人UNKNOWN。

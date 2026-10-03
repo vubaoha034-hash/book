@@ -1,0 +1,40 @@
+{
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_input": {
+    "path": "delivery/autonomous-opening-20261003/a1.writer-input.json",
+    "blob": "b9199c905859515a4d1a50585ba52d21e7702421",
+    "sha256": "7d29b5e50c7e70aa9633ee498ab0146ae16692d5df1368859caf3d5b4122491f"
+  },
+  "writer_input": {
+    "path": "delivery/prose-repair-20261003/writer-input.json",
+    "blob": "ae201221b4569a1130a2f25ff64a93a737ad2a54",
+    "sha256": "fd7b05230c6d116fd7ee5b7a42291ae9aa2873b86499481ff5eece7f78d8ccac"
+  },
+  "selected_source_fact_fields": [
+    "setting",
+    "previous_scene",
+    "single_entry_moment",
+    "rojun_current_intention",
+    "rojun_memory_and_responsibility",
+    "xucheng_private_state",
+    "xucheng_own_life",
+    "shared_obligation",
+    "known_time_boundary",
+    "viewpoint_and_knowledge",
+    "material_boundary"
+  ],
+  "all_selected_fact_values_identical": true,
+  "removed_from_writer_only": [
+    "重复私人损失字段",
+    "全场终点和七项重复否定锁",
+    "原短段必须启动搜索的终点"
+  ],
+  "full_scene_endpoint_unchanged": "双方知道至少一组证据有许澄控制外的留存来源；罗钧同意继续核验与保全，尚不认领责任；许澄暂时配合，却不接受无限期独自垫付。旧亲密不恢复。",
+  "reviewers_get_required_frozen_facts": true,
+  "diagnosis_settlement": {
+    "path": "state/reviews/prose-repair-20261003/diagnosis-settlement.json",
+    "blob": "287afa566811ce975c1c4773fac9191f3dae7241",
+    "sha256": "a6f8c5487398eaa91e23a42591248d46a57107d03a0c50c1b73007466c05524c"
+  },
+  "not_a_controlled_causal_experiment": true
+}

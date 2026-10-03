@@ -1,0 +1,62 @@
+{
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "status": "ONE_KNOWN_FAILURE_DIAGNOSIS_EVIDENCE_AND_SCOPE_SETTLED",
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json",
+    "blob": "0d40b44867356be456b1ba266940d52a143fcbbb",
+    "sha256": "e04d70ba3be9b35fbe87f3f5dd7664a46242da4dc44b338d29ca2e73d736ae09"
+  },
+  "raw_report": {
+    "path": "state/reviews/prose-repair-20261003/diagnosis.raw.txt",
+    "blob": "fbe9907a00b08791ed2b1b4e1ca268b4b5c68a75",
+    "sha256": "c82f488b474b9754bccef5ad43490bdc86c9cae7de0d8119a748f8f3e91ddf7b"
+  },
+  "evidence": {
+    "path": "state/reviews/prose-repair-20261003/diagnosis.evidence.json",
+    "blob": "9f972873a6319e847d30b20697c3057e92c934a5",
+    "sha256": "a4ff9f5db8a8af979ab3e003c69d121b7b01eb9c17d3aca96e2a8427d1156a3f"
+  },
+  "blind_read": false,
+  "raw_report_rewritten": false,
+  "findings": [
+    {
+      "id": "R1",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "罗钧盯住两个姓名中自己的那一个，脚尖仍朝着大厅。",
+      "line": 1,
+      "scope_checked": true,
+      "coordinator_reason": "开头姓名指称与焦点连接增加语言解码负担是编辑假设，正文引文确实存在；用户只定位开头，没有确认本句为精确停止点。",
+      "adopted_scope": "LOCAL_LANGUAGE_ENTRY"
+    },
+    {
+      "id": "R2",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "罗钧原想把纸推远，手却停在桌沿。五天，比那三十天短得多。",
+      "line": 7,
+      "scope_checked": true,
+      "coordinator_reason": "短段内动作后反复概括行为原因可定位；不推断无情绪或作者真实写作过程，最小目标是让注意和念头贯通，不增加身体标记。",
+      "adopted_scope": "NARRATIVE_CONNECTION"
+    },
+    {
+      "id": "R3",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "那钱不是闲钱。要我独自筹款，押金也会被挤掉。我不能无限期替你垫着。",
+      "line": 9,
+      "scope_checked": true,
+      "coordinator_reason": "事实均正确、问答对应仍可读成完整事项说明；这是呈现问题，不否认共同责任或正当核验。短段不强制跑完核验启动，完整场景终点仍保留。",
+      "adopted_scope": "INFORMATION_ORDER_AND_DIALOGUE_VOICE"
+    }
+  ],
+  "protected_effects": [
+    "多年首付及原定当晚入住的私人损失",
+    "罗钧没有另一套过去记忆、不认账",
+    "许澄自己的工作安排与有限合作",
+    "金额/期限/独立证据路径事实",
+    "不提前核验成功或恢复关系"
+  ],
+  "coordinator_adjustment": "诊断建议保护原短段启动搜索的终点；总控不把这一局部操作节点再强压进400字，允许新摘录较早停止，完整场景终点及独立核验路径不变。",
+  "new_facts_added": false,
+  "exact_human_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "literary_quality_validated": false
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "native-prose-repair-result/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "recorded_at": "2026-10-03T11:56:17Z",
+  "status": "ONE_PROSE_REPAIRED_SHORT_AND_REPORTS_SETTLED_AWAIT_ACTUAL_HUMAN",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_AUTHORIZATION_20261003.json",
+    "blob": "1ef1e12b3f5283ac02991c6c95b42515fdbf178e",
+    "sha256": "8cb6cdc03cc3858000c130cfa0a38d81ce19a47252691c2bcd89370a7605e5d5"
+  },
+  "manifest": {
+    "path": "config/novel-prose-repair-20261003.json",
+    "blob": "70a32008291e5060e2b58bbc5a2eb8aabc01d93d",
+    "sha256": "b7a015211ce02b4c6cc14ef36c106fe6b6317dcc90061d07aff42e1a124808e3"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json",
+    "blob": "0d40b44867356be456b1ba266940d52a143fcbbb",
+    "sha256": "e04d70ba3be9b35fbe87f3f5dd7664a46242da4dc44b338d29ca2e73d736ae09"
+  },
+  "writer_input": {
+    "path": "delivery/prose-repair-20261003/writer-input.json",
+    "blob": "ae201221b4569a1130a2f25ff64a93a737ad2a54",
+    "sha256": "fd7b05230c6d116fd7ee5b7a42291ae9aa2873b86499481ff5eece7f78d8ccac"
+  },
+  "final_artifact": {
+    "path": "delivery/prose-repair-20261003/short-a1.md",
+    "blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+    "sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7"
+  },
+  "settlement": {
+    "path": "state/reviews/prose-repair-20261003/coordinator-settlement.json",
+    "blob": "c1eff7275fdf06792943ca7638685819bfcb9957",
+    "sha256": "e47cb3e26c6ed5f1306037e23fdc41ddf1c7dd6d7bef31f29f4f091270bcd4cc"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/prose-repair-20261003/pending-human-review.json",
+    "blob": "661c4b3a3736e7b064deb8b6a1e66aac0deff8db",
+    "sha256": "faa6136ff0652919cbb348729f088ae3df14e1b447adf7822c0c8cec22e4d6ff"
+  },
+  "runtimes": {
+    "diagnosis": {
+      "path": "state/reviews/prose-repair-20261003/diagnosis.runtime.json",
+      "blob": "8ec7b4ba6cc155abe406b3c6500a4b195fa60e45",
+      "sha256": "afe5dfb2dab6209beb88c52d6bddf4e8f2618df01b514e3534a9ee09bd0a525e"
+    },
+    "writer": {
+      "path": "state/reviews/prose-repair-20261003/writer.runtime.json",
+      "blob": "81c94a9b12d01fbe5c41b701c62911734e9767d5",
+      "sha256": "91c2b4685f57a19003524edb094b4d240226ea79415deff5c9318f3b10ec4f4e"
+    },
+    "facts": {
+      "path": "state/reviews/prose-repair-20261003/facts.runtime.json",
+      "blob": "4c8f18733b14134fdb34bd7b310774281fa8f51f",
+      "sha256": "8caf5c4f8579d1f02737c939bb792e6e4134837e878a4a3f7320b200cb0a06d3"
+    },
+    "editor": {
+      "path": "state/reviews/prose-repair-20261003/editor.runtime.json",
+      "blob": "418cbe1169146b5faa84803d0f9487a09de4b41b",
+      "sha256": "af5b44c4d3a49551aac7b9954541b3f295eb1ab2a779752cdd43606a9cc30ca1"
+    },
+    "reader": {
+      "path": "state/reviews/prose-repair-20261003/reader.runtime.json",
+      "blob": "2a4763e3d6c6894327e3b317e51bef6650ba26fe",
+      "sha256": "0d14034cdbc9ed46e2d05ec53c77944fc56c41fdd2489277fe6913110341995a"
+    }
+  },
+  "raw_reports": {
+    "diagnosis": {
+      "path": "state/reviews/prose-repair-20261003/diagnosis.raw.txt",
+      "blob": "fbe9907a00b08791ed2b1b4e1ca268b4b5c68a75",
+      "sha256": "c82f488b474b9754bccef5ad43490bdc86c9cae7de0d8119a748f8f3e91ddf7b"
+    },
+    "facts": {
+      "path": "state/reviews/prose-repair-20261003/facts.raw.txt",
+      "blob": "3d2c1120c6438955d1c0b230f48c55b4ed4622d9",
+      "sha256": "d31f903742266f70f00effbdeaf91b50039223b4cf4ca6f0060c890772d5a57a"
+    },
+    "editor": {
+      "path": "state/reviews/prose-repair-20261003/editor.raw.txt",
+      "blob": "07f5872486f1f9836437d35667132c4fb5d9c15b",
+      "sha256": "fe4b9a5f5dbd4bd7f3e7c1d3669101a54fa6103d09d2bda208f46f14bd64bf12"
+    },
+    "reader": {
+      "path": "state/reviews/prose-repair-20261003/reader.raw.txt",
+      "blob": "11101ef1872fc3ea6c9f173825138360ca193ba5",
+      "sha256": "c85ed273bc4475591f85a7df040a3394cb1be45fedcb280789fa073a3aef6649"
+    }
+  },
+  "evidence": {
+    "diagnosis": {
+      "path": "state/reviews/prose-repair-20261003/diagnosis.evidence.json",
+      "blob": "9f972873a6319e847d30b20697c3057e92c934a5",
+      "sha256": "a4ff9f5db8a8af979ab3e003c69d121b7b01eb9c17d3aca96e2a8427d1156a3f"
+    },
+    "facts": {
+      "path": "state/reviews/prose-repair-20261003/facts.evidence.json",
+      "blob": "1fc0f4268a695380e4027f4e2590c081e4668e86",
+      "sha256": "c4a1772e0d30ec09c6f84f8d7f030a3eb21270ca2666db3e14d1f6dbedccad49"
+    },
+    "editor": {
+      "path": "state/reviews/prose-repair-20261003/editor.evidence.json",
+      "blob": "76e636967f4925691ccb0067ac9a88f23663e114",
+      "sha256": "92e18b63a433fc7c95f7d285a195d261816c234abab74082d2df89d632faef44"
+    },
+    "reader": {
+      "path": "state/reviews/prose-repair-20261003/reader.evidence.json",
+      "blob": "0b6c65d8b5a5db707eb8f40873c9e564f4dad908",
+      "sha256": "39fa7b97248b0ce6a43abd14cb61c327a60c69a1d17052bd9fdbe87b26b86610"
+    }
+  },
+  "result_document": {
+    "path": "docs/NOVEL_OPENING_PROSE_REPAIR_RESULT_20261003.md",
+    "blob": "63057b78e51cf9a9f79bbb6f09d3dde8d12241aa",
+    "sha256": "f8a822f456d2e5db33c56f4bd790756210e51aec2fffe3fff00dcbb39671c69e"
+  },
+  "primary_generation_count": 1,
+  "internal_repair_count": 0,
+  "remaining_primary_generation_budget": 0,
+  "visible_candidate_count": 1,
+  "human_quality_result": "UNKNOWN",
+  "previous_390_human_result": "FAIL",
+  "literary_quality_validated": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "new_life_facts_authorized": false,
+  "formal_mainline_method_revision": 4,
+  "original_404_human_result": "UNKNOWN",
+  "old_448_human_result": "FAIL",
+  "prior_395_human_result": "FAIL",
+  "intermediate_user_authorization_required": false,
+  "actual_model_calls": 5,
+  "isolated_review_calls": 4,
+  "quote_records_checked": 35,
+  "position_corrections": 0,
+  "elapsed_seconds_by_role": {
+    "diagnosis": 633.109,
+    "writer": 305.117,
+    "facts": 358.328,
+    "editor": 282.102,
+    "reader": 290.398
+  },
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_PROSE_REPAIRED_OPENING"
+}

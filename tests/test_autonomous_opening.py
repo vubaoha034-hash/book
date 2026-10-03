@@ -18,7 +18,16 @@ class AutonomousOpeningTests(unittest.TestCase):
         self.project=json.loads((REPO/'state/project_state.json').read_bytes())
         self.checkpoint=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes())
         self.route=self.project['autonomous_opening_to_human'];self.seen=set()
+        prior_human=self.project['two_role_opening_review']['human_feedback']['path']
+        human=json.loads((REPO/prior_human).read_bytes())
+        for v in (self.project,self.checkpoint):
+            v.pop('opening_prose_repair',None)
+            v.update(last_completed_task_id=gate.TASK,last_completed_task_contract=self.route['task']['path'],
+                next_action=gate.NEXT,next_required_action=gate.NEXT,human_verdict_receipt=prior_human,latest_human_review=human['review'],
+                current_human_gate='NEW_REVIEWED_OPENING_HUMAN_UNKNOWN_PRIOR_395_AND_448_FAIL_404_UNKNOWN')
+        self.checkpoint.update(sequence=199,stop=True)
         self.copy('START_HERE.md');self.copy_refs(self.route)
+        entry=self.root/'START_HERE.md';entry.write_bytes(('当前位置：检查点199。\n'+entry.read_text(encoding='utf-8')).encode())
         self.copy_refs(self.project['two_role_opening_review'])
         self.copy_refs(self.project['r2_entry_short_trial'])
         for role in ('writer','facts','editor','reader'):

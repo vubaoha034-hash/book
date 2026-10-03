@@ -1,0 +1,20 @@
+{
+  "schema_version": "native-pending-human-reading/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "artifact": {
+    "path": "delivery/prose-repair-20261003/short-a1.md",
+    "blob": "ba5f01c02654b4fdc6fae8432ebda4c6c292aac1",
+    "sha256": "ccda7d360193408e4ae2cb1c9777929dd91d4dc8ed4fdd150ad6ad27c2109cf7"
+  },
+  "outcome": "UNKNOWN",
+  "human_feedback": {},
+  "accepted": false,
+  "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
+  "presentation": "ONE_BODY_BEFORE_AI_VERDICTS",
+  "questions": [
+    "是否想继续读？",
+    "开头和整体文笔是否还特别别扭、有重AI味？"
+  ],
+  "intermediate_user_authorization_required": false,
+  "stop_at_actual_human_reading": true
+}

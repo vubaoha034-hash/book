@@ -1,0 +1,88 @@
+{
+  "schema_version": "native-prose-repair-run/v1",
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "source_head": "df1e08a59373e9777bf478b85ebe0707c4dfdef0",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_OPENING_PROSE_REPAIR_AUTHORIZATION_20261003.json",
+    "blob": "1ef1e12b3f5283ac02991c6c95b42515fdbf178e",
+    "sha256": "8cb6cdc03cc3858000c130cfa0a38d81ce19a47252691c2bcd89370a7605e5d5"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "human_quality_result": "UNKNOWN",
+  "quality_certification_allowed": false,
+  "generation_limit": 1,
+  "evidenced_repair_limit": 1,
+  "jobs": {
+    "diagnosis": {
+      "packet": {
+        "path": "delivery/prose-repair-20261003/diagnosis.packet.json",
+        "blob": "1b539c4cf0de0dc51c0578710a4bfd3897207a1b",
+        "sha256": "11fe1e97845202009a47bfc053cf64114b95642b4481d13d85ddd9bbeb217dd1"
+      },
+      "policy": {
+        "path": "delivery/prose-repair-20261003/diagnosis-policy.txt",
+        "blob": "d1460d2e3a08a1bdd036e57da3d78ca22c6e4574",
+        "sha256": "d0317c6fda27b25a1faf533c5a93d7291268d116100b1cece4bb8cab9af68710"
+      },
+      "max_calls": 1,
+      "raw_path": "state/reviews/prose-repair-20261003/diagnosis.raw.txt"
+    },
+    "writer": {
+      "packet": {
+        "path": "delivery/prose-repair-20261003/writer-input.json",
+        "blob": "ae201221b4569a1130a2f25ff64a93a737ad2a54",
+        "sha256": "fd7b05230c6d116fd7ee5b7a42291ae9aa2873b86499481ff5eece7f78d8ccac"
+      },
+      "policy": {
+        "path": "delivery/prose-repair-20261003/writer-policy.txt",
+        "blob": "110a12094590def1a96836b32ae70c06c0484d64",
+        "sha256": "920043b28469a861c15556e4055c2fc9b851c2433fe0b69483627e2af1f9155c"
+      },
+      "max_calls": 1,
+      "raw_path": "delivery/prose-repair-20261003/short-a1.md"
+    },
+    "facts": {
+      "packet": {
+        "path": "delivery/prose-repair-20261003/facts.packet.json",
+        "blob": "f9d41dc9d2bb5c954046003b64fa589de8bb7fe6",
+        "sha256": "cb3ffcebb302fab3ecc01ce56e2b3ed97f58e3e76f43e3a02e9bdfb6a03ab311"
+      },
+      "policy": {
+        "path": "delivery/prose-repair-20261003/facts-policy.txt",
+        "blob": "3a972d5a67eeb94a25820c754136bb6fabb0bea2",
+        "sha256": "94097347be0fb16f98afcd28f71ca72a58487ffacd22646145c150ade7445095"
+      },
+      "max_calls": 1,
+      "raw_path": "state/reviews/prose-repair-20261003/facts.raw.txt"
+    },
+    "editor": {
+      "packet": {
+        "path": "delivery/prose-repair-20261003/editor.packet.json",
+        "blob": "e761d850e8f7f7cf9db6687ea4f7daf137db3054",
+        "sha256": "5d4558a07020ecf130ce18a94270642e92576a576a1d99d1ed12b0f3d9c88af8"
+      },
+      "policy": {
+        "path": "delivery/prose-repair-20261003/editor-policy.txt",
+        "blob": "fde828a8f024b1b75c2c6af8b93931651665855b",
+        "sha256": "5f18ba719b1bd940f9e4c6de76220485e8f4f313f590d767fa1deeba14c5151b"
+      },
+      "max_calls": 1,
+      "raw_path": "state/reviews/prose-repair-20261003/editor.raw.txt"
+    },
+    "reader": {
+      "packet": {
+        "path": "delivery/prose-repair-20261003/reader.packet.json",
+        "blob": "f64df99220f56e0798839f10ada1936132fd8eff",
+        "sha256": "917e651e0c6a4682f6881bbcd03690e6d26abb1dea3fbfc05c3e90f12ee9c1d3"
+      },
+      "policy": {
+        "path": "delivery/prose-repair-20261003/reader-policy.txt",
+        "blob": "0d82cc18e40591af8172c172aaadbe6cb17a8aa6",
+        "sha256": "e83f9a2b3aac33ea8eacd7db372c1780cc86034b806ad0f28b8efbd755e3b8e1"
+      },
+      "max_calls": 1,
+      "raw_path": "state/reviews/prose-repair-20261003/reader.raw.txt"
+    }
+  }
+}

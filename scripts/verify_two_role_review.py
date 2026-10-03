@@ -118,7 +118,7 @@ def check_runtime(root, route, manifest, role, packet):
     return runtime
 
 
-def two_role_action(root, project, checkpoint, historical_action, successor_authorization=None):
+def two_role_action(root, project, checkpoint, historical_action, successor_authorization=None, successor_human_feedback=None):
     if historical_action != OLD: raise ValueError('TWO_ROLE_CANNOT_SKIP_HISTORICAL_GATES')
     validate_authorization(root,project,checkpoint)
     route = project['two_role_opening_review']
@@ -243,13 +243,21 @@ def two_role_action(root, project, checkpoint, historical_action, successor_auth
             raise ValueError('TWO_ROLE_LIVE_CURSOR_DRIFT')
     entry = (root/'START_HERE.md').read_text(encoding='utf-8')
     successor_entry = False
+    later_entry = False
+    if successor_human_feedback is not None:
+        later = bound(root,successor_human_feedback)
+        later_entry = (successor_human_feedback.get('path') == 'state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json' and
+            later.get('source_checkpoint') == 199 and later.get('outcome') == 'FAIL' and
+            later.get('output') == project.get('autonomous_opening_to_human',{}).get('final_artifact') and
+            later.get('review',{}).get('source') == {'kind':'ACTUAL_CURRENT_USER_MESSAGE','message_observed_directly':True} and
+            '当前位置：检查点200。' in entry and '上一检查点199：' in entry)
     if successor_authorization is not None:
         successor = bound(root,successor_authorization)
         successor_entry = (successor_authorization.get('path') == 'state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json' and
             successor.get('source_checkpoint') == 198 and successor.get('source') == 'ACTUAL_CURRENT_USER_MESSAGE' and
             successor.get('intermediate_user_authorization_required') is False and successor.get('authorized_primary_generation_budget') == 1 and
             successor.get('old_RC3_remaining_rounds') == 0 and successor.get('old_197_character_protection_released') is False and
-            '当前位置：检查点199。' in entry)
+            ('当前位置：检查点199。' in entry or later_entry))
     if checkpoint.get('sequence') != 198 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点198。' not in entry and not successor_entry):
         raise ValueError('TWO_ROLE_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT

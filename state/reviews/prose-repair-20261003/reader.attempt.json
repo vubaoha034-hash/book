@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-OPENING-PROSE-REPAIR-AFTER-HUMAN-FAIL-20261003-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/prose-repair-20261003/reader.packet.json",
+    "blob": "f64df99220f56e0798839f10ada1936132fd8eff",
+    "sha256": "917e651e0c6a4682f6881bbcd03690e6d26abb1dea3fbfc05c3e90f12ee9c1d3"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-03T11:45:08Z"
+}

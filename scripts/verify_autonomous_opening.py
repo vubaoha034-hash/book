@@ -97,7 +97,7 @@ def runtime_check(root,reference,role,stage,packet,policy,raw):
     return r
 
 
-def autonomous_action(root,project,checkpoint,historical_action):
+def autonomous_action(root,project,checkpoint,historical_action,successor_human_feedback=None):
     if historical_action!=OLD:raise ValueError('AUTONOMOUS_CANNOT_SKIP_HISTORICAL_GATES')
     validate_authorization(root,project,checkpoint)
     route=project['autonomous_opening_to_human'];manifest=bound(root,route['manifest'])
@@ -218,6 +218,12 @@ def autonomous_action(root,project,checkpoint,historical_action):
                 v.get('current_human_gate')!='NEW_REVIEWED_OPENING_HUMAN_UNKNOWN_PRIOR_395_AND_448_FAIL_404_UNKNOWN'):
             raise ValueError('AUTONOMOUS_LIVE_CURSOR_DRIFT')
     entry=(root/'START_HERE.md').read_text(encoding='utf-8')
-    if checkpoint.get('sequence')!=199 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or '当前位置：检查点199。' not in entry:
+    successor_entry=False
+    if successor_human_feedback is not None:
+        actual=bound(root,successor_human_feedback)
+        successor_entry=(successor_human_feedback.get('path')=='state/review_receipts/NOVEL_AUTONOMOUS_OPENING_390_HUMAN_FAIL_20261003.json' and
+            actual.get('source_checkpoint')==199 and actual.get('outcome')=='FAIL' and actual.get('output')==route['final_artifact'] and
+            actual.get('review',{}).get('source',{}).get('kind')=='ACTUAL_CURRENT_USER_MESSAGE' and '当前位置：检查点200。' in entry)
+    if checkpoint.get('sequence')!=199 or checkpoint.get('stop') is not True or TASK not in entry or NEXT not in entry or ('当前位置：检查点199。' not in entry and not successor_entry):
         raise ValueError('AUTONOMOUS_CHECKPOINT_OR_ENTRY_DRIFT')
     return NEXT
