@@ -3,7 +3,7 @@
   "project_id": "novel-distillation",
   "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
   "attempt_id": "UNIFIED-CHECK-20261003-R2-DIAGNOSIS-CONTINUATION-01",
-  "recorded_at": "2026-10-03T00:56:36.950Z",
+  "recorded_at": "2026-10-03T01:00:36.750Z",
   "source_head": "0a31cf18b1d7a330248e5c64ce59267273122ea1",
   "source_checkpoint": 192,
   "scope": "CONTINUE_EXISTING_PREPARED_DIAGNOSIS_ONLY_NO_PROSE_NO_MAINLINE_CHANGE",
@@ -13,10 +13,10 @@
   },
   "dispatch_message_sha256": "6e6fb8ac809fdb4df918cc6fba2d157ac4609a0764f8ad7280e28c9a55f5f37a",
   "complete_message_storage": "PRIVATE_COORDINATOR_WORKSPACE",
-  "opening_status": "PREPARED_PROJECT_EXECUTOR_DISPATCH_NOT_SENT_YET",
-  "send_click_count": 0,
+  "opening_status": "PROJECT_EXECUTOR_ACTUALLY_RUNNING_SINGLE_COMPLETE_MESSAGE_VERIFIED",
+  "send_click_count": 1,
   "max_dispatches": 1,
-  "project_executor_conversation_url": null,
+  "project_executor_conversation_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6ac05373-0194-83e9-9c7f-3b7f0950b057",
   "external_reviewer_conversation_url": null,
   "observed_ui_settings": {
     "surface": "CHAT",
@@ -58,7 +58,7 @@
   "prose_generated": 0,
   "old_RC3_remaining_rounds": 0,
   "mainline_changed": false,
-  "next_action": "SEND_ONE_COMPLETE_PROJECT_CONTINUATION_MESSAGE_AND_VERIFY_ACTUAL_START",
+  "next_action": "INSPECT_EXISTING_RUNNING_PROJECT_EXECUTOR_ON_NEXT_USER_TRIGGER_NO_DUPLICATE_DISPATCH",
   "draft_integrity": {
     "status": "EXACT_COMPLETE_MESSAGE_AFTER_UNSENT_TERMINAL_NEWLINE_RECONCILIATION",
     "ui_fill_count": 1,
@@ -66,5 +66,24 @@
     "original_authored_message_sha256": "0f4ebfaef544ae988a48d915bbd4831007fc9b4b629bed92085b732141046f1b",
     "transport_difference": "FILL_OMITTED_ONE_FINAL_NEWLINE_ONLY_ALL_OTHER_BYTES_IDENTICAL",
     "reconciled_before_send": true
-  }
+  },
+  "external_review_actual_start_verified": false,
+  "external_review_status": "NOT_YET_OBSERVED_PROJECT_EXECUTOR_IS_CONTINUING_PREPARED_TASK",
+  "dispatch_integrity": {
+    "verdict": "OBSERVED_SINGLE_MESSAGE",
+    "task_id": "NOVEL-R2-EMOTION-RETENTION-DIAGNOSIS-PREP-20261002-07",
+    "message_sha256": "6e6fb8ac809fdb4df918cc6fba2d157ac4609a0764f8ad7280e28c9a55f5f37a",
+    "conversation_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6ac05373-0194-83e9-9c7f-3b7f0950b057",
+    "proof_scope": "ONE_OBSERVED_CONVERSATION_ONLY_NO_GLOBAL_UNIQUENESS"
+  },
+  "actual_ui_start_evidence": {
+    "real_c_url": true,
+    "complete_new_user_messages": 1,
+    "complete_message_exact": true,
+    "composer_readback": "\n",
+    "stop_button_visible": true,
+    "status_text": "ChatGPT 正在回应",
+    "project_executor_initial_response_observed": true
+  },
+  "native_business_state_settlement": "PROJECT_EXECUTOR_RESPONSIBILITY_NOT_CLAIMED_COMPLETE"
 }
