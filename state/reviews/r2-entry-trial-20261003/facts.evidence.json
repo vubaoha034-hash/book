@@ -1,0 +1,142 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "S196",
+      "item_index": 0,
+      "quote": "他的目光还在过户大厅的玻璃门上。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 10,
+      "end_character_exclusive": 26,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 1,
+      "quote": "工作室停了，款没结清，还剩十八万六，其中六万八五天后到期。",
+      "reported_line": 3,
+      "actual_line": 3,
+      "start_character_0_based": 105,
+      "end_character_exclusive": 134,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 2,
+      "quote": "我知道你不记得。可我过的那三年，不是编来骗你钱的。",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 161,
+      "end_character_exclusive": 186,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 3,
+      "quote": "明天下午前要付一万二押金，租自己的工作间。如果得由我先筹，那笔押金也留不住。",
+      "reported_line": 7,
+      "actual_line": 7,
+      "start_character_0_based": 239,
+      "end_character_exclusive": 277,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 4,
+      "quote": "我自己找他们公开的电话，现在问。问不等于认账。",
+      "reported_line": 10,
+      "actual_line": 10,
+      "start_character_0_based": 327,
+      "end_character_exclusive": 350,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 5,
+      "quote": "我能配合到三点，就这二十分钟。客户的片子还等着。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 359,
+      "end_character_exclusive": 383,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 6,
+      "quote": "他把复本转正，在搜索栏里输入供应商的名字。",
+      "reported_line": 12,
+      "actual_line": 12,
+      "start_character_0_based": 385,
+      "end_character_exclusive": 406,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 7,
+      "quote": "其中六万八五天后到期。",
+      "reported_line": 3,
+      "actual_line": 3,
+      "start_character_0_based": 123,
+      "end_character_exclusive": 134,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 8,
+      "quote": "如果得由我先筹，那笔押金也留不住。",
+      "reported_line": 7,
+      "actual_line": 7,
+      "start_character_0_based": 260,
+      "end_character_exclusive": 277,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 9,
+      "quote": "问不等于认账。",
+      "reported_line": 10,
+      "actual_line": 10,
+      "start_character_0_based": 343,
+      "end_character_exclusive": 350,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "S196",
+      "item_index": 10,
+      "quote": "我能配合到三点，就这二十分钟。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 359,
+      "end_character_exclusive": 374,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "packet": {
+    "path": "delivery/r2-entry-trial-20261003/facts.packet.json",
+    "blob": "7b0dbe2a847c29a4f31a854823b141387692b85b",
+    "sha256": "fe386968cf04c395ac2bd03f4a9e7c30d056b7f727c730bc9bf9a9a1db5e442a"
+  },
+  "raw_report": {
+    "path": "state/reviews/r2-entry-trial-20261003/facts.raw.txt",
+    "blob": "4ef46bd9415055ce7c9adacec68afbe6569c012b",
+    "sha256": "6adde614d8a9b138463db962a7c3d4f42ebe0cdc0de1bff2a6240678fbfb3a93"
+  }
+}

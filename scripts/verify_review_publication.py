@@ -27,6 +27,30 @@ PREPARATION_MUTABLE_FILES = (
     'scripts/verify_current_state.py', 'scripts/verify_review_publication.py',
     'tests/test_current_state.py', 'state/project_state.json',
     'state/continuity/LATEST_CHECKPOINT.json')
+SHORT_TRIAL_SOURCE = 'b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4'
+SHORT_TRIAL_PREFIX = 'state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_'
+SHORT_TRIAL_NEW_FILES = (
+    'config/novel-r2-entry-trial-20261003.json',
+    'delivery/r2-entry-trial-20261003/writer-input.json',
+    'delivery/r2-entry-trial-20261003/short-a1.md',
+    'delivery/r2-entry-trial-20261003/facts.packet.json',
+    'docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md',
+    'scripts/novel_one_short_trial.py', 'scripts/verify_one_short_trial.py',
+    'tests/test_one_short_trial.py',
+    'state/authoring/r2-entry-trial-20261003/writer.attempt.json',
+    'state/authoring/r2-entry-trial-20261003/writer.runtime.json',
+    'state/reviews/r2-entry-trial-20261003/facts.attempt.json',
+    'state/reviews/r2-entry-trial-20261003/facts.runtime.json',
+    'state/reviews/r2-entry-trial-20261003/facts.raw.txt',
+    'state/reviews/r2-entry-trial-20261003/facts.evidence.json',
+    'state/reviews/r2-entry-trial-20261003/coordinator-settlement.json',
+    'state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json',
+    SHORT_TRIAL_PREFIX + 'AUTHORIZATION_20261003.json',
+    SHORT_TRIAL_PREFIX + 'RESULT_20261003.json',
+    SHORT_TRIAL_PREFIX + 'VALIDATION_20261003.json',
+    SHORT_TRIAL_PREFIX + 'REMOTE_SAVE_VERIFIED_20261003.json')
+SHORT_TRIAL_MUTABLE_FILES = PREPARATION_MUTABLE_FILES + (
+    'scripts/verify_reentry_preparation.py', 'tests/test_reentry_preparation.py')
 
 
 def git(*args):
@@ -185,13 +209,99 @@ def verify_preparation(expected):
             'all_prior_prose_and_raw_reports_unchanged': True, 'model_calls': 0, 'generation_count': 0}
 
 
+def verify_short_trial(expected):
+    """Verify actual checkpoint196 bytes and protect the entire source history."""
+    remote = git('ls-remote', 'origin', 'refs/heads/main').decode().split()[0]
+    if remote != expected:
+        raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch', 'origin', 'main')
+    if git('rev-parse', 'origin/main').decode().strip() != remote:
+        raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive = zipfile.ZipFile(io.BytesIO(git('archive', '--format=zip', remote)))
+    base = zipfile.ZipFile(io.BytesIO(git('archive', '--format=zip', SHORT_TRIAL_SOURCE)))
+    old_files = {p for p in base.namelist() if not p.endswith('/')}
+    new_files = {p for p in archive.namelist() if not p.endswith('/')}
+    if new_files - old_files - set(SHORT_TRIAL_NEW_FILES) or old_files - new_files:
+        raise ValueError('SHORT_TRIAL_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected = old_files - set(SHORT_TRIAL_MUTABLE_FILES)
+    for path in protected:
+        if archive.read(path) != base.read(path):
+            raise ValueError('SHORT_TRIAL_HISTORICAL_BYTES_CHANGED: ' + path)
+    seen, checked = set(), []
+
+    def inspect(path, reference=None):
+        resolved = (ROOT / path).resolve()
+        if not resolved.is_relative_to(ROOT.resolve()):
+            raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        data = archive.read(path)
+        if data != resolved.read_bytes():
+            raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: ' + path)
+        digest = hashlib.sha256(data).hexdigest()
+        if reference and (reference.get('blob') != blob(data) or reference.get('sha256') != digest):
+            raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: ' + path)
+        if path in seen:
+            return
+        seen.add(path)
+        checked.append({'path': path, 'blob': blob(data), 'sha256': digest})
+        # Older receipts are snapshots and leaves. Current business gates
+        # independently validate their preserved facts, feedback and budgets.
+        if path in SHORT_TRIAL_NEW_FILES and path.endswith('.json'):
+            walk(json.loads(data))
+
+    def walk(value):
+        if isinstance(value, dict):
+            if all(k in value for k in ('path', 'blob', 'sha256')):
+                inspect(value['path'], value)
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    project = json.loads(archive.read('state/project_state.json'))
+    checkpoint = json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route = project.get('r2_entry_short_trial')
+    if (not route or route != checkpoint.get('r2_entry_short_trial') or
+            route.get('human_quality_result') != 'UNKNOWN' or route.get('generation_count') != 1 or
+            route.get('remaining_new_generation_budget') != 0 or checkpoint.get('sequence') != 196 or
+            checkpoint.get('stop') is not True or checkpoint.get('action_guard', {}).get('project_state_sha256') !=
+            hashlib.sha256(archive.read('state/project_state.json')).hexdigest()):
+        raise ValueError('REMOTE_SHORT_TRIAL_STATE_OR_CHECKPOINT_DRIFT')
+    walk(route)
+    for path in (*SHORT_TRIAL_MUTABLE_FILES, *SHORT_TRIAL_NEW_FILES):
+        if path == SHORT_TRIAL_NEW_FILES[-1] and path not in new_files:
+            continue  # Save actual readback receipt after implementation proof.
+        inspect(path)
+    validation = json.loads(archive.read(SHORT_TRIAL_PREFIX + 'VALIDATION_20261003.json'))
+    if validation.get('status') != 'SCOPED_ONE_SHORT_TRIAL_VALIDATION_PASSED':
+        raise ValueError('REMOTE_SHORT_TRIAL_VALIDATION_NOT_COMPLETED')
+    # Reuse all historical and current business checks after byte equivalence.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('current_short_state', ROOT / 'scripts/verify_current_state.py')
+    current = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(current)
+    state_result = current.verify(ROOT)
+    if state_result.get('sequence') != 196 or state_result.get('new_prose_authorized') is not False:
+        raise ValueError('REMOTE_SHORT_TRIAL_BUSINESS_GATE_NOT_CLOSED')
+    if git('ls-remote', 'origin', 'refs/heads/main').decode().split()[0] != remote:
+        raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status': 'REMOTE_ONE_SHORT_TRIAL_BYTES_HISTORY_AND_BUSINESS_GATES_VERIFIED',
+            'remote_head': remote, 'source_head': SHORT_TRIAL_SOURCE, 'checkpoint': 196,
+            'checked_count': len(checked), 'files': checked, 'protected_source_file_count': len(protected),
+            'all_prior_prose_locks_and_raw_reports_unchanged': True, 'current_state': state_result,
+            'model_calls_during_readback': 0, 'generation_count_during_readback': 0}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
-    parser.add_argument('--preparation', action='store_true', help='Verify checkpoint195 preparation and preserve all checkpoint194 history')
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--preparation', action='store_true', help='Verify checkpoint195 preparation and preserve all checkpoint194 history')
+    mode.add_argument('--short-trial', action='store_true', help='Verify checkpoint196 frozen short and preserve all checkpoint195 history')
     args = parser.parse_args()
     try:
-        result = verify_preparation(args.expected_head) if args.preparation else verify(args.expected_head)
+        result = (verify_short_trial(args.expected_head) if args.short_trial else
+                  verify_preparation(args.expected_head) if args.preparation else verify(args.expected_head))
         print(json.dumps(result, ensure_ascii=False, indent=2))
     except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as exc:
         print(json.dumps({'status': 'REMOTE_READBACK_NOT_CONFIRMED', 'error': str(exc)}, ensure_ascii=False))

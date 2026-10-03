@@ -1,0 +1,195 @@
+{
+  "schema_version": "native-one-short-trial-validation/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "source_head": "b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4",
+  "source_checkpoint": 195,
+  "saved_checkpoint": 196,
+  "recorded_at": "2026-10-03T07:46:24.546114+00:00",
+  "status": "SCOPED_ONE_SHORT_TRIAL_VALIDATION_PASSED",
+  "current_state": {
+    "status": "CURRENT_STATE_VALID_MAINLINE_LOCKED",
+    "sequence": 196,
+    "checks_passed": 27,
+    "mainline_revision": 4,
+    "mainline_step": "STEP_03",
+    "original_TEST_01": "UNKNOWN",
+    "new_prose_authorized": false,
+    "literary_quality_tested_by_script": false
+  },
+  "structure": {
+    "command": "python -X utf8 scripts/validate_skill.py",
+    "exit_code": 0,
+    "files_checked": 28,
+    "literary_quality_validation": false
+  },
+  "unit_tests": {
+    "command": "python -X utf8 -m unittest discover -s tests -p test_*.py",
+    "exit_code": 0,
+    "tests_run": 132,
+    "elapsed_seconds": 25.584,
+    "new_one_short_trial_corruption_tests": 21,
+    "model_calls": 0,
+    "generation_count": 0
+  },
+  "python_compile": {
+    "exit_code": 0,
+    "files_checked": 8
+  },
+  "local_scope_check": {
+    "source_files_protected": 301,
+    "all_protected_bytes_identical": true,
+    "unexpected_additions": [],
+    "unexpected_deletions": [],
+    "allowed_mutations": [
+      "AGENTS.md",
+      "README.md",
+      "SKILL.md",
+      "START_HERE.md",
+      "scripts/verify_current_state.py",
+      "scripts/verify_reentry_preparation.py",
+      "scripts/verify_review_publication.py",
+      "state/continuity/LATEST_CHECKPOINT.json",
+      "state/project_state.json",
+      "tests/test_current_state.py",
+      "tests/test_reentry_preparation.py"
+    ]
+  },
+  "negative_cases_proven": [
+    "无绑定真人授权不可启动新预算",
+    "旧RC3不能回补，旧保护不能释放",
+    "同会话事实报告不能称为独立",
+    "提示词模型名称不能替代实际运行设置",
+    "写作输入不得夹带诊断或答案",
+    "错稿哈希、不存在引文、无报告、运行失败均不能通过",
+    "新预算只一次，二次生成阻断",
+    "FACT_CLEAR不能记成真人PASS，精确停止句不能伪造",
+    "事实副本和材料缺口不得被重哈希洗成证据",
+    "入口、任务、状态、检查点一致，历史门仍先执行"
+  ],
+  "evidence": {
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_AUTHORIZATION_20261003.json",
+      "blob": "1c3da672bea55259d4ec22d58094b82e520a3a09",
+      "sha256": "05a4ee723d9cc48e1e1e47f966d282c94a026adf16d98c459ac085c7d187e223"
+    },
+    "artifact": {
+      "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+      "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+      "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+    },
+    "writer_runtime": {
+      "path": "state/authoring/r2-entry-trial-20261003/writer.runtime.json",
+      "blob": "4c0011903b7228343350ab5be674d821005a7a8b",
+      "sha256": "5fd6e3a97c1d410b1fd3c5903114a7ed6c02a5c30d0fa0d2710ffd62e167bd38"
+    },
+    "facts_runtime": {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.runtime.json",
+      "blob": "836c90e72eeb8bf71859212f0841beb5b51f8877",
+      "sha256": "12e26d6b47822862ae1f5b6683a9e72a4dc33e09ff49f3167c80d89b3e0475dd"
+    },
+    "facts_raw_report": {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.raw.txt",
+      "blob": "4ef46bd9415055ce7c9adacec68afbe6569c012b",
+      "sha256": "6adde614d8a9b138463db962a7c3d4f42ebe0cdc0de1bff2a6240678fbfb3a93"
+    },
+    "facts_evidence": {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.evidence.json",
+      "blob": "c5f02243c3a0eff1f0082c27cfd152a45ab4d69e",
+      "sha256": "6c6d485f0de60c3e95396651c184954d8738aac6c4928f7fce0b0e5e2b5af006"
+    },
+    "coordinator_settlement": {
+      "path": "state/reviews/r2-entry-trial-20261003/coordinator-settlement.json",
+      "blob": "6630fa3cb754ea705d29bbc10ec597cb18041fac",
+      "sha256": "9e1a3a131096654cd64ad31e4a7b76c5b026413c25f5934278a0ec8067f3b14b"
+    }
+  },
+  "validated_files": [
+    {
+      "path": "scripts/novel_one_short_trial.py",
+      "blob": "9a50fd5d7001160e9da7f7a3b7d4cc68853aedcd",
+      "sha256": "d6064ac19af99447f24bb1a2f12860ddf99d456b783a4b8739122ab06ba9b708"
+    },
+    {
+      "path": "scripts/verify_one_short_trial.py",
+      "blob": "688ec2cdb778930969475b961a2731ed38bacc12",
+      "sha256": "34dd3d53baa37e17a3f750549c6d6920bfb7976f7daeb7ddf9d585cda312e4dd"
+    },
+    {
+      "path": "scripts/verify_reentry_preparation.py",
+      "blob": "32e5cf67c2467f55872885cfa2ee49612e807512",
+      "sha256": "4d65de769e14def69f72bd89ad9ac86d0f93e2f03aafe4762bc99628081a1d4b"
+    },
+    {
+      "path": "scripts/verify_current_state.py",
+      "blob": "b93ec5dc45ff66cc126c6f4b98f81065c674ebdf",
+      "sha256": "184c77859f781fc6dd7313b3fa930e8edcd7dcc65513926b7562f7cff996a7d6"
+    },
+    {
+      "path": "scripts/verify_review_publication.py",
+      "blob": "2d49ea74bcd0109d0fed2d57f8ee5b959f79b323",
+      "sha256": "804cd426257416a2e7c93a567bc50752959a9aa8797ff65f98838cb4d932800a"
+    },
+    {
+      "path": "tests/test_one_short_trial.py",
+      "blob": "5564298bd52091b8bc1ed9502bd11fe2c3821069",
+      "sha256": "bb7c2eed2e5ef5d697936bcc2dd01021ced5d0e982065ea697bc2d871d77239f"
+    },
+    {
+      "path": "tests/test_reentry_preparation.py",
+      "blob": "2a83ccb9a0701e80c1d72d4de845e48c74bc245a",
+      "sha256": "8ae445736bcd0d547f86ffd5c2fb6b68863b01014f0deeabe9259aba1bb4d4c8"
+    },
+    {
+      "path": "tests/test_current_state.py",
+      "blob": "620c7cb667c2038f7131388a3aa55d8ce605777f",
+      "sha256": "8a175e2fd334f8d9b6f4a35fcf025ebb9ee2fec08dff349b6204b4cbf791dd88"
+    },
+    {
+      "path": "START_HERE.md",
+      "blob": "db4668cb962d2b50451cf610989fe5678705b1f1",
+      "sha256": "12658c310e2e65400f36ea5adc3e3cf995614ea0451afd4d7e3762a7a6995064"
+    },
+    {
+      "path": "AGENTS.md",
+      "blob": "38ec180a9d1e95796a62ea926fc44a0efbc6923f",
+      "sha256": "d2bb1ff18fa9726d515e1bbc3f31291bd4e099e2ecd2f42a40765f77df0d802c"
+    },
+    {
+      "path": "SKILL.md",
+      "blob": "52764c863253b2e9dc743747fecf34f26b0f7a69",
+      "sha256": "a82a6ac0e291c5061f74ce9513b97a06fc69db90aa24909bc93ac7f0f8ab0464"
+    },
+    {
+      "path": "README.md",
+      "blob": "dee6e1b97515fdc7890b446e1ee508f0d0e16511",
+      "sha256": "fcb7d91a9bb474ea3ff96373066554b428398e0ab99cb4e15e67aa33787361ea"
+    },
+    {
+      "path": "state/project_state.json",
+      "blob": "60bafbad98b7fcaaa059e6dc514e69b9477c30e7",
+      "sha256": "b8ba017fba7cf4388871ee92675c3bd2b2fb109c6f9b41640fafb22d2bad10e5"
+    },
+    {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "f129a16ea0b947fc432c5a720e9de36c8c9f9185",
+      "sha256": "9617cecbcdbcab80d82e585a44ee0964e4d32aaf14531361b6d96643ae070e50"
+    }
+  ],
+  "writer_model_calls_this_task": 1,
+  "fact_review_model_calls_this_task": 1,
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning_effort": "max",
+  "independence": "TWO_DIFFERENT_FRESH_EPHEMERAL_THREADS_WITH_NO_HISTORY_TOOLS_OR_REPOSITORY_ACCESS",
+  "generation_count": 1,
+  "remaining_new_generation_budget": 0,
+  "new_life_facts_added": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "human_quality_result": "UNKNOWN",
+  "quality_screen_retested": false,
+  "quality_screen_capability_improved": false,
+  "remote_save_validation": "LOCAL_CHECKS_ONLY_SEPARATE_ACTUAL_REMOTE_READBACK_REQUIRED",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1"
+}

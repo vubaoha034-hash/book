@@ -1,7 +1,7 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 195,
+  "sequence": 196,
   "recorded_at": "2026-10-03T04:58:59+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -9,7 +9,7 @@
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "已按刘先生“授权。”完成唯一第二场进入时刻及最小事实准备：核对12处前场/冻结事实/目标稿证据，选择当面称名且仍朝向大厅的入口，主私人利害只用多年首付与原本今晚入住。未新增生活事实或正文、未复测效果。等待新单份300至500字短段及新版本开头范围的一次写作预算授权；旧两轮剩余0、旧197字保护、真人FAIL及方法4保留。",
+  "current_focus": "新授权的一次独立写作已冻结唯一395字第二场起始短段；不同独立上下文事实审查FACT_CLEAR，11处引文与9项事实/范围已核对，实际均Sol/Max。新预算已用尽，真人结果UNKNOWN；唯一下一步实际阅读这份原文。原404字UNKNOWN、旧448字真人FAIL、旧RC3剩余0、旧197字保护及方法4保留，不自动续写。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -751,7 +751,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1823,17 +1823,71 @@
       "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
       "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
       "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39",
-      "role": "唯一下一新短段提案，尚未授权"
+      "role": "检查点195未授权原始提案保留；检查点196另存授权与实际执行记录，不覆盖原件。"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_AUTHORIZATION_20261003.json",
+      "blob": "1c3da672bea55259d4ec22d58094b82e520a3a09",
+      "sha256": "05a4ee723d9cc48e1e1e47f966d282c94a026adf16d98c459ac085c7d187e223",
+      "role": "刘先生直接批准上一条具体一次短段提案"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json",
+      "blob": "da8c76ca59ab984fd412eff20328c11eee57a28f",
+      "sha256": "86590432e7f79580b8a987e6a9a1e433f8ddd20ed1597c409f9fdf2b62f442ec",
+      "role": "本次唯一新短段任务已完成且一次预算已用尽"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.json",
+      "blob": "152dd90286e11243235597e268d350e54ad0927e",
+      "sha256": "f91f2c78ed778bd40ec593b81e5322e6f6ba0812cc9606163ca2f700e8cb1039",
+      "role": "冻结正文、实际隔离调用及事实核对结果"
+    },
+    {
+      "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+      "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+      "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa",
+      "role": "唯一新395字原始输出；真人质量UNKNOWN"
+    },
+    {
+      "path": "state/authoring/r2-entry-trial-20261003/writer.runtime.json",
+      "blob": "4c0011903b7228343350ab5be674d821005a7a8b",
+      "sha256": "5fd6e3a97c1d410b1fd3c5903114a7ed6c02a5c30d0fa0d2710ffd62e167bd38",
+      "role": "实际独立写作模型及上下文证据"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.runtime.json",
+      "blob": "836c90e72eeb8bf71859212f0841beb5b51f8877",
+      "sha256": "12e26d6b47822862ae1f5b6683a9e72a4dc33e09ff49f3167c80d89b3e0475dd",
+      "role": "不同独立事实审查模型及上下文证据"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.raw.txt",
+      "blob": "4ef46bd9415055ce7c9adacec68afbe6569c012b",
+      "sha256": "6adde614d8a9b138463db962a7c3d4f42ebe0cdc0de1bff2a6240678fbfb3a93",
+      "role": "事实报告原件；不认证好看"
+    },
+    {
+      "path": "state/reviews/r2-entry-trial-20261003/coordinator-settlement.json",
+      "blob": "6630fa3cb754ea705d29bbc10ec597cb18041fac",
+      "sha256": "9e1a3a131096654cd64ad31e4a7b76c5b026413c25f5934278a0ec8067f3b14b",
+      "role": "11处评审引文和9项正文/事实结算"
+    },
+    {
+      "path": "docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md",
+      "blob": "aa356ad966fdaee7cfd0b28902288afd06d5a7d1",
+      "sha256": "be4f9bb40bb7b3f2b2d524fea11df022bc98cbd425543233631e94101429785d",
+      "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "R2_REENTRY_FACT_PREPARATION_COMPLETE_AWAIT_SINGLE_NEW_SHORT_TRIAL_OPENING_AUTHORIZATION",
+  "status": "R2_ONE_NEW_SHORT_FACT_CLEAR_AWAIT_ACTUAL_HUMAN_READING",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "last_completed_task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "f775a197de409e95314c50c4ba82f0d17cc9949b5b05e139d9d0c984bfe3c6a9",
+    "project_state_sha256": "b8ba017fba7cf4388871ee92675c3bd2b2fb109c6f9b41640fafb22d2bad10e5",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1885,14 +1939,15 @@
       "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01",
       "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
       "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
-      "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01"
+      "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+      "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_20261003.json",
-  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
+  "last_completed_task_contract": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
   "human_verdict_receipt": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
   "current_human_gate": "CURRENT_R2_HUMAN_FAIL_ORIGINAL_METHOD4_HUMAN_UNKNOWN",
   "phase422_state": {
@@ -3115,5 +3170,91 @@
     "automatic_background_sync": false,
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
+  },
+  "updated_at": "2026-10-03T07:38:41.843813+00:00",
+  "r2_entry_short_trial": {
+    "schema_version": "native-one-short-trial-state/v1",
+    "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+    "source_head": "b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4",
+    "scope": "ONE_NEW_300_500_CHARACTER_SECOND_SCENE_ENTRY_SHORT_TRIAL_WITH_EXPLICIT_OPENING_PERMISSION",
+    "status": "ONE_SHORT_FROZEN_FACT_CLEAR_AWAIT_ACTUAL_HUMAN_READING",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_AUTHORIZATION_20261003.json",
+      "blob": "1c3da672bea55259d4ec22d58094b82e520a3a09",
+      "sha256": "05a4ee723d9cc48e1e1e47f966d282c94a026adf16d98c459ac085c7d187e223"
+    },
+    "manifest": {
+      "path": "config/novel-r2-entry-trial-20261003.json",
+      "blob": "062499935555fdb9f13d506786851241026a1b24",
+      "sha256": "7c6615ed9e0e5f57c5e4798f9c306e0efda0281ff11127fe07e4f5bf3c70876c"
+    },
+    "writer_input": {
+      "path": "delivery/r2-entry-trial-20261003/writer-input.json",
+      "blob": "afd0ed1526701f4b38cea5cec56483f2fcee2e20",
+      "sha256": "d14292ccc0b2a29d1d1b795974a8ffb1d6063fd0b5d19ae2048f167fd9a0e86a"
+    },
+    "artifact": {
+      "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+      "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+      "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+    },
+    "writer_runtime": {
+      "path": "state/authoring/r2-entry-trial-20261003/writer.runtime.json",
+      "blob": "4c0011903b7228343350ab5be674d821005a7a8b",
+      "sha256": "5fd6e3a97c1d410b1fd3c5903114a7ed6c02a5c30d0fa0d2710ffd62e167bd38"
+    },
+    "facts_packet": {
+      "path": "delivery/r2-entry-trial-20261003/facts.packet.json",
+      "blob": "7b0dbe2a847c29a4f31a854823b141387692b85b",
+      "sha256": "fe386968cf04c395ac2bd03f4a9e7c30d056b7f727c730bc9bf9a9a1db5e442a"
+    },
+    "facts_runtime": {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.runtime.json",
+      "blob": "836c90e72eeb8bf71859212f0841beb5b51f8877",
+      "sha256": "12e26d6b47822862ae1f5b6683a9e72a4dc33e09ff49f3167c80d89b3e0475dd"
+    },
+    "facts_raw_report": {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.raw.txt",
+      "blob": "4ef46bd9415055ce7c9adacec68afbe6569c012b",
+      "sha256": "6adde614d8a9b138463db962a7c3d4f42ebe0cdc0de1bff2a6240678fbfb3a93"
+    },
+    "facts_evidence": {
+      "path": "state/reviews/r2-entry-trial-20261003/facts.evidence.json",
+      "blob": "c5f02243c3a0eff1f0082c27cfd152a45ab4d69e",
+      "sha256": "6c6d485f0de60c3e95396651c184954d8738aac6c4928f7fce0b0e5e2b5af006"
+    },
+    "coordinator_settlement": {
+      "path": "state/reviews/r2-entry-trial-20261003/coordinator-settlement.json",
+      "blob": "6630fa3cb754ea705d29bbc10ec597cb18041fac",
+      "sha256": "9e1a3a131096654cd64ad31e4a7b76c5b026413c25f5934278a0ec8067f3b14b"
+    },
+    "authorized_generation_budget": 1,
+    "generation_count": 1,
+    "remaining_new_generation_budget": 0,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "new_version_opening_reorganization_authorized": true,
+    "new_life_facts_authorized": false,
+    "full_v5_authorized": false,
+    "human_quality_result": "UNKNOWN",
+    "original_404_human_result": "UNKNOWN",
+    "old_448_human_emotion_retention": "FAIL",
+    "literary_quality_validated": false,
+    "automatic_retry": false,
+    "non_whitespace_characters": 395,
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
+    "task": {
+      "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json",
+      "blob": "da8c76ca59ab984fd412eff20328c11eee57a28f",
+      "sha256": "86590432e7f79580b8a987e6a9a1e433f8ddd20ed1597c409f9fdf2b62f442ec"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.json",
+      "blob": "152dd90286e11243235597e268d350e54ad0927e",
+      "sha256": "f91f2c78ed778bd40ec593b81e5322e6f6ba0812cc9606163ca2f700e8cb1039"
+    },
+    "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false
   }
 }

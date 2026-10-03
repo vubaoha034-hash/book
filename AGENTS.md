@@ -20,7 +20,7 @@ claiming an old callback. Cold screening failed its limited calibration and
 cannot certify literary quality or the user's taste. This override supplies no
 new prose budget, no V5, and no release of the old 197-character protection.
 
-Current checkpoint195 continuation: the user separately authorized one R2 reentry/fact preparation task, now complete. Read `docs/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.md` and its native authorization/task/result. The next single 300-500-character short trial and its opening scope remain unapproved; preparation supplies zero prose budget and does not release old protection.
+Current checkpoint196 continuation: after the completed reentry/fact preparation, the user approved its concrete proposal and required direct completion. One fresh writer generated the only 395-character new opening short; a different fresh context returned FACT_CLEAR, with evidence settled by the coordinator. Read `docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md` and its native authorization/task/result. The single new budget is spent. New-version opening organization was authorized; old artifacts, locks, exhausted RC3 budget and human rejections remain intact. Next: actual human reading of this frozen short. No automatic A2, full scene, TEST-02, V5 or new life facts. FACT_CLEAR cannot become a human PASS.
 
 This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.
 

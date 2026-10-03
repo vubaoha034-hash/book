@@ -732,6 +732,13 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         expected_action = module.codex_review_action(root, project, cp, expected_action)
+    successor_module, successor_authorization = None, None
+    if 'r2_entry_short_trial' in project or 'r2_entry_short_trial' in cp:
+        spec = importlib.util.spec_from_file_location('one_short_trial_state',
+            Path(__file__).with_name('verify_one_short_trial.py'))
+        successor_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(successor_module)
+        successor_authorization = successor_module.validate_authorization(root, project, cp)
     # A separate user authorization advances preparation only. It supplies no
     # prose budget and follows (rather than replaces) the completed review gate.
     if 'r2_reentry_fact_preparation' in project or 'r2_reentry_fact_preparation' in cp:
@@ -739,7 +746,10 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
             Path(__file__).with_name('verify_reentry_preparation.py'))
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        expected_action = module.reentry_preparation_action(root, project, cp, expected_action)
+        expected_action = module.reentry_preparation_action(root, project, cp, expected_action,
+            successor_authorization=successor_authorization)
+    if successor_module is not None:
+        expected_action = successor_module.one_short_trial_action(root, project, cp, expected_action)
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

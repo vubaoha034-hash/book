@@ -1,0 +1,118 @@
+{
+  "schema_version": "native-one-short-trial-result/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "source_head": "b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4",
+  "scope": "ONE_NEW_300_500_CHARACTER_SECOND_SCENE_ENTRY_SHORT_TRIAL_WITH_EXPLICIT_OPENING_PERMISSION",
+  "status": "ONE_SHORT_FROZEN_FACT_CLEAR_AWAIT_ACTUAL_HUMAN_READING",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_AUTHORIZATION_20261003.json",
+    "blob": "1c3da672bea55259d4ec22d58094b82e520a3a09",
+    "sha256": "05a4ee723d9cc48e1e1e47f966d282c94a026adf16d98c459ac085c7d187e223"
+  },
+  "manifest": {
+    "path": "config/novel-r2-entry-trial-20261003.json",
+    "blob": "062499935555fdb9f13d506786851241026a1b24",
+    "sha256": "7c6615ed9e0e5f57c5e4798f9c306e0efda0281ff11127fe07e4f5bf3c70876c"
+  },
+  "writer_input": {
+    "path": "delivery/r2-entry-trial-20261003/writer-input.json",
+    "blob": "afd0ed1526701f4b38cea5cec56483f2fcee2e20",
+    "sha256": "d14292ccc0b2a29d1d1b795974a8ffb1d6063fd0b5d19ae2048f167fd9a0e86a"
+  },
+  "artifact": {
+    "path": "delivery/r2-entry-trial-20261003/short-a1.md",
+    "blob": "6f9c1910d24fa25f128d6f99d4787adb1d168f89",
+    "sha256": "6ec604bffc4c60727e102dde328663273f648a0e0b2e6d27b0350833128085aa"
+  },
+  "writer_runtime": {
+    "path": "state/authoring/r2-entry-trial-20261003/writer.runtime.json",
+    "blob": "4c0011903b7228343350ab5be674d821005a7a8b",
+    "sha256": "5fd6e3a97c1d410b1fd3c5903114a7ed6c02a5c30d0fa0d2710ffd62e167bd38"
+  },
+  "facts_packet": {
+    "path": "delivery/r2-entry-trial-20261003/facts.packet.json",
+    "blob": "7b0dbe2a847c29a4f31a854823b141387692b85b",
+    "sha256": "fe386968cf04c395ac2bd03f4a9e7c30d056b7f727c730bc9bf9a9a1db5e442a"
+  },
+  "facts_runtime": {
+    "path": "state/reviews/r2-entry-trial-20261003/facts.runtime.json",
+    "blob": "836c90e72eeb8bf71859212f0841beb5b51f8877",
+    "sha256": "12e26d6b47822862ae1f5b6683a9e72a4dc33e09ff49f3167c80d89b3e0475dd"
+  },
+  "facts_raw_report": {
+    "path": "state/reviews/r2-entry-trial-20261003/facts.raw.txt",
+    "blob": "4ef46bd9415055ce7c9adacec68afbe6569c012b",
+    "sha256": "6adde614d8a9b138463db962a7c3d4f42ebe0cdc0de1bff2a6240678fbfb3a93"
+  },
+  "facts_evidence": {
+    "path": "state/reviews/r2-entry-trial-20261003/facts.evidence.json",
+    "blob": "c5f02243c3a0eff1f0082c27cfd152a45ab4d69e",
+    "sha256": "6c6d485f0de60c3e95396651c184954d8738aac6c4928f7fce0b0e5e2b5af006"
+  },
+  "coordinator_settlement": {
+    "path": "state/reviews/r2-entry-trial-20261003/coordinator-settlement.json",
+    "blob": "6630fa3cb754ea705d29bbc10ec597cb18041fac",
+    "sha256": "9e1a3a131096654cd64ad31e4a7b76c5b026413c25f5934278a0ec8067f3b14b"
+  },
+  "authorized_generation_budget": 1,
+  "generation_count": 1,
+  "remaining_new_generation_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_version_opening_reorganization_authorized": true,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "human_quality_result": "UNKNOWN",
+  "original_404_human_result": "UNKNOWN",
+  "old_448_human_emotion_retention": "FAIL",
+  "literary_quality_validated": false,
+  "automatic_retry": false,
+  "non_whitespace_characters": 395,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_R2_ENTRY_SHORT_A1",
+  "recorded_at": "2026-10-03T07:38:41.843813+00:00",
+  "source_checkpoint": 195,
+  "saved_checkpoint": 196,
+  "task_path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_20261003.json",
+  "writer_model_calls": 1,
+  "independent_fact_review_model_calls": 1,
+  "actual_model": "gpt-6.1-sol",
+  "actual_reasoning_effort": "max",
+  "writer_thread_id": "01a100a0-5e66-7982-8ff5-0161771a346c",
+  "fact_review_thread_id": "01a100a7-dd5a-74f3-a1bc-c0ef7526752d",
+  "fact_report_verdict": "FACT_CLEAR",
+  "coordinator_fact_disposition": "CLEAR_WITHIN_THIS_SHORT_SPAN",
+  "located_report_quote_count": 11,
+  "coordinator_text_fact_checks": 9,
+  "position_correction_count": 0,
+  "body_rewritten": false,
+  "report_rewritten": false,
+  "old_artifacts_and_locks_unchanged": true,
+  "new_life_fact_count": 0,
+  "quality_screen_retested": false,
+  "false_positive_rate": "UNKNOWN_NO_MATCHED_POSITIVE",
+  "human_feedback": {},
+  "human_exact_stop": "UNKNOWN",
+  "literary_effect_relative_to_old_short": "UNTESTED",
+  "timing": {
+    "writer_elapsed_seconds": 256.063,
+    "fact_review_elapsed_seconds": 353.414,
+    "model_total_elapsed_seconds": 609.477,
+    "old_browser_same_scope_end_to_end_seconds": "UNKNOWN",
+    "comparison_ratio": "UNKNOWN",
+    "excludes": "coordinator evidence settlement, engineering validation, publication and human reading"
+  },
+  "delivery_doc": {
+    "path": "docs/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_RESULT_20261003.md",
+    "blob": "aa356ad966fdaee7cfd0b28902288afd06d5a7d1",
+    "sha256": "be4f9bb40bb7b3f2b2d524fea11df022bc98cbd425543233631e94101429785d"
+  },
+  "execution_code": {
+    "path": "scripts/novel_one_short_trial.py",
+    "blob": "9a50fd5d7001160e9da7f7a3b7d4cc68853aedcd",
+    "sha256": "d6064ac19af99447f24bb1a2f12860ddf99d456b783a4b8739122ab06ba9b708"
+  },
+  "remaining_authorized_work": "actual human reading, not another generation",
+  "automatic_background_tasks": false,
+  "remote_save_status": "REQUIRES_SEPARATE_ACTUAL_REMOTE_READBACK_RECEIPT"
+}

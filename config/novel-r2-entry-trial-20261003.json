@@ -1,0 +1,35 @@
+{
+  "schema_version": "native-one-short-trial-run/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "source_head": "b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_AUTHORIZATION_20261003.json",
+    "blob": "1c3da672bea55259d4ec22d58094b82e520a3a09",
+    "sha256": "05a4ee723d9cc48e1e1e47f966d282c94a026adf16d98c459ac085c7d187e223"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "writer_input": {
+    "path": "delivery/r2-entry-trial-20261003/writer-input.json",
+    "blob": "afd0ed1526701f4b38cea5cec56483f2fcee2e20",
+    "sha256": "d14292ccc0b2a29d1d1b795974a8ffb1d6063fd0b5d19ae2048f167fd9a0e86a"
+  },
+  "prepared_context": {
+    "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+    "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+    "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+  },
+  "output_path": "delivery/r2-entry-trial-20261003/short-a1.md",
+  "writer_result_dir": "state/authoring/r2-entry-trial-20261003",
+  "fact_result_dir": "state/reviews/r2-entry-trial-20261003",
+  "max_writer_calls": 1,
+  "max_fact_review_calls": 1,
+  "new_generation_budget": 1,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "multiple_candidates_authorized": false,
+  "automatic_retry": false
+}

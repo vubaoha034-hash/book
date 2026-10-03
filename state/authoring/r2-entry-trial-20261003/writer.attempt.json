@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "role": "writer",
+  "started_at": "2026-10-03T07:17:50Z",
+  "packet": {
+    "path": "delivery/r2-entry-trial-20261003/writer-input.json",
+    "blob": "afd0ed1526701f4b38cea5cec56483f2fcee2e20",
+    "sha256": "d14292ccc0b2a29d1d1b795974a8ffb1d6063fd0b5d19ae2048f167fd9a0e86a"
+  },
+  "max_calls": 1
+}

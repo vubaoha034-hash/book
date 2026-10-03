@@ -34,7 +34,7 @@ def pointer(value, path):
     return value
 
 
-def reentry_preparation_action(root, project, checkpoint, historical_action):
+def reentry_preparation_action(root, project, checkpoint, historical_action, successor_authorization=None):
     route = project.get('r2_reentry_fact_preparation')
     if route is None and checkpoint.get('r2_reentry_fact_preparation') is None:
         return historical_action
@@ -136,13 +136,34 @@ def reentry_preparation_action(root, project, checkpoint, historical_action):
             proposal.get('old_197_character_protection_released') is not False or
             proposal.get('proposed_change', {}).get('new_life_fact_count') != 0):
         raise ValueError('REENTRY_NEXT_WRITER_NOT_AUTHORIZED')
-    for value in (project, checkpoint):
-        if (value.get('last_completed_task_id') != TASK or value.get('last_completed_task_contract') != route['task']['path'] or
-                value.get('next_action') != NEXT_ACTION or value.get('next_required_action') != NEXT_ACTION):
-            raise ValueError('REENTRY_LIVE_CURSOR_DRIFT')
-    if checkpoint.get('sequence') != 195 or checkpoint.get('stop') is not True:
-        raise ValueError('REENTRY_CHECKPOINT_OR_STOP_DRIFT')
+    if successor_authorization is None:
+        for value in (project, checkpoint):
+            if (value.get('last_completed_task_id') != TASK or value.get('last_completed_task_contract') != route['task']['path'] or
+                    value.get('next_action') != NEXT_ACTION or value.get('next_required_action') != NEXT_ACTION):
+                raise ValueError('REENTRY_LIVE_CURSOR_DRIFT')
+        if checkpoint.get('sequence') != 195 or checkpoint.get('stop') is not True:
+            raise ValueError('REENTRY_CHECKPOINT_OR_STOP_DRIFT')
+    else:
+        # Preserve every preparation check above. Only its live cursor moves,
+        # after a separate, bound user authorization for exactly one successor.
+        successor = bound(root, successor_authorization)
+        if (successor.get('task_id') != 'NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01' or
+                successor.get('source_head') != 'b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4' or
+                successor.get('source_checkpoint') != 195 or successor.get('parent_task_id') != TASK or
+                successor.get('authorized_proposal') != route['next_task_proposal'] or
+                successor.get('writer_context') != route['writer_context'] or
+                successor.get('authority', {}).get('source') != 'ACTUAL_USER_INSTRUCTION' or
+                successor.get('authority', {}).get('exact_user_instruction') != '不用问，你直接完成就是。我们不要停下来。' or
+                successor.get('authorized_generation_budget') != 1 or
+                successor.get('new_version_opening_reorganization_authorized') is not True or
+                successor.get('old_197_character_protection_released') is not False or
+                successor.get('old_RC3_remaining_rounds') != 0 or
+                successor.get('new_life_facts_authorized') is not False or
+                successor.get('full_v5_authorized') is not False or
+                successor.get('multiple_candidates_authorized') is not False):
+            raise ValueError('REENTRY_SUCCESSOR_AUTHORIZATION_UNBOUND')
     entry_text = (root / 'START_HERE.md').read_text(encoding='utf-8')
-    if TASK not in entry_text or NEXT_ACTION not in entry_text or '当前位置：检查点195。' not in entry_text:
+    expected_stamp = '当前位置：检查点195。' if successor_authorization is None else '检查点195：'
+    if TASK not in entry_text or NEXT_ACTION not in entry_text or expected_stamp not in entry_text:
         raise ValueError('REENTRY_ENTRYPOINT_STALE')
     return NEXT_ACTION

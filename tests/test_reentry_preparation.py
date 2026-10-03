@@ -21,8 +21,18 @@ class ReentryPreparationTests(unittest.TestCase):
         self.project = json.loads((REPO / 'state/project_state.json').read_text(encoding='utf-8'))
         self.checkpoint = json.loads((REPO / 'state/continuity/LATEST_CHECKPOINT.json').read_text(encoding='utf-8'))
         self.route = self.project['r2_reentry_fact_preparation']
+        # Exercise the frozen checkpoint195 preparation independently of its
+        # separately authorized successor, which has its own corruption tests.
+        for value in (self.project, self.checkpoint):
+            value.pop('r2_entry_short_trial', None)
+            value.update(last_completed_task_id=gate.TASK,
+                last_completed_task_contract=self.route['task']['path'],
+                next_action=gate.NEXT_ACTION, next_required_action=gate.NEXT_ACTION)
+        self.checkpoint.update(sequence=195, stop=True)
         self.seen = set()
         self.copy('START_HERE.md')
+        entry = (self.root / 'START_HERE.md').read_text(encoding='utf-8')
+        (self.root / 'START_HERE.md').write_text('当前位置：检查点195。\n' + entry, encoding='utf-8')
         self.copy_refs(self.route)
 
     def copy(self, relative):

@@ -1,0 +1,46 @@
+{
+  "schema_version": "native-scoped-user-authorization/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
+  "recorded_at": "2026-10-03T07:13:37+00:00",
+  "source_head": "b1d1bbc16ea8b37f3886e9aa932ecfea3287d3e4",
+  "source_checkpoint": 195,
+  "scope": "ONE_NEW_300_500_CHARACTER_SECOND_SCENE_ENTRY_SHORT_TRIAL_WITH_EXPLICIT_OPENING_PERMISSION",
+  "authority": {
+    "authorizer": "刘先生",
+    "source": "ACTUAL_USER_INSTRUCTION",
+    "exact_user_instruction": "不用问，你直接完成就是。我们不要停下来。",
+    "conversation_locator": "CURRENT_THREAD_USER_MESSAGE_NO_STABLE_URL",
+    "interpretation": "直接批准上一条已具体列明的新单份300至500字短段、独立写作、新版本开头范围和一次新预算，并要求连续完成核对、交付及远端保存；不再重复请求例行确认。"
+  },
+  "authorized_proposal": {
+    "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
+    "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
+    "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39"
+  },
+  "parent_task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "writer_context": {
+    "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+    "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+    "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+  },
+  "authorized_generation_budget": 1,
+  "new_version_opening_reorganization_authorized": true,
+  "old_prefix_positions_may_change_in_new_version": 197,
+  "old_artifacts_and_locks_must_remain_byte_identical": true,
+  "old_197_character_protection_released": false,
+  "old_RC3_remaining_rounds": 0,
+  "new_life_facts_authorized": false,
+  "full_v5_authorized": false,
+  "multiple_candidates_authorized": false,
+  "automatic_background_tasks_authorized": false,
+  "authorized_followthrough": [
+    "冻结唯一原始短段",
+    "独立事实审查并逐条核对",
+    "提供原文供实际真人阅读；未知不记通过",
+    "同步原生任务、状态、检查点、回执、测试并提交main后实际回读"
+  ],
+  "same_context_clean_writer_allowed": false,
+  "reviewer_or_writer_repository_write_permission": false,
+  "human_quality_verdict_supplied_by_authorization": false
+}
