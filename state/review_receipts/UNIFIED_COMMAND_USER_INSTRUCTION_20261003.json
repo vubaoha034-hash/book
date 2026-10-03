@@ -79,7 +79,24 @@
   "runtime_rollout": {
     "preference_instruction_persisted_when_commit_and_readback_succeed": true,
     "all_five_live_model_switches_verified": false,
-    "automatic_platform_enforcement": false
+    "automatic_platform_enforcement": false,
+    "observed_selector_settings": [
+      {
+        "observed_at": "2026-10-03T00:05:39.148Z",
+        "conversation_url": "https://chatgpt.com/g/g-p-6a14da954ad08191bcee9e0d46bef765-xiao-shuo/c/6abe64da-5fe8-83ea-9e1d-c77cb949d6f0",
+        "existing_surface": "WORK",
+        "surface_changed": false,
+        "model_before": "GPT-6.1 Sol",
+        "effort_before": "高",
+        "model_after": "GPT-6.1 Sol",
+        "effort_after": "Max",
+        "evidence": "实际模型菜单选中 GPT-6.1 Sol；调整后菜单文字 GPT-6.1 Sol / Max，收起后选择器仍读回 GPT-6.1 Sol / Max。",
+        "composer_empty": true,
+        "new_message_sent": false,
+        "execution_with_selected_model_verified": false,
+        "coverage": "ONE_EXISTING_NOVEL_COMPOSER_ONLY_NOT_ALL_FIVE_PROJECTS"
+      }
+    ]
   },
   "entrypoint": "START_HERE.md",
   "settlement": "USER_INSTRUCTION_RECORDED_WITH_EXISTING_NATIVE_TASK_AND_NEXT_ACTION_PRESERVED"
