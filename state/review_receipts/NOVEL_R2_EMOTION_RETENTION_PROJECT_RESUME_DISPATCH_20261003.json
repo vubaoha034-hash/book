@@ -11,7 +11,7 @@
     "path": "state/tasks/NOVEL_R2_EMOTION_RETENTION_DIAGNOSIS_PREP_20261002.json",
     "blob": "3ff59cf6fadd4042f96788bbeac00dfe694ae110"
   },
-  "dispatch_message_sha256": "0f4ebfaef544ae988a48d915bbd4831007fc9b4b629bed92085b732141046f1b",
+  "dispatch_message_sha256": "6e6fb8ac809fdb4df918cc6fba2d157ac4609a0764f8ad7280e28c9a55f5f37a",
   "complete_message_storage": "PRIVATE_COORDINATOR_WORKSPACE",
   "opening_status": "PREPARED_PROJECT_EXECUTOR_DISPATCH_NOT_SENT_YET",
   "send_click_count": 0,
@@ -58,5 +58,13 @@
   "prose_generated": 0,
   "old_RC3_remaining_rounds": 0,
   "mainline_changed": false,
-  "next_action": "SEND_ONE_COMPLETE_PROJECT_CONTINUATION_MESSAGE_AND_VERIFY_ACTUAL_START"
+  "next_action": "SEND_ONE_COMPLETE_PROJECT_CONTINUATION_MESSAGE_AND_VERIFY_ACTUAL_START",
+  "draft_integrity": {
+    "status": "EXACT_COMPLETE_MESSAGE_AFTER_UNSENT_TERMINAL_NEWLINE_RECONCILIATION",
+    "ui_fill_count": 1,
+    "send_click_count": 0,
+    "original_authored_message_sha256": "0f4ebfaef544ae988a48d915bbd4831007fc9b4b629bed92085b732141046f1b",
+    "transport_difference": "FILL_OMITTED_ONE_FINAL_NEWLINE_ONLY_ALL_OTHER_BYTES_IDENTICAL",
+    "reconciled_before_send": true
+  }
 }
