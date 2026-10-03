@@ -1,0 +1,53 @@
+{
+  "schema_version": "native-scoped-user-authorization/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "recorded_at": "2026-10-03T04:46:21+00:00",
+  "source_head": "fcc71ed5425a9479bde55db6d560114fa4c793a0",
+  "source_checkpoint": 194,
+  "authority": {
+    "authorizer": "刘先生",
+    "source": "ACTUAL_USER_INSTRUCTION",
+    "exact_user_instruction": "授权。",
+    "conversation_locator": "CURRENT_THREAD_USER_MESSAGE_NO_STABLE_URL",
+    "interpretation": "该回复批准上一轮唯一下一步的进入时刻及最小事实准备提案；不推定批准正文写作或修改旧保护。"
+  },
+  "authorized_proposal": {
+    "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+    "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+    "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a"
+  },
+  "parent_task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "authorized_scope": "ONE_SECOND_SCENE_REENTRY_AND_MINIMAL_FACT_PREPARATION_ONLY",
+  "authorized_deliverables": [
+    "核对现有前场版本及其接受范围",
+    "选择一个第二场进入时刻和一个既有主要私人利害",
+    "冻结事实准备包、知识边界、必要缺口和下一写作授权范围",
+    "同步原生任务、状态、检查点并保存至远端main后回读"
+  ],
+  "new_prose_authorized": false,
+  "generation_budget": 0,
+  "generation_count": 0,
+  "new_life_facts_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "old_proposal_rewritten": false,
+  "automatic_activation_of_writer": false,
+  "automatic_background_task": false,
+  "target": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "locked_method": {
+    "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
+    "blob": "16aa7810988f4dabe91fb6c448c9085acc3d204a",
+    "sha256": "aa0d52a988ff5140d3cce7edccdc64262ab9acb7d0d8007a77fddc8e3ef7698e"
+  },
+  "current_human_failure": {
+    "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+    "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+    "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+  }
+}

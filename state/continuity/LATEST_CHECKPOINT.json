@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 194,
-  "recorded_at": "2026-10-03T03:45:36Z",
+  "sequence": 195,
+  "recorded_at": "2026-10-03T04:58:59+00:00",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "本轮Codex独立评审接入、有限盲校准、事实核对与448字已知失败后的编辑诊断完成。校准漏检2/2、留出验证漏检1/1，不能认证好看；真人FAIL保留、原404字UNKNOWN。唯一下一步等待一个新的进入时刻与最小事实准备任务授权，不写新正文、不恢复旧额度或解除旧197字保护。",
+  "current_focus": "已按刘先生“授权。”完成唯一第二场进入时刻及最小事实准备：核对12处前场/冻结事实/目标稿证据，选择当面称名且仍朝向大厅的入口，主私人利害只用多年首付与原本今晚入住。未新增生活事实或正文、未复测效果。等待新单份300至500字短段及新版本开头范围的一次写作预算授权；旧两轮剩余0、旧197字保护、真人FAIL及方法4保留。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -497,7 +497,8 @@
     "Delivered one bounded timing-fact recheck to the same fresh quality reviewer, actual Opera Neon attached and extreme-high chat verified; full body sent once, empty composer verified; no prose changes, no polling",
     "Settled forwarded timing-fact recheck once without repeated review or automatic-send bypass; corrected Xu departure deadline and maintained external PASS, marked internal deliverability only, human UNKNOWN; unchanged 448-character excerpt ready for final user reading",
     "Bound actual user emotion/first-screen rejection to frozen R2 448-character output; superseded internal delivery while preserving AI reports and RC3 evidence; prepared new diagnostic task, zero dispatches because Opera Neon returned Session terminated twice",
-    "2026-10-03: new Codex integration task completed four fresh Sol/Max review sessions, frozen reports, 44 exact quote occurrence checks and bounded diagnosis; zero prose, no old browser retry/callback."
+    "2026-10-03: new Codex integration task completed four fresh Sol/Max review sessions, frozen reports, 44 exact quote occurrence checks and bounded diagnosis; zero prose, no old browser retry/callback.",
+    "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01: one entry and one existing principal stake prepared; 12 quotes located; zero new life facts and zero prose; checkpoint195."
   ],
   "incomplete": [
     "AI-smell repair method remains UNPROVEN",
@@ -538,7 +539,7 @@
     "NOVEL-IMPROVEMENT-MAINLINE-V1: 方法4唯一404字短段已冻结待阅读；整场及TEST-02未开始，文学质量未验证。",
     "HISTORICAL_BROWSER_DIAGNOSIS_NOT_RUN_NO_CALLBACK_NO_RETRY; NEW_CODEX_TASK_COMPLETED_SEPARATELY",
     "Three post-failure editor hypotheses remain causally unvalidated; no new prose exists.",
-    "One bounded R2 reentry/fact preparation proposal exists but is NOT_AUTHORIZED."
+    "One new 300-500-character entry short trial and its opening scope remain NOT_AUTHORIZED; preparation effectiveness has not been tested."
   ],
   "blocked": [
     "AI_SMELL_REPAIR_METHOD_UNPROVEN",
@@ -747,9 +748,10 @@
     "Treat Phase404 output-contract CLEAR as reader-drive or literary-quality validation",
     "Create Phase405 without separate explicit authorization",
     "原样重投 Phase430 冻结正文",
-    "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线"
+    "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
+    "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
+  "next_required_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1791,17 +1793,47 @@
       "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
       "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
       "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a",
-      "role": "唯一后续提案，尚未授权"
+      "role": "检查点194准备提案原件，当时未授权；检查点195另存新授权与执行任务，不覆盖该提案。"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_AUTHORIZATION_20261003.json",
+      "blob": "956937bb31700e7544dc5f1ad26234a9659b0d0d",
+      "sha256": "998eb8f599b05c0cbe6fa40e79e9b3b9b5e1f704cd935f63b394b899452fe75e",
+      "role": "刘先生本轮授权只绑定一个事实/入口准备任务"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_20261003.json",
+      "blob": "f1c822a9e0893adda60d95c111e2a017b8e6ce9a",
+      "sha256": "c7d845e745db84c5d1cd85db8cde4e612e28895decacb7985a9f0ef659fab3a2",
+      "role": "本次事实/入口准备已完成任务"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.json",
+      "blob": "7e2993f2757fcbdc0c801acfbc177ace3827ee6c",
+      "sha256": "e5affca6ce1d073073a55ec3bcc33ac0d3c08b225a9b1f5a5a92007b4e6f8e5d",
+      "role": "已完成准备、证据与准确授权边界"
+    },
+    {
+      "path": "docs/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.md",
+      "blob": "934667ef39d9797249bcd9614b021b5d1b1e2b1d",
+      "sha256": "b24fcf486397ee9fa22ce10cb810e794dc7fca716046fe3c5f38db902d5d4d3f",
+      "role": "唯一入口、既有私人利害与前场范围"
+    },
+    {
+      "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
+      "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
+      "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39",
+      "role": "唯一下一新短段提案，尚未授权"
     }
   ],
-  "status": "CODEX_REVIEW_AND_R2_DIAGNOSIS_COMPLETE_HUMAN_FAIL_AWAIT_BOUNDED_PREPARATION_AUTHORIZATION",
+  "status": "R2_REENTRY_FACT_PREPARATION_COMPLETE_AWAIT_SINGLE_NEW_SHORT_TRIAL_OPENING_AUTHORIZATION",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "last_completed_task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "668182e6e98d8d0a2cabf456878548ee3717ed771f703abe2ec55c3af4d26a67",
+    "project_state_sha256": "f775a197de409e95314c50c4ba82f0d17cc9949b5b05e139d9d0c984bfe3c6a9",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1852,14 +1884,15 @@
       "PHASE428-RJ-OE408-I-SP414-S02-HUMAN-SPEECH-RELATIONAL-PRESENCE-REPAIR-01",
       "PHASE429-RJ-OE408-I-SP414-S02-EVENT-LEVEL-HUMAN-STAKES-REDESIGN-01",
       "PHASE430-RJ-OE408-I-SP414-S02-CLEAN-WRITER-RENDER-01",
-      "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01"
+      "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+      "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_20261003.json",
-  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE",
+  "last_completed_task_contract": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_20261003.json",
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
   "human_verdict_receipt": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
   "current_human_gate": "CURRENT_R2_HUMAN_FAIL_ORIGINAL_METHOD4_HUMAN_UNKNOWN",
   "phase422_state": {
@@ -3031,5 +3064,56 @@
     "full_v5_authorized": false,
     "automatic_background_sync": false
   },
-  "legacy_ledger_facet": "SOURCE_HEAD_REFERENCED_LEDGER_FILE_UNAVAILABLE; LEGACY_COUNT_AND_HASH_NOT_REVERIFIED_OR_RECONSTRUCTED"
+  "legacy_ledger_facet": "SOURCE_HEAD_REFERENCED_LEDGER_FILE_UNAVAILABLE; LEGACY_COUNT_AND_HASH_NOT_REVERIFIED_OR_RECONSTRUCTED",
+  "r2_reentry_fact_preparation": {
+    "schema_version": "native-r2-reentry-preparation-state/v1",
+    "task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+    "source_head": "fcc71ed5425a9479bde55db6d560114fa4c793a0",
+    "status": "COMPLETE_PREPARATION_NO_PROSE",
+    "scope": "ONE_SECOND_SCENE_REENTRY_AND_MINIMAL_FACT_PREPARATION_ONLY",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_AUTHORIZATION_20261003.json",
+      "blob": "956937bb31700e7544dc5f1ad26234a9659b0d0d",
+      "sha256": "998eb8f599b05c0cbe6fa40e79e9b3b9b5e1f704cd935f63b394b899452fe75e"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_20261003.json",
+      "blob": "f1c822a9e0893adda60d95c111e2a017b8e6ce9a",
+      "sha256": "c7d845e745db84c5d1cd85db8cde4e612e28895decacb7985a9f0ef659fab3a2"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.json",
+      "blob": "7e2993f2757fcbdc0c801acfbc177ace3827ee6c",
+      "sha256": "e5affca6ce1d073073a55ec3bcc33ac0d3c08b225a9b1f5a5a92007b4e6f8e5d"
+    },
+    "evidence": {
+      "path": "delivery/r2-reentry-facts-20261003/preparation-evidence.json",
+      "blob": "200193a704416d0da1996312d5a00de0f96434de",
+      "sha256": "52ea386deb58395c14af91a5d043942b845ef573224c88acbb5612af998097ff"
+    },
+    "writer_context": {
+      "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+      "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+      "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+    },
+    "next_task_proposal": {
+      "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
+      "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
+      "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39"
+    },
+    "new_prose_authorized": false,
+    "generation_budget": 0,
+    "generation_count": 0,
+    "new_life_facts_authorized": false,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_v5_authorized": false,
+    "human_emotion_retention": "FAIL",
+    "original_404_human_result": "UNKNOWN",
+    "literary_effect_retested": false,
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
+    "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
+  }
 }

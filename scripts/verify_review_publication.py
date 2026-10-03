@@ -10,6 +10,23 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 RECEIPT = 'state/review_receipts/NOVEL_CODEX_REVIEW_INTEGRATION_AND_R2_DIAGNOSIS_RESULT_20261003.json'
 SOURCE = '122739a8c6f0ffa47ee77726865c06f8cb2c566a'
+PREPARATION_SOURCE = 'fcc71ed5425a9479bde55db6d560114fa4c793a0'
+PREPARATION_NEW_FILES = (
+    'delivery/r2-reentry-facts-20261003/writer-context.json',
+    'delivery/r2-reentry-facts-20261003/preparation-evidence.json',
+    'docs/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.md',
+    'scripts/verify_reentry_preparation.py', 'tests/test_reentry_preparation.py',
+    'state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_20261003.json',
+    'state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json',
+    'state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_AUTHORIZATION_20261003.json',
+    'state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.json',
+    'state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_VALIDATION_20261003.json',
+    'state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_REMOTE_SAVE_VERIFIED_20261003.json')
+PREPARATION_MUTABLE_FILES = (
+    'START_HERE.md', 'README.md', 'AGENTS.md', 'SKILL.md',
+    'scripts/verify_current_state.py', 'scripts/verify_review_publication.py',
+    'tests/test_current_state.py', 'state/project_state.json',
+    'state/continuity/LATEST_CHECKPOINT.json')
 
 
 def git(*args):
@@ -96,12 +113,86 @@ def verify(expected):
             'protected_originals_unchanged': list(protected), 'model_calls': 0, 'generation_count': 0}
 
 
+def verify_preparation(expected):
+    """Check the new scope; older readback receipts remain frozen snapshots."""
+    remote = git('ls-remote', 'origin', 'refs/heads/main').decode().split()[0]
+    if remote != expected:
+        raise ValueError('REMOTE_MAIN_CHANGED_RECONCILE_BEFORE_WRITING')
+    git('fetch', 'origin', 'main')
+    if git('rev-parse', 'origin/main').decode().strip() != remote:
+        raise ValueError('REMOTE_CHANGED_DURING_READBACK')
+    archive = zipfile.ZipFile(io.BytesIO(git('archive', '--format=zip', remote)))
+    base = zipfile.ZipFile(io.BytesIO(git('archive', '--format=zip', PREPARATION_SOURCE)))
+    old_files = {p for p in base.namelist() if not p.endswith('/')}
+    new_files = {p for p in archive.namelist() if not p.endswith('/')}
+    allowed_mutations = set(PREPARATION_MUTABLE_FILES)
+    if new_files - old_files - set(PREPARATION_NEW_FILES) or old_files - new_files:
+        raise ValueError('PREPARATION_UNEXPECTED_REMOTE_ADDITION_OR_DELETION')
+    protected = old_files - allowed_mutations
+    for path in protected:
+        if archive.read(path) != base.read(path):
+            raise ValueError('PREPARATION_HISTORICAL_BYTES_CHANGED: ' + path)
+    seen, checked = set(), []
+
+    def inspect(path, reference=None):
+        resolved = (ROOT / path).resolve()
+        if not resolved.is_relative_to(ROOT.resolve()):
+            raise ValueError('REMOTE_REFERENCE_OUTSIDE_REPOSITORY')
+        data = archive.read(path)
+        if data != resolved.read_bytes():
+            raise ValueError('REMOTE_LOCAL_BYTES_DIFFER: ' + path)
+        digest = hashlib.sha256(data).hexdigest()
+        if reference and (reference.get('blob') != blob(data) or reference.get('sha256') != digest):
+            raise ValueError('REMOTE_REFERENCE_IDENTITY_DRIFT: ' + path)
+        if path in seen:
+            return
+        seen.add(path)
+        checked.append({'path': path, 'blob': blob(data), 'sha256': digest})
+        if path in PREPARATION_NEW_FILES and path.endswith('.json'):
+            walk(json.loads(data))
+
+    def walk(value):
+        if isinstance(value, dict):
+            if all(k in value for k in ('path', 'blob', 'sha256')):
+                inspect(value['path'], value)
+            for child in value.values():
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    project = json.loads(archive.read('state/project_state.json'))
+    checkpoint = json.loads(archive.read('state/continuity/LATEST_CHECKPOINT.json'))
+    route = project.get('r2_reentry_fact_preparation')
+    if (not route or route != checkpoint.get('r2_reentry_fact_preparation') or
+            checkpoint.get('sequence') != 195 or checkpoint.get('stop') is not True or
+            checkpoint.get('action_guard', {}).get('project_state_sha256') !=
+            hashlib.sha256(archive.read('state/project_state.json')).hexdigest()):
+        raise ValueError('REMOTE_PREPARATION_STATE_OR_CHECKPOINT_DRIFT')
+    walk(route)
+    for path in (*PREPARATION_MUTABLE_FILES, *PREPARATION_NEW_FILES):
+        if path == PREPARATION_NEW_FILES[-1] and path not in new_files:
+            continue  # The readback receipt is saved after implementation proof.
+        inspect(path)
+    validation = json.loads(archive.read(PREPARATION_NEW_FILES[-2]))
+    if validation.get('status') != 'SCOPED_PREPARATION_VALIDATION_PASSED_NO_PROSE':
+        raise ValueError('REMOTE_PREPARATION_VALIDATION_NOT_COMPLETED')
+    if git('ls-remote', 'origin', 'refs/heads/main').decode().split()[0] != remote:
+        raise ValueError('REMOTE_ADVANCED_DURING_VERIFICATION')
+    return {'status': 'REMOTE_PREPARATION_BYTES_AND_HISTORY_VERIFIED', 'remote_head': remote,
+            'source_head': PREPARATION_SOURCE, 'checkpoint': 195, 'checked_count': len(checked),
+            'files': checked, 'protected_source_file_count': len(protected),
+            'all_prior_prose_and_raw_reports_unchanged': True, 'model_calls': 0, 'generation_count': 0}
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--expected-head', required=True)
+    parser.add_argument('--preparation', action='store_true', help='Verify checkpoint195 preparation and preserve all checkpoint194 history')
     args = parser.parse_args()
     try:
-        print(json.dumps(verify(args.expected_head), ensure_ascii=False, indent=2))
+        result = verify_preparation(args.expected_head) if args.preparation else verify(args.expected_head)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
     except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as exc:
         print(json.dumps({'status': 'REMOTE_READBACK_NOT_CONFIRMED', 'error': str(exc)}, ensure_ascii=False))
         raise SystemExit(1)

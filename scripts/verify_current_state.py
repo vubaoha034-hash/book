@@ -732,6 +732,14 @@ def verify_mainline(root: Path, project: dict, cp: dict) -> dict:
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         expected_action = module.codex_review_action(root, project, cp, expected_action)
+    # A separate user authorization advances preparation only. It supplies no
+    # prose budget and follows (rather than replaces) the completed review gate.
+    if 'r2_reentry_fact_preparation' in project or 'r2_reentry_fact_preparation' in cp:
+        spec = importlib.util.spec_from_file_location('reentry_preparation_state',
+            Path(__file__).with_name('verify_reentry_preparation.py'))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        expected_action = module.reentry_preparation_action(root, project, cp, expected_action)
     if project.get('next_action') != expected_action:
         raise ValueError('STALE_MAINLINE_NEXT_ACTION')
     if index >= 3 and outcomes.get('TEST_01') != 'PASS':

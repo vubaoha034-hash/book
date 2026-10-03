@@ -1,0 +1,58 @@
+{
+  "schema_version": "native-bounded-task-proposal/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-PROPOSED-20261003-01",
+  "parent_task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "created_at": "2026-10-03T04:49:20+00:00",
+  "status": "PROPOSED_NOT_AUTHORIZED",
+  "scope": "ONE_NEW_300_500_CHARACTER_SECOND_SCENE_ENTRY_SHORT_TRIAL_WITH_EXPLICIT_OPENING_PERMISSION",
+  "writer_context": {
+    "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+    "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+    "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+  },
+  "preparation_evidence": {
+    "path": "delivery/r2-reentry-facts-20261003/preparation-evidence.json",
+    "blob": "200193a704416d0da1996312d5a00de0f96434de",
+    "sha256": "52ea386deb58395c14af91a5d043942b845ef573224c88acbb5612af998097ff"
+  },
+  "concrete_authorization_to_request": "授权以冻结事实投影为唯一故事输入，在全新独立写作上下文生成一份300至500字第二场起始短段；允许这个新版本改动原前197字位置的进入句及组织，新写作预算仅一次。旧稿、旧锁原样保留，不补新生活事实、不续用RC3额度。",
+  "proposed_generation_budget": 1,
+  "authorized_generation_budget": 0,
+  "generation_count": 0,
+  "proposed_change": {
+    "entry_count": 1,
+    "private_stake_count": 1,
+    "new_artifact_required": true,
+    "opening_scope": "新短段从已选当面称名时刻进入，原第1至11行所在前197字符可在新版本重新组织；不修改旧正文文件或旧锁。",
+    "whole_short_span_scope": "唯一新300至500字起始短段，最多到开始独立公开渠道查证；不补完整场景，不写下一场。",
+    "fixed_story_method": "主线V1方法4、七项事实、原结局及真人标准不改；只测试该有界进入选择。",
+    "new_life_fact_count": 0
+  },
+  "execution_if_separately_authorized": {
+    "writer_fresh_context_required": true,
+    "writer_allowed_material": "writer_context的正文事实对象及新授权的输出范围；不得读取本提案、准备解释、失败稿、真人标签、诊断或旧指令。",
+    "coordinator_only_state_writer": true,
+    "preferred_model": "gpt-6.1-sol",
+    "preferred_reasoning_effort": "max",
+    "actual_setting_verification_required": true,
+    "no_same_context_clean_writer_claim": true,
+    "freeze_one_raw_output_before_review": true,
+    "no_pre_human_rewrite": true
+  },
+  "recheck_conditions": [
+    "核对世界、时间、视角、金额、独立证据和短段终点；未决事实冲突阻止交付。",
+    "先冻结正文及身份，再记录真人愿不愿意继续和人物互动是否累；未阅读保持UNKNOWN。",
+    "30至60字、150至300字和段尾只能按实际文本解释；真人具体停止句只按实际反馈记录。",
+    "AI冷读已漏检，不能认证好看或推翻真人否决；一次短段通过不证明方法因果有效、整场通过或迁移。"
+  ],
+  "new_prose_authorized": false,
+  "new_life_facts_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "automatic_activation": false,
+  "stop_after_single_output_freeze_and_fact_check_for_human_read": true,
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
+  "multiple_candidates_allowed": false
+}

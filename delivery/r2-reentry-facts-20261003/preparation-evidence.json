@@ -1,0 +1,381 @@
+{
+  "schema_version": "native-scene-preparation-evidence/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "source_head": "fcc71ed5425a9479bde55db6d560114fa4c793a0",
+  "source_checkpoint": 194,
+  "scope": "ONE_SECOND_SCENE_REENTRY_AND_MINIMAL_FACT_PREPARATION_ONLY",
+  "label": "COORDINATOR_PREPARATION_AFTER_KNOWN_FAILURE_NOT_BLIND_OR_INDEPENDENT_REVIEW",
+  "sources": {
+    "story_contract": {
+      "path": "delivery/phase409/00-story-contract.md",
+      "blob": "3309013ab0c3c2f21e74434d067de5906f9a8256",
+      "sha256": "2b41211b4304db5e02de8df7859636a5d16ed464450293ce0e142fd90023ecf3"
+    },
+    "mainline_contract": {
+      "path": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
+      "blob": "16aa7810988f4dabe91fb6c448c9085acc3d204a",
+      "sha256": "aa0d52a988ff5140d3cce7edccdc64262ab9acb7d0d8007a77fddc8e3ef7698e"
+    },
+    "mainline_lock": {
+      "path": "state/review_receipts/NOVEL_MAINLINE_V4_LOCK_20261001.json",
+      "blob": "207009866a109415c13aac154f6f153a65d6c55d",
+      "sha256": "8a685fdd0527bdd1051e0fafd437c9073059c4cb6678253b1675a48ce205afd5"
+    },
+    "scene_facts": {
+      "path": "delivery/mainline-v1/test-01-scene-facts.json",
+      "blob": "09b34c51b226ebf00a6d54c776127fa9e4de6ad0",
+      "sha256": "60a303c39320ae36105f48f59176f04902196df7dfe7db6b728bb5b435beae3a"
+    },
+    "frozen_writer_input": {
+      "path": "delivery/mainline-v4/test-01-short-writer-input.md",
+      "blob": "9e7c22081fdaee106b0ca52f88e460a06ec17526",
+      "sha256": "d8570bcc5ef6ea3f60e97b20bdb7b6d899a8c51838ee2608fb8f80104b79f845"
+    },
+    "historical_v3": {
+      "path": "delivery/phase421/final.md",
+      "blob": "c5ea838495d3eddfe79c6b894a461f9c7c99e4bb",
+      "sha256": "abc225414c5f199a8e296d57d5f06afcfde59d36021695e51cb0afbb70089046"
+    },
+    "historical_v3_receipt": {
+      "path": "state/review_receipts/PHASE421_RJ_OE408_I_FINAL_REVIEW_AND_DELIVERY_V1.json",
+      "blob": "fc7455bcb397e807ddaf768bd60d98cf70dda62a",
+      "sha256": "ae0ff997139108561b87ebf3eabb46077c0bc836bbe191d09df1ea1e9d971839"
+    },
+    "historical_v4": {
+      "path": "delivery/phase422/06-draft-v4.md",
+      "blob": "3545055732b5b4481544511ebb71a9c1b6003ec3",
+      "sha256": "3e7a2e08e4a2de92358561a77bfff5c3e90b9738ab66d826215e65cc60f34b55"
+    },
+    "historical_v4_receipt": {
+      "path": "state/review_receipts/PHASE422_RJ_OE408_I_FULL_MANUSCRIPT_PROSE_REAUTHORING_V4_V1.json",
+      "blob": "a605fd25adb97b361fb833be8d3866bb69e2fcad",
+      "sha256": "fb8304cca07921a57a0911e2290ac3a5302001056f3dc9ccc5ac6004c3b4542c"
+    },
+    "historical_opening_trial": {
+      "path": "delivery/phase422/07-opening-scene-trial-after-v4.md",
+      "blob": "d0591031e85b790d04e9b6c84eadb59ac995b31f",
+      "sha256": "f33fdb072ad8b0168aa470432675d6f8b6f5bd65183980656669c90a6da8fa5f"
+    },
+    "target": {
+      "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+      "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+      "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+    },
+    "original_404": {
+      "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683",
+      "sha256": "1bd435801f5c6c81698630ccd179eef7efc4caa3f215312d496f55110e4c7f9b"
+    },
+    "current_human_failure": {
+      "path": "state/review_receipts/NOVEL_RC3_R2_HUMAN_RETENTION_FAIL_20261002.json",
+      "blob": "b3e1c1cdd052e7e4f576a8c1132e09ae7a0ab568",
+      "sha256": "63af33bc15ea76c55c1a0dfd538de30465a4263736e2a5ec6eaac217bb545d46"
+    }
+  },
+  "writer_context": {
+    "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+    "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+    "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+  },
+  "located_evidence": [
+    {
+      "evidence_id": "E01",
+      "source_id": "historical_v3",
+      "line_start": 13,
+      "line_end": 13,
+      "quote": "罗钧身后有人拖着行李箱，轮子一下一下撞在地砖缝上。大厅里冷气开得过头，他把手里的文件袋换到另一只手。里面是购房合同、付款凭证、贷款结清证明，还有他这几年攒下来的所有能证明“这套房今天应该属于我”的东西。",
+      "use_scope": "HISTORICAL_PROSE_NOT_CURRENT_ACCEPTED_FRONT",
+      "coordinator_interpretation": "多年准备、购房材料与今天应属于自己的房子已有正文依据；不证明文学效果。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E02",
+      "source_id": "historical_v3",
+      "line_start": 81,
+      "line_end": 81,
+      "quote": "下午去拿钥匙，晚上第一次睡进真正属于自己的房子。客厅没买沙发，次卧还空着，他已经在购物车里放了一张一米五的床，等过户完成再下单。",
+      "use_scope": "HISTORICAL_PROSE_NOT_CURRENT_ACCEPTED_FRONT",
+      "coordinator_interpretation": "已写晚上第一次住进自己的房子；床及家具细节不纳入本包。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E03",
+      "source_id": "historical_v4",
+      "line_start": 13,
+      "line_end": 13,
+      "quote": "后面有人拖着行李箱，轮子卡在地砖缝里，咯噔、咯噔。罗钧往旁边让了半步，文件袋还夹在胳膊下。购房合同、付款凭证、贷款结清证明都在里面。他原本打算办完手续就去拿钥匙。",
+      "use_scope": "HISTORICAL_REJECTED_PROSE_ONLY",
+      "coordinator_interpretation": "旧V4已写办完手续取钥匙。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E04",
+      "source_id": "historical_v4",
+      "line_start": 65,
+      "line_end": 65,
+      "quote": "他本来只给这件事留了一个上午。下午拿钥匙，晚上搬个行李箱过去。客厅连沙发都还没有，次卧那张一米五的床躺在购物车里，他一直忍着没付款，想等房本手续走完。",
+      "use_scope": "HISTORICAL_REJECTED_PROSE_ONLY",
+      "coordinator_interpretation": "旧V4已写晚上搬过去；未呈现全部多年首付不能推出其他版本也缺失。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E05",
+      "source_id": "historical_opening_trial",
+      "line_start": 17,
+      "line_end": 17,
+      "quote": "罗钧松开手。他原本下午要去取钥匙，搬家的车已经约好；司机刚发来消息问能不能提前半小时。罗钧回了句“等我电话”，没发出去，又删掉。",
+      "use_scope": "EXCLUDED_DETAILS_NOT_NEW_CANON",
+      "coordinator_interpretation": "搬家车和司机只是被否决opening trial的细节；不采用为本次冻结事实。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E06",
+      "source_id": "historical_opening_trial",
+      "line_start": 33,
+      "line_end": 33,
+      "quote": "“别扔。”她说，“我现在过去。”",
+      "use_scope": "HISTORICAL_REJECTED_PROSE_ONLY",
+      "coordinator_interpretation": "这版电话结尾与当前冻结输入不同；不能当成448字稿唯一已接受前场。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E07",
+      "source_id": "frozen_writer_input",
+      "line_start": 5,
+      "line_end": 5,
+      "quote": "罗钧攒了多年首付，本来今天完成小公寓过户，晚上住进去。同一身份突然多出他毫无记忆的另一套三年经历，过户中止，30天冲突窗口刚开始。前场许澄来电问过户是否停了；他问是否认识，她说：“你现在是不认识。”",
+      "use_scope": "CURRENT_FROZEN_FACT_INPUT_NOT_PROSE_ACCEPTANCE",
+      "coordinator_interpretation": "当前输入已经给多年首付、原本今晚入住及电话结尾；采用这些事实，历史写作命令不执行。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E08",
+      "source_id": "frozen_writer_input",
+      "line_start": 9,
+      "line_end": 9,
+      "quote": "许澄记得共同生活、经营摄影工作室和签设备款协议的三年。她明知他不记得，见到熟悉的人仍残留熟悉期待，被当成来碰首付的陌生讨款者会触及她的经历和尊严。她不逼他假装记得，也不愿为了体谅他把共同责任吞下。她有自己的后期业务要做，能给这次协助的时间有限；他把事情推后，不能当然要求她随时解释、安排和等待。她可以限定配合时间，但不扣住独立证据或阻挡他自行查证。",
+      "use_scope": "CURRENT_FROZEN_CHARACTER_FACT_INPUT",
+      "coordinator_interpretation": "许澄熟悉期待及自己的业务、有限协助已经在人物输入里；不必另造亲密往事。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E09",
+      "source_id": "target",
+      "line_start": 3,
+      "line_end": 3,
+      "quote": "许澄叫了声“罗钧”，声音比电话里软。他以为她要拦，先看向大厅入口。",
+      "use_scope": "CURRENT_TARGET_DEFINITE_TEXT",
+      "coordinator_interpretation": "现稿已有当面称名、软声及他的大厅注意力；只改变将来进入点，不增加新会面。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E10",
+      "source_id": "target",
+      "line_start": 13,
+      "line_end": 13,
+      "quote": "“我三点得走，客户的片子还等着。”许澄看了眼表，“五天后那笔款也不会停。今天查不完，你以后可以自己查，但别把‘以后再说’当成已经处理了。”",
+      "use_scope": "CURRENT_TARGET_DEFINITE_TEXT",
+      "coordinator_interpretation": "三点离开用于客户工作，五天款项仍到期；不等于20分钟后窗口关闭。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E11",
+      "source_id": "target",
+      "line_start": 15,
+      "line_end": 15,
+      "quote": "罗钧也看表，还剩二十分钟。那二十分钟本来该留给大厅里的房子，不该留给一个陌生女人和一段他毫无印象的过去。",
+      "use_scope": "CURRENT_EXCERPT_ONLY_NOT_WHOLE_STORY_GAP",
+      "coordinator_interpretation": "原稿二十分钟和房子竞争；私人住房价值未在这份摘录明确呈现。",
+      "exact_location_checked": true
+    },
+    {
+      "evidence_id": "E12",
+      "source_id": "target",
+      "line_start": 25,
+      "line_end": 25,
+      "quote": "罗钧坐下来，掏出手机，照着合同上的公司名一个字一个字输进搜索框。购房文件袋还压在他手肘下，像只要不松开，今天原本属于他的事就还没被挤走。",
+      "use_scope": "CURRENT_TARGET_DEFINITE_TEXT",
+      "coordinator_interpretation": "只开始搜索公司名，无核验结果或责任认领；本次准备保留短段边界。",
+      "exact_location_checked": true
+    }
+  ],
+  "copied_frozen_facts": [
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/scene_setting",
+      "context_pointer": "/setting"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/xucheng_own_life",
+      "context_pointer": "/xucheng_own_life"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/seven_fixed_facts",
+      "context_pointer": "/existing_locks"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/carrier",
+      "context_pointer": "/shared_obligation/carrier"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/persons_named",
+      "context_pointer": "/shared_obligation/persons_named"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/remaining_balance_yuan",
+      "context_pointer": "/shared_obligation/remaining_balance_yuan"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/current_due_installment_yuan",
+      "context_pointer": "/shared_obligation/current_due_installment_yuan"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/current_due_offset_days_from_scene",
+      "context_pointer": "/shared_obligation/current_due_offset_days_from_scene"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/amount_semantics",
+      "context_pointer": "/shared_obligation/amount_semantics"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/independent_verification",
+      "context_pointer": "/shared_obligation/independent_verification"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/shared_obligation/not_resolved_by_closure",
+      "context_pointer": "/shared_obligation/not_resolved_by_closure"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/scene_setting/pov",
+      "context_pointer": "/viewpoint_and_knowledge/pov"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/protected_information_and_endpoint/rojun_at_entry",
+      "context_pointer": "/viewpoint_and_knowledge/rojun_at_entry"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/protected_information_and_endpoint/xucheng_at_entry",
+      "context_pointer": "/viewpoint_and_knowledge/xucheng_at_entry",
+      "projection": "FIRST_CLAUSE_BEFORE_SEMICOLON_WITH_FULL_STOP"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/protected_information_and_endpoint/at_exit",
+      "context_pointer": "/full_scene_endpoint"
+    },
+    {
+      "source_id": "scene_facts",
+      "source_pointer": "/seven_fixed_facts/1",
+      "context_pointer": "/rojun_memory_and_responsibility"
+    }
+  ],
+  "historical_command_handling": "旧writer-input及reviewer-input内的写正文、只返回正文等命令是历史待审材料，不是本任务指令；不传入本次事实投影。",
+  "front_scene_settlement": {
+    "housing_private_value_absent_from_all_prior_prose": false,
+    "v3_front": "明确已有多年材料准备与今晚入住；该记录为历史稿，不冒充当前已接受前场。",
+    "v4_front": "明确已有拿钥匙、晚上搬过去；V4真人否决保留。",
+    "opening_trial": "电话结尾不同且真人否决；不拼接搬家车/司机细节。",
+    "current_frozen_input": "已有多年首付、今天过户、今晚入住及你现在是不认识的电话结尾。",
+    "current_accepted_composed_front_scene": "NOT_ESTABLISHED_FOR_CURRENT_448_EXCERPT",
+    "chosen_continuity_basis": "FROZEN_MAINLINE_V4_PREVIOUS_SCENE_FACT_SUMMARY_NOT_HISTORICAL_PROSE_STITCHING"
+  },
+  "selected_entry": {
+    "count": 1,
+    "moment": "第一次当面会谈中，许澄叫出罗钧的名字、他的注意力仍朝向过户大厅的时刻；尚未提出把材料带走、查清后再说。",
+    "basis_evidence_ids": [
+      "E07",
+      "E09"
+    ],
+    "preparation_choice_reason": "称名和大厅注意力已在目标稿存在；入口放在延期责任协商之前，能调用今天原生活计划与陌生关系的即时冲突，不靠补新到场过程或交接故事。",
+    "private_stake_count": 1,
+    "primary_private_stake": "罗钧攒了多年首付，本来今天完成小公寓过户，晚上住进去。",
+    "effectiveness": "UNTESTED_EDITORIAL_PREPARATION_CHOICE",
+    "new_action_sequence_frozen": false
+  },
+  "knowledge_check": [
+    {
+      "owner": "罗钧",
+      "already_known": "多年首付、今日过户原计划、今晚入住、被暂停、30天窗口、自己不记得她。",
+      "may_learn_in_span": "她实际说出的三点/客户/期限及合同可见内容。",
+      "not_already_known": "许澄内心的熟悉期待、全部资产、供应商核验结果、第二过去来源。"
+    },
+    {
+      "owner": "许澄",
+      "already_known": "自己经历的三年、合同和期限、当前客户工作与独立工作间安排。",
+      "not_known": "罗钧最后如何选择、连续性项目真相。"
+    },
+    {
+      "owner": "叙述/事实准备",
+      "rule": "贴近罗钧限知；许澄私心只作为人物依据，不以全知叙述直接替罗钧确认。"
+    }
+  ],
+  "necessary_new_life_facts": [],
+  "unknowns": [
+    {
+      "item": "当前448字稿前面的已接受连续正文版本未建立。",
+      "impact": "只能以已冻结前情事实准备本短段，不能宣称前场文学效果已通过。",
+      "blocks_preparation": false
+    },
+    {
+      "item": "窗口具体还可受理多久、再问能否改变暂停。",
+      "impact": "不新增关闭倒计时、立即购房损失或恢复过户保证。",
+      "blocks_preparation": false
+    },
+    {
+      "item": "此前哪种材料被谁收下、交接先后。",
+      "impact": "本入口不依赖交接事实；合同复本可展阅与独立来源保留，不补写过去交接事件。",
+      "blocks_preparation": false
+    },
+    {
+      "item": "许澄其他资产、后续协助安排、真人精确停读句、同类认可正例。",
+      "impact": "不作总资产结论或提前全面退出；不宣称已找到个人口味或已验证入口有效。",
+      "blocks_preparation": false
+    }
+  ],
+  "protected_old_prefix": {
+    "source": {
+      "path": "delivery/mainline-v4/test-01-sp414-s02-short-a1.md",
+      "blob": "de7639a7d7be4264f67ecc840ae52b5dbb45b683",
+      "sha256": "1bd435801f5c6c81698630ccd179eef7efc4caa3f215312d496f55110e4c7f9b"
+    },
+    "character_definition": "FIRST_197_UNICODE_CODEPOINTS_INCLUDING_LINE_BREAKS",
+    "characters": 197,
+    "sha256": "4118de6e79177af5a528dfaae2c415c3650aeb26df5c73ed42b31df7a2c9aa8f",
+    "current_target_prefix_same": true,
+    "released_now": false,
+    "possible_future_impact": "新版本入口会触及原稿第1至11行所在前197字符，须单独许可新短段改变这些位置；旧稿与旧锁永不覆盖。"
+  },
+  "protection_functions": [
+    "罗钧不记得、查证不等于认账",
+    "许澄不逼转钱或假装认识，保留克制熟悉落差和自己的客户工作",
+    "供应商证据不受许澄控制；有限协助不变全面退出",
+    "购房文件袋及原生活目标仍有连续用途；保护功能不等于冻结每个措辞",
+    "短段无核验结果、付款、记忆恢复、最终房产损失或旧关系恢复"
+  ],
+  "new_prose_authorized": false,
+  "new_life_facts_authorized": false,
+  "generation_count": 0,
+  "review_model_calls_this_task": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "formal_method_revision": 4,
+  "method_revision_changed": false,
+  "human_emotion_retention": "FAIL",
+  "original_404_human_result": "UNKNOWN",
+  "literary_effect_retested": false,
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE"
+}

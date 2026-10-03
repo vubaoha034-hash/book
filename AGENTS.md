@@ -20,6 +20,8 @@ claiming an old callback. Cold screening failed its limited calibration and
 cannot certify literary quality or the user's taste. This override supplies no
 new prose budget, no V5, and no release of the old 197-character protection.
 
+Current checkpoint195 continuation: the user separately authorized one R2 reentry/fact preparation task, now complete. Read `docs/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.md` and its native authorization/task/result. The next single 300-500-character short trial and its opening scope remain unapproved; preparation supplies zero prose budget and does not release old protection.
+
 This section selects the execution surface only. It does not override V3 content/phase routing, quality gates, or human gates. If an execution-route preference conflicts with a content or human gate, the gate wins.
 
 - Default execution mode: `CHAT`.

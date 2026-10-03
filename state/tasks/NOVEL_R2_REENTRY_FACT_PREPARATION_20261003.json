@@ -1,0 +1,56 @@
+{
+  "schema_version": "native-bounded-task/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-R2-REENTRY-FACT-PREPARATION-20261003-01",
+  "parent_task_id": "NOVEL-CODEX-REVIEW-INTEGRATION-AND-R2-DIAGNOSIS-20261003-01",
+  "created_at": "2026-10-03T04:46:21+00:00",
+  "source_head": "fcc71ed5425a9479bde55db6d560114fa4c793a0",
+  "status": "COMPLETE_PREPARATION_NO_PROSE",
+  "scope": "ONE_SECOND_SCENE_REENTRY_AND_MINIMAL_FACT_PREPARATION_ONLY",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_AUTHORIZATION_20261003.json",
+    "blob": "956937bb31700e7544dc5f1ad26234a9659b0d0d",
+    "sha256": "998eb8f599b05c0cbe6fa40e79e9b3b9b5e1f704cd935f63b394b899452fe75e"
+  },
+  "original_proposal": {
+    "path": "state/tasks/NOVEL_R2_REENTRY_FACT_PREPARATION_PROPOSAL_20261003.json",
+    "blob": "ebea780cbbe82aec7814e3753dd23d727505eda4",
+    "sha256": "09487d3de391612597e891ea8b51030b24afde612bd5c8371d0bbe3a4f85ee2a"
+  },
+  "target": {
+    "path": "delivery/local-revision-rc3-r2/short-r2-a1.md",
+    "blob": "f0545b15cf01dd6de83e105003e3af34b22cf4db",
+    "sha256": "ca6e64eab55218c36deaa16f0448a39e320755b51b1d65787cb0260814d14ade"
+  },
+  "new_prose_authorized": false,
+  "generation_budget": 0,
+  "generation_count": 0,
+  "new_life_facts_authorized": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_v5_authorized": false,
+  "automatic_writer_dispatch": false,
+  "stop_after_preparation_and_remote_save": true,
+  "completed_at": "2026-10-03T04:58:59+00:00",
+  "result": {
+    "path": "state/review_receipts/NOVEL_R2_REENTRY_FACT_PREPARATION_RESULT_20261003.json",
+    "blob": "7e2993f2757fcbdc0c801acfbc177ace3827ee6c",
+    "sha256": "e5affca6ce1d073073a55ec3bcc33ac0d3c08b225a9b1f5a5a92007b4e6f8e5d"
+  },
+  "evidence": {
+    "path": "delivery/r2-reentry-facts-20261003/preparation-evidence.json",
+    "blob": "200193a704416d0da1996312d5a00de0f96434de",
+    "sha256": "52ea386deb58395c14af91a5d043942b845ef573224c88acbb5612af998097ff"
+  },
+  "writer_context": {
+    "path": "delivery/r2-reentry-facts-20261003/writer-context.json",
+    "blob": "2a5e854f8e8f81f573043e671e6337e9b8adcc11",
+    "sha256": "0fd229b688a68812b9c23f1f226ef12dce7829b93f198a3300f723052fd8d5da"
+  },
+  "next_task_proposal": {
+    "path": "state/tasks/NOVEL_R2_REENTRY_ONE_SHORT_TRIAL_PROPOSAL_20261003.json",
+    "blob": "ed2768adeba3b3fdec42f968eb5cf3e070e771f5",
+    "sha256": "ca687e7838da18730a4d4dd07ba6aafb7553029bfeab6d11e18646befe346d39"
+  },
+  "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE"
+}
