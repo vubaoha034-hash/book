@@ -1,14 +1,17 @@
 """Evidence, isolation and authority corruption tests; never literary scores."""
 from pathlib import Path
 import copy,hashlib,importlib.util,json,tempfile,unittest
-REPO=Path(__file__).resolve().parents[1]
+REPO=Path(__file__).resolve().parents[1];GIT_REPO=REPO
 s=importlib.util.spec_from_file_location('scoped_test_gate',REPO/'scripts/verify_scoped_short_repair.py');g=importlib.util.module_from_spec(s);s.loader.exec_module(g)
+current_project=json.loads((REPO/'state/project_state.json').read_bytes())
+if current_project.get('scoped_short_repair',{}).get('scope_kind')=='NATURAL_SCENE_RELATION_EMOTION':
+    REPO=g.history.frozen_tree(GIT_REPO,current_project['scoped_short_repair']['source_head'])
 
 class ScopedShortRepairTests(unittest.TestCase):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name).resolve();self.seen=set()
         self.project=json.loads((REPO/'state/project_state.json').read_bytes());self.cp=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes());self.route=self.project['scoped_short_repair']
-        source=g.history.frozen_tree(REPO,self.route['source_head'])
+        source=g.history.frozen_tree(GIT_REPO,self.route['source_head'])
         for p in source.rglob('*'):
             if p.is_file()and '__pycache__'not in p.parts:
                 rel=p.relative_to(source);q=self.root/rel;q.parent.mkdir(parents=True,exist_ok=True);q.write_bytes((REPO/rel).read_bytes());self.seen.add(rel.as_posix())

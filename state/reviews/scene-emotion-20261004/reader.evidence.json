@@ -1,0 +1,76 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "八岁的女儿把椅子挪到弟弟身边，笑着勾住他的胳膊：“舅舅，你吃完饭别走。”",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "弟弟正被追查，现在有危险。“别惊动他，先把孩子带出家门。”",
+      "actual_line": 3,
+      "start_character_0_based": 150
+    },
+    {
+      "index": 2,
+      "quote": "我刚说了一个“不”字，女儿已经松开我的手，转身握住了舅舅的手。",
+      "actual_line": 13,
+      "start_character_0_based": 365
+    },
+    {
+      "index": 3,
+      "quote": "他离家多年，联系很少，今天突然坐回这张桌子，我有好多话想问，又觉得先吃完这顿饭也好。",
+      "actual_line": 1,
+      "start_character_0_based": 63
+    },
+    {
+      "index": 4,
+      "quote": "我不知道他出了什么事，可不能拿孩子的安全赌。",
+      "actual_line": 5,
+      "start_character_0_based": 243
+    },
+    {
+      "index": 5,
+      "quote": "“吃完再去吧，”母亲说，“你舅舅好容易回来。”",
+      "actual_line": 9,
+      "start_character_0_based": 293
+    },
+    {
+      "index": 6,
+      "quote": "弟弟放下了筷子：“姐，你吃吧，我带她去。”",
+      "actual_line": 11,
+      "start_character_0_based": 342
+    },
+    {
+      "index": 7,
+      "quote": "刚才弟弟冲我笑时，我还想着饭后能跟他多坐一会儿。",
+      "actual_line": 5,
+      "start_character_0_based": 219
+    },
+    {
+      "index": 8,
+      "quote": "我刚说了一个“不”字，女儿已经松开我的手，转身握住了舅舅的手。",
+      "actual_line": 13,
+      "start_character_0_based": 365
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/scene-emotion-20261004/reader-packet.json",
+    "blob": "b695c0796c531488a4aee3a2020d0c2df6f654cc",
+    "sha256": "16455fc8c8d1e92b771c2317cd6d27a9aa09a628b443b00531f49fcbdb1e83f4"
+  },
+  "raw_report": {
+    "path": "state/reviews/scene-emotion-20261004/reader.raw.txt",
+    "blob": "b58409174b590f6e7e5d397807494282764c32d5",
+    "sha256": "f243b18a45c134eff01517459c9048b926077dba0b4bb9cecda7dbf202b83a64"
+  }
+}

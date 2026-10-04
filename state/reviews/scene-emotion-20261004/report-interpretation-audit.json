@@ -1,0 +1,12 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "final_artifact": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "raw_reports_rewritten": false,
+  "new_model_call": false,
+  "corrections": [],
+  "coordinator_scope": "Quote location and scope only, not an additional independent review."
+}

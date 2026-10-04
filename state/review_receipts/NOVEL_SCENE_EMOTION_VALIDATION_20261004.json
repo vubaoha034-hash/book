@@ -1,0 +1,399 @@
+{
+  "schema_version": "native-local-scene-emotion-repair-validation/v1",
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "source_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+  "recorded_at": "2026-10-04T03:08:30Z",
+  "status": "EMOTION_DIALOGUE_EVIDENCE_HISTORY_SCOPE_AND_STATE_VALIDATION_PASSED",
+  "current_state": {
+    "sequence": 209,
+    "status": "SCOPED_REPAIRED_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
+    "historical_checks_passed": 72,
+    "checks_passed": 83,
+    "protected_source_file_count": 701,
+    "new_prose_authorized": false,
+    "human_quality_result": "UNKNOWN",
+    "mainline": {
+      "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+      "revision": 4,
+      "step": "STEP_03",
+      "outcomes": {
+        "TEST_01": "UNKNOWN"
+      }
+    },
+    "model_calls_during_validation": 0,
+    "generation_count_during_validation": 0,
+    "literary_quality_tested_by_this_script": false
+  },
+  "unittest": {
+    "tests": 63,
+    "groups": {
+      "test_scene_emotion.py": 12,
+      "test_current_state.py": 25,
+      "test_scoped_short_repair.py": 13,
+      "test_emotion_dialogue_repair.py": 13
+    },
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0,
+    "status": "ALL_63_DISTINCT_CASES_HAVE_FINAL_PASS",
+    "independent_process_groups": [
+      {
+        "tests": 37,
+        "groups": {
+          "test_scene_emotion.py": 12,
+          "test_current_state.py": 25
+        },
+        "failures": 1,
+        "errors": 0,
+        "exit_code": 1,
+        "elapsed_seconds": 74.0,
+        "model_calls": 0,
+        "generations": 0,
+        "whole_suite_rerun": false
+      },
+      {
+        "tests": 26,
+        "groups": {
+          "test_scoped_short_repair.py": 13,
+          "test_emotion_dialogue_repair.py": 13
+        },
+        "failures": 0,
+        "errors": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 140.532,
+        "model_calls": 0,
+        "generations": 0,
+        "whole_suite_rerun": false
+      }
+    ],
+    "initial_fixture_failure_run": {
+      "tests": 37,
+      "groups": {
+        "test_scene_emotion.py": 12,
+        "test_current_state.py": 25
+      },
+      "failures": 7,
+      "errors": 0,
+      "exit_code": 1,
+      "elapsed_seconds": 82.218,
+      "model_calls": 0,
+      "generations": 0,
+      "whole_suite_rerun": false
+    },
+    "earlier_corrected_case_attempt": {
+      "test": "test_scene_emotion.SceneEmotionTests.test_editor_has_no_authorized_emotion_answer",
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "exit_code": 1,
+      "elapsed_seconds": 28.875,
+      "model_calls": 0,
+      "generations": 0
+    },
+    "corrected_case_rerun": {
+      "test": "test_scene_emotion.SceneEmotionTests.test_editor_has_no_authorized_emotion_answer",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 22.735,
+      "model_calls": 0,
+      "generations": 0
+    },
+    "repair_explanation": "First mutation fixture omitted new task-reference rebinding. After fixing it, only the editor-leak case stopped at earlier payload and one-call-marker guards; that case now also updates tampered payload and marker metadata to exercise the existing semantic fact allowlist and passed. Product gates and assertions were retained; 36 current cases and 26 historical cases already passed.",
+    "failed_case_identity_source": "COORDINATOR_OBSERVED_ACTUAL_TOOL_STDOUT",
+    "failed_case_name": "test_scene_emotion.SceneEmotionTests.test_editor_has_no_authorized_emotion_answer",
+    "test_execution_count_this_turn": 102,
+    "parallel_group_longest_elapsed_seconds": 140.532,
+    "model_calls": 0,
+    "generations": 0,
+    "whole_suite_rerun": false
+  },
+  "whole_suite_rerun_this_turn": false,
+  "prior_full_suite_baseline": {
+    "validation_record_available_at_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+    "historical_run_reference": {
+      "path": "state/review_receipts/NOVEL_NEW_STORY_TRIAL_VALIDATION_20261004.json",
+      "blob": "4c6b5415d53d8648e900a24d613a8f17c83cd59d",
+      "sha256": "c124cf7addb2864cb187243aec3024567c38fa7636a4f82bc65a800f1d78f21f"
+    },
+    "tests": 326,
+    "status": "PREVIOUS_SAVED_RUN_NOT_RERUN_THIS_TURN"
+  },
+  "targeted_checks": {
+    "new_scope_corruption_tests": 12,
+    "historical_scoped_short_repair_tests": 13,
+    "historical_emotion_dialogue_repair_tests": 13,
+    "historical_current_state_tests": 25,
+    "status": "PASSED"
+  },
+  "prior_unchanged_emotion_dialogue_validation": {
+    "path": "state/review_receipts/NOVEL_EMOTION_DIALOGUE_REPAIR_VALIDATION_20261004.json",
+    "blob": "271f4013bf92468c8d1302fc9baf3a7ba08baa2f",
+    "sha256": "5c9ba3a341bf98ac9ed030db4e7f38682ecfb36762282da2ab7e96e9d6783bfa"
+  },
+  "implementation_repair": {
+    "scope": "One whole-scene natural relationship-emotion repair after current human challenge",
+    "historical_guards_removed": false
+  },
+  "skill_structure": {
+    "status": "PASSED",
+    "files_checked": 28,
+    "literary_quality_test": false
+  },
+  "syntax_check": "PASSED",
+  "diff_whitespace_check": "PASSED",
+  "protected_source_file_count": 701,
+  "source_files": 711,
+  "prior_body_reports_receipts_and_locks_byte_unchanged": true,
+  "actual_model_calls": 4,
+  "successful_model_calls": 4,
+  "primary_generation_count": 0,
+  "local_repair_count": 1,
+  "human_quality_result": "UNKNOWN",
+  "full_scene_or_TEST01_promoted": false,
+  "AI_quality_certification": false,
+  "model_calls_during_validation": 0,
+  "generation_count_during_validation": 0,
+  "final_artifact": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "report_limitations": [
+    "当前真人质疑自然场面情感与学习应用，保留问题口吻；没有新续读、整体AI味或精确停止句。",
+    "新稿的真人效果UNKNOWN。孩子与姐姐有具体感受证据，不证明全段自然、好看或符合刘先生口味。",
+    "母亲的情绪仍通过添饭和劝留来呈现，其充分性未知；弟弟的真实意图与案情未知。",
+    "“不能拿孩子的安全赌”仍是概括判断，“心跳”仍有常用表达风险；是否割裂体验由实际阅读判断。",
+    "上一稿AI编辑CLEAR/读者YES没有识别这次真人质疑，原始报告保持。已读资料不能冒充已掌握或效果验证。"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "blob": "cb63560214fbd8eb80b95a1c4c6c2890430ce955",
+      "sha256": "bc90a6e5af7549aa7fddf67e882f7224d0e12d742cfe58974b2cc561134e7651"
+    },
+    {
+      "path": "README.md",
+      "blob": "7f1dd1f1ae2314ad88cac8fb714f1533cc43eb09",
+      "sha256": "db87f8eb9f36103e8a703b1a3a10e66b04e6cd82d9786a3ddc2ff8819a4939b8"
+    },
+    {
+      "path": "SKILL.md",
+      "blob": "4c3fe4df44d58eae5d56012493346becadbaebfd",
+      "sha256": "ffc6987ecdd2037dab85585dff2fbf1b3c563f05b7bb6b1058c5efb8d102924e"
+    },
+    {
+      "path": "START_HERE.md",
+      "blob": "edc984fd6ad735ff59b9a4852c00da4bc32da744",
+      "sha256": "5bb2770f5d0a97e1a2471cfdaa9f2e4753ed150a1b25281d20285ae2720f9fff"
+    },
+    {
+      "path": "config/novel-scene-emotion-20261004-production.json",
+      "blob": "24522398a6d897f9c979f17430a4610037ba0b07",
+      "sha256": "c71fb4e4896d1e677eb08ed71290d704b599007220e4cb13d8ef16e9590d1439"
+    },
+    {
+      "path": "config/novel-scene-emotion-20261004-reviews.json",
+      "blob": "e7a4263fb46e7209bfde4e8fd3b155855d11d8b6",
+      "sha256": "c5ce18e98412a22c3a6df49ad7e25b4acd2f3fa1fae928f3ac40c2a2fc064198"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/diagnosis-packet.json",
+      "blob": "0588aec4294bd0ac787085a38e0b16c45bd5170a",
+      "sha256": "b830e127c024a1e367a485a45365706dc88d08b58658a48829ddb7ac092acee4"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/diagnosis-policy.txt",
+      "blob": "4db4e0edf7c3bd26ee34e7281b5c3ee9b7fa784f",
+      "sha256": "d9107317a2ecde3dc9a537a44c0d5994cc2c2092f1a38d54a56d77454ed890f9"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/editor-packet.json",
+      "blob": "e1633843bf7c3e3dc18cf2bf3a52ebd2a9ffd72c",
+      "sha256": "ea008c21fd40d81f1c48ed84163fee1ebcb386d70ebcd617ca4a197e3021c47b"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/editor-policy.txt",
+      "blob": "e63f2ebecf6cdea27240f79aa2f2106c4eb17b42",
+      "sha256": "979fa73f1d4663d82fb76c336de66aefef04ae5488b6d4e6671b60eb3c85cc2f"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+      "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+      "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/reader-packet.json",
+      "blob": "b695c0796c531488a4aee3a2020d0c2df6f654cc",
+      "sha256": "16455fc8c8d1e92b771c2317cd6d27a9aa09a628b443b00531f49fcbdb1e83f4"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/reader-policy.txt",
+      "blob": "4dc049182ad16fc4c89430a0375d16ccec05303a",
+      "sha256": "e1357cfaf65a8424c64dafd557cc6358ce2892f5853b6516e7485498edf49696"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/writer-packet.json",
+      "blob": "adb16ac28d07164157180d7fc32c35464ae96712",
+      "sha256": "fefb404b185e17d7ee3d66ebdbc0f586e93bb4b451251cdc4f9591f7bedc96ba"
+    },
+    {
+      "path": "delivery/scene-emotion-20261004/writer-policy.txt",
+      "blob": "c25ade2a908b0a3b7217a604dab74206514b1c35",
+      "sha256": "581327495de78844071dd59bb8a75ee8361aa7749dd4abee9e66e5477f780b00"
+    },
+    {
+      "path": "docs/NOVEL_NATURAL_SCENE_EMOTION_RESULT_20261004.md",
+      "blob": "ec74143a16d065944d2fe6df6057a26261ee4699",
+      "sha256": "4e70e872edec22e9aa49d694801297dda71427ad45af24f6003d662e5d0c5079"
+    },
+    {
+      "path": "scripts/verify_scoped_short_repair.py",
+      "blob": "3fa64b90837b891bb733dcf2ead13493bcc85fa9",
+      "sha256": "3c0a677a1a3a6647a2bc6bb4fd71f6ac846a4c1b88434a0ec51ae43081c79f37"
+    },
+    {
+      "path": "state/continuity/LATEST_CHECKPOINT.json",
+      "blob": "ca75bfd9936205026f0a27dcfa605338bde31d68",
+      "sha256": "5d823579599b6a7d5422cb964fddfe0b5e207904752801f38b7b2a03c1c2dc85"
+    },
+    {
+      "path": "state/project_state.json",
+      "blob": "edf14c2126f3b6be337d913cb17014adafad1a92",
+      "sha256": "cb7b63d46dfae74474a96c6216acf42454fb4370a26488fd2874aa6328f6b13a"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_SCENE_EMOTION_417_HUMAN_APPLICATION_CHALLENGE_20261004.json",
+      "blob": "f3ee9ab2474c5432010f125f0b8866fd2f4d9aab",
+      "sha256": "3890357a86de6fb6bc8a03e360b88ed6cbd4de4d35badcf39b63e2c13a1564a2"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_SCENE_EMOTION_AUTHORIZATION_20261004.json",
+      "blob": "a82ecb04c5323cc3583fbb0f5fa31caf5356128e",
+      "sha256": "89465fa4ce89feb05116a4a0dc8b783bb72b2971fc98496e2462f051fbb0f5b4"
+    },
+    {
+      "path": "state/review_receipts/NOVEL_SCENE_EMOTION_RESULT_20261004.json",
+      "blob": "22d1eca76ea5ba4ef2f25fbb54c010f515ccdb3f",
+      "sha256": "1677e8e693240e1e12af045cbf365f67e3a4fd0e2fb8c33c1e494261ecbf73a7"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/coordinator-settlement.json",
+      "blob": "33af44c5a3b374e7981b6c422fa6fd9b36887760",
+      "sha256": "240345649cfe5231e69910cd343e098022581c21fb07462911045941327da5f8"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.attempt.json",
+      "blob": "905c4479d379454e30e7de6c8b45ae96d4e17370",
+      "sha256": "461d164224de0de9ecd8578bba6d770d00237e3d233a6cd4a7a5e69a18154cfc"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.evidence.json",
+      "blob": "ddb43ccb5263ebf0200b2571fb31206c167b7314",
+      "sha256": "d71007faaa70a850698ac3c2f02a1c208aa46f193d8094543e7c77968d900772"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.raw.txt",
+      "blob": "515385b02a8a33c084baf49079fb45cba8812520",
+      "sha256": "6569ed7c6c5092f8fcc12815681e48cdfba54960188c3e4cc6bd44dd0841cade"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.runtime.json",
+      "blob": "335aa93fb3c60bfe995575fe8b54b6511a32f9e8",
+      "sha256": "3dfb0a6e23aac74f73c7649fa0e0c7ad224e2659fd1fdb06fe48d4baf15b9efc"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/editor.attempt.json",
+      "blob": "91b2659732ff13cc13f8b199c79a157bd2b1e3e8",
+      "sha256": "eec63fada68b36ab75b1f70a7277f880fd2588569d9bed5528fa95f6df7787a0"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/editor.evidence.json",
+      "blob": "4d447dd3402b8dd544b90ac76c5e53f4e9acaba4",
+      "sha256": "a278bcc981bae4f97e6a186e50f6d26775054519fc91154a0e877e2ceee6db01"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/editor.raw.txt",
+      "blob": "488d94de2db6eaadeb87fbad6f10a6b349702099",
+      "sha256": "5088d9943c91a05d9b20a7e6b64f93bf9016afb7991f07f25c79d9c6ee2350d1"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/editor.runtime.json",
+      "blob": "1b5b61639a39282c37257db7e4cbf93d9c6cfdc5",
+      "sha256": "d3b50116ed9fb10d7c73656c3910e7d3179c07578f6b8fa84130c6f3c0a901e1"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/learning-application.json",
+      "blob": "91db8f1b2d5bae6f789a3a73dcdf0f75a66be4f7",
+      "sha256": "dd1c394c8bea5155e7cd0f7aef57255ef1171fdd14759ff5296e869cd69f6c25"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/pending-human-review.json",
+      "blob": "eb379fff86e0be01b885ca80732515661be42fd1",
+      "sha256": "ee810f6a2617037da284fcc0820606c8bf4a720f7de19a4aa6b778b4e37315ee"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/reader.attempt.json",
+      "blob": "5a4d5a6f8c2b5398b1eb581be340983c30581cef",
+      "sha256": "afed64b97638b0ce3e1da75f6f31e83ea9829aff11ed9f02f85dfde939e9f1a8"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/reader.evidence.json",
+      "blob": "df3e879102c3d79913b6cc76d75f70e0d2b614db",
+      "sha256": "8288ea4171395f4fe877b7a080cf189ccb7b0052dc732d2e5e0db38d624cda61"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/reader.raw.txt",
+      "blob": "b58409174b590f6e7e5d397807494282764c32d5",
+      "sha256": "f243b18a45c134eff01517459c9048b926077dba0b4bb9cecda7dbf202b83a64"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/reader.runtime.json",
+      "blob": "e9ab1996949eda6732d1207d4c7b63f7a8a6b03a",
+      "sha256": "eb23b88465e27bbe35ce2e844c34d3c1c2fa882f50c3f9265d9bdd9a6ab524ca"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/report-interpretation-audit.json",
+      "blob": "ddfffbff8db9ad81d289138830e1f8a9e05b3d2f",
+      "sha256": "7c968574459e98790bdc8ce10b9ab1f27a6551cc6f480756b2ab99a5261af4da"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/scope-diff.json",
+      "blob": "f63fc9657d0278991f11d89f58c49be6e12afdf4",
+      "sha256": "c00bce3d733e0779006d0d3470d43f853ef0d8c0279d45f38921e382d5f58295"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/writer.attempt.json",
+      "blob": "34ea5645fad714de2317f60ef200a9ede79993ab",
+      "sha256": "87d9c5b38baddddbeb14db5ded5de2d66c50910c00950bd1f5563a49f2249493"
+    },
+    {
+      "path": "state/reviews/scene-emotion-20261004/writer.runtime.json",
+      "blob": "7b17400a9645ea8a5b2b98f3170baf4bf8770488",
+      "sha256": "e6e5c4ad2264f495bc294b10256e9a2584ea231b72790c434217e97c835b0677"
+    },
+    {
+      "path": "state/tasks/NOVEL_SAME_STORY_NATURAL_SCENE_EMOTION_20261004.json",
+      "blob": "68836281c753dee40a6ecfe7ba708b672cdf71bd",
+      "sha256": "aa151cc7de524a686eb2a13f01c2e91005c339d20e19eae2fa75f12ff2610a82"
+    },
+    {
+      "path": "tests/test_emotion_dialogue_repair.py",
+      "blob": "327f2ae9535b17da462f3c84f92dd3259cf1a50b",
+      "sha256": "fb84f8c5b54cdec25ce30ac358a70f29f2da87d5a3c031464eed0f578041c744"
+    },
+    {
+      "path": "tests/test_scene_emotion.py",
+      "blob": "762fbca9d46bce25b35e79c9a4511a5d977094ab",
+      "sha256": "73b33ffe725a4a31b3730e4c532555a2800e9830df8c89b93ddd9e53cb3cc3ef"
+    },
+    {
+      "path": "tests/test_scoped_short_repair.py",
+      "blob": "d7c626dc9d477536aa0d9851b7fa6f02da95a851",
+      "sha256": "356a1ec1957597ce7244b97b6b7aa5e2ecdc0cdc2018b2de378fc386723691d3"
+    }
+  ],
+  "remote_save_status": "NOT_YET_CONFIRMED_READBACK_REQUIRED"
+}

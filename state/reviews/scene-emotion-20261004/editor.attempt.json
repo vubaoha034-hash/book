@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/scene-emotion-20261004/editor-packet.json",
+    "blob": "e1633843bf7c3e3dc18cf2bf3a52ebd2a9ffd72c",
+    "sha256": "ea008c21fd40d81f1c48ed84163fee1ebcb386d70ebcd617ca4a197e3021c47b"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T02:49:39Z"
+}

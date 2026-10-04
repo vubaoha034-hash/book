@@ -1,0 +1,235 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "source_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+  "source_artifact": {
+    "path": "delivery/fear-concealment-20261004/opening-repaired.md",
+    "blob": "d39c26942e7fb62e9309529d672f0e4c1044df58",
+    "sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299"
+  },
+  "final_artifact": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "raw_reports_rewritten": false,
+  "AI_quality_certification": false,
+  "coordinator_prose_edits": 0,
+  "reader_vote_triggers_more_generation": false,
+  "human_quality_result": "UNKNOWN",
+  "high_impact_unresolved": [],
+  "fact_conflicts_unresolved": [],
+  "finding_dispositions": {
+    "diagnosis": [
+      {
+        "id": "PD1",
+        "basis": "EDITOR_HYPOTHESIS",
+        "quote": "我八岁的女儿挨着他，等他挑鱼刺。",
+        "line": 1,
+        "disposition": "ACCEPT_PRESENTATION_HYPOTHESIS_PARTIALLY_REPRESENTED_NOT_QUALITY_PASS",
+        "reason": "原文确有挑鱼刺、添菜等亲近线索，不称完全无情感。新稿让孩子主动笑着挽舅舅并说想留他，母亲添饭询问、姐姐添菜并有想问又愿先吃完饭的心思，关系不只剩孩子位置。弟弟在警告前仍没有直接回应孩子这句挽留，双向相处是否充分仍是残余假设，不能宣布本根因全部解决；本次没有为补它另造共同往事。"
+      },
+      {
+        "id": "PD2",
+        "basis": "EDITOR_HYPOTHESIS",
+        "quote": "“你坐着，我——”我还得把这句话说得像客气。",
+        "line": 19,
+        "disposition": "ACCEPT_PRESENTATION_HYPOTHESIS_NEW_TEXT_HAS_CONTINUITY_EVIDENCE_EFFECT_UNKNOWN",
+        "reason": "新稿从姐姐想问却珍惜饭桌，到警告后仍想着刚才弟弟笑和多坐一会儿，再到带孩子离开，保留同一亲情在转折中的作用。母亲留人、弟弟代带有各自日常目的，没有被统一改成危险人物。仍有不能拿孩子安全赌的抽象判断，匿名AI读者R2也记录短暂想滑读；不得把亲情出现就算情绪通过，是否成为自然经历仍待真人。"
+      }
+    ],
+    "editor": []
+  },
+  "fact_and_dialogue_checks": [
+    {
+      "quote": "八岁的女儿把椅子挪到弟弟身边",
+      "line": 1,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "年龄与关系不变，孩子自己亲近舅舅。"
+    },
+    {
+      "quote": "他离家多年，联系很少，今天突然坐回这张桌子",
+      "line": 1,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "保留离家、少联络、突然回饭桌；不增设离家原因。"
+    },
+    {
+      "quote": "是我认识的办案警员",
+      "line": 3,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "仍是可信熟悉警员，省去姓名和旧办案例子不改变来电身份。"
+    },
+    {
+      "quote": "刚在楼外确认弟弟进了这个单元，弟弟正被追查，现在有危险",
+      "line": 3,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "保留现场确认、追查与危险，不公布罪名或认定弟弟恶意。"
+    },
+    {
+      "quote": "“别惊动他，先把孩子带出家门。”",
+      "line": 3,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "警告约束与带离目标明确。"
+    },
+    {
+      "quote": "“陪妈妈下楼买酸奶。”",
+      "line": 7,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "仍以买酸奶为带孩子离开的日常借口；未补早餐习惯或营业时间事实。"
+    },
+    {
+      "quote": "“吃完再去吧，”母亲说，“你舅舅好容易回来。”",
+      "line": 9,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "母亲顺着姐姐对女儿说话劝留，舅舅指弟弟；没有让母亲知道警告。"
+    },
+    {
+      "quote": "弟弟放下了筷子：“姐，你吃吧，我带她去。”",
+      "line": 11,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "字面是替姐姐带孩子买酸奶，只陈述可见提议，不推定真实意图。"
+    },
+    {
+      "quote": "女儿已经松开我的手，转身握住了舅舅的手。",
+      "line": 13,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "孩子主动换手使带离受阻，保留原段尾事件；未续写下楼、伤害或案情。"
+    }
+  ],
+  "reaction_and_restraint_checks": [
+    {
+      "quote": "笑着勾住他的胳膊：“舅舅，你吃完饭别走。”",
+      "line": 1,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "笑、主动亲近与希望他留下结合，表明孩子有当下开心和依恋。不是只安排她坐近以供危机使用；具体强度与自然感仍待真人读。",
+      "kind": "CHILD_RELATIONSHIP_AFFECT"
+    },
+    {
+      "quote": "我有好多话想问，又觉得先吃完这顿饭也好。",
+      "line": 1,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "姐姐对久别亲人有牵挂与想相处的心思；母亲添饭和劝留有各自目的。母亲没有直接情绪标签，其观察是否充分仍未知，不以人人情绪词验收。",
+      "kind": "FAMILY_RELATIONSHIP_AFFECT"
+    },
+    {
+      "quote": "刚才弟弟冲我笑时，我还想着饭后能跟他多坐一会儿。",
+      "line": 5,
+      "basis": "COORDINATOR_TEXT_FACT_AND_SCOPE_CHECK",
+      "reason": "警告后的害怕仍牵着刚才对弟弟的亲近，不完全把亲人改成撤离障碍。心跳、想喊女儿又不敢、挤笑和拒绝是当前反应；“不能拿安全赌”的抽象判断仍存在，是否过于解释列为风险。",
+      "kind": "NARRATOR_CHANGE_AND_RESTRAINT"
+    }
+  ],
+  "window_quote_checks": {
+    "editor": [
+      {
+        "window": "first_30_60",
+        "quote": "八岁的女儿把椅子挪到弟弟身边，笑着勾住他的胳膊：“舅舅，你吃完饭别走。”母亲又给他添了饭，问够不够。",
+        "reported_line": 1,
+        "actual_line": 1,
+        "non_whitespace_range_1_based": [
+          1,
+          50
+        ]
+      },
+      {
+        "window": "first_150_300",
+        "quote": "他说，刚在楼外确认弟弟进了这个单元，弟弟正被追查，现在有危险。“别惊动他，先把孩子带出家门。”",
+        "reported_line": 3,
+        "actual_line": 3,
+        "non_whitespace_range_1_based": [
+          131,
+          177
+        ]
+      },
+      {
+        "window": "ending",
+        "quote": "我刚说了一个“不”字，女儿已经松开我的手，转身握住了舅舅的手。",
+        "reported_line": 13,
+        "actual_line": 13,
+        "non_whitespace_range_1_based": [
+          354,
+          384
+        ]
+      }
+    ],
+    "reader": [
+      {
+        "window": "first_30_60",
+        "quote": "八岁的女儿把椅子挪到弟弟身边，笑着勾住他的胳膊：“舅舅，你吃完饭别走。”",
+        "reported_line": 1,
+        "actual_line": 1,
+        "non_whitespace_range_1_based": [
+          1,
+          36
+        ]
+      },
+      {
+        "window": "first_150_300",
+        "quote": "弟弟正被追查，现在有危险。“别惊动他，先把孩子带出家门。”",
+        "reported_line": 3,
+        "actual_line": 3,
+        "non_whitespace_range_1_based": [
+          149,
+          177
+        ]
+      },
+      {
+        "window": "ending",
+        "quote": "我刚说了一个“不”字，女儿已经松开我的手，转身握住了舅舅的手。",
+        "reported_line": 13,
+        "actual_line": 13,
+        "non_whitespace_range_1_based": [
+          354,
+          384
+        ]
+      }
+    ]
+  },
+  "report_interpretation_audit": {
+    "path": "state/reviews/scene-emotion-20261004/report-interpretation-audit.json",
+    "blob": "ddfffbff8db9ad81d289138830e1f8a9e05b3d2f",
+    "sha256": "7c968574459e98790bdc8ce10b9ab1f27a6551cc6f480756b2ab99a5261af4da"
+  },
+  "coordinator_post_failure_hypotheses": [],
+  "prior_independent_diagnosis": {
+    "path": "state/reviews/emotion-dialogue-20261004/diagnosis.raw.txt",
+    "blob": "212c04ab69266f9425f3400ce7ace6c3297aa78e",
+    "sha256": "96c42a75808b0c50c533eb209b60293ee226f8923e5df8f6ea26e4ea0711624b"
+  },
+  "new_independent_diagnosis_claimed": true,
+  "prior_review_limit": {
+    "editor_raw": {
+      "path": "state/reviews/fear-concealment-20261004/editor.raw.txt",
+      "blob": "73b7a26f05f5f3d4d155f4ae7ff7f5ea7598871e",
+      "sha256": "14f8a264b80062a0bce1f2f5b5e0819b6394a32e8b921f1f5c94dc7bb25deff7"
+    },
+    "reader_raw": {
+      "path": "state/reviews/fear-concealment-20261004/reader.raw.txt",
+      "blob": "004e924addf0c39a7e234ab81b877e1c8feecbcd",
+      "sha256": "e7615911bbf867203a5434e80f213a4b84882714d1f4e1b8e6ce3a3ce10466aa"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_SCENE_EMOTION_417_HUMAN_APPLICATION_CHALLENGE_20261004.json",
+      "blob": "f3ee9ab2474c5432010f125f0b8866fd2f4d9aab",
+      "sha256": "3890357a86de6fb6bc8a03e360b88ed6cbd4de4d35badcf39b63e2c13a1564a2"
+    },
+    "explanation": "人工指出上轮修法只照顾被点名的反应，日常关系的情感仍欠缺。上轮AI赞成不覆盖这次问题，不制造新的留存误差率。"
+  },
+  "elapsed": {
+    "model_parallel_path_estimate_seconds": 524.874,
+    "formula": "max(diagnosis, writer + max(editor,reader)); diagnosis and writer launched independently in parallel.",
+    "roles": {
+      "diagnosis": 524.874,
+      "writer": 146.877,
+      "editor": 196.955,
+      "reader": 236.541
+    },
+    "total_user_wait_seconds": "UNKNOWN_NOT_FULLY_MEASURED"
+  },
+  "limitations": [
+    "当前真人质疑自然场面情感与学习应用，保留问题口吻；没有新续读、整体AI味或精确停止句。",
+    "新稿的真人效果UNKNOWN。孩子与姐姐有具体感受证据，不证明全段自然、好看或符合刘先生口味。",
+    "母亲的情绪仍通过添饭和劝留来呈现，其充分性未知；弟弟的真实意图与案情未知。",
+    "“不能拿孩子的安全赌”仍是概括判断，“心跳”仍有常用表达风险；是否割裂体验由实际阅读判断。",
+    "上一稿AI编辑CLEAR/读者YES没有识别这次真人质疑，原始报告保持。已读资料不能冒充已掌握或效果验证。"
+  ]
+}

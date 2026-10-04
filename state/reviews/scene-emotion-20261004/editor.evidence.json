@@ -1,0 +1,66 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "K209E",
+      "item_index": 0,
+      "quote": "他离家多年，联系很少，今天突然坐回这张桌子，我有好多话想问，又觉得先吃完这顿饭也好。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 63,
+      "end_character_exclusive": 105,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "K209E",
+      "item_index": 1,
+      "quote": "女儿在外面叫舅舅，我很想立刻喊她过来，又不敢。刚才弟弟冲我笑时，我还想着饭后能跟他多坐一会儿。我不知道他出了什么事，可不能拿孩子的安全赌。",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 196,
+      "end_character_exclusive": 265,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "K209E",
+      "item_index": 2,
+      "quote": "“吃完再去吧，”母亲说，“你舅舅好容易回来。”",
+      "reported_line": 9,
+      "actual_line": 9,
+      "start_character_0_based": 293,
+      "end_character_exclusive": 316,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "K209E",
+      "item_index": 3,
+      "quote": "弟弟放下了筷子：“姐，你吃吧，我带她去。”",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 342,
+      "end_character_exclusive": 363,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/scene-emotion-20261004/editor-packet.json",
+    "blob": "e1633843bf7c3e3dc18cf2bf3a52ebd2a9ffd72c",
+    "sha256": "ea008c21fd40d81f1c48ed84163fee1ebcb386d70ebcd617ca4a197e3021c47b"
+  },
+  "raw_report": {
+    "path": "state/reviews/scene-emotion-20261004/editor.raw.txt",
+    "blob": "488d94de2db6eaadeb87fbad6f10a6b349702099",
+    "sha256": "5088d9943c91a05d9b20a7e6b64f93bf9016afb7991f07f25c79d9c6ee2350d1"
+  }
+}

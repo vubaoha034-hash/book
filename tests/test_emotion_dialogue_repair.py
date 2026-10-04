@@ -5,7 +5,8 @@ REPO=Path(__file__).resolve().parents[1];GIT_REPO=REPO
 s=importlib.util.spec_from_file_location('emotion_test_gate',REPO/'scripts/verify_emotion_dialogue_repair.py');g=importlib.util.module_from_spec(s);s.loader.exec_module(g)
 current_project=json.loads((REPO/'state/project_state.json').read_bytes())
 if current_project.get('scoped_short_repair'):
-    REPO=g.history.frozen_tree(GIT_REPO,current_project['scoped_short_repair']['source_head'])
+    # Preserve the completed CP207 corruption fixture through later repairs.
+    REPO=g.history.frozen_tree(GIT_REPO,'3fcdc43a349e34fd583b344d0c74e70918215d1b')
 class EmotionDialogueTests(unittest.TestCase):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name).resolve();self.seen=set()

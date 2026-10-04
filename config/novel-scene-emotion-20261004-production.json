@@ -1,0 +1,45 @@
+{
+  "schema_version": "one-emotion-dialogue-repair-manifest/v1",
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "source_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_SCENE_EMOTION_AUTHORIZATION_20261004.json",
+    "blob": "a82ecb04c5323cc3583fbb0f5fa31caf5356128e",
+    "sha256": "89465fa4ce89feb05116a4a0dc8b783bb72b2971fc98496e2462f051fbb0f5b4"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "quality_certification_allowed": false,
+  "result_dir": "state/reviews/scene-emotion-20261004",
+  "jobs": {
+    "diagnosis": {
+      "packet": {
+        "path": "delivery/scene-emotion-20261004/diagnosis-packet.json",
+        "blob": "0588aec4294bd0ac787085a38e0b16c45bd5170a",
+        "sha256": "b830e127c024a1e367a485a45365706dc88d08b58658a48829ddb7ac092acee4"
+      },
+      "policy": {
+        "path": "delivery/scene-emotion-20261004/diagnosis-policy.txt",
+        "blob": "4db4e0edf7c3bd26ee34e7281b5c3ee9b7fa784f",
+        "sha256": "d9107317a2ecde3dc9a537a44c0d5994cc2c2092f1a38d54a56d77454ed890f9"
+      },
+      "raw_path": "state/reviews/scene-emotion-20261004/diagnosis.raw.txt",
+      "max_calls": 1
+    },
+    "writer": {
+      "packet": {
+        "path": "delivery/scene-emotion-20261004/writer-packet.json",
+        "blob": "adb16ac28d07164157180d7fc32c35464ae96712",
+        "sha256": "fefb404b185e17d7ee3d66ebdbc0f586e93bb4b451251cdc4f9591f7bedc96ba"
+      },
+      "policy": {
+        "path": "delivery/scene-emotion-20261004/writer-policy.txt",
+        "blob": "c25ade2a908b0a3b7217a604dab74206514b1c35",
+        "sha256": "581327495de78844071dd59bb8a75ee8361aa7749dd4abee9e66e5477f780b00"
+      },
+      "raw_path": "delivery/scene-emotion-20261004/opening-repaired.md",
+      "max_calls": 1
+    }
+  }
+}

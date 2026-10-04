@@ -1,0 +1,35 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "source_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+  "source_checkpoint": 208,
+  "recorded_at": "2026-10-04T02:46:25Z",
+  "output": {
+    "path": "delivery/fear-concealment-20261004/opening-repaired.md",
+    "blob": "d39c26942e7fb62e9309529d672f0e4c1044df58",
+    "sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299"
+  },
+  "human_exact_feedback": "你确定改了？你自己看下。还有加入情感不是我指定的地方加入，是应该正常的写，比如女儿挨着舅舅为什么？难道不是很开心吗？这种基本的情感不要写下吗？你自己搜索了这么久的小说。到底搜索到了什么。",
+  "outcome": "HUMAN_CHALLENGES_PATCH_ONLY_EMOTION_AND_RESEARCH_APPLICATION",
+  "review": {
+    "scene_emotion": "CHALLENGED_NATURAL_RELATION_EMOTION_MISSING",
+    "revision_effect": "CHALLENGED_BY_HUMAN",
+    "wants_to_continue": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "ai_smell_verdict": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
+  },
+  "prior_records_rewritten": false,
+  "scope": "Only current 417-character d39c269 version. Human questions and example retained; no new retention, AI-smell or full-story judgment.",
+  "prior_AI_reports": {
+    "editor": {
+      "path": "state/reviews/fear-concealment-20261004/editor.raw.txt",
+      "blob": "73b7a26f05f5f3d4d155f4ae7ff7f5ea7598871e",
+      "sha256": "14f8a264b80062a0bce1f2f5b5e0819b6394a32e8b921f1f5c94dc7bb25deff7"
+    },
+    "reader": {
+      "path": "state/reviews/fear-concealment-20261004/reader.raw.txt",
+      "blob": "004e924addf0c39a7e234ab81b877e1c8feecbcd",
+      "sha256": "e7615911bbf867203a5434e80f213a4b84882714d1f4e1b8e6ce3a3ce10466aa"
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "job_id": "J-SR209-D",
+  "work_kind": "POST_FAILURE_DIAGNOSIS",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "K209D",
+      "original_sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299",
+      "scope": "NEW_STORY_OPENING_EXCERPT",
+      "verdict": "REVISE",
+      "reading_expectations": {
+        "first_30_60": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "context": "已知失败后的诊断；以下是本次阅读注意记录，不是匿名盲测或真人反应记录。",
+          "evidence": [
+            {
+              "basis": "TEXT_FACT",
+              "quote": "妈把排骨往他面前推，自己的筷子却没动。",
+              "line": 1
+            },
+            {
+              "basis": "TEXT_FACT",
+              "quote": "我八岁的女儿挨着他，等他挑鱼刺。",
+              "line": 1
+            }
+          ],
+          "attention_record": "注意落在久别归来的弟弟、母亲偏向照料他的动作，以及孩子自然靠近、等他处理食物的关系上。此时尚未出现危险信息。",
+          "expectation": "期待看到这次回来在当下相处中有什么分量，尤其是弟弟怎样回应家人的靠近。",
+          "limit": "正文已经有日常情感线索，不能说完全没有情感；但女儿是否特别开心、开心到什么程度，尚不能确定。"
+        },
+        "first_150_300": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "evidence": [
+            {
+              "basis": "TEXT_FACT",
+              "quote": "我想喊她马上过来，话到了嘴边，妈却笑着催他再挑一块。",
+              "line": 9
+            },
+            {
+              "basis": "TEXT_FACT",
+              "quote": "我几乎要说别吃了，却只能拿着外套等。",
+              "line": 11
+            }
+          ],
+          "attention_record": "来电后，注意主要转向姐姐怎样不露异常地带走孩子。母亲和孩子仍按饭桌上的日常目的行动，与姐姐的紧迫感形成信息错位。",
+          "expectation": "期待脱身行动不仅推进位置，也使姐姐对这些原本亲近的动作产生可辨认的私人感受变化。",
+          "limit": "这是本次注意转向脱身步骤的位置，不是已知真人滑读或停止句。紧张、克制和目标变化已经存在，问题不是要求再贴情绪标签。"
+        },
+        "ending": {
+          "basis": "EDITOR_HYPOTHESIS",
+          "evidence": [
+            {
+              "basis": "TEXT_FACT",
+              "quote": "女儿从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+              "line": 19
+            }
+          ],
+          "attention_record": "注意被孩子主动换牵手对象吸引：姐姐刚建立的离开路径，受到弟弟代带提议和孩子选择的共同影响。",
+          "expectation": "未解决的问题是姐姐怎样继续保护孩子而不暴露警示；孩子对舅舅的亲近已经成为这一选择的具体难处。",
+          "limit": "钩子具有明确动作依据，无须新增灾难。弟弟是否有意阻拦、孩子最终是否离开，摘录均未展示，不能判定。"
+        }
+      },
+      "findings": [
+        {
+          "id": "PD1",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "我八岁的女儿挨着他，等他挑鱼刺。",
+          "line": 1,
+          "explanation": {
+            "stage": "已知失败后的诊断",
+            "human_original": {
+              "source": "ACTUAL_CURRENT_USER_MESSAGE",
+              "verbatim": "比如女儿挨着舅舅为什么？难道不是很开心吗？这种基本的情感不要写下吗？"
+            },
+            "text_fact": {
+              "basis": "TEXT_FACT",
+              "statement": "正文并非没有回答靠近的原因：本句给出了等待挑鱼刺这一具体目的。母亲推排骨，姐姐想问弟弟住不住，也都有关系投入。随后孩子推碗、想吃完鱼、提出草莓口味，呈现了连续的日常愿望。但弟弟在饭桌上的回应主要通过别人等待和催促间接呈现，直到第17行才有直接言行。"
+            },
+            "frozen_fact_note": {
+              "source": "facts.known_relationship、facts.brother",
+              "statement": "冻结事实确认孩子认得舅舅、不怕他，以及弟弟多年少联系；没有确认孩子此刻必须非常开心，也没有提供具体亲密往事。这些不能代替正文表达。"
+            },
+            "editor_hypothesis": {
+              "basis": "EDITOR_HYPOTHESIS",
+              "statement": "主导问题不是少写了一个“开心”，而是久别归来的特殊分量尚未充分成为双向相处。孩子的亲近已有可信基础，却更多由吃鱼需求承载；弟弟怎样接住这份亲近、姐姐和母亲怎样参与同一交流，仍较薄。因此家庭关系容易被读成悬疑启动所需的配置，而非已经发生在读者眼前的相处。"
+            },
+            "cause_classification": {
+              "basis": "EDITOR_HYPOTHESIS",
+              "entry_moment": "从已经就坐的饭桌进入并无错误；但首段很快转入电话，关系建立依赖少量线索，双向回应的承载密度不足。",
+              "fact_input_gap": "不是案情输入不足。若需要特别的开心理由或过往亲密依据，那属于尚未授权的生活事实，不能自行补定。",
+              "presentation": "主要是现有亲近、照料和留人意愿尚未充分连成有来有往的同场经验。"
+            }
+          },
+          "reading_impact": "EDITOR_HYPOTHESIS：可以理解孩子信任舅舅，却较少体验这次团聚对各人的私人吸引力；段尾的换手因此更突出行动受阻，较少携带前面相处积累的情感分量。",
+          "minimum_scope": "调整整个饭桌关系的相互回应，不限定在“挨着”后补一句心情；利用现有吃鱼、照料、留宿和留人意愿即可，不要求完整重写归家过程。",
+          "recheck": "只读正文，能否说明孩子当下为何愿意靠近、弟弟怎样回应，以及其他家人如何参与这段相处；答案不能仅来自冻结事实，也不能只靠一个情绪名称。"
+        },
+        {
+          "id": "PD2",
+          "basis": "EDITOR_HYPOTHESIS",
+          "quote": "“你坐着，我——”我还得把这句话说得像客气。",
+          "line": 19,
+          "explanation": {
+            "stage": "已知失败后的诊断",
+            "human_original": {
+              "source": "ACTUAL_CURRENT_USER_MESSAGE",
+              "verbatim": "还有加入情感不是我指定的地方加入，是应该正常的写",
+              "limit": "真人没有单独指出本项根因；以下是依据整段正文提出的编辑假设。"
+            },
+            "text_fact": {
+              "basis": "TEXT_FACT",
+              "statement": "姐姐已经发生明确变化：第1行想问留宿，之后改为带孩子离开；压住喊声、控制步幅、等孩子吃完和维持客气，均体现紧迫与克制。其他人的对白也有眼前目的：母亲以“难得回来”留人（第13行），弟弟以“你先吃”提出代带（第17行），孩子从吃鱼转向购买口味（第11、19行）。不能把这些人物概括成全无目的的机械障碍。"
+            },
+            "frozen_fact_note": {
+              "source": "facts.known_relationship、facts.current_event",
+              "statement": "冻结事实明确姐姐对弟弟有亲情，同时不能拿女儿安全冒险。警示有事实依据；本项不要求姐姐怀疑来电、拖延撤离或补知全案。"
+            },
+            "editor_hypothesis": {
+              "basis": "EDITOR_HYPOTHESIS",
+              "statement": "危险后的变化主要被组织成“想立即行动，但必须装正常”的连续克制。这个层面已经清楚；较薄的是姐姐原先的亲近意愿如何被警示改变，以及母亲留人、弟弟照料这些正常行为此刻怎样影响她。即使首段补足温度，若后半仍只记录脱身难易，私人情绪仍容易与悬疑操作分开。"
+            },
+            "cause_classification": {
+              "basis": "EDITOR_HYPOTHESIS",
+              "entry_moment": "电话前后的目标转折已经建立，不必推迟来电或增加长篇犹豫。",
+              "fact_input_gap": "具体案情未知不是缺陷；所需的是现有关系在当前选择中的作用，不是新的危险证据。",
+              "presentation": "主要缺口是同一亲近行为在警示前后的意义变化，而非紧张程度不足。"
+            }
+          },
+          "reading_impact": "EDITOR_HYPOTHESIS：逃离因果和迫近感容易理解，但姐姐的体验较多被同一个“不能惊动他”任务统一；亲情与保护孩子之间的私人压力，尚未充分进入她对眼前相处的感受。",
+          "minimum_scope": "复核从留宿念头到末尾客气拒绝的整段情绪因果，使既有家庭目的真正影响姐姐的观察、取舍或说话方式；不是逐处添加心理注释，也不改变优先保护孩子的决定。",
+          "recheck": "能否从正文辨认：来电改变了姐姐怎样体验原本正常的亲近，而不只是改变行动速度和音量；同时母亲、弟弟、孩子的言行仍来自各自目的，而非被统一改成配合悬疑的反应。"
+        }
+      ],
+      "protected_parts": [
+        {
+          "quote": "妈把排骨往他面前推，自己的筷子却没动。",
+          "line": 1,
+          "reason": "TEXT_FACT：已有母亲偏向照料弟弟的动作。EDITOR_HYPOTHESIS：这是有效的日常情感载体，不应因修订而被夸张表态取代。"
+        },
+        {
+          "quote": "我八岁的女儿挨着他，等他挑鱼刺。",
+          "line": 1,
+          "reason": "TEXT_FACT：靠近具有具体进食目的。EDITOR_HYPOTHESIS：应保留这种自然亲近，不必把它判为毫无理由，也不必强加单一开心标签。"
+        },
+        {
+          "quote": "我正想问他今晚住不住，手机响了。",
+          "line": 1,
+          "reason": "TEXT_FACT：姐姐在警示前有询问留宿的意向。EDITOR_HYPOTHESIS：它是后续私人变化的现成起点，应保护而非另造往事。"
+        },
+        {
+          "quote": "别惊动他，先把孩子带出来。",
+          "line": 3,
+          "reason": "TEXT_FACT：警员提出清楚的行动约束。EDITOR_HYPOTHESIS：应保留其明确性，不能用核验来电或公布案情代替关系修订。"
+        },
+        {
+          "quote": "妈端着汤问：“你弟弟难得回来，你这就走？”",
+          "line": 13,
+          "reason": "TEXT_FACT：母亲以团聚难得质询离席。EDITOR_HYPOTHESIS：对白有独立留人目的，不需要升级成争吵。"
+        },
+        {
+          "quote": "弟弟拿起车钥匙跟过来：“我带她去，你先吃。”",
+          "line": 17,
+          "reason": "TEXT_FACT：弟弟提出代带，并给出让姐姐继续吃饭的理由。EDITOR_HYPOTHESIS：其表面日常性与危险信息并置值得保留，不能直接判定为蓄意控制。"
+        },
+        {
+          "quote": "女儿从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+          "line": 19,
+          "reason": "TEXT_FACT：孩子主动改变牵手对象并提出口味要求。EDITOR_HYPOTHESIS：这是具体且关系相关的段尾进展，不需要新增灾难强化。"
+        }
+      ],
+      "minimal_change_targets": [
+        {
+          "finding_id": "PD1",
+          "basis": "EDITOR_HYPOTHESIS",
+          "target": "让既有饭桌动作和目的构成双向相处，使亲近不只承担位置安排与后续阻碍功能。",
+          "boundary": "不要求人人表达开心，不补共同往事，不把修订缩成指定动作旁的一句情绪。"
+        },
+        {
+          "finding_id": "PD2",
+          "basis": "EDITOR_HYPOTHESIS",
+          "target": "让警示前后的同一家庭关系发生可辨认的体验变化，保留各人的日常目的和姐姐明确的安全优先。",
+          "boundary": "不要求哭喊、争吵、否认警示或长篇内心分析；不新增案情。"
+        }
+      ],
+      "recheck_conditions": [
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "condition": "复读前30—60字及前150—300字：正常相处与警示后的变化能够前后关联，而不是分别补上温情和紧张标签。"
+        },
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "condition": "逐一检查母亲留人、孩子进食与口味选择、弟弟代带、姐姐撤离的目的；允许目的随情境变化，不要求统一情绪或完整人物小传。"
+        },
+        {
+          "basis": "EDITOR_HYPOTHESIS",
+          "condition": "段尾仍由既有换手动作使选择变难，关系修订没有削弱脱身因果，也没有用公开案情、新灾难或孩子突然恐惧替代问题。复验仅判断文本，不宣称真人接受。"
+        }
+      ],
+      "unknowns": [
+        {
+          "basis": "TEXT_FACT",
+          "item": "孩子的开心程度、弟弟照料孩子的完整私人动机，以及相关既往相处细节，材料未确定；不能把合理推断升级为正文事实。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "item": "具体案情、弟弟是否察觉撤离意图、后续安全结果未展示；未展示不等于矛盾。"
+        },
+        {
+          "basis": "TEXT_FACT",
+          "item": "本次目标不依赖新增生活事实。若后续选择用特定共同往事、承诺或固定习惯解释亲近，应先列为授权前待准备项，本报告不补定其内容。"
+        }
+      ]
+    }
+  ],
+  "unknowns": [
+    {
+      "basis": "TEXT_FACT",
+      "item": "没有修订前稿或修改记录，无法核实真人所问“你确定改了？”；只能诊断现稿。"
+    },
+    {
+      "basis": "TEXT_FACT",
+      "item": "没有提供搜索材料，historical_material为空；无法判断此前搜索了什么或据此比较写法。"
+    },
+    {
+      "basis": "TEXT_FACT",
+      "item": "真人原话表达了修改质疑和自然情感要求，没有提供停止句、完读情况、续读判决或“AI味”判决。两项根因均为编辑假设，不是已验证的真人失败机制。"
+    }
+  ]
+}

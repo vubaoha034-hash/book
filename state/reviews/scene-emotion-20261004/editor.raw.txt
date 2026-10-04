@@ -1,0 +1,69 @@
+{
+  "job_id": "J-SR209-E",
+  "work_kind": "EDITORIAL_REVIEW",
+  "runtime_context": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "isolation": "FRESH_PROCESS_FRESH_EPHEMERAL_THREAD_ENVIRONMENTS_DISABLED_NO_HISTORY"
+  },
+  "results": [
+    {
+      "artifact_id": "K209E",
+      "original_sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11",
+      "scope": "NEW_STORY_OPENING_EXCERPT",
+      "verdict": "EDITORIAL_CLEAR",
+      "reading_expectations": {
+        "first_30_60": {
+          "quote": "八岁的女儿把椅子挪到弟弟身边，笑着勾住他的胳膊：“舅舅，你吃完饭别走。”母亲又给他添了饭，问够不够。",
+          "line": 1,
+          "expectation": "先进入亲近的家庭饭桌，此时尚无明确危险或悬疑追问。",
+          "reading_impact": "女儿主动亲近舅舅，为末尾她选择跟随舅舅建立了依据；同一份亲近随后成为带离她的阻力。"
+        },
+        "first_150_300": {
+          "quote": "他说，刚在楼外确认弟弟进了这个单元，弟弟正被追查，现在有危险。“别惊动他，先把孩子带出家门。”",
+          "line": 3,
+          "expectation": "眼前的主要追问是姐姐能否不惊动弟弟带走女儿，案情原因暂待解释。",
+          "reading_impact": "追查与警告改变了团聚的意义，并给出具体行动要求。姐姐随后优先考虑孩子安全，把认识变化落实为下楼买酸奶的选择；正文没有直接认定弟弟会伤人。"
+        },
+        "ending": {
+          "quote": "我刚说了一个“不”字，女儿已经松开我的手，转身握住了舅舅的手。",
+          "line": 13,
+          "expectation": "姐姐如何继续阻止女儿由弟弟带走，同时避免暴露警惕。",
+          "reading_impact": "女儿的动作直接削弱了姐姐的带离办法，下一步需要处理的是已经发生的具体阻碍，而不只是等待案情揭晓。"
+        }
+      },
+      "findings": [],
+      "protected_parts": [
+        {
+          "quote": "他离家多年，联系很少，今天突然坐回这张桌子，我有好多话想问，又觉得先吃完这顿饭也好。",
+          "line": 1,
+          "reason": "姐姐主动延缓追问、珍惜团聚，使后来的警惕与带离具有私人代价，而非单纯执行警方指令。"
+        },
+        {
+          "quote": "女儿在外面叫舅舅，我很想立刻喊她过来，又不敢。刚才弟弟冲我笑时，我还想着饭后能跟他多坐一会儿。我不知道他出了什么事，可不能拿孩子的安全赌。",
+          "line": 5,
+          "reason": "想立即保护女儿与不敢惊动弟弟相互制约，亲情余温也没有骤然消失；感受变化与随后选择能够衔接。"
+        },
+        {
+          "quote": "“吃完再去吧，”母亲说，“你舅舅好容易回来。”",
+          "line": 9,
+          "reason": "顺接姐姐对女儿的邀请，母亲以留住团聚为自己的目的说话，没有替警情作说明。"
+        },
+        {
+          "quote": "弟弟放下了筷子：“姐，你吃吧，我带她去。”",
+          "line": 11,
+          "reason": "字面上是接过买酸奶的差事，符合饭桌上的日常应答，却恰好破坏姐姐的办法；无需预先把它解释为识破或威胁。"
+        }
+      ],
+      "minimal_change_targets": [],
+      "recheck_conditions": [],
+      "unknowns": [
+        "具体案情、危险方式及后续带离结果未展示，不据此判断后文兑现或全篇成败。",
+        "当前没有真人阅读结果；EDITORIAL_CLEAR仅表示未发现本摘录的高影响阻塞。"
+      ]
+    }
+  ],
+  "unknowns": [
+    "当前没有真人阅读结果，本次是新稿局部审查，不是真人验收。"
+  ]
+}

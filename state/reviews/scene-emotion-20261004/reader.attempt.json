@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/scene-emotion-20261004/reader-packet.json",
+    "blob": "b695c0796c531488a4aee3a2020d0c2df6f654cc",
+    "sha256": "16455fc8c8d1e92b771c2317cd6d27a9aa09a628b443b00531f49fcbdb1e83f4"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T02:49:38Z"
+}

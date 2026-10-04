@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "role": "diagnosis",
+  "packet": {
+    "path": "delivery/scene-emotion-20261004/diagnosis-packet.json",
+    "blob": "0588aec4294bd0ac787085a38e0b16c45bd5170a",
+    "sha256": "b830e127c024a1e367a485a45365706dc88d08b58658a48829ddb7ac092acee4"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T02:46:33Z"
+}

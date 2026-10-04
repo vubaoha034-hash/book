@@ -1,0 +1,135 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "source_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+  "source_checkpoint": 208,
+  "scope_kind": "NATURAL_SCENE_RELATION_EMOTION",
+  "recorded_at": "2026-10-04T02:59:14Z",
+  "status": "ONE_SCENE_EMOTION_SHORT_FROZEN_AWAIT_ACTUAL_HUMAN_READING",
+  "primary_generation_count": 0,
+  "local_repair_count": 1,
+  "visible_candidate_count": 1,
+  "actual_model_calls": 4,
+  "successful_model_calls": 4,
+  "human_quality_result": "UNKNOWN",
+  "remaining_repair_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_scene_or_TEST01_promoted": false,
+  "AI_quality_certification": false,
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_SCENE_EMOTION_AUTHORIZATION_20261004.json",
+    "blob": "a82ecb04c5323cc3583fbb0f5fa31caf5356128e",
+    "sha256": "89465fa4ce89feb05116a4a0dc8b783bb72b2971fc98496e2462f051fbb0f5b4"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_SCENE_EMOTION_417_HUMAN_APPLICATION_CHALLENGE_20261004.json",
+    "blob": "f3ee9ab2474c5432010f125f0b8866fd2f4d9aab",
+    "sha256": "3890357a86de6fb6bc8a03e360b88ed6cbd4de4d35badcf39b63e2c13a1564a2"
+  },
+  "source_artifact": {
+    "path": "delivery/fear-concealment-20261004/opening-repaired.md",
+    "blob": "d39c26942e7fb62e9309529d672f0e4c1044df58",
+    "sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299"
+  },
+  "manifests": {
+    "production": {
+      "path": "config/novel-scene-emotion-20261004-production.json",
+      "blob": "24522398a6d897f9c979f17430a4610037ba0b07",
+      "sha256": "c71fb4e4896d1e677eb08ed71290d704b599007220e4cb13d8ef16e9590d1439"
+    },
+    "reviews": {
+      "path": "config/novel-scene-emotion-20261004-reviews.json",
+      "blob": "e7a4263fb46e7209bfde4e8fd3b155855d11d8b6",
+      "sha256": "c5ce18e98412a22c3a6df49ad7e25b4acd2f3fa1fae928f3ac40c2a2fc064198"
+    }
+  },
+  "writer_input": {
+    "path": "delivery/scene-emotion-20261004/writer-packet.json",
+    "blob": "adb16ac28d07164157180d7fc32c35464ae96712",
+    "sha256": "fefb404b185e17d7ee3d66ebdbc0f586e93bb4b451251cdc4f9591f7bedc96ba"
+  },
+  "final_artifact": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "settlement": {
+    "path": "state/reviews/scene-emotion-20261004/coordinator-settlement.json",
+    "blob": "33af44c5a3b374e7981b6c422fa6fd9b36887760",
+    "sha256": "240345649cfe5231e69910cd343e098022581c21fb07462911045941327da5f8"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/scene-emotion-20261004/pending-human-review.json",
+    "blob": "eb379fff86e0be01b885ca80732515661be42fd1",
+    "sha256": "ee810f6a2617037da284fcc0820606c8bf4a720f7de19a4aa6b778b4e37315ee"
+  },
+  "runtimes": {
+    "diagnosis": {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.runtime.json",
+      "blob": "335aa93fb3c60bfe995575fe8b54b6511a32f9e8",
+      "sha256": "3dfb0a6e23aac74f73c7649fa0e0c7ad224e2659fd1fdb06fe48d4baf15b9efc"
+    },
+    "writer": {
+      "path": "state/reviews/scene-emotion-20261004/writer.runtime.json",
+      "blob": "7b17400a9645ea8a5b2b98f3170baf4bf8770488",
+      "sha256": "e6e5c4ad2264f495bc294b10256e9a2584ea231b72790c434217e97c835b0677"
+    },
+    "editor": {
+      "path": "state/reviews/scene-emotion-20261004/editor.runtime.json",
+      "blob": "1b5b61639a39282c37257db7e4cbf93d9c6cfdc5",
+      "sha256": "d3b50116ed9fb10d7c73656c3910e7d3179c07578f6b8fa84130c6f3c0a901e1"
+    },
+    "reader": {
+      "path": "state/reviews/scene-emotion-20261004/reader.runtime.json",
+      "blob": "e9ab1996949eda6732d1207d4c7b63f7a8a6b03a",
+      "sha256": "eb23b88465e27bbe35ce2e844c34d3c1c2fa882f50c3f9265d9bdd9a6ab524ca"
+    }
+  },
+  "raw_reports": {
+    "diagnosis": {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.raw.txt",
+      "blob": "515385b02a8a33c084baf49079fb45cba8812520",
+      "sha256": "6569ed7c6c5092f8fcc12815681e48cdfba54960188c3e4cc6bd44dd0841cade"
+    },
+    "editor": {
+      "path": "state/reviews/scene-emotion-20261004/editor.raw.txt",
+      "blob": "488d94de2db6eaadeb87fbad6f10a6b349702099",
+      "sha256": "5088d9943c91a05d9b20a7e6b64f93bf9016afb7991f07f25c79d9c6ee2350d1"
+    },
+    "reader": {
+      "path": "state/reviews/scene-emotion-20261004/reader.raw.txt",
+      "blob": "b58409174b590f6e7e5d397807494282764c32d5",
+      "sha256": "f243b18a45c134eff01517459c9048b926077dba0b4bb9cecda7dbf202b83a64"
+    }
+  },
+  "evidence": {
+    "diagnosis": {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.evidence.json",
+      "blob": "ddb43ccb5263ebf0200b2571fb31206c167b7314",
+      "sha256": "d71007faaa70a850698ac3c2f02a1c208aa46f193d8094543e7c77968d900772"
+    },
+    "editor": {
+      "path": "state/reviews/scene-emotion-20261004/editor.evidence.json",
+      "blob": "4d447dd3402b8dd544b90ac76c5e53f4e9acaba4",
+      "sha256": "a278bcc981bae4f97e6a186e50f6d26775054519fc91154a0e877e2ceee6db01"
+    },
+    "reader": {
+      "path": "state/reviews/scene-emotion-20261004/reader.evidence.json",
+      "blob": "df3e879102c3d79913b6cc76d75f70e0d2b614db",
+      "sha256": "8288ea4171395f4fe877b7a080cf189ccb7b0052dc732d2e5e0db38d624cda61"
+    }
+  },
+  "learning_application": {
+    "path": "state/reviews/scene-emotion-20261004/learning-application.json",
+    "blob": "91db8f1b2d5bae6f789a3a73dcdf0f75a66be4f7",
+    "sha256": "dd1c394c8bea5155e7cd0f7aef57255ef1171fdd14759ff5296e869cd69f6c25"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_NATURAL_SCENE_EMOTION_RESULT_20261004.md",
+    "blob": "ec74143a16d065944d2fe6df6057a26261ee4699",
+    "sha256": "4e70e872edec22e9aa49d694801297dda71427ad45af24f6003d662e5d0c5079"
+  }
+}

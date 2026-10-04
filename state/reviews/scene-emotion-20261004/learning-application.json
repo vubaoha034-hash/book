@@ -1,0 +1,62 @@
+{
+  "task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "source_head": "cac7ae60ed59888c1200c19e1cfdde1a0e2eda13",
+  "source_learning": [
+    {
+      "path": "docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md",
+      "blob": "937b20e3cfabbd72c4ee1fbc10746aa5307b40d0",
+      "sha256": "181910134c87ebfa099ca2a7044e3e305b5957d2356a42daab284cc87f366e48"
+    },
+    {
+      "path": "state/learning/new-story-20261004/sources.json",
+      "blob": "47e2b632c0f0eeac215669a3fe1c1bd29144e7a5",
+      "sha256": "67e255be3a6a69fce4f4fd9069d2ffd9a512e0f6a629b77015bebd5ffe9d2059"
+    },
+    {
+      "path": "modules/emotion-reaction-and-pacing.md",
+      "blob": "987f34445947899e05feb853eb3be8653227203c",
+      "sha256": "298f3ca051ae293760ed1506df270c12abe1bbe0e985c752a921f5819c282c5c"
+    }
+  ],
+  "current_recheck": [
+    {
+      "url": "https://writingexcuses.com/writing-excuses-7-33-authentic-emotion/",
+      "read": "Official transcript, especially 114–128: attention, plausible continuity and mixed emotion.",
+      "adopted": "Emotion runs through relationships before and after change, not only the danger beat."
+    },
+    {
+      "url": "https://writingexcuses.com/writing-excuses-9-19-showing-emotion/",
+      "read": "Official transcript, especially 63–89: internal motivation, readable emotion at the beginning, showing/telling depends on context.",
+      "adopted": "Do not mistake external actions for complete emotional experience; direct interiority is allowed."
+    },
+    {
+      "url": "https://writershelpingwriters.net/2008/02/emotion-thesaurus-entry-happinessjoy/",
+      "read": "Author public short article, paragraphs about person-specific expression and happiness/joy; not whole paid book.",
+      "adopted": "Ordinary positive feelings and desire for company matter; no list of stock symptoms or body actions copied."
+    },
+    {
+      "url": "https://writingexcuses.com/21-39-write-what-you-feel/",
+      "read": "Episode page summary and public homework only, no transcript/audio available in page.",
+      "adopted": "Not used as evidence of completing a lecture or autobiographical experience."
+    }
+  ],
+  "actual_prior_findings": [
+    "情绪会改变注意、解释与回应。",
+    "开头可明说内心动机，展示/直说不是二选一。",
+    "悬念需要值得关心的未来结果，危险本身不保证关心。",
+    "关系、对白目的、场景节奏已有方法，但应用成了撤离程序。"
+  ],
+  "gap": "上轮只把资料里的克制当作危机局部动作，孩子与母亲作为亲近/挽留功能，姐姐原本愿意团聚也停留在一句计划。真人指出的是整个场面的自然情感，不能再只在点名位置补反应。",
+  "research_read_is_quality_pass": false,
+  "new_independent_diagnosis_claimed": true,
+  "diagnosis_or_human_label_in_writer": false,
+  "writer_receives_failed_text": false,
+  "current_writer_guidance": {
+    "path": "delivery/scene-emotion-20261004/writer-packet.json",
+    "blob": "adb16ac28d07164157180d7fc32c35464ae96712",
+    "sha256": "fefb404b185e17d7ee3d66ebdbc0f586e93bb4b451251cdc4f9591f7bedc96ba"
+  },
+  "full_book_read": false,
+  "full_video_or_audio_completed": false,
+  "new_population_experiment": false
+}
