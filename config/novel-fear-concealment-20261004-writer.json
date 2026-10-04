@@ -1,0 +1,31 @@
+{
+  "schema_version": "one-emotion-dialogue-repair-manifest/v1",
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "source_head": "3fcdc43a349e34fd583b344d0c74e70918215d1b",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_FEAR_CONCEALMENT_REPAIR_AUTHORIZATION_20261004.json",
+    "blob": "55d495d8d80946fddf8462581d53c39f57188208",
+    "sha256": "755fc99462c771c3c0f2bb9dffb18125054f8e34b92a2bf61d41752602432de7"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "quality_certification_allowed": false,
+  "result_dir": "state/reviews/fear-concealment-20261004",
+  "jobs": {
+    "writer": {
+      "packet": {
+        "path": "delivery/fear-concealment-20261004/writer-packet.json",
+        "blob": "f78001bdfe951db5e8041eb2794c80cf4b53196d",
+        "sha256": "57b5947c9afc3b9369a491ffcc1457e66a02ab156a74fc998d7d4b8bafacf0d2"
+      },
+      "policy": {
+        "path": "delivery/fear-concealment-20261004/writer-policy.txt",
+        "blob": "1074998fd6169185de7acf4c1c496969abf77be1",
+        "sha256": "42089de072060bf2faf7d5166caed408fad3295540b3430915649d01ca6c2236"
+      },
+      "raw_path": "delivery/fear-concealment-20261004/opening-repaired.md",
+      "max_calls": 1
+    }
+  }
+}

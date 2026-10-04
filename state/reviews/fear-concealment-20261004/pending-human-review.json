@@ -1,0 +1,12 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "artifact": {
+    "path": "delivery/fear-concealment-20261004/opening-repaired.md",
+    "blob": "d39c26942e7fb62e9309529d672f0e4c1044df58",
+    "sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299"
+  },
+  "outcome": "UNKNOWN",
+  "accepted": false,
+  "human_feedback": {},
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT"
+}

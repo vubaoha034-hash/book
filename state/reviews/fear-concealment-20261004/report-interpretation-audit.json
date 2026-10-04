@@ -1,0 +1,30 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "final_artifact": {
+    "path": "delivery/fear-concealment-20261004/opening-repaired.md",
+    "blob": "d39c26942e7fb62e9309529d672f0e4c1044df58",
+    "sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299"
+  },
+  "raw_reports_rewritten": false,
+  "new_model_call": false,
+  "coordinator_scope": "Quote position and fact/scope interpretation only; not another independent reader.",
+  "corrections": [
+    {
+      "role": "editor",
+      "window": "first_150_300",
+      "quote": "电话是我认识的陈警官打来的：“我们在追查你弟弟，刚在楼外看见他进了这个单元。现在有危险。别惊动他，先把孩子带出来。”",
+      "line": 3,
+      "actual_non_whitespace_range": [
+        82,
+        139
+      ],
+      "disposition": "DO_NOT_TREAT_AS_A_QUOTE_FROM_CHARACTERS_150_TO_300",
+      "reason": "引文真实，但其非空白位置82—139，不能直接充当150—300字窗口证据；保留为警告转折处的编辑解释，不移改原报告。"
+    }
+  ],
+  "reader_unknown_disposition": {
+    "quote": "尚不足以判断警告是否可靠",
+    "disposition": "READER_UNCERTAINTY_ONLY_NOT_A_FACT_REJECTION",
+    "reason": "匿名AI只有正文。认识警员在正文，冻结事实明确可信且不允许改成骗电话；读者此处保留不授权作者增加验电话情节，也不能改写原报告。"
+  }
+}

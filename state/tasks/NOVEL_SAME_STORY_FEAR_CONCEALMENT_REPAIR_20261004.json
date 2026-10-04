@@ -1,0 +1,124 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "source_head": "3fcdc43a349e34fd583b344d0c74e70918215d1b",
+  "source_checkpoint": 207,
+  "recorded_at": "2026-10-04T01:39:44Z",
+  "status": "ONE_SCOPED_REPAIR_FROZEN_AWAIT_ACTUAL_HUMAN_READING",
+  "primary_generation_count": 0,
+  "local_repair_count": 1,
+  "visible_candidate_count": 1,
+  "actual_model_calls": 3,
+  "successful_model_calls": 3,
+  "human_quality_result": "UNKNOWN",
+  "remaining_repair_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_scene_or_TEST01_promoted": false,
+  "AI_quality_certification": false,
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_FEAR_CONCEALMENT_REPAIR_AUTHORIZATION_20261004.json",
+    "blob": "55d495d8d80946fddf8462581d53c39f57188208",
+    "sha256": "755fc99462c771c3c0f2bb9dffb18125054f8e34b92a2bf61d41752602432de7"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_FEAR_CONCEALMENT_REPAIR_392_HUMAN_ROBOTIC_FAIL_20261004.json",
+    "blob": "147fedc8e3d16895340d2ea79bb8c4cc98dde386",
+    "sha256": "867bb51542f3a91c75a191a10cc61897c21064f9109ffc0fa328bff463b21fc4"
+  },
+  "source_artifact": {
+    "path": "delivery/emotion-dialogue-20261004/opening-repaired.md",
+    "blob": "1ba89f7c5a58dae8be3e1e1f74091272113003ef",
+    "sha256": "4af3ee2caf96498af48ec1a3554896b314fc1b119f5ae8243199888c9f6e0b9b"
+  },
+  "manifests": {
+    "writer": {
+      "path": "config/novel-fear-concealment-20261004-writer.json",
+      "blob": "3591aa31f38c8be5383480db3ab21b30d1926f42",
+      "sha256": "7f0fc3c62e4ff544ac24860cfe47717a86fc85ed1f31890fd89447a0c940da2b"
+    },
+    "reviews": {
+      "path": "config/novel-fear-concealment-20261004-reviews.json",
+      "blob": "27bf9b86b04d363678031c4d9b13ca094de95eba",
+      "sha256": "b2ac77203fce263e5feca27a057bbc10916bbc1effb650073c4fd5f6d33dc14d"
+    }
+  },
+  "writer_input": {
+    "path": "delivery/fear-concealment-20261004/writer-packet.json",
+    "blob": "f78001bdfe951db5e8041eb2794c80cf4b53196d",
+    "sha256": "57b5947c9afc3b9369a491ffcc1457e66a02ab156a74fc998d7d4b8bafacf0d2"
+  },
+  "final_artifact": {
+    "path": "delivery/fear-concealment-20261004/opening-repaired.md",
+    "blob": "d39c26942e7fb62e9309529d672f0e4c1044df58",
+    "sha256": "955ca12af3536a693462b0edf8ae29e9283c86f35dd9318d8a95c0b4dba12299"
+  },
+  "settlement": {
+    "path": "state/reviews/fear-concealment-20261004/coordinator-settlement.json",
+    "blob": "2ca0a9429799ff3e3f466603b581c95eb0171e98",
+    "sha256": "b99cc2cde520d9687c6f728db4f0a6841e956c51bf5ff7b71941e306dd4a5bb8"
+  },
+  "pending_human_review": {
+    "path": "state/reviews/fear-concealment-20261004/pending-human-review.json",
+    "blob": "42cb625a15a4519f7fe1387e412f8c2e22c6b595",
+    "sha256": "81ba8f7aaed8bd5b1cad772777ae3492ae726b4b47587309164ecf9b914b9188"
+  },
+  "runtimes": {
+    "writer": {
+      "path": "state/reviews/fear-concealment-20261004/writer.runtime.json",
+      "blob": "359d92b1fab5580420f7d18b1b2cde82ccfc86ea",
+      "sha256": "c38bc5f77a907a48c81afb57717337097d7d35607161133cc0c8dbcb5c3e097b"
+    },
+    "editor": {
+      "path": "state/reviews/fear-concealment-20261004/editor.runtime.json",
+      "blob": "085c5f3a63fb635ec1fb369a397c3bc40ef82fde",
+      "sha256": "2fb45e5916f4de07fc1a665b7e04c18ada71ba46896bfe04441d29c2bd3c0a74"
+    },
+    "reader": {
+      "path": "state/reviews/fear-concealment-20261004/reader.runtime.json",
+      "blob": "3704695984700c028fadbb68164449311002caf7",
+      "sha256": "e9c1f113cd56d205d2d25556a68a1f6d7c99f011ebcd6082e71684b7d8cd958e"
+    }
+  },
+  "raw_reports": {
+    "editor": {
+      "path": "state/reviews/fear-concealment-20261004/editor.raw.txt",
+      "blob": "73b7a26f05f5f3d4d155f4ae7ff7f5ea7598871e",
+      "sha256": "14f8a264b80062a0bce1f2f5b5e0819b6394a32e8b921f1f5c94dc7bb25deff7"
+    },
+    "reader": {
+      "path": "state/reviews/fear-concealment-20261004/reader.raw.txt",
+      "blob": "004e924addf0c39a7e234ab81b877e1c8feecbcd",
+      "sha256": "e7615911bbf867203a5434e80f213a4b84882714d1f4e1b8e6ce3a3ce10466aa"
+    }
+  },
+  "evidence": {
+    "editor": {
+      "path": "state/reviews/fear-concealment-20261004/editor.evidence.json",
+      "blob": "1709a0ed3714c9c624aa3501ad14b34588e20b67",
+      "sha256": "72c3118ebbc33e6444531986160ea73976fe77978456de38dbe9d2c89786ca1d"
+    },
+    "reader": {
+      "path": "state/reviews/fear-concealment-20261004/reader.evidence.json",
+      "blob": "510fee264baeab3d5a04e0904f0b6f6797d001a9",
+      "sha256": "4884b6d85d5f8499c07743a52fea569a4b04a4507a23dc5b6b406f5dba3cfa6c"
+    }
+  },
+  "learning_application": {
+    "path": "state/reviews/fear-concealment-20261004/learning-application.json",
+    "blob": "4d45b99886d13804223c839ec960ec53d104739c",
+    "sha256": "630b5c77b9ac0fe1ef0e8c5a61f73a8de3d2b5088686a52b29d31c087f5e31a1"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_FEAR_CONCEALMENT_REPAIR_RESULT_20261004.md",
+    "blob": "a7cfc20697f56c6388754b7fa110549ae4331515",
+    "sha256": "1b3aa873fb07f405e03679078b7fc899a754b8d71fefd715c9903ef37387d610"
+  },
+  "result": {
+    "path": "state/review_receipts/NOVEL_FEAR_CONCEALMENT_REPAIR_RESULT_20261004.json",
+    "blob": "89d78d14a833e5e7c3950ac04a6c7b3ef8be14cc",
+    "sha256": "893ed676cdfe55b2031b5e5f67d1f720e6f72124d339af6d5fac1cae09b10a6e"
+  }
+}

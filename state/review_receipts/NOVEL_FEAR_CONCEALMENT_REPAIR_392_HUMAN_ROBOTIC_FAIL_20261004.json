@@ -1,0 +1,36 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "source_head": "3fcdc43a349e34fd583b344d0c74e70918215d1b",
+  "source_checkpoint": 207,
+  "recorded_at": "2026-10-04T01:30:06Z",
+  "output": {
+    "path": "delivery/emotion-dialogue-20261004/opening-repaired.md",
+    "blob": "1ba89f7c5a58dae8be3e1e1f74091272113003ef",
+    "sha256": "4af3ee2caf96498af48ec1a3554896b314fc1b119f5ae8243199888c9f6e0b9b"
+  },
+  "human_exact_feedback": "他怎么了？”\n“出来再说。”\n我握着冰箱把手，看女儿把一块挑好的鱼肉分给弟弟。他笑着接了。我不知道他出了什么事，仍想听他亲口解释，可女儿不能坐在这里等我问明白。\n“陪妈妈下楼买酸奶。”我拿起她的外套。\n妈端着汤问：“你弟弟难得回来，你这就走？”\n“买她明早喝的，怕晚了店关门。买了就回来。”我替女儿套好外套，牵她往门口走。\n弟弟放下筷子，拿着车钥匙跟到门边：“我带她去，你先吃。”\n我刚要说不用，他已向女儿伸出手。她从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”\n\n\n你自己看看这对话跟两个机器人有什么区别。  她妈妈接到电话内心要不要吓到，要不要假装平静等等。哪有这种机器人一样的。我接到电话，我正常说话。平平静静，这就不是个人",
+  "outcome": "HUMAN_REJECTS_ROBOTIC_DIALOGUE_AND_UNFELT_FEAR",
+  "review": {
+    "dialogue_emotion": "FAIL_ROBOTIC_INTERACTION",
+    "emotion_verdict": "FAIL_UNFELT_FEAR_AND_CONCEALMENT",
+    "wants_to_continue": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "ai_smell_verdict": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
+  },
+  "prior_records_rewritten": false,
+  "scope": "Current 392-character version and quoted passage only; no retrospective new verdict for 383/417/448/404.",
+  "prior_AI_reports": {
+    "editor": {
+      "path": "state/reviews/emotion-dialogue-20261004/editor.raw.txt",
+      "blob": "b066efc1ea736fb7b44b1172f2873c6d61256dbf",
+      "sha256": "a2290616c39433a33d51592878263ba5e70d2ab0a8ac77fa9a069addb3f668d4"
+    },
+    "reader": {
+      "path": "state/reviews/emotion-dialogue-20261004/reader.raw.txt",
+      "blob": "420076d40c56fc98242bcb138781681fcf52dcd6",
+      "sha256": "b075040b82940dc93f45f6737d3cff9a4ed04b567c4557e33db4fdf9652750cf"
+    }
+  },
+  "limit": "Prior EDITORIAL_CLEAR and YES missed the human-rejected emotional interaction; this is not a new directly answered retention verdict."
+}

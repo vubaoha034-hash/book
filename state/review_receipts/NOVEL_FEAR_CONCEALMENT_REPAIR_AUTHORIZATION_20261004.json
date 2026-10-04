@@ -1,0 +1,53 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "source_head": "3fcdc43a349e34fd583b344d0c74e70918215d1b",
+  "source_checkpoint": 207,
+  "recorded_at": "2026-10-04T01:30:06Z",
+  "source": "STANDING_AUTONOMY_AND_CURRENT_HUMAN_REVIEW",
+  "authority": {
+    "exact_message": "他怎么了？”\n“出来再说。”\n我握着冰箱把手，看女儿把一块挑好的鱼肉分给弟弟。他笑着接了。我不知道他出了什么事，仍想听他亲口解释，可女儿不能坐在这里等我问明白。\n“陪妈妈下楼买酸奶。”我拿起她的外套。\n妈端着汤问：“你弟弟难得回来，你这就走？”\n“买她明早喝的，怕晚了店关门。买了就回来。”我替女儿套好外套，牵她往门口走。\n弟弟放下筷子，拿着车钥匙跟到门边：“我带她去，你先吃。”\n我刚要说不用，他已向女儿伸出手。她从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”\n\n\n你自己看看这对话跟两个机器人有什么区别。  她妈妈接到电话内心要不要吓到，要不要假装平静等等。哪有这种机器人一样的。我接到电话，我正常说话。平平静静，这就不是个人",
+    "interpretation": "One bounded same-story repair of fear and concealment under standing autonomy until human reading; current direction authorizes this immediate reaction, not new plot or life facts."
+  },
+  "standing_authorization": {
+    "path": "state/review_receipts/NOVEL_AUTONOMOUS_TO_HUMAN_AUTHORIZATION_20261003.json",
+    "blob": "c60da15bd190057337343ff559aa0f4f2af1281a",
+    "sha256": "0c9fa81b18e1a8f73987672f36363278ed6d5662ea9bfe28e8182287142e5f5e"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_FEAR_CONCEALMENT_REPAIR_392_HUMAN_ROBOTIC_FAIL_20261004.json",
+    "blob": "147fedc8e3d16895340d2ea79bb8c4cc98dde386",
+    "sha256": "867bb51542f3a91c75a191a10cc61897c21064f9109ffc0fa328bff463b21fc4"
+  },
+  "source_artifact": {
+    "path": "delivery/emotion-dialogue-20261004/opening-repaired.md",
+    "blob": "1ba89f7c5a58dae8be3e1e1f74091272113003ef",
+    "sha256": "4af3ee2caf96498af48ec1a3554896b314fc1b119f5ae8243199888c9f6e0b9b"
+  },
+  "scope": "ONE_SAME_STORY_EMOTION_AND_DIALOGUE_REPAIR_300_500_ONLY",
+  "writer_limit": 1,
+  "diagnosis_limit": 0,
+  "editor_limit": 1,
+  "reader_limit": 1,
+  "maximum_internal_repair": 0,
+  "old_RC3_remaining_rounds": 0,
+  "new_plot_or_life_facts_authorized": false,
+  "old_197_character_protection_released": false,
+  "full_scene_or_V5_authorized": false,
+  "multiple_visible_candidates_authorized": false,
+  "background_tasks_authorized": false,
+  "authorized_reaction": "姐姐被可信警告真正吓到，急着保护女儿；她仍在家人面前努力压住反应，不愿让母亲、弟弟发现来电警告。平静是她此刻勉强维持的表面，不是内在无事。只展开这一次即时反应，不增设往事、症状病史或后文事实。",
+  "prior_diagnosis": {
+    "path": "state/reviews/emotion-dialogue-20261004/diagnosis.raw.txt",
+    "blob": "212c04ab69266f9425f3400ce7ace6c3297aa78e",
+    "sha256": "96c42a75808b0c50c533eb209b60293ee226f8923e5df8f6ea26e4ea0711624b"
+  },
+  "new_independent_diagnosis_claimed": false,
+  "preserve": [
+    "same story and people",
+    "credible warning without whole case or known intent",
+    "child trusts uncle",
+    "grandmother unaware",
+    "departure blocked by child taking uncle hand",
+    "all prior text, reports, judgments and locks"
+  ]
+}

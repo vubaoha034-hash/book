@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "role": "writer",
+  "packet": {
+    "path": "delivery/fear-concealment-20261004/writer-packet.json",
+    "blob": "f78001bdfe951db5e8041eb2794c80cf4b53196d",
+    "sha256": "57b5947c9afc3b9369a491ffcc1457e66a02ab156a74fc998d7d4b8bafacf0d2"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T01:30:16Z"
+}

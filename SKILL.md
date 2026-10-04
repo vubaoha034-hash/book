@@ -5,6 +5,9 @@ description: Design, draft, diagnose, rewrite, and de-AI Chinese fiction with ev
 
 # Novel Writing Master V3
 
+检查点208：任务 `NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01`。当前392字被真人明确否决机器人般交互及未感到惊吓/掩饰；上轮AI通过报告保持原样，漏检记录保存。一次同故事修订为唯一新417字，另两个独立AI上下文及事实/引文核对完成，实际3次Sol / Max，沿用旧诊断，未宣称新增独立诊断。新稿真人UNKNOWN，旧稿、历史否决、383兴趣、锁和额度保持。见[实际结果](docs/NOVEL_FEAR_CONCEALMENT_REPAIR_RESULT_20261004.md)、[任务](state/tasks/NOVEL_SAME_STORY_FEAR_CONCEALMENT_REPAIR_20261004.json)及[唯一正文](delivery/fear-concealment-20261004/opening-repaired.md)。唯一下一步 `AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT`，当前预算已消费，不自动扩写、多个候选、V5或后台。读取/audit不重跑已消费调用。
+
+
 检查点207：任务 `NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01`。刘先生质疑原417字酸奶借口及情绪仍平，原话限定保存，未扩为续读/AI味判决；原383兴趣保持。一次独立已知失败后诊断2根因、一次同事实修订为唯一392字、另两个独立AI上下文审查和8项语义/事实核对完成，实际4次Sol / Max。新稿真人UNKNOWN，学习及AI赞成不证明情绪改善，旧稿/报告/锁/额度保持。见[实际结果](docs/NOVEL_EMOTION_DIALOGUE_REPAIR_RESULT_20261004.md)、[任务](state/tasks/NOVEL_SAME_STORY_EMOTION_DIALOGUE_REPAIR_20261004.json)及[唯一正文](delivery/emotion-dialogue-20261004/opening-repaired.md)。唯一下一步 `AWAIT_ACTUAL_HUMAN_READING_OF_ONE_EMOTION_DIALOGUE_REPAIRED_SHORT`，当前一次预算已消费，无后台、多个候选、完整场景或V5。读取/audit不重跑当前已消费调用。
 
 

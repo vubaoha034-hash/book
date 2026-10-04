@@ -1,0 +1,76 @@
+{
+  "status": "READER_REACTION_EVIDENCE_LOCATED_NOT_HUMAN_PROOF",
+  "errors": [],
+  "located_quotes": [
+    {
+      "index": 0,
+      "quote": "傍晚，弟弟忽然回来吃饭。他离家多年，消息很少，妈把排骨往他面前推，自己的筷子却没动。我八岁的女儿挨着他，等他挑鱼刺。",
+      "actual_line": 1,
+      "start_character_0_based": 0
+    },
+    {
+      "index": 1,
+      "quote": "“陪妈妈下楼买酸奶。”我朝女儿伸出手，等她放下筷子。她还要把碗里的鱼吃完，我几乎要说别吃了，却只能拿着外套等。",
+      "actual_line": 11,
+      "start_character_0_based": 225
+    },
+    {
+      "index": 2,
+      "quote": "“你坐着，我——”我还得把这句话说得像客气。他已经伸出手。女儿从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+      "actual_line": 19,
+      "start_character_0_based": 377
+    },
+    {
+      "index": 3,
+      "quote": "现在有危险。别惊动他，先把孩子带出来。",
+      "actual_line": 3,
+      "start_character_0_based": 121
+    },
+    {
+      "index": 4,
+      "quote": "“出来再说。”",
+      "actual_line": 7,
+      "start_character_0_based": 152
+    },
+    {
+      "index": 5,
+      "quote": "妈端着汤问：“你弟弟难得回来，你这就走？”",
+      "actual_line": 13,
+      "start_character_0_based": 282
+    },
+    {
+      "index": 6,
+      "quote": "弟弟拿起车钥匙跟过来：“我带她去，你先吃。”",
+      "actual_line": 17,
+      "start_character_0_based": 353
+    },
+    {
+      "index": 7,
+      "quote": "我八岁的女儿挨着他，等他挑鱼刺。",
+      "actual_line": 1,
+      "start_character_0_based": 42
+    },
+    {
+      "index": 8,
+      "quote": "女儿从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+      "actual_line": 19,
+      "start_character_0_based": 406
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/fear-concealment-20261004/reader-packet.json",
+    "blob": "345c71bfd19365870e83de663ceaa4f9bb05ecc1",
+    "sha256": "a4ef31592d68fc854d8fd9dec5ebf741809bde2208c63ce92e860ac762ae4b40"
+  },
+  "raw_report": {
+    "path": "state/reviews/fear-concealment-20261004/reader.raw.txt",
+    "blob": "004e924addf0c39a7e234ab81b877e1c8feecbcd",
+    "sha256": "e7615911bbf867203a5434e80f213a4b84882714d1f4e1b8e6ce3a3ce10466aa"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "task_id": "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
+  "source_head": "3fcdc43a349e34fd583b344d0c74e70918215d1b",
+  "source_learning": [
+    {
+      "path": "modules/emotion-reaction-and-pacing.md",
+      "blob": "987f34445947899e05feb853eb3be8653227203c",
+      "sha256": "298f3ca051ae293760ed1506df270c12abe1bbe0e985c752a921f5819c282c5c"
+    },
+    {
+      "path": "state/reviews/emotion-dialogue-20261004/learning-application.json",
+      "blob": "b0cd2194705ef06e15ae7b70bd5e02addf1e7eb7",
+      "sha256": "43cf5124df89ca0399e3d70306853969ffe8e943e1fcfc4036728c9c51c2973e"
+    }
+  ],
+  "prior_independent_diagnosis": {
+    "path": "state/reviews/emotion-dialogue-20261004/diagnosis.raw.txt",
+    "blob": "212c04ab69266f9425f3400ce7ace6c3297aa78e",
+    "sha256": "96c42a75808b0c50c533eb209b60293ee226f8923e5df8f6ea26e4ea0711624b"
+  },
+  "new_independent_diagnosis_claimed": false,
+  "gap": "上一轮把关切与保护写成判断，AI将内心冲突的存在当成私人情绪成立；当前真人指出她像平静执行流程。此次检验冲击怎样影响注意与话语，以及压住反应的代价，不能用恐惧词或身体症状计数验收。",
+  "research_read_is_quality_pass": false,
+  "new_external_research_claimed": false,
+  "diagnosis_or_human_label_in_writer": false,
+  "current_writer_guidance": {
+    "path": "delivery/fear-concealment-20261004/writer-packet.json",
+    "blob": "f78001bdfe951db5e8041eb2794c80cf4b53196d",
+    "sha256": "57b5947c9afc3b9369a491ffcc1457e66a02ab156a74fc998d7d4b8bafacf0d2"
+  }
+}
