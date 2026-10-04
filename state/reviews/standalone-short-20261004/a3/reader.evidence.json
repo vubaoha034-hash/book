@@ -1,0 +1,265 @@
+{
+  "status": "REPORT_EVIDENCE_LOCATED_REQUIRES_COORDINATOR_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。",
+      "reported_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "到了楼上，她站在门口。屋里要搬的东西都装进了纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "reported_line": {
+        "start": 11,
+        "end": 11
+      },
+      "actual_line": 11,
+      "offset": 164,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "offset": 1894,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "后来我们拿尺子重新画图，一起把错的划掉。那天弄得太晚，第二天我睡过头，她拿着煎饼袋子到床边晃我，问还要不要吃早饭。",
+      "reported_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "offset": 429,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "reported_line": {
+        "start": 45,
+        "end": 45
+      },
+      "actual_line": 45,
+      "offset": 833,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reported_line": {
+        "start": 59,
+        "end": 59
+      },
+      "actual_line": 59,
+      "offset": 1094,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "offset": 1599,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 101,
+        "end": 103
+      },
+      "actual_line": 101,
+      "offset": 1870,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "做完了也是我的。",
+      "reported_line": {
+        "start": 23,
+        "end": 23
+      },
+      "actual_line": 23,
+      "offset": 375,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "经过门口时，她说：“地址发给我，别只说单位附近。”",
+      "reported_line": {
+        "start": 71,
+        "end": 71
+      },
+      "actual_line": 71,
+      "offset": 1315,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "offset": 1894,
+      "exact_quote_found": true,
+      "line_matches": false
+    }
+  ],
+  "position_corrections": [
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。",
+      "reported_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "到了楼上，她站在门口。屋里要搬的东西都装进了纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "reported_line": {
+        "start": 11,
+        "end": 11
+      },
+      "actual_line": 11,
+      "offset": 164,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "offset": 1894,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "后来我们拿尺子重新画图，一起把错的划掉。那天弄得太晚，第二天我睡过头，她拿着煎饼袋子到床边晃我，问还要不要吃早饭。",
+      "reported_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "offset": 429,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "reported_line": {
+        "start": 45,
+        "end": 45
+      },
+      "actual_line": 45,
+      "offset": 833,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reported_line": {
+        "start": 59,
+        "end": 59
+      },
+      "actual_line": 59,
+      "offset": 1094,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "offset": 1599,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 101,
+        "end": 103
+      },
+      "actual_line": 101,
+      "offset": 1870,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "做完了也是我的。",
+      "reported_line": {
+        "start": 23,
+        "end": 23
+      },
+      "actual_line": 23,
+      "offset": 375,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "经过门口时，她说：“地址发给我，别只说单位附近。”",
+      "reported_line": {
+        "start": 71,
+        "end": 71
+      },
+      "actual_line": 71,
+      "offset": 1315,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "offset": 1894,
+      "exact_quote_found": true,
+      "line_matches": false
+    }
+  ],
+  "raw_report_rewritten": false,
+  "human_quality_result_changed": false,
+  "automatic_quality_certification": false,
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a3/reader-packet.json",
+    "blob": "2cebea63995a2f1ddbb71b819eedacb8e1be3f82",
+    "sha256": "f3c28260e4d66cf53e19804aae7987d5f3803d7fd66f3a7e5be94a94c539b701"
+  },
+  "raw_report": {
+    "path": "state/reviews/standalone-short-20261004/a3/reader.raw.txt",
+    "blob": "73391877f7794ffe688d2ff149f29a3651216b7c",
+    "sha256": "9b262b8da8fa2d1782e3ab3e0c7006145e9e42c02ad53af3a46042131e6d78e0"
+  }
+}

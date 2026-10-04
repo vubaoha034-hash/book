@@ -1,0 +1,265 @@
+{
+  "status": "REPORT_EVIDENCE_LOCATED_REQUIRES_COORDINATOR_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。",
+      "reported_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。她拽了拽绳子，又看向我。\n\n“送你妈那儿，写作业方便。”我托高手里的纸箱，“先上楼，别挡着师傅。”\n\n她没动：“什么时候决定的？”\n\n司机正在收紧绳子。我说早几天，声音被棘轮的咔嗒声盖住，就没有再说一遍。\n\n到了楼上，她站在门口。屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "reported_line": {
+        "start": 1,
+        "end": 11
+      },
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 101,
+        "end": 103
+      },
+      "actual_line": 101,
+      "offset": 1869,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "去年我说自己还记得怎么做，和她各算出一个答案，两个都错。后来我们拿尺子重新画图，一起把错的划掉。",
+      "reported_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "offset": 397,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "reported_line": {
+        "start": 45,
+        "end": 45
+      },
+      "actual_line": 45,
+      "offset": 829,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”我扶住门框，才发现掌心全是汗，“上周就该告诉你。桌子、书，你来决定。我不会让车先走。”\n\n她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reported_line": {
+        "start": 57,
+        "end": 59
+      },
+      "actual_line": 57,
+      "offset": 1013,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "offset": 1598,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "快吃完时，她说：“下次周六要排练，换周日行吗？”\n\n“行。还是十二点？”\n\n“十二点半吧，上午我要补作业。”",
+      "reported_line": {
+        "start": 95,
+        "end": 99
+      },
+      "actual_line": 95,
+      "offset": 1813,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“做完了也是我的。”",
+      "reported_line": {
+        "start": 23,
+        "end": 23
+      },
+      "actual_line": 23,
+      "offset": 370,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“地址发给我，别只说单位附近。”",
+      "reported_line": {
+        "start": 71,
+        "end": 71
+      },
+      "actual_line": 71,
+      "offset": 1323,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "offset": 1598,
+      "exact_quote_found": true,
+      "line_matches": false
+    }
+  ],
+  "position_corrections": [
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。",
+      "reported_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。她拽了拽绳子，又看向我。\n\n“送你妈那儿，写作业方便。”我托高手里的纸箱，“先上楼，别挡着师傅。”\n\n她没动：“什么时候决定的？”\n\n司机正在收紧绳子。我说早几天，声音被棘轮的咔嗒声盖住，就没有再说一遍。\n\n到了楼上，她站在门口。屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "reported_line": {
+        "start": 1,
+        "end": 11
+      },
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": {
+        "start": 101,
+        "end": 103
+      },
+      "actual_line": 101,
+      "offset": 1869,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "去年我说自己还记得怎么做，和她各算出一个答案，两个都错。后来我们拿尺子重新画图，一起把错的划掉。",
+      "reported_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "offset": 397,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "reported_line": {
+        "start": 45,
+        "end": 45
+      },
+      "actual_line": 45,
+      "offset": 829,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”我扶住门框，才发现掌心全是汗，“上周就该告诉你。桌子、书，你来决定。我不会让车先走。”\n\n她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reported_line": {
+        "start": 57,
+        "end": 59
+      },
+      "actual_line": 57,
+      "offset": 1013,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "offset": 1598,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "快吃完时，她说：“下次周六要排练，换周日行吗？”\n\n“行。还是十二点？”\n\n“十二点半吧，上午我要补作业。”",
+      "reported_line": {
+        "start": 95,
+        "end": 99
+      },
+      "actual_line": 95,
+      "offset": 1813,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“做完了也是我的。”",
+      "reported_line": {
+        "start": 23,
+        "end": 23
+      },
+      "actual_line": 23,
+      "offset": 370,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "“地址发给我，别只说单位附近。”",
+      "reported_line": {
+        "start": 71,
+        "end": 71
+      },
+      "actual_line": 71,
+      "offset": 1323,
+      "exact_quote_found": true,
+      "line_matches": false
+    },
+    {
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "offset": 1598,
+      "exact_quote_found": true,
+      "line_matches": false
+    }
+  ],
+  "raw_report_rewritten": false,
+  "human_quality_result_changed": false,
+  "automatic_quality_certification": false,
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a2/reader-packet.json",
+    "blob": "ae96399ea75e76dc3e9dbd55864d944c125862fa",
+    "sha256": "101f0a8671dc6133ac748bfc69d9141b59b56610e5b6fe69b6fb325d0ec39209"
+  },
+  "raw_report": {
+    "path": "state/reviews/standalone-short-20261004/a2/reader.raw.txt",
+    "blob": "f150303a9388c779af086e4490491007453eeacb",
+    "sha256": "61304f3325989900f53a38951d6362831f3574e93dad5878ce79990a6efe8c5a"
+  }
+}

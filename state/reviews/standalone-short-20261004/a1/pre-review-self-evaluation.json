@@ -1,0 +1,67 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "recorded_at": "2026-10-04T04:09:23Z",
+  "source": "COORDINATOR_FULL_TEXT_READING_BEFORE_ANY_INDEPENDENT_REPORT_RETURNED",
+  "artifact": {
+    "path": "delivery/standalone-short-20261004/a1/draft.md",
+    "blob": "7cc0a894edba09920df435b7c5b88560a23f4fc2",
+    "sha256": "0ea91c2472d658bc2ac5e8686e525f9436799ad00c968225147efbdc319a5eee"
+  },
+  "self_evaluation": {
+    "dimensions": [
+      {
+        "id": "opening",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”",
+        "line": 1,
+        "reason": "第一句就有被隐瞒的具体变化及质问，读者能追问父亲为什么擅自搬走女儿的位置；它是安静关系故事，未证明所有读者会被强烈抓住。"
+      },
+      {
+        "id": "clarity_language",
+        "score": 1.5,
+        "maximum": 2,
+        "quote": "她转过身：“我今天不来，不是因为你的宿舍。”",
+        "line": 59,
+        "reason": "她已经来到这里，字面“今天不来”与当下发生矛盾；可推断她想说不留下，但未清楚写出，需要修正。其余人物和动作大体明确。"
+      },
+      {
+        "id": "emotion",
+        "score": 1.7,
+        "maximum": 2,
+        "quote": "我竟盼着她说，她妈那边也不是样样好，哪怕抱怨一句早饭不好吃。",
+        "line": 43,
+        "reason": "父亲的嫉妒、羞耻与想被需要是私人感受；女儿的愤怒来自被越过，不靠嫌贫标签。表达偏克制，对个人口味仍无数据。"
+      },
+      {
+        "id": "causality",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”",
+        "line": 57,
+        "reason": "隐瞒导致处置物品的冲突，退租是真限制，核心关系不能靠买桌解除；坦白和交还决定权承担当日女儿仍离开的代价。"
+      },
+      {
+        "id": "payoff",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+        "line": 103,
+        "reason": "同意下一次见面回应不用再来的威胁，住处没有恢复、饭桌亲近未瞬间回原样；通过协商而非亲情金句兑现。"
+      }
+    ],
+    "total": 8.6,
+    "maximum": 10
+  },
+  "identified_issue": {
+    "id": "COOR-A1-L1",
+    "basis": "TEXT_FACT",
+    "quote": "她转过身：“我今天不来，不是因为你的宿舍。”",
+    "line": 59,
+    "impact": "已经来过的事实与不来的字面冲突",
+    "minimum_goal": "明确今天不留下或今天不愿同行的实际拒绝，保持她生气源于隐瞒，不将其改成拒绝真实宿舍。"
+  },
+  "independent_reports_read": 0,
+  "human_score": "UNKNOWN",
+  "self_score_is_human_result": false
+}

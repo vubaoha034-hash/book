@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "copyeditor",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a1/copyeditor-packet.json",
+    "blob": "818f8638e44ffb3e1648d863e43c559d37885757",
+    "sha256": "c3868e0f553ac7be86c91a3a77ff1c3f14aafebfb90b58620472c59e2cc712e7"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T04:07:18Z"
+}

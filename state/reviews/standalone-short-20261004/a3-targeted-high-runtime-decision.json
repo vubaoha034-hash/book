@@ -1,0 +1,33 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "recorded_at": "2026-10-04T04:36:06Z",
+  "mode": "TARGETED_LOCAL_WORDING_RECHECK_AFTER_ACTUAL_MAX_REVIEWS",
+  "failed_runtime": {
+    "path": "state/reviews/standalone-short-20261004/a1/copyeditor.runtime.json",
+    "blob": "e7b70a447fd01eaa0f922def41befd3d8fedf8e4",
+    "sha256": "69e89123eb1a0c00e6af75545a22d3d9e1bce6064da591f888225cb9754c7370"
+  },
+  "original_effort": "max",
+  "same_model": "gpt-6.1-sol",
+  "requested_fallback_effort": "high",
+  "successful_max_reviews": {
+    "editor": {
+      "path": "state/reviews/standalone-short-20261004/a1/editor.runtime.json",
+      "blob": "c2cde91a277a95c9da674f7e921fe9551b99462c",
+      "sha256": "fb68a4670df5f30d4265d7a00be9bd6fc52a66215405561ca8f3f3d97a46f1c6"
+    },
+    "reader": {
+      "path": "state/reviews/standalone-short-20261004/a1/reader.runtime.json",
+      "blob": "d541ec38ddad759b17499884a774ba20c7f450a9",
+      "sha256": "24d023e548c6801a142824834f48ce8bdfb339c15396ab225e455fb0fe88801f"
+    }
+  },
+  "targeted_revision": {
+    "path": "delivery/standalone-short-20261004/a3/revision-goals.json",
+    "blob": "00b430ec62640929c9ef4de0edf7d739ea38d7f2",
+    "sha256": "ba633e705df8719a1d18f111ec77943b64dccbd682d92516d5b590d2402daad2"
+  },
+  "reason": "正文与完整结构/读者判断已实际运行Max；一轮Max校对15分钟无报告，High校对已具体找到两处局部问题。末轮仅修复这两处已定位措辞，采用Sol/High作实际完整独立复核并保留每个RPC返回设置。Max仍可选择，未宣称不可用，不靠重复不变稿取赞成。",
+  "no_new_provider_or_service": true,
+  "known_score_in_review_context": false
+}

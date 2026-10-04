@@ -1,0 +1,94 @@
+{
+  "status": "REPORT_EVIDENCE_LOCATED_REQUIRES_COORDINATOR_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "offset": 204,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": 103,
+      "actual_line": 103,
+      "offset": 1894,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "reported_line": 45,
+      "actual_line": 45,
+      "offset": 833,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reported_line": 59,
+      "actual_line": 59,
+      "offset": 1094,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "我提前到了，没点面。她进门时把书包放在另一把椅子上，点了番茄鸡蛋面。我点牛肉面。以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "reported_line": 83,
+      "actual_line": 83,
+      "offset": 1559,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "司机正在收紧绳子。我说早几天，声音被棘轮的咔嗒声盖住，就没有再说一遍。",
+      "reported_line": 9,
+      "actual_line": 9,
+      "offset": 127,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”",
+      "reported_line": 57,
+      "actual_line": 57,
+      "offset": 1017,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。",
+      "reported_line": 101,
+      "actual_line": 101,
+      "offset": 1870,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "human_quality_result_changed": false,
+  "automatic_quality_certification": false,
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "copyeditor",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a3/copyeditor-packet.json",
+    "blob": "760f4edf51b961b189338a44f215d4ba342a1b61",
+    "sha256": "c108da67050fe09b380424949e3c8d4528133e6ebe90071d3231511ba671aa11"
+  },
+  "raw_report": {
+    "path": "state/reviews/standalone-short-20261004/a3/copyeditor.raw.txt",
+    "blob": "62c24f09f4d67aadb274149b058522a201736de5",
+    "sha256": "8f4eeccb93e3d5c84567fb8094d69111809ae7e726e60cad1881957ecb063b8e"
+  }
+}

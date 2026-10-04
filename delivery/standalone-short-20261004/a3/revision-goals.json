@@ -1,0 +1,58 @@
+{
+  "kind": "COORDINATOR_LOCATED_COPYEDIT",
+  "prior_artifact": {
+    "path": "delivery/standalone-short-20261004/a2/draft.md",
+    "blob": "3499cd2befab69bc86c86c8317b02bcb80fbdb6b",
+    "sha256": "56b01c638627823de1152092cc309b48b869dd6058171ca1ead47f174a0747f2"
+  },
+  "located_issues": [
+    {
+      "id": "F01",
+      "severity": "MINOR",
+      "basis": "TEXT_FACT",
+      "quote": "屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。",
+      "line": 11,
+      "explanation": "“屋里只剩”按句面排除了纸箱以外的物件，后半句却仍写屋内的床和小饭桌。搬家语境允许读者推知前半句只统计父亲的物品，但这一限定没有写在句中。这是局部范围歧义，不是已经证实的空间连续性错误。",
+      "reading_impact": "读者可能短暂停顿，重新判断屋里究竟还留着哪些东西。",
+      "minimum_scope": "第11行中“只剩”的限定范围及相邻家具信息。",
+      "recheck": "核对房东家具仍在屋内这一事实，与前半句的排他范围是否一致。"
+    },
+    {
+      "id": "F02",
+      "severity": "MINOR",
+      "basis": "EDITOR_HYPOTHESIS",
+      "quote": "拉链没拉上，她又挤了挤，把带着我那页笔迹的本子放到最外面。",
+      "line": 63,
+      "explanation": "“带着我那页笔迹”的修饰层级不够顺畅：“那页”直接接在“笔迹”前，容易让读者暂时无法确定它指父亲写过的一页，还是某页上父亲的笔迹。第25行能够帮助还原意思，但剧情上的可还原性不能完全消除本句的搭配阻力。这里不认定存在确定的漏字。",
+      "reading_impact": "关键纪念物的描述需要回读，轻微打断女儿收回练习册的动作。",
+      "minimum_scope": "第63行中本子的定语部分。",
+      "recheck": "单独读取该句，确认页、本子与父亲笔迹之间的所属关系能够直接辨明。"
+    }
+  ],
+  "source_report": {
+    "path": "state/reviews/standalone-short-20261004/a2/copyeditor.raw.txt",
+    "blob": "5848fed591f2220e093a40c1c5305056cd6fff24",
+    "sha256": "125fcc3d9a512c0b7eec8bd024ad2aeb88c75cce9e828492877c07e3513cc5d1"
+  },
+  "source_evidence": {
+    "path": "state/reviews/standalone-short-20261004/a2/copyeditor.evidence.json",
+    "blob": "4d9cffb509523cde165bd1ff421823b986db3494",
+    "sha256": "990baaea90394193987a36d1ccf02cb81e9a0cf49384ec1c7e5c3e359195d736"
+  },
+  "exact_changes": [
+    {
+      "old": "屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。",
+      "new": "屋里要搬的东西都装进了纸箱，房东的床和小饭桌已经擦干净了。",
+      "reason": "明确只统计要搬走的物品，保留房东家具仍在屋内；无新增物件、时间或剧情。"
+    },
+    {
+      "old": "把带着我那页笔迹的本子放到最外面。",
+      "new": "把有我字迹的那本放到最外面。",
+      "reason": "直接表达本子上有父亲笔迹，消除页和笔迹修饰层级歧义；仍是原来一起算题的练习册。"
+    }
+  ],
+  "new_plot_or_fact_changes": false,
+  "coordinator_authored": true,
+  "new_model_writer_call": false,
+  "all_other_prose_bytes_unchanged": true
+}

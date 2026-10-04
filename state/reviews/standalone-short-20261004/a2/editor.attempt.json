@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "editor",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a2/editor-packet.json",
+    "blob": "0fb6bb4a846a725fefe512c61868beabf5bd821a",
+    "sha256": "5cd8f688a1bbd77e24eeee1a6edf911b0c168decaebce87e141155344f9e5775"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T04:26:55Z"
+}

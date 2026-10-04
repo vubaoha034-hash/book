@@ -1,0 +1,50 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "source": "COORDINATOR_DECLARED_BEFORE_WRITING",
+  "target": 9,
+  "total": 10,
+  "dimensions": [
+    {
+      "id": "opening",
+      "maximum": 2,
+      "criterion": "前60字建立具体人物压力与追问，300字内明白为什么在意；用冷读注意变化核对。"
+    },
+    {
+      "id": "clarity_language",
+      "maximum": 2,
+      "criterion": "人物/动作/指代清楚，句义、问答和口语自然，逐句复制编辑复核，不用单个词表保证无问题。"
+    },
+    {
+      "id": "emotion",
+      "maximum": 2,
+      "criterion": "普通私人欲望与关系随事件变化，惊讶/委屈/愤怒/难过等来自处境与选择，非机械标签或煽情说明。"
+    },
+    {
+      "id": "causality",
+      "maximum": 2,
+      "criterion": "主要转折有前因，人物主动选择并付代价，简单合理方案没有被作者忽略。"
+    },
+    {
+      "id": "payoff",
+      "maximum": 2,
+      "criterion": "完整结局回应开头，高潮改变现实关系/选择，不靠解释结尾、巧合或瞬间和解。"
+    }
+  ],
+  "necessary_evidence": [
+    "exact_quotes_and_positions",
+    "one_fresh_editor_report",
+    "one_fresh_cold_reader_report",
+    "one_fresh_copyeditor_report",
+    "coordinator_fact_and_quote_settlement"
+  ],
+  "release_conditions": [
+    "self_score_at_least_9",
+    "no_unresolved_major_or_blocker",
+    "all_review_reports_and_model_settings_valid",
+    "full_story_complete",
+    "lexical_and_referent_pass_done"
+  ],
+  "score_interpretation": "内部协调者自评，用于本轮选定交付；不由机器人平均分得出，不证明真人口味或总体准确率。",
+  "historical_false_releases_preserved": true,
+  "reviewers_receive_numeric_target": false
+}

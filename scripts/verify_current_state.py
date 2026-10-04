@@ -851,6 +851,10 @@ def verify(root: Path) -> dict:
     project_path = safe_file(root, 'state/project_state.json')
     project = load(root, 'state/project_state.json')
     cp = load(root, 'state/continuity/LATEST_CHECKPOINT.json')
+    if project.get('standalone_short_self9') is not None or cp.get('standalone_short_self9') is not None:
+        spec = importlib.util.spec_from_file_location('current_standalone_short_gate', Path(__file__).with_name('verify_standalone_short.py'))
+        gate = importlib.util.module_from_spec(spec); spec.loader.exec_module(gate)
+        return gate.verify(root, project, cp)
     if project.get('scoped_text_correction') is not None or cp.get('scoped_text_correction') is not None:
         spec = importlib.util.spec_from_file_location('current_scoped_text_correction_gate', Path(__file__).with_name('verify_scoped_text_correction.py'))
         gate = importlib.util.module_from_spec(spec); spec.loader.exec_module(gate)

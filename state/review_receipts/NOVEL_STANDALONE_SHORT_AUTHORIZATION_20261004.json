@@ -1,0 +1,39 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "source_head": "38c46c0e6de3099b660aaffe4fe8e5fcf7be6f0d",
+  "source_checkpoint": 210,
+  "recorded_at": "2026-10-04T03:51:22Z",
+  "authority": {
+    "source": "ACTUAL_CURRENT_USER_MESSAGE",
+    "exact_message": "首先这种任务不应该再出现，而后你自己再写一个短篇小说，自我评价。直到九分给我看。而后我来打分，最后看看情况如何了"
+  },
+  "scope": "ONE_STANDALONE_COMPLETE_SHORT_WITH_EVIDENCED_INTERNAL_REVISION_TO_SELF9",
+  "coordinator_chosen_length": {
+    "minimum": 1500,
+    "maximum": 2300,
+    "unit": "NONWHITESPACE_CHARACTERS",
+    "source": "IMPLEMENTATION_CHOICE_NOT_HUMAN_SPECIFIED"
+  },
+  "primary_writer_limit": 1,
+  "evidenced_revisions_authorized": true,
+  "unchanged_manuscript_repeated_score_calls_authorized": false,
+  "internal_self_target": 9,
+  "human_score": "UNKNOWN",
+  "internal_score_is_human_quality_proof": false,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "old_story_retcon_authorized": false,
+  "full_V5_authorized": false,
+  "multiple_visible_candidates_authorized": false,
+  "background_tasks_authorized": false,
+  "prior_current_task": {
+    "path": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
+    "blob": "5d2ac7fcd01bd34cd7ef659ef5abfd79f7eb1c85",
+    "sha256": "46f3bd0529d893d3395ad8b3e51e9b3e80ef81dddca59cd8ff79a6cd84a90e6a"
+  },
+  "prior_body": {
+    "path": "delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md",
+    "blob": "abf18d1bfa91a9da1632d3f3bd5ed749b048360b",
+    "sha256": "d68a30df2d25c69fc6654faab3cde57f718e1cfda56181458d625081a42eaa1c"
+  }
+}

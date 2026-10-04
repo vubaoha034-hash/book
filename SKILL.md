@@ -5,6 +5,9 @@ description: Design, draft, diagnose, rewrite, and de-AI Chinese fiction with ev
 
 # Novel Writing Master V3
 
+检查点211：任务`NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01`。新授权独立完整短篇《那张书桌》：一次独立写作、两次定向措辞修正；10次模型调用（9成功、1Max校对超时），6次实际Sol/Max、4次Sol/High，设计子代理实际resolved设置未返回。初评8.6、修正后自评9.0，临时九分仍经语言校对挡下并关闭两处问题。原报告各绑自己的版本，末稿三次独立复核完成；9.0仅内部自评，真人分数UNKNOWN。见[完整记录](docs/NOVEL_STANDALONE_SHORT_SELF9_RESULT_20261004.md)、[任务](state/tasks/NOVEL_STANDALONE_COMPLETE_SHORT_SELF9_20261004.json)及[唯一正文](delivery/standalone-short-20261004/final.md)。唯一下一步`AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT`；旧故事、否决、额度/锁与方法4保持，未自动晋级或后台。读取/audit不重跑。
+
+
 检查点210：任务 `NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01`。刘先生对已展示384字说“整体改善了很多确实”，仅记录相对改善，未升级续读/AI味/整场通过；按其要求只把“你舅舅好容易回来”改为“你舅舅好不容易回来”，一个“不”字插入，其余正文不变。原稿/原AI报告保持，措辞漏检另存，本轮模型调用0、生成0。见[记录](docs/NOVEL_SCENE_EMOTION_LEXICAL_FEEDBACK_20261004.md)、[任务](state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json)及[唯一修正正文](delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md)。唯一下一步 `AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT`，无新写作/预算恢复/后台。
 
 

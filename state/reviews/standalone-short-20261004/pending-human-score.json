@@ -1,0 +1,23 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "artifact": {
+    "path": "delivery/standalone-short-20261004/a3/draft.md",
+    "blob": "fce77fb3051976cf4ef03f7325bdab4ba922b62e",
+    "sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+  },
+  "delivery_copy": {
+    "path": "delivery/standalone-short-20261004/final.md",
+    "blob": "fce77fb3051976cf4ef03f7325bdab4ba922b62e",
+    "sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+  },
+  "title": "那张书桌",
+  "nonwhite_characters": 1821,
+  "internal_self_score": 9.0,
+  "human_score": "UNKNOWN",
+  "human_quality_result": "UNKNOWN",
+  "score_comparison": "PENDING_ACTUAL_HUMAN_SCORE",
+  "next_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
+  "comparison_protocol": "只绑定此哈希的实际真人原话与分数；收到后保存与内部9.0的差异及具体阅读原因。一例不推成总体准确率。收到前不续写、换稿或自动扩大。",
+  "automatic_continuation": false,
+  "background_tasks": false
+}

@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-04T03:32:05Z",
+  "updated_at": "2026-10-04T04:43:17Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -697,7 +697,8 @@
     "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
     "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
     "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
-    "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01"
+    "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+    "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -947,11 +948,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
-  "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
+  "status": "ONE_COMPLETE_SHORT_INTERNAL_SELF9_READY_FOR_ACTUAL_HUMAN_SCORE",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
-  "last_completed_task_contract": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
+  "last_completed_task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "last_completed_task_contract": "state/tasks/NOVEL_STANDALONE_COMPLETE_SHORT_SELF9_20261004.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -3780,7 +3781,7 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "SOURCE_384_HUMAN_RELATIVE_IMPROVEMENT_CORRECTED_385_HUMAN_UNKNOWN",
+  "current_human_gate": "STANDALONE_COMPLETE_SHORT_INTERNAL_9_HUMAN_SCORE_UNKNOWN",
   "human_verdict_receipt": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
@@ -3843,9 +3844,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
+  "next_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "384字获真人整体改善反馈；仅补“不”字为385字，保留其他正文及全部旧审查，待实际阅读。",
+  "current_focus": "唯一完整新短篇《那张书桌》，独立写作、两次定向语言修订和独立审查完成；内部自评9.0，待刘先生实际评分及对照。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -6624,6 +6625,319 @@
       "path": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
       "blob": "5d2ac7fcd01bd34cd7ef659ef5abfd79f7eb1c85",
       "sha256": "46f3bd0529d893d3395ad8b3e51e9b3e80ef81dddca59cd8ff79a6cd84a90e6a"
+    }
+  },
+  "standalone_short_self9": {
+    "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+    "source_head": "38c46c0e6de3099b660aaffe4fe8e5fcf7be6f0d",
+    "source_checkpoint": 210,
+    "recorded_at": "2026-10-04T04:43:17Z",
+    "status": "ONE_COMPLETE_SHORT_INTERNAL_SELF9_READY_FOR_ACTUAL_HUMAN_SCORE",
+    "title": "那张书桌",
+    "nonwhite_characters": 1821,
+    "primary_generation_count": 1,
+    "internal_repair_count": 2,
+    "coordinator_copyedit_passes": 2,
+    "visible_candidate_count": 1,
+    "actual_verified_model_calls": 10,
+    "successful_model_calls": 9,
+    "failed_model_calls": 1,
+    "design_subagent_calls": 1,
+    "design_actual_resolved_settings_observed": false,
+    "internal_self_score": 9.0,
+    "human_score": "UNKNOWN",
+    "human_quality_result": "UNKNOWN",
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_V5_authorized": false,
+    "AI_quality_certification": false,
+    "full_scene_or_TEST01_promoted": false,
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "remaining_repair_budget": 0,
+    "next_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_STANDALONE_SHORT_AUTHORIZATION_20261004.json",
+      "blob": "6f2406c1b834ba623c7d2f7a1ecaf88e96ec2337",
+      "sha256": "9db98e1f49edc67931f893ae96fd9100b7ecdbe3085dcd1513bffaa266e8f3ab"
+    },
+    "final_artifact": {
+      "path": "delivery/standalone-short-20261004/a3/draft.md",
+      "blob": "fce77fb3051976cf4ef03f7325bdab4ba922b62e",
+      "sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+    },
+    "delivery_copy": {
+      "path": "delivery/standalone-short-20261004/final.md",
+      "blob": "fce77fb3051976cf4ef03f7325bdab4ba922b62e",
+      "sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+    },
+    "story_contract": {
+      "path": "delivery/standalone-short-20261004/story-contract.json",
+      "blob": "8ae26af01458833936eb97820cd1414f091f2871",
+      "sha256": "fda5dc443d411d94bb84ad46aae4adf48c36e30a7c276cb20aba533554c8cafe"
+    },
+    "score_rubric": {
+      "path": "state/reviews/standalone-short-20261004/internal-score-rubric.json",
+      "blob": "9461da093455b74090b1e909ae015b836709c65d",
+      "sha256": "b921822bbf5d3fb903be484e849a1dfe4f04b424ada98ba26ac990a0a3ba9d51"
+    },
+    "settlement": {
+      "path": "state/reviews/standalone-short-20261004/coordinator-settlement.json",
+      "blob": "e943d3b8a96d726f45eb81b554e6f4440b0d5f98",
+      "sha256": "a58266ff3f9f5aedd19a1003696e69137bcd095102424c117c9f7d6cde1d7c0d"
+    },
+    "pending_human_score": {
+      "path": "state/reviews/standalone-short-20261004/pending-human-score.json",
+      "blob": "bb959ef262e3d7954b73c4220a4d4ba563ff65d8",
+      "sha256": "277c11221e2c08fe7fd691f8a81dc2dff9d3c0010165b497c9df28f8a08468ff"
+    },
+    "passes": [
+      {
+        "id": "a1",
+        "kind": "INDEPENDENT_WRITER",
+        "artifact": {
+          "path": "delivery/standalone-short-20261004/a1/draft.md",
+          "blob": "7cc0a894edba09920df435b7c5b88560a23f4fc2",
+          "sha256": "0ea91c2472d658bc2ac5e8686e525f9436799ad00c968225147efbdc319a5eee"
+        },
+        "manifests": {
+          "reviews": {
+            "path": "config/novel-standalone-short-20261004-a1-reviews.json",
+            "blob": "c2dfb70ca7402e12d6517e1a7081c629dfe9658b",
+            "sha256": "20ae06d0292c9ac9b8a50acf29e61f84b0699038e426d203a63f8c466da6f9e1"
+          },
+          "writer": {
+            "path": "config/novel-standalone-short-20261004-a1-writer.json",
+            "blob": "336397b9c7cc0f6b8f1106b12495244df2fe7f2a",
+            "sha256": "731fec611e0ea11792f4869a825418a0920ee39576f45a59b2aa214f25e9f612"
+          }
+        },
+        "runtimes": {
+          "writer": {
+            "path": "state/reviews/standalone-short-20261004/a1/writer.runtime.json",
+            "blob": "a86ca5ac30d76a30f178aae0a70cb99239e52d73",
+            "sha256": "b1b8d132b4dcf5d0dc0df07b304b30b4d33f9e37cb741ab9e97f2fe1009fe656"
+          },
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a1/editor.runtime.json",
+            "blob": "c2cde91a277a95c9da674f7e921fe9551b99462c",
+            "sha256": "fb68a4670df5f30d4265d7a00be9bd6fc52a66215405561ca8f3f3d97a46f1c6"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a1/reader.runtime.json",
+            "blob": "d541ec38ddad759b17499884a774ba20c7f450a9",
+            "sha256": "24d023e548c6801a142824834f48ce8bdfb339c15396ab225e455fb0fe88801f"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a1/copyeditor.runtime.json",
+            "blob": "e7b70a447fd01eaa0f922def41befd3d8fedf8e4",
+            "sha256": "69e89123eb1a0c00e6af75545a22d3d9e1bce6064da591f888225cb9754c7370"
+          }
+        },
+        "raw_reports": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a1/editor.raw.txt",
+            "blob": "62bd717bb64925e0585ee2e81a4e10d05cb9246e",
+            "sha256": "998f4373f4b02ced1c8d446ddaf13206dda387d01589d8b344bc6e0d7e8c006d"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a1/reader.raw.txt",
+            "blob": "ca53da50d29922e3cd9337f4940c88ed3721c71d",
+            "sha256": "75fb8e7c761b90b022a7fea559fc321ce8f4b11bb140f9e9993920a390558963"
+          }
+        },
+        "evidence": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a1/editor.evidence.json",
+            "blob": "7ea5811f766df85949734c75a230d15ed5a6ee85",
+            "sha256": "b2c62861801448db4cb522bd0997e49ce2dada53a415918fa8ecd3ed8f9300cc"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a1/reader.evidence.json",
+            "blob": "efc7a8ce9e3c4cb85c42b4e3da91d8adf73b6b9e",
+            "sha256": "2f94b01ffb165386ca1d9e191b4d346f0c32e18dd36db2a2a05887fa1e1d4278"
+          }
+        },
+        "failed_roles": [
+          "copyeditor"
+        ]
+      },
+      {
+        "id": "a2",
+        "kind": "COORDINATOR_LOCATED_COPYEDIT",
+        "artifact": {
+          "path": "delivery/standalone-short-20261004/a2/draft.md",
+          "blob": "3499cd2befab69bc86c86c8317b02bcb80fbdb6b",
+          "sha256": "56b01c638627823de1152092cc309b48b869dd6058171ca1ead47f174a0747f2"
+        },
+        "manifests": {
+          "reviews": {
+            "path": "config/novel-standalone-short-20261004-a2-reviews-fallback.json",
+            "blob": "00477b7d0a135a12a5a06a4b668cc4b92d4d796a",
+            "sha256": "1ea446938382620bbeab578349b2770ed1327c5698e6b4f5f2a2d7f0835c7742"
+          }
+        },
+        "runtimes": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a2/editor.runtime.json",
+            "blob": "bf826c048332d40f5bf5493ac76a0d93512a33f4",
+            "sha256": "238866529389999ff899123c7035dc8e5e95e5ba9f6d1bbd08dd31f74057ad16"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a2/reader.runtime.json",
+            "blob": "22d1f74ab64a86eeaa2412c50a25dd60a8ca1623",
+            "sha256": "06947df8c12e010e2bf33fa918d051b4021ee1851b707558152902f1f37ce79f"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a2/copyeditor.runtime.json",
+            "blob": "d81701362bb079e34f7db3d5444e76a34a1fe560",
+            "sha256": "3ec1cec5ec5a170a52a0a0450d1036a02b077082fdfbae93254fb6d4f5f150c6"
+          }
+        },
+        "raw_reports": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a2/editor.raw.txt",
+            "blob": "dc0d76d3e37760c4e7831087612000df093dc941",
+            "sha256": "b8e00872cb7f3ab2040db33763095021c901c1c982b970470e569070400a082b"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a2/reader.raw.txt",
+            "blob": "f150303a9388c779af086e4490491007453eeacb",
+            "sha256": "61304f3325989900f53a38951d6362831f3574e93dad5878ce79990a6efe8c5a"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a2/copyeditor.raw.txt",
+            "blob": "5848fed591f2220e093a40c1c5305056cd6fff24",
+            "sha256": "125fcc3d9a512c0b7eec8bd024ad2aeb88c75cce9e828492877c07e3513cc5d1"
+          }
+        },
+        "evidence": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a2/editor.evidence.json",
+            "blob": "50169e4dfd407f91c013a43310b0be6603591176",
+            "sha256": "e92658b7d44a2ef52f45d0c645df5c1fbd555a2b6c3538109892ec11913e3268"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a2/reader.evidence.json",
+            "blob": "2aa20f0718186725cc584bc02d5209e3ff635a7a",
+            "sha256": "95aa8aa32a63ea0b92725f7cda2b41e53255fbce574f7ae19cc98ee411fbbf32"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a2/copyeditor.evidence.json",
+            "blob": "4d9cffb509523cde165bd1ff421823b986db3494",
+            "sha256": "990baaea90394193987a36d1ccf02cb81e9a0cf49384ec1c7e5c3e359195d736"
+          }
+        },
+        "failed_roles": [],
+        "revision_goals": {
+          "path": "delivery/standalone-short-20261004/a2/revision-goals.json",
+          "blob": "35297dfdae5913a95bf54452d4de74babf50e612",
+          "sha256": "6e83ba36801d695c8dfac875e63b07cbf11fd83722a3408b15777add383c5b1b"
+        }
+      },
+      {
+        "id": "a3",
+        "kind": "COORDINATOR_LOCATED_COPYEDIT",
+        "artifact": {
+          "path": "delivery/standalone-short-20261004/a3/draft.md",
+          "blob": "fce77fb3051976cf4ef03f7325bdab4ba922b62e",
+          "sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+        },
+        "manifests": {
+          "reviews": {
+            "path": "config/novel-standalone-short-20261004-a3-reviews-targeted.json",
+            "blob": "ea76f938c8a5c0bcb47b929dff43199dcba57b64",
+            "sha256": "b56edc8506979b7c539c51ef4453a05f59b0b7a99d944d188245fac1248e1777"
+          }
+        },
+        "runtimes": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a3/editor.runtime.json",
+            "blob": "13188f6caf7a525b342db15dd4bbcc7eceb369c9",
+            "sha256": "1b0b82891b52946fd2c8d26452943f3d5bdf2a44c7fefd190ec26eeb3425d463"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a3/reader.runtime.json",
+            "blob": "9cc84928f3572aa637ee2c5a4bb2f56b543bd91f",
+            "sha256": "12b37769dbc69095b739927aa0d2adb7267009b5a5a8b317c501fa5f4ac0bf1c"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a3/copyeditor.runtime.json",
+            "blob": "b55b67bedc626665c173e241a456677be38c83e4",
+            "sha256": "c199a887ebf2d4ce0a7ad0e77115082c5c3248e187d9cf435edf7905d9d83e68"
+          }
+        },
+        "raw_reports": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a3/editor.raw.txt",
+            "blob": "59a14811a1cd4ab40508e92ea6261f586a39b64b",
+            "sha256": "3575d47c4f3b241dd7620247fe6e40eb5f65800eeb8e4b7dc815645658cf5d81"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a3/reader.raw.txt",
+            "blob": "73391877f7794ffe688d2ff149f29a3651216b7c",
+            "sha256": "9b262b8da8fa2d1782e3ab3e0c7006145e9e42c02ad53af3a46042131e6d78e0"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a3/copyeditor.raw.txt",
+            "blob": "62c24f09f4d67aadb274149b058522a201736de5",
+            "sha256": "8f4eeccb93e3d5c84567fb8094d69111809ae7e726e60cad1881957ecb063b8e"
+          }
+        },
+        "evidence": {
+          "editor": {
+            "path": "state/reviews/standalone-short-20261004/a3/editor.evidence.json",
+            "blob": "9d3fd64f7d679a143ed856e79829d2d96b766232",
+            "sha256": "61d15e912e39bc3674e5919064cf4f2fb735bcf7f5ea09aa598ec43e505c86b2"
+          },
+          "reader": {
+            "path": "state/reviews/standalone-short-20261004/a3/reader.evidence.json",
+            "blob": "55bccd33c2cf5d8c1aabcc83d4c61f3d83e53bb2",
+            "sha256": "1637e89a911cd457b376979dd0a973eb6635c5f5475f58cd83e378bed1b5bbfa"
+          },
+          "copyeditor": {
+            "path": "state/reviews/standalone-short-20261004/a3/copyeditor.evidence.json",
+            "blob": "0a58a938027f6daa150db74eca5c37eaa63f8e23",
+            "sha256": "fb69e6c43d122917ba3493271e950dbd7639e6475b463fc4eb826990e147d70e"
+          }
+        },
+        "failed_roles": [],
+        "revision_goals": {
+          "path": "delivery/standalone-short-20261004/a3/revision-goals.json",
+          "blob": "00b430ec62640929c9ef4de0edf7d739ea38d7f2",
+          "sha256": "ba633e705df8719a1d18f111ec77943b64dccbd682d92516d5b590d2402daad2"
+        }
+      }
+    ],
+    "result_document": {
+      "path": "docs/NOVEL_STANDALONE_SHORT_SELF9_RESULT_20261004.md",
+      "blob": "1d9b2dffed99abb27dcdbbf48faea3c7cb8051fa",
+      "sha256": "081bd4cabe02117377897102021c1fb51368fb9dfad4b800c933a694f415ec22"
+    },
+    "language_check_module": {
+      "path": "modules/delivery-language-check.md",
+      "blob": "98c26b2ba0842308e41d46f221d46e514376d77c",
+      "sha256": "98358439f626514a5f23530cc4efdb61632d467ee79d7f0a0fcef864531a23dd"
+    },
+    "report_interpretation_audit": {
+      "path": "state/reviews/standalone-short-20261004/report-interpretation-audit.json",
+      "blob": "70f017f16e8a72bfcaabe74d38db61acfae3a6f4",
+      "sha256": "dc74037343489157a80abd77e3f64cb5fa7e01acd0bcb8acaa8e40c2632fcecf"
+    },
+    "measurements": {
+      "path": "state/reviews/standalone-short-20261004/execution-measurements.json",
+      "blob": "1b14485b27e94d08c7886fd3563b05af0a4864fe",
+      "sha256": "913f6be660dc53846773f7e578a2b53f5f45a118e26e6b66d4f0b0085f14dcd0"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_STANDALONE_SHORT_RESULT_20261004.json",
+      "blob": "aab75f6b615cf6d6fe7ea8a95d8062b4587a8b31",
+      "sha256": "5e50b7c7af8a32123d6df40e9f8a78a159a33697163faef2a408b3554e141da7"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_STANDALONE_COMPLETE_SHORT_SELF9_20261004.json",
+      "blob": "5391d9955a9e66ae3aa2496e7800ae807f0ad028",
+      "sha256": "421f79355a8635347363ccabc57da793b10c9bb8dbbb4295c08fafdbe7840d36"
     }
   }
 }

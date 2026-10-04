@@ -1,0 +1,18 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "recorded_at": "2026-10-04T04:25:52Z",
+  "failed_runtime": {
+    "path": "state/reviews/standalone-short-20261004/a1/copyeditor.runtime.json",
+    "blob": "e7b70a447fd01eaa0f922def41befd3d8fedf8e4",
+    "sha256": "69e89123eb1a0c00e6af75545a22d3d9e1bce6064da591f888225cb9754c7370"
+  },
+  "original_effort": "max",
+  "error": "TIMEOUT_NO_SUCCESSFUL_OUTPUT",
+  "no_report_or_verdict_received": true,
+  "same_model": "gpt-6.1-sol",
+  "requested_fallback_effort": "high",
+  "reason": "Max可选择且已运行，但15分钟内未完成，不能写成通过。修正稿的逐句校对改用同一已授权Codex账户的High，一次冻结调用，现场核对实际返回设置；不是声明Max不可用或重抽不满意分数。",
+  "fallback_scope": "COPYEDITOR_ONLY_ON_CHANGED_A2_BODY",
+  "writer_editor_reader_preference_stays_max": true,
+  "approval_bypass": false
+}

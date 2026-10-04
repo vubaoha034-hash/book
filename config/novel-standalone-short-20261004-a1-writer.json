@@ -1,0 +1,31 @@
+{
+  "schema_version": "standalone-short-manifest/v1",
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "source_head": "38c46c0e6de3099b660aaffe4fe8e5fcf7be6f0d",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_STANDALONE_SHORT_AUTHORIZATION_20261004.json",
+    "blob": "6f2406c1b834ba623c7d2f7a1ecaf88e96ec2337",
+    "sha256": "9db98e1f49edc67931f893ae96fd9100b7ecdbe3085dcd1513bffaa266e8f3ab"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "quality_certification_allowed": false,
+  "result_dir": "state/reviews/standalone-short-20261004/a1",
+  "jobs": {
+    "writer": {
+      "packet": {
+        "path": "delivery/standalone-short-20261004/a1/writer-packet.json",
+        "blob": "159c5fed8a5b7d33690d0678dac94aa115bfaf5d",
+        "sha256": "2a15f693352f374f301420735a2094862eb1d9148a63fa139551bbe40623656e"
+      },
+      "policy": {
+        "path": "delivery/standalone-short-20261004/a1/writer-policy.txt",
+        "blob": "b62cbc1c0989e2ec7ab6dd315733bffa2364318a",
+        "sha256": "e658ec51f7bf018f5642b46f26107056110fdb4b89a05b8c9bd6a83287baca44"
+      },
+      "raw_path": "delivery/standalone-short-20261004/a1/draft.md",
+      "max_calls": 1
+    }
+  }
+}

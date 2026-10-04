@@ -1,0 +1,110 @@
+{
+  "status": "REPORT_EVIDENCE_LOCATED_REQUIRES_COORDINATOR_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”",
+      "reported_line": 1,
+      "actual_line": 1,
+      "offset": 0,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "offset": 200,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": 103,
+      "actual_line": 103,
+      "offset": 1893,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "offset": 175,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "拉链没拉上，她又挤了挤，把带着我那页笔迹的本子放到最外面。",
+      "reported_line": 63,
+      "actual_line": 63,
+      "offset": 1149,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "reported_line": 45,
+      "actual_line": 45,
+      "offset": 829,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reported_line": 59,
+      "actual_line": 59,
+      "offset": 1090,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "reported_line": 103,
+      "actual_line": 103,
+      "offset": 1893,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "司机正在收紧绳子。我说早几天，声音被棘轮的咔嗒声盖住，就没有再说一遍。",
+      "reported_line": 9,
+      "actual_line": 9,
+      "offset": 127,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "“是单位的四人宿舍。”我对着她背影说，“不能留你过夜，桌子也放不下。”",
+      "reported_line": 53,
+      "actual_line": 53,
+      "offset": 962,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。",
+      "reported_line": 101,
+      "actual_line": 101,
+      "offset": 1869,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "human_quality_result_changed": false,
+  "automatic_quality_certification": false,
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "copyeditor",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a2/copyeditor-packet.json",
+    "blob": "96978c1db631f09a5f2060ac8340a178c8c532cd",
+    "sha256": "278e79daae48d1f79f37c39aa3688373369bd930c0f14ec9b3cb2fa61b243164"
+  },
+  "raw_report": {
+    "path": "state/reviews/standalone-short-20261004/a2/copyeditor.raw.txt",
+    "blob": "5848fed591f2220e093a40c1c5305056cd6fff24",
+    "sha256": "125fcc3d9a512c0b7eec8bd024ad2aeb88c75cce9e828492877c07e3513cc5d1"
+  }
+}

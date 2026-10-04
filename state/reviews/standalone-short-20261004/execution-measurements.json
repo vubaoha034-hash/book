@@ -1,0 +1,111 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "runtime_jobs": [
+    {
+      "pass_id": "a1",
+      "role": "writer",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "thread_id": "01a1050e-6eeb-7a83-9c23-0c950ddda5a4",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 567.543
+    },
+    {
+      "pass_id": "a1",
+      "role": "editor",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "thread_id": "01a10518-47fd-70f1-83f8-b17163424a6b",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 440.659
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "thread_id": "01a10518-4dd8-7352-b596-3cb55403d3aa",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 384.741
+    },
+    {
+      "pass_id": "a1",
+      "role": "copyeditor",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "thread_id": "01a10518-4c21-75f1-abb8-a8589820c149",
+      "status": "BLOCKED",
+      "report_received": false,
+      "elapsed_seconds": 902.798
+    },
+    {
+      "pass_id": "a2",
+      "role": "editor",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "thread_id": "01a1052a-3e2b-7ce3-aa78-bedd5449d094",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 461.95
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "thread_id": "01a1052a-3661-7e01-9a7e-efedfbaf8f8e",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 433.516
+    },
+    {
+      "pass_id": "a2",
+      "role": "copyeditor",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "thread_id": "01a1052a-3b83-7102-96b6-ba19738b4394",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 168.137
+    },
+    {
+      "pass_id": "a3",
+      "role": "editor",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "thread_id": "01a10533-0afa-7622-a66e-6a793b86ec68",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 92.697
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "thread_id": "01a10532-fd70-77c1-b8cf-6a8d5cdc61f7",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 119.987
+    },
+    {
+      "pass_id": "a3",
+      "role": "copyeditor",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "thread_id": "01a10533-0aab-7241-8efd-3e94a1b02b87",
+      "status": "RETURNED_RAW_OUTPUT_NOT_YET_SETTLED",
+      "report_received": true,
+      "elapsed_seconds": 135.588
+    }
+  ],
+  "ordered_parallel_stage_path_estimate_seconds": 2067.879,
+  "includes": "writer and three review stages, each stage parallel where shown",
+  "excludes": "design/setup/coordinator editing/native save/actual human wait",
+  "full_user_wall_time": "NOT_MEASURED",
+  "old_browser_comparable_wall_time": "UNKNOWN_DIFFERENT_SCOPE",
+  "calls_during_read_and_state_validation": 0
+}

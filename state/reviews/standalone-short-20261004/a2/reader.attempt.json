@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "role": "reader",
+  "packet": {
+    "path": "delivery/standalone-short-20261004/a2/reader-packet.json",
+    "blob": "ae96399ea75e76dc3e9dbd55864d944c125862fa",
+    "sha256": "101f0a8671dc6133ac748bfc69d9141b59b56610e5b6fe69b6fb325d0ec39209"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T04:26:53Z"
+}

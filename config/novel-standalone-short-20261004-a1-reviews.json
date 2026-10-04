@@ -1,0 +1,59 @@
+{
+  "schema_version": "standalone-short-manifest/v1",
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "source_head": "38c46c0e6de3099b660aaffe4fe8e5fcf7be6f0d",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_STANDALONE_SHORT_AUTHORIZATION_20261004.json",
+    "blob": "6f2406c1b834ba623c7d2f7a1ecaf88e96ec2337",
+    "sha256": "9db98e1f49edc67931f893ae96fd9100b7ecdbe3085dcd1513bffaa266e8f3ab"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "quality_certification_allowed": false,
+  "result_dir": "state/reviews/standalone-short-20261004/a1",
+  "jobs": {
+    "editor": {
+      "packet": {
+        "path": "delivery/standalone-short-20261004/a1/editor-packet.json",
+        "blob": "3db2aeaba27eecde00ad9d1c9fa23a449b19bc9f",
+        "sha256": "25b50598f54db675e72b7cfd1b5ff627cfb54b20e97524663b1b3f819ff61514"
+      },
+      "policy": {
+        "path": "delivery/standalone-short-20261004/a1/editor-policy.txt",
+        "blob": "52141727d6db42b73627405de563e87a7336bb0f",
+        "sha256": "f0ec31f0333696c5d5dbc7db1b93b5e0c2ebda1bd3f8ffd684049677f2c585a5"
+      },
+      "raw_path": "state/reviews/standalone-short-20261004/a1/editor.raw.txt",
+      "max_calls": 1
+    },
+    "reader": {
+      "packet": {
+        "path": "delivery/standalone-short-20261004/a1/reader-packet.json",
+        "blob": "ffeb8886ba47e625eb9963fdbd46fa4c88edd5f7",
+        "sha256": "672ced0fac397a13a0d50a5e92e42e4d3538b97acf06f60ed9e15f6d9fe097b9"
+      },
+      "policy": {
+        "path": "delivery/standalone-short-20261004/a1/reader-policy.txt",
+        "blob": "94182b68cfa6545bb1b5880d0b64bfcdfc7afd03",
+        "sha256": "42304200565daf94eff10fca78aef8c2c1ed320d9cb30f3f62c8e7e1a8432e66"
+      },
+      "raw_path": "state/reviews/standalone-short-20261004/a1/reader.raw.txt",
+      "max_calls": 1
+    },
+    "copyeditor": {
+      "packet": {
+        "path": "delivery/standalone-short-20261004/a1/copyeditor-packet.json",
+        "blob": "818f8638e44ffb3e1648d863e43c559d37885757",
+        "sha256": "c3868e0f553ac7be86c91a3a77ff1c3f14aafebfb90b58620472c59e2cc712e7"
+      },
+      "policy": {
+        "path": "delivery/standalone-short-20261004/a1/copyeditor-policy.txt",
+        "blob": "e55d691540a298b6f3aeab886c545e4a9d6da222",
+        "sha256": "d883254ed0ec4013e16133e864707250c8ea551babf244d00847865706e7a1f8"
+      },
+      "raw_path": "state/reviews/standalone-short-20261004/a1/copyeditor.raw.txt",
+      "max_calls": 1
+    }
+  }
+}

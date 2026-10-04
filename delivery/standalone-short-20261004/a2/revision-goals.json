@@ -1,0 +1,29 @@
+{
+  "kind": "COORDINATOR_LOCATED_COPYEDIT",
+  "prior_artifact": {
+    "path": "delivery/standalone-short-20261004/a1/draft.md",
+    "blob": "7cc0a894edba09920df435b7c5b88560a23f4fc2",
+    "sha256": "0ea91c2472d658bc2ac5e8686e525f9436799ad00c968225147efbdc319a5eee"
+  },
+  "located_issues": [
+    {
+      "id": "COOR-A1-L1",
+      "basis": "TEXT_FACT",
+      "quote": "她转过身：“我今天不来，不是因为你的宿舍。”",
+      "line": 59,
+      "impact": "已经来过的事实与不来的字面冲突",
+      "minimum_goal": "明确今天不留下或今天不愿同行的实际拒绝，保持她生气源于隐瞒，不将其改成拒绝真实宿舍。"
+    }
+  ],
+  "exact_changes": [
+    {
+      "old": "她转过身：“我今天不来，不是因为你的宿舍。”",
+      "new": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "reason": "女儿已经来到父亲处，今天不来字面矛盾。改为不愿继续相处的当日边界，保持愤怒源于隐瞒，不是嫌弃宿舍；不改变其后拒绝陪同、仍要地址及下周约见。"
+    }
+  ],
+  "new_plot_or_fact_changes": false,
+  "coordinator_authored": true,
+  "new_model_writer_call": false,
+  "all_other_prose_bytes_unchanged": true
+}

@@ -1,0 +1,448 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "raw_reports_rewritten": false,
+  "located_quote_records": 83,
+  "corrections": [
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。",
+      "raw_claimed_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。她拽了拽绳子，又看向我。\n\n“送你妈那儿，写作业方便。”我托高手里的纸箱，“先上楼，别挡着师傅。”\n\n她没动：“什么时候决定的？”\n\n司机正在收紧绳子。我说早几天，声音被棘轮的咔嗒声盖住，就没有再说一遍。\n\n到了楼上，她站在门口。屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。\n\n“租到什么时候？”\n\n“今天。下午交钥匙。”",
+      "raw_claimed_line": {
+        "start": 1,
+        "end": 15
+      },
+      "actual_line": 1,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "去年我说自己还记得怎么做，和她各算出一个答案，两个都错。后来我们拿尺子重新画图，一起把错的划掉。",
+      "raw_claimed_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "我竟盼着她说，她妈那边也不是样样好，哪怕抱怨一句早饭不好吃。",
+      "raw_claimed_line": {
+        "start": 43,
+        "end": 43
+      },
+      "actual_line": 43,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”",
+      "raw_claimed_line": {
+        "start": 57,
+        "end": 57
+      },
+      "actual_line": 57,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "“不用。我今天不想跟你一块儿走。”\n\n我放下箱子。她掏出手机，给她妈发了一条语音，说桌子放她房间，晚上要写作业。经过门口时，她说：“地址发给我，别只说单位附近。”",
+      "raw_claimed_line": {
+        "start": 69,
+        "end": 71
+      },
+      "actual_line": 69,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "raw_claimed_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "快吃完时，她说：“下次周六要排练，换周日行吗？”\n\n“行。还是十二点？”\n\n“十二点半吧，上午我要补作业。”\n\n我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 95,
+        "end": 103
+      },
+      "actual_line": 95,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "那天弄得太晚，第二天我睡过头，她拿着煎饼袋子到床边晃我，问还要不要吃早饭。",
+      "raw_claimed_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "她拿起记号笔，把“不要”两个字划掉，写上“书”。",
+      "raw_claimed_line": {
+        "start": 67,
+        "end": 67
+      },
+      "actual_line": 67,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a1",
+      "role": "reader",
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "editor",
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。",
+      "raw_claimed_line": "1-3",
+      "actual_line": 1,
+      "classification": "LINE_POSITION_CORRECTION",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "editor",
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": "101-103",
+      "actual_line": 101,
+      "classification": "LINE_POSITION_CORRECTION",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。",
+      "raw_claimed_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。抽屉被胶带封住，绳子压在桌面上。她拽了拽绳子，又看向我。\n\n“送你妈那儿，写作业方便。”我托高手里的纸箱，“先上楼，别挡着师傅。”\n\n她没动：“什么时候决定的？”\n\n司机正在收紧绳子。我说早几天，声音被棘轮的咔嗒声盖住，就没有再说一遍。\n\n到了楼上，她站在门口。屋里只剩分好的纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "raw_claimed_line": {
+        "start": 1,
+        "end": 11
+      },
+      "actual_line": 1,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 101,
+        "end": 103
+      },
+      "actual_line": 101,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "去年我说自己还记得怎么做，和她各算出一个答案，两个都错。后来我们拿尺子重新画图，一起把错的划掉。",
+      "raw_claimed_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "raw_claimed_line": {
+        "start": 45,
+        "end": 45
+      },
+      "actual_line": 45,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”我扶住门框，才发现掌心全是汗，“上周就该告诉你。桌子、书，你来决定。我不会让车先走。”\n\n她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "raw_claimed_line": {
+        "start": 57,
+        "end": 59
+      },
+      "actual_line": 57,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "raw_claimed_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "快吃完时，她说：“下次周六要排练，换周日行吗？”\n\n“行。还是十二点？”\n\n“十二点半吧，上午我要补作业。”",
+      "raw_claimed_line": {
+        "start": 95,
+        "end": 99
+      },
+      "actual_line": 95,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "“做完了也是我的。”",
+      "raw_claimed_line": {
+        "start": 23,
+        "end": 23
+      },
+      "actual_line": 23,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "“地址发给我，别只说单位附近。”",
+      "raw_claimed_line": {
+        "start": 71,
+        "end": 71
+      },
+      "actual_line": 71,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "raw_claimed_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a2",
+      "role": "reader",
+      "classification": "FULL_PACKET_VISIBILITY_LIMITATION",
+      "raw_claim": "不预知结局",
+      "coordinator_note": "完整正文在一次输入中同时可见；没有外部后文或作者解释，但未技术实现分屏揭示。首屏体验是AI顺读反应报告，不是逐屏盲测或真人停止点。",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”\n\n女儿背着周末的书包，站在货车边。",
+      "raw_claimed_line": {
+        "start": 1,
+        "end": 3
+      },
+      "actual_line": 1,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "到了楼上，她站在门口。屋里要搬的东西都装进了纸箱，房东的床和小饭桌已经擦干净了。她十六岁，离婚后平日住她妈那儿，周末一进这里，总先把书包扔到床上，再问晚饭吃什么。今天她没摘书包。",
+      "raw_claimed_line": {
+        "start": 11,
+        "end": 11
+      },
+      "actual_line": 11,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "后来我们拿尺子重新画图，一起把错的划掉。那天弄得太晚，第二天我睡过头，她拿着煎饼袋子到床边晃我，问还要不要吃早饭。",
+      "raw_claimed_line": {
+        "start": 25,
+        "end": 25
+      },
+      "actual_line": 25,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "“我没让你继续租这儿。”她声音高了，“我问你住哪儿。还有，我什么时候说过不来了？”",
+      "raw_claimed_line": {
+        "start": 45,
+        "end": 45
+      },
+      "actual_line": 45,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+      "raw_claimed_line": {
+        "start": 59,
+        "end": 59
+      },
+      "actual_line": 59,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "以前她总要拿半碗跟我换，这次没有，我也没把碗往她那边推。",
+      "raw_claimed_line": {
+        "start": 83,
+        "end": 83
+      },
+      "actual_line": 83,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "我在手机里记下周日十二点半，把屏幕转给她看。\n\n她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 101,
+        "end": 103
+      },
+      "actual_line": 101,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "做完了也是我的。",
+      "raw_claimed_line": {
+        "start": 23,
+        "end": 23
+      },
+      "actual_line": 23,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "经过门口时，她说：“地址发给我，别只说单位附近。”",
+      "raw_claimed_line": {
+        "start": 71,
+        "end": 71
+      },
+      "actual_line": 71,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    },
+    {
+      "pass_id": "a3",
+      "role": "reader",
+      "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+      "raw_claimed_line": {
+        "start": 103,
+        "end": 103
+      },
+      "actual_line": 103,
+      "classification": "LINE_RANGE_OBJECT_NORMALIZED_TO_START_LINE",
+      "raw_report_rewritten": false
+    }
+  ],
+  "scope_notes": [
+    "所有正文引文已机械定位；范围对象起始行或实际错位另存，不改原报告。",
+    "AI完整稿首读不是实际逐屏测量、真人试验或质量认证。",
+    "宿舍不能留女儿过夜是本故事特定单位事实，不是声称普遍制度。",
+    "F01原标TEXT_FACT，但解释明确是限定范围歧义而非确定的空间矛盾；协调者采用局部语言范围判断。",
+    "F02为编辑假设，原句能从共同做题还原，但定语不顺；仅澄清所属。"
+  ]
+}

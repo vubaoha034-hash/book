@@ -1,0 +1,65 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "recorded_at": "2026-10-04T04:36:06Z",
+  "source": "COORDINATOR_CHANGED_BODY_READING_BEFORE_A3_REPORTS",
+  "artifact": {
+    "path": "delivery/standalone-short-20261004/a3/draft.md",
+    "blob": "fce77fb3051976cf4ef03f7325bdab4ba922b62e",
+    "sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+  },
+  "self_evaluation": {
+    "dimensions": [
+      {
+        "id": "opening",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”",
+        "line": 1,
+        "reason": "第一句就有被隐瞒的具体变化及质问，读者能追问父亲为什么擅自搬走女儿的位置；它是安静关系故事，未证明所有读者会被强烈抓住。"
+      },
+      {
+        "id": "clarity_language",
+        "score": 1.9,
+        "maximum": 2,
+        "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+        "line": 59,
+        "reason": "当日拒绝含义已明确；本轮另关闭屋内物品排他范围及本子定语两处局部歧义。人物、动作、信息及情节保持。自评仍1.9，不因评审赞成加分，等待独立复验。"
+      },
+      {
+        "id": "emotion",
+        "score": 1.7,
+        "maximum": 2,
+        "quote": "我竟盼着她说，她妈那边也不是样样好，哪怕抱怨一句早饭不好吃。",
+        "line": 43,
+        "reason": "父亲的嫉妒、羞耻与想被需要是私人感受；女儿的愤怒来自被越过，不靠嫌贫标签。表达偏克制，对个人口味仍无数据。"
+      },
+      {
+        "id": "causality",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”",
+        "line": 57,
+        "reason": "隐瞒导致处置物品的冲突，退租是真限制，核心关系不能靠买桌解除；坦白和交还决定权承担当日女儿仍离开的代价。"
+      },
+      {
+        "id": "payoff",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+        "line": 103,
+        "reason": "同意下一次见面回应不用再来的威胁，住处没有恢复、饭桌亲近未瞬间回原样；通过协商而非亲情金句兑现。"
+      }
+    ],
+    "total": 9.0,
+    "maximum": 10
+  },
+  "prior_evaluation": {
+    "path": "state/reviews/standalone-short-20261004/a2/pre-review-self-evaluation.json",
+    "blob": "db10da8a37183a324726534fbe485254ba9a4e79",
+    "sha256": "d024f493b2d71458a26bcdfabafe8e1adc8cc89d59c3e3b63dbe15a876ef6b3c"
+  },
+  "provisional_a2_nine_was_not_released": true,
+  "why_not_released": "独立校对找到两处MINOR语义/搭配歧义，已另存来源并定向修正。",
+  "release_status": "PENDING_ACTUAL_A3_REVIEWS",
+  "human_score": "UNKNOWN"
+}

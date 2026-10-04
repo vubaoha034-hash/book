@@ -1,0 +1,11 @@
+{
+  "agent": "/root/standalone_story_contract_20261004",
+  "history_fork": "none",
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "max",
+  "spawn_tool_accepted": true,
+  "actual_resolved_model_not_returned_by_collaboration_tool": true,
+  "role": "STORY_DESIGN_ONLY_NOT_LITERARY_REVIEW",
+  "input": "Only standalone assignment; no coordinator chat or other reports",
+  "repository_writes_authored_by_agent": false
+}

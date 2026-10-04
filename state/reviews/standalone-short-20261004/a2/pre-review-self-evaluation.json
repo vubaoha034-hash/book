@@ -1,0 +1,64 @@
+{
+  "task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+  "recorded_at": "2026-10-04T04:25:52Z",
+  "source": "COORDINATOR_READING_CHANGED_BODY_BEFORE_A2_REPORTS",
+  "artifact": {
+    "path": "delivery/standalone-short-20261004/a2/draft.md",
+    "blob": "3499cd2befab69bc86c86c8317b02bcb80fbdb6b",
+    "sha256": "56b01c638627823de1152092cc309b48b869dd6058171ca1ead47f174a0747f2"
+  },
+  "self_evaluation": {
+    "dimensions": [
+      {
+        "id": "opening",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "“你上周不是说在办续租吗？怎么把我的桌子绑上车了？”",
+        "line": 1,
+        "reason": "第一句就有被隐瞒的具体变化及质问，读者能追问父亲为什么擅自搬走女儿的位置；它是安静关系故事，未证明所有读者会被强烈抓住。"
+      },
+      {
+        "id": "clarity_language",
+        "score": 1.9,
+        "maximum": 2,
+        "quote": "她转过身：“我今天不想跟你待在一起，不是因为你的宿舍。”",
+        "line": 59,
+        "reason": "修正了已来到却说今天不来的时间语义矛盾，明确今天不愿继续相处的边界；其余人物/动作、问答与语言未改。经协调者逐句读完，当前自评提高仅来自关闭这处问题，仍须独立复验及真人评分。"
+      },
+      {
+        "id": "emotion",
+        "score": 1.7,
+        "maximum": 2,
+        "quote": "我竟盼着她说，她妈那边也不是样样好，哪怕抱怨一句早饭不好吃。",
+        "line": 43,
+        "reason": "父亲的嫉妒、羞耻与想被需要是私人感受；女儿的愤怒来自被越过，不靠嫌贫标签。表达偏克制，对个人口味仍无数据。"
+      },
+      {
+        "id": "causality",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "“我怕你看了以后，就不想来了。我不想等你说，先替你说不用来了。”",
+        "line": 57,
+        "reason": "隐瞒导致处置物品的冲突，退租是真限制，核心关系不能靠买桌解除；坦白和交还决定权承担当日女儿仍离开的代价。"
+      },
+      {
+        "id": "payoff",
+        "score": 1.8,
+        "maximum": 2,
+        "quote": "她点了一下头：“店不用换，就这家。我下回想试那个牛肉面。”",
+        "line": 103,
+        "reason": "同意下一次见面回应不用再来的威胁，住处没有恢复、饭桌亲近未瞬间回原样；通过协商而非亲情金句兑现。"
+      }
+    ],
+    "total": 9.0,
+    "maximum": 10
+  },
+  "prior_evaluation": {
+    "path": "state/reviews/standalone-short-20261004/a1/pre-review-self-evaluation.json",
+    "blob": "67aca5e04b399817dd056de0ce57695c42f509bc",
+    "sha256": "9b64e11fa1425c9b7a4cc9b297b802c2b501d99d6fde0f7c152e8d06abf4f1aa"
+  },
+  "reason_for_score_change": "仅clarity_language 1.5→1.9，关闭已登记的当日语义矛盾；其他四项未因AI赞成而提高。",
+  "release_status": "NOT_YET_RELEASED_PENDING_ACTUAL_A2_REVIEWS",
+  "human_score": "UNKNOWN"
+}
