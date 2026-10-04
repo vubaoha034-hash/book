@@ -1,4 +1,8 @@
-当前位置：检查点209。
+当前位置：检查点210。
+
+检查点210：任务 `NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01`。刘先生对已展示384字说“整体改善了很多确实”，仅记录相对改善，未升级续读/AI味/整场通过；按其要求只把“你舅舅好容易回来”改为“你舅舅好不容易回来”，一个“不”字插入，其余正文不变。原稿/原AI报告保持，措辞漏检另存，本轮模型调用0、生成0。见[记录](docs/NOVEL_SCENE_EMOTION_LEXICAL_FEEDBACK_20261004.md)、[任务](state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json)及[唯一修正正文](delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md)。唯一下一步 `AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT`，无新写作/预算恢复/后台。
+
+上一检查点209：
 
 检查点209：任务 `NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01`。刘先生质疑原417字只在指定位置补情绪及学习应用，问题口吻原样保存，不扩为续读/整体AI味判决。实际重新阅读专业资料、完成一次隔离已知质疑后诊断；独立写作者未读旧稿/诊断，从同一完整场面事实组织唯一新384字。另两次独立审查、事实与引用核对完成，实际4次Sol / Max。新稿真人UNKNOWN，教程及AI赞成不证明情感改善。见[完整记录](docs/NOVEL_NATURAL_SCENE_EMOTION_RESULT_20261004.md)、[任务](state/tasks/NOVEL_SAME_STORY_NATURAL_SCENE_EMOTION_20261004.json)及[唯一正文](delivery/scene-emotion-20261004/opening-repaired.md)。唯一下一步 `AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT`；当前预算已消费，旧稿/反馈/额度/锁保持，未授权整场/V5、多个候选或后台。读取/audit不重跑调用。
 

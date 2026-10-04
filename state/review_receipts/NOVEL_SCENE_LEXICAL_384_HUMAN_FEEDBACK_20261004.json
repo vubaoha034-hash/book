@@ -1,0 +1,31 @@
+{
+  "schema_version": "scoped-actual-human-feedback/v1",
+  "project_id": "novel-distillation",
+  "task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+  "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+  "source_checkpoint": 209,
+  "recorded_at": "2026-10-04T03:32:05Z",
+  "source": "ACTUAL_CURRENT_USER_MESSAGE",
+  "output": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "human_exact_feedback": "你舅舅好容易回来   为什么会出现这么严重的问题。明明是好不容易回来。     但是整体改善了很多确实。",
+  "review": {
+    "overall_change": "RELATIVE_IMPROVEMENT_CONFIRMED_BY_HUMAN",
+    "wording": "ONE_EXPRESSION_CORRECTION_REQUESTED",
+    "wants_to_continue": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
+    "ai_smell_verdict": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
+    "whole_story": "UNKNOWN_NOT_REVIEWED",
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
+  },
+  "overall_positive_scope": "整体改善了很多确实，只绑定已展示384字的相对改善；不是续读、AI味、整场或全篇通过。",
+  "requested_change": {
+    "old": "你舅舅好容易回来",
+    "new": "你舅舅好不容易回来",
+    "line": 9
+  },
+  "corrected_artifact_not_yet_human_read": true,
+  "prior_records_rewritten": false
+}

@@ -2,7 +2,7 @@
   "schema_version": "3.21.3",
   "policy": "docs/PROJECT_STATE_ANTI_ROLLBACK_POLICY.md",
   "project_id": "novel-distillation",
-  "updated_at": "2026-10-04T02:59:14Z",
+  "updated_at": "2026-10-04T03:32:05Z",
   "branch": "main",
   "accepted_checkpoint": {
     "phase": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
@@ -696,7 +696,8 @@
     "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
     "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
     "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
-    "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01"
+    "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+    "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01"
   ],
   "phase385_settlement": {
     "status": "HUMAN_PILOT_FAILED_AI_SMELL_WORSE_PROPULSION_UNPROVEN",
@@ -946,11 +947,11 @@
     },
     "accepted_checkpoint_advance": false
   },
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
-  "status": "SCOPED_REPAIRED_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
+  "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
-  "last_completed_task_contract": "state/tasks/NOVEL_SAME_STORY_NATURAL_SCENE_EMOTION_20261004.json",
+  "last_completed_task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+  "last_completed_task_contract": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
   "source_state_refs": [
     {
       "path": "state/tasks/PHASE397_NEW_STORY_TRANSFER_VALIDATION_V1.json",
@@ -3779,8 +3780,8 @@
     "accepted_checkpoint_advance": false,
     "next_action": "ACTUAL_HUMAN_FINAL_READ_BY_LIU_XIANSHENG"
   },
-  "current_human_gate": "SOURCE_417_SCENE_EMOTION_CHALLENGED_NEW_SHORT_HUMAN_UNKNOWN",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_SCENE_EMOTION_417_HUMAN_APPLICATION_CHALLENGE_20261004.json",
+  "current_human_gate": "SOURCE_384_HUMAN_RELATIVE_IMPROVEMENT_CORRECTED_385_HUMAN_UNKNOWN",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -3842,9 +3843,9 @@
       "final_quality_accepted": false
     }
   },
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
   "opening_trial_human_gate": "CLOSED_HUMAN_REJECTED",
-  "current_focus": "真人质疑原417字只修点名情绪及学习应用；唯一新384字从整顿饭的关系情感重组，待实际人工阅读。",
+  "current_focus": "384字获真人整体改善反馈；仅补“不”字为385字，保留其他正文及全部旧审查，待实际阅读。",
   "actual_human_opening_trial_verdict_20260930": {
     "verdict": "FAIL_EMOTIONLESS_ROBOTIC_DIALOGUE",
     "human_exact_feedback": "小说也是不知道为什么。又回到了那种没点情感的对话。彷佛两个机器人在说话。这些已经纠正了无数次了。最后又是这样",
@@ -3922,10 +3923,11 @@
     }
   },
   "latest_human_review": {
-    "scene_emotion": "CHALLENGED_NATURAL_RELATION_EMOTION_MISSING",
-    "revision_effect": "CHALLENGED_BY_HUMAN",
-    "wants_to_continue": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "overall_change": "RELATIVE_IMPROVEMENT_CONFIRMED_BY_HUMAN",
+    "wording": "ONE_EXPRESSION_CORRECTION_REQUESTED",
+    "wants_to_continue": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
     "ai_smell_verdict": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
+    "whole_story": "UNKNOWN_NOT_REVIEWED",
     "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
   },
   "phase425_state": {
@@ -6555,6 +6557,73 @@
       "path": "state/tasks/NOVEL_SAME_STORY_NATURAL_SCENE_EMOTION_20261004.json",
       "blob": "68836281c753dee40a6ecfe7ba708b672cdf71bd",
       "sha256": "aa151cc7de524a686eb2a13f01c2e91005c339d20e19eae2fa75f12ff2610a82"
+    }
+  },
+  "scoped_text_correction": {
+    "schema_version": "scoped-single-expression-correction/v1",
+    "task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+    "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+    "source_checkpoint": 209,
+    "recorded_at": "2026-10-04T03:32:05Z",
+    "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
+    "source_artifact": {
+      "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+      "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+      "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+    },
+    "final_artifact": {
+      "path": "delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md",
+      "blob": "abf18d1bfa91a9da1632d3f3bd5ed749b048360b",
+      "sha256": "d68a30df2d25c69fc6654faab3cde57f718e1cfda56181458d625081a42eaa1c"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
+      "blob": "d279a4ca736117e28d0e9acd5187d515db9db41c",
+      "sha256": "797e12693e1e706d5bc15e8abce6730dd5f754573d41fb9bf1b67f0c3aa7c6c9"
+    },
+    "report_miss_audit": {
+      "path": "state/reviews/scene-emotion-lexical-fix-20261004/report-miss-audit.json",
+      "blob": "f1a4f7370c774ea4545c07df856baaae36ee8d19",
+      "sha256": "594a6d6117e1285edb4313d2cd0b1547aef018b40ed0ffdd2bd226ee6ede4dd7"
+    },
+    "result_document": {
+      "path": "docs/NOVEL_SCENE_EMOTION_LEXICAL_FEEDBACK_20261004.md",
+      "blob": "c5f824bcfc072779c41b478964ee49efacf2aff6",
+      "sha256": "db1cca0ac7079d3ab422d6fa0182129d127cbbaf13e64c7924f728a740f02eaa"
+    },
+    "correction": {
+      "old": "你舅舅好容易回来",
+      "new": "你舅舅好不容易回来",
+      "line": 9,
+      "inserted_character": "不",
+      "inserted_nonwhite_characters": 1
+    },
+    "source_nonwhite_characters": 384,
+    "final_nonwhite_characters": 385,
+    "actual_model_calls": 0,
+    "generation_count": 0,
+    "rewrite_count": 0,
+    "remaining_repair_budget": 0,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_scene_or_TEST01_promoted": false,
+    "AI_quality_certification": false,
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "human_quality_result": "UNKNOWN",
+    "source_overall_improvement": "CONFIRMED_RELATIVE_ONLY",
+    "corrected_version_human_result": "UNKNOWN_NOT_YET_READ",
+    "independent_review_of_corrected_version": false,
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
+    "result": {
+      "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_RESULT_20261004.json",
+      "blob": "866c1022a4d5352403142234437347737af16360",
+      "sha256": "128b3ed0251d89c0f01d2ad6a93296f4aa597ae7eb00fd2642de7dd098247fb0"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
+      "blob": "5d2ac7fcd01bd34cd7ef659ef5abfd79f7eb1c85",
+      "sha256": "46f3bd0529d893d3395ad8b3e51e9b3e80ef81dddca59cd8ff79a6cd84a90e6a"
     }
   }
 }

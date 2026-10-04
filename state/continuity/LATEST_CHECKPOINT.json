@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 209,
-  "recorded_at": "2026-10-04T02:59:14Z",
+  "sequence": 210,
+  "recorded_at": "2026-10-04T03:32:05Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "真人质疑原417字只修点名情绪及学习应用；唯一新384字从整顿饭的关系情感重组，待实际人工阅读。",
+  "current_focus": "384字获真人整体改善反馈；仅补“不”字为385字，保留其他正文及全部旧审查，待实际阅读。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -753,7 +753,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1882,14 +1882,14 @@
       "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "SCOPED_REPAIRED_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+  "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+  "last_completed_task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "cb7b63d46dfae74474a96c6216acf42454fb4370a26488fd2874aa6328f6b13a",
+    "project_state_sha256": "a19d6526bf4374515ba32f8e591799834bc943642e99ab9508140abe6a669da4",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1954,16 +1954,17 @@
       "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
       "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
       "NOVEL-SAME-STORY-FEAR-CONCEALMENT-REPAIR-20261004-01",
-      "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01"
+      "NOVEL-SAME-STORY-NATURAL-SCENE-EMOTION-20261004-01",
+      "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_SAME_STORY_NATURAL_SCENE_EMOTION_20261004.json",
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_SCOPED_REPAIRED_SHORT",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_SCENE_EMOTION_417_HUMAN_APPLICATION_CHALLENGE_20261004.json",
-  "current_human_gate": "SOURCE_417_SCENE_EMOTION_CHALLENGED_NEW_SHORT_HUMAN_UNKNOWN",
+  "last_completed_task_contract": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
+  "current_human_gate": "SOURCE_384_HUMAN_RELATIVE_IMPROVEMENT_CORRECTED_385_HUMAN_UNKNOWN",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -2099,10 +2100,11 @@
     }
   },
   "latest_human_review": {
-    "scene_emotion": "CHALLENGED_NATURAL_RELATION_EMOTION_MISSING",
-    "revision_effect": "CHALLENGED_BY_HUMAN",
-    "wants_to_continue": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
+    "overall_change": "RELATIVE_IMPROVEMENT_CONFIRMED_BY_HUMAN",
+    "wording": "ONE_EXPRESSION_CORRECTION_REQUESTED",
+    "wants_to_continue": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
     "ai_smell_verdict": "UNKNOWN_NOT_SEPARATELY_ANSWERED",
+    "whole_story": "UNKNOWN_NOT_REVIEWED",
     "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
   },
   "phase425_state": {
@@ -3173,7 +3175,7 @@
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
   },
-  "updated_at": "2026-10-04T02:59:14Z",
+  "updated_at": "2026-10-04T03:32:05Z",
   "r2_entry_short_trial": {
     "schema_version": "native-one-short-trial-state/v1",
     "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
@@ -4740,6 +4742,73 @@
       "path": "state/tasks/NOVEL_SAME_STORY_NATURAL_SCENE_EMOTION_20261004.json",
       "blob": "68836281c753dee40a6ecfe7ba708b672cdf71bd",
       "sha256": "aa151cc7de524a686eb2a13f01c2e91005c339d20e19eae2fa75f12ff2610a82"
+    }
+  },
+  "scoped_text_correction": {
+    "schema_version": "scoped-single-expression-correction/v1",
+    "task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+    "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+    "source_checkpoint": 209,
+    "recorded_at": "2026-10-04T03:32:05Z",
+    "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
+    "source_artifact": {
+      "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+      "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+      "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+    },
+    "final_artifact": {
+      "path": "delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md",
+      "blob": "abf18d1bfa91a9da1632d3f3bd5ed749b048360b",
+      "sha256": "d68a30df2d25c69fc6654faab3cde57f718e1cfda56181458d625081a42eaa1c"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
+      "blob": "d279a4ca736117e28d0e9acd5187d515db9db41c",
+      "sha256": "797e12693e1e706d5bc15e8abce6730dd5f754573d41fb9bf1b67f0c3aa7c6c9"
+    },
+    "report_miss_audit": {
+      "path": "state/reviews/scene-emotion-lexical-fix-20261004/report-miss-audit.json",
+      "blob": "f1a4f7370c774ea4545c07df856baaae36ee8d19",
+      "sha256": "594a6d6117e1285edb4313d2cd0b1547aef018b40ed0ffdd2bd226ee6ede4dd7"
+    },
+    "result_document": {
+      "path": "docs/NOVEL_SCENE_EMOTION_LEXICAL_FEEDBACK_20261004.md",
+      "blob": "c5f824bcfc072779c41b478964ee49efacf2aff6",
+      "sha256": "db1cca0ac7079d3ab422d6fa0182129d127cbbaf13e64c7924f728a740f02eaa"
+    },
+    "correction": {
+      "old": "你舅舅好容易回来",
+      "new": "你舅舅好不容易回来",
+      "line": 9,
+      "inserted_character": "不",
+      "inserted_nonwhite_characters": 1
+    },
+    "source_nonwhite_characters": 384,
+    "final_nonwhite_characters": 385,
+    "actual_model_calls": 0,
+    "generation_count": 0,
+    "rewrite_count": 0,
+    "remaining_repair_budget": 0,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_scene_or_TEST01_promoted": false,
+    "AI_quality_certification": false,
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "human_quality_result": "UNKNOWN",
+    "source_overall_improvement": "CONFIRMED_RELATIVE_ONLY",
+    "corrected_version_human_result": "UNKNOWN_NOT_YET_READ",
+    "independent_review_of_corrected_version": false,
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
+    "result": {
+      "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_RESULT_20261004.json",
+      "blob": "866c1022a4d5352403142234437347737af16360",
+      "sha256": "128b3ed0251d89c0f01d2ad6a93296f4aa597ae7eb00fd2642de7dd098247fb0"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
+      "blob": "5d2ac7fcd01bd34cd7ef659ef5abfd79f7eb1c85",
+      "sha256": "46f3bd0529d893d3395ad8b3e51e9b3e80ef81dddca59cd8ff79a6cd84a90e6a"
     }
   }
 }

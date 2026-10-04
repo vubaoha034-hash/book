@@ -1,0 +1,57 @@
+{
+  "schema_version": "scoped-single-expression-correction/v1",
+  "task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+  "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+  "source_checkpoint": 209,
+  "recorded_at": "2026-10-04T03:32:05Z",
+  "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
+  "source_artifact": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "final_artifact": {
+    "path": "delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md",
+    "blob": "abf18d1bfa91a9da1632d3f3bd5ed749b048360b",
+    "sha256": "d68a30df2d25c69fc6654faab3cde57f718e1cfda56181458d625081a42eaa1c"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
+    "blob": "d279a4ca736117e28d0e9acd5187d515db9db41c",
+    "sha256": "797e12693e1e706d5bc15e8abce6730dd5f754573d41fb9bf1b67f0c3aa7c6c9"
+  },
+  "report_miss_audit": {
+    "path": "state/reviews/scene-emotion-lexical-fix-20261004/report-miss-audit.json",
+    "blob": "f1a4f7370c774ea4545c07df856baaae36ee8d19",
+    "sha256": "594a6d6117e1285edb4313d2cd0b1547aef018b40ed0ffdd2bd226ee6ede4dd7"
+  },
+  "result_document": {
+    "path": "docs/NOVEL_SCENE_EMOTION_LEXICAL_FEEDBACK_20261004.md",
+    "blob": "c5f824bcfc072779c41b478964ee49efacf2aff6",
+    "sha256": "db1cca0ac7079d3ab422d6fa0182129d127cbbaf13e64c7924f728a740f02eaa"
+  },
+  "correction": {
+    "old": "你舅舅好容易回来",
+    "new": "你舅舅好不容易回来",
+    "line": 9,
+    "inserted_character": "不",
+    "inserted_nonwhite_characters": 1
+  },
+  "source_nonwhite_characters": 384,
+  "final_nonwhite_characters": 385,
+  "actual_model_calls": 0,
+  "generation_count": 0,
+  "rewrite_count": 0,
+  "remaining_repair_budget": 0,
+  "old_RC3_remaining_rounds": 0,
+  "old_197_character_protection_released": false,
+  "full_scene_or_TEST01_promoted": false,
+  "AI_quality_certification": false,
+  "automatic_writer_dispatch": false,
+  "automatic_background_sync": false,
+  "human_quality_result": "UNKNOWN",
+  "source_overall_improvement": "CONFIRMED_RELATIVE_ONLY",
+  "corrected_version_human_result": "UNKNOWN_NOT_YET_READ",
+  "independent_review_of_corrected_version": false,
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT"
+}

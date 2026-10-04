@@ -1,0 +1,49 @@
+{
+  "task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+  "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+  "source_artifact": {
+    "path": "delivery/scene-emotion-20261004/opening-repaired.md",
+    "blob": "7eff95e647d42f511cd2493a61cd33b9cb575c3e",
+    "sha256": "22dc54cc68a40a4264a033d852d9dd7cfd0bfb5d92a22cf547d2d89900bc5c11"
+  },
+  "human_feedback": {
+    "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
+    "blob": "d279a4ca736117e28d0e9acd5187d515db9db41c",
+    "sha256": "797e12693e1e706d5bc15e8abce6730dd5f754573d41fb9bf1b67f0c3aa7c6c9"
+  },
+  "prior_raw_reports": {
+    "diagnosis": {
+      "path": "state/reviews/scene-emotion-20261004/diagnosis.raw.txt",
+      "blob": "515385b02a8a33c084baf49079fb45cba8812520",
+      "sha256": "6569ed7c6c5092f8fcc12815681e48cdfba54960188c3e4cc6bd44dd0841cade"
+    },
+    "editor": {
+      "path": "state/reviews/scene-emotion-20261004/editor.raw.txt",
+      "blob": "488d94de2db6eaadeb87fbad6f10a6b349702099",
+      "sha256": "5088d9943c91a05d9b20a7e6b64f93bf9016afb7991f07f25c79d9c6ee2350d1"
+    },
+    "reader": {
+      "path": "state/reviews/scene-emotion-20261004/reader.raw.txt",
+      "blob": "b58409174b590f6e7e5d397807494282764c32d5",
+      "sha256": "f243b18a45c134eff01517459c9048b926077dba0b4bb9cecda7dbf202b83a64"
+    }
+  },
+  "editor_observation": {
+    "quote": "“吃完再去吧，”母亲说，“你舅舅好容易回来。”",
+    "line": 9,
+    "reason": "顺接姐姐对女儿的邀请，母亲以留住团聚为自己的目的说话，没有替警情作说明。"
+  },
+  "reader_observation": {
+    "id": "R3",
+    "quote": "“吃完再去吧，”母亲说，“你舅舅好容易回来。”",
+    "line": 9,
+    "experience": "母亲像是仍只在意难得的团聚，这句挽留很自然。我却已经知道警告，所以普通的劝饭也让我替姐姐着急。",
+    "reading_effect": "注意力回到饭桌：她不仅要避开弟弟，还得应付家人正常的挽留。"
+  },
+  "classification": "HUMAN_IDENTIFIED_WORDING_MISS_IN_PREVIOUS_AI_REVIEWS",
+  "scope": "原编辑认可这句的挽留目的，原读者称这句自然，均未指出刘先生要求的措辞修正。证明本次漏检，不推出所有语境下“好容易”都不成立。",
+  "coordinator_responsibility": "交付前的口语表达复核未拦住这句；AI报告通过不能取代实际真人阅读。",
+  "old_reports_rewritten": false,
+  "new_review_of_corrected_artifact_claimed": false,
+  "actual_model_calls": 0
+}
