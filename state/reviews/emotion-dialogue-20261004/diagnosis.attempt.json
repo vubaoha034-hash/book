@@ -1,0 +1,11 @@
+{
+  "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+  "role": "diagnosis",
+  "packet": {
+    "path": "delivery/emotion-dialogue-20261004/diagnosis-packet.json",
+    "blob": "52b1e96e24cdffc830a329062235dfae7cf553e8",
+    "sha256": "96709c71e58df3508007a106ef63664165d5acb347d05541460da29fa2b3b915"
+  },
+  "max_calls": 1,
+  "started_at": "2026-10-04T00:26:43Z"
+}

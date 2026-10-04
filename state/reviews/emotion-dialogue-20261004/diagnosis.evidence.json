@@ -1,0 +1,99 @@
+{
+  "status": "EVIDENCE_LOCATED_REQUIRES_COORDINATOR_FACT_AND_SCOPE_SETTLEMENT",
+  "errors": [],
+  "located_quotes": [
+    {
+      "artifact_id": "ED417",
+      "item_index": 0,
+      "quote": "我对妈说：“明早要喝，怕店关了。”",
+      "reported_line": 19,
+      "actual_line": 19,
+      "start_character_0_based": 319,
+      "end_character_exclusive": 336,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "ED417",
+      "item_index": 1,
+      "quote": "我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 211,
+      "end_character_exclusive": 240,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "ED417",
+      "item_index": 2,
+      "quote": "我妈把排骨推到他面前，自己只顾看着他吃。",
+      "reported_line": 1,
+      "actual_line": 1,
+      "start_character_0_based": 66,
+      "end_character_exclusive": 86,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "ED417",
+      "item_index": 3,
+      "quote": "现在有危险，别惊动他，先把孩子带出来。",
+      "reported_line": 5,
+      "actual_line": 5,
+      "start_character_0_based": 141,
+      "end_character_exclusive": 160,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "ED417",
+      "item_index": 4,
+      "quote": "女儿把挑好的鱼肉分了一块给弟弟。他笑着接了。",
+      "reported_line": 11,
+      "actual_line": 11,
+      "start_character_0_based": 189,
+      "end_character_exclusive": 211,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "ED417",
+      "item_index": 5,
+      "quote": "他对我说：“我带她去，你吃饭。”",
+      "reported_line": 23,
+      "actual_line": 23,
+      "start_character_0_based": 388,
+      "end_character_exclusive": 404,
+      "exact_quote_found": true,
+      "line_matches": true
+    },
+    {
+      "artifact_id": "ED417",
+      "item_index": 6,
+      "quote": "她把手从我掌心抽出去，抓住他的食指，仰头说要草莓味的。",
+      "reported_line": 25,
+      "actual_line": 25,
+      "start_character_0_based": 414,
+      "end_character_exclusive": 441,
+      "exact_quote_found": true,
+      "line_matches": true
+    }
+  ],
+  "position_corrections": [],
+  "raw_report_rewritten": false,
+  "automatic_revision_authorized": false,
+  "human_quality_result_changed": false,
+  "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+  "role": "diagnosis",
+  "packet": {
+    "path": "delivery/emotion-dialogue-20261004/diagnosis-packet.json",
+    "blob": "52b1e96e24cdffc830a329062235dfae7cf553e8",
+    "sha256": "96709c71e58df3508007a106ef63664165d5acb347d05541460da29fa2b3b915"
+  },
+  "raw_report": {
+    "path": "state/reviews/emotion-dialogue-20261004/diagnosis.raw.txt",
+    "blob": "212c04ab69266f9425f3400ce7ace6c3297aa78e",
+    "sha256": "96c42a75808b0c50c533eb209b60293ee226f8923e5df8f6ea26e4ea0711624b"
+  }
+}

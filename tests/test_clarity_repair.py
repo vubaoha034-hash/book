@@ -2,13 +2,17 @@
 import copy,hashlib,importlib.util,json,shutil,tempfile,unittest
 from pathlib import Path
 REPO=Path(__file__).resolve().parents[1]
+GIT_REPO=REPO
 s=importlib.util.spec_from_file_location('clarity_test_gate',REPO/'scripts/verify_clarity_repair.py');g=importlib.util.module_from_spec(s);s.loader.exec_module(g)
+# Preserve the completed CP206 evidence when a later human review starts repair.
+_live=json.loads((REPO/'state/project_state.json').read_bytes())
+if _live.get('emotion_dialogue_repair'):REPO=g.history.frozen_tree(GIT_REPO,_live['emotion_dialogue_repair']['source_head'])
 class ClarityRepairTests(unittest.TestCase):
     def setUp(self):
         t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup);self.root=Path(t.name).resolve();self.seen=set()
-        for p in g.history.frozen_tree(REPO,g.SOURCE).rglob('*'):
+        for p in g.history.frozen_tree(GIT_REPO,g.SOURCE).rglob('*'):
             if p.is_file() and '__pycache__' not in p.parts:
-                rel=p.relative_to(g.history.frozen_tree(REPO,g.SOURCE));target=self.root/rel;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((REPO/rel).read_bytes());self.seen.add(rel.as_posix())
+                rel=p.relative_to(g.history.frozen_tree(GIT_REPO,g.SOURCE));target=self.root/rel;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((REPO/rel).read_bytes());self.seen.add(rel.as_posix())
         self.project=json.loads((REPO/'state/project_state.json').read_bytes());self.cp=json.loads((REPO/'state/continuity/LATEST_CHECKPOINT.json').read_bytes());self.route=self.project['clarity_repair'];self.copy_refs(self.route)
         for role in ('writer','editor','reader'):self.copy('state/reviews/clarity-repair-20261004/'+role+'.attempt.json')
     def copy(self,path):

@@ -1,0 +1,12 @@
+{
+  "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+  "artifact": {
+    "path": "delivery/emotion-dialogue-20261004/opening-repaired.md",
+    "blob": "1ba89f7c5a58dae8be3e1e1f74091272113003ef",
+    "sha256": "4af3ee2caf96498af48ec1a3554896b314fc1b119f5ae8243199888c9f6e0b9b"
+  },
+  "outcome": "UNKNOWN",
+  "accepted": false,
+  "human_feedback": {},
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_EMOTION_DIALOGUE_REPAIRED_SHORT"
+}

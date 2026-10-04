@@ -1,15 +1,15 @@
 {
   "schema_version": "upcp-latest-checkpoint/v1",
   "project_id": "novel-distillation",
-  "sequence": 206,
-  "recorded_at": "2026-10-03T22:57:19Z",
+  "sequence": 207,
+  "recorded_at": "2026-10-04T00:45:51Z",
   "task_model": "SINGLE_TASK",
   "highest_accepted_checkpoint": "GLOBAL_NOVEL_DNA_V1_BOUNDED_PRODUCTION_PROMOTION_GOVERNANCE",
   "highest_accepted_phase_ordinal": 320,
   "active_task_ids": [
     "NOVEL-IMPROVEMENT-MAINLINE-V1"
   ],
-  "current_focus": "原383字有续读欲望但人物/动作读不清；唯一417字局部修订待人工阅读。",
+  "current_focus": "原417字被质疑对白意义及情绪平淡；唯一392字同故事修订待实际人工阅读。",
   "completed": [
     "Phase372 source-anchored reader-experience layer remains complete with 90 cards and eight source-derived candidates",
     "Phase373 actual-human blind review remains CONTROL win; candidate direct-transfer signal false",
@@ -753,7 +753,7 @@
     "没有失败测试或明确用户改目标时改写 MAINLINE V1 路线",
     "Do not convert completed R2 fact preparation or its unapproved single-short proposal into prose, release the old197 lock, or refill the spent RC3 rounds."
   ],
-  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CLARITY_REPAIRED_SHORT",
+  "next_required_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_EMOTION_DIALOGUE_REPAIRED_SHORT",
   "source_state_refs": [
     {
       "path": "state/project_state.json",
@@ -1882,14 +1882,14 @@
       "role": "本次运行、事实证据与唯一接续动作"
     }
   ],
-  "status": "CLARITY_REPAIRED_SHORT_AWAIT_ACTUAL_HUMAN_READING",
+  "status": "EMOTION_DIALOGUE_REPAIRED_SHORT_AWAIT_ACTUAL_HUMAN_READING",
   "physical_ledger_entry_count": 54,
   "physical_ledger_tail_hash": "dd432bdbf867d986f301f158a328e032351e909586a62c037ad5051331cbefa3",
-  "last_completed_task_id": "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+  "last_completed_task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
   "previous_bounded_exit_addendum": "state/tasks/PHASE380_BOUNDED_EXIT_ADDENDUM_V1.json",
   "bounded_task_contract": "state/tasks/PHASE381_BOUNDED_SCENE_DELIVERY_V1.json",
   "action_guard": {
-    "project_state_sha256": "f3ac4fb9dcacb1812f5556f8434a7bbf6efcbd8ebd8d5883c1940f5668e18e1b",
+    "project_state_sha256": "d93130e9ab14bcc53bca7180c55ec972cef916112637d9cdbf706131cb893e5b",
     "closed_task_ids": [
       "PHASE380_PROSPECTIVE_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
       "PHASE380_PROSPECTIVE_TARGET_READER_AI_SMELL_DISCRIMINATOR_CALIBRATION_V1",
@@ -1951,16 +1951,17 @@
       "NOVEL-HOOK-TRIAL-401-HUMAN-WEAK-CONTINUATION-20261003-01",
       "NOVEL-SAME-SCENE-ONE-CONTINUATION-SHORT-20261003-01",
       "NOVEL-NEW-STORY-PSYCHOLOGY-OPENING-TRIAL-20261004-01",
-      "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01"
+      "NOVEL-NEW-STORY-REFERENT-ACTION-CLARITY-REPAIR-20261004-01",
+      "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01"
     ],
     "repair_receipt": "state/review_receipts/CONTINUITY_ACTION_GUARD_REPAIR_R1.json",
     "coverage": "COOPERATING_SCRIPT_ENTRYPOINTS_ONLY"
   },
   "active_task_contract": "state/tasks/NOVEL_IMPROVEMENT_MAINLINE_V4.json",
-  "last_completed_task_contract": "state/tasks/NOVEL_NEW_STORY_CLARITY_REPAIR_20261004.json",
-  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_CLARITY_REPAIRED_SHORT",
-  "human_verdict_receipt": "state/review_receipts/NOVEL_NEW_STORY_383_HUMAN_INTEREST_CLARITY_FAIL_20261004.json",
-  "current_human_gate": "SOURCE_383_INTEREST_YES_CLARITY_FAIL_REPAIRED_417_HUMAN_UNKNOWN",
+  "last_completed_task_contract": "state/tasks/NOVEL_SAME_STORY_EMOTION_DIALOGUE_REPAIR_20261004.json",
+  "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_EMOTION_DIALOGUE_REPAIRED_SHORT",
+  "human_verdict_receipt": "state/review_receipts/NOVEL_EMOTION_DIALOGUE_REPAIR_417_HUMAN_DIALOGUE_EMOTION_CONCERN_20261004.json",
+  "current_human_gate": "SOURCE_417_DIALOGUE_EMOTION_CHALLENGED_REPAIRED_392_HUMAN_UNKNOWN",
   "phase422_state": {
     "status": "V4 真人文风严重不通过；不再等待同一稿审核",
     "candidate": "RJ-OE408-I",
@@ -2096,23 +2097,11 @@
     }
   },
   "latest_human_review": {
-    "source": {
-      "kind": "ACTUAL_CURRENT_USER_MESSAGE",
-      "message_observed_directly": true
-    },
-    "human_exact_feedback": "有，但是你自己检查下，这整片文章写的多乱。我甚至不知道到底是谁在做什么。我拿起她搭在椅背上的外套，伸手牵她。妈端着汤过来：“他难得回来，你这就往外跑？”\n“明早要喝，怕店关了。”\n我替女儿套上外套，拉着她往门口走。弟弟也放下筷子，拿起了门边的车钥匙。比如这句，我看了半天都没看懂这是什么人在做什么。",
-    "bound_artifact_path": "delivery/new-story-20261004/opening-a1.md",
-    "bound_blob": "c4c91004bd2a6c8056a109defee08a8b64d1ca24",
-    "bound_sha256": "a706108c016610bc3c369d38347684bcc3e7c436c8488f76c0e7dc1580b0ca61",
-    "wants_to_continue": true,
-    "retention_verdict": "YES_ONLY_FOR_THIS_383_SHORT",
-    "clarity_verdict": "FAIL_CANNOT_FOLLOW_ACTORS_AND_ACTIONS",
+    "dialogue_meaning": "CHALLENGED_AT_QUOTED_LINE",
+    "emotion_verdict": "HUMAN_RAISED_STILL_FLAT_AS_QUESTION",
+    "wants_to_continue": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
     "ai_smell_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
-    "emotion_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
-    "robotic_interaction_verdict": "UNKNOWN_NOT_DIRECTLY_ANSWERED",
-    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED",
-    "human_located_passage": "原文第17—21行附近，穿外套/母亲问话/弟弟拿钥匙段；这是读不清的位置，不是停止句。",
-    "topic_rejection": false
+    "exact_stop_sentence": "UNKNOWN_NOT_PROVIDED"
   },
   "phase425_state": {
     "status": "HUMAN_REJECTED_NO_CONTINUE_DESIRE_AI_QA_NO_EMOTIONAL_PROPULSION_CLOSED",
@@ -3182,7 +3171,7 @@
     "next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_NEW_300_500_CHAR_R2_ENTRY_TRIAL_WITH_OPENING_SCOPE",
     "supersedes_only_live_next_action": "AWAIT_LIU_AUTHORIZATION_OF_ONE_BOUNDED_R2_REENTRY_FACT_PREPARATION_TASK_NO_PROSE"
   },
-  "updated_at": "2026-10-03T22:57:19Z",
+  "updated_at": "2026-10-04T00:45:51Z",
   "r2_entry_short_trial": {
     "schema_version": "native-one-short-trial-state/v1",
     "task_id": "NOVEL-R2-REENTRY-ONE-SHORT-TRIAL-20261003-01",
@@ -4455,6 +4444,155 @@
       "path": "state/tasks/NOVEL_NEW_STORY_CLARITY_REPAIR_20261004.json",
       "blob": "5d2d3e0d00bb71511484942f8452ad0fc8c349f0",
       "sha256": "29d2338dc04d931584ef2be013df1559127acd3a7f39691f97bb6a76c1a68b94"
+    }
+  },
+  "emotion_dialogue_repair": {
+    "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+    "source_head": "d5bf06d6b08704fc9b6c9033ead41e20fb1f980e",
+    "source_checkpoint": 206,
+    "recorded_at": "2026-10-04T00:45:51Z",
+    "status": "ONE_EMOTION_DIALOGUE_REPAIR_FROZEN_AWAIT_ACTUAL_HUMAN_READING",
+    "primary_generation_count": 0,
+    "local_repair_count": 1,
+    "visible_candidate_count": 1,
+    "actual_model_calls": 4,
+    "successful_model_calls": 4,
+    "human_quality_result": "UNKNOWN",
+    "remaining_repair_budget": 0,
+    "old_RC3_remaining_rounds": 0,
+    "old_197_character_protection_released": false,
+    "full_scene_or_TEST01_promoted": false,
+    "AI_quality_certification": false,
+    "automatic_writer_dispatch": false,
+    "automatic_background_sync": false,
+    "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_EMOTION_DIALOGUE_REPAIRED_SHORT",
+    "authorization": {
+      "path": "state/review_receipts/NOVEL_EMOTION_DIALOGUE_REPAIR_AUTHORIZATION_20261004.json",
+      "blob": "2af82fb1a5f414cc087563883d67fdfd9e4eb6a0",
+      "sha256": "29c6ee1bd7a984909ff761f53b303c3f4a238fabef8a28c94b7b521dcf5363d2"
+    },
+    "human_feedback": {
+      "path": "state/review_receipts/NOVEL_EMOTION_DIALOGUE_REPAIR_417_HUMAN_DIALOGUE_EMOTION_CONCERN_20261004.json",
+      "blob": "6a23bf3995d67871778aaf5472ddab99e2e83005",
+      "sha256": "d32bcbd0c89ea5362e30828ecf5168cf7e9772ed887413324fad53c19b6cb4d1"
+    },
+    "source_artifact": {
+      "path": "delivery/clarity-repair-20261004/opening-repaired.md",
+      "blob": "e8644506719ef54a404d66a4df59365767e564ad",
+      "sha256": "3c4cbdfbdbb90308213955191cb0accb69cf845512b64b4513afd5f434a0aec8"
+    },
+    "manifests": {
+      "diagnosis": {
+        "path": "config/novel-emotion-dialogue-20261004-diagnosis.json",
+        "blob": "710769968ea7a95a110d39b7afec8e6c8972c37e",
+        "sha256": "ca8d1b966ed2531daa745380de0ce4ec2cbe93f66a45fb1260d9144440ea206b"
+      },
+      "writer": {
+        "path": "config/novel-emotion-dialogue-20261004-writer.json",
+        "blob": "b4cdca81ae957eb8364bee2d6fea565b197db05a",
+        "sha256": "b705570d9b621c68f42362eb2dc8fc6e76e21dfc17996e137a801433b6756102"
+      },
+      "reviews": {
+        "path": "config/novel-emotion-dialogue-20261004-reviews.json",
+        "blob": "c7c2f38f938f2040b5c62036fcea814ebe0ec3df",
+        "sha256": "c31fa96340821d60881f96e9488794db0d7602f187067855180427e8b0030c3f"
+      }
+    },
+    "writer_input": {
+      "path": "delivery/emotion-dialogue-20261004/writer-packet.json",
+      "blob": "89a3fe03530903e1ee7ef85850c28d7b794720ae",
+      "sha256": "42df30eef930b6b5356fe252958a9849f86340edcaf041990f099184f20bf0a2"
+    },
+    "final_artifact": {
+      "path": "delivery/emotion-dialogue-20261004/opening-repaired.md",
+      "blob": "1ba89f7c5a58dae8be3e1e1f74091272113003ef",
+      "sha256": "4af3ee2caf96498af48ec1a3554896b314fc1b119f5ae8243199888c9f6e0b9b"
+    },
+    "settlement": {
+      "path": "state/reviews/emotion-dialogue-20261004/coordinator-settlement.json",
+      "blob": "afda1876846450d43c2acf7ed4b1cde7ab2c4290",
+      "sha256": "8971552de76e7267318d435410fafd84ea792c3009e3379fab54b44686258369"
+    },
+    "pending_human_review": {
+      "path": "state/reviews/emotion-dialogue-20261004/pending-human-review.json",
+      "blob": "c32784f247081a7b31cc1111b3979c04a04bba2e",
+      "sha256": "7c6dc508c6e56b1738b82c87a0c22ff6871256168d6e0bb58f10fb5659d1fe04"
+    },
+    "runtimes": {
+      "diagnosis": {
+        "path": "state/reviews/emotion-dialogue-20261004/diagnosis.runtime.json",
+        "blob": "dff82f2f05494a4d23978b20f3c3933f9ae3a3d8",
+        "sha256": "740ca643625ede71fb6eae5b6ee5ae3cda7bd2b3830df72a061e081ab0358dd0"
+      },
+      "writer": {
+        "path": "state/reviews/emotion-dialogue-20261004/writer.runtime.json",
+        "blob": "bf0da2fc4873c4a01cdebe8cd6f7ccfde7a11051",
+        "sha256": "343c9c6d881f1ff47268a6122c8005400461a36476cdf62f1ffc0b737d4781f2"
+      },
+      "editor": {
+        "path": "state/reviews/emotion-dialogue-20261004/editor.runtime.json",
+        "blob": "a69bfc001834b606bb9e8b7173e58f2c9f868275",
+        "sha256": "b3b9207e0134576d66f2e9f76918af7e10334bacba385d2cb72cb68bce64ed86"
+      },
+      "reader": {
+        "path": "state/reviews/emotion-dialogue-20261004/reader.runtime.json",
+        "blob": "d61add94ce5846898b4190984b7d4e99124ebfb0",
+        "sha256": "c436a624884fa229fa63f09e7d6b83b897654ec7eeb862b56f6fd3621b2341a4"
+      }
+    },
+    "raw_reports": {
+      "diagnosis": {
+        "path": "state/reviews/emotion-dialogue-20261004/diagnosis.raw.txt",
+        "blob": "212c04ab69266f9425f3400ce7ace6c3297aa78e",
+        "sha256": "96c42a75808b0c50c533eb209b60293ee226f8923e5df8f6ea26e4ea0711624b"
+      },
+      "editor": {
+        "path": "state/reviews/emotion-dialogue-20261004/editor.raw.txt",
+        "blob": "b066efc1ea736fb7b44b1172f2873c6d61256dbf",
+        "sha256": "a2290616c39433a33d51592878263ba5e70d2ab0a8ac77fa9a069addb3f668d4"
+      },
+      "reader": {
+        "path": "state/reviews/emotion-dialogue-20261004/reader.raw.txt",
+        "blob": "420076d40c56fc98242bcb138781681fcf52dcd6",
+        "sha256": "b075040b82940dc93f45f6737d3cff9a4ed04b567c4557e33db4fdf9652750cf"
+      }
+    },
+    "evidence": {
+      "diagnosis": {
+        "path": "state/reviews/emotion-dialogue-20261004/diagnosis.evidence.json",
+        "blob": "0bc26742eb85bf2fdfbf2815c441c355db0ff1de",
+        "sha256": "5b70007c85a856e7e4df78462184ea2c4a44376badc1c27f274c6a764177ec42"
+      },
+      "editor": {
+        "path": "state/reviews/emotion-dialogue-20261004/editor.evidence.json",
+        "blob": "fab2568fb9dfd2ab93ac1d663a3e4b65f4383d90",
+        "sha256": "1c43bfa17a987fb0cd32bc0d3c73492bdc1355ffee1130cd2b6ec925e6037370"
+      },
+      "reader": {
+        "path": "state/reviews/emotion-dialogue-20261004/reader.evidence.json",
+        "blob": "92232a354cd5f09362be90ca5a118b46ac038a30",
+        "sha256": "073936b6a7b190e4cbebc89ea870ab7d093e198b4992e9f7b1084ad40b6408b7"
+      }
+    },
+    "learning_application": {
+      "path": "state/reviews/emotion-dialogue-20261004/learning-application.json",
+      "blob": "b0cd2194705ef06e15ae7b70bd5e02addf1e7eb7",
+      "sha256": "43cf5124df89ca0399e3d70306853969ffe8e943e1fcfc4036728c9c51c2973e"
+    },
+    "result_document": {
+      "path": "docs/NOVEL_EMOTION_DIALOGUE_REPAIR_RESULT_20261004.md",
+      "blob": "9048992e74e000a82b02311e7689115969a95bf5",
+      "sha256": "b5519735bbba60d0e5f11ef1292e9d290895c32b0fcbd59747573be840c9d775"
+    },
+    "result": {
+      "path": "state/review_receipts/NOVEL_EMOTION_DIALOGUE_REPAIR_RESULT_20261004.json",
+      "blob": "a9071f8bc0fa985c622742aaacdce9708e63851a",
+      "sha256": "9060366f062bc39a7217a0213717267d696093e9c1469ac3aaea737291cddb9b"
+    },
+    "task": {
+      "path": "state/tasks/NOVEL_SAME_STORY_EMOTION_DIALOGUE_REPAIR_20261004.json",
+      "blob": "816a696f31350fa8e237fc9c977a8fe467d86a35",
+      "sha256": "872f19d9df1aad4794e0e368f6e7992893f024d0de790c8b5bb35868953e5be7"
     }
   }
 }

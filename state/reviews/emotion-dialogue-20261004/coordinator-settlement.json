@@ -1,0 +1,191 @@
+{
+  "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+  "source_head": "d5bf06d6b08704fc9b6c9033ead41e20fb1f980e",
+  "source_artifact": {
+    "path": "delivery/clarity-repair-20261004/opening-repaired.md",
+    "blob": "e8644506719ef54a404d66a4df59365767e564ad",
+    "sha256": "3c4cbdfbdbb90308213955191cb0accb69cf845512b64b4513afd5f434a0aec8"
+  },
+  "final_artifact": {
+    "path": "delivery/emotion-dialogue-20261004/opening-repaired.md",
+    "blob": "1ba89f7c5a58dae8be3e1e1f74091272113003ef",
+    "sha256": "4af3ee2caf96498af48ec1a3554896b314fc1b119f5ae8243199888c9f6e0b9b"
+  },
+  "raw_reports_rewritten": false,
+  "AI_quality_certification": false,
+  "coordinator_prose_edits": 0,
+  "reader_vote_triggers_more_generation": false,
+  "human_quality_result": "UNKNOWN",
+  "high_impact_unresolved": [],
+  "fact_conflicts_unresolved": [],
+  "finding_dispositions": {
+    "diagnosis": [
+      {
+        "id": "F1",
+        "basis": "EDITOR_HYPOTHESIS",
+        "quote": "我对妈说：“明早要喝，怕店关了。”",
+        "line": 19,
+        "disposition": "ACCEPT_AS_LOCAL_PRESENTATION_HYPOTHESIS",
+        "reason": "字面可以由酸奶语境补通；根因是时间省略与母亲问话承接偏弱，不是确定逻辑矛盾。新稿显式接起明早饮用/晚了关门及买后回来这一口头借口，仍不虚构营业事实。"
+      },
+      {
+        "id": "F2",
+        "basis": "EDITOR_HYPOTHESIS",
+        "quote": "我刚才还想留他住一晚，现在却不敢让女儿在他身边多坐一分钟。",
+        "line": 11,
+        "disposition": "ACCEPT_AS_LOCAL_PRESENTATION_HYPOTHESIS",
+        "reason": "原温情、可信危险及恐惧都存在，主要呈现被结论化。新稿把留宿想法放到警告前，保留问明白弟弟与不让孩子等待的内心拉扯。是否传到真人还待读，未靠情绪词数量验收。"
+      }
+    ],
+    "editor": []
+  },
+  "fact_and_dialogue_checks": [
+    {
+      "quote": "我八岁的女儿挨着他坐，等他挑鱼刺。",
+      "line": 1,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "叙述者的女儿与弟弟在同一饭桌；只陈述亲近，不认定孩子怕舅舅。"
+    },
+    {
+      "quote": "我原本想着，吃完饭就劝他住一晚。",
+      "line": 1,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "原417字已有留宿念头，提前到来电前，不新增往事或关系事实。"
+    },
+    {
+      "quote": "去年办过我店里失窃案的陈警官",
+      "line": 3,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "来电警员是认识的办案人员，身份来源与原短段一致。"
+    },
+    {
+      "quote": "现在有危险，别惊动他，先把孩子带出来。",
+      "line": 3,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "保留可信危险、隐瞒与先带孩子出去的约束；不补案情或认定弟弟恶意。"
+    },
+    {
+      "quote": "我不知道他出了什么事，仍想听他亲口解释，可女儿不能坐在这里等我问明白。",
+      "line": 9,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "不知道具体案情；想听解释与先保护女儿同时存在。能否让真人感到情绪是未知，不把心理出现视作质量通过。"
+    },
+    {
+      "quote": "“买她明早喝的，怕晚了店关门。买了就回来。”",
+      "line": 15,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "在前文买酸奶及母亲离席问话之后，这句把明早饮用、现在采购与回来团聚接在一个临时借口中。她指女儿，是人物口中的说法；不把它登记成确定早餐习惯、具体营业时间或已发生的归来。"
+    },
+    {
+      "quote": "弟弟放下筷子，拿着车钥匙跟到门边：“我带她去，你先吃。”",
+      "line": 17,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "兄弟离桌跟到门边并提出帮忙；表面提议未改成威胁。钥匙拿取位置当前没有进一步展示，不推定瞬移或新增取钥匙处。"
+    },
+    {
+      "quote": "我刚要说不用，他已向女儿伸出手。她从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+      "line": 19,
+      "basis": "COORDINATOR_FACT_AND_SCOPE_CHECK",
+      "reason": "叙述者试着拒绝，弟弟伸手，孩子主动换手并叫舅舅；仍停在原撤离受阻结果，没有下楼、离家或揭案。"
+    }
+  ],
+  "window_quote_checks": {
+    "editor": [
+      {
+        "window": "first_30_60",
+        "quote": "傍晚，我给弟弟添了饭，手机在桌上震起来。他离家多年，消息也少，今天提着橘子突然回来。",
+        "reported_line": 1,
+        "actual_line": 1,
+        "non_whitespace_range_1_based": [
+          1,
+          42
+        ]
+      },
+      {
+        "window": "first_150_300",
+        "quote": "“我们正在追查你弟弟，刚在楼外看见他进了你们单元。现在有危险，别惊动他，先把孩子带出来。”",
+        "reported_line": 3,
+        "actual_line": 3,
+        "non_whitespace_range_1_based": [
+          119,
+          163
+        ]
+      },
+      {
+        "window": "ending",
+        "quote": "我刚要说不用，他已向女儿伸出手。她从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+        "reported_line": 19,
+        "actual_line": 19,
+        "non_whitespace_range_1_based": [
+          349,
+          392
+        ]
+      }
+    ],
+    "reader": [
+      {
+        "window": "first_30_60",
+        "quote": "傍晚，我给弟弟添了饭，手机在桌上震起来。他离家多年，消息也少，今天提着橘子突然回来。",
+        "reported_line": 1,
+        "actual_line": 1,
+        "non_whitespace_range_1_based": [
+          1,
+          42
+        ]
+      },
+      {
+        "window": "first_150_300",
+        "quote": "我不知道他出了什么事，仍想听他亲口解释，可女儿不能坐在这里等我问明白。",
+        "reported_line": 9,
+        "actual_line": 9,
+        "non_whitespace_range_1_based": [
+          208,
+          242
+        ]
+      },
+      {
+        "window": "ending",
+        "quote": "我刚要说不用，他已向女儿伸出手。她从我掌心抽出手，抓住他的食指：“舅舅，我要草莓味的。”",
+        "reported_line": 19,
+        "actual_line": 19,
+        "non_whitespace_range_1_based": [
+          349,
+          392
+        ]
+      }
+    ]
+  },
+  "prior_review_limit": {
+    "editor_raw": {
+      "path": "state/reviews/clarity-repair-20261004/editor.raw.txt",
+      "blob": "a966740abc0034efb55d49f70f4dc5b8078dd92a",
+      "sha256": "50ed097d2024f8408702ca2a6087ee5ef6a658fca2fdbd1e5b4dbf47badf852f"
+    },
+    "reader_raw": {
+      "path": "state/reviews/clarity-repair-20261004/reader.raw.txt",
+      "blob": "1921a7f690051349e7e5efcf323fb2bca6c617d0",
+      "sha256": "afa00a889e608a0a77b62f6c79b793a7f391f80627c377cc7ad5548a5f5856eb"
+    },
+    "explanation": "上轮清晰度审查通过没有证明情绪通过；本次真人仍质疑对白表达及情感。原报告不改写，未增造真人续读FAIL或总体误差率。"
+  },
+  "elapsed": {
+    "model_critical_path_seconds": 861.082,
+    "roles": {
+      "diagnosis": 506.876,
+      "writer": 148.068,
+      "editor": 200.97,
+      "reader": 206.138
+    },
+    "prior_clarity_model_critical_path_seconds": 423.775,
+    "total_user_wait_seconds": "UNKNOWN_NOT_FULLY_MEASURED",
+    "comparison": "4 calls including diagnosis versus prior 3; not an overall speed improvement claim"
+  },
+  "limitations": [
+    "真人原话对当前417字提出对白意义及情感平淡疑问；不是新续读判决、AI味判决或精确停读句。",
+    "当前392字只完成一次试修，新稿真人UNKNOWN。",
+    "内心冲突写出来、AI说愿意读和教程被读过均不能证明刘先生感到情绪。",
+    "酸奶饮用者、回来与关门顾虑是这句掩饰性的角色说法；没有新增真实早餐习惯、具体店铺或营业时间。",
+    "窗口引文另存精确字数坐标，标签不等于覆盖完整窗口。",
+    "旧校准限制、原383局部兴趣、旧RC3额度0与197字保护全部保持。"
+  ]
+}

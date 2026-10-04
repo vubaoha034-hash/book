@@ -1,0 +1,45 @@
+{
+  "schema_version": "one-emotion-dialogue-repair-manifest/v1",
+  "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+  "source_head": "d5bf06d6b08704fc9b6c9033ead41e20fb1f980e",
+  "authorization": {
+    "path": "state/review_receipts/NOVEL_EMOTION_DIALOGUE_REPAIR_AUTHORIZATION_20261004.json",
+    "blob": "2af82fb1a5f414cc087563883d67fdfd9e4eb6a0",
+    "sha256": "29c6ee1bd7a984909ff761f53b303c3f4a238fabef8a28c94b7b521dcf5363d2"
+  },
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "max",
+  "generation_limit": 1,
+  "quality_certification_allowed": false,
+  "result_dir": "state/reviews/emotion-dialogue-20261004",
+  "jobs": {
+    "editor": {
+      "packet": {
+        "path": "delivery/emotion-dialogue-20261004/editor-packet.json",
+        "blob": "ff5cefc085b5edc9d92f47c0a01299abf0801627",
+        "sha256": "c9880a28cbe12c37998fd836a7416d6915dc726949f88bbe54c89b74742e36af"
+      },
+      "policy": {
+        "path": "delivery/emotion-dialogue-20261004/editor-policy.txt",
+        "blob": "6eb4745fc7891c3e70524ca24316ddad1f91375e",
+        "sha256": "1c4ac7a8caf7d7aa80dd710beb2828ba4e813587450321347000e0cea233725e"
+      },
+      "raw_path": "state/reviews/emotion-dialogue-20261004/editor.raw.txt",
+      "max_calls": 1
+    },
+    "reader": {
+      "packet": {
+        "path": "delivery/emotion-dialogue-20261004/reader-packet.json",
+        "blob": "dd12f98c3e9702f3ff51dfbcf3c7ecc1e209ae00",
+        "sha256": "f8965b63534671b8aa1c5d06b0cc75f56d1f976326a4db64b45839b565107655"
+      },
+      "policy": {
+        "path": "delivery/emotion-dialogue-20261004/reader-policy.txt",
+        "blob": "4dc049182ad16fc4c89430a0375d16ccec05303a",
+        "sha256": "e1357cfaf65a8424c64dafd557cc6358ce2892f5853b6516e7485498edf49696"
+      },
+      "raw_path": "state/reviews/emotion-dialogue-20261004/reader.raw.txt",
+      "max_calls": 1
+    }
+  }
+}

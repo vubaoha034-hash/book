@@ -1,0 +1,47 @@
+{
+  "task_id": "NOVEL-SAME-STORY-EMOTION-DIALOGUE-REPAIR-20261004-01",
+  "source_head": "d5bf06d6b08704fc9b6c9033ead41e20fb1f980e",
+  "source_learning": [
+    {
+      "path": "docs/NOVEL_EMOTION_PACING_PROFESSIONAL_STUDY_20261003.md",
+      "blob": "937b20e3cfabbd72c4ee1fbc10746aa5307b40d0",
+      "sha256": "181910134c87ebfa099ca2a7044e3e305b5957d2356a42daab284cc87f366e48"
+    },
+    {
+      "path": "modules/emotion-reaction-and-pacing.md",
+      "blob": "987f34445947899e05feb853eb3be8653227203c",
+      "sha256": "298f3ca051ae293760ed1506df270c12abe1bbe0e985c752a921f5819c282c5c"
+    },
+    {
+      "path": "state/learning/new-story-20261004/sources.json",
+      "blob": "47e2b632c0f0eeac215669a3fe1c1bd29144e7a5",
+      "sha256": "67e255be3a6a69fce4f4fd9069d2ffd9a512e0f6a629b77015bebd5ffe9d2059"
+    }
+  ],
+  "current_recheck": [
+    {
+      "url": "https://writingexcuses.com/writing-excuses-7-33-authentic-emotion/",
+      "read": "Official transcript: focus and duration of attention, internal motivation, plausible changing and mixed feelings; lines 114–128.",
+      "claim": "Craft advice, not a measured guarantee."
+    },
+    {
+      "url": "https://writingexcuses.com/writing-excuses-9-19-showing-emotion/",
+      "read": "Official transcript: reader experience and early internal motivation; lines 61–80.",
+      "claim": "No universal show-only rule."
+    }
+  ],
+  "prior_writer_guidance": {
+    "path": "delivery/clarity-repair-20261004/writer-input.json",
+    "blob": "93bd2103dd538d7e3aabfa2a17208cee21a7a2ab",
+    "sha256": "0fb2f8f531476108b3809fa82d7a71f812b21d12023040adcaaef535bc108401"
+  },
+  "current_writer_guidance": {
+    "path": "delivery/emotion-dialogue-20261004/writer-packet.json",
+    "blob": "89a3fe03530903e1ee7ef85850c28d7b794720ae",
+    "sha256": "42df30eef930b6b5356fe252958a9849f86340edcaf041990f099184f20bf0a2"
+  },
+  "gap": "Prior repair guidance only asked for relations/referents/movement. The original new-story guidance did ask for kinship and protection conflict, but that goal alone did not demonstrate felt emotional change. Present work tests application, not claims of having mastered the tutorial.",
+  "research_read_is_quality_pass": false,
+  "diagnosis_or_human_label_in_writer": false,
+  "full_course_audio_or_book_read": false
+}
