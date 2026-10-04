@@ -1,0 +1,146 @@
+{
+  "schema_version": "scoped-single-expression-correction-remote-save/v1",
+  "task_id": "NOVEL-SCENE-EMOTION-ONE-WORD-CORRECTION-20261004-01",
+  "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+  "recorded_at": "2026-10-04T03:39:38Z",
+  "status": "IMPLEMENTATION_ACTUAL_REMOTE_BYTES_HISTORY_AND_LIMITED_FEEDBACK_VERIFIED",
+  "repository": "vubaoha034-hash/book",
+  "branch": "main",
+  "implementation_commit": "e81a3faa57f4239b408ec09878fc2c1438d1ed77",
+  "implementation_proof": {
+    "status": "REMOTE_LEXICAL_BYTES_HISTORY_AND_LIMITED_HUMAN_FEEDBACK_VERIFIED",
+    "remote_head": "e81a3faa57f4239b408ec09878fc2c1438d1ed77",
+    "source_head": "1ca70db7ca2dfa74e0a462657bf0e1e894acd614",
+    "checkpoint": 210,
+    "whole_worktree_files": 758,
+    "protected_source_file_count": 742,
+    "current_state": {
+      "sequence": 210,
+      "status": "ONE_CHARACTER_CORRECTED_SCOPED_HUMAN_IMPROVEMENT_RECORDED",
+      "next_action": "AWAIT_ACTUAL_HUMAN_READING_OF_ONE_LEXICALLY_CORRECTED_SHORT",
+      "historical_checks_passed": 83,
+      "checks_passed": 93,
+      "protected_source_file_count": 742,
+      "source_overall_improvement": "CONFIRMED_RELATIVE_ONLY",
+      "human_quality_result": "UNKNOWN",
+      "corrected_version_human_result": "UNKNOWN_NOT_YET_READ",
+      "new_prose_authorized": false,
+      "mainline": {
+        "task_id": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+        "revision": 4,
+        "step": "STEP_03",
+        "outcomes": {
+          "TEST_01": "UNKNOWN"
+        }
+      },
+      "actual_model_calls": 0,
+      "model_calls_during_validation": 0,
+      "generation_count_during_validation": 0,
+      "literary_quality_tested_by_this_script": false
+    },
+    "human_quality_result": "UNKNOWN",
+    "source_overall_improvement": "CONFIRMED_RELATIVE_ONLY",
+    "corrected_version_human_result": "UNKNOWN_NOT_YET_READ",
+    "full_scene_or_TEST01_promoted": false,
+    "model_calls_during_readback": 0,
+    "generation_count_during_readback": 0,
+    "files": [
+      {
+        "path": "AGENTS.md",
+        "blob": "f208ee5c79b7fd6dd8019edda2a0eeaaed692bcc",
+        "sha256": "d60370a2ffd53a9ef601c7bac27bb1571886caa850476519a39d46fa7d4589a2"
+      },
+      {
+        "path": "README.md",
+        "blob": "52905ba3883d9506a3a7ad645d34c851e3e8e6d2",
+        "sha256": "1496b2396dbedb424e560552b90112ba7279f473e8455875f965f49eb6ac7d90"
+      },
+      {
+        "path": "SKILL.md",
+        "blob": "61a24bbd3d322d36b3d70568eb8d753f92590d88",
+        "sha256": "0ce4eb7f69393b3ccdf7044448f6ee95d1f1af949e792a7451e549b3555dcae8"
+      },
+      {
+        "path": "START_HERE.md",
+        "blob": "5d355b3e6e83ad82ef338abd2df150db0b0d1fb1",
+        "sha256": "31b04ff0ddc18dd88d78358adec5944407691df53e5207694b9ef9ae77760243"
+      },
+      {
+        "path": "delivery/scene-emotion-lexical-fix-20261004/opening-corrected.md",
+        "blob": "abf18d1bfa91a9da1632d3f3bd5ed749b048360b",
+        "sha256": "d68a30df2d25c69fc6654faab3cde57f718e1cfda56181458d625081a42eaa1c"
+      },
+      {
+        "path": "docs/NOVEL_SCENE_EMOTION_LEXICAL_FEEDBACK_20261004.md",
+        "blob": "c5f824bcfc072779c41b478964ee49efacf2aff6",
+        "sha256": "db1cca0ac7079d3ab422d6fa0182129d127cbbaf13e64c7924f728a740f02eaa"
+      },
+      {
+        "path": "scripts/verify_current_state.py",
+        "blob": "f14dbd018aaad5f805f3876c6baf5f7d6943bed6",
+        "sha256": "475841739156b2718cf357013b23c55b75656d172dff1f9e7184b0d72a9efec6"
+      },
+      {
+        "path": "scripts/verify_scoped_text_correction.py",
+        "blob": "330878bc01b804744ee0e59c178fcad0ee553b32",
+        "sha256": "ea3d361cc9184ba37814418fcdf31f0295a314d4c3927ee21aa52f6b546ade1a"
+      },
+      {
+        "path": "state/continuity/LATEST_CHECKPOINT.json",
+        "blob": "339aba1ebe73cd035a022d7d3ac5f1253649cceb",
+        "sha256": "140c02265210545b2b31b3bf5ad2faf5f42e7f4ffc7f5a447a2830998d86a3bf"
+      },
+      {
+        "path": "state/project_state.json",
+        "blob": "fedfe86183f6e8c870492083f34f53b540a8ac89",
+        "sha256": "a19d6526bf4374515ba32f8e591799834bc943642e99ab9508140abe6a669da4"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_384_HUMAN_FEEDBACK_20261004.json",
+        "blob": "d279a4ca736117e28d0e9acd5187d515db9db41c",
+        "sha256": "797e12693e1e706d5bc15e8abce6730dd5f754573d41fb9bf1b67f0c3aa7c6c9"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_RESULT_20261004.json",
+        "blob": "866c1022a4d5352403142234437347737af16360",
+        "sha256": "128b3ed0251d89c0f01d2ad6a93296f4aa597ae7eb00fd2642de7dd098247fb0"
+      },
+      {
+        "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_VALIDATION_20261004.json",
+        "blob": "19381f2167a7ca9cf346f0e84db8e0ac48d7e3c9",
+        "sha256": "133aada0aa06fb72b184624f375ec0c9110b47c7b091beb49438ac5c3699210d"
+      },
+      {
+        "path": "state/reviews/scene-emotion-lexical-fix-20261004/report-miss-audit.json",
+        "blob": "f1a4f7370c774ea4545c07df856baaae36ee8d19",
+        "sha256": "594a6d6117e1285edb4313d2cd0b1547aef018b40ed0ffdd2bd226ee6ede4dd7"
+      },
+      {
+        "path": "state/tasks/NOVEL_SCENE_EMOTION_ONE_WORD_CORRECTION_20261004.json",
+        "blob": "5d2ac7fcd01bd34cd7ef659ef5abfd79f7eb1c85",
+        "sha256": "46f3bd0529d893d3395ad8b3e51e9b3e80ef81dddca59cd8ff79a6cd84a90e6a"
+      },
+      {
+        "path": "tests/test_scoped_text_correction.py",
+        "blob": "b4b8d34308b5fbcd68181b55a090adbe63a87628",
+        "sha256": "2538b5761965689cfd62b6744f70c3ddb44c7f87276ea0fecd11b73b53de49a0"
+      }
+    ]
+  },
+  "validation": {
+    "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_VALIDATION_20261004.json",
+    "blob": "19381f2167a7ca9cf346f0e84db8e0ac48d7e3c9",
+    "sha256": "133aada0aa06fb72b184624f375ec0c9110b47c7b091beb49438ac5c3699210d"
+  },
+  "result": {
+    "path": "state/review_receipts/NOVEL_SCENE_LEXICAL_RESULT_20261004.json",
+    "blob": "866c1022a4d5352403142234437347737af16360",
+    "sha256": "128b3ed0251d89c0f01d2ad6a93296f4aa597ae7eb00fd2642de7dd098247fb0"
+  },
+  "human_quality_result": "UNKNOWN",
+  "source_overall_improvement": "CONFIRMED_RELATIVE_ONLY",
+  "corrected_version_human_result": "UNKNOWN_NOT_YET_READ",
+  "model_calls_during_readback": 0,
+  "generation_count_during_readback": 0,
+  "receipt_publication_status_at_creation": "PENDING_NATIVE_CREATE_THEN_SECOND_ACTUAL_READBACK"
+}
