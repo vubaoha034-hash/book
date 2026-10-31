@@ -1,0 +1,37 @@
+{
+  "schema_version": "novel-candidate-plugin-deployment/v1",
+  "record_date": "2026-10-31",
+  "task": "NOVEL-METHOD-UPSTREAM-LINEAGE-20261031",
+  "source": {
+    "repo": "vubaoha034-hash/book",
+    "branch": "proposal/novel-method-upstream-lineage-20261031",
+    "base_main": "6b55121dac2ed31bf304986e05b8ba422d75d639",
+    "candidate_pr": "https://github.com/vubaoha034-hash/book/pull/5",
+    "upcp_pr": "https://github.com/vubaoha034-hash/skills/pull/48"
+  },
+  "plugin": {
+    "id": "plugins_6ae5aec90e248191b12c0e93486145d0",
+    "url": "https://chatgpt.com/plugins/plugins_6ae5aec90e248191b12c0e93486145d0",
+    "version": "0.1.0",
+    "release_id": "pluginrel_6ae5aeca92ac81918e7816117eaa30a9",
+    "creation_status": "CREATED_PRIVATE",
+    "files_readback_count": 9,
+    "manifest_readback": true,
+    "skill_readback": true,
+    "first_real_invocation": "NOT_TESTED",
+    "host_auto_skill_loading": "NOT_VERIFIED"
+  },
+  "literary_quality": {
+    "human_verdict": "UNKNOWN",
+    "controlled_ab": "NOT_RUN",
+    "cross_scene_replication": "NOT_RUN",
+    "production_promotion": false
+  },
+  "preserve": {
+    "checkpoint_at_intake": 211,
+    "internal_score_is_not_human": true,
+    "mainline_unchanged": true,
+    "history_deleted": false
+  },
+  "current_next": "Finish original human gate and controlled text comparison before promotion."
+}
