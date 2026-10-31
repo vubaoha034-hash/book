@@ -1,0 +1,58 @@
+{
+  "schema": "novel-method-lineage/v1",
+  "id": "NOVEL-METHOD-UPSTREAM-LINEAGE-20261031",
+  "authority": {
+    "repository": "vubaoha034-hash/book",
+    "head": "6b55121dac2ed31bf304986e05b8ba422d75d639",
+    "checkpoint": 211,
+    "accepted_promotion": 320,
+    "active_task": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "next_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT"
+  },
+  "baseline": {
+    "work": "那张书桌",
+    "internal_self_score": 9,
+    "actual_human_score": "UNKNOWN",
+    "quality_proven": false
+  },
+  "candidate": {
+    "stage": "NOT_PRODUCTION",
+    "parent": "docs/NOVEL_METHOD_UPSTREAM_LINEAGE_EXECUTION_CONTRACT_20261031.md",
+    "upstreams": [
+      {
+        "repo": "wgwtest/novel-writing",
+        "sha": "838729695148008d42c01bd7c3c0c1a5c15de830",
+        "license": "MIT",
+        "status": "candidate"
+      },
+      {
+        "repo": "zenstory-ai/oh-story-claudecode",
+        "sha": "cc6397f2b07179262287f4ca358d281b16205765",
+        "license": "MIT",
+        "status": "selective_reference"
+      },
+      {
+        "repo": "huahuakandaima/human-novel-writer",
+        "sha": "3e74b95d014923525e0bd19a38203e724152fe54",
+        "license": "MIT",
+        "status": "limited_reference"
+      }
+    ]
+  },
+  "protected_history": [
+    "Phase373_CONTROL_win",
+    "Phase376_replication_failed",
+    "Phase378_PROCESS_lost",
+    "Phase395_dialogue_gate_failed",
+    "Phase396_bounded_success_not_generalized"
+  ],
+  "invariants": [
+    "append_only",
+    "keep_original_receipts",
+    "do_not_promote_ai_scores_to_human",
+    "do_not_change_active_business_task",
+    "no_paid_api",
+    "no_replay_consumed_tasks"
+  ],
+  "future_runs": []
+}
