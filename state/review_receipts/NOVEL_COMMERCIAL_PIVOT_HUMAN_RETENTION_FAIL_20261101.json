@@ -1,0 +1,41 @@
+{
+  "schema_version": "novel-human-verdict-commercial-pivot-intake/v1",
+  "record_id": "NOVEL_STANDALONE_COMPLETE_SHORT_HUMAN_RETENTION_FAIL_AND_COMMERCIAL_GOAL_20261101",
+  "user_message_verbatim": "我觉得，根本没有读下去的欲望。我觉得我们应该快速学习下现在这群热门小说的写法。比如番茄小说的热门小说，我们现在最大的目标是快速挣钱。",
+  "source_kind": "ACTUAL_USER_MESSAGE_CURRENT_CONVERSATION",
+  "recorded_date": "2026-11-01",
+  "binding": {
+    "repository": "vubaoha034-hash/book",
+    "baseline_main_sha": "6b55121dac2ed31bf304986e05b8ba422d75d639",
+    "original_checkpoint": 211,
+    "original_task_id": "NOVEL-STANDALONE-COMPLETE-SHORT-SELF9-20261004-01",
+    "work_title": "那张书桌",
+    "artifact_path": "delivery/standalone-short-20261004/final.md",
+    "artifact_sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62"
+  },
+  "dimensions": {
+    "actual_human_desire_to_continue": false,
+    "actual_human_retention_verdict": "FAIL_NO_DESIRE_TO_CONTINUE",
+    "actual_human_numeric_score": "UNKNOWN_NOT_PROVIDED",
+    "actual_human_ai_smell_verdict": "UNKNOWN_NOT_EXPRESSLY_GIVEN_FOR_THIS_ARTIFACT",
+    "actual_human_emotion_verdict": "UNKNOWN_NOT_SEPARATELY_GIVEN",
+    "overall_numeric_quality": "UNKNOWN",
+    "previous_internal_self_score": 9,
+    "internal_score_not_a_success_signal": true
+  },
+  "new_goal": {
+    "explicit_user_steering": "QUICK_REAL_MONETIZATION_FIRST",
+    "requested_method": "STUDY_RECENT_REAL_BESTSELLING_CHINESE_ONLINE_NOVELS_ESPECIALLY_FANQIE_AND_REBUILD_EXECUTION",
+    "status": "USER_DIRECTED_FOCUS_CHANGE",
+    "business_success_evidence": "REAL_SIGNED_AND_ACTUAL_PAID_REVENUE_OR_VERIFIABLE_ORDER_NOT_AI_LITERARY_SCORE"
+  },
+  "state_write_boundary": {
+    "receipt_is_append_only": true,
+    "production_project_state_modified": false,
+    "continuity_checkpoint_modified": false,
+    "native_settlement_for_current_human_gate": "PENDING_RECONCILIATION",
+    "automated_next_task_dispatch": false,
+    "commercial_research_allowed": true,
+    "writing_new_story_or_replacing_frozen_manuscript": false
+  }
+}
