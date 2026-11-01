@@ -14,6 +14,8 @@ def main() -> None:
     routing = json.loads((C / "module-routing.json").read_text("utf-8"))
     lineage = json.loads((ROOT / "state/lineage/NOVEL_METHOD_UPSTREAM_20261031.json").read_text("utf-8"))
     checkpoint = json.loads((ROOT / "state/continuity/LATEST_CHECKPOINT.json").read_text("utf-8"))
+    project = json.loads((ROOT / "state/project_state.json").read_text("utf-8"))
+    precedence = json.loads((C / "entrypoint-precedence.json").read_text("utf-8"))
     if not skill.startswith("---\nname: novel-writing-master\n"):
         errors.append("invalid skill frontmatter")
     if not routing.get("production") is False:
@@ -24,6 +26,18 @@ def main() -> None:
         errors.append("checkpoint regressed")
     if "NOVEL-IMPROVEMENT-MAINLINE-V1" not in (ROOT / "MAINLINE.md").read_text("utf-8"):
         errors.append("mainline unexpectedly missing")
+    if project.get("next_required_action") != checkpoint.get("next_required_action"):
+        errors.append("native state and checkpoint disagree on next action")
+    if checkpoint.get("sequence") == 211 and project.get("next_required_action") != "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT":
+        errors.append("historic human score gate incorrectly bypassed")
+    if precedence.get("production_route_unchanged") is not True:
+        errors.append("candidate precedence unexpectedly mutates production")
+    if precedence.get("version_namespace",{}).get("equivalence") is not False:
+        errors.append("method4 and V4 incorrectly aliased")
+    if precedence.get("legacy_locator",{}).get("legacy_next_action") == project.get("next_required_action") and checkpoint.get("sequence",0) > 200:
+        errors.append("stale MAINLINE entry reactivated")
+    if "entrypoint-precedence.json" not in skill:
+        errors.append("candidate skill omits stale-entrypoint guard")
     mandatory = {"modules/character-pressure-test.md","modules/causal-proof-engine.md","rules/pass-isolation.md"}
     indexed = {m["path"]:m for m in routing["modules"]}
     if any(indexed.get(p,{}).get("status")!="ACTIVE" for p in mandatory):
