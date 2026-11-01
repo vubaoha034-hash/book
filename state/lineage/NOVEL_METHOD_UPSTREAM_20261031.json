@@ -54,5 +54,27 @@
     "no_paid_api",
     "no_replay_consumed_tasks"
   ],
-  "future_runs": []
+  "future_runs": [],
+  "commercial_pivot_20261101": {
+    "status": "EVIDENCE_STUDIED_CANDIDATE_PREPARED",
+    "human_feedback_commit_on_main": "03ecbc26b6baafa505b6c800aa58df7a3ed308a1",
+    "receipt": "state/review_receipts/NOVEL_COMMERCIAL_PIVOT_HUMAN_RETENTION_FAIL_20261101.json",
+    "original_work": "那张书桌",
+    "human_wants_to_continue": false,
+    "human_numeric_score": "UNKNOWN",
+    "old_internal_self_score": 9,
+    "business_goal": "FAST_REAL_REVENUE",
+    "market_study": "docs/NOVEL_FANQIE_COMMERCIAL_SHORT_MARKET_RESEARCH_20261101.md",
+    "sources_checked": {
+      "official_short_signing": "https://fanqienovel.com/writer/zone/article/7409917439607062553",
+      "official_incentive": "https://fanqienovel.com/writer/zone/article/7690521379786997822",
+      "official_training": "https://fanqienovel.com/writer/zone/article/7619170181129961534",
+      "bestseller_sample": "https://novelcatch.com/short"
+    },
+    "chosen_research_direction": "ONE_ORIGINAL_COMPLETED_SHORT_STORY_10000_TO_20000_CHARACTERS",
+    "production_authorization": "NO_AUTO_POST_OR_SIGN",
+    "actual_paid_income": "UNKNOWN",
+    "commercial_workflow_proven": false,
+    "note": "This is additive proposal lineage; no native CP advancement, no reinterpretation of old human gate."
+  }
 }
