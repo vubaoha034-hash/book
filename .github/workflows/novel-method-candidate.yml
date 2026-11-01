@@ -1,0 +1,34 @@
+name: Novel Method Candidate - Independent Verification
+
+on:
+  pull_request:
+    paths:
+      - 'experimental/novel-writing-v4/**'
+      - 'state/lineage/NOVEL_METHOD_UPSTREAM_20261031.json'
+      - 'docs/NOVEL_METHOD_UPSTREAM_LINEAGE_EXECUTION_CONTRACT_20261031.md'
+      - '.github/workflows/novel-method-candidate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout complete history required by immutable checkpoints
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify current native project state
+        run: python scripts/verify_current_state.py
+      - name: Check candidate Skill, upstream locks, module routing, and human gate
+        run: python experimental/novel-writing-v4/tests/test_static_contract.py
+      - name: Run existing project structural tests
+        run: python scripts/validate_skill.py
+      - name: Run regression suite without generating fiction
+        run: python -m unittest discover -s tests -p 'test_*.py'
