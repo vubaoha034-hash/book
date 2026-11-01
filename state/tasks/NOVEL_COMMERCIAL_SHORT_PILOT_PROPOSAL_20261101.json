@@ -1,0 +1,68 @@
+{
+  "schema_version": "novel-commercial-pilot-proposal/v1",
+  "task_id": "NOVEL-COMMERCIAL-SHORT-PILOT-PROPOSAL-20261101",
+  "record_date": "2026-11-01",
+  "status": "PREPARED_NOT_ACTIVE",
+  "business_goal": "FASTEST_VERIFIABLE_LAWFUL_WRITING_REVENUE",
+  "user_instruction_quote": "我觉得，根本没有读下去的欲望。我觉得我们应该快速学习下现在这群热门小说的写法。比如番茄小说的热门小说，我们现在最大的目标是快速挣钱。",
+  "scoped_human_feedback": {
+    "original_story": "那张书桌",
+    "original_body_sha256": "1b4798083f74b81f5ec340e07e7c91bca4815a14e24c0db860dcc16e8dcede62",
+    "willingness_to_continue": "FAIL",
+    "human_numeric_score": "UNKNOWN",
+    "receipt": "state/review_receipts/NOVEL_COMMERCIAL_PIVOT_HUMAN_RETENTION_FAIL_20261101.json"
+  },
+  "current_native_state_at_proposal": {
+    "basis_commit": "03ecbc26b6baafa505b6c800aa58df7a3ed308a1",
+    "checkpoint_sequence": 211,
+    "active_task": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "old_native_next_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
+    "state_mutated_by_proposal": false
+  },
+  "selected_earning_route": {
+    "first_candidate": "ONE_ORIGINAL_FANQIE_SHORT_STORY",
+    "target_length_chinese_characters": "10000-20000",
+    "minimum_application_chars": "6000_ONLY_POTENTIAL_CONTRACT_ELIGIBILITY",
+    "income_guaranteed": false,
+    "genre_research_focus": "REALISTIC_MARRIAGE_FAMILY_AND_ORIGINAL_WORKPLACE_CONFLICT",
+    "illustrative_story_seed": "离婚时，他把欠了八十万的店留给我",
+    "seed_status": "UNPROVEN_NOT_STORY_CONTRACT",
+    "commercial_research": "docs/NOVEL_FANQIE_COMMERCIAL_SHORT_MARKET_RESEARCH_20261101.md",
+    "research_location": "proposal/novel-method-upstream-lineage-20261031",
+    "fanqie_original_source_and_upstream_commit_must_be_rechecked": true
+  },
+  "execution_plan": [
+    "native_reconcile_scoped_human_retention_fail_before_pivoting_task",
+    "verify_official_current_submission_terms_and_incentives",
+    "produce_one_original_hook_200_to_500_characters_not_copied_from_source",
+    "human_continuation_gate",
+    "if_positive_expand_one_complete_short_10000_to_20000_characters",
+    "human_review_then_authorized_submit_and_check_exclusivity",
+    "track_actual_signed_contract_and_paid_income_no_invention"
+  ],
+  "allowed_now": [
+    "READ_ONLY_MARKET_STUDY",
+    "METHOD_RESEARCH",
+    "APPEND_ONLY_PREP_AND_RECEIPTS"
+  ],
+  "disallowed_now": [
+    "AUTO_GENERATE_MULTIPLE_FULL_BOOKS",
+    "AUTO_SIGN_CONTRACT",
+    "AUTO_SUBMIT_WITHOUT_EXPLICIT_USER_APPROVAL",
+    "CLAIM_ANY_EARNINGS",
+    "OVERWRITE_OLD_ORIGINAL",
+    "MISREPORT_INTERNAL_NINE_AS_HUMAN_NINE"
+  ],
+  "completed": {
+    "market_study": true,
+    "private_plugin_v020_published": true,
+    "human_failure_receipt_saved": true,
+    "original_hook": "NOT_WRITTEN",
+    "whole_story": "NOT_WRITTEN",
+    "actual_contract": "UNKNOWN",
+    "verified_revenue": "UNKNOWN"
+  },
+  "approval_boundary": "USER_GOAL_CHANGE_CLEAR; NO_COMPETENT_NATIVE_STATE_SETTLEMENT_DONE; proposal does not change active_task",
+  "next_proposed_action": "COORDINATOR_RECONCILE_AND_SELECT_ONE_ORIGINAL_COMMERCIAL_HOOK",
+  "evidence_grade": "PREPARED_NOT_PRODUCTION"
+}
