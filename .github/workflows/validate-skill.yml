@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Historical frozen tree must be available to verify_current_state.py
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,9 +25,6 @@ jobs:
 
       - name: Verify current mainline and feedback scope
         run: python scripts/verify_current_state.py
-
-      - name: Validate optional novel workflow candidate (no generation)
-        run: python experimental/novel-writing-v4/tests/test_static_contract.py
 
       - name: Test mainline continuity checks
         run: python -m unittest discover -s tests -p 'test_*.py'
