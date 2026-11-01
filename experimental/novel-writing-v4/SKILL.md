@@ -7,6 +7,11 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 旧入口歧义与版本隔离（重要）
+`MAINLINE.md` 中“当前位置与入口：停在步骤1”的段落是 2026-10-01 历史快照；不能据此替换同一提交下 `state/project_state.json` + `state/continuity/LATEST_CHECKPOINT.json` 的当前动作。参见 [入口优先级守卫](entrypoint-precedence.json)。当最新状态为检查点211时，唯一动作是取得《那张书桌》该冻结稿的真人评分；不能启动新正文生成。若未来检查点推进，应实时读取最新状态，不能把211固定当永远最新。
+
+命名也必须隔离：**既有主线“方法修订4” ≠ 本候选“V4 Skill”**。任何报告应分别写 `mainline_method_revision` 与 `candidate_skill_version`，不得自动晋级或混淆。
+
 ## 一句话目标
 让具体人物因自己的利益、知识和关系而选择行动；真实行动改变下一步安排；读者自然想知道接下来如何，而不是AI照大纲传话。
 
