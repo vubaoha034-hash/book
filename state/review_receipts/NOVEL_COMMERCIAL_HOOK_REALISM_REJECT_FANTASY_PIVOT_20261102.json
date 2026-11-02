@@ -1,0 +1,31 @@
+{
+  "schema_version": "novel-human-hook-verdict/v1",
+  "task_id": "NOVEL_COMMERCIAL_ORIGINAL_HOOK_20261102_FEEDBACK",
+  "user_verbatim": "这个我觉得没撒看头，现在都是修仙，重生等等短剧的小说非常火爆",
+  "version_binding": {
+    "repository": "vubaoha034-hash/book",
+    "branch": "proposal/novel-method-upstream-lineage-20261031",
+    "artifact": "experimental/novel-writing-v4/commercial-pilot-20261102/opening-v1.md",
+    "title": "离婚时，他把欠了八十万的店留给我",
+    "blob_sha": "3856cc21715e72f27067b5a90431adc4973d5bf8",
+    "content_sha256": "315b5a9dc6e7c0abebba0e94629c0eee068cebf2ecdd65949a9470d804364505"
+  },
+  "interpretation": {
+    "narrative_attraction": "FAIL_NO_READING_PULL",
+    "score_numeric": "UNKNOWN",
+    "first_stop_locator": "NOT_SPECIFIED",
+    "full_short_story": "NOT_WRITTEN",
+    "direction": "RESEARCH_REBIRTH_XIANXIA_FANTASY_SHORT_DRAMA_ADAPTIVE_STORIES",
+    "is_user_assessment_of_entire_genre_market": false,
+    "market_popularity_to_verify_independently": true
+  },
+  "constraints": {
+    "preserve_old_original": true,
+    "no_multiple_unscored_variants": true,
+    "no_native_mainline_cursor_change": true,
+    "no_income_claim": true,
+    "no_auto_submission": true
+  },
+  "observed_at_date": "2026-11-02",
+  "linked_prior_receipt": "experimental/novel-writing-v4/commercial-pilot-20261102/receipt-v1.json"
+}
