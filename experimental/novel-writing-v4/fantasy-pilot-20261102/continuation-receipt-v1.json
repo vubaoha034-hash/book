@@ -1,0 +1,38 @@
+{
+  "schema_version": "novel-scoped-continuation/v1",
+  "run_id": "NOVEL_XIANXIA_REBIRTH_SCOPED_CONTINUATION_20261102_01",
+  "story": "重生后，我把飞升令送给了仇人",
+  "parent_opening": {
+    "path": "experimental/novel-writing-v4/fantasy-pilot-20261102/opening-v1.md",
+    "git_blob": "58b0a90416277cd5262f2c7bd281efa3f1336542",
+    "human_feedback_receipt": "state/review_receipts/NOVEL_XIANXIA_FIRST_SCREEN_HUMAN_POSITIVE_20261102.json",
+    "human_wants_to_continue": "YES_FOR_OPENING_ONLY"
+  },
+  "new_text": {
+    "path": "experimental/novel-writing-v4/fantasy-pilot-20261102/continuation-v1.md",
+    "git_blob": "6a5e2922de3d0386acd2e3f74dbafa93d05c708f",
+    "han_characters": 923,
+    "visible_versions": 1,
+    "internal_revisions_saved": 0
+  },
+  "editorial_boundaries": {
+    "no_changes_to_parent_opening": true,
+    "protagonist": "叶渡",
+    "antagonist": "师尊（掌教）",
+    "rival": "谢临渊",
+    "new_scene_change": "掌教以禁术名义封锁山门；执律长老公开要求查看袖中环",
+    "critical_hook": "publicly visible chain and sect master companion ring",
+    "growth_system": "NOT_DEVELOPED_YET",
+    "avoid_mechanical_question_answer": true,
+    "legal_and_commercial_status": "NOT_SUBMITTED"
+  },
+  "verification": {
+    "remote_git_readback": "PASS",
+    "independent_clean_writer": "NO_SAME_COORDINATING_CONTEXT",
+    "independent_reader": "NOT_RUN",
+    "human_retention_for_continuation": "UNKNOWN",
+    "commercial_income": "UNKNOWN",
+    "production_mainline_changed": false
+  },
+  "next_action": "ACTUAL_HUMAN_READ_SCOPED_CONTINUATION_BEFORE_LONG_FORM_EXPANSION"
+}
