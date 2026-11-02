@@ -80,7 +80,7 @@ def main() -> None:
             errors.append("main cast missing from character bible")
         if any("L%02d" % i not in clues for i in range(1, 9)):
             errors.append("main suspense locks not indexed")
-        if "NO PROSE" not in index or "生成" not in audit:
+        if "NO PROSE" not in index or "正文" not in audit:
             errors.append("planning-only instruction missing")
         if "题材" not in index or "438" not in index or "923" not in index:
             errors.append("genre interest incorrectly inherited as prose approval")
