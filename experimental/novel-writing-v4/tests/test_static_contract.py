@@ -74,7 +74,7 @@ def main() -> None:
         clues = (planning / files[5]).read_text("utf-8")
         chapters = (planning / files[6]).read_text("utf-8")
         audit = (planning / files[7]).read_text("utf-8")
-        if len(__import__("re").findall(r"(?m)^### 第\\d{2}章", chapters)) != 12:
+        if len(__import__("re").findall(r"(?m)^### 第\d{2}章", chapters)) != 12:
             errors.append("not exactly twelve chapter cards")
         if any(name not in character for name in ("叶渡", "谢临渊", "秦照月", "顾玄衡")):
             errors.append("main cast missing from character bible")
