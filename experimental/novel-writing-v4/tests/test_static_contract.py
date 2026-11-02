@@ -58,6 +58,39 @@ def main() -> None:
         errors.append("missing writer flow")
     if not all(x["license"]=="MIT" and len(x["sha"])==40 for x in lineage["candidate"]["upstreams"]):
         errors.append("unlocked upstream or license")
+    # User's latest correction: genre interest is not literary approval.
+    planning = C / "outline-first-20261102"
+    files = [
+        "00-READ-ME-FIRST.md", "01-method-learning-audit.md",
+        "02-master-outline.md", "03-world-rules.md", "04-characters.md",
+        "05-clue-reversal-payoff.md", "06-chapter-cards-01-12.md",
+        "07-editorial-audit.md",
+    ]
+    if any(not (planning / p).is_file() for p in files):
+        errors.append("outline-first planning artifact missing")
+    else:
+        index = (planning / files[0]).read_text("utf-8")
+        character = (planning / files[4]).read_text("utf-8")
+        clues = (planning / files[5]).read_text("utf-8")
+        chapters = (planning / files[6]).read_text("utf-8")
+        audit = (planning / files[7]).read_text("utf-8")
+        if len(__import__("re").findall(r"(?m)^### 第\\d{2}章", chapters)) != 12:
+            errors.append("not exactly twelve chapter cards")
+        if any(name not in character for name in ("叶渡", "谢临渊", "秦照月", "顾玄衡")):
+            errors.append("main cast missing from character bible")
+        if any("L%02d" % i not in clues for i in range(1, 9)):
+            errors.append("main suspense locks not indexed")
+        if "NO PROSE" not in index or "生成" not in audit:
+            errors.append("planning-only instruction missing")
+        if "题材" not in index or "438" not in index or "923" not in index:
+            errors.append("genre interest incorrectly inherited as prose approval")
+    if "2026-11-02 最新真人纠偏" not in skill or "outline-first-20261102" not in skill:
+        errors.append("candidate route permits premature prose")
+    correction = ROOT / "state/review_receipts/NOVEL_FANTASY_INTEREST_NOT_PROSE_APPROVAL_OUTLINE_FIRST_20261102.json"
+    if correction.exists():
+        j = json.loads(correction.read_text("utf-8"))
+        if j.get("interpretation", {}).get("prior_opening_prose_approved") is not False:
+            errors.append("latest human clarification not enforced")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
