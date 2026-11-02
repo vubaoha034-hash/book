@@ -1,0 +1,14 @@
+{
+  "schema_version": "novel-human-feedback/v1",
+  "artifact_path": "experimental/novel-writing-v4/fantasy-pilot-20261102/opening-v1.md",
+  "artifact_blob": "58b0a90416277cd5262f2c7bd281efa3f1336542",
+  "user_verbatim": "可以，我有读下去的欲望。",
+  "wants_to_continue": "YES",
+  "scope": "FIRST_SCREEN_438_HAN_CHAR_ONLY",
+  "numeric_score": "UNKNOWN",
+  "overall_quality": "NOT_EVALUATED",
+  "long_story_quality": "NOT_EVALUATED",
+  "income": "UNKNOWN",
+  "checkpoint_preserved": 211,
+  "production_state_changed": false
+}
