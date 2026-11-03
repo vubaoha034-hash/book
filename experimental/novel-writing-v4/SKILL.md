@@ -7,6 +7,12 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-03 当前新商业种子C02：同级冲突、低门槛收益（仅候选）
+- 用户要求以修仙重生快商业测试为目标，且先策划人物/大纲、不要又从被拒稿直接续写。旧`飞升榜上没有活人`所有自由修阵/被抓求生发动机已被因果反证拒绝；用户对旧438字开篇的肯定仅是题材兴趣，**不能继承到任何新正文**。
+- 最新单一原创候选[《重生御兽：我的第一只灵兽是个赔钱货》故事核心和前三章](commercial-new-seed-20261103/01-original-core-and-3chapter-cards.md)：男主带八年兽坊经验重生，契约病土蜥，首次治疗可见、公开试训对抗同阶驯兽者、物资有来源；没有高阶掌教非合理不抓人的问题。该机制只是商业假设，不是平台榜单验证。
+- 真实[内部因果/资源审计](commercial-new-seed-20261103/02-internal-causal-and-commercial-audit.md)发现并修正购兽4枚/初始10枚、第三日**非战斗摸底**vs二十日正式考核冲突，保留`FIRST_3_CHAPTERS=PARTIAL_PREPARED`、`INDEPENDENT_AI_EDITOR=NOT_RUN_TOOL_429`、`HUMAN_READABILITY=UNKNOWN`、`NEW_PROSE=0`。禁止在插件中伪造外审/收入PASS。
+- 正常执行的下一门：一轮C02**独立策划审查**→有界首章写作包→**一次单章试写**→真人判断是否继续。未到首章时不得批量生产12章、不投稿不签约。GitHub候选文件不会自动变成发布版插件。
+
 ## 2026-11-03 当前第一优先：已淘汰受控求生发动机，禁止写旧案正文
 - 真实受控求生压力测试在新独立AI聊天 https://chatgpt.com/c/6ae9ac1e-8794-83ee-8a40-3d1193f575c6 返回`BLOCKED_NEEDS_NEW_CORE_FACT`：掌教真的抓住叶渡、收走阵盘/铜片/灵砂、禁灵并用筑基守卫看管后，旧`残阵回鸣`没有启动条件；秦、谢、陆无真实权力救他。**它不是独立真人文学质量认证。**
 - 当前故事发动机从`V0.1—V0.5`至“反派成功抓住仍可越狱”均停止，**不再生成新章节**，不能拿作者新造的牢房破绽或万能救援补PASS；核对候选[最终收据](outline-first-20261102/19-captive-survival-kill-test-20261103.md)以及[最新入口](outline-first-20261102/00-READ-ME-FIRST.md)。
