@@ -91,6 +91,32 @@ def main() -> None:
         j = json.loads(correction.read_text("utf-8"))
         if j.get("interpretation", {}).get("prior_opening_prose_approved") is not False:
             errors.append("latest human clarification not enforced")
+    # November 3 commercial red-team: revision chain is append-only, not a prose approval.
+    outline_index = (C / "outline-first-20261102/00-READ-ME-FIRST.md").read_text("utf-8")
+    latest_v03 = C / "outline-first-20261102/12-minimal-causal-stabilization-v03-20261103.md"
+    external_v01 = C / "outline-first-20261102/08-external-editor-rejection-20261103.md"
+    external_v02 = C / "outline-first-20261102/13-same-ai-editor-v02-recheck-20261103.md"
+    for pth in (latest_v03, external_v01, external_v02):
+        if not pth.is_file():
+            errors.append("missing red-team revision evidence " + pth.name)
+    if all(x.is_file() for x in (latest_v03, external_v01, external_v02)):
+        latest = latest_v03.read_text("utf-8")
+        first_report = external_v01.read_text("utf-8")
+        recheck = external_v02.read_text("utf-8")
+        import re
+        if len(re.findall(r"(?m)^\\| \\d{2}｜", latest)) != 12:
+            errors.append("v03 no longer has twelve distinct chapter state transitions")
+        for token in ("第8章", "软禁", "第9章", "押运", "T-60", "不强制筑基", "双榜"):
+            if token not in latest and token != "双榜":
+                errors.append("v03 missing required causality marker " + token)
+        if "V0.3" not in outline_index or "12-minimal-causal-stabilization-v03-20261103.md" not in outline_index:
+            errors.append("new chat outline entry cannot locate latest revision")
+        if "2026-11-03 最新商业修仙大纲" not in skill:
+            errors.append("skill does not route to latest genre manuscript contract")
+        if "BLOCKER" not in first_report or "PARTIAL" not in recheck:
+            errors.append("unresolved AI editor verdict lost")
+        if "NO PROSE" not in latest:
+            errors.append("v03 incorrectly treated as authorized chapter prose")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
