@@ -1,6 +1,12 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-04 最新｜C02第一章单稿、一次修订、两次独立冷读已结算
+- [单章初稿V1](../commercial-new-seed-20261103/05-ch01-clean-writer-original-v1.md) → [独立AI首次冷读](../commercial-new-seed-20261103/06-ch01-independent-cold-read-20261104.md) =`PARTIAL_TARGETED_EDIT`，没有用户文字认可。
+- [唯一一次V2定向修订](../commercial-new-seed-20261103/07-ch01-one-targeted-revision-v2.md) → [第二次独立冷读与精确范围收据](../commercial-new-seed-20261103/08-ch01-v2-second-independent-cold-verdict-20261104.json) =`PARTIAL_EDIT_STILL_NEEDED`。根因是“签契后缺新局势变化，疗养篇幅长，章末收益太弱”；不存在“机器审过就可以写第二章”的合法跳跃。
+- 本轮完整正文仅第一章（V1 + V2修订，原件两份），**第二章0字，真实签约/收入均未知，主线与私有插件未改变**。
+- 结构下一动作：决定第一章能否在原有核心内建立更有商业力的**获益/代价/反转**，若不能直接淘汰该候选；不再重复润色V3、叠加结尾问号或生成20章掩饰低留存。
+
 ## 2026-11-03 商业新种子 C02：唯一当前候选（不继承旧案）
 - [C02《重生御兽：我的第一只灵兽是个赔钱货》一页核心与前三章卡](../commercial-new-seed-20261103/01-original-core-and-3chapter-cards.md)：同阶竞争、病兽照护、公开训练、有限成长资源；不使用旧魂灯献祭、T-49暗烙或高境界强敌长期放任情节。**只有一个新候选**。
 - [C02内部编审与成本校验](../commercial-new-seed-20261103/02-internal-causal-and-commercial-audit.md)：夜间救兽、训练成本、第三天低强度摸底与20天后正式考试的区别已核对；最大文学/商业风险是前三章爽点可能偏弱。独立AI编辑因浏览器连接HTTP 429**未完成**，绝不宣称外部审核通过。
