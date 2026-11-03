@@ -104,7 +104,7 @@ def main() -> None:
         first_report = external_v01.read_text("utf-8")
         recheck = external_v02.read_text("utf-8")
         import re
-        if len(re.findall(r"(?m)^\\| \\d{2}｜", latest)) != 12:
+        if len(re.findall(r"(?m)^\| \d{2}｜", latest)) != 12:
             errors.append("v03 no longer has twelve distinct chapter state transitions")
         for token in ("第8章", "软禁", "第9章", "押运", "T-60", "不强制筑基", "双榜"):
             if token not in latest and token != "双榜":
