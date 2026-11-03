@@ -7,6 +7,12 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 C02第一章已经独立试写与两次冷读：尚未通过，停止机械微调
+- 冻结**一个**独立写作者首章原稿`commercial-new-seed-20261103/05-ch01-clean-writer-original-v1.md`（3658汉字、273短段），由另一个独立AI只读正文冷审给`PARTIAL_TARGETED_EDIT`。
+- 对原稿**只做一次**有父本的定向修订`commercial-new-seed-20261103/07-ch01-one-targeted-revision-v2.md`（3447汉字、118短段，修复6枚余额、登记顺序和护理两难）。第二次全新独立AI冷审给`PARTIAL_EDIT_STILL_NEEDED`。精确原稿、审稿链接、版本blob和诊断在`commercial-new-seed-20261103/08-ch01-v2-second-independent-cold-verdict-20261104.json`。
+- 仍未通过原因：签订初契后后半章又转成长期护理日记；治疗成果仅仅有限回暖，没有同等级的新决定/局势变化，第一章结尾牵引弱；修订版仍超预定长度。**不得靠V3/V4机械修辞、AI自评9分或自动续第二章替代实际读感。**
+- **本次最新状态**`C02_CH01=AI_COLD_PARTIAL_NOT_HUMAN_ACCEPTED`，`STOP_REVISION_LOOP`，`HUMAN_APPROVAL=UNKNOWN`，`EARNINGS=UNKNOWN`。新合法动作只能先做一次第一章**实际利益/反转的结构性决策**或因商业卖点过弱淘汰C02；不直接生产第二章、签约或出版。以上仅PR #5隔离候选，不会自动发布到私有插件或更新生产main。
+
 ## 2026-11-03 当前新商业种子C02：同级冲突、低门槛收益（仅候选）
 - 用户要求以修仙重生快商业测试为目标，且先策划人物/大纲、不要又从被拒稿直接续写。旧`飞升榜上没有活人`所有自由修阵/被抓求生发动机已被因果反证拒绝；用户对旧438字开篇的肯定仅是题材兴趣，**不能继承到任何新正文**。
 - 最新单一原创候选[《重生御兽：我的第一只灵兽是个赔钱货》故事核心和前三章](commercial-new-seed-20261103/01-original-core-and-3chapter-cards.md)：男主带八年兽坊经验重生，契约病土蜥，首次治疗可见、公开试训对抗同阶驯兽者、物资有来源；没有高阶掌教非合理不抓人的问题。该机制只是商业假设，不是平台榜单验证。
