@@ -117,6 +117,25 @@ def main() -> None:
             errors.append("unresolved AI editor verdict lost")
         if "NO PROSE" not in latest:
             errors.append("v03 incorrectly treated as authorized chapter prose")
+    # Story candidate v0.4 remains only an outline, despite a separate blind structural review.
+    v04path = C / "outline-first-20261102/15-12chapter-v04-adversary-arc-20261103.md"
+    v04review = C / "outline-first-20261102/16-v04-blind-review-verdict-20261103.md"
+    if not v04path.is_file() or not v04review.is_file():
+        errors.append("latest v04 candidate/review missing")
+    else:
+        v04 = v04path.read_text("utf-8")
+        v04note = v04review.read_text("utf-8")
+        rows = [ln for ln in v04.splitlines() if ln.startswith("| ") and len(ln) > 5 and ln[2:4].isdigit() and ln[4] == " "]
+        if len(rows) != 12 or [row[2:4] for row in rows] != [f"{n:02d}" for n in range(1,13)]:
+            errors.append("v04 twelve chapter order drift")
+        if "NO PROSE" not in v04 and "0新正文" not in v04:
+            errors.append("v04 is not a planning-only candidate")
+        if "PARTIAL_BLOCKED_LONGFORM" not in v04note or "B1" not in v04note:
+            errors.append("v04 blind failure wrongly promoted")
+        if "V0.4" not in outline_index or "15-12chapter-v04-adversary-arc-20261103.md" not in outline_index:
+            errors.append("v04 missing from latest entrypoint")
+        if "2026-11-03 最新V0.4大纲" not in skill:
+            errors.append("candidate skill fails latest outline-first route")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
