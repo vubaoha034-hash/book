@@ -111,7 +111,7 @@ def main() -> None:
                 errors.append("v03 missing required causality marker " + token)
         if "V0.3" not in outline_index or "12-minimal-causal-stabilization-v03-20261103.md" not in outline_index:
             errors.append("new chat outline entry cannot locate latest revision")
-        if "2026-11-03 最新V0.4大纲" not in skill:
+        if "2026-11-03 最新停止门" not in skill:
             errors.append("skill does not route to latest genre manuscript contract")
         if "BLOCKER" not in first_report or "PARTIAL" not in recheck:
             errors.append("unresolved AI editor verdict lost")
@@ -134,8 +134,24 @@ def main() -> None:
             errors.append("v04 blind failure wrongly promoted")
         if "V0.4" not in outline_index or "15-12chapter-v04-adversary-arc-20261103.md" not in outline_index:
             errors.append("v04 missing from latest entrypoint")
-        if "2026-11-03 最新V0.4大纲" not in skill:
+        if "2026-11-03 最新停止门" not in skill:
             errors.append("candidate skill fails latest outline-first route")
+    # V0.5 was tested and rejected: do not silently reactivate free-roam chapter production.
+    v05plan = C / "outline-first-20261102/17-b1-b2-hard-adversary-test-and-v05-proposal-20261103.md"
+    v05reject = C / "outline-first-20261102/18-v05-independent-cold-audit-and-stop-20261103.md"
+    if not v05plan.is_file() or not v05reject.is_file():
+        errors.append("latest V0.5 stress test or actual rejection record missing")
+    else:
+        v5 = v05plan.read_text("utf-8")
+        verdict = v05reject.read_text("utf-8")
+        if not all(term in v5 for term in ("T-40", "闻岐", "BRANCH_CAPTURED_STOP", "NO_NEW_PROSE")):
+            errors.append("V0.5 causal branch not locked")
+        if not all(term in verdict for term in ("V05=BLOCKED_LONGFORM", "B01", "B02", "B03", "B04")):
+            errors.append("V0.5 blocked verdict not preserved")
+        if "17-b1-b2-hard-adversary-test-and-v05-proposal-20261103.md" not in outline_index:
+            errors.append("V0.5 missing from cold-start outline index")
+        if "18-v05-independent-cold-audit-and-stop-20261103.md" not in skill:
+            errors.append("V0.5 blind verdict missing from candidate Skill")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
