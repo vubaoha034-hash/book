@@ -1,6 +1,12 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-03 商业新种子 C02：唯一当前候选（不继承旧案）
+- [C02《重生御兽：我的第一只灵兽是个赔钱货》一页核心与前三章卡](../commercial-new-seed-20261103/01-original-core-and-3chapter-cards.md)：同阶竞争、病兽照护、公开训练、有限成长资源；不使用旧魂灯献祭、T-49暗烙或高境界强敌长期放任情节。**只有一个新候选**。
+- [C02内部编审与成本校验](../commercial-new-seed-20261103/02-internal-causal-and-commercial-audit.md)：夜间救兽、训练成本、第三天低强度摸底与20天后正式考试的区别已核对；最大文学/商业风险是前三章爽点可能偏弱。独立AI编辑因浏览器连接HTTP 429**未完成**，绝不宣称外部审核通过。
+- 当前状态`C02_STORY_CONCEPT_AND_FIRST_3_CARDS_DRAFT`、`HUMAN_VERDICT=UNKNOWN`、`FIRST_CHAPTER_PROSE=NOT_WRITTEN`、`SIGNED=UNKNOWN`。下一有界动作是对C02单独冷审，再决定是否写第1章，不自动连载。旧V0.1—V0.5已失败，只允许读取为避免同类错误的历史证据。
+- 这是PR #5候选更新，生产主线仍以main、checkpoint与最新真实反馈为准，已发布私有插件不会随候选自动升级。
+
 ## 2026-11-03 最终止损：受控求生发动机也不成立（最新）
 **请先读**：[19 受控求生最后硬核验与当前故事发动机淘汰](19-captive-survival-kill-test-20261103.md)。
 - GitHub候选原有V0.5已被独立AI审为`BLOCKED`。本轮按其唯一下一动作，真实检验反派**已经成功收缴法器、禁灵、用筑基守卫关在完整高阶囚室**的情况。新独立AI编辑的真实裁决为`BLOCKED_NEEDS_NEW_CORE_FACT`，原聊天 https://chatgpt.com/c/6ae9ac1e-8794-83ee-8a40-3d1193f575c6 。
