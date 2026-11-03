@@ -152,6 +152,18 @@ def main() -> None:
             errors.append("V0.5 missing from cold-start outline index")
         if "18-v05-independent-cold-audit-and-stop-20261103.md" not in skill:
             errors.append("V0.5 blind verdict missing from candidate Skill")
+    # User's latest scoped commercial decision: current captivity engine rejected, no literary promotion.
+    captive = C / "outline-first-20261102/19-captive-survival-kill-test-20261103.md"
+    if not captive.is_file():
+        errors.append("missing final captive survival evidence")
+    else:
+        blocked = captive.read_text("utf-8")
+        if "BLOCKED_NEEDS_NEW_CORE_FACT" not in blocked or "REJECT_CURRENT_FREE_ADVENTURE_AND_CAPTIVE_SURVIVAL_ENGINE" not in blocked:
+            errors.append("captivity blocker or explicit stop verdict lost")
+        if "19-captive-survival-kill-test-20261103.md" not in outline_index:
+            errors.append("cold-start routing can revive rejected story engine")
+        if "当前第一优先：已淘汰受控求生发动机" not in skill:
+            errors.append("skill still presents rejected story as a writing contract")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
