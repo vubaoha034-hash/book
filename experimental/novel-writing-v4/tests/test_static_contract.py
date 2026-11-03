@@ -111,7 +111,7 @@ def main() -> None:
                 errors.append("v03 missing required causality marker " + token)
         if "V0.3" not in outline_index or "12-minimal-causal-stabilization-v03-20261103.md" not in outline_index:
             errors.append("new chat outline entry cannot locate latest revision")
-        if "2026-11-03 最新商业修仙大纲" not in skill:
+        if "2026-11-03 最新V0.4大纲" not in skill:
             errors.append("skill does not route to latest genre manuscript contract")
         if "BLOCKER" not in first_report or "PARTIAL" not in recheck:
             errors.append("unresolved AI editor verdict lost")
