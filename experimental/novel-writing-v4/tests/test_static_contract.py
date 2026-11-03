@@ -164,6 +164,27 @@ def main() -> None:
             errors.append("cold-start routing can revive rejected story engine")
         if "当前第一优先：已淘汰受控求生发动机" not in skill:
             errors.append("skill still presents rejected story as a writing contract")
+    # C02: only one original commercial seed, with no inherited approval from prior prose.
+    seed_dir = C / "commercial-new-seed-20261103"
+    seed = seed_dir / "01-original-core-and-3chapter-cards.md"
+    seed_audit = seed_dir / "02-internal-causal-and-commercial-audit.md"
+    if not seed.is_file() or not seed_audit.is_file():
+        errors.append("C02 original concept or real editor audit absent")
+    else:
+        concept = seed.read_text("utf-8")
+        audit = seed_audit.read_text("utf-8")
+        for ch in ("| 01《", "| 02《", "| 03《"):
+            if ch not in concept:
+                errors.append("C02 missing first-three event card " + ch)
+        for fact in ("折价2枚", "额外2枚", "只剩6枚", "第三天", "二十天后正式晋峰资格", "练气四层"):
+            if fact not in concept:
+                errors.append("C02 core fact/clock/expense drift: " + fact)
+        if "INDEPENDENT_EDITOR=NOT_RUN_TOOL_429" not in audit or "NOVEL_PROSE_WORDS=0" not in concept:
+            errors.append("C02 improperly claims independent or prose acceptance")
+        if "commercial-new-seed-20261103/01-original-core-and-3chapter-cards.md" not in outline_index:
+            errors.append("new chat project entry misses C02 concept")
+        if "当前新商业种子C02" not in skill:
+            errors.append("candidate skill does not route to C02")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
