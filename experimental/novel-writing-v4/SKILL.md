@@ -7,6 +7,11 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-03 当前第一优先：已淘汰受控求生发动机，禁止写旧案正文
+- 真实受控求生压力测试在新独立AI聊天 https://chatgpt.com/c/6ae9ac1e-8794-83ee-8a40-3d1193f575c6 返回`BLOCKED_NEEDS_NEW_CORE_FACT`：掌教真的抓住叶渡、收走阵盘/铜片/灵砂、禁灵并用筑基守卫看管后，旧`残阵回鸣`没有启动条件；秦、谢、陆无真实权力救他。**它不是独立真人文学质量认证。**
+- 当前故事发动机从`V0.1—V0.5`至“反派成功抓住仍可越狱”均停止，**不再生成新章节**，不能拿作者新造的牢房破绽或万能救援补PASS；核对候选[最终收据](outline-first-20261102/19-captive-survival-kill-test-20261103.md)以及[最新入口](outline-first-20261102/00-READ-ME-FIRST.md)。
+- 用户仍然优先快速验证真实可以写的修仙/重生商业方向。下一单一候选任务是`ONE_NEW_SIMPLER_XIANXIA_REBIRTH_COMMERCIAL_CORE_CONCEPT`：只有一页清晰故事承诺、人物利益、最优敌人行动和前三章真实资源回报；未独立验收前不写正式正文，不自动上架或签约。仅修改本PR候选，不影响生产`main`、UPCP PR草稿与私有插件已发布版本。
+
 ## 2026-11-03 最新停止门：V0.5自由修阵路线审查失败
 用户目标仍是“有商业化机会的修仙/重生小说，先总纲人物因果后逐章创作”，而不是不断扩写未审稿。最新在候选 [outline-first-20261102/00-READ-ME-FIRST.md](outline-first-20261102/00-READ-ME-FIRST.md)。
 - 对此前V0.4的最简反派行动重演证明：闻岐知道失败时可直接亲自扣人/夺盘，原12章行动被破坏。V0.5尝试改为闻岐只知道偏转符触发、不知道落印是否成功，但另一次独立AI盲审指出他仍可提前核验、跟踪，而且顾玄衡有T-60供灵名册与主动监管动机，`V0.5_LONGFORM=BLOCKED`。真实新审稿 https://chatgpt.com/c/6ae9a7b1-3ef0-83ee-b919-a523958cfced ；回执 `outline-first-20261102/18-v05-independent-cold-audit-and-stop-20261103.md`。
