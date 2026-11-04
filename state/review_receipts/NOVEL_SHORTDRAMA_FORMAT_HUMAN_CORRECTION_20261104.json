@@ -1,0 +1,29 @@
+{
+  "schema_version": "novel-user-creative-format-correction/v1",
+  "date": "2026-11-04",
+  "user_verbatim": "这个其实还是写小说的感觉，不像是短剧小说的写法。",
+  "target": {
+    "branch": "proposal/novel-method-upstream-lineage-20261031",
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/08-ch01-one-structural-rewrite-v2.md",
+    "git_blob": "33e455e485e29496b64651328cf78e575bfb4b65"
+  },
+  "verdict": {
+    "format_fit": "FAIL_SHORT_DRAMA_STYLE",
+    "genre_interest": "NOT_WITHDRAWN",
+    "prose_quality": "NOT_APPROVED",
+    "chapter_rewrite_permission": "NOT_INFERRED",
+    "numeric_rating": "UNKNOWN"
+  },
+  "error_root": "The project conflated short-story wordcount and short-drama-adaptable source narrative, and delivered traditional narrative with long retrospective exposition and procedural aftermath even after moving the incident earlier.",
+  "approved_goal_inferred_from_latest_context": "Short-drama-paced, original male xianxia/rebirth IP narrative, with visible conflicting actions, a consequential reversal, clear episode hooks, credible protagonist wins and costs; not mere camera directions and not longform slow prose.",
+  "handling": {
+    "preserve_v1_v2": true,
+    "no_third_rewrite_of_same_opening": true,
+    "no_chapter2": true,
+    "stop_old_short_story_delivery_assumption": true,
+    "do_not_confuse_novel_source_with_filming_script": true,
+    "do_not_claim_adaptation_signing": true
+  },
+  "next": "DESIGN_AND_VALIDATE_ONE_SHORT_DRAMA_NATIVE_EPISODE_1_EVENT_CHAIN_BEFORE_ANY_NEW_PROSE_OR_SCRIPT",
+  "existing_project_state_preserved": true
+}
