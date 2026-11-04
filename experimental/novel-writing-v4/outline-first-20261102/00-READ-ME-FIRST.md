@@ -1,6 +1,12 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-04 最高优先：单作品六章短故事＋特色人格，首章已实际生成
+- 用户要求**不再只说方案、不要频繁换题材**，并明确赋予许砚“弱时低头忍让、强时杀伐果断、始终记恩并报答朋友和女性”的人格弧线。最新完整作品合同优先取 [六章短故事V2](../commercial-release-pilot-20261104/ONE_BOOK_TO_SUBMISSION_V2.md)，人物的真实利益与代价在 [角色弧线账](../commercial-release-pilot-20261104/02-character-arc-and-trust-ledger.md)，父合同 ONE_BOOK_TO_SUBMISSION.md 原件保留。
+- **已实际写出且冻结的第一章**：[《死过一次的病蜥》](../commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md)，2341汉字，Git blob `6f644c5970289ed1078b662cbfb44fd46d878c43`。唯一事件链：于肃克扣兽粮→许砚低头不争→凭经验救病蜥→第3日标准摸底赢一项正规训练资源→发现旧兽舍把活兽记作已死领过处理费。真实文件和六章角色转换受 [版本回执](../commercial-release-pilot-20261104/05-first-chapter-version-receipt.json) 约束。
+- **这不是过去C02疗养旧稿的第三次修辞修订**，而是用户明确补充人物动机后，在新短故事六章合同下的**第一章单稿**。只有协调者硬事实检查，`INDEPENDENT_COLD_READ=NOT_RUN`、`HUMAN_READING=UNKNOWN`。**第二章未写，投稿签约收入未知。**
+- 本轮的唯一真正下一动作：给用户读这份准确的第一章，让他区分“想不想读下一章”与“只是认同人物性格”。如不满意，先判断是情节动力还是语言，不能继续新建C04/C05。PR #5隔离候选不等于生产main和私有插件已发布。
+
 ## 2026-11-04 商业快速验证最新结算：C02和C03均未晋级（唯一入口）
 - C02《重生御兽》第一章V1/V2两次独立AI冷读只得PARTIAL，病兽初契后的可见成果主要是普通治疗好转，第一章实际修炼收益/后续强反转不足；作为**快速商业开篇**已在 commercial-new-seed-20261103/09-c02-commercial-first-chapter-stopgo-20261104.json 终止，原件保留，不再写第三版或第二章。
 - C03《重生符修：我专收宗门的废符》唯一新概念、人物卡及首3章见 [原始核心](../commercial-new-seed-20261104/01-c03-core-characters-first3-and-cost.md)；首次盲审PARTIAL后只改一次章卡见 [一次修复](../commercial-new-seed-20261104/03-c03-one-targeted-structural-repair.md)，新独立审稿仍PARTIAL。最终可核对结算 [C03审查与止损](../commercial-new-seed-20261104/04-c03-independent-v02-final-stopgo.json)。
