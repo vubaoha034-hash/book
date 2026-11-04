@@ -1,6 +1,11 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-04 最新｜已执行一次250字事件卡＋450字场景，不自动扩写
+- 用户要求真正借鉴已落地的AI小说作者工作方式，不再让AI知识/Skill堆叠替代故事。按[前项真实作者初稿/人修样本与本书情绪诊断](../commercial-release-pilot-20261104/16-real-author-workflows-evidence-and-restart-20261104.md)，已实际提交唯一[185字事件卡和451汉字的短剧化小说场景](../commercial-release-pilot-20261104/17-one-first-screen-event-and-550char-scene-20261104.md)，Git blob `2025a323acb0f1e0f2fdab40bccdaa3c0e37e51c`。
+- 只测真实受辱、保护陶婶、同境界石牙犬公开竞争、获七日聚灵池训练与于肃依法复检的下一步；改变旧稿“通过考试只拿合格章”的无效奖励。**此为候选新规则与独立短场景，不是用户已认可的首集**。不修改正式六章正文，第二集0字。
+- 正文可读性仍待真实用户判断，`FULL_EPISODE=NOT_WRITTEN`、`NEW_HUMAN_PASS=UNKNOWN`、`SUBMITTED=NO`、`INCOME=UNKNOWN`。不要自动进入另一轮十次审稿/提示词重写；失败则止损此发动机。
+
 ## 2026-11-04 最新真实作者案例学习：暂停扩写，先解决情绪发动机（高于旧路线）
 - 用户真实纠偏“创作方式很不对，看着特别累、根本没有看下去的欲望”，明确要求学习**已经落地的AI小说作者工作方法**，不再只堆Skill/思路。已核查郝景芳与男频作者的直接采访、短剧编剧九九的实际创作流程、日本轻小说作者开源工作仓库`MintoTsukino/claude-novel-workflow`（含AI初稿与人修实际发表稿）、番茄官方2026治理公告。**研究与实用诊断**详见[16-real-author-workflows-evidence-and-restart-20261104.md](../commercial-release-pilot-20261104/16-real-author-workflows-evidence-and-restart-20261104.md)。
 - 外部章稿实查：首章AI初稿288行，作者标记发表版正文273非空行，265行未变（仅对应单个样本，不能冒充可独立验证的作品收益）。该作者仍对每章进行手工把关；短剧编剧九九先以可视化的人设/情绪转折而非书面缩写驱动每集。
