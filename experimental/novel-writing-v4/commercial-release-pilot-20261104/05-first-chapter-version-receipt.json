@@ -1,0 +1,51 @@
+{
+  "schema_version": "novel-one-work-character-arc-chapter-one/v1",
+  "recorded_at": "2026-11-04",
+  "trigger_user_request": "下一步。并且我希望你给这个小说有点特色。不是千篇一律的。比如这个角色属于前期被人欺负苟起来非常低调卑微的。但是后期起来了，就是杀法果决。但是对自己以前帮助过自己的朋友和女性都是非常好的。",
+  "scope": "ONE_WORK_ONE_CHAPTER_PLUS_CHARACTER_ARC_NO_GENRE_SWITCH",
+  "files": {
+    "previous_plan": "experimental/novel-writing-v4/commercial-release-pilot-20261104/ONE_BOOK_TO_SUBMISSION.md",
+    "character_arc": "experimental/novel-writing-v4/commercial-release-pilot-20261104/02-character-arc-and-trust-ledger.md",
+    "active_outline": "experimental/novel-writing-v4/commercial-release-pilot-20261104/ONE_BOOK_TO_SUBMISSION_V2.md",
+    "writer_packet": "experimental/novel-writing-v4/commercial-release-pilot-20261104/03-ch01-clean-writer-packet-v2.md",
+    "single_new_chapter": "experimental/novel-writing-v4/commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md"
+  },
+  "chapter_blob": "6f644c5970289ed1078b662cbfb44fd46d878c43",
+  "stats": {
+    "han_characters": 2341,
+    "paragraphs": 66,
+    "chapter_count_new": 1,
+    "second_chapter_written": false
+  },
+  "verified_story_facts": [
+    "起始10枚，购兽2枚，常规护理2枚，首次契约登记免费，余额6枚",
+    "初契木牌血印和兽额纹完成，占本届一只兽名额",
+    "小灰首夜仅有限回暖，第三日才参加低强度摸底",
+    "韩追赢速度和追踪，许砚仅赢狭地单项并得温砂及短训练时间",
+    "今生陶婶及余师姐均有独立目标，前世曾给许砚具体帮助",
+    "于肃首章真实扣掉一份土砂，许砚忍让，后期冲突必须由可验事件驱动",
+    "旧兽舍已把活兽记作病亡，获得死亡处置费，真实骗局仍待查"
+  ],
+  "narrative_contract": {
+    "beginning": "卑微实亏而非假装认怂",
+    "later": "只在真正致命侵害时果断反击，有法术/资源约束及官方后果",
+    "benefactors": "报恩以真实行动付价，不将女性当自动后宫",
+    "duration_limit": "六章20日只能完成首次杀伐抉择，不能夸称修成仙尊"
+  },
+  "verification": {
+    "git_readback": "PASS",
+    "hard_fact_editorial_coordinator_check": "LOCAL_ONLY",
+    "separate_clean_writer": "NOT_RUN",
+    "independent_ai_cold_read": "NOT_RUN",
+    "human_text_acceptance": "UNKNOWN",
+    "publishing": "NOT_SUBMITTED",
+    "revenue": "UNKNOWN"
+  },
+  "production_boundary": {
+    "mainline_checkpoint_unchanged": true,
+    "pr_draft": true,
+    "private_plugin_release_unchanged": true,
+    "old_failed_drafts_untouched": true
+  },
+  "next_required_action": "HUMAN_READ_EXACT_CH01_PROSE_AND_GIVE_CONTINUATION_VERDICT; IF_NEGATIVE_DIAGNOSE_STORY_EVENT_VS_PROSE_BEFORE_ANY_CHANGE"
+}
