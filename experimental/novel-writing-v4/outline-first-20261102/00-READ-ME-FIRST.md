@@ -1,6 +1,11 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-04 当前最新：第一集短剧化原著单稿已完成，等待真人读感
+- 旧“养病/坍塌/死账”第一集因真人阅读慢、形式传统，已停止，不制作旧开篇V3。按[验契两关因果约束](../commercial-release-pilot-20261104/13-ep1-safe-exam-causal-gate-20261104.md)完成**唯一**[短剧化原著《第一集 他只求一次机会》](../commercial-release-pilot-20261104/14-ep1-shortdrama-native-one-text-v1.md)，1351汉字，精确Git blob `57a4cea1ac28c53c40a9e70ea2bf1657ff2ae2b7`。
+- 正文核心：失控伤兽的合法隔栏复验→许砚冒真实伤取出隐藏束兽环→按同一标准完成初契及低阶护主反应→实得一次可训练土甲近距防御但兽伤未愈→韩追用飞行克制，形成下一集的正当竞争。旧“濒死寒厥”与新“束环疼痛”不可拼接。
+- 仅有内部条件性因果自查，[版本回执及唯一人类阅读门](../commercial-release-pilot-20261104/15-ep1-shortdrama-human-review-gate.json)。`HUMAN_EVAL=NOT_YET`、`INDEPENDENT_AI_REVIEW=NOT_RUN`、`EP2=NOT_WRITTEN`、`PLATFORM_SUBMISSION=NO`、`INCOME=UNKNOWN`；不许据此声称短剧已经成功或继续滚动写第二集。PR #5仍是候选草稿，生产主线权威不变。
+
 ## 2026-11-04 最新：第一集短剧化事件核验结算及唯一替代核心（尚非正文）
 - 从[短剧化原著纠偏](../commercial-release-pilot-20261104/10-short-drama-novel-format-correction.md)继续，**不再写原V2/V3正文**。对旧“将死病蜥＋三枚死账＋坍塌后查账”5节点完成最优敌方行为检查：[OLD_EP1_ENGINE_FAIL判决](../commercial-release-pilot-20261104/11-episode-one-adversarial-gate-final-20261104.md)；合法收益只及暂缓扣押/复核，不能提供男频修仙第一集有效战力反转，已停止此开篇。
 - **保留同一部御兽重生/许砚隐忍记恩的人设**，但唯一新的第一集事件核心见[《当众救下发狂伤兽》5节点候选](../commercial-release-pilot-20261104/12-single-shortdrama-first-episode-engine-candidate.md)：同一天在公开验契台，主角低头赌受伤兽，凭前世经验拔掉刺痛束兽环、受伤，兽第一次用已有低阶地甲护主替他挡标准测试一击，马上迎接青羽鹞的针对性竞争。
