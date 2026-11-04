@@ -7,6 +7,13 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 最新商业止损：C02治病初章、C03修废符均不可按“最快稿费”目标继续扩写
+- C02第一章只有真实保命，但缺强修炼收益，V1/V2两次冷读均PARTIAL；第一章低强度疗养结构不可通过简单短句重排得到强追读。C02快速商业首章路由关闭，旧文本不改。
+- C03《重生符修：我专收宗门的废符》单个新种子，见 [C03初案](commercial-new-seed-20261104/01-c03-core-characters-first3-and-cost.md) → [定向一次修复](commercial-new-seed-20261104/03-c03-one-targeted-structural-repair.md) → [版本绑定独立冷审结算](commercial-new-seed-20261104/04-c03-independent-v02-final-stopgo.json)。首审`PARTIAL_REVISE_SEED`、第二独立审`PARTIAL_STILL_BLOCKED`，并非真人编辑或用户验证。
+- C03更合理的现场制符/补符考核仍不能自动弥补**前3章缺实际修仙能力升级**；工资预支 vs 件工费、工坊转介客户费用、试符与交付同物件矛盾未闭合。**不自动生成C03第三版或第一章**，不再靠重复自评/叠制度证明“机器没问题”。
+- 下一个候选必须在**第一章产生独立可见逆转/收益、前三章展现实际能力跃迁或稳定可复现的修炼资源**，并且没有强反派明知威胁却不采取低成本行动的降智。先验一页商业承诺、人物利益、世界能力硬边界、前3章实物状态，再决定是否投入第一章一次实际试写。
+- 候选研究只存在PR #5草稿；没有变更原生book/main检查点、旧真人评价、发布的私有小说插件；实际人类审美、签约稿费为UNKNOWN。
+
 ## 2026-11-04 C02第一章已经独立试写与两次冷读：尚未通过，停止机械微调
 - 冻结**一个**独立写作者首章原稿`commercial-new-seed-20261103/05-ch01-clean-writer-original-v1.md`（3658汉字、273短段），由另一个独立AI只读正文冷审给`PARTIAL_TARGETED_EDIT`。
 - 对原稿**只做一次**有父本的定向修订`commercial-new-seed-20261103/07-ch01-one-targeted-revision-v2.md`（3447汉字、118短段，修复6枚余额、登记顺序和护理两难）。第二次全新独立AI冷审给`PARTIAL_EDIT_STILL_NEEDED`。精确原稿、审稿链接、版本blob和诊断在`commercial-new-seed-20261103/08-ch01-v2-second-independent-cold-verdict-20261104.json`。
