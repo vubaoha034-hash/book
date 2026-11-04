@@ -1,6 +1,13 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-04 当前最新：用户否决首章后唯一结构重写已冻结
+- 真人对`commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md`准确反馈“节奏太慢，看一会就乏了”，主分支追加式真实收据`state/review_receipts/NOVEL_REBIRTH_BEAST_CH01_HUMAN_RETENTION_FAIL_20261104.json`。这否决**该首章正文**，不是否决修仙/重生题材。
+- 只做**一次**结构改造，先判定原来“提前展示3枚灵钱坏账”仍是弱钩，改为现场坍塌/许砚冒伤救陶婶/多只活兽已报亡的更高风险事件；[结构门](../commercial-release-pilot-20261104/07-ch01-last-structural-event-gate.md)。
+- [实际完整新首章《账上死过的灵兽》V2](../commercial-release-pilot-20261104/08-ch01-one-structural-rewrite-v2.md)已Git冻结，2162汉字，blob `33e455e485e29496b64651328cf78e575bfb4b65`；[精确血统与最后停止门](../commercial-release-pilot-20261104/09-one-structural-rewrite-final-gate.json)。
+- **这一版未经过独立AI文学盲审也没有真人文本认可，且仍存在“后半查账”“修为即时成长较弱”的留存风险**。下一唯一动作只剩真人实际阅读V2；若再次感觉乏味，按约定**STOP本开篇，不产V3/第四版、不自动写第二章、不再从低价值账目补丁绕回去**。
+- 只有PR #5候选原件变化，原生main检查点211和私有插件未晋级；没有投稿/签约/收入。
+
 ## 2026-11-04 最高优先：单作品六章短故事＋特色人格，首章已实际生成
 - 用户要求**不再只说方案、不要频繁换题材**，并明确赋予许砚“弱时低头忍让、强时杀伐果断、始终记恩并报答朋友和女性”的人格弧线。最新完整作品合同优先取 [六章短故事V2](../commercial-release-pilot-20261104/ONE_BOOK_TO_SUBMISSION_V2.md)，人物的真实利益与代价在 [角色弧线账](../commercial-release-pilot-20261104/02-character-arc-and-trust-ledger.md)，父合同 ONE_BOOK_TO_SUBMISSION.md 原件保留。
 - **已实际写出且冻结的第一章**：[《死过一次的病蜥》](../commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md)，2341汉字，Git blob `6f644c5970289ed1078b662cbfb44fd46d878c43`。唯一事件链：于肃克扣兽粮→许砚低头不争→凭经验救病蜥→第3日标准摸底赢一项正规训练资源→发现旧兽舍把活兽记作已死领过处理费。真实文件和六章角色转换受 [版本回执](../commercial-release-pilot-20261104/05-first-chapter-version-receipt.json) 约束。
