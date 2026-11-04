@@ -185,6 +185,22 @@ def main() -> None:
             errors.append("new chat project entry misses C02 concept")
         if "当前新商业种子C02" not in skill:
             errors.append("candidate skill does not route to C02")
+    # November 4 scope-bound commercial stop: no C02/C03 old weak payoff promotion.
+    c02_stop = C / "commercial-new-seed-20261103/09-c02-commercial-first-chapter-stopgo-20261104.json"
+    c03_stop = C / "commercial-new-seed-20261104/04-c03-independent-v02-final-stopgo.json"
+    if not c02_stop.is_file() or not c03_stop.is_file():
+        errors.append("missing commercial first-chapter stop receipts")
+    else:
+        j02 = json.loads(c02_stop.read_text("utf-8"))
+        j03 = json.loads(c03_stop.read_text("utf-8"))
+        if j02.get("verdict", {}).get("commercial_first_chapter_seed") != "REJECT_FOR_FAST_MONETIZATION_PRIORITY":
+            errors.append("C02 unexpectedly reclassified as prose-ready")
+        if j03.get("editorial_verdict") != "STOP_C03_FAST_COMMERCIAL_SEED_AFTER_ONE_STRUCTURAL_REVISION":
+            errors.append("C03 unexpectedly reclassified as prose-ready")
+        if "commercial-new-seed-20261104/04-c03-independent-v02-final-stopgo.json" not in outline_index:
+            errors.append("entrypoint lost C03 stopgo receipt")
+        if "2026-11-04 最新商业止损" not in skill:
+            errors.append("candidate skill not guarded against commercial weak-payoff rerun")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         raise SystemExit(1)
