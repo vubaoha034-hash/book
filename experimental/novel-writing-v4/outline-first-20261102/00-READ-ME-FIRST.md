@@ -1,6 +1,11 @@
 # 修仙重生项目｜阅读顺序与当前接续入口（2026-11-02）
 > **NO PROSE / OUTLINE FIRST / CANDIDATE ONLY。** 它是更改写法前的**策划提案**，不是生产主线自动升级，不等于作品已经获用户认可。
 
+## 2026-11-04 当前最高优先：用户否决V2短剧适配性，停止“慢小说改写”
+- 用户精确反馈“这个其实还是写小说的感觉，不像是短剧小说的写法。”已追加`book/main/state/review_receipts/NOVEL_SHORTDRAMA_FORMAT_HUMAN_CORRECTION_20261104.json`，准确绑定V2首章blob `33e455e485e29496b64651328cf78e575bfb4b65`。不能把它解释为已通过短剧小说读感。
+- 最新唯一前置材料：[短剧化原著与短故事、分集剧本的区别及第一集结构验证](../commercial-release-pilot-20261104/10-short-drama-novel-format-correction.md)。**字数满足短故事条件≠有短剧节奏/有改编潜力**；不能把V2再切成短句或分镜冒充成功。
+- `V2_FORMAT=HUMAN_FAIL`；没有新V3、没有第二章、没有已发布剧本或稿费。下一步先验证“一场戏中即时损失→有代价的选择→可见权力/修炼收益→对手下一步”是否真实成立；若连最优敌方行动也难支撑则淘汰这条开篇发动机。
+
 ## 2026-11-04 当前最新：用户否决首章后唯一结构重写已冻结
 - 真人对`commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md`准确反馈“节奏太慢，看一会就乏了”，主分支追加式真实收据`state/review_receipts/NOVEL_REBIRTH_BEAST_CH01_HUMAN_RETENTION_FAIL_20261104.json`。这否决**该首章正文**，不是否决修仙/重生题材。
 - 只做**一次**结构改造，先判定原来“提前展示3枚灵钱坏账”仍是弱钩，改为现场坍塌/许砚冒伤救陶婶/多只活兽已报亡的更高风险事件；[结构门](../commercial-release-pilot-20261104/07-ch01-last-structural-event-gate.md)。
