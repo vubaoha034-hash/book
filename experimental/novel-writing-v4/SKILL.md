@@ -7,6 +7,12 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 最新真人工作流纠偏：研究实战作者，不以Lint和多轮外审代替情节
+- 用户觉得历次文本“特别累、没有看下去欲望”，本轮不是新增写作教程，而是查访**真实人机协同作家与短剧编剧**，并把现有第一集逐段做了情绪缺口审计：[真实作家证据和实际诊断](commercial-release-pilot-20261104/16-real-author-workflows-evidence-and-restart-20261104.md)。
+- 关键失败不是修辞：于肃执行安全规则→缺强烈不公平；主角拿到原本就应该允许的合格资格→缺敌我实得变化；结尾普通次日比赛→不形成强烈续看动机。**短句很多也不等于短剧化**。
+- **停止以“事件合规／作者自评／多个Skill文件完整”为放行条件**。现只有一份下一步可试的250字内场景冲突卡，检验实际损失和报偿后才写400—600字单场；不创作完整新一集、第二集，不上架。外部案例有作者自述/真实稿件，但成功率与真实收入不能从AI痕迹和仓库README推定。
+- CANDIDATE_ONLY；正式根Skill、main检查点与已发布插件未变。
+
 ## 2026-11-04 当前最优先：已交付唯一短剧化第一集，不再构建新写作工具
 - 用户要的不是“短篇字数”，而是紧凑的短剧化原著事件。旧慢小说已遭真人否决。本次按[验契安全与能力边界](commercial-release-pilot-20261104/13-ep1-safe-exam-causal-gate-20261104.md)，实际提交唯一[完整第一集《他只求一次机会》](commercial-release-pilot-20261104/14-ep1-shortdrama-native-one-text-v1.md)，1351汉字，Git blob `57a4cea1ac28c53c40a9e70ea2bf1657ff2ae2b7`。
 - 正本与硬核验[精确交付回执](commercial-release-pilot-20261104/15-ep1-shortdrama-human-review-gate.json)：`INTERNAL_CAUSAL=CONDITIONAL`，没有独立AI冷审或真人对新稿的明确接受，前期隐忍且第一集只拿一次有限近地防护，不声称已经拥有后期杀伐实力。**下一必须由用户实际阅读评判短剧化节奏，未判前不写第二集、不给新格式评分PASS、不提交平台**。
