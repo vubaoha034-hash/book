@@ -7,6 +7,12 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 当前最新：真人拒绝旧首章，一次结构重写后等真实读感
+- 旧CH01《死过一次的病蜥》已收到真人明确`FAIL_TOO_SLOW`，精确原稿sha `6f644c5970289ed1078b662cbfb44fd46d878c43` 和主分支追加回执均可查。用户并未否决人物“弱时能忍、强时果断、对恩人好”的设定。
+- 不换修仙/重生/御兽题材，**只完成一次**真正改变事件的首章V2：[《账上死过的灵兽》](commercial-release-pilot-20261104/08-ch01-one-structural-rewrite-v2.md)，2162汉字，blob `33e455e485e29496b64651328cf78e575bfb4b65`。开头救陶婶的即时险情，买兽/护理成本不变，多只死亡核销却曾委售构成次层谜团；原稿V1保留。
+- [最后门](commercial-release-pilot-20261104/09-one-structural-rewrite-final-gate.json)：`INDEPENDENT_REVIEW=NOT_RUN`、`HUMAN_APPROVAL=UNKNOWN`、`CH02=NOT_WRITTEN`。**严禁生成V3或继续第二章，直至用户明确评判这一版文字想不想读。再次负面则停止这一开篇发动机。** 不把GitHub写入当作品有吸引力的证明。
+- 仍是隔离候选分支PR #5草稿；本次不动生产main既有checkpoint，不宣称插件已发布。
+
 ## 2026-11-04 当前最高优先：同一御兽作品，角色弧线落实并交付第一章
 - 用户指定许砚“前期被人欺负、极其低调卑微地苟活；有实力后对真正杀人威胁出手果断；对前世今世帮助过自己的朋友及女性真心还恩”。**这不是换题材授权。** 已落地[角色行动账](commercial-release-pilot-20261104/02-character-arc-and-trust-ledger.md)、[单作品六章V2合同](commercial-release-pilot-20261104/ONE_BOOK_TO_SUBMISSION_V2.md)，旧合同与旧失败原稿完整保留。
 - 已写出[第一章《死过一次的病蜥》](commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md)，2341汉字，blob`6f644c5970289ed1078b662cbfb44fd46d878c43`；[精确版本回执](commercial-release-pilot-20261104/05-first-chapter-version-receipt.json)。本章低头吃亏→救蜥有限回暖→三日摸底赢一项→发现旧兽舍“死损”账目异常。余师姐陶婶具备独立利益与过去具体恩情，**后续杀伐绝不允许仅为了嘲讽动手**。
