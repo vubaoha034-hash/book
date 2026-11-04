@@ -7,6 +7,12 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 当前最高优先：同一御兽作品，角色弧线落实并交付第一章
+- 用户指定许砚“前期被人欺负、极其低调卑微地苟活；有实力后对真正杀人威胁出手果断；对前世今世帮助过自己的朋友及女性真心还恩”。**这不是换题材授权。** 已落地[角色行动账](commercial-release-pilot-20261104/02-character-arc-and-trust-ledger.md)、[单作品六章V2合同](commercial-release-pilot-20261104/ONE_BOOK_TO_SUBMISSION_V2.md)，旧合同与旧失败原稿完整保留。
+- 已写出[第一章《死过一次的病蜥》](commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md)，2341汉字，blob`6f644c5970289ed1078b662cbfb44fd46d878c43`；[精确版本回执](commercial-release-pilot-20261104/05-first-chapter-version-receipt.json)。本章低头吃亏→救蜥有限回暖→三日摸底赢一项→发现旧兽舍“死损”账目异常。余师姐陶婶具备独立利益与过去具体恩情，**后续杀伐绝不允许仅为了嘲讽动手**。
+- `CH01_TEXT=FROZEN_FOR_ACTUAL_HUMAN_READING`、`CH02=NOT_WRITTEN`、`INDEPENDENT_AI_COLD=NOT_RUN`、`HUMAN_LITERARY_ACCEPTANCE=UNKNOWN`，没有投稿/签约/收入。下一步优先真实用户试读，而非再次发明评审插件或让机器自动写完整六章。
+- 本条只更新PR #5候选方法和原件，不改生产main检查点211、旧合同或私有插件release。
+
 ## 2026-11-04 最新商业止损：C02治病初章、C03修废符均不可按“最快稿费”目标继续扩写
 - C02第一章只有真实保命，但缺强修炼收益，V1/V2两次冷读均PARTIAL；第一章低强度疗养结构不可通过简单短句重排得到强追读。C02快速商业首章路由关闭，旧文本不改。
 - C03《重生符修：我专收宗门的废符》单个新种子，见 [C03初案](commercial-new-seed-20261104/01-c03-core-characters-first3-and-cost.md) → [定向一次修复](commercial-new-seed-20261104/03-c03-one-targeted-structural-repair.md) → [版本绑定独立冷审结算](commercial-new-seed-20261104/04-c03-independent-v02-final-stopgo.json)。首审`PARTIAL_REVISE_SEED`、第二独立审`PARTIAL_STILL_BLOCKED`，并非真人编辑或用户验证。
