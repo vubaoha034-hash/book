@@ -1,0 +1,46 @@
+{
+  "schema_version": "novel-shortdrama-single-episode-delivery-v1",
+  "recorded_date": "2026-11-04",
+  "context": "Follow-up 下一步 after first-episode event core was conditional, with past human correction that prose was still conventional rather than short-drama-style",
+  "source_gate": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/13-ep1-safe-exam-causal-gate-20261104.md",
+    "blob": "c252f102cea3d493bb1af1c428b67db63f9eacdd",
+    "verdict": "CONDITIONAL_PASS_FOR_ONE_TEXT_TRIAL"
+  },
+  "created_episode": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/14-ep1-shortdrama-native-one-text-v1.md",
+    "blob": "57a4cea1ac28c53c40a9e70ea2bf1657ff2ae2b7",
+    "title": "第一集 他只求一次机会",
+    "han_characters": 1351
+  },
+  "scope": {
+    "only_one_episode": true,
+    "short_drama_native_prose_not_shooting_script": true,
+    "one_substantive_draft": true,
+    "one_local_left_hand_typo_fixed": true,
+    "other_chapters_written": 0
+  },
+  "causal_checks": {
+    "money": "10-2-2=6",
+    "qualification": "pretest in protective cage to rule out continued aggression, then standard initial contract blood mark plus beast forehead mark, then same low-force safety challenge available to all new entrants",
+    "authority": "Yu Su controls beast disposition and may raise safety concerns, not revoke proper qualifications; Yu sister can stop and inspect; Han Zhui has competing healthy bird and realistic aerial response",
+    "real_ability": "low-tier earth armor reflex only blocks one nearby low-force strike when owner guides stance, drains old shell and remains inferior to flying beast, no instant level increase",
+    "physical_cost": "wrist claw injury on left hand; beast worn after blocking",
+    "genre": "rebirth xianxia beast cultivation with humble hero and future earned loyalty; no system or bloodline miracle",
+    "boundary": "new pain-causing ring replaces old near-death cold poisoning; mutually exclusive with rejected v1/v2"
+  },
+  "remaining_risk": [
+    "This payoff may still feel small to human short-drama readers",
+    "Story uses some short paragraphs and may remain conventional in user perception",
+    "Rules of initial safety test are internally defined, not externally independently validated"
+  ],
+  "review_status": {
+    "human_reading": "NOT_YET",
+    "independent_ai_cold": "NOT_RUN",
+    "self_logic": "CONDITIONAL_ONLY",
+    "real_platform_submission": "NO",
+    "signing": "UNKNOWN",
+    "income": "UNKNOWN"
+  },
+  "next_required_action": "GET_USER_REAL_READING_VERDICT_ON_THIS_ONE_EPISODE; IF_USER_REJECTS_FORMAT_OR_HOOK_STOP_THIS_EPISODE_ENGINE_NO_MORE_VERSIONS"
+}
