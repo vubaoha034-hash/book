@@ -1,0 +1,27 @@
+{
+  "schema_version": "novel-user-workflow-feedback-research/v1",
+  "date": "2026-11-04",
+  "user_verbatim": "我总觉得我们的创作方式很不对，就是我看着觉得特别累。根本没有看下去的欲望，现在有大量的小说家靠ai完成的，你就不能自己看下他们如何落地的吗？",
+  "binding": {
+    "applies_to": "RECURRENT_NOVEL_WORKFLOW_AND_READABILITY",
+    "not_exclusively_one_chapter": true,
+    "latest_candidate_episode": "experimental/novel-writing-v4/commercial-release-pilot-20261104/14-ep1-shortdrama-native-one-text-v1.md",
+    "latest_episode_blob": "57a4cea1ac28c53c40a9e70ea2bf1657ff2ae2b7"
+  },
+  "precise_interpretation": {
+    "human_reading_fatigue": "EXPLICIT",
+    "desire_to_continue": "NEGATIVE_GENERAL",
+    "request": "STUDY_REAL_AUTHOR_FIELD_WORKFLOWS_AND_APPLY",
+    "genre_rejected": false,
+    "character_arc_rejected": false,
+    "numeric_score": "NOT_GIVEN",
+    "permission_to_publish": false
+  },
+  "evidence": {
+    "candidate_research_report": "experimental/novel-writing-v4/commercial-release-pilot-20261104/16-real-author-workflows-evidence-and-restart-20261104.md",
+    "candidate_branch": "proposal/novel-method-upstream-lineage-20261031",
+    "limitations": "EXTERNAL_CASE_SELF_REPORTS_NOT_INDEPENDENT_REVENUE_VERIFICATION"
+  },
+  "next_action": "READ_ONE_REAL_AUTHOR_WORKFLOW_DIAGNOSIS_AND_ONLY_TEST_A_SINGLE_CAUSALLY_CLOSED_FIRST_SCREEN_EVENT; STOP_UNBOUNDED_REWRITES",
+  "production_state_unchanged": true
+}
