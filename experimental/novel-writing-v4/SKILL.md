@@ -7,6 +7,11 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 当前最优先：已交付唯一短剧化第一集，不再构建新写作工具
+- 用户要的不是“短篇字数”，而是紧凑的短剧化原著事件。旧慢小说已遭真人否决。本次按[验契安全与能力边界](commercial-release-pilot-20261104/13-ep1-safe-exam-causal-gate-20261104.md)，实际提交唯一[完整第一集《他只求一次机会》](commercial-release-pilot-20261104/14-ep1-shortdrama-native-one-text-v1.md)，1351汉字，Git blob `57a4cea1ac28c53c40a9e70ea2bf1657ff2ae2b7`。
+- 正本与硬核验[精确交付回执](commercial-release-pilot-20261104/15-ep1-shortdrama-human-review-gate.json)：`INTERNAL_CAUSAL=CONDITIONAL`，没有独立AI冷审或真人对新稿的明确接受，前期隐忍且第一集只拿一次有限近地防护，不声称已经拥有后期杀伐实力。**下一必须由用户实际阅读评判短剧化节奏，未判前不写第二集、不给新格式评分PASS、不提交平台**。
+- 此处仅候选分支，不覆盖仓库正式小说状态或私有插件发布版。
+
 ## 2026-11-04 最新第一集核验结果：旧死账事件FAIL；新公开验契事件仅候选
 - 旧V2传统小说原稿仍为真人`FORMAT_FIT_FAIL`。旧“病蜥＋三枚核销坏账＋坍塌救人”的第一集最优反派/实际收益核验见[最终失败判决](commercial-release-pilot-20261104/11-episode-one-adversarial-gate-final-20261104.md)：仅拿到复核资格，弱于短剧型重生修仙所需战力/权力逆转，**停止原发动机**。
 - **不换御兽重生题材与许砚/陶婶/余师姐/韩追基本人物**，新的唯一第一集事件候选见[当众拔伤环、验契护主实战](commercial-release-pilot-20261104/12-single-shortdrama-first-episode-engine-candidate.md)。首集有低头赌兽、真实受伤、以兽医经验改变兽攻击行为、第一次拿到低阶护体战术、下一轮被健康飞兽克制的对抗；这不是无敌神兽或系统奖励，仍有于肃依职权要求复检/扣粮的最优行动。
