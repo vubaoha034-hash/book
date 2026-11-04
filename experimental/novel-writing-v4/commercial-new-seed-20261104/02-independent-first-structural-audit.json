@@ -1,0 +1,30 @@
+{
+  "schema_version": "novel-c03-seed-independent-editor-v1",
+  "date": "2026-11-04",
+  "source": {
+    "path": "experimental/novel-writing-v4/commercial-new-seed-20261104/01-c03-core-characters-first3-and-cost.md",
+    "git_blob": "11b384804878cc781e9a96091c48bf083a057f44"
+  },
+  "review": {
+    "url": "https://chatgpt.com/c/6aea80c9-1cb0-83ee-8ab9-c8e48b7e0c9d",
+    "reviewer": "new isolated ChatGPT conversation, AI only, no history",
+    "verdict": "PARTIAL_REVISE_SEED",
+    "literary_human_feedback": "UNKNOWN",
+    "income": "UNKNOWN",
+    "claims": [
+      "first chapter has a real position/resources reward but net cash +1 not +3 in business profit",
+      "choice of risky repair vs new six-coin standard paper lacks comparative confidence and purchase-before-selection timing",
+      "test only checks valid end product, so buying a completed charm would also pass; fails to test craftsmanship",
+      "seller can rationally reprice and begin sorting, no perpetual arbitrage",
+      "chapter 2 spends five and chapter 3 gains at most one, so early earning promise collapses"
+    ]
+  },
+  "boundaries": {
+    "no_prose_created": true,
+    "one_seed_only": true,
+    "next": "ONE_TARGETED_C03_SEED_REPAIR_AND_SAME_REVIEWER_RECHECK",
+    "do_not_hide_source": true,
+    "no_literary_PASS": true
+  },
+  "published": false
+}
