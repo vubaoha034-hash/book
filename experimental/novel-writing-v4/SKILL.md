@@ -7,6 +7,11 @@ description: 中文小说创作与去AI味的候选 V4 路由。优先执行最�
 
 **身份：** `CANDIDATE_ONLY`，尚未通过真人A/B，不得覆盖仓库根目录生产版 `SKILL.md`，不接管既有任务或在真实会话声称已安装。最新权威仍是 `START_HERE.md`、`AGENTS.md`、`MAINLINE.md`、`state/project_state.json` 与 `state/continuity/LATEST_CHECKPOINT.json`；同提交锁定后运行 `scripts/verify_current_state.py`。新历史/研究文件绝不重置业务检查点。
 
+## 2026-11-04 最新用户纠偏：要短剧化原著，不是普通短篇小说
+- 最新原话“这个其实还是写小说的感觉，不像是短剧小说的写法。” 精确对象为已冻结V2`08-ch01-one-structural-rewrite-v2.md`，原件不改；生产main中有人类反馈追加回执`state/review_receipts/NOVEL_SHORTDRAMA_FORMAT_HUMAN_CORRECTION_20261104.json`。**禁止继承“已可读/短剧已通过”的旧假设**。
+- **首要路由**：[10-short-drama-novel-format-correction.md](commercial-release-pilot-20261104/10-short-drama-novel-format-correction.md)。短故事（字数产品）、短剧化原著小说（行动组织的阅读产品）、分集短剧剧本（摄影/对白/分场产品）是不同交付；先按用户所称“短剧小说”设计②，不默认生成③。
+- 旧短篇首章从坍塌→前世回忆→买兽→查旧账→病兽温养，依然是传统小说，**不是靠删描写、句句换行能解决**。此故事即时敌我权力反转与男频成长收益弱，先验证一集3—5个紧凑事件节点及反派最优行动，若没有真正利益变化就停止此开篇，不写V3/V4或第二章。**该研究文档只是候选PR，不等于发布插件或真实收入。**
+
 ## 2026-11-04 当前最新：真人拒绝旧首章，一次结构重写后等真实读感
 - 旧CH01《死过一次的病蜥》已收到真人明确`FAIL_TOO_SLOW`，精确原稿sha `6f644c5970289ed1078b662cbfb44fd46d878c43` 和主分支追加回执均可查。用户并未否决人物“弱时能忍、强时果断、对恩人好”的设定。
 - 不换修仙/重生/御兽题材，**只完成一次**真正改变事件的首章V2：[《账上死过的灵兽》](commercial-release-pilot-20261104/08-ch01-one-structural-rewrite-v2.md)，2162汉字，blob `33e455e485e29496b64651328cf78e575bfb4b65`。开头救陶婶的即时险情，买兽/护理成本不变，多只死亡核销却曾委售构成次层谜团；原稿V1保留。
