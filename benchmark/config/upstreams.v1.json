@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "policy": {
+    "vendor_upstream_code_by_default": false,
+    "license_review_before_code_reuse": true,
+    "benchmark_unmodified_before_patch": true,
+    "stars_or_readme_claims_are_not_quality_evidence": true
+  },
+  "upstreams": [
+    {
+      "id": "ai-novel-writing-assistant",
+      "repo": "ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+      "url": "https://github.com/ExplosiveCoderflome/AI-Novel-Writing-Assistant",
+      "role": "mother_candidate_engineering",
+      "candidate_strengths": ["book_analysis", "style_profile", "evidence_provenance", "rag", "structured_style_engine"],
+      "baseline_priority": 1
+    },
+    {
+      "id": "oh-story-claudecode",
+      "repo": "worldwonderer/oh-story-claudecode",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode",
+      "role": "mother_candidate_chinese_webfiction",
+      "candidate_strengths": ["chinese_story_dissection", "deterministic_plus_semantic_style", "writing_workflow", "review_workflow"],
+      "baseline_priority": 1
+    },
+    {
+      "id": "persona-story-gen",
+      "repo": "Nish-19/Persona-Story-Gen",
+      "url": "https://github.com/Nish-19/Persona-Story-Gen",
+      "role": "method_challenger",
+      "candidate_strengths": ["delta_style", "author_writing_sheet", "style_vs_topic_isolation"],
+      "baseline_priority": 1
+    },
+    {
+      "id": "works-dna-extractor",
+      "repo": "Shiaoming123/works-dna-extractor",
+      "url": "https://github.com/Shiaoming123/works-dna-extractor",
+      "role": "schema_donor",
+      "candidate_strengths": ["canon_style_separation", "operational_dna", "do_avoid_dials_levers"],
+      "baseline_priority": 2
+    },
+    {
+      "id": "inkos",
+      "repo": "Narcooo/inkos",
+      "url": "https://github.com/Narcooo/inkos",
+      "role": "memory_challenger",
+      "candidate_strengths": ["truth_state", "hook_ledger", "character_state", "reader_expectation"],
+      "baseline_priority": 1
+    },
+    {
+      "id": "novel-to-game",
+      "repo": "worldwonderer/novel-to-game",
+      "url": "https://github.com/worldwonderer/novel-to-game",
+      "role": "coverage_method_donor",
+      "candidate_strengths": ["coverage_gate", "hierarchical_aggregation", "source_bible", "full_unit_recheck"],
+      "baseline_priority": 2
+    },
+    {
+      "id": "novel-creator-skill",
+      "repo": "leenbj/novel-creator-skill",
+      "url": "https://github.com/leenbj/novel-creator-skill",
+      "role": "memory_retrieval_challenger",
+      "candidate_strengths": ["graph_state", "retrieval", "longform_memory"],
+      "baseline_priority": 2
+    },
+    {
+      "id": "writer-dna",
+      "repo": "liangjfblue/writer-dna",
+      "url": "https://github.com/liangjfblue/writer-dna",
+      "role": "feedback_loop_donor",
+      "candidate_strengths": ["test_compare_correct_loop", "dynamic_weighting"],
+      "known_risk_to_test": ["generated_output_must_not_reenter_source_corpus"],
+      "baseline_priority": 3
+    },
+    {
+      "id": "novel-writer-style-cn",
+      "repo": "lsg1103275794/novel-writer-style-cn",
+      "url": "https://github.com/lsg1103275794/novel-writer-style-cn",
+      "role": "deterministic_stats_helper",
+      "candidate_strengths": ["sentence_statistics", "lexical_statistics", "punctuation_statistics"],
+      "baseline_priority": 3
+    },
+    {
+      "id": "novel-analyzer",
+      "repo": "CeLe5ph0n1a/Novel-Analyzer",
+      "url": "https://github.com/CeLe5ph0n1a/Novel-Analyzer",
+      "role": "preprocessing_helper",
+      "candidate_strengths": ["chapter_detection", "sampling_preprocessing"],
+      "baseline_priority": 3
+    },
+    {
+      "id": "awesome-novel-agent",
+      "repo": "modoojunko/awesome-novel-agent",
+      "url": "https://github.com/modoojunko/awesome-novel-agent",
+      "role": "orchestration_reference",
+      "candidate_strengths": ["multi_agent_workflow", "memory_update", "review_orchestration"],
+      "baseline_priority": 3
+    },
+    {
+      "id": "graphify-novel",
+      "repo": "Anshler/graphify-novel",
+      "url": "https://github.com/Anshler/graphify-novel",
+      "role": "knowledge_graph_watchlist",
+      "candidate_strengths": ["story_bible", "character_thread_world_graph_queries"],
+      "baseline_priority": 3
+    }
+  ],
+  "baseline_wave_1": [
+    "ai-novel-writing-assistant",
+    "oh-story-claudecode",
+    "persona-story-gen",
+    "inkos"
+  ],
+  "rule": "A lower-priority donor enters the mainline only after a measured gap maps to its specific strength and a single-variable experiment passes."
+}
