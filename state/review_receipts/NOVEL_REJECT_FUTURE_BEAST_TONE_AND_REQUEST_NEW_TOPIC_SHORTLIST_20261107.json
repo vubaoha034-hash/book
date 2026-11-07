@@ -1,0 +1,29 @@
+{
+  "schema_version": "novel-human-genre-and-text-rejection/v1",
+  "date": "2026-11-07",
+  "user_verbatim": "讲真的我觉得这个题材其实真的没让人多吸引力。所以我举得故事也没什么意思。并且还有个问题，写的也一点意思都没。  https://www.jingjiaoba.com/ 这个网站可以看很多小说。 而后我们找几个好点的题材，",
+  "binding": {
+    "prior_branch": "proposal/novel-method-upstream-lineage-20261031",
+    "prior_story": "重生那天，我抢走了未来第一神兽",
+    "prior_chapter_path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/20-future-dragon-ep1-original-prose-v1.md",
+    "prior_chapter_blob": "99fc7f40552a828ed1103c7133a10c5b779fc61e"
+  },
+  "verdict": {
+    "existing_future_beast_premise": "HUMAN_REJECTED_NOT_COMPELLING",
+    "existing_first_episode_prose": "HUMAN_REJECTED_UNINTERESTING",
+    "previous_illustrative_future_pet_idea": "NOT_USER_SELECTION",
+    "rebirth_genre_itself": "NOT_EXPLICITLY_REJECTED",
+    "request": "RESEARCH_NOVELS_USING_GIVEN_SITE_AND_FIND_SEVERAL_DISTINCT_BETTER_TOPICS",
+    "human_approval_of_future_topics": "UNKNOWN"
+  },
+  "workflow_guards": {
+    "stop_all_future_beast_v2_v3": true,
+    "do_not_write_ep2": true,
+    "do_not_add_ai_skill_just_to_show_progress": true,
+    "distinguish_catalog_blurbs_from_chapter_text": true,
+    "distinguish_archive_clicks_from_current_commercial_market": true,
+    "do_not_copy_copyrighted_prose": true,
+    "do_not_auto_publish": true
+  },
+  "production_cp_preserved": 211
+}
