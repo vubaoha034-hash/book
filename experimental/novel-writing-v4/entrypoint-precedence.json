@@ -1,0 +1,43 @@
+{
+  "schema_version": "novel-candidate-cursor-precedence/v1",
+  "kind": "CANDIDATE_ONLY_ROUTING_GUARD",
+  "legacy_locator": {
+    "path": "MAINLINE.md",
+    "heading": "当前位置与入口",
+    "legacy_next_action": "RESOLVE_SCENE_FACTS_FOR_MAINLINE_TEST_01",
+    "reason": "2026-10-01 historical snapshot later overtaken by checkpoint211"
+  },
+  "authoritative_state": {
+    "required_same_commit_files": [
+      "START_HERE.md",
+      "AGENTS.md",
+      "MAINLINE.md",
+      "state/project_state.json",
+      "state/continuity/LATEST_CHECKPOINT.json"
+    ],
+    "current_live_task_field": "state/project_state.json:active_task",
+    "current_action_field": "state/project_state.json:next_required_action",
+    "checkpoint_action_field": "state/continuity/LATEST_CHECKPOINT.json:next_required_action",
+    "fallback_when_unreadable": "UNKNOWN_BLOCKED_NO_AUTODISPATCH"
+  },
+  "baseline_at_candidate_creation": {
+    "main_sha": "6b55121dac2ed31bf304986e05b8ba422d75d639",
+    "checkpoint": 211,
+    "next_action": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
+    "human_score": "UNKNOWN"
+  },
+  "version_namespace": {
+    "legacy_mainline_method": "mainline revision 4",
+    "experimental_skill": "novel-writing-master V4 candidate",
+    "equivalence": false
+  },
+  "rules": [
+    "never use stale MAINLINE prose to lower latest checkpoint",
+    "no reopening stopped tasks",
+    "no AI score promoted to human score",
+    "no producer access to diagnostic examples",
+    "source commits pinned; candidate proposal is not production"
+  ],
+  "production_route_unchanged": true,
+  "requires_actual_test": true
+}

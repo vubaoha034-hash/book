@@ -1,0 +1,148 @@
+{
+  "version": "novel-skill-v4-candidate-20261031",
+  "production": false,
+  "project": "vubaoha034-hash/book",
+  "protected_checkpoint": 211,
+  "statuses": {
+    "ACTIVE": "usable_in_selected_phase",
+    "REVIEW_ONLY": "after_draft_frozen",
+    "REFERENCE_ONLY": "research_or_legacy",
+    "EXCLUDED": "never_load_in_writer",
+    "DEPRECATED": "deletable_only_after_reference_and_regression_audit"
+  },
+  "modules": [
+    {
+      "path": "modules/character-pressure-test.md",
+      "status": "ACTIVE",
+      "role": "EDITOR_ONLY",
+      "load": "story_design",
+      "reason": "character decision and knowledge boundaries"
+    },
+    {
+      "path": "modules/causal-proof-engine.md",
+      "status": "ACTIVE",
+      "role": "EDITOR_ONLY",
+      "load": "story_design",
+      "reason": "simple alternative and action consequences"
+    },
+    {
+      "path": "modules/continuity-editor.md",
+      "status": "ACTIVE",
+      "role": "FACT_REVIEW",
+      "load": "on_continuity_risk",
+      "reason": "protect frozen facts"
+    },
+    {
+      "path": "modules/opening-retention-reader.md",
+      "status": "REVIEW_ONLY",
+      "role": "ISOLATED_COLD_READER",
+      "load": "after_freeze",
+      "reason": "reader attention trace, not author prompt"
+    },
+    {
+      "path": "modules/line-editor-deslop.md",
+      "status": "REVIEW_ONLY",
+      "role": "LINE_EDITOR",
+      "load": "after_story_mechanics_pass",
+      "reason": "only located defects and minimal edits"
+    },
+    {
+      "path": "modules/delivery-language-check.md",
+      "status": "REVIEW_ONLY",
+      "role": "COPYEDITOR",
+      "load": "before_delivery",
+      "reason": "literal idiom clarity regression check"
+    },
+    {
+      "path": "modules/beta-reader-panel.md",
+      "status": "REVIEW_ONLY",
+      "role": "COORDINATOR",
+      "load": "only_independent_readers",
+      "reason": "cannot use one-context consensus as independent evidence"
+    },
+    {
+      "path": "modules/emotion-payoff-ledger.md",
+      "status": "REFERENCE_ONLY",
+      "role": "EDITOR_OPTIONAL",
+      "load": "on_emotion_debt_tasks",
+      "reason": "may diagnose but direct injection not proven"
+    },
+    {
+      "path": "modules/hate-empathy-test.md",
+      "status": "REFERENCE_ONLY",
+      "role": "EDITOR_OPTIONAL",
+      "load": "type_specific",
+      "reason": "do not apply revenge template to all genres"
+    },
+    {
+      "path": "rules/no-ai-smell.md",
+      "status": "REVIEW_ONLY",
+      "role": "COPYEDITOR",
+      "load": "after_freeze",
+      "reason": "not a lexical generator prompt"
+    },
+    {
+      "path": "rules/pass-isolation.md",
+      "status": "ACTIVE",
+      "role": "COORDINATOR",
+      "load": "all_workflow_routing",
+      "reason": "prevent review-answer leakage"
+    },
+    {
+      "path": "workflows/07-novel-master-pipeline-v3.md",
+      "status": "REFERENCE_ONLY",
+      "role": "HISTORICAL_BASELINE",
+      "load": "control_arm_only",
+      "reason": "do not stack entire old suite into new writer"
+    },
+    {
+      "path": "phase429/eight-step-action-sequence",
+      "status": "EXCLUDED",
+      "role": "WRITER",
+      "load": "never",
+      "reason": "explicitly disabled in current MAINLINE; legacy facts remain"
+    },
+    {
+      "path": "external/zhuque-ai-score-thresholds",
+      "status": "EXCLUDED",
+      "role": "QUALITY_GATE",
+      "load": "never",
+      "reason": "text detector is not reader satisfaction"
+    },
+    {
+      "path": "generic/banned-word-length-action-quotas",
+      "status": "EXCLUDED",
+      "role": "WRITER",
+      "load": "never",
+      "reason": "historical electrotelegraph prose risk"
+    },
+    {
+      "path": "same_context/multi_reader_voting",
+      "status": "EXCLUDED",
+      "role": "QUALITY_GATE",
+      "load": "never",
+      "reason": "not independent evidence"
+    },
+    {
+      "path": "model_self_score_as_human_verdict",
+      "status": "EXCLUDED",
+      "role": "QUALITY_GATE",
+      "load": "never",
+      "reason": "human verdict is UNKNOWN until actual read"
+    }
+  ],
+  "delete_policy": {
+    "immediate_files_to_physically_delete": [],
+    "reason": "historical dependencies not audited",
+    "candidate_writer_load_only": [
+      "writer-packet-template.md",
+      "frozen_scene_facts"
+    ],
+    "activation_requires": [
+      "human_quality_comparison",
+      "no_regression",
+      "exact_source_readback"
+    ],
+    "no_change_to_production_files": true
+  }
+}

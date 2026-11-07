@@ -1,0 +1,67 @@
+{
+  "schema_version": "novel-commercial-seed-c03-structural-final-v1",
+  "date": "2026-11-04",
+  "seed": "重生符修：我专收宗门的废符",
+  "sources": {
+    "original": {
+      "path": "experimental/novel-writing-v4/commercial-new-seed-20261104/01-c03-core-characters-first3-and-cost.md",
+      "git_blob": "11b384804878cc781e9a96091c48bf083a057f44"
+    },
+    "fixed": {
+      "path": "experimental/novel-writing-v4/commercial-new-seed-20261104/03-c03-one-targeted-structural-repair.md",
+      "git_blob": "82462cb758812172a8943a90f45a58e29919e9a5"
+    },
+    "first_ai": {
+      "url": "https://chatgpt.com/c/6aea80c9-1cb0-83ee-8ab9-c8e48b7e0c9d",
+      "verdict": "PARTIAL_REVISE_SEED"
+    },
+    "second_independent_ai": {
+      "url": "https://chatgpt.com/c/6aea8315-7ab8-83ee-a722-096a59f9a9e7",
+      "verdict": "PARTIAL_STILL_BLOCKED",
+      "source_scope": "fresh chat sees only sections of fixed C03 without prior diagnosis"
+    }
+  },
+  "confirmed_changes": [
+    "Original exam accepted any finished talisman, invalid for selecting artisans; fixed one requires live production/repair under supervision, which new independent reviewer found basically reasonable",
+    "Protagonist can plausibly prefer low-cost repair over full new glyph due to actual career skill and sealed damaged-lot uncertainty; no unlimited miracle",
+    "First chapter publicly gets apprentice job and training time, not merely waits for sick beast to recover"
+  ],
+  "unresolved": [
+    "Employer pays 3 advance wages then later per-piece work; whether fees offset advance or are separate is not contracted",
+    "Chapter3 clients are routed by workshop, so direct diagnostic/repair fees may belong partly to workshop; income balance 9 is not grounded",
+    "Chapter3 sample test could consume only finished talisman or be uncorrelated with delivered item; proof of safe delivery missing",
+    "Commercial male cultivation payoff weak: three chapters yield only few coins and job access, with no concrete cultivation ability increase",
+    "Long-term low-priced scrap arbitrage rapidly competed away by seller and other craftspeople"
+  ],
+  "editorial_verdict": "STOP_C03_FAST_COMMERCIAL_SEED_AFTER_ONE_STRUCTURAL_REVISION",
+  "interpretation": "This is a fast commercialization prioritization choice, not objective proof the book is unpublishable, nor real human reading",
+  "quant": {
+    "new_prose_word_count": 0,
+    "independent_review_count": 2,
+    "structural_revision_count": 1,
+    "novel_candidates_created_this_turn": 1
+  },
+  "guards": {
+    "do_not_build_C03_V03_or_V04_on_same_weak_growth_engine": true,
+    "do_not_generate_CH01_without_new_approved_growth_contract": true,
+    "do_not_claim_human_pass": true,
+    "do_not_publish": true,
+    "book_main_checkpoint_unchanged": true,
+    "private_plugin_release_unchanged": true
+  },
+  "next_required_action": "FRESH_ONE_SEED_CORE_WITH_FIRST_CHAPTER_REVERSAL_PLUS_ACTUAL_CULTIVATION_GAIN_BY_CHAPTER_3; DO_NOT RETAIN LOW_STAKES_CRAFT_BOUNTY AS ENTIRE GROWTH PROMISE",
+  "market_evidence": [
+    {
+      "source": "official fanqie xianxia new book ranking",
+      "url": "https://fanqienovel.com/rank/1_1_257",
+      "checked_date": "2026-11-04",
+      "caution": "ranking/summary does not imply payout or success rate"
+    },
+    {
+      "source": "official fanqie xianxia reading ranking",
+      "url": "https://fanqienovel.com/rank/1_2_1140",
+      "checked_date": "2026-11-04",
+      "caution": "informational patterns only; avoid imitation of actual work"
+    }
+  ]
+}
