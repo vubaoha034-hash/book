@@ -1,0 +1,21 @@
+{
+  "schema_version": "novel-human-topic-selection/v1",
+  "date": "2026-11-07",
+  "user_verbatim": "只有死人肯教我修仙",
+  "selected": {
+    "title": "只有死人肯教我修仙",
+    "candidate_source": "experimental/novel-writing-v4/topic-shortlist-20261107/01-source-audit-and-four-premises.md",
+    "candidate_branch": "proposal/novel-method-upstream-lineage-20261031",
+    "theme": "仙侠守墓、亡者最后一剑、弱时隐忍/强时果断、报恩"
+  },
+  "precise_boundary": {
+    "premise_interest": "SELECTED",
+    "any_actual_prose_approval": "NOT_YET",
+    "source_title_originality_verified": "NOT_DEFINITIVE",
+    "other_three_candidates": "ON_HOLD_NOT_ACTIVE",
+    "future_beast": "HUMAN_REJECTED_DO_NOT_RESUME"
+  },
+  "next_required_action": "PREPARE_EXACTLY_ONE_100_TO_180_HAN_OPENING_AND_THREE_EPISODE_CAUSAL_RESOURCE_CARDS; NO_AUTO_EPISODE2_AND_NO_BULK_NOVEL",
+  "book_main_checkpoint_changes": false,
+  "mainline_cp_preserved": 211
+}
