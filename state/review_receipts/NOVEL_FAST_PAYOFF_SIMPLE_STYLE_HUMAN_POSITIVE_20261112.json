@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-12",
+  "user_verbatim": "对，就要这种。",
+  "target_file": "experimental/novel-writing-v4/commercial-release-pilot-20261104/22-fast-payoff-first-screen-user-feedback-20261112.md",
+  "target_branch": "proposal/novel-method-upstream-lineage-20261031",
+  "target_blob": "c7231b150a2b832bbb0bfa4d85824f22752470f3",
+  "positive_scope": "User explicitly approves simplified fast-payoff narrative style and the referenced approx 484-Han-character scene as desired, especially rebirth knowledge advantage, swift beast acquisition, immediate awakening/upgrade, tangible humiliation-reversal winnings.",
+  "rejected_previous_issues": [
+    "slow and complicated explanations",
+    "rebirth with little advantage",
+    "small inconsequential rewards",
+    "excessive procedural justifications"
+  ],
+  "not_claimed": [
+    "approval of full episodes or a novel",
+    "commercial success or actual readers",
+    "approval to abandon newer selected project",
+    "request to write a next chapter"
+  ],
+  "continuity_note": "Candidate entry latest on Nov 7 names 只有死人肯教我修仙 as active. Preserve this user's positive C02 style sample without rolling back selected title or the formal checkpoint.",
+  "next_action": "Use this as a preferred prose-style reference whenever the user requests further creative writing; avoid mechanical exact-length rules.",
+  "mainline_business_checkpoint_changed": false
+}
