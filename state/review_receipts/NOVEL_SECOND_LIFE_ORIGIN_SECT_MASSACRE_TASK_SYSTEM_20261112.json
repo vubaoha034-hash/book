@@ -1,0 +1,20 @@
+{
+  "schema_version": "novel-human-origin-motivation-feedback/v1",
+  "date": "2026-11-12",
+  "user_verbatim": "一，要快速解释下主角为撒有这个系统，   比如主角穿越过来在某个门派。但是一点特异功能没有，也无法修炼的很厉害，但是这个门派大家都对他很好，他也过的很舒服，但是这一天他的门派却因为被人说成是魔道被满门屠杀，他在溺死之际而后得到了任务系统，于是就开始了复仇之路",
+  "target": "我在修仙界卖第二条命",
+  "intent_interpretation": {
+    "mandatory_to_address": "Clear early origin for system and strong personal motivation before opening business episodes",
+    "exemplary_scenario_not_all_details_approved": "Comfortable life in kind sect despite bad aptitude -> falsely labelled demonic, sect massacred -> protagonist nearly drowns, task system unlocks -> revenge mainline",
+    "preserve_relevant_user_style_preferences": [
+      "simple immediate payoff",
+      "light comedy as secondary tone",
+      "memorable character names"
+    ],
+    "not_necessarily_authorized": "Freezing new sect name, token lore, specific antagonist or finished 12 episode outline"
+  },
+  "proposed_v2_path": "experimental/novel-writing-v4/new-theme-proposals-20261112/03-sect-massacre-system-revenge-origin-v2.md",
+  "candidate_branch": "proposal/novel-method-upstream-lineage-20261031",
+  "mainline_checkpoint_unchanged": true,
+  "next": "Story contract V2 candidate exists; upon user continuation produce 12 episode cards reflecting sect massacre, life sales and authentic revenge progression without expanding story history exposition"
+}
