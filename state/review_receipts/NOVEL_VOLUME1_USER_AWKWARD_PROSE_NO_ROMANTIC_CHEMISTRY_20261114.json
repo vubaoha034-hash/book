@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-14",
+  "user_verbatim": "你自己检查下。我觉得到处都是奇怪的地方。可她不像平常那​​样笑，今天他修为低。像这样的说的是什么我完全不知道。还要感情戏一点感觉都没有。就算护着也应该有点感情吧，虽然我们写的是无脑爽小说。但是至少要让人物有代入感吧",
+  "target": "我在修仙界卖第二条命 第一卷12集",
+  "source_volume": "experimental/novel-writing-v4/new-theme-proposals-20261112/11-volume1-complete-12-episodes-v1-20261114.md",
+  "volume_blob": "c380e6318c8f1e1dd11534ab00dc5c4f5bf8568e",
+  "human_feedback": {
+    "language": "multiple awkward or incomprehensible sentences",
+    "romance": "lacks actual emotional/romantic chemistry among character pairs",
+    "immersion": "characters do not feel human; protecting protagonist needs emotionally lived relationships",
+    "commercial_genre": "fast and simplified xianxia is retained but must not remove real motivation and recognizable emotions",
+    "overall_human_approval": "NOT_GIVEN"
+  },
+  "source_read_scope": "all 12 actual chapters read, not outline only",
+  "editorial_status": "FAILED_EDITORIAL_REVIEW",
+  "audit_path": "experimental/novel-writing-v4/new-theme-proposals-20261112/13-volume1-literary-causality-relationship-audit-20261114.md",
+  "audit_blob": "adff8477f5900608cb29740ebc26318cb6a037ec",
+  "one_new_first_episode_candidate": "experimental/novel-writing-v4/new-theme-proposals-20261112/14-episode01-real-bond-emotion-proof-v5-20261114.md",
+  "new_candidate_blob": "097beda42cc015fa05dac7741c385d06fcb35999",
+  "human_v5_verdict": "UNKNOWN_NOT_YET_READ",
+  "full_volume_edited": false,
+  "original_12_episode_manuscript_preserved": true,
+  "next_action": "Use V5 as limited test; if it earns genuine human readability approval, rebuild episodes 2-12 around actual heroine decisions, earned mutual affection, reasonable villains, chronology and power costs. Do not represent old volume as finished publishing work.",
+  "formal_checkpoints_unchanged": true
+}
