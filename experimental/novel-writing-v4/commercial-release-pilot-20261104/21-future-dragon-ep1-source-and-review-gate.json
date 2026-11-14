@@ -1,0 +1,47 @@
+{
+  "schema_version": "novel-foresight-beast-first-episode-v1",
+  "date": "2026-11-05",
+  "parent_concept": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/18-foresight-beast-reversal-and-real-chapter-audit-20261104.md",
+    "git_blob": "724f94062e18eaa4177c23afc0b604d3d5f6a0d8"
+  },
+  "causal_lock": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/19-future-beast-ep1-causal-lock-20261105.md",
+    "git_blob": "fe14ae5830d9139cd229b42d5d7f6b3de99643ea"
+  },
+  "episode": {
+    "title": "第一集 两枚灵钱，买下镇岳玄龙",
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/20-future-dragon-ep1-original-prose-v1.md",
+    "git_blob": "99fc7f40552a828ed1103c7133a10c5b779fc61e",
+    "han_characters": 1408,
+    "paragraphs": 33,
+    "versions_created": 1,
+    "pre_delivery_edit": "Joined 56 choppy microparagraphs to 33 coherent paragraphs and made original 10-coin purse explicit; no storyline changes",
+    "more_episodes_generated": 0
+  },
+  "verified_logic": {
+    "future_memory": "In previous life Xu Yan actually witnessed Han Zhui buying exact cut-tail, triple-grey-mark soil lizard on same day, saw it undergo first awakening by an old well years later, and later become the Dragon that stopped beast tide",
+    "time": "In this life purchase in morning before Han arrives at dusk; historical future may change after this purchase",
+    "future_resources": "Old well has small amount of pre-existing sealed black sand; great earth-vein surge comes in years, not now",
+    "energy": "Earth vein residue plus normal first pet contract feedback, protagonist at Qi level 4 peak reaches real Qi level 5; beast gets first line dragon mark and limited near-ground shell block",
+    "economy": "10 initial coins minus 2 for lizard minus 2 care supplies = 6 remaining",
+    "ownership": "One initial formal contract; family's healthy hawk in parent material is not Han's formal bonded first beast this day",
+    "moral": "Xu Yan remains humble in public, remembers Tao Aunt's kindness, does not malign Han as an evil or stupid rival",
+    "stakes": "Stealing Han's future dragon also removes Han's original future ability to stop sect-wide beast tide; new life must handle changed future"
+  },
+  "editorial_status": {
+    "internal_contract_checks": "PASS_BASIC_TEXT_AND_FACTS",
+    "independent_story_editor": "NOT_RUN",
+    "actual_user_story_reading": "UNKNOWN",
+    "short_drama_format_acceptance": "UNKNOWN",
+    "real_platform_signing": "NOT_APPLIED",
+    "earnings": "UNKNOWN"
+  },
+  "production_boundary": {
+    "draft_pr_only": true,
+    "book_main_cp_stays_211": true,
+    "published_private_plugin_not_changed": true,
+    "old_story_failed_texts_preserved": true
+  },
+  "next_required_action": "Read exact frozen first episode and obtain actual user opinion on whether the information edge, real upgrade and suspense provide desire to continue; if negative stop and locate story-level mismatch rather than autogenerating Episode 2"
+}

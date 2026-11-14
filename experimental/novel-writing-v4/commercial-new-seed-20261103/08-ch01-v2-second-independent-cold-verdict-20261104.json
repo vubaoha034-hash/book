@@ -1,0 +1,67 @@
+{
+  "schema_version": "novel-one-chapter-cold-read-v2/v1",
+  "date": "2026-11-04",
+  "story": "重生御兽：我的第一只灵兽是个赔钱货",
+  "chapter": "第一章 买下今晚会死的兽",
+  "artifacts": {
+    "original_v1": {
+      "path": "experimental/novel-writing-v4/commercial-new-seed-20261103/05-ch01-clean-writer-original-v1.md",
+      "blob": "7d399c60af70b9ee1c8959329616627839c03c92",
+      "han_characters": 3658,
+      "paragraphs": 273,
+      "independent_ai_verdict": "PARTIAL_TARGETED_EDIT",
+      "review_url": "https://chatgpt.com/c/6aea7225-d9b0-83ee-8b93-9b197c6e86b5"
+    },
+    "targeted_v2": {
+      "path": "experimental/novel-writing-v4/commercial-new-seed-20261103/07-ch01-one-targeted-revision-v2.md",
+      "blob": "4f9bfffef198ef927f5d52d02d53bf9a7ab9d671",
+      "han_characters": 3447,
+      "paragraphs": 118,
+      "creator_url": "https://chatgpt.com/c/6aea7117-d50c-83e8-936c-3e0f12eea6a0",
+      "independent_ai_verdict": "PARTIAL_EDIT_STILL_NEEDED",
+      "review_url": "https://chatgpt.com/c/6aea7412-2868-83ec-872f-81643b361054"
+    }
+  },
+  "verification": {
+    "new_chapter_generated": true,
+    "exactly_one_initial_chapter": true,
+    "second_chapter_generated": false,
+    "revision_count": 1,
+    "source_saved_and_readback": true,
+    "character_count_target_met": false,
+    "original_target": "1800—2600 Han",
+    "actual_targeted_v2": 3447,
+    "first_expense_error_fixed": true,
+    "source_file_not_overwritten": true
+  },
+  "editorial_evidence": {
+    "first_screen": "Opening with dying beast and offer has concrete questions, but the actual explanation of cold powder removes mystery quickly",
+    "real_state_changes": [
+      "Pays 2 for beast + 2 for treatment",
+      "Binds one current-period pet contract",
+      "Beast briefly responds and takes first water/food"
+    ],
+    "remaining_issues": [
+      "Strongest irreversible decision is already resolved midchapter; second half reverts to extended care log",
+      "New shell color/texture gives mild risk, not new action or significant shift in power/resources",
+      "Title implies a loss-making beast turned special but chapter only proves marginal veterinary improvement",
+      "Targeted V2 remains 3447 Han vs <=2600 target; dialogue still contains some explanatory exchanges",
+      "Actual reader retention and emotion remain untested"
+    ],
+    "rationale": "AI cold-reading reports are diagnostic, not human literary proof. No decisive factual causality block after money correction, but commercial first-chapter payoff remains too weak for automatic production."
+  },
+  "verdict": {
+    "ai_first_cold": "PARTIAL_TARGETED_EDIT",
+    "ai_second_cold": "PARTIAL_EDIT_STILL_NEEDED",
+    "coordinator_decision": "STOP_REVISION_LOOP_DO_NOT_PROMOTE_TO_RELEASE_OR_WRITE_CH02",
+    "actual_human_text_approval": "UNKNOWN",
+    "paid_income": "UNKNOWN"
+  },
+  "scope": {
+    "candidate_branch_only": true,
+    "native_mainline_unchanged": true,
+    "private_plugin_unchanged": true,
+    "not_published": true
+  },
+  "next_action": "ONE_SCOPED_C02_OPENING_PAYOFF_DECISION_OR_REJECT_CONCEPT_WITHOUT_DRAFTING_ANOTHER_VERSION; PRIORITIZE_TANGIBLE_EARLY_GAIN_OR_FRESH_MARKET_CONCEPT"
+}

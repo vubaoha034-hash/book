@@ -1,0 +1,73 @@
+{
+  "schema_version": "novel-commercial-hook-pilot/v1",
+  "task_id": "NOVEL-COMMERCIAL-ORIGINAL-HOOK-20261102-01",
+  "recorded_at_date": "2026-11-02",
+  "source_authorization": {
+    "user_current_turn": "好。帮我处理下",
+    "prior_goal": "原创短故事先验证200—500字开篇、真实收入优先",
+    "mode": "SCOPED_NEW_CREATIVE_PILOT_NOT_NATIVE_MAINLINE_MUTATION"
+  },
+  "source_authority": {
+    "repository": "vubaoha034-hash/book",
+    "baseline_main_head": "49cc20c0fe3c2fe5cce84290ef46eb3085917e6e",
+    "checkpoint_sequence": 211,
+    "native_active_task": "NOVEL-IMPROVEMENT-MAINLINE-V1",
+    "native_next_action_at_intake": "AWAIT_ACTUAL_HUMAN_SCORE_OF_ONE_STANDALONE_COMPLETE_SHORT",
+    "prior_human_rejection_receipt": "state/review_receipts/NOVEL_COMMERCIAL_PIVOT_HUMAN_RETENTION_FAIL_20261101.json"
+  },
+  "plugin": {
+    "name": "liu-novel-writing-lab",
+    "version": "0.2.0",
+    "source": "authenticated plugin creator metadata readback",
+    "release_id": "pluginrel_6ae6f185018c8191819a4f75851b9b7e"
+  },
+  "artifact": {
+    "path": "experimental/novel-writing-v4/commercial-pilot-20261102/opening-v1.md",
+    "blob_sha": "3856cc21715e72f27067b5a90431adc4973d5bf8",
+    "content_sha256": "315b5a9dc6e7c0abebba0e94629c0eee068cebf2ecdd65949a9470d804364505",
+    "han_characters": 351,
+    "characters_with_whitespace_and_trailing_newline": 440,
+    "versions": 1,
+    "genre": "现代婚姻家庭×餐饮经营悬疑",
+    "title": "离婚时，他把欠了八十万的店留给我"
+  },
+  "review": {
+    "status": "INTERNAL_CRAFT_CHECK_ONLY",
+    "actual_human_reading": "UNKNOWN",
+    "independent_cold_read": "NOT_RUN",
+    "internal_ai_numeric_score": "NOT_USED",
+    "highlights": [
+      "第一句同时给出离婚与债务危机",
+      "明确主人公主动接受并说明名下登记",
+      "员工欠薪与订单压力带来具体后果",
+      "停止营业与持续采购/订单矛盾",
+      "结尾提示丈夫新店与旧厨房之间的资金流联系"
+    ],
+    "questions_to_test": [
+      "是否在第一页愿意继续？",
+      "对女主人公签字的解释是否足够可信？",
+      "结尾反转是否太容易猜？"
+    ],
+    "realism_warnings": [
+      "前夫口头或离婚协议不能直接将全部对外债务转给女方；真实债权与经营主体须按合同和法律分别判断",
+      "营业执照登记不等于每笔欠款已法律证实，八十万元是剧情中的争议账面金额",
+      "团餐订单、预付款、供应商应收款和新店转单关系尚未有合同与收款记录支持，后续剧情不得直接断言侵占或犯罪",
+      "女主在余额317元情况下无法承诺立即发工资或垫付全部团餐食材，应展示有限选择和真实成本"
+    ],
+    "official_source_urls": [
+      "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+      "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2025/art_521d2635c33c4a439f638905ed92056c.html"
+    ],
+    "evidence_limits": "This is author-plus-editor in one conversation; no claim of independent writer or blind reader. Stable premise/realism review does not prove first-screen desire."
+  },
+  "publication": {
+    "not_submitted": true,
+    "not_signed": true,
+    "paid_income": "UNKNOWN",
+    "model_generated_full_story": false
+  },
+  "status": "FROZEN_FIRST_HOOK_AWAIT_TARGET_HUMAN_READING",
+  "next_action": "COLLECT_HUMAN_CONTINUATION_AND_REALISM_RESPONSE_BEFORE_EXPANSION",
+  "mainline_unchanged": true,
+  "old_work_untouched": true
+}

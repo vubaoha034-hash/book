@@ -1,0 +1,32 @@
+{
+  "schema_version": "novel-first-episode-prose-v1",
+  "date": "2026-11-13",
+  "user_instruction": "下一步",
+  "active_story": "我在修仙界卖第二条命",
+  "source_outline": "experimental/novel-writing-v4/new-theme-proposals-20261112/05-volume1-high-reward-multi-heroines-v2.md",
+  "outline_blob": "4da0247bf10d2628fdc816fd7dd408d84e1724e2",
+  "episode_path": "experimental/novel-writing-v4/new-theme-proposals-20261112/06-episode01-shortdrama-prose-v1-20261113.md",
+  "episode_blob": "2ef4f8ad7e6597d1f9c0ceac77486cad50ecb5cf",
+  "episode_han": 1093,
+  "paragraphs": 37,
+  "exactly_one_episode": true,
+  "chapter2_written": false,
+  "hard_facts_check": [
+    "Qin Chuan qi realm 3 before initial sale",
+    "Kind small sect falsely accused and slaughtered",
+    "Master passed a life token and pushed hero into the river, limited shield reaches shallows",
+    "Near drowning activates system; cannot revive already dead sect members",
+    "Liu Qingyue freely trades 30% sword cultivation before Zhao Lie kills her",
+    "Successful revival clears fatal poison, pays Qin a portion of sword technique",
+    "First-sale one-time marrow cleanse raises qi realm 3 to 6",
+    "Qin and Liu injure Zhao and he survives for episode 5 revenge",
+    "Black-bordered false demon-extermination token is first evidence"
+  ],
+  "literary_status": "DRAFT_PRESERVED_FOR_REAL_HUMAN_READING",
+  "actual_human_acceptance": "UNKNOWN",
+  "independent_story_quality_audit": "NOT_RUN",
+  "publication": "NOT_SUBMITTED",
+  "income": "UNKNOWN",
+  "production_mainline_unchanged": true,
+  "next_action": "Get exact reader verdict on first episode. If liked, continue only with episode 2 card; do not automatically generate episodes 2–12."
+}

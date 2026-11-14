@@ -1,0 +1,67 @@
+{
+  "schema_version": "novel-fantasy-genre-pivot-hook/v1",
+  "id": "NOVEL_FANTASY_REBIRTH_SHORTDRAMA_HOOK_20261102_01",
+  "source_user_verbatim": "这个我觉得没撒看头，现在都是修仙，重生等等短剧的小说非常火爆",
+  "user_rejection_receipt_on_main": "state/review_receipts/NOVEL_COMMERCIAL_HOOK_REALISM_REJECT_FANTASY_PIVOT_20261102.json",
+  "ref_original_rejected": {
+    "path": "experimental/novel-writing-v4/commercial-pilot-20261102/opening-v1.md",
+    "blob": "3856cc21715e72f27067b5a90431adc4973d5bf8",
+    "quality": "ACTUAL_HUMAN_NO_INTEREST"
+  },
+  "title": "重生后，我把飞升令送给了仇人",
+  "artifact": {
+    "path": "experimental/novel-writing-v4/fantasy-pilot-20261102/opening-v1.md",
+    "git_blob": "58b0a90416277cd5262f2c7bd281efa3f1336542",
+    "han_characters": 438,
+    "content_sha256": "UNKNOWN_NOT_COMPUTED",
+    "frozen_versions": 1
+  },
+  "design": {
+    "path": "experimental/novel-writing-v4/fantasy-pilot-20261102/story-plan.md",
+    "blob": "bb4b546b7a647ad55bddc615782e7386fe2d690c",
+    "stage": "FROZEN_BEFORE_WRITING"
+  },
+  "sources": [
+    {
+      "url": "https://fanqienovel.com/rank/1_1_257",
+      "kind": "FIRST_PARTY_CATEGORY_RANK_AS_OF_2026_11_01"
+    },
+    {
+      "url": "https://www.newrank.cn/article/detail/34791",
+      "kind": "THIRD_PARTY_OCT_SHORT_DRAMA_WEEKLY"
+    },
+    {
+      "url": "https://finance.sina.com.cn/roll/2026-10-28/doc-iniwuvcv5858984.shtml",
+      "kind": "LICENSE_ADAPTATION_PARTNERSHIP_NEWS"
+    },
+    {
+      "url": "https://fanqienovel.com/writer/zone/article/7690521379786997822",
+      "kind": "OFFICIAL_SHORT_STORY_IP_ECHO_RESTRICTIONS"
+    }
+  ],
+  "substantive_change": "CHANGED_GENRE_AND_READER_PROMISE_NOT_A_PROVEN_IMPROVEMENT",
+  "market_confidence": "GENRE_HOT_FOR_SOME_RANKING_SEGMENTS_NOT_EVERY_NEW_WORK",
+  "commercial_route": "UNKNOWN_WHETHER_FANTASY_TEXT_SHOULD_USE_SHORT_STORY_MALE_FANTASY_BRAINSTORM_OR_LONG_FORM_XIANXIA;VERIFY_BEFORE_SUBMISSION",
+  "evaluation": {
+    "technical_source_readback": true,
+    "independent_model_writer": false,
+    "no_second_prompt_candidate": true,
+    "first_screen_human_verdict": "UNKNOWN",
+    "ai_quality_numeric_score": "NOT_USED",
+    "copy_paste_from_best_seller": false,
+    "realism_threats": [
+      "Why the ascension token can be bound seven days early must remain consistent",
+      "Why the master prepared a spirit-lock before public ceremony",
+      "Consequences for losing token and provoking sect master",
+      "Avoid instant unearned invincibility after rebirth"
+    ]
+  },
+  "state": {
+    "mainline_cp211_unchanged": true,
+    "production_promotion": false,
+    "paid_income": "UNKNOWN",
+    "submitted": false,
+    "adaptation_signed": false
+  },
+  "next_action": "ACTUAL_HUMAN_FIRST_SCREEN_CONTINUATION_READ_BEFORE_EXPANSION"
+}

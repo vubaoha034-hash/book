@@ -1,0 +1,52 @@
+{
+  "schema_version": "novel-single-final-structural-first-chapter-trial/v1",
+  "date": "2026-11-04",
+  "user_latest_authorization": "下一步。",
+  "immediate_prior_user_feedback": "讲真的，这个让我没有很想阅读的感觉，节奏太慢了。看一会就乏了",
+  "prior_artifact": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/04-ch01-single-new-prose-v1.md",
+    "git_blob_sha": "6f644c5970289ed1078b662cbfb44fd46d878c43",
+    "human_reading": "FAIL_TOO_SLOW"
+  },
+  "single_rewrite": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/08-ch01-one-structural-rewrite-v2.md",
+    "git_blob_sha": "33e455e485e29496b64651328cf78e575bfb4b65",
+    "han_characters": 2162,
+    "paragraphs": 69
+  },
+  "structural_gate": {
+    "path": "experimental/novel-writing-v4/commercial-release-pilot-20261104/07-ch01-last-structural-event-gate.md",
+    "git_blob_sha": "609d5f52bf7f0ba22e3a6e09121750734a7935bc",
+    "previous_weak_3_coins_hook": "REJECTED"
+  },
+  "factual_checks": {
+    "cash": "10-2-2=6",
+    "contract": "初契已经办理，本轮不能免费换兽",
+    "time": "登记日同一天暴雨坍塌，夜里仅局部回暖，二十日考核尚未到",
+    "powers": "土性低阶兽轻微震动反应，主人凭八年经验识别；不能高阶战斗",
+    "benefaction": "主人救过陶婶前世一命之恩，今世冒实伤救她",
+    "evidence": "初六委售、初九报死，初步矛盾，未定罪"
+  },
+  "edit_truth": {
+    "clean_writer_independent": false,
+    "independent_cold_read": false,
+    "human_approval": "UNKNOWN",
+    "prose_quality": "UNKNOWN",
+    "commercial_return": "UNKNOWN",
+    "known_remaining_risks": [
+      "章节后半仍有行政账证对照，可能恢复慢节奏",
+      "未在首章兑现主角战斗或境界突破",
+      "段落较短，移动端是否疲劳须真人评判"
+    ]
+  },
+  "constraints": {
+    "do_not_overwrite_original": true,
+    "do_not_write_v3_v4": true,
+    "do_not_write_chapter2_without_user_positive_text_feedback": true,
+    "stop_story_engine_if_human_says_no_again": true,
+    "private_plugin_unchanged": true,
+    "production_mainline_cp_preserved": 211,
+    "not_submitted": true
+  },
+  "next_required_action": "READ_EXACT_FROZEN_V2_ONCE_AND_GET_ACTUAL_HUMAN_DESIRE_TO_CONTINUE; IF_NEGATIVE_STOP_OPENING_NOT_MORE_REWRITES"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "novel-commercial-plugin-release/v1",
+  "release_date": "2026-11-01",
+  "plugin_name": "liu-novel-writing-lab",
+  "plugin_id": "plugins_6ae5aec90e248191b12c0e93486145d0",
+  "old_version": "0.1.0",
+  "new_version": "0.2.0",
+  "release_id": "pluginrel_6ae6f185018c8191819a4f75851b9b7e",
+  "plugin_url": "https://chatgpt.com/plugins/plugins_6ae5aec90e248191b12c0e93486145d0",
+  "source_sha256": "f25f13a811ef37797c9226a83d73c84bf449cd3f7c7b283d70073abb0e9e4202",
+  "source_archive_filename": "liu_novel_commercial_lab_v0.2.0.zip",
+  "source_file_count": 10,
+  "source_readback_result": "PLUGIN_VERSION_AND_COMMERCIAL_SKILL_CONFIRMED",
+  "upstream_research": "docs/NOVEL_FANQIE_COMMERCIAL_SHORT_MARKET_RESEARCH_20261101.md",
+  "human_feedback": "state/review_receipts/NOVEL_COMMERCIAL_PIVOT_HUMAN_RETENTION_FAIL_20261101.json",
+  "user_business_target": "FAST_REAL_INCOME",
+  "permitted": "RESEARCH_AND_SCOPED_SHORT_STORY_PREPARATION_ONLY",
+  "prohibited": [
+    "CLAIM_SIGNING_OR_REVENUE",
+    "BATCH_GENERATE_LOW_QUALITY_CONTENT",
+    "AUTO_SIGN_COPYRIGHT_CONTRACT",
+    "OVERRIDE_NATIVE_CHECKPOINT"
+  ],
+  "results": {
+    "plugin_release": "SUCCESS",
+    "remote_version_readback": "SUCCESS",
+    "real_short_story_generation": "NOT_RUN",
+    "actual_revenue": "UNKNOWN",
+    "human_quality_of_new_method": "UNKNOWN"
+  },
+  "production_mainline_modified_by_release": false
+}

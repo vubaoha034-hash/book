@@ -1,0 +1,48 @@
+{
+  "schema_version": "novel-commercial-first-chapter-stopgo/v1",
+  "date": "2026-11-04",
+  "task": "C02_ONE_BOUNDED_OPENING_PAYOFF_DECISION",
+  "binding": {
+    "concept": "experimental/novel-writing-v4/commercial-new-seed-20261103/01-original-core-and-3chapter-cards.md",
+    "v1": {
+      "path": "experimental/novel-writing-v4/commercial-new-seed-20261103/05-ch01-clean-writer-original-v1.md",
+      "blob": "7d399c60af70b9ee1c8959329616627839c03c92"
+    },
+    "v2": {
+      "path": "experimental/novel-writing-v4/commercial-new-seed-20261103/07-ch01-one-targeted-revision-v2.md",
+      "blob": "4f9bfffef198ef927f5d52d02d53bf9a7ab9d671"
+    },
+    "cold_read_receipt": "experimental/novel-writing-v4/commercial-new-seed-20261103/08-ch01-v2-second-independent-cold-verdict-20261104.json"
+  },
+  "verdict": {
+    "commercial_first_chapter_seed": "REJECT_FOR_FAST_MONETIZATION_PRIORITY",
+    "not_a_general_genre_rejection": true,
+    "no_claim_about_real_reader_reaction": true,
+    "reason": [
+      "V1 and V2 AI-cold-read both PARTIAL; first chapter payoff only veterinary recovery without changing cultivation resources or position",
+      "Moving existing low-grade earth-hollow sense to chapter 1 by itself remains a promise, not an actual earned resource or irreversible competitive shift",
+      "To produce high-impact cultivation reward needs a separate economic/event engine; that is a new concept, not a third line edit"
+    ],
+    "preserve_prior_prose": true,
+    "human_reading": "UNKNOWN",
+    "income": "UNKNOWN",
+    "next": "MAKE_EXACTLY_ONE_NEW_ORIGINAL_SEED_C03_WITH_IMMEDIATE_LEGAL_RESOURCE_EARNINGS_AND_EQUAL_RANK_COUNTERPLAY; NO_NEW_PROSE"
+  },
+  "market_evidence": [
+    {
+      "type": "official category ranking",
+      "uri": "https://fanqienovel.com/rank/1_1_257",
+      "as_of": "2026-11-03",
+      "limitation": "visibility among signed promoted books not success probability"
+    },
+    {
+      "type": "official category ranking",
+      "uri": "https://fanqienovel.com/rank/1_2_1140",
+      "as_of": "2026-11-03",
+      "limitation": "not an earning estimate"
+    }
+  ],
+  "native_mainline_untouched": true,
+  "proposal_branch_only": true,
+  "do_not_auto_publish": true
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "dead-tutor-episode-01-delivery-v1",
+  "date": "2026-11-07",
+  "user_authorization": "User said 好的，可以 after the offer to write only one first episode based on the nine-episode outline.",
+  "source": {
+    "repository": "vubaoha034-hash/book",
+    "branch": "proposal/novel-method-upstream-lineage-20261031",
+    "path": "experimental/novel-writing-v4/selected-dead-tutor-20261107/03-episode-01-the-dead-mans-last-sword-v1.md",
+    "git_blob": "878cbcca1b1ec032ba070d4b892f5f5194f414bf",
+    "title": "第一集｜死人教我的第一剑",
+    "han_characters": 1707,
+    "paragraphs": 35
+  },
+  "basis": {
+    "selected_premise": "experimental/novel-writing-v4/selected-dead-tutor-20261107/01-opening-characters-three-episodes.md",
+    "volume_one": "experimental/novel-writing-v4/selected-dead-tutor-20261107/02-book-engine-character-relations-and-volume-one-outline.md"
+  },
+  "facts_verified": [
+    "Lu Chen Qi refinement level 3 genuinely bows to Zhao Heng level 5 to stall",
+    "Su He has separate goal to preserve forensic medicine record and creates strike window using eye-irritating medicine powder",
+    "Jisandao old sword retains exactly one unused move, not endless teaching or free transfer of cultivation level",
+    "Enemy initiates lethal attack, one borrowed strike kills Zhao Heng; sword breaks and old mentor's intent disappears",
+    "Lu Chen suffers right arm meridian damage and cannot immediately use next borrowed move",
+    "The legitimate death inquiry risks remain, plus anonymous voice on transmission jade seeks the destroyed sword",
+    "Opening never discloses the seven-years-earlier death ledger which is reserved for volume ending"
+  ],
+  "editing": {
+    "substantive_drafts": 1,
+    "readability_pass": "paragraph reflow from 67 to 35 paragraphs; no changed story events; whitespace restored"
+  },
+  "guard": {
+    "episode2_not_written": true,
+    "volume_unwritten": true,
+    "independent_editor_not_run": true,
+    "actual_human_reading_unknown": true,
+    "user_only_confirmed_premise_and_proceeding": true,
+    "book_main_cp_unchanged_211": true,
+    "not_published": true,
+    "signing_unknown": true,
+    "earnings_unknown": true
+  },
+  "next_required_action": "Present the exact Episode-1 text to user for a real reader verdict. If rejected do not autogenerate Episode-2 or mechanically produce V2/V3; diagnose story vs prose as bounded human feedback."
+}
