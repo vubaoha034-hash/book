@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-14",
+  "user_request": "继续完成",
+  "scope_executed": "Using user-acknowledged Episode 1 V4, write and read back all remaining episodes 2-12, create one contiguous first-volume original prose and continuity manifest.",
+  "work": "我在修仙界卖第二条命 第一卷《青禾宗的第一笔血债》",
+  "status": "VOLUME1_FIRST_DRAFT_COMPLETE_NOT_FINAL_HUMAN_PASS",
+  "candidate_repo": "vubaoha034-hash/book",
+  "candidate_branch": "proposal/novel-method-upstream-lineage-20261031",
+  "first_episode_source": "experimental/novel-writing-v4/new-theme-proposals-20261112/10-episode01-outside-bullying-sect-protection-v4-20261114.md",
+  "first_episode_blob": "12e7a3495370c8b8f94565c8a5bdd4f84cc005d1",
+  "complete_first_volume": "experimental/novel-writing-v4/new-theme-proposals-20261112/11-volume1-complete-12-episodes-v1-20261114.md",
+  "complete_volume_blob": "c380e6318c8f1e1dd11534ab00dc5c4f5bf8568e",
+  "manifest": "experimental/novel-writing-v4/new-theme-proposals-20261112/12-volume1-readback-continuity-qc-20261114.json",
+  "manifest_blob": "5d149a0dd0b33e843c8bdb24a1f7163d5467e2a5",
+  "confirmed_chapters": 12,
+  "chinese_han_count": 10580,
+  "completed_technical_checks": [
+    "all 12 episode files read back",
+    "one-day-one-sale: 5 valid deals in seven story days",
+    "three heroines act in plot",
+    "master/sect protective origin retained",
+    "one-time first sale level jump only",
+    "one-use defensive artifacts consumed",
+    "revenge on Zhao Lie and Shen Wanjin completed in volume one",
+    "new climax clue of potentially alive senior brother Gu Shan"
+  ],
+  "reader_validation": "NOT_YET_REVIEWED_FULL_VOLUME",
+  "fiction_market_validation": "NOT_TESTED",
+  "platform_submission": "NO",
+  "full_novel_complete": "NO_SECOND_VOLUME_NOT_AUTHORIZED_OR_WRITTEN",
+  "checkpoint_business_state_unchanged": 211
+}
