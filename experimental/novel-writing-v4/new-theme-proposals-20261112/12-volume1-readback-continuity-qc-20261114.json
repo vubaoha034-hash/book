@@ -1,0 +1,135 @@
+{
+  "version": "novel-12-episode-first-volume-manifest/v1",
+  "date": "2026-11-14",
+  "title": "我在修仙界卖第二条命",
+  "volume": "青禾宗的第一笔血债",
+  "source_branch": "proposal/novel-method-upstream-lineage-20261031",
+  "compilation_path": "experimental/novel-writing-v4/new-theme-proposals-20261112/11-volume1-complete-12-episodes-v1-20261114.md",
+  "compilation_blob": "c380e6318c8f1e1dd11534ab00dc5c4f5bf8568e",
+  "han_total": 10580,
+  "chapter_count": 12,
+  "chapters": [
+    {
+      "episode": 1,
+      "git_blob": "12e7a3495370c8b8f94565c8a5bdd4f84cc005d1",
+      "han": 2200,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/10-episode01-outside-bullying-sect-protection-v4-20261114.md"
+    },
+    {
+      "episode": 2,
+      "git_blob": "98a3d778d0967779c50d27ff0bfe7a8705874252",
+      "han": 811,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/02-chapter02-full-prose-20261114.md"
+    },
+    {
+      "episode": 3,
+      "git_blob": "1507910b8e9bf9cd55e6d568e39eef9769cafa86",
+      "han": 654,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/03-chapter03-full-prose-20261114.md"
+    },
+    {
+      "episode": 4,
+      "git_blob": "9e04596c6bda857ece0f179913bdf49f24a29487",
+      "han": 677,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/04-chapter04-full-prose-20261114.md"
+    },
+    {
+      "episode": 5,
+      "git_blob": "1c6b34cc6405430f3ee0f658b93ba234b908899c",
+      "han": 713,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/05-chapter05-full-prose-20261114.md"
+    },
+    {
+      "episode": 6,
+      "git_blob": "4ab22bf4e9cef52d28a062a399fe6ff936dc7642",
+      "han": 667,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/06-chapter06-full-prose-20261114.md"
+    },
+    {
+      "episode": 7,
+      "git_blob": "5ecc57eff133a98bdea0dfb575de0d8206bdd632",
+      "han": 718,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/07-chapter07-full-prose-20261114.md"
+    },
+    {
+      "episode": 8,
+      "git_blob": "ef4863db77514469dc375764a58632921c683e53",
+      "han": 723,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/08-chapter08-full-prose-20261114.md"
+    },
+    {
+      "episode": 9,
+      "git_blob": "9da3bb16b078334ac46ba3d2ea15abeb55a9ed94",
+      "han": 680,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/09-chapter09-full-prose-20261114.md"
+    },
+    {
+      "episode": 10,
+      "git_blob": "eeef480e59b198ca9585e2f879e1972e262aa5b6",
+      "han": 717,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/10-chapter10-full-prose-20261114.md"
+    },
+    {
+      "episode": 11,
+      "git_blob": "8e441f283c19adb6215b8e09f8bb2a72fdb781e2",
+      "han": 738,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/11-chapter11-full-prose-20261114.md"
+    },
+    {
+      "episode": 12,
+      "git_blob": "b956c4117dc9227b9944c77cac7db302af666904",
+      "han": 1245,
+      "path": "experimental/novel-writing-v4/new-theme-proposals-20261112/12-chapter12-full-prose-20261114.md"
+    }
+  ],
+  "static_tests": {
+    "twelve_headings": true,
+    "all_source_chapters_present": true,
+    "user_acknowledged_ep1_source": true,
+    "three_heroines": true,
+    "previous_bully_and_sect_protection": true,
+    "five_successful_trades": true,
+    "qi_three_to_six": true,
+    "no_retroactive_revive": true,
+    "jade_consumed_only_once": true,
+    "revenge_first_and_second": true,
+    "final_master_brother_hook": true
+  },
+  "story_facts": {
+    "day_trade_allocation": {
+      "第1天": "柳清月",
+      "第2天": "魏老祖",
+      "第3天": "阿九",
+      "第4天": "老药师",
+      "第6天": "小满"
+    },
+    "no_sales": [
+      "第5天",
+      "第7天"
+    ],
+    "one_use_marrows": "first-sale-only",
+    "one_use_jade_consumed": "chapter11",
+    "one_use_bell_consumed": "chapter12",
+    "heroines": [
+      "柳清月",
+      "苏媚",
+      "小满"
+    ],
+    "revenge_milestones": {
+      "chapter5": "赵烈",
+      "chapter12": "沈万金"
+    },
+    "source_outline_blob": "4da0247bf10d2628fdc816fd7dd408d84e1724e2"
+  },
+  "editorial_risks": [
+    "Complete first volume ~10.6k Chinese characters, below originally tentative 12-18k; cannot assert submission eligibility.",
+    "Episodes 3-11 are short in accordance with fast-payoff direction, but may need density and relationship refinement based on actual reader feedback.",
+    "Second-volume conflict remains unfinished; first volume only completes two direct revenge milestones.",
+    "Static checks cannot substitute independent style, literary or commercial assessment."
+  ],
+  "publishing": "NOT_SUBMITTED",
+  "platform_income": "UNKNOWN",
+  "human_full_volume_quality": "NOT_REVIEWED",
+  "formal_mainline_checkpoint_updated": false,
+  "next_action": "User reads complete first-volume draft; only then perform targeted literary changes or plan volume two."
+}
