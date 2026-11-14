@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-14",
+  "novel": "我在修仙界卖第二条命",
+  "user_verbatim": "一，这个爽感开始有了。虽然没那么强。 二 总觉得情绪表达不够到位，自己师傅杀了都没什么感情的样子 三 应该铺垫下师傅师姐师妹对他都很好等等。",
+  "prior_v2_path": "experimental/novel-writing-v4/new-theme-proposals-20261112/08-episode01-heroin-causal-entrance-v2-20261113.md",
+  "prior_v2_blob": "ed80689c7fd7b2410dd56d0bb0791ff5c315140e",
+  "human_assessment": {
+    "payoff": "PARTIAL_POSITIVE_NOT_STRONG",
+    "character_emotion": "INADEQUATE",
+    "prior_sect_care": "INADEQUATE",
+    "overall_pass": "NOT_CONFIRMED"
+  },
+  "focal_revision_path": "experimental/novel-writing-v4/new-theme-proposals-20261112/09-episode01-sect-emotion-retention-v3-20261114.md",
+  "focal_revision_blob": "f3dfc58efd331f2c7baf6cbd75db7ce1080ff585",
+  "revision": "Show master and senior/junior sisters actively caring in differentiated actions; have Qin directly witness each death; add grief expressed through failed action and tangible loss; keep immediate resurrection, real level 3-6 first-sale payoff, wounded villain fleeing and life-token clue.",
+  "boundary": "Single replacement first episode only, older drafts preserved, no new episode, user has not reviewed V3, book/main checkpoint not promoted.",
+  "next_action": "Present V3 manuscript for actual reader assessment. No automatic story pass or next episode."
+}
